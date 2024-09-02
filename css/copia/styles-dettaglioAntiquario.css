@@ -1,0 +1,431 @@
+/* Basic Reset */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Assicura che il corpo occupi almeno l'altezza della finestra */
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+main {
+    flex: 1; /* Fa sì che il main prenda tutto lo spazio disponibile */
+}
+
+/* header e menù */
+
+header {
+    background-color: #f8f8f8;
+    padding: 15px;
+    position: sticky; /* Rende il menu sticky */
+    top: 0; /* Posiziona il menu all'inizio della pagina */
+    z-index: 1000; /* Assicura che il menu si sovrapponga agli altri contenuti */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Aggiunge un'ombra per differenziarlo dal contenuto */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Aggiunge l'ombreggiatura */
+    border-radius: 8px; /* Opzionale: arrotonda gli angoli */
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    max-height: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin-right: 20px;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background-color: #5593C9;
+    color: #fff;
+    border-radius: 5px;
+}
+
+
+/* galleria immagini*/
+#image-gallery {
+    padding: 40px 20px;
+    background-color: #f8f8f8;
+}
+
+.gallery-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-top:10px;
+    color: #5593C9;
+    text-align: left;
+    margin-left: 120px;
+}
+
+.slider-container {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.slider {
+    display: flex; /* Modificato per layout flessibile */
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    position: relative;
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+}
+
+.caption {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    box-sizing: border-box;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.caption {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slide:hover .caption {
+    opacity: 1;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    color: #333;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%; /* Assicura che i bottoni restino rotondi */
+    width: 40px; /* Imposta una larghezza fissa */
+    height: 40px; /* Imposta un'altezza fissa */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-style: bold;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color:#fff;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* sezione singola immagine */
+#single-image-section {
+    padding: 40px 20px;
+    background-color: #f8f8f8;
+}
+
+.single-image-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: left;
+    margin-left: 120px;
+}
+
+.single-image-container {
+    position: relative;
+    max-width: 1000px;
+    max-height: 600px;
+    margin: auto;
+}
+
+.single-image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.overlay-caption {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.single-image-container:hover .overlay-caption {
+    opacity: 1;
+}
+
+/*sezione tab Fondazione Zeri*/
+
+#FZ {
+    padding: 40px 60px;
+    background-color: #fff;
+    text-align: center;
+}
+
+#FZ h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    margin-left: 80px; /* Aggiunge margine a sinistra per allineare */
+    text-align: left;
+}
+
+#FZ h2 .highlight {
+    color: #5593C9; 
+    font-weight: 700; 
+}
+
+#FZ h2 .regular-text {
+    color: #000; 
+    font-weight: 400;
+}
+
+
+#FZ .content-wrapper {
+    display: flex;
+    justify-content: space-between; /* Spazia il paragrafo e il pulsante */
+    align-items: center; /* Allinea verticalmente il paragrafo e il pulsante */
+    margin-left: 80px; /* Allinea il contenuto con il margine sinistro */
+    margin-right: 80px; /* Allinea il contenuto con il margine destro */
+}
+
+#FZ p {
+    margin-bottom: 0; /* Rimuove il margine inferiore del paragrafo */
+    font-size: 24px;
+    font-weight: 400;
+    text-align: left;
+}
+
+#FZ .btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    float: none; /* Rimuove il float */
+    margin-right: 260px;
+}
+
+#FZ .btn:hover {
+    background-color: #5593C9;
+    color: #fff;
+}
+
+/*sezione interattiva tab*/
+
+/* .section-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: left;
+    margin-left: 120px; /* Allineamento coerente con gli altri elementi 
+}
+
+.section-title .highlight {
+    color: #5593C9;
+    font-weight: bold;
+}
+
+.section-title .regular-text {
+    color: #333;
+    font-weight: normal;
+} */
+
+#interactive-section {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+
+.section-title {
+    font-size: 36px;
+    margin-bottom: 60px;
+    text-align: left; /* Centra il titolo orizzontalmente */
+    margin-top: 10px;
+    margin-left: 120px;
+}
+
+.section-title .highlight {
+    color: #5593C9;
+    font-weight: bold;
+}
+
+.section-title .regular-text {
+    color: #333;
+    font-weight: normal;
+}
+
+.dual-content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px; /* Spazio tra le due colonne */
+    margin-top: 20px;
+}
+
+.tab-container {
+    width: 25%;
+    margin-right: 20px;
+}
+
+.tab-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tab {
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 40px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    text-align: left;
+    transition: background-color 0.3s ease;
+    margin-left: 120px;
+    margin-right: 30px;
+}
+
+.tab:hover {
+    background-color: #f0f0f0;
+}
+
+.tab.active {
+    background-color: #5593C9;
+    color: #fff;
+}
+
+.content-card {
+    width: 70%;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-right: 120px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.content {
+    display: none;
+}
+
+.active-content {
+    display: block;
+}
+
+
+/* footer */
+footer {
+    padding: 5px 40px;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-top: auto;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer img {
+    vertical-align: middle;
+    margin-left: 5px;
+    max-height: 30px;
+}
+
+.footer-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left {
+    text-align: left;
+}
+
+.footer-right {
+    text-align: right;
+}

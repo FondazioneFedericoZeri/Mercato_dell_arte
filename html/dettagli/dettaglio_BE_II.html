@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dettaglio Antiquari</title>
+    <link rel="stylesheet" href="../../css/styles-dettaglioAntiquario.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;700&display=swap" rel="stylesheet" />
+    <script type="text/javascript" src="../../script/dettaglioAntiquari.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/map.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/geodata/worldLow.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+    <script type="text/javascript" src="../../script/mappaDettaglio.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <a href="../../index.html">
+          <img id="logo.png" src="../../img/homepage/logo.png" alt="Fondazione Federico Zeri" />
+        </a>
+        <nav>
+          <ul>
+            <li>
+              <a href="../progetto.html">Progetto</a>
+              <a href="../antiquari.html">Antiquari</a>
+              <a href="../luoghi.html">Luoghi</a>
+              <a href="../eventi.html">Eventi</a>
+              <a href="../persone.html">Persone</a>
+              <a href="../bibliografia.html">Bibliografia</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="single-image-section">
+        <h2 class="single-image-title">Bellesi</h2>
+        <div class="single-image-container">
+          <img src="../../img/antiquari-preview/BE_II_preview.jpg" alt="Bellesi" />
+          <div class="caption overlay-caption">Bellesi</div>
+        </div>
+      </section>
+    </main>
+    <section id="FZ" class="fade-in">
+      <h2>
+        <span class="highlight">CATALOGO</span>
+        <span class="regular-text">ZERI</span>
+      </h2>
+      <div class="content-wrapper">
+        <p>Consulta le banche dati della Fondazione<br>Federico Zeri e ricerca fotografie, documenti, <br>cataloghi d'asta, fondi e notizie <br>sull'antiquario corrente.</p>
+        <a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=bellesi" class="btn">Clicca qui</a>
+      </div>
+    </section>
+    <section id="interactive-section">
+      <h2 class="section-title">
+        <span class="highlight">CARTA</span>
+        <span class="regular-text">D'IDENTITÀ</span>
+      </h2>
+      <div class="dual-content-wrapper">
+        <div class="tab-container">
+          <ul class="tab-list">
+            <li class="tab active" data_content="Bio">Biografia</li>
+            <li class="tab" data_content="Persone">Albero familiare</li>
+            <li class="tab" data_content="Localizzazioni">Mappa dei luoghi</li>
+            <li class="tab" data_content="Collaboratori">Collaboratori</li>
+            <li class="tab" data_content="Relazioni">Altri antiquari</li>
+            <li class="tab" data_content="Bibliografia">Bibliografia</li>
+          </ul>
+        </div>
+        <div class="content-card">
+          <div id="Bio" class="content active-content">
+            <h3>Giuseppe Bellesi (1873-1955)</h3>
+            <p></p>
+            <p>Nato a Firenze nel 1873, Giuseppe Bellesi iniziò la sua carriera come musicista. Negli anni giovanili conobbe il critico d’arte Matteo Marangoni (Firenze 1876-Pisa 1958) con il quale instaurò un solido legame. I due intrapresero un viaggio per l’Europa tra il 1896 e il 1901, al termine del quale Bellesi fu assunto come musicista in un locale pubblico di Londra, mentre Marangoni tornò in Italia per dedicarsi agli studi.</p>
+            <p></p>
+            <p>Nella capitale inglese Bellesi si avvicinò al mondo del mercato senza però mai perdere il contatto con Firenze. La sua attività si ricostruisce a partire dal 1924, anno in cui appare la prima inserzione su “The Burlington Magazine for Connoisseurs” che indica la sede della sua esposizione al Pall Mall Deposit di Londra, tra Carlton Street e Regent Street, indirizzo che utilizzerà fino al 1925.</p>
+            <p></p>
+            <p>Nel 1926 apre “The Italian Art Gallery” al numero civico 32 di Savile Row. Nel marzo 1929 la galleria si sposta al 174 di New Bond Street, mentre a partire dal 1937 comparirà sul Burlington con l’indirizzo 2 Duke Street. In questo arco cronologico la sua attività era un punto di riferimento per tutti i colleghi in visita a Londra o per chiunque fosse interessato a un dipinto italiano di alta epoca.</p>
+            <p></p>
+            <p>Durante la guerra Bellesi si rifugiò in Italia con la moglie, l’argentina Myriam Mendoza, e la figlia Rita Miriam (1904-1967) acquistando una villetta a Firenze in via Montughi 31. Nel 1948, tornato a Londra, Bellesi aprì una nuova sede de “The Italian Art Gallery” al numero 15 di Paddington Gress.</p>
+            <p></p>
+            <p>Giuseppe morì a Londra nel 1955. La figlia chiuse la sede inglese nel 1957 continuando la sua attività a Firenze fino alla scomparsa, nel 1967. In quell’anno la collezione Bellesi fu messa in vendita dalla Casa d’aste Pandolfini. In tale occasione, o nei mesi immediatamente successivi, Federico Zeri riuscì ad acquisire il prezioso l’archivio fotografico della galleria, incamerandolo nella propria fototeca.</p>
+            <p></p>
+            <p>Giuseppe Bellesi trattò quasi esclusivamente arte italiana medievale a moderna. Il suo nome si lega indissolubilmente a quello di Alessandro Contini Bonacossi che probabilmente si serviva di lui come intermediario per la compravendita dei quadri. Sono attestati anche rapporti diretti con Samuel Henry Kress e con il collezionista Langton Douglas. Tra il 1927 e il 1948 Bellesi fu inoltre membro del National Art Collection Fund. </p>
+            <p></p>
+          </div>
+          <div id="Persone" class="content">
+            <h3>L'entità Bellesi è così composta:</h3>
+            <div id="albero-genealogico">
+              <p>nome1 - nome2 - nome3</p>
+            </div>
+          </div>
+          <div id="Localizzazioni" class="content">
+            <h3>Geolocalizzazione dell'attività antiquariale:</h3>
+            <section id="map">
+              <div id="chartdiv"></div>
+            </section>
+          </div>
+          <div id="Collaboratori" class="content">
+            <h3>Hanno collaborato con l'entità Bellesi:</h3>
+            <ul>
+              <li>Matteo Maranghoni (storico dell'arte)</li>
+              <li>Robert Langton Douglas (storico dell'arte)</li>
+            </ul>
+          </div>
+          <div id="Relazioni" class="content">
+            <h3>L'entità Bellesi, durante la sua attività, ha avuto relazioni con:</h3>
+            <ul>
+              <li>
+                <a href="dettaglio_CO_I.html">Contini Bonacossi</a>
+              </li>
+            </ul>
+          </div>
+          <div id="Bibliografia" class="content">
+            <h3>Bibliografia essenziale:</h3>
+            <ul>
+              <li><i>Vendita all’asta dell’importante raccolta di dipinti antichi, mobili, oggetti d’arte e di arredamento, argenterie e preziosi appartenenti alla Successione di Miss Rita Miriam Bellesi, catalogo della vendita all'asta Pandolfini (Firenze, 14-17 ottobre 1968).</i>, Firenze 1968.</li>
+              <li>Bracke, P. (2008-2009), <i>L'antiquario Giuseppe Bellesi e il suo fondo fotografico all'interno della Fototeca Zeri.</i>, Università di Bologna.</li>
+              <li>Marangoni, M. & Barreca, L. (2006), <i>Matteo Marangoni : Carteggi (1990-1958).</i>, Palermo, Editrice Mediterranea.</li>
+              <li>Sanvitale, F. (2002), <i>La romanza italiana da salotto.</i>, Torino, EDT.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <p>Licenza dati e immagini:</p>
+          <img id="license.png" src="../../img/homepage/license.png" alt="License" />
+        </div>
+        <div class="footer-right">
+          <p>
+            <a href="#">Crediti</a>
+          </p>
+          <p>
+            <a href="#">Documentazione</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

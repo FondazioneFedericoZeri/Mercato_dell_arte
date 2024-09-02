@@ -1,0 +1,154 @@
+ID	Nazione	Regione	Città	Via	Civico
+USA_1	Stati Uniti d'America	Stati Uniti d'America	New York
+USA_2	Stati Uniti d'America	Stati Uniti d'America	New York	749 5th Avenue
+USA_3	Stati Uniti d'America	Stati Uniti d'America	New York	479 Fifth Avenue
+USA_4	Stati Uniti d'America	Stati Uniti d'America	New York	547 Fifth Avenue
+USA_5	Stati Uniti d'America	Stati Uniti d'America	New York	680 Fifth Avenue
+USA_6	Stati Uniti d'America	Stati Uniti d'America	New York	East 41st street	3
+USA_7	Stati Uniti d'America	Stati Uniti d'America	New York	West 50th Street	1
+UK_1	Gran Bretagna	Gran Bretagna	Londra	Carlton Street
+UK_2	Gran Bretagna	Gran Bretagna	Londra	Duke Street	2
+UK_3	Gran Bretagna	Gran Bretagna	Londra	King’s Street
+UK_4	Gran Bretagna	Gran Bretagna	Londra	New Bond Street	174
+UK_5	Gran Bretagna	Gran Bretagna	Londra	Paddington Gress	15
+UK_6	Gran Bretagna	Gran Bretagna	Londra	Regent Street
+UK_7	Gran Bretagna	Gran Bretagna	Londra	Savile Row	32
+FR_1	Francia	Francia	Nizza	Rue de France	94
+FR_2	Francia	Francia	Parigi	Avenue des Champs-Élysées	93
+FR_3	Francia	Francia	Parigi	Avenue des Champs-Élysées	125
+FR_4	Francia	Francia	Parigi	Boulevard des Capucins
+FR_5	Francia	Francia	Parigi	Place Vendome	4
+FR_6	Francia	Francia	Parigi	Rue de Courcelles	117
+FR_7	Francia	Francia	Parigi	Rue Lafayette	93
+FR_8	Francia	Francia	Parigi	Rue Spontini	16
+IT_1	Italia	Veneto	Venezia	Canal Grande (Palazzo Sagredo)
+IT_1_b	Italia	Veneto	Venezia	San Marco
+IT_2	Italia	Lombardia	Bergamo
+IT_3	Italia	Lombardia	Milano	Via Montenapoleone	11
+IT_4	Italia	Lombardia	Milano	Corso vittorio Emanuele	37
+IT_5	Italia	Piemonte	Torino	Piazza Cavour	10
+IT_6	Italia	Piemonte	Torino	Piazza Maria Teresa
+IT_7	Italia	Piemonte	Torino	Via della Rocca	21
+IT_8	Italia	Piemonte	Torino	Via Maria Vittoria
+IT_9	Italia	Piemonte	Torino	Via Po	55
+IT_10	Italia	Liguria	Genova
+IT_11	Italia	Liguria	Genova	Mura dello Zerbino	10
+IT_12	Italia	Liguria	Genova	Piazza Cinque lampade	65R
+IT_13	Italia	Liguria	Genova	Piazza Fontane Marose	3-4
+IT_14	Italia	Liguria	Genova	Piazza Giustiniani	7
+IT_15	Italia	Liguria	Genova	Piazza S. Matteo
+IT_16	Italia	Liguria	Genova	Via Assarotti	1
+IT_17	Italia	Liguria	Genova	Via G.T. Invrea	20
+IT_18	Italia	Liguria	Genova	Via Garibaldi	7
+IT_20	Italia	Liguria	Genova	Via Garibaldi	16
+IT_21	Italia	Liguria	Genova	Via XX Settembre	44
+IT_22	Italia	Liguria	Genova	Viale Sauli	3
+IT_23	Italia	Emilia-Romagna	Bologna	Piazza della mercanzia	6
+IT_24	Italia	Emilia-Romagna	Bologna	Via Castiglione	1
+IT_25	Italia	Emilia-Romagna	Bologna	Via del Monte	8
+IT_26	Italia	Emilia-Romagna	Bologna	Via Mazzini	25
+IT_27	Italia	Emilia-Romagna	Bologna	Via Mazzini	48
+IT_28	Italia	Emilia-Romagna	Bologna	Via Mazzini	50
+IT_29	Italia	Toscana	Arezzo	Piazza S. Francesco
+IT_30	Italia	Toscana	Firenze
+IT_31	Italia	Toscana	Firenze	Borgo San Frediano	3
+IT_32	Italia	Toscana	Firenze	Corso Regina Elena	6
+IT_33	Italia	Toscana	Firenze	Lungarno Corsini	10
+IT_34	Italia	Toscana	Firenze	Lungarno degli Acciaiuoli	4
+IT_35	Italia	Toscana	Firenze	Lungarno degli Acciaiuoli	24
+IT_36	Italia	Toscana	Firenze	Lungarno Vespucci
+IT_37	Italia	Toscana	Firenze	Piazza de Mozzi	1
+IT_38	Italia	Toscana	Firenze	Piazza Goldoni	2
+IT_39	Italia	Toscana	Firenze	Piazza Ottaviani
+IT_40	Italia	Toscana	Firenze	Piazza Pitti	12
+IT_42	Italia	Toscana	Firenze	Piazza S. Maria Novella	3
+IT_43	Italia	Toscana	Firenze	Piazza Santa Trinita	5R
+IT_44	Italia	Toscana	Firenze	Ponte Vecchio	1
+IT_45	Italia	Toscana	Firenze	Via Borgo Ognissanti
+IT_46	Italia	Toscana	Firenze	Via Borgo Ognissanti	8
+IT_47	Italia	Toscana	Firenze	Via Borgo Ognissanti	9
+IT_48	Italia	Toscana	Firenze	Via Borgo Ognissanti	17
+IT_49	Italia	Toscana	Firenze	Via Borgo Ognissanti	22
+IT_50	Italia	Toscana	Firenze	Via Borgo Ognissanti	52
+IT_51	Italia	Toscana	Firenze	Via Borgo Ognissanti	50-52 R
+IT_52	Italia	Toscana	Firenze	Via Borgo Ognissanti	54-56R
+IT_53	Italia	Toscana	Firenze	Via Cavour	88
+IT_54	Italia	Toscana	Firenze	Via dei Banchi	5
+IT_55	Italia	Toscana	Firenze	Via dei Benci
+IT_56	Italia	Toscana	Firenze	Via dei Fossi	7R
+IT_57	Italia	Toscana	Firenze	Via dei Fossi	9
+IT_58	Italia	Toscana	Firenze	Via dei Fossi	33
+IT_59	Italia	Toscana	Firenze	Via dei Fossi	40
+IT_60	Italia	Toscana	Firenze	Via dei Fossi	42R
+IT_61	Italia	Toscana	Firenze	Via dei Fossi	45R
+IT_67	Italia	Toscana	Firenze	Via dei Fossi	51R
+IT_68	Italia	Toscana	Firenze	Via dei serragli	8
+IT_69	Italia	Toscana	Firenze	Via del Moro
+IT_70	Italia	Toscana	Firenze	Via del Moro	30
+IT_70_b	Italia	Toscana	Firenze	Via del Podere	6
+IT_71	Italia	Toscana	Firenze	Via del porcellana
+IT_72	Italia	Toscana	Firenze	Via Del Sole
+IT_73	Italia	Toscana	Firenze	Via della scala
+IT_74	Italia	Toscana	Firenze	Via della vigna nuova	79R
+IT_75_a	Italia	Toscana	Firenze	Via delle belle donne
+IT_75_b	Italia	Toscana	Firenze	Via Guicciardini	6
+IT_76	Italia	Toscana	Firenze	Lungarno Soderini	5
+IT_76_b	Italia	Toscana	Firenze	Lungarno Guicciardini	7
+IT_77	Italia	Toscana	Firenze	Via Maggio
+IT_78	Italia	Toscana	Firenze	Via Maggio	7
+IT_79	Italia	Toscana	Firenze	Via Malcontenti	4
+IT_80	Italia	Toscana	Firenze	Via Martelli	4
+IT_81	Italia	Toscana	Firenze	Via Montughi	31
+IT_82	Italia	Toscana	Firenze	Via Porta Rossa	9
+IT_83	Italia	Toscana	Firenze	Via San Nicolò	95
+IT_84	Italia	Toscana	Firenze	Via Tornabuoni
+IT_85	Italia	Toscana	Firenze	Via Tornabuoni	4
+IT_86	Italia	Toscana	Firenze	Via Tornabuoni	12
+IT_87	Italia	Toscana	Firenze	Viale Filippo Strozzi	2
+IT_88	Italia	Lazio	Roma
+IT_89	Italia	Lazio	Roma	Borgo Vecchio	165
+IT_90	Italia	Lazio	Roma	Foro Romano	7
+IT_91	Italia	Lazio	Roma	Piazza di Spagna	4
+IT_92	Italia	Lazio	Roma	Piazza di Spagna	5
+IT_93	Italia	Lazio	Roma	Piazza di Spagna	9
+IT_94	Italia	Lazio	Roma	Piazza di Spagna	81
+IT_95	Italia	Lazio	Roma	Piazza di Spagna	83
+IT_96	Italia	Lazio	Roma	Piazza di Spagna	92
+IT_97	Italia	Lazio	Roma	Piazza Sant'Apollinare
+IT_98	Italia	Lazio	Roma	Piazza Scossacavalli
+IT_99	Italia	Lazio	Roma	Piazza Trinità dei Monti	6
+IT_100	Italia	Lazio	Roma	Via Condotti
+IT_101	Italia	Lazio	Roma	Via Condotti	44
+IT_102	Italia	Lazio	Roma	Via Condotti	59-61
+IT_103	Italia	Lazio	Roma	Via del Babuino
+IT_104	Italia	Lazio	Roma	Via del Babuino	88
+IT_105	Italia	Lazio	Roma	Via del Babuino	92
+IT_106	Italia	Lazio	Roma	Via del Babuino	9697
+IT_107	Italia	Lazio	Roma	Via del Babuino	110
+IT_108	Italia	Lazio	Roma	Via del Babuino	132
+IT_109	Italia	Lazio	Roma	Via della Consolazione	184
+IT_110	Italia	Lazio	Roma	Via della Croce	44
+IT_111	Italia	Lazio	Roma	Via delle belle arti	2
+IT_112	Italia	Lazio	Roma	Via di Fontanella di Borghese	29-33
+IT_113	Italia	Lazio	Roma	Via due macelli	86
+IT_114	Italia	Lazio	Roma	Via Frattina	141
+IT_115	Italia	Lazio	Roma	Via Margutta	51a
+IT_116	Italia	Lazio	Roma	Via Margutta	53
+IT_117	Italia	Lazio	Roma	Via Margutta	53b
+IT_119	Italia	Lazio	Roma	Via Maria Cristina	5
+IT_121	Italia	Lazio	Roma	Via Nomentana	60
+IT_122	Italia	Lazio	Roma	Via Porta Pinciana	32
+IT_123	Italia	Lazio	Roma	Via Ripetta	117
+IT_124	Italia	Lazio	Roma	Via Ripetta	118
+IT_125	Italia	Lazio	Roma	Via Sistina	16
+IT_126	Italia	Lazio	Roma	Via Sistina	48
+IT_127	Italia	Lazio	Roma	Via Sistina	57
+IT_128	Italia	Lazio	Roma	Via Sistina	66
+IT_129	Italia	Lazio	Roma	Via Sistina	94
+IT_130	Italia	Lazio	Roma	Via Sistina	131
+IT_131	Italia	Lazio	Roma	Via Sistina	137
+IT_132	Italia	Lazio	Roma	Via Tevere	7
+IT_133	Italia	Lazio	Roma	Via Trinità dei Monti	9
+IT_134	Italia	Lazio	Roma	Via Vittorio Colonna	11
+IT_135	Italia	Lazio	Roma	Viale di Tor di Quinto	58
+IT_136	Italia	Campania	Napoli	Piazza dei Martiri	23

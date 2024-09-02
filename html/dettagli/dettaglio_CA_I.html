@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dettaglio Antiquari</title>
+    <link rel="stylesheet" href="../../css/styles-dettaglioAntiquario.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;700&display=swap" rel="stylesheet" />
+    <script type="text/javascript" src="../../script/dettaglioAntiquari.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/map.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/geodata/worldLow.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+    <script type="text/javascript" src="../../script/mappaDettaglio.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <a href="../../index.html">
+          <img id="logo.png" src="../../img/homepage/logo.png" alt="Fondazione Federico Zeri" />
+        </a>
+        <nav>
+          <ul>
+            <li>
+              <a href="../progetto.html">Progetto</a>
+              <a href="../antiquari.html">Antiquari</a>
+              <a href="../luoghi.html">Luoghi</a>
+              <a href="../eventi.html">Eventi</a>
+              <a href="../persone.html">Persone</a>
+              <a href="../bibliografia.html">Bibliografia</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="single-image-section">
+        <h2 class="single-image-title">Canessa</h2>
+        <div class="single-image-container">
+          <img src="../../img/antiquari-preview/CA_I_preview.jpg" alt="Canessa" />
+          <div class="caption overlay-caption">Canessa</div>
+        </div>
+      </section>
+    </main>
+    <section id="FZ" class="fade-in">
+      <h2>
+        <span class="highlight">CATALOGO</span>
+        <span class="regular-text">ZERI</span>
+      </h2>
+      <div class="content-wrapper">
+        <p>Consulta le banche dati della Fondazione<br>Federico Zeri e ricerca fotografie, documenti, <br>cataloghi d'asta, fondi e notizie <br>sull'antiquario corrente.</p>
+        <a href="https://catalogo.fondazionezeri.unibo.it/" class="btn">Clicca qui</a>
+      </div>
+    </section>
+    <section id="interactive-section">
+      <h2 class="section-title">
+        <span class="highlight">CARTA</span>
+        <span class="regular-text">D'IDENTITÀ</span>
+      </h2>
+      <div class="dual-content-wrapper">
+        <div class="tab-container">
+          <ul class="tab-list">
+            <li class="tab active" data_content="Bio">Biografia</li>
+            <li class="tab" data_content="Persone">Albero familiare</li>
+            <li class="tab" data_content="Localizzazioni">Mappa dei luoghi</li>
+            <li class="tab" data_content="Collaboratori">Collaboratori</li>
+            <li class="tab" data_content="Clienti">Clienti</li>
+            <li class="tab" data_content="Eventi">Eventi</li>
+            <li class="tab" data_content="Relazioni">Altri antiquari</li>
+            <li class="tab" data_content="Bibliografia">Bibliografia</li>
+          </ul>
+        </div>
+        <div class="content-card">
+          <div id="Bio" class="content active-content">
+            <h3>Canessa (1884-1929)</h3>
+            <p></p>
+            <p>Cesare (1863-1922), Ercole (1867-1929) e Amedeo Canessa (1874-1934) furono tre fratelli napoletani fondatori di un’attività che fu un punto di riferimento assoluto nel mondo del mercato dell’arte, dalla data di fondazione, nel 1884, almeno fino alla crisi del 1929. La “Canessa Antiquaires – Numismates”, che, come sottolinea l’intestazione, era inizialmente specializzata in monete antiche, ebbe sede principale a Napoli, in Piazza dei Martiri 23 nel monumentale Palazzo Nunziante, costruito nel 1858 dall’architetto Enrico Alvino e acquistato dal Duca di Mignano. Entro la fine del secolo furono aperte altre due sedi: una a Parigi sugli Champs Elysées, che venne gestita da Ercole, l’altra a New York, in Fifth Avenue, di cui fu responsabile Amedeo. </p>
+            <p>La ditta commerciava soprattutto arte antica, mobili del XVI e XVII, porcellane di Capodimonte e arte presepiale. </p>
+            <p>L’evento che portò la Galleria alla ribalta sul mercato antiquario internazionale fu la scoperta, nel 1895, del tesoro di Boscoreale: un servizio di argenteria di oltre 100 pezzi di epoca romana che i Canessa contribuirono ad esportare illegalmente cedendoli al barone Edmond de Rothschild e che sono oggi conservati al Louvre. Altri affari sensazionali che contribuirono all’inarrestabile ascesa sul mercato furono la vendita dei cosiddetti “Argenti Cacace”, rinvenuti a Taranto nel 1896, e l’asta nella quale furono posti all’incanto gli affreschi di Boscoreale (1903), con catalogo curato da Arthur Sambon. Quest’ultimo, titolare anche di una propria galleria a Napoli, fu per anni un loro collaboratore. Nel 1904 insieme ai Canessa fondò la rivista “Le Musée. Revue d’art mensuelle” che uscì fino al 1925. </p>
+            <p></p>
+            <p>I Canessa ebbero una clientela internazionale di assoluto prestigio che includeva Giorgio V d’Inghilterra, il Duca D’Aosta, Vittorio Emanuele III, il cantante Enrico Caruso, il barone Edmond de Rothschild, Madame André, il banchiere Otto Kahn, gli americani Vanderbilt, Henry Walters, Rockefeller, Elizabeth Stewart Gardner e, soprattutto, J. Pierpont Morgan con il quale condussero numerosissime trattative e che si serviva di loro come agenti di fiducia per gli acquisti in Italia.  </p>
+            <p>Negli oltre ottant’anni di attività furono pubblicati oltre 50 cataloghi delle loro vendite.</p>
+            <p></p>
+            <p>Alla morte di Cesare la ditta venne divisa: la sede di Napoli, da allora denominata “Galleria Canessa” continuò ad essere gestita dai figli Ambrogio e Guglielmo per pochi anni, fino alla chiusura nel 1929; Ercole prese il controllo della sede di Parigi e New York chiudendo la prima nel 1926 e la seconda ugualmente nell’anno della grande crisi, lo stesso della sua morte.</p>
+            <p>Ambrogio e Guglielmo Canessa rientrarono in Italia nel 1935 e, dopo alcuni anni, aprirono negozi di antichità rispettivamente a Roma e a Milano. L’ultima filiale condotta da un membro della famiglia fu chiusa definitivamente nel 1969. </p>
+            <p></p>
+          </div>
+          <div id="Persone" class="content">
+            <h3>L'entità Canessa è così composta:</h3>
+            <div id="albero-genealogico">
+              <p>nome1 - nome2 - nome3</p>
+            </div>
+          </div>
+          <div id="Localizzazioni" class="content">
+            <h3>Geolocalizzazione dell'attività antiquariale:</h3>
+            <section id="map">
+              <div id="chartdiv"></div>
+            </section>
+          </div>
+          <div id="Collaboratori" class="content">
+            <h3>Hanno collaborato con l'entità Canessa:</h3>
+            <ul>
+              <li>Arthur Sambon (storico dell'arte)</li>
+            </ul>
+          </div>
+          <div id="Clienti" class="content">
+            <h3>I principali clienti dell'entità Canessa sono stati:</h3>
+            <ul>
+              <li>Duca D’Aosta (Emanuele Filiberto di Savoia??)  </li>
+              <li>Edmond De Rothschild </li>
+              <li>Elizabeth Stewart Gardner </li>
+              <li>Enrico Caruso </li>
+              <li>Giorgio V d’Inghilterra  </li>
+              <li>Henry Walters </li>
+              <li>John Davison Rockefeller </li>
+              <li>John Pierpont Morgan </li>
+              <li>Madame André  </li>
+              <li>Otto Kahn </li>
+              <li>Vanderbilt  </li>
+              <li>Vittorio Emanuele III  </li>
+            </ul>
+          </div>
+          <div id="Eventi" class="content">
+            <h3>Gli eventi signficativi dell'attività antiquariale:</h3>
+            <ul>
+              <li>1895 - <i>Scoperta del tesoro di Boscoreale</i>: Gli antiquari Canessa scoprirono nel 1895 il tesoro di Boscoreale, un servizio di argenteria di oltre 100 pezzi di epoca romana, che contribuirono ad esportare illegalmente cedendolo al barone Edmond De Rothschild. La collezione si conserva oggi al Museo del Louvre.</li>
+              <li>1896 - <i>Vendita all'asta 'Argenti Cacace'</i>: Tra le celebri vendite attribuite agli antiquari Canessa, vi è quella degli 'Argenti Cacace', rinvenuti a Taranto nel 1896.</li>
+              <li>1903 - <i>Vendita all'asta 'Affreschi di Boscoreale'</i>: Tra le celebri vendite attribuite agli antiquari Canessa, vi è quella degli 'Affreschi di Boscoreale' nel 1903, con catalogo curato da Arthur Sambon.</li>
+              <li>1904-1925ca - <i>Pubblicazione rivista 'Le Musée. Revue d’art mensuelle'</i>: Nel 1904 i Canessa, insieme ad Arthur Sambon, fondarono la rivista “Le Musée. Revue d’art mensuelle”, che venne pubblicata fino al 1925.</li>
+            </ul>
+          </div>
+          <div id="Relazioni" class="content">
+            <h3>L'entità Canessa, durante la sua attività, ha avuto relazioni con:</h3>
+            <ul>
+              <li>
+                <a href="dettaglio_SA_III.html">Sambon</a>
+              </li>
+            </ul>
+          </div>
+          <div id="Bibliografia" class="content">
+            <h3>Bibliografia essenziale:</h3>
+            <ul>
+              <li>Avvisati, C. (2016), <i>Il tesoro di Boscoreale e lo scandalo della vendita all'estero: i gioielli, gli argenti e gli aurei del 1. secolo d.C. trovati da Vincenzo de Prisco nella villa detta la Pisanella.</i>, Tricase, Youcanprint.</li>
+              <li>Bellini, L., De Chirico, G. (1947), <i>Nel mondo degli antiquari.</i>, Firenze, Arnaud.</li>
+              <li>D'Orazi, L. (2018), <i>Canessa, una famiglia di antiquari.</i>, Cassino, Associazione Culturale Italia Numismatica.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <p>Licenza dati e immagini:</p>
+          <img id="license.png" src="../../img/homepage/license.png" alt="License" />
+        </div>
+        <div class="footer-right">
+          <p>
+            <a href="#">Crediti</a>
+          </p>
+          <p>
+            <a href="#">Documentazione</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

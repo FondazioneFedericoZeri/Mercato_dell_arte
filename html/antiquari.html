@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antiquari</title>
+    <link rel="stylesheet" href="../css/styles-antiquari.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="../script/scripts-antiquari.js"></script>
+    <script type="text/javascript" src="../script/antiquari_search.js"></script>
+</head>
+
+<body>
+    <!-- Collegamento al file JavaScript esterno -->
+    <!-- script src="../script/scripts-antiquari.js"></script -->
+
+    <header>
+        <div class="header-container">
+
+            <a href="../index.html">
+            <img id="logo.png" src="../img/homepage/logo.png" alt="Fondazione Federico Zeri">
+            </a>
+
+            <nav>
+                <ul>
+                    <li><a href="../html/progetto.html">Progetto</a></li>
+                    <li><a href="../html/antiquari.html">Antiquari</a></li>
+                    <li><a href="../html/luoghi.html">Luoghi</a></li>
+                    <li><a href="../html/eventi.html">Eventi</a></li>
+                    <li><a href="../html/persone.html">Persone</a></li>
+                    <li><a href="../html/bibliografia.html">Bibliografia</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenuto principale della nuova pagina -->
+
+    <main>
+        <!-- Prima nuova sezione con titolo e paragrafo -->
+        <a href="#" id="back-to-top" class="btn-back-to-top"> ˄ </a>
+
+        <section id="intro-section">
+            <div class="text-container" class="fade-in">
+                <h2><span class="highlight">RICERCA</span> GLI ANTIQUARI</h2>
+                <p>Trova l’antiquario che ti interessa<br>e scopri i contesti storici.<br>Ricercali in ordine alfabetico.</p>
+                <a href="#Titolo" id="btn-luogo" class="btn">Cerca per luogo</a>
+                <a href="#Titolo" id="btn-cognome" class="btn">Cerca per cognome</a>
+            </div>
+            <div class="svg-container">
+                <svg version="1.1" id="Calque-trace" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                y="0px" width="400px" height="500px" viewBox="0 0 600 700" enable-background="new 0 0 600 700" xml:space="preserve">
+           <path class="chemin" fill="none" stroke="#000000" stroke-miterlimit="10" d="M35.905,699.985c3.176-21.807,12.868-49.09,15.423-70.518
+               c1.806-15.142,0.62-28.96,4.243-44.161c5.339-22.408,8.313-45.485,14.196-67.625c9.254-34.83,6.781-75.343,25.563-105.865
+               c13.315-21.64,44.588-21.436,67.426-30.68c12.372-5.005,27.471-8.732,40.192-12.637c13.671-4.195,20.99-15.601,33.863-19.615
+               c6.762-17.056,2.785-20.583-1.669-37.406c-2.051-7.747,0.327-17.111-1.797-24.848c-1.087-3.961,1.055-7.555-1.339-11.416
+               c-3.549-5.724-8.534-0.662-11.506-4.086c-11.958-13.778-8.983-23.574-9.865-41.43c-0.321-6.49-3.417-13.383-1.94-20.814
+               c1.688-8.496,7.427-10.505,9.573-16.975c5.512-16.627-1.04-35.674-0.092-53.185c0.948-17.508,6.454-27.961,13.794-43.19
+               c6.263-12.999,12.295-35.646,20.358-44.082c5.893-6.166,20.922-9.396,28.514-15.544c6.548-5.303,7.451-11.908,15.084-14.785
+               c34.64-13.055,50.286,14.714,72.472,28.156c11.31,6.854,23.189,7.864,31.857,19.664c7.777,10.589,7.266,27.439,13.657,38.97
+               c7.928,14.301,13.436,18.467,14.319,36.5c0.745,15.22-2.202,30.335-1.475,45.087c0.741,15.002,20.118,78.753-11.09,76.452
+               c-3.216,23.619-25.191,62.838-15.599,87.086c9.093,22.982,51.599,34.134,70.724,45.051c22.978,13.116,57.221,30.589,69.915,54.885
+               c24.766,47.398,27.791,104.97,27.791,158.799c0,31.305,0,88.227,0,88.227"/>
+           </svg>
+
+            </div>
+        </section>
+
+
+        <!-- Sezione con il titolo "Tutti gli antiquari" e "Ordina per cognome" -->
+        <section id="Titolo">
+            <h2><span class="highlight-bold">TUTTI</span> <span class="regular-text">GLI ANTIQUARI</span></h2>
+            <p><span class="regular-text">Ordinamento per</span> <span class="bold-text"><span id="cognome">cognome</span> / <span id="luogo">luogo</span></span></p>
+        </section>
+
+        <!-- Seconda nuova sezione con 3 card -->
+        <section id="cards-section">
+        </section>
+    </main>
+
+
+    <!-- Footer copiato dalla pagina esistente -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <p>Licenza dati e immagini: <img id="license.png" src="../img/homepage/license.png" alt="License"></p>
+            </div>
+            <div class="footer-right">
+                <p>
+                    <a href="#">Crediti</a> | <a href="#">Documentazione</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

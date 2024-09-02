@@ -1,0 +1,771 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #f8f8f8;
+    padding: 20px;
+    position: sticky; /* Rende il menu sticky */
+    top: 0; /* Posiziona il menu all'inizio della pagina */
+    z-index: 1000; /* Assicura che il menu si sovrapponga agli altri contenuti */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Aggiunge un'ombra per differenziarlo dal contenuto */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Aggiunge l'ombreggiatura */
+    border-radius: 8px; /* Opzionale: arrotonda gli angoli */
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    max-height: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin-right: 20px;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background-color: #5593C9;
+    color: #fff;
+    border-radius: 5px;
+}
+
+#hero {
+    background-image: url('img/homepage/hero-image.PNG'); /* Sostituisci con il percorso dell'immagine */
+    background-size: cover; /* Assicura che l'immagine copra l'intera area */
+    background-position: center; /* Centra l'immagine */
+    height: 700px; /* Altezza della sezione hero */
+    display: flex; /* Usa flexbox per centrare gli elementi */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra orizzontalmente */
+    text-align: center; /* Centra il testo */
+    flex-direction: column; /* Dispone il titolo e il bottone verticalmente */
+    color: #ffffff; /* Colore del testo */
+}
+
+/* Definizione dell'animazione per la dissolvenza */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Applicazione dell'animazione al titolo della sezione hero */
+#hero h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-family: 'Libre Bodoni', serif;
+    background-color: rgba(73, 30, 30, 0.4);
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    opacity: 0; /* Inizia con un'opacità di 0 per la dissolvenza */
+    animation: fadeIn 2.5s ease-in-out forwards; /* Animazione di 2 secondi */
+}
+
+.btn {
+    background-color: #fff;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold; /* Rende il testo in grassetto */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 40px; /* Aggiunge spazio tra il titolo e il bottone */
+}
+
+.btn:hover {
+    background-color: #5593C9; /* Cambia lo sfondo al passaggio del mouse */
+    color: #fff; /* Cambia il colore del testo al passaggio del mouse */
+}
+
+/* da qui inziano tutti gli effetti applicati alla sezione search */
+
+.bold-text {
+    font-weight: bold;
+}
+
+.normal-text {
+    font-weight: normal; /* Non in grassetto */
+    color: #000; /* Colore nero */
+}
+
+/* Classe per la dissolvenza in entrata */
+.fade-in {
+    opacity: 0;
+    transition: opacity 3s ease-in-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+}
+
+#search {
+    padding: 120px 60px 80px 60px; /* Aumenta il padding superiore a 120px */
+    background-color: #f8f8f8;
+    min-height: 550px;
+}
+
+#search h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #5593C9;
+    font-weight: 700;
+    text-align: left; 
+    margin-left: 80px;
+}
+
+#search p {
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: left; 
+    margin-left: 80px;
+}
+
+#search input {
+    padding: 12px;
+    width: 72%;
+    max-width: 600px;
+    margin-bottom: 60px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: left;
+    margin-left: 80px; /* Allinea la barra di ricerca a sinistra */
+    display: inline-block; /* Mantiene la barra di ricerca sulla stessa linea */
+    font-size: 120%; /* Aumenta la dimensione del testo del 20% */
+}
+
+.search-buttons {
+    display: inline-block;
+    float: right; /* Allinea i pulsanti a destra */
+    margin-right: 80px; /* Aggiunge margine a destra per i pulsanti */
+}
+
+.search-buttons a {
+    padding: 12px 24px;
+    margin: 0 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    font-size: 120%; /* Aumenta la dimensione del testo del 20% */
+}
+
+.search-buttons button:hover {
+    background-color:#5593C9;
+}
+
+
+/* inizio della sezione successiva */
+
+#statistics {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    background-color: #5593C9;
+    color: #fff;
+    text-align: center;
+    min-height: 250px; /* Imposta un'altezza minima maggiore */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Aggiunge l'ombreggiatura */
+}
+
+#statistics .stat {
+    flex: 1;
+}
+
+#statistics h3 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: 400; /* Inizia con un font regolare */
+    transition: all 0.5s ease-in-out;
+}
+
+#statistics h3.bold {
+    font-weight: 700; /* Diventa grassetto dopo l'animazione */
+}
+
+#statistics p {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+#statistics p:hover {
+    text-decoration: underline;
+}
+
+/* inizio della sezione successiva */
+
+#map {
+    display: flex; /* Usa flexbox per allineare gli elementi */
+    align-items: center; /* Centra verticalmente gli elementi */
+    justify-content: flex-end; /* Allinea il contenuto a destra */
+    padding: 40px 20px;
+}
+
+#chartdiv {
+    width: 100%;
+    height: 550px;
+  }
+  
+#map img {
+    width: 70%; /* L'immagine occupa il 70% della larghezza */
+    max-width: 700px; /* Limita la larghezza massima dell'immagine */
+    margin-right: 20px; /* Aggiunge spazio tra l'immagine e il testo */
+}
+
+/* Classe per la dissolvenza in entrata */
+.fade-in {
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+}
+
+#map .text-content {
+    width: 45%; /* Il testo occupa il 45% della larghezza */
+    text-align: left; /* Allinea il testo a sinistra */
+    margin-left: 60px;
+    margin-right: 60px;
+    opacity: 0; /* Inizia nascosto */
+    transition: opacity 2s ease-in-out; /* Applicazione della dissolvenza */
+}
+
+#map .text-content.visible {
+    opacity: 1; /* Mostra il contenuto quando visibile */
+}
+
+#map h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #000; /* Colore nero per il resto del titolo */
+    font-weight: 400; /* Font regular per il resto del titolo */
+}
+
+#map h2 .highlight {
+    color: #5593C9; 
+    font-weight: 700; /* Grassetto */
+}
+
+#map p {
+    margin-bottom: 40px;
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+#map .btn {
+    margin-top: 60px; 
+    background-color: #333;
+    color: #fff;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#map .btn:hover {
+    background-color: #5593C9;
+    color: #fff;
+}
+
+
+/* inizio della sezione successiva */
+
+#timeline {
+    padding: 60px 60px;
+    background-color: #f8f8f8;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Aggiunge l'ombreggiatura */
+    border-radius: 8px; /* Opzionale: arrotonda gli angoli */
+}
+
+#timeline h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    margin-left: 80px; /* Aggiunge margine a sinistra per allineare */
+    text-align: left;
+}
+
+#timeline h2 .highlight {
+    color: #5593C9; 
+    font-weight: 700; 
+}
+
+#timeline h2 .regular-text {
+    color: #000; 
+    font-weight: 400;
+}
+
+
+#timeline .content-wrapper {
+    display: flex;
+    justify-content: space-between; /* Spazia il paragrafo e il pulsante */
+    align-items: center; /* Allinea verticalmente il paragrafo e il pulsante */
+    margin-left: 80px; /* Allinea il contenuto con il margine sinistro */
+    margin-right: 80px; /* Allinea il contenuto con il margine destro */
+}
+
+#timeline p {
+    margin-bottom: 0; /* Rimuove il margine inferiore del paragrafo */
+    font-size: 24px;
+    font-weight: 400;
+    text-align: left;
+}
+
+#timeline .btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    float: none; /* Rimuove il float */
+    margin-right: 260px;
+}
+
+#timeline .btn:hover {
+    background-color: #5593C9;
+    color: #fff;
+}
+
+
+
+/* inizio prova timeline 2 */
+#timeline2 {
+    display: flex;
+    background-color:#5593C9; /* #031625; */
+    height: 62vh; /* Riduce l'altezza della sezione */
+    min-height: 470px; /* Imposta un'altezza minima per evitare che diventi troppo piccola */
+    overflow: hidden; /* Nasconde gli elementi che escono fuori dalla sezione */
+  }
+  
+  .tl-item {
+    transform: translate3d(0, 0, 0);
+    position: relative;
+    width: 25%;
+    height:150px;
+    color: #fff;
+    overflow: hidden;
+    transition: width 0.5s ease, height 0.5s ease;
+    
+    &:before, &:after {
+      transform: translate3d(0, 0, 0);
+      content: '';
+      position: absolute;
+      left: 0; top: 0;
+      width: 100%; height: 100%;
+    }
+  
+    &:after {
+      background: transparentize(#031625, 0.15);
+      opacity: 1;
+      transition: opacity 0.5s ease;
+    }
+  
+    &:before {
+      background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 75%);
+      z-index: 1;
+      opacity: 0;
+      transform: translate3d(0, 0, 0) translateY(50%);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+  
+    &:hover {
+      width: 30% !important;
+      
+      &:after {
+        opacity: 0;
+      }
+  
+      &:before {
+        opacity: 1;
+        transform: translate3d(0, 0, 0) translateY(0);
+        transition: opacity 1s ease, transform 1s ease 0.25s;
+      }
+      
+      .tl-content {
+        font-size: 18px;
+        opacity: 1;
+        transform: translateY(0);
+        transition: all 0.75s ease 0.5s;
+      }
+  
+      .tl-bg {
+        filter: grayscale(0);
+      }
+    }
+  }
+  
+  .tl-content {
+    transform: translate3d(0, 0, 0) translateY(25px);
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    margin: 0 1.618em;
+    top: 20%;
+    transform: translateY(-20%);
+    opacity: 0;
+    text-align: left;
+    
+    h1 {
+      color: #ffffff;
+      font-size: 24px;
+      font-weight: normal;
+      margin-bottom: 20px;
+      margin-top: 40px;
+      text-align: center;
+    }
+  }
+  
+  #timeline2 .tl-year p {
+    font-size: 42px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    line-height: 1;
+    text-decoration-color: #fff;
+    text-decoration: underline overline; /* Applica sia underline che overline */
+    text-decoration-color: #fff; /* Colore bianco per le linee */
+    text-decoration-thickness: 2px; /* Spessore delle linee */
+    text-underline-offset: 15px; /* Spazio tra il testo e la sottolineatura */
+    text-overline-offset: 15px; /* Spazio tra il testo e la sovralineatura */
+    margin-bottom: 40px; /* Aumenta lo spazio tra il numero e il titolo */
+    margin-top: 40px; 
+}
+
+    #timeline2 .tl-year p::before {
+        content: none;
+    }
+
+    #timeline2 .tl-year {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        z-index: 1;
+        border-top: none;
+        border-bottom: none;
+    }
+
+    .tl-item {
+        position: relative;
+        width: 25%;
+        height: 68vh;
+        min-height: 400px;
+        color: #fff;
+        overflow: hidden;
+        transition: width 0.5s ease, height 0.5s ease;
+        background-size: cover; /* Assicura che l'immagine copra l'intero box */
+        background-position: center; /* Centra l'immagine */
+        background-image: none;
+    }
+
+    
+    .tl-item:hover {
+        background-image: url('img/homepage/Canessa.png'); /* Sostituisci con l'immagine corretta */
+    }
+    
+    .tl-item:nth-child(2):hover {
+        background-image: url('img/homepage/Bardini.jpg'); /* Sostituisci con l'immagine corretta */
+    }
+    
+    .tl-item:nth-child(3):hover {
+        background-image: url('img/homepage/Simonetti.jpg'); /* Sostituisci con l'immagine corretta */
+    }
+    
+    .tl-item:nth-child(4):hover {
+        background-image: url('img/homepage/Jandolo.jpg'); /* Sostituisci con l'immagine corretta */
+    }
+    
+/* fine prova timeline 2 */
+
+
+/* inizio della sezione parole chiave */
+
+#key-people {
+    padding: 80px 70px; /* Margini superiori e laterali */
+    padding-bottom: 60px;
+    background-color: #f8f8f8; /* Colore di sfondo grigio chiaro */
+    display: flex;
+    justify-content: space-between; /* Spazia gli elementi a sinistra e a destra */
+    align-items: flex-start;
+}
+
+#key-people .left-key-content {
+    text-align: left; /* Allinea il contenuto a sinistra */
+    max-width: 600px; /* Limita la larghezza del contenuto */
+    margin-left: 80px;
+    margin-top: 0;
+}
+
+#key-people h2 {
+    font-size: 36px;
+    color: #333;
+}
+
+#key-people h2 .highlight {
+    color: #5593C9; /* Colore blu per la parte evidenziata */
+    font-weight: 700; /* Grassetto */
+}
+
+#key-people h2 .regular-text {
+    color: #333; /* Colore nero */
+    font-weight: 400; /* Regular */
+}
+
+#key-people p {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 60px;
+    margin-top: 30px;
+}
+
+#key-people .right-key-links {
+    display: flex;
+    flex-direction: column; /* Dispone i link uno sotto l'altro */
+    align-items: flex-end; /* Mantiene i link posizionati a destra */
+    text-align: left; /* Allinea il testo dei link a sinistra */
+}
+
+#key-people .right-key-links a {
+    font-size: 24px;
+    color: #333;
+    font-weight: 700; /* Grassetto */
+    text-decoration: underline;
+    text-decoration-thickness: 2px; /* Spessore delle linee */
+    text-underline-offset: 10px; /* Spazio tra il testo e la sottolineatura */
+    width: 100%; /* Occupa l'intera larghezza disponibile */
+    margin-top: 20px;
+    margin-right: 180px;
+}
+
+#key-people.fade-in {
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+#key-people.fade-in.visible {
+    opacity: 1;
+}
+
+.link {
+    color: #5593C9; /* Link color */
+    text-decoration: underline; /* Underline the text */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+.link:hover {
+    color: #f58300c4; /* Darken the color on hover */
+}
+
+
+/* effetto morphing antiquari */
+
+#key-people .wrapper{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-end;
+  text-align: left;
+  margin-right: 200px;
+  margin-top: 100px;
+  margin-bottom: 120px;
+}
+
+.word{
+  font-family: Playfair Display;
+  font-weight: bold;
+  max-width:70%;
+  letter-spacing:3px;
+  font-size: 48px;
+  font-weight: bold;
+  background: linear-gradient(to right, #5593C9, #333); /* Gradient from red to blue */
+  -webkit-background-clip: text;
+  color: transparent;
+  webkit-text-fill-color: transparent; /* For WebKit-based browsers */
+  position: absolute;
+  animation: word 20s infinite ease-in-out;
+}
+
+.word:nth-child(1){
+  animation-delay:-15s;
+}
+
+.word:nth-child(2){
+  animation-delay:-11s;
+}
+
+.word:nth-child(3){
+  animation-delay:-7s;
+}
+
+.word:nth-child(4){
+  animation-delay:-3s;
+}
+
+@keyframes word{
+  0%, 5%, 100%{
+    filter: blur(0px);
+    opacity:1;
+  }
+  20%, 80%{
+    filter: blur(35);
+    opacity: 0;
+  }
+}
+
+/* inizio della sezione bibliografia SVG  */
+#biblio-vettoriale {
+    padding: 60px 150px; /* Margini superiori e laterali */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Aggiunge l'ombreggiatura */
+    border-radius: 8px; /* Opzionale: arrotonda gli angoli */
+}
+
+.biblio-container {
+    display: flex;
+    justify-content: space-between; /* Spazia le due colonne */
+    align-items: center; /* Centra verticalmente gli elementi */
+}
+
+.biblio-left {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Centra l'elemento SVG */
+    align-items: center;
+    height: 350px;
+}
+
+.biblio-left svg {
+    max-height: 100%; /* Limita l'altezza dell'SVG per adattarsi alla colonna */
+    max-width: 100%; /* Assicura che l'SVG si adatti alla larghezza della colonna */
+}
+
+.biblio-right {
+    flex: 1;
+    text-align: left;
+    margin-left: auto; /* Posiziona la colonna a destra */
+    padding-left: 50px; /* Aggiunge spazio tra le due colonne */
+}
+
+.biblio-right h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.biblio-right h2 .highlight {
+    color: #5593C9; /* Colore blu */
+    font-weight: 700; /* Grassetto */
+}
+
+.biblio-right h2 .regular-text {
+    color: #333; /* Colore nero */
+    font-weight: 400; /* Regular */
+    display: inline-block; /* Mantiene il testo sulla stessa linea */
+}
+
+.biblio-right p {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.biblio-right .btn {
+    background-color: #333;
+    color: #fff;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.biblio-right .btn:hover {
+    background-color: #5593C9;
+    color: #fff;
+}
+
+#biblio-right.fade-in {
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+#biblio-right.fade-in.visible {
+    opacity: 1;
+}
+
+/* footer*/
+footer {
+    padding: 20px 40px;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer img {
+    vertical-align: middle;
+    margin-left: 5px;
+    max-height: 30px;
+}
+
+.footer-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left {
+    text-align: left;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+

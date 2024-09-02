@@ -1,0 +1,186 @@
+/* Basic Reset */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Assicura che il corpo occupi almeno l'altezza della finestra */
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+main {
+    flex: 1; /* Fa sì che il main prenda tutto lo spazio disponibile */
+}
+
+#map {
+    display: flex; /* Usa flexbox per allineare gli elementi */
+    align-items: center; /* Centra verticalmente gli elementi */
+    justify-content: flex-end; /* Allinea il contenuto a destra */
+    padding: 40px 20px;
+}
+
+#chartdiv {
+    width: 100%;
+    height: 550px;
+  }
+  
+#map img {
+    width: 70%; /* L'immagine occupa il 70% della larghezza */
+    max-width: 700px; /* Limita la larghezza massima dell'immagine */
+    margin-right: 20px; /* Aggiunge spazio tra l'immagine e il testo */
+}
+
+/* Classe per la dissolvenza in entrata */
+.fade-in {
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+}
+
+#map .text-content {
+    width: 45%; /* Il testo occupa il 45% della larghezza */
+    text-align: left; /* Allinea il testo a sinistra */
+    margin-left: 60px;
+    margin-right: 60px;
+    opacity: 0; /* Inizia nascosto */
+    transition: opacity 2s ease-in-out; /* Applicazione della dissolvenza */
+}
+
+#map .text-content.visible {
+    opacity: 1; /* Mostra il contenuto quando visibile */
+}
+
+#map h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #000; /* Colore nero per il resto del titolo */
+    font-weight: 400; /* Font regular per il resto del titolo */
+}
+
+#map h2 .highlight {
+    color: #5593C9; 
+    font-weight: 700; /* Grassetto */
+}
+
+#map p {
+    margin-bottom: 40px;
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+#map .btn {
+    margin-top: 60px; 
+    background-color: #333;
+    color: #fff;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#map .btn:hover {
+    background-color: #5593C9;
+    color: #fff;
+}
+/* header e menù */
+
+header {
+    background-color: #f8f8f8;
+    padding: 15px;
+    position: sticky; /* Rende il menu sticky */
+    top: 0; /* Posiziona il menu all'inizio della pagina */
+    z-index: 1000; /* Assicura che il menu si sovrapponga agli altri contenuti */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Aggiunge un'ombra per differenziarlo dal contenuto */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Aggiunge l'ombreggiatura */
+    border-radius: 8px; /* Opzionale: arrotonda gli angoli */
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    max-height: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin-right: 20px;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background-color: #5593C9;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* contenuto 1*/
+#content {
+    margin-left: 20px; /* Aggiunge un margine a sinistra di 20px */
+    padding: 20px; /* Eventuale padding interno per separare il contenuto dai bordi */
+}
+
+
+/* footer */
+footer {
+    padding: 5px 40px;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-top: auto;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer img {
+    vertical-align: middle;
+    margin-left: 5px;
+    max-height: 30px;
+}
+
+.footer-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left {
+    text-align: left;
+}
+
+.footer-right {
+    text-align: right;
+}

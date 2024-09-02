@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dettaglio Antiquari</title>
+    <link rel="stylesheet" href="../../css/styles-dettaglioAntiquario.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;700&display=swap" rel="stylesheet" />
+    <script type="text/javascript" src="../../script/dettaglioAntiquari.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/map.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/geodata/worldLow.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+    <script type="text/javascript" src="../../script/mappaDettaglio.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <a href="../../index.html">
+          <img id="logo.png" src="../../img/homepage/logo.png" alt="Fondazione Federico Zeri" />
+        </a>
+        <nav>
+          <ul>
+            <li>
+              <a href="../progetto.html">Progetto</a>
+              <a href="../antiquari.html">Antiquari</a>
+              <a href="../luoghi.html">Luoghi</a>
+              <a href="../eventi.html">Eventi</a>
+              <a href="../persone.html">Persone</a>
+              <a href="../bibliografia.html">Bibliografia</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="image-gallery">
+        <h2 class="gallery-title">Di Castro</h2>
+        <div class="slider-container">
+          <div class="slider">
+            <div class="slide">
+              <img src="../../img/slider-antiquari/DI_img1.jpg" alt="Franco Di Castro" />
+              <div class="caption">Franco Di Castro</div>
+            </div>
+            <div class="slide">
+              <img src="../../img/slider-antiquari/DI_img2.jpg" alt="Negozio Di Castro. Via del Babuino 87-88" />
+              <div class="caption">Negozio Di Castro. Via del Babuino 87-88</div>
+            </div>
+          </div>
+          <button &#10094; class="prev" onclick="prevSlide()"></button>
+          <button &#10095; class="next" onclick="nextSlide()"></button>
+        </div>
+      </section>
+    </main>
+    <section id="FZ" class="fade-in">
+      <h2>
+        <span class="highlight">CATALOGO</span>
+        <span class="regular-text">ZERI</span>
+      </h2>
+      <div class="content-wrapper">
+        <p>Consulta le banche dati della Fondazione<br>Federico Zeri e ricerca fotografie, documenti, <br>cataloghi d'asta, fondi e notizie <br>sull'antiquario corrente.</p>
+        <a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Di+Castro" class="btn">Clicca qui</a>
+      </div>
+    </section>
+    <section id="interactive-section">
+      <h2 class="section-title">
+        <span class="highlight">CARTA</span>
+        <span class="regular-text">D'IDENTITÀ</span>
+      </h2>
+      <div class="dual-content-wrapper">
+        <div class="tab-container">
+          <ul class="tab-list">
+            <li class="tab active" data_content="Bio">Biografia</li>
+            <li class="tab" data_content="Persone">Albero familiare</li>
+            <li class="tab" data_content="Localizzazioni">Mappa dei luoghi</li>
+            <li class="tab" data_content="Collaboratori">Collaboratori</li>
+            <li class="tab" data_content="Relazioni">Altri antiquari</li>
+            <li class="tab" data_content="Bibliografia">Bibliografia</li>
+          </ul>
+        </div>
+        <div class="content-card">
+          <div id="Bio" class="content active-content">
+            <h3>Di Castro </h3>
+            <p></p>
+            <p>L’attività nel campo del commercio antiquariale della famiglia ebraica romana Di Castro ha il proprio capostipite in Angelo che, dopo l’abolizione del ghetto di Roma nel 1870, poté liberamente intraprendere l’attività di commerciante di stoffe e tessuti antichi e di seconda mano, con un negozio documentato in Piazza Scossacavalli in Borgo Vecchio nel 1878. </p>
+            <p></p>
+            <p>Dopo Angelo, è Leone Di Castro (1878-1950), nei primi anni Trenta, a guidare l’attività commerciale della famiglia, forte dell’esperienza di affiancamento al padre. La sede è, in questi anni, in via del Babuino 87-88; collaborano con lui i figli Amedeo (1915-1986) e Alberto Di Castro (1909-1978). </p>
+            <p>Costretto a migrare a causa delle leggi razziali, Amedeo tornò a Roma negli anni Cinquanta, ereditando la galleria di via del Babuino e aprendone poi una in via Margutta, specializzata nella vendita di mobili e oggetti di arredo, documentata fino agli anni Sessanta dal figlio Richard.</p>
+            <p></p>
+            <p>Fu Alberto a dare nuovo impulso all’attività del padre Leone alla fine della guerra, quando, scampato alle persecuzioni razziali, recuperò il negozio in via del Babuino 110 che aveva temporaneamente affidato a terzi, intuendo l’opportunità di recarsi all’estero alla ricerca di oggetti artistici da immettere sul mercato italiano e specializzandosi nella vendita di mobili soprattutto francesi e olandesi.</p>
+            <p></p>
+            <p>Il figlio di Alberto, Franco Di Castro (1934-2012), fin da giovanissimo impiegato nella galleria, seppe abilmente aprire il commercio a dipinti e oggetti d’arte di prestigio destinati alla borghesia soprattutto romana, avvalendosi della consulenza di storici dell’arte e restauratori del calibro di Giuliano Briganti, Nicola Spinosa, Alvar González-Palacios, Antonio De Mata e Pico Cellini. Questi divennero assidui frequentatori dei nuovi locali della galleria, aperti da Alberto in Piazza di Spagna 5. Tra i più fedeli consulenti fu anche Federico Zeri, con il quale Alberto e Franco Di Castro presero l’abitudine di frequentare le aste internazionali, spesso accompagnati anche da Carlo e Marcello Sestieri, a loro legati da solidi rapporti di lavoro e amicizia. </p>
+            <p></p>
+          </div>
+          <div id="Persone" class="content">
+            <h3>L'entità Di Castro è così composta:</h3>
+            <div id="albero-genealogico">
+              <p>nome1 - nome2 - nome3</p>
+            </div>
+          </div>
+          <div id="Localizzazioni" class="content">
+            <h3>Geolocalizzazione dell'attività antiquariale:</h3>
+            <section id="map">
+              <div id="chartdiv"></div>
+            </section>
+          </div>
+          <div id="Collaboratori" class="content">
+            <h3>Hanno collaborato con l'entità Di Castro:</h3>
+            <ul>
+              <li>Alvar Gonzales Palacios (storico dell'arte)</li>
+              <li>Antonio De Mata (restauratore)</li>
+              <li>Arte Arte Fotografica (fotografo)</li>
+              <li>Federico Zeri (storico dell'arte)</li>
+              <li>Giuliano Briganti (storico dell'arte)</li>
+              <li>Pico Cellini (restauratore)</li>
+            </ul>
+          </div>
+          <div id="Relazioni" class="content">
+            <h3>L'entità Di Castro, durante la sua attività, ha avuto relazioni con:</h3>
+            <ul>
+              <li>
+                <a href="dettaglio_AP.html">Apolloni</a>
+              </li>
+            </ul>
+          </div>
+          <div id="Bibliografia" class="content">
+            <h3>Bibliografia essenziale:</h3>
+            <ul>
+              <li>09/06/2023, <i>Intervista a Alessandra Di Castro e Alberto Di Castro.</i>, Roma</li>
+              <li>Batini, G. (1961), <i>L'antiquario.</i>, Firenze, Vallecchi.</li>
+              <li>Riccio, B. (Ed.) (1996), <i>Lettere sull’antiquariato?: di Mario Praz e Luigi Magnani 1952-1981.</i>, Torino, U. Allemandi., p. 116</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <p>Licenza dati e immagini:</p>
+          <img id="license.png" src="../../img/homepage/license.png" alt="License" />
+        </div>
+        <div class="footer-right">
+          <p>
+            <a href="#">Crediti</a>
+          </p>
+          <p>
+            <a href="#">Documentazione</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,220 @@
+/* Basic Reset */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Assicura che il corpo occupi almeno l'altezza della finestra */
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+main {
+    flex: 1; /* Fa sì che il main prenda tutto lo spazio disponibile */
+}
+/* header e menù */
+
+header {
+    background-color: #f8f8f8;
+    padding: 15px;
+    position: sticky; /* Rende il menu sticky */
+    top: 0; /* Posiziona il menu all'inizio della pagina */
+    z-index: 1000; /* Assicura che il menu si sovrapponga agli altri contenuti */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Aggiunge un'ombra per differenziarlo dal contenuto */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Aggiunge l'ombreggiatura */
+    border-radius: 8px; /* Opzionale: arrotonda gli angoli */
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    max-height: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin-right: 20px;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background-color: #5593C9;
+    color: #fff;
+    border-radius: 5px; 
+}
+
+/* Stile per il bottone "Torna su" */
+.btn-back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    display: none; /* Nasconde il bottone finché non si scorre la pagina */
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    z-index: 1000; /* Assicura che il bottone sia sopra gli altri elementi */
+}
+
+.btn-back-to-top:hover {
+    background-color: #5593C9; /* Cambia il colore di sfondo al passaggio del mouse */
+}
+
+.btn-back-to-top.show {
+    display: block; /* Mostra il bottone quando si scrolla giù */
+}
+
+/* contenuto 1*/
+
+#Persone {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three equal-width columns */
+    gap: 20px; /* Space between columns */
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.column {
+    break-inside: avoid; /* Avoids breaking elements inside the column */
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.column h2 {
+    font-size: 36px;
+    color: #5593C9; /* Colore del testo */
+    text-transform: lowercase; /* Trasforma in minuscolo */
+    margin-bottom: 5px;
+    border-bottom: 3px solid #5593C9;
+    padding-bottom: 5px;
+    margin-top: 5px;
+}
+
+.column:first-child a {
+    display: block;
+    font-size: 18px;
+    color: white; /* White text color to contrast with the blue background */
+    line-height: 1.6;
+    margin-bottom: 5px;
+    text-align: left; /* Align the text to the left */
+    border-bottom: 1px solid #dddddd; /* Separation line under the text */
+    padding-bottom: 5px; /* Space under the text */
+    white-space: pre-wrap; /* Preserve whitespace and break lines as needed */
+    text-decoration: none; /* Remove default underline from links */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for color and transform */
+}
+
+.column:first-child a:hover {
+    color: #ffb907f0; /* Change color on hover */
+    text-decoration: underline; /* Underline on hover */
+    transform: translateX(10px); /* Move text to the right on hover */
+}
+
+.column p {
+    break-inside: avoid;
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 5px;
+    text-align: left; /* Allinea il testo a sinistra */
+    border-bottom: 1px solid #dddddd; /* Linea di separazione sotto il testo */
+    padding-bottom: 5px; /* Spazio sotto il testo */
+    white-space: pre-wrap; /* Preserves whitespace and breaks lines as needed */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for color and transform */
+}
+
+.column p:hover {
+    color: #5593C9; /* Change text color on hover */
+    transform: translateX(10px); /* Move the text 10px to the right on hover */
+}
+
+.column:first-child {
+    background-color: #5593C9;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.column:first-child h2{
+    color: #fff;
+    border-bottom: 3px solid #fff;
+}
+.column:first-child p{
+    color: #fff;
+}
+
+.column:first-child a {
+    color: white; /* White text color */
+    text-decoration: none; /* Remove underline from the link */
+}
+
+.column:first-child a:hover {
+    text-decoration: underline; /* Optional: Underline on hover */
+    color: #ffb907f0; /* Optional: Slightly lighter color on hover */
+    text-decoration: none;
+}
+
+/* footer */
+footer {
+    padding: 5px 40px;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-top: auto;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer img {
+    vertical-align: middle;
+    margin-left: 5px;
+    max-height: 30px;
+}
+
+.footer-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left {
+    text-align: left;
+}
+
+.footer-right {
+    text-align: right;
+}

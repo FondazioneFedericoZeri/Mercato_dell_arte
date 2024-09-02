@@ -1,0 +1,440 @@
+{
+    "C_1": {
+        "ID": "C_1",
+        "Nome": "",
+        "Cognome / Denominazione": "Alinari",
+        "Tipologia": "fotografo"
+    },
+    "C_2": {
+        "ID": "C_2",
+        "Nome": "",
+        "Cognome / Denominazione": "Anderson",
+        "Tipologia": "fotografo"
+    },
+    "C_3": {
+        "ID": "C_3",
+        "Nome": "Leopoldo",
+        "Cognome / Denominazione": "Aretini",
+        "Tipologia": "antiquario"
+    },
+    "C_4": {
+        "ID": "C_4",
+        "Nome": "Wart",
+        "Cognome / Denominazione": "Arslan",
+        "Tipologia": "storico dell'arte"
+    },
+    "C_5": {
+        "ID": "C_5",
+        "Nome": "Arte",
+        "Cognome / Denominazione": "Arte Fotografica",
+        "Tipologia": "fotografo"
+    },
+    "C_6": {
+        "ID": "C_6",
+        "Nome": "Valentina",
+        "Cognome / Denominazione": "Barbareschi",
+        "Tipologia": "restauratrice"
+    },
+    "C_7": {
+        "ID": "C_7",
+        "Nome": "Bernard",
+        "Cognome / Denominazione": "Berenson",
+        "Tipologia": "storico dell'arte"
+    },
+    "C_8": {
+        "ID": "C_8",
+        "Nome": "Boccardi",
+        "Cognome / Denominazione": "Boccardi",
+        "Tipologia": "fotografo"
+    },
+    "C_9": {
+        "ID": "C_9",
+        "Nome": "Ferdinando",
+        "Cognome / Denominazione": "Bologna",
+        "Tipologia": "storico dell'arte"
+    },
+    "C_10_1": {
+        "ID": "C_10_1",
+        "Nome": "",
+        "Cognome / Denominazione": "Braun & C.ie",
+        "Tipologia": "fotografi"
+    },
+    "C_10_2": {
+        "ID": "C_10_2",
+        "Nome": "",
+        "Cognome / Denominazione": "Giraudon & Bernès",
+        "Tipologia": "fotografi"
+    },
+    "C_10_3": {
+        "ID": "C_10_3",
+        "Nome": "",
+        "Cognome / Denominazione": "Marouteau & C.ie",
+        "Tipologia": "fotografi"
+    },
+    "C_11": {
+        "ID": "C_11",
+        "Nome": "Giuliano",
+        "Cognome / Denominazione": "Briganti",
+        "Tipologia": "storico dell'arte"
+    },
+    "C_12": {
+        "ID": "C_12",
+        "Nome": "Brogi",
+        "Cognome / Denominazione": "Brogi",
+        "Tipologia": "fotografo"
+    },
+    "C_13": {
+        "ID": "C_13",
+        "Nome": "Paul",
+        "Cognome / Denominazione": "Cassirer",
+        "Tipologia": "antiquario"
+    },
+    "C_14": {
+        "ID": "C_14",
+        "Nome": "Raffaelo",
+        "Cognome / Denominazione": "Causa",
+        "Tipologia": "storico dell'arte"
+    },
+    "C_14_b": {
+        "ID": "C_14_b",
+        "Nome": "",
+        "Cognome / Denominazione": "Calvesi",
+        "Tipologia": "storico dell'arte"
+    },
+    "C_15": {
+        "ID": "C_15",
+        "Nome": "Luigi",
+        "Cognome / Denominazione": "Cavenaghi",
+        "Tipologia": "restauratore"
+    },
+    "C_16": {
+        "ID": "C_16",
+        "Nome": "Pico",
+        "Cognome / Denominazione": "Cellini",
+        "Tipologia": "restauratore"
+    },
+    "C_17": {
+        "ID": "C_17",
+        "Nome": "Egisto",
+        "Cognome / Denominazione": "De Masi",
+        "Tipologia": "antiquario"
+    },
+    "C_18": {
+        "ID": "C_18",
+        "Nome": "Antonio",
+        "Cognome / Denominazione": "De Mata",
+        "Tipologia": "restauratore"
+    },
+    "C_19": {
+        "ID": "C_19",
+        "Nome": "",
+        "Cognome / Denominazione": "Diuvin",
+        "Tipologia": "antiquario"
+    },
+    "C_20": {
+        "ID": "C_20",
+        "Nome": "Robert Langton",
+        "Cognome / Denominazione": "Douglas",
+        "Tipologia": "storico dell'arte"
+    },
+    "C_21": {
+        "ID": "C_21",
+        "Nome": "Alvaro",
+        "Cognome / Denominazione": "Esposti",
+        "Tipologia": "restauratore"
+    },
+    "C_22": {
+        "ID": "C_22",
+        "Nome": "Antonio",
+        "Cognome / Denominazione": "Faccioli",
+        "Tipologia": "capo-restauratore e direttore laboratori della sede succursale"
+    },
+    "C_23": {
+        "ID": "C_23",
+        "Nome": "Italo",
+        "Cognome / Denominazione": "Faldi",
+        "Tipologia": "storico dell'arte"
+    },
+    "C_24": {
+        "ID": "C_24",
+        "Nome": "Cesare",
+        "Cognome / Denominazione": "Faraglia",
+        "Tipologia": "fotografo"
+    },
+    "C_25": {
+        "ID": "C_25",
+        "Nome": "Giuseppe",
+        "Cognome / Denominazione": "Fiocco",
+        "Tipologia": "storico dell'arte"
+    },
+    "C_26": {
+        "ID": "C_26",
+        "Nome": "Ugo",
+        "Cognome / Denominazione": "Frizzoni",
+        "Tipologia": "storico dell'arte"
+    },
+    "C_27": {
+        "ID": "C_27",
+        "Nome": "",
+        "Cognome / Denominazione": "Gasperini",
+        "Tipologia": "fotografi"
+    },
+    "C_28": {
+        "ID": "C_28",
+        "Nome": "Benno",
+        "Cognome / Denominazione": "Geiger",
+        "Tipologia": "antiquario"
+    },
+    "C_29": {
+        "ID": "C_29",
+        "Nome": "",
+        "Cognome / Denominazione": "Gonnella",
+        "Tipologia": "fotografi"
+    },
+    "C_30": {
+        "ID": "C_30",
+        "Nome": "Alvar",
+        "Cognome / Denominazione": "Gonzales Palacios",
+        "Tipologia": "storico dell'arte"
+    },
+    "C_31": {
+        "ID": "C_31",
+        "Nome": "Marco",
+        "Cognome / Denominazione": "Grassi",
+        "Tipologia": "restauratore"
+    },
+    "C_32": {
+        "ID": "C_32",
+        "Nome": "Mina",
+        "Cognome / Denominazione": "Gregori",
+        "Tipologia": "storica dell'arte"
+    },
+    "C_33": {
+        "ID": "C_33",
+        "Nome": "",
+        "Cognome / Denominazione": "Industrial foto",
+        "Tipologia": "fotografo"
+    },
+    "C_34": {
+        "ID": "C_34",
+        "Nome": "Vittorio",
+        "Cognome / Denominazione": "Jaqueir",
+        "Tipologia": "fotografo"
+    },
+    "C_35": {
+        "ID": "C_35",
+        "Nome": "Icilio Federico",
+        "Cognome / Denominazione": "Joni",
+        "Tipologia": "restauratore"
+    },
+    "C_36": {
+        "ID": "C_36",
+        "Nome": "Franz",
+        "Cognome / Denominazione": "Kienslinger",
+        "Tipologia": "mercante"
+    },
+    "C_37": {
+        "ID": "C_37",
+        "Nome": "Roberto",
+        "Cognome / Denominazione": "Longhi",
+        "Tipologia": "storico dell'arte"
+    },
+    "C_38": {
+        "ID": "C_38",
+        "Nome": "Matteo",
+        "Cognome / Denominazione": "Maranghoni",
+        "Tipologia": "storico dell'arte"
+    },
+    "C_38_b": {
+        "ID": "C_38_b",
+        "Nome": "Egidio",
+        "Cognome / Denominazione": "Martini",
+        "Tipologia": "storico dell'arte"
+    },
+    "C_39": {
+        "ID": "C_39",
+        "Nome": "Friederick",
+        "Cognome / Denominazione": "Mason Perkins",
+        "Tipologia": "storico dell'arte"
+    },
+    "C_40": {
+        "ID": "C_40",
+        "Nome": "Angiolo",
+        "Cognome / Denominazione": "Melli",
+        "Tipologia": "antiquario"
+    },
+    "C_41": {
+        "ID": "C_41",
+        "Nome": "Cesare",
+        "Cognome / Denominazione": "Melli",
+        "Tipologia": "antiquario"
+    },
+    "C_41_b": {
+        "ID": "C_41_b",
+        "Nome": "Ferruccio",
+        "Cognome / Denominazione": "Mestrovich",
+        "Tipologia": "storico dell'arte"
+    },
+    "C_42": {
+        "ID": "C_42",
+        "Nome": "Mario",
+        "Cognome / Denominazione": "Modestini",
+        "Tipologia": "restauratore"
+    },
+    "C_43": {
+        "ID": "C_43",
+        "Nome": "Bruno",
+        "Cognome / Denominazione": "Molajoli",
+        "Tipologia": "storico dell'arte"
+    },
+    "C_44": {
+        "ID": "C_44",
+        "Nome": "Giulio",
+        "Cognome / Denominazione": "Ometto",
+        "Tipologia": "collaboratore"
+    },
+    "C_45": {
+        "ID": "C_45",
+        "Nome": "Kajetan 'Kai'",
+        "Cognome / Denominazione": "Muehlmann",
+        "Tipologia": "storico dell'arte"
+    },
+    "C_46": {
+        "ID": "C_46",
+        "Nome": "Rodolfo",
+        "Cognome / Denominazione": "Pallucchini",
+        "Tipologia": "storico dell'arte"
+    },
+    "C_47": {
+        "ID": "C_47",
+        "Nome": "Leo",
+        "Cognome / Denominazione": "Planiscig",
+        "Tipologia": "storico dell'arte"
+    },
+    "C_48": {
+        "ID": "C_48",
+        "Nome": "Paolino",
+        "Cognome / Denominazione": "Poli",
+        "Tipologia": "restauratore"
+    },
+    "C_49": {
+        "ID": "C_49",
+        "Nome": "Paolo",
+        "Cognome / Denominazione": "Polidori",
+        "Tipologia": "fotografi"
+    },
+    "C_50": {
+        "ID": "C_50",
+        "Nome": "Ludwig",
+        "Cognome / Denominazione": "Pollak",
+        "Tipologia": "storico dell'arte"
+    },
+    "C_51": {
+        "ID": "C_51",
+        "Nome": "Mario",
+        "Cognome / Denominazione": "Praz",
+        "Tipologia": "critico dell'arte"
+    },
+    "C_52": {
+        "ID": "C_52",
+        "Nome": "Jean",
+        "Cognome / Denominazione": "Questa",
+        "Tipologia": "antiquario"
+    },
+    "C_53": {
+        "ID": "C_53",
+        "Nome": "Carlo Ludovico",
+        "Cognome / Denominazione": "Ragghianti",
+        "Tipologia": "storico dell'arte"
+    },
+    "C_54": {
+        "ID": "C_54",
+        "Nome": "",
+        "Cognome / Denominazione": "Rampazzi",
+        "Tipologia": "fotografi"
+    },
+    "C_55": {
+        "ID": "C_55",
+        "Nome": "",
+        "Cognome / Denominazione": "Reali",
+        "Tipologia": "fotografo"
+    },
+    "C_56": {
+        "ID": "C_56",
+        "Nome": "Rigorini",
+        "Cognome / Denominazione": "Rigorini",
+        "Tipologia": "restauratore"
+    },
+    "C_57": {
+        "ID": "C_57",
+        "Nome": "Arthur",
+        "Cognome / Denominazione": "Sambon",
+        "Tipologia": "storico dell'arte"
+    },
+    "C_58": {
+        "ID": "C_58",
+        "Nome": "Giovanni",
+        "Cognome / Denominazione": "Sassu",
+        "Tipologia": "restauratore"
+    },
+    "C_59": {
+        "ID": "C_59",
+        "Nome": "Tommaso",
+        "Cognome / Denominazione": "Schneider",
+        "Tipologia": "restauratore"
+    },
+    "C_60": {
+        "ID": "C_60",
+        "Nome": "Nicola",
+        "Cognome / Denominazione": "Spinosa",
+        "Tipologia": "storico dell'arte"
+    },
+    "C_61": {
+        "ID": "C_61",
+        "Nome": "Arthur E.",
+        "Cognome / Denominazione": "Sulley",
+        "Tipologia": "antiquario"
+    },
+    "C_62": {
+        "ID": "C_62",
+        "Nome": "Pietro",
+        "Cognome / Denominazione": "Toesca",
+        "Tipologia": "storico dell'arte"
+    },
+    "C_63": {
+        "ID": "C_63",
+        "Nome": "Adolfo",
+        "Cognome / Denominazione": "Venturi",
+        "Tipologia": "storico dell'arte"
+    },
+    "C_64": {
+        "ID": "C_64",
+        "Nome": "Lionello",
+        "Cognome / Denominazione": "Venturi",
+        "Tipologia": "storico dell'arte"
+    },
+    "C_65": {
+        "ID": "C_65",
+        "Nome": "Louise",
+        "Cognome / Denominazione": "Vergetas",
+        "Tipologia": "restauratore"
+    },
+    "C_66": {
+        "ID": "C_66",
+        "Nome": "Wilhem",
+        "Cognome / Denominazione": "Von Bode",
+        "Tipologia": "storico dell'arte"
+    },
+    "C_67": {
+        "ID": "C_67",
+        "Nome": "Silvio",
+        "Cognome / Denominazione": "Zanchi",
+        "Tipologia": "restauratore"
+    },
+    "C_68": {
+        "ID": "C_68",
+        "Nome": "Federico",
+        "Cognome / Denominazione": "Zeri",
+        "Tipologia": "storico dell'arte"
+    }
+}

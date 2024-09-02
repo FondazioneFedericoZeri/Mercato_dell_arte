@@ -1,0 +1,82 @@
+ID	ID_cliente	Nome	Cognome	ID_entità	ID_persone
+CV_1	CL_1	Duca D’Aosta (Emanuele Filiberto di Savoia??)		CA_I
+CV_2	CL_2	Giorgio V d’Inghilterra		CA_I
+CV_3	CL_3	Gustavo V re di Svezia		BA_III	BA_III_1
+CV_4	CL_4	Johann II del Liechtenstein*		BA_III	BA_III_1
+CV_5	CL_5	Madame André		CA_I
+CV_6	CL_6	Principe del Liechtenstein*		FE	FE_1
+CV_7	CL_7	Ugolino della Gherardesca		GU-BR
+CV_8	CL_8	Umberto II di Savoia		AC	AC_1
+CV_9	CL_9	Vanderbilt		CA_I
+CV_10	CL_10	Vittorio Emanuele III		CA_I
+CV_11	CL_11	Arthur	Acton	ST	ST_1
+CV_12	CL_12	Fausto	Bagatti Valsecchi	BA_IV	BA_IV_1
+CV_13	CL_13	Giuseppe	Bagatti Valsecchi	BA_IV	BA_IV_1
+CV_14	CL_14	Orazio	Bagnasco	PA_I	PA_I_1
+CV_15	CL_15	Stefano	Bardini	CO_III	CO_III_1
+CV_16	CL_16	Giovanni	Barraco	JA
+CV_17	CL_17	Bernard	Berenson	CO_III	CO_III_1
+CV_18	CL_17	Bernard	Berenson	SA_II
+CV_19	CL_18	Alfonso	Bialetti	SA_I
+CV_20	CL_19	Oscar	Bondy	BA_III	BA_III_1
+CV_21	CL_20	Enrico	Caruso	CA_I
+CV_22	CL_21	Paul	Chalfin	SA_II
+CV_23	CL_22	Achillito	Chiesa	AL	AL_1
+CV_24	CL_23	Vittorio	Cini	SA_I
+CV_25	CL_24	Henry	Clay Frick	VO_I	VO_I_1
+CV_26	CL_25	Galeazzo	Cora	BR_II	BR_II_1
+CV_27	CL_26	Galeazzo	Cora	GU-BR
+CV_28	CL_27	Angelo	Costa	BO	BO_1
+CV_29	CL_28	John	Davison Rockefeller	CA_I
+CV_30	CL_29	Edmond	De Rothschild	CA_I
+CV_31	CL_30	Dan	Fellows Platt	PA_II	PA_II_1
+CV_32	CL_31	Albert	Figdor	BA_III	BA_III_1
+CV_33	CL_32	Sigmund	Freud	BA_III	BA_III_1
+CV_34	CL_33	Jean Paul	Getty	BA_III	BA_III_1
+CV_35	CL_34	Karl	Graf Lanckoro?ski	BA_III	BA_III_1
+CV_36	CL_35	Samuel	Henry Kress	CO_I	CO_I_1
+CV_37	CL_35	Samuel	Henry Kress	VO_II
+CV_38	CL_36	John	J. Johnson	PA_II	PA_II_1
+CV_39	CL_37	Carl	Jacobsen	JA
+CV_40	CL_38	Otto	Kahn	CA_I
+CV_41	CL_39	Otto	Lanz	GR
+CV_42	CL_40	Arthur	Lee (primo visconte Lee di Fareham)	GR
+CV_43	CL_41	Philip	Lehman	PA_II	PA_II_1
+CV_44	CL_42	Charles	Lock Eastlake	BA_IV	BA_IV_1
+CV_45	CL_43	Charles	Loeser	SA_II
+CV_46	CL_44	Charles	Mather Ffoulke	SA_II
+CV_47	CL_45	Otto	Mündler	BA_IV	BA_IV_1
+CV_48	CL_46	Richard	Norton	FE	FE_1
+CV_49	CL_47	Herbert	Percy Horne	CO_III	CO_III_1
+CV_50	CL_48	John	Pierpont Morgan	CA_I
+CV_51	CL_48	John	Pierpont Morgan	IM	IM_1
+CV_52	CL_48	John	Pierpont Morgan	VO_I	VO_I_1
+CV_53	CL_49	Leo	Planiscig	BA_III	BA_III_1
+CV_54	CL_50	Gian Giacomo	Poldi Pezzoli d'Albertone	BA_IV	BA_IV_1
+CV_55	CL_51	Károly	Pulszky	CO_III	CO_III_1
+CV_56	CL_52	Giacomo	Riva	SA_I
+CV_57	CL_53	Alberto	Saibene	SA_I
+CV_58	CL_54	Elizabeth	Stewart Gardner	CA_I
+CV_59	CL_54	Elizabeth	Stewart Gardner	SA_II
+CV_60	CL_54	Elizabeth	Stewart Gardner	VO_I	VO_I_1
+CV_61	CL_55	Adolphe	Stoclet	GR
+CV_62	CL_55	Adolphe	Stoclet	VO_II
+CV_63	CL_56	Gregor	Stroganoff	TA	TA_1
+CV_64	CL_57	Isabelle	Sursock Colonna	AC	AC_1
+CV_65	CL_58	Mario	Tozzi	SA_II
+CV_66	CL_58	Mario	Tozzi	SA_I
+CV_67	CL_59	Adolf	von Beckerath	FE	FE_1
+CV_68	CL_59	Adolf	von Beckerath	GR
+CV_69	CL_60	Gustav	von Benda	BA_III	BA_III_1
+CV_70	CL_61	Wilhelm	von Bode	BA_II	BA_II_1
+CV_71	CL_61	Wilhelm	von Bode	BA_III	BA_III_1
+CV_72	CL_61	Wilhelm	von Bode	BA_IV	BA_IV_1
+CV_73	CL_61	Wilhelm	von Bode	CI	CI_1
+CV_74	CL_61	Wilhelm	von Bode	CO_III	CO_III_1
+CV_75	CL_61	Wilhelm	von Bode	FE	FE_1
+CV_76	CL_62	Wilhelm	von Bode	GR
+CV_77	CL_62	Henry	Walters	CA_I
+CV_78	CL_62	Henry	Walters	PA_II	PA_II_1
+CV_79	CL_63	Joseph	Widener	SA_II
+CV_80	CL_64	Luigi	Zauli Nardi	GU-BR
+CV_81	CL_65	Aldo	Zerbone	PA_I	PA_I_1

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dettaglio Antiquari</title>
+    <link rel="stylesheet" href="../../css/styles-dettaglioAntiquario.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;700&display=swap" rel="stylesheet" />
+    <script type="text/javascript" src="../../script/dettaglioAntiquari.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/map.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/geodata/worldLow.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+    <script type="text/javascript" src="../../script/mappaDettaglio.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <a href="../../index.html">
+          <img id="logo.png" src="../../img/homepage/logo.png" alt="Fondazione Federico Zeri" />
+        </a>
+        <nav>
+          <ul>
+            <li>
+              <a href="../progetto.html">Progetto</a>
+              <a href="../antiquari.html">Antiquari</a>
+              <a href="../luoghi.html">Luoghi</a>
+              <a href="../eventi.html">Eventi</a>
+              <a href="../persone.html">Persone</a>
+              <a href="../bibliografia.html">Bibliografia</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="image-gallery">
+        <h2 class="gallery-title">Volpi</h2>
+        <div class="slider-container">
+          <div class="slider">
+            <div class="slide">
+              <img src="../../img/slider-antiquari/VO_I_img1.jpg" alt="Elia Volpi nel 1910" />
+              <div class="caption">Elia Volpi nel 1910</div>
+            </div>
+            <div class="slide">
+              <img src="../../img/slider-antiquari/VO_I_img2.jpg" alt="Elia Volpi, foto tratta dalla rivista &quot;L'Antiquario&quot; del 1916" />
+              <div class="caption">Elia Volpi, foto tratta dalla rivista "L'Antiquario" del 1916</div>
+            </div>
+            <div class="slide">
+              <img src="../../img/slider-antiquari/VO_I_img3.jpg" alt="Lorem Ipsum" />
+              <div class="caption">Lorem Ipsum</div>
+            </div>
+          </div>
+          <button &#10094; class="prev" onclick="prevSlide()"></button>
+          <button &#10095; class="next" onclick="nextSlide()"></button>
+        </div>
+      </section>
+    </main>
+    <section id="FZ" class="fade-in">
+      <h2>
+        <span class="highlight">CATALOGO</span>
+        <span class="regular-text">ZERI</span>
+      </h2>
+      <div class="content-wrapper">
+        <p>Consulta le banche dati della Fondazione<br>Federico Zeri e ricerca fotografie, documenti, <br>cataloghi d'asta, fondi e notizie <br>sull'antiquario corrente.</p>
+        <a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=E.+Volpi" class="btn">Clicca qui</a>
+      </div>
+    </section>
+    <section id="interactive-section">
+      <h2 class="section-title">
+        <span class="highlight">CARTA</span>
+        <span class="regular-text">D'IDENTITÀ</span>
+      </h2>
+      <div class="dual-content-wrapper">
+        <div class="tab-container">
+          <ul class="tab-list">
+            <li class="tab active" data_content="Bio">Biografia</li>
+            <li class="tab" data_content="Persone">Albero familiare</li>
+            <li class="tab" data_content="Localizzazioni">Mappa dei luoghi</li>
+            <li class="tab" data_content="Collaboratori">Collaboratori</li>
+            <li class="tab" data_content="Clienti">Clienti</li>
+            <li class="tab" data_content="Relazioni">Altri antiquari</li>
+            <li class="tab" data_content="Bibliografia">Bibliografia</li>
+          </ul>
+        </div>
+        <div class="content-card">
+          <div id="Bio" class="content active-content">
+            <h3>ELIA VOLPI (1858-1938)</h3>
+            <p></p>
+            <p>Elia Volpi (1858-1938) fu tra le figure più influenti del mercato antiquario italiano a cavallo tra Otto e Novecento. Pittore, restauratore e mercante d’arte, lasciò un’impronta indelebile nel panorama culturale dell’epoca. </p>
+            <p>Nato nel 1858 a Colle Plinio, Città di Castello, tra il 1872 e il 1876 frequentò l’Accademia di Belle Arti di Firenze sotto la guida del pittore forlivese Annibale Gatti (1828-1909) che aveva già incontrato nella sua città natale poco tempo prima. Dopo aver tentato una carriera come pittore, si specializzò nella copia di opere antiche e si interessò al restauro, lavorando su tele, dipinti su tavola e fondi oro. Come restauratore instaurò una collaborazione con Stefano Bardini (1836-1922), diventando direttore del laboratorio dell’antiquario fiorentino. Il sodalizio durò fino al 1893, anno in cui Volpi lasciò l’attività per iniziare a svolgere la professione di antiquario in proprio, tra Città di Castello e Firenze. Nella capitale toscana intorno al 1900 aprì un negozio di antiquariato in Piazza Goldoni, in cui commerciava opere del Rinascimento italiano. Nel giro di poco tempo, grazie ad una fitta rete di contatti e al favore di una clientela internazionale, il volume di affari aumentò fino a permettergli di acquistare, nel 1904, Palazzo Davanzati. Dopo il restauro, il palazzo fu arredato con opere d’arte antica e del Rinascimento.</p>
+            <p>La sede di Palazzo Davanzati fu aperta ufficialmente nel 1910 e con l’inaugurazione venne organizzata anche la prima asta delle collezioni ivi collocate. La vendita ebbe un grande successo e fu celebrata con toni trionfalistici sulla stampa nazionale. </p>
+            <p>Il favore del quale Volpi godeva presso clienti e collezionisti americani, tra i quali Henry Clay Frick, Isabella Stewart Gardner e John Pierpont Morgan, spinse l’antiquario a organizzare vendite anche oltreoceano. Una prima asta si tenne presso le sale dell’American Art Galleries di New York nel 1916, subito seguita da una seconda, nel 1917.  </p>
+            <p>Altre vendite si susseguirono all’inizio degli anni Venti ma il loro esito fu condizionato dalla crisi che iniziava a profilarsi sul mercato antiquario. Nel 1923 Volpi chiuse la Galleria di Palazzo Davanzati e si ritirò dagli affari, vendendo tutti gli oggetti raccolti. Nel 1927, l’antiquario cedette anche l’edificio, storica sede della sua attività, a Leopoldo Benguiat, già all’epoca proprietario dell’intera collezione Volpi e affittuario del Palazzo. Nel 1927 Volpi organizzò un’ultima vendita presso le sale newyorkesi dell’American Art Association, che si rivelò però un fallimento commerciale. Da allora si interessò al riordino e al restauro delle opere della Pinacoteca di Città di Castello, a lui affidata. </p>
+            <p>Nella città natale Elia Volpi morì il 26 novembre del 1938. </p>
+            <p>Il Palazzo Davanzati, dopo essere stato la sede della Spanish Art Gallery fu acquistato dallo stato italiano nel 1951 e fu riaperto al pubblico come museo nel 1956.</p>
+            <p></p>
+          </div>
+          <div id="Persone" class="content">
+            <h3>L'entità Volpi è così composta:</h3>
+            <div id="albero-genealogico">
+              <p>nome1 - nome2 - nome3</p>
+            </div>
+          </div>
+          <div id="Localizzazioni" class="content">
+            <h3>Geolocalizzazione dell'attività antiquariale:</h3>
+            <section id="map">
+              <div id="chartdiv"></div>
+            </section>
+          </div>
+          <div id="Collaboratori" class="content">
+            <h3>Hanno collaborato con l'entità Volpi:</h3>
+            <ul>
+              <li>Alinari (fotografo)</li>
+              <li>Bernard Berenson (storico dell'arte)</li>
+              <li>Brogi Brogi (fotografo)</li>
+            </ul>
+          </div>
+          <div id="Clienti" class="content">
+            <h3>I principali clienti dell'entità Volpi sono stati:</h3>
+            <ul>
+              <li>Elizabeth Stewart Gardner </li>
+              <li>Henry Clay Frick </li>
+              <li>John Pierpont Morgan </li>
+            </ul>
+          </div>
+          <div id="Relazioni" class="content">
+            <h3>L'entità Volpi, durante la sua attività, ha avuto relazioni con:</h3>
+            <ul>
+              <li>
+                <a href="dettaglio_BA_II.html">Bardini</a>
+              </li>
+            </ul>
+          </div>
+          <div id="Bibliografia" class="content">
+            <h3>Bibliografia essenziale:</h3>
+            <ul>
+              <li><i>Catalogue de la vente des objets d’art ancien composant les collections Elie Volpi, catalogo della vendita all'asta Jandolo & Tavazzi (Roma 25 aprile-3 maggio 1910).</i>, Roma 1910.</li>
+              <li><i>Vendita Volpi.</i>, In «L'Antiquario», II, 9-10, 1910, pp. 57-61</li>
+              <li><i>Al Palazzo Davanzati.</i>, In «L'Antiquario», III, 1-2, 1910, pp. 1-2</li>
+              <li>Bargellini, S. (1981), <i>Antiquari di ieri a Firenze.</i>, Firenze, Bonechi.</li>
+              <li>Bellini, L., De Chirico, G. (1947), <i>Nel mondo degli antiquari.</i>, Firenze, Arnaud.</li>
+              <li>Ferrazza, R. (1993), <i>Palazzo Davanzati e le collezioni di Elia Volpi.</i>, Firenze Centro Di.</li>
+              <li>Ferrazza, R. (2011), <i>Elia Volpi e il Museo della Casa Fiorentina Antica di Palazzo Davanzati.</i>, In Mannini, pp. 138-147</li>
+              <li>L'Antiquario. (1916), <i>Elia Volpi in America.</i>, In «L'Antiquario», VIII, 3, pp. 17-18</li>
+              <li>Teodori, B., Celani, J. (2017), <i>1916-1956-2016 : dall'asta al museo : Elia Volpi e Palazzo Davanzati nel collezionismo pubblico e privato del Novecento.</i>, Firenze, Polistampa.</li>
+              <li>Tolosani, D. (1910), <i>Il Palazzo Davanzati.</i>, In «L'Antiquario», II, 9-10, pp. 66-72</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <p>Licenza dati e immagini:</p>
+          <img id="license.png" src="../../img/homepage/license.png" alt="License" />
+        </div>
+        <div class="footer-right">
+          <p>
+            <a href="#">Crediti</a>
+          </p>
+          <p>
+            <a href="#">Documentazione</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dettaglio Antiquari</title>
+    <link rel="stylesheet" href="../../css/styles-dettaglioAntiquario.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;700&display=swap" rel="stylesheet" />
+    <script type="text/javascript" src="../../script/dettaglioAntiquari.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/map.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/geodata/worldLow.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+    <script type="text/javascript" src="../../script/mappaDettaglio.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <a href="../../index.html">
+          <img id="logo.png" src="../../img/homepage/logo.png" alt="Fondazione Federico Zeri" />
+        </a>
+        <nav>
+          <ul>
+            <li>
+              <a href="../progetto.html">Progetto</a>
+              <a href="../antiquari.html">Antiquari</a>
+              <a href="../luoghi.html">Luoghi</a>
+              <a href="../eventi.html">Eventi</a>
+              <a href="../persone.html">Persone</a>
+              <a href="../bibliografia.html">Bibliografia</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="image-gallery">
+        <h2 class="gallery-title">Barsanti</h2>
+        <div class="slider-container">
+          <div class="slider">
+            <div class="slide">
+              <img src="../../img/slider-antiquari/BA_III_img1.jpg" alt="Alfredo Barsanti. Foto tratta dalla rivista &quot;L'Antiquario&quot; del 1924" />
+              <div class="caption">Alfredo Barsanti. Foto tratta dalla rivista "L'Antiquario" del 1924</div>
+            </div>
+            <div class="slide">
+              <img src="../../img/slider-antiquari/BA_III_img2.jpg" alt="Bottega di Alfredo Barsanti. Via Sistina, 1906-1906" />
+              <div class="caption">Bottega di Alfredo Barsanti. Via Sistina, 1906-1906</div>
+            </div>
+          </div>
+          <button &#10094; class="prev" onclick="prevSlide()"></button>
+          <button &#10095; class="next" onclick="nextSlide()"></button>
+        </div>
+      </section>
+    </main>
+    <section id="FZ" class="fade-in">
+      <h2>
+        <span class="highlight">CATALOGO</span>
+        <span class="regular-text">ZERI</span>
+      </h2>
+      <div class="content-wrapper">
+        <p>Consulta le banche dati della Fondazione<br>Federico Zeri e ricerca fotografie, documenti, <br>cataloghi d'asta, fondi e notizie <br>sull'antiquario corrente.</p>
+        <a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=A.+BARSANTI" class="btn">Clicca qui</a>
+      </div>
+    </section>
+    <section id="interactive-section">
+      <h2 class="section-title">
+        <span class="highlight">CARTA</span>
+        <span class="regular-text">D'IDENTITÀ</span>
+      </h2>
+      <div class="dual-content-wrapper">
+        <div class="tab-container">
+          <ul class="tab-list">
+            <li class="tab active" data_content="Bio">Biografia</li>
+            <li class="tab" data_content="Persone">Albero familiare</li>
+            <li class="tab" data_content="Localizzazioni">Mappa dei luoghi</li>
+            <li class="tab" data_content="Collaboratori">Collaboratori</li>
+            <li class="tab" data_content="Clienti">Clienti</li>
+            <li class="tab" data_content="Relazioni">Altri antiquari</li>
+            <li class="tab" data_content="Bibliografia">Bibliografia</li>
+          </ul>
+        </div>
+        <div class="content-card">
+          <div id="Bio" class="content active-content">
+            <h3>Alfredo Barsanti (1877-1946)</h3>
+            <p></p>
+            <p>Alfredo Barsanti (1877-1946), ricordato da Augusto Jandolo e Luigi Bellini nelle loro memorie, iniziò la sua carriera come apprendista del pittore e antiquario romano Attilio Simonetti (1843-1925). Dopo una prima esperienza nel settore dell’antiquariato con il figlio di Attilio, Aldo Simonetti, nella conduzione di una filiale situata in Piazza Barberini, nel 1897 entrò in società con il mercante Eliseo Borghi, che aveva una galleria in via Sistina e si occupava solamente del commerciò di antichità.</p>
+            <p></p>
+            <p>Nel 1905 viene attestato come proprietario di una galleria in proprio con sede a “Casa Buti”, in Via Sistina 48, un edificio in cui avevano abitato Piranesi, Canova e Thorwaldsen. L’attività fu poi spostata, nel corso del tempo, al civico 131 e infine al 137.  L’insegna del negozio promuoveva la vendita di oggetti d’antichità, mobili, dipinti, sculture in marmo e bronzo. </p>
+            <p></p>
+            <p>Barsanti ottenne ampio riconoscimento da parte di collezionisti e colleghi e fu considerato un mercante esperto e un colto conoscitore. Pur privo di una solida istruzione aveva infatti un aveva un ottimo occhio che gli permetteva di distinguere immediatamente oggetti autentici da falsi. Presso di lui si trovavano oggetti importanti che andavano dall’antichità al Settecento e possedeva pezzi importanti soprattutto del XV secolo. Tra i suoi clienti figurano i direttori del museo di Vienna Leo Planiscig e di Berlino Wilhelm von Bode, il re svedese Gustav V, i collezionisti Sigmund Freud, Albert Figdor, Gustav von Benda, Oscar Bondy, Johann II del Liechtenstein, Karl Graf Lanckoroński, e il giovane J. Paul Getty. </p>
+            <p></p>
+            <p>Durante la sua attività raccolse una preziosa collezione di bronzetti rinascimentali che fu studiata e pubblicata da Ludwig Pollak nel 1922 in un ricco volume con una tiratura limitata di 150 esemplari e presentazione di Wilhelm von Bode. Celebrata anche sulle pagine della rivista «L’Antiquario» da Demetrio Tolosani, che in più d’una occasione parlò dell’attività di Alfredo Barsanti, la collezione approdò nelle sale del Museo di Palazzo Venezia, dov’è tuttora custodita. </p>
+            <p></p>
+          </div>
+          <div id="Persone" class="content">
+            <h3>L'entità Barsanti è così composta:</h3>
+            <div id="albero-genealogico">
+              <p>nome1 - nome2 - nome3</p>
+            </div>
+          </div>
+          <div id="Localizzazioni" class="content">
+            <h3>Geolocalizzazione dell'attività antiquariale:</h3>
+            <section id="map">
+              <div id="chartdiv"></div>
+            </section>
+          </div>
+          <div id="Collaboratori" class="content">
+            <h3>Hanno collaborato con l'entità Barsanti:</h3>
+            <ul>
+              <li>Cesare Faraglia (fotografo)</li>
+              <li>Ludwig Pollak (storico dell'arte)</li>
+              <li>Wilhem Von Bode (storico dell'arte)</li>
+            </ul>
+          </div>
+          <div id="Clienti" class="content">
+            <h3>I principali clienti dell'entità Barsanti sono stati:</h3>
+            <ul>
+              <li>Albert Figdor </li>
+              <li>Gustav von Benda </li>
+              <li>Gustavo V re di Svezia  </li>
+              <li>Jean Paul Getty </li>
+              <li>Johann II del Liechtenstein*  </li>
+              <li>Karl Graf Lanckoro?ski </li>
+              <li>Leo Planiscig </li>
+              <li>Oscar Bondy </li>
+              <li>Sigmund Freud </li>
+              <li>Wilhelm von Bode </li>
+            </ul>
+          </div>
+          <div id="Relazioni" class="content">
+            <h3>L'entità Barsanti, durante la sua attività, ha avuto relazioni con:</h3>
+            <ul>
+              <li>
+                <a href="dettaglio_SI.html">Simonetti</a>
+              </li>
+            </ul>
+          </div>
+          <div id="Bibliografia" class="content">
+            <h3>Bibliografia essenziale:</h3>
+            <ul>
+              <li>Barsanti, A., Pollak, L. (1922), <i>Raccolta Alfredo Barsanti : bronzi italiani (Trecento - Settecento).</i>, Roma, Istituto italiano d’arti grafiche.</li>
+              <li>Bellini, L., De Chirico, G. (1947), <i>Nel mondo degli antiquari.</i>, Firenze, Arnaud.</li>
+              <li>L'Etrusco. (1923), <i>I bronzi di Barsanti.</i>, In «L'Antiquario», X, 1-2, p. 8</li>
+              <li>Napoleone, V. (2020), <i>Between Florence and Berlin: the international art market in post-unification Rome.</i>, In Catterson, pp. 181-208</li>
+              <li>Pollak, L., Merkel Guldan, M. (1994), <i>Römische Memoiren : Künstler, Kunstliebhaber und Gelehrte, 1893-1943.</i>, Roma, L'Erma di Bretschneider.</li>
+              <li>Tolosani, D. (1913), <i>I colleghi d'Italia: Romani.</i>, In «L'Antiquario», VI, 1, pp. 1-4</li>
+              <li>Turco, V. (1924), <i>Barsanti e i suoi bronzi.</i>, In «L'Antiquario», XI, 2, pp. 37-44</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <p>Licenza dati e immagini:</p>
+          <img id="license.png" src="../../img/homepage/license.png" alt="License" />
+        </div>
+        <div class="footer-right">
+          <p>
+            <a href="#">Crediti</a>
+          </p>
+          <p>
+            <a href="#">Documentazione</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

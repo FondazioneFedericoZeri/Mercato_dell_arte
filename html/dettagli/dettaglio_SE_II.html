@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dettaglio Antiquari</title>
+    <link rel="stylesheet" href="../../css/styles-dettaglioAntiquario.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;700&display=swap" rel="stylesheet" />
+    <script type="text/javascript" src="../../script/dettaglioAntiquari.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/map.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/geodata/worldLow.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+    <script type="text/javascript" src="../../script/mappaDettaglio.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <a href="../../index.html">
+          <img id="logo.png" src="../../img/homepage/logo.png" alt="Fondazione Federico Zeri" />
+        </a>
+        <nav>
+          <ul>
+            <li>
+              <a href="../progetto.html">Progetto</a>
+              <a href="../antiquari.html">Antiquari</a>
+              <a href="../luoghi.html">Luoghi</a>
+              <a href="../eventi.html">Eventi</a>
+              <a href="../persone.html">Persone</a>
+              <a href="../bibliografia.html">Bibliografia</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="image-gallery">
+        <h2 class="gallery-title">Sestieri</h2>
+        <div class="slider-container">
+          <div class="slider">
+            <div class="slide">
+              <img src="../../img/slider-antiquari/SE_II_img1.jpg" alt="Ritratto di Pellegrino Sestieri, olio su tela. Collezione Sestieri" />
+              <div class="caption">Ritratto di Pellegrino Sestieri, olio su tela. Collezione Sestieri</div>
+            </div>
+            <div class="slide">
+              <img src="../../img/slider-antiquari/SE_II_img2.jpg" alt="Guido Guidi davanti al negozio Sestieri, Via Margutta 53" />
+              <div class="caption">Guido Guidi davanti al negozio Sestieri, Via Margutta 53</div>
+            </div>
+            <div class="slide">
+              <img src="../../img/slider-antiquari/SE_II_img3.jpg" alt="Carlo Sestieri" />
+              <div class="caption">Carlo Sestieri</div>
+            </div>
+          </div>
+          <button &#10094; class="prev" onclick="prevSlide()"></button>
+          <button &#10095; class="next" onclick="nextSlide()"></button>
+        </div>
+      </section>
+    </main>
+    <section id="FZ" class="fade-in">
+      <h2>
+        <span class="highlight">CATALOGO</span>
+        <span class="regular-text">ZERI</span>
+      </h2>
+      <div class="content-wrapper">
+        <p>Consulta le banche dati della Fondazione<br>Federico Zeri e ricerca fotografie, documenti, <br>cataloghi d'asta, fondi e notizie <br>sull'antiquario corrente.</p>
+        <a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=sestieri" class="btn">Clicca qui</a>
+      </div>
+    </section>
+    <section id="interactive-section">
+      <h2 class="section-title">
+        <span class="highlight">CARTA</span>
+        <span class="regular-text">D'IDENTITÀ</span>
+      </h2>
+      <div class="dual-content-wrapper">
+        <div class="tab-container">
+          <ul class="tab-list">
+            <li class="tab active" data_content="Bio">Biografia</li>
+            <li class="tab" data_content="Persone">Albero familiare</li>
+            <li class="tab" data_content="Localizzazioni">Mappa dei luoghi</li>
+            <li class="tab" data_content="Collaboratori">Collaboratori</li>
+            <li class="tab" data_content="Relazioni">Altri antiquari</li>
+            <li class="tab" data_content="Bibliografia">Bibliografia</li>
+          </ul>
+        </div>
+        <div class="content-card">
+          <div id="Bio" class="content active-content">
+            <h3>SESTIERI </h3>
+            <p></p>
+            <p>L’attività della famiglia Sestieri nel mercato antiquario iniziò con Pellegrino Sestieri, il quale aprì la “Galleria Sestieri” in via Fontanella Borghese 29-33, per poi trasferirsi in via Maria Cristina 5, nello studio del pittore Hermann Corrodi.</p>
+            <p>All’inizio della sua carriera Pellegrino trattava principalmente tessuti antichi e oggetti del Settecento, ma con il tempo iniziò a commerciare antichità, dipinti e sculture italiane.</p>
+            <p>I suoi figli, Ercole, Emanuele (1887-1953) e Guido (1890-1954) - che commerciava in reperti classici con un proprio negozio in via Margutta 53 fino al 1939 - furono tutti antiquari legati alla “Galleria Sestieri”, mentre Ettore, noto studioso e assistente di Adolfo Venturi all’università, fu attivo e apprezzato critico d’arte. </p>
+            <p>Sulla scia del grande successo che aveva a quel tempo l’arte italiana negli Stati Uniti, Guido ed Emanuele Sestieri aprirono insieme una succursale a New York nel corso degli anni Venti, che rimase aperta fino alla crisi del 1929.</p>
+            <p>Nel 1932 la galleria situata in via Maria Cristina venne chiusa congiuntamente dai diversi membri della famiglia, ma prima della promulgazione delle leggi razziali, che costrinse i Sestieri alla sospensione dell’attività, il negozio venne riaperto in via Sistina 94 e gestito da Emanuele. </p>
+            <p>Infine, nel 1944, poco dopo l’arrivo degli alleati a Roma, la ditta si trasferì in piazza di Spagna 81, in uno spazio che ospitava ampi locali espositivi e un’importante biblioteca, frequentata da colleghi, storici dell’arte e amici. All’ultimo piano dell’edificio vi era, inoltre, un appartamento che allocava lo studio dei restauratori, sotto la guida di Alvaro Esposti.</p>
+            <p>Nell’attività di Emanuele vennero presto coinvolti i figli Carlo (1922-1998), esperto di dipinti antichi, e Marcello (1920-1995), specializzato in arti decorative, porcellana e argenti, un interesse nato grazie all’amicizia con Pietro Accorsi (1891-1982), noto antiquario torinese.  </p>
+            <p>Molti furono gli storici dell’arte che frequentavano la Galleria Sestieri e ai quali gli antiquari facevano riferimento; tra questi figurano Federico Zeri, Giuliano Briganti, Maurizio Calvesi, Alvar Gonzáles-Palacios, Bruno Molajoli, Raffaello Causa, Italo Faldi e Ferdinando Bologna.</p>
+            <p>Federico Zeri iniziò a frequentare la Galleria Sestieri quando questa era gestita ancora da Emanuele. Il rapporto si consolidò soprattutto grazie all’amicizia che il conoscitore romano instaurò con Carlo. I due compirono insieme numerosi viaggi in Inghilterra, dove i Sestieri compravano dipinti provenienti dall’Italia da immettere nuovamente sul mercato italiano.</p>
+            <p></p>
+          </div>
+          <div id="Persone" class="content">
+            <h3>L'entità Sestieri è così composta:</h3>
+            <div id="albero-genealogico">
+              <p>nome1 - nome2 - nome3</p>
+            </div>
+          </div>
+          <div id="Localizzazioni" class="content">
+            <h3>Geolocalizzazione dell'attività antiquariale:</h3>
+            <section id="map">
+              <div id="chartdiv"></div>
+            </section>
+          </div>
+          <div id="Collaboratori" class="content">
+            <h3>Hanno collaborato con l'entità Sestieri:</h3>
+            <ul>
+              <li>Alvar Gonzales Palacios (storico dell'arte)</li>
+            </ul>
+          </div>
+          <div id="Relazioni" class="content">
+            <h3>L'entità Sestieri, durante la sua attività, ha avuto relazioni con:</h3>
+            <ul>
+              <li>
+                <a href="dettaglio_AC.html">Accorsi</a>
+              </li>
+              <li>
+                <a href="dettaglio_AP.html">Apolloni</a>
+              </li>
+            </ul>
+          </div>
+          <div id="Bibliografia" class="content">
+            <h3>Bibliografia essenziale:</h3>
+            <ul>
+              <li>06/06/2023, <i>Intervista Emanuela Sestieri.</i>, Roma</li>
+              <li>23/10/2023, <i>Intervista a Davide Sestieri.</i>, Roma</li>
+              <li>Martini Stelio, M. (1966), <i>Antiquari a Roma.</i>, In «Capitolivm», XLI, pp. 224-235</li>
+              <li>Pollak, L., Merkel Guldan, M. (1994), <i>Römische Memoiren : Künstler, Kunstliebhaber und Gelehrte, 1893-1943.</i>, Roma, L'Erma di Bretschneider.</li>
+              <li>Riccio, B. (Ed.) (1996), <i>Lettere sull’antiquariato?: di Mario Praz e Luigi Magnani 1952-1981.</i>, Torino, U. Allemandi., p. 116</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <p>Licenza dati e immagini:</p>
+          <img id="license.png" src="../../img/homepage/license.png" alt="License" />
+        </div>
+        <div class="footer-right">
+          <p>
+            <a href="#">Crediti</a>
+          </p>
+          <p>
+            <a href="#">Documentazione</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
