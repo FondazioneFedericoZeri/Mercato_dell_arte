@@ -1,0 +1,614 @@
+{
+    "CV_1": {
+        "ID": "CV_1",
+        "ID_cliente": "CL_1",
+        "Nome": "Duca D’Aosta (Emanuele Filiberto di Savoia??)",
+        "Cognome": "",
+        "ID_entità": "CA_I"
+    },
+    "CV_2": {
+        "ID": "CV_2",
+        "ID_cliente": "CL_2",
+        "Nome": "Giorgio V d’Inghilterra",
+        "Cognome": "",
+        "ID_entità": "CA_I"
+    },
+    "CV_3": {
+        "ID": "CV_3",
+        "ID_cliente": "CL_3",
+        "Nome": "Gustavo V re di Svezia",
+        "Cognome": "",
+        "ID_entità": "BA_III",
+        "ID_persone": "BA_III_1"
+    },
+    "CV_4": {
+        "ID": "CV_4",
+        "ID_cliente": "CL_4",
+        "Nome": "Johann II del Liechtenstein*",
+        "Cognome": "",
+        "ID_entità": "BA_III",
+        "ID_persone": "BA_III_1"
+    },
+    "CV_5": {
+        "ID": "CV_5",
+        "ID_cliente": "CL_5",
+        "Nome": "Madame André",
+        "Cognome": "",
+        "ID_entità": "CA_I"
+    },
+    "CV_6": {
+        "ID": "CV_6",
+        "ID_cliente": "CL_6",
+        "Nome": "Principe del Liechtenstein*",
+        "Cognome": "",
+        "ID_entità": "FE",
+        "ID_persone": "FE_1"
+    },
+    "CV_7": {
+        "ID": "CV_7",
+        "ID_cliente": "CL_7",
+        "Nome": "Ugolino della Gherardesca",
+        "Cognome": "",
+        "ID_entità": "GU-BR"
+    },
+    "CV_8": {
+        "ID": "CV_8",
+        "ID_cliente": "CL_8",
+        "Nome": "Umberto II di Savoia",
+        "Cognome": "",
+        "ID_entità": "AC",
+        "ID_persone": "AC_1"
+    },
+    "CV_9": {
+        "ID": "CV_9",
+        "ID_cliente": "CL_9",
+        "Nome": "Vanderbilt",
+        "Cognome": "",
+        "ID_entità": "CA_I"
+    },
+    "CV_10": {
+        "ID": "CV_10",
+        "ID_cliente": "CL_10",
+        "Nome": "Vittorio Emanuele III",
+        "Cognome": "",
+        "ID_entità": "CA_I"
+    },
+    "CV_11": {
+        "ID": "CV_11",
+        "ID_cliente": "CL_11",
+        "Nome": "Arthur",
+        "Cognome": "Acton",
+        "ID_entità": "ST",
+        "ID_persone": "ST_1"
+    },
+    "CV_12": {
+        "ID": "CV_12",
+        "ID_cliente": "CL_12",
+        "Nome": "Fausto",
+        "Cognome": "Bagatti Valsecchi",
+        "ID_entità": "BA_IV",
+        "ID_persone": "BA_IV_1"
+    },
+    "CV_13": {
+        "ID": "CV_13",
+        "ID_cliente": "CL_13",
+        "Nome": "Giuseppe",
+        "Cognome": "Bagatti Valsecchi",
+        "ID_entità": "BA_IV",
+        "ID_persone": "BA_IV_1"
+    },
+    "CV_14": {
+        "ID": "CV_14",
+        "ID_cliente": "CL_14",
+        "Nome": "Orazio",
+        "Cognome": "Bagnasco",
+        "ID_entità": "PA_I",
+        "ID_persone": "PA_I_1"
+    },
+    "CV_15": {
+        "ID": "CV_15",
+        "ID_cliente": "CL_15",
+        "Nome": "Stefano",
+        "Cognome": "Bardini",
+        "ID_entità": "CO_III",
+        "ID_persone": "CO_III_1"
+    },
+    "CV_16": {
+        "ID": "CV_16",
+        "ID_cliente": "CL_16",
+        "Nome": "Giovanni",
+        "Cognome": "Barraco",
+        "ID_entità": "JA"
+    },
+    "CV_17": {
+        "ID": "CV_17",
+        "ID_cliente": "CL_17",
+        "Nome": "Bernard",
+        "Cognome": "Berenson",
+        "ID_entità": "CO_III",
+        "ID_persone": "CO_III_1"
+    },
+    "CV_18": {
+        "ID": "CV_18",
+        "ID_cliente": "CL_17",
+        "Nome": "Bernard",
+        "Cognome": "Berenson",
+        "ID_entità": "SA_II"
+    },
+    "CV_19": {
+        "ID": "CV_19",
+        "ID_cliente": "CL_18",
+        "Nome": "Alfonso",
+        "Cognome": "Bialetti",
+        "ID_entità": "SA_I"
+    },
+    "CV_20": {
+        "ID": "CV_20",
+        "ID_cliente": "CL_19",
+        "Nome": "Oscar",
+        "Cognome": "Bondy",
+        "ID_entità": "BA_III",
+        "ID_persone": "BA_III_1"
+    },
+    "CV_21": {
+        "ID": "CV_21",
+        "ID_cliente": "CL_20",
+        "Nome": "Enrico",
+        "Cognome": "Caruso",
+        "ID_entità": "CA_I"
+    },
+    "CV_22": {
+        "ID": "CV_22",
+        "ID_cliente": "CL_21",
+        "Nome": "Paul",
+        "Cognome": "Chalfin",
+        "ID_entità": "SA_II"
+    },
+    "CV_23": {
+        "ID": "CV_23",
+        "ID_cliente": "CL_22",
+        "Nome": "Achillito",
+        "Cognome": "Chiesa",
+        "ID_entità": "AL",
+        "ID_persone": "AL_1"
+    },
+    "CV_24": {
+        "ID": "CV_24",
+        "ID_cliente": "CL_23",
+        "Nome": "Vittorio",
+        "Cognome": "Cini",
+        "ID_entità": "SA_I"
+    },
+    "CV_25": {
+        "ID": "CV_25",
+        "ID_cliente": "CL_24",
+        "Nome": "Henry",
+        "Cognome": "Clay Frick",
+        "ID_entità": "VO_I",
+        "ID_persone": "VO_I_1"
+    },
+    "CV_26": {
+        "ID": "CV_26",
+        "ID_cliente": "CL_25",
+        "Nome": "Galeazzo",
+        "Cognome": "Cora",
+        "ID_entità": "BR_II",
+        "ID_persone": "BR_II_1"
+    },
+    "CV_27": {
+        "ID": "CV_27",
+        "ID_cliente": "CL_26",
+        "Nome": "Galeazzo",
+        "Cognome": "Cora",
+        "ID_entità": "GU-BR"
+    },
+    "CV_28": {
+        "ID": "CV_28",
+        "ID_cliente": "CL_27",
+        "Nome": "Angelo",
+        "Cognome": "Costa",
+        "ID_entità": "BO",
+        "ID_persone": "BO_1"
+    },
+    "CV_29": {
+        "ID": "CV_29",
+        "ID_cliente": "CL_28",
+        "Nome": "John",
+        "Cognome": "Davison Rockefeller",
+        "ID_entità": "CA_I"
+    },
+    "CV_30": {
+        "ID": "CV_30",
+        "ID_cliente": "CL_29",
+        "Nome": "Edmond",
+        "Cognome": "De Rothschild",
+        "ID_entità": "CA_I"
+    },
+    "CV_31": {
+        "ID": "CV_31",
+        "ID_cliente": "CL_30",
+        "Nome": "Dan",
+        "Cognome": "Fellows Platt",
+        "ID_entità": "PA_II",
+        "ID_persone": "PA_II_1"
+    },
+    "CV_32": {
+        "ID": "CV_32",
+        "ID_cliente": "CL_31",
+        "Nome": "Albert",
+        "Cognome": "Figdor",
+        "ID_entità": "BA_III",
+        "ID_persone": "BA_III_1"
+    },
+    "CV_33": {
+        "ID": "CV_33",
+        "ID_cliente": "CL_32",
+        "Nome": "Sigmund",
+        "Cognome": "Freud",
+        "ID_entità": "BA_III",
+        "ID_persone": "BA_III_1"
+    },
+    "CV_34": {
+        "ID": "CV_34",
+        "ID_cliente": "CL_33",
+        "Nome": "Jean Paul",
+        "Cognome": "Getty",
+        "ID_entità": "BA_III",
+        "ID_persone": "BA_III_1"
+    },
+    "CV_35": {
+        "ID": "CV_35",
+        "ID_cliente": "CL_34",
+        "Nome": "Karl",
+        "Cognome": "Graf Lanckoro?ski",
+        "ID_entità": "BA_III",
+        "ID_persone": "BA_III_1"
+    },
+    "CV_36": {
+        "ID": "CV_36",
+        "ID_cliente": "CL_35",
+        "Nome": "Samuel",
+        "Cognome": "Henry Kress",
+        "ID_entità": "CO_I",
+        "ID_persone": "CO_I_1"
+    },
+    "CV_37": {
+        "ID": "CV_37",
+        "ID_cliente": "CL_35",
+        "Nome": "Samuel",
+        "Cognome": "Henry Kress",
+        "ID_entità": "VO_II"
+    },
+    "CV_38": {
+        "ID": "CV_38",
+        "ID_cliente": "CL_36",
+        "Nome": "John",
+        "Cognome": "J. Johnson",
+        "ID_entità": "PA_II",
+        "ID_persone": "PA_II_1"
+    },
+    "CV_39": {
+        "ID": "CV_39",
+        "ID_cliente": "CL_37",
+        "Nome": "Carl",
+        "Cognome": "Jacobsen",
+        "ID_entità": "JA"
+    },
+    "CV_40": {
+        "ID": "CV_40",
+        "ID_cliente": "CL_38",
+        "Nome": "Otto",
+        "Cognome": "Kahn",
+        "ID_entità": "CA_I"
+    },
+    "CV_41": {
+        "ID": "CV_41",
+        "ID_cliente": "CL_39",
+        "Nome": "Otto",
+        "Cognome": "Lanz",
+        "ID_entità": "GR"
+    },
+    "CV_42": {
+        "ID": "CV_42",
+        "ID_cliente": "CL_40",
+        "Nome": "Arthur",
+        "Cognome": "Lee (primo visconte Lee di Fareham)",
+        "ID_entità": "GR"
+    },
+    "CV_43": {
+        "ID": "CV_43",
+        "ID_cliente": "CL_41",
+        "Nome": "Philip",
+        "Cognome": "Lehman",
+        "ID_entità": "PA_II",
+        "ID_persone": "PA_II_1"
+    },
+    "CV_44": {
+        "ID": "CV_44",
+        "ID_cliente": "CL_42",
+        "Nome": "Charles",
+        "Cognome": "Lock Eastlake",
+        "ID_entità": "BA_IV",
+        "ID_persone": "BA_IV_1"
+    },
+    "CV_45": {
+        "ID": "CV_45",
+        "ID_cliente": "CL_43",
+        "Nome": "Charles",
+        "Cognome": "Loeser",
+        "ID_entità": "SA_II"
+    },
+    "CV_46": {
+        "ID": "CV_46",
+        "ID_cliente": "CL_44",
+        "Nome": "Charles",
+        "Cognome": "Mather Ffoulke",
+        "ID_entità": "SA_II"
+    },
+    "CV_47": {
+        "ID": "CV_47",
+        "ID_cliente": "CL_45",
+        "Nome": "Otto",
+        "Cognome": "Mündler",
+        "ID_entità": "BA_IV",
+        "ID_persone": "BA_IV_1"
+    },
+    "CV_48": {
+        "ID": "CV_48",
+        "ID_cliente": "CL_46",
+        "Nome": "Richard",
+        "Cognome": "Norton",
+        "ID_entità": "FE",
+        "ID_persone": "FE_1"
+    },
+    "CV_49": {
+        "ID": "CV_49",
+        "ID_cliente": "CL_47",
+        "Nome": "Herbert",
+        "Cognome": "Percy Horne",
+        "ID_entità": "CO_III",
+        "ID_persone": "CO_III_1"
+    },
+    "CV_50": {
+        "ID": "CV_50",
+        "ID_cliente": "CL_48",
+        "Nome": "John",
+        "Cognome": "Pierpont Morgan",
+        "ID_entità": "CA_I"
+    },
+    "CV_51": {
+        "ID": "CV_51",
+        "ID_cliente": "CL_48",
+        "Nome": "John",
+        "Cognome": "Pierpont Morgan",
+        "ID_entità": "IM",
+        "ID_persone": "IM_1"
+    },
+    "CV_52": {
+        "ID": "CV_52",
+        "ID_cliente": "CL_48",
+        "Nome": "John",
+        "Cognome": "Pierpont Morgan",
+        "ID_entità": "VO_I",
+        "ID_persone": "VO_I_1"
+    },
+    "CV_53": {
+        "ID": "CV_53",
+        "ID_cliente": "CL_49",
+        "Nome": "Leo",
+        "Cognome": "Planiscig",
+        "ID_entità": "BA_III",
+        "ID_persone": "BA_III_1"
+    },
+    "CV_54": {
+        "ID": "CV_54",
+        "ID_cliente": "CL_50",
+        "Nome": "Gian Giacomo",
+        "Cognome": "Poldi Pezzoli d'Albertone",
+        "ID_entità": "BA_IV",
+        "ID_persone": "BA_IV_1"
+    },
+    "CV_55": {
+        "ID": "CV_55",
+        "ID_cliente": "CL_51",
+        "Nome": "Károly",
+        "Cognome": "Pulszky",
+        "ID_entità": "CO_III",
+        "ID_persone": "CO_III_1"
+    },
+    "CV_56": {
+        "ID": "CV_56",
+        "ID_cliente": "CL_52",
+        "Nome": "Giacomo",
+        "Cognome": "Riva",
+        "ID_entità": "SA_I"
+    },
+    "CV_57": {
+        "ID": "CV_57",
+        "ID_cliente": "CL_53",
+        "Nome": "Alberto",
+        "Cognome": "Saibene",
+        "ID_entità": "SA_I"
+    },
+    "CV_58": {
+        "ID": "CV_58",
+        "ID_cliente": "CL_54",
+        "Nome": "Elizabeth",
+        "Cognome": "Stewart Gardner",
+        "ID_entità": "CA_I"
+    },
+    "CV_59": {
+        "ID": "CV_59",
+        "ID_cliente": "CL_54",
+        "Nome": "Elizabeth",
+        "Cognome": "Stewart Gardner",
+        "ID_entità": "SA_II"
+    },
+    "CV_60": {
+        "ID": "CV_60",
+        "ID_cliente": "CL_54",
+        "Nome": "Elizabeth",
+        "Cognome": "Stewart Gardner",
+        "ID_entità": "VO_I",
+        "ID_persone": "VO_I_1"
+    },
+    "CV_61": {
+        "ID": "CV_61",
+        "ID_cliente": "CL_55",
+        "Nome": "Adolphe",
+        "Cognome": "Stoclet",
+        "ID_entità": "GR"
+    },
+    "CV_62": {
+        "ID": "CV_62",
+        "ID_cliente": "CL_55",
+        "Nome": "Adolphe",
+        "Cognome": "Stoclet",
+        "ID_entità": "VO_II"
+    },
+    "CV_63": {
+        "ID": "CV_63",
+        "ID_cliente": "CL_56",
+        "Nome": "Gregor",
+        "Cognome": "Stroganoff",
+        "ID_entità": "TA",
+        "ID_persone": "TA_1"
+    },
+    "CV_64": {
+        "ID": "CV_64",
+        "ID_cliente": "CL_57",
+        "Nome": "Isabelle",
+        "Cognome": "Sursock Colonna",
+        "ID_entità": "AC",
+        "ID_persone": "AC_1"
+    },
+    "CV_65": {
+        "ID": "CV_65",
+        "ID_cliente": "CL_58",
+        "Nome": "Mario",
+        "Cognome": "Tozzi",
+        "ID_entità": "SA_II"
+    },
+    "CV_66": {
+        "ID": "CV_66",
+        "ID_cliente": "CL_58",
+        "Nome": "Mario",
+        "Cognome": "Tozzi",
+        "ID_entità": "SA_I"
+    },
+    "CV_67": {
+        "ID": "CV_67",
+        "ID_cliente": "CL_59",
+        "Nome": "Adolf",
+        "Cognome": "von Beckerath",
+        "ID_entità": "FE",
+        "ID_persone": "FE_1"
+    },
+    "CV_68": {
+        "ID": "CV_68",
+        "ID_cliente": "CL_59",
+        "Nome": "Adolf",
+        "Cognome": "von Beckerath",
+        "ID_entità": "GR"
+    },
+    "CV_69": {
+        "ID": "CV_69",
+        "ID_cliente": "CL_60",
+        "Nome": "Gustav",
+        "Cognome": "von Benda",
+        "ID_entità": "BA_III",
+        "ID_persone": "BA_III_1"
+    },
+    "CV_70": {
+        "ID": "CV_70",
+        "ID_cliente": "CL_61",
+        "Nome": "Wilhelm",
+        "Cognome": "von Bode",
+        "ID_entità": "BA_II",
+        "ID_persone": "BA_II_1"
+    },
+    "CV_71": {
+        "ID": "CV_71",
+        "ID_cliente": "CL_61",
+        "Nome": "Wilhelm",
+        "Cognome": "von Bode",
+        "ID_entità": "BA_III",
+        "ID_persone": "BA_III_1"
+    },
+    "CV_72": {
+        "ID": "CV_72",
+        "ID_cliente": "CL_61",
+        "Nome": "Wilhelm",
+        "Cognome": "von Bode",
+        "ID_entità": "BA_IV",
+        "ID_persone": "BA_IV_1"
+    },
+    "CV_73": {
+        "ID": "CV_73",
+        "ID_cliente": "CL_61",
+        "Nome": "Wilhelm",
+        "Cognome": "von Bode",
+        "ID_entità": "CI",
+        "ID_persone": "CI_1"
+    },
+    "CV_74": {
+        "ID": "CV_74",
+        "ID_cliente": "CL_61",
+        "Nome": "Wilhelm",
+        "Cognome": "von Bode",
+        "ID_entità": "CO_III",
+        "ID_persone": "CO_III_1"
+    },
+    "CV_75": {
+        "ID": "CV_75",
+        "ID_cliente": "CL_61",
+        "Nome": "Wilhelm",
+        "Cognome": "von Bode",
+        "ID_entità": "FE",
+        "ID_persone": "FE_1"
+    },
+    "CV_76": {
+        "ID": "CV_76",
+        "ID_cliente": "CL_62",
+        "Nome": "Wilhelm",
+        "Cognome": "von Bode",
+        "ID_entità": "GR"
+    },
+    "CV_77": {
+        "ID": "CV_77",
+        "ID_cliente": "CL_62",
+        "Nome": "Henry",
+        "Cognome": "Walters",
+        "ID_entità": "CA_I"
+    },
+    "CV_78": {
+        "ID": "CV_78",
+        "ID_cliente": "CL_62",
+        "Nome": "Henry",
+        "Cognome": "Walters",
+        "ID_entità": "PA_II",
+        "ID_persone": "PA_II_1"
+    },
+    "CV_79": {
+        "ID": "CV_79",
+        "ID_cliente": "CL_63",
+        "Nome": "Joseph",
+        "Cognome": "Widener",
+        "ID_entità": "SA_II"
+    },
+    "CV_80": {
+        "ID": "CV_80",
+        "ID_cliente": "CL_64",
+        "Nome": "Luigi",
+        "Cognome": "Zauli Nardi",
+        "ID_entità": "GU-BR"
+    },
+    "CV_81": {
+        "ID": "CV_81",
+        "ID_cliente": "CL_65",
+        "Nome": "Aldo",
+        "Cognome": "Zerbone",
+        "ID_entità": "PA_I",
+        "ID_persone": "PA_I_1"
+    }
+}

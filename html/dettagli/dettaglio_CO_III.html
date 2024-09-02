@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dettaglio Antiquari</title>
+    <link rel="stylesheet" href="../../css/styles-dettaglioAntiquario.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;700&display=swap" rel="stylesheet" />
+    <script type="text/javascript" src="../../script/dettaglioAntiquari.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/map.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/geodata/worldLow.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+    <script type="text/javascript" src="../../script/mappaDettaglio.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <a href="../../index.html">
+          <img id="logo.png" src="../../img/homepage/logo.png" alt="Fondazione Federico Zeri" />
+        </a>
+        <nav>
+          <ul>
+            <li>
+              <a href="../progetto.html">Progetto</a>
+              <a href="../antiquari.html">Antiquari</a>
+              <a href="../luoghi.html">Luoghi</a>
+              <a href="../eventi.html">Eventi</a>
+              <a href="../persone.html">Persone</a>
+              <a href="../bibliografia.html">Bibliografia</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="single-image-section">
+        <h2 class="single-image-title">Costantini</h2>
+        <div class="single-image-container">
+          <img src="../../img/slider-antiquari/CO_III_img1.jpg" alt="Emilio Costantini nel suo studio, da Cappellini 2022" />
+          <div class="caption overlay-caption">Emilio Costantini nel suo studio, da Cappellini 2022</div>
+        </div>
+      </section>
+    </main>
+    <section id="FZ" class="fade-in">
+      <h2>
+        <span class="highlight">CATALOGO</span>
+        <span class="regular-text">ZERI</span>
+      </h2>
+      <div class="content-wrapper">
+        <p>Consulta le banche dati della Fondazione<br>Federico Zeri e ricerca fotografie, documenti, <br>cataloghi d'asta, fondi e notizie <br>sull'antiquario corrente.</p>
+        <a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=E.+COSTANTINI" class="btn">Clicca qui</a>
+      </div>
+    </section>
+    <section id="interactive-section">
+      <h2 class="section-title">
+        <span class="highlight">CARTA</span>
+        <span class="regular-text">D'IDENTITÀ</span>
+      </h2>
+      <div class="dual-content-wrapper">
+        <div class="tab-container">
+          <ul class="tab-list">
+            <li class="tab active" data_content="Bio">Biografia</li>
+            <li class="tab" data_content="Persone">Albero familiare</li>
+            <li class="tab" data_content="Localizzazioni">Mappa dei luoghi</li>
+            <li class="tab" data_content="Clienti">Clienti</li>
+            <li class="tab" data_content="Relazioni">Altri antiquari</li>
+            <li class="tab" data_content="Bibliografia">Bibliografia</li>
+          </ul>
+        </div>
+        <div class="content-card">
+          <div id="Bio" class="content active-content">
+            <h3>Emilio Costantini (1842-1926)</h3>
+            <p></p>
+            <p>Emilio Costantini nacque a Genzano di Roma nel 1842. Formatosi come pittore e ottenuto il diploma all’Accademia nel 1874, veniva soprannominato dai contemporanei “il professore”, in quanto insegnava all’Istituto d’Arte di Firenze. Nel 1880 possedeva uno studio in Via del Podere 6, dove esponeva copie di dipinti antichi e acquerelli destinati al pubblico straniero. </p>
+            <p></p>
+            <p>Nonostante si tenda a limitare l’attività di mercante di Costantini agli anni tra il 1883 e il 1918, un documento conservato presso l’Ufficio di Esportazioni di Firenze permette di attestare come fosse coinvolto nel commercio di opere d’arte già nel 1876. La galleria dell’antiquario era ubicata in Corso Regina Elena, al civico 6. Luigi Bellini (1884-1957), noto mercante fiorentino, nei suoi scritti ricorda la galleria di Costantini come una realtà secondaria nel panorama antiquariale della città. Ciò contrasta con l’altissimo livello della sua clientela. </p>
+            <p></p>
+            <p>Nel corso degli anni, infatti egli vendette dipinti e sculture del Gotico e del Rinascimento italiano a Stefano Bardini, Herbert Percy Horne, Wilhelm von Bode, Bernard Berenson e Károly Pulszky. A quest’ultimo, direttore del dipartimento di antichità del Museo di Belle Arti di Budapest, fornì dal 1894 numerose opere, tanto da divenire uno dei maggiori fornitori dell’istituzione ungherese. </p>
+            <p>Nel 1900 è segnalata una sua galleria in Lungarno Guicciardini 7.</p>
+            <p></p>
+            <p>Nell’attività commerciale venne coinvolto anche il figlio, Davide Augusto Costantini (1875-?), nato dal matrimonio tra Emilio e Giuseppina Arntezn. Il ruolo di quest’ultimo nel promuovere gli affari del padre non è ad oggi chiaro. Il giovane si dovette spostare negli Stati Uniti nel corso degli anni Dieci, dove raggiunse una posizione di prestigio all’interno dell’ambasciata italiana di New York. </p>
+            <p></p>
+            <p>Dopo la morte della prima moglie, avvenuta nel 1918, si sposò in seconde nozze nel 1922 con Freida Frash Whiton, esponente dell’alta società locale e nel 1925 ricevette il titolo di conte da Vittorio Emanuele III. </p>
+            <p></p>
+          </div>
+          <div id="Persone" class="content">
+            <h3>L'entità Costantini è così composta:</h3>
+            <div id="albero-genealogico">
+              <p>nome1 - nome2 - nome3</p>
+            </div>
+          </div>
+          <div id="Localizzazioni" class="content">
+            <h3>Geolocalizzazione dell'attività antiquariale:</h3>
+            <section id="map">
+              <div id="chartdiv"></div>
+            </section>
+          </div>
+          <div id="Clienti" class="content">
+            <h3>I principali clienti dell'entità Costantini sono stati:</h3>
+            <ul>
+              <li>Bernard Berenson </li>
+              <li>Herbert Percy Horne </li>
+              <li>Károly Pulszky </li>
+              <li>Stefano Bardini </li>
+              <li>Wilhelm von Bode </li>
+            </ul>
+          </div>
+          <div id="Relazioni" class="content">
+            <h3>L'entità Costantini, durante la sua attività, ha avuto relazioni con:</h3>
+            <ul>
+              <li>
+                <a href="dettaglio_AC.html">Accorsi</a>
+              </li>
+              <li>
+                <a href="dettaglio_GR.html">Grassi</a>
+              </li>
+              <li>
+                <a href="dettaglio_CI.html">Ciampolini</a>
+              </li>
+            </ul>
+          </div>
+          <div id="Bibliografia" class="content">
+            <h3>Bibliografia essenziale:</h3>
+            <ul>
+              <li>Bellini, L., De Chirico, G. (1947), <i>Nel mondo degli antiquari.</i>, Firenze, Arnaud.</li>
+              <li>Cappellini, P. (2019), <i>Trading Old Masters in Florence 1890-1914 : heritage protection and the Florentine art trade in post-unification Italy.</i>, In «Journal of the history of collections»,  vol. 31, 2, pp. 363-371</li>
+              <li>Cappellini, P. (2023), <i>Bardini and Beyond: Wilhelm Bode and the art dealers in Florence.</i>, In Smalcerz, pp. 125-148</li>
+              <li>Fehér, I. (2012), <i>Károly Pulszky and the Florentine acquisitions for the Szépmúvészeti Múzeum in Budapest between 1893 and 1895.</i>, In «Mitteilungen des Kunsthistorischen Institutes in Florenz», vol. 54 (20102012), 2, pp. 319-364</li>
+              <li>Giannini, C. (2011), <i>Attilio Steffanoni, restauratore e antiquario. Un diario inedito, in (2011) Francesco Malagusgi Valeri (1867- 1928). Tra storiografia artistica, museo e tutela, Atti del convegno (Milano-Bologna, 20-21 ottobre 2011), a cura di Sciolla, G.C., Rovetta, A.</i>, Milano, Segrate, pp. 205-216</li>
+              <li>Watrelot, M. (2020), <i>Wilhelm von Bode and Prince Johann II von Liechtenstein: the Private Correspondence 1882-1925.</i>, In Catterson, pp. 11-46</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <p>Licenza dati e immagini:</p>
+          <img id="license.png" src="../../img/homepage/license.png" alt="License" />
+        </div>
+        <div class="footer-right">
+          <p>
+            <a href="#">Crediti</a>
+          </p>
+          <p>
+            <a href="#">Documentazione</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

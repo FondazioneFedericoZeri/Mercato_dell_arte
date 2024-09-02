@@ -1,0 +1,380 @@
+/* Basic Reset */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Assicura che il corpo occupi almeno l'altezza della finestra */
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+main {
+    flex: 1; /* Fa sì che il main prenda tutto lo spazio disponibile */
+}
+
+/* header e menù */
+
+header {
+    background-color: #f8f8f8;
+    padding: 15px;
+    position: sticky; /* Rende il menu sticky */
+    top: 0; /* Posiziona il menu all'inizio della pagina */
+    z-index: 1000; /* Assicura che il menu si sovrapponga agli altri contenuti */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Aggiunge un'ombra per differenziarlo dal contenuto */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Aggiunge l'ombreggiatura */
+    border-radius: 8px; /* Opzionale: arrotonda gli angoli */
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    max-height: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin-right: 20px;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background-color: #5593C9;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Stile per il bottone "Torna su" */
+.btn-back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    display: none; /* Nasconde il bottone finché non si scorre la pagina */
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    z-index: 1000; /* Assicura che il bottone sia sopra gli altri elementi */
+}
+
+.btn-back-to-top:hover {
+    background-color: #5593C9; /* Cambia il colore di sfondo al passaggio del mouse */
+}
+
+.btn-back-to-top.show {
+    display: block; /* Mostra il bottone quando si scrolla giù */
+}
+
+
+/* Stile per la prima nuova sezione */
+
+/* Contenitore per il testo */
+#intro-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Allinea il contenuto verticalmente al centro */
+    padding: 20px;
+    margin-left: 120px; /* Margine a sinistra per il testo */
+    min-height: 300px;
+
+}
+
+#intro-section h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+#intro-section .highlight {
+    color: #5593C9; /* Colore blu per "RICERCA" */
+    font-weight: 700; /* Grassetto solo per la parte "RICERCA" */
+}
+
+#intro-section h2 span:not(.highlight) {
+    color: #333; /* Colore nero per il resto del titolo */
+    font-weight: 400; /* Regular per "gli antiquari" */
+}
+
+
+#intro-section p {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.text-container {
+    flex: 1;
+}
+
+/* Stile per il bottone nella sezione #intro-section */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff; /* Testo bianco */
+    background-color: #333; /* Sfondo grigio scuro */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.btn:hover {
+    background-color: #5593C9; /* Sfondo blu al mouse over */
+    color: #fff; /* Mantiene il testo bianco */
+}
+
+/* Stile base per la dissolvenza */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px); /* Sposta leggermente il contenuto verso il basso */
+    transition: opacity 1s ease-out, transform 1s ease-out; /* Transizione per opacità e posizione */
+}
+
+/* Quando l'elemento è visibile, applica la dissolvenza */
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0); /* Riporta il contenuto alla posizione originale */
+}
+
+
+/*stile per l'svg*/
+
+.svg-container {
+    flex-shrink: 0; /* Impedisce all'SVG di ridursi */
+    max-width: 800px; /* Limita la larghezza massima dell'SVG */
+    margin-right: 260px;
+}
+
+.chemin {
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 2000;
+    -webkit-animation: dash 3s linear alternate 1 forwards;
+  }
+  
+  @-webkit-keyframes dash {
+    from {
+      stroke-dashoffset: 2000;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+
+/* Stile per la seconda sezione "Tutti gli antiquari" */
+#Titolo {
+    background-color: #f9f9f9; /* Colore di sfondo grigio chiaro */
+    /*box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /*Aggiunge un'ombra sottile */
+    padding: 20px; /* Aggiunge padding per il contenuto interno */
+    margin: 0 0; /* Spazio sopra e sotto la sezione */
+}
+
+#Titolo h2 {
+    font-size: 36px;
+    color: #333;
+    margin-left: 140px; /* Aggiunge un margine a sinistra */
+    margin-bottom: 5px;
+}
+
+#Titolo .highlight-bold {
+    color: #5593C9; /* Colore blu */
+    font-weight: 700; /* Grassetto */
+}
+
+#Titolo .regular-text {
+    color: #333; /* Colore nero */
+    font-weight: 400; /* Regular */
+}
+
+
+#Titolo p {
+    font-size: 18px;
+    margin-left: 140px; /* Aggiunge un margine a sinistra */
+    margin-top: 10px;
+}
+
+#Titolo .regular-text {
+    font-weight: 400; /* Regular */
+    color: #333;
+}
+
+#Titolo .bold-text {
+    font-weight: 700; /* Grassetto */
+    color: #333;
+}
+
+
+/* Stile per le card */
+
+#cards-section {
+    text-align: center;
+    background-color: #fff; /* Colore di sfondo leggero */
+    padding: 20px 20px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap; /* Permette alle card di andare a capo */
+    justify-content: space-between; /* Distribuisce uniformemente lo spazio tra le card */
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px; /* Spazio tra le card */
+}
+
+.letter {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-thickness: 4px; /* Spessore delle linee */
+    text-underline-offset: 8px;
+    margin: 0 auto 40px auto; /* Spazio sopra e sotto la lettera e centra il contenitore */
+    color: #333; /* Colore del testo */
+    display: block; /* Assicura che l'elemento si comporti come un blocco */
+    width: fit-content; /* Adatta la larghezza al contenuto */
+}
+
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap; /* Permette alle card di andare a capo */
+    justify-content: flex-start; /* Allinea le card all'inizio della riga */
+    gap: 20px; /* Spazio tra le card */
+    width: 100%; /* Assicura che il contenitore delle card riempia la riga */
+}
+
+.card-container .card {
+    /*width: calc(33.33% - 20px); / 3 card per riga, considerando lo spazio tra le card */
+    width: 380px;
+    height: 450px; /* Altezza fissa per tutte le card */
+    background-color: #f9f9f9;
+    border-radius: 2px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px; /* Spazio sotto ogni card */
+}
+
+.card-container .card img {
+    width: 100%;
+    height: 70%; /* Imposta l'altezza dell'immagine in base all'altezza della card */
+    object-fit: cover; /* L'immagine mantiene le sue proporzioni e si ritaglia se necessario */
+    object-position: center; /* L'immagine è centrata all'interno del contenitore */
+    display: block;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.card-container .card-text {
+    padding: 10px;
+    height: 30%; /* Imposta l'altezza del testo in base all'altezza della card */
+    overflow: hidden; /* Evita che il testo ecceda il contenitore */
+    text-decoration: none; /* Rimuove la sottolineatura */
+    color: #333;
+}
+
+
+.card-text h3 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #333;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.card-text p {
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #666;
+    text-align: left;
+    text-decoration: none;
+}
+
+.card:hover img {
+    transform: scale(1.05); /* Ingrandisce leggermente l'immagine al mouse over */
+    filter: brightness(0.8); /* Scurisce leggermente l'immagine per un effetto visivo migliore */
+}
+
+.card:hover {
+    background-color: #5593C9; /* Colore blu al mouse over */
+    color: #fff; /* Cambia il colore del testo al bianco per contrasto */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta l'ombra per dare un effetto di sollevamento */
+}
+
+.card-text h3, .card-text p {
+    transition: color 0.3s ease; /* Transizione per il cambiamento di colore del testo */
+}
+
+.card:hover .card-text h3,
+.card:hover .card-text p {
+    color: #fff; /* Cambia il colore del testo al bianco al mouse over */
+}
+
+
+/* footer */
+footer {
+    padding: 5px 40px;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-top: auto;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer img {
+    vertical-align: middle;
+    margin-left: 5px;
+    max-height: 30px;
+}
+
+.footer-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left {
+    text-align: left;
+}
+
+.footer-right {
+    text-align: right;
+}
+

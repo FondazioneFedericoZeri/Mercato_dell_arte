@@ -1,0 +1,126 @@
+ID	Nome Persona	ID_entità	ID_luoghi	Professione	Nascita	Morte	Nome attività
+BA_II_1	Stefano Bardini	BA_II	IT_55 IT_37	antiquario	1836	1922	Non noto
+AL_1	Luigi Albrighi	AL	IT_56	avvocato e antiquario	1896	1979	Non noto
+AN-EF_1	Emanuele Efrati	AN-EF	IT_103	antiquario			Galleria Efrati
+AN-EF_2	Luigia Efrati	AN-EF	IT_103	antiquaria			Galleria Efrati
+AN-EF_3	Giuseppe Antonacci	AN-EF	IT_103	antiquario			Galleria Antonacci-Efrati
+AN-EF_4	Paolo Antonacci	AN-EF	IT_103	antiquario			Galleria Antonacci-Efrati
+AN-EF_5	Francesca Antonacci	AN-EF	IT_103	antiquaria			Galleria Antonacci-Efrati
+AP_1	Wladimiro Apolloni	AP	IT_114	antiquario	1888	1948	W. Apolloni
+AP_2	Fabrizio Apolloni	AP	IT_114 IT_108	antiquario	1928	2006	W. Apolloni
+AP_3	Marco Fabio Apolloni	AP	IT_108 IT_117	antiquario		in vita	W. Apolloni
+BA_I_1	Rizieri Bacarelli	BA_I	IT_39 IT_67 IT_69	antiquario		1947	Bacarelli antichità
+BA_I_2	Benvenuto Bacarelli	BA_I	IT_58 IT_69 IT_74	antiquario	1923	2015	Bacarelli antichità
+BA_I_3	Riccardo Bacarelli	BA_I	IT_61	antiquario	1967		Bacarelli antichità
+BA_II_2	Emma Bardini	BA_II	IT_37	antiquaria	1883	1927	Non noto
+BA_II_3	Ugo Bardini	BA_II	IT_37	antiquario	1892	1965	Non noto
+CR_1	Severino Crosa	CR	IT_12 IT_14 IT_18	antiquario	1897	1979	Non noto
+BA_III_1	Alfredo Barsanti	BA_III	IT_126 IT_130 IT_131	antiquario	1877	1934	Casa Buti
+BA_IV_1	Giuseppe Baslini	BA_IV	IT_3	antiquario	1817	1887	Non noto
+DE_1	Achille De Clemente	DE	IT_78	pittore e antiquario	1874	1940	Non noto
+FE_1	Gioacchino Ferroni	FE	IT_122	scultore e antiquario	1854	1909	Non noto
+SA_IV_1	Giuseppe Sangiorgi	SA_IV	IT_123 IT_124	antiquario	1850	1928	"Hotel Des Ventes G. Sangiorgi	 Galleria Sangiorgi - Roma Palazzo Borghese	"
+SA_IV_2	Giorgio Sangiorgi	SA_IV	IT_123	antiquario	1886	1975	"Galleria Sangiorgi - Roma Palazzo Borghese	 Galleria dei bronzi e dei marmi, negozio di arte antica e moderna	"
+SA_IV_3	Sergio Sangiorgi	SA_IV	IT_123	antiquario	1925	2015	"Galleria Sangiorgi - Roma Palazzo Borghese	 Galleria dei bronzi e dei marmi, negozio di arte antica e moderna	"
+BE_II_1	Giuseppe Bellesi	BE_II	UK_1 UK_2 UK_4 UK_5 UK_6 UK_7 IT_81	musicista e antiquario	1873	1955	The Italian Art Gallery
+BO_1	Ferruccio Ildebrando Bossi	BO	IT_16	antiquario	1884	1970	Non noto
+GR_1	Luigi Grassi	GR	IT_73 IT_53	antiquario e restauroatore	1858	1937	Luigi Grassi & sons
+BR_II_1	Livio Bruschi	BR_II	IT_33 IT_60	antiquario	1906	1973	Antichità Bruschi
+BR_II_2		BR_II	IT_60	antiquaria			Antichità Bruschi
+BR_II_3	Anita Almehagen Bruschi	BR_II	IT_60	antiquaria			Antichità Bruschi
+JA_6	Augusto Jandolo	JA	IT_128 IT_116	antiquario	1873	1952	Non noto
+JA_2	Alessandro Jandolo	JA	IT_109 IT_105 IT_128	antiquario		1930	Non noto
+JA_3	Antonio Jandolo	JA	IT_109 IT_105 IT_128	antiquario		1912	Non noto
+CA_II_1	Vincenzo Capobianchi	CA_II	IT_99 IT_113 IT_125	pittore e antiquario	1836	1928	"Giacomini & C.	 Corvisieri &C.	"
+CI_1	Vincenzo Ciampolini	CI	IT_42 IT_79 IT_89 IT_90 IT_133	antiquario	1838	1930	Fabbrica di Mobili Artistici. Pia Casa di Lavoro
+CO_I_1	Alessandro Contini Bonacossi	CO_I	IT_87 IT_121 IT_132	antiquario	1878	1955	Non noto
+CO_II_1	Gustavo Corvisieri	CO_II	IT_113	antiquario		1935	Casa di vendite Corvisieri & C.
+CO_III_1	Emilio Costantini	CO_III	IT_32 IT_70_b IT_76_b	pittore e antiquario	1842	1926	Non noto
+CO_III_2	Davide Augusto Costantini	CO_III	IT_32 IT_76_b	antiquario	1875		Non noto
+JA_4	Ettore Jandolo	JA	IT_109 IT_105 IT_115	antiquario			Galleria d'Arte Ettore Jandolo
+JA_5	Ugo Jandolo	JA	IT_128 IT_111	antiquario			Non noto
+DI_1	Angelo Di Castro	DI	IT_98	antiquario			Non noto
+DI_2	Leone Di Castro	DI	IT_104	antiquario	1878	1950	Antichità A.L. Di Castro
+DI_3	Alberto Di Castro	DI	IT_104 IT_107	antiquario	1909	1978	Antichità A.L. Di Castro
+DI_4	Franco Di Castro	DI	IT_107 IT_92	antiquario	1934	2012	Non noto
+DI_5	Alberto Di Castro	DI	IT_92	antiquario		in vita	Antichità Alberto Di Castro
+DI_6	Alessandra Di Castro	DI	IT_91 IT_92	antiquario		in vita	Alessandra Di Castro antichità
+JA_7	Salvatore Jandolo	JA	IT_128	antiquario			Non noto
+FR_1	Giuliano Freschi	FR	IT_45 IT_74	antiquario	1920	2000	"Galleria antiquaria Salocchi-Freschi	 Galleria Freschi	"
+FR_2	Roberto Freschi	FR	IT_74	antiquario		in vita	"Galleria Freschi	"
+GA_1	Antonio Galliani	GA	IT_28	antiquario
+GI_1	Ubaldo Giugni	GI	IT_54 IT_70	antiquario			Galleria d’Arte
+TA_1	Filippo Tavazzi	TA	IT_100 IT_112 IT_93	antiquario	1857	1924	Filippo Tavazzi antichità
+GR_2	Arturo Grassi	GR	IT_30	antiquario	1899	1971	Luigi Grassi & sons
+GR_3	Luigi Grassi	GR	IT_71	antiquario	1931	in vita	Galleria Ognissanti
+GR_4	Giuseppe Grassi	GR	IT_30 IT_88	antiquario
+GU-BR_1	Carlo Bruscoli	GU-BR	IT_51 IT_52	Libraio e antiquario	1879	1955	Non noto
+GU-BR_2	Riccardo Bruscoli	GU-BR	IT_51 IT_52	antiquario	1913	1989	Non noto
+GU-BR_3	Marcello Guidi	GU-BR	IT_51 IT_52	antiquario	1903	1979	Non noto
+GU-BR_4	Fabrizio Guidi-Bruscoli	GU-BR	IT_51 IT_52	antiquario	1940	in vita	Non noto
+IM_1	Alexandre Imbert	IM	IT_102	antiquario	1865	1943	Galerie A. Imbert
+JA_1	Salvatore Jandolo	JA	IT_109	antiquario			Non noto
+JA-TA_1	Augusto Jandolo	JA-TA	IT_106	antiquario	1873	1952	Casa di vendite Jandolo&Tavazzi
+JA-TA_2	Salvatore Jandolo	JA-TA	IT_106	antiquario			Casa di vendite Jandolo&Tavazzi
+JA-TA_3	Filippo Tavazzi	JA-TA	IT_106	antiquario	1857	1924	Casa di vendite Jandolo&Tavazzi
+JA-TA_4	Guido Tavazzi	JA-TA	IT_106	antiquario		1942	Casa di vendite Jandolo&Tavazzi
+VO_I_1	Elia Volpi	VO_I	IT_38 IT_82	pittore, restauratore e antiquario	1858	1938	"Galleria Elia Volpi	 Galleria di Palazzo Davanzati	"
+AC_1	Pietro Accorsi	AC	IT_9	antiquario	1891	1892	Galleria Accorsi
+PA_I_1	Piero Pagano	PA_I	IT_13 IT_11	antiquario	1929	2007	Non noto
+PA_II_1	Paolo Paolini	PA_II	IT_88	antiquario		1924	Non noto
+RO_1	Salvatore Romano	RO	IT_68 IT_75_a	antiquario	1875	1955	Non noto
+RO_2	Francesco Romano	RO	IT_68	antiquario	1919	1981	Non noto
+LA_I_1	Leonardo Lapicirella	LA_I	IT_36 IT_50 IT_77 IT_84	antiquario	1927	2022	Galleria Lapiccirella
+LA_I_2	Damiano Lapicirella	LA_I	IT_77	antiquario		in vita	Galleria Lapiccirella
+LA_II_1	Michel Lazzaroni	LA_II	FR_1 FR_8 IT_135	antiquario	1863	1934	Non noto
+MO_1	Edoardo Moratilla	MO	FR_6	antiquario	1901	1973	Non noto
+NI_1	Costantino Nigro	NI	IT_22	avvocato e antiquario	1894	1967	Non noto
+OR_1	Raimondo Orselli	OR	IT_47	antiquario			Non noto
+TO_1	Raoul Tolentino	TO	USA_2	antiquario		1928	Galerie d’Art Ancien
+VI_III_1	Edoardo Villa	VI_III	IT_20, IT_21	pittore, antiquario		1925	Galleria Permanente d’Arte Antica e Moderna A. Vitelli
+PI_1	Cesare Pini	PI	IT_25	antiquario			Non noto
+PI_2	Umberto Pini	PI	IT_83 IT_85	antiquario			Non noto
+PI_3	Giovanni Pini	PI	IT_83 IT_85	antiquario			Non noto
+PO_I_1	Publio Podio	PO_I	IT_23 IT_26	antiquario		1932	Cav. Prof. Publio Podio & C.
+PO_I_2	Decio Podio	PO_I	IT_27	antiquario e restauratore			Galleria fratelli Podio Antichità
+PO_I_3	Enrico Podio	PO_I	IT_27	antiquario e restauratore			Galleria fratelli Podio Antichità
+PO_I_4	Luigi Podio	PO_I	IT_27	antiquario e restauratore			Galleria fratelli Podio Antichità
+PO_II_1	Francesco Pospisil	PO_II	IT_1	antiquario			Non noto
+RA_1	Arturo Rambaldi	RA	IT_24	antiquario		1929	Galleria di Antichità e Casa di vendite A. Rambaldi
+BE_I_1	Giuseppe Bellini	BE_I	IT_72	antiquario			Galleria Bellini
+BE_I_2	Luigi Bellini	BE_I	IT_76 IT_43	antiquario	1884	1957	Galleria Bellini
+RU_1	Pompeo Rubinacci	RU	IT_13 IT_15 IT_17	pittore, restauratore e antiquario	1893	1974	Studio d'Arte
+SA_I_1	Giovanni Salocchi	SA_I	IT_59 IT_45	antiquario	1901	1984	"Galleria Salocchi	 Antiquaria Salocchi e Freschi	"
+SA_I_2	Nicolò o Nicola Salocchi	SA_I	IT_45	antiquario	1927	1999	"Antiquaria Salocchi e Freschi	"
+SA_II_1	Salvadore Salvadori	SA_II	IT_40	antiquario			Non noto
+SA_II_2	Giuseppe Salvadori	SA_II	IT_40 IT_57 IT_31	antiquario	1862	1928	Non noto
+SA_II_3	Salvino Salvadori	SA_II	IT_57 IT_31	antiquario	1889		Non noto
+SA_III_1	Giulio Sambon	SA_III	IT_4 IT_80 IT_101 IT_110	antiquario	1837	1921	Impresa di vendita in Italia Giulio Sambon
+BE_I_3	Mario Bellini	BE_I	IT_76 IT_43	antiquario	1913	2006	Galleria Bellini
+BE_I_4	Giuseppe Bellini	BE_I	IT_76 IT_43	antiquario	1909	1994	Galleria Bellini
+BE_I_5	Luigi Bellini	BE_I	IT_76 IT_43	antiquario	1944	2021	Galleria Bellini
+SE_I_1	Emanuele Segre	SE_I	IT_96	antiquario e gioielliere			Non noto
+SE_I_2	Isacco Segre	SE_I	IT_96 IT_95	antiquario e gioielliere			Non noto
+SE_II_1	Pellegrino Sestieri	SE_II	IT_112 IT_119	antiquario			Galleria Sestieri
+SE_II_2	Emanuele Sestieri	SE_II	IT_129 USA_1 IT_94	antiquario	1887	1953	Galleria Sestieri
+SE_II_3	Guido Sestieri	SE_II	IT_116 IT_94	antiquario	1890	1954	Galleria Sestieri
+SE_II_5	Carlo Sestieri	SE_II	IT_94	antiquario	1922	1998	Galleria Sestieri
+SE_II_6	Marcello Sestieri	SE_II	IT_94	antiquario	1920	1995	Galleria Sestieri
+SI_1	Attilio Simonetti	SI	IT_97 IT_134	pittore e antiquario	1843	1925	Galleria Simonetti
+SI_2	Aldo Simonetti	SI	IT_134	antiquario			Simonetti Aldo Giulio & C.
+SI_3	Ugo Simonetti	SI	IT_134	antiquario			Simonetti Aldo Giulio & C.
+SI_4	Emma Simonetti	SI	IT_134	antiquario			Simonetti Aldo Giulio & C.
+SI_5	Giulio Simonetti	SI	IT_134	antiquario			Simonetti Aldo Giulio & C.
+ST_1	Attilio Steffanoni	ST	IT_2	antiquario	1881	1947	Non noto
+BR_I_1	Ivan Bruschi	BR_I	IT_29	antiquario	1920	1996	Non noto
+CA_I_1	Cesare Canessa	CA_I	IT_136	antiquario	1863	1922	"Canessa Antiquaires – Numismates	 Galleria Canessa	"
+VI_I_1	Ettore Viancini	VI_I	IT_1_b	antiquario	1925	1998	Non noto
+VI_II_1	Mario Viezzoli	VI_II	IT_10	antiquario	1892	1967	Non noto
+CA_I_2	Ercole Canessa	CA_I	FR_7 FR_3 FR_2 FR_5	antiquario	1867	1929	Non noto
+CA_I_3	Amedeo Canessa	CA_I	USA_3 USA_4 USA_5 USA_6 USA_7	antiquario	1874	1934	Non noto
+VO_II_1	Gustavo Volterra	VO_II	UK_3	antiquario	1855	1918	"Galleria Leonardo	 Volterra e Melli	"
+VO_II_2	Giuseppe Volterra	VO_II	UK_3	antiquario	1882	1932	Non noto
+VO_II_3	Gastone Volterra	VO_II	UK_3	antiquario	1887	1944	Non noto
+VO_II_4	Umberto Angelo Volterra	VO_II	UK_3	antiquario	1886	1944	Non noto
+VO_II_5	Gualtiero Volterra	VO_II	IT_48 IT_44 IT_86 IT_46 IT_35 IT_30 IT_75_b FR_4 UK_3	antiquario	1901	1967	Non noto
+ZA_1	Gilberto Zabert	ZA	IT_8 IT_7 IT_6 IT_5	antiquario	1926	2002	Non noto

@@ -1,0 +1,170 @@
+/* Basic Reset */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Assicura che il corpo occupi almeno l'altezza della finestra */
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+main {
+    flex: 1; /* Fa sì che il main prenda tutto lo spazio disponibile */
+}
+/* header e menù */
+
+header {
+    background-color: #f8f8f8;
+    padding: 15px;
+    position: sticky; /* Rende il menu sticky */
+    top: 0; /* Posiziona il menu all'inizio della pagina */
+    z-index: 1000; /* Assicura che il menu si sovrapponga agli altri contenuti */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Aggiunge un'ombra per differenziarlo dal contenuto */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Aggiunge l'ombreggiatura */
+    border-radius: 8px; /* Opzionale: arrotonda gli angoli */
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    max-height: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin-right: 20px;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background-color: #5593C9;
+    color: #fff;
+    border-radius: 5px;
+}
+
+
+/* contenuto 1*/
+#two-column-section {
+    padding: 10px; /* Padding attorno alla sezione */
+    background-color: #fff; /* Colore di sfondo della sezione */
+    margin: 20px; /* Margine attorno alla sezione */
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    text-align: left;
+    margin-bottom: 20px; /* Spazio sotto il titolo */
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+.columns-container {
+    display: flex;
+    justify-content: space-between; /* Spazio tra le colonne */
+    gap: 40px; /* Spazio tra le colonne */
+    flex-direction: row-reverse; /* Inverte l'ordine delle colonne */
+}
+
+.column {
+    flex: 1; /* Le colonne si dividono equamente lo spazio disponibile */
+    padding: 30px; /* Spazio interno di ciascuna colonna */
+}
+
+.column.right-column {
+    max-width: 30%; /* La colonna destra occupa il 50% dello spazio */
+    padding: 20px; /* Aggiunge spazio interno */
+    margin-left: 40px; /* Aggiunge margine sinistro */
+    margin-right: 60px; /* Aggiunge margine destro */
+}
+
+
+.left-column {
+    max-width: 50%; /* La colonna sinistra occupa il 50% dello spazio */
+    margin-right: 30px;
+    margin-left: 10px;
+}
+
+#chartdiv {
+    width: 100%; /* Assicura che il grafico occupi tutto lo spazio disponibile nella colonna */
+    height: 500px;
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #5593C9;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    text-align: left;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #666;
+}
+
+
+/* footer */
+footer {
+    padding: 5px 40px;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-top: auto;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer img {
+    vertical-align: middle;
+    margin-left: 5px;
+    max-height: 30px;
+}
+
+.footer-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left {
+    text-align: left;
+}
+
+.footer-right {
+    text-align: right;
+}

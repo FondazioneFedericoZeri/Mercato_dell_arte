@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dettaglio Antiquari</title>
+    <link rel="stylesheet" href="../../css/styles-dettaglioAntiquario.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;700&display=swap" rel="stylesheet" />
+    <script type="text/javascript" src="../../script/dettaglioAntiquari.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/map.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/geodata/worldLow.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+    <script type="text/javascript" src="../../script/mappaDettaglio.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <a href="../../index.html">
+          <img id="logo.png" src="../../img/homepage/logo.png" alt="Fondazione Federico Zeri" />
+        </a>
+        <nav>
+          <ul>
+            <li>
+              <a href="../progetto.html">Progetto</a>
+              <a href="../antiquari.html">Antiquari</a>
+              <a href="../luoghi.html">Luoghi</a>
+              <a href="../eventi.html">Eventi</a>
+              <a href="../persone.html">Persone</a>
+              <a href="../bibliografia.html">Bibliografia</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="single-image-section">
+        <h2 class="single-image-title">Segre</h2>
+        <div class="single-image-container">
+          <img src="../../img/slider-antiquari/SE_I_img.jpg" alt="Galleria Segre, Piazza di Spagna" />
+          <div class="caption overlay-caption">Galleria Segre, Piazza di Spagna</div>
+        </div>
+      </section>
+    </main>
+    <section id="FZ" class="fade-in">
+      <h2>
+        <span class="highlight">CATALOGO</span>
+        <span class="regular-text">ZERI</span>
+      </h2>
+      <div class="content-wrapper">
+        <p>Consulta le banche dati della Fondazione<br>Federico Zeri e ricerca fotografie, documenti, <br>cataloghi d'asta, fondi e notizie <br>sull'antiquario corrente.</p>
+        <a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?locale=it&decorator=layout_resp&apply=true&percorso_ricerca=OA&filtrolocalizzazione_OA=4531%7C3289&sortby=LOCALIZZAZIONE&batch=10" class="btn">Clicca qui</a>
+      </div>
+    </section>
+    <section id="interactive-section">
+      <h2 class="section-title">
+        <span class="highlight">CARTA</span>
+        <span class="regular-text">D'IDENTITÀ</span>
+      </h2>
+      <div class="dual-content-wrapper">
+        <div class="tab-container">
+          <ul class="tab-list">
+            <li class="tab active" data_content="Bio">Biografia</li>
+            <li class="tab" data_content="Persone">Albero familiare</li>
+            <li class="tab" data_content="Localizzazioni">Mappa dei luoghi</li>
+            <li class="tab" data_content="Bibliografia">Bibliografia</li>
+          </ul>
+        </div>
+        <div class="content-card">
+          <div id="Bio" class="content active-content">
+            <h3>SEGRE</h3>
+            <p></p>
+            <p></p>
+            <p>I Segre furono una famiglia di antiquari e gioiellieri di origine torinese attivi tra l’ultimo quarto dell’Ottocento e i primi anni Quaranta del Novecento. </p>
+            <p>L’attività fu fondata da Michele Segre a Torino, dove rimase attivo fino al 1940. Fornitore di Casa Savoia era specializzato in argenti, oggetti d’arte e mobili del Settecento piemontese. </p>
+            <p>Con lo spostamento della capitale a Roma, i figli di Michele, Isacco ed Emanuele Segre, alla morte del padre, si trasferirono nell’Urbe. Inizialmente aprirono insieme una bottega di antichità in piazza di Spagna 92, per poi separarsi dopo pochi anni. Isacco si spostò al civico 83, in un negozio ad angolo con via delle Carrozze, mentre Emanuele rimase nella galleria al civico 92. La loro specializzazione rimase sempre il Settecento, secolo del quale erano considerati finissimi conoscitori.</p>
+            <p>Il figlio di Isacco, Michele Segre, esercitò la professione nella galleria del padre fino all’avvento delle leggi raziali, che lo costrinsero a chiudere il negozio. Morì alcuni qualche tempo dopo, nel 1941. </p>
+            <p></p>
+            <p></p>
+          </div>
+          <div id="Persone" class="content">
+            <h3>L'entità Segre è così composta:</h3>
+            <div id="albero-genealogico">
+              <p>nome1 - nome2 - nome3</p>
+            </div>
+          </div>
+          <div id="Localizzazioni" class="content">
+            <h3>Geolocalizzazione dell'attività antiquariale:</h3>
+            <section id="map">
+              <div id="chartdiv"></div>
+            </section>
+          </div>
+          <div id="Bibliografia" class="content">
+            <h3>Bibliografia essenziale:</h3>
+            <ul>
+              <li>21/05/2023, <i>Intervista Tullio Calabi, Torino.</i>, Torino</li>
+              <li>Fina, G. (Ed.) (2018), <i>Argentieri piemontesi del '700: trovati e ritrovati.</i>, Milano, Skira.</li>
+              <li>Jandolo, A. (1935), <i>Le memorie di un antiquario.</i>, Milano, Ceschina.</li>
+              <li>Pollak, L., Merkel Guldan, M. (1994), <i>Römische Memoiren : Künstler, Kunstliebhaber und Gelehrte, 1893-1943.</i>, Roma, L'Erma di Bretschneider.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <p>Licenza dati e immagini:</p>
+          <img id="license.png" src="../../img/homepage/license.png" alt="License" />
+        </div>
+        <div class="footer-right">
+          <p>
+            <a href="#">Crediti</a>
+          </p>
+          <p>
+            <a href="#">Documentazione</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

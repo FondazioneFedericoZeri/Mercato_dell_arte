@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dettaglio Antiquari</title>
+    <link rel="stylesheet" href="../css/styles-dettaglioAntiquario.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="../script/dettaglioAntiquari.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/hierarchy.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+
+            <a href="../index.html">
+            <img id="logo.png" src="../img/homepage/logo.png" alt="Fondazione Federico Zeri">
+            </a>
+
+            <nav>
+                <ul>
+                    <li><a href="../html/progetto.html">Progetto</a></li>
+                    <li><a href="../html/antiquari.html">Antiquari</a></li>
+                    <li><a href="../html/luoghi.html">Luoghi</a></li>
+                    <li><a href="../html/eventi.html">Eventi</a></li>
+                    <li><a href="../html/persone.html">Persone</a></li>
+                    <li><a href="../html/bibliografia.html">Bibliografia</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenuto principale della nuova pagina -->
+    <main>
+
+    <section id="image-gallery">
+        <h2 class="gallery-title">ACCORSI</h2>
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide">
+                    <img src="../img/slider-antiquari/AC_img1.jpg" alt="Immagine 1">
+                    <div class="caption">Descrizione dell'immagine 1</div>
+                </div>
+                <div class="slide">
+                    <img src="../img/slider-antiquari/AC_img2.jpg" alt="Immagine 2">
+                    <div class="caption">Descrizione dell'immagine 2</div>
+                </div>
+                <div class="slide">
+                    <img src="../img/slider-antiquari/AC_img3.jpg" alt="Immagine 3">
+                    <div class="caption">Descrizione dell'immagine 3</div>
+                </div>
+                <!-- Aggiungi altre immagini qui -->
+            </div>
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </section>
+
+    <!-- 
+    <section id="single-image-section">
+        <h2 class="single-image-title">Nome antiquario</h2>
+        <div class="single-image-container">
+            <img src="../img/slider-antiquari/AL_img1.jpg" alt="Descrizione dell'immagine">
+            <div class="caption overlay-caption">Questa è la didascalia dell'immagine</div>
+        </div>
+    </section> -->
+
+    <section id="FZ" class="fade-in">
+        <h2>
+            <span class="highlight">CATALOGO</span> 
+            <span class="regular-text">ZERI</span>
+        </h2>
+        <div class="content-wrapper">
+            <p>Consulta le banche dati della Fondazione<br>Federico Zeri e ricerca fotografie, documenti, <br>cataloghi d'asta, fondi e notizie <br>sull'antiquario corrente.</p>
+            <a href="#" class="btn">Clicca qui</a>
+        </div>
+        </div>
+    </section>
+
+    <section id="interactive-section">
+            <h2 class="section-title">
+                <span class="highlight">CARTA</span> <span class="regular-text">D'IDENTITÀ</span>
+            </h2>
+
+    <div class="dual-content-wrapper">
+        <div class="tab-container">
+            <ul class="tab-list">
+                <li class="tab active" data-content="Bio">Biografia</li>
+                <li class="tab" data-content="chartdiv">Albero familiare</li>
+                <li class="tab" data-content="Localizzazioni">Mappa dei luoghi</li>
+                <li class="tab" data-content="Collaboratori">Collaboratori</li>
+                <li class="tab" data-content="Clienti">Clienti</li>
+                <li class="tab" data-content="Eventi collegati">Eventi</li>
+                <li class="tab" data-content="Relazioni">Altri antiquari</li>
+                <li class="tab" data-content="Bibliografia">Bibliografia</li>
+                <!-- Aggiungi altri tab se necessario -->
+            </ul>
+        </div>
+
+        <div class="content-card">
+            <div id="Bio" class="content active-content">
+                <h3>Lorem Ipsum (1901-1976)</h3>
+                <p>Il fondatore della Galleria Giuseppe Sangiorgi (1850-1928) nacque a Massa Lombarda, in provincia di Ravenna, da una famiglia di origini modeste che non aveva legami con il mercato antiquario. Si trasferì a Roma solamente nel 1889, dopo avere avviato diverse attività commerciali di successo in varie città d’Italia, in particolare a Milano e Messina. Nell’Urbe, dopo essersi coinvolto in aste organizzate dall’esperta “Casa di vendite Corvisieri”, aprì nel 1892 la propria impresa, l’“Hotel des Ventes G. Sangiorgi”, al piano terra di Palazzo Borghese appena lasciato vuoto dal trasferimento dell’intera collezione nell’omonima villa fuori Porta Pinciana.<br><br>
+                    L’attività principale nei primi anni fu la vendita all’asta di intere collezioni o di singoli pezzi antichi acquistati sul mercato. Fu a partire dal 1894 che Sangiorgi iniziò un processo di riconversione della propria impresa che si riflette nel cambio di intestazione in “Galleria Sangiorgi-Roma Palazzo Borghese”.  Tale percorso di rinnovamento culminò nell’acquisto dell’edificio prospicente il Palazzo, nel quale vennero installati laboratori per una vasta produzione di opere ‘in stile’ e di alto artigianato a cui collaborarono artisti di livello, tra cui Patrizio Fracassi, Domenico Baccarini, Cipriano Efisio Oppo, Alberto Bianchi, Oreste Marozzi. La "Galleria dei bronzi e dei marmi-Negozio di arte antica e moderna", situata in via Ripetta 118, rimase aperta fino al 1924, anno in cui l’edificio venne ceduto alla facoltà di economia e quindi demolito.<br><br>Nell’ambito di queste nuova attività, Sangiorgi acquistò nel 1898 anche il reparto di riparazione degli arazzi e il laboratorio di ricami dell’Ospizio di San Michele.
+                    L’organizzazione delle aste rallentò nel secondo decennio del Novecento per cessare nel 1915. Per molte delle 121 vendite conosciute furono prodotti preziosi cataloghi, nella redazione dei quali vennero coinvolti esperti quali Ludwig Pollak, Adolfo Venturi, Frederick Mason Perkins e Arthur Sambon. 
+                    <br><br>Alla morte di Giuseppe, avvenuta nel 1928, la galleria situata a Palazzo Borghese fu gestita dal figlio Giorgio (1886-1975), noto studioso e collezionista di vetri e di tessuti antichi, e poi dal nipote Sergio (1925-2015), fino al 1970, anno della definitiva chiusura dell’attività.
+                    </p>
+            </div>
+            <div id="chartdiv" class="content">
+                <h3>L'entità Lorem Ipsum è così composta:</h3>
+            </div>
+
+            <div id="Localizzazioni" class="content">
+                <h3>Geolocalizzazione dell'attività antiquariale:</h3>
+                <p>Mappa<br>Localizzazione territoriale</p>
+            </div>
+            <div id="Collaboratori" class="content">
+                <h3>Hanno collaborato con Lorem Ipsum :</h3>
+                <ul>
+                    <li>Elemento 1</li>
+                    <li>Elemento 2</li>
+                    <li>Elemento 3</li>
+                    <li>Elemento 4</li>
+                  </ul>
+            </div>
+            <div id="Clienti" class="content">
+                <h3> I principali clienti di Lorem Ipsum sono stati:</h3>
+                <ul>
+                    <li>Elemento 1</li>
+                    <li>Elemento 2</li>
+                    <li>Elemento 3</li>
+                    <li>Elemento 4</li>
+                  </ul>
+            </div>
+            <div id="Eventi collegati" class="content">
+                <h3>Gli eventi signficativi dell'attività antiquariale:</h3>
+                <p>Questo è il contenuto della terza scheda.</p>
+            </div>
+            <div id="Relazioni" class="content">
+                <h3>Lorem Ipsum, durante la sua attività, ha avuto relazioni con:</h3>
+                <ul>
+                    <li>Elemento 1</li>
+                    <li>Elemento 2</li>
+                  </ul>
+            </div>
+            <div id="Bibliografia" class="content">
+                <h3>Bibliografia essenziale</h3>
+                <ul>
+                    <li>Tolosani, D., Giuseppe Sangiorgi, in «L'Antiquario», XV, 2, 1928, pp. 68-69;</li>
+                    <li>Batini, G., (1961), L'antiquario. Firenze, Vallecchi, pp. 76-78;</li>
+                    <li>Pollak, L., Merkel Guldan, M. (1994). Römische Memoiren: Künstler, Kunstliebhaber und Gelehrte, 1893-1943. Roma, L'Erma di Bretschneider, 136-137;</li>
+                    <li>Coen, P., Il nuovo mercante italiano e internazionale: Giuseppe Sangiorgi, in Coen 2020, pp. 279-320;</li>
+                    <li>Mambelli, F., Il più grande centro commerciale di oggetti d’arte: la Galleria Sangiorgi tra strategie di marketing e artigianato artistico, in Bacchi, Capitelli 2020, pp. 185-227.</li>
+                  </ul>
+            </div>
+            <!-- Aggiungi altri contenuti se necessario -->
+        </div>
+    </div>
+    </section>
+
+    </main>
+
+    <!-- Footer copiato dalla pagina esistente -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <p>Licenza dati e immagini: <img id="license.png" src="../img/homepage/license.png" alt="License"></p>
+            </div>
+            <div class="footer-right">
+                <p>
+                    <a href="#">Crediti</a> | <a href="#">Documentazione</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Collegamento al file JavaScript esterno -->
+    <script src="../script/dettaglioAntiquari.js"></script>
+
+</body>
+</html>

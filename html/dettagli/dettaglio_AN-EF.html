@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dettaglio Antiquari</title>
+    <link rel="stylesheet" href="../../css/styles-dettaglioAntiquario.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;700&display=swap" rel="stylesheet" />
+    <script type="text/javascript" src="../../script/dettaglioAntiquari.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/map.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/geodata/worldLow.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+    <script type="text/javascript" src="../../script/mappaDettaglio.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <a href="../../index.html">
+          <img id="logo.png" src="../../img/homepage/logo.png" alt="Fondazione Federico Zeri" />
+        </a>
+        <nav>
+          <ul>
+            <li>
+              <a href="../progetto.html">Progetto</a>
+              <a href="../antiquari.html">Antiquari</a>
+              <a href="../luoghi.html">Luoghi</a>
+              <a href="../eventi.html">Eventi</a>
+              <a href="../persone.html">Persone</a>
+              <a href="../bibliografia.html">Bibliografia</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="image-gallery">
+        <h2 class="gallery-title">Antonacci-Efrati</h2>
+        <div class="slider-container">
+          <div class="slider">
+            <div class="slide">
+              <img src="../../img/slider-antiquari/AN-EF_img1.jpg" alt="Giuseppe Antonacci" />
+              <div class="caption">Giuseppe Antonacci</div>
+            </div>
+            <div class="slide">
+              <img src="../../img/slider-antiquari/AN-EF_img2.jpg" alt="Galleria Antonacci-Efrati, Via del Babuino" />
+              <div class="caption">Galleria Antonacci-Efrati, Via del Babuino</div>
+            </div>
+          </div>
+          <button &#10094; class="prev" onclick="prevSlide()"></button>
+          <button &#10095; class="next" onclick="nextSlide()"></button>
+        </div>
+      </section>
+    </main>
+    <section id="FZ" class="fade-in">
+      <h2>
+        <span class="highlight">CATALOGO</span>
+        <span class="regular-text">ZERI</span>
+      </h2>
+      <div class="content-wrapper">
+        <p>Consulta le banche dati della Fondazione<br>Federico Zeri e ricerca fotografie, documenti, <br>cataloghi d'asta, fondi e notizie <br>sull'antiquario corrente.</p>
+        <a href="https://catalogo.fondazionezeri.unibo.it/home/it" class="btn">Clicca qui</a>
+      </div>
+    </section>
+    <section id="interactive-section">
+      <h2 class="section-title">
+        <span class="highlight">CARTA</span>
+        <span class="regular-text">D'IDENTITÀ</span>
+      </h2>
+      <div class="dual-content-wrapper">
+        <div class="tab-container">
+          <ul class="tab-list">
+            <li class="tab active" data_content="Bio">Biografia</li>
+            <li class="tab" data_content="Persone">Albero familiare</li>
+            <li class="tab" data_content="Localizzazioni">Mappa dei luoghi</li>
+            <li class="tab" data_content="Collaboratori">Collaboratori</li>
+            <li class="tab" data_content="Bibliografia">Bibliografia</li>
+          </ul>
+        </div>
+        <div class="content-card">
+          <div id="Bio" class="content active-content">
+            <h3>Antonacci-Efrati</h3>
+            <p></p>
+            <p>Emanuele Efrati fu tra i primi ad aprire un’attività di antiquariato in via del Babuino a Roma negli anni Dieci del Novecento. Nel 1916 fondò la “Galleria Efrati”, con sede al civico 144, specializzandosi nella vendita di mobili antichi, oggetti d’arte e paramenti sacri. </p>
+            <p></p>
+            <p>Nel corso del tempo gli subentrò la figlia, Luigia Efrati, che continuò la professione dedicandosi alla vendita di mobili rinascimentali, porcellane e argenti assai ricercati all’epoca.</p>
+            <p></p>
+            <p>A partire dal 1941, il figlio di Luigia, Giuseppe Antonacci (1923-2010), diede un nuovo impulso al commercio famigliare, portando l’impresa ad una dimensione internazionale. Sotto la sua direzione, negli anni Cinquanta, il negozio fu ampliato fino al civico 146 e cambiò nome in ‘Antonacci-Efrati’.</p>
+            <p>Durante la sua carriera di antiquario, Giuseppe Antonacci viaggiò in tutto il mondo, recandosi frequentemente a Londra, allora centro del mercato dell’arte. Iniziò a trattare, oltre a mobili italiani e europei di alta qualità, sculture antiche e moderne e dipinti, dai fondi oro alle opere dei vedutisti del Settecento. </p>
+            <p></p>
+            <p>La galleria divenne un punto di incontro per collezionisti e studiosi. Tra i frequentatori più assidui ci furono Giuliano Briganti, Alvar González-Palacios, Federico Zeri e Giancarlo Sestieri.</p>
+            <p>Agli inizi degli anni Ottanta del Novecento Giuseppe è stato affiancato nell’attività dai figli Paolo e Francesca ai quali ha lasciato la conduzione nel 1988. Questi hanno portato avanti la galleria fino al 1998, anno di chiusura definitiva della ‘Antonacci-Efrati’.</p>
+            <p></p>
+          </div>
+          <div id="Persone" class="content">
+            <h3>L'entità Antonacci-Efrati è così composta:</h3>
+            <div id="albero-genealogico">
+              <p>nome1 - nome2 - nome3</p>
+            </div>
+          </div>
+          <div id="Localizzazioni" class="content">
+            <h3>Geolocalizzazione dell'attività antiquariale:</h3>
+            <section id="map">
+              <div id="chartdiv"></div>
+            </section>
+          </div>
+          <div id="Collaboratori" class="content">
+            <h3>Hanno collaborato con l'entità Antonacci-Efrati:</h3>
+            <ul>
+              <li>Alvar Gonzales Palacios (storico dell'arte)</li>
+              <li>Federico Zeri (storico dell'arte)</li>
+              <li>Giuliano Briganti (storico dell'arte)</li>
+            </ul>
+          </div>
+          <div id="Bibliografia" class="content">
+            <h3>Bibliografia essenziale:</h3>
+            <ul>
+              <li>Batini, G. (1961), <i>L'antiquario.</i>, Firenze, Vallecchi.</li>
+              <li>Riccio, B. (Ed.) (1996), <i>Lettere sull’antiquariato?: di Mario Praz e Luigi Magnani 1952-1981.</i>, Torino, U. Allemandi., p. 116</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <p>Licenza dati e immagini:</p>
+          <img id="license.png" src="../../img/homepage/license.png" alt="License" />
+        </div>
+        <div class="footer-right">
+          <p>
+            <a href="#">Crediti</a>
+          </p>
+          <p>
+            <a href="#">Documentazione</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

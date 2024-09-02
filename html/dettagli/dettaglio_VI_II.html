@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dettaglio Antiquari</title>
+    <link rel="stylesheet" href="../../css/styles-dettaglioAntiquario.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;700&display=swap" rel="stylesheet" />
+    <script type="text/javascript" src="../../script/dettaglioAntiquari.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/map.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/geodata/worldLow.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+    <script type="text/javascript" src="../../script/mappaDettaglio.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <a href="../../index.html">
+          <img id="logo.png" src="../../img/homepage/logo.png" alt="Fondazione Federico Zeri" />
+        </a>
+        <nav>
+          <ul>
+            <li>
+              <a href="../progetto.html">Progetto</a>
+              <a href="../antiquari.html">Antiquari</a>
+              <a href="../luoghi.html">Luoghi</a>
+              <a href="../eventi.html">Eventi</a>
+              <a href="../persone.html">Persone</a>
+              <a href="../bibliografia.html">Bibliografia</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="single-image-section">
+        <h2 class="single-image-title">Viezzoli</h2>
+        <div class="single-image-container">
+          <img src="../../img/antiquari-preview/VI_II_preview.jpg" alt="Viezzoli" />
+          <div class="caption overlay-caption">Viezzoli</div>
+        </div>
+      </section>
+    </main>
+    <section id="FZ" class="fade-in">
+      <h2>
+        <span class="highlight">CATALOGO</span>
+        <span class="regular-text">ZERI</span>
+      </h2>
+      <div class="content-wrapper">
+        <p>Consulta le banche dati della Fondazione<br>Federico Zeri e ricerca fotografie, documenti, <br>cataloghi d'asta, fondi e notizie <br>sull'antiquario corrente.</p>
+        <a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=viezzoli" class="btn">Clicca qui</a>
+      </div>
+    </section>
+    <section id="interactive-section">
+      <h2 class="section-title">
+        <span class="highlight">CARTA</span>
+        <span class="regular-text">D'IDENTITÀ</span>
+      </h2>
+      <div class="dual-content-wrapper">
+        <div class="tab-container">
+          <ul class="tab-list">
+            <li class="tab active" data_content="Bio">Biografia</li>
+            <li class="tab" data_content="Persone">Albero familiare</li>
+            <li class="tab" data_content="Localizzazioni">Mappa dei luoghi</li>
+            <li class="tab" data_content="Collaboratori">Collaboratori</li>
+            <li class="tab" data_content="Bibliografia">Bibliografia</li>
+          </ul>
+        </div>
+        <div class="content-card">
+          <div id="Bio" class="content active-content">
+            <h3>MARIO VIEZZOLI (1892-1967)</h3>
+            <p></p>
+            <p>Mario Viezzoli (1892-1967) fu un marchant amateur attivo a Genova a partire dagli anni Trenta del Novecento. </p>
+            <p>Prima di dedicarsi all’antiquariato raggiunse il successo in altre imprese commerciali che gli fornirono un notevole potere d’acquisto.</p>
+            <p>La passione per l’arte lo portò inizialmente a collezionare e trattare soprattutto ceramiche, porcellane, incisioni in legno; in seguito, si rivolse alla pittura del Sei e Settecento, e anche dell’Ottocento. </p>
+            <p>Sfollato a Firenze durante la Seconda Guerra Mondiale e rientrato a Genova nel 1944, continuò a comprare e vendere opere fino alla morte, sopraggiunta nel 1967. </p>
+            <p>Dipinti di Luca Cambiaso, Valerio Castello e Alessandro Magnasco di sua proprietà vennero esposti in diverse mostre negli anni Cinquanta e Sessanta.</p>
+            <p>Nel corso della sua attività entrò in stretti rapporti con Federico Zeri, che frequentava assiduamente la casa dell’antiquario. Lo storico dell’arte, nella sua autobiografia ricorda le sue visite a Mario Viezzoli e la moglie Elda, con la quale mantenne uno stretto rapporto di amicizia. </p>
+            <p></p>
+            <p></p>
+          </div>
+          <div id="Persone" class="content">
+            <h3>L'entità Viezzoli è così composta:</h3>
+            <div id="albero-genealogico">
+              <p>nome1 - nome2 - nome3</p>
+            </div>
+          </div>
+          <div id="Localizzazioni" class="content">
+            <h3>Geolocalizzazione dell'attività antiquariale:</h3>
+            <section id="map">
+              <div id="chartdiv"></div>
+            </section>
+          </div>
+          <div id="Collaboratori" class="content">
+            <h3>Hanno collaborato con l'entità Viezzoli:</h3>
+            <ul>
+              <li>Federico Zeri (storico dell'arte)</li>
+            </ul>
+          </div>
+          <div id="Bibliografia" class="content">
+            <h3>Bibliografia essenziale:</h3>
+            <ul>
+              <li>Romanengo, M. (2001), <i>Il mondo del collezionismo privato a Genova nel Novecento.</i>, In Orlando, pp. 110-120</li>
+              <li>Zeri, F. (1995), <i>Confesso che ho sbagliato: Ricordi autobiografici.</i>, Milano, Longanesi.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <p>Licenza dati e immagini:</p>
+          <img id="license.png" src="../../img/homepage/license.png" alt="License" />
+        </div>
+        <div class="footer-right">
+          <p>
+            <a href="#">Crediti</a>
+          </p>
+          <p>
+            <a href="#">Documentazione</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

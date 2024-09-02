@@ -1,0 +1,4059 @@
+{
+    "BA_II_1": {
+        "ID": "BA_II_1",
+        "Nome Persona": "Stefano Bardini",
+        "ID_entità": "BA_II",
+        "ID_luoghi": {
+            "IT_55": {
+                "ID": "IT_55",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Via dei Benci",
+                "Civico": "",
+                "geo": {
+                    "lat": 43.7675835,
+                    "lon": 11.2593399
+                }
+            },
+            "IT_37": {
+                "ID": "IT_37",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Piazza de Mozzi",
+                "Civico": "1",
+                "geo": {
+                    "lat": null,
+                    "lon": null
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "1836",
+        "Morte": "1922",
+        "Nome attività": "Non noto"
+    },
+    "AL_1": {
+        "ID": "AL_1",
+        "Nome Persona": "Luigi Albrighi",
+        "ID_entità": "AL",
+        "ID_luoghi": {
+            "IT_56": {
+                "ID": "IT_56",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Via dei Fossi",
+                "Civico": "7R",
+                "geo": {
+                    "lat": 43.771403,
+                    "lon": 11.2479697
+                }
+            }
+        },
+        "Professione": "avvocato e antiquario",
+        "Nascita": "1896",
+        "Morte": "1979",
+        "Nome attività": "Non noto"
+    },
+    "AN-EF_1": {
+        "ID": "AN-EF_1",
+        "Nome Persona": "Emanuele Efrati",
+        "ID_entità": "AN-EF",
+        "ID_luoghi": {
+            "IT_103": {
+                "ID": "IT_103",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Via del Babuino",
+                "Civico": "",
+                "geo": {
+                    "lat": 41.9084557,
+                    "lon": 12.4789596
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "",
+        "Morte": "",
+        "Nome attività": "Galleria Efrati"
+    },
+    "AN-EF_2": {
+        "ID": "AN-EF_2",
+        "Nome Persona": "Luigia Efrati",
+        "ID_entità": "AN-EF",
+        "ID_luoghi": {
+            "IT_103": {
+                "ID": "IT_103",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Via del Babuino",
+                "Civico": "",
+                "geo": {
+                    "lat": 41.9084557,
+                    "lon": 12.4789596
+                }
+            }
+        },
+        "Professione": "antiquaria",
+        "Nascita": "",
+        "Morte": "",
+        "Nome attività": "Galleria Efrati"
+    },
+    "AN-EF_3": {
+        "ID": "AN-EF_3",
+        "Nome Persona": "Giuseppe Antonacci",
+        "ID_entità": "AN-EF",
+        "ID_luoghi": {
+            "IT_103": {
+                "ID": "IT_103",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Via del Babuino",
+                "Civico": "",
+                "geo": {
+                    "lat": 41.9084557,
+                    "lon": 12.4789596
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "",
+        "Morte": "",
+        "Nome attività": "Galleria Antonacci-Efrati"
+    },
+    "AN-EF_4": {
+        "ID": "AN-EF_4",
+        "Nome Persona": "Paolo Antonacci",
+        "ID_entità": "AN-EF",
+        "ID_luoghi": {
+            "IT_103": {
+                "ID": "IT_103",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Via del Babuino",
+                "Civico": "",
+                "geo": {
+                    "lat": 41.9084557,
+                    "lon": 12.4789596
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "",
+        "Morte": "",
+        "Nome attività": "Galleria Antonacci-Efrati"
+    },
+    "AN-EF_5": {
+        "ID": "AN-EF_5",
+        "Nome Persona": "Francesca Antonacci",
+        "ID_entità": "AN-EF",
+        "ID_luoghi": {
+            "IT_103": {
+                "ID": "IT_103",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Via del Babuino",
+                "Civico": "",
+                "geo": {
+                    "lat": 41.9084557,
+                    "lon": 12.4789596
+                }
+            }
+        },
+        "Professione": "antiquaria",
+        "Nascita": "",
+        "Morte": "",
+        "Nome attività": "Galleria Antonacci-Efrati"
+    },
+    "AP_1": {
+        "ID": "AP_1",
+        "Nome Persona": "Wladimiro Apolloni",
+        "ID_entità": "AP",
+        "ID_luoghi": {
+            "IT_114": {
+                "ID": "IT_114",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Via Frattina",
+                "Civico": "141",
+                "geo": {
+                    "lat": 41.9044614,
+                    "lon": 12.4822583
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "1888",
+        "Morte": "1948",
+        "Nome attività": "W. Apolloni"
+    },
+    "AP_2": {
+        "ID": "AP_2",
+        "Nome Persona": "Fabrizio Apolloni",
+        "ID_entità": "AP",
+        "ID_luoghi": {
+            "IT_114": {
+                "ID": "IT_114",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Via Frattina",
+                "Civico": "141",
+                "geo": {
+                    "lat": 41.9044614,
+                    "lon": 12.4822583
+                }
+            },
+            "IT_108": {
+                "ID": "IT_108",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Via del Babuino",
+                "Civico": "132",
+                "geo": {
+                    "lat": 41.9084557,
+                    "lon": 12.4789596
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "1928",
+        "Morte": "2006",
+        "Nome attività": "W. Apolloni"
+    },
+    "AP_3": {
+        "ID": "AP_3",
+        "Nome Persona": "Marco Fabio Apolloni",
+        "ID_entità": "AP",
+        "ID_luoghi": {
+            "IT_108": {
+                "ID": "IT_108",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Via del Babuino",
+                "Civico": "132",
+                "geo": {
+                    "lat": 41.9084557,
+                    "lon": 12.4789596
+                }
+            },
+            "IT_117": {
+                "ID": "IT_117",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Via Margutta",
+                "Civico": "53b",
+                "geo": {
+                    "lat": 41.9080943,
+                    "lon": 12.4802159
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "",
+        "Morte": "in vita",
+        "Nome attività": "W. Apolloni"
+    },
+    "BA_I_1": {
+        "ID": "BA_I_1",
+        "Nome Persona": "Rizieri Bacarelli",
+        "ID_entità": "BA_I",
+        "ID_luoghi": {
+            "IT_39": {
+                "ID": "IT_39",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Piazza Ottaviani",
+                "Civico": "",
+                "geo": {
+                    "lat": 43.772528199999996,
+                    "lon": 11.249230444642855
+                }
+            },
+            "IT_67": {
+                "ID": "IT_67",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Via dei Fossi",
+                "Civico": "51R",
+                "geo": {
+                    "lat": 43.7721056,
+                    "lon": 11.2486878
+                }
+            },
+            "IT_69": {
+                "ID": "IT_69",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Via del Moro",
+                "Civico": "",
+                "geo": {
+                    "lat": 43.7732075,
+                    "lon": 11.2506064
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "",
+        "Morte": "1947",
+        "Nome attività": "Bacarelli antichità"
+    },
+    "BA_I_2": {
+        "ID": "BA_I_2",
+        "Nome Persona": "Benvenuto Bacarelli",
+        "ID_entità": "BA_I",
+        "ID_luoghi": {
+            "IT_58": {
+                "ID": "IT_58",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Via dei Fossi",
+                "Civico": "33",
+                "geo": {
+                    "lat": 43.7577562,
+                    "lon": 10.8788234
+                }
+            },
+            "IT_69": {
+                "ID": "IT_69",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Via del Moro",
+                "Civico": "",
+                "geo": {
+                    "lat": 43.7732075,
+                    "lon": 11.2506064
+                }
+            },
+            "IT_74": {
+                "ID": "IT_74",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Via della vigna nuova",
+                "Civico": "79R",
+                "geo": {
+                    "lat": 43.7710558,
+                    "lon": 11.2489301
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "1923",
+        "Morte": "2015",
+        "Nome attività": "Bacarelli antichità"
+    },
+    "BA_I_3": {
+        "ID": "BA_I_3",
+        "Nome Persona": "Riccardo Bacarelli",
+        "ID_entità": "BA_I",
+        "ID_luoghi": {
+            "IT_61": {
+                "ID": "IT_61",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Via dei Fossi",
+                "Civico": "45R",
+                "geo": {
+                    "lat": 43.7720118,
+                    "lon": 11.2485931
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "1967",
+        "Morte": "",
+        "Nome attività": "Bacarelli antichità"
+    },
+    "BA_II_2": {
+        "ID": "BA_II_2",
+        "Nome Persona": "Emma Bardini",
+        "ID_entità": "BA_II",
+        "ID_luoghi": {
+            "IT_37": {
+                "ID": "IT_37",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Piazza de Mozzi",
+                "Civico": "1",
+                "geo": {
+                    "lat": null,
+                    "lon": null
+                }
+            }
+        },
+        "Professione": "antiquaria",
+        "Nascita": "1883",
+        "Morte": "1927",
+        "Nome attività": "Non noto"
+    },
+    "BA_II_3": {
+        "ID": "BA_II_3",
+        "Nome Persona": "Ugo Bardini",
+        "ID_entità": "BA_II",
+        "ID_luoghi": {
+            "IT_37": {
+                "ID": "IT_37",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Piazza de Mozzi",
+                "Civico": "1",
+                "geo": {
+                    "lat": null,
+                    "lon": null
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "1892",
+        "Morte": "1965",
+        "Nome attività": "Non noto"
+    },
+    "CR_1": {
+        "ID": "CR_1",
+        "Nome Persona": "Severino Crosa",
+        "ID_entità": "CR",
+        "ID_luoghi": {
+            "IT_12": {
+                "ID": "IT_12",
+                "Nazione": "Italia",
+                "Regione": "Liguria",
+                "Città": "Genova",
+                "Via": "Piazza Cinque lampade",
+                "Civico": "65R",
+                "geo": {
+                    "lat": null,
+                    "lon": null
+                }
+            },
+            "IT_14": {
+                "ID": "IT_14",
+                "Nazione": "Italia",
+                "Regione": "Liguria",
+                "Città": "Genova",
+                "Via": "Piazza Giustiniani",
+                "Civico": "7",
+                "geo": {
+                    "lat": 44.4071246,
+                    "lon": 8.930319
+                }
+            },
+            "IT_18": {
+                "ID": "IT_18",
+                "Nazione": "Italia",
+                "Regione": "Liguria",
+                "Città": "Genova",
+                "Via": "Via Garibaldi",
+                "Civico": "7",
+                "geo": {
+                    "lat": 44.4110725,
+                    "lon": 8.9333773
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "1897",
+        "Morte": "1979",
+        "Nome attività": "Non noto"
+    },
+    "BA_III_1": {
+        "ID": "BA_III_1",
+        "Nome Persona": "Alfredo Barsanti",
+        "ID_entità": "BA_III",
+        "ID_luoghi": {
+            "IT_126": {
+                "ID": "IT_126",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Via Sistina",
+                "Civico": "48",
+                "geo": {
+                    "lat": 41.9049566,
+                    "lon": 12.4853209
+                }
+            },
+            "IT_130": {
+                "ID": "IT_130",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Via Sistina",
+                "Civico": "131",
+                "geo": {
+                    "lat": 41.9041242,
+                    "lon": 12.4870227
+                }
+            },
+            "IT_131": {
+                "ID": "IT_131",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Via Sistina",
+                "Civico": "137",
+                "geo": {
+                    "lat": 41.90398,
+                    "lon": 12.4872761
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "1877",
+        "Morte": "1934",
+        "Nome attività": "Casa Buti"
+    },
+    "BA_IV_1": {
+        "ID": "BA_IV_1",
+        "Nome Persona": "Giuseppe Baslini",
+        "ID_entità": "BA_IV",
+        "ID_luoghi": {
+            "IT_3": {
+                "ID": "IT_3",
+                "Nazione": "Italia",
+                "Regione": "Lombardia",
+                "Città": "Milano",
+                "Via": "Via Montenapoleone",
+                "Civico": "11",
+                "geo": {
+                    "lat": null,
+                    "lon": null
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "1817",
+        "Morte": "1887",
+        "Nome attività": "Non noto"
+    },
+    "DE_1": {
+        "ID": "DE_1",
+        "Nome Persona": "Achille De Clemente",
+        "ID_entità": "DE",
+        "ID_luoghi": {
+            "IT_78": {
+                "ID": "IT_78",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Via Maggio",
+                "Civico": "7",
+                "geo": {
+                    "lat": 43.7675405,
+                    "lon": 11.2494555
+                }
+            }
+        },
+        "Professione": "pittore e antiquario",
+        "Nascita": "1874",
+        "Morte": "1940",
+        "Nome attività": "Non noto"
+    },
+    "FE_1": {
+        "ID": "FE_1",
+        "Nome Persona": "Gioacchino Ferroni",
+        "ID_entità": "FE",
+        "ID_luoghi": {
+            "IT_122": {
+                "ID": "IT_122",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Via Porta Pinciana",
+                "Civico": "32",
+                "geo": {
+                    "lat": 41.9073554,
+                    "lon": 12.4862533
+                }
+            }
+        },
+        "Professione": "scultore e antiquario",
+        "Nascita": "1854",
+        "Morte": "1909",
+        "Nome attività": "Non noto"
+    },
+    "SA_IV_1": {
+        "ID": "SA_IV_1",
+        "Nome Persona": "Giuseppe Sangiorgi",
+        "ID_entità": "SA_IV",
+        "ID_luoghi": {
+            "IT_123": {
+                "ID": "IT_123",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Via Ripetta",
+                "Civico": "117",
+                "geo": {
+                    "lat": 41.9986727,
+                    "lon": 12.0983861
+                }
+            },
+            "IT_124": {
+                "ID": "IT_124",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Via Ripetta",
+                "Civico": "118",
+                "geo": {
+                    "lat": 41.9986727,
+                    "lon": 12.0983861
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "1850",
+        "Morte": "1928",
+        "Nome attività": "Hotel Des Ventes G. Sangiorgi\t Galleria Sangiorgi - Roma Palazzo Borghese\t"
+    },
+    "SA_IV_2": {
+        "ID": "SA_IV_2",
+        "Nome Persona": "Giorgio Sangiorgi",
+        "ID_entità": "SA_IV",
+        "ID_luoghi": {
+            "IT_123": {
+                "ID": "IT_123",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Via Ripetta",
+                "Civico": "117",
+                "geo": {
+                    "lat": 41.9986727,
+                    "lon": 12.0983861
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "1886",
+        "Morte": "1975",
+        "Nome attività": "Galleria Sangiorgi - Roma Palazzo Borghese\t Galleria dei bronzi e dei marmi, negozio di arte antica e moderna\t"
+    },
+    "SA_IV_3": {
+        "ID": "SA_IV_3",
+        "Nome Persona": "Sergio Sangiorgi",
+        "ID_entità": "SA_IV",
+        "ID_luoghi": {
+            "IT_123": {
+                "ID": "IT_123",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Via Ripetta",
+                "Civico": "117",
+                "geo": {
+                    "lat": 41.9986727,
+                    "lon": 12.0983861
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "1925",
+        "Morte": "2015",
+        "Nome attività": "Galleria Sangiorgi - Roma Palazzo Borghese\t Galleria dei bronzi e dei marmi, negozio di arte antica e moderna\t"
+    },
+    "BE_II_1": {
+        "ID": "BE_II_1",
+        "Nome Persona": "Giuseppe Bellesi",
+        "ID_entità": "BE_II",
+        "ID_luoghi": {
+            "UK_1": {
+                "ID": "UK_1",
+                "Nazione": "Gran Bretagna",
+                "Regione": "Gran Bretagna",
+                "Città": "Londra",
+                "Via": "Carlton Street",
+                "Civico": "",
+                "geo": {
+                    "lat": null,
+                    "lon": null
+                }
+            },
+            "UK_2": {
+                "ID": "UK_2",
+                "Nazione": "Gran Bretagna",
+                "Regione": "Gran Bretagna",
+                "Città": "Londra",
+                "Via": "Duke Street",
+                "Civico": "2",
+                "geo": {
+                    "lat": null,
+                    "lon": null
+                }
+            },
+            "UK_4": {
+                "ID": "UK_4",
+                "Nazione": "Gran Bretagna",
+                "Regione": "Gran Bretagna",
+                "Città": "Londra",
+                "Via": "New Bond Street",
+                "Civico": "174",
+                "geo": {
+                    "lat": null,
+                    "lon": null
+                }
+            },
+            "UK_5": {
+                "ID": "UK_5",
+                "Nazione": "Gran Bretagna",
+                "Regione": "Gran Bretagna",
+                "Città": "Londra",
+                "Via": "Paddington Gress",
+                "Civico": "15",
+                "geo": {
+                    "lat": null,
+                    "lon": null
+                }
+            },
+            "UK_6": {
+                "ID": "UK_6",
+                "Nazione": "Gran Bretagna",
+                "Regione": "Gran Bretagna",
+                "Città": "Londra",
+                "Via": "Regent Street",
+                "Civico": "",
+                "geo": {
+                    "lat": null,
+                    "lon": null
+                }
+            },
+            "UK_7": {
+                "ID": "UK_7",
+                "Nazione": "Gran Bretagna",
+                "Regione": "Gran Bretagna",
+                "Città": "Londra",
+                "Via": "Savile Row",
+                "Civico": "32",
+                "geo": {
+                    "lat": null,
+                    "lon": null
+                }
+            },
+            "IT_81": {
+                "ID": "IT_81",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Via Montughi",
+                "Civico": "31",
+                "geo": {
+                    "lat": 43.7961246,
+                    "lon": 11.2574072
+                }
+            }
+        },
+        "Professione": "musicista e antiquario",
+        "Nascita": "1873",
+        "Morte": "1955",
+        "Nome attività": "The Italian Art Gallery"
+    },
+    "BO_1": {
+        "ID": "BO_1",
+        "Nome Persona": "Ferruccio Ildebrando Bossi",
+        "ID_entità": "BO",
+        "ID_luoghi": {
+            "IT_16": {
+                "ID": "IT_16",
+                "Nazione": "Italia",
+                "Regione": "Liguria",
+                "Città": "Genova",
+                "Via": "Via Assarotti",
+                "Civico": "1",
+                "geo": {
+                    "lat": 44.4102956,
+                    "lon": 8.938931
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "1884",
+        "Morte": "1970",
+        "Nome attività": "Non noto"
+    },
+    "GR_1": {
+        "ID": "GR_1",
+        "Nome Persona": "Luigi Grassi",
+        "ID_entità": "GR",
+        "ID_luoghi": {
+            "IT_73": {
+                "ID": "IT_73",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Via della scala",
+                "Civico": "",
+                "geo": {
+                    "lat": 43.7780668,
+                    "lon": 11.2420376
+                }
+            },
+            "IT_53": {
+                "ID": "IT_53",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Via Cavour",
+                "Civico": "88",
+                "geo": {
+                    "lat": 43.780777,
+                    "lon": 11.26058
+                }
+            }
+        },
+        "Professione": "antiquario e restauroatore",
+        "Nascita": "1858",
+        "Morte": "1937",
+        "Nome attività": "Luigi Grassi & sons"
+    },
+    "BR_II_1": {
+        "ID": "BR_II_1",
+        "Nome Persona": "Livio Bruschi",
+        "ID_entità": "BR_II",
+        "ID_luoghi": {
+            "IT_33": {
+                "ID": "IT_33",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Lungarno Corsini",
+                "Civico": "10",
+                "geo": {
+                    "lat": 43.7703574,
+                    "lon": 11.2488863
+                }
+            },
+            "IT_60": {
+                "ID": "IT_60",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Via dei Fossi",
+                "Civico": "42R",
+                "geo": {
+                    "lat": 43.7713694,
+                    "lon": 11.2479923
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "1906",
+        "Morte": "1973",
+        "Nome attività": "Antichità Bruschi"
+    },
+    "BR_II_2": {
+        "ID": "BR_II_2",
+        "Nome Persona": "",
+        "ID_entità": "BR_II",
+        "ID_luoghi": {
+            "IT_60": {
+                "ID": "IT_60",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Via dei Fossi",
+                "Civico": "42R",
+                "geo": {
+                    "lat": 43.7713694,
+                    "lon": 11.2479923
+                }
+            }
+        },
+        "Professione": "antiquaria",
+        "Nascita": "",
+        "Morte": "",
+        "Nome attività": "Antichità Bruschi"
+    },
+    "BR_II_3": {
+        "ID": "BR_II_3",
+        "Nome Persona": "Anita Almehagen Bruschi",
+        "ID_entità": "BR_II",
+        "ID_luoghi": {
+            "IT_60": {
+                "ID": "IT_60",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Via dei Fossi",
+                "Civico": "42R",
+                "geo": {
+                    "lat": 43.7713694,
+                    "lon": 11.2479923
+                }
+            }
+        },
+        "Professione": "antiquaria",
+        "Nascita": "",
+        "Morte": "",
+        "Nome attività": "Antichità Bruschi"
+    },
+    "JA_6": {
+        "ID": "JA_6",
+        "Nome Persona": "Augusto Jandolo",
+        "ID_entità": "JA",
+        "ID_luoghi": {
+            "IT_128": {
+                "ID": "IT_128",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Via Sistina",
+                "Civico": "66",
+                "geo": {
+                    "lat": 41.9058579,
+                    "lon": 12.483887
+                }
+            },
+            "IT_116": {
+                "ID": "IT_116",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Via Margutta",
+                "Civico": "53",
+                "geo": {
+                    "lat": 41.9080943,
+                    "lon": 12.4802159
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "1873",
+        "Morte": "1952",
+        "Nome attività": "Non noto"
+    },
+    "JA_2": {
+        "ID": "JA_2",
+        "Nome Persona": "Alessandro Jandolo",
+        "ID_entità": "JA",
+        "ID_luoghi": {
+            "IT_109": {
+                "ID": "IT_109",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Via della Consolazione",
+                "Civico": "184",
+                "geo": {
+                    "lat": 41.8917164,
+                    "lon": 12.4834113
+                }
+            },
+            "IT_105": {
+                "ID": "IT_105",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Via del Babuino",
+                "Civico": "92",
+                "geo": {
+                    "lat": 41.9084557,
+                    "lon": 12.4789596
+                }
+            },
+            "IT_128": {
+                "ID": "IT_128",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Via Sistina",
+                "Civico": "66",
+                "geo": {
+                    "lat": 41.9058579,
+                    "lon": 12.483887
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "",
+        "Morte": "1930",
+        "Nome attività": "Non noto"
+    },
+    "JA_3": {
+        "ID": "JA_3",
+        "Nome Persona": "Antonio Jandolo",
+        "ID_entità": "JA",
+        "ID_luoghi": {
+            "IT_109": {
+                "ID": "IT_109",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Via della Consolazione",
+                "Civico": "184",
+                "geo": {
+                    "lat": 41.8917164,
+                    "lon": 12.4834113
+                }
+            },
+            "IT_105": {
+                "ID": "IT_105",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Via del Babuino",
+                "Civico": "92",
+                "geo": {
+                    "lat": 41.9084557,
+                    "lon": 12.4789596
+                }
+            },
+            "IT_128": {
+                "ID": "IT_128",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Via Sistina",
+                "Civico": "66",
+                "geo": {
+                    "lat": 41.9058579,
+                    "lon": 12.483887
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "",
+        "Morte": "1912",
+        "Nome attività": "Non noto"
+    },
+    "CA_II_1": {
+        "ID": "CA_II_1",
+        "Nome Persona": "Vincenzo Capobianchi",
+        "ID_entità": "CA_II",
+        "ID_luoghi": {
+            "IT_99": {
+                "ID": "IT_99",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Piazza Trinità dei Monti",
+                "Civico": "6",
+                "geo": {
+                    "lat": null,
+                    "lon": null
+                }
+            },
+            "IT_113": {
+                "ID": "IT_113",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Via due macelli",
+                "Civico": "86",
+                "geo": {
+                    "lat": 41.9039747,
+                    "lon": 12.4843312
+                }
+            },
+            "IT_125": {
+                "ID": "IT_125",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Via Sistina",
+                "Civico": "16",
+                "geo": {
+                    "lat": 41.9039736,
+                    "lon": 12.4870662
+                }
+            }
+        },
+        "Professione": "pittore e antiquario",
+        "Nascita": "1836",
+        "Morte": "1928",
+        "Nome attività": "Giacomini & C.\t Corvisieri &C.\t"
+    },
+    "CI_1": {
+        "ID": "CI_1",
+        "Nome Persona": "Vincenzo Ciampolini",
+        "ID_entità": "CI",
+        "ID_luoghi": {
+            "IT_42": {
+                "ID": "IT_42",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Piazza S. Maria Novella",
+                "Civico": "3",
+                "geo": {
+                    "lat": 43.773116,
+                    "lon": 11.2490357
+                }
+            },
+            "IT_79": {
+                "ID": "IT_79",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Via Malcontenti",
+                "Civico": "4",
+                "geo": {
+                    "lat": 43.7672433,
+                    "lon": 11.2673138
+                }
+            },
+            "IT_89": {
+                "ID": "IT_89",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Borgo Vecchio",
+                "Civico": "165",
+                "geo": {
+                    "lat": 41.707157,
+                    "lon": 12.6928571
+                }
+            },
+            "IT_90": {
+                "ID": "IT_90",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Foro Romano",
+                "Civico": "7",
+                "geo": {
+                    "lat": 41.89141,
+                    "lon": 12.4848703
+                }
+            },
+            "IT_133": {
+                "ID": "IT_133",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Via Trinità dei Monti",
+                "Civico": "9",
+                "geo": {
+                    "lat": null,
+                    "lon": null
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "1838",
+        "Morte": "1930",
+        "Nome attività": "Fabbrica di Mobili Artistici. Pia Casa di Lavoro"
+    },
+    "CO_I_1": {
+        "ID": "CO_I_1",
+        "Nome Persona": "Alessandro Contini Bonacossi",
+        "ID_entità": "CO_I",
+        "ID_luoghi": {
+            "IT_87": {
+                "ID": "IT_87",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Viale Filippo Strozzi",
+                "Civico": "2",
+                "geo": {
+                    "lat": 43.7799864,
+                    "lon": 11.2488546
+                }
+            },
+            "IT_121": {
+                "ID": "IT_121",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Via Nomentana",
+                "Civico": "60",
+                "geo": {
+                    "lat": 41.9995143,
+                    "lon": 12.6283082
+                }
+            },
+            "IT_132": {
+                "ID": "IT_132",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Via Tevere",
+                "Civico": "7",
+                "geo": {
+                    "lat": 41.9142301,
+                    "lon": 12.4963669
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "1878",
+        "Morte": "1955",
+        "Nome attività": "Non noto"
+    },
+    "CO_II_1": {
+        "ID": "CO_II_1",
+        "Nome Persona": "Gustavo Corvisieri",
+        "ID_entità": "CO_II",
+        "ID_luoghi": {
+            "IT_113": {
+                "ID": "IT_113",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Via due macelli",
+                "Civico": "86",
+                "geo": {
+                    "lat": 41.9039747,
+                    "lon": 12.4843312
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "",
+        "Morte": "1935",
+        "Nome attività": "Casa di vendite Corvisieri & C."
+    },
+    "CO_III_1": {
+        "ID": "CO_III_1",
+        "Nome Persona": "Emilio Costantini",
+        "ID_entità": "CO_III",
+        "ID_luoghi": {
+            "IT_32": {
+                "ID": "IT_32",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Corso Regina Elena",
+                "Civico": "6",
+                "geo": {
+                    "lat": null,
+                    "lon": null
+                }
+            },
+            "IT_70_b": {
+                "ID": "IT_70_b",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Via del Podere",
+                "Civico": "6",
+                "geo": {
+                    "lat": null,
+                    "lon": null
+                }
+            },
+            "IT_76_b": {
+                "ID": "IT_76_b",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Lungarno Guicciardini",
+                "Civico": "7",
+                "geo": {
+                    "lat": 43.7688942,
+                    "lon": 11.248804
+                }
+            }
+        },
+        "Professione": "pittore e antiquario",
+        "Nascita": "1842",
+        "Morte": "1926",
+        "Nome attività": "Non noto"
+    },
+    "CO_III_2": {
+        "ID": "CO_III_2",
+        "Nome Persona": "Davide Augusto Costantini",
+        "ID_entità": "CO_III",
+        "ID_luoghi": {
+            "IT_32": {
+                "ID": "IT_32",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Corso Regina Elena",
+                "Civico": "6",
+                "geo": {
+                    "lat": null,
+                    "lon": null
+                }
+            },
+            "IT_76_b": {
+                "ID": "IT_76_b",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Lungarno Guicciardini",
+                "Civico": "7",
+                "geo": {
+                    "lat": 43.7688942,
+                    "lon": 11.248804
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "1875",
+        "Morte": "",
+        "Nome attività": "Non noto"
+    },
+    "JA_4": {
+        "ID": "JA_4",
+        "Nome Persona": "Ettore Jandolo",
+        "ID_entità": "JA",
+        "ID_luoghi": {
+            "IT_109": {
+                "ID": "IT_109",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Via della Consolazione",
+                "Civico": "184",
+                "geo": {
+                    "lat": 41.8917164,
+                    "lon": 12.4834113
+                }
+            },
+            "IT_105": {
+                "ID": "IT_105",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Via del Babuino",
+                "Civico": "92",
+                "geo": {
+                    "lat": 41.9084557,
+                    "lon": 12.4789596
+                }
+            },
+            "IT_115": {
+                "ID": "IT_115",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Via Margutta",
+                "Civico": "51a",
+                "geo": {
+                    "lat": 41.9089407,
+                    "lon": 12.4791801
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "",
+        "Morte": "",
+        "Nome attività": "Galleria d'Arte Ettore Jandolo"
+    },
+    "JA_5": {
+        "ID": "JA_5",
+        "Nome Persona": "Ugo Jandolo",
+        "ID_entità": "JA",
+        "ID_luoghi": {
+            "IT_128": {
+                "ID": "IT_128",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Via Sistina",
+                "Civico": "66",
+                "geo": {
+                    "lat": 41.9058579,
+                    "lon": 12.483887
+                }
+            },
+            "IT_111": {
+                "ID": "IT_111",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Via delle belle arti",
+                "Civico": "2",
+                "geo": {
+                    "lat": null,
+                    "lon": null
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "",
+        "Morte": "",
+        "Nome attività": "Non noto"
+    },
+    "DI_1": {
+        "ID": "DI_1",
+        "Nome Persona": "Angelo Di Castro",
+        "ID_entità": "DI",
+        "ID_luoghi": {
+            "IT_98": {
+                "ID": "IT_98",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Piazza Scossacavalli",
+                "Civico": "",
+                "geo": {
+                    "lat": null,
+                    "lon": null
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "",
+        "Morte": "",
+        "Nome attività": "Non noto"
+    },
+    "DI_2": {
+        "ID": "DI_2",
+        "Nome Persona": "Leone Di Castro",
+        "ID_entità": "DI",
+        "ID_luoghi": {
+            "IT_104": {
+                "ID": "IT_104",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Via del Babuino",
+                "Civico": "88",
+                "geo": {
+                    "lat": 41.9084557,
+                    "lon": 12.4789596
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "1878",
+        "Morte": "1950",
+        "Nome attività": "Antichità A.L. Di Castro"
+    },
+    "DI_3": {
+        "ID": "DI_3",
+        "Nome Persona": "Alberto Di Castro",
+        "ID_entità": "DI",
+        "ID_luoghi": {
+            "IT_104": {
+                "ID": "IT_104",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Via del Babuino",
+                "Civico": "88",
+                "geo": {
+                    "lat": 41.9084557,
+                    "lon": 12.4789596
+                }
+            },
+            "IT_107": {
+                "ID": "IT_107",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Via del Babuino",
+                "Civico": "110",
+                "geo": {
+                    "lat": 41.9084557,
+                    "lon": 12.4789596
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "1909",
+        "Morte": "1978",
+        "Nome attività": "Antichità A.L. Di Castro"
+    },
+    "DI_4": {
+        "ID": "DI_4",
+        "Nome Persona": "Franco Di Castro",
+        "ID_entità": "DI",
+        "ID_luoghi": {
+            "IT_107": {
+                "ID": "IT_107",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Via del Babuino",
+                "Civico": "110",
+                "geo": {
+                    "lat": 41.9084557,
+                    "lon": 12.4789596
+                }
+            },
+            "IT_92": {
+                "ID": "IT_92",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Piazza di Spagna",
+                "Civico": "5",
+                "geo": {
+                    "lat": 41.9056375,
+                    "lon": 12.482346487653565
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "1934",
+        "Morte": "2012",
+        "Nome attività": "Non noto"
+    },
+    "DI_5": {
+        "ID": "DI_5",
+        "Nome Persona": "Alberto Di Castro",
+        "ID_entità": "DI",
+        "ID_luoghi": {
+            "IT_92": {
+                "ID": "IT_92",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Piazza di Spagna",
+                "Civico": "5",
+                "geo": {
+                    "lat": 41.9056375,
+                    "lon": 12.482346487653565
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "",
+        "Morte": "in vita",
+        "Nome attività": "Antichità Alberto Di Castro"
+    },
+    "DI_6": {
+        "ID": "DI_6",
+        "Nome Persona": "Alessandra Di Castro",
+        "ID_entità": "DI",
+        "ID_luoghi": {
+            "IT_91": {
+                "ID": "IT_91",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Piazza di Spagna",
+                "Civico": "4",
+                "geo": {
+                    "lat": 41.9056375,
+                    "lon": 12.482346487653565
+                }
+            },
+            "IT_92": {
+                "ID": "IT_92",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Piazza di Spagna",
+                "Civico": "5",
+                "geo": {
+                    "lat": 41.9056375,
+                    "lon": 12.482346487653565
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "",
+        "Morte": "in vita",
+        "Nome attività": "Alessandra Di Castro antichità"
+    },
+    "JA_7": {
+        "ID": "JA_7",
+        "Nome Persona": "Salvatore Jandolo",
+        "ID_entità": "JA",
+        "ID_luoghi": {
+            "IT_128": {
+                "ID": "IT_128",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Via Sistina",
+                "Civico": "66",
+                "geo": {
+                    "lat": 41.9058579,
+                    "lon": 12.483887
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "",
+        "Morte": "",
+        "Nome attività": "Non noto"
+    },
+    "FR_1": {
+        "ID": "FR_1",
+        "Nome Persona": "Giuliano Freschi",
+        "ID_entità": "FR",
+        "ID_luoghi": {
+            "IT_45": {
+                "ID": "IT_45",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Via Borgo Ognissanti",
+                "Civico": "",
+                "geo": {
+                    "lat": null,
+                    "lon": null
+                }
+            },
+            "IT_74": {
+                "ID": "IT_74",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Via della vigna nuova",
+                "Civico": "79R",
+                "geo": {
+                    "lat": 43.7710558,
+                    "lon": 11.2489301
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "1920",
+        "Morte": "2000",
+        "Nome attività": "Galleria antiquaria Salocchi-Freschi\t Galleria Freschi\t"
+    },
+    "FR_2": {
+        "ID": "FR_2",
+        "Nome Persona": "Roberto Freschi",
+        "ID_entità": "FR",
+        "ID_luoghi": {
+            "IT_74": {
+                "ID": "IT_74",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Via della vigna nuova",
+                "Civico": "79R",
+                "geo": {
+                    "lat": 43.7710558,
+                    "lon": 11.2489301
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "",
+        "Morte": "in vita",
+        "Nome attività": "Galleria Freschi\t"
+    },
+    "GA_1": {
+        "ID": "GA_1",
+        "Nome Persona": "Antonio Galliani",
+        "ID_entità": "GA",
+        "ID_luoghi": {
+            "IT_28": {
+                "ID": "IT_28",
+                "Nazione": "Italia",
+                "Regione": "Emilia-Romagna",
+                "Città": "Bologna",
+                "Via": "Via Mazzini",
+                "Civico": "50",
+                "geo": {
+                    "lat": 44.4890566,
+                    "lon": 11.3605112
+                }
+            }
+        },
+        "Professione": "antiquario"
+    },
+    "GI_1": {
+        "ID": "GI_1",
+        "Nome Persona": "Ubaldo Giugni",
+        "ID_entità": "GI",
+        "ID_luoghi": {
+            "IT_54": {
+                "ID": "IT_54",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Via dei Banchi",
+                "Civico": "5",
+                "geo": {
+                    "lat": 43.7734769,
+                    "lon": 11.2510577
+                }
+            },
+            "IT_70": {
+                "ID": "IT_70",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Via del Moro",
+                "Civico": "30",
+                "geo": {
+                    "lat": 43.7716012,
+                    "lon": 11.2487145
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "",
+        "Morte": "",
+        "Nome attività": "Galleria d’Arte"
+    },
+    "TA_1": {
+        "ID": "TA_1",
+        "Nome Persona": "Filippo Tavazzi",
+        "ID_entità": "TA",
+        "ID_luoghi": {
+            "IT_100": {
+                "ID": "IT_100",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Via Condotti",
+                "Civico": "",
+                "geo": {
+                    "lat": 41.81693185,
+                    "lon": 12.458581498511967
+                }
+            },
+            "IT_112": {
+                "ID": "IT_112",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Via di Fontanella di Borghese",
+                "Civico": "29-33",
+                "geo": {
+                    "lat": null,
+                    "lon": null
+                }
+            },
+            "IT_93": {
+                "ID": "IT_93",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Piazza di Spagna",
+                "Civico": "9",
+                "geo": {
+                    "lat": 41.9056375,
+                    "lon": 12.482346487653565
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "1857",
+        "Morte": "1924",
+        "Nome attività": "Filippo Tavazzi antichità"
+    },
+    "GR_2": {
+        "ID": "GR_2",
+        "Nome Persona": "Arturo Grassi",
+        "ID_entità": "GR",
+        "ID_luoghi": {
+            "IT_30": {
+                "ID": "IT_30",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "",
+                "Civico": "",
+                "geo": {
+                    "lat": 43.7697955,
+                    "lon": 11.2556404
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "1899",
+        "Morte": "1971",
+        "Nome attività": "Luigi Grassi & sons"
+    },
+    "GR_3": {
+        "ID": "GR_3",
+        "Nome Persona": "Luigi Grassi",
+        "ID_entità": "GR",
+        "ID_luoghi": {
+            "IT_71": {
+                "ID": "IT_71",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Via del porcellana",
+                "Civico": "",
+                "geo": {
+                    "lat": 43.7731154,
+                    "lon": 11.2476722
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "1931",
+        "Morte": "in vita",
+        "Nome attività": "Galleria Ognissanti"
+    },
+    "GR_4": {
+        "ID": "GR_4",
+        "Nome Persona": "Giuseppe Grassi",
+        "ID_entità": "GR",
+        "ID_luoghi": {
+            "IT_30": {
+                "ID": "IT_30",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "",
+                "Civico": "",
+                "geo": {
+                    "lat": 43.7697955,
+                    "lon": 11.2556404
+                }
+            },
+            "IT_88": {
+                "ID": "IT_88",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "",
+                "Civico": "",
+                "geo": {
+                    "lat": 37.1277579,
+                    "lon": -7.6493087
+                }
+            }
+        },
+        "Professione": "antiquario"
+    },
+    "GU-BR_1": {
+        "ID": "GU-BR_1",
+        "Nome Persona": "Carlo Bruscoli",
+        "ID_entità": "GU-BR",
+        "ID_luoghi": {
+            "IT_51": {
+                "ID": "IT_51",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Via Borgo Ognissanti",
+                "Civico": "50-52 R",
+                "geo": {
+                    "lat": null,
+                    "lon": null
+                }
+            },
+            "IT_52": {
+                "ID": "IT_52",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Via Borgo Ognissanti",
+                "Civico": "54-56R",
+                "geo": {
+                    "lat": null,
+                    "lon": null
+                }
+            }
+        },
+        "Professione": "Libraio e antiquario",
+        "Nascita": "1879",
+        "Morte": "1955",
+        "Nome attività": "Non noto"
+    },
+    "GU-BR_2": {
+        "ID": "GU-BR_2",
+        "Nome Persona": "Riccardo Bruscoli",
+        "ID_entità": "GU-BR",
+        "ID_luoghi": {
+            "IT_51": {
+                "ID": "IT_51",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Via Borgo Ognissanti",
+                "Civico": "50-52 R",
+                "geo": {
+                    "lat": null,
+                    "lon": null
+                }
+            },
+            "IT_52": {
+                "ID": "IT_52",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Via Borgo Ognissanti",
+                "Civico": "54-56R",
+                "geo": {
+                    "lat": null,
+                    "lon": null
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "1913",
+        "Morte": "1989",
+        "Nome attività": "Non noto"
+    },
+    "GU-BR_3": {
+        "ID": "GU-BR_3",
+        "Nome Persona": "Marcello Guidi",
+        "ID_entità": "GU-BR",
+        "ID_luoghi": {
+            "IT_51": {
+                "ID": "IT_51",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Via Borgo Ognissanti",
+                "Civico": "50-52 R",
+                "geo": {
+                    "lat": null,
+                    "lon": null
+                }
+            },
+            "IT_52": {
+                "ID": "IT_52",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Via Borgo Ognissanti",
+                "Civico": "54-56R",
+                "geo": {
+                    "lat": null,
+                    "lon": null
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "1903",
+        "Morte": "1979",
+        "Nome attività": "Non noto"
+    },
+    "GU-BR_4": {
+        "ID": "GU-BR_4",
+        "Nome Persona": "Fabrizio Guidi-Bruscoli",
+        "ID_entità": "GU-BR",
+        "ID_luoghi": {
+            "IT_51": {
+                "ID": "IT_51",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Via Borgo Ognissanti",
+                "Civico": "50-52 R",
+                "geo": {
+                    "lat": null,
+                    "lon": null
+                }
+            },
+            "IT_52": {
+                "ID": "IT_52",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Via Borgo Ognissanti",
+                "Civico": "54-56R",
+                "geo": {
+                    "lat": null,
+                    "lon": null
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "1940",
+        "Morte": "in vita",
+        "Nome attività": "Non noto"
+    },
+    "IM_1": {
+        "ID": "IM_1",
+        "Nome Persona": "Alexandre Imbert",
+        "ID_entità": "IM",
+        "ID_luoghi": {
+            "IT_102": {
+                "ID": "IT_102",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Via Condotti",
+                "Civico": "59-61",
+                "geo": {
+                    "lat": 42.0759247,
+                    "lon": 12.1767667
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "1865",
+        "Morte": "1943",
+        "Nome attività": "Galerie A. Imbert"
+    },
+    "JA_1": {
+        "ID": "JA_1",
+        "Nome Persona": "Salvatore Jandolo",
+        "ID_entità": "JA",
+        "ID_luoghi": {
+            "IT_109": {
+                "ID": "IT_109",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Via della Consolazione",
+                "Civico": "184",
+                "geo": {
+                    "lat": 41.8917164,
+                    "lon": 12.4834113
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "",
+        "Morte": "",
+        "Nome attività": "Non noto"
+    },
+    "JA-TA_1": {
+        "ID": "JA-TA_1",
+        "Nome Persona": "Augusto Jandolo",
+        "ID_entità": "JA-TA",
+        "ID_luoghi": {
+            "IT_106": {
+                "ID": "IT_106",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Via del Babuino",
+                "Civico": "9697",
+                "geo": {
+                    "lat": 41.9084557,
+                    "lon": 12.4789596
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "1873",
+        "Morte": "1952",
+        "Nome attività": "Casa di vendite Jandolo&Tavazzi"
+    },
+    "JA-TA_2": {
+        "ID": "JA-TA_2",
+        "Nome Persona": "Salvatore Jandolo",
+        "ID_entità": "JA-TA",
+        "ID_luoghi": {
+            "IT_106": {
+                "ID": "IT_106",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Via del Babuino",
+                "Civico": "9697",
+                "geo": {
+                    "lat": 41.9084557,
+                    "lon": 12.4789596
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "",
+        "Morte": "",
+        "Nome attività": "Casa di vendite Jandolo&Tavazzi"
+    },
+    "JA-TA_3": {
+        "ID": "JA-TA_3",
+        "Nome Persona": "Filippo Tavazzi",
+        "ID_entità": "JA-TA",
+        "ID_luoghi": {
+            "IT_106": {
+                "ID": "IT_106",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Via del Babuino",
+                "Civico": "9697",
+                "geo": {
+                    "lat": 41.9084557,
+                    "lon": 12.4789596
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "1857",
+        "Morte": "1924",
+        "Nome attività": "Casa di vendite Jandolo&Tavazzi"
+    },
+    "JA-TA_4": {
+        "ID": "JA-TA_4",
+        "Nome Persona": "Guido Tavazzi",
+        "ID_entità": "JA-TA",
+        "ID_luoghi": {
+            "IT_106": {
+                "ID": "IT_106",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Via del Babuino",
+                "Civico": "9697",
+                "geo": {
+                    "lat": 41.9084557,
+                    "lon": 12.4789596
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "",
+        "Morte": "1942",
+        "Nome attività": "Casa di vendite Jandolo&Tavazzi"
+    },
+    "VO_I_1": {
+        "ID": "VO_I_1",
+        "Nome Persona": "Elia Volpi",
+        "ID_entità": "VO_I",
+        "ID_luoghi": {
+            "IT_38": {
+                "ID": "IT_38",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Piazza Goldoni",
+                "Civico": "2",
+                "geo": {
+                    "lat": 43.7708732,
+                    "lon": 11.2480322
+                }
+            },
+            "IT_82": {
+                "ID": "IT_82",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Via Porta Rossa",
+                "Civico": "9",
+                "geo": {
+                    "lat": 43.7701708,
+                    "lon": 11.2528464
+                }
+            }
+        },
+        "Professione": "pittore, restauratore e antiquario",
+        "Nascita": "1858",
+        "Morte": "1938",
+        "Nome attività": "Galleria Elia Volpi\t Galleria di Palazzo Davanzati\t"
+    },
+    "AC_1": {
+        "ID": "AC_1",
+        "Nome Persona": "Pietro Accorsi",
+        "ID_entità": "AC",
+        "ID_luoghi": {
+            "IT_9": {
+                "ID": "IT_9",
+                "Nazione": "Italia",
+                "Regione": "Piemonte",
+                "Città": "Torino",
+                "Via": "Via Po",
+                "Civico": "55",
+                "geo": {
+                    "lat": 45.0663916,
+                    "lon": 7.6932729
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "1891",
+        "Morte": "1892",
+        "Nome attività": "Galleria Accorsi"
+    },
+    "PA_I_1": {
+        "ID": "PA_I_1",
+        "Nome Persona": "Piero Pagano",
+        "ID_entità": "PA_I",
+        "ID_luoghi": {
+            "IT_13": {
+                "ID": "IT_13",
+                "Nazione": "Italia",
+                "Regione": "Liguria",
+                "Città": "Genova",
+                "Via": "Piazza Fontane Marose",
+                "Civico": "3-4",
+                "geo": {
+                    "lat": 44.41042335,
+                    "lon": 8.93494211372963
+                }
+            },
+            "IT_11": {
+                "ID": "IT_11",
+                "Nazione": "Italia",
+                "Regione": "Liguria",
+                "Città": "Genova",
+                "Via": "Mura dello Zerbino",
+                "Civico": "10",
+                "geo": {
+                    "lat": 44.4097588,
+                    "lon": 8.9478655
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "1929",
+        "Morte": "2007",
+        "Nome attività": "Non noto"
+    },
+    "PA_II_1": {
+        "ID": "PA_II_1",
+        "Nome Persona": "Paolo Paolini",
+        "ID_entità": "PA_II",
+        "ID_luoghi": {
+            "IT_88": {
+                "ID": "IT_88",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "",
+                "Civico": "",
+                "geo": {
+                    "lat": 37.1277579,
+                    "lon": -7.6493087
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "",
+        "Morte": "1924",
+        "Nome attività": "Non noto"
+    },
+    "RO_1": {
+        "ID": "RO_1",
+        "Nome Persona": "Salvatore Romano",
+        "ID_entità": "RO",
+        "ID_luoghi": {
+            "IT_68": {
+                "ID": "IT_68",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Via dei serragli",
+                "Civico": "8",
+                "geo": {
+                    "lat": 43.768538,
+                    "lon": 11.2462163
+                }
+            },
+            "IT_75_a": {
+                "ID": "IT_75_a",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Via delle belle donne",
+                "Civico": "",
+                "geo": {
+                    "lat": 43.7722357,
+                    "lon": 11.2506105
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "1875",
+        "Morte": "1955",
+        "Nome attività": "Non noto"
+    },
+    "RO_2": {
+        "ID": "RO_2",
+        "Nome Persona": "Francesco Romano",
+        "ID_entità": "RO",
+        "ID_luoghi": {
+            "IT_68": {
+                "ID": "IT_68",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Via dei serragli",
+                "Civico": "8",
+                "geo": {
+                    "lat": 43.768538,
+                    "lon": 11.2462163
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "1919",
+        "Morte": "1981",
+        "Nome attività": "Non noto"
+    },
+    "LA_I_1": {
+        "ID": "LA_I_1",
+        "Nome Persona": "Leonardo Lapicirella",
+        "ID_entità": "LA_I",
+        "ID_luoghi": {
+            "IT_36": {
+                "ID": "IT_36",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Lungarno Vespucci",
+                "Civico": "",
+                "geo": {
+                    "lat": 43.7736879,
+                    "lon": 11.2412415
+                }
+            },
+            "IT_50": {
+                "ID": "IT_50",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Via Borgo Ognissanti",
+                "Civico": "52",
+                "geo": {
+                    "lat": null,
+                    "lon": null
+                }
+            },
+            "IT_77": {
+                "ID": "IT_77",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Via Maggio",
+                "Civico": "",
+                "geo": {
+                    "lat": 43.7665806,
+                    "lon": 11.2488502
+                }
+            },
+            "IT_84": {
+                "ID": "IT_84",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Via Tornabuoni",
+                "Civico": "",
+                "geo": {
+                    "lat": 43.7715485,
+                    "lon": 11.2513597
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "1927",
+        "Morte": "2022",
+        "Nome attività": "Galleria Lapiccirella"
+    },
+    "LA_I_2": {
+        "ID": "LA_I_2",
+        "Nome Persona": "Damiano Lapicirella",
+        "ID_entità": "LA_I",
+        "ID_luoghi": {
+            "IT_77": {
+                "ID": "IT_77",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Via Maggio",
+                "Civico": "",
+                "geo": {
+                    "lat": 43.7665806,
+                    "lon": 11.2488502
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "",
+        "Morte": "in vita",
+        "Nome attività": "Galleria Lapiccirella"
+    },
+    "LA_II_1": {
+        "ID": "LA_II_1",
+        "Nome Persona": "Michel Lazzaroni",
+        "ID_entità": "LA_II",
+        "ID_luoghi": {
+            "FR_1": {
+                "ID": "FR_1",
+                "Nazione": "Francia",
+                "Regione": "Francia",
+                "Città": "Nizza",
+                "Via": "Rue de France",
+                "Civico": "94",
+                "geo": {
+                    "lat": 43.6914121,
+                    "lon": 7.2448839
+                }
+            },
+            "FR_8": {
+                "ID": "FR_8",
+                "Nazione": "Francia",
+                "Regione": "Francia",
+                "Città": "Parigi",
+                "Via": "Rue Spontini",
+                "Civico": "16",
+                "geo": {
+                    "lat": 48.8705218,
+                    "lon": 2.2785919
+                }
+            },
+            "IT_135": {
+                "ID": "IT_135",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Viale di Tor di Quinto",
+                "Civico": "58",
+                "geo": {
+                    "lat": 41.9373142,
+                    "lon": 12.4755238
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "1863",
+        "Morte": "1934",
+        "Nome attività": "Non noto"
+    },
+    "MO_1": {
+        "ID": "MO_1",
+        "Nome Persona": "Edoardo Moratilla",
+        "ID_entità": "MO",
+        "ID_luoghi": {
+            "FR_6": {
+                "ID": "FR_6",
+                "Nazione": "Francia",
+                "Regione": "Francia",
+                "Città": "Parigi",
+                "Via": "Rue de Courcelles",
+                "Civico": "117",
+                "geo": {
+                    "lat": 48.8829207,
+                    "lon": 2.2991725
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "1901",
+        "Morte": "1973",
+        "Nome attività": "Non noto"
+    },
+    "NI_1": {
+        "ID": "NI_1",
+        "Nome Persona": "Costantino Nigro",
+        "ID_entità": "NI",
+        "ID_luoghi": {
+            "IT_22": {
+                "ID": "IT_22",
+                "Nazione": "Italia",
+                "Regione": "Liguria",
+                "Città": "Genova",
+                "Via": "Viale Sauli",
+                "Civico": "3",
+                "geo": {
+                    "lat": 44.4072471,
+                    "lon": 8.9424667
+                }
+            }
+        },
+        "Professione": "avvocato e antiquario",
+        "Nascita": "1894",
+        "Morte": "1967",
+        "Nome attività": "Non noto"
+    },
+    "OR_1": {
+        "ID": "OR_1",
+        "Nome Persona": "Raimondo Orselli",
+        "ID_entità": "OR",
+        "ID_luoghi": {
+            "IT_47": {
+                "ID": "IT_47",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Via Borgo Ognissanti",
+                "Civico": "9",
+                "geo": {
+                    "lat": null,
+                    "lon": null
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "",
+        "Morte": "",
+        "Nome attività": "Non noto"
+    },
+    "TO_1": {
+        "ID": "TO_1",
+        "Nome Persona": "Raoul Tolentino",
+        "ID_entità": "TO",
+        "ID_luoghi": {
+            "USA_2": {
+                "ID": "USA_2",
+                "Nazione": "Stati Uniti d'America",
+                "Regione": "Stati Uniti d'America",
+                "Città": "New York",
+                "Via": "749 5th Avenue",
+                "Civico": "",
+                "geo": {
+                    "lat": 40.6590234,
+                    "lon": -73.9960462
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "",
+        "Morte": "1928",
+        "Nome attività": "Galerie d’Art Ancien"
+    },
+    "VI_III_1": {
+        "ID": "VI_III_1",
+        "Nome Persona": "Edoardo Villa",
+        "ID_entità": "VI_III",
+        "ID_luoghi": {
+            "IT_21": {
+                "ID": "IT_21",
+                "Nazione": "Italia",
+                "Regione": "Liguria",
+                "Città": "Genova",
+                "Via": "Via XX Settembre",
+                "Civico": "44",
+                "geo": {
+                    "lat": 44.4068949,
+                    "lon": 8.9350535
+                }
+            }
+        },
+        "Professione": "pittore, antiquario",
+        "Nascita": "",
+        "Morte": "1925",
+        "Nome attività": "Galleria Permanente d’Arte Antica e Moderna A. Vitelli"
+    },
+    "PI_1": {
+        "ID": "PI_1",
+        "Nome Persona": "Cesare Pini",
+        "ID_entità": "PI",
+        "ID_luoghi": {
+            "IT_25": {
+                "ID": "IT_25",
+                "Nazione": "Italia",
+                "Regione": "Emilia-Romagna",
+                "Città": "Bologna",
+                "Via": "Via del Monte",
+                "Civico": "8",
+                "geo": {
+                    "lat": 44.4566057,
+                    "lon": 11.3782593
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "",
+        "Morte": "",
+        "Nome attività": "Non noto"
+    },
+    "PI_2": {
+        "ID": "PI_2",
+        "Nome Persona": "Umberto Pini",
+        "ID_entità": "PI",
+        "ID_luoghi": {
+            "IT_83": {
+                "ID": "IT_83",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Via San Nicolò",
+                "Civico": "95",
+                "geo": {
+                    "lat": null,
+                    "lon": null
+                }
+            },
+            "IT_85": {
+                "ID": "IT_85",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Via Tornabuoni",
+                "Civico": "4",
+                "geo": {
+                    "lat": 43.7704385,
+                    "lon": 11.2514389
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "",
+        "Morte": "",
+        "Nome attività": "Non noto"
+    },
+    "PI_3": {
+        "ID": "PI_3",
+        "Nome Persona": "Giovanni Pini",
+        "ID_entità": "PI",
+        "ID_luoghi": {
+            "IT_83": {
+                "ID": "IT_83",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Via San Nicolò",
+                "Civico": "95",
+                "geo": {
+                    "lat": null,
+                    "lon": null
+                }
+            },
+            "IT_85": {
+                "ID": "IT_85",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Via Tornabuoni",
+                "Civico": "4",
+                "geo": {
+                    "lat": 43.7704385,
+                    "lon": 11.2514389
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "",
+        "Morte": "",
+        "Nome attività": "Non noto"
+    },
+    "PO_I_1": {
+        "ID": "PO_I_1",
+        "Nome Persona": "Publio Podio",
+        "ID_entità": "PO_I",
+        "ID_luoghi": {
+            "IT_23": {
+                "ID": "IT_23",
+                "Nazione": "Italia",
+                "Regione": "Emilia-Romagna",
+                "Città": "Bologna",
+                "Via": "Piazza della mercanzia",
+                "Civico": "6",
+                "geo": {
+                    "lat": 44.494052,
+                    "lon": 11.3463857
+                }
+            },
+            "IT_26": {
+                "ID": "IT_26",
+                "Nazione": "Italia",
+                "Regione": "Emilia-Romagna",
+                "Città": "Bologna",
+                "Via": "Via Mazzini",
+                "Civico": "25",
+                "geo": {
+                    "lat": 44.5043515,
+                    "lon": 11.0844641
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "",
+        "Morte": "1932",
+        "Nome attività": "Cav. Prof. Publio Podio & C."
+    },
+    "PO_I_2": {
+        "ID": "PO_I_2",
+        "Nome Persona": "Decio Podio",
+        "ID_entità": "PO_I",
+        "ID_luoghi": {
+            "IT_27": {
+                "ID": "IT_27",
+                "Nazione": "Italia",
+                "Regione": "Emilia-Romagna",
+                "Città": "Bologna",
+                "Via": "Via Mazzini",
+                "Civico": "48",
+                "geo": {
+                    "lat": 44.5042077,
+                    "lon": 11.0856327
+                }
+            }
+        },
+        "Professione": "antiquario e restauratore",
+        "Nascita": "",
+        "Morte": "",
+        "Nome attività": "Galleria fratelli Podio Antichità"
+    },
+    "PO_I_3": {
+        "ID": "PO_I_3",
+        "Nome Persona": "Enrico Podio",
+        "ID_entità": "PO_I",
+        "ID_luoghi": {
+            "IT_27": {
+                "ID": "IT_27",
+                "Nazione": "Italia",
+                "Regione": "Emilia-Romagna",
+                "Città": "Bologna",
+                "Via": "Via Mazzini",
+                "Civico": "48",
+                "geo": {
+                    "lat": 44.5042077,
+                    "lon": 11.0856327
+                }
+            }
+        },
+        "Professione": "antiquario e restauratore",
+        "Nascita": "",
+        "Morte": "",
+        "Nome attività": "Galleria fratelli Podio Antichità"
+    },
+    "PO_I_4": {
+        "ID": "PO_I_4",
+        "Nome Persona": "Luigi Podio",
+        "ID_entità": "PO_I",
+        "ID_luoghi": {
+            "IT_27": {
+                "ID": "IT_27",
+                "Nazione": "Italia",
+                "Regione": "Emilia-Romagna",
+                "Città": "Bologna",
+                "Via": "Via Mazzini",
+                "Civico": "48",
+                "geo": {
+                    "lat": 44.5042077,
+                    "lon": 11.0856327
+                }
+            }
+        },
+        "Professione": "antiquario e restauratore",
+        "Nascita": "",
+        "Morte": "",
+        "Nome attività": "Galleria fratelli Podio Antichità"
+    },
+    "PO_II_1": {
+        "ID": "PO_II_1",
+        "Nome Persona": "Francesco Pospisil",
+        "ID_entità": "PO_II",
+        "ID_luoghi": {
+            "IT_1": {
+                "ID": "IT_1",
+                "Nazione": "Italia",
+                "Regione": "Veneto",
+                "Città": "Venezia",
+                "Via": "Canal Grande (Palazzo Sagredo)",
+                "Civico": "",
+                "geo": {
+                    "lat": null,
+                    "lon": null
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "",
+        "Morte": "",
+        "Nome attività": "Non noto"
+    },
+    "RA_1": {
+        "ID": "RA_1",
+        "Nome Persona": "Arturo Rambaldi",
+        "ID_entità": "RA",
+        "ID_luoghi": {
+            "IT_24": {
+                "ID": "IT_24",
+                "Nazione": "Italia",
+                "Regione": "Emilia-Romagna",
+                "Città": "Bologna",
+                "Via": "Via Castiglione",
+                "Civico": "1",
+                "geo": {
+                    "lat": 44.4934277,
+                    "lon": 11.3463737
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "",
+        "Morte": "1929",
+        "Nome attività": "Galleria di Antichità e Casa di vendite A. Rambaldi"
+    },
+    "BE_I_1": {
+        "ID": "BE_I_1",
+        "Nome Persona": "Giuseppe Bellini",
+        "ID_entità": "BE_I",
+        "ID_luoghi": {
+            "IT_72": {
+                "ID": "IT_72",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Via Del Sole",
+                "Civico": "",
+                "geo": {
+                    "lat": 43.7725193,
+                    "lon": 11.2498118
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "",
+        "Morte": "",
+        "Nome attività": "Galleria Bellini"
+    },
+    "BE_I_2": {
+        "ID": "BE_I_2",
+        "Nome Persona": "Luigi Bellini",
+        "ID_entità": "BE_I",
+        "ID_luoghi": {
+            "IT_76": {
+                "ID": "IT_76",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Lungarno Soderini",
+                "Civico": "5",
+                "geo": {
+                    "lat": 43.7696787,
+                    "lon": 11.2464656
+                }
+            },
+            "IT_43": {
+                "ID": "IT_43",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Piazza Santa Trinita",
+                "Civico": "5R",
+                "geo": {
+                    "lat": 43.7700572,
+                    "lon": 11.251220681680373
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "1884",
+        "Morte": "1957",
+        "Nome attività": "Galleria Bellini"
+    },
+    "RU_1": {
+        "ID": "RU_1",
+        "Nome Persona": "Pompeo Rubinacci",
+        "ID_entità": "RU",
+        "ID_luoghi": {
+            "IT_13": {
+                "ID": "IT_13",
+                "Nazione": "Italia",
+                "Regione": "Liguria",
+                "Città": "Genova",
+                "Via": "Piazza Fontane Marose",
+                "Civico": "3-4",
+                "geo": {
+                    "lat": 44.41042335,
+                    "lon": 8.93494211372963
+                }
+            },
+            "IT_15": {
+                "ID": "IT_15",
+                "Nazione": "Italia",
+                "Regione": "Liguria",
+                "Città": "Genova",
+                "Via": "Piazza S. Matteo",
+                "Civico": "",
+                "geo": {
+                    "lat": 44.408339049999995,
+                    "lon": 8.93287550281141
+                }
+            },
+            "IT_17": {
+                "ID": "IT_17",
+                "Nazione": "Italia",
+                "Regione": "Liguria",
+                "Città": "Genova",
+                "Via": "Via G.T. Invrea",
+                "Civico": "20",
+                "geo": {
+                    "lat": null,
+                    "lon": null
+                }
+            }
+        },
+        "Professione": "pittore, restauratore e antiquario",
+        "Nascita": "1893",
+        "Morte": "1974",
+        "Nome attività": "Studio d'Arte"
+    },
+    "SA_I_1": {
+        "ID": "SA_I_1",
+        "Nome Persona": "Giovanni Salocchi",
+        "ID_entità": "SA_I",
+        "ID_luoghi": {
+            "IT_59": {
+                "ID": "IT_59",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Via dei Fossi",
+                "Civico": "40",
+                "geo": {
+                    "lat": 43.7718275,
+                    "lon": 11.2485274
+                }
+            },
+            "IT_45": {
+                "ID": "IT_45",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Via Borgo Ognissanti",
+                "Civico": "",
+                "geo": {
+                    "lat": null,
+                    "lon": null
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "1901",
+        "Morte": "1984",
+        "Nome attività": "Galleria Salocchi\t Antiquaria Salocchi e Freschi\t"
+    },
+    "SA_I_2": {
+        "ID": "SA_I_2",
+        "Nome Persona": "Nicolò o Nicola Salocchi",
+        "ID_entità": "SA_I",
+        "ID_luoghi": {
+            "IT_45": {
+                "ID": "IT_45",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Via Borgo Ognissanti",
+                "Civico": "",
+                "geo": {
+                    "lat": null,
+                    "lon": null
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "1927",
+        "Morte": "1999",
+        "Nome attività": "Antiquaria Salocchi e Freschi\t"
+    },
+    "SA_II_1": {
+        "ID": "SA_II_1",
+        "Nome Persona": "Salvadore Salvadori",
+        "ID_entità": "SA_II",
+        "ID_luoghi": {
+            "IT_40": {
+                "ID": "IT_40",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Piazza Pitti",
+                "Civico": "12",
+                "geo": {
+                    "lat": 43.7658033,
+                    "lon": 11.2494315
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "",
+        "Morte": "",
+        "Nome attività": "Non noto"
+    },
+    "SA_II_2": {
+        "ID": "SA_II_2",
+        "Nome Persona": "Giuseppe Salvadori",
+        "ID_entità": "SA_II",
+        "ID_luoghi": {
+            "IT_40": {
+                "ID": "IT_40",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Piazza Pitti",
+                "Civico": "12",
+                "geo": {
+                    "lat": 43.7658033,
+                    "lon": 11.2494315
+                }
+            },
+            "IT_57": {
+                "ID": "IT_57",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Via dei Fossi",
+                "Civico": "9",
+                "geo": {
+                    "lat": 43.7579206,
+                    "lon": 10.8799527
+                }
+            },
+            "IT_31": {
+                "ID": "IT_31",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Borgo San Frediano",
+                "Civico": "3",
+                "geo": {
+                    "lat": 43.7690889,
+                    "lon": 11.2462389
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "1862",
+        "Morte": "1928",
+        "Nome attività": "Non noto"
+    },
+    "SA_II_3": {
+        "ID": "SA_II_3",
+        "Nome Persona": "Salvino Salvadori",
+        "ID_entità": "SA_II",
+        "ID_luoghi": {
+            "IT_57": {
+                "ID": "IT_57",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Via dei Fossi",
+                "Civico": "9",
+                "geo": {
+                    "lat": 43.7579206,
+                    "lon": 10.8799527
+                }
+            },
+            "IT_31": {
+                "ID": "IT_31",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Borgo San Frediano",
+                "Civico": "3",
+                "geo": {
+                    "lat": 43.7690889,
+                    "lon": 11.2462389
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "1889",
+        "Morte": "",
+        "Nome attività": "Non noto"
+    },
+    "SA_III_1": {
+        "ID": "SA_III_1",
+        "Nome Persona": "Giulio Sambon",
+        "ID_entità": "SA_III",
+        "ID_luoghi": {
+            "IT_4": {
+                "ID": "IT_4",
+                "Nazione": "Italia",
+                "Regione": "Lombardia",
+                "Città": "Milano",
+                "Via": "Corso vittorio Emanuele",
+                "Civico": "37",
+                "geo": {
+                    "lat": 45.4662089,
+                    "lon": 9.196937
+                }
+            },
+            "IT_80": {
+                "ID": "IT_80",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Via Martelli",
+                "Civico": "4",
+                "geo": {
+                    "lat": 43.7430216,
+                    "lon": 10.9910517
+                }
+            },
+            "IT_101": {
+                "ID": "IT_101",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Via Condotti",
+                "Civico": "44",
+                "geo": {
+                    "lat": 42.0759247,
+                    "lon": 12.1767667
+                }
+            },
+            "IT_110": {
+                "ID": "IT_110",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Via della Croce",
+                "Civico": "44",
+                "geo": {
+                    "lat": 41.9060309,
+                    "lon": 12.4790414
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "1837",
+        "Morte": "1921",
+        "Nome attività": "Impresa di vendita in Italia Giulio Sambon"
+    },
+    "BE_I_3": {
+        "ID": "BE_I_3",
+        "Nome Persona": "Mario Bellini",
+        "ID_entità": "BE_I",
+        "ID_luoghi": {
+            "IT_76": {
+                "ID": "IT_76",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Lungarno Soderini",
+                "Civico": "5",
+                "geo": {
+                    "lat": 43.7696787,
+                    "lon": 11.2464656
+                }
+            },
+            "IT_43": {
+                "ID": "IT_43",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Piazza Santa Trinita",
+                "Civico": "5R",
+                "geo": {
+                    "lat": 43.7700572,
+                    "lon": 11.251220681680373
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "1913",
+        "Morte": "2006",
+        "Nome attività": "Galleria Bellini"
+    },
+    "BE_I_4": {
+        "ID": "BE_I_4",
+        "Nome Persona": "Giuseppe Bellini",
+        "ID_entità": "BE_I",
+        "ID_luoghi": {
+            "IT_76": {
+                "ID": "IT_76",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Lungarno Soderini",
+                "Civico": "5",
+                "geo": {
+                    "lat": 43.7696787,
+                    "lon": 11.2464656
+                }
+            },
+            "IT_43": {
+                "ID": "IT_43",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Piazza Santa Trinita",
+                "Civico": "5R",
+                "geo": {
+                    "lat": 43.7700572,
+                    "lon": 11.251220681680373
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "1909",
+        "Morte": "1994",
+        "Nome attività": "Galleria Bellini"
+    },
+    "BE_I_5": {
+        "ID": "BE_I_5",
+        "Nome Persona": "Luigi Bellini",
+        "ID_entità": "BE_I",
+        "ID_luoghi": {
+            "IT_76": {
+                "ID": "IT_76",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Lungarno Soderini",
+                "Civico": "5",
+                "geo": {
+                    "lat": 43.7696787,
+                    "lon": 11.2464656
+                }
+            },
+            "IT_43": {
+                "ID": "IT_43",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Piazza Santa Trinita",
+                "Civico": "5R",
+                "geo": {
+                    "lat": 43.7700572,
+                    "lon": 11.251220681680373
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "1944",
+        "Morte": "2021",
+        "Nome attività": "Galleria Bellini"
+    },
+    "SE_I_1": {
+        "ID": "SE_I_1",
+        "Nome Persona": "Emanuele Segre",
+        "ID_entità": "SE_I",
+        "ID_luoghi": {
+            "IT_96": {
+                "ID": "IT_96",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Piazza di Spagna",
+                "Civico": "92",
+                "geo": {
+                    "lat": 41.9056375,
+                    "lon": 12.482346487653565
+                }
+            }
+        },
+        "Professione": "antiquario e gioielliere",
+        "Nascita": "",
+        "Morte": "",
+        "Nome attività": "Non noto"
+    },
+    "SE_I_2": {
+        "ID": "SE_I_2",
+        "Nome Persona": "Isacco Segre",
+        "ID_entità": "SE_I",
+        "ID_luoghi": {
+            "IT_96": {
+                "ID": "IT_96",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Piazza di Spagna",
+                "Civico": "92",
+                "geo": {
+                    "lat": 41.9056375,
+                    "lon": 12.482346487653565
+                }
+            },
+            "IT_95": {
+                "ID": "IT_95",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Piazza di Spagna",
+                "Civico": "83",
+                "geo": {
+                    "lat": 41.9056375,
+                    "lon": 12.482346487653565
+                }
+            }
+        },
+        "Professione": "antiquario e gioielliere",
+        "Nascita": "",
+        "Morte": "",
+        "Nome attività": "Non noto"
+    },
+    "SE_II_1": {
+        "ID": "SE_II_1",
+        "Nome Persona": "Pellegrino Sestieri",
+        "ID_entità": "SE_II",
+        "ID_luoghi": {
+            "IT_112": {
+                "ID": "IT_112",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Via di Fontanella di Borghese",
+                "Civico": "29-33",
+                "geo": {
+                    "lat": null,
+                    "lon": null
+                }
+            },
+            "IT_119": {
+                "ID": "IT_119",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Via Maria Cristina",
+                "Civico": "5",
+                "geo": {
+                    "lat": 41.9109772,
+                    "lon": 12.4746282
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "",
+        "Morte": "",
+        "Nome attività": "Galleria Sestieri"
+    },
+    "SE_II_2": {
+        "ID": "SE_II_2",
+        "Nome Persona": "Emanuele Sestieri",
+        "ID_entità": "SE_II",
+        "ID_luoghi": {
+            "IT_129": {
+                "ID": "IT_129",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Via Sistina",
+                "Civico": "94",
+                "geo": {
+                    "lat": 41.9049228,
+                    "lon": 12.4855537
+                }
+            },
+            "USA_1": {
+                "ID": "USA_1",
+                "Nazione": "Stati Uniti d'America",
+                "Regione": "Stati Uniti d'America",
+                "Città": "New York",
+                "Via": "",
+                "Civico": "",
+                "geo": {
+                    "lat": 40.7127281,
+                    "lon": -74.0060152
+                }
+            },
+            "IT_94": {
+                "ID": "IT_94",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Piazza di Spagna",
+                "Civico": "81",
+                "geo": {
+                    "lat": 41.9057477,
+                    "lon": 12.4821294
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "1887",
+        "Morte": "1953",
+        "Nome attività": "Galleria Sestieri"
+    },
+    "SE_II_3": {
+        "ID": "SE_II_3",
+        "Nome Persona": "Guido Sestieri",
+        "ID_entità": "SE_II",
+        "ID_luoghi": {
+            "IT_116": {
+                "ID": "IT_116",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Via Margutta",
+                "Civico": "53",
+                "geo": {
+                    "lat": 41.9080943,
+                    "lon": 12.4802159
+                }
+            },
+            "IT_94": {
+                "ID": "IT_94",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Piazza di Spagna",
+                "Civico": "81",
+                "geo": {
+                    "lat": 41.9057477,
+                    "lon": 12.4821294
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "1890",
+        "Morte": "1954",
+        "Nome attività": "Galleria Sestieri"
+    },
+    "SE_II_5": {
+        "ID": "SE_II_5",
+        "Nome Persona": "Carlo Sestieri",
+        "ID_entità": "SE_II",
+        "ID_luoghi": {
+            "IT_94": {
+                "ID": "IT_94",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Piazza di Spagna",
+                "Civico": "81",
+                "geo": {
+                    "lat": 41.9057477,
+                    "lon": 12.4821294
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "1922",
+        "Morte": "1998",
+        "Nome attività": "Galleria Sestieri"
+    },
+    "SE_II_6": {
+        "ID": "SE_II_6",
+        "Nome Persona": "Marcello Sestieri",
+        "ID_entità": "SE_II",
+        "ID_luoghi": {
+            "IT_94": {
+                "ID": "IT_94",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Piazza di Spagna",
+                "Civico": "81",
+                "geo": {
+                    "lat": 41.9057477,
+                    "lon": 12.4821294
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "1920",
+        "Morte": "1995",
+        "Nome attività": "Galleria Sestieri"
+    },
+    "SI_1": {
+        "ID": "SI_1",
+        "Nome Persona": "Attilio Simonetti",
+        "ID_entità": "SI",
+        "ID_luoghi": {
+            "IT_97": {
+                "ID": "IT_97",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Piazza Sant'Apollinare",
+                "Civico": "",
+                "geo": {
+                    "lat": 41.900765899999996,
+                    "lon": 12.473241431568926
+                }
+            },
+            "IT_134": {
+                "ID": "IT_134",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Via Vittorio Colonna",
+                "Civico": "11",
+                "geo": {
+                    "lat": null,
+                    "lon": null
+                }
+            }
+        },
+        "Professione": "pittore e antiquario",
+        "Nascita": "1843",
+        "Morte": "1925",
+        "Nome attività": "Galleria Simonetti"
+    },
+    "SI_2": {
+        "ID": "SI_2",
+        "Nome Persona": "Aldo Simonetti",
+        "ID_entità": "SI",
+        "ID_luoghi": {
+            "IT_134": {
+                "ID": "IT_134",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Via Vittorio Colonna",
+                "Civico": "11",
+                "geo": {
+                    "lat": null,
+                    "lon": null
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "",
+        "Morte": "",
+        "Nome attività": "Simonetti Aldo Giulio & C."
+    },
+    "SI_3": {
+        "ID": "SI_3",
+        "Nome Persona": "Ugo Simonetti",
+        "ID_entità": "SI",
+        "ID_luoghi": {
+            "IT_134": {
+                "ID": "IT_134",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Via Vittorio Colonna",
+                "Civico": "11",
+                "geo": {
+                    "lat": null,
+                    "lon": null
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "",
+        "Morte": "",
+        "Nome attività": "Simonetti Aldo Giulio & C."
+    },
+    "SI_4": {
+        "ID": "SI_4",
+        "Nome Persona": "Emma Simonetti",
+        "ID_entità": "SI",
+        "ID_luoghi": {
+            "IT_134": {
+                "ID": "IT_134",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Via Vittorio Colonna",
+                "Civico": "11",
+                "geo": {
+                    "lat": null,
+                    "lon": null
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "",
+        "Morte": "",
+        "Nome attività": "Simonetti Aldo Giulio & C."
+    },
+    "SI_5": {
+        "ID": "SI_5",
+        "Nome Persona": "Giulio Simonetti",
+        "ID_entità": "SI",
+        "ID_luoghi": {
+            "IT_134": {
+                "ID": "IT_134",
+                "Nazione": "Italia",
+                "Regione": "Lazio",
+                "Città": "Roma",
+                "Via": "Via Vittorio Colonna",
+                "Civico": "11",
+                "geo": {
+                    "lat": null,
+                    "lon": null
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "",
+        "Morte": "",
+        "Nome attività": "Simonetti Aldo Giulio & C."
+    },
+    "ST_1": {
+        "ID": "ST_1",
+        "Nome Persona": "Attilio Steffanoni",
+        "ID_entità": "ST",
+        "ID_luoghi": {
+            "IT_2": {
+                "ID": "IT_2",
+                "Nazione": "Italia",
+                "Regione": "Lombardia",
+                "Città": "Bergamo",
+                "Via": "",
+                "Civico": "",
+                "geo": {
+                    "lat": 45.756655699999996,
+                    "lon": 9.754219200862249
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "1881",
+        "Morte": "1947",
+        "Nome attività": "Non noto"
+    },
+    "BR_I_1": {
+        "ID": "BR_I_1",
+        "Nome Persona": "Ivan Bruschi",
+        "ID_entità": "BR_I",
+        "ID_luoghi": {
+            "IT_29": {
+                "ID": "IT_29",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Arezzo",
+                "Via": "Piazza S. Francesco",
+                "Civico": "",
+                "geo": {
+                    "lat": 43.3435029,
+                    "lon": 11.922059669656488
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "1920",
+        "Morte": "1996",
+        "Nome attività": "Non noto"
+    },
+    "CA_I_1": {
+        "ID": "CA_I_1",
+        "Nome Persona": "Cesare Canessa",
+        "ID_entità": "CA_I",
+        "ID_luoghi": {
+            "IT_136": {
+                "ID": "IT_136",
+                "Nazione": "Italia",
+                "Regione": "Campania",
+                "Città": "Napoli",
+                "Via": "Piazza dei Martiri",
+                "Civico": "23",
+                "geo": {
+                    "lat": 40.834286399999996,
+                    "lon": 14.241816012496823
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "1863",
+        "Morte": "1922",
+        "Nome attività": "Canessa Antiquaires – Numismates\t Galleria Canessa\t"
+    },
+    "VI_I_1": {
+        "ID": "VI_I_1",
+        "Nome Persona": "Ettore Viancini",
+        "ID_entità": "VI_I",
+        "ID_luoghi": {
+            "IT_1_b": {
+                "ID": "IT_1_b",
+                "Nazione": "Italia",
+                "Regione": "Veneto",
+                "Città": "Venezia",
+                "Via": "San Marco",
+                "Civico": "",
+                "geo": {
+                    "lat": 45.43482885,
+                    "lon": 12.334024740406221
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "1925",
+        "Morte": "1998",
+        "Nome attività": "Non noto"
+    },
+    "VI_II_1": {
+        "ID": "VI_II_1",
+        "Nome Persona": "Mario Viezzoli",
+        "ID_entità": "VI_II",
+        "ID_luoghi": {
+            "IT_10": {
+                "ID": "IT_10",
+                "Nazione": "Italia",
+                "Regione": "Liguria",
+                "Città": "Genova",
+                "Via": "",
+                "Civico": "",
+                "geo": {
+                    "lat": 44.40726,
+                    "lon": 8.9338624
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "1892",
+        "Morte": "1967",
+        "Nome attività": "Non noto"
+    },
+    "CA_I_2": {
+        "ID": "CA_I_2",
+        "Nome Persona": "Ercole Canessa",
+        "ID_entità": "CA_I",
+        "ID_luoghi": {
+            "FR_7": {
+                "ID": "FR_7",
+                "Nazione": "Francia",
+                "Regione": "Francia",
+                "Città": "Parigi",
+                "Via": "Rue Lafayette",
+                "Civico": "93",
+                "geo": {
+                    "lat": null,
+                    "lon": null
+                }
+            },
+            "FR_3": {
+                "ID": "FR_3",
+                "Nazione": "Francia",
+                "Regione": "Francia",
+                "Città": "Parigi",
+                "Via": "Avenue des Champs-Élysées",
+                "Civico": "125",
+                "geo": {
+                    "lat": 48.8725047,
+                    "lon": 2.2978839
+                }
+            },
+            "FR_2": {
+                "ID": "FR_2",
+                "Nazione": "Francia",
+                "Regione": "Francia",
+                "Città": "Parigi",
+                "Via": "Avenue des Champs-Élysées",
+                "Civico": "93",
+                "geo": {
+                    "lat": 48.8712613,
+                    "lon": 2.3018456
+                }
+            },
+            "FR_5": {
+                "ID": "FR_5",
+                "Nazione": "Francia",
+                "Regione": "Francia",
+                "Città": "Parigi",
+                "Via": "Place Vendome",
+                "Civico": "4",
+                "geo": {
+                    "lat": 48.8668543,
+                    "lon": 2.3291442
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "1867",
+        "Morte": "1929",
+        "Nome attività": "Non noto"
+    },
+    "CA_I_3": {
+        "ID": "CA_I_3",
+        "Nome Persona": "Amedeo Canessa",
+        "ID_entità": "CA_I",
+        "ID_luoghi": {
+            "USA_3": {
+                "ID": "USA_3",
+                "Nazione": "Stati Uniti d'America",
+                "Regione": "Stati Uniti d'America",
+                "Città": "New York",
+                "Via": "479 Fifth Avenue",
+                "Civico": "",
+                "geo": {
+                    "lat": 42.71162287755102,
+                    "lon": -73.70986753061224
+                }
+            },
+            "USA_4": {
+                "ID": "USA_4",
+                "Nazione": "Stati Uniti d'America",
+                "Regione": "Stati Uniti d'America",
+                "Città": "New York",
+                "Via": "547 Fifth Avenue",
+                "Civico": "",
+                "geo": {
+                    "lat": 42.71267718367347,
+                    "lon": -73.70936069387756
+                }
+            },
+            "USA_5": {
+                "ID": "USA_5",
+                "Nazione": "Stati Uniti d'America",
+                "Regione": "Stati Uniti d'America",
+                "Città": "New York",
+                "Via": "680 Fifth Avenue",
+                "Civico": "",
+                "geo": {
+                    "lat": 42.7146355,
+                    "lon": -73.70816049999999
+                }
+            },
+            "USA_6": {
+                "ID": "USA_6",
+                "Nazione": "Stati Uniti d'America",
+                "Regione": "Stati Uniti d'America",
+                "Città": "New York",
+                "Via": "East 41st street",
+                "Civico": "3",
+                "geo": {
+                    "lat": 40.75214155102041,
+                    "lon": -73.97954595918368
+                }
+            },
+            "USA_7": {
+                "ID": "USA_7",
+                "Nazione": "Stati Uniti d'America",
+                "Regione": "Stati Uniti d'America",
+                "Città": "New York",
+                "Via": "West 50th Street",
+                "Civico": "1",
+                "geo": {
+                    "lat": 40.75867,
+                    "lon": -73.977291
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "1874",
+        "Morte": "1934",
+        "Nome attività": "Non noto"
+    },
+    "VO_II_1": {
+        "ID": "VO_II_1",
+        "Nome Persona": "Gustavo Volterra",
+        "ID_entità": "VO_II",
+        "ID_luoghi": {
+            "UK_3": {
+                "ID": "UK_3",
+                "Nazione": "Gran Bretagna",
+                "Regione": "Gran Bretagna",
+                "Città": "Londra",
+                "Via": "King’s Street",
+                "Civico": "",
+                "geo": {
+                    "lat": null,
+                    "lon": null
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "1855",
+        "Morte": "1918",
+        "Nome attività": "Galleria Leonardo\t Volterra e Melli\t"
+    },
+    "VO_II_2": {
+        "ID": "VO_II_2",
+        "Nome Persona": "Giuseppe Volterra",
+        "ID_entità": "VO_II",
+        "ID_luoghi": {
+            "UK_3": {
+                "ID": "UK_3",
+                "Nazione": "Gran Bretagna",
+                "Regione": "Gran Bretagna",
+                "Città": "Londra",
+                "Via": "King’s Street",
+                "Civico": "",
+                "geo": {
+                    "lat": null,
+                    "lon": null
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "1882",
+        "Morte": "1932",
+        "Nome attività": "Non noto"
+    },
+    "VO_II_3": {
+        "ID": "VO_II_3",
+        "Nome Persona": "Gastone Volterra",
+        "ID_entità": "VO_II",
+        "ID_luoghi": {
+            "UK_3": {
+                "ID": "UK_3",
+                "Nazione": "Gran Bretagna",
+                "Regione": "Gran Bretagna",
+                "Città": "Londra",
+                "Via": "King’s Street",
+                "Civico": "",
+                "geo": {
+                    "lat": null,
+                    "lon": null
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "1887",
+        "Morte": "1944",
+        "Nome attività": "Non noto"
+    },
+    "VO_II_4": {
+        "ID": "VO_II_4",
+        "Nome Persona": "Umberto Angelo Volterra",
+        "ID_entità": "VO_II",
+        "ID_luoghi": {
+            "UK_3": {
+                "ID": "UK_3",
+                "Nazione": "Gran Bretagna",
+                "Regione": "Gran Bretagna",
+                "Città": "Londra",
+                "Via": "King’s Street",
+                "Civico": "",
+                "geo": {
+                    "lat": null,
+                    "lon": null
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "1886",
+        "Morte": "1944",
+        "Nome attività": "Non noto"
+    },
+    "VO_II_5": {
+        "ID": "VO_II_5",
+        "Nome Persona": "Gualtiero Volterra",
+        "ID_entità": "VO_II",
+        "ID_luoghi": {
+            "IT_48": {
+                "ID": "IT_48",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Via Borgo Ognissanti",
+                "Civico": "17",
+                "geo": {
+                    "lat": null,
+                    "lon": null
+                }
+            },
+            "IT_44": {
+                "ID": "IT_44",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Ponte Vecchio",
+                "Civico": "1",
+                "geo": {
+                    "lat": 43.768025449999996,
+                    "lon": 11.253158002899507
+                }
+            },
+            "IT_86": {
+                "ID": "IT_86",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Via Tornabuoni",
+                "Civico": "12",
+                "geo": {
+                    "lat": 43.7710805,
+                    "lon": 11.2514307
+                }
+            },
+            "IT_46": {
+                "ID": "IT_46",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Via Borgo Ognissanti",
+                "Civico": "8",
+                "geo": {
+                    "lat": null,
+                    "lon": null
+                }
+            },
+            "IT_35": {
+                "ID": "IT_35",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Lungarno degli Acciaiuoli",
+                "Civico": "24",
+                "geo": {
+                    "lat": null,
+                    "lon": null
+                }
+            },
+            "IT_30": {
+                "ID": "IT_30",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "",
+                "Civico": "",
+                "geo": {
+                    "lat": 43.7697955,
+                    "lon": 11.2556404
+                }
+            },
+            "IT_75_b": {
+                "ID": "IT_75_b",
+                "Nazione": "Italia",
+                "Regione": "Toscana",
+                "Città": "Firenze",
+                "Via": "Via Guicciardini",
+                "Civico": "6",
+                "geo": {
+                    "lat": 43.76724,
+                    "lon": 11.2519218
+                }
+            },
+            "FR_4": {
+                "ID": "FR_4",
+                "Nazione": "Francia",
+                "Regione": "Francia",
+                "Città": "Parigi",
+                "Via": "Boulevard des Capucins",
+                "Civico": "",
+                "geo": {
+                    "lat": null,
+                    "lon": null
+                }
+            },
+            "UK_3": {
+                "ID": "UK_3",
+                "Nazione": "Gran Bretagna",
+                "Regione": "Gran Bretagna",
+                "Città": "Londra",
+                "Via": "King’s Street",
+                "Civico": "",
+                "geo": {
+                    "lat": null,
+                    "lon": null
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "1901",
+        "Morte": "1967",
+        "Nome attività": "Non noto"
+    },
+    "ZA_1": {
+        "ID": "ZA_1",
+        "Nome Persona": "Gilberto Zabert",
+        "ID_entità": "ZA",
+        "ID_luoghi": {
+            "IT_8": {
+                "ID": "IT_8",
+                "Nazione": "Italia",
+                "Regione": "Piemonte",
+                "Città": "Torino",
+                "Via": "Via Maria Vittoria",
+                "Civico": "",
+                "geo": {
+                    "lat": 45.0568648,
+                    "lon": 7.4301221
+                }
+            },
+            "IT_7": {
+                "ID": "IT_7",
+                "Nazione": "Italia",
+                "Regione": "Piemonte",
+                "Città": "Torino",
+                "Via": "Via della Rocca",
+                "Civico": "21",
+                "geo": {
+                    "lat": 45.0627822,
+                    "lon": 7.692271
+                }
+            },
+            "IT_6": {
+                "ID": "IT_6",
+                "Nazione": "Italia",
+                "Regione": "Piemonte",
+                "Città": "Torino",
+                "Via": "Piazza Maria Teresa",
+                "Civico": "",
+                "geo": {
+                    "lat": 45.0629913,
+                    "lon": 7.6912607
+                }
+            },
+            "IT_5": {
+                "ID": "IT_5",
+                "Nazione": "Italia",
+                "Regione": "Piemonte",
+                "Città": "Torino",
+                "Via": "Piazza Cavour",
+                "Civico": "10",
+                "geo": {
+                    "lat": 44.8853199,
+                    "lon": 7.3317662
+                }
+            }
+        },
+        "Professione": "antiquario",
+        "Nascita": "1926",
+        "Morte": "2002",
+        "Nome attività": "Non noto"
+    }
+}

@@ -1,0 +1,386 @@
+{
+    "AC_img1.jpg": {
+        "ID": "AC_img1.jpg",
+        "Didascalia": "Pietro Accorsi"
+    },
+    "AC_img2.jpg": {
+        "ID": "AC_img2.jpg",
+        "Didascalia": "Interni di Villa Paola"
+    },
+    "AC_img3.jpg": {
+        "ID": "AC_img3.jpg",
+        "Didascalia": "Einaudi, Accorsi e Muccio presso la Galleria Accorsi, 5 novembre 1954"
+    },
+    "AL_img1.jpg": {
+        "ID": "AL_img1.jpg",
+        "Didascalia": "Luigi Albrighi e Bernard Berenson"
+    },
+    "AN-EF_img1.jpg": {
+        "ID": "AN-EF_img1.jpg",
+        "Didascalia": "Giuseppe Antonacci"
+    },
+    "AN-EF_img2.jpg": {
+        "ID": "AN-EF_img2.jpg",
+        "Didascalia": "Galleria Antonacci-Efrati, Via del Babuino"
+    },
+    "AP_img1.jpg": {
+        "ID": "AP_img1.jpg",
+        "Didascalia": "Fabrizio Apolloni, Galleria Apolloni"
+    },
+    "BA_I_img1.jpg": {
+        "ID": "BA_I_img1.jpg",
+        "Didascalia": "Benvenuto Bacarelli"
+    },
+    "BA_II_img1.jpg": {
+        "ID": "BA_II_img1.jpg",
+        "Didascalia": "Stefano Bardini. Foto del fotografo livornese Bettini."
+    },
+    "BA_II_img2.jpg": {
+        "ID": "BA_II_img2.jpg",
+        "Didascalia": "Stefano Bardini. Illustrazione tratta dalla rivista \"L'Antiquario\" del 1908."
+    },
+    "BA_II_img3.jpg": {
+        "ID": "BA_II_img3.jpg",
+        "Didascalia": "Lorem Ipsum"
+    },
+    "BA_III_img1.jpg": {
+        "ID": "BA_III_img1.jpg",
+        "Didascalia": "Alfredo Barsanti. Foto tratta dalla rivista \"L'Antiquario\" del 1924"
+    },
+    "BA_III_img2.jpg": {
+        "ID": "BA_III_img2.jpg",
+        "Didascalia": "Bottega di Alfredo Barsanti. Via Sistina, 1906-1906"
+    },
+    "BA_IV_img1.jpg": {
+        "ID": "BA_IV_img1.jpg",
+        "Didascalia": "Giuseppe Baslini, 1870. Fotografia conservata nell'Archivio Poldi Pezzoli."
+    },
+    "BA_IV_img2.jpg": {
+        "ID": "BA_IV_img2.jpg",
+        "Didascalia": "Giuseppe Baslini nel 1887"
+    },
+    "BE_I_img1.jpg": {
+        "ID": "BE_I_img1.jpg",
+        "Didascalia": "Luigi Bellini"
+    },
+    "BE_I_img2.jpg": {
+        "ID": "BE_I_img2.jpg",
+        "Didascalia": "Luigi Bellini. Illustrazione tratta dalla rivista \"L'Antiquario\" del 1926"
+    },
+    "BE_I_img3.jpg": {
+        "ID": "BE_I_img3.jpg",
+        "Didascalia": "Galleria Bellini, 1929"
+    },
+    "BE_I_img4.jpg": {
+        "ID": "BE_I_img4.jpg",
+        "Didascalia": "Giuseppe e Mario Bellini alla Biennale del 1967"
+    },
+    "BO_img1.jpg": {
+        "ID": "BO_img1.jpg",
+        "Didascalia": "Ildebrando Bossi da Genova e il collezionismo del Novecento"
+    },
+    "BR_I_img1.jpg": {
+        "ID": "BR_I_img1.jpg",
+        "Didascalia": "Ivan Bruschi, Fondazione Bruschi"
+    },
+    "CA_II_img1.jpg": {
+        "ID": "CA_II_img1.jpg",
+        "Didascalia": "Autoritratto di Vincenzo Capobianchi"
+    },
+    "CA_II_img2.jpg": {
+        "ID": "CA_II_img2.jpg",
+        "Didascalia": "Lorem Ipsum"
+    },
+    "CI_img1.jpg": {
+        "ID": "CI_img1.jpg",
+        "Didascalia": "Vincenzo Ciampolini"
+    },
+    "CO_I_img1.jpg": {
+        "ID": "CO_I_img1.jpg",
+        "Didascalia": "Alessandro Contini Bonacossi nel 1955"
+    },
+    "CO_I_img2.jpg": {
+        "ID": "CO_I_img2.jpg",
+        "Didascalia": "Villa Vittoria, Firenze, secondo piano"
+    },
+    "CO_I_img3.jpg": {
+        "ID": "CO_I_img3.jpg",
+        "Didascalia": "Alessandro Contini Bonacossi"
+    },
+    "CO_II_img1.jpg": {
+        "ID": "CO_II_img1.jpg",
+        "Didascalia": "Ritratto di Augusto Corvisieri"
+    },
+    "CO_III_img1.jpg": {
+        "ID": "CO_III_img1.jpg",
+        "Didascalia": "Emilio Costantini nel suo studio, da Cappellini 2022"
+    },
+    "CR_img1.jpg": {
+        "ID": "CR_img1.jpg",
+        "Didascalia": "Interno dell'appartamento di Crosa in Palazzo Granello"
+    },
+    "CR_img2.jpg": {
+        "ID": "CR_img2.jpg",
+        "Didascalia": "Severino Crosa a Palazzo Granello"
+    },
+    "DI_img1.jpg": {
+        "ID": "DI_img1.jpg",
+        "Didascalia": "Franco Di Castro"
+    },
+    "DI_img2.jpg": {
+        "ID": "DI_img2.jpg",
+        "Didascalia": "Negozio Di Castro. Via del Babuino 87-88"
+    },
+    "FE_img1.jpg": {
+        "ID": "FE_img1.jpg",
+        "Didascalia": "Illustrazione di Gioacchino Ferroni, tratta dalla rivista \"L'Antiquario\" del 1909"
+    },
+    "FE_img2.jpg": {
+        "ID": "FE_img2.jpg",
+        "Didascalia": "Studio di Gioacchino Ferroni alla morte dell'antiquario, 1909"
+    },
+    "GA_img1.jpg": {
+        "ID": "GA_img1.jpg",
+        "Didascalia": "Illustrazione di Antonio Galliani, tratta dalla rivista \"L'Antiquario\" del 1913"
+    },
+    "GI_img1.jpg": {
+        "ID": "GI_img1.jpg",
+        "Didascalia": "Ubaldo Giugni, foto tratta dalla rivista \"L'Antiquario\"del novembre 1928"
+    },
+    "GI_img2.jpg": {
+        "ID": "GI_img2.jpg",
+        "Didascalia": "Lorem Ipsum"
+    },
+    "GR_img1.jpg": {
+        "ID": "GR_img1.jpg",
+        "Didascalia": "Luigi Grassi, foto tratta dalla rivista \"L'Antiquario\"del 1924"
+    },
+    "GR_img2.jpg": {
+        "ID": "GR_img2.jpg",
+        "Didascalia": "Galleria di Luigi Grassi, Palazzo Montagliari"
+    },
+    "IM_img1.jpg": {
+        "ID": "IM_img1.jpg",
+        "Didascalia": "Galleria di Alexandre Imbert, interni"
+    },
+    "IM_img2.jpg": {
+        "ID": "IM_img2.jpg",
+        "Didascalia": "Alexandre Imbert"
+    },
+    "JA_img1.jpg": {
+        "ID": "JA_img1.jpg",
+        "Didascalia": "Augusto Jandolo nel suo studio, 1930"
+    },
+    "JA_img2.jpg": {
+        "ID": "JA_img2.jpg",
+        "Didascalia": "Augusto Jandolo, foto tratta dalla rivista \"L'Antiquario\"del 1913"
+    },
+    "JA_img3.jpg": {
+        "ID": "JA_img3.jpg",
+        "Didascalia": "Ettore Jandolo, foto tratta dalla rivista \"L'Antiquario\""
+    },
+    "JA_img4.jpg": {
+        "ID": "JA_img4.jpg",
+        "Didascalia": "Ugo Jandolo, foto tratta dalla rivista \"L'Antiquario\""
+    },
+    "JA-TA_img1.jpg": {
+        "ID": "JA-TA_img1.jpg",
+        "Didascalia": "Augusto Jandolo nel suo studio, 1930"
+    },
+    "JA-TA_img2.jpg": {
+        "ID": "JA-TA_img2.jpg",
+        "Didascalia": "Augusto Jandolo, foto tratta dalla rivista \"L'Antiquario\"del 1913"
+    },
+    "JA-TA_img3.jpg": {
+        "ID": "JA-TA_img3.jpg",
+        "Didascalia": "Carta intestata della Galleria Tavazzi"
+    },
+    "LA_I_img1.jpg": {
+        "ID": "LA_I_img1.jpg",
+        "Didascalia": "Leonardo Lapicirella"
+    },
+    "LA_I_img2.jpg": {
+        "ID": "LA_I_img2.jpg",
+        "Didascalia": "Studio Lapicirella, via Rondinelli"
+    },
+    "LA_I_img3.jpg": {
+        "ID": "LA_I_img3.jpg",
+        "Didascalia": "Leonardo Lapicirella con Efrati"
+    },
+    "LA_II_img1.jpg": {
+        "ID": "LA_II_img1.jpg",
+        "Didascalia": "Michele Lazzaroni"
+    },
+    "NI_img1.jpg": {
+        "ID": "NI_img1.jpg",
+        "Didascalia": "Lorem Ipsum"
+    },
+    "NI_img2.jpg": {
+        "ID": "NI_img2.jpg",
+        "Didascalia": "Lorem Ipsum"
+    },
+    "OR_img1.jpg": {
+        "ID": "OR_img1.jpg",
+        "Didascalia": "Raimondo Orselli, foto tratta dalla rivista \"L'Antiquario\" del 1929"
+    },
+    "PA_I_img1.jpg": {
+        "ID": "PA_I_img1.jpg",
+        "Didascalia": "Lorem Ipsum"
+    },
+    "PI_img1.jpg": {
+        "ID": "PI_img1.jpg",
+        "Didascalia": "Giovanni Pini, foto tratta dalla rivista \"L'Antiquario\" del 1925"
+    },
+    "PI_img2.jpg": {
+        "ID": "PI_img2.jpg",
+        "Didascalia": "Umberto Pini, foto tratta dalla rivista \"L'Antiquario\" del 1926"
+    },
+    "PO_I_img1.jpg": {
+        "ID": "PO_I_img1.jpg",
+        "Didascalia": "Publio Podio, foto tratta dalla rivista \"L'Antiquario\" del 1913"
+    },
+    "PO_I_img2.jpg": {
+        "ID": "PO_I_img2.jpg",
+        "Didascalia": "Antiquari Podio, studio bolognese"
+    },
+    "RA_img1.jpg": {
+        "ID": "RA_img1.jpg",
+        "Didascalia": "Arturo Rambaldi, foto tratta dalla rivista \"L'Antiquario\" del 1913"
+    },
+    "RO_img1.jpg": {
+        "ID": "RO_img1.jpg",
+        "Didascalia": "Salvatore Romano, illustrazione tratta dalla rivista \"L'Antiquario\" del 1932"
+    },
+    "RO_img2.jpg": {
+        "ID": "RO_img2.jpg",
+        "Didascalia": "Salvatore Romano e Carmine Ciardello. Foto tratta dal catalogo Pandolfini."
+    },
+    "RO_img3.jpg": {
+        "ID": "RO_img3.jpg",
+        "Didascalia": "Francesco Romano. Foto tratta dal catalogo Pandolfini."
+    },
+    "RO_img4.jpg": {
+        "ID": "RO_img4.jpg",
+        "Didascalia": "Galleria Romano, palazzo Magnani Feroni"
+    },
+    "RU_img1.jpg": {
+        "ID": "RU_img1.jpg",
+        "Didascalia": "Orlando Grosso, Antonio Morassi e Pompeo Rubinacci"
+    },
+    "RU_img2.jpg": {
+        "ID": "RU_img2.jpg",
+        "Didascalia": "La Galleria Rubinacci nel 1960 ca"
+    },
+    "RU_img3.jpg": {
+        "ID": "RU_img3.jpg",
+        "Didascalia": "La Galleria Rubinacci nel 1960 ca"
+    },
+    "SA_I_img1.jpg": {
+        "ID": "SA_I_img1.jpg",
+        "Didascalia": "Giovanni Salocchi"
+    },
+    "SA_I_img2.jpg": {
+        "ID": "SA_I_img2.jpg",
+        "Didascalia": "Giovanni Salocchi e la sua famiglia"
+    },
+    "SA_II_img1.jpg": {
+        "ID": "SA_II_img1.jpg",
+        "Didascalia": "Salvadore Salvadori"
+    },
+    "SA_II_img2.jpg": {
+        "ID": "SA_II_img2.jpg",
+        "Didascalia": "Lorem Ipsum"
+    },
+    "SA_III_img1.jpg": {
+        "ID": "SA_III_img1.jpg",
+        "Didascalia": "Giulio Sambon"
+    },
+    "SA_IV_img1.jpg": {
+        "ID": "SA_IV_img1.jpg",
+        "Didascalia": "Giuseppe Sangiorgi"
+    },
+    "SA_IV_img2.jpg": {
+        "ID": "SA_IV_img2.jpg",
+        "Didascalia": "Giuseppe Sangiorgi, foto tratta dalla rivista \"L'Antiquario\" del 1925"
+    },
+    "SA_IV_img3.jpg": {
+        "ID": "SA_IV_img3.jpg",
+        "Didascalia": "Galleria Sangiorgi, palazzo Borghese"
+    },
+    "SA_IV_img4.jpg": {
+        "ID": "SA_IV_img4.jpg",
+        "Didascalia": "Galleria Sangiorgi, palazzo Borghese, sala dei libri e autografi"
+    },
+    "SA_IV_img5.jpg": {
+        "ID": "SA_IV_img5.jpg",
+        "Didascalia": "Lorem Ipsum"
+    },
+    "SE_I_img.jpg": {
+        "ID": "SE_I_img.jpg",
+        "Didascalia": "Galleria Segre, Piazza di Spagna"
+    },
+    "SE_II_img1.jpg": {
+        "ID": "SE_II_img1.jpg",
+        "Didascalia": "Ritratto di Pellegrino Sestieri, olio su tela. Collezione Sestieri"
+    },
+    "SE_II_img2.jpg": {
+        "ID": "SE_II_img2.jpg",
+        "Didascalia": "Guido Guidi davanti al negozio Sestieri, Via Margutta 53"
+    },
+    "SE_II_img3.jpg": {
+        "ID": "SE_II_img3.jpg",
+        "Didascalia": "Carlo Sestieri"
+    },
+    "SI_img1.jpg": {
+        "ID": "SI_img1.jpg",
+        "Didascalia": "Attilio Simonetti"
+    },
+    "SI_img2.jpg": {
+        "ID": "SI_img2.jpg",
+        "Didascalia": "Studio di Attilio Simonetti, Palazzo Altemps"
+    },
+    "TA_img1.jpg": {
+        "ID": "TA_img1.jpg",
+        "Didascalia": "Carta intestata della Galleria Tavazzi"
+    },
+    "TO_img1.jpg": {
+        "ID": "TO_img1.jpg",
+        "Didascalia": "Raul Tolentino, foto tratta dalla rivista \"L'Antiquario\" del 1924"
+    },
+    "TO_img2.jpg": {
+        "ID": "TO_img2.jpg",
+        "Didascalia": "Raul Tolentino, foto tratta dalla rivista \"American Art News\" del 1920"
+    },
+    "TO_img3.jpg": {
+        "ID": "TO_img3.jpg",
+        "Didascalia": "Lorem Ipsum"
+    },
+    "VI_I_img1.jpg": {
+        "ID": "VI_I_img1.jpg",
+        "Didascalia": "Ettore Viancini"
+    },
+    "VI_III_img1.jpg": {
+        "ID": "VI_III_img1.jpg",
+        "Didascalia": "Edoardo Villa, foto tratta dalla rivista \"L'Antiquario\" del 1925"
+    },
+    "VO_I_img1.jpg": {
+        "ID": "VO_I_img1.jpg",
+        "Didascalia": "Elia Volpi nel 1910"
+    },
+    "VO_I_img2.jpg": {
+        "ID": "VO_I_img2.jpg",
+        "Didascalia": "Elia Volpi, foto tratta dalla rivista \"L'Antiquario\" del 1916"
+    },
+    "VO_I_img3.jpg": {
+        "ID": "VO_I_img3.jpg",
+        "Didascalia": "Lorem Ipsum"
+    },
+    "VO_II_img1.jpg": {
+        "ID": "VO_II_img1.jpg",
+        "Didascalia": "Giuseppe Volterra"
+    },
+    "VO_II_img2.jpg": {
+        "ID": "VO_II_img2.jpg",
+        "Didascalia": "Gualtiero Volterra studia con Felice Boghen"
+    }
+}

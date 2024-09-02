@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dettaglio Antiquari</title>
+    <link rel="stylesheet" href="../../css/styles-dettaglioAntiquario.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;700&display=swap" rel="stylesheet" />
+    <script type="text/javascript" src="../../script/dettaglioAntiquari.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/map.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/geodata/worldLow.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+    <script type="text/javascript" src="../../script/mappaDettaglio.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <a href="../../index.html">
+          <img id="logo.png" src="../../img/homepage/logo.png" alt="Fondazione Federico Zeri" />
+        </a>
+        <nav>
+          <ul>
+            <li>
+              <a href="../progetto.html">Progetto</a>
+              <a href="../antiquari.html">Antiquari</a>
+              <a href="../luoghi.html">Luoghi</a>
+              <a href="../eventi.html">Eventi</a>
+              <a href="../persone.html">Persone</a>
+              <a href="../bibliografia.html">Bibliografia</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="image-gallery">
+        <h2 class="gallery-title">Bellini</h2>
+        <div class="slider-container">
+          <div class="slider">
+            <div class="slide">
+              <img src="../../img/slider-antiquari/BE_I_img1.jpg" alt="Luigi Bellini" />
+              <div class="caption">Luigi Bellini</div>
+            </div>
+            <div class="slide">
+              <img src="../../img/slider-antiquari/BE_I_img2.jpg" alt="Luigi Bellini. Illustrazione tratta dalla rivista &quot;L'Antiquario&quot; del 1926" />
+              <div class="caption">Luigi Bellini. Illustrazione tratta dalla rivista "L'Antiquario" del 1926</div>
+            </div>
+            <div class="slide">
+              <img src="../../img/slider-antiquari/BE_I_img3.jpg" alt="Galleria Bellini, 1929" />
+              <div class="caption">Galleria Bellini, 1929</div>
+            </div>
+            <div class="slide">
+              <img src="../../img/slider-antiquari/BE_I_img4.jpg" alt="Giuseppe e Mario Bellini alla Biennale del 1967" />
+              <div class="caption">Giuseppe e Mario Bellini alla Biennale del 1967</div>
+            </div>
+          </div>
+          <button &#10094; class="prev" onclick="prevSlide()"></button>
+          <button &#10095; class="next" onclick="nextSlide()"></button>
+        </div>
+      </section>
+    </main>
+    <section id="FZ" class="fade-in">
+      <h2>
+        <span class="highlight">CATALOGO</span>
+        <span class="regular-text">ZERI</span>
+      </h2>
+      <div class="content-wrapper">
+        <p>Consulta le banche dati della Fondazione<br>Federico Zeri e ricerca fotografie, documenti, <br>cataloghi d'asta, fondi e notizie <br>sull'antiquario corrente.</p>
+        <a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=bellini" class="btn">Clicca qui</a>
+      </div>
+    </section>
+    <section id="interactive-section">
+      <h2 class="section-title">
+        <span class="highlight">CARTA</span>
+        <span class="regular-text">D'IDENTITÀ</span>
+      </h2>
+      <div class="dual-content-wrapper">
+        <div class="tab-container">
+          <ul class="tab-list">
+            <li class="tab active" data_content="Bio">Biografia</li>
+            <li class="tab" data_content="Persone">Albero familiare</li>
+            <li class="tab" data_content="Localizzazioni">Mappa dei luoghi</li>
+            <li class="tab" data_content="Eventi">Eventi</li>
+            <li class="tab" data_content="Relazioni">Altri antiquari</li>
+            <li class="tab" data_content="Bibliografia">Bibliografia</li>
+          </ul>
+        </div>
+        <div class="content-card">
+          <div id="Bio" class="content active-content">
+            <h3>Bellini</h3>
+            <p></p>
+            <p>La famiglia Bellini ricoprì un ruolo di spicco nel panorama del mercato antiquario fiorentino del Novecento. Luigi Bellini (1884-1957) si avvicinò al commercio di opere d’arte grazie al padre Giuseppe, che possedeva una bottega antiquaria tra via della Spada e via del Sole. Si legò presto agli antiquari attivi in città da più lunga data, tra cui Stefano Bardini (1836-1922) e Vincenzo Ciampolini (1838-1930). </p>
+            <p></p>
+            <p>Specializzatosi in dipinti, sculture, arazzi dal Rinascimento al Settecento, nel corso degli anni Venti Bellini acquistò un palazzo in Lungarno Soderini 5, che divenne la sede principale degli affari e della galleria di famiglia.  Nel 1931, aprì inoltre uno spazio espositivo in Palazzo Spini Ferroni in Piazza Santa Trinita 5/r, dove esponeva artisti contemporanei. La galleria inaugurò nel 1932 con la mostra dello scultore Arturo Martini e del pittore Primo Conti. </p>
+            <p></p>
+            <p>Nel 1940 acquistò e ristrutturò la villa Medicea di Marignolle, dove collocò la sua collezione d’arte, poi venduta all’asta nel 1976 insieme all’immobile.  </p>
+            <p>Luigi Bellini con i figli Giuseppe (1909-1994) e Mario (1913-2006) idearono la Mostra Nazionale di Antiquariato, che divenne poi nel 1959, sotto il patrocinio dei suoi eredi, la Biennale Internazionale dell’Antiquariato. </p>
+            <p>Nel 1947 pubblicò Nel Mondo degli antiquari e postumo uscì Bozzetti antiquari, memorie e aneddoti personali che offrono una panoramica sul mondo del mercato dell’arte della prima metà del Novecento. </p>
+            <p></p>
+            <p>Alla morte di Luigi, avvenuta nel 1957, i figli proseguirono l’attività di famiglia, poi ereditata dal figlio di Mario, Luigi (1944-2021). Nel 2011 parte della collezione di Mario e Giuseppe Bellini, comprendente sculture dal Medioevo al Rinascimento, dipinti di maestri primitivi, mobili e oggetti d'arte, è stata messa all’asta dalla casa d’aste Semenzato. </p>
+            <p></p>
+            <p>Dal 2007 la galleria di Lungarno Soderini è sede del Museo Privato Luigi Bellini. </p>
+            <p></p>
+          </div>
+          <div id="Persone" class="content">
+            <h3>L'entità Bellini è così composta:</h3>
+            <div id="albero-genealogico">
+              <p>nome1 - nome2 - nome3</p>
+            </div>
+          </div>
+          <div id="Localizzazioni" class="content">
+            <h3>Geolocalizzazione dell'attività antiquariale:</h3>
+            <section id="map">
+              <div id="chartdiv"></div>
+            </section>
+          </div>
+          <div id="Eventi" class="content">
+            <h3>Gli eventi signficativi dell'attività antiquariale:</h3>
+            <ul>
+              <li>1959 - <i>Inaugurazione della Biennale Internazionale di Antiquariato</i>: La famiglia di antiquari Bellini ideò la Mostra Nazionale di Antiquariato, che nel 1959 divenne la Biennale Internazionale di Antiquariato.</li>
+              <li>2007 - <i>Inaugurazione Museo Bellini</i>: Nel 2007 venne aperto a Firenze il Museo privato dedicato a Luigi Bellini</li>
+            </ul>
+          </div>
+          <div id="Relazioni" class="content">
+            <h3>L'entità Bellini, durante la sua attività, ha avuto relazioni con:</h3>
+            <ul>
+              <li>
+                <a href="dettaglio_BA_II.html">Bardini</a>
+              </li>
+            </ul>
+          </div>
+          <div id="Bibliografia" class="content">
+            <h3>Bibliografia essenziale:</h3>
+            <ul>
+              <li><i>Le stanze dei tesori : collezionisti e antiquari a Firenze tra Ottocento e Novecento, catalogo della mostra (Firenze, Palazzo Medici Riccardi, 3 ottobre 2011 - 15 aprile 2012), a cura di Mannini, L.</i>, Firenze, Polistampa, 2011.</li>
+              <li>06/04/2023, <i>Intervista eredi Bellini, Firenze.</i>, Firenze</li>
+              <li>Bargellini, S. (1981), <i>Antiquari di ieri a Firenze.</i>, Firenze, Bonechi.</li>
+              <li>Batini, G. (1961), <i>L'antiquario.</i>, Firenze, Vallecchi.</li>
+              <li>Bellini, L., De Chirico, G. (1947), <i>Nel mondo degli antiquari.</i>, Firenze, Arnaud.</li>
+              <li>Conti, G. (2009), <i>I fratelli Bellini, inventori di un nuovo modo di fare antiquariato: un ricordo dei fondatori della Biennale fiorentina e dell'A.A.I.</i>, In «Gazzetta antiquaria»,  N.S. 55, 1, pp. 22-25</li>
+              <li>Mannini, L. (2011), <i>Luigi Bellini antiquario, collezionista e mecenate.</i>, In Mannini, pp. 245-250</li>
+              <li>Rasario, G. (2004), <i>De Chirico pendant Bellini.</i>, In «Metafisica», 3-4, pp. 271-298</li>
+              <li>Tolosani, D. (1926), <i>Galleria Bellini.</i>, In «L'Antiquario», XIII,2, pp. 53-54</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <p>Licenza dati e immagini:</p>
+          <img id="license.png" src="../../img/homepage/license.png" alt="License" />
+        </div>
+        <div class="footer-right">
+          <p>
+            <a href="#">Crediti</a>
+          </p>
+          <p>
+            <a href="#">Documentazione</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
