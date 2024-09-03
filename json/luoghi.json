@@ -91,8 +91,8 @@
         "Via": "Carlton Street",
         "Civico": "",
         "geo": {
-            "lat": null,
-            "lon": null
+            "lat": 51.5086356,
+            "lon": -0.1336046
         }
     },
     "UK_2": {
@@ -103,8 +103,8 @@
         "Via": "Duke Street",
         "Civico": "2",
         "geo": {
-            "lat": null,
-            "lon": null
+            "lat": 51.3682459,
+            "lon": -0.1832648
         }
     },
     "UK_3": {
@@ -112,11 +112,11 @@
         "Nazione": "Gran Bretagna",
         "Regione": "Gran Bretagna",
         "Città": "Londra",
-        "Via": "King’s Street",
+        "Via": "King’s Road",
         "Civico": "",
         "geo": {
-            "lat": null,
-            "lon": null
+            "lat": 51.6012667,
+            "lon": -0.0704654
         }
     },
     "UK_4": {
@@ -127,8 +127,8 @@
         "Via": "New Bond Street",
         "Civico": "174",
         "geo": {
-            "lat": null,
-            "lon": null
+            "lat": 51.5097564,
+            "lon": -0.1419606
         }
     },
     "UK_5": {
@@ -139,8 +139,8 @@
         "Via": "Paddington Gress",
         "Civico": "15",
         "geo": {
-            "lat": null,
-            "lon": null
+            "lat": 51.5074456,
+            "lon": -0.1277653
         }
     },
     "UK_6": {
@@ -151,8 +151,8 @@
         "Via": "Regent Street",
         "Civico": "",
         "geo": {
-            "lat": null,
-            "lon": null
+            "lat": 51.5103141,
+            "lon": -0.1380914
         }
     },
     "UK_7": {
@@ -163,8 +163,8 @@
         "Via": "Savile Row",
         "Civico": "32",
         "geo": {
-            "lat": null,
-            "lon": null
+            "lat": 51.5109849,
+            "lon": -0.140622
         }
     },
     "FR_1": {
@@ -208,11 +208,11 @@
         "Nazione": "Francia",
         "Regione": "Francia",
         "Città": "Parigi",
-        "Via": "Boulevard des Capucins",
+        "Via": "Boulevard des Capucines",
         "Civico": "",
         "geo": {
-            "lat": null,
-            "lon": null
+            "lat": 48.8706796,
+            "lon": 2.33239
         }
     },
     "FR_5": {
@@ -247,8 +247,8 @@
         "Via": "Rue Lafayette",
         "Civico": "93",
         "geo": {
-            "lat": null,
-            "lon": null
+            "lat": 48.8069609,
+            "lon": 2.5092743
         }
     },
     "FR_8": {
@@ -271,8 +271,8 @@
         "Via": "Canal Grande (Palazzo Sagredo)",
         "Civico": "",
         "geo": {
-            "lat": null,
-            "lon": null
+            "lat": 45.4406808,
+            "lon": 12.334469
         }
     },
     "IT_1_b": {
@@ -304,11 +304,11 @@
         "Nazione": "Italia",
         "Regione": "Lombardia",
         "Città": "Milano",
-        "Via": "Via Montenapoleone",
+        "Via": "Via Monte Napoleone",
         "Civico": "11",
         "geo": {
-            "lat": null,
-            "lon": null
+            "lat": 45.4683471,
+            "lon": 9.1949813
         }
     },
     "IT_4": {
@@ -412,11 +412,11 @@
         "Nazione": "Italia",
         "Regione": "Liguria",
         "Città": "Genova",
-        "Via": "Piazza Cinque lampade",
+        "Via": "Piazza Cinque Lampadi",
         "Civico": "65R",
         "geo": {
-            "lat": null,
-            "lon": null
+            "lat": 44.4086279,
+            "lon": 8.9300288
         }
     },
     "IT_13": {
@@ -475,8 +475,8 @@
         "Via": "Via G.T. Invrea",
         "Civico": "20",
         "geo": {
-            "lat": null,
-            "lon": null
+            "lat": 44.404954,
+            "lon": 8.9492257
         }
     },
     "IT_18": {
@@ -643,8 +643,8 @@
         "Via": "Corso Regina Elena",
         "Civico": "6",
         "geo": {
-            "lat": null,
-            "lon": null
+            "lat": 43.774239,
+            "lon": 11.240016
         }
     },
     "IT_33": {
@@ -667,8 +667,8 @@
         "Via": "Lungarno degli Acciaiuoli",
         "Civico": "4",
         "geo": {
-            "lat": null,
-            "lon": null
+            "lat": 43.7688217,
+            "lon": 11.2528604
         }
     },
     "IT_35": {
@@ -679,8 +679,8 @@
         "Via": "Lungarno degli Acciaiuoli",
         "Civico": "24",
         "geo": {
-            "lat": null,
-            "lon": null
+            "lat": 43.76882,
+            "lon": 11.2525885
         }
     },
     "IT_36": {
@@ -703,8 +703,8 @@
         "Via": "Piazza de Mozzi",
         "Civico": "1",
         "geo": {
-            "lat": null,
-            "lon": null
+            "lat": 43.7649299,
+            "lon": 11.2582299
         }
     },
     "IT_38": {
@@ -784,11 +784,11 @@
         "Nazione": "Italia",
         "Regione": "Toscana",
         "Città": "Firenze",
-        "Via": "Via Borgo Ognissanti",
+        "Via": "Borgo Ognissanti",
         "Civico": "",
         "geo": {
-            "lat": null,
-            "lon": null
+            "lat": 43.7716067,
+            "lon": 11.2468899
         }
     },
     "IT_46": {
@@ -796,11 +796,11 @@
         "Nazione": "Italia",
         "Regione": "Toscana",
         "Città": "Firenze",
-        "Via": "Via Borgo Ognissanti",
+        "Via": "Borgo Ognissanti",
         "Civico": "8",
         "geo": {
-            "lat": null,
-            "lon": null
+            "lat": 43.771499,
+            "lon": 11.2471461
         }
     },
     "IT_47": {
@@ -808,11 +808,11 @@
         "Nazione": "Italia",
         "Regione": "Toscana",
         "Città": "Firenze",
-        "Via": "Via Borgo Ognissanti",
+        "Via": "Borgo Ognissanti",
         "Civico": "9",
         "geo": {
-            "lat": null,
-            "lon": null
+            "lat": 43.7716388,
+            "lon": 11.2467163
         }
     },
     "IT_48": {
@@ -820,11 +820,11 @@
         "Nazione": "Italia",
         "Regione": "Toscana",
         "Città": "Firenze",
-        "Via": "Via Borgo Ognissanti",
+        "Via": "Borgo Ognissanti",
         "Civico": "17",
         "geo": {
-            "lat": null,
-            "lon": null
+            "lat": 43.7720989,
+            "lon": 11.2460541
         }
     },
     "IT_49": {
@@ -832,11 +832,11 @@
         "Nazione": "Italia",
         "Regione": "Toscana",
         "Città": "Firenze",
-        "Via": "Via Borgo Ognissanti",
+        "Via": "Borgo Ognissanti",
         "Civico": "22",
         "geo": {
-            "lat": null,
-            "lon": null
+            "lat": 43.7719008,
+            "lon": 11.2465505
         }
     },
     "IT_50": {
@@ -844,11 +844,11 @@
         "Nazione": "Italia",
         "Regione": "Toscana",
         "Città": "Firenze",
-        "Via": "Via Borgo Ognissanti",
+        "Via": "Borgo Ognissanti",
         "Civico": "52",
         "geo": {
-            "lat": null,
-            "lon": null
+            "lat": 43.7728775,
+            "lon": 11.2450995
         }
     },
     "IT_51": {
@@ -856,11 +856,11 @@
         "Nazione": "Italia",
         "Regione": "Toscana",
         "Città": "Firenze",
-        "Via": "Via Borgo Ognissanti",
+        "Via": "Borgo Ognissanti",
         "Civico": "50-52 R",
         "geo": {
-            "lat": null,
-            "lon": null
+            "lat": 43.7728775,
+            "lon": 11.2450995
         }
     },
     "IT_52": {
@@ -868,11 +868,11 @@
         "Nazione": "Italia",
         "Regione": "Toscana",
         "Città": "Firenze",
-        "Via": "Via Borgo Ognissanti",
+        "Via": "Borgo Ognissanti",
         "Civico": "54-56R",
         "geo": {
-            "lat": null,
-            "lon": null
+            "lat": 43.7729231,
+            "lon": 11.2450321
         }
     },
     "IT_53": {
@@ -1039,8 +1039,8 @@
         "Via": "Via del Podere",
         "Civico": "6",
         "geo": {
-            "lat": null,
-            "lon": null
+            "lat": 43.7697955,
+            "lon": 11.2556404
         }
     },
     "IT_71": {
@@ -1216,11 +1216,11 @@
         "Nazione": "Italia",
         "Regione": "Toscana",
         "Città": "Firenze",
-        "Via": "Via San Nicolò",
+        "Via": "Via di San Niccolò",
         "Civico": "95",
         "geo": {
-            "lat": null,
-            "lon": null
+            "lat": 43.7645554,
+            "lon": 11.2593975
         }
     },
     "IT_84": {
@@ -1399,8 +1399,8 @@
         "Via": "Piazza Scossacavalli",
         "Civico": "",
         "geo": {
-            "lat": null,
-            "lon": null
+            "lat": 41.90234540161728,
+            "lon": 12.460979169828107
         }
     },
     "IT_99": {
@@ -1411,8 +1411,8 @@
         "Via": "Piazza Trinità dei Monti",
         "Civico": "6",
         "geo": {
-            "lat": null,
-            "lon": null
+            "lat": 41.9059856,
+            "lon": 12.4836915
         }
     },
     "IT_100": {
@@ -1552,11 +1552,11 @@
         "Nazione": "Italia",
         "Regione": "Lazio",
         "Città": "Roma",
-        "Via": "Via delle belle arti",
+        "Via": "Viale delle belle arti",
         "Civico": "2",
         "geo": {
-            "lat": null,
-            "lon": null
+            "lat": 41.9186101,
+            "lon": 12.4733123
         }
     },
     "IT_112": {
@@ -1567,8 +1567,8 @@
         "Via": "Via di Fontanella di Borghese",
         "Civico": "29-33",
         "geo": {
-            "lat": null,
-            "lon": null
+            "lat": 41.9042399,
+            "lon": 12.4780908
         }
     },
     "IT_113": {
@@ -1792,11 +1792,11 @@
         "Nazione": "Italia",
         "Regione": "Lazio",
         "Città": "Roma",
-        "Via": "Via Trinità dei Monti",
+        "Via": "Viale della Trinità dei Monti",
         "Civico": "9",
         "geo": {
-            "lat": null,
-            "lon": null
+            "lat": 41.9089648,
+            "lon": 12.4808939
         }
     },
     "IT_134": {
@@ -1804,11 +1804,11 @@
         "Nazione": "Italia",
         "Regione": "Lazio",
         "Città": "Roma",
-        "Via": "Via Vittorio Colonna",
+        "Via": "Via Vittoria Colonna",
         "Civico": "11",
         "geo": {
-            "lat": null,
-            "lon": null
+            "lat": 41.905216,
+            "lon": 12.472448
         }
     },
     "IT_135": {
