@@ -107,6 +107,7 @@ am5.ready(function () {
     am5map.MapChart.new(root, {
       panX: "rotateX",
       panY: "translateY",
+      maxZoomLevel: 300,
       projection: am5map.geoMercator(),
     })
   );
