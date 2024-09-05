@@ -1,0 +1,1152 @@
+{
+    "AP": {
+        "Nome": "Apolloni",
+        "Relazioni": [
+            {
+                "Persona_1": "AP_1",
+                "Persona_2": "AP_2",
+                "Tipo_di_relazione": "padre"
+            },
+            {
+                "Persona_1": "AP_2",
+                "Persona_2": "AP_3",
+                "Tipo_di_relazione": "padre"
+            },
+            {
+                "Persona_1": "AP_1",
+                "Persona_2": "AP_4",
+                "Tipo_di_relazione": "nonno"
+            }
+        ],
+        "Persone": {
+            "AP_1": {
+                "Nome": "Wladimiro Apolloni",
+                "Nascita": "1888",
+                "Morte": "1948"
+            },
+            "AP_2": {
+                "Nome": "Fabrizio Apolloni",
+                "Nascita": "1928",
+                "Morte": "2006"
+            },
+            "AP_3": {
+                "Nome": "Marco Fabio Apolloni",
+                "Nascita": "",
+                "Morte": "in vita"
+            }
+        }
+    },
+    "BA_I": {
+        "Nome": "Bacarelli",
+        "Relazioni": [
+            {
+                "Persona_1": "Ba_I_1",
+                "Persona_2": "Ba_I_2",
+                "Tipo_di_relazione": "padre"
+            },
+            {
+                "Persona_1": "Ba_I_2",
+                "Persona_2": "Ba_I_3",
+                "Tipo_di_relazione": "padre"
+            },
+            {
+                "Persona_1": "Ba_I_1",
+                "Persona_2": "Ba_I_3",
+                "Tipo_di_relazione": "nonno"
+            }
+        ],
+        "Persone": {}
+    },
+    "BA_II": {
+        "Nome": "Bardini",
+        "Relazioni": [
+            {
+                "Persona_1": "Ba_II_1",
+                "Persona_2": "Ba_II_2",
+                "Tipo_di_relazione": "padre"
+            },
+            {
+                "Persona_1": "Ba_II_1",
+                "Persona_2": "Ba_II_3",
+                "Tipo_di_relazione": "padre"
+            },
+            {
+                "Persona_1": "Ba_II_2",
+                "Persona_2": "Ba_II_3",
+                "Tipo_di_relazione": "fratello/sorella"
+            }
+        ],
+        "Persone": {}
+    },
+    "BE_I": {
+        "Nome": "Bellini",
+        "Relazioni": [
+            {
+                "Persona_1": "BE_I_1",
+                "Persona_2": "BE_I_2",
+                "Tipo_di_relazione": "padre"
+            },
+            {
+                "Persona_1": "BE_I_2",
+                "Persona_2": "BE_I_3",
+                "Tipo_di_relazione": "padre"
+            },
+            {
+                "Persona_1": "BE_I_2",
+                "Persona_2": "BE_I_4",
+                "Tipo_di_relazione": "padre"
+            },
+            {
+                "Persona_1": "BE_I_1",
+                "Persona_2": "BE_I_3",
+                "Tipo_di_relazione": "nonno"
+            },
+            {
+                "Persona_1": "BE_I_1",
+                "Persona_2": "BE_I_4",
+                "Tipo_di_relazione": "nonno"
+            },
+            {
+                "Persona_1": "BE_I_3",
+                "Persona_2": "BE_I_4",
+                "Tipo_di_relazione": "fratello/sorella"
+            },
+            {
+                "Persona_1": "BE_I_3",
+                "Persona_2": "BE_I_5",
+                "Tipo_di_relazione": "padre"
+            },
+            {
+                "Persona_1": "BE_I_4",
+                "Persona_2": "BE_I_6",
+                "Tipo_di_relazione": "zio"
+            }
+        ],
+        "Persone": {
+            "BE_I_1": {
+                "Nome": "Giuseppe Bellini",
+                "Nascita": "",
+                "Morte": ""
+            },
+            "BE_I_2": {
+                "Nome": "Luigi Bellini",
+                "Nascita": "1884",
+                "Morte": "1957"
+            },
+            "BE_I_3": {
+                "Nome": "Mario Bellini",
+                "Nascita": "1913",
+                "Morte": "2006"
+            },
+            "BE_I_4": {
+                "Nome": "Giuseppe Bellini",
+                "Nascita": "1909",
+                "Morte": "1994"
+            },
+            "BE_I_5": {
+                "Nome": "Luigi Bellini",
+                "Nascita": "1944",
+                "Morte": "2021"
+            }
+        }
+    },
+    "BR_II": {
+        "Nome": "Bruschi Livio",
+        "Relazioni": [
+            {
+                "Persona_1": "BR_II_1",
+                "Persona_2": "BR_II_2",
+                "Tipo_di_relazione": "coniuge"
+            },
+            {
+                "Persona_1": "BR_II_2",
+                "Persona_2": "BR_II_3",
+                "Tipo_di_relazione": "nuora"
+            }
+        ],
+        "Persone": {
+            "BR_II_1": {
+                "Nome": "Livio Bruschi",
+                "Nascita": "1906",
+                "Morte": "1973"
+            },
+            "BR_II_2": {
+                "Nome": "",
+                "Nascita": "",
+                "Morte": ""
+            },
+            "BR_II_3": {
+                "Nome": "Anita Almehagen Bruschi",
+                "Nascita": "",
+                "Morte": ""
+            }
+        }
+    },
+    "CA_I": {
+        "Nome": "Canessa",
+        "Relazioni": [
+            {
+                "Persona_1": "CA_I_1",
+                "Persona_2": "CA_I_2",
+                "Tipo_di_relazione": "fratello/sorella"
+            },
+            {
+                "Persona_1": "CA_I_2",
+                "Persona_2": "CA_I_3",
+                "Tipo_di_relazione": "fratello/sorella"
+            },
+            {
+                "Persona_1": "CA_I_1",
+                "Persona_2": "CA_I_3",
+                "Tipo_di_relazione": "fratello/sorella"
+            }
+        ],
+        "Persone": {
+            "CA_I_1": {
+                "Nome": "Cesare Canessa",
+                "Nascita": "1863",
+                "Morte": "1922"
+            },
+            "CA_I_2": {
+                "Nome": "Ercole Canessa",
+                "Nascita": "1867",
+                "Morte": "1929"
+            },
+            "CA_I_3": {
+                "Nome": "Amedeo Canessa",
+                "Nascita": "1874",
+                "Morte": "1934"
+            }
+        }
+    },
+    "CO_III": {
+        "Nome": "Costantini",
+        "Relazioni": [
+            {
+                "Persona_1": "Co_III_1",
+                "Persona_2": "Co_III_2",
+                "Tipo_di_relazione": "padre"
+            },
+            {
+                "Persona_1": "Co_III_1",
+                "Persona_2": "GR_1",
+                "Tipo_di_relazione": "zio"
+            }
+        ],
+        "Persone": {}
+    },
+    "DI": {
+        "Nome": "Di Castro",
+        "Relazioni": [
+            {
+                "Persona_1": "DI_1",
+                "Persona_2": "DI_2",
+                "Tipo_di_relazione": "padre"
+            },
+            {
+                "Persona_1": "DI_2",
+                "Persona_2": "DI_3",
+                "Tipo_di_relazione": "padre"
+            },
+            {
+                "Persona_1": "DI_1",
+                "Persona_2": "DI_3",
+                "Tipo_di_relazione": "nonno"
+            },
+            {
+                "Persona_1": "DI_3",
+                "Persona_2": "DI_4",
+                "Tipo_di_relazione": "padre"
+            },
+            {
+                "Persona_1": "DI_1",
+                "Persona_2": "DI_4",
+                "Tipo_di_relazione": "bisnonno"
+            },
+            {
+                "Persona_1": "DI_4",
+                "Persona_2": "DI_5",
+                "Tipo_di_relazione": "padre"
+            },
+            {
+                "Persona_1": "DI_4",
+                "Persona_2": "DI_6",
+                "Tipo_di_relazione": "padre"
+            },
+            {
+                "Persona_1": "DI_3",
+                "Persona_2": "DI_5",
+                "Tipo_di_relazione": "nonno"
+            },
+            {
+                "Persona_1": "DI_3",
+                "Persona_2": "DI_6",
+                "Tipo_di_relazione": "nonno"
+            },
+            {
+                "Persona_1": "DI_2",
+                "Persona_2": "DI_5",
+                "Tipo_di_relazione": "bisnonno"
+            },
+            {
+                "Persona_1": "DI_2",
+                "Persona_2": "DI_6",
+                "Tipo_di_relazione": "bisnonno"
+            }
+        ],
+        "Persone": {
+            "DI_1": {
+                "Nome": "Angelo Di Castro",
+                "Nascita": "",
+                "Morte": ""
+            },
+            "DI_2": {
+                "Nome": "Leone Di Castro",
+                "Nascita": "1878",
+                "Morte": "1950"
+            },
+            "DI_3": {
+                "Nome": "Alberto Di Castro",
+                "Nascita": "1909",
+                "Morte": "1978"
+            },
+            "DI_4": {
+                "Nome": "Franco Di Castro",
+                "Nascita": "1934",
+                "Morte": "2012"
+            },
+            "DI_5": {
+                "Nome": "Alberto Di Castro",
+                "Nascita": "",
+                "Morte": "in vita"
+            },
+            "DI_6": {
+                "Nome": "Alessandra Di Castro",
+                "Nascita": "",
+                "Morte": "in vita"
+            }
+        }
+    },
+    "FR": {
+        "Nome": "Freschi",
+        "Relazioni": [
+            {
+                "Persona_1": "FR_1",
+                "Persona_2": "FR_2",
+                "Tipo_di_relazione": "padre"
+            },
+            {
+                "Persona_1": "FR_1",
+                "Persona_2": "SA_I_1",
+                "Tipo_di_relazione": "genero"
+            }
+        ],
+        "Persone": {
+            "FR_1": {
+                "Nome": "Giuliano Freschi",
+                "Nascita": "1920",
+                "Morte": "2000"
+            },
+            "FR_2": {
+                "Nome": "Roberto Freschi",
+                "Nascita": "",
+                "Morte": "in vita"
+            }
+        }
+    },
+    "GR": {
+        "Nome": "Grassi",
+        "Relazioni": [
+            {
+                "Persona_1": "GR_1",
+                "Persona_2": "GR_2",
+                "Tipo_di_relazione": "padre"
+            },
+            {
+                "Persona_1": "GR_1",
+                "Persona_2": "Co_III_1",
+                "Tipo_di_relazione": "nipote"
+            },
+            {
+                "Persona_1": "GR_2",
+                "Persona_2": "GR_3",
+                "Tipo_di_relazione": "padre"
+            },
+            {
+                "Persona_1": "GR_1",
+                "Persona_2": "GR_3",
+                "Tipo_di_relazione": "nonno"
+            },
+            {
+                "Persona_1": "GR_1",
+                "Persona_2": "GR_4",
+                "Tipo_di_relazione": "fratello/sorella"
+            }
+        ],
+        "Persone": {
+            "GR_1": {
+                "Nome": "Luigi Grassi",
+                "Nascita": "1858",
+                "Morte": "1937"
+            },
+            "GR_2": {
+                "Nome": "Arturo Grassi",
+                "Nascita": "1899",
+                "Morte": "1971"
+            },
+            "GR_3": {
+                "Nome": "Luigi Grassi",
+                "Nascita": "1931",
+                "Morte": "in vita"
+            },
+            "GR_4": {
+                "Nome": "Giuseppe Grassi",
+                "Nascita": "",
+                "Morte": ""
+            }
+        }
+    },
+    "GU-BR": {
+        "Nome": "Guidi-Bruscoli",
+        "Relazioni": [
+            {
+                "Persona_1": "GU-BR_1",
+                "Persona_2": "GU-BR_2",
+                "Tipo_di_relazione": "padre"
+            },
+            {
+                "Persona_1": "GU-BR_1",
+                "Persona_2": "GU-BR_3",
+                "Tipo_di_relazione": "padre"
+            },
+            {
+                "Persona_1": "GU-BR_2",
+                "Persona_2": "GU-BR_3",
+                "Tipo_di_relazione": "fratello/sorella"
+            },
+            {
+                "Persona_1": "GU-BR_3",
+                "Persona_2": "GU-BR_4",
+                "Tipo_di_relazione": "padre"
+            }
+        ],
+        "Persone": {
+            "GU-BR_1": {
+                "Nome": "Carlo Bruscoli",
+                "Nascita": "1879",
+                "Morte": "1955"
+            },
+            "GU-BR_2": {
+                "Nome": "Riccardo Bruscoli",
+                "Nascita": "1913",
+                "Morte": "1989"
+            },
+            "GU-BR_3": {
+                "Nome": "Marcello Guidi",
+                "Nascita": "1903",
+                "Morte": "1979"
+            },
+            "GU-BR_4": {
+                "Nome": "Fabrizio Guidi-Bruscoli",
+                "Nascita": "1940",
+                "Morte": "in vita"
+            }
+        }
+    },
+    "JA": {
+        "Nome": "Jandolo",
+        "Relazioni": [
+            {
+                "Persona_1": "JA_1",
+                "Persona_2": "JA_2",
+                "Tipo_di_relazione": "padre"
+            },
+            {
+                "Persona_1": "JA_1",
+                "Persona_2": "JA_3",
+                "Tipo_di_relazione": "padre"
+            },
+            {
+                "Persona_1": "JA_1",
+                "Persona_2": "JA_4",
+                "Tipo_di_relazione": "padre"
+            },
+            {
+                "Persona_1": "JA_2",
+                "Persona_2": "JA_3",
+                "Tipo_di_relazione": "fratello/sorella"
+            },
+            {
+                "Persona_1": "JA_2",
+                "Persona_2": "JA_4",
+                "Tipo_di_relazione": "fratello/sorella"
+            },
+            {
+                "Persona_1": "JA_3",
+                "Persona_2": "JA_4",
+                "Tipo_di_relazione": "fratello/sorella"
+            },
+            {
+                "Persona_1": "JA_3",
+                "Persona_2": "JA_5",
+                "Tipo_di_relazione": "padre"
+            },
+            {
+                "Persona_1": "JA_3",
+                "Persona_2": "JA_6",
+                "Tipo_di_relazione": "padre"
+            },
+            {
+                "Persona_1": "JA_3",
+                "Persona_2": "JA_7",
+                "Tipo_di_relazione": "padre"
+            },
+            {
+                "Persona_1": "JA_5",
+                "Persona_2": "JA_6",
+                "Tipo_di_relazione": "fratello/sorella"
+            },
+            {
+                "Persona_1": "JA_5",
+                "Persona_2": "JA_7",
+                "Tipo_di_relazione": "fratello/sorella"
+            },
+            {
+                "Persona_1": "JA_6",
+                "Persona_2": "JA_7",
+                "Tipo_di_relazione": "fratello/sorella"
+            },
+            {
+                "Persona_1": "JA_1",
+                "Persona_2": "JA_5",
+                "Tipo_di_relazione": "nonno"
+            },
+            {
+                "Persona_1": "JA_1",
+                "Persona_2": "JA_6",
+                "Tipo_di_relazione": "nonno"
+            },
+            {
+                "Persona_1": "JA_1",
+                "Persona_2": "JA_7",
+                "Tipo_di_relazione": "nonno"
+            },
+            {
+                "Persona_1": "JA_2",
+                "Persona_2": "JA_5",
+                "Tipo_di_relazione": "zio"
+            },
+            {
+                "Persona_1": "JA_2",
+                "Persona_2": "JA_6",
+                "Tipo_di_relazione": "zio"
+            },
+            {
+                "Persona_1": "JA_2",
+                "Persona_2": "JA_7",
+                "Tipo_di_relazione": "zio"
+            },
+            {
+                "Persona_1": "JA_4",
+                "Persona_2": "JA_5",
+                "Tipo_di_relazione": "zio"
+            },
+            {
+                "Persona_1": "JA_4",
+                "Persona_2": "JA_6",
+                "Tipo_di_relazione": "zio"
+            },
+            {
+                "Persona_1": "JA_4",
+                "Persona_2": "JA_7",
+                "Tipo_di_relazione": "zio"
+            }
+        ],
+        "Persone": {
+            "JA_1": {
+                "Nome": "Salvatore Jandolo",
+                "Nascita": "",
+                "Morte": ""
+            },
+            "JA_2": {
+                "Nome": "Alessandro Jandolo",
+                "Nascita": "",
+                "Morte": "1930"
+            },
+            "JA_3": {
+                "Nome": "Antonio Jandolo",
+                "Nascita": "",
+                "Morte": "1912"
+            },
+            "JA_4": {
+                "Nome": "Ettore Jandolo",
+                "Nascita": "",
+                "Morte": ""
+            },
+            "JA_5": {
+                "Nome": "Ugo Jandolo",
+                "Nascita": "",
+                "Morte": ""
+            },
+            "JA_6": {
+                "Nome": "Augusto Jandolo",
+                "Nascita": "1873",
+                "Morte": "1952"
+            },
+            "JA_7": {
+                "Nome": "Salvatore Jandolo",
+                "Nascita": "",
+                "Morte": ""
+            }
+        }
+    },
+    "JA-TA": {
+        "Nome": "Jandolo-Tavazzi",
+        "Relazioni": [
+            {
+                "Persona_1": "JA-TA_1",
+                "Persona_2": "JA-TA_2",
+                "Tipo_di_relazione": "fratello/sorella"
+            },
+            {
+                "Persona_1": "JA-TA_3",
+                "Persona_2": "JA-TA_4",
+                "Tipo_di_relazione": "padre"
+            },
+            {
+                "Persona_1": "JA-TA_1",
+                "Persona_2": "JA-TA_3",
+                "Tipo_di_relazione": "socio"
+            },
+            {
+                "Persona_1": "JA-TA_2",
+                "Persona_2": "JA-TA_3",
+                "Tipo_di_relazione": "socio"
+            }
+        ],
+        "Persone": {
+            "JA-TA_1": {
+                "Nome": "Augusto Jandolo",
+                "Nascita": "1873",
+                "Morte": "1952"
+            },
+            "JA-TA_2": {
+                "Nome": "Salvatore Jandolo",
+                "Nascita": "",
+                "Morte": ""
+            },
+            "JA-TA_3": {
+                "Nome": "Filippo Tavazzi",
+                "Nascita": "1857",
+                "Morte": "1924"
+            },
+            "JA-TA_4": {
+                "Nome": "Guido Tavazzi",
+                "Nascita": "",
+                "Morte": "1942"
+            }
+        }
+    },
+    "LA_I": {
+        "Nome": "Lapicirella",
+        "Relazioni": [
+            {
+                "Persona_1": "LA_I_1",
+                "Persona_2": "LA_I_2",
+                "Tipo_di_relazione": "padre"
+            }
+        ],
+        "Persone": {
+            "LA_I_1": {
+                "Nome": "Leonardo Lapicirella",
+                "Nascita": "1927",
+                "Morte": "2022"
+            },
+            "LA_I_2": {
+                "Nome": "Damiano Lapicirella",
+                "Nascita": "",
+                "Morte": "in vita"
+            }
+        }
+    },
+    "PI": {
+        "Nome": "Pini",
+        "Relazioni": [
+            {
+                "Persona_1": "PI_1",
+                "Persona_2": "PI_2",
+                "Tipo_di_relazione": "padre"
+            },
+            {
+                "Persona_1": "PI_1",
+                "Persona_2": "PI_3",
+                "Tipo_di_relazione": "padre"
+            },
+            {
+                "Persona_1": "PI_2",
+                "Persona_2": "PI_2",
+                "Tipo_di_relazione": "fratello/sorella"
+            }
+        ],
+        "Persone": {
+            "PI_1": {
+                "Nome": "Cesare Pini",
+                "Nascita": "",
+                "Morte": ""
+            },
+            "PI_2": {
+                "Nome": "Umberto Pini",
+                "Nascita": "",
+                "Morte": ""
+            },
+            "PI_3": {
+                "Nome": "Giovanni Pini",
+                "Nascita": "",
+                "Morte": ""
+            }
+        }
+    },
+    "PO_I": {
+        "Nome": "Podio",
+        "Relazioni": [
+            {
+                "Persona_1": "PO_I_1",
+                "Persona_2": "PO_I_2",
+                "Tipo_di_relazione": "padre"
+            },
+            {
+                "Persona_1": "PO_I_1",
+                "Persona_2": "PO_I_3",
+                "Tipo_di_relazione": "padre"
+            },
+            {
+                "Persona_1": "PO_I_1",
+                "Persona_2": "PO_I_4",
+                "Tipo_di_relazione": "padre"
+            },
+            {
+                "Persona_1": "PO_I_2",
+                "Persona_2": "PO_I_3",
+                "Tipo_di_relazione": "fratello/sorella"
+            },
+            {
+                "Persona_1": "PO_I_2",
+                "Persona_2": "PO_I_4",
+                "Tipo_di_relazione": "fratello/sorella"
+            },
+            {
+                "Persona_1": "PO_I_3",
+                "Persona_2": "PO_I_4",
+                "Tipo_di_relazione": "fratello/sorella"
+            }
+        ],
+        "Persone": {
+            "PO_I_1": {
+                "Nome": "Publio Podio",
+                "Nascita": "",
+                "Morte": "1932"
+            },
+            "PO_I_2": {
+                "Nome": "Decio Podio",
+                "Nascita": "",
+                "Morte": ""
+            },
+            "PO_I_3": {
+                "Nome": "Enrico Podio",
+                "Nascita": "",
+                "Morte": ""
+            },
+            "PO_I_4": {
+                "Nome": "Luigi Podio",
+                "Nascita": "",
+                "Morte": ""
+            }
+        }
+    },
+    "RO": {
+        "Nome": "Romano",
+        "Relazioni": [
+            {
+                "Persona_1": "RO_1",
+                "Persona_2": "RO_2",
+                "Tipo_di_relazione": "padre"
+            }
+        ],
+        "Persone": {
+            "RO_1": {
+                "Nome": "Salvatore Romano",
+                "Nascita": "1875",
+                "Morte": "1955"
+            },
+            "RO_2": {
+                "Nome": "Francesco Romano",
+                "Nascita": "1919",
+                "Morte": "1981"
+            }
+        }
+    },
+    "SA_I": {
+        "Nome": "Salocchi",
+        "Relazioni": [
+            {
+                "Persona_1": "SA_I_1",
+                "Persona_2": "SA_I_2",
+                "Tipo_di_relazione": "padre"
+            }
+        ],
+        "Persone": {
+            "SA_I_1": {
+                "Nome": "Giovanni Salocchi",
+                "Nascita": "1901",
+                "Morte": "1984"
+            },
+            "SA_I_2": {
+                "Nome": "Nicolò o Nicola Salocchi",
+                "Nascita": "1927",
+                "Morte": "1999"
+            }
+        }
+    },
+    "SA_II": {
+        "Nome": "Salvadori",
+        "Relazioni": [
+            {
+                "Persona_1": "SA_II_1",
+                "Persona_2": "SA_II_2",
+                "Tipo_di_relazione": "padre"
+            },
+            {
+                "Persona_1": "SA_II_2",
+                "Persona_2": "SA_II_3",
+                "Tipo_di_relazione": "padre"
+            },
+            {
+                "Persona_1": "SA_II_1",
+                "Persona_2": "SA_II_3",
+                "Tipo_di_relazione": "nonno"
+            }
+        ],
+        "Persone": {
+            "SA_II_1": {
+                "Nome": "Salvadore Salvadori",
+                "Nascita": "",
+                "Morte": ""
+            },
+            "SA_II_2": {
+                "Nome": "Giuseppe Salvadori",
+                "Nascita": "1862",
+                "Morte": "1928"
+            },
+            "SA_II_3": {
+                "Nome": "Salvino Salvadori",
+                "Nascita": "1889",
+                "Morte": ""
+            }
+        }
+    },
+    "SA_IV": {
+        "Nome": "Sangiorgi",
+        "Relazioni": [
+            {
+                "Persona_1": "SA_IV_1",
+                "Persona_2": "SA_IV_2",
+                "Tipo_di_relazione": "padre"
+            },
+            {
+                "Persona_1": "SA_IV_1",
+                "Persona_2": "SA_IV_3",
+                "Tipo_di_relazione": "nonno"
+            },
+            {
+                "Persona_1": "SA_IV_2",
+                "Persona_2": "SA_IV_3",
+                "Tipo_di_relazione": "padre"
+            }
+        ],
+        "Persone": {
+            "SA_IV_1": {
+                "Nome": "Giuseppe Sangiorgi",
+                "Nascita": "1850",
+                "Morte": "1928"
+            },
+            "SA_IV_2": {
+                "Nome": "Giorgio Sangiorgi",
+                "Nascita": "1886",
+                "Morte": "1975"
+            },
+            "SA_IV_3": {
+                "Nome": "Sergio Sangiorgi",
+                "Nascita": "1925",
+                "Morte": "2015"
+            }
+        }
+    },
+    "SE_I": {
+        "Nome": "Segre",
+        "Relazioni": [
+            {
+                "Persona_1": "SE_I_1",
+                "Persona_2": "SE_I_2",
+                "Tipo_di_relazione": "padre"
+            }
+        ],
+        "Persone": {
+            "SE_I_1": {
+                "Nome": "Emanuele Segre",
+                "Nascita": "",
+                "Morte": ""
+            },
+            "SE_I_2": {
+                "Nome": "Isacco Segre",
+                "Nascita": "",
+                "Morte": ""
+            }
+        }
+    },
+    "SE_II": {
+        "Nome": "Sestieri",
+        "Relazioni": [
+            {
+                "Persona_1": "SE_II_1",
+                "Persona_2": "SE_II_2",
+                "Tipo_di_relazione": "padre"
+            },
+            {
+                "Persona_1": "SE_II_1",
+                "Persona_2": "SE_II_3",
+                "Tipo_di_relazione": "padre"
+            },
+            {
+                "Persona_1": "SE_II_2",
+                "Persona_2": "SE_II_3",
+                "Tipo_di_relazione": "fratello/sorella"
+            },
+            {
+                "Persona_1": "SE_II_2",
+                "Persona_2": "SE_II_5",
+                "Tipo_di_relazione": "padre"
+            },
+            {
+                "Persona_1": "SE_II_2",
+                "Persona_2": "SE_II_6",
+                "Tipo_di_relazione": "padre"
+            },
+            {
+                "Persona_1": "SE_II_5",
+                "Persona_2": "SE_II_6",
+                "Tipo_di_relazione": "fratello/sorella"
+            },
+            {
+                "Persona_1": "SE_II_1",
+                "Persona_2": "SE_II_5",
+                "Tipo_di_relazione": "nonno"
+            },
+            {
+                "Persona_1": "SE_II_1",
+                "Persona_2": "SE_II_6",
+                "Tipo_di_relazione": "nonno"
+            },
+            {
+                "Persona_1": "SE_II_3",
+                "Persona_2": "SE_II_5",
+                "Tipo_di_relazione": "zio"
+            },
+            {
+                "Persona_1": "SE_II_3",
+                "Persona_2": "SE_II_6",
+                "Tipo_di_relazione": "zio"
+            }
+        ],
+        "Persone": {
+            "SE_II_1": {
+                "Nome": "Pellegrino Sestieri",
+                "Nascita": "",
+                "Morte": ""
+            },
+            "SE_II_2": {
+                "Nome": "Emanuele Sestieri",
+                "Nascita": "1887",
+                "Morte": "1953"
+            },
+            "SE_II_3": {
+                "Nome": "Guido Sestieri",
+                "Nascita": "1890",
+                "Morte": "1954"
+            },
+            "SE_II_5": {
+                "Nome": "Carlo Sestieri",
+                "Nascita": "1922",
+                "Morte": "1998"
+            },
+            "SE_II_6": {
+                "Nome": "Marcello Sestieri",
+                "Nascita": "1920",
+                "Morte": "1995"
+            }
+        }
+    },
+    "SI": {
+        "Nome": "Simonetti",
+        "Relazioni": [
+            {
+                "Persona_1": "SI_1",
+                "Persona_2": "SI_2",
+                "Tipo_di_relazione": "padre"
+            },
+            {
+                "Persona_1": "SI_1",
+                "Persona_2": "SI_3",
+                "Tipo_di_relazione": "padre"
+            },
+            {
+                "Persona_1": "SI_1",
+                "Persona_2": "SI_4",
+                "Tipo_di_relazione": "padre"
+            },
+            {
+                "Persona_1": "SI_1",
+                "Persona_2": "SI_5",
+                "Tipo_di_relazione": "padre"
+            },
+            {
+                "Persona_1": "SI_2",
+                "Persona_2": "SI_3",
+                "Tipo_di_relazione": "fratello/sorella"
+            },
+            {
+                "Persona_1": "SI_2",
+                "Persona_2": "SI_4",
+                "Tipo_di_relazione": "fratello/sorella"
+            },
+            {
+                "Persona_1": "SI_2",
+                "Persona_2": "SI_5",
+                "Tipo_di_relazione": "fratello/sorella"
+            },
+            {
+                "Persona_1": "SI_3",
+                "Persona_2": "SI_4",
+                "Tipo_di_relazione": "fratello/sorella"
+            },
+            {
+                "Persona_1": "SI_3",
+                "Persona_2": "SI_5",
+                "Tipo_di_relazione": "fratello/sorella"
+            },
+            {
+                "Persona_1": "SI_4",
+                "Persona_2": "SI_5",
+                "Tipo_di_relazione": "fratello/sorella"
+            }
+        ],
+        "Persone": {
+            "SI_1": {
+                "Nome": "Attilio Simonetti",
+                "Nascita": "1843",
+                "Morte": "1925"
+            },
+            "SI_2": {
+                "Nome": "Aldo Simonetti",
+                "Nascita": "",
+                "Morte": ""
+            },
+            "SI_3": {
+                "Nome": "Ugo Simonetti",
+                "Nascita": "",
+                "Morte": ""
+            },
+            "SI_4": {
+                "Nome": "Emma Simonetti",
+                "Nascita": "",
+                "Morte": ""
+            },
+            "SI_5": {
+                "Nome": "Giulio Simonetti",
+                "Nascita": "",
+                "Morte": ""
+            }
+        }
+    },
+    "VO_II": {
+        "Nome": "Volterra",
+        "Relazioni": [
+            {
+                "Persona_1": "VO_II_1",
+                "Persona_2": "VO_II_2",
+                "Tipo_di_relazione": "padre"
+            },
+            {
+                "Persona_1": "VO_II_1",
+                "Persona_2": "VO_II_3",
+                "Tipo_di_relazione": "padre"
+            },
+            {
+                "Persona_1": "VO_II_1",
+                "Persona_2": "VO_II_4",
+                "Tipo_di_relazione": "padre"
+            },
+            {
+                "Persona_1": "VO_II_1",
+                "Persona_2": "VO_II_5",
+                "Tipo_di_relazione": "padre"
+            },
+            {
+                "Persona_1": "VO_II_2",
+                "Persona_2": "VO_II_3",
+                "Tipo_di_relazione": "fratello/sorella"
+            },
+            {
+                "Persona_1": "VO_II_2",
+                "Persona_2": "VO_II_4",
+                "Tipo_di_relazione": "fratello/sorella"
+            },
+            {
+                "Persona_1": "VO_II_2",
+                "Persona_2": "VO_II_5",
+                "Tipo_di_relazione": "fratello/sorella"
+            },
+            {
+                "Persona_1": "VO_II_3",
+                "Persona_2": "VO_II_4",
+                "Tipo_di_relazione": "fratello/sorella"
+            },
+            {
+                "Persona_1": "VO_II_3",
+                "Persona_2": "VO_II_5",
+                "Tipo_di_relazione": "fratello/sorella"
+            },
+            {
+                "Persona_1": "VO_II_4",
+                "Persona_2": "VO_II_5",
+                "Tipo_di_relazione": "fratello/sorella"
+            }
+        ],
+        "Persone": {
+            "VO_II_1": {
+                "Nome": "Gustavo Volterra",
+                "Nascita": "1855",
+                "Morte": "1918"
+            },
+            "VO_II_2": {
+                "Nome": "Giuseppe Volterra",
+                "Nascita": "1882",
+                "Morte": "1932"
+            },
+            "VO_II_3": {
+                "Nome": "Gastone Volterra",
+                "Nascita": "1887",
+                "Morte": "1944"
+            },
+            "VO_II_4": {
+                "Nome": "Umberto Angelo Volterra",
+                "Nascita": "1886",
+                "Morte": "1944"
+            },
+            "VO_II_5": {
+                "Nome": "Gualtiero Volterra",
+                "Nascita": "1901",
+                "Morte": "1967"
+            }
+        }
+    }
+}
