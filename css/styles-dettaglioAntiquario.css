@@ -1,5 +1,6 @@
 /* Basic Reset */
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
     padding: 0;
@@ -8,14 +9,16 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Assicura che il corpo occupi almeno l'altezza della finestra */
+    min-height: 100vh;
+    /* Assicura che il corpo occupi almeno l'altezza della finestra */
     font-family: 'Montserrat', sans-serif;
     color: #333;
     line-height: 1.6;
 }
 
 main {
-    flex: 1; /* Fa sì che il main prenda tutto lo spazio disponibile */
+    flex: 1;
+    /* Fa sì che il main prenda tutto lo spazio disponibile */
 }
 
 /* header e menù */
@@ -23,12 +26,18 @@ main {
 header {
     background-color: #f8f8f8;
     padding: 15px;
-    position: sticky; /* Rende il menu sticky */
-    top: 0; /* Posiziona il menu all'inizio della pagina */
-    z-index: 1000; /* Assicura che il menu si sovrapponga agli altri contenuti */
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Aggiunge un'ombra per differenziarlo dal contenuto */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Aggiunge l'ombreggiatura */
-    border-radius: 8px; /* Opzionale: arrotonda gli angoli */
+    position: sticky;
+    /* Rende il menu sticky */
+    top: 0;
+    /* Posiziona il menu all'inizio della pagina */
+    z-index: 1000;
+    /* Assicura che il menu si sovrapponga agli altri contenuti */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    /* Aggiunge un'ombra per differenziarlo dal contenuto */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    /* Aggiunge l'ombreggiatura */
+    border-radius: 8px;
+    /* Opzionale: arrotonda gli angoli */
 }
 
 .header-container {
@@ -75,7 +84,7 @@ nav ul li a:hover {
     font-size: 36px;
     font-weight: bold;
     margin-bottom: 30px;
-    margin-top:10px;
+    margin-top: 10px;
     color: #5593C9;
     text-align: left;
     margin-left: 120px;
@@ -91,7 +100,8 @@ nav ul li a:hover {
 }
 
 .slider {
-    display: flex; /* Modificato per layout flessibile */
+    display: flex;
+    /* Modificato per layout flessibile */
     transition: transform 0.5s ease-in-out;
 }
 
@@ -132,7 +142,8 @@ nav ul li a:hover {
     opacity: 1;
 }
 
-.prev, .next {
+.prev,
+.next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -141,9 +152,12 @@ nav ul li a:hover {
     border: none;
     padding: 10px;
     cursor: pointer;
-    border-radius: 50%; /* Assicura che i bottoni restino rotondi */
-    width: 40px; /* Imposta una larghezza fissa */
-    height: 40px; /* Imposta un'altezza fissa */
+    border-radius: 50%;
+    /* Assicura che i bottoni restino rotondi */
+    width: 40px;
+    /* Imposta una larghezza fissa */
+    height: 40px;
+    /* Imposta un'altezza fissa */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -159,9 +173,10 @@ nav ul li a:hover {
     right: 10px;
 }
 
-.prev:hover, .next:hover {
+.prev:hover,
+.next:hover {
     background-color: rgba(0, 0, 0, 0.8);
-    color:#fff;
+    color: #fff;
 }
 
 .prev {
@@ -172,7 +187,8 @@ nav ul li a:hover {
     right: 10px;
 }
 
-.prev:hover, .next:hover {
+.prev:hover,
+.next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -238,31 +254,37 @@ nav ul li a:hover {
 #FZ h2 {
     font-size: 36px;
     margin-bottom: 20px;
-    margin-left: 80px; /* Aggiunge margine a sinistra per allineare */
+    margin-left: 80px;
+    /* Aggiunge margine a sinistra per allineare */
     text-align: left;
 }
 
 #FZ h2 .highlight {
-    color: #5593C9; 
-    font-weight: 700; 
+    color: #5593C9;
+    font-weight: 700;
 }
 
 #FZ h2 .regular-text {
-    color: #000; 
+    color: #000;
     font-weight: 400;
 }
 
 
 #FZ .content-wrapper {
     display: flex;
-    justify-content: space-between; /* Spazia il paragrafo e il pulsante */
-    align-items: center; /* Allinea verticalmente il paragrafo e il pulsante */
-    margin-left: 80px; /* Allinea il contenuto con il margine sinistro */
-    margin-right: 80px; /* Allinea il contenuto con il margine destro */
+    justify-content: space-between;
+    /* Spazia il paragrafo e il pulsante */
+    align-items: center;
+    /* Allinea verticalmente il paragrafo e il pulsante */
+    margin-left: 80px;
+    /* Allinea il contenuto con il margine sinistro */
+    margin-right: 80px;
+    /* Allinea il contenuto con il margine destro */
 }
 
 #FZ p {
-    margin-bottom: 0; /* Rimuove il margine inferiore del paragrafo */
+    margin-bottom: 0;
+    /* Rimuove il margine inferiore del paragrafo */
     font-size: 24px;
     font-weight: 400;
     text-align: left;
@@ -276,7 +298,8 @@ nav ul li a:hover {
     font-weight: bold;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-    float: none; /* Rimuove il float */
+    float: none;
+    /* Rimuove il float */
     margin-right: 260px;
 }
 
@@ -315,12 +338,13 @@ nav ul li a:hover {
 #chartdiv {
     width: 100%;
     height: 550px;
-  }
+}
 
 .section-title {
     font-size: 36px;
     margin-bottom: 60px;
-    text-align: left; /* Centra il titolo orizzontalmente */
+    text-align: left;
+    /* Centra il titolo orizzontalmente */
     margin-top: 10px;
     margin-left: 120px;
 }
@@ -339,7 +363,8 @@ nav ul li a:hover {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 20px; /* Spazio tra le due colonne */
+    gap: 20px;
+    /* Spazio tra le due colonne */
     margin-top: 20px;
 }
 
@@ -396,7 +421,7 @@ nav ul li a:hover {
 }
 
 
-  
+
 /* footer */
 footer {
     padding: 5px 40px;
@@ -434,4 +459,10 @@ footer img {
 
 .footer-right {
     text-align: right;
+}
+
+#albero-genealogico {
+    min-height: 500px;
+    min-width: 100%;
+    overflow: visible;
 }
