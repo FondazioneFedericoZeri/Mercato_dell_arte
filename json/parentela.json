@@ -33,50 +33,83 @@
                 "Nome": "Marco Fabio Apolloni",
                 "Nascita": "",
                 "Morte": "in vita"
-            }
+            },
+            "AP_4": {}
         }
     },
     "BA_I": {
         "Nome": "Bacarelli",
         "Relazioni": [
             {
-                "Persona_1": "Ba_I_1",
-                "Persona_2": "Ba_I_2",
+                "Persona_1": "BA_I_1",
+                "Persona_2": "BA_I_2",
                 "Tipo_di_relazione": "padre"
             },
             {
-                "Persona_1": "Ba_I_2",
-                "Persona_2": "Ba_I_3",
+                "Persona_1": "BA_I_2",
+                "Persona_2": "BA_I_3",
                 "Tipo_di_relazione": "padre"
             },
             {
-                "Persona_1": "Ba_I_1",
-                "Persona_2": "Ba_I_3",
+                "Persona_1": "BA_I_1",
+                "Persona_2": "BA_I_3",
                 "Tipo_di_relazione": "nonno"
             }
         ],
-        "Persone": {}
+        "Persone": {
+            "BA_I_1": {
+                "Nome": "Rizieri Bacarelli",
+                "Nascita": "",
+                "Morte": "1947"
+            },
+            "BA_I_2": {
+                "Nome": "Benvenuto Bacarelli",
+                "Nascita": "1923",
+                "Morte": "2015"
+            },
+            "BA_I_3": {
+                "Nome": "Riccardo Bacarelli",
+                "Nascita": "1967",
+                "Morte": ""
+            }
+        }
     },
     "BA_II": {
         "Nome": "Bardini",
         "Relazioni": [
             {
-                "Persona_1": "Ba_II_1",
-                "Persona_2": "Ba_II_2",
+                "Persona_1": "BA_II_1",
+                "Persona_2": "BA_II_2",
                 "Tipo_di_relazione": "padre"
             },
             {
-                "Persona_1": "Ba_II_1",
-                "Persona_2": "Ba_II_3",
+                "Persona_1": "BA_II_1",
+                "Persona_2": "BA_II_3",
                 "Tipo_di_relazione": "padre"
             },
             {
-                "Persona_1": "Ba_II_2",
-                "Persona_2": "Ba_II_3",
+                "Persona_1": "BA_II_2",
+                "Persona_2": "BA_II_3",
                 "Tipo_di_relazione": "fratello/sorella"
             }
         ],
-        "Persone": {}
+        "Persone": {
+            "BA_II_1": {
+                "Nome": "Stefano Bardini",
+                "Nascita": "1836",
+                "Morte": "1922"
+            },
+            "BA_II_2": {
+                "Nome": "Emma Bardini",
+                "Nascita": "1883",
+                "Morte": "1927"
+            },
+            "BA_II_3": {
+                "Nome": "Ugo Bardini",
+                "Nascita": "1892",
+                "Morte": "1965"
+            }
+        }
     },
     "BE_I": {
         "Nome": "Bellini",
@@ -147,7 +180,8 @@
                 "Nome": "Luigi Bellini",
                 "Nascita": "1944",
                 "Morte": "2021"
-            }
+            },
+            "BE_I_6": {}
         }
     },
     "BR_II": {
@@ -223,17 +257,29 @@
         "Nome": "Costantini",
         "Relazioni": [
             {
-                "Persona_1": "Co_III_1",
-                "Persona_2": "Co_III_2",
+                "Persona_1": "CO_III_1",
+                "Persona_2": "CO_III_2",
                 "Tipo_di_relazione": "padre"
             },
             {
-                "Persona_1": "Co_III_1",
+                "Persona_1": "CO_III_1",
                 "Persona_2": "GR_1",
                 "Tipo_di_relazione": "zio"
             }
         ],
-        "Persone": {}
+        "Persone": {
+            "CO_III_1": {
+                "Nome": "Emilio Costantini",
+                "Nascita": "1842",
+                "Morte": "1926"
+            },
+            "CO_III_2": {
+                "Nome": "Davide Augusto Costantini",
+                "Nascita": "1875",
+                "Morte": ""
+            },
+            "GR_1": {}
+        }
     },
     "DI": {
         "Nome": "Di Castro",
@@ -351,7 +397,8 @@
                 "Nome": "Roberto Freschi",
                 "Nascita": "",
                 "Morte": "in vita"
-            }
+            },
+            "SA_I_1": {}
         }
     },
     "GR": {
@@ -364,7 +411,7 @@
             },
             {
                 "Persona_1": "GR_1",
-                "Persona_2": "Co_III_1",
+                "Persona_2": "CO_III_1",
                 "Tipo_di_relazione": "nipote"
             },
             {
@@ -394,6 +441,7 @@
                 "Nascita": "1899",
                 "Morte": "1971"
             },
+            "CO_III_1": {},
             "GR_3": {
                 "Nome": "Luigi Grassi",
                 "Nascita": "1931",
