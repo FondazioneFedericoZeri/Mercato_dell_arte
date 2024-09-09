@@ -1,4 +1,76 @@
 {
+    "AN-EF": {
+        "Nome": "Antonacci-Efrati",
+        "Relazioni": [
+            {
+                "Persona_1": "AN-EF_1",
+                "Persona_2": "AN-EF_2",
+                "Tipo_di_relazione": "padre"
+            },
+            {
+                "Persona_1": "AN-EF_2",
+                "Persona_2": "AN-EF_3",
+                "Tipo_di_relazione": "madre"
+            },
+            {
+                "Persona_1": "AN-EF_2",
+                "Persona_2": "AN-EF_4",
+                "Tipo_di_relazione": "nonna"
+            },
+            {
+                "Persona_1": "AN-EF_2",
+                "Persona_2": "AN-EF_5",
+                "Tipo_di_relazione": "nonna"
+            },
+            {
+                "Persona_1": "AN-EF_3",
+                "Persona_2": "AN-EF_4",
+                "Tipo_di_relazione": "padre"
+            },
+            {
+                "Persona_1": "AN-EF_3",
+                "Persona_2": "AN-EF_5",
+                "Tipo_di_relazione": "padre"
+            },
+            {
+                "Persona_1": "AN-EF_4",
+                "Persona_2": "AN-EF_5",
+                "Tipo_di_relazione": "fratello/sorella"
+            },
+            {
+                "Persona_1": "AN-EF_5",
+                "Persona_2": "AN-EF_4",
+                "Tipo_di_relazione": "fratello/sorella"
+            }
+        ],
+        "Persone": {
+            "AN-EF_1": {
+                "Nome": "Emanuele Efrati",
+                "Nascita": "",
+                "Morte": ""
+            },
+            "AN-EF_2": {
+                "Nome": "Luigia Efrati",
+                "Nascita": "",
+                "Morte": ""
+            },
+            "AN-EF_3": {
+                "Nome": "Giuseppe Antonacci",
+                "Nascita": "1923.0",
+                "Morte": "2010"
+            },
+            "AN-EF_4": {
+                "Nome": "Paolo Antonacci",
+                "Nascita": "",
+                "Morte": "in vita"
+            },
+            "AN-EF_5": {
+                "Nome": "Francesca Antonacci",
+                "Nascita": "",
+                "Morte": "in vita"
+            }
+        }
+    },
     "AP": {
         "Nome": "Apolloni",
         "Relazioni": [
@@ -14,27 +86,26 @@
             },
             {
                 "Persona_1": "AP_1",
-                "Persona_2": "AP_4",
+                "Persona_2": "AP_3",
                 "Tipo_di_relazione": "nonno"
             }
         ],
         "Persone": {
             "AP_1": {
                 "Nome": "Wladimiro Apolloni",
-                "Nascita": "1888",
+                "Nascita": "1888.0",
                 "Morte": "1948"
             },
             "AP_2": {
                 "Nome": "Fabrizio Apolloni",
-                "Nascita": "1928",
+                "Nascita": "1928.0",
                 "Morte": "2006"
             },
             "AP_3": {
                 "Nome": "Marco Fabio Apolloni",
-                "Nascita": "",
+                "Nascita": "1959.0",
                 "Morte": "in vita"
-            },
-            "AP_4": {}
+            }
         }
     },
     "BA_I": {
@@ -64,12 +135,12 @@
             },
             "BA_I_2": {
                 "Nome": "Benvenuto Bacarelli",
-                "Nascita": "1923",
+                "Nascita": "1923.0",
                 "Morte": "2015"
             },
             "BA_I_3": {
                 "Nome": "Riccardo Bacarelli",
-                "Nascita": "1967",
+                "Nascita": "1967.0",
                 "Morte": ""
             }
         }
@@ -96,17 +167,17 @@
         "Persone": {
             "BA_II_1": {
                 "Nome": "Stefano Bardini",
-                "Nascita": "1836",
+                "Nascita": "1836.0",
                 "Morte": "1922"
             },
             "BA_II_2": {
                 "Nome": "Emma Bardini",
-                "Nascita": "1883",
+                "Nascita": "1883.0",
                 "Morte": "1927"
             },
             "BA_II_3": {
                 "Nome": "Ugo Bardini",
-                "Nascita": "1892",
+                "Nascita": "1892.0",
                 "Morte": "1965"
             }
         }
@@ -151,37 +222,58 @@
             },
             {
                 "Persona_1": "BE_I_4",
-                "Persona_2": "BE_I_6",
+                "Persona_2": "BE_I_5",
                 "Tipo_di_relazione": "zio"
             }
         ],
         "Persone": {
             "BE_I_1": {
                 "Nome": "Giuseppe Bellini",
-                "Nascita": "",
-                "Morte": ""
+                "Nascita": "1909.0",
+                "Morte": "1994"
             },
             "BE_I_2": {
                 "Nome": "Luigi Bellini",
-                "Nascita": "1884",
+                "Nascita": "1884.0",
                 "Morte": "1957"
             },
             "BE_I_3": {
                 "Nome": "Mario Bellini",
-                "Nascita": "1913",
+                "Nascita": "1913.0",
                 "Morte": "2006"
             },
             "BE_I_4": {
                 "Nome": "Giuseppe Bellini",
-                "Nascita": "1909",
+                "Nascita": "1909.0",
                 "Morte": "1994"
             },
             "BE_I_5": {
                 "Nome": "Luigi Bellini",
-                "Nascita": "1944",
+                "Nascita": "1944.0",
                 "Morte": "2021"
+            }
+        }
+    },
+    "BR_I": {
+        "Nome": "Bruschi Ivan",
+        "Relazioni": [
+            {
+                "Persona_1": "BR_I_1",
+                "Persona_2": "BR_II_1",
+                "Tipo_di_relazione": "fratello/sorella"
+            }
+        ],
+        "Persone": {
+            "BR_I_1": {
+                "Nome": "Ivan Bruschi",
+                "Nascita": "1920.0",
+                "Morte": "1996"
             },
-            "BE_I_6": {}
+            "BR_II_1": {
+                "Nome": "Livio Bruschi",
+                "Nascita": "1906.0",
+                "Morte": "1973"
+            }
         }
     },
     "BR_II": {
@@ -189,20 +281,35 @@
         "Relazioni": [
             {
                 "Persona_1": "BR_II_1",
+                "Persona_2": "BR_I_1",
+                "Tipo_di_relazione": "fratello/sorella"
+            },
+            {
+                "Persona_1": "BR_II_1",
                 "Persona_2": "BR_II_2",
                 "Tipo_di_relazione": "coniuge"
             },
             {
-                "Persona_1": "BR_II_2",
-                "Persona_2": "BR_II_3",
+                "Persona_1": "BR_II_3",
+                "Persona_2": "BR_II_2",
+                "Tipo_di_relazione": "nuora"
+            },
+            {
+                "Persona_1": "BR_II_3",
+                "Persona_2": "BR_II_1",
                 "Tipo_di_relazione": "nuora"
             }
         ],
         "Persone": {
             "BR_II_1": {
                 "Nome": "Livio Bruschi",
-                "Nascita": "1906",
+                "Nascita": "1906.0",
                 "Morte": "1973"
+            },
+            "BR_I_1": {
+                "Nome": "Ivan Bruschi",
+                "Nascita": "1920.0",
+                "Morte": "1996"
             },
             "BR_II_2": {
                 "Nome": "",
@@ -210,9 +317,9 @@
                 "Morte": ""
             },
             "BR_II_3": {
-                "Nome": "Anita Almehagen Bruschi",
+                "Nome": "Anita Almehagen ",
                 "Nascita": "",
-                "Morte": ""
+                "Morte": "in vita"
             }
         }
     },
@@ -238,17 +345,17 @@
         "Persone": {
             "CA_I_1": {
                 "Nome": "Cesare Canessa",
-                "Nascita": "1863",
+                "Nascita": "1863.0",
                 "Morte": "1922"
             },
             "CA_I_2": {
                 "Nome": "Ercole Canessa",
-                "Nascita": "1867",
+                "Nascita": "1867.0",
                 "Morte": "1929"
             },
             "CA_I_3": {
                 "Nome": "Amedeo Canessa",
-                "Nascita": "1874",
+                "Nascita": "1874.0",
                 "Morte": "1934"
             }
         }
@@ -270,15 +377,19 @@
         "Persone": {
             "CO_III_1": {
                 "Nome": "Emilio Costantini",
-                "Nascita": "1842",
+                "Nascita": "1842.0",
                 "Morte": "1926"
             },
             "CO_III_2": {
                 "Nome": "Davide Augusto Costantini",
-                "Nascita": "1875",
+                "Nascita": "1875.0",
                 "Morte": ""
             },
-            "GR_1": {}
+            "GR_1": {
+                "Nome": "Luigi Grassi",
+                "Nascita": "1858.0",
+                "Morte": "1937"
+            }
         }
     },
     "DI": {
@@ -303,6 +414,11 @@
                 "Persona_1": "DI_3",
                 "Persona_2": "DI_4",
                 "Tipo_di_relazione": "padre"
+            },
+            {
+                "Persona_1": "DI_3",
+                "Persona_2": "DI_??",
+                "Tipo_di_relazione": "fratello/sorella"
             },
             {
                 "Persona_1": "DI_1",
@@ -348,19 +464,20 @@
             },
             "DI_2": {
                 "Nome": "Leone Di Castro",
-                "Nascita": "1878",
+                "Nascita": "1878.0",
                 "Morte": "1950"
             },
             "DI_3": {
                 "Nome": "Alberto Di Castro",
-                "Nascita": "1909",
+                "Nascita": "1909.0",
                 "Morte": "1978"
             },
             "DI_4": {
                 "Nome": "Franco Di Castro",
-                "Nascita": "1934",
+                "Nascita": "1934.0",
                 "Morte": "2012"
             },
+            "DI_??": {},
             "DI_5": {
                 "Nome": "Alberto Di Castro",
                 "Nascita": "",
@@ -390,15 +507,19 @@
         "Persone": {
             "FR_1": {
                 "Nome": "Giuliano Freschi",
-                "Nascita": "1920",
+                "Nascita": "1920.0",
                 "Morte": "2000"
             },
             "FR_2": {
                 "Nome": "Roberto Freschi",
-                "Nascita": "",
+                "Nascita": "1952.0",
                 "Morte": "in vita"
             },
-            "SA_I_1": {}
+            "SA_I_1": {
+                "Nome": "Giovanni Salocchi",
+                "Nascita": "1901.0",
+                "Morte": "1984"
+            }
         }
     },
     "GR": {
@@ -433,18 +554,22 @@
         "Persone": {
             "GR_1": {
                 "Nome": "Luigi Grassi",
-                "Nascita": "1858",
+                "Nascita": "1858.0",
                 "Morte": "1937"
             },
             "GR_2": {
                 "Nome": "Arturo Grassi",
-                "Nascita": "1899",
+                "Nascita": "1899.0",
                 "Morte": "1971"
             },
-            "CO_III_1": {},
+            "CO_III_1": {
+                "Nome": "Emilio Costantini",
+                "Nascita": "1842.0",
+                "Morte": "1926"
+            },
             "GR_3": {
                 "Nome": "Luigi Grassi",
-                "Nascita": "1931",
+                "Nascita": "1931.0",
                 "Morte": "in vita"
             },
             "GR_4": {
@@ -481,22 +606,22 @@
         "Persone": {
             "GU-BR_1": {
                 "Nome": "Carlo Bruscoli",
-                "Nascita": "1879",
+                "Nascita": "1879.0",
                 "Morte": "1955"
             },
             "GU-BR_2": {
                 "Nome": "Riccardo Bruscoli",
-                "Nascita": "1913",
+                "Nascita": "1913.0",
                 "Morte": "1989"
             },
             "GU-BR_3": {
                 "Nome": "Marcello Guidi",
-                "Nascita": "1903",
+                "Nascita": "1903.0",
                 "Morte": "1979"
             },
             "GU-BR_4": {
                 "Nome": "Fabrizio Guidi-Bruscoli",
-                "Nascita": "1940",
+                "Nascita": "1940.0",
                 "Morte": "in vita"
             }
         }
@@ -638,7 +763,7 @@
             },
             "JA_6": {
                 "Nome": "Augusto Jandolo",
-                "Nascita": "1873",
+                "Nascita": "1873.0",
                 "Morte": "1952"
             },
             "JA_7": {
@@ -674,25 +799,13 @@
         ],
         "Persone": {
             "JA-TA_1": {
-                "Nome": "Augusto Jandolo",
-                "Nascita": "1873",
-                "Morte": "1952"
-            },
-            "JA-TA_2": {
-                "Nome": "Salvatore Jandolo",
-                "Nascita": "",
-                "Morte": ""
-            },
-            "JA-TA_3": {
-                "Nome": "Filippo Tavazzi",
-                "Nascita": "1857",
-                "Morte": "1924"
-            },
-            "JA-TA_4": {
                 "Nome": "Guido Tavazzi",
                 "Nascita": "",
                 "Morte": "1942"
-            }
+            },
+            "JA-TA_2": {},
+            "JA-TA_3": {},
+            "JA-TA_4": {}
         }
     },
     "LA_I": {
@@ -707,7 +820,7 @@
         "Persone": {
             "LA_I_1": {
                 "Nome": "Leonardo Lapicirella",
-                "Nascita": "1927",
+                "Nascita": "1927.0",
                 "Morte": "2022"
             },
             "LA_I_2": {
@@ -823,12 +936,12 @@
         "Persone": {
             "RO_1": {
                 "Nome": "Salvatore Romano",
-                "Nascita": "1875",
+                "Nascita": "1875.0",
                 "Morte": "1955"
             },
             "RO_2": {
                 "Nome": "Francesco Romano",
-                "Nascita": "1919",
+                "Nascita": "1919.0",
                 "Morte": "1981"
             }
         }
@@ -845,12 +958,12 @@
         "Persone": {
             "SA_I_1": {
                 "Nome": "Giovanni Salocchi",
-                "Nascita": "1901",
+                "Nascita": "1901.0",
                 "Morte": "1984"
             },
             "SA_I_2": {
-                "Nome": "Nicolò o Nicola Salocchi",
-                "Nascita": "1927",
+                "Nome": "Nicol� o Nicola Salocchi",
+                "Nascita": "1927.0",
                 "Morte": "1999"
             }
         }
@@ -882,12 +995,12 @@
             },
             "SA_II_2": {
                 "Nome": "Giuseppe Salvadori",
-                "Nascita": "1862",
+                "Nascita": "1862.0",
                 "Morte": "1928"
             },
             "SA_II_3": {
                 "Nome": "Salvino Salvadori",
-                "Nascita": "1889",
+                "Nascita": "1889.0",
                 "Morte": ""
             }
         }
@@ -914,17 +1027,17 @@
         "Persone": {
             "SA_IV_1": {
                 "Nome": "Giuseppe Sangiorgi",
-                "Nascita": "1850",
+                "Nascita": "1850.0",
                 "Morte": "1928"
             },
             "SA_IV_2": {
                 "Nome": "Giorgio Sangiorgi",
-                "Nascita": "1886",
+                "Nascita": "1886.0",
                 "Morte": "1975"
             },
             "SA_IV_3": {
                 "Nome": "Sergio Sangiorgi",
-                "Nascita": "1925",
+                "Nascita": "1925.0",
                 "Morte": "2015"
             }
         }
@@ -1013,22 +1126,22 @@
             },
             "SE_II_2": {
                 "Nome": "Emanuele Sestieri",
-                "Nascita": "1887",
+                "Nascita": "1887.0",
                 "Morte": "1953"
             },
             "SE_II_3": {
                 "Nome": "Guido Sestieri",
-                "Nascita": "1890",
+                "Nascita": "1890.0",
                 "Morte": "1954"
             },
             "SE_II_5": {
                 "Nome": "Carlo Sestieri",
-                "Nascita": "1922",
+                "Nascita": "1922.0",
                 "Morte": "1998"
             },
             "SE_II_6": {
                 "Nome": "Marcello Sestieri",
-                "Nascita": "1920",
+                "Nascita": "1920.0",
                 "Morte": "1995"
             }
         }
@@ -1090,7 +1203,7 @@
         "Persone": {
             "SI_1": {
                 "Nome": "Attilio Simonetti",
-                "Nascita": "1843",
+                "Nascita": "1843.0",
                 "Morte": "1925"
             },
             "SI_2": {
@@ -1172,27 +1285,27 @@
         "Persone": {
             "VO_II_1": {
                 "Nome": "Gustavo Volterra",
-                "Nascita": "1855",
+                "Nascita": "1855.0",
                 "Morte": "1918"
             },
             "VO_II_2": {
                 "Nome": "Giuseppe Volterra",
-                "Nascita": "1882",
+                "Nascita": "1882.0",
                 "Morte": "1932"
             },
             "VO_II_3": {
                 "Nome": "Gastone Volterra",
-                "Nascita": "1887",
+                "Nascita": "1887.0",
                 "Morte": "1944"
             },
             "VO_II_4": {
                 "Nome": "Umberto Angelo Volterra",
-                "Nascita": "1886",
+                "Nascita": "1886.0",
                 "Morte": "1944"
             },
             "VO_II_5": {
                 "Nome": "Gualtiero Volterra",
-                "Nascita": "1901",
+                "Nascita": "1901.0",
                 "Morte": "1967"
             }
         }
