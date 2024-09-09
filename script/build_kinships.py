@@ -2,14 +2,19 @@ import json
 import pandas as pd
 
 
-def build_kinships(input_csv, input_json, output_json):
+def build_kinships(input_csv, entity_json, person_csv, output_json):
     # Load the entity data from entità.json
-    with open(input_json, 'r', encoding='utf-8') as f:
+    with open(entity_json, 'r', encoding='utf-8') as f:
         entities = json.load(f)
+    # Load the person data from persone.json
+    persons = pd.read_csv(person_csv)
+    persons = persons.loc[:, ~persons.columns.str.startswith('Unnamed')]
+    persons.fillna("", inplace=True)
 
-    # Load the kinship data (relationships) from the cleaned parentela CSV
+    # Load the kinship data from the cleaned parentela CSV
     kinship_data = pd.read_csv(input_csv)
-    kinship_data = kinship_data.drop(columns=["Unnamed: 4"])
+    kinship_data = kinship_data.loc[:, ~
+                                    kinship_data.columns.str.startswith('Unnamed')]
 
     # Initialize the kinship dictionary to store the results
     kinships_dict = {}
@@ -43,12 +48,11 @@ def build_kinships(input_csv, input_json, output_json):
         # Function to safely fetch a person's info, and log if it's missing
         def get_person_info(entity_id, person):
             try:
-                if person in entities.get(entity_id, {}).get("Persone", {}):
-                    person_info = entities[entity_id]["Persone"][person]
+                if person in persons['ID'].str.upper().values:
                     return {
-                        "Nome": person_info.get("Nome Persona", ""),
-                        "Nascita": person_info.get("Nascita", ""),
-                        "Morte": person_info.get("Morte", "")
+                        "Nome": str(persons.loc[persons['ID'].str.upper() == person, 'Nome Persona'].values[0]),
+                        "Nascita": str(persons.loc[persons['ID'].str.upper() == person, 'Nascita'].values[0]),
+                        "Morte": str(persons.loc[persons['ID'].str.upper() == person, 'Morte'].values[0])
                     }
                 else:
                     missing_persons.append((entity_id, person))
@@ -80,4 +84,4 @@ if __name__ == "__main__":
 
     if sys.argv[1] == "parentela":
         build_kinships('../data/parentela.csv',
-                       '../json/entità.json', '../json/parentela.json')
+                       '../json/entità.json', '../data/persone.csv', '../json/parentela.json')
