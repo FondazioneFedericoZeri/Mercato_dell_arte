@@ -10,6 +10,8 @@ def build_kinships(input_csv, entity_json, person_csv, output_json):
     persons = pd.read_csv(person_csv)
     persons = persons.loc[:, ~persons.columns.str.startswith('Unnamed')]
     persons.fillna("", inplace=True)
+    persons['Nascita'] = persons['Nascita'].apply(
+        lambda x: str(int(x)) if pd.notna(x) and x != "" else "")
 
     # Load the kinship data from the cleaned parentela CSV
     kinship_data = pd.read_csv(input_csv)
