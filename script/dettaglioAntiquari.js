@@ -168,7 +168,7 @@ function buildTreeFromData(entity) {
     console.log(`Processing relationship between ${nodes[person1].name} and ${nodes[person2].name} (${relationshipType})`);
 
     // Handle parent-child relationships (padre)
-    if (relationshipType === "padre") {
+    if (relationshipType === "padre" || relationshipType === "madre") {
       addOneLevelBelow(person1, person2);
     }
 
