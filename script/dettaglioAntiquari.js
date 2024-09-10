@@ -131,11 +131,27 @@ function buildTreeFromData(entity) {
   // Create nodes for each person
   Object.keys(persons).forEach(personID => {
     let person = persons[personID];
+    // Ensure default values for name, nascita, and morte
+    let name = person["Nome"] || "Unknown";
+    let nascita = person.Nascita || "";
+    let morte = person.Morte === "in vita" ? "" : (person.Morte || "");
+
+    // Generate label based on the conditions
+    let labelText;
+    if (nascita === "" && morte === "") {
+      labelText = name; // No dash if both nascita and morte are empty
+    } else if (morte === "") {
+      labelText = `${name}\n (${nascita})`; // Show only nascita
+    } else {
+      labelText = `${name}\n (${nascita}-${morte})`; // Show nascita-morte
+    }
+
     nodes[personID] = {
-      name: person["Nome"] || "Unknown",
-      nascita: person.Nascita || "",
-      morte: person.Morte || "",
-      children: []
+      name: name,
+      nascita: nascita,
+      morte: morte,
+      labelText: labelText, // Store the label text for later use
+      children: [] // Initialize children as an empty array
     };
   });
 
@@ -281,7 +297,7 @@ function initializeChart(rootNode) {
       }));
 
       var label = target.children.push(am5.Label.new(root, {
-        text: "{name}\n ({nascita}-{morte})",
+        text: "{labelText}",
         centerX: am5.percent(50),
         centerY: am5.percent(50),
         textAlign: "center",
