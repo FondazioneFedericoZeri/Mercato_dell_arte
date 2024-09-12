@@ -4,11 +4,15 @@
         "Nazione": "Stati Uniti d'America",
         "Regione": "Stati Uniti d'America",
         "Città": "New York",
-        "Via": "",
+        "Via": "547 Fifth Avenue",
         "Civico": "",
+        "ID_entità": "SE_II",
+        "Apertura": "1919 ca.",
+        "Chiusura": "1929",
+        "Nome attività": "Emanuele e Guido Sestieri, \"Sestieri Gallery\" (succursale)",
         "geo": {
-            "lat": 40.7127281,
-            "lon": -74.0060152
+            "lat": 42.71267718367347,
+            "lon": -73.70936069387756
         }
     },
     "USA_2": {
@@ -16,11 +20,15 @@
         "Nazione": "Stati Uniti d'America",
         "Regione": "Stati Uniti d'America",
         "Città": "New York",
-        "Via": "749 5th Avenue",
+        "Via": "749 Fifth Avenue",
         "Civico": "",
+        "ID_entità": "TO",
+        "Apertura": "1919 ca. ",
+        "Chiusura": "1928 ca.",
+        "Nome attività": "Raoul Tolentino, \"Tolentino Art Gallery\"",
         "geo": {
-            "lat": 40.6590234,
-            "lon": -73.9960462
+            "lat": 42.71549471428571,
+            "lon": -73.70797869387755
         }
     },
     "USA_3": {
@@ -30,6 +38,10 @@
         "Città": "New York",
         "Via": "479 Fifth Avenue",
         "Civico": "",
+        "ID_entità": "CA_I",
+        "Apertura": "1906",
+        "Chiusura": "1914",
+        "Nome attività": "Amedeo Canessa, \"C. & E. Canessa\"",
         "geo": {
             "lat": 42.71162287755102,
             "lon": -73.70986753061224
@@ -42,6 +54,10 @@
         "Città": "New York",
         "Via": "547 Fifth Avenue",
         "Civico": "",
+        "ID_entità": "CA_I",
+        "Apertura": "1914",
+        "Chiusura": "1915",
+        "Nome attività": "Amedeo Canessa, \"C. & E. Canessa\"",
         "geo": {
             "lat": 42.71267718367347,
             "lon": -73.70936069387756
@@ -54,6 +70,10 @@
         "Città": "New York",
         "Via": "680 Fifth Avenue",
         "Civico": "",
+        "ID_entità": "CA_I",
+        "Apertura": "1924",
+        "Chiusura": "1929",
+        "Nome attività": "Ercole Canessa, \"Ercole Canessa\"",
         "geo": {
             "lat": 42.7146355,
             "lon": -73.70816049999999
@@ -66,6 +86,10 @@
         "Città": "New York",
         "Via": "East 41st street",
         "Civico": "3",
+        "ID_entità": "CA_I",
+        "Apertura": "1909",
+        "Chiusura": "1916 ca.",
+        "Nome attività": "Amedeo Canessa, \"C. & E. Canessa\", Amedeo Canessa",
         "geo": {
             "lat": 40.75214155102041,
             "lon": -73.97954595918368
@@ -76,11 +100,31 @@
         "Nazione": "Stati Uniti d'America",
         "Regione": "Stati Uniti d'America",
         "Città": "New York",
-        "Via": "West 50th Street",
+        "Via": "New York",
         "Civico": "1",
+        "ID_entità": "CA_I",
+        "Apertura": "1916",
+        "Chiusura": "1928",
+        "Nome attività": "Amedeo e Ercole Canessa, \"Canessa Gallery\"",
         "geo": {
-            "lat": 40.75867,
-            "lon": -73.977291
+            "lat": 43.0826701,
+            "lon": -77.67293215211362
+        }
+    },
+    "USA_8": {
+        "ID": "USA_8",
+        "Nazione": "Stati Uniti d'America",
+        "Regione": "Stati Uniti d'America",
+        "Città": "New York",
+        "Via": "East 47st street",
+        "Civico": "15",
+        "ID_entità": "OR",
+        "Apertura": "1900 ca.",
+        "Chiusura": "1970 ca.",
+        "Nome attività": "Luigi e Raimondo Orselli, \"Luigi Orselli\" (succursale)",
+        "geo": {
+            "lat": 40.7553937,
+            "lon": -73.9755563
         }
     },
     "UK_1": {
@@ -90,6 +134,10 @@
         "Città": "Londra",
         "Via": "Carlton Street",
         "Civico": "",
+        "ID_entità": "BE_II",
+        "Apertura": "1924",
+        "Chiusura": "1925",
+        "Nome attività": "Giuseppe Bellesi (Pall Mall Deposit, magazzino)",
         "geo": {
             "lat": 51.5086356,
             "lon": -0.1336046
@@ -102,6 +150,10 @@
         "Città": "Londra",
         "Via": "Duke Street",
         "Civico": "2",
+        "ID_entità": "BE_II",
+        "Apertura": "1937",
+        "Chiusura": "1937",
+        "Nome attività": "Giuseppe Bellesi, \"The Italian Art Gallery\"",
         "geo": {
             "lat": 51.3682459,
             "lon": -0.1832648
@@ -112,8 +164,12 @@
         "Nazione": "Gran Bretagna",
         "Regione": "Gran Bretagna",
         "Città": "Londra",
-        "Via": "King’s Road",
+        "Via": "King's Street",
         "Civico": "",
+        "ID_entità": "VO_II",
+        "Apertura": "1925 ca.",
+        "Chiusura": "1932 ca.",
+        "Nome attività": "Giuseppe Volterra (succursale)",
         "geo": {
             "lat": 51.6012667,
             "lon": -0.0704654
@@ -126,6 +182,10 @@
         "Città": "Londra",
         "Via": "New Bond Street",
         "Civico": "174",
+        "ID_entità": "BE_II",
+        "Apertura": "1929",
+        "Chiusura": "1929",
+        "Nome attività": "Giuseppe Bellesi, \"The Italian Art Gallery\"",
         "geo": {
             "lat": 51.5097564,
             "lon": -0.1419606
@@ -138,21 +198,13 @@
         "Città": "Londra",
         "Via": "Paddington Gress",
         "Civico": "15",
+        "ID_entità": "BE_II",
+        "Apertura": "1948",
+        "Chiusura": "1957",
+        "Nome attività": "Giuseppe Bellesi, \"The Italian Art Gallery\"",
         "geo": {
-            "lat": 51.5074456,
+            "lat": 1.5074456,
             "lon": -0.1277653
-        }
-    },
-    "UK_6": {
-        "ID": "UK_6",
-        "Nazione": "Gran Bretagna",
-        "Regione": "Gran Bretagna",
-        "Città": "Londra",
-        "Via": "Regent Street",
-        "Civico": "",
-        "geo": {
-            "lat": 51.5103141,
-            "lon": -0.1380914
         }
     },
     "UK_7": {
@@ -162,6 +214,10 @@
         "Città": "Londra",
         "Via": "Savile Row",
         "Civico": "32",
+        "ID_entità": "BE_II",
+        "Apertura": "1926",
+        "Chiusura": "1926",
+        "Nome attività": "Giuseppe Bellesi, \"The Italian Art Gallery\"",
         "geo": {
             "lat": 51.5109849,
             "lon": -0.140622
@@ -174,6 +230,10 @@
         "Città": "Nizza",
         "Via": "Rue de France",
         "Civico": "94",
+        "ID_entità": "LA_II",
+        "Apertura": "1900 ca.",
+        "Chiusura": "1934",
+        "Nome attività": "Michele Lazzaroni (abitazione privata)",
         "geo": {
             "lat": 43.6914121,
             "lon": 7.2448839
@@ -186,6 +246,10 @@
         "Città": "Parigi",
         "Via": "Avenue des Champs-Élysées",
         "Civico": "93",
+        "ID_entità": "CA_I",
+        "Apertura": "1920",
+        "Chiusura": "1926",
+        "Nome attività": "Ercole Canessa, \"C. & E. Canessa\"",
         "geo": {
             "lat": 48.8712613,
             "lon": 2.3018456
@@ -198,6 +262,10 @@
         "Città": "Parigi",
         "Via": "Avenue des Champs-Élysées",
         "Civico": "125",
+        "ID_entità": "CA_I",
+        "Apertura": "1911",
+        "Chiusura": "1920",
+        "Nome attività": "Ercole Canessa, \"C. & E. Canessa\"",
         "geo": {
             "lat": 48.8725047,
             "lon": 2.2978839
@@ -210,9 +278,13 @@
         "Città": "Parigi",
         "Via": "Boulevard des Capucines",
         "Civico": "",
+        "ID_entità": "VO_II",
+        "Apertura": "1925 ca.",
+        "Chiusura": "1932 ca.",
+        "Nome attività": "Giuseppe Volterra (succursale)",
         "geo": {
-            "lat": 48.8706796,
-            "lon": 2.33239
+            "lat": 48.8703198,
+            "lon": 2.3302957
         }
     },
     "FR_5": {
@@ -222,6 +294,10 @@
         "Città": "Parigi",
         "Via": "Place Vendome",
         "Civico": "4",
+        "ID_entità": "CA_I",
+        "Apertura": "1924",
+        "Chiusura": "1929",
+        "Nome attività": "Ercole Canessa, \"Ercole Canessa\"",
         "geo": {
             "lat": 48.8668543,
             "lon": 2.3291442
@@ -234,6 +310,10 @@
         "Città": "Parigi",
         "Via": "Rue de Courcelles",
         "Civico": "117",
+        "ID_entità": "MO",
+        "Apertura": "1940 ca.",
+        "Chiusura": "1973",
+        "Nome attività": "Edoardo Moratilla (abitazione privata)",
         "geo": {
             "lat": 48.8829207,
             "lon": 2.2991725
@@ -246,6 +326,10 @@
         "Città": "Parigi",
         "Via": "Rue Lafayette",
         "Civico": "93",
+        "ID_entità": "CA_I",
+        "Apertura": "1889",
+        "Chiusura": "1911",
+        "Nome attività": "Ercole Canessa, \"C. & E. Canessa\"",
         "geo": {
             "lat": 48.8069609,
             "lon": 2.5092743
@@ -258,6 +342,10 @@
         "Città": "Parigi",
         "Via": "Rue Spontini",
         "Civico": "16",
+        "ID_entità": "LA_II",
+        "Apertura": "1895 ca.",
+        "Chiusura": "1934",
+        "Nome attività": "Michele Lazzaroni (abitazione privata)",
         "geo": {
             "lat": 48.8705218,
             "lon": 2.2785919
@@ -268,11 +356,15 @@
         "Nazione": "Italia",
         "Regione": "Veneto",
         "Città": "Venezia",
-        "Via": "Canal Grande (Palazzo Sagredo)",
+        "Via": "Canal Grande",
         "Civico": "",
+        "ID_entità": "PO_II",
+        "Apertura": "1936",
+        "Chiusura": "1980 ca.",
+        "Nome attività": "Francesco Pospisil (Palazzo Sagredo, abitazione privata)",
         "geo": {
-            "lat": 45.4406808,
-            "lon": 12.334469
+            "lat": 45.4356417,
+            "lon": 12.3296608
         }
     },
     "IT_1_b": {
@@ -281,10 +373,30 @@
         "Regione": "Veneto",
         "Città": "Venezia",
         "Via": "San Marco",
-        "Civico": "",
+        "Civico": "1659",
+        "ID_entità": "VI_I",
+        "Apertura": "1950 ca.",
+        "Chiusura": "1976",
+        "Nome attività": "Ettore Viancini (abitazione privata)",
         "geo": {
             "lat": 45.43482885,
             "lon": 12.334024740406221
+        }
+    },
+    "IT_1_c": {
+        "ID": "IT_1_c",
+        "Nazione": "Italia",
+        "Regione": "Veneto",
+        "Città": "Venezia",
+        "Via": "via 22 marzo",
+        "Civico": "",
+        "ID_entità": "VI_I",
+        "Apertura": "1976",
+        "Chiusura": "1982",
+        "Nome attività": "Paolo Viancini",
+        "geo": {
+            "lat": 45.1359525,
+            "lon": 12.0856207
         }
     },
     "IT_2": {
@@ -292,11 +404,15 @@
         "Nazione": "Italia",
         "Regione": "Lombardia",
         "Città": "Bergamo",
-        "Via": "",
-        "Civico": "",
+        "Via": "Via Evaristo Baschenis",
+        "Civico": "5",
+        "ID_entità": "ST",
+        "Apertura": "1921",
+        "Chiusura": "1947 ca.",
+        "Nome attività": "Attilio e Franco Steffanoni, \"F.lli Steffanoni Belle Arti\"",
         "geo": {
-            "lat": 45.756655699999996,
-            "lon": 9.754219200862249
+            "lat": 45.687969,
+            "lon": 9.665487
         }
     },
     "IT_3": {
@@ -306,6 +422,10 @@
         "Città": "Milano",
         "Via": "Via Monte Napoleone",
         "Civico": "11",
+        "ID_entità": "BA_IV",
+        "Apertura": "1840 ca.",
+        "Chiusura": "1887",
+        "Nome attività": "Giuseppe Baslini (abitazione privata)",
         "geo": {
             "lat": 45.4683471,
             "lon": 9.1949813
@@ -318,9 +438,29 @@
         "Città": "Milano",
         "Via": "Corso vittorio Emanuele",
         "Civico": "37",
+        "ID_entità": "SA_III",
+        "Apertura": "1885",
+        "Chiusura": "1905 ca.",
+        "Nome attività": "Giulio Sambon, \"Impresa di vendita in Italia Giulio Sambon\"",
         "geo": {
             "lat": 45.4662089,
             "lon": 9.196937
+        }
+    },
+    "IT_4_b": {
+        "ID": "IT_4_b",
+        "Nazione": "Italia",
+        "Regione": "Lombardia",
+        "Città": "Varese",
+        "Via": "Corte Vecchio Broletto",
+        "Civico": "2",
+        "ID_entità": "ZA",
+        "Apertura": "",
+        "Chiusura": "",
+        "Nome attività": "Gilberto Zabert",
+        "geo": {
+            "lat": null,
+            "lon": null
         }
     },
     "IT_5": {
@@ -330,6 +470,10 @@
         "Città": "Torino",
         "Via": "Piazza Cavour",
         "Civico": "10",
+        "ID_entità": "ZA",
+        "Apertura": "1969 ca.",
+        "Chiusura": "2001",
+        "Nome attività": "Gilberto Zabert, \"Galleria Zabert. Dipinti di antichi maestri\"",
         "geo": {
             "lat": 44.8853199,
             "lon": 7.3317662
@@ -341,10 +485,14 @@
         "Regione": "Piemonte",
         "Città": "Torino",
         "Via": "Piazza Maria Teresa",
-        "Civico": "",
+        "Civico": "3",
+        "ID_entità": "ZA",
+        "Apertura": "1990 ca.",
+        "Chiusura": "1999 ca.",
+        "Nome attività": "Gilberto Zabert (studio)",
         "geo": {
-            "lat": 45.0629913,
-            "lon": 7.6912607
+            "lat": 45.0628603,
+            "lon": 7.6910829
         }
     },
     "IT_7": {
@@ -354,6 +502,10 @@
         "Città": "Torino",
         "Via": "Via della Rocca",
         "Civico": "21",
+        "ID_entità": "ZA",
+        "Apertura": "1981",
+        "Chiusura": "1985",
+        "Nome attività": "Gilberto Zabert",
         "geo": {
             "lat": 45.0627822,
             "lon": 7.692271
@@ -365,7 +517,11 @@
         "Regione": "Piemonte",
         "Città": "Torino",
         "Via": "Via Maria Vittoria",
-        "Civico": "",
+        "Civico": "8 bis",
+        "ID_entità": "ZA",
+        "Apertura": "1960",
+        "Chiusura": "1985 ca.",
+        "Nome attività": "Gilberto Zabert,  \"Mobili & Oggetti di alta epoca\" ",
         "geo": {
             "lat": 45.0568648,
             "lon": 7.4301221
@@ -378,6 +534,10 @@
         "Città": "Torino",
         "Via": "Via Po",
         "Civico": "55",
+        "ID_entità": "AC",
+        "Apertura": "1912",
+        "Chiusura": "1975",
+        "Nome attività": "Pietro Accorsi,\"Galleria Accorsi\"",
         "geo": {
             "lat": 45.0663916,
             "lon": 7.6932729
@@ -390,6 +550,10 @@
         "Città": "Genova",
         "Via": "",
         "Civico": "",
+        "ID_entità": "VI_II",
+        "Apertura": "1930 ca.",
+        "Chiusura": "1967",
+        "Nome attività": "Mario Viezzoli (abitazione privata)",
         "geo": {
             "lat": 44.40726,
             "lon": 8.9338624
@@ -402,6 +566,10 @@
         "Città": "Genova",
         "Via": "Mura dello Zerbino",
         "Civico": "10",
+        "ID_entità": "PA_I",
+        "Apertura": "2000",
+        "Chiusura": "2006",
+        "Nome attività": "Piero Pagano, \"Casa d'Aste Rubinacci\"",
         "geo": {
             "lat": 44.4097588,
             "lon": 8.9478655
@@ -414,9 +582,13 @@
         "Città": "Genova",
         "Via": "Piazza Cinque Lampadi",
         "Civico": "65R",
+        "ID_entità": "CR",
+        "Apertura": "1920 ca.",
+        "Chiusura": "1950 ca.",
+        "Nome attività": "Severino Crosa",
         "geo": {
-            "lat": 44.4086279,
-            "lon": 8.9300288
+            "lat": 44.408627949999996,
+            "lon": 8.930028765903387
         }
     },
     "IT_13": {
@@ -426,6 +598,10 @@
         "Città": "Genova",
         "Via": "Piazza Fontane Marose",
         "Civico": "3-4",
+        "ID_entità": "PA_I RU",
+        "Apertura": "1960",
+        "Chiusura": "1987",
+        "Nome attività": "Pompeo Rubinacci e Piero Pagano, \"Rubinacci Galleria d'Arte\" (Palazzo Negrone)",
         "geo": {
             "lat": 44.41042335,
             "lon": 8.93494211372963
@@ -438,6 +614,10 @@
         "Città": "Genova",
         "Via": "Piazza Giustiniani",
         "Civico": "7",
+        "ID_entità": "CR",
+        "Apertura": "1952",
+        "Chiusura": "1979",
+        "Nome attività": "Severino Crosa (Palazzo Granello, abitazione privata)",
         "geo": {
             "lat": 44.4071246,
             "lon": 8.930319
@@ -449,7 +629,11 @@
         "Regione": "Liguria",
         "Città": "Genova",
         "Via": "Piazza S. Matteo",
-        "Civico": "",
+        "Civico": "13",
+        "ID_entità": "RU",
+        "Apertura": "1960",
+        "Chiusura": "1974",
+        "Nome attività": "Pompeo Rubinacci, \"Rubinacci Galleria d'Arte\" (Palazzetto Doria)",
         "geo": {
             "lat": 44.408339049999995,
             "lon": 8.93287550281141
@@ -462,6 +646,10 @@
         "Città": "Genova",
         "Via": "Via Assarotti",
         "Civico": "1",
+        "ID_entità": "BO",
+        "Apertura": "1920 ca.",
+        "Chiusura": "1970",
+        "Nome attività": "Ferruccio Ildebrando Bossi (abitazione privata)",
         "geo": {
             "lat": 44.4102956,
             "lon": 8.938931
@@ -474,6 +662,10 @@
         "Città": "Genova",
         "Via": "Via G.T. Invrea",
         "Civico": "20",
+        "ID_entità": "RU",
+        "Apertura": "1933 ca.",
+        "Chiusura": "1933 ca.",
+        "Nome attività": "Pompeo Rubinacci, \"Studio d'arte di Pompeo Rubinacci\" (laboratorio di restauro)",
         "geo": {
             "lat": 44.404954,
             "lon": 8.9492257
@@ -486,9 +678,29 @@
         "Città": "Genova",
         "Via": "Via Garibaldi",
         "Civico": "7",
+        "ID_entità": "CR",
+        "Apertura": "1950 ca.",
+        "Chiusura": "1965",
+        "Nome attività": "Severino Crosa",
         "geo": {
             "lat": 44.4110725,
             "lon": 8.9333773
+        }
+    },
+    "IT_18_b": {
+        "ID": "IT_18_b",
+        "Nazione": "Italia",
+        "Regione": "Liguria",
+        "Città": "Genova",
+        "Via": "Via Garibaldi",
+        "Civico": "8",
+        "ID_entità": "PA_I",
+        "Apertura": "1987",
+        "Chiusura": "2000",
+        "Nome attività": "Piero Pagano, \"Casa d'Aste Rubinacci\"",
+        "geo": {
+            "lat": 44.4109549,
+            "lon": 8.9333733
         }
     },
     "IT_20": {
@@ -498,6 +710,10 @@
         "Città": "Genova",
         "Via": "Via Garibaldi",
         "Civico": "16",
+        "ID_entità": "VI_III",
+        "Apertura": "1910 ca.",
+        "Chiusura": "1920 ca.",
+        "Nome attività": "Edoardo Villa, \"Galleria Permanente d'Arte Antica e Moderna A. Vitelli\"",
         "geo": {
             "lat": 44.4111614,
             "lon": 8.932403
@@ -510,6 +726,10 @@
         "Città": "Genova",
         "Via": "Via XX Settembre",
         "Civico": "44",
+        "ID_entità": "VI_III",
+        "Apertura": "1920 ca.",
+        "Chiusura": "1936",
+        "Nome attività": "Edoardo Villa, \"Galleria Permanente d'Arte Antica e Moderna A. Vitelli\"",
         "geo": {
             "lat": 44.4068949,
             "lon": 8.9350535
@@ -522,6 +742,10 @@
         "Città": "Genova",
         "Via": "Viale Sauli",
         "Civico": "3",
+        "ID_entità": "NI",
+        "Apertura": "1942 ca.",
+        "Chiusura": "1967",
+        "Nome attività": "Costantino Nigro",
         "geo": {
             "lat": 44.4072471,
             "lon": 8.9424667
@@ -532,8 +756,12 @@
         "Nazione": "Italia",
         "Regione": "Emilia-Romagna",
         "Città": "Bologna",
-        "Via": "Piazza della mercanzia",
+        "Via": "Piazza della Mercanzia",
         "Civico": "6",
+        "ID_entità": "PO_I",
+        "Apertura": "1926 ca.",
+        "Chiusura": "1929 ca.",
+        "Nome attività": "Publio Podio e figli, \"Cav. Prof. Publio Podio & C.\" (Palazzo del Commercio)",
         "geo": {
             "lat": 44.494052,
             "lon": 11.3463857
@@ -546,6 +774,10 @@
         "Città": "Bologna",
         "Via": "Via Castiglione",
         "Civico": "1",
+        "ID_entità": "RA",
+        "Apertura": "1900 ca.",
+        "Chiusura": "1929",
+        "Nome attività": "Arturo Rambaldi, \"Galleria di Antichità e casa di vendite A. Rambaldi\"",
         "geo": {
             "lat": 44.4934277,
             "lon": 11.3463737
@@ -558,6 +790,10 @@
         "Città": "Bologna",
         "Via": "Via del Monte",
         "Civico": "8",
+        "ID_entità": "PI",
+        "Apertura": "1922 ca.",
+        "Chiusura": "1923 ca.",
+        "Nome attività": "Cesare e Umberto Pini",
         "geo": {
             "lat": 44.4566057,
             "lon": 11.3782593
@@ -570,6 +806,10 @@
         "Città": "Bologna",
         "Via": "Via Mazzini",
         "Civico": "25",
+        "ID_entità": "PO_I",
+        "Apertura": "1910 ca.",
+        "Chiusura": "1926 ca.",
+        "Nome attività": "Publio Podio",
         "geo": {
             "lat": 44.5043515,
             "lon": 11.0844641
@@ -582,6 +822,10 @@
         "Città": "Bologna",
         "Via": "Via Mazzini",
         "Civico": "48",
+        "ID_entità": "PO_I",
+        "Apertura": "1929 ca.",
+        "Chiusura": "1932",
+        "Nome attività": "Publio Podio e figli, \"Fratelli Podio Antichità\"",
         "geo": {
             "lat": 44.5042077,
             "lon": 11.0856327
@@ -594,6 +838,10 @@
         "Città": "Bologna",
         "Via": "Via Mazzini",
         "Civico": "50",
+        "ID_entità": "GA",
+        "Apertura": "1910 ca.",
+        "Chiusura": "1919 ca.",
+        "Nome attività": "Antonio Galliani",
         "geo": {
             "lat": 44.4890566,
             "lon": 11.3605112
@@ -606,21 +854,13 @@
         "Città": "Arezzo",
         "Via": "Piazza S. Francesco",
         "Civico": "",
+        "ID_entità": "BR_I",
+        "Apertura": "1958",
+        "Chiusura": "1996",
+        "Nome attività": "Ivan Bruschi",
         "geo": {
             "lat": 43.3435029,
             "lon": 11.922059669656488
-        }
-    },
-    "IT_30": {
-        "ID": "IT_30",
-        "Nazione": "Italia",
-        "Regione": "Toscana",
-        "Città": "Firenze",
-        "Via": "",
-        "Civico": "",
-        "geo": {
-            "lat": 43.7697955,
-            "lon": 11.2556404
         }
     },
     "IT_31": {
@@ -629,10 +869,14 @@
         "Regione": "Toscana",
         "Città": "Firenze",
         "Via": "Borgo San Frediano",
-        "Civico": "3",
+        "Civico": "5",
+        "ID_entità": "SA_II",
+        "Apertura": "1920 ca.",
+        "Chiusura": "1931",
+        "Nome attività": "Giuseppe e Salvadore detto Salvino (Palazzo Magnani-Feroni, show room, laboratorio di restauro)",
         "geo": {
-            "lat": 43.7690889,
-            "lon": 11.2462389
+            "lat": 43.7690618,
+            "lon": 11.2463678
         }
     },
     "IT_32": {
@@ -640,11 +884,15 @@
         "Nazione": "Italia",
         "Regione": "Toscana",
         "Città": "Firenze",
-        "Via": "Corso Regina Elena",
+        "Via": "Corso Italia",
         "Civico": "6",
+        "ID_entità": "CO_III",
+        "Apertura": "1883",
+        "Chiusura": "1918",
+        "Nome attività": "Emilio e Davide Luigi Costantini",
         "geo": {
-            "lat": 43.774239,
-            "lon": 11.240016
+            "lat": 43.7741402,
+            "lon": 11.2404002
         }
     },
     "IT_33": {
@@ -654,6 +902,10 @@
         "Città": "Firenze",
         "Via": "Lungarno Corsini",
         "Civico": "10",
+        "ID_entità": "BR_II",
+        "Apertura": "1930 ca.",
+        "Chiusura": "1939 ca.",
+        "Nome attività": "Livio Bruschi (Palazzo Corsini, sede e abitazione privata)",
         "geo": {
             "lat": 43.7703574,
             "lon": 11.2488863
@@ -666,6 +918,10 @@
         "Città": "Firenze",
         "Via": "Lungarno degli Acciaiuoli",
         "Civico": "4",
+        "ID_entità": "TO",
+        "Apertura": "1920 ca.",
+        "Chiusura": "1926 ca.",
+        "Nome attività": "Raoul Tolentino (Palazzo Acciaiuoli)",
         "geo": {
             "lat": 43.7688217,
             "lon": 11.2528604
@@ -678,6 +934,10 @@
         "Città": "Firenze",
         "Via": "Lungarno degli Acciaiuoli",
         "Civico": "24",
+        "ID_entità": "VO_II",
+        "Apertura": "1920 ca.",
+        "Chiusura": "1932 ca.",
+        "Nome attività": "Giuseppe Volterra e fratelli",
         "geo": {
             "lat": 43.76882,
             "lon": 11.2525885
@@ -690,6 +950,10 @@
         "Città": "Firenze",
         "Via": "Lungarno Vespucci",
         "Civico": "",
+        "ID_entità": "LA_I",
+        "Apertura": "1966",
+        "Chiusura": "1978",
+        "Nome attività": "Leonardo Lapiccirella, \"Galleria Lapiccirella\"",
         "geo": {
             "lat": 43.7736879,
             "lon": 11.2412415
@@ -702,6 +966,10 @@
         "Città": "Firenze",
         "Via": "Piazza de Mozzi",
         "Civico": "1",
+        "ID_entità": "BA_II",
+        "Apertura": "1883",
+        "Chiusura": "1922",
+        "Nome attività": "Stefano Bardini (Palazzo Mozzi Bardini)",
         "geo": {
             "lat": 43.7649299,
             "lon": 11.2582299
@@ -714,6 +982,10 @@
         "Città": "Firenze",
         "Via": "Piazza Goldoni",
         "Civico": "2",
+        "ID_entità": "VO_I",
+        "Apertura": "1900 ca.",
+        "Chiusura": "1910",
+        "Nome attività": "Elia Volpi",
         "geo": {
             "lat": 43.7708732,
             "lon": 11.2480322
@@ -726,6 +998,10 @@
         "Città": "Firenze",
         "Via": "Piazza Ottaviani",
         "Civico": "",
+        "ID_entità": "BA_I",
+        "Apertura": "1910 ca.",
+        "Chiusura": "1923",
+        "Nome attività": "Rizieri Bacarelli",
         "geo": {
             "lat": 43.772528199999996,
             "lon": 11.249230444642855
@@ -738,6 +1014,10 @@
         "Città": "Firenze",
         "Via": "Piazza Pitti",
         "Civico": "12",
+        "ID_entità": "SA_II",
+        "Apertura": "1870 ca.",
+        "Chiusura": "1880 ca.",
+        "Nome attività": "Salvadore Salvadori (sede e laboratorio di restauro)",
         "geo": {
             "lat": 43.7658033,
             "lon": 11.2494315
@@ -750,6 +1030,10 @@
         "Città": "Firenze",
         "Via": "Piazza S. Maria Novella",
         "Civico": "3",
+        "ID_entità": "CI",
+        "Apertura": "1875 ca.",
+        "Chiusura": "1909 ca.",
+        "Nome attività": "Vincenzo Ciampolini",
         "geo": {
             "lat": 43.773116,
             "lon": 11.2490357
@@ -762,6 +1046,10 @@
         "Città": "Firenze",
         "Via": "Piazza Santa Trinita",
         "Civico": "5R",
+        "ID_entità": "BE_I",
+        "Apertura": "1931",
+        "Chiusura": "1957",
+        "Nome attività": "Luigi, Giuseppe Jr e Mario Bellini (Palazzo Spini Feroni, show room)",
         "geo": {
             "lat": 43.7700572,
             "lon": 11.251220681680373
@@ -774,6 +1062,10 @@
         "Città": "Firenze",
         "Via": "Ponte Vecchio",
         "Civico": "1",
+        "ID_entità": "VO_II",
+        "Apertura": "1900 ca.",
+        "Chiusura": "1932 ca.",
+        "Nome attività": "Gustavo Volterra",
         "geo": {
             "lat": 43.768025449999996,
             "lon": 11.253158002899507
@@ -785,10 +1077,14 @@
         "Regione": "Toscana",
         "Città": "Firenze",
         "Via": "Borgo Ognissanti",
-        "Civico": "",
+        "Civico": "58",
+        "ID_entità": "FR SA_I",
+        "Apertura": "1959",
+        "Chiusura": "1963",
+        "Nome attività": "\"Galleria antiquaria Salocchi e Freschi\" (sede)",
         "geo": {
-            "lat": 43.7716067,
-            "lon": 11.2468899
+            "lat": 43.7729972,
+            "lon": 11.2449173
         }
     },
     "IT_46": {
@@ -798,6 +1094,10 @@
         "Città": "Firenze",
         "Via": "Borgo Ognissanti",
         "Civico": "8",
+        "ID_entità": "VO_II",
+        "Apertura": "1909",
+        "Chiusura": "1918",
+        "Nome attività": "Gustavo Volterra e Cesare Melli",
         "geo": {
             "lat": 43.771499,
             "lon": 11.2471461
@@ -810,6 +1110,10 @@
         "Città": "Firenze",
         "Via": "Borgo Ognissanti",
         "Civico": "9",
+        "ID_entità": "OR",
+        "Apertura": "1900 ca.",
+        "Chiusura": "1970 ca.",
+        "Nome attività": "Luigi e Raimondo Orselli, \"Luigi Orselli\"",
         "geo": {
             "lat": 43.7716388,
             "lon": 11.2467163
@@ -822,6 +1126,10 @@
         "Città": "Firenze",
         "Via": "Borgo Ognissanti",
         "Civico": "17",
+        "ID_entità": "VO_II",
+        "Apertura": "1886",
+        "Chiusura": "1909",
+        "Nome attività": "Gustavo Volterra e Cesare Melli, \"Galleria Leonardo\"",
         "geo": {
             "lat": 43.7720989,
             "lon": 11.2460541
@@ -834,6 +1142,10 @@
         "Città": "Firenze",
         "Via": "Borgo Ognissanti",
         "Civico": "22",
+        "ID_entità": "TO",
+        "Apertura": "1926 ca.",
+        "Chiusura": "1927 ca.",
+        "Nome attività": "Raul Tolentino",
         "geo": {
             "lat": 43.7719008,
             "lon": 11.2465505
@@ -846,6 +1158,10 @@
         "Città": "Firenze",
         "Via": "Borgo Ognissanti",
         "Civico": "52",
+        "ID_entità": "LA_I",
+        "Apertura": "1957",
+        "Chiusura": "1966",
+        "Nome attività": "Leonardo Lapiccirella, \"Galleria Lapiccirella\" ",
         "geo": {
             "lat": 43.7728775,
             "lon": 11.2450995
@@ -857,7 +1173,11 @@
         "Regione": "Toscana",
         "Città": "Firenze",
         "Via": "Borgo Ognissanti",
-        "Civico": "50-52 R",
+        "Civico": "50-56R",
+        "ID_entità": "GU-BR LA_I",
+        "Apertura": "1950 ca.",
+        "Chiusura": "1957",
+        "Nome attività": "Carlo e Riccardo Bruscoli, Marcello Guidi; dal 1957 al 1966 il negozio ai civici 50-52r è rilevato da Leonardo Lapiccirella",
         "geo": {
             "lat": 43.7728775,
             "lon": 11.2450995
@@ -870,9 +1190,29 @@
         "Città": "Firenze",
         "Via": "Borgo Ognissanti",
         "Civico": "54-56R",
+        "ID_entità": "GU-BR",
+        "Apertura": "1920 ca.",
+        "Chiusura": "1950 ca.",
+        "Nome attività": "Carlo e Riccardo Bruscoli, Marcello Guidi",
         "geo": {
-            "lat": 43.7729231,
-            "lon": 11.2450321
+            "lat": 43.7716067,
+            "lon": 11.2468899
+        }
+    },
+    "IT_52_b": {
+        "ID": "IT_52_b",
+        "Nazione": "Italia",
+        "Regione": "Toscana",
+        "Città": "Firenze",
+        "Via": "Borgo Ognissanti",
+        "Civico": "46",
+        "ID_entità": "GR",
+        "Apertura": "1966",
+        "Chiusura": "1990 ca.",
+        "Nome attività": "Luigi Grassi Jr, \"Galleria Ognissanti\"",
+        "geo": {
+            "lat": 43.7726913,
+            "lon": 11.2454179
         }
     },
     "IT_53": {
@@ -882,6 +1222,10 @@
         "Città": "Firenze",
         "Via": "Via Cavour",
         "Civico": "88",
+        "ID_entità": "GR",
+        "Apertura": "1909",
+        "Chiusura": "1966",
+        "Nome attività": "Luigi e Arturo Grassi, \"Luigi Grassi & Sons\" (Palazzo Montagliari)",
         "geo": {
             "lat": 43.780777,
             "lon": 11.26058
@@ -894,9 +1238,29 @@
         "Città": "Firenze",
         "Via": "Via dei Banchi",
         "Civico": "5",
+        "ID_entità": "GI",
+        "Apertura": "1929 ca.",
+        "Chiusura": "1950 ca.",
+        "Nome attività": "Ubaldo Giugni, \"Galleria d'Arte\" (sede)",
         "geo": {
             "lat": 43.7734769,
             "lon": 11.2510577
+        }
+    },
+    "IT_54_b": {
+        "ID": "IT_54_b",
+        "Nazione": "Italia",
+        "Regione": "Toscana",
+        "Città": "Firenze",
+        "Via": "Via de' Bardi",
+        "Civico": "1",
+        "ID_entità": "",
+        "Apertura": "1920",
+        "Chiusura": "1920",
+        "Nome attività": "Giuseppe Volterra e fratelli, \"Gustavo Volterra\"",
+        "geo": {
+            "lat": 43.7647987,
+            "lon": 11.257733
         }
     },
     "IT_55": {
@@ -906,6 +1270,10 @@
         "Città": "Firenze",
         "Via": "Via dei Benci",
         "Civico": "",
+        "ID_entità": "BA_II",
+        "Apertura": "1877",
+        "Chiusura": "1883",
+        "Nome attività": "Stefano Bardini (Palazzo Canigiani)",
         "geo": {
             "lat": 43.7675835,
             "lon": 11.2593399
@@ -918,6 +1286,10 @@
         "Città": "Firenze",
         "Via": "Via dei Fossi",
         "Civico": "7R",
+        "ID_entità": "AL",
+        "Apertura": "1961",
+        "Chiusura": "1979",
+        "Nome attività": "Luigi Albrighi e Paola Ventura",
         "geo": {
             "lat": 43.771403,
             "lon": 11.2479697
@@ -930,6 +1302,10 @@
         "Città": "Firenze",
         "Via": "Via dei Fossi",
         "Civico": "9",
+        "ID_entità": "SA_II",
+        "Apertura": "1890 ca.",
+        "Chiusura": "1940 ca.",
+        "Nome attività": "Giuseppe e Salvadore detto Salvino Salvadori",
         "geo": {
             "lat": 43.7579206,
             "lon": 10.8799527
@@ -942,6 +1318,10 @@
         "Città": "Firenze",
         "Via": "Via dei Fossi",
         "Civico": "33",
+        "ID_entità": "BA_I",
+        "Apertura": "1980 ca.",
+        "Chiusura": "2015",
+        "Nome attività": "Benvenuto e Riccardo Bacarelli dal 1996",
         "geo": {
             "lat": 43.7577562,
             "lon": 10.8788234
@@ -954,6 +1334,10 @@
         "Città": "Firenze",
         "Via": "Via dei Fossi",
         "Civico": "40",
+        "ID_entità": "SA_I",
+        "Apertura": "1938",
+        "Chiusura": "1957",
+        "Nome attività": "Giovanni Salocchi",
         "geo": {
             "lat": 43.7718275,
             "lon": 11.2485274
@@ -966,6 +1350,10 @@
         "Città": "Firenze",
         "Via": "Via dei Fossi",
         "Civico": "42R",
+        "ID_entità": "BR_II",
+        "Apertura": "1940 ca.",
+        "Chiusura": "1973",
+        "Nome attività": "Livio e Ivan Bruschi (fino al 1956), \"Antichità Bruschi\"",
         "geo": {
             "lat": 43.7713694,
             "lon": 11.2479923
@@ -978,6 +1366,10 @@
         "Città": "Firenze",
         "Via": "Via dei Fossi",
         "Civico": "45R",
+        "ID_entità": "BA_I",
+        "Apertura": "2016",
+        "Chiusura": "2024",
+        "Nome attività": "Riccardo Bacarelli (Palazzo della Manifattura Arte della Seta)",
         "geo": {
             "lat": 43.7720118,
             "lon": 11.2485931
@@ -990,6 +1382,10 @@
         "Città": "Firenze",
         "Via": "Via dei Fossi",
         "Civico": "51R",
+        "ID_entità": "BA_I",
+        "Apertura": "1925 ca.",
+        "Chiusura": "1947 ca.",
+        "Nome attività": "Rizieri e Benvenuto Bacarelli",
         "geo": {
             "lat": 43.7721056,
             "lon": 11.2486878
@@ -1002,6 +1398,10 @@
         "Città": "Firenze",
         "Via": "Via dei serragli",
         "Civico": "8",
+        "ID_entità": "RO",
+        "Apertura": "1939",
+        "Chiusura": "1981 ca.",
+        "Nome attività": "Salvatore e Francesco Romano (Palazzo Magnani Feroni)",
         "geo": {
             "lat": 43.768538,
             "lon": 11.2462163
@@ -1014,6 +1414,10 @@
         "Città": "Firenze",
         "Via": "Via del Moro",
         "Civico": "",
+        "ID_entità": "BA_I",
+        "Apertura": "1923",
+        "Chiusura": "1925 ca.",
+        "Nome attività": "Rizieri Bacarelli",
         "geo": {
             "lat": 43.7732075,
             "lon": 11.2506064
@@ -1026,6 +1430,10 @@
         "Città": "Firenze",
         "Via": "Via del Moro",
         "Civico": "30",
+        "ID_entità": "GI",
+        "Apertura": "1950 ca.",
+        "Chiusura": "1965 ca.",
+        "Nome attività": "Ubaldo Giugni, \"Galleria d'Arte\" (sede)",
         "geo": {
             "lat": 43.7716012,
             "lon": 11.2487145
@@ -1038,6 +1446,10 @@
         "Città": "Firenze",
         "Via": "Via del Podere",
         "Civico": "6",
+        "ID_entità": "CO_III",
+        "Apertura": "1876 ca.",
+        "Chiusura": "1880 ca.",
+        "Nome attività": "Emilio Costantini (studio)",
         "geo": {
             "lat": 43.7697955,
             "lon": 11.2556404
@@ -1050,6 +1462,10 @@
         "Città": "Firenze",
         "Via": "Via del porcellana",
         "Civico": "",
+        "ID_entità": "FR",
+        "Apertura": "1963",
+        "Chiusura": "1972",
+        "Nome attività": "Giuliano Freschi (deposito)",
         "geo": {
             "lat": 43.7731154,
             "lon": 11.2476722
@@ -1062,6 +1478,10 @@
         "Città": "Firenze",
         "Via": "Via Del Sole",
         "Civico": "",
+        "ID_entità": "BE_I",
+        "Apertura": "1880 ca.",
+        "Chiusura": "1900 ca.",
+        "Nome attività": "Giuseppe Bellini",
         "geo": {
             "lat": 43.7725193,
             "lon": 11.2498118
@@ -1074,6 +1494,10 @@
         "Città": "Firenze",
         "Via": "Via della scala",
         "Civico": "",
+        "ID_entità": "GR",
+        "Apertura": "1900 ca.",
+        "Chiusura": "1909",
+        "Nome attività": "Luigi Grassi e figli, \"Luigi Grassi & Sons\"",
         "geo": {
             "lat": 43.7780668,
             "lon": 11.2420376
@@ -1085,7 +1509,27 @@
         "Regione": "Toscana",
         "Città": "Firenze",
         "Via": "Via della vigna nuova",
+        "Civico": "",
+        "ID_entità": "BA_I",
+        "Apertura": "1950 ca.",
+        "Chiusura": "1989 ca.",
+        "Nome attività": "Benvenuto Bacarelli",
+        "geo": {
+            "lat": 43.7715147,
+            "lon": 11.2513609
+        }
+    },
+    "IT_74_b": {
+        "ID": "IT_74_b",
+        "Nazione": "Italia",
+        "Regione": "Toscana",
+        "Città": "Firenze",
+        "Via": "Via della vigna nuova",
         "Civico": "79R",
+        "ID_entità": "FR",
+        "Apertura": "1972",
+        "Chiusura": "1990",
+        "Nome attività": "Giuliano Freschi",
         "geo": {
             "lat": 43.7710558,
             "lon": 11.2489301
@@ -1097,10 +1541,14 @@
         "Regione": "Toscana",
         "Città": "Firenze",
         "Via": "Via delle belle donne",
-        "Civico": "",
+        "Civico": "8",
+        "ID_entità": "RO",
+        "Apertura": "1924",
+        "Chiusura": "1939",
+        "Nome attività": "Salvatore e Francesco Romano",
         "geo": {
-            "lat": 43.7722357,
-            "lon": 11.2506105
+            "lat": 43.7721556,
+            "lon": 11.2506725
         }
     },
     "IT_75_b": {
@@ -1110,6 +1558,10 @@
         "Città": "Firenze",
         "Via": "Via Guicciardini",
         "Civico": "6",
+        "ID_entità": "VO_II",
+        "Apertura": "1920 ca.",
+        "Chiusura": "1932 ca.",
+        "Nome attività": "Giuseppe Volterra e fratelli e Adolfo Melli",
         "geo": {
             "lat": 43.76724,
             "lon": 11.2519218
@@ -1122,6 +1574,10 @@
         "Città": "Firenze",
         "Via": "Lungarno Soderini",
         "Civico": "5",
+        "ID_entità": "BE_I",
+        "Apertura": "1920 ca.",
+        "Chiusura": "2006",
+        "Nome attività": "Luigi, Giuseppe Jr e Mario Bellini ",
         "geo": {
             "lat": 43.7696787,
             "lon": 11.2464656
@@ -1134,6 +1590,10 @@
         "Città": "Firenze",
         "Via": "Lungarno Guicciardini",
         "Civico": "7",
+        "ID_entità": "CO_III",
+        "Apertura": "1900 ca.",
+        "Chiusura": "1910 ca.",
+        "Nome attività": "Emilio e Davide Luigi Costantini",
         "geo": {
             "lat": 43.7688942,
             "lon": 11.248804
@@ -1146,6 +1606,10 @@
         "Città": "Firenze",
         "Via": "Via Maggio",
         "Civico": "",
+        "ID_entità": "LA_I",
+        "Apertura": "1986",
+        "Chiusura": "2000",
+        "Nome attività": "Damiano Lapiccirella, \"Galleria Lapiccirella\"",
         "geo": {
             "lat": 43.7665806,
             "lon": 11.2488502
@@ -1158,6 +1622,10 @@
         "Città": "Firenze",
         "Via": "Via Maggio",
         "Civico": "7",
+        "ID_entità": "DE",
+        "Apertura": "1920 ca.",
+        "Chiusura": "1940",
+        "Nome attività": "Achille De Clemente (Palazzo Ricasoli Firidolfi, sede e abitazione privata)",
         "geo": {
             "lat": 43.7675405,
             "lon": 11.2494555
@@ -1170,6 +1638,10 @@
         "Città": "Firenze",
         "Via": "Via Malcontenti",
         "Civico": "4",
+        "ID_entità": "CI",
+        "Apertura": "1877",
+        "Chiusura": "1882 ca.",
+        "Nome attività": "Vincenzo Ciampolini, \"Fabbrica di Mobili Artistici. Pia Casa di Lavoro\"",
         "geo": {
             "lat": 43.7672433,
             "lon": 11.2673138
@@ -1182,6 +1654,10 @@
         "Città": "Firenze",
         "Via": "Via Martelli",
         "Civico": "4",
+        "ID_entità": "SA_III",
+        "Apertura": "1887",
+        "Chiusura": "1905 ca.",
+        "Nome attività": "Giulio Sambon, \"Impresa di vendita in Italia Giulio Sambon\"",
         "geo": {
             "lat": 43.7430216,
             "lon": 10.9910517
@@ -1194,6 +1670,10 @@
         "Città": "Firenze",
         "Via": "Via Montughi",
         "Civico": "31",
+        "ID_entità": "BE_II",
+        "Apertura": "1943",
+        "Chiusura": "1955",
+        "Nome attività": "Giuseppe Bellesi (abitazione privata)",
         "geo": {
             "lat": 43.7961246,
             "lon": 11.2574072
@@ -1206,6 +1686,10 @@
         "Città": "Firenze",
         "Via": "Via Porta Rossa",
         "Civico": "9",
+        "ID_entità": "VO_I",
+        "Apertura": "1910",
+        "Chiusura": "1923",
+        "Nome attività": "Elia Volpi (Palazzo Davanzati)",
         "geo": {
             "lat": 43.7701708,
             "lon": 11.2528464
@@ -1218,6 +1702,10 @@
         "Città": "Firenze",
         "Via": "Via di San Niccolò",
         "Civico": "95",
+        "ID_entità": "PI",
+        "Apertura": "1923",
+        "Chiusura": "1930 ca.",
+        "Nome attività": "Giovanni Pini (deposito)",
         "geo": {
             "lat": 43.7645554,
             "lon": 11.2593975
@@ -1229,10 +1717,14 @@
         "Regione": "Toscana",
         "Città": "Firenze",
         "Via": "Via Tornabuoni",
-        "Civico": "",
+        "Civico": "7",
+        "ID_entità": "LA_I",
+        "Apertura": "1978",
+        "Chiusura": "1986",
+        "Nome attività": "Leonardo Lapiccirella, \"Galleria Lapiccirella\"",
         "geo": {
-            "lat": 43.7715485,
-            "lon": 11.2513597
+            "lat": 43.7708267,
+            "lon": 11.2512907
         }
     },
     "IT_85": {
@@ -1242,6 +1734,10 @@
         "Città": "Firenze",
         "Via": "Via Tornabuoni",
         "Civico": "4",
+        "ID_entità": "PI",
+        "Apertura": "1920 ca.",
+        "Chiusura": "1940 ca.",
+        "Nome attività": "Umberto Pini",
         "geo": {
             "lat": 43.7704385,
             "lon": 11.2514389
@@ -1254,6 +1750,10 @@
         "Città": "Firenze",
         "Via": "Via Tornabuoni",
         "Civico": "12",
+        "ID_entità": "VO_II",
+        "Apertura": "1901",
+        "Chiusura": "1913 ca.",
+        "Nome attività": "Gustavo Volterra e Cesare Melli, \"Volterra & Melli\" (sede e laboratori)",
         "geo": {
             "lat": 43.7710805,
             "lon": 11.2514307
@@ -1266,9 +1766,45 @@
         "Città": "Firenze",
         "Via": "Viale Filippo Strozzi",
         "Civico": "2",
+        "ID_entità": "CO_I",
+        "Apertura": "1931",
+        "Chiusura": "1955",
+        "Nome attività": "Alessandro Contini Bonacossi (Villa Vittoria, abitazione privata)",
         "geo": {
             "lat": 43.7799864,
             "lon": 11.2488546
+        }
+    },
+    "IT_87_b": {
+        "ID": "IT_87_b",
+        "Nazione": "Italia",
+        "Regione": "Toscana",
+        "Città": "Firenze",
+        "Via": "Via Rondinelli",
+        "Civico": "",
+        "ID_entità": "LA_I",
+        "Apertura": "1950 ca.",
+        "Chiusura": "1957",
+        "Nome attività": "Leonardo Lapiccirella (studio)",
+        "geo": {
+            "lat": 43.7721797,
+            "lon": 11.1147404
+        }
+    },
+    "IT_87_c": {
+        "ID": "IT_87_c",
+        "Nazione": "Italia",
+        "Regione": "Toscana",
+        "Città": "Firenze",
+        "Via": "via Panicale",
+        "Civico": "",
+        "ID_entità": "RO",
+        "Apertura": "1924 ca.",
+        "Chiusura": "1960 ca.",
+        "Nome attività": "Salvatore e Francesco Romano (magazzino)",
+        "geo": {
+            "lat": 43.7774079,
+            "lon": 11.253609
         }
     },
     "IT_88": {
@@ -1276,11 +1812,15 @@
         "Nazione": "Italia",
         "Regione": "Lazio",
         "Città": "Roma",
-        "Via": "",
+        "Via": "Lungotevere Michelangelo",
         "Civico": "",
+        "ID_entità": "GR PA_II",
+        "Apertura": "1880 ca.",
+        "Chiusura": "1920 ca.",
+        "Nome attività": "Giuseppe Grassi (abitazione privata)",
         "geo": {
-            "lat": 41.8933203,
-            "lon": 12.4829321
+            "lat": 41.9122797,
+            "lon": 12.4704206
         }
     },
     "IT_89": {
@@ -1290,6 +1830,10 @@
         "Città": "Roma",
         "Via": "Borgo Vecchio",
         "Civico": "165",
+        "ID_entità": "CI",
+        "Apertura": "1874",
+        "Chiusura": "1877 ca.",
+        "Nome attività": "Vincenzo Ciampolini",
         "geo": {
             "lat": 41.707157,
             "lon": 12.6928571
@@ -1302,21 +1846,13 @@
         "Città": "Roma",
         "Via": "Foro Romano",
         "Civico": "7",
+        "ID_entità": "CI",
+        "Apertura": "1877",
+        "Chiusura": "1891 ca.",
+        "Nome attività": "Vincenzo Ciampolini",
         "geo": {
             "lat": 41.89141,
             "lon": 12.4848703
-        }
-    },
-    "IT_91": {
-        "ID": "IT_91",
-        "Nazione": "Italia",
-        "Regione": "Lazio",
-        "Città": "Roma",
-        "Via": "Piazza di Spagna",
-        "Civico": "4",
-        "geo": {
-            "lat": 41.9056375,
-            "lon": 12.482346487653565
         }
     },
     "IT_92": {
@@ -1326,6 +1862,10 @@
         "Città": "Roma",
         "Via": "Piazza di Spagna",
         "Civico": "5",
+        "ID_entità": "DI",
+        "Apertura": "1955",
+        "Chiusura": "2024",
+        "Nome attività": "Alberto e Franco Di Castro",
         "geo": {
             "lat": 41.9056375,
             "lon": 12.482346487653565
@@ -1338,6 +1878,10 @@
         "Città": "Roma",
         "Via": "Piazza di Spagna",
         "Civico": "9",
+        "ID_entità": "TA",
+        "Apertura": "1880 ca.",
+        "Chiusura": "1924",
+        "Nome attività": "Filippo Tavazzi",
         "geo": {
             "lat": 41.9056375,
             "lon": 12.482346487653565
@@ -1350,6 +1894,10 @@
         "Città": "Roma",
         "Via": "Piazza di Spagna",
         "Civico": "81",
+        "ID_entità": "SE_II",
+        "Apertura": "1945",
+        "Chiusura": "1985",
+        "Nome attività": "Emanuele e Guido Sestieri, \"Galleria Sestieri\"",
         "geo": {
             "lat": 41.9057477,
             "lon": 12.4821294
@@ -1362,6 +1910,10 @@
         "Città": "Roma",
         "Via": "Piazza di Spagna",
         "Civico": "83",
+        "ID_entità": "SE_I",
+        "Apertura": "1880 ca.",
+        "Chiusura": "1938 ca.",
+        "Nome attività": "Isacco Segre",
         "geo": {
             "lat": 41.9056375,
             "lon": 12.482346487653565
@@ -1374,6 +1926,10 @@
         "Città": "Roma",
         "Via": "Piazza di Spagna",
         "Civico": "92",
+        "ID_entità": "SE_I",
+        "Apertura": "1870",
+        "Chiusura": "1938 ca.",
+        "Nome attività": "Isacco e Emanuele Segre, poi solo Emanuele",
         "geo": {
             "lat": 41.9056375,
             "lon": 12.482346487653565
@@ -1385,10 +1941,14 @@
         "Regione": "Lazio",
         "Città": "Roma",
         "Via": "Piazza Sant'Apollinare",
-        "Civico": "",
+        "Civico": "46",
+        "ID_entità": "SI",
+        "Apertura": "1870 ca.",
+        "Chiusura": "1890",
+        "Nome attività": "Attilio Simonetti (Palazzo Altemps, studio privato)",
         "geo": {
-            "lat": 41.900765899999996,
-            "lon": 12.473241431568926
+            "lat": 41.90121775,
+            "lon": 12.473099153916351
         }
     },
     "IT_98": {
@@ -1398,6 +1958,10 @@
         "Città": "Roma",
         "Via": "Piazza Scossacavalli",
         "Civico": "",
+        "ID_entità": "DI",
+        "Apertura": "1870 ca.",
+        "Chiusura": "1920 ca.",
+        "Nome attività": "Angelo Di Castro (negozio)",
         "geo": {
             "lat": 41.90234540161728,
             "lon": 12.460979169828107
@@ -1410,6 +1974,10 @@
         "Città": "Roma",
         "Via": "Piazza Trinità dei Monti",
         "Civico": "6",
+        "ID_entità": "CA_II",
+        "Apertura": "1885",
+        "Chiusura": "1901",
+        "Nome attività": "Giuseppe Giacomini e Vincenzo Capobianchi, \"Giacomini & Capobianchi\"",
         "geo": {
             "lat": 41.9059856,
             "lon": 12.4836915
@@ -1422,6 +1990,10 @@
         "Città": "Roma",
         "Via": "Via Condotti",
         "Civico": "",
+        "ID_entità": "TA",
+        "Apertura": "1880 ca.",
+        "Chiusura": "1924",
+        "Nome attività": "Filippo Tavazzi",
         "geo": {
             "lat": 41.81693185,
             "lon": 12.458581498511967
@@ -1434,6 +2006,10 @@
         "Città": "Roma",
         "Via": "Via Condotti",
         "Civico": "44",
+        "ID_entità": "SA_III",
+        "Apertura": "1887",
+        "Chiusura": "1905 ca.",
+        "Nome attività": "Giulio Sambon, \"Impresa di vendita in Italia Giulio Sambon\"",
         "geo": {
             "lat": 42.0759247,
             "lon": 12.1767667
@@ -1446,6 +2022,10 @@
         "Città": "Roma",
         "Via": "Via Condotti",
         "Civico": "59-61",
+        "ID_entità": "IM",
+        "Apertura": "1897",
+        "Chiusura": "1943 ca.",
+        "Nome attività": "Alexandre Imbert, \"Galerie A. Imbert\" (Palazzo Caffarelli)",
         "geo": {
             "lat": 42.0759247,
             "lon": 12.1767667
@@ -1457,7 +2037,27 @@
         "Regione": "Lazio",
         "Città": "Roma",
         "Via": "Via del Babuino",
-        "Civico": "",
+        "Civico": "144",
+        "ID_entità": "AN-EF",
+        "Apertura": "1916",
+        "Chiusura": "1955 ca.",
+        "Nome attività": "Emanuele Efrati, \"Galleria Efrati\"",
+        "geo": {
+            "lat": 41.9084557,
+            "lon": 12.4789596
+        }
+    },
+    "IT_103_b": {
+        "ID": "IT_103_b",
+        "Nazione": "Italia",
+        "Regione": "Lazio",
+        "Città": "Roma",
+        "Via": "Via del Babuino",
+        "Civico": "146",
+        "ID_entità": "AN-EF",
+        "Apertura": "1955 ca.",
+        "Chiusura": "1998",
+        "Nome attività": "Emanuele Efrati e Giuseppe Antonacci, \"Antonacci-Efrati\"",
         "geo": {
             "lat": 41.9084557,
             "lon": 12.4789596
@@ -1469,7 +2069,11 @@
         "Regione": "Lazio",
         "Città": "Roma",
         "Via": "Via del Babuino",
-        "Civico": "88",
+        "Civico": "87-88",
+        "ID_entità": "DI",
+        "Apertura": "1930 ca.",
+        "Chiusura": "1939 ca.",
+        "Nome attività": "Amedeo e Leone Di Castro, \"Antichità A. L. Di Castro\"",
         "geo": {
             "lat": 41.9084557,
             "lon": 12.4789596
@@ -1482,6 +2086,10 @@
         "Città": "Roma",
         "Via": "Via del Babuino",
         "Civico": "92",
+        "ID_entità": "JA",
+        "Apertura": "1885 ca.",
+        "Chiusura": "1891",
+        "Nome attività": "Alessandro e Antonio Jandolo (Palazzo Raffaelli)",
         "geo": {
             "lat": 41.9084557,
             "lon": 12.4789596
@@ -1493,7 +2101,11 @@
         "Regione": "Lazio",
         "Città": "Roma",
         "Via": "Via del Babuino",
-        "Civico": "9697",
+        "Civico": "96-97",
+        "ID_entità": "JA TA ",
+        "Apertura": "1907 ca.",
+        "Chiusura": "1940 ca.",
+        "Nome attività": "Augusto e Salvatore Jandolo, Filippo e Guido Tavazzi, \"Casa di Vendita Jandolo & Tavazzi\"",
         "geo": {
             "lat": 41.9084557,
             "lon": 12.4789596
@@ -1506,6 +2118,26 @@
         "Città": "Roma",
         "Via": "Via del Babuino",
         "Civico": "110",
+        "ID_entità": "DI",
+        "Apertura": "1946 ca.",
+        "Chiusura": "1960 ca.",
+        "Nome attività": "Alberto Di Castro",
+        "geo": {
+            "lat": 41.9084557,
+            "lon": 12.4789596
+        }
+    },
+    "IT_107_b": {
+        "ID": "IT_107_b",
+        "Nazione": "",
+        "Regione": "Lazio",
+        "Città": "Roma",
+        "Via": "Via del Babuino",
+        "Civico": "152",
+        "ID_entità": "CA_II",
+        "Apertura": "",
+        "Chiusura": "",
+        "Nome attività": "Tommaso e Vincenzo Capobianchi",
         "geo": {
             "lat": 41.9084557,
             "lon": 12.4789596
@@ -1518,6 +2150,10 @@
         "Città": "Roma",
         "Via": "Via del Babuino",
         "Civico": "132",
+        "ID_entità": "AP",
+        "Apertura": "1970",
+        "Chiusura": "2018",
+        "Nome attività": "Fabrizio e Marco Fabio Apolloni, \"W. Apolloni\"",
         "geo": {
             "lat": 41.9084557,
             "lon": 12.4789596
@@ -1530,6 +2166,10 @@
         "Città": "Roma",
         "Via": "Via della Consolazione",
         "Civico": "184",
+        "ID_entità": "JA",
+        "Apertura": "1870 ca.",
+        "Chiusura": "1885 ca.",
+        "Nome attività": "Salvatore Jandolo e figli",
         "geo": {
             "lat": 41.8917164,
             "lon": 12.4834113
@@ -1542,21 +2182,13 @@
         "Città": "Roma",
         "Via": "Via della Croce",
         "Civico": "44",
+        "ID_entità": "SA_III",
+        "Apertura": "1886",
+        "Chiusura": "1887",
+        "Nome attività": "Giulio Sambon, \"Impresa di vendita in Italia Giulio Sambon\"",
         "geo": {
             "lat": 41.9060309,
             "lon": 12.4790414
-        }
-    },
-    "IT_111": {
-        "ID": "IT_111",
-        "Nazione": "Italia",
-        "Regione": "Lazio",
-        "Città": "Roma",
-        "Via": "Viale delle belle arti",
-        "Civico": "2",
-        "geo": {
-            "lat": 41.9186101,
-            "lon": 12.4733123
         }
     },
     "IT_112": {
@@ -1566,6 +2198,10 @@
         "Città": "Roma",
         "Via": "Via di Fontanella di Borghese",
         "Civico": "29-33",
+        "ID_entità": "SE_II TA",
+        "Apertura": "1880 ca.",
+        "Chiusura": "1915",
+        "Nome attività": "Filippo Tavazzi (1880 ca.-1985); Pellegrino Sestieri (1895 ca.-1915 ca.)",
         "geo": {
             "lat": 41.9042399,
             "lon": 12.4780908
@@ -1578,9 +2214,29 @@
         "Città": "Roma",
         "Via": "Via due macelli",
         "Civico": "86",
+        "ID_entità": "CA_II CO_II",
+        "Apertura": "1891",
+        "Chiusura": "1919",
+        "Nome attività": "Gustavo Corvisieri, \"Casa di Vendite Corvisieri & C.\", con Vincenzo Capobianchi dal 1901",
         "geo": {
             "lat": 41.9039747,
             "lon": 12.4843312
+        }
+    },
+    "IT_113_b": {
+        "ID": "IT_113_b",
+        "Nazione": "Italia",
+        "Regione": "Lazio",
+        "Città": "Roma",
+        "Via": "Via Propaganda Fide",
+        "Civico": "26",
+        "ID_entità": "CA_II CO_II",
+        "Apertura": "1891",
+        "Chiusura": "1919",
+        "Nome attività": "Gustavo Corvisieri e Vincenzo Capobianchi",
+        "geo": {
+            "lat": null,
+            "lon": null
         }
     },
     "IT_114": {
@@ -1590,6 +2246,10 @@
         "Città": "Roma",
         "Via": "Via Frattina",
         "Civico": "141",
+        "ID_entità": "AP",
+        "Apertura": "1926",
+        "Chiusura": "1970",
+        "Nome attività": "Wladimiro Apolloni e Fabrizio, \"W. Apolloni\"",
         "geo": {
             "lat": 41.9044614,
             "lon": 12.4822583
@@ -1602,6 +2262,10 @@
         "Città": "Roma",
         "Via": "Via Margutta",
         "Civico": "51a",
+        "ID_entità": "JA",
+        "Apertura": "1885 ca.",
+        "Chiusura": "1920 ca.",
+        "Nome attività": "Ettore Jandolo",
         "geo": {
             "lat": 41.9089407,
             "lon": 12.4791801
@@ -1614,9 +2278,29 @@
         "Città": "Roma",
         "Via": "Via Margutta",
         "Civico": "53",
+        "ID_entità": "JA SE_II",
+        "Apertura": "1932",
+        "Chiusura": "1939",
+        "Nome attività": "Guido Sestieri",
         "geo": {
             "lat": 41.9080943,
             "lon": 12.4802159
+        }
+    },
+    "IT_116_b": {
+        "ID": "IT_116_b",
+        "Nazione": "Italia",
+        "Regione": "Lazio",
+        "Città": "Roma",
+        "Via": "Via Margutta",
+        "Civico": "53a",
+        "ID_entità": "JA",
+        "Apertura": "1900 ca.",
+        "Chiusura": "1949",
+        "Nome attività": "Augusto Jandolo",
+        "geo": {
+            "lat": 41.9089407,
+            "lon": 12.4791801
         }
     },
     "IT_117": {
@@ -1626,6 +2310,10 @@
         "Città": "Roma",
         "Via": "Via Margutta",
         "Civico": "53b",
+        "ID_entità": "AP",
+        "Apertura": "2018",
+        "Chiusura": "2024",
+        "Nome attività": "Marco Fabio Apolloni, \"W. Apolloni\" (Palazzo Patrizi)",
         "geo": {
             "lat": 41.9080943,
             "lon": 12.4802159
@@ -1638,9 +2326,13 @@
         "Città": "Roma",
         "Via": "Via Maria Cristina",
         "Civico": "5",
+        "ID_entità": "SE_II",
+        "Apertura": "1915 ca.",
+        "Chiusura": "1932",
+        "Nome attività": "Pellegrino Sestieri e figli ",
         "geo": {
-            "lat": 41.9109772,
-            "lon": 12.4746282
+            "lat": 41.9105696,
+            "lon": 12.4733492
         }
     },
     "IT_121": {
@@ -1650,9 +2342,13 @@
         "Città": "Roma",
         "Via": "Via Nomentana",
         "Civico": "60",
+        "ID_entità": "CO_I",
+        "Apertura": "1921",
+        "Chiusura": "1931",
+        "Nome attività": "Alessandro Contini Bonacossi (abitazione privata)",
         "geo": {
-            "lat": 41.9995143,
-            "lon": 12.6283082
+            "lat": 41.9612358,
+            "lon": 12.5916269
         }
     },
     "IT_122": {
@@ -1662,6 +2358,10 @@
         "Città": "Roma",
         "Via": "Via Porta Pinciana",
         "Civico": "32",
+        "ID_entità": "FE",
+        "Apertura": "1895",
+        "Chiusura": "1909",
+        "Nome attività": "Gioacchino Ferroni (sede e abitazione privata)",
         "geo": {
             "lat": 41.9073554,
             "lon": 12.4862533
@@ -1672,11 +2372,15 @@
         "Nazione": "Italia",
         "Regione": "Lazio",
         "Città": "Roma",
-        "Via": "Via Ripetta",
-        "Civico": "117",
+        "Via": "Piazza Borghese",
+        "Civico": "",
+        "ID_entità": "SA_IV",
+        "Apertura": "1892",
+        "Chiusura": "1970",
+        "Nome attività": "Giuseppe, Giorgio e Sergio Sangiorgi, \"Hotel de Ventes Sangiorgi\"",
         "geo": {
-            "lat": 41.9986727,
-            "lon": 12.0983861
+            "lat": 41.9037496,
+            "lon": 12.476095922547149
         }
     },
     "IT_124": {
@@ -1686,6 +2390,10 @@
         "Città": "Roma",
         "Via": "Via Ripetta",
         "Civico": "118",
+        "ID_entità": "SA_IV",
+        "Apertura": "1898",
+        "Chiusura": "1924",
+        "Nome attività": "Giuseppe Sangiorgi, \"Negozio di arte antica e moderna\"",
         "geo": {
             "lat": 41.9986727,
             "lon": 12.0983861
@@ -1698,6 +2406,10 @@
         "Città": "Roma",
         "Via": "Via Sistina",
         "Civico": "16",
+        "ID_entità": "CA_II",
+        "Apertura": "1885",
+        "Chiusura": "1901",
+        "Nome attività": "Giuseppe Giacomini e Vincenzo Capobianchi, \"Giacomini & C.\"",
         "geo": {
             "lat": 41.9039736,
             "lon": 12.4870662
@@ -1710,6 +2422,10 @@
         "Città": "Roma",
         "Via": "Via Sistina",
         "Civico": "48",
+        "ID_entità": "BA_III",
+        "Apertura": "1905",
+        "Chiusura": "1925 ca.",
+        "Nome attività": "Alfredo Barsanti (Casa Buti)",
         "geo": {
             "lat": 41.9049566,
             "lon": 12.4853209
@@ -1722,6 +2438,10 @@
         "Città": "Roma",
         "Via": "Via Sistina",
         "Civico": "57",
+        "ID_entità": "TO",
+        "Apertura": "1910 ca.",
+        "Chiusura": "1922",
+        "Nome attività": "Raoul Tolentino, \"Galerie d'Art Ancien\"",
         "geo": {
             "lat": 41.9051422,
             "lon": 12.4849876
@@ -1734,6 +2454,10 @@
         "Città": "Roma",
         "Via": "Via Sistina",
         "Civico": "66",
+        "ID_entità": "JA",
+        "Apertura": "1891",
+        "Chiusura": "1920 ca.",
+        "Nome attività": "Alessandro e Antonio Jandolo",
         "geo": {
             "lat": 41.9058579,
             "lon": 12.483887
@@ -1746,6 +2470,10 @@
         "Città": "Roma",
         "Via": "Via Sistina",
         "Civico": "94",
+        "ID_entità": "SE_II",
+        "Apertura": "1932",
+        "Chiusura": "1938 ca.",
+        "Nome attività": "Emanuele Sestieri, \"Galleria Sestieri\"",
         "geo": {
             "lat": 41.9049228,
             "lon": 12.4855537
@@ -1758,6 +2486,10 @@
         "Città": "Roma",
         "Via": "Via Sistina",
         "Civico": "131",
+        "ID_entità": "BA_III",
+        "Apertura": "1925 ca.",
+        "Chiusura": "1935 ca.",
+        "Nome attività": "Alfredo Barsanti",
         "geo": {
             "lat": 41.9041242,
             "lon": 12.4870227
@@ -1770,6 +2502,10 @@
         "Città": "Roma",
         "Via": "Via Sistina",
         "Civico": "137",
+        "ID_entità": "BA_III",
+        "Apertura": "1935 ca.",
+        "Chiusura": "1946",
+        "Nome attività": "Alfredo Barsanti",
         "geo": {
             "lat": 41.90398,
             "lon": 12.4872761
@@ -1782,6 +2518,10 @@
         "Città": "Roma",
         "Via": "Via Tevere",
         "Civico": "7",
+        "ID_entità": "CO_I",
+        "Apertura": "1909",
+        "Chiusura": "1921",
+        "Nome attività": "Alessandro Contini Bonacossi (abitazione privata)",
         "geo": {
             "lat": 41.9142301,
             "lon": 12.4963669
@@ -1792,8 +2532,12 @@
         "Nazione": "Italia",
         "Regione": "Lazio",
         "Città": "Roma",
-        "Via": "Viale della Trinità dei Monti",
+        "Via": "Piazza Trinità dei Monti",
         "Civico": "9",
+        "ID_entità": "CI",
+        "Apertura": "1891 ca.",
+        "Chiusura": "1909 ca.",
+        "Nome attività": "Vincenzo Ciampolini",
         "geo": {
             "lat": 41.9089648,
             "lon": 12.4808939
@@ -1806,9 +2550,13 @@
         "Città": "Roma",
         "Via": "Via Vittoria Colonna",
         "Civico": "11",
+        "ID_entità": "SI",
+        "Apertura": "1890",
+        "Chiusura": "1932",
+        "Nome attività": "Attilio Simonetti e figli, \"Galleria Simonetti\", dal 1925 Simonetti Aldo Giulio & C.\"\" (Palazzo Odescalchi)\"",
         "geo": {
-            "lat": 41.905216,
-            "lon": 12.472448
+            "lat": 41.7325562,
+            "lon": 12.827791
         }
     },
     "IT_135": {
@@ -1818,9 +2566,29 @@
         "Città": "Roma",
         "Via": "Viale di Tor di Quinto",
         "Civico": "58",
+        "ID_entità": "LA_II",
+        "Apertura": "1892",
+        "Chiusura": "1934",
+        "Nome attività": "Michele Lazzaroni (abitazione privata)",
         "geo": {
             "lat": 41.9373142,
             "lon": 12.4755238
+        }
+    },
+    "IT_135_b": {
+        "ID": "IT_135_b",
+        "Nazione": "Italia",
+        "Regione": "Lazio",
+        "Città": "Roma",
+        "Via": "Via Flaminia",
+        "Civico": "170",
+        "ID_entità": "JA",
+        "Apertura": "1920",
+        "Chiusura": "1929",
+        "Nome attività": "Ugo Jandolo",
+        "geo": {
+            "lat": 42.1045205,
+            "lon": 12.4992021
         }
     },
     "IT_136": {
@@ -1830,9 +2598,45 @@
         "Città": "Napoli",
         "Via": "Piazza dei Martiri",
         "Civico": "23",
+        "ID_entità": "CA_I",
+        "Apertura": "1884",
+        "Chiusura": "1929",
+        "Nome attività": "Ercole, Cesare e Amedeo Canessa, \"Canessa Antiquaires – Numismates\"",
         "geo": {
             "lat": 40.834286399999996,
             "lon": 14.241816012496823
+        }
+    },
+    "IT_136_b": {
+        "ID": "IT_136_b",
+        "Nazione": "Italia",
+        "Regione": "Campania",
+        "Città": "Napoli",
+        "Via": "",
+        "Civico": "",
+        "ID_entità": "RO",
+        "Apertura": "1902",
+        "Chiusura": "1920",
+        "Nome attività": "Salvatore Romano",
+        "geo": {
+            "lat": 40.8358846,
+            "lon": 14.2487679
+        }
+    },
+    "IT_136_c": {
+        "ID": "IT_136_c",
+        "Nazione": "Italia",
+        "Regione": "Campania",
+        "Città": "Napoli",
+        "Via": "via Gennaro Serra",
+        "Civico": "24",
+        "ID_entità": "SA_III",
+        "Apertura": "1886",
+        "Chiusura": "1905 ca.",
+        "Nome attività": "Giulio Sambon, \"Impresa di vendita in Italia Giulio Sambon\"",
+        "geo": {
+            "lat": 40.8356781,
+            "lon": 14.2462026
         }
     }
 }
