@@ -1,4 +1,4 @@
-ID_entità,ID_persona_1,ID_persona_2,tipologia,
+ID_entitï¿½,ID_persona_1,ID_persona_2,tipologia,
 AN-EF,AN-EF_1,AN-EF_2,padre,
 AN-EF,AN-EF_2,AN-EF_3,madre,
 AN-EF,AN-EF_2,AN-EF_4,nonna,
@@ -38,7 +38,7 @@ DI,DI_1,DI_2,padre,
 DI,DI_2,DI_3,padre,
 DI,DI_1,DI_3,nonno,
 DI,DI_3,DI_4,padre,
-DI,DI_3,DI_??,fratello/sorella,i numeri sono progressivi per antichità?
+DI,DI_3,DI_??,fratello/sorella,i numeri sono progressivi per antichitï¿½?
 DI,DI_1,DI_4,bisnonno,
 DI,DI_4,DI_5,padre,
 DI,DI_4,DI_6,padre,
@@ -79,10 +79,6 @@ JA,JA_4,JA_5,zio,
 JA,JA_4,JA_6,zio,
 JA,JA_4,JA_7,zio,
 TA,TA_1,TA_2,padre,
-JA-TA,JA_6,TA_1,socio,DA ELIMINARE
-JA-TA,JA_6,TA_2,socio,DA ELIMINARE
-JA-TA,JA_7,TA_1,socio,DA ELIMINARE
-JA-TA,JA_7,TA_2,socio,DA ELIMINARE
 LA_I,LA_I_1,LA_I_2,padre,
 PI,PI_1,PI_2,padre,
 PI,PI_1,PI_3,padre,
@@ -108,7 +104,7 @@ SE_II,SE_II_1,SE_II_2,padre,
 SE_II,SE_II_1,SE_II_3,padre,
 SE_II,SE_II_2,SE_II_3,fratello/sorella,
 SE_II,SE_II_2,SE_II_5,padre,
-SE_II,SE_II_2,SE_II_6,padre,PERCHè MANCA SE_II_4??
+SE_II,SE_II_2,SE_II_6,padre,PERCHï¿½ MANCA SE_II_4??
 SE_II,SE_II_5,SE_II_6,fratello/sorella,
 SE_II,SE_II_1,SE_II_5,nonno,
 SE_II,SE_II_1,SE_II_6,nonno,

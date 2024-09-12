@@ -785,16 +785,6 @@
                 "Persona_1": "JA-TA_3",
                 "Persona_2": "JA-TA_4",
                 "Tipo_di_relazione": "padre"
-            },
-            {
-                "Persona_1": "JA-TA_1",
-                "Persona_2": "JA-TA_3",
-                "Tipo_di_relazione": "socio"
-            },
-            {
-                "Persona_1": "JA-TA_2",
-                "Persona_2": "JA-TA_3",
-                "Tipo_di_relazione": "socio"
             }
         ],
         "Persone": {
