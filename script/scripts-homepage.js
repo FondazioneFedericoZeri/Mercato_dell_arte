@@ -4,9 +4,9 @@ $.ajaxSetup({
   async: false
 });
 
-$.getJSON("https://raw.githubusercontent.com/FondazioneFedericoZeri/Mercato_dell_arte/main/json/luoghi.json", function (json) {
-  luoghi_json = json;
-});
+// $.getJSON("https://raw.githubusercontent.com/FondazioneFedericoZeri/Mercato_dell_arte/main/json/luoghi.json", function (json) {
+//   luoghi_json = json;
+// });
 
 // scripts js sezione 2 'search' che permette di applicare la dissolvenza in entrata al testo allo scroll della pagina
 document.addEventListener("DOMContentLoaded", function () {
@@ -86,155 +86,85 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-
-
 // scripts js sezione 4: mappa interattiva con locatoot
-am5.ready(function () {
 
-  // Create root element
-  // https://www.amcharts.com/docs/v5/getting-started/#Root_element
-  var root = am5.Root.new("chartdiv");
-
-  // Set themes
-  // https://www.amcharts.com/docs/v5/concepts/themes/
-  root.setThemes([
-    am5themes_Animated.new(root)
-  ]);
-
-  // Create the map chart
-  // https://www.amcharts.com/docs/v5/charts/map-chart/
-  var chart = root.container.children.push(
-    am5map.MapChart.new(root, {
-      panX: "rotateX",
-      panY: "translateY",
-      maxZoomLevel: 300,
-      projection: am5map.geoMercator(),
-    })
+document.addEventListener("DOMContentLoaded", function () {
+  // Define map bounds to restrict panning and zooming to specific areas
+  var bounds = L.latLngBounds(
+    L.latLng(-60, -180), // South-West corner (limit Antarctica)
+    L.latLng(85, 180)    // North-East corner
   );
 
-  var zoomControl = chart.set("zoomControl", am5map.ZoomControl.new(root, {}));
-  zoomControl.homeButton.set("visible", true);
+  // Initialize the map with bounds, zoom limits, and prevent world repetition
+  var map = L.map('chartdiv', {
+    maxBounds: bounds,            // Restrict panning outside bounds
+    maxBoundsViscosity: 1.0,      // Stick to the bounds when panning
+    worldCopyJump: false,         // Disable world repetition
+    minZoom: 2,                   // Minimum zoom level to prevent world repeat
+    maxZoom: 18                   // Maximum zoom level
+  }).setView([30, -30], 3);           // Initial view
+
+  // Add OpenStreetMap tile layer
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+  }).addTo(map);
+
+  // Create a MarkerClusterGroup to manage the clusters
+  var markers = L.markerClusterGroup();
 
 
-  // Create main polygon series for countries
-  // https://www.amcharts.com/docs/v5/charts/map-chart/map-polygon-series/
-  var polygonSeries = chart.series.push(
-    am5map.MapPolygonSeries.new(root, {
-      geoJSON: am5geodata_worldLow,
-      exclude: ["AQ"]
-    })
-  );
+  // Fetch JSON data
+  $.getJSON("https://raw.githubusercontent.com/FondazioneFedericoZeri/Mercato_dell_arte/main/json/luoghi.json", function (luoghi_json) {
+    // Loop through JSON data and add city markers to the cluster group
+    for (let luogo in luoghi_json) {
+      if (luoghi_json[luogo]["geo"]["lat"]) {
+        let place_name = luoghi_json[luogo]["Città"];
+        let nome_attivita = luoghi_json[luogo]["Nome attività"];
+        let id_entita = luoghi_json[luogo]["ID_entità"];
 
-  polygonSeries.mapPolygons.template.setAll({
-    fill: am5.color(0xdadada)
-  });
-
-
-  // Create point series for markers
-  // https://www.amcharts.com/docs/v5/charts/map-chart/map-point-series/
-  var pointSeries = chart.series.push(am5map.ClusteredPointSeries.new(root, {}));
-
-
-  // Set clustered bullet
-  // https://www.amcharts.com/docs/v5/charts/map-chart/clustered-point-series/#Group_bullet
-  pointSeries.set("clusteredBullet", function (root) {
-    var container = am5.Container.new(root, {
-      cursorOverStyle: "pointer"
-    });
-
-    var circle1 = container.children.push(am5.Circle.new(root, {
-      radius: 8,
-      tooltipY: 0,
-      fill: am5.color(0xff8c00)
-    }));
-
-    var circle2 = container.children.push(am5.Circle.new(root, {
-      radius: 12,
-      fillOpacity: 0.3,
-      tooltipY: 0,
-      fill: am5.color(0xff8c00)
-    }));
-
-    var circle3 = container.children.push(am5.Circle.new(root, {
-      radius: 16,
-      fillOpacity: 0.3,
-      tooltipY: 0,
-      fill: am5.color(0xff8c00)
-    }));
-
-    var label = container.children.push(am5.Label.new(root, {
-      centerX: am5.p50,
-      centerY: am5.p50,
-      fill: am5.color(0xffffff),
-      populateText: true,
-      fontSize: "8",
-      text: "{value}"
-    }));
-
-    container.events.on("click", function (e) {
-      pointSeries.zoomToCluster(e.target.dataItem);
-    });
-
-    return am5.Bullet.new(root, {
-      sprite: container
-    });
-  });
-
-  // Create regular bullets
-  pointSeries.bullets.push(function () {
-    var circle = am5.Circle.new(root, {
-      radius: 6,
-      tooltipY: 0,
-      fill: am5.color(0xff8c00),
-      tooltipText: "{title}"
-    });
-
-    return am5.Bullet.new(root, {
-      sprite: circle
-    });
-  });
-
-
-  // Set data
-  var cities = [];
-
-  console.log(luoghi_json);
-
-  for (let luogo in luoghi_json) {
-    if (luoghi_json[luogo]["geo"]["lat"]) {
-      place_name = luoghi_json[luogo]["Città"]
-      if (luoghi_json[luogo]["Via"].length > 0) {
-        place_name = place_name.concat(', ', luoghi_json[luogo]["Via"])
-        if (luoghi_json[luogo]["Civico"].length > 0) {
-          place_name = place_name.concat(', ', luoghi_json[luogo]["Civico"])
+        // Format the address
+        if (luoghi_json[luogo]["Via"].length > 0) {
+          place_name += `, ${luoghi_json[luogo]["Via"]}`;
+          if (luoghi_json[luogo]["Civico"].length > 0) {
+            place_name += `, ${luoghi_json[luogo]["Civico"]}`;
+          }
         }
+
+        // Generate the content for the tooltip and popup
+        let content = `<b>${nome_attivita}</b><br>${place_name}<br>`;
+
+        // Split ID_entità if there are multiple IDs
+        let ids = id_entita.split(' '); // Splitting based on space
+
+        // Loop through each ID and create a link
+        ids.forEach(function (id) {
+          content += `<a href="https://fondazionefedericozeri.github.io/Mercato_dell_arte/html/dettagli/dettaglio_${id}.html" target="_blank">Vai a ${id}</a><br>`;
+        });
+
+        // Create the marker
+        var marker = L.marker([luoghi_json[luogo]["geo"]["lat"], luoghi_json[luogo]["geo"]["lon"]]);
+
+        // Bind the tooltip (for hover)
+        marker.bindTooltip(content, { permanent: false, direction: "top" });
+
+        // Bind the popup (which stays open on click)
+        marker.bindPopup(content);
+
+        // Open popup on click
+        marker.on('click', function (e) {
+          marker.openPopup();
+        });
+
+        markers.addLayer(marker); // Add marker to the cluster group
       }
-      city = {
-        title: place_name,
-        latitude: luoghi_json[luogo]["geo"]["lat"],
-        longitude: luoghi_json[luogo]["geo"]["lon"],
-      };
     }
 
-    cities.push(city);
-  }
-
-  for (var i = 0; i < cities.length; i++) {
-    var city = cities[i];
-    addCity(city.longitude, city.latitude, city.title);
-  }
-
-  function addCity(longitude, latitude, title) {
-    pointSeries.data.push({
-      geometry: { type: "Point", coordinates: [longitude, latitude] },
-      title: title
-    });
-  }
-
-  // Make stuff animate on load
-  chart.appear(1000, 100);
-
-}); // end am5.ready()
+    // Add the MarkerClusterGroup to the map
+    map.addLayer(markers);
+  }).fail(function () {
+    console.error("Failed to load the JSON file.");
+  });
+});
 
 
 // scripts js sezione 5 timeline: permette di applicare la dissolvenza in entrata al testo allo scroll della pagina
