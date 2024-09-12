@@ -466,3 +466,14 @@ footer img {
     min-width: 100%;
     overflow: visible;
 }
+
+#chartdiv {
+    height: 500px;
+    /* Ensure the map has enough height to be visible */
+    width: 100%;
+    /* Make it responsive to the width of the parent container */
+    border-radius: 8px;
+    background-color: #f5f5f5;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
