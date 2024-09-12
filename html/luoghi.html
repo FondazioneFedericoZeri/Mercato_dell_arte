@@ -5,19 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luoghi</title>
-    <link rel="stylesheet" href="../css/styles-luoghi.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;700&display=swap" rel="stylesheet">
+
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
-    <script type="text/javascript" src="../script/scripts-antiquari.js"></script>
-    <script type="text/javascript" src="../script/antiquari_search.js"></script>
+
     <!-- Resources Mappa-->
-    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
-    <script src="https://cdn.amcharts.com/lib/5/map.js"></script>
-    <script src="https://cdn.amcharts.com/lib/5/geodata/worldLow.js"></script>
-    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+
+    <!-- MarkerCluster CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css" />
+    <!-- My Style -->
+    <link rel="stylesheet" href="../css/styles-luoghi.css">
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+    <!-- MarkerCluster JS -->
+    <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
+
+    <!-- My Scripts -->
+    <script type="text/javascript" src="../script/script-luoghi.js"></script>
+
 </head>
 
 <body>
@@ -25,8 +37,8 @@
     <header>
         <div class="header-container">
 
-            <a href="../index.html"> 
-            <img id="logo.png" src="../img/homepage/logo.png" alt="Fondazione Federico Zeri">
+            <a href="../index.html">
+                <img id="logo.png" src="../img/homepage/logo.png" alt="Fondazione Federico Zeri">
             </a>
 
             <nav>
@@ -45,13 +57,29 @@
     <!-- Contenuto principale della nuova pagina -->
     <main>
         <section id="map">
-            <!-- <img id="map.png" src="img/homepage/map.png" alt="Mappa del Mercato dell'Arte"> -->
-          <div id="chartdiv"></div>
-          <div class="text-content fade in">
-              <h2><span class="highlight">SCOPRI</span> I LUOGHI DEL MERCATO DELL'ARTE</h2>
-              <p>Esplora i principali contesti culturali del mercato dell'arte.</p>
-          </div>
-      </section>
+            <div class="filter-container">
+                <label>Seleziona il periodo:</label>
+                <div class="radio-group">
+                    <input type="radio" id="allPeriods" name="timePeriod" value="all" checked>
+                    <label for="allPeriods">Tutti</label>
+
+                    <input type="radio" id="before1900" name="timePeriod" value="period1">
+                    <label for="before1900">Ante 1900</label>
+
+                    <input type="radio" id="period1900_1950" name="timePeriod" value="period2">
+                    <label for="period1900_1950">1900-1950</label>
+
+                    <input type="radio" id="after1950" name="timePeriod" value="period3">
+                    <label for="after1950">Post 1950</label>
+                </div>
+            </div>
+
+            <div id="chartdiv"></div>
+            <!-- <div class="text-content fade in">
+                <h2><span class="highlight">SCOPRI</span> I LUOGHI DEL MERCATO DELL'ARTE</h2>
+                <p>Esplora i principali contesti culturali del mercato dell'arte.</p>
+            </div> -->
+        </section>
     </main>
 
     <!-- Footer copiato dalla pagina esistente -->
@@ -67,7 +95,8 @@
             </div>
         </div>
     </footer>
-    <script type="text/javascript" src="../Mercato_dell_arte/script/scripts-homepage.js"></script>
-    <script type="text/javascript" src="../Mercato_dell_arte/script/antiquari_search.js" ></script
+    <!-- <script type="text/javascript" src="../script/scripts-homepage.js"></script>
+    <script type="text/javascript" src="../script/antiquari_search.js"></script> -->
 </body>
+
 </html>

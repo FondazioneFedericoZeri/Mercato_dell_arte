@@ -1,5 +1,6 @@
 /* Basic Reset */
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
     padding: 0;
@@ -8,32 +9,41 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Assicura che il corpo occupi almeno l'altezza della finestra */
+    min-height: 100vh;
+    /* Assicura che il corpo occupi almeno l'altezza della finestra */
     font-family: 'Montserrat', sans-serif;
     color: #333;
     line-height: 1.6;
 }
 
 main {
-    flex: 1; /* Fa sì che il main prenda tutto lo spazio disponibile */
+    flex: 1;
+    /* Fa sì che il main prenda tutto lo spazio disponibile */
 }
 
 #map {
-    display: flex; /* Usa flexbox per allineare gli elementi */
-    align-items: center; /* Centra verticalmente gli elementi */
-    justify-content: flex-end; /* Allinea il contenuto a destra */
+    display: flex;
+    /* Usa flexbox per allineare gli elementi */
+    align-items: center;
+    /* Centra verticalmente gli elementi */
+    justify-content: flex-end;
+    /* Allinea il contenuto a destra */
     padding: 40px 20px;
 }
 
 #chartdiv {
     width: 100%;
     height: 550px;
-  }
-  
+    z-index: 100;
+}
+
 #map img {
-    width: 70%; /* L'immagine occupa il 70% della larghezza */
-    max-width: 700px; /* Limita la larghezza massima dell'immagine */
-    margin-right: 20px; /* Aggiunge spazio tra l'immagine e il testo */
+    width: 70%;
+    /* L'immagine occupa il 70% della larghezza */
+    max-width: 700px;
+    /* Limita la larghezza massima dell'immagine */
+    margin-right: 20px;
+    /* Aggiunge spazio tra l'immagine e il testo */
 }
 
 /* Classe per la dissolvenza in entrata */
@@ -47,28 +57,36 @@ main {
 }
 
 #map .text-content {
-    width: 45%; /* Il testo occupa il 45% della larghezza */
-    text-align: left; /* Allinea il testo a sinistra */
+    width: 45%;
+    /* Il testo occupa il 45% della larghezza */
+    text-align: left;
+    /* Allinea il testo a sinistra */
     margin-left: 60px;
     margin-right: 60px;
-    opacity: 0; /* Inizia nascosto */
-    transition: opacity 2s ease-in-out; /* Applicazione della dissolvenza */
+    opacity: 0;
+    /* Inizia nascosto */
+    transition: opacity 2s ease-in-out;
+    /* Applicazione della dissolvenza */
 }
 
 #map .text-content.visible {
-    opacity: 1; /* Mostra il contenuto quando visibile */
+    opacity: 1;
+    /* Mostra il contenuto quando visibile */
 }
 
 #map h2 {
     font-size: 36px;
     margin-bottom: 10px;
-    color: #000; /* Colore nero per il resto del titolo */
-    font-weight: 400; /* Font regular per il resto del titolo */
+    color: #000;
+    /* Colore nero per il resto del titolo */
+    font-weight: 400;
+    /* Font regular per il resto del titolo */
 }
 
 #map h2 .highlight {
-    color: #5593C9; 
-    font-weight: 700; /* Grassetto */
+    color: #5593C9;
+    font-weight: 700;
+    /* Grassetto */
 }
 
 #map p {
@@ -79,7 +97,7 @@ main {
 }
 
 #map .btn {
-    margin-top: 60px; 
+    margin-top: 60px;
     background-color: #333;
     color: #fff;
     padding: 12px 20px;
@@ -93,17 +111,24 @@ main {
     background-color: #5593C9;
     color: #fff;
 }
+
 /* header e menù */
 
 header {
     background-color: #f8f8f8;
     padding: 15px;
-    position: sticky; /* Rende il menu sticky */
-    top: 0; /* Posiziona il menu all'inizio della pagina */
-    z-index: 1000; /* Assicura che il menu si sovrapponga agli altri contenuti */
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Aggiunge un'ombra per differenziarlo dal contenuto */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Aggiunge l'ombreggiatura */
-    border-radius: 8px; /* Opzionale: arrotonda gli angoli */
+    position: sticky;
+    /* Rende il menu sticky */
+    top: 0;
+    /* Posiziona il menu all'inizio della pagina */
+    z-index: 1000;
+    /* Assicura che il menu si sovrapponga agli altri contenuti */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    /* Aggiunge un'ombra per differenziarlo dal contenuto */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    /* Aggiunge l'ombreggiatura */
+    border-radius: 8px;
+    /* Opzionale: arrotonda gli angoli */
 }
 
 .header-container {
@@ -141,8 +166,10 @@ nav ul li a:hover {
 
 /* contenuto 1*/
 #content {
-    margin-left: 20px; /* Aggiunge un margine a sinistra di 20px */
-    padding: 20px; /* Eventuale padding interno per separare il contenuto dai bordi */
+    margin-left: 20px;
+    /* Aggiunge un margine a sinistra di 20px */
+    padding: 20px;
+    /* Eventuale padding interno per separare il contenuto dai bordi */
 }
 
 
@@ -183,4 +210,108 @@ footer img {
 
 .footer-right {
     text-align: right;
+}
+
+/* Override MarkerCluster colors */
+.marker-cluster-small {
+    background-color: #88888800 !important;
+    /* Light gray for small clusters */
+    color: white !important;
+}
+
+.marker-cluster-medium {
+    background-color: #66666600 !important;
+    /* Medium gray for medium clusters */
+    color: white !important;
+}
+
+.marker-cluster-large {
+    background-color: #44444400 !important;
+    /* Dark gray for large clusters */
+    color: white !important;
+}
+
+/* Define the styles for the cluster icons */
+.marker-cluster div {
+    border-radius: 50% !important;
+    width: 40px !important;
+    height: 40px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white !important;
+    font-size: 14px !important;
+    color: white !important;
+}
+
+/* Style the filter container */
+.filter-container {
+    margin: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.filter-container label {
+    font-weight: bold;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Style the radio button group */
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    /* Stack the radio buttons vertically */
+}
+
+/* Hide default radio button */
+.radio-group input[type="radio"] {
+    display: none;
+}
+
+/* Style the custom radio button labels */
+.radio-group label {
+    font-size: 16px;
+    color: #333;
+    background-color: #f8f8f8;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+/* Custom radio button circle */
+.radio-group label:before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid #5593C9;
+    margin-right: 10px;
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+/* Selected state */
+.radio-group input[type="radio"]:checked+label {
+    background-color: #e6f0ff;
+    border-color: #5593C9;
+}
+
+/* Change circle background when selected */
+.radio-group input[type="radio"]:checked+label:before {
+    background-color: #5593C9;
+}
+
+/* Hover effects */
+.radio-group label:hover {
+    background-color: #f0f0f0;
+    border-color: #888;
 }
