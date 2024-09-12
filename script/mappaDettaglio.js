@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Extract the person ID from the URL
   var url = window.location.href;
-  var personID = url.substring(url.lastIndexOf('_') + 1, url.lastIndexOf('.html'));
+  var personID = url.substring(url.indexOf('dettaglio_') + 10, url.indexOf('.html'));
 
   // Path to the JSON file (replace with your actual path)
   var luoghi_json_url = "https://raw.githubusercontent.com/FondazioneFedericoZeri/Mercato_dell_arte/main/json/luoghi.json";
@@ -35,7 +35,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
       // Filter the array based on the ID_entità field
       var filteredPlaces = placesArray.filter(function (luogo) {
-        return luogo.ID_entità.includes(personID);
+        var regex = new RegExp("\\b" + personID + "\\b");  // Ensure word boundaries
+        return regex.test(luogo.ID_entità);  // Test if the ID_entità matches the pattern
       });
 
       // Add markers for each filtered place
