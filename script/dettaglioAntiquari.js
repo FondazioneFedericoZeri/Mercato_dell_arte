@@ -2,9 +2,48 @@
 //slider galleria img
 
 let currentSlide = 0;
+let sliderInterval;
+
+// Check if the slider or single image is present
+function initializeGallery() {
+  const slider = document.querySelector('.slider');
+  const singleImage = document.querySelector('.single-image-container');
+
+  if (slider) {
+    // Start the slider if the slider is present
+    console.log("Slider found. Initializing slider.");
+    startSlider();
+  } else if (singleImage) {
+    // If only a single image is present, no need for slider functionality
+    console.log("Single image found. No slider needed.");
+  } else {
+    console.error("No image gallery found.");
+  }
+}
+
+function startSlider(retries = 0) {
+  const slider = document.querySelector('.slider');
+
+  if (!slider) {
+    console.error("Slider element not found! Retrying...");
+    setTimeout(() => startSlider(retries + 1), 500);  // Retry every 500ms
+    return;
+  }
+
+  // Start the interval for automatic slides
+  sliderInterval = setInterval(nextSlide, 3000); // Change image every 3 seconds
+  console.log("Slider initialized and running.");
+}
 
 function showSlide(index) {
   const slides = document.querySelectorAll('.slide');
+  const slider = document.querySelector('.slider');
+
+  if (!slider) {
+    console.error("Slider element not found!");
+    return;
+  }
+
   if (index >= slides.length) {
     currentSlide = 0;
   } else if (index < 0) {
@@ -12,8 +51,9 @@ function showSlide(index) {
   } else {
     currentSlide = index;
   }
+
   const offset = -currentSlide * 100;
-  document.querySelector('.slider').style.transform = `translateX(${offset}%)`;
+  slider.style.transform = `translateX(${offset}%)`;
 }
 
 function nextSlide() {
@@ -24,8 +64,11 @@ function prevSlide() {
   showSlide(currentSlide - 1);
 }
 
-// Avvia automaticamente lo slider
-setInterval(nextSlide, 3000); // Cambia immagine ogni 3 secondi
+// Initialize the gallery on DOMContentLoaded
+document.addEventListener("DOMContentLoaded", function () {
+  initializeGallery(); // Start the gallery functionality
+});
+
 
 //menù tab laterale per sitch pagine
 
