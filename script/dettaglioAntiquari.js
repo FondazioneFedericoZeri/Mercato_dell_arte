@@ -220,6 +220,13 @@ function buildTreeFromData(entity) {
 
 // Function to show "No data available" message
 function showNoDataMessage() {
+  // Check if the message already exists
+  var existingMessage = document.getElementById('no-data-message');
+  if (existingMessage) {
+    return; // If message already exists, do nothing
+  }
+
+  // Create the message div and append it
   var messageDiv = document.createElement('div');
   messageDiv.id = 'no-data-message';
   messageDiv.style.color = 'red';
