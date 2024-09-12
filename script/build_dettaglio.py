@@ -77,30 +77,35 @@ def build_html_head(page):
         page.meta(name="viewport",
                   content="width=device-width, initial-scale=1.0")
         page.title(_t="Dettaglio Antiquari")
-        page.link(rel="stylesheet",
-                  href="../../css/styles-dettaglioAntiquario.css")
+
         page.link(
             href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap", rel="stylesheet")
         page.link(
             href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;700&display=swap", rel="stylesheet")
-
+        page.link(rel="stylesheet",
+                  href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css")
+        page.link(rel="stylesheet",
+                  href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css")
+        page.link(rel="stylesheet",
+                  href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css")
+        page.link(rel="stylesheet",
+                  href="../../css/styles-dettaglioAntiquario.css")
         page.script(type="text/javascript",
                     src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js")
         page.script(type="text/javascript",
                     src="https://cdn.amcharts.com/lib/5/index.js")
         page.script(type="text/javascript",
-                    src="https://cdn.amcharts.com/lib/5/map.js")
-        page.script(type="text/javascript",
-                    src="https://cdn.amcharts.com/lib/5/geodata/worldLow.js")
-        page.script(type="text/javascript",
                     src="https://cdn.amcharts.com/lib/5/hierarchy.js")
         page.script(type="text/javascript",
                     src="https://cdn.amcharts.com/lib/5/themes/Animated.js")
         page.script(type="text/javascript",
+                    src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js")
+        page.script(type="text/javascript",
+                    src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js")
+        page.script(type="text/javascript",
                     src="../../script/dettaglioAntiquari.js")
-
-        # page.script(type="text/javascript",
-        #             src="../../script/mappaDettaglio.js")
+        page.script(type="text/javascript",
+                    src="../../script/mappaDettaglio.js")
 
         # TODO aggiungi mappa
         # page.script()
