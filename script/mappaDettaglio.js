@@ -80,7 +80,8 @@ document.addEventListener("DOMContentLoaded", function () {
       // Fit the map view to the bounds of all markers
       map.fitBounds(bounds, {
         padding: [50, 50],  // Add padding around the markers (optional)
-        maxZoom: 10         // Set the maximum zoom level for the initial view
+        maxZoom: 3,         // Set the maximum zoom level for the initial view
+        minZoom: 2
       });
     })
     .catch(error => console.error("Error loading JSON data:", error));
