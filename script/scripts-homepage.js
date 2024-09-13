@@ -8,6 +8,7 @@ $.ajaxSetup({
 //   luoghi_json = json;
 // });
 
+//SEZIONE 2
 // scripts js sezione 2 'search' che permette di applicare la dissolvenza in entrata al testo allo scroll della pagina
 document.addEventListener("DOMContentLoaded", function () {
   const searchSection = document.querySelector('#search');
@@ -25,6 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Controlla la visibilità al caricamento della pagina
   checkVisibility();
 });
+
 
 
 // scripts js sezione 3: permette di incrementare i numeri
@@ -194,4 +196,3 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener('scroll', checkFadeIn);
   window.addEventListener('load', checkFadeIn);
 });
-
