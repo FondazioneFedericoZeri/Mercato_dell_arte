@@ -23,6 +23,7 @@
     <!-- My Scripts -->
     <script type="text/javascript" src="script/scripts-antiquari.js"></script>
     <script type="text/javascript" src="script/antiquari_search.js"></script>
+    <script type="text/javascript" src="script/scripts-homepage.js"></script>
 </head>
 
 <body>
@@ -47,21 +48,23 @@
     </header>
 
     <section id="hero">
-        <h1>Il mercato antiquario in Italia<br>tra Otto e Novecento. <br> Protagonisti e contesti.</h1>
+        <h1>Il mercato antiquario in Italia<br>tra Otto e Novecento.</h1>
+        <h2 class="hero-typewriter">Protagonisti e contesti.</h2>
         <a href="../Mercato_dell_arte/html/progetto.html" class="btn">Scopri</a>
     </section>
 
 
     <section id="search" class="fade-in">
-        <h2><span class="bold-text">RICERCA</span> <span class="normal-text">GLI ANTIQUARI</span></h2>
-        <p>Trova l'antiquario che ti interessa<br>e scopri i contesti storici.</p>
-        <input type="text" placeholder="Cerca per cognome dell'antiquario o per regione">
+        <h2><span class="normal-text">GLI</span> <span class="bold-text">ANTIQUARI</span></h2> 
+         <!--  <p>Trova l'antiquario che ti interessa<br>e scopri i contesti storici.</p> -->
+        <p> Scopri i mercanti, le imprese e le gallerie e vedi i dettagli sulla loro attività. </p>
+        <input type="text" placeholder="Cerca per nome o per luogo">
         <div class="search-buttons">
-            <!-- <button id="btn-luogo" class="btn">Cerca per Luogo</button>
-            <button id="btn-cognome" class="btn">Tutti gli Antiquari</button> -->
+            <!-- 
             <a href="../Mercato_dell_arte/html/antiquari.html #Titolo" id="btn-luogo" class="btn">Cerca per luogo</a>
-            <a href="../Mercato_dell_arte/html/antiquari.html #Titolo" id="btn-cognome" class="btn">Cerca per
-                cognome</a>
+            <a href="../Mercato_dell_arte/html/antiquari.html #Titolo" id="btn-cognome" class="btn">Cerca per cognome</a> 
+            -->
+            <a href="../Mercato_dell_arte/html/antiquari.html #intro-section" id="btn-cognome" class="btn">Vedi tutti</a> 
 
         </div>
     </section>
@@ -69,19 +72,19 @@
     <section id="statistics">
         <div class="stat">
             <h3>60</h3>
-            <p>Entità antiquariali</p>
+            <a href="../Mercato_dell_arte/html/antiquari.html">Entità antiquariali</a>
         </div>
         <div class="stat">
             <h3>125</h3>
-            <p>Antiquari</p>
+            <a href="../Mercato_dell_arte/html/antiquari.html #Titolo">Singoli professionisti</a>
+        </div>
+        <div class="stat">
+            <h3>147</h3>
+            <a href="../Mercato_dell_arte/html/persone.html">Clienti e collaboratori</a>
         </div>
         <div class="stat">
             <h3>153</h3>
-            <p>Luoghi del mercato dell'arte</p>
-        </div>
-        <div class="stat">
-            <h3>27</h3>
-            <p>Eventi significativi</p>
+            <a href="../Mercato_dell_arte/html/luoghi.html">Luoghi del mercato dell'arte</a>
         </div>
     </section>
 
@@ -89,20 +92,19 @@
         <!-- <img id="map.png" src="img/homepage/map.png" alt="Mappa del Mercato dell'Arte"> -->
         <div id="chartdiv"></div>
         <div class="text-content fade in">
-            <h2><span class="highlight">SCOPRI</span> I LUOGHI DEL MERCATO DELL'ARTE</h2>
-            <p>Esplora i principali contesti culturali del mercato dell'arte.</p>
+            <h2><span class="highlight">I LUOGHI</span> DEL MERCATO</h2>
+            <p>Localizza le sedi delle principali attività antiquariali in Italia in vari periodi storici .</p>
             <a href="../Mercato_dell_arte/html/luoghi.html" class="btn">Vai alla Mappa</a>
         </div>
     </section>
 
     <section id="timeline" class="fade-in">
         <h2>
-            <span class="highlight">GLI EVENTI</span>
-            <span class="regular-text">NEL TEMPO</span>
+            <span class="regular-text">GLI</span>
+            <span class="highlight">EVENTI</span>
         </h2>
         <div class="content-wrapper">
-            <p>Ricostruisci i contesti culturali attraverso<br>i principali eventi nel tempo che hanno<br>caratterizzato
-                il mercato dell’arte.</p>
+            <p>Ripercorri la storia del mercato dell’arte tra XIX e XX secolo attraverso alcuni eventi significativi.</p>
             <a href="../Mercato_dell_arte/html/eventi.html" class="btn">Scopri di più</a>
         </div>
         </div>
@@ -117,10 +119,8 @@
                 <p class="f2 heading--sanSerif">1895</p>
             </div>
             <div class="tl-content">
-                <h1>Scoperta del tesoro di Boscoreale</h1>
-                <p>Gli antiquari Canessa scoprirono il tesoro di Boscoreale, ovvero un servizio di argenteria di oltre
-                    100 pezzi di epoca romana. La famiglia di antiquari contribuì ad esportare illegalmente il tesoro,
-                    cedendolo al barone Edmond De Rothschild. La collezione si conserva oggi al Museo del Louvre.</p>
+                <h1>Scoperta "tesoro di Boscoreale" </h1>
+                <p>Gli antiquari Canessa scoprono il "Tesoro di Boscoreale", un servizio di argenteria di oltre 100 pezzi di epoca romana, esportato e ceduto al barone Edmond De Rothschild. La collezione si conserva oggi al Museo del Louvre.</p>
             </div>
         </div>
 
@@ -129,9 +129,8 @@
                 <p class="f2 heading--sanSerif">1925</p>
             </div>
             <div class="tl-content">
-                <h1 class="f3 text--accent ttu">Inaugurazione Museo Stefano Bardini</h1>
-                <p>L'antiquario Stefano Bardini, morto nel 1922, donò la sua collezione e il palazzo di sua proprietà al
-                    comune di Firenze, che decise tre anni dopo di aprire un museo a lui dedicato.</p>
+                <h1 class="f3 text--accent ttu">Inaugurazione Museo Bardini</h1>
+                <p>Apertura di un museo dedicato a Stefano Bardini che tre anni prima aveva donato la propria collezione e il palazzo al Comune di Firenze.</p>
             </div>
         </div>
 
@@ -140,9 +139,8 @@
                 <p class="f2 heading--sanSerif">1932</p>
             </div>
             <div class="tl-content">
-                <h1 class="f3 text--accent ttu">Vendita all'asta - Collezione Simonetti</h1>
-                <p>L'intera collezione Simonetti fu venduta per volere dei figli nel 1932, presso la casa d'aste di
-                    Guido Tavazzi</p>
+                <h1 class="f3 text--accent ttu">Vendita Collezione Simonetti</h1>
+                <p>Vendita dell'intera collezione di Attilio Simonetti, organizzata dagli eredi presso la casa d'aste Guido Tavazzi, con catalogo curato da Ludwig Pollak.</p>
             </div>
         </div>
 
@@ -152,8 +150,7 @@
             </div>
             <div class="tl-content">
                 <h1 class="f3 text--accent ttu">Pubblicazione "Memorie di un antiquario"</h1>
-                <p>Augusto Jandolo pubblicò l'autobiografia "Memorie di un antiquario", fonte imprescindibile per la
-                    comprensione del mercato dell’arte romano a cavallo tra Otto e Novecento. </p>
+                <p>Augusto Jandolo pubblica l'autobiografia "Memorie di un antiquario", fonte imprescindibile per la comprensione del mercato dell’arte romano a cavallo tra Otto e Novecento.</p>
             </div>
     </section>
     <!-- fine prova timeline 2 -->
@@ -161,17 +158,14 @@
     <section id="key-people" class="fade-in">
         <div class="left-key-content">
             <h2>
-                <span class="highlight">LE PERSONE CHIAVE</span>
-                <span class="regular-text">DEL<br>MERCATO DELL'ARTE</span>
+                <span class="regular-text">I</span>
+                <span class="highlight">PROTAGONISTI</span>
             </h2>
-            <p>Consulta la <a href="../Mercato_dell_arte/html/persone.html" class="link">lista di personalità</a> che
-                hanno caratterizzato il mercato antiquario in Italia tra Otto e Novecento.</p>
+            <p>Consulta la lista di <a href="../Mercato_dell_arte/html/persone.html" class="link">antiquari, collaboratori o clienti</a> coinvolti nelle transazioni antiquariali.</p>
         </div>
 
         <div class="right-key-links">
-            <a href="#">Antiquari</a>
-            <a href="#">Collaboratori</a>
-            <a href="#">Clienti</a>
+
         </div>
 
         <!--  <div class="wrapper">
@@ -200,12 +194,11 @@
             </div>
             <div class="biblio-right">
                 <h2>
-                    <span class="highlight">CONSULTA</span>
-                    <span class="regular-text">LA BIBLIOGRAFIA</span>
+                    <span class="regular-text">LA</span>
+                    <span class="highlight">BIBLIOGRAFIA</span>
                 </h2>
-                <p>Individua quali sono i principali autori che hanno permesso di ricostruire la storia del mercato
-                    dell’arte.</p>
-                <a href="../Mercato_dell_arte/html/bibliografia.html" class="btn">Scopri di più</a>
+                <p>Consulta i testi di riferimento per ricostruire la storia del mercato dell’arte in Italia tra Otto e Novecento.</p>
+                <a href="../Mercato_dell_arte/html/bibliografia.html" class="btn">Apri</a>
             </div>
         </div>
     </section>
@@ -220,8 +213,6 @@
             </div>
         </div>
     </footer>
-    <script type="text/javascript" src="../Mercato_dell_arte/script/scripts-homepage.js"></script>
-    <script type="text/javascript" src="../Mercato_dell_arte/script/antiquari_search.js"></script>
 </body>
 
 </html>

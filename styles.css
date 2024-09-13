@@ -97,12 +97,12 @@ nav ul li a:hover {
 
 /* Applicazione dell'animazione al titolo della sezione hero */
 #hero h1 {
-    font-size: 60px;
-    margin-bottom: 20px;
+    font-size: 50px;
+    margin-bottom: 5px;
     font-weight: 700;
-    font-family: 'Libre Bodoni', serif;
+    /*font-family: 'Libre Bodoni', serif;*/
     background-color: rgba(73, 30, 30, 0.4);
-    padding: 10px 20px;
+    padding: 10px 10px;
     border-radius: 5px;
     display: inline-block;
     opacity: 0;
@@ -110,6 +110,55 @@ nav ul li a:hover {
     animation: fadeIn 2.5s ease-in-out forwards;
     /* Animazione di 2 secondi */
 }
+
+#hero h2 {
+    font-size: 38px;  /* Set the size to 38px */
+    font-weight: normal; /* Remove bold */
+    margin-top: 10px; /* Adjust the margin if needed */
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 22ch; } /* Limita la larghezza al numero di caratteri del testo */
+  }
+  
+  @keyframes blink {
+    0%, 100% { border-color: transparent; }
+    50% { border-color: white; }
+  }
+  
+  @keyframes delete {
+    from { width: 22ch; }
+    to { width: 0; }
+  }
+  
+  @keyframes shadow {
+    from {
+      text-shadow: none;
+    }
+    to {
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Ombreggiatura durante la digitazione */
+    }
+  }
+  
+  .hero-typewriter {
+    overflow: hidden;
+    border-right: 2px solid #5593C9; /* Cursore */
+    white-space: nowrap;
+    display: inline-block;
+    width: 0; /* Inizia con larghezza 0 per la digitazione */
+    color: #fff; /* Colore del testo blu */
+    animation: typing 6s steps(22, end) forwards, 
+               shadow 6s steps(22, end) forwards, /* Aggiunta ombreggiatura durante la digitazione */
+               blink 0.75s step-end infinite, 
+               delete 2s steps(22, end) 8s forwards, 
+               typing 6s steps(22, end) 10s forwards;
+  }
+  
+  .hero-typewriter.finished {
+    border-right: none; /* Rimuove il cursore dopo la digitazione */
+  }
+  
 
 .btn {
     background-color: #fff;
@@ -176,6 +225,7 @@ nav ul li a:hover {
     font-weight: 400;
     text-align: left;
     margin-left: 80px;
+    max-width: 500px;
 }
 
 #search input {
@@ -194,13 +244,19 @@ nav ul li a:hover {
     /* Aumenta la dimensione del testo del 20% */
 }
 
+/* CARATTERISTICHE PER VECCHI PULSANTI
 .search-buttons {
     display: inline-block;
     float: right;
-    /* Allinea i pulsanti a destra */
     margin-right: 80px;
-    /* Aggiunge margine a destra per i pulsanti */
-}
+} */
+
+.search-buttons {
+    display: inline-block;
+    float: right;
+    margin-right: 450px;
+    margin-top: 10px;
+} 
 
 .search-buttons a {
     padding: 12px 24px;
@@ -253,14 +309,18 @@ nav ul li a:hover {
     /* Diventa grassetto dopo l'animazione */
 }
 
-#statistics p {
+#statistics a {
+    text-decoration: none;
     font-size: 24px;
     font-weight: 400;
+    color: #fff;
+    transition: text-decoration 0.3s ease; /* Aggiunge una transizione morbida */
 }
 
-#statistics p:hover {
-    text-decoration: underline;
-}
+#statistics a:hover {
+    text-decoration: underline; 
+    text-underline-offset: 6px; 
+  }
 
 /* inizio della sezione successiva */
 
@@ -389,14 +449,10 @@ nav ul li a:hover {
 
 #timeline .content-wrapper {
     display: flex;
-    justify-content: space-between;
-    /* Spazia il paragrafo e il pulsante */
-    align-items: center;
-    /* Allinea verticalmente il paragrafo e il pulsante */
+    justify-content: space-between; /* Spazia il paragrafo e il pulsante */
+    align-items: center;/* Allinea verticalmente il paragrafo e il pulsante */
     margin-left: 80px;
-    /* Allinea il contenuto con il margine sinistro */
     margin-right: 80px;
-    /* Allinea il contenuto con il margine destro */
 }
 
 #timeline p {
@@ -405,6 +461,7 @@ nav ul li a:hover {
     font-size: 24px;
     font-weight: 400;
     text-align: left;
+    max-width: 600px;
 }
 
 #timeline .btn {
@@ -432,9 +489,9 @@ nav ul li a:hover {
     display: flex;
     background-color: #5593C9;
     /* #031625; */
-    height: 62vh;
+    height: 56vh;
     /* Riduce l'altezza della sezione */
-    min-height: 470px;
+    min-height: 420px;
     /* Imposta un'altezza minima per evitare che diventi troppo piccola */
     overflow: hidden;
     /* Nasconde gli elementi che escono fuori dalla sezione */
@@ -517,7 +574,7 @@ nav ul li a:hover {
         font-weight: normal;
         margin-bottom: 20px;
         margin-top: 40px;
-        text-align: center;
+        text-align: left;
     }
 }
 
@@ -654,21 +711,6 @@ nav ul li a:hover {
     /* Allinea il testo dei link a sinistra */
 }
 
-#key-people .right-key-links a {
-    font-size: 24px;
-    color: #333;
-    font-weight: 700;
-    /* Grassetto */
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
-    /* Spessore delle linee */
-    text-underline-offset: 10px;
-    /* Spazio tra il testo e la sottolineatura */
-    width: 100%;
-    /* Occupa l'intera larghezza disponibile */
-    margin-top: 20px;
-    margin-right: 180px;
-}
 
 #key-people.fade-in {
     opacity: 0;
@@ -783,9 +825,9 @@ nav ul li a:hover {
 }
 
 .biblio-left svg {
-    max-height: 100%;
+    max-height: 65%;
     /* Limita l'altezza dell'SVG per adattarsi alla colonna */
-    max-width: 100%;
+    max-width: 65%;
     /* Assicura che l'SVG si adatti alla larghezza della colonna */
 }
 
