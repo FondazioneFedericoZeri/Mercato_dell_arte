@@ -196,3 +196,5 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener('scroll', checkFadeIn);
   window.addEventListener('load', checkFadeIn);
 });
+
+//bubble
