@@ -70,7 +70,7 @@ nav ul li a:hover {
     bottom: 40px;
     right: 20px;
     display: none; /* Nasconde il bottone finché non si scorre la pagina */
-    padding: 10px 15px;
+    padding: 10px 18px;
     font-size: 14px;
     font-weight: 700;
     color: #fff;
@@ -125,6 +125,7 @@ nav ul li a:hover {
     font-size: 24px;
     color: #333;
     margin-bottom: 20px;
+    max-width: 480px;
 }
 
 .text-container {
@@ -134,7 +135,7 @@ nav ul li a:hover {
 /* Stile per il bottone nella sezione #intro-section */
 .btn {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 10px 30px;
     font-size: 16px;
     font-weight: 700;
     color: #fff; /* Testo bianco */
@@ -214,12 +215,6 @@ nav ul li a:hover {
 }
 
 
-#Titolo p {
-    font-size: 18px;
-    margin-left: 140px; /* Aggiunge un margine a sinistra */
-    margin-top: 10px;
-}
-
 #Titolo .regular-text {
     font-weight: 400; /* Regular */
     color: #333;
@@ -229,6 +224,27 @@ nav ul li a:hover {
     font-weight: 700; /* Grassetto */
     color: #333;
 }
+
+/* Stile di base per i link "nome" e "luogo" */
+#Titolo p {
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 140px; /* Aggiunge un margine a sinistra */
+    margin-top: 10px;
+}
+
+#Titolo a {
+    color: #333; /* Colore iniziale del testo */
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Transizione morbida per colore e sottolineatura */
+}
+
+/* Stile al passaggio del mouse */
+#Titolo a:hover {
+    color: #f58300c4;
+    text-decoration: underline;
+    text-underline-offset: 4px; /* Distanza tra il testo e la sottolineatura */
+}
+
 
 
 /* Stile per le card */
@@ -298,7 +314,6 @@ nav ul li a:hover {
     color: #333;
 }
 
-
 .card-text h3 {
     font-size: 20px;
     margin: 10px 0;
@@ -316,6 +331,11 @@ nav ul li a:hover {
     color: #666;
     text-align: left;
     text-decoration: none;
+}
+
+.card-container a {
+    text-decoration: none; /* Rimuove la sottolineatura */
+    color: inherit; /* Mantiene il colore del testo ereditato */
 }
 
 .card:hover img {

@@ -319,7 +319,8 @@ nav ul li a:hover {
 
 #statistics a:hover {
     text-decoration: underline; 
-    text-underline-offset: 6px; 
+    text-underline-offset: 6px;
+    color: #f7a240; 
   }
 
 /* inizio della sezione successiva */
@@ -380,17 +381,18 @@ nav ul li a:hover {
 #map h2 {
     font-size: 36px;
     margin-bottom: 10px;
-    color: #000;
     /* Colore nero per il resto del titolo */
     font-weight: 400;
     /* Font regular per il resto del titolo */
+    color:#333;
 }
 
-#map h2 .highlight {
+#map h2 .bold-text {
     color: #5593C9;
     font-weight: 700;
     /* Grassetto */
 }
+
 
 #map p {
     margin-bottom: 40px;
@@ -491,7 +493,7 @@ nav ul li a:hover {
     /* #031625; */
     height: 56vh;
     /* Riduce l'altezza della sezione */
-    min-height: 420px;
+    min-height: 370px;
     /* Imposta un'altezza minima per evitare che diventi troppo piccola */
     overflow: hidden;
     /* Nasconde gli elementi che escono fuori dalla sezione */
@@ -669,7 +671,7 @@ nav ul li a:hover {
 #key-people .left-key-content {
     text-align: left;
     /* Allinea il contenuto a sinistra */
-    max-width: 600px;
+    max-width: 550px;
     /* Limita la larghezza del contenuto */
     margin-left: 80px;
     margin-top: 0;
@@ -699,16 +701,6 @@ nav ul li a:hover {
     color: #333;
     margin-bottom: 60px;
     margin-top: 30px;
-}
-
-#key-people .right-key-links {
-    display: flex;
-    flex-direction: column;
-    /* Dispone i link uno sotto l'altro */
-    align-items: flex-end;
-    /* Mantiene i link posizionati a destra */
-    text-align: left;
-    /* Allinea il testo dei link a sinistra */
 }
 
 
@@ -796,6 +788,8 @@ nav ul li a:hover {
         opacity: 0;
     }
 }
+
+
 
 /* inizio della sezione bibliografia SVG  */
 #biblio-vettoriale {
