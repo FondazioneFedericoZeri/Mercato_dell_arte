@@ -80,6 +80,7 @@ var sort_alphabetically = function () {
             const h3 = document.createElement("h3")
             h3.appendChild(document.createTextNode(ent_dict["Nome"]))
 
+            /*
             var regioni = new Set();
             for (person_id in ent_dict["Persone"]){
                 var luoghi = ent_dict["Persone"][person_id]["ID_luoghi"]
@@ -94,6 +95,24 @@ var sort_alphabetically = function () {
 
             const p = document.createElement("p")
             p.appendChild(document.createTextNode(regioni_string))
+            */
+
+            //faccio comparire le città al posto delle regioni
+            var cities = new Set();
+            for (person_id in ent_dict["Persone"]){
+                var luoghi = ent_dict["Persone"][person_id]["ID_luoghi"]
+                for (luogo_id in luoghi){
+                    var luogo = luoghi[luogo_id]
+                    cities.add(luogo["Città"])
+                }
+            }
+            const sorted_cities = Array.from(cities).sort();
+
+            const cities_string = sorted_cities.join(",  ");
+
+            const p = document.createElement("p")
+            p.appendChild(document.createTextNode(cities_string))
+            //fine funzione
 
             div_interno.appendChild(h3)
             div_interno.appendChild(p)
