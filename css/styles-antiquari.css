@@ -79,7 +79,7 @@ nav ul li a:hover {
     border-radius: 5px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
-    z-index: 1000; /* Assicura che il bottone sia sopra gli altri elementi */
+  
 }
 
 .btn-back-to-top:hover {
@@ -369,6 +369,7 @@ footer {
     align-items: center;
     text-align: center;
     margin-top: auto;
+    z-index: 1000;
 }
 
 footer a {
