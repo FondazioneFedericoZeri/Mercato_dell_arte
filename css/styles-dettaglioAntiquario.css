@@ -75,25 +75,32 @@ nav ul li a:hover {
 
 
 /* galleria immagini*/
-#image-gallery {
-    padding: 40px 20px;
-    background-color: #f8f8f8;
-}
+
+.gallery-wrapper {
+    display: flex; /* Usa Flexbox per posizionare il titolo e la galleria fianco a fianco */
+    align-items: center; /* Allinea verticalmente al centro */
+    gap: 20px; /* Spazio tra il titolo e la galleria */
+    justify-content: flex-start; /* Allinea gli elementi a sinistra */
+    background-color: #5593C9;
+    padding-bottom: 20px;
+    padding-top: 20px;
+} 
 
 .gallery-title {
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 30px;
-    margin-top: 10px;
-    color: #5593C9;
+    font-size: 62px;
+    font-weight: 700;
+    color: #fff;
     text-align: left;
-    margin-left: 120px;
+    margin-bottom: 20px;
+    margin-left: 160px;
+    white-space: nowrap;
 }
 
 .slider-container {
+    flex: 1;
     position: relative;
-    max-width: 1000px;
-    margin: auto;
+    max-width: 400px;
+    margin-left: 420px;
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -328,8 +335,7 @@ nav ul li a:hover {
 } */
 
 #interactive-section {
-    padding: 40px 20px;
-    background-color: #f9f9f9;
+    background-color: #fff;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     margin-top: 40px;
@@ -379,27 +385,33 @@ nav ul li a:hover {
     margin: 0;
 }
 
+/* Stile per i tab */
 .tab {
     padding: 15px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 40px;
+    background-color: #fff; /* Mantiene lo sfondo bianco */
+    border: none;
     margin-bottom: 10px;
     cursor: pointer;
     text-align: left;
-    transition: background-color 0.3s ease;
+    transition: color 0.3s ease; /* Aggiunge una transizione morbida per il colore */
     margin-left: 120px;
     margin-right: 30px;
+    color: #333; /* Colore predefinito del testo */
 }
 
-.tab:hover {
-    background-color: #f0f0f0;
-}
-
+/* Stile per il tab attivo */
 .tab.active {
-    background-color: #5593C9;
-    color: #fff;
+    background-color: #5593C9; /* Mantiene lo sfondo bianco */
+    color: #fff; /* Cambia il colore del testo a celeste */
+    transition: color 0.3s ease; /* Aggiunge una transizione morbida per il colore */
 }
+
+/* Stile per il tab al passaggio del mouse */
+.tab:hover {
+    background-color: #e1e0e0; /* Sfondo leggermente grigio al passaggio del mouse */
+    color: #333; /* Mantiene il colore del testo durante l'hover */
+}
+
 
 .content-card {
     width: 70%;
