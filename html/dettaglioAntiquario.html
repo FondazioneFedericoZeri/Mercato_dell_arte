@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="../css/styles-dettaglioAntiquario.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Stalemate&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <script type="text/javascript" src="../script/dettaglioAntiquari.js"></script>
     <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
     <script src="https://cdn.amcharts.com/lib/5/hierarchy.js"></script>
@@ -38,29 +45,30 @@
 
     <!-- Contenuto principale della nuova pagina -->
     <main>
-
+    
     <section id="image-gallery">
-        <h2 class="gallery-title">ACCORSI</h2>
-        <div class="slider-container">
-            <div class="slider">
-                <div class="slide">
-                    <img src="../img/slider-antiquari/AC_img1.jpg" alt="Immagine 1">
-                    <div class="caption">Descrizione dell'immagine 1</div>
+        <div class="gallery-wrapper">
+            <h2 class="gallery-title">Accorsi</h2>
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide">
+                        <img src="../img/slider-antiquari/AC_img1.jpg" alt="Immagine 1">
+                        <div class="caption">Descrizione dell'immagine 1</div>
+                    </div>
+                    <div class="slide">
+                        <img src="../img/slider-antiquari/AC_img2.jpg" alt="Immagine 2">
+                        <div class="caption">Descrizione dell'immagine 2</div>
+                    </div>
+                    <div class="slide">
+                        <img src="../img/slider-antiquari/AC_img3.jpg" alt="Immagine 3">
+                        <div class="caption">Descrizione dell'immagine 3</div>
+                    </div>
                 </div>
-                <div class="slide">
-                    <img src="../img/slider-antiquari/AC_img2.jpg" alt="Immagine 2">
-                    <div class="caption">Descrizione dell'immagine 2</div>
-                </div>
-                <div class="slide">
-                    <img src="../img/slider-antiquari/AC_img3.jpg" alt="Immagine 3">
-                    <div class="caption">Descrizione dell'immagine 3</div>
-                </div>
-                <!-- Aggiungi altre immagini qui -->
+                <button class="prev" onclick="prevSlide()">&#10094;</button>
+                <button class="next" onclick="nextSlide()">&#10095;</button>
             </div>
-            <button class="prev" onclick="prevSlide()">&#10094;</button>
-            <button class="next" onclick="nextSlide()">&#10095;</button>
         </div>
-    </section>
+    </section> 
 
     <!-- 
     <section id="single-image-section">
@@ -71,6 +79,7 @@
         </div>
     </section> -->
 
+    <!-- 
     <section id="FZ" class="fade-in">
         <h2>
             <span class="highlight">CATALOGO</span> 
@@ -81,15 +90,13 @@
             <a href="#" class="btn">Clicca qui</a>
         </div>
         </div>
-    </section>
+    </section> -->
 
     <section id="interactive-section">
-            <h2 class="section-title">
-                <span class="highlight">CARTA</span> <span class="regular-text">D'IDENTITÀ</span>
-            </h2>
 
     <div class="dual-content-wrapper">
         <div class="tab-container">
+
             <ul class="tab-list">
                 <li class="tab active" data-content="Bio">Biografia</li>
                 <li class="tab" data-content="chartdiv">Albero familiare</li>
@@ -105,12 +112,14 @@
 
         <div class="content-card">
             <div id="Bio" class="content active-content">
-                <h3>Lorem Ipsum (1901-1976)</h3>
-                <p>Il fondatore della Galleria Giuseppe Sangiorgi (1850-1928) nacque a Massa Lombarda, in provincia di Ravenna, da una famiglia di origini modeste che non aveva legami con il mercato antiquario. Si trasferì a Roma solamente nel 1889, dopo avere avviato diverse attività commerciali di successo in varie città d’Italia, in particolare a Milano e Messina. Nell’Urbe, dopo essersi coinvolto in aste organizzate dall’esperta “Casa di vendite Corvisieri”, aprì nel 1892 la propria impresa, l’“Hotel des Ventes G. Sangiorgi”, al piano terra di Palazzo Borghese appena lasciato vuoto dal trasferimento dell’intera collezione nell’omonima villa fuori Porta Pinciana.<br><br>
-                    L’attività principale nei primi anni fu la vendita all’asta di intere collezioni o di singoli pezzi antichi acquistati sul mercato. Fu a partire dal 1894 che Sangiorgi iniziò un processo di riconversione della propria impresa che si riflette nel cambio di intestazione in “Galleria Sangiorgi-Roma Palazzo Borghese”.  Tale percorso di rinnovamento culminò nell’acquisto dell’edificio prospicente il Palazzo, nel quale vennero installati laboratori per una vasta produzione di opere ‘in stile’ e di alto artigianato a cui collaborarono artisti di livello, tra cui Patrizio Fracassi, Domenico Baccarini, Cipriano Efisio Oppo, Alberto Bianchi, Oreste Marozzi. La "Galleria dei bronzi e dei marmi-Negozio di arte antica e moderna", situata in via Ripetta 118, rimase aperta fino al 1924, anno in cui l’edificio venne ceduto alla facoltà di economia e quindi demolito.<br><br>Nell’ambito di queste nuova attività, Sangiorgi acquistò nel 1898 anche il reparto di riparazione degli arazzi e il laboratorio di ricami dell’Ospizio di San Michele.
-                    L’organizzazione delle aste rallentò nel secondo decennio del Novecento per cessare nel 1915. Per molte delle 121 vendite conosciute furono prodotti preziosi cataloghi, nella redazione dei quali vennero coinvolti esperti quali Ludwig Pollak, Adolfo Venturi, Frederick Mason Perkins e Arthur Sambon. 
-                    <br><br>Alla morte di Giuseppe, avvenuta nel 1928, la galleria situata a Palazzo Borghese fu gestita dal figlio Giorgio (1886-1975), noto studioso e collezionista di vetri e di tessuti antichi, e poi dal nipote Sergio (1925-2015), fino al 1970, anno della definitiva chiusura dell’attività.
-                    </p>
+                <p>
+                    Pietro Accorsi (1891-1982) fu uno degli antiquari torinesi più influenti del Novecento. Iniziò la sua attività in giovane età, aprendo nel 1912 una galleria in via Po 55. 
+                    Accorsi si inserì sulla scia della ricostruzione che coinvolse l’ex capitale sabauda nella seconda metà degli anni Ottanta, riscontrando un immediato successo. 
+                    Inizialmente trattò dipinti tardo medievali, che in quel momento storico riscuotevano grande favore, per poi dedicarsi, a partire dagli anni Venti del Novecento, alla promozione dell’arte piemontese della stagione tardobarocca e neoclassica. A svolgere un ruolo fondamentale nella carriera dell’antiquario fu Umberto II di Savoia (1904-1983), con il quale dal 1925 instaurò un felice sodalizio che gli garantì l’accesso alla più esclusiva clientela locale. <br> <br> 
+                    Pietro Accorsi non fu solo un antiquario ma anche un arredatore raffinato. All’interno del mondo antiquariale si distinse infatti per l’attenzione alla decorazione degli ambienti in cui esponeva le sue opere. Come dimostrano i documenti del suo archivio, un ruolo chiave nella sua attività era ricoperto infatti da un gruppo di artigiani locali che realizzavano mobili in stile che completavano e rendevano più gradevole l’allestimento. <br> <br> 
+                    Tra i clienti più importanti dell’antiquario, oltre ai maggiori rappresentanti dell’industria torinese, lombarda e a membri dell’aristocrazia italiana ed europea, vi fu Donna Isabelle Sursock Colonna (1889-1984), per la quale l’antiquario arredò l’appartamento di Palazzo Colonna a Roma. 
+                    Nel corso del tempo Accorsi accumulò una notevole collezione personale, trasformando Villa Paola, la propria residenza di campagna, nella più raffinata testimonianza del suo gusto. Tale raccolta è poi confluita nella Fondazione Accorsi-Ometto, istituita nel 1975 e situata negli spazi della “Galleria Accorsi” di via Po, sede del Museo di Arti Decorative. L’istituzione, oltre ad ospitare la collezione dell’antiquario, accoglie anche parte degli oggetti raccolti da Giulio Ometto (1942-2019), stretto collaboratore di Accorsi negli ultimi anni di vita. 
+                </p>
             </div>
             <div id="chartdiv" class="content">
                 <h3>L'entità Lorem Ipsum è così composta:</h3>

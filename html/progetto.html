@@ -5,9 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Progetto</title>
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="../css/styles-progetto.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
     <script src="https://cdn.amcharts.com/lib/5/wc.js"></script>
     <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
@@ -43,13 +47,63 @@
            <!-- <h2 class="section-title">Introduzione</h2> -->
             <div class="columns-container">
                 <div class="column right-column">
-                    <p>Federico Zeri ha mantenuto per tutto il corso della sua carriera uno stretto legame con vari protagonisti del mercato dell’arte, tra cui antiquari, gallerie e case d’asta, fornendo loro la propria consulenza e expertise. Questi contatti sono testimoniati da nuclei di fotografie, presenti nella sua fototeca, realizzate per scopi commerciali o provenienti da archivi di soggetti attivi in questo settore a partire dalla seconda metà dell’Ottocento, come la Galleria Sangiorgi, Bellesi, Sestieri o Lazzaroni. <br> <br>
-                        A partire da queste testimonianze e avvalendosi dell’attività di ricerca portata avanti negli anni dalla Fondazione Zeri, l’Associazione Amici di Federico Zeri promuove quindi un’indagine capillare sul mondo del mercato dell’arte in Italia a cavallo tra XIX e XX secolo.
+                    <p> 
+                        <span class="quote-mark-left">“</span>
+                        <span class="typewriter-text">
+                            L’antiquario è come l’alchimista, un personaggio misterioso che tratta materia misteriosa e segreta per la comune parte degli uomini. Bisogna che sia in primo luogo amatore d’arte, poi commerciante...
+                        </span> 
+                        <span class="quote-mark-right">”</span> 
+                        <br> <br> <span class="parentheses"> L. Bellini, Nel mondo degli antiquari, 1947 </span>
                     </p>
                 </div>
-                <div id="chartdiv" class="column left-column"></div>
+
+                <div id="chartdiv" class="column left-column">
+                    <p>
+                        <span class="large-letter">F</span>ederico Zeri ha mantenuto per tutta la sua carriera uno stretto legame con vari protagonisti del mercato dell’arte, tra cui antiquari, gallerie e case d’asta, fornendo loro la propria consulenza e expertise. Questi contatti sono ampiamente testimoniati da fotografie, cataloghi e carte presenti nelle sue collezioni documentarie. Si tratta spesso di professionisti sui quali esiste una scarsa bibliografia e per i quali non è semplice reperire informazioni. <br><br>
+                        Su questi temi la Fondazione Zeri ha avviato negli ultimi anni un’intensa attività di ricerca. Nel 2023 una borsa di studio erogata dall’<a href="https://www.amicifedericozeri.org/" target="_blank">Associazione Amici di Federico Zeri</a> ha permesso a un giovane studioso, Marco Fossati, di avviare un’indagine più capillare sul mondo del mercato dell’arte in Italia a cavallo tra XIX e XX secolo. Parallelamente, il Dipartimento delle Arti dell’Università di Bologna ha promosso un <a href="https://fondazionezeri.unibo.it/it/formazione/borse-di-studio/il-mercato-antiquariale-a-milano/il-mercato-antiquariale-a-milano-tra-xix-e-xx-secolo" target="_blank">dottorato</a>, coordinato dalla Fondazione Zeri, volto ad approfondire l’attività degli antiquari Antonio (1857-1923) e Carlo Grandi (1842-1914) e di altri mercanti attivi nel contesto milanese.
+                    </p>
+
+                </div>
             </div>
         </section>
+
+        <section id="new-section">
+
+            <div class="new-section-container">
+                <div class="left-content">
+                    <!-- background image nel css -->
+                </div>
+
+                <div class="right-content">
+                    <h2 class="section-title"><span class="bold-text">Obiettivi</span> <span class="normal-text"> e metodologia di ricerca</span> </h2> 
+                    <p>
+                        L’obiettivo del progetto è quello di mettere a disposizione di specialisti e al pubblico generico informazioni dettagliate che possano gettar luce sull’attività dei protagonisti (antiquari, ma anche consulenti, restauratori, fotografi) e sulle dinamiche che hanno caratterizzato il mondo del mercato dell’arte in Italia dalla fine dell’Ottocento alla metà del secolo scorso, integrando i dati del database della Fondazione Zeri. <br> <br>
+                        La ricerca è partita dai nomi di mercanti più ricorrenti nelle iscrizioni sul retro delle fotografie e nei documenti allegati. Ha previsto una triplice modalità di raccolta dei dati:
+                    </p>
+                    <ul>
+                        <li>spoglio della bibliografia di riferimento e, in particolare, di alcuni periodici del settore (es: l’Antiquario, pubblicato tra il 1908 e il 1932;</li>
+                        <li>interviste dirette a collaboratori e eredi degli antiquari, grazie alla collaborazione degli Amici di Federico Zeri e dell’<a href="https://www.antiquariditalia.it/it" target="_blank">Associazione Antiquari d’Italia</a>;</li>
+                        <li>analisi dei cataloghi di vendita presenti nella Biblioteca Zeri;</li>
+                    </ul>
+                    <p>
+                        Le informazioni raccolte sono state sistematizzate con l’aiuto di un digital humanist, estraendo le entità più significative e studiando le relazioni che intercorrono tra i dati stessi. Tali relazioni sono alla base delle visualizzazioni proposte nel sito che mirano ad evidenziare evoluzione, traiettorie, rapporti che contraddistinguono il mercato nell’arco cronologico preso in considerazione. 
+                    </p>
+                    <h2 class="section-title"><span class="bold-text">Prospettive</span> <span class="normal-text"> e sviluppi</span> </h2>
+                    <p> La Fondazione intende portare avanti la ricerca avviata approfondendo e censendo nuove entità antiquariali e inserendo nel sito nuove forme di analisi e visualizzazione dei dati.
+                        Per contribuire al progetto, contattaci: <br> <br> fondazionezeri.fototeca@unibo.it | + 39 051 2097473
+                    </p>
+                </div>
+            </div>
+        </section>
+
+       <!--  <section id="contatti">
+             <div class="columns-container">
+                <h2 class="section-title"><span class="bold-text">Prospettive</span> <span class="normal-text"> e sviluppi</span> </h2>
+                <p> La Fondazione intende portare avanti la ricerca avviata approfondendo e censendo nuove entità antiquariali e inserendo nel sito nuove forme di analisi e visualizzazione dei dati.
+                    Per contribuire al progetto, contattaci: <br> <br> fondazionezeri.fototeca@unibo.it | + 39 051 2097473
+                </p>
+             </div>
+         </section> -->
 
     </main>
 

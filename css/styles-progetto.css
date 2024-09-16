@@ -66,16 +66,17 @@ nav ul li a:hover {
 
 /* contenuto 1*/
 #two-column-section {
-    padding: 10px; /* Padding attorno alla sezione */
+    padding-left: 30px; /* Padding attorno alla sezione */
+    padding-right: 30px;
+    padding-bottom: 0;
+    margin-bottom: 0;
     background-color: #fff; /* Colore di sfondo della sezione */
-    margin: 20px; /* Margine attorno alla sezione */
 }
 
 .section-title {
     font-size: 36px;
     font-weight: bold;
     color: #333;
-    text-align: left;
     margin-bottom: 20px; /* Spazio sotto il titolo */
     margin-left: 40px;
     margin-top: 10px;
@@ -84,28 +85,58 @@ nav ul li a:hover {
 .columns-container {
     display: flex;
     justify-content: space-between; /* Spazio tra le colonne */
-    gap: 40px; /* Spazio tra le colonne */
     flex-direction: row-reverse; /* Inverte l'ordine delle colonne */
+    margin-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 .column {
     flex: 1; /* Le colonne si dividono equamente lo spazio disponibile */
-    padding: 30px; /* Spazio interno di ciascuna colonna */
+    padding: 10px; /* Spazio interno di ciascuna colonna */
 }
 
 .column.right-column {
-    max-width: 30%; /* La colonna destra occupa il 50% dello spazio */
-    padding: 20px; /* Aggiunge spazio interno */
-    margin-left: 40px; /* Aggiunge margine sinistro */
-    margin-right: 60px; /* Aggiunge margine destro */
+    flex: 1; /* Permette alla colonna di destra di occupare lo spazio disponibile */
+    margin-left: 100px; /* Margine a sinistra per creare spazio */
+    margin-right: 0; /* Rimuove il margine a destra */
+    background-color: #5593C9;
+    display: flex;
+    justify-content: flex-start; /* Posiziona gli elementi all'inizio */
+    align-items: flex-start; /* Allinea verticalmente gli elementi all'inizio */
+    box-sizing: border-box; /* Include padding e border nella larghezza */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Aggiunge l'ombra */
+    margin-bottom: 0px;
 }
 
 
 .left-column {
-    max-width: 50%; /* La colonna sinistra occupa il 50% dello spazio */
-    margin-right: 30px;
-    margin-left: 10px;
+    max-width: 700px;; /* La colonna sinistra occupa il 50% dello spazio */
+    margin-right: 20px;
+    margin-left: 105px;
 }
+
+/* Ingrandire la "F" */
+.large-letter {
+    font-size: 56px; /* Dimensione molto più grande */
+    font-weight: bold; /* Grassetto */
+    line-height: 0.8; /* Regola l'altezza della linea per un migliore allineamento */
+    vertical-align:baseline; /* Assicura l'allineamento verticale */
+}
+
+/* Stile per i link all'interno di .left-column */
+.column.left-column a {
+    color: #5593C9; /* Colore del link di default */
+    text-decoration: none; /* Rimuove la sottolineatura di default */
+    transition: color 0.3s ease; /* Aggiunge una transizione morbida */
+    text-decoration: underline;
+}
+
+/* Stile per il link al passaggio del mouse */
+.column.left-column a:hover {
+    color: #f7a240; /* Cambia il colore in arancione al passaggio del mouse */
+}
+
 
 #chartdiv {
     width: 100%; /* Assicura che il grafico occupi tutto lo spazio disponibile nella colonna */
@@ -128,6 +159,168 @@ p {
     line-height: 1.5;
     color: #666;
 }
+
+
+.column.right-column p {
+    color: #fff;
+    margin-left: 60px;
+    margin-right: 80px;
+    font-size: 32px;
+    font-family: 'Playfair Display', serif;
+    line-height: 1.2;
+    margin-bottom:10px;
+    flex: 1;
+    font-style: italic;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.quote-mark-left {
+    font-size: 78px;
+    margin-right: 10px; /* Spazio a destra della virgolette sinistra */
+    vertical-align:baseline;
+}
+
+
+/* Stile per la virgolette a destra */
+.quote-mark-right {
+    font-size: 78px;
+    margin-left: 10px; /* Spazio a sinistra della virgolette destra */
+    margin-bottom: 1px;
+    vertical-align:-webkit-baseline-middle;
+}
+
+.column.right-column .parentheses {
+    font-size: 20px;
+    font-style: italic;
+    margin-top: 1px;
+}
+
+/* Effetto fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.typewriter-text {
+    animation: fadeIn 2s ease-in-out; /* Applica l'animazione */
+}
+
+/* Stile per la sezione OBIETTIVI E METODOLOGIA */
+#new-section {
+    background-color: #f8f8f8;
+}
+
+.section-title {
+    font-size: 32px;
+    padding-top: 60px;
+    text-align: left;
+    margin-left: 0;
+}
+
+.bold-text {
+    font-weight: bold;
+    color: #5593C9;
+}
+
+.normal-text {
+    font-weight: normal;
+    /* Non in grassetto */
+    color: #000;
+    /* Colore nero */
+}
+
+.new-section-container {
+    display: flex;
+   /* justify-content: space-between;*/
+    align-items: flex-start; /* Allinea i contenuti all'inizio */
+}
+
+.left-content {
+    flex: 1; /* Occupa metà dello spazio disponibile */
+    max-width: 40%; /* Limita la larghezza */
+    background-image: url('../img/Placeholder-Progetto.PNG'); /* Imposta l'immagine di sfondo */
+    background-size: cover; /* Copre interamente il contenitore */
+    background-position: center; /* Centra l'immagine */
+    background-repeat: no-repeat; /* Non ripete l'immagine */
+    height: 1100px;
+}
+
+
+.right-content {
+    flex: 1; /* Occupa metà dello spazio disponibile */
+    max-width: 70%; /* Limita la larghezza */
+    padding-left: 20px; /* Aggiunge uno spazio tra il testo e l'immagine */
+    margin-left: 40px;
+}
+
+.right-content p {
+    text-align: left; /* Allinea il testo a sinistra */
+    margin-bottom: 10px;
+    margin-right: 100px;
+    font-size:18px;
+    text-align: justify;
+}
+
+/* Stile per i link all'interno di .right-content */
+.right-content a {
+    color: #5593C9; /* Colore di default del link */
+    text-decoration: none; /* Rimuove la sottolineatura di default */
+    transition: color 0.3s ease; /* Aggiunge una transizione morbida */
+    text-decoration: underline;
+}
+
+/* Stile per il link al passaggio del mouse */
+.right-content a:hover {
+    color: #f7a240; /* Cambia il colore in arancione al passaggio del mouse */
+}
+
+
+.right-content ul {
+    list-style-type: disc; /* Elenco puntato */
+    padding-left: 60px; /* Aggiunge spazio a sinistra per i punti */
+    margin-right: 100px;
+    font-size:18px;
+}
+
+.right-content li {
+    margin-bottom: 5px; /* Spazio tra gli elementi dell'elenco */
+}
+
+/* Stile per la sezione contatti */
+#contatti {
+    padding: 20px;
+}
+
+/* Contenitore che utilizza Flexbox per allineare il titolo e il testo */
+#contatti .columns-container {
+    display: flex; /* Utilizza Flexbox per posizionare gli elementi */
+    justify-content: space-between; /* Distribuisce gli elementi */
+    align-items: flex-start; /* Allinea verticalmente gli elementi all'inizio */
+}
+
+/* Stile per il paragrafo (ora a sinistra) */
+#contatti p {
+    flex: 1; /* Occupa lo spazio disponibile */
+    text-align: left; /* Allinea il testo a sinistra */
+    margin-right: 20px; /* Spazio tra il testo e il titolo */
+    order: 1; /* Posiziona il paragrafo per primo */
+    margin-right: 280px;
+    margin-bottom: 60px;
+}
+
+/* Stile per il titolo (ora a destra) */
+#contatti .section-title {
+    flex: 1; /* Occupa lo spazio disponibile */
+    text-align: left; /* Allinea il titolo a sinistra */
+    margin-left: 120px; /* Spazio tra il titolo e il testo */
+    order: 2; /* Posiziona il titolo per secondo */
+}
+
 
 
 /* footer */

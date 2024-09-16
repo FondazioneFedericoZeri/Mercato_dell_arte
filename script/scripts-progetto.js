@@ -1,4 +1,8 @@
-am5.ready(function() {
+
+
+
+//funzione per CLOUD WORLDS
+/*am5.ready(function() {
 
 
     // Create root element
@@ -47,3 +51,6 @@ am5.ready(function() {
     });
     
     }); // end am5.ready()
+
+    */
+
