@@ -96,17 +96,18 @@ nav ul li a:hover {
     padding: 10px; /* Spazio interno di ciascuna colonna */
 }
 
-.column.right-column {
-    flex: 1; /* Permette alla colonna di destra di occupare lo spazio disponibile */
-    margin-left: 100px; /* Margine a sinistra per creare spazio */
-    margin-right: 0; /* Rimuove il margine a destra */
-    background-color: #5593C9;
-    display: flex;
-    justify-content: flex-start; /* Posiziona gli elementi all'inizio */
-    align-items: flex-start; /* Allinea verticalmente gli elementi all'inizio */
-    box-sizing: border-box; /* Include padding e border nella larghezza */
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Aggiunge l'ombra */
-    margin-bottom: 0px;
+#two-column-section .right-column {
+    flex: 1;
+    background-color: #5593C9; /* Sfondo azzurro */
+    color: #fff; /* Colore del testo bianco */
+    font-style: italic; /* Citazione in corsivo */
+    padding: 20px; /* Spazio interno simile a quello di contatti */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Aggiunge un'ombra per coerenza con la sezione contatti */
+    margin-left: 100px; /* Spazio simile alla sezione contatti */
+    margin-right: -30px;
+    font-family: 'Playfair Display', serif; /* Mantiene lo stile del font */
+    font-size: 32px; /* Mantiene la dimensione del testo coerente */
+    line-height: 1.6; /* Migliora la leggibilità */
 }
 
 
@@ -243,11 +244,12 @@ p {
 .left-content {
     flex: 1; /* Occupa metà dello spazio disponibile */
     max-width: 40%; /* Limita la larghezza */
-    background-image: url('../img/Placeholder-Progetto.PNG'); /* Imposta l'immagine di sfondo */
+    background-image: url('../img/SezioneProgetto/antiquario.jpg'); /* Imposta l'immagine di sfondo */
     background-size: cover; /* Copre interamente il contenitore */
     background-position: center; /* Centra l'immagine */
     background-repeat: no-repeat; /* Non ripete l'immagine */
-    height: 1100px;
+    height: 800px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Aggiunge un'ombra */
 }
 
 
@@ -291,35 +293,86 @@ p {
     margin-bottom: 5px; /* Spazio tra gli elementi dell'elenco */
 }
 
-/* Stile per la sezione contatti */
-#contatti {
-    padding: 20px;
-}
+/* Sezione contatti simile alla sezione two-column-section */
 
-/* Contenitore che utilizza Flexbox per allineare il titolo e il testo */
 #contatti .columns-container {
-    display: flex; /* Utilizza Flexbox per posizionare gli elementi */
-    justify-content: space-between; /* Distribuisce gli elementi */
-    align-items: flex-start; /* Allinea verticalmente gli elementi all'inizio */
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
-/* Stile per il paragrafo (ora a sinistra) */
+#contatti .left-column {
+    flex: 1;
+    margin-left: 100px; /* Spazio tra la citazione e il testo */
+}
+
+#contatti .right-column {
+    flex: 1;
+    background-color: #5593C9; /* Mantieni la citazione senza sfondo */
+    color: #fff;
+    font-style: italic; /* Citazione in corsivo */
+}
+
+
+
+
+/* Stile per il testo all'interno delle colonne */
 #contatti p {
-    flex: 1; /* Occupa lo spazio disponibile */
-    text-align: left; /* Allinea il testo a sinistra */
-    margin-right: 20px; /* Spazio tra il testo e il titolo */
-    order: 1; /* Posiziona il paragrafo per primo */
-    margin-right: 280px;
-    margin-bottom: 60px;
+    font-size: 18px;
+    line-height: 1.6;
 }
 
-/* Stile per il titolo (ora a destra) */
-#contatti .section-title {
-    flex: 1; /* Occupa lo spazio disponibile */
-    text-align: left; /* Allinea il titolo a sinistra */
-    margin-left: 120px; /* Spazio tra il titolo e il testo */
-    order: 2; /* Posiziona il titolo per secondo */
+
+/* Stile per la citazione */
+#contatti .column.right-column p {
+    color: #fff;
+    margin-left: 80px;
+    margin-right: 80px;
+    font-size: 32px;
+    font-family: 'Playfair Display', serif;
+    margin-bottom:10px;
+    flex: 1;
+    font-style: italic;
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
+
+
+#contatti .quote-mark-right {
+    font-size: 78px;
+    vertical-align: top;
+    margin-bottom: 1px;
+    vertical-align:-webkit-baseline-middle;
+}
+
+#contatti .quote-mark-left {
+    font-size: 78px;
+    vertical-align: baseline;
+    margin-bottom: 1px;
+}
+
+
+
+#contatti .parentheses {
+    font-size: 20px;
+    font-style: italic;
+    margin-top: 10px;
+    display: block;
+}
+
+/* Stile per i link */
+#contatti a {
+    color: #333; /* Colore arancione per i link */
+    text-decoration: underline;
+}
+
+#contatti a:hover {
+    color: #f7a240; /* Cambia il colore del link su hover */
+}
+
 
 
 
