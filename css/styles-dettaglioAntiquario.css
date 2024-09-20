@@ -84,6 +84,9 @@ nav ul li a:hover {
     background-color: #5593C9;
     padding-bottom: 20px;
     padding-top: 20px;
+    position: relative;
+    height: 270px; /* Imposta l'altezza della fascia */
+    box-sizing: border-box;
 } 
 
 .gallery-title {
@@ -92,18 +95,21 @@ nav ul li a:hover {
     color: #fff;
     text-align: left;
     margin-bottom: 20px;
-    margin-left: 160px;
+    margin-left: 120px;
     white-space: nowrap;
+    flex-shrink: 0; /* Impedisce al titolo di restringersi */
 }
 
 .slider-container {
     flex: 1;
-    position: relative;
+    position: absolute; /* Mantiene la posizione dello slider fissa rispetto al genitore */
+    right: 120px; /* Allinea lo slider a destra */
     max-width: 400px;
-    margin-left: 420px;
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    top: 50%; /* Posiziona lo slider a metà del genitore */
+    transform: translateY(-50%); /* Centra verticalmente lo slider */
 }
 
 .slider {
@@ -200,32 +206,23 @@ nav ul li a:hover {
 }
 
 /* sezione singola immagine */
-#single-image-section {
-    padding: 40px 20px;
-    background-color: #f8f8f8;
-}
-
-.single-image-title {
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #333;
-    text-align: left;
-    margin-left: 120px;
-}
-
 .single-image-container {
-    position: relative;
-    max-width: 1000px;
-    max-height: 600px;
-    margin: auto;
+    flex: 1;
+    position: absolute; /* Mantiene la posizione fissa */
+    right: 120px; /* Allinea la singola immagine a destra */
+    max-width: 400px; /* Larghezza massima della singola immagine */
+    overflow: hidden;
+    border-radius: 10px; /* Bordi arrotondati */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Aggiunge un'ombra */
+    top: 20%; /* Posiziona l'immagine a metà del genitore */
+    transform: translateY(-15%); /* Centra verticalmente la singola immagine */
 }
 
 .single-image-container img {
-    width: 100%;
+    width: 100%; /* Rende l'immagine responsiva */
     height: auto;
+    border-radius: 10px; /* Mantiene i bordi arrotondati */
     display: block;
-    border-radius: 8px;
 }
 
 .overlay-caption {
@@ -240,8 +237,8 @@ nav ul li a:hover {
     text-align: center;
     width: 100%;
     box-sizing: border-box;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
 }
@@ -249,6 +246,8 @@ nav ul li a:hover {
 .single-image-container:hover .overlay-caption {
     opacity: 1;
 }
+
+
 
 /*sezione tab Fondazione Zeri*/
 
@@ -372,6 +371,7 @@ nav ul li a:hover {
     gap: 20px;
     /* Spazio tra le due colonne */
     margin-top: 20px;
+    padding-bottom: 40px;
 }
 
 .tab-container {
@@ -420,7 +420,7 @@ nav ul li a:hover {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin-right: 120px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     margin-left: 20px;
 }
 

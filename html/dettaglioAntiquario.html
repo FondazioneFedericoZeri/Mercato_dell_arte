@@ -46,9 +46,12 @@
     <!-- Contenuto principale della nuova pagina -->
     <main>
     
+     
     <section id="image-gallery">
         <div class="gallery-wrapper">
-            <h2 class="gallery-title">Accorsi</h2>
+            <h2 class="gallery-title">Antonacci-Efrati</h2>
+
+            <!--
             <div class="slider-container">
                 <div class="slider">
                     <div class="slide">
@@ -66,18 +69,18 @@
                 </div>
                 <button class="prev" onclick="prevSlide()">&#10094;</button>
                 <button class="next" onclick="nextSlide()">&#10095;</button>
+                -->
             </div>
-        </div>
-    </section> 
+            
 
-    <!-- 
-    <section id="single-image-section">
-        <h2 class="single-image-title">Nome antiquario</h2>
         <div class="single-image-container">
             <img src="../img/slider-antiquari/AL_img1.jpg" alt="Descrizione dell'immagine">
             <div class="caption overlay-caption">Questa è la didascalia dell'immagine</div>
+        </div> 
+
         </div>
-    </section> -->
+    </section>  
+
 
     <!-- 
     <section id="FZ" class="fade-in">
@@ -98,14 +101,13 @@
         <div class="tab-container">
 
             <ul class="tab-list">
-                <li class="tab active" data-content="Bio">Biografia</li>
+                <li class="tab active" data-content="Bio">Dati Biografici</li>
                 <li class="tab" data-content="chartdiv">Albero familiare</li>
-                <li class="tab" data-content="Localizzazioni">Mappa dei luoghi</li>
-                <li class="tab" data-content="Collaboratori">Collaboratori</li>
-                <li class="tab" data-content="Clienti">Clienti</li>
+                <li class="tab" data-content="Localizzazioni">Luoghi</li>
+                <li class="tab" data-content="CollaboratoriClientiAltri">Relazioni</li>
                 <li class="tab" data-content="Eventi collegati">Eventi</li>
-                <li class="tab" data-content="Relazioni">Altri antiquari</li>
                 <li class="tab" data-content="Bibliografia">Bibliografia</li>
+                <li class="tab" data-content="LinkZeri">Opere trattate</li>
                 <!-- Aggiungi altri tab se necessario -->
             </ul>
         </div>
@@ -122,14 +124,14 @@
                 </p>
             </div>
             <div id="chartdiv" class="content">
-                <h3>L'entità Lorem Ipsum è così composta:</h3>
+                <h3>Relazioni familiari</h3>
             </div>
 
             <div id="Localizzazioni" class="content">
                 <h3>Geolocalizzazione dell'attività antiquariale:</h3>
                 <p>Mappa<br>Localizzazione territoriale</p>
             </div>
-            <div id="Collaboratori" class="content">
+            <div id="CollaboratoriClientiAltri" class="content">
                 <h3>Hanno collaborato con Lorem Ipsum :</h3>
                 <ul>
                     <li>Elemento 1</li>
@@ -138,26 +140,12 @@
                     <li>Elemento 4</li>
                   </ul>
             </div>
-            <div id="Clienti" class="content">
-                <h3> I principali clienti di Lorem Ipsum sono stati:</h3>
-                <ul>
-                    <li>Elemento 1</li>
-                    <li>Elemento 2</li>
-                    <li>Elemento 3</li>
-                    <li>Elemento 4</li>
-                  </ul>
-            </div>
+
             <div id="Eventi collegati" class="content">
                 <h3>Gli eventi signficativi dell'attività antiquariale:</h3>
                 <p>Questo è il contenuto della terza scheda.</p>
             </div>
-            <div id="Relazioni" class="content">
-                <h3>Lorem Ipsum, durante la sua attività, ha avuto relazioni con:</h3>
-                <ul>
-                    <li>Elemento 1</li>
-                    <li>Elemento 2</li>
-                  </ul>
-            </div>
+
             <div id="Bibliografia" class="content">
                 <h3>Bibliografia essenziale</h3>
                 <ul>
@@ -168,6 +156,11 @@
                     <li>Mambelli, F., Il più grande centro commerciale di oggetti d’arte: la Galleria Sangiorgi tra strategie di marketing e artigianato artistico, in Bacchi, Capitelli 2020, pp. 185-227.</li>
                   </ul>
             </div>
+
+            <div id="LinkZeri" class="content">
+                <a>https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=P.+ACCORSI</a>
+            </div>
+
             <!-- Aggiungi altri contenuti se necessario -->
         </div>
     </div>
@@ -183,7 +176,7 @@
             </div>
             <div class="footer-right">
                 <p>
-                    <a href="#">Crediti</a> | <a href="#">Documentazione</a>
+                    <a href="../html/crediti.html">Crediti</a> | <a href="https://github.com/FondazioneFedericoZeri/Mercato_dell_arte" target="_blank">Documentazione</a>
                 </p>
             </div>
         </div>
