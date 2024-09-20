@@ -272,7 +272,7 @@ function showNoDataMessage() {
   // Create the message div and append it
   var messageDiv = document.createElement('div');
   messageDiv.id = 'no-data-message';
-  messageDiv.style.color = 'red';
+  messageDiv.style.color = '#5593C9';
   messageDiv.innerHTML = 'Albero genealogico al momento non disponibile per questa entità.';
 
   var treeContainer = document.getElementById('albero-genealogico');
@@ -343,7 +343,7 @@ function initializeChart(rootNode) {
         cornerRadiusTR: 10,
         cornerRadiusBL: 10,
         cornerRadiusBR: 10,
-        fill: am5.color(0x6794dc)
+        fill: am5.color("#5593C9")
       }));
 
       var label = target.children.push(am5.Label.new(root, {
@@ -351,7 +351,7 @@ function initializeChart(rootNode) {
         centerX: am5.percent(50),
         centerY: am5.percent(50),
         textAlign: "center",
-        fill: am5.color(0x000000),
+        fill: am5.color("#ffffff"),
         fontSize: 12
       }));
     };
