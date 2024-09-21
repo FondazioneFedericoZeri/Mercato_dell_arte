@@ -214,11 +214,11 @@ def build_html(entity, entities):
                 with page.div(klass="dual-content-wrapper"):
                     with page.div(klass="tab-container"):
                         with page.ul(klass="tab-list"):
-                            page.li(_t="Biografia", klass="tab active",
+                            page.li(_t="Dati biografici", klass="tab active",
                                     data_content="Bio")
                             page.li(_t="Albero familiare", klass="tab",
                                     data_content="Persone")
-                            page.li(_t="Mappa dei luoghi", klass="tab",
+                            page.li(_t="Luoghi", klass="tab",
                                     data_content="Localizzazioni")
                             if len(entity["Collaboratori"]) > 0:
                                 page.li(_t="Collaboratori", klass="tab",
