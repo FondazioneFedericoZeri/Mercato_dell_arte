@@ -56,18 +56,18 @@
 
     <section id="search" class="fade-in">
         <h2><span class="normal-text">GLI</span> <span class="bold-text">ANTIQUARI</span></h2> 
-         <!--  <p>Trova l'antiquario che ti interessa<br>e scopri i contesti storici.</p> -->
         <p> Scopri i mercanti, le imprese e le gallerie e vedi i dettagli sulla loro attività. </p>
-        <input type="text" placeholder="Cerca per nome o per luogo">
-        <div class="search-buttons">
-            <!-- 
-            <a href="../Mercato_dell_arte/html/antiquari.html #Titolo" id="btn-luogo" class="btn">Cerca per luogo</a>
-            <a href="../Mercato_dell_arte/html/antiquari.html #Titolo" id="btn-cognome" class="btn">Cerca per cognome</a> 
-            -->
-            <a href="../Mercato_dell_arte/html/antiquari.html #intro-section" id="btn-cognome" class="btn">Vedi tutti</a> 
-
+    
+        <!-- Contenitore per la barra di ricerca e il pulsante -->
+        <div class="search-bar-container">
+            <input type="text" id="search-input" placeholder="Cerca per nome o per luogo" onkeyup="performSearch()">
+            <button id="search-button" class="btn">Cerca</button>
+            <a href="../Mercato_dell_arte/html/antiquari.html #Titolo" id="btn-cognome" class="btn">Vedi tutti</a>
         </div>
+        
+        <div id="search-results"></div>
     </section>
+    
 
     <section id="statistics">
         <div class="stat">
