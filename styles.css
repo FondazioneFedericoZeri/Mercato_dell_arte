@@ -205,10 +205,66 @@ nav ul li a:hover {
 
 #search {
     padding: 120px 60px 80px 60px;
-    /* Aumenta il padding superiore a 120px */
     background-color: #f8f8f8;
     min-height: 550px;
 }
+
+#search h2, #search p {
+    margin-bottom: 20px; /* Spazio tra il titolo, il paragrafo e la barra di ricerca */
+}
+
+.search-bar-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; /* Allinea verticalmente la barra di ricerca e il pulsante */
+    width: 100%; /* Imposta la larghezza del contenitore */
+}
+
+#search input {
+    padding: 12px 24px;
+    width: 70%; /* Occupa il 70% del contenitore */
+    max-width: 600px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 120%;
+    margin-left: 80px;
+}
+
+#search-button {
+    background-color: #333;
+    color: #fff;
+    padding: 12px 24px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 120%;
+    border: 1px solid #ccc;
+    border-left: none; /* Rimuove il bordo sinistro per attaccare alla barra di ricerca */
+    transition: background-color 0.3s ease;
+    margin-top: -3.5px;
+}
+
+#search-button:hover {
+    background-color: #5593C9;
+}
+
+#btn-cognome {
+    background-color: #333;
+    color: #fff;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 120%;
+    margin-left: 180px;
+    transition: background-color 0.3s ease;
+
+}
+
+#search .btn:hover {
+    background-color: #5593C9;
+}
+
 
 #search h2 {
     font-size: 36px;
@@ -228,54 +284,16 @@ nav ul li a:hover {
     max-width: 500px;
 }
 
-#search input {
-    padding: 12px;
-    width: 72%;
-    max-width: 600px;
-    margin-bottom: 60px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    text-align: left;
-    margin-left: 80px;
-    /* Allinea la barra di ricerca a sinistra */
-    display: inline-block;
-    /* Mantiene la barra di ricerca sulla stessa linea */
-    font-size: 120%;
-    /* Aumenta la dimensione del testo del 20% */
+#search-results {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
 }
 
-/* CARATTERISTICHE PER VECCHI PULSANTI
-.search-buttons {
-    display: inline-block;
-    float: right;
-    margin-right: 80px;
-} */
-
-.search-buttons {
-    display: inline-block;
-    float: right;
-    margin-right: 450px;
-    margin-top: 10px;
-} 
-
-.search-buttons a {
-    padding: 12px 24px;
-    margin: 0 10px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: 500;
-    transition: background-color 0.3s ease;
-    font-size: 120%;
-    /* Aumenta la dimensione del testo del 20% */
+#search-results div {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
 }
-
-.search-buttons button:hover {
-    background-color: #5593C9;
-}
-
 
 /* inizio della sezione successiva */
 
