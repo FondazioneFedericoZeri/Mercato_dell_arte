@@ -69,20 +69,21 @@ nav ul li a:hover {
 /* Stile per la sezione Timeline Scorrevole */
 .scrollable-timeline {
     background-color: #fff;
-    padding: 50px 0;
     text-align: center;
 }
 
 /* Titolo della sezione */
 .section-title {
     font-size: 32px;
-    font-weight: bold;
+    font-weight: normal;
     color: #333;
     margin-bottom: 30px;
     text-align: left;
     margin-left: 120px;
     margin-bottom: 80px;
+    padding-top: 20px;
 }
+
 
 
 /* Contenitore della timeline */
@@ -92,7 +93,7 @@ nav ul li a:hover {
     position: relative;
     width: 80%;
     margin: 0 auto;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -129,7 +130,7 @@ nav ul li a:hover {
     /*background-color: #e0e0e0;*/
     border-radius: 10px;
     padding: 20px 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);*/
     display: inline-block;
     white-space: nowrap;
     overflow-x: hidden;
@@ -216,44 +217,145 @@ nav ul li a:hover {
 }
 
 /* Punto che indica un evento */
-/* Punto che indica un evento */
 .event-point {
     display: inline-block;
     width: 20px;  /* Larghezza del cerchio */
     height: 20px; /* Altezza del cerchio */
     border-radius: 50%; /* Trasforma il quadrato in cerchio */
-    position: absolute; /* Posizionamento assoluto */
     top: -25px; /* Posiziona il punto sotto la linea */
-    left: 50%;
-    transform: translateX(-50%); /* Allinea il punto al centro */
+    border: 1px solid #333; /* Bordo nero di 2px */
+    position: absolute;
+    cursor: pointer;
+    background-color: #ccc; /* Colore base */
+}
+
+
+/* Disposizione orizzontale del primo punto evento */
+.event-point:nth-of-type(1) {
+    left: 35%; /* Sposta il primo punto leggermente a sinistra rispetto al centro */
+    transform: translateX(-50%);
+}
+
+/* Disposizione orizzontale del secondo punto evento */
+.event-point:nth-of-type(2) {
+    left: 65%; /* Sposta il secondo punto leggermente a destra rispetto al centro */
+    transform: translateX(-50%);
 }
 
 /* Colori per le categorie */
-.category-1 {
+.event-point.category-1.active  {
     background-color: #5593C9; /* Colore per la categoria 1 */
-    left: 45%;  /* Sposta il punto a sinistra rispetto al centro */
 }
 
-.category-2 {
+.event-point.category-2.active  {
     background-color: #358d35; /* Colore per la categoria 2 */
 }
 
-.category-3 {
+.event-point.category-3.active {
     background-color: #d8cf1b; /* Colore per la categoria 3 */
 }
 
-.category-4 {
+.event-point.category-4.active {
     background-color: #f09400; /* Colore per la categoria 4 */
-    left: 85%;  /* Sposta il punto a destra rispetto al centro */
 }
 
-.category-5 {
+.event-point.category-5.active  {
     background-color: #783788; /* Colore per la categoria 5 */
 }
 
-.category-6 {
+.event-point.category-6.active {
     background-color: #398a83; /* Colore per la categoria 6 */
 }
+
+/*card*/
+/* Contenitore del carosello */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.carousel-wrapper {
+    display: flex;
+    transition: transform 0.5s ease;
+    padding-left: 0; /* Rimuovi il padding */
+    margin-left: calc(850vw - 200px); /* Centra la prima card: 50% della finestra meno metà della larghezza della card */
+    padding-right: 50px; /* Mantieni il margine destro per l'ultima card */
+    box-sizing: content-box;
+}
+
+
+/* Card del carosello */
+.carousel-card {
+    width: 400px;
+    height: 250px;
+    margin: 0 20px; /* Aggiungi un margine tra le card per separarle meglio */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+    opacity: 0.3; /* Le card non attive sono meno opache */
+}
+
+.carousel-card.active {
+    opacity: 1;
+    border: 1px solid #333; /* Card attiva più evidenziata */
+    transform: scale(1.05); /* Aumenta leggermente la dimensione della card attiva */
+}
+
+
+
+/* Stile del titolo della card */
+.card-title {
+    background-color: #333; /* Colore per la categoria attiva (cambierà in base alla categoria) */
+    padding: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px 10px 0 0;
+    text-align: left;
+}
+
+/* Stile del contenuto della card */
+.card-content {
+    padding: 20px;
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+    font-size: 12px;
+    color: #333;
+    text-align: left;
+}
+
+/* Stili per le categorie */
+
+.carousel-card.category-1.active .card-title {
+    background-color: #5593C9; /* Colore per la categoria 1 */
+}
+
+.carousel-card.category-2.active .card-title {
+    background-color: #358d35; /* Colore per la categoria 2 */
+}
+
+.carousel-card.category-3.active .card-title {
+    background-color: #d8cf1b; /* Colore per la categoria 3 */
+}
+
+.carousel-card.category-4.active .card-title {
+    background-color: #f09400; /* Colore per la categoria 4 */
+}
+.carousel-card.category-5.active .card-title {
+    background-color:#783788; /* Colore per la categoria 5 */
+}
+
+.carousel-card.category-6.active .card-title {
+    background-color: #398a83; /* Colore per la categoria 6 */
+}
+
 
 
 /* footer */
