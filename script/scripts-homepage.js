@@ -1,8 +1,10 @@
 // INIZIO SCRIPTS JAVASCRIPT
 
+
 $.ajaxSetup({
-  async: false
+  async: true // Assicura che tutte le richieste siano asincrone (impostazione predefinita)
 });
+
 
 // $.getJSON("https://raw.githubusercontent.com/FondazioneFedericoZeri/Mercato_dell_arte/main/json/luoghi.json", function (json) {
 //   luoghi_json = json;
@@ -26,56 +28,6 @@ document.addEventListener("DOMContentLoaded", function () {
   // Controlla la visibilità al caricamento della pagina
   checkVisibility();
 });
-
-//barra ricerca
-   // Funzione per caricare il file TSV e convertirlo in un array di oggetti
-async function loadTSVFile() {
-  const response = await fetch('../data/entità.tsv'); // Assicurati che il percorso del file TSV sia corretto
-  const data = await response.text();
-  const rows = data.split('\n');
-  const headers = rows[0].split('\t'); // La prima riga contiene gli header
-  const entries = rows.slice(1).map(row => {
-      const values = row.split('\t');
-      const entry = {};
-      headers.forEach((header, index) => {
-          entry[header.trim()] = values[index].trim();
-      });
-      return entry;
-  });
-  return entries;
-}
-
-// Funzione per cercare il nome o il luogo
-async function performSearch() {
-  const query = document.getElementById('search-input').value.toLowerCase();
-  const entries = await loadTSVFile();
-  const results = entries.filter(entry => 
-      entry.nome.toLowerCase().includes(query) || 
-      entry.luogo.toLowerCase().includes(query)
-  );
-  displayResults(results);
-}
-
-// Funzione per visualizzare i risultati
-function displayResults(results) {
-  const resultsContainer = document.getElementById('search-results');
-  resultsContainer.innerHTML = ''; // Pulisce i risultati precedenti
-
-  if (results.length === 0) {
-      resultsContainer.innerHTML = '<p>Nessun risultato trovato.</p>';
-      return;
-  }
-
-  results.forEach(result => {
-      const resultItem = document.createElement('div');
-      resultItem.innerHTML = `<strong>Nome:</strong> ${result.nome} <br> <strong>Luogo:</strong> ${result.luogo}`;
-      resultsContainer.appendChild(resultItem);
-  });
-}
-
-// Aggiunge un listener per il pulsante "Search"
-document.getElementById('search-button').addEventListener('click', performSearch);
-
 
 
 

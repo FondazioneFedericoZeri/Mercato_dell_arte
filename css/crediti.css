@@ -68,7 +68,7 @@ nav ul li a:hover {
 
 /* Stile per la sezione Timeline Scorrevole */
 .scrollable-timeline {
-    background-color: #f8f9fa;
+    background-color: #fff;
     padding: 50px 0;
     text-align: center;
 }
@@ -100,7 +100,7 @@ nav ul li a:hover {
 
 /* Pulsanti di navigazione tondi */
 .nav-button {
-    background-color: #ff3d7f;
+    background-color: #333;
     color: white;
     border: none;
     width: 40px;
@@ -117,7 +117,7 @@ nav ul li a:hover {
 }
 
 .nav-button:hover {
-    background-color: #e02d6f;
+    background-color: #737373;
 }
 
 .nav-button:focus {
@@ -126,10 +126,10 @@ nav ul li a:hover {
 
 /* Sfondo grigio chiaro solo per la timeline */
 .timeline {
-    background-color: #e0e0e0;
+    /*background-color: #e0e0e0;*/
     border-radius: 10px;
     padding: 20px 0;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: inline-block;
     white-space: nowrap;
     overflow-x: hidden;
@@ -157,18 +157,18 @@ nav ul li a:hover {
     left: 0;
     right: 0;
     height: 3px;
-    background-color: #000;
+    background-color: #333;
     z-index: 0;
-    width: 2000px;
+    width: 9000px;
 }
 
 /* Stile per i piccoli separatori */
 .timeline ul li.small {
     position: relative;
     display: inline-block;
-    font-size: 1.2rem;
+    font-size: 18px;
     margin-right: 50px; /* Spaziatura tra le righe */
-    color: #000;
+    color: #9b9b9b;
     margin-top: -21px;
     margin-bottom: 10px;
 }
@@ -182,8 +182,16 @@ nav ul li a:hover {
     transform: translateX(-50%);
     width: 1px;
     height: 20px;
-    background-color: #000;
+    background-color: #9b9b9b;;
 }
+
+/* Stile per gli elementi .soloLinea */
+.soloLinea {
+    display: block; /* Assicura che lo span sia trattato come un blocco */
+    margin-top: 25px; /* Imposta il margine superiore desiderato */
+}
+
+
 
 /* Stile per i grandi separatori (decine) */
 .timeline ul li.big {
@@ -191,7 +199,8 @@ nav ul li a:hover {
     display: inline-block;
     font-size: 2rem;
     margin-right: 50px; /* Spaziatura tra le righe */
-    color: #ff3d7f;
+    color: #333;
+ 
 }
 
 /* Linea più grande per i separatori delle decine */
@@ -202,10 +211,49 @@ nav ul li a:hover {
     left: 50%;
     transform: translateX(-50%);
     width: 2px;
-    height: 40px;
-    background-color: #ff3d7f;
+    height: 30px;
+    background-color: #333;
 }
 
+/* Punto che indica un evento */
+/* Punto che indica un evento */
+.event-point {
+    display: inline-block;
+    width: 20px;  /* Larghezza del cerchio */
+    height: 20px; /* Altezza del cerchio */
+    border-radius: 50%; /* Trasforma il quadrato in cerchio */
+    position: absolute; /* Posizionamento assoluto */
+    top: -25px; /* Posiziona il punto sotto la linea */
+    left: 50%;
+    transform: translateX(-50%); /* Allinea il punto al centro */
+}
+
+/* Colori per le categorie */
+.category-1 {
+    background-color: #5593C9; /* Colore per la categoria 1 */
+    left: 45%;  /* Sposta il punto a sinistra rispetto al centro */
+}
+
+.category-2 {
+    background-color: #358d35; /* Colore per la categoria 2 */
+}
+
+.category-3 {
+    background-color: #d8cf1b; /* Colore per la categoria 3 */
+}
+
+.category-4 {
+    background-color: #f09400; /* Colore per la categoria 4 */
+    left: 85%;  /* Sposta il punto a destra rispetto al centro */
+}
+
+.category-5 {
+    background-color: #783788; /* Colore per la categoria 5 */
+}
+
+.category-6 {
+    background-color: #398a83; /* Colore per la categoria 6 */
+}
 
 
 /* footer */
