@@ -1,0 +1,249 @@
+/* Basic Reset */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Assicura che il corpo occupi almeno l'altezza della finestra */
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+main {
+    flex: 1; /* Fa sì che il main prenda tutto lo spazio disponibile */
+}
+
+/* header e menù */
+
+header {
+    background-color: #f8f8f8;
+    padding: 15px;
+    position: sticky; /* Rende il menu sticky */
+    top: 0; /* Posiziona il menu all'inizio della pagina */
+    z-index: 1000; /* Assicura che il menu si sovrapponga agli altri contenuti */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Aggiunge un'ombra per differenziarlo dal contenuto */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Aggiunge l'ombreggiatura */
+    border-radius: 8px; /* Opzionale: arrotonda gli angoli */
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    max-height: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin-right: 20px;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background-color: #5593C9;
+    color: #fff;
+    border-radius: 5px;
+}
+
+
+
+/* Stile per la sezione Timeline Scorrevole */
+.scrollable-timeline {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+    text-align: center;
+}
+
+/* Titolo della sezione */
+.section-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: left;
+    margin-left: 120px;
+    margin-bottom: 80px;
+}
+
+
+/* Contenitore della timeline */
+.timeline-container {
+    overflow-x: hidden; /* Nascondi la barra di scorrimento */
+    white-space: nowrap;
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Pulsanti di navigazione tondi */
+.nav-button {
+    background-color: #ff3d7f;
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    border-radius: 50%; /* Rende i pulsanti tondi */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: -65px;
+}
+
+.nav-button:hover {
+    background-color: #e02d6f;
+}
+
+.nav-button:focus {
+    outline: none;
+}
+
+/* Sfondo grigio chiaro solo per la timeline */
+.timeline {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    padding: 20px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    white-space: nowrap;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    width: 100%;
+}
+
+/* Estendi la timeline fino alla fine */
+.timeline ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    align-items: center;
+    width: 100%; /* Assicurati che la timeline copra l'intera larghezza */
+    margin-top: 20px;
+}
+
+/* Linea orizzontale */
+.timeline ul::before {
+    content: '';
+    position: absolute;
+    top: -21px; /* Posiziona la linea orizzontale sopra le righe verticali */
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: #000;
+    z-index: 0;
+    width: 2000px;
+}
+
+/* Stile per i piccoli separatori */
+.timeline ul li.small {
+    position: relative;
+    display: inline-block;
+    font-size: 1.2rem;
+    margin-right: 50px; /* Spaziatura tra le righe */
+    color: #000;
+    margin-top: -21px;
+    margin-bottom: 10px;
+}
+
+/* Linea per i piccoli separatori */
+.timeline ul li.small::before {
+    content: '';
+    position: absolute;
+    top: -15px; /* Posiziona sopra la linea orizzontale */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1px;
+    height: 20px;
+    background-color: #000;
+}
+
+/* Stile per i grandi separatori (decine) */
+.timeline ul li.big {
+    position: relative;
+    display: inline-block;
+    font-size: 2rem;
+    margin-right: 50px; /* Spaziatura tra le righe */
+    color: #ff3d7f;
+}
+
+/* Linea più grande per i separatori delle decine */
+.timeline ul li.big::before {
+    content: '';
+    position: absolute;
+    top: -20px; /* Posiziona sopra la linea orizzontale */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 40px;
+    background-color: #ff3d7f;
+}
+
+
+
+/* footer */
+footer {
+    padding: 5px 40px;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-top: auto;
+    z-index: 1000;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer img {
+    vertical-align: middle;
+    margin-left: 5px;
+    max-height: 30px;
+}
+
+.footer-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left {
+    text-align: left;
+}
+
+.footer-right {
+    text-align: right;
+}
