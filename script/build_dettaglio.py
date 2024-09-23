@@ -311,10 +311,11 @@ def build_html(entity, entities):
                             id="license.png", src="../../img/homepage/license.png", alt="License")
                     with page.div(klass="footer-right"):
                         with page.p():
-                            with page.a(href="#"):
+                            with page.a(href="../../html/crediti.html"):
                                 page("Crediti")
                             page("|")
-                            with page.a(href="#"):
+                            with page.a(href="https://github.com/FondazioneFedericoZeri/Mercato_dell_arte",
+                                        target="_blank"):
                                 page("Documentazione")
 
 
