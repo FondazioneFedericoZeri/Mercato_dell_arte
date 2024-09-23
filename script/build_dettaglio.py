@@ -159,65 +159,38 @@ def build_html(entity, entities):
 # </section>
                 with page.section(id="image-gallery"):
                     with page.div(klass="gallery-wrapper"):
-                        page.h2(klass="gallery-title", _t="NOME")
+                        page.h2(klass="gallery-title", _t=entity["Nome"])
 
-                    if len(imgs) == 0:
-                        with page.div(klass="single-image-container"):
-                            desc = entity['Nome']
-                            page.img(src=f"../../img/antiquari-preview/{entity['Foto preview']}.jpg", alt=f"{desc}")
-                            page.div(_t=f"{desc}", klass="caption overlay-caption")
+                        if len(imgs) == 1:
+                            with page.div(id="single-image-container"):
+                                desc = entity['Nome']
+                                img = f"{imgs[0]}.jpg"
 
-                    elif len(imgs) == 1:
-                        with page.div(id="single-image-container"):
-                            desc = entity['Nome']
-                            img = f"{imgs[0]}.jpg"
+                                if img in images_description:
+                                    desc = images_description[img]["Didascalia"]
 
-                            if img in images_description:
-                                desc = images_description[img]["Didascalia"]
+                                page.img(
+                                    src=f"../../img/slider-antiquari/{img}", alt=f"{desc}")
+                                page.div(_t=f"{desc}",
+                                            klass="caption overlay-caption")
 
-                            page.img(
-                                src=f"../../img/slider-antiquari/{img}", alt=f"{desc}")
-                            page.div(_t=f"{desc}",
-                                        klass="caption overlay-caption")
+                        elif len(imgs) > 1:
+                            with page.div(klass="slider-container"):
+                                with page.div(klass="slider"):
+                                    for img in imgs:
+                                        img = f"{img}.jpg"
+                                        desc = {entity['Nome']}
+                                        if img in images_description:
+                                            desc = images_description[img]["Didascalia"]
 
-                    else:
-    # HTML SLIDER
-    #             <div class="slider-container">
-    #                 <div class="slider">
-    #                     <div class="slide">
-    #                         <img src="../img/slider-antiquari/AC_img1.jpg" alt="Immagine 1">
-    #                         <div class="caption">Descrizione dell'immagine 1</div>
-    #                     </div>
-    #                     <div class="slide">
-    #                         <img src="../img/slider-antiquari/AC_img2.jpg" alt="Immagine 2">
-    #                         <div class="caption">Descrizione dell'immagine 2</div>
-    #                     </div>
-    #                     <div class="slide">
-    #                         <img src="../img/slider-antiquari/AC_img3.jpg" alt="Immagine 3">
-    #                         <div class="caption">Descrizione dell'immagine 3</div>
-    #                     </div>
-    #                 </div>
-    #                 <button class="prev" onclick="prevSlide()">&#10094;</button>
-    #                 <button class="next" onclick="nextSlide()">&#10095;</button>
-
-    #             </div>
-
-                        with page.div(klass="slider-container"):
-                            with page.div(klass="slider"):
-                                for img in imgs:
-                                    img = f"{img}.jpg"
-                                    desc = {entity['Nome']}
-                                    if img in images_description:
-                                        desc = images_description[img]["Didascalia"]
-
-                                    with page.div(klass="slide"):
-                                        page.img(
-                                            src=f"../../img/slider-antiquari/{img}", alt=f"{desc}")
-                                        page.div(_t=f"{desc}", klass="caption")
-                            page.button("&#10094;", klass="prev",
-                                        onclick="prevSlide()")
-                            page.button("&#10095;", klass="next",
-                                        onclick="nextSlide()")
+                                        with page.div(klass="slide"):
+                                            page.img(
+                                                src=f"../../img/slider-antiquari/{img}", alt=f"{desc}")
+                                            page.div(_t=f"{desc}", klass="caption")
+                                page.button("&#10094;", klass="prev",
+                                            onclick="prevSlide()", _t = "<")
+                                page.button("&#10095;", klass="next",
+                                            onclick="nextSlide()", _t = "<")
 
            # with page.section(id="FZ", klass="fade-in"):
                 #with page.h2():
@@ -261,8 +234,8 @@ def build_html(entity, entities):
                     with page.div(klass="content-card"):
                         with page.div(id="Bio", klass="content active-content"):
                             content = getText(f"../bio/{entity['Bio']}.docx")
-                            page.h3(_t=f"{content[0]}")
-                            for paragraph in content[1:]:
+                            # page.h3(_t=f"{content[0]}")
+                            for paragraph in content:
                                 page.p(_t=paragraph)
 
                         with page.div(id="Persone", klass="content"):
