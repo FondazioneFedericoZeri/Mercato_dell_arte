@@ -108,8 +108,7 @@ nav ul li a:hover {
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    top: 50%; /* Posiziona lo slider a metà del genitore */
-    transform: translateY(-50%); /* Centra verticalmente lo slider */
+    top:5%;
 }
 
 .slider {
@@ -206,24 +205,26 @@ nav ul li a:hover {
 }
 
 /* sezione singola immagine */
-.single-image-container {
-    flex: 1;
-    position: absolute; /* Mantiene la posizione fissa */
-    right: 120px; /* Allinea la singola immagine a destra */
-    max-width: 400px; /* Larghezza massima della singola immagine */
-    overflow: hidden;
-    border-radius: 10px; /* Bordi arrotondati */
+#single-image-container {
+    position: absolute; /* Mantiene il posizionamento assoluto */
+    right: 120px; /* Allinea l'immagine a destra */
+    top: 50%; /* Posiziona l'immagine al centro verticale */
+    transform: translateY(-50%); /* Centra verticalmente l'immagine */
+    width: 400px; /* Imposta la larghezza dell'immagine */
+    max-width: 100%; /* Mantiene la responsività */
+    height: auto; /* Mantiene le proporzioni */
+    border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Aggiunge un'ombra */
-    top: 20%; /* Posiziona l'immagine a metà del genitore */
-    transform: translateY(-15%); /* Centra verticalmente la singola immagine */
+    z-index: 100; /* Porta l'immagine sopra altri elementi */
 }
 
-.single-image-container img {
-    width: 100%; /* Rende l'immagine responsiva */
-    height: auto;
-    border-radius: 10px; /* Mantiene i bordi arrotondati */
+#single-image-container img {
+    width: 100%; /* Mantiene la larghezza al 100% del contenitore */
+    height: auto; /* Mantiene le proporzioni */
     display: block;
+    border-radius: 10px; /* Arrotonda i bordi */
 }
+
 
 .overlay-caption {
     position: absolute;
