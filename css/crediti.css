@@ -283,7 +283,7 @@ nav ul li a:hover {
     display: flex;
     transition: transform 0.5s ease;
     padding-left: 0; /* Rimuovi il padding */
-    margin-left: calc(850vw - 200px); /* Centra la prima card: 50% della finestra meno metà della larghezza della card */
+    margin-left: calc(650vw - 200px); /* Centra la prima card: 50% della finestra meno metà della larghezza della card */
     padding-right: 50px; /* Mantieni il margine destro per l'ultima card */
     box-sizing: content-box;
 }

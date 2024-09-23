@@ -1,27 +1,19 @@
 {
     "AC_img1.jpg": {
         "ID": "AC_img1.jpg",
-        "Didascalia": "Pietro Accorsi"
-    },
-    "AC_img2.jpg": {
-        "ID": "AC_img2.jpg",
-        "Didascalia": "Interni di Villa Paola"
-    },
-    "AC_img3.jpg": {
-        "ID": "AC_img3.jpg",
-        "Didascalia": "Einaudi, Accorsi e Muccio presso la Galleria Accorsi, 5 novembre 1954"
+        "Didascalia": "Pietro Accorsi negli anni '70"
     },
     "AL_img1.jpg": {
         "ID": "AL_img1.jpg",
-        "Didascalia": "Luigi Albrighi e Bernard Berenson"
+        "Didascalia": "Luigi Albrighi e Bernard Berenson, 1955 (foto Mondadori Portfolio)"
     },
     "AN-EF_img1.jpg": {
         "ID": "AN-EF_img1.jpg",
-        "Didascalia": "Giuseppe Antonacci"
+        "Didascalia": "Giuseppe Antonacci (foto Antonacci La Piccirella)"
     },
     "AN-EF_img2.jpg": {
         "ID": "AN-EF_img2.jpg",
-        "Didascalia": "Galleria Antonacci-Efrati, Via del Babuino"
+        "Didascalia": "Galleria Antonacci-Efrati, via del Babuino 146"
     },
     "AP_img1.jpg": {
         "ID": "AP_img1.jpg",
@@ -29,31 +21,31 @@
     },
     "BA_I_img1.jpg": {
         "ID": "BA_I_img1.jpg",
-        "Didascalia": "Benvenuto Bacarelli"
+        "Didascalia": "Benvenuto Bacarelli con Sandro Pertini. Da \"Gazzetta Antiquaria\""
     },
     "BA_II_img1.jpg": {
         "ID": "BA_II_img1.jpg",
-        "Didascalia": "Stefano Bardini. Foto del fotografo livornese Bettini."
+        "Didascalia": "Stefano Bardini. Da \"L'Antiquario\", 1908"
     },
     "BA_II_img2.jpg": {
         "ID": "BA_II_img2.jpg",
-        "Didascalia": "Stefano Bardini. Illustrazione tratta dalla rivista \"L'Antiquario\" del 1908."
+        "Didascalia": "Stefano Bardini (foto Studio Bettini, 1880-1890)"
     },
     "BA_II_img3.jpg": {
         "ID": "BA_II_img3.jpg",
-        "Didascalia": "Lorem Ipsum"
+        "Didascalia": "Galleria Bardini, il salone"
     },
     "BA_III_img1.jpg": {
         "ID": "BA_III_img1.jpg",
-        "Didascalia": "Alfredo Barsanti. Foto tratta dalla rivista \"L'Antiquario\" del 1924"
+        "Didascalia": "Alfredo Barsanti. Da \"L'Antiquario\", 1924"
     },
     "BA_III_img2.jpg": {
         "ID": "BA_III_img2.jpg",
-        "Didascalia": "Bottega di Alfredo Barsanti. Via Sistina, 1906-1906"
+        "Didascalia": "Galleria di Alfredo Barsanti, via Sistina 48, 1906"
     },
     "BA_IV_img1.jpg": {
         "ID": "BA_IV_img1.jpg",
-        "Didascalia": "Giuseppe Baslini, 1870. Fotografia conservata nell'Archivio Poldi Pezzoli."
+        "Didascalia": "Giuseppe Baslini nel 1870 (foto Archivio Poldi Pezzoli)"
     },
     "BA_IV_img2.jpg": {
         "ID": "BA_IV_img2.jpg",
@@ -61,47 +53,47 @@
     },
     "BE_I_img1.jpg": {
         "ID": "BE_I_img1.jpg",
-        "Didascalia": "Luigi Bellini"
+        "Didascalia": "Luigi Bellini. Da \"L'Antiquario\", 1926"
     },
     "BE_I_img2.jpg": {
         "ID": "BE_I_img2.jpg",
-        "Didascalia": "Luigi Bellini. Illustrazione tratta dalla rivista \"L'Antiquario\" del 1926"
+        "Didascalia": "Galleria Bellini. Da \"L’Antiquario\", 1929"
     },
     "BE_I_img3.jpg": {
         "ID": "BE_I_img3.jpg",
-        "Didascalia": "Galleria Bellini, 1929"
+        "Didascalia": "Luigi Bellini. Da \"L'Antiquario\", 1926"
     },
     "BE_I_img4.jpg": {
         "ID": "BE_I_img4.jpg",
         "Didascalia": "Giuseppe e Mario Bellini alla Biennale del 1967"
     },
+    "BE_II_img1.jpg": {
+        "ID": "BE_II_img1.jpg",
+        "Didascalia": "Cartolina inviata da Giuseppe Bellesi a Mario Viezzoli, 1944"
+    },
     "BO_img1.jpg": {
         "ID": "BO_img1.jpg",
-        "Didascalia": "Ildebrando Bossi da Genova e il collezionismo del Novecento"
+        "Didascalia": "Ildebrando Bossi"
     },
     "BR_I_img1.jpg": {
         "ID": "BR_I_img1.jpg",
-        "Didascalia": "Ivan Bruschi, Fondazione Bruschi"
+        "Didascalia": "Ivan Bruschi (foro Fondazione Bruschi)"
     },
     "CA_II_img1.jpg": {
         "ID": "CA_II_img1.jpg",
         "Didascalia": "Autoritratto di Vincenzo Capobianchi"
     },
-    "CA_II_img2.jpg": {
-        "ID": "CA_II_img2.jpg",
-        "Didascalia": "Lorem Ipsum"
-    },
     "CI_img1.jpg": {
         "ID": "CI_img1.jpg",
-        "Didascalia": "Vincenzo Ciampolini"
+        "Didascalia": "Vincenzo Ciampolini. Da \"L'Antiquario\", 1932"
     },
     "CO_I_img1.jpg": {
         "ID": "CO_I_img1.jpg",
-        "Didascalia": "Alessandro Contini Bonacossi nel 1955"
+        "Didascalia": "Alessandro Contini Bonacossi, 1955"
     },
     "CO_I_img2.jpg": {
         "ID": "CO_I_img2.jpg",
-        "Didascalia": "Villa Vittoria, Firenze, secondo piano"
+        "Didascalia": "Villa Vittoria, Firenze"
     },
     "CO_I_img3.jpg": {
         "ID": "CO_I_img3.jpg",
@@ -109,11 +101,11 @@
     },
     "CO_II_img1.jpg": {
         "ID": "CO_II_img1.jpg",
-        "Didascalia": "Ritratto di Augusto Corvisieri"
+        "Didascalia": "Augusto Corvisieri. Dal catalogo Asta L'Antonina, 1936"
     },
     "CO_III_img1.jpg": {
         "ID": "CO_III_img1.jpg",
-        "Didascalia": "Emilio Costantini nel suo studio, da Cappellini 2022"
+        "Didascalia": "Emilio Costantini (foto Biblioteca Berenson, I Tatti)"
     },
     "CR_img1.jpg": {
         "ID": "CR_img1.jpg",
