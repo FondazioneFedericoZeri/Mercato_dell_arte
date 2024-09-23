@@ -42,21 +42,21 @@
     <main>
       <section id="image-gallery">
         <div class="gallery-wrapper">
-          <h2 class="gallery-title">NOME</h2>
-        </div>
-        <div class="slider-container">
-          <div class="slider">
-            <div class="slide">
-              <img src="../../img/slider-antiquari/GI_img1.jpg" alt="Ubaldo Giugni. Da &quot;L'Antiquario&quot;, 1928" />
-              <div class="caption">Ubaldo Giugni. Da "L'Antiquario", 1928</div>
+          <h2 class="gallery-title">Giugni</h2>
+          <div class="slider-container">
+            <div class="slider">
+              <div class="slide">
+                <img src="../../img/slider-antiquari/GI_img1.jpg" alt="Ubaldo Giugni. Da L'Antiquario&quot;, 1928&quot;" />
+                <div class="caption">Ubaldo Giugni. Da L'Antiquario", 1928"</div>
+              </div>
+              <div class="slide">
+                <img src="../../img/slider-antiquari/GI_img2.jpg" alt="Pubblicità Galleria Giugni, anni '50" />
+                <div class="caption">Pubblicità Galleria Giugni, anni '50</div>
+              </div>
             </div>
-            <div class="slide">
-              <img src="../../img/slider-antiquari/GI_img2.jpg" alt="Pubblicità Galleria Giugni, anni '50" />
-              <div class="caption">Pubblicità Galleria Giugni, anni '50</div>
-            </div>
+            <button &#10094; class="prev" onclick="prevSlide()"><</button>
+            <button &#10095; class="next" onclick="nextSlide()">></button>
           </div>
-          <button &#10094; class="prev" onclick="prevSlide()"></button>
-          <button &#10095; class="next" onclick="nextSlide()"></button>
         </div>
       </section>
       <div class="dual-content-wrapper">
@@ -71,9 +71,8 @@
         </div>
         <div class="content-card">
           <div id="Bio" class="content active-content">
-            <h3>Ubaldo Giugni fu un antiquario attivo a Firenze tra la fine degli anni Venti e i primi anni Sessanta del Novecento, titolare della “Galleria d’Arte”, specializzata in antichità, oggetti d’arte e decorazioni, con duplice sede, in via dei Banchi 5 e via del Moro 30. Giorgio Batini, ne L’antiquario del 1961, ricorda le umili origini di Giugni e il suo approccio casuale al commercio antiquariale quando faceva il commesso in un negozio di via dei Banchi. <br> <br></h3>
-            <p>L’intellettuale e scrittore Giovanni Papini lo ringraziò, nel 1942, esaltandone le doti commerciali e il legame con la città di Firenze, per il dono delle lampade decorate con angeli d’oro che illuminano le sale di Palazzo Strozzi.</p>
-            <p></p>
+            <p>Ubaldo Giugni fu un antiquario attivo a Firenze tra la fine degli anni Venti e i primi anni Sessanta del Novecento, titolare della "Galleria d'Arte", specializzata in antichità, oggetti d'arte e decorazioni, con duplice sede, in via dei Banchi 5 e via del Moro 30. Giorgio Batini, ne L'antiquario del 1961, ricorda le umili origini di Giugni e il suo approccio casuale al commercio antiquariale quando faceva il commesso in un negozio di via dei Banchi.</p>
+            <p>L'intellettuale e scrittore Giovanni Papini lo ringraziò, nel 1942, esaltandone le doti commerciali e il legame con la città di Firenze, per il dono delle lampade decorate con angeli d'oro che illuminano le sale di Palazzo Strozzi.</p>
           </div>
           <div id="Persone" class="content">
             <h3>Relazioni familiari:</h3>
@@ -87,15 +86,15 @@
           <div id="Bibliografia" class="content">
             <h3>Bibliografia essenziale:</h3>
             <ul>
-              <li><i>Catalogo di quanto viene venduto dal Palazzo Internazionale delle Aste ed Esposizioni : Firenze, per ordine di Eredi Giugni, comprendente: mobili, quadri, sculture, arazzi, tappeti, maioliche, porcellane ed oggetti dal XIV al XIX secolo, catalogo della vendita all'asta Palazzo Internazionale, Firenze, 17-19 ottobre 1970).</i>, Bologna 1970.</li>
-              <li>Batini, G. (1961), <i>L'antiquario.</i>, Firenze, Vallecchi.</li>
+              <li><i>Catalogo di quanto viene venduto dal Palazzo Internazionale delle Aste ed Esposizioni : Firenze, per ordine di Eredi Giugni, comprendente: mobili, quadri, sculture, arazzi, tappeti, maioliche, porcellane ed oggetti dal XIV al XIX secolo, catalogo della vendita all'asta Palazzo Internazionale, Firenze, 17-19 ottobre 1970)</i>, Bologna 1970</li>
+              <li>Batini, G. (1961), <i>L'antiquario</i>, Firenze, Vallecchi</li>
             </ul>
           </div>
           <div id="Opere trattate" class="content">
             <p>
-              Vedi le opere transitate presso l’antiquario documentate nell’archivio fotografico della Fondazione Federico Zeri: 
-              <a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=U.+Giugni">
-                catalogo
+              Vedi le opere transitate presso l'antiquario presenti nel 
+              <a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=U.+Giugni" class="linkBio">
+                catalogo della Fondazione Zeri
               </a>
             </p>
           </div>
@@ -110,10 +109,13 @@
         </div>
         <div class="footer-right">
           <p>
-            <a href="#">Crediti</a>
-          </p>
-          <p>
-            <a href="#">Documentazione</a>
+            <a href="../../html/crediti.html">
+              Crediti
+            </a>
+            |
+            <a href="https://github.com/FondazioneFedericoZeri/Mercato_dell_arte" target="_blank">
+              Documentazione
+            </a>
           </p>
         </div>
       </div>

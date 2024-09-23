@@ -21,11 +21,11 @@
     },
     "BA_I_img1.jpg": {
         "ID": "BA_I_img1.jpg",
-        "Didascalia": "Benvenuto Bacarelli con Sandro Pertini. Da \"Gazzetta Antiquaria\""
+        "Didascalia": "Benvenuto Bacarelli con Sandro Pertini. Da Gazzetta Antiquaria\""
     },
     "BA_II_img1.jpg": {
         "ID": "BA_II_img1.jpg",
-        "Didascalia": "Stefano Bardini. Da \"L'Antiquario\", 1908"
+        "Didascalia": "Stefano Bardini. Da L'Antiquario\", 1908\""
     },
     "BA_II_img2.jpg": {
         "ID": "BA_II_img2.jpg",
@@ -37,7 +37,7 @@
     },
     "BA_III_img1.jpg": {
         "ID": "BA_III_img1.jpg",
-        "Didascalia": "Alfredo Barsanti. Da \"L'Antiquario\", 1924"
+        "Didascalia": "Alfredo Barsanti. Da L'Antiquario\", 1924\""
     },
     "BA_III_img2.jpg": {
         "ID": "BA_III_img2.jpg",
@@ -53,15 +53,15 @@
     },
     "BE_I_img1.jpg": {
         "ID": "BE_I_img1.jpg",
-        "Didascalia": "Luigi Bellini. Da \"L'Antiquario\", 1926"
+        "Didascalia": "Luigi Bellini. Da L'Antiquario\", 1926\""
     },
     "BE_I_img2.jpg": {
         "ID": "BE_I_img2.jpg",
-        "Didascalia": "Galleria Bellini. Da \"L’Antiquario\", 1929"
+        "Didascalia": "Galleria Bellini. Da L'Antiquario\", 1929\""
     },
     "BE_I_img3.jpg": {
         "ID": "BE_I_img3.jpg",
-        "Didascalia": "Luigi Bellini. Da \"L'Antiquario\", 1926"
+        "Didascalia": "Luigi Bellini. Da L'Antiquario\", 1926\""
     },
     "BE_I_img4.jpg": {
         "ID": "BE_I_img4.jpg",
@@ -77,7 +77,7 @@
     },
     "BR_I_img1.jpg": {
         "ID": "BR_I_img1.jpg",
-        "Didascalia": "Ivan Bruschi (foro Fondazione Bruschi)"
+        "Didascalia": "Ivan Bruschi (foto Fondazione Bruschi)"
     },
     "CA_II_img1.jpg": {
         "ID": "CA_II_img1.jpg",
@@ -85,7 +85,7 @@
     },
     "CI_img1.jpg": {
         "ID": "CI_img1.jpg",
-        "Didascalia": "Vincenzo Ciampolini. Da \"L'Antiquario\", 1932"
+        "Didascalia": "Vincenzo Ciampolini. Da L'Antiquario\", 1932\""
     },
     "CO_I_img1.jpg": {
         "ID": "CO_I_img1.jpg",
@@ -117,7 +117,7 @@
     },
     "DI_img1.jpg": {
         "ID": "DI_img1.jpg",
-        "Didascalia": "Franco Di Castro. Da \"Gazzetta antiquaria\""
+        "Didascalia": "Franco Di Castro. Da Gazzetta antiquaria\""
     },
     "DI_img2.jpg": {
         "ID": "DI_img2.jpg",
@@ -125,7 +125,7 @@
     },
     "FE_img1.jpg": {
         "ID": "FE_img1.jpg",
-        "Didascalia": "Gioacchino Ferroni. Da \"L'Antiquario\", 1909"
+        "Didascalia": "Gioacchino Ferroni. Da L'Antiquario\", 1909\""
     },
     "FE_img2.jpg": {
         "ID": "FE_img2.jpg",
@@ -133,11 +133,11 @@
     },
     "GA_img1.jpg": {
         "ID": "GA_img1.jpg",
-        "Didascalia": "Antonio Galliani. Da \"L'Antiquario\", 1913"
+        "Didascalia": "Antonio Galliani. Da L'Antiquario\", 1913\""
     },
     "GI_img1.jpg": {
         "ID": "GI_img1.jpg",
-        "Didascalia": "Ubaldo Giugni. Da \"L'Antiquario\", 1928"
+        "Didascalia": "Ubaldo Giugni. Da L'Antiquario\", 1928\""
     },
     "GI_img2.jpg": {
         "ID": "GI_img2.jpg",
@@ -145,7 +145,7 @@
     },
     "GR_img1.jpg": {
         "ID": "GR_img1.jpg",
-        "Didascalia": "Luigi Grassi. Da \"L'Antiquario\", 1924"
+        "Didascalia": "Luigi Grassi. Da L'Antiquario\", 1924\""
     },
     "GR_img2.jpg": {
         "ID": "GR_img2.jpg",
@@ -153,7 +153,7 @@
     },
     "IM_img1.jpg": {
         "ID": "IM_img1.jpg",
-        "Didascalia": "Galleria di Alexandre Imbert, interni"
+        "Didascalia": "Galleria di Alexandre Imbert (foto D'Alessandri, 1884-1889)"
     },
     "IM_img2.jpg": {
         "ID": "IM_img2.jpg",
@@ -165,15 +165,15 @@
     },
     "JA_img2.jpg": {
         "ID": "JA_img2.jpg",
-        "Didascalia": "Augusto Jandolo. Da \"L'Antiquario\", 1913"
+        "Didascalia": "Augusto Jandolo. Da L'Antiquario\", 1913\""
     },
     "JA_img3.jpg": {
         "ID": "JA_img3.jpg",
-        "Didascalia": "Ettore Jandolo. Da \"L'Antiquario\", 1913"
+        "Didascalia": "Ettore Jandolo. Da L'Antiquario\", 1913\""
     },
     "JA_img4.jpg": {
         "ID": "JA_img4.jpg",
-        "Didascalia": "Ugo Jandolo. Da \"L'Antiquario\", 1913"
+        "Didascalia": "Ugo Jandolo. Da L'Antiquario\", 1913\""
     },
     "JA-TA_img1.jpg": {
         "ID": "JA-TA_img1.jpg",
@@ -181,7 +181,7 @@
     },
     "LA_I_img1.jpg": {
         "ID": "LA_I_img1.jpg",
-        "Didascalia": "Leonardo Lapicirella, 1955 ca. Da \"Giornale dell'arte\", 2022"
+        "Didascalia": "Leonardo Lapicirella, 1955 ca. Da Giornale dell'arte\", 2022\""
     },
     "LA_I_img2.jpg": {
         "ID": "LA_I_img2.jpg",
@@ -193,31 +193,31 @@
     },
     "LA_II_img1.jpg": {
         "ID": "LA_II_img1.jpg",
-        "Didascalia": "Michele Lazzaroni. Da \"Tribuna illustrata\", 1893"
+        "Didascalia": "Michele Lazzaroni. Da Tribuna illustrata\", 1893\""
     },
     "NI_img1.jpg": {
         "ID": "NI_img1.jpg",
-        "Didascalia": "Costantino Nigro. Da \"Genova e il collezionismo nel Novecento\", 2001"
+        "Didascalia": "Costantino Nigro. Da Genova e il collezionismo nel Novecento\", 2001\""
     },
     "NI_img2.jpg": {
         "ID": "NI_img2.jpg",
-        "Didascalia": "Costantino Nigro. Da \"Genova e il collezionismo nel Novecento\", 2001"
+        "Didascalia": "Costantino Nigro. Da Genova e il collezionismo nel Novecento\", 2001\""
     },
     "OR_img1.jpg": {
         "ID": "OR_img1.jpg",
-        "Didascalia": "Raimondo Orselli. Da \"L'Antiquario\", 1929"
+        "Didascalia": "Raimondo Orselli. Da L'Antiquario\", 1929\""
     },
     "PI_img1.jpg": {
         "ID": "PI_img1.jpg",
-        "Didascalia": "Giovanni Pini. Da \"L'Antiquario\", 1925"
+        "Didascalia": "Giovanni Pini. Da L'Antiquario\", 1925\""
     },
     "PI_img2.jpg": {
         "ID": "PI_img2.jpg",
-        "Didascalia": "Umberto Pini. Da \"L'Antiquario\", 1926"
+        "Didascalia": "Umberto Pini. Da L'Antiquario\", 1926\""
     },
     "PO_I_img1.jpg": {
         "ID": "PO_I_img1.jpg",
-        "Didascalia": "Publio Podio. Da \"L'Antiquario\", 1913"
+        "Didascalia": "Publio Podio. Da L'Antiquario\", 1913\""
     },
     "PO_I_img2.jpg": {
         "ID": "PO_I_img2.jpg",
@@ -241,11 +241,11 @@
     },
     "RA_img1.jpg": {
         "ID": "RA_img1.jpg",
-        "Didascalia": "Arturo Rambaldi. Da \"L'Antiquario\", 1913"
+        "Didascalia": "Arturo Rambaldi. Da L'Antiquario\", 1913\""
     },
     "RO_img1.jpg": {
         "ID": "RO_img1.jpg",
-        "Didascalia": "Salvatore Romano. Da \"L'Antiquario\", 1932"
+        "Didascalia": "Salvatore Romano. Da L'Antiquario\", 1932\""
     },
     "RO_img2.jpg": {
         "ID": "RO_img2.jpg",
@@ -281,7 +281,7 @@
     },
     "SA_II_img1.jpg": {
         "ID": "SA_II_img1.jpg",
-        "Didascalia": "Salvadore Salvadori. Da \"L'Antiquario\", 1929"
+        "Didascalia": "Salvadore Salvadori. Da L'Antiquario\", 1929\""
     },
     "SA_II_img2.jpg": {
         "ID": "SA_II_img2.jpg",
@@ -297,7 +297,7 @@
     },
     "SA_IV_img2.jpg": {
         "ID": "SA_IV_img2.jpg",
-        "Didascalia": "Giuseppe Sangiorgi. Da \"L'Antiquario\", 1925"
+        "Didascalia": "Giuseppe Sangiorgi. Da L'Antiquario\", 1925\""
     },
     "SA_IV_img3.jpg": {
         "ID": "SA_IV_img3.jpg",
@@ -341,11 +341,11 @@
     },
     "TO_img1.jpg": {
         "ID": "TO_img1.jpg",
-        "Didascalia": "Raul Tolentino. Da \"L'Antiquario\", 1913"
+        "Didascalia": "Raul Tolentino. Da L'Antiquario\", 1913\""
     },
     "TO_img2.jpg": {
         "ID": "TO_img2.jpg",
-        "Didascalia": "Raul Tolentino. Da \"American Art News\", 1920"
+        "Didascalia": "Raul Tolentino. Da American Art News\", 1920\""
     },
     "TO_img3.jpg": {
         "ID": "TO_img3.jpg",
@@ -353,15 +353,15 @@
     },
     "VI_I_img1.jpg": {
         "ID": "VI_I_img1.jpg",
-        "Didascalia": "Ettore Viancini. Da \"Bolaffi Arte\", 1976"
+        "Didascalia": "Ettore Viancini. Da Bolaffi Arte\", 1976\""
     },
     "VI_III_img1.jpg": {
         "ID": "VI_III_img1.jpg",
-        "Didascalia": "Edoardo Villa. Da \"L'Antiquario\", 1925"
+        "Didascalia": "Edoardo Villa. Da L'Antiquario\", 1925\""
     },
     "VO_I_img1.jpg": {
         "ID": "VO_I_img1.jpg",
-        "Didascalia": "Elia Volpi. Da \"L'Antiquario\", 1916"
+        "Didascalia": "Elia Volpi. Da L'Antiquario\", 1916\""
     },
     "VO_I_img2.jpg": {
         "ID": "VO_I_img2.jpg",
@@ -373,7 +373,7 @@
     },
     "VO_II_img1.jpg": {
         "ID": "VO_II_img1.jpg",
-        "Didascalia": "Giuseppe Volterra. Da \"L'Antiquario\", 1923"
+        "Didascalia": "Giuseppe Volterra. Da L'Antiquario\", 1923\""
     },
     "VO_II_img2.jpg": {
         "ID": "VO_II_img2.jpg",
