@@ -152,7 +152,10 @@ def build_html(entity, entities):
                 print(entity["ID"], len(imgs))
 
                 with page.section(id="image-gallery"):
-                    with page.div(klass="gallery-wrapper"):
+                    next_div_class = "gallery-wrapper"
+                    if len(imgs) == 0:
+                        next_div_class = "gallery-wrapper no-imgs"
+                    with page.div(klass=next_div_class):
                         page.h2(klass="gallery-title", _t=entity["Nome"])
 
                         if len(imgs) == 1:
