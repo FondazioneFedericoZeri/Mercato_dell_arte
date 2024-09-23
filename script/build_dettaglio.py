@@ -11,6 +11,15 @@ def getText(filename):
             fullText.append(para.text)
     return fullText
 
+def getTXT(filename):
+    fullText = []
+    with open(filename) as fin:
+        for line in fin:
+            line = line.strip()
+            if len(line)>0:
+                fullText.append(line)
+    return fullText
+
 
 def getBib(bibitem):
     s = ""
@@ -217,6 +226,7 @@ def build_html(entity, entities):
                     with page.div(klass="content-card"):
                         with page.div(id="Bio", klass="content active-content"):
                             content = getText(f"../bio/{entity['Bio']}.docx")
+                            content = getTXT(f"../bio-txt/{entity['Bio']}.txt")
                             # page.h3(_t=f"{content[0]}")
                             for paragraph in content:
                                 page.p(_t=paragraph)
