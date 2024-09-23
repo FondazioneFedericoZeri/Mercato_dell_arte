@@ -198,14 +198,14 @@ def build_html(entity, entities):
                             page.button("&#10095;", klass="next",
                                         onclick="nextSlide()")
 
-            with page.section(id="FZ", klass="fade-in"):
-                with page.h2():
-                    page.span(_t="CATALOGO", klass="highlight")
-                    page.span(_t="ZERI", klass="regular-text")
-                with page.div(klass="content-wrapper"):
-                    page.p(_t="Consulta le banche dati della Fondazione<br>Federico Zeri e ricerca fotografie, documenti, <br>cataloghi d'asta, fondi e notizie <br>sull'antiquario corrente.")
-                    page.a(href=f"{entity['Link Zeri']}",
-                           klass="btn", _t="Clicca qui")
+           # with page.section(id="FZ", klass="fade-in"):
+                #with page.h2():
+                    #page.span(_t="CATALOGO", klass="highlight")
+                    #page.span(_t="ZERI", klass="regular-text")
+                #with page.div(klass="content-wrapper"):
+                    #page.p(_t="Consulta le banche dati della Fondazione<br>Federico Zeri e ricerca fotografie, documenti, <br>cataloghi d'asta, fondi e notizie <br>sull'antiquario corrente.")
+                    #page.a(href=f"{entity['Link Zeri']}",
+                           #klass="btn", _t="Clicca qui")
 
             with page.section(id="interactive-section"):
                 with page.h2(klass="section-title"):
@@ -245,12 +245,10 @@ def build_html(entity, entities):
 
                         with page.div(id="Persone", klass="content"):
                             page.h3(
-                                _t=f"L'entità {entity['Nome']} è così composta:")
+                                _t=f"Relazioni familiari:")
                             page.div(id="albero-genealogico")
 
                         with page.div(id="Localizzazioni", klass="content"):
-                            page.h3(
-                                _t="Geolocalizzazione dell'attività antiquariale:")
                             with page.section(id="map"):
                                 page.div(id="chartdiv")
 
