@@ -220,21 +220,18 @@ def build_html(entity, entities):
                                     data_content="Persone")
                             page.li(_t="Luoghi", klass="tab",
                                     data_content="Localizzazioni")
-                            if len(entity["Collaboratori"]) > 0:
-                                page.li(_t="Collaboratori", klass="tab",
-                                        data_content="Collaboratori")
-                            if len(entity["Clienti"]) > 0:
-                                page.li(_t="Clienti", klass="tab",
-                                        data_content="Clienti")
+                            if len(entity["Relazioni"]) > 0:
+                                page.li(_t="Relazioni", klass="tab",
+                                        data_content="Relazioni")
                             if len(entity["Eventi"]) > 0:
                                 page.li(_t="Eventi", klass="tab",
                                         data_content="Eventi")
-                            if len(entity["Relazioni"]) > 0:
-                                page.li(_t="Altri antiquari",
-                                        klass="tab", data_content="Relazioni")
                             if len(entity["Bibliografia"]) > 0:
                                 page.li(_t="Bibliografia", klass="tab",
                                         data_content="Bibliografia")
+                            if len(entity["Opere trattate"]) > 0:
+                                page.li(_t="Opere trattate",
+                                        klass="tab", data_content="Opere trattate")
 
                     with page.div(klass="content-card"):
                         with page.div(id="Bio", klass="content active-content"):
@@ -274,21 +271,21 @@ def build_html(entity, entities):
                         if len(entity["Eventi"]) > 0:
                             with page.div(id="Eventi", klass="content"):
                                 page.h3(
-                                    _t="Gli eventi signficativi dell'attività antiquariale:")
+                                    _t="Eventi signficativi nell'attività antiquariale:")
                                 with page.ul():
                                     for ev_item, ev_data in sorted(entity["Eventi"].items(), key=lambda x: x[1]["Anno"]):
                                         ev_string = getEvento(ev_data)
                                         page.li(_t=ev_string)
 
-                        if len(entity["Relazioni"]) > 0:
-                            with page.div(id="Relazioni", klass="content"):
-                                page.h3(
-                                    _t=f"L'entità {entity['Nome']}, durante la sua attività, ha avuto relazioni con:")
-                                with page.ul():
-                                    for relent_id in entity['Relazioni']:
-                                        with page.li():
-                                            page.a(
-                                                href=f"dettaglio_{relent_id}.html", _t=f"{entities[relent_id]['Nome']}")
+                        #if len(entity["Relazioni"]) > 0:
+                           # with page.div(id="Relazioni", klass="content"):
+                               # page.h3(
+                                    #_t=f"L'entità {entity['Nome']}, durante la sua attività, ha avuto relazioni con:")
+                                #with page.ul():
+                                    #for relent_id in entity['Relazioni']:
+                                        #with page.li():
+                                           # page.a(
+                                                #href=f"dettaglio_{relent_id}.html", _t=f"{entities[relent_id]['Nome']}")
 
                         if len(entity["Bibliografia"]) > 0:
                             with page.div(id="Bibliografia", klass="content"):
