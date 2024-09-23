@@ -63,9 +63,7 @@
         },
         "Foto preview": "AC_preview",
         "Foto gallery": [
-            "AC_img1",
-            "AC_img2",
-            "AC_img3"
+            "AC_img1"
         ],
         "Persone": {
             "AC_1": {
@@ -2348,8 +2346,7 @@
         "Eventi": {},
         "Foto preview": "CA_II_preview",
         "Foto gallery": [
-            "CA_II_img1",
-            "CA_II_img2"
+            "CA_II_img1"
         ],
         "Persone": {
             "CA_II_1": {
@@ -4819,9 +4816,7 @@
         "Eventi": {},
         "Foto preview": "JA-TA_preview",
         "Foto gallery": [
-            "JA-TA_img1",
-            "JA-TA_img2",
-            "JA-TA_img3"
+            "JA-TA_img1"
         ],
         "Persone": {
             "JA-TA_1": {
@@ -5731,7 +5726,11 @@
         "Foto preview": "PO_I_preview",
         "Foto gallery": [
             "PO_I_img1",
-            "PO_I_img2"
+            "PO_I_img2",
+            "PO_I_img3",
+            "PO_I_img4",
+            "PO_I_img5",
+            "PO_I_img6"
         ],
         "Persone": {
             "PO_I_1": {
@@ -8654,8 +8653,12 @@
             }
         },
         "Eventi": {},
-        "Foto preview": "ZA_preview",
-        "Foto gallery": [],
+        "Foto preview": "ZA_preview    ",
+        "Foto gallery": [
+            "ZA_img1",
+            "ZA_img2",
+            "ZA_img3"
+        ],
         "Persone": {
             "ZA_1": {
                 "ID": "ZA_1",
