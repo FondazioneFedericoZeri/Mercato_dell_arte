@@ -207,10 +207,10 @@ def build_html(entity, entities):
                     #page.a(href=f"{entity['Link Zeri']}",
                            #klass="btn", _t="Clicca qui")
 
-            with page.section(id="interactive-section"):
-                with page.h2(klass="section-title"):
-                    page.span(_t="CARTA", klass="highlight")
-                    page.span(_t="D'IDENTITÀ", klass="regular-text")
+           # with page.section(id="interactive-section"):
+            #    with page.h2(klass="section-title"):
+             #       page.span(_t="CARTA", klass="highlight")
+              #      page.span(_t="D'IDENTITÀ", klass="regular-text")
                 with page.div(klass="dual-content-wrapper"):
                     with page.div(klass="tab-container"):
                         with page.ul(klass="tab-list"):
