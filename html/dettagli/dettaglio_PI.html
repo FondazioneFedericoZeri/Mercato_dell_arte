@@ -41,62 +41,45 @@
     </header>
     <main>
       <section id="image-gallery">
-        <h2 class="gallery-title">Pini</h2>
+        <div class="gallery-wrapper">
+          <h2 class="gallery-title">NOME</h2>
+        </div>
         <div class="slider-container">
           <div class="slider">
             <div class="slide">
-              <img src="../../img/slider-antiquari/PI_img1.jpg" alt="Giovanni Pini, foto tratta dalla rivista &quot;L'Antiquario&quot; del 1925" />
-              <div class="caption">Giovanni Pini, foto tratta dalla rivista "L'Antiquario" del 1925</div>
+              <img src="../../img/slider-antiquari/PI_img1.jpg" alt="Giovanni Pini. Da &quot;L'Antiquario&quot;, 1925" />
+              <div class="caption">Giovanni Pini. Da "L'Antiquario", 1925</div>
             </div>
             <div class="slide">
-              <img src="../../img/slider-antiquari/PI_img2.jpg" alt="Umberto Pini, foto tratta dalla rivista &quot;L'Antiquario&quot; del 1926" />
-              <div class="caption">Umberto Pini, foto tratta dalla rivista "L'Antiquario" del 1926</div>
+              <img src="../../img/slider-antiquari/PI_img2.jpg" alt="Umberto Pini. Da &quot;L'Antiquario&quot;, 1926" />
+              <div class="caption">Umberto Pini. Da "L'Antiquario", 1926</div>
             </div>
           </div>
           <button &#10094; class="prev" onclick="prevSlide()"></button>
           <button &#10095; class="next" onclick="nextSlide()"></button>
         </div>
       </section>
-    </main>
-    <section id="FZ" class="fade-in">
-      <h2>
-        <span class="highlight">CATALOGO</span>
-        <span class="regular-text">ZERI</span>
-      </h2>
-      <div class="content-wrapper">
-        <p>Consulta le banche dati della Fondazione<br>Federico Zeri e ricerca fotografie, documenti, <br>cataloghi d'asta, fondi e notizie <br>sull'antiquario corrente.</p>
-        <a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=pini" class="btn">Clicca qui</a>
-      </div>
-    </section>
-    <section id="interactive-section">
-      <h2 class="section-title">
-        <span class="highlight">CARTA</span>
-        <span class="regular-text">D'IDENTITÀ</span>
-      </h2>
       <div class="dual-content-wrapper">
         <div class="tab-container">
           <ul class="tab-list">
-            <li class="tab active" data_content="Bio">Biografia</li>
+            <li class="tab active" data_content="Bio">Dati biografici</li>
             <li class="tab" data_content="Persone">Albero familiare</li>
-            <li class="tab" data_content="Localizzazioni">Mappa dei luoghi</li>
+            <li class="tab" data_content="Localizzazioni">Luoghi</li>
             <li class="tab" data_content="Bibliografia">Bibliografia</li>
+            <li class="tab" data_content="Opere trattate">Opere trattate</li>
           </ul>
         </div>
         <div class="content-card">
           <div id="Bio" class="content active-content">
-            <h3>PINI </h3>
+            <h3>Le poche informazioni riguardo l’attività della famiglia Pini nel mondo del mercato dell’arte si ricavano dalla rivista “L’antiquario”. Nel 1923 un breve trafiletto ricorda l’apertura da parte di Giovanni Pini, figlio di Cesare Pini, di un deposito in via san Nicolò 95 a Firenze. Cesare Pini risulta, invece, titolare di un negozio in via del Monte 8, a Bologna. <br> <br></h3>
+            <p>Nell’attività familiare entrò anche il fratello di Giovanni, Umberto, che stando a quanto riportato dal retro di alcune foto che si conservano nella fototeca di Federico Zeri era attivo a Firenze, forse in una galleria situata in via Tornabuoni 4 di proprietà Pini, come risulta da alcune inserzioni pubblicitarie.</p>
             <p></p>
-            <p>Le poche informazioni riguardo l’attività della famiglia Pini nel mondo del mercato dell’arte si ricavano dalla rivista “L’antiquario”.  Nel 1923 un breve trafiletto ricorda l’apertura da parte di Giovanni Pini, figlio di Cesare Pini, di un deposito in via san Nicolò 95 a Firenze. </p>
-            <p>Cesare Pini risulta, invece, titolare di un negozio in via del Monte 8, a Bologna.  </p>
-            <p>Nell’attività familiare entrò anche il fratello di Giovanni, Umberto, che stando a quanto riportato dal retro di alcune foto che si conservano nella fototeca di Federico Zeri era attivo a Firenze, forse in una galleria situata in via Tornabuoni 4 di proprietà Pini, come risulta da alcune inserzioni pubblicitarie. </p>
-            <p> </p>
           </div>
           <div id="Persone" class="content">
-            <h3>L'entità Pini è così composta:</h3>
+            <h3>Relazioni familiari:</h3>
             <div id="albero-genealogico"></div>
           </div>
           <div id="Localizzazioni" class="content">
-            <h3>Geolocalizzazione dell'attività antiquariale:</h3>
             <section id="map">
               <div id="chartdiv"></div>
             </section>
@@ -108,9 +91,17 @@
               <li>L'Etrusco. (1925), <i>I fratelli Pini.</i>, In «L'Antiquario», XII, 3, p. 144</li>
             </ul>
           </div>
+          <div id="Opere trattate" class="content">
+            <p>
+              Vedi le opere transitate presso l’antiquario documentate nell’archivio fotografico della Fondazione Federico Zeri: 
+              <a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=pini">
+                catalogo
+              </a>
+            </p>
+          </div>
         </div>
       </div>
-    </section>
+    </main>
     <footer>
       <div class="footer-container">
         <div class="footer-left">
