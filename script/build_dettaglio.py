@@ -7,7 +7,8 @@ def getText(filename):
     doc = docx.Document(filename)
     fullText = []
     for para in doc.paragraphs:
-        fullText.append(para.text)
+        if len(para.text.strip()) > 0:
+            fullText.append(para.text)
     return fullText
 
 
@@ -309,8 +310,13 @@ def build_html(entity, entities):
                         page.img(
                             id="license.png", src="../../img/homepage/license.png", alt="License")
                     with page.div(klass="footer-right"):
-                        page.p().a(_t="Crediti", href="#")
-                        page.p().a(_t="Documentazione", href="#")
+                        with page.p():
+                            with page.a(href="#"):
+                                page("Crediti")
+                            page("|")
+                            with page.a(href="#"):
+                                page("Documentazione")
+
 
     # Get the generated HTML as a string
     html_content = str(page)
