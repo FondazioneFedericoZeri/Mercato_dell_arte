@@ -3,24 +3,24 @@ C_1		Alinari	fotografo
 C_2		Anderson	fotografo
 C_3	Leopoldo	Aretini	antiquario
 C_4	Wart	Arslan	storico dell'arte
-C_5	Arte	Arte Fotografica	fotografo
+C_5		Arte Fotografica	fotografo
 C_6	Valentina	Barbareschi	restauratrice
 C_7	Bernard	Berenson	storico dell'arte
-C_8	Boccardi	Boccardi	fotografo
+C_8		Boccardi	fotografo
 C_9	Ferdinando	Bologna	storico dell'arte
-C_10_1		Braun & C.ie	fotografi
-C_10_2		Giraudon & BernÃ¨s	fotografi
-C_10_3		Marouteau & C.ie	fotografi
+C_10_1		Braun & C.ie	fotografo
+C_10_2		Giraudon	fotografo
+C_10_3		Bernès, Marouteau & C.ie	fotografo
 C_11	Giuliano	Briganti	storico dell'arte
-C_12	Brogi	Brogi	fotografo
+C_12		Brogi	fotografo
 C_13	Paul	Cassirer	antiquario
-C_14	Raffaelo	Causa	storico dell'arte
-C_14_b		Calvesi	storico dell'arte
+C_14	Raffaello	Causa	storico dell'arte
+C_14_b	Maurizio	Calvesi	storico dell'arte
 C_15	Luigi	Cavenaghi	restauratore
 C_16	Pico	Cellini	restauratore
 C_17	Egisto	De Masi	antiquario
 C_18	Antonio	De Mata	restauratore
-C_19		Diuvin	antiquario
+C_19		Duveen Brothers	antiquario
 C_20	Robert Langton	Douglas	storico dell'arte
 C_21	Alvaro	Esposti	restauratore
 C_22	Antonio	Faccioli	capo-restauratore e direttore laboratori della sede succursale
@@ -28,38 +28,38 @@ C_23	Italo	Faldi	storico dell'arte
 C_24	Cesare	Faraglia	fotografo
 C_25	Giuseppe	Fiocco	storico dell'arte
 C_26	Ugo	Frizzoni	storico dell'arte
-C_27		Gasperini	fotografi
+C_27		Gasparini	fotografo
 C_28	Benno	Geiger	antiquario
-C_29		Gonnella	fotografi
-C_30	Alvar	Gonzales Palacios	storico dell'arte
+C_29		Gonnella	fotografo
+C_30	Alvar	Gonzáles Palacios	storico dell'arte
 C_31	Marco	Grassi	restauratore
 C_32	Mina	Gregori	storica dell'arte
 C_33		Industrial foto	fotografo
-C_34	Vittorio	Jaqueir	fotografo
+C_34	Vittorio	Jacquier	fotografo
 C_35	Icilio Federico	Joni	restauratore
-C_36	Franz	Kienslinger	mercante
+C_36	Franz	Kieslinger	mercante
 C_37	Roberto	Longhi	storico dell'arte
-C_38	Matteo	Maranghoni	storico dell'arte
+C_38	Matteo	Marangoni	storico dell'arte
 C_38_b	Egidio	Martini	storico dell'arte
-C_39	Friederick	Mason Perkins	storico dell'arte
+C_39	Frederick	Mason Perkins	storico dell'arte
 C_40	Angiolo	Melli	antiquario
 C_41	Cesare	Melli	antiquario
 C_41_b	Ferruccio	Mestrovich	storico dell'arte
 C_42	Mario	Modestini	restauratore
 C_43	Bruno	Molajoli	storico dell'arte
-C_44	Giulio	Ometto	collaboratore
-C_45	Kajetan 'Kai'	Muehlmann	storico dell'arte
+C_44	Giulio	Ometto	curatore
+C_45	Kajetan 'Kai'	Mühlmann	storico dell'arte
 C_46	Rodolfo	Pallucchini	storico dell'arte
 C_47	Leo	Planiscig	storico dell'arte
 C_48	Paolino	Poli	restauratore
 C_49	Paolo	Polidori	fotografi
 C_50	Ludwig	Pollak	storico dell'arte
-C_51	Mario	Praz	critico dell'arte
+C_51	Mario	Praz	storico dell'arte
 C_52	Jean	Questa	antiquario
 C_53	Carlo Ludovico	Ragghianti	storico dell'arte
-C_54		Rampazzi	fotografi
+C_54		Rampazzi	fotografo
 C_55		Reali	fotografo
-C_56	Rigorini	Rigorini	restauratore
+C_56		Rigorini	restauratore
 C_57	Arthur	Sambon	storico dell'arte
 C_58	Giovanni	Sassu	restauratore
 C_59	Tommaso	Schneider	restauratore
@@ -69,6 +69,6 @@ C_62	Pietro	Toesca	storico dell'arte
 C_63	Adolfo	Venturi	storico dell'arte
 C_64	Lionello	Venturi	storico dell'arte
 C_65	Louise	Vergetas	restauratore
-C_66	Wilhem	Von Bode	storico dell'arte
+C_66	Wilhelm	Von Bode	storico dell'arte
 C_67	Silvio	Zanchi	restauratore
 C_68	Federico	Zeri	storico dell'arte
