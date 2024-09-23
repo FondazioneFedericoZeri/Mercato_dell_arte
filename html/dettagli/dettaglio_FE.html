@@ -41,12 +41,14 @@
     </header>
     <main>
       <section id="image-gallery">
-        <h2 class="gallery-title">Ferroni</h2>
+        <div class="gallery-wrapper">
+          <h2 class="gallery-title">NOME</h2>
+        </div>
         <div class="slider-container">
           <div class="slider">
             <div class="slide">
-              <img src="../../img/slider-antiquari/FE_img1.jpg" alt="Illustrazione di Gioacchino Ferroni, tratta dalla rivista &quot;L'Antiquario&quot; del 1909" />
-              <div class="caption">Illustrazione di Gioacchino Ferroni, tratta dalla rivista "L'Antiquario" del 1909</div>
+              <img src="../../img/slider-antiquari/FE_img1.jpg" alt="Gioacchino Ferroni. Da &quot;L'Antiquario&quot;, 1909" />
+              <div class="caption">Gioacchino Ferroni. Da "L'Antiquario", 1909</div>
             </div>
             <div class="slide">
               <img src="../../img/slider-antiquari/FE_img2.jpg" alt="Studio di Gioacchino Ferroni alla morte dell'antiquario, 1909" />
@@ -57,67 +59,49 @@
           <button &#10095; class="next" onclick="nextSlide()"></button>
         </div>
       </section>
-    </main>
-    <section id="FZ" class="fade-in">
-      <h2>
-        <span class="highlight">CATALOGO</span>
-        <span class="regular-text">ZERI</span>
-      </h2>
-      <div class="content-wrapper">
-        <p>Consulta le banche dati della Fondazione<br>Federico Zeri e ricerca fotografie, documenti, <br>cataloghi d'asta, fondi e notizie <br>sull'antiquario corrente.</p>
-        <a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=G.+Ferroni" class="btn">Clicca qui</a>
-      </div>
-    </section>
-    <section id="interactive-section">
-      <h2 class="section-title">
-        <span class="highlight">CARTA</span>
-        <span class="regular-text">D'IDENTITÀ</span>
-      </h2>
       <div class="dual-content-wrapper">
         <div class="tab-container">
           <ul class="tab-list">
-            <li class="tab active" data_content="Bio">Biografia</li>
+            <li class="tab active" data_content="Bio">Dati biografici</li>
             <li class="tab" data_content="Persone">Albero familiare</li>
-            <li class="tab" data_content="Localizzazioni">Mappa dei luoghi</li>
-            <li class="tab" data_content="Clienti">Clienti</li>
-            <li class="tab" data_content="Relazioni">Altri antiquari</li>
+            <li class="tab" data_content="Localizzazioni">Luoghi</li>
+            <li class="tab" data_content="Relazioni">Relazioni</li>
             <li class="tab" data_content="Bibliografia">Bibliografia</li>
+            <li class="tab" data_content="Opere trattate">Opere trattate</li>
           </ul>
         </div>
         <div class="content-card">
           <div id="Bio" class="content active-content">
-            <h3>GIOACCHINO FERRONI (1854-1909)</h3>
-            <p></p>
-            <p>Gioacchino (o Giovacchino) Ferroni nacque a Pietrasanta nel 1854 e ricevette, prima di iniziare a commerciare in antichità, una formazione artistica come scultore. Sposò Margherita Bardini (1845-1927), sorella del celebre antiquario fiorentino Stefano Bardini (1836-1922) e fu verosimilmente il cognato a introdurlo alla professione di mercante d’arte. </p>
-            <p>Secondo le memorie tramandate da Ludwig Pollak (1868-1943), proprio a causa di dissapori con il cognato, nel 1894 Ferroni lasciò Firenze e si trasferì a Roma per dedicarsi al commercio di sculture antiche e opere del Rinascimento italiano. Una volta giunto nella capitale, acquistò un mezzanino con funzione di abitazione in via di Porta Pinciana 32. Nello stesso edificio, al piano terra, aprì una galleria espositiva. </p>
-            <p>Augusto Jandolo (1873-1952) ricorda l’antiquario come uno dei più importanti e stimati commercianti dell’epoca, in stretto legame commerciale con Bardini, il quale gli aveva presentato Wilhelm von Bode che sarebbe diventato uno dei suoi maggiori clienti. Il successo di cui godette è testimoniato dal livello internazionale della sua clientela. Oltre al direttore del Kaiser Friederich Museum di Berlino, ne fecero parte il collezionista tedesco Adolf von Beckerath, lo storico dell’arte Richard Norton e il principe del Liechtenstein. </p>
-            <p>Oltre che antiquario e scultore Gioacchino Ferroni fu un raffinato collezionista. I pezzi della sua raccolta personale furono posti all’asta dalla Casa di vendite Jandolo & Tavazzi, con la collaborazione della Galleria Sangiorgi, in due importanti vendite tenutesi nel 1909 e nel 1910, ampiamente reclamizzate e descritte anche sulle pagine de “L’Antiquario”. </p>
+            <h3>Gioacchino (o Giovacchino) Ferroni nacque a Pietrasanta nel 1854 e ricevette, prima di iniziare a commerciare in antichità, una formazione artistica come scultore. Sposò Margherita Bardini (1845-1927), sorella del celebre antiquario fiorentino <a href="Dettaglio Antiquari (fondazionefedericozeri.github.io) target="_blank"> Stefano Bardini </a> (1836-1922) e fu verosimilmente il cognato a introdurlo alla professione di mercante d’arte. <br> <br></h3>
+            <p>Secondo le memorie tramandate da Ludwig Pollak (1868-1943), proprio a causa di dissapori con il cognato, nel 1894 Ferroni lasciò Firenze e si trasferì a Roma per dedicarsi al commercio di sculture antiche e opere del Rinascimento italiano. Una volta giunto nella capitale, acquistò un mezzanino con funzione di abitazione in via di Porta Pinciana 32. Nello stesso edificio, al piano terra, aprì una galleria espositiva. <br> <br></p>
+            <p><a href=" Dettaglio Antiquari (fondazionefedericozeri.github.io)" target="_blank">Augusto Jandolo</a> (1873-1952) ricorda l’antiquario come uno dei più importanti e stimati commercianti dell’epoca, in stretto legame commerciale con Bardini, il quale gli aveva presentato Wilhelm von Bode che sarebbe diventato uno dei suoi maggiori clienti. Il successo di cui godette è testimoniato dal livello internazionale della sua clientela. Oltre al direttore del Kaiser Friederich Museum di Berlino, ne fecero parte il collezionista tedesco Adolf von Beckerath, lo storico dell’arte Richard Norton e il principe del Liechtenstein. <br> <br></p>
+            <p>Oltre che antiquario e scultore Gioacchino Ferroni fu un raffinato collezionista. I pezzi della sua raccolta personale furono posti all’asta dalla <a href=" Dettaglio Antiquari (fondazionefedericozeri.github.io)" target="_blank">Casa di vendite Jandolo&Tavazzi</a>, con la collaborazione della Galleria Sangiorgi, in due importanti vendite tenutesi nel 1909 e nel 1910, ampiamente reclamizzate e descritte anche sulle pagine de “L’Antiquario”. </p>
           </div>
           <div id="Persone" class="content">
-            <h3>L'entità Ferroni è così composta:</h3>
+            <h3>Relazioni familiari:</h3>
             <div id="albero-genealogico"></div>
           </div>
           <div id="Localizzazioni" class="content">
-            <h3>Geolocalizzazione dell'attività antiquariale:</h3>
             <section id="map">
               <div id="chartdiv"></div>
             </section>
           </div>
-          <div id="Clienti" class="content">
-            <h3>I principali clienti dell'entità Ferroni sono stati:</h3>
+          <div id="Relazioni" class="content">
+            <h3>Altri antiquari:</h3>
+            <ul>
+              <li>
+                <a href="dettaglio_BA_II.html">Bardini</a>
+              </li>
+            </ul>
+            <h3>Clienti:</h3>
             <ul>
               <li>Adolf von Beckerath </li>
               <li>Principe del Liechtenstein*  </li>
               <li>Richard Norton </li>
               <li>Wilhelm von Bode </li>
             </ul>
-          </div>
-          <div id="Relazioni" class="content">
-            <h3>L'entità Ferroni, durante la sua attività, ha avuto relazioni con:</h3>
+            <h3>Collaboratori:</h3>
             <ul>
-              <li>
-                <a href="dettaglio_BA_II.html">Bardini</a>
-              </li>
             </ul>
           </div>
           <div id="Bibliografia" class="content">
@@ -130,9 +114,17 @@
               <li>Pollak, L., Merkel Guldan, M. (1994), <i>Römische Memoiren : Künstler, Kunstliebhaber und Gelehrte, 1893-1943.</i>, Roma, L'Erma di Bretschneider.</li>
             </ul>
           </div>
+          <div id="Opere trattate" class="content">
+            <p>
+              Vedi le opere transitate presso l’antiquario documentate nell’archivio fotografico della Fondazione Federico Zeri: 
+              <a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=G.+Ferroni">
+                catalogo
+              </a>
+            </p>
+          </div>
         </div>
       </div>
-    </section>
+    </main>
     <footer>
       <div class="footer-container">
         <div class="footer-left">

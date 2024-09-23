@@ -149,23 +149,26 @@ def build_html(entity, entities):
 
             with page.main():
                 print(entity["ID"], len(imgs))
+#              <section id="image-gallery">
+#         <div class="gallery-wrapper">
+#             <h2 class="gallery-title">Antonacci-Efrati</h2>
+# </div>
 
-                if len(imgs) == 0:
-                    with page.section(id="single-image-section"):
-                        page.h2(_t=f"{entity['Nome']}",
-                                klass="single-image-title")
+# ---> slider o img singola
+
+# </section>
+                with page.section(id="image-gallery"):
+                    with page.div(klass="gallery-wrapper"):
+                        page.h2(klass="gallery-title", _t="NOME")
+
+                    if len(imgs) == 0:
                         with page.div(klass="single-image-container"):
                             desc = entity['Nome']
-                            page.img(
-                                src=f"../../img/antiquari-preview/{entity['Foto preview']}.jpg", alt=f"{desc}")
-                            page.div(_t=f"{desc}",
-                                     klass="caption overlay-caption")
+                            page.img(src=f"../../img/antiquari-preview/{entity['Foto preview']}.jpg", alt=f"{desc}")
+                            page.div(_t=f"{desc}", klass="caption overlay-caption")
 
-                elif len(imgs) == 1:
-                    with page.section(id="single-image-section"):
-                        page.h2(_t=f"{entity['Nome']}",
-                                klass="single-image-title")
-                        with page.div(klass="single-image-container"):
+                    elif len(imgs) == 1:
+                        with page.div(id="single-image-container"):
                             desc = entity['Nome']
                             img = f"{imgs[0]}.jpg"
 
@@ -175,14 +178,32 @@ def build_html(entity, entities):
                             page.img(
                                 src=f"../../img/slider-antiquari/{img}", alt=f"{desc}")
                             page.div(_t=f"{desc}",
-                                     klass="caption overlay-caption")
+                                        klass="caption overlay-caption")
 
-                else:
-                    with page.section(id="image-gallery"):
-                        page.h2(_t=f"{entity['Nome']}", klass="gallery-title")
+                    else:
+    # HTML SLIDER
+    #             <div class="slider-container">
+    #                 <div class="slider">
+    #                     <div class="slide">
+    #                         <img src="../img/slider-antiquari/AC_img1.jpg" alt="Immagine 1">
+    #                         <div class="caption">Descrizione dell'immagine 1</div>
+    #                     </div>
+    #                     <div class="slide">
+    #                         <img src="../img/slider-antiquari/AC_img2.jpg" alt="Immagine 2">
+    #                         <div class="caption">Descrizione dell'immagine 2</div>
+    #                     </div>
+    #                     <div class="slide">
+    #                         <img src="../img/slider-antiquari/AC_img3.jpg" alt="Immagine 3">
+    #                         <div class="caption">Descrizione dell'immagine 3</div>
+    #                     </div>
+    #                 </div>
+    #                 <button class="prev" onclick="prevSlide()">&#10094;</button>
+    #                 <button class="next" onclick="nextSlide()">&#10095;</button>
+
+    #             </div>
+
                         with page.div(klass="slider-container"):
                             with page.div(klass="slider"):
-
                                 for img in imgs:
                                     img = f"{img}.jpg"
                                     desc = {entity['Nome']}
@@ -220,18 +241,22 @@ def build_html(entity, entities):
                                     data_content="Persone")
                             page.li(_t="Luoghi", klass="tab",
                                     data_content="Localizzazioni")
-                            if len(entity["Relazioni"]) > 0:
+
+                            tot_relations = len(entity["Relazioni"]) + len(entity["Collaboratori"]) + len(entity["Clienti"])
+                            if tot_relations > 0:
                                 page.li(_t="Relazioni", klass="tab",
                                         data_content="Relazioni")
+
                             if len(entity["Eventi"]) > 0:
                                 page.li(_t="Eventi", klass="tab",
                                         data_content="Eventi")
+
                             if len(entity["Bibliografia"]) > 0:
                                 page.li(_t="Bibliografia", klass="tab",
                                         data_content="Bibliografia")
-                            if len(entity["Opere trattate"]) > 0:
-                                page.li(_t="Opere trattate",
-                                        klass="tab", data_content="Opere trattate")
+
+                            page.li(_t="Opere trattate",
+                                    klass="tab", data_content="Opere trattate")
 
                     with page.div(klass="content-card"):
                         with page.div(id="Bio", klass="content active-content"):
@@ -249,24 +274,24 @@ def build_html(entity, entities):
                             with page.section(id="map"):
                                 page.div(id="chartdiv")
 
-                        if len(entity["Collaboratori"]) > 0:
-                            with page.div(id="Collaboratori", klass="content"):
-                                page.h3(
-                                    _t=f"Hanno collaborato con l'entità {entity['Nome']}:")
-                                with page.ul():
-                                    for coll_item, coll_data in sorted(entity["Collaboratori"].items(), key=lambda x: (x[1]["Nome"], x[1]["Cognome / Denominazione"])):
-                                        coll_string = getCollaboratore(
-                                            coll_data)
-                                        page.li(_t=coll_string)
+                        # if len(entity["Collaboratori"]) > 0:
+                        #     with page.div(id="Collaboratori", klass="content"):
+                        #         page.h3(
+                        #             _t=f"Hanno collaborato con l'entità {entity['Nome']}:")
+                        #         with page.ul():
+                        #             for coll_item, coll_data in sorted(entity["Collaboratori"].items(), key=lambda x: (x[1]["Nome"], x[1]["Cognome / Denominazione"])):
+                        #                 coll_string = getCollaboratore(
+                        #                     coll_data)
+                        #                 page.li(_t=coll_string)
 
-                        if len(entity["Clienti"]) > 0:
-                            with page.div(id="Clienti", klass="content"):
-                                page.h3(
-                                    _t=f"I principali clienti dell'entità {entity['Nome']} sono stati:")
-                                with page.ul():
-                                    for cl_item, cl_data in sorted(entity["Clienti"].items(), key=lambda x: (x[1]["Nome"], x[1]["Cognome"])):
-                                        cl_string = getCliente(cl_data, people)
-                                        page.li(_t=cl_string)
+                        # if len(entity["Clienti"]) > 0:
+                        #     with page.div(id="Clienti", klass="content"):
+                        #         page.h3(
+                        #             _t=f"I principali clienti dell'entità {entity['Nome']} sono stati:")
+                        #         with page.ul():
+                        #             for cl_item, cl_data in sorted(entity["Clienti"].items(), key=lambda x: (x[1]["Nome"], x[1]["Cognome"])):
+                        #                 cl_string = getCliente(cl_data, people)
+                        #                 page.li(_t=cl_string)
 
                         if len(entity["Eventi"]) > 0:
                             with page.div(id="Eventi", klass="content"):
@@ -277,25 +302,53 @@ def build_html(entity, entities):
                                         ev_string = getEvento(ev_data)
                                         page.li(_t=ev_string)
 
-                        #if len(entity["Relazioni"]) > 0:
-                           # with page.div(id="Relazioni", klass="content"):
-                               # page.h3(
-                                    #_t=f"L'entità {entity['Nome']}, durante la sua attività, ha avuto relazioni con:")
-                                #with page.ul():
-                                    #for relent_id in entity['Relazioni']:
-                                        #with page.li():
-                                           # page.a(
-                                                #href=f"dettaglio_{relent_id}.html", _t=f"{entities[relent_id]['Nome']}")
+                        if tot_relations > 0:
+                            with page.div(id="Relazioni", klass="content"):
+
+                                page.h3(_t=f"Altri antiquari:")
+                                with page.ul():
+                                    for relent_id in entity['Relazioni']:
+                                        with page.li():
+                                            page.a(
+                                            href=f"dettaglio_{relent_id}.html", _t=f"{entities[relent_id]['Nome']}")
+                                page.h3(_t=f"Clienti:")
+                                with page.ul():
+                                    for cl_item, cl_data in sorted(entity["Clienti"].items(), key=lambda x: (x[1]["Nome"], x[1]["Cognome"])):
+                                        cl_string = getCliente(cl_data, people)
+                                        page.li(_t=cl_string)
+                                page.h3(_t=f"Collaboratori:")
+                                with page.ul():
+                                    for coll_item, coll_data in sorted(entity["Collaboratori"].items(), key=lambda x: (x[1]["Nome"], x[1]["Cognome / Denominazione"])):
+                                        coll_string = getCollaboratore(
+                                            coll_data)
+                                        page.li(_t=coll_string)
 
                         if len(entity["Bibliografia"]) > 0:
                             with page.div(id="Bibliografia", klass="content"):
-                                page.h3(_t="Bibliografia essenziale:")
-                                with page.ul():
-                                    # print(entity["Bibliografia"].items())
-                                    # input()
-                                    for bib_item, bib_entry in sorted(entity["Bibliografia"].items(), key=lambda x: (x[1]["Autore"], x[1]["Anno"])):
-                                        bib_string = getBib(bib_entry)
-                                        page.li(_t=bib_string)
+                                interviste = {bib_item:bib_entry for bib_item, bib_entry in entity["Bibliografia"].items() if bib_entry["Tipologia"] == "intervista"}
+                                altra_bibliografia = {bib_item:bib_entry for bib_item, bib_entry in entity["Bibliografia"].items() if not bib_entry["Tipologia"] == "intervista"}
+                                if len(altra_bibliografia)>0:
+                                    page.h3(_t="Bibliografia essenziale:")
+                                    with page.ul():
+                                        # print(entity["Bibliografia"].items())
+                                        # input()
+
+                                        for bib_item, bib_entry in sorted(altra_bibliografia.items(), key=lambda x: (x[1]["Autore"], x[1]["Anno"])):
+                                            bib_string = getBib(bib_entry)
+                                            page.li(_t=bib_string)
+                                if len(interviste)>0:
+                                    page.h3(_t="Interviste:")
+                                    with page.ul():
+                                        for bib_item, bib_entry in sorted(interviste.items(), key=lambda x: (x[1]["Autore"], x[1]["Anno"])):
+                                            bib_string = getBib(bib_entry)
+                                            page.li(_t=bib_string)
+
+                        with page.div(id="Opere trattate", klass="content"):
+                            with page.p():
+                                page("Vedi le opere transitate presso l’antiquario documentate nell’archivio fotografico della Fondazione Federico Zeri: ")
+                                with page.a(href=entity["Link Zeri"]):
+                                    page("catalogo")
+
 
             with page.footer():
                 with page.div(klass="footer-container"):

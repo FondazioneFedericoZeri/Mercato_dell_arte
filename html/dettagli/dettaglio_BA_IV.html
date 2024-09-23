@@ -41,12 +41,14 @@
     </header>
     <main>
       <section id="image-gallery">
-        <h2 class="gallery-title">Baslini</h2>
+        <div class="gallery-wrapper">
+          <h2 class="gallery-title">NOME</h2>
+        </div>
         <div class="slider-container">
           <div class="slider">
             <div class="slide">
-              <img src="../../img/slider-antiquari/BA_IV_img1.jpg" alt="Giuseppe Baslini, 1870. Fotografia conservata nell'Archivio Poldi Pezzoli." />
-              <div class="caption">Giuseppe Baslini, 1870. Fotografia conservata nell'Archivio Poldi Pezzoli.</div>
+              <img src="../../img/slider-antiquari/BA_IV_img1.jpg" alt="Giuseppe Baslini nel 1870 (foto Archivio Poldi Pezzoli)" />
+              <div class="caption">Giuseppe Baslini nel 1870 (foto Archivio Poldi Pezzoli)</div>
             </div>
             <div class="slide">
               <img src="../../img/slider-antiquari/BA_IV_img2.jpg" alt="Giuseppe Baslini nel 1887" />
@@ -57,63 +59,39 @@
           <button &#10095; class="next" onclick="nextSlide()"></button>
         </div>
       </section>
-    </main>
-    <section id="FZ" class="fade-in">
-      <h2>
-        <span class="highlight">CATALOGO</span>
-        <span class="regular-text">ZERI</span>
-      </h2>
-      <div class="content-wrapper">
-        <p>Consulta le banche dati della Fondazione<br>Federico Zeri e ricerca fotografie, documenti, <br>cataloghi d'asta, fondi e notizie <br>sull'antiquario corrente.</p>
-        <a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=G.+BASLINI" class="btn">Clicca qui</a>
-      </div>
-    </section>
-    <section id="interactive-section">
-      <h2 class="section-title">
-        <span class="highlight">CARTA</span>
-        <span class="regular-text">D'IDENTITÀ</span>
-      </h2>
       <div class="dual-content-wrapper">
         <div class="tab-container">
           <ul class="tab-list">
-            <li class="tab active" data_content="Bio">Biografia</li>
+            <li class="tab active" data_content="Bio">Dati biografici</li>
             <li class="tab" data_content="Persone">Albero familiare</li>
-            <li class="tab" data_content="Localizzazioni">Mappa dei luoghi</li>
-            <li class="tab" data_content="Collaboratori">Collaboratori</li>
-            <li class="tab" data_content="Clienti">Clienti</li>
+            <li class="tab" data_content="Localizzazioni">Luoghi</li>
+            <li class="tab" data_content="Relazioni">Relazioni</li>
             <li class="tab" data_content="Bibliografia">Bibliografia</li>
+            <li class="tab" data_content="Opere trattate">Opere trattate</li>
           </ul>
         </div>
         <div class="content-card">
           <div id="Bio" class="content active-content">
-            <h3>Giuseppe Baslini (1817-1887)</h3>
-            <p></p>
-            <p>Giuseppe Baslini (1817-1887) nacque a Landriano, nel Pavese. Trasferitosi in giovane età a Milano e avvicinatosi al settore del mercato antiquariale, riuscì nel giro di poco tempo a ottenere un notevole successo commerciale. Le fonti ricordano infatti Baslini come un autodidatta dalle umili origini che ottenne rapidamente la fama di abile antiquario e mercate grazie intelligenza a spregiudicatezza, non solo in Italia, ma in tutta Europa. </p>
-            <p></p>
-            <p>A Milano Baslini acquistò un terreno in via Montenapoleone 11 sul quale fece costruire una villa che ospitava la propria abitazione e la galleria presso la quale accoglieva i clienti. Priva di una specializzazione, la sua attività si connota per poliedricità e ampiezza di interessi. Durante la carriera Baslini trattò infatti dipinti, arti decorativi e mobilio, cercando di assecondare il gusto dell’epoca. La complessità della rete dei clienti e del suo giro di affari emerge dalle testimonianze dei contemporanei. Significativa è quella di Giovanni Morelli (1816-1891), il quale alternava giudizi feroci per la spregiudicatezza mostrata da Baslini in alcune compravendite ad apprezzamenti e riconoscimenti sinceri.</p>
-            <p></p>
-            <p>Baslini ebbe rapporti con Wilhelm von Bode, fu consigliere e fornitore delle collezioni Poldi Pezzoli, Bagatti Valsecchi. Strinse inoltre un felice sodalizio con Charles Lock Eastlake (1793-1865) e Otto Mündler (1811-1870), che a partire dal 1855 avevano iniziato una campagna di acquisti in Italia per la National Gallery di Londra. </p>
-            <p></p>
+            <h3>Giuseppe Baslini (1817-1887) nacque a Landriano, nel Pavese. Trasferitosi in giovane età a Milano e avvicinatosi al settore del mercato antiquariale, riuscì nel giro di poco tempo a ottenere un notevole successo commerciale. Le fonti ricordano infatti Baslini come un autodidatta dalle umili origini che ottenne rapidamente la fama di abile antiquario e mercate grazie intelligenza a spregiudicatezza, non solo in Italia, ma in tutta Europa. <br> <br></h3>
+            <p>A Milano Baslini acquistò un terreno in via Montenapoleone 11 sul quale fece costruire una villa che ospitava la propria abitazione e la galleria presso la quale accoglieva i clienti. Priva di una specializzazione, la sua attività si connota per poliedricità e ampiezza di interessi. Durante la carriera Baslini trattò infatti dipinti, arti decorativi e mobilio, cercando di assecondare il gusto dell’epoca. La complessità della rete dei clienti e del suo giro di affari emerge dalle testimonianze dei contemporanei. Significativa è quella di Giovanni Morelli (1816-1891), il quale alternava giudizi feroci per la spregiudicatezza mostrata da Baslini in alcune compravendite ad apprezzamenti e riconoscimenti sinceri. <br> <br></p>
+            <p>Baslini ebbe rapporti con Wilhelm von Bode, fu consigliere e fornitore delle collezioni Poldi Pezzoli e Bagatti Valsecchi. Strinse inoltre un felice sodalizio con Charles Lock Eastlake (1793-1865) e Otto Mündler (1811-1870), che a partire dal 1855 avevano iniziato una campagna di acquisti in Italia per la National Gallery di Londra. <br> <br></p>
             <p>Alla morte dell’antiquario, avvenuta nel 1887, gli eredi decisero di mettere all’asta la collezione a lui appartenuta. La vendita si tenne a Milano l’anno successivo per conto dell’“Impresa di Vendite in Italia Giulio Sambon”. </p>
+            <p></p>
           </div>
           <div id="Persone" class="content">
-            <h3>L'entità Baslini è così composta:</h3>
+            <h3>Relazioni familiari:</h3>
             <div id="albero-genealogico"></div>
           </div>
           <div id="Localizzazioni" class="content">
-            <h3>Geolocalizzazione dell'attività antiquariale:</h3>
             <section id="map">
               <div id="chartdiv"></div>
             </section>
           </div>
-          <div id="Collaboratori" class="content">
-            <h3>Hanno collaborato con l'entità Baslini:</h3>
+          <div id="Relazioni" class="content">
+            <h3>Altri antiquari:</h3>
             <ul>
-              <li>Wilhem Von Bode (storico dell'arte)</li>
             </ul>
-          </div>
-          <div id="Clienti" class="content">
-            <h3>I principali clienti dell'entità Baslini sono stati:</h3>
+            <h3>Clienti:</h3>
             <ul>
               <li>Charles Lock Eastlake </li>
               <li>Fausto Bagatti Valsecchi </li>
@@ -121,6 +99,10 @@
               <li>Giuseppe Bagatti Valsecchi </li>
               <li>Otto Mündler </li>
               <li>Wilhelm von Bode </li>
+            </ul>
+            <h3>Collaboratori:</h3>
+            <ul>
+              <li>Wilhem Von Bode (storico dell'arte)</li>
             </ul>
           </div>
           <div id="Bibliografia" class="content">
@@ -132,9 +114,17 @@
               <li>Zanni, A. (2000), <i>Dedicato a Giuseppe Baslini (1817 - 1887), in Arte lombarda del secondo millenio: saggi in onore di Gian Alberto Dell'Acqua.</i>, Milano, pp. 270-275</li>
             </ul>
           </div>
+          <div id="Opere trattate" class="content">
+            <p>
+              Vedi le opere transitate presso l’antiquario documentate nell’archivio fotografico della Fondazione Federico Zeri: 
+              <a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=G.+BASLINI">
+                catalogo
+              </a>
+            </p>
+          </div>
         </div>
       </div>
-    </section>
+    </main>
     <footer>
       <div class="footer-container">
         <div class="footer-left">
