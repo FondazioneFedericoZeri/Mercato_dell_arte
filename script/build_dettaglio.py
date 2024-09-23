@@ -7,7 +7,17 @@ def getText(filename):
     doc = docx.Document(filename)
     fullText = []
     for para in doc.paragraphs:
-        fullText.append(para.text)
+        if len(para.text.strip()) > 0:
+            fullText.append(para.text)
+    return fullText
+
+def getTXT(filename):
+    fullText = []
+    with open(filename) as fin:
+        for line in fin:
+            line = line.strip()
+            if len(line)>0:
+                fullText.append(line)
     return fullText
 
 
@@ -149,89 +159,44 @@ def build_html(entity, entities):
 
             with page.main():
                 print(entity["ID"], len(imgs))
-#              <section id="image-gallery">
-#         <div class="gallery-wrapper">
-#             <h2 class="gallery-title">Antonacci-Efrati</h2>
-# </div>
 
-# ---> slider o img singola
-
-# </section>
                 with page.section(id="image-gallery"):
-                    with page.div(klass="gallery-wrapper"):
-                        page.h2(klass="gallery-title", _t="NOME")
-
+                    next_div_class = "gallery-wrapper"
                     if len(imgs) == 0:
-                        with page.div(klass="single-image-container"):
-                            desc = entity['Nome']
-                            page.img(src=f"../../img/antiquari-preview/{entity['Foto preview']}.jpg", alt=f"{desc}")
-                            page.div(_t=f"{desc}", klass="caption overlay-caption")
+                        next_div_class = "gallery-wrapper no-imgs"
+                    with page.div(klass=next_div_class):
+                        page.h2(klass="gallery-title", _t=entity["Nome"])
 
-                    elif len(imgs) == 1:
-                        with page.div(id="single-image-container"):
-                            desc = entity['Nome']
-                            img = f"{imgs[0]}.jpg"
+                        if len(imgs) == 1:
+                            with page.div(id="single-image-container"):
+                                desc = entity['Nome']
+                                img = f"{imgs[0]}.jpg"
 
-                            if img in images_description:
-                                desc = images_description[img]["Didascalia"]
+                                if img in images_description:
+                                    desc = images_description[img]["Didascalia"]
 
-                            page.img(
-                                src=f"../../img/slider-antiquari/{img}", alt=f"{desc}")
-                            page.div(_t=f"{desc}",
-                                        klass="caption overlay-caption")
+                                page.img(src=f"../../img/slider-antiquari/{img}", alt=f"{desc}")
+                                page.div(_t=f"{desc}", klass="caption overlay-caption")
 
-                    else:
-    # HTML SLIDER
-    #             <div class="slider-container">
-    #                 <div class="slider">
-    #                     <div class="slide">
-    #                         <img src="../img/slider-antiquari/AC_img1.jpg" alt="Immagine 1">
-    #                         <div class="caption">Descrizione dell'immagine 1</div>
-    #                     </div>
-    #                     <div class="slide">
-    #                         <img src="../img/slider-antiquari/AC_img2.jpg" alt="Immagine 2">
-    #                         <div class="caption">Descrizione dell'immagine 2</div>
-    #                     </div>
-    #                     <div class="slide">
-    #                         <img src="../img/slider-antiquari/AC_img3.jpg" alt="Immagine 3">
-    #                         <div class="caption">Descrizione dell'immagine 3</div>
-    #                     </div>
-    #                 </div>
-    #                 <button class="prev" onclick="prevSlide()">&#10094;</button>
-    #                 <button class="next" onclick="nextSlide()">&#10095;</button>
+                        elif len(imgs) > 1:
+                            with page.div(klass="slider-container"):
+                                with page.div(klass="slider"):
+                                    for img in imgs:
+                                        img = f"{img}.jpg"
+                                        desc = {entity['Nome']}
+                                        if img in images_description:
+                                            desc = images_description[img]["Didascalia"]
 
-    #             </div>
+                                        with page.div(klass="slide"):
+                                            page.img(
+                                                src=f"../../img/slider-antiquari/{img}", alt=f"{desc}")
+                                            page.div(_t=f"{desc}", klass="caption")
+                                page.button("&#10094;", klass="prev",
+                                            onclick="prevSlide()", _t = "<")
+                                page.button("&#10095;", klass="next",
+                                            onclick="nextSlide()", _t = ">")
 
-                        with page.div(klass="slider-container"):
-                            with page.div(klass="slider"):
-                                for img in imgs:
-                                    img = f"{img}.jpg"
-                                    desc = {entity['Nome']}
-                                    if img in images_description:
-                                        desc = images_description[img]["Didascalia"]
 
-                                    with page.div(klass="slide"):
-                                        page.img(
-                                            src=f"../../img/slider-antiquari/{img}", alt=f"{desc}")
-                                        page.div(_t=f"{desc}", klass="caption")
-                            page.button("&#10094;", klass="prev",
-                                        onclick="prevSlide()")
-                            page.button("&#10095;", klass="next",
-                                        onclick="nextSlide()")
-
-           # with page.section(id="FZ", klass="fade-in"):
-                #with page.h2():
-                    #page.span(_t="CATALOGO", klass="highlight")
-                    #page.span(_t="ZERI", klass="regular-text")
-                #with page.div(klass="content-wrapper"):
-                    #page.p(_t="Consulta le banche dati della Fondazione<br>Federico Zeri e ricerca fotografie, documenti, <br>cataloghi d'asta, fondi e notizie <br>sull'antiquario corrente.")
-                    #page.a(href=f"{entity['Link Zeri']}",
-                           #klass="btn", _t="Clicca qui")
-
-           # with page.section(id="interactive-section"):
-            #    with page.h2(klass="section-title"):
-             #       page.span(_t="CARTA", klass="highlight")
-              #      page.span(_t="D'IDENTITÀ", klass="regular-text")
                 with page.div(klass="dual-content-wrapper"):
                     with page.div(klass="tab-container"):
                         with page.ul(klass="tab-list"):
@@ -261,8 +226,9 @@ def build_html(entity, entities):
                     with page.div(klass="content-card"):
                         with page.div(id="Bio", klass="content active-content"):
                             content = getText(f"../bio/{entity['Bio']}.docx")
-                            page.h3(_t=f"{content[0]}")
-                            for paragraph in content[1:]:
+                            content = getTXT(f"../bio-txt/{entity['Bio']}.txt")
+                            # page.h3(_t=f"{content[0]}")
+                            for paragraph in content:
                                 page.p(_t=paragraph)
 
                         with page.div(id="Persone", klass="content"):
@@ -345,9 +311,9 @@ def build_html(entity, entities):
 
                         with page.div(id="Opere trattate", klass="content"):
                             with page.p():
-                                page("Vedi le opere transitate presso l’antiquario documentate nell’archivio fotografico della Fondazione Federico Zeri: ")
-                                with page.a(href=entity["Link Zeri"]):
-                                    page("catalogo")
+                                page("Vedi le opere transitate presso l'antiquario presenti nel ")
+                                with page.a(href=entity["Link Zeri"], klass="linkBio"):
+                                    page("catalogo della Fondazione Zeri")
 
 
             with page.footer():
@@ -357,8 +323,14 @@ def build_html(entity, entities):
                         page.img(
                             id="license.png", src="../../img/homepage/license.png", alt="License")
                     with page.div(klass="footer-right"):
-                        page.p().a(_t="Crediti", href="#")
-                        page.p().a(_t="Documentazione", href="#")
+                        with page.p():
+                            with page.a(href="../../html/crediti.html"):
+                                page("Crediti")
+                            page("|")
+                            with page.a(href="https://github.com/FondazioneFedericoZeri/Mercato_dell_arte",
+                                        target="_blank"):
+                                page("Documentazione")
+
 
     # Get the generated HTML as a string
     html_content = str(page)
