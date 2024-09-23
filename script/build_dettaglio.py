@@ -149,14 +149,7 @@ def build_html(entity, entities):
 
             with page.main():
                 print(entity["ID"], len(imgs))
-#              <section id="image-gallery">
-#         <div class="gallery-wrapper">
-#             <h2 class="gallery-title">Antonacci-Efrati</h2>
-# </div>
 
-# ---> slider o img singola
-
-# </section>
                 with page.section(id="image-gallery"):
                     with page.div(klass="gallery-wrapper"):
                         page.h2(klass="gallery-title", _t=entity["Nome"])
@@ -169,10 +162,8 @@ def build_html(entity, entities):
                                 if img in images_description:
                                     desc = images_description[img]["Didascalia"]
 
-                                page.img(
-                                    src=f"../../img/slider-antiquari/{img}", alt=f"{desc}")
-                                page.div(_t=f"{desc}",
-                                            klass="caption overlay-caption")
+                                page.img(src=f"../../img/slider-antiquari/{img}", alt=f"{desc}")
+                                page.div(_t=f"{desc}", klass="caption overlay-caption")
 
                         elif len(imgs) > 1:
                             with page.div(klass="slider-container"):
@@ -190,21 +181,9 @@ def build_html(entity, entities):
                                 page.button("&#10094;", klass="prev",
                                             onclick="prevSlide()", _t = "<")
                                 page.button("&#10095;", klass="next",
-                                            onclick="nextSlide()", _t = "<")
+                                            onclick="nextSlide()", _t = ">")
 
-           # with page.section(id="FZ", klass="fade-in"):
-                #with page.h2():
-                    #page.span(_t="CATALOGO", klass="highlight")
-                    #page.span(_t="ZERI", klass="regular-text")
-                #with page.div(klass="content-wrapper"):
-                    #page.p(_t="Consulta le banche dati della Fondazione<br>Federico Zeri e ricerca fotografie, documenti, <br>cataloghi d'asta, fondi e notizie <br>sull'antiquario corrente.")
-                    #page.a(href=f"{entity['Link Zeri']}",
-                           #klass="btn", _t="Clicca qui")
 
-           # with page.section(id="interactive-section"):
-            #    with page.h2(klass="section-title"):
-             #       page.span(_t="CARTA", klass="highlight")
-              #      page.span(_t="D'IDENTITÀ", klass="regular-text")
                 with page.div(klass="dual-content-wrapper"):
                     with page.div(klass="tab-container"):
                         with page.ul(klass="tab-list"):
@@ -318,7 +297,7 @@ def build_html(entity, entities):
 
                         with page.div(id="Opere trattate", klass="content"):
                             with page.p():
-                                page("Vedi le opere transitate presso l’antiquario documentate nell’archivio fotografico della Fondazione Federico Zeri: ")
+                                page("Vedi le opere transitate presso l'antiquario presenti nel ")
                                 with page.a(href=entity["Link Zeri"], klass="linkBio"):
                                     page("catalogo della Fondazione Zeri")
 
