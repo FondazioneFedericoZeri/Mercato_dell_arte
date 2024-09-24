@@ -187,9 +187,19 @@ document.addEventListener("DOMContentLoaded", function () {
         $.getJSON("https://raw.githubusercontent.com/FondazioneFedericoZeri/Mercato_dell_arte/main/json/luoghi.json", function (luoghi_json) {
             for (let luogo in luoghi_json) {
                 if (luoghi_json[luogo]["geo"]["lat"] && filterByTimePeriod(luoghi_json[luogo], period)) {
-                    let place_name = luoghi_json[luogo]["Città"];
+
+                    // Start with Città
+                    let place_name = luoghi_json[luogo]["Città"] || "";
                     let nome_attivita = luoghi_json[luogo]["Nome attività"];
                     let id_entita = luoghi_json[luogo]["ID_entità"];
+
+                    // Format the address
+                    if (luoghi_json[luogo]["Via"] && luoghi_json[luogo]["Via"].length > 0) {
+                        place_name += `, ${luoghi_json[luogo]["Via"]}`;  // Add Via if present
+                        if (luoghi_json[luogo]["Civico"] && luoghi_json[luogo]["Civico"].length > 0) {
+                            place_name += `, ${luoghi_json[luogo]["Civico"]}`;  // Add Civico if present
+                        }
+                    }
 
                     // Create the tooltip content
                     let content = `<b>${nome_attivita}</b><br>${place_name}<br>`;
@@ -233,6 +243,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Add the cluster group to the map after markers are added
         map.addLayer(markers);
     }
+
 
     // Initial load with all periods
     updateMarkers('all');
