@@ -66,54 +66,66 @@ document.addEventListener("DOMContentLoaded", function () {
             return grayIcon; // Neutral color for missing data
         }
 
-        // Case 2: If Chiusura is before 1900
+        // Case 2: If the activity ended before 1900 (even if it started earlier)
         if (chiusura && chiusura < 1900) {
             return blueIcon; // Blue for before 1900
         }
 
-        // Case 3: If Apertura is after 1900 and Chiusura is before or equal to 1950
-        if (apertura && apertura >= 1900 && chiusura && chiusura <= 1950) {
+        // Case 3: If the activity was ongoing between 1900-1950
+        if (
+            (apertura && apertura < 1950 && chiusura && chiusura > 1900) ||  // Overlaps with 1900-1950
+            (apertura && apertura >= 1900 && chiusura && chiusura <= 1950)   // Fully within 1900-1950
+        ) {
             return orangeIcon; // Orange for 1900-1950
         }
 
-        // Case 4: If Apertura is after 1950
+        // Case 4: If the activity was ongoing after 1950 (including if it started earlier)
+        if (apertura && apertura <= 1950 && chiusura && chiusura > 1950) {
+            return greenIcon; // Green for post 1950 but started before
+        }
+
+        // Case 5: If the activity started after 1950
         if (apertura && apertura > 1950) {
             return greenIcon; // Green for after 1950
         }
 
-        // Default case (fallback)
-        return blueIcon;
+        // Default case: use gray as fallback if no match
+        return grayIcon;
     }
+
 
     // Function to filter data based on the selected time period
     function filterByTimePeriod(luogo, period) {
         const apertura = luogo["Apertura"] ? parseInt(luogo["Apertura"]) : null;
-        const chiusura = luogo["Chiusura"] ? parseInt(luogo["Chiusura"]) : null;
+        const chiusura = luogo["Chiusura"] && luogo["Chiusura"].trim() !== '' ? parseInt(luogo["Chiusura"]) : null;  // Handle empty string
 
         // 1. Show all points if "all" is selected, regardless of Apertura/Chiusura values
         if (period === 'all') {
             return true;
         }
 
-        // 2. Show points where Chiusura is before 1900 (even if Apertura is missing)
+        // 2. Show points where the activity is active before 1900
         if (period === 'period1') {
-            if (chiusura && chiusura < 1900) {
+            if ((apertura && apertura < 1900) || (chiusura && chiusura < 1900)) {
                 return true;
             }
             return false;
         }
 
-        // 3. Show points where Apertura is >= 1900 and Chiusura <= 1950
+        // 3. Show points where the activity overlaps with the 1900-1950 period
         if (period === 'period2') {
-            if (apertura && apertura >= 1900 && chiusura && chiusura <= 1950) {
+            if (
+                (apertura && apertura < 1950 && (chiusura === null || chiusura > 1900)) ||  // Overlap or no Chiusura
+                (apertura && apertura >= 1900 && apertura <= 1950)
+            ) {
                 return true;
             }
             return false;
         }
 
-        // 4. Show points where Apertura is after 1950 (Chiusura can be missing)
+        // 4. Show points where activity continues after 1950 (including points that started earlier)
         if (period === 'period3') {
-            if (apertura && apertura > 1950) {
+            if ((apertura && apertura > 1950) || (chiusura === null || chiusura > 1950)) {
                 return true;
             }
             return false;
@@ -122,6 +134,9 @@ document.addEventListener("DOMContentLoaded", function () {
         // Default: don't show the point if no valid match
         return false;
     }
+
+
+
 
     // Create a cluster group with custom cluster styling
     var markers = L.markerClusterGroup({
