@@ -315,8 +315,8 @@ function initializeChart(rootNode) {
       valueField: "value",
       categoryField: "name",
       childDataField: "children",
-      nodePaddingTop: 40,
-      nodePaddingBottom: 40,
+      nodePaddingTop: 30,
+      nodePaddingBottom: 30,
       nodePaddingLeft: 30,
       nodePaddingRight: 30,
       fixed: false
@@ -362,8 +362,6 @@ function initializeChart(rootNode) {
     
       
     };
-  
-    
 
     // Set data for the chart (e.g., rootNode)
     series.data.setAll([rootNode]);

@@ -387,7 +387,7 @@ nav ul li a:hover {
 }
 
 #chartdiv {
-    height: 600px;
+    height: 550px;
     /* Ensure the map has enough height to be visible */
     width: 100%;
     /* Make it responsive to the width of the parent container */
@@ -399,12 +399,6 @@ nav ul li a:hover {
     margin-top: 40px;
     padding-bottom: 40px;
 }
-
-canvas.am5-layer-30 {
-    height: 800px !important;  /* Forza l'altezza del canvas */
-    width: 100% !important;    /* Assicura che la larghezza sia al 100% */
-}
-
 
 
 /* Imposta i link all'interno della biografia in grassetto */
