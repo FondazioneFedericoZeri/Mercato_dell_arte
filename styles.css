@@ -250,14 +250,14 @@ nav ul li a:hover {
 #btn-cognome {
     background-color: #333;
     color: #fff;
-    padding: 12px 24px;
-    text-decoration: none;
+    padding: 9px 20px;
     font-weight: bold;
-    border-radius: 5px;
     cursor: pointer;
-    font-size: 120%;
-    margin-left: 180px;
+    font-size: 110%;
+    border: 1px solid #ccc;
     transition: background-color 0.3s ease;
+    margin-top: -3.5px;
+    margin-left: 10px;
 
 }
 
