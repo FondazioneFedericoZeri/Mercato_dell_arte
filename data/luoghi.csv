@@ -123,9 +123,9 @@ IT_96,Italia,Lazio,Roma,Piazza di Spagna,92,SE_I,1870,1938 ca.,"Isacco e Emanuel
 IT_97,Italia,Lazio,Roma,Piazza Sant'Apollinare,46,SI,1870 ca.,1890,"Attilio Simonetti (Palazzo Altemps, studio privato)",,
 IT_98,Italia,Lazio,Roma,Piazza Scossacavalli,,DI,1870 ca.,1920 ca.,Angelo Di Castro (negozio),,
 IT_99,Italia,Lazio,Roma,Piazza della Trinità dei Monti,6,CA_II,1885,1901,"Giuseppe Giacomini e Vincenzo Capobianchi, ""Giacomini & Capobianchi""",,
-IT_100,Italia,Lazio,Roma,Via dei Condotti,,TA,1880 ca.,1924,Filippo Tavazzi,,
-IT_101,Italia,Lazio,Roma,Via dei Condotti,44,SA_III,1887,1905 ca.,"Giulio Sambon, ""Impresa di vendita in Italia Giulio Sambon""",,
-IT_102,Italia,Lazio,Roma,Via dei Condotti,59-61,IM,1897,1943 ca.,"Alexandre Imbert, ""Galerie A. Imbert"" (Palazzo Caffarelli)",,
+IT_100,Italia,Lazio,Roma,"Via dei Condotti, Campo Marzio",,TA,1880 ca.,1924,Filippo Tavazzi,,
+IT_101,Italia,Lazio,Roma,"Via dei Condotti, Campo Marzio",44,SA_III,1887,1905 ca.,"Giulio Sambon, ""Impresa di vendita in Italia Giulio Sambon""",,
+IT_102,Italia,Lazio,Roma,"Via dei Condotti, Campo Marzio",59-61,IM,1897,1943 ca.,"Alexandre Imbert, ""Galerie A. Imbert"" (Palazzo Caffarelli)",,
 IT_103,Italia,Lazio,Roma,Via del Babuino,144,AN-EF,1916,1955 ca.,"Emanuele Efrati, ""Galleria Efrati""",,
 IT_103_b,Italia,Lazio,Roma,Via del Babuino,146,AN-EF,1955 ca.,1998,"Emanuele Efrati e Giuseppe Antonacci, ""Antonacci-Efrati""",,RIGA AGGIUNTA!!!
 IT_104,Italia,Lazio,Roma,Via del Babuino,87-88,DI,1930 ca.,1939 ca.,"Amedeo e Leone Di Castro, ""Antichità A. L. Di Castro""",,
@@ -159,7 +159,7 @@ IT_130,Italia,Lazio,Roma,Via Sistina,131,BA_III,1925 ca.,1935 ca.,Alfredo Barsan
 IT_131,Italia,Lazio,Roma,Via Sistina,137,BA_III,1935 ca.,1946,Alfredo Barsanti,,
 IT_132,Italia,Lazio,Roma,Via Tevere,7,CO_I,1909,1921,Alessandro Contini Bonacossi (abitazione privata),,
 IT_133,Italia,Lazio,Roma,Piazza della Trinità dei Monti,9,CI,1891 ca.,1909 ca.,Vincenzo Ciampolini,,
-IT_134,Italia,Lazio,Roma,Via Vittoria Colonna,11,SI,1890,1932,"Attilio Simonetti e figli, ""Galleria Simonetti"", dal 1925 ""Simonetti Aldo Giulio & C."" (Palazzo Odescalchi)",,
+IT_134,Italia,Lazio,Roma,"Via Vittoria Colonna, Prati",11,SI,1890,1932,"Attilio Simonetti e figli, ""Galleria Simonetti"", dal 1925 ""Simonetti Aldo Giulio & C."" (Palazzo Odescalchi)",,
 IT_135,Italia,Lazio,Roma,Viale di Tor di Quinto,58,LA_II,1892,1934,Michele Lazzaroni (abitazione privata),,
 IT_135_b,Italia,Lazio,Roma,Via Flaminia,170,JA,1920,1929,Ugo Jandolo,,RIGA AGGIUNTA!!!
 IT_135_c,Italia,Lazio,Roma,,,PA_II,1880 ca.,1924,Paolo Paolini,,RIGA AGGIUNTA!!!

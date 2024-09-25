@@ -859,8 +859,8 @@
         "Chiusura": "1996",
         "Nome attività": "Ivan Bruschi",
         "geo": {
-            "lat": 43.3435029,
-            "lon": 11.922059669656488
+            "lat": 43.464796050000004,
+            "lon": 11.880910299394806
         }
     },
     "IT_31": {
@@ -1988,15 +1988,15 @@
         "Nazione": "Italia",
         "Regione": "Lazio",
         "Città": "Roma",
-        "Via": "Via dei Condotti",
+        "Via": "Via dei Condotti, Campo Marzio",
         "Civico": "",
         "ID_entità": "TA",
         "Apertura": "1880 ca.",
         "Chiusura": "1924",
         "Nome attività": "Filippo Tavazzi",
         "geo": {
-            "lat": 41.7615491,
-            "lon": 12.70984
+            "lat": 41.9057255,
+            "lon": 12.4820815
         }
     },
     "IT_101": {
@@ -2004,15 +2004,15 @@
         "Nazione": "Italia",
         "Regione": "Lazio",
         "Città": "Roma",
-        "Via": "Via dei Condotti",
+        "Via": "Via dei Condotti, Campo Marzio",
         "Civico": "44",
         "ID_entità": "SA_III",
         "Apertura": "1887",
         "Chiusura": "1905 ca.",
         "Nome attività": "Giulio Sambon, \"Impresa di vendita in Italia Giulio Sambon\"",
         "geo": {
-            "lat": 41.7615491,
-            "lon": 12.70984
+            "lat": 41.9057255,
+            "lon": 12.4820815
         }
     },
     "IT_102": {
@@ -2020,15 +2020,15 @@
         "Nazione": "Italia",
         "Regione": "Lazio",
         "Città": "Roma",
-        "Via": "Via dei Condotti",
+        "Via": "Via dei Condotti, Campo Marzio",
         "Civico": "59-61",
         "ID_entità": "IM",
         "Apertura": "1897",
         "Chiusura": "1943 ca.",
         "Nome attività": "Alexandre Imbert, \"Galerie A. Imbert\" (Palazzo Caffarelli)",
         "geo": {
-            "lat": 41.7615491,
-            "lon": 12.70984
+            "lat": 41.9057255,
+            "lon": 12.4820815
         }
     },
     "IT_103": {
@@ -2363,8 +2363,8 @@
         "Chiusura": "1931",
         "Nome attività": "Alessandro Contini Bonacossi (abitazione privata)",
         "geo": {
-            "lat": 41.9612358,
-            "lon": 12.5916269
+            "lat": 41.9149169921875,
+            "lon": 12.509556770324707
         }
     },
     "IT_122": {
@@ -2564,15 +2564,15 @@
         "Nazione": "Italia",
         "Regione": "Lazio",
         "Città": "Roma",
-        "Via": "Via Vittoria Colonna",
+        "Via": "Via Vittoria Colonna, Prati",
         "Civico": "11",
         "ID_entità": "SI",
         "Apertura": "1890",
         "Chiusura": "1932",
         "Nome attività": "Attilio Simonetti e figli, \"Galleria Simonetti\", dal 1925 \"Simonetti Aldo Giulio & C.\" (Palazzo Odescalchi)",
         "geo": {
-            "lat": 41.7325562,
-            "lon": 12.827791
+            "lat": 41.905145,
+            "lon": 12.4720605
         }
     },
     "IT_135": {
@@ -2619,8 +2619,8 @@
         "Chiusura": "1924",
         "Nome attività": "Paolo Paolini",
         "geo": {
-            "lat": 37.1277579,
-            "lon": -7.6493087
+            "lat": 41.8933203,
+            "lon": 12.4829321
         }
     },
     "IT_136": {
