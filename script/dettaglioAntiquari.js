@@ -315,8 +315,8 @@ function initializeChart(rootNode) {
       valueField: "value",
       categoryField: "name",
       childDataField: "children",
-      nodePaddingTop: 30,
-      nodePaddingBottom: 30,
+      nodePaddingTop: 40,
+      nodePaddingBottom: 40,
       nodePaddingLeft: 30,
       nodePaddingRight: 30,
       fixed: false
@@ -324,9 +324,14 @@ function initializeChart(rootNode) {
 
     // Customize the link between nodes to control distance
     series.links.template.setAll({
-      strength: 0.5,
-      distance: 1  // Set distance between nodes (default: 50)
+      strength: 1,
+      distance: 1,  // Set distance between nodes (default: 50)
     });
+
+    series.links.template.adapters.add("stroke", function(stroke, target) {
+      return am5.color("#333333");  // Forza il colore arancione
+    });
+    
 
     // Disable tooltips
     root.tooltipContainer.set("forceHidden", true);
@@ -335,7 +340,7 @@ function initializeChart(rootNode) {
     // Configure node template
     series.nodes.template.setup = function (target) {
       var rectangle = target.children.push(am5.RoundedRectangle.new(root, {
-        width: 160,
+        width: 200,
         height: 50,
         centerX: am5.percent(50),
         centerY: am5.percent(50),
@@ -354,7 +359,11 @@ function initializeChart(rootNode) {
         fill: am5.color("#ffffff"),
         fontSize: 16
       }));
+    
+      
     };
+  
+    
 
     // Set data for the chart (e.g., rootNode)
     series.data.setAll([rootNode]);
@@ -364,5 +373,5 @@ function initializeChart(rootNode) {
 
     chartInitialized = true;
   });
-}
 
+}

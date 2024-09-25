@@ -89,6 +89,10 @@ nav ul li a:hover {
     box-sizing: border-box;
 } 
 
+.gallery-wrapper.no-imgs {
+    height: 180px;
+}
+
 .gallery-title {
     font-size: 62px;
     font-weight: 700;
@@ -114,7 +118,7 @@ nav ul li a:hover {
 .slider {
     display: flex;
     /* Modificato per layout flessibile */
-    transition: transform 0.5s ease-in-out;
+    transition: transform 1s ease-in-out;
 }
 
 .slide {
@@ -138,7 +142,7 @@ nav ul li a:hover {
     padding: 10px 20px;
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
-    font-size: 16px;
+    font-size: 14px;
     text-align: center;
     box-sizing: border-box;
     border-bottom-left-radius: 10px;
@@ -146,7 +150,7 @@ nav ul li a:hover {
 }
 
 .caption {
-    opacity: 0;
+    opacity: 1;
     transition: opacity 0.5s ease-in-out;
 }
 
@@ -226,7 +230,7 @@ nav ul li a:hover {
 }
 
 
-.overlay-caption {
+#single-image-container overlay-caption {
     position: absolute;
     bottom: 40px;
     left: 50%;
@@ -249,71 +253,6 @@ nav ul li a:hover {
 }
 
 
-
-/*sezione tab Fondazione Zeri*/
-
-#FZ {
-    padding: 40px 60px;
-    background-color: #fff;
-    text-align: center;
-}
-
-#FZ h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    margin-left: 80px;
-    /* Aggiunge margine a sinistra per allineare */
-    text-align: left;
-}
-
-#FZ h2 .highlight {
-    color: #5593C9;
-    font-weight: 700;
-}
-
-#FZ h2 .regular-text {
-    color: #000;
-    font-weight: 400;
-}
-
-
-#FZ .content-wrapper {
-    display: flex;
-    justify-content: space-between;
-    /* Spazia il paragrafo e il pulsante */
-    align-items: center;
-    /* Allinea verticalmente il paragrafo e il pulsante */
-    margin-left: 80px;
-    /* Allinea il contenuto con il margine sinistro */
-    margin-right: 80px;
-    /* Allinea il contenuto con il margine destro */
-}
-
-#FZ p {
-    margin-bottom: 0;
-    /* Rimuove il margine inferiore del paragrafo */
-    font-size: 24px;
-    font-weight: 400;
-    text-align: left;
-}
-
-#FZ .btn {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    float: none;
-    /* Rimuove il float */
-    margin-right: 260px;
-}
-
-#FZ .btn:hover {
-    background-color: #5593C9;
-    color: #fff;
-}
 
 /*sezione interattiva tab*/
 
@@ -422,7 +361,7 @@ nav ul li a:hover {
     padding: 20px;
     margin-right: 120px;
     margin-bottom: 40px;
-    margin-left: 20px;
+    margin-left: 50px;
 }
 
 .content {
@@ -431,6 +370,54 @@ nav ul li a:hover {
 
 .active-content {
     display: block;
+}
+
+.content-card p {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+/*Imposta altezza card per albero genealogico*/
+
+
+#albero-genealogico {
+    min-height: 270px;
+    min-width: 100%;
+    overflow: visible;
+}
+
+#chartdiv {
+    height: 600px;
+    /* Ensure the map has enough height to be visible */
+    width: 100%;
+    /* Make it responsive to the width of the parent container */
+    border-radius: 8px;
+    background-color: #f5f5f5;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: visible;
+    margin-top: 40px;
+    padding-bottom: 40px;
+}
+
+canvas.am5-layer-30 {
+    height: 800px !important;  /* Forza l'altezza del canvas */
+    width: 100% !important;    /* Assicura che la larghezza sia al 100% */
+}
+
+
+
+/* Imposta i link all'interno della biografia in grassetto */
+#Bio a {
+    font-weight: bold;
+    color: #5593C9; /* Colore predefinito del link */
+    transition: color 0.3s ease; /* Aggiunge una transizione morbida per il colore */
+}
+
+/* Cambia il colore a arancione al passaggio del mouse */
+#Bio a:hover {
+    color: #FFA500; /* Colore arancione */
+    text-decoration: underline; /* Opzionale: aggiunge la sottolineatura al passaggio del mouse */
 }
 
 
@@ -474,19 +461,3 @@ footer img {
     text-align: right;
 }
 
-#albero-genealogico {
-    min-height: 300px;
-    min-width: 100%;
-    overflow: visible;
-}
-
-#chartdiv {
-    height: 500px;
-    /* Ensure the map has enough height to be visible */
-    width: 100%;
-    /* Make it responsive to the width of the parent container */
-    border-radius: 8px;
-    background-color: #f5f5f5;
-    margin-bottom: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
