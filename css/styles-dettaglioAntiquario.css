@@ -386,19 +386,17 @@ nav ul li a:hover {
     overflow: visible;
 }
 
-#chartdiv {
-    height: 550px;
-    /* Ensure the map has enough height to be visible */
-    width: 100%;
-    /* Make it responsive to the width of the parent container */
+#chartdiv { /*css per mappa*/
+    width: 100%; /* Fa sì che la mappa occupi il 100% della larghezza del contenitore */
+    height: 100%; /* Fa sì che la mappa occupi tutta l'altezza disponibile */
+    min-height: 550px; /* Imposta un'altezza minima per evitare che la mappa sia troppo piccola */
     border-radius: 8px;
     background-color: #f5f5f5;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: visible;
-    margin-top: 40px;
-    padding-bottom: 40px;
+    overflow: hidden; /* Assicura che la mappa non strabordi */
 }
+
 
 
 /* Imposta i link all'interno della biografia in grassetto */
@@ -414,6 +412,29 @@ nav ul li a:hover {
     text-decoration: underline; /* Opzionale: aggiunge la sottolineatura al passaggio del mouse */
 }
 
+#Relazioni a {
+    font-weight: bold;
+    color: #5593C9; /* Colore predefinito del link */
+    transition: color 0.3s ease; /* Aggiunge una transizione morbida per il colore */
+}
+
+/* Cambia il colore a arancione al passaggio del mouse */
+#Relazioni a:hover {
+    color: #FFA500; /* Colore arancione */
+    text-decoration: underline; /* Opzionale: aggiunge la sottolineatura al passaggio del mouse */
+}
+
+a.linkBio {
+    font-weight: bold;
+    color: #5593C9; /* Colore predefinito del link */
+    transition: color 0.3s ease; /* Aggiunge una transizione morbida per il colore */
+}
+
+/* Cambia il colore a arancione al passaggio del mouse */
+a.linkBio a:hover {
+    color: #FFA500; /* Colore arancione */
+    text-decoration: underline; /* Opzionale: aggiunge la sottolineatura al passaggio del mouse */
+}
 
 
 /* footer */
