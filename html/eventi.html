@@ -6,17 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eventi</title>
     <link rel="stylesheet" href="../css/styles-eventi.css">
-    <link rel="stylesheet" href="../css/styles-storyline.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;700&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="../script/storyline.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Stalemate&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="../script/scripts-eventi.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
+        
     <header>
         <div class="header-container">
 
-            <a href="../index.html"> 
+            <a href="../index.html">
             <img id="logo.png" src="../img/homepage/logo.png" alt="Fondazione Federico Zeri">
             </a>
 
@@ -33,42 +42,365 @@
         </div>
     </header>
 
-    <!-- Contenuto principale della nuova pagina -->
     <main>
+    <!-- Sezione Timeline Scorrevole -->
+    <section class="scrollable-timeline">
+        <h2 class="section-title">Eventi significativi nell’attività antiquariale</h2>
 
-        <section id="storyline">
-            <h2>I principali eventi del mercato dell'arte</h2>
-            <div class="legend">
-                <div class="legend-item">
-                    <span class="legend-color">1</span>
-                    <span class="legend-text">Vendita all'asta</span>
+        <div class="legend-container">
+            <div class="legend-item">
+                <span class="legend-circle" style="background-color: #5593C9;"></span>
+                <span class="legend-label">vendita all'asta</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-circle" style="background-color: #358d35;"></span>
+                <span class="legend-label">inaugurazione / fondazione</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-circle" style="background-color: #d8cf1b;"></span>
+                <span class="legend-label">donazione</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-circle" style="background-color: #f09400;"></span>
+                <span class="legend-label">pubblicazione</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-circle" style="background-color: #783788;"></span>
+                <span class="legend-label">chiusura</span>
+            </div>
+        </div>
+
+        <div class="timeline-container">
+            <button id="prev" class="nav-button"> < </button>
+            <div class="timeline" id="timeline">
+                <ul>
+                    <!-- Creazione della timeline con righe progressivamente crescenti -->
+                    <li class="small"><span class="soloLinea"></span></li>
+                    <li class="small">1882</li>
+                    <li class="small"><span class="soloLinea"></span><span class="event-point category-1" data-id="event1"></span></li> <!-- Punto evento -->
+                    <li class="small"><span class="soloLinea"></span></li>
+                    <li class="small">1885</li>
+                    <li class="small"><span class="soloLinea"></span></li>
+                    <li class="small"><span class="soloLinea"></span></li>
+                    <li class="small">1888</li>
+                    <li class="small"><span class="soloLinea"></span></li>
+                    <li class="big">1890</li>
+                    
+
+                    <li class="small"><span class="soloLinea"></span></li>
+                    <li class="small">1892</li>
+                    <li class="small"><span class="soloLinea"></span></li>
+                    <li class="small"><span class="soloLinea"></span></li>
+                    <li class="small">1895<span class="event-point category-5" data-id="event2"></span></li> <!-- Punto evento -->
+                    <li class="small"><span class="soloLinea"></span><span class="event-point category-1" data-id="event3"></span><span class="event-point category-1" data-id="event4"></span></li>
+                    <li class="small"><span class="soloLinea"></span></li>
+                    <li class="small">1898</li>
+                    <li class="small"><span class="soloLinea"></span></li>
+                    <li class="big">1900</li>
+
+                    <li class="small"><span class="soloLinea"></span><span class="event-point category-1" data-id="event5"></span></li>
+                    <li class="small">1902</li>
+                    <li class="small"><span class="soloLinea"></span><span class="event-point category-1" data-id="event6"></span></li>
+                    <li class="small"><span class="soloLinea"></span><span class="event-point category-4" data-id="event7"></span></li>
+                    <li class="small">1905 <span class="event-point category-2" data-id="event8"></span></li>
+                    <li class="small"><span class="soloLinea"></span></li>
+                    <li class="small"><span class="soloLinea"></span></li>
+                    <li class="small">1908</li>
+                    <li class="small"><span class="soloLinea"></span><span class="event-point category-1" data-id="event9"></span></li>
+                    <li class="big">1910 <span class="event-point category-2" data-id="event10"></span></li>
+
+                    <li class="small"><span class="soloLinea"></span></li>
+                    <li class="small">1912</li>
+                    <li class="small"><span class="soloLinea"></span></li> 
+                    <li class="small"><span class="soloLinea"></span></li>
+                    <li class="small">1915</li>
+                    <li class="small"><span class="soloLinea"></span></span><span class="event-point category-1" data-id="event11"></span></li>
+                    <li class="small"><span class="soloLinea"></span></li>
+                    <li class="small">1918</li>
+                    <li class="small"><span class="soloLinea"></span></li>
+                    <li class="big">1920</li>
+
+                    <li class="small"><span class="soloLinea"></span></li>
+                    <li class="small">1922</li>
+                    <li class="small"><span class="soloLinea"></span></span><span class="event-point category-6" data-id="event12"></span></li> 
+                    <li class="small"><span class="soloLinea"></span></span><span class="event-point category-1" data-id="event13"></span></li>
+                    <li class="small">1925 </span><span class="event-point category-2" data-id="event14"></span></li>
+                    <li class="small"><span class="soloLinea"></span></li>
+                    <li class="small"><span class="soloLinea"></span></span><span class="event-point category-1" data-id="event15"></span></li>
+                    <li class="small">1928</li>
+                    <li class="small"><span class="soloLinea"></span></li>
+                    <li class="big">1930</li>
+
+                    <li class="small"><span class="soloLinea"></span></span><span class="event-point category-1" data-id="event16"></span></li>
+                    <li class="small">1932</span><span class="event-point category-1" data-id="event17"></span></li>
+                    <li class="small"><span class="soloLinea"></span></li> 
+                    <li class="small"><span class="soloLinea"></span></li>
+                    <li class="small">1935</span><span class="event-point category-1" data-id="event18"></span></span><span class="event-point category-4" data-id="event19"></span></li>
+                    <li class="small"><span class="soloLinea"></span></li>
+                    <li class="small"><span class="soloLinea"></span></li>
+                    <li class="small">1938</li>
+                    <li class="small"><span class="soloLinea"></span></li>
+                    <li class="big">1940</li>
+
+                    <li class="small"><span class="soloLinea"></span></li>
+                    <li class="small">1942</li>
+                    <li class="small"><span class="soloLinea"></span></li> 
+                    <li class="small"><span class="soloLinea"></span></li>
+                    <li class="small">1945</li>
+                    <li class="small"><span class="soloLinea"></span></span><span class="event-point category-3" data-id="event20"></span></li>
+                    <li class="small"><span class="soloLinea"></span></li>
+                    <li class="small">1948</li>
+                    <li class="small"><span class="soloLinea"></span></li>
+                    <li class="big">1950</li>
+
+                    <li class="small"><span class="soloLinea"></span></li>
+                    <li class="small">1952</li>
+                    <li class="small"><span class="soloLinea"></span></span><span class="event-point category-2" data-id="event21"></span></li> 
+                    <li class="small"><span class="soloLinea"></span></li>
+                    <li class="small">1955</li>
+                    <li class="small"><span class="soloLinea"></span></li>
+                    <li class="small"><span class="soloLinea"></span></li>
+                    <li class="small">1958</li>
+                    <li class="small"><span class="soloLinea"></span></li>
+                    <li class="big">1960</li>
+
+                    <li class="small"><span class="soloLinea"></span></li>
+                    <li class="small">1962</li>
+                    <li class="small"><span class="soloLinea"></span></li> 
+                    <li class="small"><span class="soloLinea"></span></li>
+                    <li class="small">1965</li>
+                    <li class="small"><span class="soloLinea"></span></li>
+                    <li class="small"><span class="soloLinea"></span></li>
+                    <li class="small">1968 <span class="event-point category-2" data-id="event22"></span></li>
+                    <li class="small"><span class="soloLinea"></span></li>
+                    <li class="big">1970</li>
+
+                    <li class="small"><span class="soloLinea"></span></li>
+                    <li class="small">1972</li>
+                    <li class="small"><span class="soloLinea"></span></li> 
+                    <li class="small"><span class="soloLinea"></span></li>
+                    <li class="small">1975 <span class="event-point category-2" data-id="event23"></span></li>
+                    <li class="small"><span class="soloLinea"></span></li>
+                    <li class="small"><span class="soloLinea"></span></li>
+                    <li class="small">1978</li>
+                    <li class="small"><span class="soloLinea"></span><span class="event-point category-3" data-id="event24"></span></li>
+                    <li class="big">1980</li>
+
+                    <li class="small"><span class="soloLinea"></span></li>
+                    <li class="small">1982</li>
+                    <li class="small"><span class="soloLinea"></span></li> 
+                    <li class="small"><span class="soloLinea"></span></li>
+                    <li class="small">1985</li>
+                    <li class="small"><span class="soloLinea"></span></li>
+                    <li class="small"><span class="soloLinea"></span><span class="event-point category-2" data-id="event25"></span></li>
+                    <li class="small">1988</li>
+                    <li class="small"><span class="soloLinea"></span></li>
+                    <li class="big">1990</li>
+
+                    <li class="small"><span class="soloLinea"></span></li>
+                    <li class="small">1992</li>
+                    <li class="small"><span class="soloLinea"></span></li> 
+                    <li class="small"><span class="soloLinea"></span></li>
+                    <li class="small">1995</li>
+                    <li class="small"><span class="soloLinea"></span><span class="event-point category-2" data-id="event26"></span></li>
+                    <li class="small"><span class="soloLinea"></span></li>
+                    <li class="small">1998</li>
+                    <li class="small"><span class="soloLinea"></span></li>
+                    <li class="big">2000</li>
+
+                    <li class="small"><span class="soloLinea"></span></li>
+                    <li class="small">2002</li>
+                    <li class="small"><span class="soloLinea"></span></li> 
+                    <li class="small"><span class="soloLinea"></span></li>
+                    <li class="small">2005</li>
+                    <li class="small"><span class="soloLinea"></span></li>
+                    <li class="small"><span class="soloLinea"></span><span class="event-point category-2" data-id="event27"></span></li>
+                    <li class="small">2008</li>
+                    <li class="small"><span class="soloLinea"></span></li>
+                    <li class="big">2010</li>
+
+                    <!-- Continua con altre decine -->
+                </ul>
+            </div>
+            <button id="next" class="nav-button"> > </button>
+        </div>
+
+        <div class="carousel-container">
+            <div class="carousel-wrapper">
+
+                <!-- Card 1 -->
+                <div class="carousel-card category-1" data-id="event1">
+                    <div class="card-title">1883 <br> Vendita Collezione Simonetti</div>
+                    <div class="card-content">Vendita della collezione Simonetti curata dallo stesso <a href="../html/dettagli/dettaglio_SI.html" target="_blank">Attilio Simonetti</a> a Roma.</div>
                 </div>
-                <div class="legend-item">
-                    <span class="legend-color">2</span>
-                    <span class="legend-text">Scoperta</span>
+
+                <!-- Card 2 -->
+                <div class="carousel-card category-5"data-id="event2">
+                    <div class="card-title">1895 <br> Scoperta 'Tesoro di Boscoreale'
+                    </div>
+                    <div class="card-content">Gli antiquari <a href="../html/dettagli/dettaglio_CA_I.html" target="_blank">Canessa</a> scoprono il 'Tesoro di Boscoreale', un servizio di argenteria di oltre 100 pezzi di epoca romana, esportato e ceduto al barone Edmond De Rothschild. La collezione si conserva oggi al Museo del Louvre.</div>
                 </div>
-                <div class="legend-item">
-                    <span class="legend-color">3</span>
-                    <span class="legend-text">Pubblicazione</span>
+
+                <!-- Card 3 -->
+                <div class="carousel-card category-1" data-id="event3">
+                    <div class="card-title">1896 <br> Vendita 'Argenti Cacace'</div>
+                    <div class="card-content">Vendita degli 'Argenti Cacace', rinvenuti a Taranto nel 1896, da parte degli antiquari <a href="../html/dettagli/dettaglio_CA_I.html" target="_blank">Canessa</a>.</div>
                 </div>
-                <div class="legend-item">
-                    <span class="legend-color">4</span>
-                    <span class="legend-text">Inaugurazione</span>
+
+                <!-- Card 4 -->
+                <div class="carousel-card category-1" data-id="event4">
+                    <div class="card-title">1896 <br> Vendita Collezione Principe Orsini</div>
+                    <div class="card-content">Vendita della collezione del Principe Orsini curata dalla <a href="../html/dettagli/dettaglio_SA_IV.html" target="_blank">Galleria Sangiorgi</a>.</div>
                 </div>
-                <div class="legend-item">
-                    <span class="legend-color">5</span>
-                    <span class="legend-text">Donazione</span>
+
+                <!-- Card 5 -->
+                <div class="carousel-card category-1" data-id="event5">
+                    <div class="card-title">1901<br> Vendita Collezione Principe Torlonia</div>
+                    <div class="card-content">Vendita della collezione del Principe Torlonia curata dalla  <a href="../html/dettagli/dettaglio_SA_IV.html" target="_blank">Galleria Sangiorgi</a>.</div>
                 </div>
+
+                <!-- Card 6 -->
+                <div class="carousel-card category-1"data-id="event6">
+                    <div class="card-title">1903<br>Vendita 'Affreschi di Boscoreale'</div>
+                    <div class="card-content">Vendita degli 'Affreschi di Boscoreale' da parte degli antiquari <a href="../html/dettagli/dettaglio_CA_I.html" target="_blank">Canessa</a>, con catalogo curato da <a href="../html/dettagli/dettaglio_SA_III.html" target="_blank">Arthur Sambon</a>.</div>
+                </div>
+
+                <!-- Card 7 -->
+                <div class="carousel-card category-4"data-id="event7">
+                    <div class="card-title">1904<br>Pubblicazione 'Le Musée. Revue d’art mensuelle'</div>
+                    <div class="card-content">Fondazione da parte degli antiquari <a href="../html/dettagli/dettaglio_CA_I.html" target="_blank">Canessa</a>, insieme ad <a href="../html/dettagli/dettaglio_SA_III.html" target="_blank">Arthur Sambon</a>, della rivista “Le Musée. Revue d’art mensuelle”, pubblicata fino al 1925.</div>
+                </div>
+                
+                <!-- Card 8 -->
+                <div class="carousel-card category-2" data-id="event8">
+                    <div class="card-title">1905<br>Inaugurazione Casa di vendite Jandolo & Tavazzi</div>
+                    <div class="card-content">Creazione della società <a href="../html/dettagli/dettaglio_JA-TA.html" target="_blank">Casa di vendita Jandolo & Tavazzi</a>, con sede in via del Babuino 96-97, poi responsabile, tra il 1907 e il 1937 di alcune delle vendite italiane più importanti dell’epoca, come quelle degli antiquari <a href="../html/dettagli/dettaglio_FE.html" target="_blank">Gioacchino Ferroni</a> ed <a href="../html/dettagli/dettaglio_VO_I.html" target="_blank">Elia Volpi</a>.</div>
+                </div>
+
+                <!-- Card 9 -->
+                <div class="carousel-card category-1" data-id="event9">
+                    <div class="card-title">1909<br>Vendita Collezione G. Ferroni</div>
+                    <div class="card-content">Vendita della collezione dell'antiquario  <a href="../html/dettagli/dettaglio_FE.html" target="_blank">Gioacchino Ferroni</a> da parte della <a href="../html/dettagli/dettaglio_JA-TA.html" target="_blank">Casa di vendita Jandolo & Tavazzi</a>, in collaborazione con la <a href="../html/dettagli/dettaglio_SA_IV.html" target="_blank">Galleria Sangiorgi</a>.</div>
+                </div>
+
+                <!-- Card 10 -->
+                <div class="carousel-card category-2" data-id="event10">
+                    <div class="card-title">1910<br>Inaugurazione Palazzo Davanzati</div>
+                    <div class="card-content">Apertura di Palazzo Davanzati da parte di <a href="../html/dettagli/dettaglio_VO_I.html" target="_blank">Elia Volpi</a> e vendita di parte della sua collezione da parte della <a href="../html/dettagli/dettaglio_JA-TA.html" target="_blank">Casa di vendita Jandolo & Tavazzi</a> a Roma.</div>
+                </div>
+
+                <!-- Card 11 -->
+                <div class="carousel-card category-1" data-id="event11">
+                    <div class="card-title">1916<br>Vendita collezione Volpi</div>
+                    <div class="card-content">Prima vendita oltreoceano di oggetti d'arte e di mobilio dalla collezione di <a href="../html/dettagli/dettaglio_VO_I.html" target="_blank">Elia Volpi</a> curata da <a href="../html/dettagli/dettaglio_TO.html" target="_blank">Raoul Tolentino</a> presso l'American Art Association di New York. L'evento rappresenta un'importante tappa per la diffusione del gusto neorinascimentale negli Stati Uniti.</div>
+                </div>
+
+                <!-- Card 12 -->
+                <div class="carousel-card category-6" data-id="event12">
+                    <div class="card-title">1923<br>Chiusura di Palazzo Davanzati</div>
+                    <div class="card-content">Chiusura della sede fiorentina di Palazzo Davanzati da parte di <a href="../html/dettagli/dettaglio_VO_I.html" target="_blank">Elia Volpi</a> con ultima vendita di oggette della collezione presso la Galleria Vitelli di Genova.</div>
+                </div>
+
+                <!-- Card 13 -->
+                <div class="carousel-card category-1" data-id="event13">
+                    <div class="card-title">1924<br>Vendita Collezione Paolini</div>
+                    <div class="card-content">Vendita della collezione di <a href="../html/dettagli/dettaglio_PA_II.html" target="_blank">Paolo Paolini</a> presso l'American Art Association di New York.</div>
+                </div>
+
+                <!-- Card 14 -->
+                <div class="carousel-card category-2" data-id="event14">
+                    <div class="card-title">1925<br>Inaugurazione Museo Bardini</div>
+                    <div class="card-content">Apertura di un museo dedicato a <a href="../html/dettagli/dettaglio_BA_II.html" target="_blank">Stefano Bardini</a> che tre anni prima aveva donato la propria collezione e il palazzo al Comune di Firenze.</div>
+                </div>
+
+                <!-- Card 15 -->
+                <div class="carousel-card category-1" data-id="event15">
+                    <div class="card-title">1927<br>Vendita Collezione Luigi Grassi</div>
+                    <div class="card-content">Vendita della collezione di <a href="../html/dettagli/dettaglio_GR.html" target="_blank">Luigi Grassi</a> presso le sale dell’American Art Galleries a New York.</div>
+                </div>
+
+                <!-- Card 16 -->
+                <div class="carousel-card category-1" data-id="event16">
+                    <div class="card-title">1931<br>Vendita Collezione De Clemente</div>
+                    <div class="card-content">Vendita di una prima parte della collezione di <a href="../html/dettagli/dettaglio_DE.html" target="_blank">Achille De Clemente</a> presso la sede dell'American Art Association di New York.</div>
+                </div>
+
+                <!-- Card 17 -->
+                <div class="carousel-card category-1" data-id="event17">
+                    <div class="card-title">1932<br>Vendita Collezione Simonetti</div>
+                    <div class="card-content">Vendita dell'intera collezione di <a href="../html/dettagli/dettaglio_SI.html" target="_blank">Attilio Simonetti</a>, organizzata dagli eredi presso la casa d'aste Guido Tavazzi, con catalogo curato da Ludwig Pollak.</div>
+                </div>
+
+                <!-- Card 18 -->
+                <div class="carousel-card category-1" data-id="event18">
+                    <div class="card-title">1935<br>Vendita Collezione De Clemente</div>
+                    <div class="card-content">Vendita di una parte della collezione di <a href="../html/dettagli/dettaglio_DE.html" target="_blank">Achille De Clemente</a> presso la casa d'aste Galleria Ciardello di Firenze.</div>
+                </div>
+
+                <!-- Card 19 -->
+                <div class="carousel-card category-4" data-id="event19">
+                    <div class="card-title">1935<br>Pubblicazione "Memorie di un antiquario"</div>
+                    <div class="card-content"> <a href="../html/dettagli/dettaglio_JA.html" target="_blank">Augusto Jandolo</a> pubblica l'autobiografia "Memorie di un antiquario", fonte imprescindibile per la comprensione del mercato dell’arte romano a cavallo tra Otto e Novecento.</div>
+                </div>
+
+                <!-- Card 20 -->
+                <div class="carousel-card category-3" data-id="event20">
+                    <div class="card-title">1946<br>Donazione Collezione Salvatore Romano</div>
+                    <div class="card-content">Donazione da parte di <a href="../html/dettagli/dettaglio_RO.html" target="_blank">Salvatore Romano</a> al Comune di Firenze di circa settanta oggetti d’arte della sua collezione, perchè vengano esposti nel cenacolo di Santo Spirito. Salvatore dirigerà fino alla morte il museo, poi diventato Fondazione Salvatore Romano.</div>
+                </div>
+
+                <!-- Card 21 -->
+                <div class="carousel-card category-2"data-id="event21">
+                    <div class="card-title">1953<br>Prima Mostra antiquaria a Firenze</div>
+                    <div class="card-content"><a href="../html/dettagli/dettaglio_BE_I.html" target="_blank">Luigi Bellini</a> promuove la prima mostra dei più importanti antiquari italiani, che, dal 1959, sarebbe diventata la Biennale Internazionale di Antiquariato.</div>
+                </div>
+
+                <!-- Card 22 -->
+                <div class="carousel-card category-2"data-id="event22">
+                    <div class="card-title">1968<br>Inaugurazione Fiera Antiquaria di Arezzo</div>
+                    <div class="card-content"><a href="../html/dettagli/dettaglio_BR_I.html" target="_blank">Ivan Bruschi</a> organizza la prima Fiera antiquaria, che da allora si svolge ogni mese ad Arezzo.</div>
+                </div>
+
+                <!-- Card 23 -->
+                <div class="carousel-card category-2"data-id="event23">
+                    <div class="card-title">1975<br>Inaugurazione Fondazione Accorsi-Ometto</div>
+                    <div class="card-content">Negli spazi della <a href="../html/dettagli/dettaglio_AC.html" target="_blank">Galleria Accorsi</a> di via Po' viene istitutita la Fondazione Accorsi-Ometto, oggi sede del Museo di arti decorative, che accoglie, oltre alla collezione Accorsi, anche parte degli oggetti raccolti da Giulio Ometto.</div>
+                </div>
+
+                <!-- Card 24 -->
+                <div class="carousel-card category-3"data-id="event24">
+                    <div class="card-title">1979<br>Donazione Collezione Crosa al Comune di Genova</div>
+                    <div class="card-content">Alla morte di <a href="../html/dettagli/dettaglio_CR.html" target="_blank">Severino Crosa</a>, parte della sua collezione viene donata alle istituzioni museali di Genova.</div>
+                </div>
+
+                <!-- Card 25 -->
+                <div class="carousel-card category-2"data-id="event25">
+                    <div class="card-title">1987<br>Inaugurazione Casa d'aste Rubinacci</div>
+                    <div class="card-content"><a href="../html/dettagli/dettaglio_PA_I.html" target="_blank">Piero Pagano</a>, insieme a Marco Capozzi, fonda la Casa d'Aste Rubinacci, prima casa di vendite sul territorio genovese intitolata a <a href="../html/dettagli/dettaglio_RU.html" target="_blank">Pompeo Rubinacci</a> e rimasta attiva fino al 2006.</div>
+                </div>
+
+                <!-- Card 26 -->
+                <div class="carousel-card category-2"data-id="event26">
+                    <div class="card-title">1996<br>Inaugurazione Fondazione Ivan Bruschi</div>
+                    <div class="card-content">L'antiquario <a href="../html/dettagli/dettaglio_BR_I.html" target="_blank">Ivan Bruschi</a> lascia in eredità al comune di Arezzo il Palazzo del Capitano del Popolo e la sua collezione. Il comune apre la Fondazione a lui dedicata.</div>
+                </div>
+
+                <!-- Card 27 -->
+                <div class="carousel-card category-2" data-id="event27">
+                    <div class="card-title">2007<br>Inaugurazione Museo Bellini</div>
+                    <div class="card-content">Apertura a Firenze del Museo privato dedicato a <a href="../html/dettagli/dettaglio_BE_I.html" target="_blank">Luigi Bellini</a>.</div>
+                </div>
+
+
             </div>
 
-            <iframe src="https://cdn.knightlab.com/libs/storyline/latest/embed/index.html?dataURL=https%3A%2F%2Fdocs.google.com%2Fspreadsheets%2Fd%2F1tb0AYbSpjeyutzzCq4BPP5XjLCZ8etaB15Mh3-oYt30%2Fpubhtml&amp;dataYCol=event&amp;dataXCol=year&amp;dataDateFormat=%25Y&amp;chartDateFormat=%25Y&amp;chartYLabel=tipologia%20evento&amp;sliderCardTitleCol=title&amp;sliderCardTextCol=text" 
-            style="width:100%;height:650px;" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0">
-            </iframe>
-            
-        </section>
+        </div>
+        
 
+    </section>
+
+        
     </main>
-
 
     <!-- Footer copiato dalla pagina esistente -->
     <footer>
