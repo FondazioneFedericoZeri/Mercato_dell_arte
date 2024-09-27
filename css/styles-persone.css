@@ -180,6 +180,45 @@ nav ul li a:hover {
     text-decoration: none;
 }
 
+/*etichette al mouse over*/
+
+.collaborator {
+    cursor: pointer;
+    margin-bottom: 10px; /* Aggiungi un margine per separare i collaboratori */
+    position: relative;
+}
+
+.collaborator-tooltip {
+    display: none; /* Nascondi il tooltip di default */
+    background-color: #f8f8f8; /* Cambia il colore dello sfondo in blu */
+    color: #333; /* Cambia il colore del testo in bianco per un buon contrasto */
+    border: 1px solid #c8c8c8; /* Bordo dello stesso colore dello sfondo */
+    padding: 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+    width: 100%; /* Larghezza del tooltip uguale al nome */
+    text-align: center; /* Centra il testo del tooltip */
+    margin-top: 10px; /* Spazio tra il nome e il tooltip */
+    position: relative; /* Necessario per posizionare il triangolo */
+}
+
+.collaborator-tooltip::before {
+    content: "";
+    position: absolute;
+    bottom: 100%; /* Posiziona il triangolo sopra il tooltip */
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 10px; /* Dimensioni del triangolo */
+    border-style: solid;
+    border-color: transparent transparent #c8c8c8 transparent; /* Solo il bordo inferiore è colorato */
+}
+
+.collaborator.show-tooltip .collaborator-tooltip {
+    display: block; /* Mostra il tooltip al click */
+}
+
+
+
 /* footer */
 footer {
     padding: 5px 40px;
