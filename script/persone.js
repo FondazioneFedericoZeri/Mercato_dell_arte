@@ -4,25 +4,37 @@ document.addEventListener('DOMContentLoaded', function() {
 
     collaborators.forEach(function(collaborator) {
         collaborator.addEventListener('click', function() {
+            // Trova l'ID del contenuto del tooltip
+            var contentId = this.getAttribute('data-tooltip-content');
+            var content = document.querySelector(contentId);
+            
+            // Se non c'è un contenuto associato, non fare nulla
+            if (!content) {
+                return;
+            }
+
             // Se esiste già un tooltip aperto, chiudilo
             if (currentTooltip && currentTooltip !== this) {
                 currentTooltip.querySelector('.collaborator-tooltip').remove();
                 currentTooltip.classList.remove('show-tooltip');
             }
 
-            // Se l'etichetta esiste già per questo elemento, rimuovila
+            // Se esiste già il tooltip per questo collaboratore, rimuovilo
             var existingTooltip = this.querySelector('.collaborator-tooltip');
             if (existingTooltip) {
                 existingTooltip.remove();
-                currentTooltip = null; // Rimuove il tooltip corrente
+                currentTooltip = null;
             } else {
-                // Mostra il nuovo tooltip per l'elemento corrente
-                var tooltip = document.createElement('span');
+                // Crea un nuovo tooltip con contenuto HTML
+                var tooltip = document.createElement('div');
                 tooltip.classList.add('collaborator-tooltip');
-                tooltip.innerText = this.dataset.tooltip;
+
+                // Inserisci il contenuto HTML nel tooltip
+                tooltip.innerHTML = content.innerHTML;
+
                 this.appendChild(tooltip);
                 this.classList.add('show-tooltip');
-                currentTooltip = this; // Aggiorna l'attuale tooltip
+                currentTooltip = this;
             }
         });
     });
