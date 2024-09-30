@@ -232,6 +232,55 @@ nav ul li a:hover {
     display: block; /* Mostra il tooltip al click */
 }
 
+.client {
+    cursor: pointer;
+    margin-bottom: 10px; /* Aggiungi un margine per separare i clienti */
+    position: relative;
+}
+
+.client-tooltip {
+    display: none; /* Nascondi il tooltip di default */
+    background-color: #5593C9; /* Cambia il colore dello sfondo in blu */
+    color: #fff; /* Cambia il colore del testo in bianco per un buon contrasto */
+    border: 1px solid #c8c8c8;
+    padding: 10px;
+    border-radius: 5px;
+    white-space: normal;
+    max-width: 320px; /* Larghezza massima del tooltip */
+    width: auto; /* Larghezza dinamica */
+    height: auto; /* Altezza dinamica in base al contenuto */
+    overflow: visible;
+    text-align: left;
+    margin-top: 10px;
+    position: relative;
+    font-size: 16px;
+    z-index: 10;
+}
+
+.client-tooltip a {
+    color: #fff;
+    text-underline-offset: 3px;
+}
+.client-tooltip a:hover {
+    color: #ffb907f0;
+}
+
+.client-tooltip::before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #5593C9 transparent; /* Solo il bordo inferiore è colorato */
+}
+
+.client.show-tooltip .client-tooltip {
+    display: block;
+}
+
+
 
 
 /* footer */

@@ -1,0 +1,76 @@
+ID;Nome;Cognome / Denominazione;Tipologia;ID Antiquari;Nome Antiquari
+C_1;;Alinari;fotografo;VO_I;Volpi
+C_2;;Anderson;fotografo;PA_II;Paolini
+C_3;Leopoldo;Aretini;antiquario;;
+C_4;Wart;Arslan;storico dell'arte;ST;Steffanoni
+C_5;;Arte Fotografica;fotografo;DI;Di castro
+C_6;Valentina;Barbareschi;restauratrice;;
+C_7;Bernard;Berenson;storico dell'arte;AL CO_I RO ST VO_I;Albrighi Contini-Bonacossi Romano Steffanoni Volpi
+C_8;;Boccardi;fotografo;;
+C_9;Ferdinando;Bologna;storico dell'arte;SE_II;Sestieri
+C_10_1;;Braun & C.ie;fotografo;LA_II;Lazzaroni
+C_10_2;;Giraudon;fotografo;LA_II;Lazzaroni
+C_10_3;;Bernès, Marouteau & C.ie;fotografo;LA_II;Lazzaroni
+C_11;Giuliano;Briganti;storico dell'arte;AN-EF AP;Antonacci-Efrati Apolloni
+C_12;;Brogi;fotografo;VO_I;Volpi
+C_13;Paul;Cassirer;antiquario;ST;Steffanoni
+C_14;Raffaello;Causa;storico dell'arte;SE_II;Sestieri
+C_14_b;Maurizio;Calvesi;storico dell'arte;SE_II;Sestieri
+C_15;Luigi;Cavenaghi;restauratore;;
+C_16;Pico;Cellini;restauratore;DI;Di Castro
+C_16_b;Hermann;Corrodi;pittore;SE_II;Sestieri
+C_17;Egisto;De Masi;antiquario;RU;Rubinacci
+C_18;Antonio;De Mata;restauratore;DI;Di Castro
+C_18_b; Seymour ;De Ricci;storico dell'arte;TO;Tolentino
+C_19;;Duveen Brothers;antiquario;;
+C_20;Robert Langton;Douglas;storico dell'arte;BE_II CO_I;Bellesi Contini Bonacossi
+C_21;Alvaro;Esposti;restauratore;SE_II;Sestieri
+C_22;Antonio;Faccioli;capo-restauratore e direttore laboratori della sede succursale;SE_II;Sestieri
+C_23;Italo;Faldi;storico dell'arte;;
+C_24;Cesare;Faraglia;fotografo;BA_III;Barsanti
+C_25;Giuseppe;Fiocco;storico dell'arte;CO_I ST;Contini Bonacossi Steffanoni
+C_26;Ugo;Frizzoni;storico dell'arte;ST;Steffanoni
+C_27;;Gasparini;fotografo;;
+C_28;Benno;Geiger;antiquario;ST;Steffanoni
+C_29;;Gonnella;fotografo;;
+C_30;Alvar;Gonzáles Palacios;storico dell'arte;AN-EF AP DI SE_II;Antonacci-Efrati Apolloni Di Castro Sestieri
+C_31;Marco;Grassi;restauratore;;
+C_32;Mina;Gregori;storica dell'arte;BA_I;Bacarelli
+C_33;;Industrial foto;fotografo;SA_I;Salocchi
+C_34;Vittorio;Jacquier;fotografo;;
+C_35;Icilio Federico;Joni;restauratore;VO_II;Volterra
+C_36;Franz;Kieslinger;mercante;PO_II;Pospisil
+C_37;Roberto;Longhi;storico dell'arte;BR_II CO_I;Bruschi Livio Contini Bonacossi
+C_38;Matteo;Marangoni;storico dell'arte;BE_II;Bellesi
+C_38_b;Egidio;Martini;storico dell'arte;VI_I;Viancini
+C_39;Frederick;Mason Perkins;storico dell'arte;CO_I SA_IV;Contini Bonacossi Sangiorgi
+C_40;Angiolo;Melli;antiquario;VO_II;Volterra
+C_41;Cesare;Melli;antiquario;VO_II;Volterra
+C_41_b;Ferruccio;Mestrovich;storico dell'arte;VI_I;Viancini
+C_42;Mario;Modestini;restauratore;CO_I;Contini Bonacossi
+C_43;Bruno;Molajoli;storico dell'arte;SE_II;Sestieri
+C_44;Giulio;Ometto;curatore;AC;Accorsi
+C_45;Kajetan 'Kai';Mühlmann;storico dell'arte;PO_II;Pospisil
+C_46;Rodolfo;Pallucchini;storico dell'arte;PO_II NI;Pospisil Nigro
+C_47;Leo;Planiscig;storico dell'arte;;
+C_48;Paolino;Poli;restauratore;;
+C_49;Paolo;Polidori;fotografi;;
+C_50;Ludwig;Pollak;storico dell'arte;BA_III SA_IV;Barsanti Sangiorgi
+C_51;Mario;Praz;storico dell'arte;AP;Apolloni
+C_52;Jean;Questa;antiquario;;
+C_53;Carlo Ludovico;Ragghianti;storico dell'arte;;
+C_54;;Rampazzi;fotografo;;
+C_55;;Reali;fotografo;;
+C_56;;Rigorini;restauratore;;
+C_57;Arthur;Sambon;storico dell'arte;;
+C_58;Giovanni;Sassu;restauratore;;
+C_59;Tommaso;Schneider;restauratore;;
+C_60;Nicola;Spinosa;storico dell'arte;;
+C_61;Arthur E.;Sulley;antiquario;;
+C_62;Pietro;Toesca;storico dell'arte;CO_I;Contini Bonacossi
+C_63;Adolfo;Venturi;storico dell'arte;SA_IV;Sangiorgi
+C_64;Lionello;Venturi;storico dell'arte;CO_I;Contini Bonacossi
+C_65;Louise;Vergetas;restauratore;;
+C_66;Wilhelm;Von Bode;storico dell'arte;BA_III BA_IV;Barsanti Baslini
+C_67;Silvio;Zanchi;restauratore;VO_II;Volterra
+C_68;Federico;Zeri;storico dell'arte;ZA;Zabert
