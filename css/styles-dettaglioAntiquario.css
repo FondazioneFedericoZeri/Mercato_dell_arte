@@ -386,6 +386,7 @@ nav ul li a:hover {
     overflow: visible;
 }
 
+
 #chartdiv { /*css per mappa*/
     width: 100%; /* Fa sì che la mappa occupi il 100% della larghezza del contenitore */
     height: 100%; /* Fa sì che la mappa occupi tutta l'altezza disponibile */
