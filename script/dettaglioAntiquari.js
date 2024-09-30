@@ -322,6 +322,8 @@ function initializeChart(rootNode) {
       fixed: false
     }));
 
+
+
     // Customize the link between nodes to control distance
     series.links.template.setAll({
       strength: 1,
