@@ -142,8 +142,8 @@ def build_header(page):
 def build_html(entity, entities):
 
     images_description = json.loads(
-        open("../json/didascalie.json", encoding="utf-8").read())
-    people = json.loads(open("../json/persone.json", encoding="utf-8").read())
+        open("json/didascalie.json", encoding="utf-8").read())
+    people = json.loads(open("json/persone.json", encoding="utf-8").read())
 
     imgs = entity["Foto gallery"]
 
@@ -225,8 +225,8 @@ def build_html(entity, entities):
 
                     with page.div(klass="content-card"):
                         with page.div(id="Bio", klass="content active-content"):
-                            content = getText(f"../bio/{entity['Bio']}.docx")
-                            content = getTXT(f"../bio-txt/{entity['Bio']}.txt")
+                            # content = getText(f"../bio/{entity['Bio']}.docx")
+                            content = getTXT(f"bio-txt/{entity['Bio']}.txt")
                             # page.h3(_t=f"{content[0]}")
                             for paragraph in content:
                                 page.p(_t=paragraph)
@@ -336,12 +336,12 @@ def build_html(entity, entities):
     html_content = str(page)
 
     # Optional: Save the HTML to a file
-    with open(f"../html/dettagli/dettaglio_{entity['ID']}.html", "w", encoding="utf-8") as f:
+    with open(f"html/dettagli/dettaglio_{entity['ID']}.html", "w", encoding="utf-8") as f:
         f.write(html_content)
 
 
 if __name__ == "__main__":
-    entities = json.loads(open("../json/entità.json", encoding="utf-8").read())
+    entities = json.loads(open("json/entità.json", encoding="utf-8").read())
 
     for entity in entities:
         build_html(entities[entity], entities)
