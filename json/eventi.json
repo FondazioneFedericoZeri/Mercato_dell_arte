@@ -5,8 +5,8 @@
         "ID_persone": "SI_1",
         "Anno": "1883",
         "Tipologia Evento": "vendita all'asta",
-        "Descrizione sintetica": "Vendita all'asta - Collezione Simonetti",
-        "Descrizione dettagliata": "Una prima importante vendita della collezione Simonetti fu venduta dallo stesso Attilio Simonetti nel 1883 nella casa d'aste di Roma."
+        "Descrizione sintetica": "Vendita Collezione Simonetti",
+        "Descrizione dettagliata": "Vendita della collezione Simonetti curata dallo stesso Attilio Simonetti a Roma"
     },
     "E_2": {
         "ID": "E_2",
@@ -14,8 +14,8 @@
         "ID_persone": "",
         "Anno": "1895",
         "Tipologia Evento": "scoperta",
-        "Descrizione sintetica": "Scoperta del tesoro di Boscoreale",
-        "Descrizione dettagliata": "Gli antiquari Canessa scoprirono nel 1895 il tesoro di Boscoreale, un servizio di argenteria di oltre 100 pezzi di epoca romana, che contribuirono ad esportare illegalmente cedendolo al barone Edmond De Rothschild. La collezione si conserva oggi al Museo del Louvre."
+        "Descrizione sintetica": "Scoperta 'Tesoro di Boscoreale'",
+        "Descrizione dettagliata": "Gli antiquari Canessa scoprono il 'Tesoro di Boscoreale', un servizio di argenteria di oltre 100 pezzi di epoca romana, esportato e ceduto al barone Edmond De Rothschild. La collezione si conserva oggi al Museo del Louvre"
     },
     "E_3": {
         "ID": "E_3",
@@ -23,8 +23,8 @@
         "ID_persone": "",
         "Anno": "1896",
         "Tipologia Evento": "vendita all'asta",
-        "Descrizione sintetica": "Vendita all'asta 'Argenti Cacace'",
-        "Descrizione dettagliata": "Tra le celebri vendite attribuite agli antiquari Canessa, vi è quella degli 'Argenti Cacace', rinvenuti a Taranto nel 1896."
+        "Descrizione sintetica": "Vendita 'Argenti Cacace'",
+        "Descrizione dettagliata": "Vendita degli 'Argenti Cacace', rinvenuti a Taranto nel 1896, da parte degli antiquari Canessa"
     },
     "E_4": {
         "ID": "E_4",
@@ -32,8 +32,8 @@
         "ID_persone": "",
         "Anno": "1896",
         "Tipologia Evento": "vendita all'asta",
-        "Descrizione sintetica": "Vendita all'asta - Collezione Principe Orsini",
-        "Descrizione dettagliata": "Tra le celebri vendite attribuite alla 'Galleria Sangiorgi', c'è la collezione del Principe Orsini, venduta nel 1896."
+        "Descrizione sintetica": "Vendita Collezione Principe Orsini",
+        "Descrizione dettagliata": "Vendita della collezione del Principe Orsini curata dalla Galleria Sangiorgi"
     },
     "E_5": {
         "ID": "E_5",
@@ -41,8 +41,8 @@
         "ID_persone": "",
         "Anno": "1901",
         "Tipologia Evento": "vendita all'asta",
-        "Descrizione sintetica": "Vendita all'asta -Collezione Principe Torlonia",
-        "Descrizione dettagliata": "Tra le celebri vendite attribuite alla 'Galleria Sangiorgi', c'è la collezione del Principe Torlonia, venduta nel 1896."
+        "Descrizione sintetica": "Vendita Collezione Principe Torlonia",
+        "Descrizione dettagliata": "Vendita della collezione del Principe Torlonia curata dalla Galleria Sangiorgi"
     },
     "E_6": {
         "ID": "E_6",
@@ -50,8 +50,8 @@
         "ID_persone": "",
         "Anno": "1903",
         "Tipologia Evento": "vendita all'asta",
-        "Descrizione sintetica": "Vendita all'asta 'Affreschi di Boscoreale'",
-        "Descrizione dettagliata": "Tra le celebri vendite attribuite agli antiquari Canessa, vi è quella degli 'Affreschi di Boscoreale' nel 1903, con catalogo curato da Arthur Sambon."
+        "Descrizione sintetica": "Vendita 'Affreschi di Boscoreale'",
+        "Descrizione dettagliata": "Vendita degli 'Affreschi di Boscoreale' da parte degli antiquari Canessa, con catalogo curato da Arthur Sambon"
     },
     "E_7": {
         "ID": "E_7",
@@ -59,8 +59,8 @@
         "ID_persone": "",
         "Anno": "1904-1925ca",
         "Tipologia Evento": "pubblicazione",
-        "Descrizione sintetica": "Pubblicazione rivista 'Le Musée. Revue d’art mensuelle'",
-        "Descrizione dettagliata": "Nel 1904 i Canessa, insieme ad Arthur Sambon, fondarono la rivista “Le Musée. Revue d’art mensuelle”, che venne pubblicata fino al 1925."
+        "Descrizione sintetica": "Pubblicazione 'Le Musée. Revue d'art mensuelle'",
+        "Descrizione dettagliata": "Fondazione da parte degli antiquari Canessa, insieme ad Arthur Sambon, della rivista \"Le Musée. Revue d'art mensuelle\", pubblicata fino al 1925"
     },
     "E_8": {
         "ID": "E_8",
@@ -68,8 +68,8 @@
         "ID_persone": "JA-TA_1 JA-TA_2 JA-TA_3",
         "Anno": "1905",
         "Tipologia Evento": "inaugurazione / fondazione",
-        "Descrizione sintetica": "Inaugurazione 'Casa di vendite Jandolo & Tavazzi'",
-        "Descrizione dettagliata": "A partire dai primi anni del Novecento la famiglia di antiquari Jandolo si unirono in società con l'antiquario Filippo Tavazzi, fondando la “Casa di vendite Jandolo & Tavazzi”, documentata in via del Babuino 96, 97. Come testimoniano i cataloghi della maison des ventes pubblicati dal 1907 al 1936, questa casa d'aste è stata titolare di alcune delle vendite italiane più importanti dell’epoca, come quelle degli antiquari Gioacchino Ferroni (1854-1909) ed Elia Volpi (1858-1938).  "
+        "Descrizione sintetica": "Inaugurazione Casa di vendite Jandolo & Tavazzi",
+        "Descrizione dettagliata": "Creazione della società Casa di vendita Jandolo & Tavazzi, con sede in via del Babuino 96-97, poi responsabile, tra il 1907 e il 1937 di alcune delle vendite italiane più importanti dell'epoca, come quelle degli antiquari Gioacchino Ferroni ed Elia Volpi"
     },
     "E_9": {
         "ID": "E_9",
@@ -77,17 +77,17 @@
         "ID_persone": "",
         "Anno": "1909",
         "Tipologia Evento": "vendita all'asta",
-        "Descrizione sintetica": "Vendita all'asta - collezione G. Ferroni",
-        "Descrizione dettagliata": "Nel 1909, presso la casa d'aste 'Jandolo&Tavazzi' di Roma,  in collaborazione con la 'Galleria Sangiorgi',  venne venduta parte della collezione di Giovacchino Ferroni. La vendita è stata ampiamente reclamizzate e descritta anche sulle pagine della rivista “L’Antiquario”."
+        "Descrizione sintetica": "Vendita Collezione G. Ferroni",
+        "Descrizione dettagliata": "Vendita della collezione dell'antiquario Gioacchino Ferroni da parte della Casa di vendita Jandolo & Tavazzi, in collaborazione con la Galleria Sangiorgi"
     },
     "E_10": {
         "ID": "E_10",
         "ID_entità": "VO_I JA-TA",
         "ID_persone": "",
         "Anno": "1910",
-        "Tipologia Evento": "vendita all'asta",
-        "Descrizione sintetica": "Vendita all'asta - collezione E. Volpi",
-        "Descrizione dettagliata": "Nel 1910, presso la casa d'aste 'Jandolo&Tavazzi' di Roma, venne venduta la collezione di Elia Volpi."
+        "Tipologia Evento": "inaugurazione / fondazione",
+        "Descrizione sintetica": "Inaugurazione Palazzo Davanzati",
+        "Descrizione dettagliata": "Apertura di Palazzo Davanzati da parte di Elia Volpi e vendita di parte della sua collezione da parte della Casa di vendita Jandolo & Tavazzi a Roma"
     },
     "E_11": {
         "ID": "E_11",
@@ -95,17 +95,17 @@
         "ID_persone": "",
         "Anno": "1916",
         "Tipologia Evento": "vendita all'asta",
-        "Descrizione sintetica": "Vendita all'asta - Collezione E. Volpi",
-        "Descrizione dettagliata": "Un'ulteriore vendita all'asta della collezione di Elia Volpi c'è stata negli Stati Uniti nel 1916 per conto di Raoul Tolentino presso l'American Art Association di New York."
+        "Descrizione sintetica": "Vendita collezione Volpi",
+        "Descrizione dettagliata": "Prima vendita oltreoceano di oggetti d'arte e di mobilio dalla collezione di Elia Volpi curata da Raoul Tolentino presso l'American Art Association di New York. L'evento rappresenta un'importante tappa per la diffusione del gusto neorinascimentale negli Stati Uniti"
     },
     "E_12": {
         "ID": "E_12",
         "ID_entità": "VI_III",
         "ID_persone": "",
         "Anno": "1923",
-        "Tipologia Evento": "vendita all'asta",
-        "Descrizione sintetica": "Vendita all'asta - Collezione E. Villa",
-        "Descrizione dettagliata": "Per volere dello stesso Edoardo Villa, a causa di problemi economici, venne organizzata la vendita della sua collezione, che si tenne presso la Galleria Vitelli di Genova, nelle sale di Palazzo Granello, nel 1923. "
+        "Tipologia Evento": "chiusura",
+        "Descrizione sintetica": "Chiusura di Palazzo Davanzati",
+        "Descrizione dettagliata": "Chiusura della sede fiorentina di Palazzo Davanzati da parte di Elia Volpi con ultima vendita di oggette della collezione presso la Galleria Vitelli di Genova"
     },
     "E_13": {
         "ID": "E_13",
@@ -113,8 +113,8 @@
         "ID_persone": "",
         "Anno": "1924",
         "Tipologia Evento": "vendita all'asta",
-        "Descrizione sintetica": "Vendita all'asta - collezione P. Paolini",
-        "Descrizione dettagliata": "Nel 1924 presso l'American Art Association di New York venne effettuata la vendita della collezione Paolini."
+        "Descrizione sintetica": "Vendita Collezione Paolini",
+        "Descrizione dettagliata": "Vendita della collezione di Paolo Paolini presso l'American Art Association di New York"
     },
     "E_14": {
         "ID": "E_14",
@@ -122,8 +122,8 @@
         "ID_persone": "Ba_II_1",
         "Anno": "1925",
         "Tipologia Evento": "inaugurazione / fondazione",
-        "Descrizione sintetica": "Inaugurazione Museo Stefano Bardini",
-        "Descrizione dettagliata": "L'antiquario Stefano Bardini, morto nel 1922, donò la sua collezione e il palazzo di sua proprietà al comune di Firenze, che decise tre anni dopo di aprire un museo a lui dedicato."
+        "Descrizione sintetica": "Inaugurazione Museo Bardini",
+        "Descrizione dettagliata": "Apertura di un museo dedicato a Stefano Bardini che tre anni prima aveva donato la propria collezione e il palazzo al Comune di Firenze"
     },
     "E_15": {
         "ID": "E_15",
@@ -131,8 +131,8 @@
         "ID_persone": "GR_1",
         "Anno": "1927",
         "Tipologia Evento": "vendita all'asta",
-        "Descrizione sintetica": "Vendita all'asta - collezione Luigi Grassi",
-        "Descrizione dettagliata": "Nel 1927 Luigi Grassi organizzò un’asta della propria collezione presso le sale dell’American Art Galleries a New York, Madison Avenue 56th to 57th street."
+        "Descrizione sintetica": "Vendita Collezione Luigi Grassi",
+        "Descrizione dettagliata": "Vendita della collezione di Luigi Grassi presso le sale dell�American Art Galleries a New York"
     },
     "E_16": {
         "ID": "E_16",
@@ -140,8 +140,8 @@
         "ID_persone": "",
         "Anno": "1931",
         "Tipologia Evento": "vendita all'asta",
-        "Descrizione sintetica": "Vendita all'asta - collezione Achille De Clemente",
-        "Descrizione dettagliata": "Nel 1931, presso la casa d'aste 'American Art Association' di New York, venne venduta parte della collezione di Achille De Clemente."
+        "Descrizione sintetica": "Vendita Collezione De Clemente",
+        "Descrizione dettagliata": "Vendita di una prima parte della collezione di Achille De Clemente presso la sede dell'American Art Association di New York"
     },
     "E_17": {
         "ID": "E_17",
@@ -149,8 +149,8 @@
         "ID_persone": "SI_2 SI_3 SI_4 SI_5",
         "Anno": "1932",
         "Tipologia Evento": "vendita all'asta",
-        "Descrizione sintetica": "Vendita all'asta - Collezione Simonetti",
-        "Descrizione dettagliata": "L'intera collezione Simonetti fu venduta per volere dei figli nel 1932, presso la casa d'aste di Guido Tavazzi"
+        "Descrizione sintetica": "Vendita Collezione Simonetti",
+        "Descrizione dettagliata": "Vendita dell'intera collezione di Attilio Simonetti, organizzata dagli eredi presso la casa d'aste Guido Tavazzi, con catalogo curato da Ludwig Pollak"
     },
     "E_18": {
         "ID": "E_18",
@@ -158,8 +158,8 @@
         "ID_persone": "",
         "Anno": "1935",
         "Tipologia Evento": "vendita all'asta",
-        "Descrizione sintetica": "Vendita all'asta - collezione Achille De Clemente",
-        "Descrizione dettagliata": "Nel 1935, presso la casa d'aste 'Galleria Ciardello' di Firenze, venne venduta parte della collezione di Achille De Clemente."
+        "Descrizione sintetica": "Vendita Collezione De Clemente",
+        "Descrizione dettagliata": "Vendita di una parte della collezione di Achille De Clemente presso la casa d'aste Galleria Ciardello di Firenze"
     },
     "E_19": {
         "ID": "E_19",
@@ -167,8 +167,8 @@
         "ID_persone": "JA_6",
         "Anno": "1935",
         "Tipologia Evento": "pubblicazione",
-        "Descrizione sintetica": "Pubblicazione 'Memorie di un antiquario'",
-        "Descrizione dettagliata": "Augusto Jandolo pubblicò nel 1935 l'autobiografia 'Memorie di un antiquario', fonte imprescindibile per la comprensione del mercato dell’arte romano a cavallo tra Otto e Novecento."
+        "Descrizione sintetica": "Pubblicazione \"Memorie di un antiquario\"",
+        "Descrizione dettagliata": "Augusto Jandolo pubblica l'autobiografia \"Memorie di un antiquario\", fonte imprescindibile per la comprensione del mercato dell'arte romano a cavallo tra Otto e Novecento"
     },
     "E_20": {
         "ID": "E_20",
@@ -176,17 +176,17 @@
         "ID_persone": "RO_1",
         "Anno": "1946",
         "Tipologia Evento": "donazione",
-        "Descrizione sintetica": "Donazione collezione di Salvatore Romano",
-        "Descrizione dettagliata": "Nel 1946 Salvatore Romano donò al Comune di Firenze circa settanta oggetti d’arte della sua collezione, affinché venissero esposti nel cenacolo di Santo Spirito, per onorare i suoi natali e rendere omaggio alla città che lo aveva accolto. Salvatore diresse il nuovo museo fino alla morte, a seguito della quale venne tumulato nel sarcofago che si erge verso il fondo del cenacolo. Tale luogo \"Fondazione Salvatore Romano\", è oggi intitolato proprio al famoso antiquario."
+        "Descrizione sintetica": "Donazione Collezione Salvatore Romano",
+        "Descrizione dettagliata": "Donazione da parte di Salvatore Romano al Comune di Firenze di circa settanta oggetti d'arte della sua collezione, perché vengano esposti nel cenacolo di Santo Spirito. Salvatore dirigerà fino alla morte il museo, poi diventato Fondazione Salvatore Romano"
     },
     "E_21": {
         "ID": "E_21",
         "ID_entità": "BE_I",
         "ID_persone": "",
-        "Anno": "1959",
+        "Anno": "1953",
         "Tipologia Evento": "inaugurazione / fondazione",
-        "Descrizione sintetica": "Inaugurazione della Biennale Internazionale di Antiquariato",
-        "Descrizione dettagliata": "La famiglia di antiquari Bellini ideò la Mostra Nazionale di Antiquariato, che nel 1959 divenne la Biennale Internazionale di Antiquariato."
+        "Descrizione sintetica": "Prima Mostra antiquaria a Firenze",
+        "Descrizione dettagliata": "Luigi Bellini promuove la prima mostra dei pi� importanti antiquari italiani, che, dal 1959, sarebbe diventata la Biennale Internazionale di Antiquariato"
     },
     "E_22": {
         "ID": "E_22",
@@ -194,8 +194,8 @@
         "ID_persone": "",
         "Anno": "1968",
         "Tipologia Evento": "inaugurazione / fondazione",
-        "Descrizione sintetica": "Inaugurazione della Fiera Antiquaria",
-        "Descrizione dettagliata": "Nel 1968 Ivan Bruschi fondò la Fiera antiquaria, che da allora si svolge ogni mese ad Arezzo"
+        "Descrizione sintetica": "Inaugurazione Fiera Antiquaria di Arezzo",
+        "Descrizione dettagliata": "Ivan Bruschi organizza la prima Fiera antiquaria, che da allora si svolge ogni mese ad Arezzo"
     },
     "E_23": {
         "ID": "E_23",
@@ -204,7 +204,7 @@
         "Anno": "1975",
         "Tipologia Evento": "inaugurazione / fondazione",
         "Descrizione sintetica": "Inaugurazione Fondazione Accorsi-Ometto",
-        "Descrizione dettagliata": "Negli spazi della 'Galleria Accorsi' di via Po' venne istitutita nel 1975 la Fondazione Accorsi-Ometto, oggi sede del museo di Arti Decorative, che accoglie, oltre alla collezione Accorsi, anche parte degli oggetti raccolti da un suo collaboratore, Giulio Ometto (1942-2019)."
+        "Descrizione dettagliata": "Negli spazi della Galleria Accorsi di via Po' viene istitutita la Fondazione Accorsi-Ometto, oggi sede del Museo di arti decorative, che accoglie, oltre alla collezione Accorsi, anche parte degli oggetti raccolti da Giulio Ometto"
     },
     "E_24": {
         "ID": "E_24",
@@ -212,8 +212,8 @@
         "ID_persone": "",
         "Anno": "1979",
         "Tipologia Evento": "donazione",
-        "Descrizione sintetica": "Donazione collezione Crosa alle istituzioni museali di Genova",
-        "Descrizione dettagliata": "Nel 1979, alla morte di Severino Crosa, parte della sua collezione venne donata alle istituzioni museali di Genova."
+        "Descrizione sintetica": "Donazione Collezione Crosa al Comune di Genova",
+        "Descrizione dettagliata": "Alla morte di Severino Crosa, parte della sua collezione viene donata alle istituzioni museali di Genova"
     },
     "E_25": {
         "ID": "E_25",
@@ -221,8 +221,8 @@
         "ID_persone": "",
         "Anno": "1987",
         "Tipologia Evento": "inaugurazione / fondazione",
-        "Descrizione sintetica": "Inaugurazione 'Casa d'aste Rubinacci'",
-        "Descrizione dettagliata": "Nel 1987 Piero Pagano, insieme a Marco Capozzi, fondò la prima casa di vendite sul territorio genovese, la 'Casa d'Aste Rubinacci', intitolata allo zio Pompeo Rubinacci (1893-1974). La casa d'aste rimase attiva fino al 2006."
+        "Descrizione sintetica": "Inaugurazione Casa d'aste Rubinacci",
+        "Descrizione dettagliata": "Piero Pagano, insieme a Marco Capozzi, fonda la Casa d'Aste Rubinacci, prima casa di vendite sul territorio genovese intitolata a Pompeo Rubinacci e rimasta attiva fino al 2006"
     },
     "E_26": {
         "ID": "E_26",
@@ -230,8 +230,8 @@
         "ID_persone": "",
         "Anno": "1996",
         "Tipologia Evento": "inaugurazione / fondazione",
-        "Descrizione sintetica": "Inaugurazione fondazione Ivan Bruschi",
-        "Descrizione dettagliata": "L'antiquario Ivan Bruschi lasciò in eredità al comune di Arezzo il palazzo di famiglia, Palazzo del Capitano del Popolo, e la sua collezione. Nel 1996 il comune aprì la Fondazione a lui dedicata."
+        "Descrizione sintetica": "Inaugurazione Fondazione Ivan Bruschi",
+        "Descrizione dettagliata": "L'antiquario Ivan Bruschi lascia in eredit� al comune di Arezzo il Palazzo del Capitano del Popolo e la sua collezione. Il comune apre la Fondazione a lui dedicata"
     },
     "E_27": {
         "ID": "E_27",
@@ -240,6 +240,6 @@
         "Anno": "2007",
         "Tipologia Evento": "inaugurazione / fondazione",
         "Descrizione sintetica": "Inaugurazione Museo Bellini",
-        "Descrizione dettagliata": "Nel 2007 venne aperto a Firenze il Museo privato dedicato a Luigi Bellini"
+        "Descrizione dettagliata": "Apertura a Firenze del Museo privato dedicato a Luigi Bellini"
     }
 }
