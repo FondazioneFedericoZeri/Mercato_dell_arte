@@ -2,21 +2,21 @@
     "CV_1": {
         "ID": "CV_1",
         "ID_cliente": "CL_1",
-        "Nome": "Duca D’Aosta (Emanuele Filiberto di Savoia??)",
+        "Nome": "Emanuele Filiberto di Savoia-Aosta ",
         "Cognome": "",
         "ID_entità": "CA_I"
     },
     "CV_2": {
         "ID": "CV_2",
         "ID_cliente": "CL_2",
-        "Nome": "Giorgio V d’Inghilterra",
+        "Nome": "Giorgio V d'Inghilterra",
         "Cognome": "",
         "ID_entità": "CA_I"
     },
     "CV_3": {
         "ID": "CV_3",
         "ID_cliente": "CL_3",
-        "Nome": "Gustavo V re di Svezia",
+        "Nome": "Gustavo V di Svezia",
         "Cognome": "",
         "ID_entità": "BA_III",
         "ID_persone": "BA_III_1"
@@ -24,7 +24,7 @@
     "CV_4": {
         "ID": "CV_4",
         "ID_cliente": "CL_4",
-        "Nome": "Johann II del Liechtenstein*",
+        "Nome": "Giovanni II del Liechtenstein ",
         "Cognome": "",
         "ID_entità": "BA_III",
         "ID_persone": "BA_III_1"
@@ -32,7 +32,7 @@
     "CV_5": {
         "ID": "CV_5",
         "ID_cliente": "CL_5",
-        "Nome": "Madame André",
+        "Nome": "Nélie Jacquemart-André",
         "Cognome": "",
         "ID_entità": "CA_I"
     },
@@ -62,14 +62,14 @@
     "CV_9": {
         "ID": "CV_9",
         "ID_cliente": "CL_9",
-        "Nome": "Vanderbilt",
+        "Nome": "William Henry Vanderbilt",
         "Cognome": "",
         "ID_entità": "CA_I"
     },
     "CV_10": {
         "ID": "CV_10",
         "ID_cliente": "CL_10",
-        "Nome": "Vittorio Emanuele III",
+        "Nome": "Vittorio Emanuele III di Savoia",
         "Cognome": "",
         "ID_entità": "CA_I"
     },

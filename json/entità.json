@@ -47,7 +47,9 @@
                 "ID": "C_44",
                 "Nome": "Giulio",
                 "Cognome / Denominazione": "Ometto",
-                "Tipologia": "collaboratore"
+                "Tipologia": "curatore",
+                "ID Antiquari": "AC",
+                "Nome Antiquari": "Accorsi"
             }
         },
         "Eventi": {
@@ -134,7 +136,9 @@
                 "ID": "C_7",
                 "Nome": "Bernard",
                 "Cognome / Denominazione": "Berenson",
-                "Tipologia": "storico dell'arte"
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "AL CO_I RO ST VO_I",
+                "Nome Antiquari": "Albrighi Contini-Bonacossi Romano Steffanoni Volpi"
             }
         },
         "Eventi": {},
@@ -208,19 +212,25 @@
                 "ID": "C_11",
                 "Nome": "Giuliano",
                 "Cognome / Denominazione": "Briganti",
-                "Tipologia": "storico dell'arte"
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "AN-EF AP",
+                "Nome Antiquari": "Antonacci-Efrati Apolloni"
             },
             "C_30": {
                 "ID": "C_30",
                 "Nome": "Alvar",
-                "Cognome / Denominazione": "Gonzales Palacios",
-                "Tipologia": "storico dell'arte"
+                "Cognome / Denominazione": "Gonzáles Palacios",
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "AN-EF AP DI SE_II",
+                "Nome Antiquari": "Antonacci-Efrati Apolloni Di Castro Sestieri"
             },
             "C_68": {
                 "ID": "C_68",
                 "Nome": "Federico",
                 "Cognome / Denominazione": "Zeri",
-                "Tipologia": "storico dell'arte"
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "ZA",
+                "Nome Antiquari": "Zabert"
             }
         },
         "Eventi": {},
@@ -388,19 +398,25 @@
                 "ID": "C_11",
                 "Nome": "Giuliano",
                 "Cognome / Denominazione": "Briganti",
-                "Tipologia": "storico dell'arte"
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "AN-EF AP",
+                "Nome Antiquari": "Antonacci-Efrati Apolloni"
             },
             "C_51": {
                 "ID": "C_51",
                 "Nome": "Mario",
                 "Cognome / Denominazione": "Praz",
-                "Tipologia": "critico dell'arte"
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "AP",
+                "Nome Antiquari": "Apolloni"
             },
             "C_30": {
                 "ID": "C_30",
                 "Nome": "Alvar",
-                "Cognome / Denominazione": "Gonzales Palacios",
-                "Tipologia": "storico dell'arte"
+                "Cognome / Denominazione": "Gonzáles Palacios",
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "AN-EF AP DI SE_II",
+                "Nome Antiquari": "Antonacci-Efrati Apolloni Di Castro Sestieri"
             }
         },
         "Eventi": {},
@@ -533,19 +549,25 @@
                 "ID": "C_68",
                 "Nome": "Federico",
                 "Cognome / Denominazione": "Zeri",
-                "Tipologia": "storico dell'arte"
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "ZA",
+                "Nome Antiquari": "Zabert"
             },
             "C_11": {
                 "ID": "C_11",
                 "Nome": "Giuliano",
                 "Cognome / Denominazione": "Briganti",
-                "Tipologia": "storico dell'arte"
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "AN-EF AP",
+                "Nome Antiquari": "Antonacci-Efrati Apolloni"
             },
             "C_32": {
                 "ID": "C_32",
                 "Nome": "Mina",
                 "Cognome / Denominazione": "Gregori",
-                "Tipologia": "storica dell'arte"
+                "Tipologia": "storica dell'arte",
+                "ID Antiquari": "BA_I",
+                "Nome Antiquari": "Bacarelli"
             }
         },
         "Eventi": {},
@@ -974,19 +996,25 @@
                 "ID": "C_24",
                 "Nome": "Cesare",
                 "Cognome / Denominazione": "Faraglia",
-                "Tipologia": "fotografo"
+                "Tipologia": "fotografo",
+                "ID Antiquari": "BA_III",
+                "Nome Antiquari": "Barsanti"
             },
             "C_50": {
                 "ID": "C_50",
                 "Nome": "Ludwig",
                 "Cognome / Denominazione": "Pollak",
-                "Tipologia": "storico dell'arte"
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "BA_III SA_IV",
+                "Nome Antiquari": "Barsanti Sangiorgi"
             },
             "C_66": {
                 "ID": "C_66",
-                "Nome": "Wilhem",
+                "Nome": "Wilhelm",
                 "Cognome / Denominazione": "Von Bode",
-                "Tipologia": "storico dell'arte"
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "BA_III BA_IV",
+                "Nome Antiquari": "Barsanti Baslini"
             }
         },
         "Eventi": {},
@@ -1046,14 +1074,14 @@
         },
         "Clienti": {
             "CL_3": {
-                "Nome": "Gustavo V re di Svezia",
+                "Nome": "Gustavo V di Svezia",
                 "Cognome": "",
                 "vendite": [
                     "BA_III_1"
                 ]
             },
             "CL_4": {
-                "Nome": "Johann II del Liechtenstein*",
+                "Nome": "Giovanni II del Liechtenstein ",
                 "Cognome": "",
                 "vendite": [
                     "BA_III_1"
@@ -1166,9 +1194,11 @@
         "Collaboratori": {
             "C_66": {
                 "ID": "C_66",
-                "Nome": "Wilhem",
+                "Nome": "Wilhelm",
                 "Cognome / Denominazione": "Von Bode",
-                "Tipologia": "storico dell'arte"
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "BA_III BA_IV",
+                "Nome Antiquari": "Barsanti Baslini"
             }
         },
         "Eventi": {},
@@ -1581,14 +1611,18 @@
             "C_38": {
                 "ID": "C_38",
                 "Nome": "Matteo",
-                "Cognome / Denominazione": "Maranghoni",
-                "Tipologia": "storico dell'arte"
+                "Cognome / Denominazione": "Marangoni",
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "BE_II",
+                "Nome Antiquari": "Bellesi"
             },
             "C_20": {
                 "ID": "C_20",
                 "Nome": "Robert Langton",
                 "Cognome / Denominazione": "Douglas",
-                "Tipologia": "storico dell'arte"
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "BE_II CO_I",
+                "Nome Antiquari": "Bellesi Contini Bonacossi"
             }
         },
         "Eventi": {},
@@ -1893,7 +1927,9 @@
                 "ID": "C_37",
                 "Nome": "Roberto",
                 "Cognome / Denominazione": "Longhi",
-                "Tipologia": "storico dell'arte"
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "BR_II CO_I",
+                "Nome Antiquari": "Bruschi Livio Contini Bonacossi"
             },
             "C_53": {
                 "ID": "C_53",
@@ -1904,9 +1940,7 @@
         },
         "Eventi": {},
         "Foto preview": "BR_II_preview",
-        "Foto gallery": [
-            ""
-        ],
+        "Foto gallery": [],
         "Persone": {
             "BR_II_1": {
                 "ID": "BR_II_1",
@@ -2084,9 +2118,7 @@
             }
         },
         "Foto preview": "CA_I_preview",
-        "Foto gallery": [
-            ""
-        ],
+        "Foto gallery": [],
         "Persone": {
             "CA_I_1": {
                 "ID": "CA_I_1",
@@ -2244,35 +2276,35 @@
         },
         "Clienti": {
             "CL_1": {
-                "Nome": "Duca D’Aosta (Emanuele Filiberto di Savoia??)",
+                "Nome": "Emanuele Filiberto di Savoia-Aosta ",
                 "Cognome": "",
                 "vendite": [
                     "Generic"
                 ]
             },
             "CL_2": {
-                "Nome": "Giorgio V d’Inghilterra",
+                "Nome": "Giorgio V d'Inghilterra",
                 "Cognome": "",
                 "vendite": [
                     "Generic"
                 ]
             },
             "CL_5": {
-                "Nome": "Madame André",
+                "Nome": "Nélie Jacquemart-André",
                 "Cognome": "",
                 "vendite": [
                     "Generic"
                 ]
             },
             "CL_9": {
-                "Nome": "Vanderbilt",
+                "Nome": "William Henry Vanderbilt",
                 "Cognome": "",
                 "vendite": [
                     "Generic"
                 ]
             },
             "CL_10": {
-                "Nome": "Vittorio Emanuele III",
+                "Nome": "Vittorio Emanuele III di Savoia",
                 "Cognome": "",
                 "vendite": [
                     "Generic"
@@ -2674,61 +2706,81 @@
                 "ID": "C_7",
                 "Nome": "Bernard",
                 "Cognome / Denominazione": "Berenson",
-                "Tipologia": "storico dell'arte"
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "AL CO_I RO ST VO_I",
+                "Nome Antiquari": "Albrighi Contini-Bonacossi Romano Steffanoni Volpi"
             },
             "C_20": {
                 "ID": "C_20",
                 "Nome": "Robert Langton",
                 "Cognome / Denominazione": "Douglas",
-                "Tipologia": "storico dell'arte"
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "BE_II CO_I",
+                "Nome Antiquari": "Bellesi Contini Bonacossi"
             },
             "C_25": {
                 "ID": "C_25",
                 "Nome": "Giuseppe",
                 "Cognome / Denominazione": "Fiocco",
-                "Tipologia": "storico dell'arte"
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "CO_I ST",
+                "Nome Antiquari": "Contini Bonacossi Steffanoni"
             },
             "C_37": {
                 "ID": "C_37",
                 "Nome": "Roberto",
                 "Cognome / Denominazione": "Longhi",
-                "Tipologia": "storico dell'arte"
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "BR_II CO_I",
+                "Nome Antiquari": "Bruschi Livio Contini Bonacossi"
             },
             "C_42": {
                 "ID": "C_42",
                 "Nome": "Mario",
                 "Cognome / Denominazione": "Modestini",
-                "Tipologia": "restauratore"
+                "Tipologia": "restauratore",
+                "ID Antiquari": "CO_I",
+                "Nome Antiquari": "Contini Bonacossi"
             },
             "C_39": {
                 "ID": "C_39",
-                "Nome": "Friederick",
+                "Nome": "Frederick",
                 "Cognome / Denominazione": "Mason Perkins",
-                "Tipologia": "storico dell'arte"
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "CO_I SA_IV",
+                "Nome Antiquari": "Contini Bonacossi Sangiorgi"
             },
             "C_62": {
                 "ID": "C_62",
                 "Nome": "Pietro",
                 "Cognome / Denominazione": "Toesca",
-                "Tipologia": "storico dell'arte"
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "CO_I",
+                "Nome Antiquari": "Contini Bonacossi"
             },
             "C_64": {
                 "ID": "C_64",
                 "Nome": "Lionello",
                 "Cognome / Denominazione": "Venturi",
-                "Tipologia": "storico dell'arte"
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "CO_I",
+                "Nome Antiquari": "Contini Bonacossi"
             },
             "C_66": {
                 "ID": "C_66",
-                "Nome": "Wilhem",
+                "Nome": "Wilhelm",
                 "Cognome / Denominazione": "Von Bode",
-                "Tipologia": "storico dell'arte"
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "BA_III BA_IV",
+                "Nome Antiquari": "Barsanti Baslini"
             },
             "C_68": {
                 "ID": "C_68",
                 "Nome": "Federico",
                 "Cognome / Denominazione": "Zeri",
-                "Tipologia": "storico dell'arte"
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "ZA",
+                "Nome Antiquari": "Zabert"
             }
         },
         "Eventi": {},
@@ -3234,9 +3286,7 @@
             }
         },
         "Foto preview": "DE_preview",
-        "Foto gallery": [
-            ""
-        ],
+        "Foto gallery": [],
         "Persone": {
             "DE_1": {
                 "ID": "DE_1",
@@ -3302,39 +3352,51 @@
         "Collaboratori": {
             "C_5": {
                 "ID": "C_5",
-                "Nome": "Arte",
+                "Nome": "",
                 "Cognome / Denominazione": "Arte Fotografica",
-                "Tipologia": "fotografo"
+                "Tipologia": "fotografo",
+                "ID Antiquari": "DI",
+                "Nome Antiquari": "Di castro"
             },
             "C_11": {
                 "ID": "C_11",
                 "Nome": "Giuliano",
                 "Cognome / Denominazione": "Briganti",
-                "Tipologia": "storico dell'arte"
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "AN-EF AP",
+                "Nome Antiquari": "Antonacci-Efrati Apolloni"
             },
             "C_16": {
                 "ID": "C_16",
                 "Nome": "Pico",
                 "Cognome / Denominazione": "Cellini",
-                "Tipologia": "restauratore"
+                "Tipologia": "restauratore",
+                "ID Antiquari": "DI",
+                "Nome Antiquari": "Di Castro"
             },
             "C_18": {
                 "ID": "C_18",
                 "Nome": "Antonio",
                 "Cognome / Denominazione": "De Mata",
-                "Tipologia": "restauratore"
+                "Tipologia": "restauratore",
+                "ID Antiquari": "DI",
+                "Nome Antiquari": "Di Castro"
             },
             "C_30": {
                 "ID": "C_30",
                 "Nome": "Alvar",
-                "Cognome / Denominazione": "Gonzales Palacios",
-                "Tipologia": "storico dell'arte"
+                "Cognome / Denominazione": "Gonzáles Palacios",
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "AN-EF AP DI SE_II",
+                "Nome Antiquari": "Antonacci-Efrati Apolloni Di Castro Sestieri"
             },
             "C_68": {
                 "ID": "C_68",
                 "Nome": "Federico",
                 "Cognome / Denominazione": "Zeri",
-                "Tipologia": "storico dell'arte"
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "ZA",
+                "Nome Antiquari": "Zabert"
             }
         },
         "Eventi": {},
@@ -3651,9 +3713,7 @@
         "Collaboratori": {},
         "Eventi": {},
         "Foto preview": "FR_preview",
-        "Foto gallery": [
-            ""
-        ],
+        "Foto gallery": [],
         "Persone": {
             "FR_1": {
                 "ID": "FR_1",
@@ -3976,7 +4036,9 @@
                 "ID": "C_68",
                 "Nome": "Federico",
                 "Cognome / Denominazione": "Zeri",
-                "Tipologia": "storico dell'arte"
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "ZA",
+                "Nome Antiquari": "Zabert"
             }
         },
         "Eventi": {
@@ -4171,9 +4233,7 @@
         "Collaboratori": {},
         "Eventi": {},
         "Foto preview": "GU-BR_preview",
-        "Foto gallery": [
-            ""
-        ],
+        "Foto gallery": [],
         "Persone": {
             "GU-BR_1": {
                 "ID": "GU-BR_1",
@@ -5143,19 +5203,25 @@
                 "ID": "C_10_1",
                 "Nome": "",
                 "Cognome / Denominazione": "Braun & C.ie",
-                "Tipologia": "fotografi"
+                "Tipologia": "fotografo",
+                "ID Antiquari": "LA_II",
+                "Nome Antiquari": "Lazzaroni"
             },
             "C_10_2": {
                 "ID": "C_10_2",
                 "Nome": "",
-                "Cognome / Denominazione": "Giraudon & Bernès",
-                "Tipologia": "fotografi"
+                "Cognome / Denominazione": "Giraudon",
+                "Tipologia": "fotografo",
+                "ID Antiquari": "LA_II",
+                "Nome Antiquari": "Lazzaroni"
             },
             "C_10_3": {
                 "ID": "C_10_3",
                 "Nome": "",
-                "Cognome / Denominazione": "Marouteau & C.ie",
-                "Tipologia": "fotografi"
+                "Cognome / Denominazione": "Bern�s, Marouteau & C.ie",
+                "Tipologia": "fotografo",
+                "ID Antiquari": "LA_II",
+                "Nome Antiquari": "Lazzaroni"
             }
         },
         "Eventi": {},
@@ -5236,14 +5302,14 @@
                 "ID": "C_68",
                 "Nome": "Federico",
                 "Cognome / Denominazione": "Zeri",
-                "Tipologia": "storico dell'arte"
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "ZA",
+                "Nome Antiquari": "Zabert"
             }
         },
         "Eventi": {},
         "Foto preview": "MO_preview",
-        "Foto gallery": [
-            ""
-        ],
+        "Foto gallery": [],
         "Persone": {
             "MO_1": {
                 "ID": "MO_1",
@@ -5302,7 +5368,9 @@
                 "ID": "C_46",
                 "Nome": "Rodolfo",
                 "Cognome / Denominazione": "Pallucchini",
-                "Tipologia": "storico dell'arte"
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "PO_II NI",
+                "Nome Antiquari": "Pospisil Nigro"
             }
         },
         "Eventi": {},
@@ -5426,9 +5494,7 @@
         "Collaboratori": {},
         "Eventi": {},
         "Foto preview": "PA_I_preview",
-        "Foto gallery": [
-            ""
-        ],
+        "Foto gallery": [],
         "Persone": {
             "PA_I_1": {
                 "ID": "PA_I_1",
@@ -5516,7 +5582,9 @@
                 "ID": "C_2",
                 "Nome": "",
                 "Cognome / Denominazione": "Anderson",
-                "Tipologia": "fotografo"
+                "Tipologia": "fotografo",
+                "ID Antiquari": "PA_II",
+                "Nome Antiquari": "Paolini"
             }
         },
         "Eventi": {
@@ -5531,9 +5599,7 @@
             }
         },
         "Foto preview": "PA_II_preview",
-        "Foto gallery": [
-            ""
-        ],
+        "Foto gallery": [],
         "Persone": {
             "PA_II_1": {
                 "ID": "PA_II_1",
@@ -5879,27 +5945,31 @@
             "C_36": {
                 "ID": "C_36",
                 "Nome": "Franz",
-                "Cognome / Denominazione": "Kienslinger",
-                "Tipologia": "mercante"
+                "Cognome / Denominazione": "Kieslinger",
+                "Tipologia": "mercante",
+                "ID Antiquari": "PO_II",
+                "Nome Antiquari": "Pospisil"
             },
             "C_45": {
                 "ID": "C_45",
                 "Nome": "Kajetan 'Kai'",
-                "Cognome / Denominazione": "Muehlmann",
-                "Tipologia": "storico dell'arte"
+                "Cognome / Denominazione": "Mühlmann",
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "PO_II",
+                "Nome Antiquari": "Pospisil"
             },
             "C_46": {
                 "ID": "C_46",
                 "Nome": "Rodolfo",
                 "Cognome / Denominazione": "Pallucchini",
-                "Tipologia": "storico dell'arte"
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "PO_II NI",
+                "Nome Antiquari": "Pospisil Nigro"
             }
         },
         "Eventi": {},
         "Foto preview": "PO_II_preview",
-        "Foto gallery": [
-            ""
-        ],
+        "Foto gallery": [],
         "Persone": {
             "PO_II_1": {
                 "ID": "PO_II_1",
@@ -6089,15 +6159,19 @@
         "Collaboratori": {
             "C_66": {
                 "ID": "C_66",
-                "Nome": "Wilhem",
+                "Nome": "Wilhelm",
                 "Cognome / Denominazione": "Von Bode",
-                "Tipologia": "storico dell'arte"
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "BA_III BA_IV",
+                "Nome Antiquari": "Barsanti Baslini"
             },
             "C_7": {
                 "ID": "C_7",
                 "Nome": "Bernard",
                 "Cognome / Denominazione": "Berenson",
-                "Tipologia": "storico dell'arte"
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "AL CO_I RO ST VO_I",
+                "Nome Antiquari": "Albrighi Contini-Bonacossi Romano Steffanoni Volpi"
             }
         },
         "Eventi": {
@@ -6220,7 +6294,9 @@
                 "ID": "C_17",
                 "Nome": "Egisto",
                 "Cognome / Denominazione": "De Masi",
-                "Tipologia": "antiquario"
+                "Tipologia": "antiquario",
+                "ID Antiquari": "RU",
+                "Nome Antiquari": "Rubinacci"
             },
             "C_52": {
                 "ID": "C_52",
@@ -6338,7 +6414,9 @@
                 "ID": "C_33",
                 "Nome": "",
                 "Cognome / Denominazione": "Industrial foto",
-                "Tipologia": "fotografo"
+                "Tipologia": "fotografo",
+                "ID Antiquari": "SA_I",
+                "Nome Antiquari": "Salocchi"
             }
         },
         "Eventi": {},
@@ -6827,15 +6905,19 @@
         "Collaboratori": {
             "C_39": {
                 "ID": "C_39",
-                "Nome": "Friederick",
+                "Nome": "Frederick",
                 "Cognome / Denominazione": "Mason Perkins",
-                "Tipologia": "storico dell'arte"
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "CO_I SA_IV",
+                "Nome Antiquari": "Contini Bonacossi Sangiorgi"
             },
             "C_50": {
                 "ID": "C_50",
                 "Nome": "Ludwig",
                 "Cognome / Denominazione": "Pollak",
-                "Tipologia": "storico dell'arte"
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "BA_III SA_IV",
+                "Nome Antiquari": "Barsanti Sangiorgi"
             },
             "C_57": {
                 "ID": "C_57",
@@ -6847,7 +6929,9 @@
                 "ID": "C_63",
                 "Nome": "Adolfo",
                 "Cognome / Denominazione": "Venturi",
-                "Tipologia": "storico dell'arte"
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "SA_IV",
+                "Nome Antiquari": "Sangiorgi"
             }
         },
         "Eventi": {
@@ -7132,50 +7216,74 @@
             "C_30": {
                 "ID": "C_30",
                 "Nome": "Alvar",
-                "Cognome / Denominazione": "Gonzales Palacios",
-                "Tipologia": "storico dell'arte"
+                "Cognome / Denominazione": "Gonzáles Palacios",
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "AN-EF AP DI SE_II",
+                "Nome Antiquari": "Antonacci-Efrati Apolloni Di Castro Sestieri"
+            },
+            "C_16_b": {
+                "ID": "C_16_b",
+                "Nome": "Hermann",
+                "Cognome / Denominazione": "Corrodi",
+                "Tipologia": "pittore",
+                "ID Antiquari": "SE_II",
+                "Nome Antiquari": "Sestieri"
             },
             "C_21": {
                 "ID": "C_21",
                 "Nome": "Alvaro",
                 "Cognome / Denominazione": "Esposti",
-                "Tipologia": "restauratore"
+                "Tipologia": "restauratore",
+                "ID Antiquari": "SE_II",
+                "Nome Antiquari": "Sestieri"
             },
             "C_11": {
                 "ID": "C_11",
                 "Nome": "Giuliano",
                 "Cognome / Denominazione": "Briganti",
-                "Tipologia": "storico dell'arte"
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "AN-EF AP",
+                "Nome Antiquari": "Antonacci-Efrati Apolloni"
             },
             "C_14_b": {
                 "ID": "C_14_b",
-                "Nome": "",
+                "Nome": "Maurizio",
                 "Cognome / Denominazione": "Calvesi",
-                "Tipologia": "storico dell'arte"
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "SE_II",
+                "Nome Antiquari": "Sestieri"
             },
             "C_43": {
                 "ID": "C_43",
                 "Nome": "Bruno",
                 "Cognome / Denominazione": "Molajoli",
-                "Tipologia": "storico dell'arte"
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "SE_II",
+                "Nome Antiquari": "Sestieri"
             },
             "C_14": {
                 "ID": "C_14",
-                "Nome": "Raffaelo",
+                "Nome": "Raffaello",
                 "Cognome / Denominazione": "Causa",
-                "Tipologia": "storico dell'arte"
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "SE_II",
+                "Nome Antiquari": "Sestieri"
             },
             "C_9": {
                 "ID": "C_9",
                 "Nome": "Ferdinando",
                 "Cognome / Denominazione": "Bologna",
-                "Tipologia": "storico dell'arte"
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "SE_II",
+                "Nome Antiquari": "Sestieri"
             },
             "C_68": {
                 "ID": "C_68",
                 "Nome": "Federico",
                 "Cognome / Denominazione": "Zeri",
-                "Tipologia": "storico dell'arte"
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "ZA",
+                "Nome Antiquari": "Zabert"
             }
         },
         "Eventi": {},
@@ -7599,50 +7707,62 @@
                 "ID": "C_13",
                 "Nome": "Paul",
                 "Cognome / Denominazione": "Cassirer",
-                "Tipologia": "antiquario"
+                "Tipologia": "antiquario",
+                "ID Antiquari": "ST",
+                "Nome Antiquari": "Steffanoni"
             },
             "C_28": {
                 "ID": "C_28",
                 "Nome": "Benno",
                 "Cognome / Denominazione": "Geiger",
-                "Tipologia": "antiquario"
+                "Tipologia": "antiquario",
+                "ID Antiquari": "ST",
+                "Nome Antiquari": "Steffanoni"
             },
             "C_4": {
                 "ID": "C_4",
                 "Nome": "Wart",
                 "Cognome / Denominazione": "Arslan",
-                "Tipologia": "storico dell'arte"
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "ST",
+                "Nome Antiquari": "Steffanoni"
             },
             "C_37": {
                 "ID": "C_37",
                 "Nome": "Roberto",
                 "Cognome / Denominazione": "Longhi",
-                "Tipologia": "storico dell'arte"
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "BR_II CO_I",
+                "Nome Antiquari": "Bruschi Livio Contini Bonacossi"
             },
             "C_25": {
                 "ID": "C_25",
                 "Nome": "Giuseppe",
                 "Cognome / Denominazione": "Fiocco",
-                "Tipologia": "storico dell'arte"
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "CO_I ST",
+                "Nome Antiquari": "Contini Bonacossi Steffanoni"
             },
             "C_7": {
                 "ID": "C_7",
                 "Nome": "Bernard",
                 "Cognome / Denominazione": "Berenson",
-                "Tipologia": "storico dell'arte"
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "AL CO_I RO ST VO_I",
+                "Nome Antiquari": "Albrighi Contini-Bonacossi Romano Steffanoni Volpi"
             },
             "C_26": {
                 "ID": "C_26",
                 "Nome": "Ugo",
                 "Cognome / Denominazione": "Frizzoni",
-                "Tipologia": "storico dell'arte"
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "ST",
+                "Nome Antiquari": "Steffanoni"
             }
         },
         "Eventi": {},
         "Foto preview": "ST_preview",
-        "Foto gallery": [
-            ""
-        ],
+        "Foto gallery": [],
         "Persone": {
             "ST_1": {
                 "ID": "ST_1",
@@ -7983,13 +8103,17 @@
                 "ID": "C_41_b",
                 "Nome": "Ferruccio",
                 "Cognome / Denominazione": "Mestrovich",
-                "Tipologia": "storico dell'arte"
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "VI_I",
+                "Nome Antiquari": "Viancini"
             },
             "C_38_b": {
                 "ID": "C_38_b",
                 "Nome": "Egidio",
                 "Cognome / Denominazione": "Martini",
-                "Tipologia": "storico dell'arte"
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "VI_I",
+                "Nome Antiquari": "Viancini"
             }
         },
         "Eventi": {},
@@ -8055,14 +8179,14 @@
                 "ID": "C_68",
                 "Nome": "Federico",
                 "Cognome / Denominazione": "Zeri",
-                "Tipologia": "storico dell'arte"
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "ZA",
+                "Nome Antiquari": "Zabert"
             }
         },
         "Eventi": {},
         "Foto preview": "VI_II_preview",
-        "Foto gallery": [
-            ""
-        ],
+        "Foto gallery": [],
         "Persone": {
             "VI_II_1": {
                 "ID": "VI_II_1",
@@ -8280,19 +8404,25 @@
                 "ID": "C_1",
                 "Nome": "",
                 "Cognome / Denominazione": "Alinari",
-                "Tipologia": "fotografo"
+                "Tipologia": "fotografo",
+                "ID Antiquari": "VO_I",
+                "Nome Antiquari": "Volpi"
             },
             "C_12": {
                 "ID": "C_12",
-                "Nome": "Brogi",
+                "Nome": "",
                 "Cognome / Denominazione": "Brogi",
-                "Tipologia": "fotografo"
+                "Tipologia": "fotografo",
+                "ID Antiquari": "VO_I",
+                "Nome Antiquari": "Volpi"
             },
             "C_7": {
                 "ID": "C_7",
                 "Nome": "Bernard",
                 "Cognome / Denominazione": "Berenson",
-                "Tipologia": "storico dell'arte"
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "AL CO_I RO ST VO_I",
+                "Nome Antiquari": "Albrighi Contini-Bonacossi Romano Steffanoni Volpi"
             }
         },
         "Eventi": {},
@@ -8432,25 +8562,33 @@
                 "ID": "C_35",
                 "Nome": "Icilio Federico",
                 "Cognome / Denominazione": "Joni",
-                "Tipologia": "restauratore"
+                "Tipologia": "restauratore",
+                "ID Antiquari": "VO_II",
+                "Nome Antiquari": "Volterra"
             },
             "C_40": {
                 "ID": "C_40",
                 "Nome": "Angiolo",
                 "Cognome / Denominazione": "Melli",
-                "Tipologia": "antiquario"
+                "Tipologia": "antiquario",
+                "ID Antiquari": "VO_II",
+                "Nome Antiquari": "Volterra"
             },
             "C_41": {
                 "ID": "C_41",
                 "Nome": "Cesare",
                 "Cognome / Denominazione": "Melli",
-                "Tipologia": "antiquario"
+                "Tipologia": "antiquario",
+                "ID Antiquari": "VO_II",
+                "Nome Antiquari": "Volterra"
             },
             "C_67": {
                 "ID": "C_67",
                 "Nome": "Silvio",
                 "Cognome / Denominazione": "Zanchi",
-                "Tipologia": "restauratore"
+                "Tipologia": "restauratore",
+                "ID Antiquari": "VO_II",
+                "Nome Antiquari": "Volterra"
             }
         },
         "Eventi": {},
@@ -8713,7 +8851,9 @@
                 "ID": "C_68",
                 "Nome": "Federico",
                 "Cognome / Denominazione": "Zeri",
-                "Tipologia": "storico dell'arte"
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "ZA",
+                "Nome Antiquari": "Zabert"
             }
         },
         "Eventi": {},
