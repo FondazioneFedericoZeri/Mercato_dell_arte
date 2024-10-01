@@ -27,7 +27,7 @@ def build_kinships(input_csv, entity_json, person_csv, output_json):
     # Iterate over each row in the kinship CSV
     for _, row in kinship_data.iterrows():
         # Normalize the entity_id and person IDs by converting them to uppercase for comparison
-        entity_id = row['ID_entit�'].upper()
+        entity_id = row['ID_entità'].upper()
         person1 = row['ID_persona_1'].upper()
         person2 = row['ID_persona_2'].upper()
         relation_type = row['tipologia']
@@ -85,5 +85,5 @@ if __name__ == "__main__":
     import sys
 
     if sys.argv[1] == "parentela":
-        build_kinships('../data/parentela.csv',
-                       '../json/entità.json', '../data/persone.csv', '../json/parentela.json')
+        build_kinships('data/parentela.csv',
+                       'json/entità.json', 'data/persone.csv', 'json/parentela.json')

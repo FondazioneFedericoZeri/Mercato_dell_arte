@@ -1,6 +1,5 @@
 import json
 import airium as a
-import docx
 
 
 def getBib(bibitem):
