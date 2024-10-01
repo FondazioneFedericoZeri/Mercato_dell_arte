@@ -1,3 +1,4 @@
 geopy
 airium
 python-docx
+pandas
