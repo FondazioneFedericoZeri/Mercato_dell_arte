@@ -3,8 +3,8 @@
         "ID": "R_1",
         "ID_entità_1": "AC",
         "ID_entità_2": "AP",
-        "ID_entitàPersona_1": "AC_1",
-        "ID_entitàPersona_2": "AP_2"
+        "ID_entità_Persona_1": "AC_1",
+        "ID_entità_Persona_2": "AP_2"
     },
     "R_2": {
         "ID": "R_2",
@@ -45,22 +45,22 @@
         "ID": "R_9",
         "ID_entità_1": "BA_II",
         "ID_entità_2": "CI",
-        "ID_entitàPersona_1": "Ba_II_1",
-        "ID_entitàPersona_2": "CI_1"
+        "ID_entità_Persona_1": "BA_II_1",
+        "ID_entità_Persona_2": "CI_1"
     },
     "R_10": {
         "ID": "R_10",
         "ID_entità_1": "BA_II",
         "ID_entità_2": "VO_I",
-        "ID_entitàPersona_1": "Ba_II_2",
-        "ID_entitàPersona_2": "VO_I_1"
+        "ID_entità_Persona_1": "BA_II_2",
+        "ID_entità_Persona_2": "VO_I_1"
     },
     "R_11": {
         "ID": "R_11",
         "ID_entità_1": "BA_II",
         "ID_entità_2": "FE",
-        "ID_entitàPersona_1": "Ba_II_3",
-        "ID_entitàPersona_2": "FE_1"
+        "ID_entità_Persona_1": "BA_II_3",
+        "ID_entità_Persona_2": "FE_1"
     },
     "R_12": {
         "ID": "R_12",
@@ -76,8 +76,8 @@
         "ID": "R_14",
         "ID_entità_1": "BA_III",
         "ID_entità_2": "SI",
-        "ID_entitàPersona_1": "Ba_III_1",
-        "ID_entitàPersona_2": "SI_1"
+        "ID_entità_Persona_1": "BA_III_1",
+        "ID_entità_Persona_2": "SI_1"
     },
     "R_15": {
         "ID": "R_15",
@@ -98,8 +98,8 @@
         "ID": "R_18",
         "ID_entità_1": "CO_I",
         "ID_entità_2": "BE_II",
-        "ID_entitàPersona_1": "Co_I_1",
-        "ID_entitàPersona_2": "BE_II"
+        "ID_entità_Persona_1": "CO_I_1",
+        "ID_entità_Persona_2": "BE_II"
     },
     "R_19": {
         "ID": "R_19",
@@ -160,5 +160,25 @@
         "ID": "R_30",
         "ID_entità_1": "TA",
         "ID_entità_2": "JA-TA"
+    },
+    "R_31": {
+        "ID": "R_31",
+        "ID_entità_1": "VI_I",
+        "ID_entità_2": "AC"
+    },
+    "R_32": {
+        "ID": "R_32",
+        "ID_entità_1": "ZA",
+        "ID_entità_2": "DI"
+    },
+    "R_33": {
+        "ID": "R_33",
+        "ID_entità_1": "ZA",
+        "ID_entità_2": "SE_II"
+    },
+    "R_34": {
+        "ID": "R_34",
+        "ID_entità_1": "ZA",
+        "ID_entità_2": "SA_I"
     }
 }
