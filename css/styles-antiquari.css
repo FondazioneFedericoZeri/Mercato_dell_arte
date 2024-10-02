@@ -100,7 +100,7 @@ nav ul li a:hover {
     align-items: center; /* Allinea il contenuto verticalmente al centro */
     padding: 20px;
     margin-left: 120px; /* Margine a sinistra per il testo */
-    min-height: 300px;
+    min-height: 600px !important;
 
 }
 
@@ -133,23 +133,75 @@ nav ul li a:hover {
 }
 
 /* Stile per il bottone nella sezione #intro-section */
-.btn {
-    display: inline-block;
-    padding: 10px 30px;
-    font-size: 16px;
-    font-weight: 700;
-    color: #fff; /* Testo bianco */
-    background-color: #333; /* Sfondo grigio scuro */
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    margin-top: 20px;
-    margin-right: 20px;
+
+
+#search {
+    padding: 120px 60px 80px 60px;
+    background-color: #f8f8f8;
+    min-height: 500px;
 }
 
-.btn:hover {
-    background-color: #5593C9; /* Sfondo blu al mouse over */
-    color: #fff; /* Mantiene il testo bianco */
+
+.search-bar-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%; /* Imposta la larghezza del contenitore */
+}
+
+.search-bar-container input[type="text"] {
+    padding: 12px 24px; /* Aumenta il padding per rendere la barra più alta */
+    width: 100%; /* Imposta la larghezza al 100% del contenitore */
+    max-width: 500px; /* Aumenta la larghezza massima */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 120%; /* Aumenta la dimensione del font */
+    box-sizing: border-box; /* Assicura che padding e bordi siano inclusi nella larghezza */
+    margin-top: 40px;
+}
+
+.search-bar-container button {
+    padding: 12px 24px; /* Aumenta l'altezza del bottone per essere uguale alla barra di ricerca */
+    font-size: 120%; /* Aumenta la dimensione del font per il bottone */
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 40px;
+}
+
+
+#search-button:hover {
+    background-color: #5593C9;
+}
+
+#search h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #5593C9;
+    font-weight: 700;
+    text-align: left;
+    margin-left: 80px;
+}
+
+#search p {
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: left;
+    margin-left: 80px;
+    max-width: 500px;
+}
+
+#search-results {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+#search-results div {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
 }
 
 /* Stile base per la dissolvenza */
@@ -378,98 +430,6 @@ nav ul li a:hover {
 
 .fade-in.visible {
     opacity: 1;
-}
-
-#search {
-    padding: 120px 60px 80px 60px;
-    background-color: #f8f8f8;
-    min-height: 500px;
-}
-
-#search h2, #search p {
-    margin-bottom: 20px; /* Spazio tra il titolo, il paragrafo e la barra di ricerca */
-}
-
-.search-bar-container {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center; /* Allinea verticalmente la barra di ricerca e il pulsante */
-    width: 100%; /* Imposta la larghezza del contenitore */
-}
-
-#search input {
-    padding: 12px 24px;
-    width: 70%; /* Occupa il 70% del contenitore */
-    max-width: 600px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 120%;
-    margin-left: 80px;
-}
-
-#search-button {
-    background-color: #333;
-    color: #fff;
-    padding: 12px 24px;
-    font-weight: bold;
-    cursor: pointer;
-    font-size: 120%;
-    border: 1px solid #ccc;
-    border-left: none; /* Rimuove il bordo sinistro per attaccare alla barra di ricerca */
-    transition: background-color 0.3s ease;
-    margin-top: -1px;
-}
-
-#search-button:hover {
-    background-color: #5593C9;
-}
-
-#btn-cognome {
-    background-color: #333;
-    color: #fff;
-    padding: 9px 20px;
-    font-weight: bold;
-    cursor: pointer;
-    font-size: 110%;
-    border: 1px solid #ccc;
-    transition: background-color 0.3s ease;
-    margin-top: -20px;
-    margin-left: 120px;
-
-}
-
-#search .btn:hover {
-    background-color: #5593C9;
-}
-
-
-#search h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    color: #5593C9;
-    font-weight: 700;
-    text-align: left;
-    margin-left: 80px;
-}
-
-#search p {
-    margin-bottom: 30px;
-    font-size: 24px;
-    font-weight: 400;
-    text-align: left;
-    margin-left: 80px;
-    max-width: 500px;
-}
-
-#search-results {
-    margin-top: 20px;
-    font-size: 18px;
-    color: #333;
-}
-
-#search-results div {
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
 }
 
 
