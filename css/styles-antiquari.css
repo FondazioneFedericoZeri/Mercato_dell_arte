@@ -222,8 +222,8 @@ nav ul li a:hover {
 
 .svg-container {
     flex-shrink: 0; /* Impedisce all'SVG di ridursi */
-    max-width: 800px; /* Limita la larghezza massima dell'SVG */
-    margin-right: 260px;
+    max-width: 600px; /* Limita la larghezza massima dell'SVG */
+    margin-right: 150px;
 }
 
 .chemin {
