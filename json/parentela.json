@@ -773,29 +773,22 @@
             }
         }
     },
-    "JA-TA": {
-        "Nome": "Jandolo-Tavazzi",
+    "TA": {
+        "Nome": "Tavazzi",
         "Relazioni": [
             {
-                "Persona_1": "JA-TA_1",
-                "Persona_2": "JA-TA_2",
-                "Tipo_di_relazione": "fratello/sorella"
-            },
-            {
-                "Persona_1": "JA-TA_3",
-                "Persona_2": "JA-TA_4",
+                "Persona_1": "TA_1",
+                "Persona_2": "TA_2",
                 "Tipo_di_relazione": "padre"
             }
         ],
         "Persone": {
-            "JA-TA_1": {
-                "Nome": "Guido Tavazzi",
-                "Nascita": "",
-                "Morte": "1942"
+            "TA_1": {
+                "Nome": "Filippo Tavazzi",
+                "Nascita": "1857",
+                "Morte": "1924"
             },
-            "JA-TA_2": {},
-            "JA-TA_3": {},
-            "JA-TA_4": {}
+            "TA_2": {}
         }
     },
     "LA_I": {
@@ -1038,6 +1031,16 @@
             {
                 "Persona_1": "SE_I_1",
                 "Persona_2": "SE_I_2",
+                "Tipo_di_relazione": "fratello/sorella"
+            },
+            {
+                "Persona_1": "SE_I_2",
+                "Persona_2": "SE_I_1",
+                "Tipo_di_relazione": "fratello/sorella"
+            },
+            {
+                "Persona_1": "SE_I_2",
+                "Persona_2": "SE_I_3",
                 "Tipo_di_relazione": "padre"
             }
         ],
@@ -1051,7 +1054,8 @@
                 "Nome": "Isacco Segre",
                 "Nascita": "",
                 "Morte": ""
-            }
+            },
+            "SE_I_3": {}
         }
     },
     "SE_II": {
