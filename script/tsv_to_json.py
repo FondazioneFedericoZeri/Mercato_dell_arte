@@ -62,7 +62,7 @@ def build_generic(input_csv, output_json):
 
 def build_people(input_csv, output_json):
 
-    luoghi = json.loads(open("../json/luoghi.json").read())
+    luoghi = json.loads(open("json/luoghi.json").read())
 
     fout = open(output_json, "w", encoding="utf-8")
 
@@ -86,12 +86,12 @@ def build_people(input_csv, output_json):
 
 
 def build_entities(input_csv_entità, output_json):
-    bibliografia = json.loads(open("../json/bibliografia.json").read())
-    collaboratori = json.loads(open("../json/collaboratori.json").read())
-    persone = json.loads(open("../json/persone.json").read())
-    compravendite = json.loads(open("../json/compravendite.json").read())
-    eventi = json.loads(open("../json/eventi.json").read())
-    relazioni = json.loads(open("../json/relazioni.json").read())
+    bibliografia = json.loads(open("json/bibliografia.json").read())
+    collaboratori = json.loads(open("json/collaboratori.json").read())
+    persone = json.loads(open("json/persone.json").read())
+    compravendite = json.loads(open("json/compravendite.json").read())
+    eventi = json.loads(open("json/eventi.json").read())
+    relazioni = json.loads(open("json/relazioni.json").read())
 
     fout = open(output_json, "w", encoding="utf-8")
 
@@ -171,38 +171,38 @@ if __name__ == "__main__":
     import sys
 
     if sys.argv[1] == "luoghi":
-        build_places("../data/luoghi.tsv", "../json/luoghi.json")
+        build_places("data/luoghi.tsv", "json/luoghi.json")
 
     if sys.argv[1] == "didascalie":
-        build_generic("../data/didascalie.tsv", "../json/didascalie.json")
+        build_generic("data/didascalie.tsv", "json/didascalie.json")
 
     if sys.argv[1] == "bibliografia":
-        build_generic("../data/bibliografiaGenerale.tsv",
-                      "../json/bibliografia.json")
+        build_generic("data/bibliografiaGenerale.tsv",
+                      "json/bibliografia.json")
 
     if sys.argv[1] == "collaboratori":
-        build_generic("../data/collaboratori.tsv",
-                      "../json/collaboratori.json")
+        build_generic("data/collaboratori.tsv",
+                      "json/collaboratori.json")
 
     if sys.argv[1] == "eventi":
-        build_generic("../data/eventi.tsv", "../json/eventi.json")
+        build_generic("data/eventi.tsv", "json/eventi.json")
         # TODO: modify build people and account for data from eventi
-        build_entities("../data/entità.tsv", "../json/entità.json")
+        build_entities("data/entità.tsv", "json/entità.json")
 
     if sys.argv[1] == "compravendite":
-        build_generic("../data/compravendite.tsv",
-                      "../json/compravendite.json")
+        build_generic("data/compravendite.tsv",
+                      "json/compravendite.json")
         # TODO: modify build people and account for data from compravendite
-        build_entities("../data/entità.tsv", "../json/entità.json")
+        build_entities("data/entità.tsv", "json/entità.json")
 
     if sys.argv[1] == "relazioni":
-        build_generic("../data/relazioni.tsv", "../json/relazioni.json")
+        build_generic("data/relazioni.tsv", "json/relazioni.json")
         # TODO: modify build people and account for data from relazioni
-        build_entities("../data/entità.tsv", "../json/entità.json")
+        build_entities("data/entità.tsv", "json/entità.json")
 
     if sys.argv[1] == "persone":
-        build_people("../data/persone.tsv", "../json/persone.json")
-        build_entities("../data/entità.tsv", "../json/entità.json")
+        build_people("data/persone.tsv", "json/persone.json")
+        build_entities("data/entità.tsv", "json/entità.json")
 
     if sys.argv[1] == "entità":
-        build_entities("../data/entità.tsv", "../json/entità.json")
+        build_entities("data/entità.tsv", "json/entità.json")
