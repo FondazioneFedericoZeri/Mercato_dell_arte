@@ -2,12 +2,12 @@ import json
 import pandas as pd
 
 
-def build_kinships(input_csv, entity_json, person_csv, output_json):
+def build_kinships(input_csv, entity_json, person_tsv, output_json):
     # Load the entity data from entità.json
     with open(entity_json, 'r', encoding='utf-8') as f:
         entities = json.load(f)
     # Load the person data from persone.json
-    persons = pd.read_csv(person_csv)
+    persons = pd.read_csv(person_tsv, sep="\t")
     persons = persons.loc[:, ~persons.columns.str.startswith('Unnamed')]
     persons.fillna("", inplace=True)
     persons['Nascita'] = persons['Nascita'].apply(
@@ -86,4 +86,4 @@ if __name__ == "__main__":
 
     if sys.argv[1] == "parentela":
         build_kinships('data/parentela.csv',
-                       'json/entità.json', 'data/persone.csv', 'json/parentela.json')
+                       'json/entità.json', 'data/persone.tsv', 'json/parentela.json')

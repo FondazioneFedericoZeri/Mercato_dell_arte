@@ -56,18 +56,18 @@
             },
             "AN-EF_3": {
                 "Nome": "Giuseppe Antonacci",
-                "Nascita": "1923",
-                "Morte": "2010"
+                "Nascita": "",
+                "Morte": ""
             },
             "AN-EF_4": {
                 "Nome": "Paolo Antonacci",
                 "Nascita": "",
-                "Morte": "in vita"
+                "Morte": ""
             },
             "AN-EF_5": {
                 "Nome": "Francesca Antonacci",
                 "Nascita": "",
-                "Morte": "in vita"
+                "Morte": ""
             }
         }
     },
@@ -103,7 +103,7 @@
             },
             "AP_3": {
                 "Nome": "Marco Fabio Apolloni",
-                "Nascita": "1959",
+                "Nascita": "",
                 "Morte": "in vita"
             }
         }
@@ -229,8 +229,8 @@
         "Persone": {
             "BE_I_1": {
                 "Nome": "Giuseppe Bellini",
-                "Nascita": "1909",
-                "Morte": "1994"
+                "Nascita": "",
+                "Morte": ""
             },
             "BE_I_2": {
                 "Nome": "Luigi Bellini",
@@ -317,9 +317,9 @@
                 "Morte": ""
             },
             "BR_II_3": {
-                "Nome": "Anita Almehagen ",
+                "Nome": "Anita Almehagen Bruschi",
                 "Nascita": "",
-                "Morte": "in vita"
+                "Morte": ""
             }
         }
     },
@@ -512,7 +512,7 @@
             },
             "FR_2": {
                 "Nome": "Roberto Freschi",
-                "Nascita": "1952",
+                "Nascita": "",
                 "Morte": "in vita"
             },
             "SA_I_1": {
@@ -945,7 +945,7 @@
                 "Morte": "1984"
             },
             "SA_I_2": {
-                "Nome": "Nicol� o Nicola Salocchi",
+                "Nome": "Nicolò o Nicola Salocchi",
                 "Nascita": "1927",
                 "Morte": "1999"
             }
