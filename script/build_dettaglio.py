@@ -312,7 +312,7 @@ def build_html(entity, entities):
                         with page.div(id="Opere trattate", klass="content"):
                             with page.p():
                                 page("Vedi le opere transitate presso l'antiquario presenti nel ")
-                                with page.a(href=entity["Link Zeri"], klass="linkBio"):
+                                with page.a(href=entity["Link Zeri"], klass="linkBio", target="_blank"):
                                     page("catalogo della Fondazione Zeri")
 
 
