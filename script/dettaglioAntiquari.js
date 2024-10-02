@@ -342,8 +342,8 @@ function initializeChart(rootNode) {
     // Configure node template
     series.nodes.template.setup = function (target) {
       var rectangle = target.children.push(am5.RoundedRectangle.new(root, {
-        width: 200,
-        height: 50,
+        width: 180,
+        height: 40,
         centerX: am5.percent(50),
         centerY: am5.percent(50),
         cornerRadiusTL: 10,
@@ -359,7 +359,7 @@ function initializeChart(rootNode) {
         centerY: am5.percent(50),
         textAlign: "center",
         fill: am5.color("#ffffff"),
-        fontSize: 16
+        fontSize: 14
       }));
     
       
