@@ -240,7 +240,7 @@ nav ul li a:hover {
     border: 1px solid #ccc;
     border-left: none; /* Rimuove il bordo sinistro per attaccare alla barra di ricerca */
     transition: background-color 0.3s ease;
-    margin-top: -3.5px;
+    margin-top: -1px;
 }
 
 #search-button:hover {
