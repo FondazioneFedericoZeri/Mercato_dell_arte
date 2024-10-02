@@ -182,125 +182,89 @@ nav ul li a:hover {
 
 /* da qui inziano tutti gli effetti applicati alla sezione search */
 
-.bold-text {
-    font-weight: bold;
-}
-
-.normal-text {
-    font-weight: normal;
-    /* Non in grassetto */
-    color: #000;
-    /* Colore nero */
-}
-
-/* Classe per la dissolvenza in entrata */
-.fade-in {
-    opacity: 0;
-    transition: opacity 3s ease-in-out;
-}
-
-.fade-in.visible {
-    opacity: 1;
-}
-
-#search {
-    padding: 120px 60px 80px 60px;
-    background-color: #f8f8f8;
+#intro-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Allinea gli elementi all'inizio verticalmente */
+    padding-top: 60px;
+    padding-right: 60px;
+    padding-left: 60px;
+    margin-left: 120px;
     min-height: 550px;
 }
 
-#search h2, #search p {
-    margin-bottom: 20px; /* Spazio tra il titolo, il paragrafo e la barra di ricerca */
+.text-container {
+    display: flex;
+    flex-direction: column; /* Imposta una disposizione a colonna per il testo */
+    justify-content: flex-start;
+    flex: 1;
+}
+
+.text-container h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    text-align: left;
+    margin-top: 60px;
+}
+
+.text-container p {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    max-width: 480px;
+    text-align: left;
 }
 
 .search-bar-container {
     display: flex;
     justify-content: flex-start;
-    align-items: center; /* Allinea verticalmente la barra di ricerca e il pulsante */
-    width: 100%; /* Imposta la larghezza del contenitore */
+    align-items: center;
+    gap: 10px; /* Spazio tra il pulsante e la barra di ricerca */
+    margin-top: 20px;
 }
 
-#search input {
+.search-bar-container input[type="text"] {
     padding: 12px 24px;
-    width: 70%; /* Occupa il 70% del contenitore */
-    max-width: 600px;
+    width: 60%;
+    max-width: 500px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 120%;
-    margin-left: 80px;
 }
 
-#search-button {
-    background-color: #333;
-    color: #fff;
+.search-bar-container button {
     padding: 12px 24px;
-    font-weight: bold;
-    cursor: pointer;
     font-size: 120%;
-    border: 1px solid #ccc;
-    border-left: none; /* Rimuove il bordo sinistro per attaccare alla barra di ricerca */
-    transition: background-color 0.3s ease;
-    margin-top: -1px;
-}
-
-#search-button:hover {
-    background-color: #5593C9;
-}
-
-#btn-cognome {
     background-color: #333;
     color: #fff;
-    padding: 9px 20px;
-    font-weight: bold;
-    cursor: pointer;
-    font-size: 110%;
     border: 1px solid #ccc;
-    transition: background-color 0.3s ease;
-    margin-top: -10px;
-    margin-left: 1000px;
-
+    border-radius: 5px;
+    margin-top: -2px;
+    margin-left: -10px;
 }
 
-#search .btn:hover {
-    background-color: #5593C9;
+.highlight {
+    color: #5593C9; /* Colore azzurro */
+    font-weight: 700; /* Grassetto */
 }
 
 
-#search h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    color: #5593C9;
-    font-weight: 700;
-    text-align: left;
-    margin-left: 80px;
+.svg-container {
+    flex-shrink: 0; /* Impedisce all'SVG di ridursi */
+    max-width: 400px; /* Limita la larghezza dell'SVG */
+    margin-left: 20px; /* Spazio tra la parte di testo e l'SVG */
+    margin-right: 100px;
 }
 
-#search p {
-    margin-bottom: 30px;
-    font-size: 24px;
-    font-weight: 400;
-    text-align: left;
-    margin-left: 80px;
-    max-width: 500px;
-}
 
-#search-results {
-    margin-top: 20px;
-    font-size: 18px;
-    color: #333;
-}
-
-#search-results div {
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
-}
 
 /* inizio della sezione successiva */
 
 #statistics {
     display: flex;
     justify-content: space-around;
-    padding: 40px 20px;
+    padding:  20px;
     background-color: #5593C9;
     color: #fff;
     text-align: center;
