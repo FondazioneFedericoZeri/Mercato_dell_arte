@@ -10,7 +10,7 @@ body {
     flex-direction: column;
     min-height: 100vh; /* Assicura che il corpo occupi almeno l'altezza della finestra */
     font-family: 'Montserrat', sans-serif;
-    color: rgb(73, 150, 226);
+    color: #333;
     line-height: 1.6;
 }
 
@@ -58,7 +58,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #5593C9;
+    background-color: #bf55c9;
     color: #fff;
     border-radius: 5px;
 }
