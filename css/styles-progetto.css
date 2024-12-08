@@ -10,7 +10,7 @@ body {
     flex-direction: column;
     min-height: 100vh; /* Assicura che il corpo occupi almeno l'altezza della finestra */
     font-family: 'Montserrat', sans-serif;
-    color: #333;
+    color: rgb(73, 150, 226);
     line-height: 1.6;
 }
 
