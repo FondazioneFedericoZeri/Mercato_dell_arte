@@ -1788,8 +1788,8 @@
                         "Chiusura": "1937",
                         "Nome attività": "Giuseppe Bellesi, \"The Italian Art Gallery\"",
                         "geo": {
-                            "lat": 51.3682459,
-                            "lon": -0.1832648
+                            "lat": 51.516173,
+                            "lon": -0.152587
                         }
                     },
                     "UK_4": {
@@ -2244,7 +2244,38 @@
         "Foto gallery": [
             "BR_III_img1"
         ],
-        "Persone": {},
+        "Persone": {
+            "BR_III_1": {
+                "ID": "BR_III_1",
+                "Nome Persona": "Italico Brass",
+                "ID_entità": "BR_III",
+                "ID_luoghi": {},
+                "Professione": "pittore; collezionista; antiquario",
+                "Nascita": "1878",
+                "Morte": "1943",
+                "Nome attività": "Non noto"
+            },
+            "BR_III_2": {
+                "ID": "BR_III_2",
+                "Nome Persona": "Alessandro  Brass",
+                "ID_entità": "BR_III",
+                "ID_luoghi": {},
+                "Professione": "avvocato; antiquario",
+                "Nascita": "1898",
+                "Morte": "",
+                "Nome attività": "Non noto"
+            },
+            "BR_III_3": {
+                "ID": "BR_III_3",
+                "Nome Persona": "Italico Brass",
+                "ID_entità": "BR_III",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "",
+                "Morte": "",
+                "Nome attività": "Non noto"
+            }
+        },
         "Clienti": {},
         "Relazioni": {}
     },
@@ -2730,7 +2761,18 @@
         "Foto gallery": [
             "CA_III_img1"
         ],
-        "Persone": {},
+        "Persone": {
+            "CA_III_1": {
+                "ID": "CA_III_1",
+                "Nome Persona": "Achille Cantoni",
+                "ID_entità": "CA_III",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "1844",
+                "Morte": "1914",
+                "Nome attività": ""
+            }
+        },
         "Clienti": {
             "CL_17_b": {
                 "Nome": "Giuseppe",
@@ -2784,7 +2826,18 @@
             "CE_img2",
             "CE_img3"
         ],
-        "Persone": {},
+        "Persone": {
+            "CE_1": {
+                "ID": "CE_1",
+                "Nome Persona": "Adriano Cera",
+                "ID_entità": "CE",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "1938",
+                "Morte": "2021",
+                "Nome attività": "Non noto"
+            }
+        },
         "Clienti": {},
         "Relazioni": {}
     },
@@ -4199,7 +4252,18 @@
             "FO_img3",
             "FO_img4"
         ],
-        "Persone": {},
+        "Persone": {
+            "FO_1": {
+                "ID": "FO_1",
+                "Nome Persona": "Carlo Alberto Foresti",
+                "ID_entità": "FO",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "1878",
+                "Morte": "1944",
+                "Nome attività": "Studiolo Artistico"
+            }
+        },
         "Clienti": {
             "CL_50_b": {
                 "Nome": "Natale",
@@ -4467,7 +4531,18 @@
         "Foto gallery": [
             "GE_I_img1"
         ],
-        "Persone": {},
+        "Persone": {
+            "GE_I_1": {
+                "ID": "GE_I_1",
+                "Nome Persona": "Benno Geiger",
+                "ID_entità": "GE_I",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "1882",
+                "Morte": "1965",
+                "Nome attività": "Non noto"
+            }
+        },
         "Clienti": {},
         "Relazioni": {}
     },
@@ -4513,7 +4588,28 @@
             "GE_II_img1",
             "GE_II_img2"
         ],
-        "Persone": {},
+        "Persone": {
+            "GE_II_1": {
+                "ID": "GE_II_1",
+                "Nome Persona": "Alfredo Geri",
+                "ID_entità": "GE_II",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "1867",
+                "Morte": "1947",
+                "Nome attività": "Casa di vendite Arte Antica e Moderna; \"Galleria Geri\"; \"Geri-Boralevi\""
+            },
+            "GE_II_2": {
+                "ID": "GE_II_2",
+                "Nome Persona": "Aldo Geri",
+                "ID_entità": "GE_II",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "1903",
+                "Morte": "1981",
+                "Nome attività": "Galleria Geri; \"Galleria Geri, del Bramante, del Portico\""
+            }
+        },
         "Clienti": {},
         "Relazioni": {}
     },
@@ -4852,7 +4948,38 @@
         "Foto gallery": [
             "GR_II_img1"
         ],
-        "Persone": {},
+        "Persone": {
+            "GR_II_1": {
+                "ID": "GR_II_1",
+                "Nome Persona": "Antonio Grandi ",
+                "ID_entità": "GR_II",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "1810",
+                "Morte": "1877",
+                "Nome attività": ""
+            },
+            "GR_II_2": {
+                "ID": "GR_II_2",
+                "Nome Persona": "Carlo Grandi",
+                "ID_entità": "GR_II",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "1842",
+                "Morte": "1914",
+                "Nome attività": "Ditta Antonio Grandi"
+            },
+            "GR_II_3": {
+                "ID": "GR_II_3",
+                "Nome Persona": "Antonio Grandi ",
+                "ID_entità": "GR_II",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "1857",
+                "Morte": "1923",
+                "Nome attività": "Ditta Antonio Grandi"
+            }
+        },
         "Clienti": {
             "CL_19_b": {
                 "Nome": "Antonio",
@@ -6095,7 +6222,383 @@
             "ME_img1",
             "ME_img2"
         ],
-        "Persone": {},
+        "Persone": {
+            "ME_1": {
+                "ID": "ME_1",
+                "Nome Persona": "Angiolo Melli",
+                "ID_entità": "ME",
+                "ID_luoghi": {
+                    "IT_46": {
+                        "ID": "IT_46",
+                        "Nazione": "Italia",
+                        "Regione": "Toscana",
+                        "Città": "Firenze",
+                        "Via": "Borgo Ognissanti",
+                        "Civico": "8",
+                        "ID_entità": "VO_II",
+                        "Apertura": "1909",
+                        "Chiusura": "1918",
+                        "Nome attività": "Gustavo Volterra e Cesare Melli",
+                        "geo": {
+                            "lat": 43.771499,
+                            "lon": 11.2471461
+                        }
+                    },
+                    "IT_47": {
+                        "ID": "IT_47",
+                        "Nazione": "Italia",
+                        "Regione": "Toscana",
+                        "Città": "Firenze",
+                        "Via": "Borgo Ognissanti",
+                        "Civico": "9",
+                        "ID_entità": "OR",
+                        "Apertura": "1900 ca.",
+                        "Chiusura": "1970 ca.",
+                        "Nome attività": "Luigi e Raimondo Orselli, \"Luigi Orselli\"",
+                        "geo": {
+                            "lat": 43.7716388,
+                            "lon": 11.2467163
+                        }
+                    },
+                    "IT_75_b": {
+                        "ID": "IT_75_b",
+                        "Nazione": "Italia",
+                        "Regione": "Toscana",
+                        "Città": "Firenze",
+                        "Via": "Via Guicciardini",
+                        "Civico": "6",
+                        "ID_entità": "VO_II",
+                        "Apertura": "1920 ca.",
+                        "Chiusura": "1932 ca.",
+                        "Nome attività": "Giuseppe Volterra e fratelli e Adolfo Melli",
+                        "geo": {
+                            "lat": 43.76724,
+                            "lon": 11.2519218
+                        }
+                    },
+                    "IT_86": {
+                        "ID": "IT_86",
+                        "Nazione": "Italia",
+                        "Regione": "Toscana",
+                        "Città": "Firenze",
+                        "Via": "Via Tornabuoni",
+                        "Civico": "12",
+                        "ID_entità": "VO_II",
+                        "Apertura": "1901",
+                        "Chiusura": "1913 ca.",
+                        "Nome attività": "Gustavo Volterra e Cesare Melli, \"Volterra & Melli\" (sede e laboratori)",
+                        "geo": {
+                            "lat": 43.7710805,
+                            "lon": 11.2514307
+                        }
+                    }
+                },
+                "Professione": "antiquario",
+                "Nascita": "",
+                "Morte": "",
+                "Nome attività": "Non noto"
+            },
+            "ME_2": {
+                "ID": "ME_2",
+                "Nome Persona": "Carlo Melli",
+                "ID_entità": "ME",
+                "ID_luoghi": {
+                    "IT_46": {
+                        "ID": "IT_46",
+                        "Nazione": "Italia",
+                        "Regione": "Toscana",
+                        "Città": "Firenze",
+                        "Via": "Borgo Ognissanti",
+                        "Civico": "8",
+                        "ID_entità": "VO_II",
+                        "Apertura": "1909",
+                        "Chiusura": "1918",
+                        "Nome attività": "Gustavo Volterra e Cesare Melli",
+                        "geo": {
+                            "lat": 43.771499,
+                            "lon": 11.2471461
+                        }
+                    },
+                    "IT_47": {
+                        "ID": "IT_47",
+                        "Nazione": "Italia",
+                        "Regione": "Toscana",
+                        "Città": "Firenze",
+                        "Via": "Borgo Ognissanti",
+                        "Civico": "9",
+                        "ID_entità": "OR",
+                        "Apertura": "1900 ca.",
+                        "Chiusura": "1970 ca.",
+                        "Nome attività": "Luigi e Raimondo Orselli, \"Luigi Orselli\"",
+                        "geo": {
+                            "lat": 43.7716388,
+                            "lon": 11.2467163
+                        }
+                    },
+                    "IT_75_b": {
+                        "ID": "IT_75_b",
+                        "Nazione": "Italia",
+                        "Regione": "Toscana",
+                        "Città": "Firenze",
+                        "Via": "Via Guicciardini",
+                        "Civico": "6",
+                        "ID_entità": "VO_II",
+                        "Apertura": "1920 ca.",
+                        "Chiusura": "1932 ca.",
+                        "Nome attività": "Giuseppe Volterra e fratelli e Adolfo Melli",
+                        "geo": {
+                            "lat": 43.76724,
+                            "lon": 11.2519218
+                        }
+                    },
+                    "IT_86": {
+                        "ID": "IT_86",
+                        "Nazione": "Italia",
+                        "Regione": "Toscana",
+                        "Città": "Firenze",
+                        "Via": "Via Tornabuoni",
+                        "Civico": "12",
+                        "ID_entità": "VO_II",
+                        "Apertura": "1901",
+                        "Chiusura": "1913 ca.",
+                        "Nome attività": "Gustavo Volterra e Cesare Melli, \"Volterra & Melli\" (sede e laboratori)",
+                        "geo": {
+                            "lat": 43.7710805,
+                            "lon": 11.2514307
+                        }
+                    }
+                },
+                "Professione": "antiquario",
+                "Nascita": "",
+                "Morte": "",
+                "Nome attività": "Non noto"
+            },
+            "ME_3": {
+                "ID": "ME_3",
+                "Nome Persona": "Giuseppe Melli",
+                "ID_entità": "ME",
+                "ID_luoghi": {
+                    "IT_46": {
+                        "ID": "IT_46",
+                        "Nazione": "Italia",
+                        "Regione": "Toscana",
+                        "Città": "Firenze",
+                        "Via": "Borgo Ognissanti",
+                        "Civico": "8",
+                        "ID_entità": "VO_II",
+                        "Apertura": "1909",
+                        "Chiusura": "1918",
+                        "Nome attività": "Gustavo Volterra e Cesare Melli",
+                        "geo": {
+                            "lat": 43.771499,
+                            "lon": 11.2471461
+                        }
+                    },
+                    "IT_47": {
+                        "ID": "IT_47",
+                        "Nazione": "Italia",
+                        "Regione": "Toscana",
+                        "Città": "Firenze",
+                        "Via": "Borgo Ognissanti",
+                        "Civico": "9",
+                        "ID_entità": "OR",
+                        "Apertura": "1900 ca.",
+                        "Chiusura": "1970 ca.",
+                        "Nome attività": "Luigi e Raimondo Orselli, \"Luigi Orselli\"",
+                        "geo": {
+                            "lat": 43.7716388,
+                            "lon": 11.2467163
+                        }
+                    },
+                    "IT_75_b": {
+                        "ID": "IT_75_b",
+                        "Nazione": "Italia",
+                        "Regione": "Toscana",
+                        "Città": "Firenze",
+                        "Via": "Via Guicciardini",
+                        "Civico": "6",
+                        "ID_entità": "VO_II",
+                        "Apertura": "1920 ca.",
+                        "Chiusura": "1932 ca.",
+                        "Nome attività": "Giuseppe Volterra e fratelli e Adolfo Melli",
+                        "geo": {
+                            "lat": 43.76724,
+                            "lon": 11.2519218
+                        }
+                    },
+                    "IT_86": {
+                        "ID": "IT_86",
+                        "Nazione": "Italia",
+                        "Regione": "Toscana",
+                        "Città": "Firenze",
+                        "Via": "Via Tornabuoni",
+                        "Civico": "12",
+                        "ID_entità": "VO_II",
+                        "Apertura": "1901",
+                        "Chiusura": "1913 ca.",
+                        "Nome attività": "Gustavo Volterra e Cesare Melli, \"Volterra & Melli\" (sede e laboratori)",
+                        "geo": {
+                            "lat": 43.7710805,
+                            "lon": 11.2514307
+                        }
+                    }
+                },
+                "Professione": "antiquario",
+                "Nascita": "",
+                "Morte": "",
+                "Nome attività": "Non noto"
+            },
+            "ME_4": {
+                "ID": "ME_4",
+                "Nome Persona": "Cesare Melli",
+                "ID_entità": "ME",
+                "ID_luoghi": {
+                    "IT_46": {
+                        "ID": "IT_46",
+                        "Nazione": "Italia",
+                        "Regione": "Toscana",
+                        "Città": "Firenze",
+                        "Via": "Borgo Ognissanti",
+                        "Civico": "8",
+                        "ID_entità": "VO_II",
+                        "Apertura": "1909",
+                        "Chiusura": "1918",
+                        "Nome attività": "Gustavo Volterra e Cesare Melli",
+                        "geo": {
+                            "lat": 43.771499,
+                            "lon": 11.2471461
+                        }
+                    },
+                    "IT_48": {
+                        "ID": "IT_48",
+                        "Nazione": "Italia",
+                        "Regione": "Toscana",
+                        "Città": "Firenze",
+                        "Via": "Borgo Ognissanti",
+                        "Civico": "17",
+                        "ID_entità": "VO_II",
+                        "Apertura": "1886",
+                        "Chiusura": "1909",
+                        "Nome attività": "Gustavo Volterra e Cesare Melli, \"Galleria Leonardo\"",
+                        "geo": {
+                            "lat": 43.7720989,
+                            "lon": 11.2460541
+                        }
+                    },
+                    "IT_86": {
+                        "ID": "IT_86",
+                        "Nazione": "Italia",
+                        "Regione": "Toscana",
+                        "Città": "Firenze",
+                        "Via": "Via Tornabuoni",
+                        "Civico": "12",
+                        "ID_entità": "VO_II",
+                        "Apertura": "1901",
+                        "Chiusura": "1913 ca.",
+                        "Nome attività": "Gustavo Volterra e Cesare Melli, \"Volterra & Melli\" (sede e laboratori)",
+                        "geo": {
+                            "lat": 43.7710805,
+                            "lon": 11.2514307
+                        }
+                    },
+                    "IT_75_b": {
+                        "ID": "IT_75_b",
+                        "Nazione": "Italia",
+                        "Regione": "Toscana",
+                        "Città": "Firenze",
+                        "Via": "Via Guicciardini",
+                        "Civico": "6",
+                        "ID_entità": "VO_II",
+                        "Apertura": "1920 ca.",
+                        "Chiusura": "1932 ca.",
+                        "Nome attività": "Giuseppe Volterra e fratelli e Adolfo Melli",
+                        "geo": {
+                            "lat": 43.76724,
+                            "lon": 11.2519218
+                        }
+                    }
+                },
+                "Professione": "antiquario",
+                "Nascita": "",
+                "Morte": "",
+                "Nome attività": "Volterra & Melli con Gustavo Volterra; \"Galleria Leonardo\" con Gustavo Volterra"
+            },
+            "ME_5": {
+                "ID": "ME_5",
+                "Nome Persona": "Adolfo Melli",
+                "ID_entità": "ME",
+                "ID_luoghi": {
+                    "IT_46": {
+                        "ID": "IT_46",
+                        "Nazione": "Italia",
+                        "Regione": "Toscana",
+                        "Città": "Firenze",
+                        "Via": "Borgo Ognissanti",
+                        "Civico": "8",
+                        "ID_entità": "VO_II",
+                        "Apertura": "1909",
+                        "Chiusura": "1918",
+                        "Nome attività": "Gustavo Volterra e Cesare Melli",
+                        "geo": {
+                            "lat": 43.771499,
+                            "lon": 11.2471461
+                        }
+                    },
+                    "IT_48": {
+                        "ID": "IT_48",
+                        "Nazione": "Italia",
+                        "Regione": "Toscana",
+                        "Città": "Firenze",
+                        "Via": "Borgo Ognissanti",
+                        "Civico": "17",
+                        "ID_entità": "VO_II",
+                        "Apertura": "1886",
+                        "Chiusura": "1909",
+                        "Nome attività": "Gustavo Volterra e Cesare Melli, \"Galleria Leonardo\"",
+                        "geo": {
+                            "lat": 43.7720989,
+                            "lon": 11.2460541
+                        }
+                    },
+                    "IT_75_b": {
+                        "ID": "IT_75_b",
+                        "Nazione": "Italia",
+                        "Regione": "Toscana",
+                        "Città": "Firenze",
+                        "Via": "Via Guicciardini",
+                        "Civico": "6",
+                        "ID_entità": "VO_II",
+                        "Apertura": "1920 ca.",
+                        "Chiusura": "1932 ca.",
+                        "Nome attività": "Giuseppe Volterra e fratelli e Adolfo Melli",
+                        "geo": {
+                            "lat": 43.76724,
+                            "lon": 11.2519218
+                        }
+                    },
+                    "IT_86": {
+                        "ID": "IT_86",
+                        "Nazione": "Italia",
+                        "Regione": "Toscana",
+                        "Città": "Firenze",
+                        "Via": "Via Tornabuoni",
+                        "Civico": "12",
+                        "ID_entità": "VO_II",
+                        "Apertura": "1901",
+                        "Chiusura": "1913 ca.",
+                        "Nome attività": "Gustavo Volterra e Cesare Melli, \"Volterra & Melli\" (sede e laboratori)",
+                        "geo": {
+                            "lat": 43.7710805,
+                            "lon": 11.2514307
+                        }
+                    }
+                },
+                "Professione": "antiquario",
+                "Nascita": "",
+                "Morte": "",
+                "Nome attività": "Non noto"
+            }
+        },
         "Clienti": {},
         "Relazioni": {}
     },
@@ -8078,7 +8581,48 @@
         "Foto gallery": [
             ""
         ],
-        "Persone": {},
+        "Persone": {
+            "SA_V_1": {
+                "ID": "SA_V_1",
+                "Nome Persona": "Isacco Sabatello",
+                "ID_entità": "SA_V",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "1883",
+                "Morte": "",
+                "Nome attività": "Isacco Sabatello e figli"
+            },
+            "SA_V_2": {
+                "ID": "SA_V_2",
+                "Nome Persona": "Leone Sabatello",
+                "ID_entità": "SA_V",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "",
+                "Morte": "",
+                "Nome attività": "Non noto"
+            },
+            "SA_V_3": {
+                "ID": "SA_V_3",
+                "Nome Persona": "Armando Sabatello",
+                "ID_entità": "SA_V",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "",
+                "Morte": "",
+                "Nome attività": "Non noto"
+            },
+            "SA_V_4": {
+                "ID": "SA_V_4",
+                "Nome Persona": "Dario Sabatello",
+                "ID_entità": "SA_V",
+                "ID_luoghi": {},
+                "Professione": "gallerista",
+                "Nascita": "1911",
+                "Morte": "1992",
+                "Nome attività": "Non noto"
+            }
+        },
         "Clienti": {},
         "Relazioni": {}
     },
@@ -8094,7 +8638,18 @@
         "Foto gallery": [
             "SA_VI_img1"
         ],
-        "Persone": {},
+        "Persone": {
+            "SA_VI_1": {
+                "ID": "SA_VI_1",
+                "Nome Persona": "Salvadori Antonio",
+                "ID_entità": "SA_VI",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "",
+                "Morte": "",
+                "Nome attività": ""
+            }
+        },
         "Clienti": {},
         "Relazioni": {}
     },
@@ -9237,7 +9792,28 @@
         "Foto gallery": [
             ""
         ],
-        "Persone": {},
+        "Persone": {
+            "VE_1": {
+                "ID": "VE_1",
+                "Nome Persona": "Eugenio Ventura",
+                "ID_entità": "VE",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "1887",
+                "Morte": "1949",
+                "Nome attività": "Non noto"
+            },
+            "VE_2": {
+                "ID": "VE_2",
+                "Nome Persona": "Paola Ventura",
+                "ID_entità": "VE",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "",
+                "Morte": "",
+                "Nome attività": "Non noto"
+            }
+        },
         "Clienti": {
             "CL_33_b": {
                 "Nome": "Herman",
