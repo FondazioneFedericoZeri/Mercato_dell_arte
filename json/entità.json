@@ -142,8 +142,8 @@
                 "Nome": "Bernard",
                 "Cognome / Denominazione": "Berenson",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "AL CO_I RO ST VO_I",
-                "Nome Antiquari": "Albrighi Contini-Bonacossi Romano Steffanoni Volpi"
+                "ID Antiquari": "AL CO_I RO ST VO_I FO",
+                "Nome Antiquari": "Albrighi Contini-Bonacossi Romano Steffanoni Volpi Foresti"
             }
         },
         "Eventi": {},
@@ -222,8 +222,8 @@
                 "Nome": "Giuliano",
                 "Cognome / Denominazione": "Briganti",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "AN-EF AP",
-                "Nome Antiquari": "Antonacci-Efrati Apolloni"
+                "ID Antiquari": "AN-EF AP GR_II",
+                "Nome Antiquari": "Antonacci-Efrati Apolloni Grandi"
             },
             "C_30": {
                 "ID": "C_30",
@@ -238,8 +238,8 @@
                 "Nome": "Federico",
                 "Cognome / Denominazione": "Zeri",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "ZA",
-                "Nome Antiquari": "Zabert"
+                "ID Antiquari": "ZA SA_V",
+                "Nome Antiquari": "Zabert Sabatello"
             }
         },
         "Eventi": {},
@@ -428,8 +428,8 @@
                 "Nome": "Giuliano",
                 "Cognome / Denominazione": "Briganti",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "AN-EF AP",
-                "Nome Antiquari": "Antonacci-Efrati Apolloni"
+                "ID Antiquari": "AN-EF AP GR_II",
+                "Nome Antiquari": "Antonacci-Efrati Apolloni Grandi"
             },
             "C_51": {
                 "ID": "C_51",
@@ -599,16 +599,16 @@
                 "Nome": "Federico",
                 "Cognome / Denominazione": "Zeri",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "ZA",
-                "Nome Antiquari": "Zabert"
+                "ID Antiquari": "ZA SA_V",
+                "Nome Antiquari": "Zabert Sabatello"
             },
             "C_11": {
                 "ID": "C_11",
                 "Nome": "Giuliano",
                 "Cognome / Denominazione": "Briganti",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "AN-EF AP",
-                "Nome Antiquari": "Antonacci-Efrati Apolloni"
+                "ID Antiquari": "AN-EF AP GR_II",
+                "Nome Antiquari": "Antonacci-Efrati Apolloni Grandi"
             },
             "C_32": {
                 "ID": "C_32",
@@ -1234,13 +1234,6 @@
                     "BA_III_1"
                 ]
             },
-            "CL_60": {
-                "Nome": "Gustav",
-                "Cognome": "von Benda",
-                "vendite": [
-                    "BA_III_1"
-                ]
-            },
             "CL_61": {
                 "Nome": "Wilhelm",
                 "Cognome": "von Bode",
@@ -1342,20 +1335,6 @@
             }
         },
         "Clienti": {
-            "CL_12": {
-                "Nome": "Fausto",
-                "Cognome": "Bagatti Valsecchi",
-                "vendite": [
-                    "BA_IV_1"
-                ]
-            },
-            "CL_13": {
-                "Nome": "Giuseppe",
-                "Cognome": "Bagatti Valsecchi",
-                "vendite": [
-                    "BA_IV_1"
-                ]
-            },
             "CL_42": {
                 "Nome": "Charles",
                 "Cognome": "Lock Eastlake",
@@ -1766,8 +1745,8 @@
                 "Nome": "Robert Langton",
                 "Cognome / Denominazione": "Douglas",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "BE_II CO_I",
-                "Nome Antiquari": "Bellesi Contini Bonacossi"
+                "ID Antiquari": "BE_II CO_I FO",
+                "Nome Antiquari": "Bellesi Contini Bonacossi Foresti"
             }
         },
         "Eventi": {},
@@ -2510,13 +2489,6 @@
                     "Generic"
                 ]
             },
-            "CL_5": {
-                "Nome": "Nélie Jacquemart-André",
-                "Cognome": "",
-                "vendite": [
-                    "Generic"
-                ]
-            },
             "CL_9": {
                 "Nome": "William Henry Vanderbilt",
                 "Cognome": "",
@@ -2562,13 +2534,6 @@
             "CL_48": {
                 "Nome": "John",
                 "Cognome": "Pierpont Morgan",
-                "vendite": [
-                    "Generic"
-                ]
-            },
-            "CL_54": {
-                "Nome": "Elizabeth",
-                "Cognome": "Stewart Gardner",
                 "vendite": [
                     "Generic"
                 ]
@@ -2960,24 +2925,24 @@
                 "Nome": "Bernard",
                 "Cognome / Denominazione": "Berenson",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "AL CO_I RO ST VO_I",
-                "Nome Antiquari": "Albrighi Contini-Bonacossi Romano Steffanoni Volpi"
+                "ID Antiquari": "AL CO_I RO ST VO_I FO",
+                "Nome Antiquari": "Albrighi Contini-Bonacossi Romano Steffanoni Volpi Foresti"
             },
             "C_20": {
                 "ID": "C_20",
                 "Nome": "Robert Langton",
                 "Cognome / Denominazione": "Douglas",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "BE_II CO_I",
-                "Nome Antiquari": "Bellesi Contini Bonacossi"
+                "ID Antiquari": "BE_II CO_I FO",
+                "Nome Antiquari": "Bellesi Contini Bonacossi Foresti"
             },
             "C_25": {
                 "ID": "C_25",
                 "Nome": "Giuseppe",
                 "Cognome / Denominazione": "Fiocco",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "CO_I ST",
-                "Nome Antiquari": "Contini Bonacossi Steffanoni"
+                "ID Antiquari": "CO_I ST BR_III",
+                "Nome Antiquari": "Contini Bonacossi Steffanoni Brass"
             },
             "C_37": {
                 "ID": "C_37",
@@ -3000,8 +2965,8 @@
                 "Nome": "Frederick",
                 "Cognome / Denominazione": "Mason Perkins",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "CO_I SA_IV",
-                "Nome Antiquari": "Contini Bonacossi Sangiorgi"
+                "ID Antiquari": "CO_I SA_IV FO",
+                "Nome Antiquari": "Contini Bonacossi Sangiorgi Foresti"
             },
             "C_62": {
                 "ID": "C_62",
@@ -3032,8 +2997,8 @@
                 "Nome": "Federico",
                 "Cognome / Denominazione": "Zeri",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "ZA",
-                "Nome Antiquari": "Zabert"
+                "ID Antiquari": "ZA SA_V",
+                "Nome Antiquari": "Zabert Sabatello"
             }
         },
         "Eventi": {},
@@ -3372,13 +3337,6 @@
                     "CO_III_1"
                 ]
             },
-            "CL_17": {
-                "Nome": "Bernard",
-                "Cognome": "Berenson",
-                "vendite": [
-                    "CO_III_1"
-                ]
-            },
             "CL_47": {
                 "Nome": "Herbert",
                 "Cognome": "Percy Horne",
@@ -3668,8 +3626,8 @@
                 "Nome": "Giuliano",
                 "Cognome / Denominazione": "Briganti",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "AN-EF AP",
-                "Nome Antiquari": "Antonacci-Efrati Apolloni"
+                "ID Antiquari": "AN-EF AP GR_II",
+                "Nome Antiquari": "Antonacci-Efrati Apolloni Grandi"
             },
             "C_16": {
                 "ID": "C_16",
@@ -3700,8 +3658,8 @@
                 "Nome": "Federico",
                 "Cognome / Denominazione": "Zeri",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "ZA",
-                "Nome Antiquari": "Zabert"
+                "ID Antiquari": "ZA SA_V",
+                "Nome Antiquari": "Zabert Sabatello"
             }
         },
         "Eventi": {},
@@ -4391,8 +4349,8 @@
                 "Nome": "Federico",
                 "Cognome / Denominazione": "Zeri",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "ZA",
-                "Nome Antiquari": "Zabert"
+                "ID Antiquari": "ZA SA_V",
+                "Nome Antiquari": "Zabert Sabatello"
             }
         },
         "Eventi": {
@@ -5695,7 +5653,7 @@
             "C_10_3": {
                 "ID": "C_10_3",
                 "Nome": "",
-                "Cognome / Denominazione": "Bern�s, Marouteau & C.ie",
+                "Cognome / Denominazione": "Bernès, Marouteau & C.ie",
                 "Tipologia": "fotografo",
                 "ID Antiquari": "LA_II",
                 "Nome Antiquari": "Lazzaroni"
@@ -5792,8 +5750,8 @@
                 "Nome": "Federico",
                 "Cognome / Denominazione": "Zeri",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "ZA",
-                "Nome Antiquari": "Zabert"
+                "ID Antiquari": "ZA SA_V",
+                "Nome Antiquari": "Zabert Sabatello"
             }
         },
         "Eventi": {},
@@ -6731,8 +6689,8 @@
                 "Nome": "Bernard",
                 "Cognome / Denominazione": "Berenson",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "AL CO_I RO ST VO_I",
-                "Nome Antiquari": "Albrighi Contini-Bonacossi Romano Steffanoni Volpi"
+                "ID Antiquari": "AL CO_I RO ST VO_I FO",
+                "Nome Antiquari": "Albrighi Contini-Bonacossi Romano Steffanoni Volpi Foresti"
             }
         },
         "Eventi": {
@@ -7546,8 +7504,8 @@
                 "Nome": "Frederick",
                 "Cognome / Denominazione": "Mason Perkins",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "CO_I SA_IV",
-                "Nome Antiquari": "Contini Bonacossi Sangiorgi"
+                "ID Antiquari": "CO_I SA_IV FO",
+                "Nome Antiquari": "Contini Bonacossi Sangiorgi Foresti"
             },
             "C_50": {
                 "ID": "C_50",
@@ -7908,8 +7866,8 @@
                 "Nome": "Giuliano",
                 "Cognome / Denominazione": "Briganti",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "AN-EF AP",
-                "Nome Antiquari": "Antonacci-Efrati Apolloni"
+                "ID Antiquari": "AN-EF AP GR_II",
+                "Nome Antiquari": "Antonacci-Efrati Apolloni Grandi"
             },
             "C_14_b": {
                 "ID": "C_14_b",
@@ -7948,8 +7906,8 @@
                 "Nome": "Federico",
                 "Cognome / Denominazione": "Zeri",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "ZA",
-                "Nome Antiquari": "Zabert"
+                "ID Antiquari": "ZA SA_V",
+                "Nome Antiquari": "Zabert Sabatello"
             }
         },
         "Eventi": {},
@@ -8467,16 +8425,16 @@
                 "Nome": "Giuseppe",
                 "Cognome / Denominazione": "Fiocco",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "CO_I ST",
-                "Nome Antiquari": "Contini Bonacossi Steffanoni"
+                "ID Antiquari": "CO_I ST BR_III",
+                "Nome Antiquari": "Contini Bonacossi Steffanoni Brass"
             },
             "C_7": {
                 "ID": "C_7",
                 "Nome": "Bernard",
                 "Cognome / Denominazione": "Berenson",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "AL CO_I RO ST VO_I",
-                "Nome Antiquari": "Albrighi Contini-Bonacossi Romano Steffanoni Volpi"
+                "ID Antiquari": "AL CO_I RO ST VO_I FO",
+                "Nome Antiquari": "Albrighi Contini-Bonacossi Romano Steffanoni Volpi Foresti"
             },
             "C_26": {
                 "ID": "C_26",
@@ -8933,8 +8891,8 @@
                 "Nome": "Federico",
                 "Cognome / Denominazione": "Zeri",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "ZA",
-                "Nome Antiquari": "Zabert"
+                "ID Antiquari": "ZA SA_V",
+                "Nome Antiquari": "Zabert Sabatello"
             }
         },
         "Eventi": {},
@@ -9182,8 +9140,8 @@
                 "Nome": "Bernard",
                 "Cognome / Denominazione": "Berenson",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "AL CO_I RO ST VO_I",
-                "Nome Antiquari": "Albrighi Contini-Bonacossi Romano Steffanoni Volpi"
+                "ID Antiquari": "AL CO_I RO ST VO_I FO",
+                "Nome Antiquari": "Albrighi Contini-Bonacossi Romano Steffanoni Volpi Foresti"
             }
         },
         "Eventi": {},
@@ -9657,8 +9615,8 @@
                 "Nome": "Federico",
                 "Cognome / Denominazione": "Zeri",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "ZA",
-                "Nome Antiquari": "Zabert"
+                "ID Antiquari": "ZA SA_V",
+                "Nome Antiquari": "Zabert Sabatello"
             }
         },
         "Eventi": {},
