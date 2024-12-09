@@ -1,5 +1,6 @@
 ID	ID_entità	ID_persone	Anno	Tipologia Evento	Descrizione sintetica	Descrizione dettagliata
 E_1	SI	SI_1	1883	vendita all'asta	Vendita Collezione Simonetti	Vendita della collezione Simonetti curata dallo stesso Attilio Simonetti a Roma
+E_1_b	CA_III		1887	vendita all'asta	Vendita Collezione Cantoni	Vendita all'asta presso Giulio Sambon di un'importante porzione della collezione numismatica di Achille Cantoni, il 25 aprile 1887
 E_2	CA_I		1895	scoperta	Scoperta 'Tesoro di Boscoreale'	Gli antiquari Canessa scoprono il 'Tesoro di Boscoreale', un servizio di argenteria di oltre 100 pezzi di epoca romana, esportato e ceduto al barone Edmond De Rothschild. La collezione si conserva oggi al Museo del Louvre
 E_3	CA_I		1896	vendita all'asta	Vendita 'Argenti Cacace'	Vendita degli 'Argenti Cacace', rinvenuti a Taranto nel 1896, da parte degli antiquari Canessa
 E_4	SA_IV		1896	vendita all'asta	Vendita Collezione Principe Orsini	Vendita della collezione del Principe Orsini curata dalla Galleria Sangiorgi
@@ -10,11 +11,14 @@ E_8	JA TA	JA-TA_1 JA-TA_2 JA-TA_3	1905	inaugurazione / fondazione	Inaugurazione 
 E_9	FE JA-TA SA_IV		1909	vendita all'asta	Vendita Collezione G. Ferroni	Vendita della collezione dell'antiquario Gioacchino Ferroni da parte della Casa di vendita Jandolo & Tavazzi, in collaborazione con la Galleria Sangiorgi
 E_10	VO_I JA-TA		1910	inaugurazione / fondazione	Inaugurazione Palazzo Davanzati	Apertura di Palazzo Davanzati da parte di Elia Volpi e vendita di parte della sua collezione da parte della Casa di vendita Jandolo & Tavazzi a Roma
 E_11	TO VO_I		1916	vendita all'asta	Vendita collezione Volpi	Prima vendita oltreoceano di oggetti d'arte e di mobilio dalla collezione di Elia Volpi curata da Raoul Tolentino presso l'American Art Association di New York. L'evento rappresenta un'importante tappa per la diffusione del gusto neorinascimentale negli Stati Uniti
+E_11_b	CA_III		1920	vendita all'asta	Vendita collezione Cantoni	Vendita delle monete italiane della collezione di Achille Cantoni, a Roma presso Pietro e Pio Santamaria, il 26 aprile 1920
+E_11_c	CA_III		1920	vendita all'asta	Vendita collezione Cantoni	Vendita delle monete romane della collezione di Achille Cantoni, a Roma presso Pietro e Pio Santamaria, il 29 novembre 1920
 E_12	VI_III		1923	chiusura	Chiusura di Palazzo Davanzati	Chiusura della sede fiorentina di Palazzo Davanzati da parte di Elia Volpi con ultima vendita di oggette della collezione presso la Galleria Vitelli di Genova
 E_13	PA_II		1924	vendita all'asta	Vendita Collezione Paolini	Vendita della collezione di Paolo Paolini presso l'American Art Association di New York
 E_14	BA_II	Ba_II_1	1925	inaugurazione / fondazione	Inaugurazione Museo Bardini	Apertura di un museo dedicato a Stefano Bardini che tre anni prima aveva donato la propria collezione e il palazzo al Comune di Firenze
 E_15	GR	GR_1	1927	vendita all'asta	Vendita Collezione Luigi Grassi	Vendita della collezione di Luigi Grassi presso le sale dell�American Art Galleries a New York
 E_16	DE		1931	vendita all'asta	Vendita Collezione De Clemente	Vendita di una prima parte della collezione di Achille De Clemente presso la sede dell'American Art Association di New York
+E_16_b	GE_II		1931	vendita all'asta	Vendita della collezione Alfredo Geri	La Galleria Pesaro di Milano vende la collezione personale dell'antiquario Geri pubblicando un ricco catalogo curato da Giuseppe Fiocco ed Enrico Somaré
 E_17	SI	SI_2 SI_3 SI_4 SI_5	1932	vendita all'asta	Vendita Collezione Simonetti	Vendita dell'intera collezione di Attilio Simonetti, organizzata dagli eredi presso la casa d'aste Guido Tavazzi, con catalogo curato da Ludwig Pollak
 E_18	DE		1935	vendita all'asta	Vendita Collezione De Clemente	Vendita di una parte della collezione di Achille De Clemente presso la casa d'aste Galleria Ciardello di Firenze
 E_19	JA	JA_6	1935	pubblicazione	"Pubblicazione ""Memorie di un antiquario"""	"Augusto Jandolo pubblica l'autobiografia ""Memorie di un antiquario"", fonte imprescindibile per la comprensione del mercato dell'arte romano a cavallo tra Otto e Novecento"
