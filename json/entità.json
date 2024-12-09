@@ -2197,6 +2197,57 @@
             "BR_I": true
         }
     },
+    "BR_III": {
+        "ID": "BR_III",
+        "Nome": "Brass",
+        "Bio": "BR_III_bio",
+        "Link Zeri": "https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=brass&page=1",
+        "Bibliografia": {
+            "B_91": {
+                "ID": "B_91",
+                "Autore": "Morandotti, A.",
+                "Anno": "2001",
+                "Titolo": "Italico Bras, pittore, conoscitore e mercante nell’età di Giuseppe Fiocco",
+                "Città, editore o rivista": "In Orlando",
+                "Pagine": "pp. 241-250",
+                "Tipologia": "articolo di monografia"
+            }
+        },
+        "Collaboratori": {
+            "C_25": {
+                "ID": "C_25",
+                "Nome": "Giuseppe",
+                "Cognome / Denominazione": "Fiocco",
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "CO_I ST BR_III",
+                "Nome Antiquari": "Contini Bonacossi Steffanoni Brass"
+            },
+            "C_46_b": {
+                "ID": "C_46_b",
+                "Nome": "Harold",
+                "Cognome / Denominazione": "Parson",
+                "Tipologia": "intermediatore",
+                "ID Antiquari": "BR_III",
+                "Nome Antiquari": "Brass"
+            },
+            "C_19": {
+                "ID": "C_19",
+                "Nome": "",
+                "Cognome / Denominazione": "Duveen Brothers",
+                "Tipologia": "antiquario",
+                "ID Antiquari": "BR_III",
+                "Nome Antiquari": "Brass"
+            }
+        },
+        "Eventi": {},
+        "Foto preview": "BR_III_preview",
+        "Foto gallery": [
+            "BR_III_img1"
+        ],
+        "Persone": {},
+        "Clienti": {},
+        "Relazioni": {}
+    },
     "CA_I": {
         "ID": "CA_I",
         "Nome": "Canessa",
@@ -2638,6 +2689,104 @@
             "SI": true,
             "CO_II": true
         }
+    },
+    "CA_III": {
+        "ID": "CA_III",
+        "Nome": "Cantoni",
+        "Bio": "CA_III_bio",
+        "Link Zeri": "https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=cantoni&page=1&filtroprovenienza_OA=7526%7C5129",
+        "Bibliografia": {},
+        "Collaboratori": {},
+        "Eventi": {
+            "E_1_b": {
+                "ID": "E_1_b",
+                "ID_entità": "CA_III",
+                "ID_persone": "",
+                "Anno": "1887",
+                "Tipologia Evento": "vendita all'asta",
+                "Descrizione sintetica": "Vendita Collezione Cantoni",
+                "Descrizione dettagliata": "Vendita all'asta presso Giulio Sambon di un'importante porzione della collezione numismatica di Achille Cantoni, il 25 aprile 1887"
+            },
+            "E_11_b": {
+                "ID": "E_11_b",
+                "ID_entità": "CA_III",
+                "ID_persone": "",
+                "Anno": "1920",
+                "Tipologia Evento": "vendita all'asta",
+                "Descrizione sintetica": "Vendita collezione Cantoni",
+                "Descrizione dettagliata": "Vendita delle monete italiane della collezione di Achille Cantoni, a Roma presso Pietro e Pio Santamaria, il 26 aprile 1920"
+            },
+            "E_11_c": {
+                "ID": "E_11_c",
+                "ID_entità": "CA_III",
+                "ID_persone": "",
+                "Anno": "1920",
+                "Tipologia Evento": "vendita all'asta",
+                "Descrizione sintetica": "Vendita collezione Cantoni",
+                "Descrizione dettagliata": "Vendita delle monete romane della collezione di Achille Cantoni, a Roma presso Pietro e Pio Santamaria, il 29 novembre 1920"
+            }
+        },
+        "Foto preview": "CA_III_preview",
+        "Foto gallery": [
+            "CA_III_img1"
+        ],
+        "Persone": {},
+        "Clienti": {
+            "CL_17_b": {
+                "Nome": "Giuseppe",
+                "Cognome": "Bertini",
+                "vendite": [
+                    "CA_III_1"
+                ]
+            },
+            "CL_22_b": {
+                "Nome": "Karel",
+                "Cognome": "Chytil",
+                "vendite": [
+                    ""
+                ]
+            },
+            "CL_29_b": {
+                "Nome": "Isabelle",
+                "Cognome": "Errera",
+                "vendite": [
+                    ""
+                ]
+            },
+            "CL_41_b": {
+                "Nome": "Julius",
+                "Cognome": "Lessing",
+                "vendite": [
+                    ""
+                ]
+            },
+            "CL_46_c": {
+                "Nome": "Arthur",
+                "Cognome": "Pabst",
+                "vendite": [
+                    ""
+                ]
+            }
+        },
+        "Relazioni": {}
+    },
+    "CE": {
+        "ID": "CE",
+        "Nome": "Cera",
+        "Bio": "CE_bio",
+        "Link Zeri": "https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=A.+Cera",
+        "Bibliografia": {},
+        "Collaboratori": {},
+        "Eventi": {},
+        "Foto preview": "CE_preview",
+        "Foto gallery": [
+            "CE_img1",
+            "CE_img2",
+            "CE_img3"
+        ],
+        "Persone": {},
+        "Clienti": {},
+        "Relazioni": {}
     },
     "CI": {
         "ID": "CI",
@@ -3992,6 +4141,83 @@
             "BA_II": true
         }
     },
+    "FO": {
+        "ID": "FO",
+        "Nome": "Foresti",
+        "Bio": "FO_bio",
+        "Link Zeri": "https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Foresti",
+        "Bibliografia": {
+            "B_153": {
+                "ID": "B_153",
+                "Autore": "Zaninelli, F.",
+                "Anno": "2023",
+                "Titolo": "Some Remarks on Wilhelm BOde and the Art Market in Italy, 1880-1909: The Cases of Pietro Foresti (1854-1926) and A. Chiesa",
+                "Città, editore o rivista": "In Smalcerz",
+                "Pagine": "pp. 151-205",
+                "Tipologia": "articolo di monografia"
+            }
+        },
+        "Collaboratori": {
+            "C_7": {
+                "ID": "C_7",
+                "Nome": "Bernard",
+                "Cognome / Denominazione": "Berenson",
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "AL CO_I RO ST VO_I FO",
+                "Nome Antiquari": "Albrighi Contini-Bonacossi Romano Steffanoni Volpi Foresti"
+            },
+            "C_20": {
+                "ID": "C_20",
+                "Nome": "Robert Langton",
+                "Cognome / Denominazione": "Douglas",
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "BE_II CO_I FO",
+                "Nome Antiquari": "Bellesi Contini Bonacossi Foresti"
+            },
+            "C_39": {
+                "ID": "C_39",
+                "Nome": "Frederick",
+                "Cognome / Denominazione": "Mason Perkins",
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "CO_I SA_IV FO",
+                "Nome Antiquari": "Contini Bonacossi Sangiorgi Foresti"
+            },
+            "C_36_b": {
+                "ID": "C_36_b",
+                "Nome": "Jacob",
+                "Cognome / Denominazione": "Heimann",
+                "Tipologia": "antiquario",
+                "ID Antiquari": "FO",
+                "Nome Antiquari": "Foresti"
+            }
+        },
+        "Eventi": {},
+        "Foto preview": "FO_preview",
+        "Foto gallery": [
+            "FO_img1",
+            "FO_img2",
+            "FO_img3",
+            "FO_img4"
+        ],
+        "Persone": {},
+        "Clienti": {
+            "CL_50_b": {
+                "Nome": "Natale",
+                "Cognome": "Prampolini",
+                "vendite": [
+                    ""
+                ]
+            },
+            "CL_51_b": {
+                "Nome": "Giovanni",
+                "Cognome": "Rasini",
+                "vendite": [
+                    ""
+                ]
+            }
+        },
+        "Relazioni": {}
+    },
     "FR": {
         "ID": "FR",
         "Nome": "Freschi",
@@ -4216,6 +4442,78 @@
                 "Nome attività": "Galleria d’Arte"
             }
         },
+        "Clienti": {},
+        "Relazioni": {}
+    },
+    "GE_I": {
+        "ID": "GE_I",
+        "Nome": "Geiger",
+        "Bio": "GE_I_bio",
+        "Link Zeri": "https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Collezione+B.+Geiger",
+        "Bibliografia": {
+            "B_27": {
+                "ID": "B_27",
+                "Autore": "Cavicchi, M.",
+                "Anno": "2017",
+                "Titolo": "Falsi di primo Novecento nell'archivio di Luigi Albrighi",
+                "Città, editore o rivista": "In Ottani Cavina",
+                "Pagine": "pp. 199-225",
+                "Tipologia": "articolo di monografia"
+            }
+        },
+        "Collaboratori": {},
+        "Eventi": {},
+        "Foto preview": "GE_I_preview",
+        "Foto gallery": [
+            "GE_I_img1"
+        ],
+        "Persone": {},
+        "Clienti": {},
+        "Relazioni": {}
+    },
+    "GE_II": {
+        "ID": "GE_II",
+        "Nome": "Geri",
+        "Bio": "GE_II_bio",
+        "Link Zeri": "https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Geri",
+        "Bibliografia": {
+            "B_8": {
+                "ID": "B_8",
+                "Autore": "Bargellini, S.",
+                "Anno": "1981",
+                "Titolo": "Antiquari di ieri a Firenze",
+                "Città, editore o rivista": "Firenze, Bonechi",
+                "Pagine": "",
+                "Tipologia": "monografia"
+            }
+        },
+        "Collaboratori": {
+            "C_6_b": {
+                "ID": "C_6_b",
+                "Nome": "Luigi",
+                "Cognome / Denominazione": "Battistelli",
+                "Tipologia": "impresario di casa d'aste",
+                "ID Antiquari": "GE_II",
+                "Nome Antiquari": "Geri"
+            }
+        },
+        "Eventi": {
+            "E_16_b": {
+                "ID": "E_16_b",
+                "ID_entità": "GE_II",
+                "ID_persone": "",
+                "Anno": "1931",
+                "Tipologia Evento": "vendita all'asta",
+                "Descrizione sintetica": "Vendita della collezione Alfredo Geri",
+                "Descrizione dettagliata": "La Galleria Pesaro di Milano vende la collezione personale dell'antiquario Geri pubblicando un ricco catalogo curato da Giuseppe Fiocco ed Enrico Somaré"
+            }
+        },
+        "Foto preview": "GE_II_preview",
+        "Foto gallery": [
+            "GE_II_img1",
+            "GE_II_img2"
+        ],
+        "Persone": {},
         "Clienti": {},
         "Relazioni": {}
     },
@@ -4516,6 +4814,62 @@
             "BA_II": true,
             "CO_III": true
         }
+    },
+    "GR_II": {
+        "ID": "GR_II",
+        "Nome": "Grandi",
+        "Bio": "GR_II_bio",
+        "Link Zeri": "https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&fulltextOA=Milano&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Grandi",
+        "Bibliografia": {},
+        "Collaboratori": {
+            "C_6_c": {
+                "ID": "C_6_c",
+                "Nome": "Luca",
+                "Cognome / Denominazione": "Beltrami",
+                "Tipologia": "architetto",
+                "ID Antiquari": "GR_II",
+                "Nome Antiquari": "Grandi"
+            },
+            "C_15": {
+                "ID": "C_15",
+                "Nome": "Luigi",
+                "Cognome / Denominazione": "Cavenaghi",
+                "Tipologia": "restauratore",
+                "ID Antiquari": "SA_V",
+                "Nome Antiquari": "Sabatello"
+            },
+            "C_61_b": {
+                "ID": "C_61_b",
+                "Nome": "Giuseppe ",
+                "Cognome / Denominazione": "Steffanoni",
+                "Tipologia": "restauratore",
+                "ID Antiquari": "GR_II",
+                "Nome Antiquari": "Grandi"
+            }
+        },
+        "Eventi": {},
+        "Foto preview": "GR_II_preview",
+        "Foto gallery": [
+            "GR_II_img1"
+        ],
+        "Persone": {},
+        "Clienti": {
+            "CL_19_b": {
+                "Nome": "Antonio",
+                "Cognome": "Borgogna",
+                "vendite": [
+                    "GR_II_1"
+                ]
+            },
+            "CL_46_b": {
+                "Nome": "Aldo",
+                "Cognome": "Noseda",
+                "vendite": [
+                    ""
+                ]
+            }
+        },
+        "Relazioni": {}
     },
     "GU-BR": {
         "ID": "GU-BR",
@@ -5725,6 +6079,23 @@
                 "Nome attività": "Non noto"
             }
         },
+        "Clienti": {},
+        "Relazioni": {}
+    },
+    "ME": {
+        "ID": "ME",
+        "Nome": "Melli",
+        "Bio": "ME_bio",
+        "Link Zeri": "https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Melli",
+        "Bibliografia": {},
+        "Collaboratori": {},
+        "Eventi": {},
+        "Foto preview": "ME_preview",
+        "Foto gallery": [
+            "ME_img1",
+            "ME_img2"
+        ],
+        "Persone": {},
         "Clienti": {},
         "Relazioni": {}
     },
@@ -7085,7 +7456,7 @@
     },
     "SA_II": {
         "ID": "SA_II",
-        "Nome": "Salvadori",
+        "Nome": "Salvadori Giuseppe",
         "Bio": "SA_II_bio",
         "Link Zeri": "https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Salvadori",
         "Bibliografia": {
@@ -7657,6 +8028,73 @@
                 "Nome attività": "Galleria Sangiorgi - Roma Palazzo Borghese Galleria dei bronzi e dei marmi, negozio di arte antica e moderna"
             }
         },
+        "Clienti": {},
+        "Relazioni": {}
+    },
+    "SA_V": {
+        "ID": "SA_V",
+        "Nome": "Sabatello",
+        "Bio": "SA_V_bio",
+        "Link Zeri": "https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=sabatello&page=1",
+        "Bibliografia": {
+            "B_90": {
+                "ID": "B_90",
+                "Autore": "Modestini, M.",
+                "Anno": "2018",
+                "Titolo": "Capolavori?: basato su un manoscritto di Mario Modestini",
+                "Città, editore o rivista": "Fiesole, Cadmo",
+                "Pagine": "",
+                "Tipologia": "monografia"
+            }
+        },
+        "Collaboratori": {
+            "C_11": {
+                "ID": "C_11",
+                "Nome": "Giuliano",
+                "Cognome / Denominazione": "Briganti",
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "AN-EF AP GR_II",
+                "Nome Antiquari": "Antonacci-Efrati Apolloni Grandi"
+            },
+            "C_42": {
+                "ID": "C_42",
+                "Nome": "Mario",
+                "Cognome / Denominazione": "Modestini",
+                "Tipologia": "restauratore",
+                "ID Antiquari": "CO_I",
+                "Nome Antiquari": "Contini Bonacossi"
+            },
+            "C_68": {
+                "ID": "C_68",
+                "Nome": "Federico",
+                "Cognome / Denominazione": "Zeri",
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "ZA SA_V",
+                "Nome Antiquari": "Zabert Sabatello"
+            }
+        },
+        "Eventi": {},
+        "Foto preview": "SA_V_preview",
+        "Foto gallery": [
+            ""
+        ],
+        "Persone": {},
+        "Clienti": {},
+        "Relazioni": {}
+    },
+    "SA_VI": {
+        "ID": "SA_VI",
+        "Nome": "Salvadori Antonio",
+        "Bio": "SA_VI_bio",
+        "Link Zeri": "https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Salvadori&page=1&filtroprovenienza_OA=5829%7C5652",
+        "Bibliografia": {},
+        "Collaboratori": {},
+        "Eventi": {},
+        "Foto preview": "SA_VI_preview",
+        "Foto gallery": [
+            "SA_VI_img1"
+        ],
+        "Persone": {},
         "Clienti": {},
         "Relazioni": {}
     },
@@ -8776,6 +9214,39 @@
             }
         },
         "Clienti": {},
+        "Relazioni": {}
+    },
+    "VE": {
+        "ID": "VE",
+        "Nome": "Ventura",
+        "Bio": "VE_bio",
+        "Link Zeri": "https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Ventura",
+        "Bibliografia": {},
+        "Collaboratori": {
+            "C_37": {
+                "ID": "C_37",
+                "Nome": "Roberto",
+                "Cognome / Denominazione": "Longhi",
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "BR_II CO_I",
+                "Nome Antiquari": "Bruschi Livio Contini Bonacossi"
+            }
+        },
+        "Eventi": {},
+        "Foto preview": "VE_preview",
+        "Foto gallery": [
+            ""
+        ],
+        "Persone": {},
+        "Clienti": {
+            "CL_33_b": {
+                "Nome": "Herman",
+                "Cognome": "Goering",
+                "vendite": [
+                    ""
+                ]
+            }
+        },
         "Relazioni": {}
     },
     "VI_I": {
