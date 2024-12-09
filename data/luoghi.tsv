@@ -24,10 +24,22 @@ FR_8	Francia	Francia	Parigi	Rue Spontini	16	LA_II	1895 ca.	1934	Michele Lazzaron
 IT_1	Italia	Veneto	Venezia	Canal Grande		PO_II	1936	1980 ca.	Francesco Pospisil (Palazzo Sagredo, abitazione privata)		
 IT_1_b	Italia	Veneto	Venezia	San Marco	1659	VI_I	1950 ca.	1976	Ettore Viancini (abitazione privata)		
 IT_1_c	Italia	Veneto	Venezia	Calle Larga XXII marzo		VI_I	1976	1982	Paolo Viancini		RIGA AGGIUNTA!!!
+IT_1_d	Italia	Veneto	Venezia	Campo de l'Abazia	3551	BR_III	1920	1974	Brass (Scuola Vecchia di S. Maria della Misericordia, atelier e sede)		
+IT_1_e	Italia	Veneto	Venezia	Rio Novo 	3498	GE_I			Benno Geiger (abitazione privata)		
+IT_1_f	Italia	Veneto	Venezia	Sotoportego dei Dai		GE_II	1920 ca.	1929 ca.	Alfredo Geri, "Geri-Boralevi"		
+IT_1_g	Italia	Veneto	Venezia			SA_VI			Antonio Salvadori		
 IT_2	Italia	Lombardia	Bergamo	Via Evaristo Baschenis	5	ST	1921	1947 ca.	"Attilio e Franco Steffanoni, ""F.lli Steffanoni Belle Arti"""		
 IT_3	Italia	Lombardia	Milano	Via Monte Napoleone	11	BA_IV	1840 ca.	1887	Giuseppe Baslini (abitazione privata)		
 IT_4	Italia	Lombardia	Milano	Corso vittorio Emanuele	37	SA_III	1885	1905 ca.	"Giulio Sambon, ""Impresa di vendita in Italia Giulio Sambon"""		
 IT_4_b	Italia	Lombardia	Varese	Piazza Podestà	2	ZA	1980 ca.	1990 ca.	Gilberto Zabert (Corte Vecchio Broletto)		RIGA AGGIUNTA!!!
+IT_4_c	Italia	Lombardia	Milano	via Borgonuovo	24bis	GE_II	1916	1921	Alfredo Geri, Aldo Geri, "Casa di vendite Arte Antica e Moderna" (Palazzo Sormani, sede e abitazione privata)		
+IT_4_d	Italia	Lombardia	Milano	via Fiori Oscuri	3	GE_II	1923	1931	Alfredo Geri, Aldo Geri "Galleria Geri"		
+IT_4_e	Italia	Lombardia	Milano	via Brera	16	GE_II	1926	1931	Alfredo Geri, "Galleria Geri"		
+IT_4_f	Italia	Lombardia	Milano	Corso Venezia	8 (/10)	GE_II	1946	1981	Aldo Geri, "Galleria Geri, del Bramante, del Portico"		
+IT_4_g	Italia	Lombardia	Milano	Corso Venezia	12	GR_II	1866	1926	Antonio e Carlo Grandi, "Ditta Antonio Grandi"		
+IT_4_h	Italia	Lombardia	Milano	via Ugo Foscolo 	1	CA_III	1881	1908 ca. 	Achille Cantoni (abitazione privata)		
+IT_4_i	Italia	Lombardia	Milano	via Andegari		CA_III	1881	1890 ca.	Achille Cantoni		
+IT_4_l	Italia	Lombardia	Milano	via Manzoni	43	FO	1920 ca.	1944	Carlo Alberto Foresti, "Studio Artistico" (Palazzo Borromeo)		
 IT_5	Italia	Piemonte	Torino	Piazza Cavour	10	ZA	1969 ca.	2001	"Gilberto Zabert, ""Galleria Zabert. Dipinti di antichi maestri"""		
 IT_6	Italia	Piemonte	Torino	Piazza Maria Teresa	3	ZA	1990 ca.	1999 ca.	Gilberto Zabert (studio)		
 IT_7	Italia	Piemonte	Torino	Via della Rocca	21	ZA	1981	1985	Gilberto Zabert		
@@ -46,6 +58,7 @@ IT_19	Italia	Liguria	Genova	Via Garibaldi	8	PA_I	1987	2000	"Piero Pagano, ""Casa
 IT_20	Italia	Liguria	Genova	Via Garibaldi	16	VI_III	1910 ca.	1920 ca.	"Edoardo Villa, ""Galleria Permanente d'Arte Antica e Moderna A. Vitelli"""		
 IT_21	Italia	Liguria	Genova	Via XX Settembre	44	VI_III	1920 ca.	1936	"Edoardo Villa, ""Galleria Permanente d'Arte Antica e Moderna A. Vitelli"""		
 IT_22	Italia	Liguria	Genova	Viale Sauli	3	NI	1942 ca.	1967	Costantino Nigro		
+IT_22_b	Italia	Emilia-Romagna	Bologna			CE	1976	2004	Adriano Cera		
 IT_23	Italia	Emilia-Romagna	Bologna	Piazza della Mercanzia	6	PO_I	1926 ca.	1929 ca.	"Publio Podio e figli, ""Cav. Prof. Publio Podio & C."" (Palazzo del Commercio)"		
 IT_24	Italia	Emilia-Romagna	Bologna	Via Castiglione	1	RA	1900 ca.	1929	"Arturo Rambaldi, ""Galleria di Antichità e casa di vendite A. Rambaldi"""		
 IT_25	Italia	Emilia-Romagna	Bologna	Via del Monte, Ghetto Ebraico	8	PI	1922 ca.	1923 ca.	Cesare e Umberto Pini		
@@ -64,22 +77,27 @@ IT_38	Italia	Toscana	Firenze	Piazza Goldoni	2	VO_I	1900 ca.	1910	Elia Volpi
 IT_39	Italia	Toscana	Firenze	Piazza Ottaviani		BA_I	1910 ca.	1923	Rizieri Bacarelli		
 IT_40	Italia	Toscana	Firenze	Piazza Pitti	12	SA_II	1870 ca.	1880 ca.	Salvadore Salvadori (sede e laboratorio di restauro)		
 IT_42	Italia	Toscana	Firenze	Piazza S. Maria Novella	3	CI	1875 ca.	1909 ca.	Vincenzo Ciampolini		
+IT_42_b	Italia	Toscana	Firenze	Piazza SS. Annunziata		GE_II	1890 ca.	1910 ca.	Alfredo Geri		
 IT_43	Italia	Toscana	Firenze	Piazza Santa Trinita	5R	BE_I	1931	1957	Luigi, Giuseppe Jr e Mario Bellini (Palazzo Spini Feroni, show room)		
 IT_44	Italia	Toscana	Firenze	Ponte Vecchio	1	VO_II	1900 ca.	1932 ca.	Gustavo Volterra		
+IT_44_b	Italia	Toscana	Firenze	Borgo Ognissanti		VE	1979	1985	Paola Ventura		
 IT_45	Italia	Toscana	Firenze	Borgo Ognissanti	58	FR SA_I	1959	1963	"""Galleria antiquaria Salocchi e Freschi"" (sede)"		
-IT_46	Italia	Toscana	Firenze	Borgo Ognissanti	8	VO_II	1909	1918	Gustavo Volterra e Cesare Melli		
+IT_46	Italia	Toscana	Firenze	Borgo Ognissanti	8	VO_II ME	1909	1918	Gustavo Volterra e Cesare Melli		
 IT_47	Italia	Toscana	Firenze	Borgo Ognissanti	9	OR	1900 ca.	1970 ca.	"Luigi e Raimondo Orselli, ""Luigi Orselli"""		
-IT_48	Italia	Toscana	Firenze	Borgo Ognissanti	17	VO_II	1886	1909	"Gustavo Volterra e Cesare Melli, ""Galleria Leonardo"""		
+IT_48	Italia	Toscana	Firenze	Borgo Ognissanti	17	VO_II ME	1886	1909	Gustavo Volterra e Cesare Melli, "Galleria Leonardo"		
 IT_49	Italia	Toscana	Firenze	Borgo Ognissanti	22	TO	1926 ca.	1927 ca.	Raul Tolentino		
 IT_50	Italia	Toscana	Firenze	Borgo Ognissanti	52	LA_I	1957	1966	"Leonardo Lapiccirella, ""Galleria Lapiccirella"""		
 IT_51	Italia	Toscana	Firenze	Borgo Ognissanti	50-56	GU-BR LA_I	1950 ca.	1957	Carlo e Riccardo Bruscoli, Marcello Guidi; dal 1957 al 1966 il negozio ai civici 50-52r è rilevato da Leonardo Lapiccirella		
 IT_52	Italia	Toscana	Firenze	Borgo Ognissanti	54-56R	GU-BR	1920 ca.	1950 ca.	Carlo e Riccardo Bruscoli, Marcello Guidi		
 IT_52_b	Italia	Toscana	Firenze	Borgo Ognissanti	46	GR	1966	1990 ca.	"Luigi Grassi Jr, ""Galleria Ognissanti"""		RIGA AGGIUNTA!!!
+IT_52_c	Italia	Toscana	Firenze	Borgo Ognissanti		GE_II	1910 ca.	1931 ca.	Alfredo Geri, "Casa di vendite Arte Antica e Moderna" (sede e abitazione privata)		
+IT_52_d	Italia	Toscana	Firenze	via Borgo Santi Apostoli 	40r	ME	1900 ca.	1920 ca.	Cesare Melli (Giardino Borgherini, showroom per arredi da esterno)		
 IT_53	Italia	Toscana	Firenze	Via Cavour	88	GR	1909	1966	"Luigi e Arturo Grassi, ""Luigi Grassi & Sons"" (Palazzo Montagliari)"		
 IT_54	Italia	Toscana	Firenze	Via dei Banchi	5	GI	1929 ca.	1950 ca.	"Ubaldo Giugni, ""Galleria d'Arte"" (sede)"		
 IT_54_b	Italia	Toscana	Firenze	Via de' Bardi	1		1920	1920	"Giuseppe Volterra e fratelli, ""Gustavo Volterra"""		RIGA AGGIUNTA!!!
 IT_55	Italia	Toscana	Firenze	Via dei Benci		BA_II	1877	1883	Stefano Bardini (Palazzo Canigiani)		
 IT_56	Italia	Toscana	Firenze	Via dei Fossi	7R	AL	1961	1979	Luigi Albrighi e Paola Ventura		
+IT_56_b	Italia	Toscana	Firenze	Via dei Fossi	8	GE_II	1920 ca.	1929 ca.	Alfredo Geri		
 IT_57	Italia	Toscana	Firenze	Via dei Fossi	9R	SA_II	1890 ca.	1940 ca.	Giuseppe e Salvadore detto Salvino Salvadori		
 IT_58	Italia	Toscana	Firenze	Via dei Fossi	33R	BA_I	1980 ca.	2015	Benvenuto e Riccardo Bacarelli dal 1996		
 IT_59	Italia	Toscana	Firenze	Via dei Fossi	40R	SA_I	1938	1957	Giovanni Salocchi		
@@ -91,12 +109,13 @@ IT_69	Italia	Toscana	Firenze	Via del Moro		BA_I	1923	1925 ca.	Rizieri Bacarelli
 IT_70	Italia	Toscana	Firenze	Via del Moro	30	GI	1950 ca.	1965 ca.	"Ubaldo Giugni, ""Galleria d'Arte"" (sede)"		
 IT_70_b	Italia	Toscana	Firenze	Via del Podere	6	CO_III	1876 ca.	1880 ca.	Emilio Costantini (studio)		
 IT_71	Italia	Toscana	Firenze	Via del porcellana		FR	1963	1972	Giuliano Freschi (deposito)		
+IT_71_b	Italia	Toscana	Firenze	via del Parione	2	ME	1910 ca.	1920 ca.	Giuseppe Melli		
 IT_72	Italia	Toscana	Firenze	Via Del Sole		BE_I	1880 ca.	1900 ca.	Giuseppe Bellini		
 IT_73	Italia	Toscana	Firenze	Via della scala		GR	1900 ca.	1909	"Luigi Grassi e figli, ""Luigi Grassi & Sons"""		
 IT_74	Italia	Toscana	Firenze	Via della vigna nuova		BA_I	1950 ca.	1989 ca.	Benvenuto Bacarelli		
 IT_74_b	Italia	Toscana	Firenze	Via della vigna nuova	79R	FR	1972	1990	Giuliano Freschi		RIGA AGGIUNTA!!!
 IT_75_a	Italia	Toscana	Firenze	Via delle belle donne	8	RO	1924	1939	Salvatore e Francesco Romano		
-IT_75_b	Italia	Toscana	Firenze	Via Guicciardini	6	VO_II	1920 ca.	1932 ca.	Giuseppe Volterra e fratelli e Adolfo Melli		
+IT_75_b	Italia	Toscana	Firenze	Via Guicciardini	6	VO_II ME	1920 ca.	1932 ca.	Giuseppe Volterra e fratelli e Adolfo Melli		
 IT_76	Italia	Toscana	Firenze	Lungarno Soderini	5	BE_I	1920 ca.	2007	Luigi, Giuseppe Jr e Mario Bellini 		
 IT_76_b	Italia	Toscana	Firenze	Lungarno Guicciardini	7	CO_III	1900 ca.	1910 ca.	Emilio e Davide Luigi Costantini		
 IT_77	Italia	Toscana	Firenze	Via Maggio		LA_I	1986	2000	"Damiano Lapiccirella, ""Galleria Lapiccirella"""		
@@ -108,10 +127,12 @@ IT_82	Italia	Toscana	Firenze	Via Porta Rossa	9	VO_I	1910	1923	Elia Volpi (Palazz
 IT_83	Italia	Toscana	Firenze	Via di San Niccolò	95	PI	1923	1930 ca.	Giovanni Pini (deposito)		
 IT_84	Italia	Toscana	Firenze	Via Tornabuoni	7	LA_I	1978	1986	"Leonardo Lapiccirella, ""Galleria Lapiccirella"""		
 IT_85	Italia	Toscana	Firenze	Via Tornabuoni	4	PI	1920 ca.	1940 ca.	Umberto Pini		
-IT_86	Italia	Toscana	Firenze	Via Tornabuoni	12	VO_II	1901	1913 ca.	"Gustavo Volterra e Cesare Melli, ""Volterra & Melli"" (sede e laboratori)"		
+IT_86	Italia	Toscana	Firenze	Via Tornabuoni	12	VO_II ME	1901	1913 ca.	Gustavo Volterra e Cesare Melli, "Volterra & Melli" (sede e laboratori)		
 IT_87	Italia	Toscana	Firenze	Viale Filippo Strozzi	2	CO_I	1931	1955	Alessandro Contini Bonacossi (Villa Vittoria, abitazione privata)		
 IT_87_b	Italia	Toscana	Firenze	Via dei Rondinelli		LA_I	1950 ca.	1957	Leonardo Lapiccirella (studio)		RIGA AGGIUNTA!!!
 IT_87_c	Italia	Toscana	Firenze	via Panicale		RO	1924 ca.	1960 ca.	Salvatore e Francesco Romano (magazzino)		RIGA AGGIUNTA!!!
+IT_87_d	Italia	Lazio	Roma	Largo Arenula	54	SA_V	1900 ca.	1930 ca.	Isacco Sabatello, "Isacco Sabatello e figli"		
+IT_87_e	Italia	Lazio	Roma	Lungotevere Flaminio	24	SA_V	1950 ca.	1970 ca.	Armando Sabatello (abitazione privata)		
 IT_88	Italia	Lazio	Roma	Lungotevere Michelangelo		GR	1880 ca.	1920 ca.	Giuseppe Grassi (abitazione privata)		
 IT_89	Italia	Lazio	Roma	via della Conciliazione		CI	1874	1877 ca.	Vincenzo Ciampolini, ex Borgo Vecchio 165		
 IT_90	Italia	Lazio	Roma	Foro Romano	7	CI	1877	1891 ca.	Vincenzo Ciampolini		
@@ -126,6 +147,9 @@ IT_99	Italia	Lazio	Roma	Piazza della Trinità dei Monti	6	CA_II	1885	1901	"Giuse
 IT_100	Italia	Lazio	Roma	"Via dei Condotti, Campo Marzio"		TA	1880 ca.	1924	Filippo Tavazzi		
 IT_101	Italia	Lazio	Roma	"Via dei Condotti, Campo Marzio"	44	SA_III	1887	1905 ca.	"Giulio Sambon, ""Impresa di vendita in Italia Giulio Sambon"""		
 IT_102	Italia	Lazio	Roma	"Via dei Condotti, Campo Marzio"	59-61	IM	1897	1943 ca.	"Alexandre Imbert, ""Galerie A. Imbert"" (Palazzo Caffarelli)"		
+IT_102_b	Italia	Lazio	Roma	Via del Babuino	15	SA_V	1900 ca.	1930 ca.	Leone Sabatello		
+IT_102_c	Italia	Lazio	Roma	Via del Babuino	49	GE_II	1929	1931 ca.	Alfredo Geri, "Galleria Geri"		
+IT_102_d	Italia	Lazio	Roma	Via del Babuino	61	SA_V	1932	1935	Dario Sabatello, "Galleria Sabatello"		
 IT_103	Italia	Lazio	Roma	Via del Babuino	144	AN-EF	1916	1955 ca.	"Emanuele Efrati, ""Galleria Efrati"""		
 IT_103_b	Italia	Lazio	Roma	Via del Babuino	146	AN-EF	1955 ca.	1998	"Emanuele Efrati e Giuseppe Antonacci, ""Antonacci-Efrati"""		RIGA AGGIUNTA!!!
 IT_104	Italia	Lazio	Roma	Via del Babuino	87-88	DI	1930 ca.	1939 ca.	"Amedeo e Leone Di Castro, ""Antichità A. L. Di Castro"""		
