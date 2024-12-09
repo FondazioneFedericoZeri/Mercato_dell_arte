@@ -32,9 +32,10 @@
     "CV_5": {
         "ID": "CV_5",
         "ID_cliente": "CL_5",
-        "Nome": "Nélie Jacquemart-André",
-        "Cognome": "",
-        "ID_entità": "CA_I"
+        "Nome": "Nélie",
+        "Cognome": "Jacquemart",
+        "ID_entità": "CA_I GR_II CA_III",
+        "ID_persone": ""
     },
     "CV_6": {
         "ID": "CV_6",
@@ -81,21 +82,29 @@
         "ID_entità": "ST",
         "ID_persone": "ST_1"
     },
+    "CV_11_b": {
+        "ID": "CV_11_b",
+        "ID_cliente": "CL_11_b",
+        "Nome": "Édouard ",
+        "Cognome": "André",
+        "ID_entità": "GR_II CA_III",
+        "ID_persone": ""
+    },
     "CV_12": {
         "ID": "CV_12",
         "ID_cliente": "CL_12",
         "Nome": "Fausto",
         "Cognome": "Bagatti Valsecchi",
-        "ID_entità": "BA_IV",
-        "ID_persone": "BA_IV_1"
+        "ID_entità": "BA_IV GR_II",
+        "ID_persone": "BA_IV_1 GR_II_1"
     },
     "CV_13": {
         "ID": "CV_13",
         "ID_cliente": "CL_13",
         "Nome": "Giuseppe",
         "Cognome": "Bagatti Valsecchi",
-        "ID_entità": "BA_IV",
-        "ID_persone": "BA_IV_1"
+        "ID_entità": "BA_IV GR_II",
+        "ID_persone": "BA_IV_1 GR_II_1"
     },
     "CV_14": {
         "ID": "CV_14",
@@ -125,8 +134,8 @@
         "ID_cliente": "CL_17",
         "Nome": "Bernard",
         "Cognome": "Berenson",
-        "ID_entità": "CO_III",
-        "ID_persone": "CO_III_1"
+        "ID_entità": "CO_III GR_II CA_III",
+        "ID_persone": "CO_III_1 GR_II_1 CA_III_1"
     },
     "CV_18": {
         "ID": "CV_18",
@@ -134,6 +143,14 @@
         "Nome": "Bernard",
         "Cognome": "Berenson",
         "ID_entità": "SA_II"
+    },
+    "CV_18_b": {
+        "ID": "CV_18_b",
+        "ID_cliente": "CL_17_b",
+        "Nome": "Giuseppe",
+        "Cognome": "Bertini",
+        "ID_entità": "CA_III",
+        "ID_persone": "CA_III_1"
     },
     "CV_19": {
         "ID": "CV_19",
@@ -149,6 +166,14 @@
         "Cognome": "Bondy",
         "ID_entità": "BA_III",
         "ID_persone": "BA_III_1"
+    },
+    "CV_20_b": {
+        "ID": "CV_20_b",
+        "ID_cliente": "CL_19_b",
+        "Nome": "Antonio",
+        "Cognome": "Borgogna",
+        "ID_entità": "GR_II",
+        "ID_persone": "GR_II_1"
     },
     "CV_21": {
         "ID": "CV_21",
@@ -171,6 +196,14 @@
         "Cognome": "Chiesa",
         "ID_entità": "AL",
         "ID_persone": "AL_1"
+    },
+    "CV_23_b": {
+        "ID": "CV_23_b",
+        "ID_cliente": "CL_22_b",
+        "Nome": "Karel",
+        "Cognome": "Chytil",
+        "ID_entità": "CA_III",
+        "ID_persone": ""
     },
     "CV_24": {
         "ID": "CV_24",
@@ -224,6 +257,14 @@
         "Cognome": "De Rothschild",
         "ID_entità": "CA_I"
     },
+    "CV_30_b": {
+        "ID": "CV_30_b",
+        "ID_cliente": "CL_29_b",
+        "Nome": "Isabelle",
+        "Cognome": "Errera",
+        "ID_entità": "CA_III",
+        "ID_persone": ""
+    },
     "CV_31": {
         "ID": "CV_31",
         "ID_cliente": "CL_30",
@@ -255,6 +296,14 @@
         "Cognome": "Getty",
         "ID_entità": "BA_III",
         "ID_persone": "BA_III_1"
+    },
+    "CV_34_b": {
+        "ID": "CV_34_b",
+        "ID_cliente": "CL_33_b",
+        "Nome": "Herman",
+        "Cognome": "Goering",
+        "ID_entità": "VE",
+        "ID_persone": ""
     },
     "CV_35": {
         "ID": "CV_35",
@@ -323,6 +372,14 @@
         "ID_entità": "PA_II",
         "ID_persone": "PA_II_1"
     },
+    "CV_43_b": {
+        "ID": "CV_43_b",
+        "ID_cliente": "CL_41_b",
+        "Nome": "Julius",
+        "Cognome": "Lessing",
+        "ID_entità": "CA_III",
+        "ID_persone": ""
+    },
     "CV_44": {
         "ID": "CV_44",
         "ID_cliente": "CL_42",
@@ -360,6 +417,22 @@
         "Cognome": "Norton",
         "ID_entità": "FE",
         "ID_persone": "FE_1"
+    },
+    "CV_48_b": {
+        "ID": "CV_48_b",
+        "ID_cliente": "CL_46_b",
+        "Nome": "Aldo",
+        "Cognome": "Noseda",
+        "ID_entità": "GR_II",
+        "ID_persone": ""
+    },
+    "CV_48_c": {
+        "ID": "CV_48_c",
+        "ID_cliente": "CL_46_c",
+        "Nome": "Arthur",
+        "Cognome": "Pabst",
+        "ID_entità": "CA_III",
+        "ID_persone": ""
     },
     "CV_49": {
         "ID": "CV_49",
@@ -408,6 +481,14 @@
         "ID_entità": "BA_IV",
         "ID_persone": "BA_IV_1"
     },
+    "CV_54_b": {
+        "ID": "CV_54_b",
+        "ID_cliente": "CL_50_b",
+        "Nome": "Natale",
+        "Cognome": "Prampolini",
+        "ID_entità": "FO",
+        "ID_persone": ""
+    },
     "CV_55": {
         "ID": "CV_55",
         "ID_cliente": "CL_51",
@@ -415,6 +496,14 @@
         "Cognome": "Pulszky",
         "ID_entità": "CO_III",
         "ID_persone": "CO_III_1"
+    },
+    "CV_55_b": {
+        "ID": "CV_55_b",
+        "ID_cliente": "CL_51_b",
+        "Nome": "Giovanni",
+        "Cognome": "Rasini",
+        "ID_entità": "FO",
+        "ID_persone": ""
     },
     "CV_56": {
         "ID": "CV_56",
@@ -435,7 +524,8 @@
         "ID_cliente": "CL_54",
         "Nome": "Elizabeth",
         "Cognome": "Stewart Gardner",
-        "ID_entità": "CA_I"
+        "ID_entità": "CA_I CA_III",
+        "ID_persone": ""
     },
     "CV_59": {
         "ID": "CV_59",
@@ -496,6 +586,14 @@
         "Cognome": "Tozzi",
         "ID_entità": "SA_I"
     },
+    "CV_66_b": {
+        "ID": "CV_66_b",
+        "ID_cliente": "CL_58_b",
+        "Nome": "Luigi Alberico",
+        "Cognome": "Trivulzio",
+        "ID_entità": "CA_III FO",
+        "ID_persone": ""
+    },
     "CV_67": {
         "ID": "CV_67",
         "ID_cliente": "CL_59",
@@ -516,7 +614,7 @@
         "ID_cliente": "CL_60",
         "Nome": "Gustav",
         "Cognome": "von Benda",
-        "ID_entità": "BA_III",
+        "ID_entità": "BA_III CA_III",
         "ID_persone": "BA_III_1"
     },
     "CV_70": {
