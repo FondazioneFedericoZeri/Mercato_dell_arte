@@ -8,6 +8,15 @@
         "Descrizione sintetica": "Vendita Collezione Simonetti",
         "Descrizione dettagliata": "Vendita della collezione Simonetti curata dallo stesso Attilio Simonetti a Roma"
     },
+    "E_1_b": {
+        "ID": "E_1_b",
+        "ID_entità": "CA_III",
+        "ID_persone": "",
+        "Anno": "1887",
+        "Tipologia Evento": "vendita all'asta",
+        "Descrizione sintetica": "Vendita Collezione Cantoni",
+        "Descrizione dettagliata": "Vendita all'asta presso Giulio Sambon di un'importante porzione della collezione numismatica di Achille Cantoni, il 25 aprile 1887"
+    },
     "E_2": {
         "ID": "E_2",
         "ID_entità": "CA_I",
@@ -98,6 +107,24 @@
         "Descrizione sintetica": "Vendita collezione Volpi",
         "Descrizione dettagliata": "Prima vendita oltreoceano di oggetti d'arte e di mobilio dalla collezione di Elia Volpi curata da Raoul Tolentino presso l'American Art Association di New York. L'evento rappresenta un'importante tappa per la diffusione del gusto neorinascimentale negli Stati Uniti"
     },
+    "E_11_b": {
+        "ID": "E_11_b",
+        "ID_entità": "CA_III",
+        "ID_persone": "",
+        "Anno": "1920",
+        "Tipologia Evento": "vendita all'asta",
+        "Descrizione sintetica": "Vendita collezione Cantoni",
+        "Descrizione dettagliata": "Vendita delle monete italiane della collezione di Achille Cantoni, a Roma presso Pietro e Pio Santamaria, il 26 aprile 1920"
+    },
+    "E_11_c": {
+        "ID": "E_11_c",
+        "ID_entità": "CA_III",
+        "ID_persone": "",
+        "Anno": "1920",
+        "Tipologia Evento": "vendita all'asta",
+        "Descrizione sintetica": "Vendita collezione Cantoni",
+        "Descrizione dettagliata": "Vendita delle monete romane della collezione di Achille Cantoni, a Roma presso Pietro e Pio Santamaria, il 29 novembre 1920"
+    },
     "E_12": {
         "ID": "E_12",
         "ID_entità": "VI_III",
@@ -142,6 +169,15 @@
         "Tipologia Evento": "vendita all'asta",
         "Descrizione sintetica": "Vendita Collezione De Clemente",
         "Descrizione dettagliata": "Vendita di una prima parte della collezione di Achille De Clemente presso la sede dell'American Art Association di New York"
+    },
+    "E_16_b": {
+        "ID": "E_16_b",
+        "ID_entità": "GE_II",
+        "ID_persone": "",
+        "Anno": "1931",
+        "Tipologia Evento": "vendita all'asta",
+        "Descrizione sintetica": "Vendita della collezione Alfredo Geri",
+        "Descrizione dettagliata": "La Galleria Pesaro di Milano vende la collezione personale dell'antiquario Geri pubblicando un ricco catalogo curato da Giuseppe Fiocco ed Enrico Somaré"
     },
     "E_17": {
         "ID": "E_17",
