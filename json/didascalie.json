@@ -390,5 +390,61 @@
     "ZA_img3.jpg": {
         "ID": "ZA_img3.jpg",
         "Didascalia": "Gilberto Zabert nella sua galleria, 1973"
+    },
+    "GE_II_img1.jpg": {
+        "ID": "GE_II_img1.jpg",
+        "Didascalia": "Ritratto di Alfredo Geri, foto di Mario Nunes Vais (ICCD)"
+    },
+    "GE_II_img2.jpg": {
+        "ID": "GE_II_img2.jpg",
+        "Didascalia": "Ritratto di famiglia con Alfredo Geri e il figlio Aldo (1905 ca.), foto di Mario Nunes Vais (ICCD)"
+    },
+    "CE_img1.jpg": {
+        "ID": "CE_img1.jpg",
+        "Didascalia": "Adriano Cera a Metaponto (Archivio Famiglia Cera)"
+    },
+    "CE_img2.jpg": {
+        "ID": "CE_img2.jpg",
+        "Didascalia": "Adriano Cera al Louvre (Archivio Famiglia Cera)"
+    },
+    "CE_img3.jpg": {
+        "ID": "CE_img3.jpg",
+        "Didascalia": "Adriano Cera con Eugenio Riccomini (Archivio Famiglia Cera)"
+    },
+    "ME_img1.jpg": {
+        "ID": "ME_img1.jpg",
+        "Didascalia": "Caricatura di Gustavo Melli, da \"L'Antiquario\", marzo 1929"
+    },
+    "ME_img2.jpg": {
+        "ID": "ME_img2.jpg",
+        "Didascalia": "Negozio di Giuseppe Melli in via del Parione a Firenze"
+    },
+    "SA_VI_img1.jpg": {
+        "ID": "SA_VI_img1.jpg",
+        "Didascalia": "Antonio Salvadori 'americaneggiante' recupera il Bellini rubato, da \"L'Antiquario\", giugno 1909"
+    },
+    "GR_II_img1.jpg": {
+        "ID": "GR_II_img1.jpg",
+        "Didascalia": "Antonio Grandi nel 1921 (FAI, Archivio Grandi)"
+    },
+    "CA_III_img1.jpg": {
+        "ID": "CA_III_img1.jpg",
+        "Didascalia": "Achille Cantoni (Gabinetto Vieusseux, Firenze, Archivio \"Alessandro Bonsanti\", Fondo Orvieto, Or. 6B.11.22)"
+    },
+    "FO_img1.jpg": {
+        "ID": "FO_img1.jpg",
+        "Didascalia": "Carlo Alberto Foresti con Frederick Mason Perkins e Irene Vavasour Elder, Santa Margherita Ligure, 1926 (Archivio Foresti)"
+    },
+    "FO_img2.jpg": {
+        "ID": "FO_img2.jpg",
+        "Didascalia": "Carlo Alberto Foresti con Robert Langton Douglas a Venezia nel 1922 (Archivio Foresti)"
+    },
+    "FO_img3.jpg": {
+        "ID": "FO_img3.jpg",
+        "Didascalia": "Studio artistico di Carlo Alberto Foresti a Milano, via Manzoni 43 (Archivio Foresti)"
+    },
+    "FO_img4.jpg": {
+        "ID": "FO_img4.jpg",
+        "Didascalia": "Studio artistico di Carlo Alberto Foresti a Milano (Archivio Foresti)"
     }
 }
