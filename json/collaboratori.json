@@ -43,13 +43,29 @@
         "Cognome / Denominazione": "Barbareschi",
         "Tipologia": "restauratrice"
     },
+    "C_6_b": {
+        "ID": "C_6_b",
+        "Nome": "Luigi",
+        "Cognome / Denominazione": "Battistelli",
+        "Tipologia": "impresario di casa d'aste",
+        "ID Antiquari": "GE_II",
+        "Nome Antiquari": "Geri"
+    },
+    "C_6_c": {
+        "ID": "C_6_c",
+        "Nome": "Luca",
+        "Cognome / Denominazione": "Beltrami",
+        "Tipologia": "architetto",
+        "ID Antiquari": "GR_II",
+        "Nome Antiquari": "Grandi"
+    },
     "C_7": {
         "ID": "C_7",
         "Nome": "Bernard",
         "Cognome / Denominazione": "Berenson",
         "Tipologia": "storico dell'arte",
-        "ID Antiquari": "AL CO_I RO ST VO_I",
-        "Nome Antiquari": "Albrighi Contini-Bonacossi Romano Steffanoni Volpi"
+        "ID Antiquari": "AL CO_I RO ST VO_I FO",
+        "Nome Antiquari": "Albrighi Contini-Bonacossi Romano Steffanoni Volpi Foresti"
     },
     "C_8": {
         "ID": "C_8",
@@ -84,7 +100,7 @@
     "C_10_3": {
         "ID": "C_10_3",
         "Nome": "",
-        "Cognome / Denominazione": "Bern�s, Marouteau & C.ie",
+        "Cognome / Denominazione": "Bernès, Marouteau & C.ie",
         "Tipologia": "fotografo",
         "ID Antiquari": "LA_II",
         "Nome Antiquari": "Lazzaroni"
@@ -94,8 +110,8 @@
         "Nome": "Giuliano",
         "Cognome / Denominazione": "Briganti",
         "Tipologia": "storico dell'arte",
-        "ID Antiquari": "AN-EF AP",
-        "Nome Antiquari": "Antonacci-Efrati Apolloni"
+        "ID Antiquari": "AN-EF AP GR_II",
+        "Nome Antiquari": "Antonacci-Efrati Apolloni Grandi"
     },
     "C_12": {
         "ID": "C_12",
@@ -133,7 +149,9 @@
         "ID": "C_15",
         "Nome": "Luigi",
         "Cognome / Denominazione": "Cavenaghi",
-        "Tipologia": "restauratore"
+        "Tipologia": "restauratore",
+        "ID Antiquari": "SA_V",
+        "Nome Antiquari": "Sabatello"
     },
     "C_16": {
         "ID": "C_16",
@@ -179,15 +197,17 @@
         "ID": "C_19",
         "Nome": "",
         "Cognome / Denominazione": "Duveen Brothers",
-        "Tipologia": "antiquario"
+        "Tipologia": "antiquario",
+        "ID Antiquari": "BR_III",
+        "Nome Antiquari": "Brass"
     },
     "C_20": {
         "ID": "C_20",
         "Nome": "Robert Langton",
         "Cognome / Denominazione": "Douglas",
         "Tipologia": "storico dell'arte",
-        "ID Antiquari": "BE_II CO_I",
-        "Nome Antiquari": "Bellesi Contini Bonacossi"
+        "ID Antiquari": "BE_II CO_I FO",
+        "Nome Antiquari": "Bellesi Contini Bonacossi Foresti"
     },
     "C_21": {
         "ID": "C_21",
@@ -224,8 +244,8 @@
         "Nome": "Giuseppe",
         "Cognome / Denominazione": "Fiocco",
         "Tipologia": "storico dell'arte",
-        "ID Antiquari": "CO_I ST",
-        "Nome Antiquari": "Contini Bonacossi Steffanoni"
+        "ID Antiquari": "CO_I ST BR_III",
+        "Nome Antiquari": "Contini Bonacossi Steffanoni Brass"
     },
     "C_26": {
         "ID": "C_26",
@@ -307,6 +327,14 @@
         "ID Antiquari": "PO_II",
         "Nome Antiquari": "Pospisil"
     },
+    "C_36_b": {
+        "ID": "C_36_b",
+        "Nome": "Jacob",
+        "Cognome / Denominazione": "Heimann",
+        "Tipologia": "antiquario",
+        "ID Antiquari": "FO",
+        "Nome Antiquari": "Foresti"
+    },
     "C_37": {
         "ID": "C_37",
         "Nome": "Roberto",
@@ -336,8 +364,8 @@
         "Nome": "Frederick",
         "Cognome / Denominazione": "Mason Perkins",
         "Tipologia": "storico dell'arte",
-        "ID Antiquari": "CO_I SA_IV",
-        "Nome Antiquari": "Contini Bonacossi Sangiorgi"
+        "ID Antiquari": "CO_I SA_IV FO",
+        "Nome Antiquari": "Contini Bonacossi Sangiorgi Foresti"
     },
     "C_40": {
         "ID": "C_40",
@@ -402,6 +430,14 @@
         "Tipologia": "storico dell'arte",
         "ID Antiquari": "PO_II NI",
         "Nome Antiquari": "Pospisil Nigro"
+    },
+    "C_46_b": {
+        "ID": "C_46_b",
+        "Nome": "Harold",
+        "Cognome / Denominazione": "Parson",
+        "Tipologia": "intermediatore",
+        "ID Antiquari": "BR_III",
+        "Nome Antiquari": "Brass"
     },
     "C_47": {
         "ID": "C_47",
@@ -497,6 +533,14 @@
         "Cognome / Denominazione": "Sulley",
         "Tipologia": "antiquario"
     },
+    "C_61_b": {
+        "ID": "C_61_b",
+        "Nome": "Giuseppe ",
+        "Cognome / Denominazione": "Steffanoni",
+        "Tipologia": "restauratore",
+        "ID Antiquari": "GR_II",
+        "Nome Antiquari": "Grandi"
+    },
     "C_62": {
         "ID": "C_62",
         "Nome": "Pietro",
@@ -527,6 +571,14 @@
         "Cognome / Denominazione": "Vergetas",
         "Tipologia": "restauratore"
     },
+    "C_65_b": {
+        "ID": "C_65_b",
+        "Nome": "Angelo",
+        "Cognome / Denominazione": "Visoni",
+        "Tipologia": "pittore, falsario",
+        "ID Antiquari": "GE_I",
+        "Nome Antiquari": "Geiger"
+    },
     "C_66": {
         "ID": "C_66",
         "Nome": "Wilhelm",
@@ -548,7 +600,7 @@
         "Nome": "Federico",
         "Cognome / Denominazione": "Zeri",
         "Tipologia": "storico dell'arte",
-        "ID Antiquari": "ZA",
-        "Nome Antiquari": "Zabert"
+        "ID Antiquari": "ZA SA_V",
+        "Nome Antiquari": "Zabert Sabatello"
     }
 }
