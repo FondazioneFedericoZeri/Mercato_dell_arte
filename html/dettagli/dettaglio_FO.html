@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dettaglio Antiquari</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="../../css/styles-dettaglioAntiquario.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/hierarchy.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+    <script type="text/javascript" src="../../script/dettaglioAntiquari.js"></script>
+    <script type="text/javascript" src="../../script/mappaDettaglio.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <a href="../../index.html">
+          <img id="logo.png" src="../../img/homepage/logo.png" alt="Fondazione Federico Zeri" />
+        </a>
+        <nav>
+          <ul>
+            <li>
+              <a href="../progetto.html">Progetto</a>
+              <a href="../antiquari.html">Antiquari</a>
+              <a href="../luoghi.html">Luoghi</a>
+              <a href="../eventi.html">Eventi</a>
+              <a href="../persone.html">Persone</a>
+              <a href="../bibliografia.html">Bibliografia</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="image-gallery">
+        <div class="gallery-wrapper">
+          <h2 class="gallery-title">Foresti</h2>
+          <div class="slider-container">
+            <div class="slider">
+              <div class="slide">
+                <img src="../../img/slider-antiquari/FO_img1.jpg" alt="Carlo Alberto Foresti con Frederick Mason Perkins e Irene Vavasour Elder, Santa Margherita Ligure, 1926 (Archivio Foresti)" />
+                <div class="caption">Carlo Alberto Foresti con Frederick Mason Perkins e Irene Vavasour Elder, Santa Margherita Ligure, 1926 (Archivio Foresti)</div>
+              </div>
+              <div class="slide">
+                <img src="../../img/slider-antiquari/FO_img2.jpg" alt="Carlo Alberto Foresti con Robert Langton Douglas a Venezia nel 1922 (Archivio Foresti)" />
+                <div class="caption">Carlo Alberto Foresti con Robert Langton Douglas a Venezia nel 1922 (Archivio Foresti)</div>
+              </div>
+              <div class="slide">
+                <img src="../../img/slider-antiquari/FO_img3.jpg" alt="Studio artistico di Carlo Alberto Foresti a Milano, via Manzoni 43 (Archivio Foresti)" />
+                <div class="caption">Studio artistico di Carlo Alberto Foresti a Milano, via Manzoni 43 (Archivio Foresti)</div>
+              </div>
+              <div class="slide">
+                <img src="../../img/slider-antiquari/FO_img4.jpg" alt="Studio artistico di Carlo Alberto Foresti a Milano (Archivio Foresti)" />
+                <div class="caption">Studio artistico di Carlo Alberto Foresti a Milano (Archivio Foresti)</div>
+              </div>
+            </div>
+            <button &#10094; class="prev" onclick="prevSlide()"><</button>
+            <button &#10095; class="next" onclick="nextSlide()">></button>
+          </div>
+        </div>
+      </section>
+      <div class="dual-content-wrapper">
+        <div class="tab-container">
+          <ul class="tab-list">
+            <li class="tab active" data_content="Bio">Dati biografici</li>
+            <li class="tab" data_content="Persone">Albero familiare</li>
+            <li class="tab" data_content="Localizzazioni">Luoghi</li>
+            <li class="tab" data_content="Relazioni">Relazioni</li>
+            <li class="tab" data_content="Bibliografia">Bibliografia</li>
+            <li class="tab" data_content="Opere trattate">Opere trattate</li>
+          </ul>
+        </div>
+        <div class="content-card">
+          <div id="Bio" class="content active-content">
+            <p>Carlo Alberto Foresti (1878-1944), originario di Carpi, fu un antiquario e collezionista tra i più rilevanti della fertile congiuntura del mercato italiano d'arte tra XIX e XX secolo.</p>
+            <p>Il padre Pietro (1854-1926), industriale locale arricchitosi notevolmente, fu un grande e illuminato collezionista. Grazie alla cospicua donazione di parte della sua raccolta che lui stesso dispose nel 1914, nacque il Museo Civico carpigiano.</p>
+            <p>Fu sempre Pietro a iniziare Carlo Alberto alla passione per l'arte. La sua formazione avvenne, infatti, nelle sale del neorinascimentale Palazzo Foresti, dove le opere raccolte dal padre - dipinti, sculture, xilografie, porcellane, soprattutto di area emiliana - attrassero studiosi italiani e internazionali del calibro di Adolfo Venturi, Matteo Campori, Gustavo Frizzoni o del direttore del Museo Imperiale di Berlino, Julius Lessing.</p>
+            <p>La figura di Carlo Alberti Foresti, fino a pochi anni fa più sfuggente rispetto a quella di Pietro, è stata ricostruita dalla nipote, la studiosa Elisabetta Landi, grazie ai carteggi posseduti dalla famiglia (Archivio Famiglia Foresti) e dall'analisi delle lettere a Bernard Berenson conservate presso I Tatti - The Harvard University Center for Italian Renaissance Studies.</p>
+            <p>Dai documenti, è emersa una rete di relazioni fittissima con tutti gli studiosi dell'epoca: oltre a Berenson, appunto, fu legato in particolare ad <a href="dettaglio_CO_I.html" target="_blank"> Alessandro Contini Bonacossi </a>, Robert Langton Douglas e Frederick Mason Perkins, come ricordò Federico Zeri nell'intervista rilasciata al "Giornale dell'Arte" nel 1986 sul grande studioso e collezionista di base ad Assisi.</p>
+            <p>Quando la sua carriera di antiquario decollò, intorno agli anni Venti con il trasferimento a Milano, questa rete di relazioni, in parte già presenti grazie al padre Pietro, si ampliò. Nel capoluogo lombardo aprì un suo spazio commerciale, lo "Studio Artistico", nel palazzo Borromeo di via Manzoni, che divenne ben presto un luogo di ritrovo, non solo, per le vendite, ma anche per le discussioni storico-artistiche. Si interessò, oltre all'arte antica, suo principale ambito di commercio, anche di arte contemporanea, decretando talvolta il successo di artisti emergenti, come, ad esempio, Gregorio Sciltian che lo ricordò nelle sue memorie autobiografiche.</p>
+            <p>Fece affari con i più importanti collezionisti milanesi dell'epoca, come il principe Trivulzio, il banchiere Rasini, l'industriale Bonomi, il senator Prampolini. Si servì spesso dell'antiquario di origini russe Jacob Heimann che gli era stato presentato da Mason Perkins, come mediatore per i suoi affari, prima a Milano, poi a New York dove Heimann si stabilì nel 1939.</p>
+            <p>Grazie a quest'ultimo e a Contini Bonacossi, Foresti conquistò infatti anche il mercato d'Oltreoceano, approvvigionando collezionisti come Samuel H. Kress o grandi musei come l'Art Institute di Chicago.</p>
+            <p>Per tutta la vita, proseguendo l'impegno paterno, promosse e sostenne economicamente il restauro del Castello dei Pio nella città natale e destinò opere al museo locale.</p>
+            <p>Proprio nella sua terra, morì improvvisamente nel 1944, ucciso a scopo di rapina nella sua villa di Budrione. L'evento lasciò nello sconforto la comunità di studiosi, collezionisti e amici, tra tutti Frederick Mason Perkins.</p>
+          </div>
+          <div id="Persone" class="content">
+            <h3>Relazioni familiari:</h3>
+            <div id="albero-genealogico"></div>
+          </div>
+          <div id="Localizzazioni" class="content">
+            <section id="map">
+              <div id="chartdiv"></div>
+            </section>
+          </div>
+          <div id="Relazioni" class="content">
+            <h3>Altri antiquari:</h3>
+            <ul>
+            </ul>
+            <h3>Clienti:</h3>
+            <ul>
+              <li>Giovanni Rasini </li>
+              <li>Natale Prampolini </li>
+            </ul>
+            <h3>Collaboratori:</h3>
+            <ul>
+              <li>Bernard Berenson (storico dell'arte)</li>
+              <li>Frederick Mason Perkins (storico dell'arte)</li>
+              <li>Jacob Heimann (antiquario)</li>
+              <li>Robert Langton Douglas (storico dell'arte)</li>
+            </ul>
+          </div>
+          <div id="Bibliografia" class="content">
+            <h3>Bibliografia essenziale:</h3>
+            <ul>
+              <li>Zaninelli, F. (2023), <i>Some Remarks on Wilhelm BOde and the Art Market in Italy, 1880-1909: The Cases of Pietro Foresti (1854-1926) and A. Chiesa</i>, In Smalcerz, pp. 151-205</li>
+            </ul>
+          </div>
+          <div id="Opere trattate" class="content">
+            <p>
+              Vedi le opere transitate presso l'antiquario presenti nel 
+              <a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Foresti" class="linkBio" target="_blank">
+                catalogo della Fondazione Zeri
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <p>Licenza dati e immagini:</p>
+          <img id="license.png" src="../../img/homepage/license.png" alt="License" />
+        </div>
+        <div class="footer-right">
+          <p>
+            <a href="../../html/crediti.html">
+              Crediti
+            </a>
+            |
+            <a href="https://github.com/FondazioneFedericoZeri/Mercato_dell_arte" target="_blank">
+              Documentazione
+            </a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
