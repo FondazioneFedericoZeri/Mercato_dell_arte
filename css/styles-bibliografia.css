@@ -171,18 +171,12 @@ footer img {
 }
 
 /*responsive*/
-@media (max-width: 1024px) {
-    #bibliografia {
-      grid-template-columns: repeat(2, 1fr); /* Due colonne per tablet */
-    }
-  }
-  
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
     #bibliografia {
       grid-template-columns: 1fr; /* Una colonna per smartphone */
+      padding: 10px;
     }
-  }
-  @media (max-width: 768px) {
+  
     nav ul {
       flex-direction: column; /* Cambia disposizione */
       align-items: flex-start; /* Allinea a sinistra */
@@ -191,13 +185,8 @@ footer img {
     nav ul li {
       margin: 10px 0; /* Aggiunge spazio tra i link */
     }
-  }
-  @media (max-width: 768px) {
-    body {
-      padding: 10px;
-    }
   
-    #bibliografia {
+    body {
       padding: 10px;
     }
   
@@ -205,8 +194,5 @@ footer img {
       padding: 10px;
     }
   }
-  img {
-    max-width: 100%;
-    height: auto;
-  }
+  
         
