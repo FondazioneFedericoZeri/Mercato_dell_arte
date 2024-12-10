@@ -42,20 +42,10 @@
     <main>
       <section id="image-gallery">
         <div class="gallery-wrapper">
-          <h2 class="gallery-title">Baslini</h2>
-          <div class="slider-container">
-            <div class="slider">
-              <div class="slide">
-                <img src="../../img/slider-antiquari/BA_IV_img1.jpg" alt="Giuseppe Baslini nel 1870 (foto Archivio Poldi Pezzoli)" />
-                <div class="caption">Giuseppe Baslini nel 1870 (foto Archivio Poldi Pezzoli)</div>
-              </div>
-              <div class="slide">
-                <img src="../../img/slider-antiquari/BA_IV_img2.jpg" alt="Giuseppe Baslini nel 1887" />
-                <div class="caption">Giuseppe Baslini nel 1887</div>
-              </div>
-            </div>
-            <button &#10094; class="prev" onclick="prevSlide()"><</button>
-            <button &#10095; class="next" onclick="nextSlide()">></button>
+          <h2 class="gallery-title">Brass</h2>
+          <div id="single-image-container">
+            <img src="../../img/slider-antiquari/BR_III_img1.jpg" alt="Brass" />
+            <div class="caption overlay-caption">Brass</div>
           </div>
         </div>
       </section>
@@ -72,9 +62,31 @@
         </div>
         <div class="content-card">
           <div id="Bio" class="content active-content">
-            <p>Giuseppe Baslini (1817-1887) nacque a Landriano, nel Pavese. Trasferitosi in giovane età a Milano e avvicinatosi al settore del mercato antiquariale, riuscì nel giro di poco tempo a ottenere un notevole successo commerciale. Le fonti ricordano infatti Baslini come un autodidatta dalle umili origini che ottenne rapidamente la fama di abile antiquario e mercate grazie intelligenza a spregiudicatezza, non solo in Italia, ma in tutta Europa.</p>
-            <p>A Milano Baslini acquistò un terreno in via Montenapoleone 11 sul quale fece costruire una villa che ospitava la propria abitazione e la galleria presso la quale accoglieva i clienti. Priva di una specializzazione, la sua attività si connota per poliedricità e ampiezza di interessi. Durante la carriera Baslini trattò infatti dipinti, arti decorativi e mobilio, cercando di assecondare il gusto dell'epoca. La complessità della rete dei clienti e del suo giro di affari emerge dalle testimonianze dei contemporanei. Significativa è quella di Giovanni Morelli (1816-1891), il quale alternava giudizi feroci per la spregiudicatezza mostrata da Baslini in alcune compravendite ad apprezzamenti e riconoscimenti sinceri.</p>
-            <p>Baslini ebbe rapporti con Wilhelm von Bode, fu consigliere e fornitore delle collezioni Poldi Pezzoli e Bagatti Valsecchi. Strinse inoltre un felice sodalizio con Charles Lock Eastlake (1793-1865) e Otto Mündler (1811-1870), che a partire dal 1855 avevano iniziato una campagna di acquisti in Italia per la National Gallery di Londra. Alla morte dell'antiquario, avvenuta nel 1887, gli eredi decisero di mettere all'asta la collezione a lui appartenuta. La vendita si tenne a Milano l'anno successivo per conto dell'"Impresa di Vendite in Italia Giulio Sambon".</p>
+            <p>Italico Brass (Venezia, 1870-1943) fu un rilevante pittore di vedute e scene di vita veneziana e in</p>
+            <p>questa veste partecipò a più edizioni della Biennale d'arte di Venezia che, nel 1935, ospitò una sua</p>
+            <p>retrospettiva di quaranta dipinti, corredata dal catalogo con una sintetica autobiografia.</p>
+            <p>Al contempo, fu grande collezionista di pittura genovese e veneziana del Sei e Settecento. Ebbe un</p>
+            <p>ruolo centrale, in particolare, nella riscoperta di Alessandro Magnasco, il cui apprezzamento</p>
+            <p>contribuì a diffondere anche Oltreoceano grazie a numerose vendite.</p>
+            <p>Accanto a quella di collezionista, infatti, si dedicò all'attività di mercante, soprattutto dalla metà</p>
+            <p>degli anni Venti insieme al figlio Alessandro Brass (1898-?), avvocato e vicesindaco di Venezia</p>
+            <p>durante il regime fascista. Nel contesto veneziano collaborò soprattutto con Francesco e Maria <a</p>
+            <p>href="dettaglio_PO_II.html" target="_blank"> Pospisil </a> e con lo storico dell'arte Giuseppe</p>
+            <p>Fiocco.</p>
+            <p>I proventi delle vendite di opere d'arte sembra fossero principalmente destinati al restauro della</p>
+            <p>Scuola Vecchia della Misericordia, acquistata da Italico come atelier e sede della propria collezione,</p>
+            <p>nella speranza di farne un museo pubblico.</p>
+            <p>Tra la fine degli anni Venti e l'inizio del decennio successivo vendette opere di Bernardo Strozzi,</p>
+            <p>Magnasco e Giambattista Piazzetta a musei americani come il Wadsorth Atheneum di Hartford e</p>
+            <p>soprattutto l'Art Museum di Cleveland. A favorire questa impresa furono soprattutto i rapporti con</p>
+            <p>l'agente d'arte Harold Parson e con i mercanti newyorkesi Duveen, approfonditi grazie a un viaggio</p>
+            <p>nel 1933 in cui ebbe modo di visitare alcuni dei musei e delle collezioni private più importanti degli</p>
+            <p>Stati Uniti.</p>
+            <p>Dopo la morte di Italico fino almeno alla fine degli anni Cinquanta, Alessandro continuò il</p>
+            <p>commercio di opere d'arte vendendo soprattutto pezzi della collezione paterna per far fronte ai</p>
+            <p>debiti. Anche il figlio di quest'ultimo, Italico Brass Jr., rimase nel settore. Nel 1974, gli eredi</p>
+            <p>cedettero allo Stato italiano la Scuola Vecchia della Misericordia, oggi sede del laboratorio di</p>
+            <p>restauro della Soprintendenza veneziana.</p>
           </div>
           <div id="Persone" class="content">
             <h3>Relazioni familiari:</h3>
@@ -91,29 +103,24 @@
             </ul>
             <h3>Clienti:</h3>
             <ul>
-              <li>Charles Lock Eastlake </li>
-              <li>Gian Giacomo Poldi Pezzoli d'Albertone </li>
-              <li>Otto Mündler </li>
-              <li>Wilhelm von Bode </li>
             </ul>
             <h3>Collaboratori:</h3>
             <ul>
-              <li>Wilhelm Von Bode (storico dell'arte)</li>
+              <li>Duveen Brothers (antiquario)</li>
+              <li>Giuseppe Fiocco (storico dell'arte)</li>
+              <li>Harold Parson (intermediatore)</li>
             </ul>
           </div>
           <div id="Bibliografia" class="content">
             <h3>Bibliografia essenziale:</h3>
             <ul>
-              <li><i>Catalogo della collezione Baslini de Milano da vendersi per conto degli eredi. Quadri, avori, medaglie, placchette, armi, bronzi, ferri, maioliche, porcellano, oggetti d’arte, marmi, terre cotte, arazzi, stoffe, merletti, mobili diversi, catalogo della vendita all'asta Impresa di Vendite in Italia Giulio Sambon (Milano, 26 Novembre 1888 e giorni successivi)</i>, Milano 1888</li>
-              <li>Anderson, J. (1996), <i>The political power of connoisseurship in nineteenth-century Europe: Wilhelm von Bode versus Giovanni Morelli</i>, In Kennerschaft: Kolloquium zum 150sten Geburtstag von Wilhelm von Bode, Jahrbuch der Berliner Museen	 N.F., 38, , pp. 107-119</li>
-              <li>Colombi, M. (2021), <i>«Une des figures les plus originales de Milan»: l'antiquario Giuseppe Baslini (1817-1887)</i>, In «Acme», vol. 74, 2, pp. 95-121</li>
-              <li>Zanni, A. (2000), <i>Dedicato a Giuseppe Baslini (1817 - 1887), in Arte lombarda del secondo millenio: saggi in onore di Gian Alberto Dell'Acqua</i>, Milano, pp. 270-275</li>
+              <li>Morandotti, A. (2001), <i>Italico Bras, pittore, conoscitore e mercante nell’età di Giuseppe Fiocco</i>, In Orlando, pp. 241-250</li>
             </ul>
           </div>
           <div id="Opere trattate" class="content">
             <p>
               Vedi le opere transitate presso l'antiquario presenti nel 
-              <a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=G.+BASLINI" class="linkBio" target="_blank">
+              <a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=brass&page=1" class="linkBio" target="_blank">
                 catalogo della Fondazione Zeri
               </a>
             </p>
