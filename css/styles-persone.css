@@ -365,3 +365,60 @@ footer img {
         padding: 10px 0;
     }
 }
+#Persone {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tre colonne per desktop */
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+    #Persone {
+        grid-template-columns: repeat(2, 1fr); /* Due colonne per tablet */
+    }
+}
+
+@media (max-width: 768px) {
+    #Persone {
+        grid-template-columns: 1fr; /* Una colonna per smartphone */
+    }
+}
+.column a,
+.column p {
+    font-size: 18px; /* Dimensione predefinita */
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .column a,
+    .column p {
+        font-size: 16px; /* Riduci leggermente la dimensione su smartphone */
+        padding: 5px; /* Riduci il padding */
+    }
+}
+.collaborator-tooltip,
+.client-tooltip {
+    max-width: 90%; /* Riduci la larghezza massima su dispositivi piccoli */
+    font-size: 14px; /* Adatta la dimensione del testo */
+}
+
+@media (max-width: 768px) {
+    .collaborator-tooltip,
+    .client-tooltip {
+        max-width: 100%; /* Usa tutta la larghezza disponibile */
+        font-size: 12px; /* Riduci ulteriormente il testo se necessario */
+    }
+}
+.btn-back-to-top {
+    font-size: 12px; /* Dimensione più piccola su schermi ridotti */
+    padding: 8px 10px;
+}
+
+@media (max-width: 768px) {
+    .btn-back-to-top {
+        bottom: 20px; /* Posiziona più in alto per evitare sovrapposizioni */
+        right: 10px;
+    }
+}
