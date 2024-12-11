@@ -580,3 +580,50 @@ footer img {
         font-size: 12px; /* Dimensione ancora più piccola per il testo */
     }
 }
+
+/*responsive timeline*/
+.timeline-container {
+    overflow-x: auto; /* Permette lo scorrimento orizzontale */
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Cambiato per migliorare su schermi piccoli */
+    box-sizing: border-box;
+}
+
+@media (max-width: 1024px) {
+    .timeline-container {
+        padding: 10px 5px; /* Riduci padding */
+    }
+
+    .timeline ul li {
+        font-size: 14px; /* Riduce il testo */
+        margin-right: 15px; /* Riduce la spaziatura tra gli elementi */
+    }
+
+    .event-point {
+        width: 12px; /* Riduce il punto evento */
+        height: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .timeline-container {
+        flex-direction: column; /* Disposizione verticale per schermi molto piccoli */
+        align-items: flex-start;
+        overflow-x: auto;
+    }
+
+    .timeline ul {
+        display: block; /* Cambia layout della lista */
+    }
+
+    .timeline ul li {
+        font-size: 12px;
+        margin-right: 10px;
+    }
+}
