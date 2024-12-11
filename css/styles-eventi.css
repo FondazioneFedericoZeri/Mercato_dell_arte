@@ -430,3 +430,84 @@ footer img {
 .footer-right {
     text-align: right;
 }
+
+/* Responsive */
+.menu {
+    display: flex; /* Layout normale per desktop */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-toggle {
+    display: none; /* Nascondi su desktop */
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none; /* Nascondi il menu */
+        flex-direction: column;
+        background-color: #f8f8f8;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block; /* Mostra il pulsante su mobile */
+    }
+
+    .menu.show {
+        display: flex; /* Mostra il menu quando attivato */
+    }
+
+    .menu li {
+        text-align: center;
+        padding: 10px 0;
+    }
+}
+.timeline-container {
+    width: 100%; /* Adatta la larghezza */
+    padding: 20px; /* Margine interno */
+    overflow-x: scroll; /* Consente lo scorrimento orizzontale */
+}
+
+@media (max-width: 768px) {
+    .timeline ul {
+        margin: 0; /* Rimuove margini inutili */
+    }
+
+    .timeline ul li {
+        font-size: 14px; /* Riduce la dimensione del testo */
+        margin-right: 20px; /* Spaziatura ridotta tra elementi */
+    }
+}
+.carousel-card {
+    width: 90%; /* Occupa quasi tutta la larghezza */
+    height: auto; /* Altezza automatica */
+    margin: 10px auto; /* Centra le card */
+}
+
+@media (min-width: 769px) {
+    .carousel-card {
+        width: 400px; /* Dimensioni normali su desktop */
+    }
+}
+.footer-container {
+    flex-wrap: wrap; /* Consente agli elementi di andare a capo */
+    gap: 10px; /* Spazio tra gli elementi */
+    text-align: center; /* Centra il testo */
+}
+
+@media (max-width: 768px) {
+    .footer-left,
+    .footer-right {
+        flex: 1 1 100%; /* Gli elementi occupano tutta la larghezza */
+    }
+}
