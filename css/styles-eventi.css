@@ -582,48 +582,71 @@ footer img {
 }
 
 /*responsive timeline*/
+/* Timeline Container Responsive */
 .timeline-container {
     overflow-x: auto; /* Permette lo scorrimento orizzontale */
-    white-space: nowrap;
+    white-space: nowrap; /* Imposta la disposizione orizzontale */
     position: relative;
-    width: 100%;
+    width: 100%; /* Occupa l'intera larghezza */
     margin: 0 auto;
     padding: 20px 10px;
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* Cambiato per migliorare su schermi piccoli */
+    justify-content: flex-start; /* Allinea gli elementi */
     box-sizing: border-box;
 }
 
+/* Media Query per tablet */
 @media (max-width: 1024px) {
     .timeline-container {
-        padding: 10px 5px; /* Riduci padding */
+        padding: 10px 5px;
     }
 
     .timeline ul li {
         font-size: 14px; /* Riduce il testo */
-        margin-right: 15px; /* Riduce la spaziatura tra gli elementi */
+        margin-right: 15px; /* Riduce la spaziatura */
     }
 
     .event-point {
-        width: 12px; /* Riduce il punto evento */
-        height: 12px;
+        width: 12px;
+        height: 12px; /* Dimensione ridotta per punti evento */
     }
 }
 
+/* Media Query per dispositivi mobili */
 @media (max-width: 768px) {
     .timeline-container {
-        flex-direction: column; /* Disposizione verticale per schermi molto piccoli */
+        flex-direction: column; /* Cambia la disposizione in verticale */
         align-items: flex-start;
-        overflow-x: auto;
+        overflow-x: auto; /* Assicura lo scrolling orizzontale per contenuti più grandi */
     }
 
     .timeline ul {
-        display: block; /* Cambia layout della lista */
+        display: block; /* Disposizione verticale per gli eventi */
     }
 
     .timeline ul li {
         font-size: 12px;
         margin-right: 10px;
     }
+
+    .event-point {
+        width: 10px;
+        height: 10px; /* Dimensioni minime */
+    }
+}
+
+/* Stile generale per la lista degli elementi della timeline */
+.timeline ul {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+
+.timeline ul li {
+    margin-right: 50px;
+    display: inline-block;
+    text-align: center;
 }
