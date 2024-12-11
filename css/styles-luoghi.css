@@ -317,88 +317,113 @@ footer img {
 }
 
 /*responsive*/
-/* Menu di default */
+/* Stile generale del menu */
 .menu {
-    display: none; /* Nascondi il menu per default */
-    flex-direction: column;
-    background-color: #f8f8f8;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    padding: 10px 0;
-    list-style-type: none;
-    z-index: 1000;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Bottone per il menu toggle */
-.menu-toggle {
-    display: none; /* Nascondi su desktop */
-    background: none;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-}
-
-/* Mostra il menu quando attivato */
-.menu.show {
     display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
-/* Responsive per schermi piccoli */
+.menu li {
+    margin-left: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    padding: 5px 10px;
+}
+
+.menu a:hover {
+    background-color: #5593C9;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Bottone per il menu toggle (nascosto su desktop) */
+.menu-toggle {
+    display: none;
+}
+
+/* Stili per dispositivi mobili */
 @media (max-width: 768px) {
-    .menu-toggle {
-        display: block; /* Mostra il pulsante su mobile */
+    .menu {
+        display: none; /* Nasconde il menu su mobile */
+        flex-direction: column;
+        background-color: #f8f8f8;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 10px 0;
+        z-index: 1000;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     }
 
-    nav ul {
-        display: none; /* Nascondi il menu per default */
+    .menu.show {
+        display: flex; /* Mostra il menu quando attivato */
+    }
+
+    .menu-toggle {
+        display: block; /* Mostra il bottone su mobile */
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .menu li {
+        margin-left: 0;
+        text-align: center;
+        padding: 10px 0;
     }
 }
 
 
 /* Stile per la sezione #map in versione desktop */
+/* Layout desktop */
 #map {
     display: flex;
-    justify-content: space-between; /* Separa le etichette dalla mappa */
-    align-items: flex-start; /* Allinea gli elementi in alto */
+    justify-content: space-between; /* Posiziona etichette e mappa affiancati */
+    align-items: flex-start; /* Allinea in alto */
     padding: 20px;
-    gap: 20px; /* Spazio tra gli elementi */
+    gap: 20px;
 }
 
-/* Etichette (filter-container) nella versione desktop */
 #map .filter-container {
     flex: 1 1 30%; /* Occupa il 30% della larghezza */
-    max-width: 300px; /* Limita la larghezza */
+    max-width: 300px; /* Limita la larghezza delle etichette */
 }
 
-/* Mappa nella versione desktop */
 #map #chartdiv {
     flex: 1 1 70%; /* Occupa il 70% della larghezza */
-    min-width: 500px; /* Imposta una larghezza minima */
+    min-width: 500px; /* Larghezza minima per il grafico */
     height: 550px;
 }
 
-/* Stile per la sezione #map in versione responsiva */
+/* Layout mobile */
 @media (max-width: 768px) {
     #map {
         flex-direction: column; /* Disposizione verticale */
         gap: 10px; /* Riduci lo spazio tra gli elementi */
     }
 
-    /* Etichette in versione responsiva */
     #map .filter-container {
         flex: 1 1 100%; /* Occupa tutta la larghezza */
         max-width: none; /* Rimuove il limite di larghezza */
+        order: 1; /* Posiziona prima della mappa */
+        margin-bottom: 10px; /* Aggiunge spazio sotto */
     }
 
-    /* Mappa in versione responsiva */
     #map #chartdiv {
         flex: 1 1 100%; /* Occupa tutta la larghezza */
-        height: 300px; /* Altezza ridotta per adattarsi meglio */
+        order: 2; /* Posiziona sotto le etichette */
+        height: 300px; /* Altezza ridotta per mobile */
     }
 }
+
 
 body {
     font-size: 16px;
