@@ -382,49 +382,52 @@ footer img {
 }
 
 
-/* Stile per la sezione #map in versione desktop */
-/* Layout desktop */
+/* mappa Layout desktop */
 #map {
     display: flex;
-    justify-content: space-between; /* Posiziona etichette e mappa affiancati */
-    align-items: flex-start; /* Allinea in alto */
+    justify-content: space-between;
+    align-items: flex-start;
     padding: 20px;
     gap: 20px;
 }
 
 #map .filter-container {
-    flex: 1 1 30%; /* Occupa il 30% della larghezza */
-    max-width: 300px; /* Limita la larghezza delle etichette */
+    flex: 1 1 30%;
+    max-width: 300px;
 }
 
 #map #chartdiv {
-    flex: 1 1 70%; /* Occupa il 70% della larghezza */
+    flex: 1 1 70%;
     height: 550px;
-    min-width: unset; /* Larghezza minima per desktop */
+    display: block;
+    visibility: visible;
 }
 
 /* Layout mobile */
 @media (max-width: 768px) {
     #map {
-        flex-direction: column; /* Disposizione verticale */
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
         gap: 10px;
     }
 
     #map .filter-container {
-        flex: 1 1 100%; /* Occupa tutta la larghezza */
-        max-width: none; /* Rimuove il limite di larghezza */
-        order: 1; /* Posiziona sopra la mappa */
-        margin-bottom: 10px; /* Spazio sotto */
+        flex: 1 1 100%;
+        order: 1;
+        margin-bottom: 10px;
     }
 
     #map #chartdiv {
-        flex: 1 1 100%; /* Occupa tutta la larghezza */
-        order: 2; /* Posiziona sotto le etichette */
-        height: 300px; /* Altezza ridotta per mobile */
-        display: block; /* Assicurati che sia visibile */
+        flex: 1 1 100%;
+        order: 2;
+        height: 300px;
+        min-height: 300px;
+        display: block;
         visibility: visible;
     }
 }
+
 
 
 body {
