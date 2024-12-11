@@ -472,34 +472,7 @@ footer img {
         padding: 10px 0;
     }
 }
-.timeline-container {
-    overflow-x: auto; /* Consente lo scorrimento orizzontale */
-    white-space: nowrap; /* Impedisce il wrapping dei contenuti */
-    padding: 10px 0;
-    width: 100%; /* Adatta alla larghezza dello schermo */
-    box-sizing: border-box;
-}
 
-.timeline ul {
-    display: flex; /* Layout orizzontale */
-    padding: 0;
-    margin: 0 auto;
-    width: fit-content; /* Adatta alla lunghezza della timeline */
-}
-
-.timeline ul li {
-    font-size: 14px; /* Riduce la dimensione del testo */
-    margin-right: 20px; /* Spaziatura ridotta */
-}
-
-.timeline ul li.small {
-    margin-right: 15px; /* Spaziatura minore per piccoli separatori */
-}
-
-.timeline ul li.big {
-    font-size: 18px; /* Separatori grandi con dimensione maggiore */
-    margin-right: 30px;
-}
 
 .event-point {
     width: 16px; /* Riduce le dimensioni */
