@@ -400,7 +400,7 @@ footer img {
 #map #chartdiv {
     flex: 1 1 70%; /* Occupa il 70% della larghezza */
     height: 550px;
-    min-width: 500px; /* Larghezza minima per desktop */
+    min-width: unset; /* Larghezza minima per desktop */
 }
 
 /* Layout mobile */
