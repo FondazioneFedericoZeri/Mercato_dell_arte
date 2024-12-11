@@ -399,28 +399,30 @@ footer img {
 
 #map #chartdiv {
     flex: 1 1 70%; /* Occupa il 70% della larghezza */
-    min-width: 500px; /* Larghezza minima per il grafico */
     height: 550px;
+    min-width: 500px; /* Larghezza minima per desktop */
 }
 
 /* Layout mobile */
 @media (max-width: 768px) {
     #map {
         flex-direction: column; /* Disposizione verticale */
-        gap: 10px; /* Riduci lo spazio tra gli elementi */
+        gap: 10px;
     }
 
     #map .filter-container {
         flex: 1 1 100%; /* Occupa tutta la larghezza */
         max-width: none; /* Rimuove il limite di larghezza */
-        order: 1; /* Posiziona prima della mappa */
-        margin-bottom: 10px; /* Aggiunge spazio sotto */
+        order: 1; /* Posiziona sopra la mappa */
+        margin-bottom: 10px; /* Spazio sotto */
     }
 
     #map #chartdiv {
         flex: 1 1 100%; /* Occupa tutta la larghezza */
         order: 2; /* Posiziona sotto le etichette */
         height: 300px; /* Altezza ridotta per mobile */
+        display: block; /* Assicurati che sia visibile */
+        visibility: visible;
     }
 }
 
