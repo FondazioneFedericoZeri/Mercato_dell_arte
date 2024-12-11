@@ -315,3 +315,82 @@ footer img {
     background-color: #f0f0f0;
     border-color: #888;
 }
+
+/*responsive*/
+/* Menu di default */
+.menu {
+    display: none; /* Nascondi il menu per default */
+    flex-direction: column;
+    background-color: #f8f8f8;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    list-style-type: none;
+    z-index: 1000;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Bottone per il menu toggle */
+.menu-toggle {
+    display: none; /* Nascondi su desktop */
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Mostra il menu quando attivato */
+.menu.show {
+    display: flex;
+}
+
+/* Responsive per schermi piccoli */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Mostra il pulsante su mobile */
+    }
+
+    nav ul {
+        display: none; /* Nascondi il menu per default */
+    }
+}
+#map {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+#map .filter-container {
+    flex: 1 1 100%; /* Si adatta alla larghezza del dispositivo */
+    margin: 10px 0;
+}
+
+#map #chartdiv {
+    flex: 1 1 100%; /* Il grafico occupa tutta la larghezza */
+    min-height: 300px;
+}
+body {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+p {
+    font-size: 1em;
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+}
