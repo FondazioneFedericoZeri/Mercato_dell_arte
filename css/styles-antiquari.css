@@ -473,3 +473,212 @@ footer img {
     text-align: right;
 }
 
+/* responsive*/
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Evita il scrolling orizzontale */
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Riduce il font per schermi più piccoli */
+    }
+}
+/*menù*/
+/*responsive*/
+/* Stile generale del menu */
+.menu {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin-left: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    padding: 5px 10px;
+}
+
+.menu a:hover {
+    background-color: #5593C9;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Bottone per il menu toggle (nascosto su desktop) */
+.menu-toggle {
+    display: none;
+}
+
+/* Stili per dispositivi mobili */
+@media (max-width: 768px) {
+    .menu {
+        display: none; /* Nasconde il menu su mobile */
+        flex-direction: column;
+        background-color: #f8f8f8;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 10px 0;
+        z-index: 1000;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .menu.show {
+        display: flex; /* Mostra il menu quando attivato */
+    }
+
+    .menu-toggle {
+        display: block; /* Mostra il bottone su mobile */
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .menu li {
+        margin-left: 0;
+        text-align: center;
+        padding: 10px 0;
+    }
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Evita lo scrolling orizzontale */
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Riduce la dimensione del font per dispositivi piccoli */
+    }
+}
+
+
+#intro-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 20px;
+}
+
+.text-container {
+    flex: 1 1 60%;
+}
+
+.svg-container {
+    flex: 1 1 40%;
+    max-width: 400px;
+}
+
+@media (max-width: 768px) {
+    #intro-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .svg-container {
+        margin: 20px 0;
+    }
+}
+#cards-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card-container .card {
+    width: calc(33.33% - 20px);
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .card-container .card {
+        width: calc(50% - 20px); /* Due colonne su tablet */
+    }
+}
+
+@media (max-width: 480px) {
+    .card-container .card {
+        width: 100%; /* Una colonna su dispositivi piccoli */
+    }
+}
+.search-bar-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.search-bar-container input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+}
+
+.search-bar-container button {
+    width: auto;
+    padding: 12px;
+    font-size: 16px;
+}
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
