@@ -473,21 +473,56 @@ footer img {
     }
 }
 .timeline-container {
-    width: 100%; /* Adatta la larghezza */
-    padding: 20px; /* Margine interno */
-    overflow-x: scroll; /* Consente lo scorrimento orizzontale */
+    overflow-x: auto; /* Consente lo scorrimento orizzontale */
+    white-space: nowrap; /* Impedisce il wrapping dei contenuti */
+    padding: 10px 0;
+    width: 100%; /* Adatta alla larghezza dello schermo */
+    box-sizing: border-box;
+}
+
+.timeline ul {
+    display: flex; /* Layout orizzontale */
+    padding: 0;
+    margin: 0 auto;
+    width: fit-content; /* Adatta alla lunghezza della timeline */
+}
+
+.timeline ul li {
+    font-size: 14px; /* Riduce la dimensione del testo */
+    margin-right: 20px; /* Spaziatura ridotta */
+}
+
+.timeline ul li.small {
+    margin-right: 15px; /* Spaziatura minore per piccoli separatori */
+}
+
+.timeline ul li.big {
+    font-size: 18px; /* Separatori grandi con dimensione maggiore */
+    margin-right: 30px;
+}
+
+.event-point {
+    width: 16px; /* Riduce le dimensioni */
+    height: 16px;
+    top: -20px;
 }
 
 @media (max-width: 768px) {
-    .timeline ul {
-        margin: 0; /* Rimuove margini inutili */
+    .timeline-container {
+        padding: 10px; /* Margini ridotti */
     }
 
     .timeline ul li {
-        font-size: 14px; /* Riduce la dimensione del testo */
-        margin-right: 20px; /* Spaziatura ridotta tra elementi */
+        font-size: 12px; /* Dimensione del testo ancora più piccola */
+        margin-right: 10px; /* Riduce ulteriormente la spaziatura */
+    }
+
+    .event-point {
+        width: 12px; /* Punto evento più piccolo */
+        height: 12px;
     }
 }
+
 .carousel-card {
     width: 90%; /* Occupa quasi tutta la larghezza */
     height: auto; /* Altezza automatica */
@@ -509,5 +544,66 @@ footer img {
     .footer-left,
     .footer-right {
         flex: 1 1 100%; /* Gli elementi occupano tutta la larghezza */
+    }
+}
+
+.section-title {
+    font-size: 32px; /* Dimensione normale */
+    text-align: left;
+    margin-left: 120px;
+    margin-right: 120px; /* Per dispositivi più larghi */
+    padding-top: 20px;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 1024px) {
+    .section-title {
+        font-size: 28px; /* Dimensione leggermente ridotta */
+        margin-left: 40px; /* Margini più stretti */
+        margin-right: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 24px; /* Dimensione per dispositivi mobili */
+        margin-left: 20px;
+        margin-right: 20px;
+        text-align: center; /* Centra il testo su dispositivi più piccoli */
+    }
+}
+
+.legend-container {
+    display: flex;
+    flex-wrap: wrap; /* Consente ai simboli di andare a capo */
+    gap: 15px; /* Riduce lo spazio tra gli elementi */
+    justify-content: center; /* Centra gli elementi */
+    margin: 20px auto; /* Centra la legenda */
+    padding-left: 10px; /* Margini minimi per mobile */
+    padding-right: 10px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Spazio tra simbolo e testo */
+}
+
+.legend-circle {
+    width: 16px; /* Riduce le dimensioni del cerchio */
+    height: 16px;
+}
+
+.legend-label {
+    font-size: 14px; /* Dimensione più piccola per il testo */
+}
+
+@media (max-width: 768px) {
+    .legend-container {
+        gap: 10px; /* Spaziatura ancora minore su smartphone */
+    }
+
+    .legend-label {
+        font-size: 12px; /* Dimensione ancora più piccola per il testo */
     }
 }
