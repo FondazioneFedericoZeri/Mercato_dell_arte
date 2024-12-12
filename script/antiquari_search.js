@@ -233,6 +233,53 @@ $(document).ready(function(){
 
 });
 
+/**
+ * performSearch accetta un valore che utilizzerà per la ricerca nel json delle entità.
+ * 
+ * Per compatibilità, cerca nei valori del json quelli corrispondenti, poi li invia alla sort. se non c'è valore alla ricerca: chiama la sort normalmente.
+ * questo mantiene la compatibilità con la maggior parte del codice precedente della funzione sort.
+ */
+var performSearch = function (searchValue = "") {
+
+    if (searchValue) {
+        const searchValue_lw = searchValue.toLowerCase(); // lowercase per rendere la ricerca case insensitive
+
+        const filteredEntities = {}; // variabile per contenere le entità corrispondenti alla ricerca utente 
+
+        for (const [key, entita] of Object.entries(entities_json)) {
+
+            let searchValues = []; // prepara contenitore con i valori su cui cercare
+
+            // --- nome 
+            searchValues.push(entita['Nome']);
+
+            // --- città
+            const persone = entita.Persone || {};     // estrae persone. se persone non esiste crea object vuoto (così il sistema non crasha e va avanti)
+
+            for (const persona of Object.values(persone)) {
+                const luoghi = persona.ID_luoghi || {};
+
+                for (const luogo of Object.values(luoghi)) {
+                    const citta = luogo['Città'];
+                    searchValues.push(citta);
+                }
+            }
+
+            if (searchValues.some((str) => str.toLowerCase().includes(searchValue_lw))) {
+                // se quindi c'è almeno una volta una sottostringa identica alla ricerca utente:
+
+                filteredEntities[key] = entita;        // salvo l'entità intera
+            }
+        }
+
+        sort_alphabetically(filteredEntities);  // invia la lista modificata di entità alla funzione
+
+    } else {
+        sort_alphabetically();  // la funzione non riceve la lista modificata e dovrebbe utilizzare la lista originale
+    }
+};
+
+
 
 
 
