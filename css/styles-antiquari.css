@@ -604,6 +604,27 @@ body {
         margin: 10px 0;
     }
 }
+
+.card-container .card img {
+    width: 100%; /* Adatta l'immagine alla larghezza del contenitore */
+    height: 100%; /* Assicura che l'immagine riempia completamente l'altezza */
+    object-fit: cover; /* Mantiene il rapporto d'aspetto e ritaglia l'eccesso */
+    object-position: center; /* Centra l'immagine nel contenitore */
+    display: block; /* Evita spazi indesiderati intorno all'immagine */
+}
+
+@media (max-width: 768px) {
+    .card-container .card {
+        width: 90%; /* Le card occupano quasi tutta la larghezza */
+        height: auto; /* Adatta l'altezza al contenuto */
+        margin: 10px auto; /* Centra le card con margini */
+    }
+
+    .card-container .card img {
+        height: 200px; /* Altezza specifica per le immagini su mobile */
+    }
+}
+
 @media (max-width: 768px) {
     footer {
         flex-direction: column;
