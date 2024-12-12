@@ -552,6 +552,9 @@ footer img {
         .slider-container {
              display: none; /* Nasconde l'intera galleria su dispositivi mobili */
         }
+        .img {
+            display: none; /* Nasconde l'intera galleria su dispositivi mobili */
+       }
     }
     
 }
@@ -572,6 +575,8 @@ footer img {
         width: 100%; /* Contenuto si adatta alla larghezza del dispositivo */
         margin: 10px 0;
         padding: 15px;
+        margin-left: 15px;
+        margin-right: 15px;
     }
 
     .tab {
