@@ -541,6 +541,11 @@ body {
     }
 }
 
+/* Nascondi il menu toggle su desktop */
+.menu-toggle {
+    display: none; /* Il pulsante non è visibile su desktop */
+}
+
 /*intro section*/
 @media (max-width: 768px) {
     #intro-section {
@@ -557,7 +562,7 @@ body {
 
     .svg-container {
         margin: 0 auto;
-        max-width: 300px;
+        max-width: 200px;
     }
 
     .search-bar-container {
@@ -604,16 +609,6 @@ body {
         margin: 10px 0;
     }
 }
-
-@media (max-width: 768px) {
-
-
-    .card-container .card img {
-        max-height: 150px; /* Altezza massima ridotta per schermi piccoli */
-        max-width: 100px;
-    }
-}
-
 
 
 
