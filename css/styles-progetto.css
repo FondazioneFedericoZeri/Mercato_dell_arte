@@ -418,15 +418,46 @@ footer img {
 /*responsive*/
 /* Versione mobile */
 @media (max-width: 768px) {
-    /* Nascondi le immagini */
     .left-column,
     .image-container,
+    .svg-container,
     .quote-mark-left,
     .quote-mark-right,
-    .large-letter,
-    .svg-container {
-        display: none;
+    .large-letter {
+        display: none; /* Nasconde le immagini e decorazioni */
     }
+}
+/* Nascondi il menu toggle su desktop */
+.menu-toggle {
+    display: none;
+}
+
+/* Mostra il menu toggle solo su dispositivi mobili */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        font-size: 24px;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+}
+p {
+    font-size: 18px; /* Dimensione del font */
+    line-height: 1.5; /* Spazio tra le righe */
+    color: #666; /* Colore del testo */
+    text-align: justify; /* Allinea il testo per una migliore leggibilità */
+    margin-bottom: 20px; /* Spazio inferiore */
+}
+
+@media (max-width: 768px) {
+    p {
+        font-size: 16px; /* Font più piccolo per schermi piccoli */
+        margin-bottom: 15px; /* Spazio più contenuto */
+    }
+}
+
+
 
     /* Rendi il layout lineare */
     .columns-container {
