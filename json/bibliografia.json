@@ -197,6 +197,24 @@
         "Pagine": "pp. 154-178",
         "Tipologia": "articolo di monografia"
     },
+    "B_21_2": {
+        "ID": "B_21_2",
+        "Autore": "Budd, D.M., Catterson, L. (Ed.)",
+        "Anno": "2023",
+        "Titolo": "Italy for sale: alternative objects, alternative markets",
+        "Città, editore o rivista": "Leiden Boston, Brill",
+        "Pagine": "",
+        "Tipologia": "monografia"
+    },
+    "B_21_3": {
+        "ID": "B_21_3",
+        "Autore": "Calzini, R.",
+        "Anno": "1946",
+        "Titolo": "Milano fin de siècle",
+        "Città, editore o rivista": "Milano, Hoepli, 1946",
+        "Pagine": "pp. 111-113",
+        "Tipologia": "monografia"
+    },
     "B_22": {
         "ID": "B_22",
         "Autore": "Caneva, C., Colle, E., Paolucci, A., Papi, A., & Galleria degli Uffizi",
@@ -222,6 +240,24 @@
         "Titolo": "Trading Old Masters in Florence 1890-1914 : heritage protection and the Florentine art trade in post-unification Italy",
         "Città, editore o rivista": "In «Journal of the history of collections»,  vol. 31, 2",
         "Pagine": "pp. 363-371",
+        "Tipologia": "articolo di periodico"
+    },
+    "B_24_2": {
+        "ID": "B_24_2",
+        "Autore": "Carletti, L., Giometti, C.",
+        "Anno": "2016",
+        "Titolo": "Raffaello on the road. Rinascimento e propaganda fascista in America  ",
+        "Città, editore o rivista": "Roma, Carocci, 1938-40",
+        "Pagine": "",
+        "Tipologia": "monografia"
+    },
+    "B_24_3": {
+        "ID": "B_24_3",
+        "Autore": "Carotti, G.",
+        "Anno": "1905",
+        "Titolo": "Una nuova raccolta di opere d'arte",
+        "Città, editore o rivista": "In «L’Arte», VIII, 1905",
+        "Pagine": "pp. 50-52",
         "Tipologia": "articolo di periodico"
     },
     "B_25": {
@@ -259,6 +295,60 @@
         "Città, editore o rivista": "In «MDCCC 1800», 1",
         "Pagine": "pp. 33-42",
         "Tipologia": "articolo di periodico"
+    },
+    "B_28_2": {
+        "ID": "B_28_2",
+        "Autore": "Cecutti, D.",
+        "Anno": "2013",
+        "Titolo": "Una miniera inesauribile. Collezionisti e antiquari di arte islamica. L'Italia e il contesto internazionale tra Ottocento e Novecento",
+        "Città, editore o rivista": "Firenze, Maschietto Editore",
+        "Pagine": "pp. 82, 202-203, 238",
+        "Tipologia": "monografia"
+    },
+    "B_28_3": {
+        "ID": "B_28_3",
+        "Autore": "Ceriana, M.",
+        "Anno": "2004",
+        "Titolo": "Antonio Grandi",
+        "Città, editore o rivista": "in Ceriana Quattrini",
+        "Pagine": "pp. 265",
+        "Tipologia": "articolo di monografia"
+    },
+    "B_28_4": {
+        "ID": "B_28_4",
+        "Autore": "Ceriana, M.",
+        "Anno": "2004",
+        "Titolo": "Achille Cantoni",
+        "Città, editore o rivista": "In Ceriana Quattrini",
+        "Pagine": "pp. 51-52",
+        "Tipologia": "articolo di monografia"
+    },
+    "B_28_5": {
+        "ID": "B_28_5",
+        "Autore": "Ceriana, M., Quattrini, C. (Ed.)",
+        "Anno": "2004",
+        "Titolo": "Per Brera. Collezionisti e doni alla Pinacoteca dal 1882 al 2000",
+        "Città, editore o rivista": "Firenze, Centro Di",
+        "Pagine": "",
+        "Tipologia": "monografia"
+    },
+    "B_28_6": {
+        "ID": "B_28_6",
+        "Autore": "Cipriani, A., Curzi, V., Picardi, P. (Ed.)",
+        "Anno": "2014",
+        "Titolo": "Storia dell'arte come impegno civile. Scritti in onore di Marisa Dalai Emiliani",
+        "Città, editore o rivista": "Roma, Campisano",
+        "Pagine": "",
+        "Tipologia": "monografia"
+    },
+    "B_28_7": {
+        "ID": "B_28_7",
+        "Autore": "Clain-Stefanelli, E. E. ",
+        "Anno": "1985",
+        "Titolo": "Numismatic bibliography",
+        "Città, editore o rivista": "Monaco, n.3653",
+        "Pagine": "",
+        "Tipologia": "articolo di monografia"
     },
     "B_29": {
         "ID": "B_29",
@@ -305,6 +395,15 @@
         "Pagine": "pp. 177-235",
         "Tipologia": "articolo di monografia"
     },
+    "B_33_2": {
+        "ID": "B_33_2",
+        "Autore": "Colli D., Foresti, L.",
+        "Anno": "1999",
+        "Titolo": "Casa Foresti. Storia, vicende e avventure artistiche",
+        "Città, editore o rivista": "Carpi, Ed. Il Portico",
+        "Pagine": "",
+        "Tipologia": "monografia"
+    },
     "B_34": {
         "ID": "B_34",
         "Autore": "Colombi, M.",
@@ -313,6 +412,24 @@
         "Città, editore o rivista": "In «Acme», vol. 74, 2",
         "Pagine": "pp. 95-121",
         "Tipologia": "articolo di periodico"
+    },
+    "B_34_2": {
+        "ID": "B_34_2",
+        "Autore": "Colombi, M.",
+        "Anno": "2021-2022",
+        "Titolo": "Milano e il mercato dell'arte nella seconda metà dell'Ottocento. Il ruolo degli antiquari",
+        "Città, editore o rivista": "Tesi di dottorato, Università di Milano",
+        "Pagine": "",
+        "Tipologia": "monografia"
+    },
+    "B_34_3": {
+        "ID": "B_34_3",
+        "Autore": "Connors, J., Waldman, L.A. (Ed.)",
+        "Anno": "2014",
+        "Titolo": "Bernard Berenson. Formation and heritage",
+        "Città, editore o rivista": "Cambridge (MA), The Harvard University Center for Italian Renaissance ",
+        "Pagine": "",
+        "Tipologia": "monografia"
     },
     "B_35": {
         "ID": "B_35",
@@ -367,6 +484,24 @@
         "Città, editore o rivista": "In «Gazzetta antiquaria», 62, 2",
         "Pagine": "pp. 20-23",
         "Tipologia": "articolo di periodico"
+    },
+    "B_40_1": {
+        "ID": "B_40_1",
+        "Autore": "Di Lorenzo, A. ",
+        "Anno": "2002",
+        "Titolo": "Édouard e Nélie a Milano: i loro rapporti con gli antiquari, i restauratori e i collezionisti",
+        "Città, editore o rivista": "in Di Lorenzo",
+        "Pagine": "pp. 37-45",
+        "Tipologia": "articolo di monografia"
+    },
+    "B_40_2": {
+        "ID": "B_40_2",
+        "Autore": "Di Lorenzo, A. ",
+        "Anno": "2002",
+        "Titolo": "Due collezionisti alla scoperta dell’Italia. Dipinti e sculture dal museo Jacquemart-André di Parigi, catalogo della mostra (Milano 2002-2003)",
+        "Città, editore o rivista": "Cinisello Balsamo, Silvana Editoriale",
+        "Pagine": "",
+        "Tipologia": "monografia"
     },
     "B_41": {
         "ID": "B_41",
@@ -440,6 +575,15 @@
         "Pagine": "",
         "Tipologia": "monografia"
     },
+    "B_48_1": {
+        "ID": "B_48_1",
+        "Autore": "Foresti, L.",
+        "Anno": "1999",
+        "Titolo": "La cultura e il mondo di Carlo Foresti",
+        "Città, editore o rivista": "In Colli, Foresti",
+        "Pagine": "",
+        "Tipologia": "articolo di monografia"
+    },
     "B_49": {
         "ID": "B_49",
         "Autore": "Franchini Guelfi, F.",
@@ -448,6 +592,15 @@
         "Città, editore o rivista": "In Orlando",
         "Pagine": "pp. 251-256",
         "Tipologia": "articolo di monografia"
+    },
+    "B_49_1": {
+        "ID": "B_49_1",
+        "Autore": "Fuhrmeister, C., Murovec, B. (Ed.) ",
+        "Anno": "2022",
+        "Titolo": "Transfer of cultural objects in the Alpe Adria Region in the 20th century",
+        "Città, editore o rivista": "Köln Wien, Böhlau Verlag",
+        "Pagine": "",
+        "Tipologia": "monografia"
     },
     "B_50": {
         "ID": "B_50",
@@ -629,6 +782,15 @@
         "Pagine": "pp. 75-82, pp. 233-239",
         "Tipologia": "articolo di monografia"
     },
+    "B_68_1": {
+        "ID": "B_68_1",
+        "Autore": "Landi, E.",
+        "Anno": "2014",
+        "Titolo": "The antiquarian Carlo Alberto Foresti of Carpi, a correspondent of Bernard Berenson: unknown documents for the history of a dispersed collection\t",
+        "Città, editore o rivista": "In Connors, Waldman",
+        "Pagine": "pp. 309-330",
+        "Tipologia": "articolo di monografia"
+    },
     "B_69": {
         "ID": "B_69",
         "Autore": "L'Antiquario",
@@ -719,6 +881,15 @@
         "Pagine": "",
         "Tipologia": "monografia"
     },
+    "B_78_1": {
+        "ID": "B_78_1",
+        "Autore": "Malni Pascoletti, M.",
+        "Anno": "1991",
+        "Titolo": "Una delle gallerie private più interessanti del mondo intero. Note su Italico Brass collezionista",
+        "Città, editore o rivista": "In Masau Dan",
+        "Pagine": "pp. 43-52",
+        "Tipologia": "articolo di monografia"
+    },
     "B_79": {
         "ID": "B_79",
         "Autore": "Mambelli, F.",
@@ -800,6 +971,15 @@
         "Pagine": "pp. 224-235",
         "Tipologia": "articolo di periodico"
     },
+    "B_87_1": {
+        "ID": "B_87_1",
+        "Autore": "Masau Dan, M. (Ed.)",
+        "Anno": "1991",
+        "Titolo": "Italico Brass",
+        "Città, editore o rivista": "Gorizia, Electa",
+        "Pagine": "",
+        "Tipologia": "monografia"
+    },
     "B_88": {
         "ID": "B_88",
         "Autore": "Minervino, F.",
@@ -835,6 +1015,15 @@
         "Città, editore o rivista": "In Orlando",
         "Pagine": "pp. 241-250",
         "Tipologia": "articolo di monografia"
+    },
+    "B_91_1": {
+        "ID": "B_91_1",
+        "Autore": "Morandotti, A.",
+        "Anno": "2008",
+        "Titolo": "Il Collezionismo in Lombardia. Studi e Ricerche tra '600 e '800",
+        "Città, editore o rivista": "Milano, Officina Libraria",
+        "Pagine": "",
+        "Tipologia": "monografia"
     },
     "B_92": {
         "ID": "B_92",
@@ -948,7 +1137,7 @@
         "ID": "B_104",
         "Autore": "Orlando. A (Ed.)",
         "Anno": "2001",
-        "Titolo": "Genova e il collezionismo nel Novecento: studi nel centenario di Angelo Costa, 19011976",
+        "Titolo": "Genova e il collezionismo nel Novecento: studi nel centenario di Angelo Costa, 1901-1976",
         "Città, editore o rivista": "Torino, U. Allemandi",
         "Pagine": "",
         "Tipologia": "monografia"
@@ -971,6 +1160,24 @@
         "Pagine": "",
         "Tipologia": "monografia"
     },
+    "B_106_1": {
+        "ID": "B_106_1",
+        "Autore": "Pellegrini, E.",
+        "Anno": "2022",
+        "Titolo": "Göring in Italy: the Ventura case",
+        "Città, editore o rivista": "in Fuhrmeister, C., Murovec",
+        "Pagine": "pp. 145-162",
+        "Tipologia": "articolo di monografia"
+    },
+    "B_106_2": {
+        "ID": "B_106_2",
+        "Autore": "Pellegrini, E.",
+        "Anno": "2014",
+        "Titolo": "Gli scambi di opere d’arte nella politica del Ventennio. I Busti Vanchetoni per la Pietà di Palestrina e il caso Ventura-Goering",
+        "Città, editore o rivista": "In Cipriani Curzi Picardi",
+        "Pagine": "pp. 245-251",
+        "Tipologia": "articolo di monografia"
+    },
     "B_107": {
         "ID": "B_107",
         "Autore": "Piccioli, A.",
@@ -979,6 +1186,15 @@
         "Città, editore o rivista": "In «L'Antiquario», XVI, 2",
         "Pagine": "pp. 65-68",
         "Tipologia": "articolo di periodico"
+    },
+    "B_107_1": {
+        "ID": "B_107_1",
+        "Autore": "Piccolo, O.",
+        "Anno": "2008",
+        "Titolo": "La collezione dispersa: le opere Cagnola-Lattuada prima e dopo l'asta Geri del 1916",
+        "Città, editore o rivista": "Verona, Scripta Edizioni",
+        "Pagine": "",
+        "Tipologia": "monografia"
     },
     "B_108": {
         "ID": "B_108",
@@ -1034,6 +1250,15 @@
         "Pagine": "pp. 269-190",
         "Tipologia": "articolo di monografia"
     },
+    "B_113_1": {
+        "ID": "B_113_1",
+        "Autore": "Pucci, A., Bencivenni, M., de Vico, M. (Ed.)",
+        "Anno": "2017",
+        "Titolo": "I giardini di Firenze, IV, Giardini e orti privati della città",
+        "Città, editore o rivista": "Firenze, Leo S. Olschki",
+        "Pagine": "",
+        "Tipologia": "monografia"
+    },
     "B_114": {
         "ID": "B_114",
         "Autore": "Rafa, A.",
@@ -1070,6 +1295,15 @@
         "Pagine": "p. 116",
         "Tipologia": "monografia"
     },
+    "B_117_1": {
+        "ID": "B_117_1",
+        "Autore": "Riccomini, M.",
+        "Anno": "2021",
+        "Titolo": "Adriano Cera",
+        "Città, editore o rivista": "In «Gazzetta Antiquaria», 7 gennaio 2021",
+        "Pagine": "",
+        "Tipologia": "articolo di periodico"
+    },
     "B_118": {
         "ID": "B_118",
         "Autore": "Rizzo, R.",
@@ -1097,6 +1331,15 @@
         "Pagine": "pp. 22-25\t ",
         "Tipologia": "articolo di monografia"
     },
+    "B_119_3": {
+        "ID": "B_119_3",
+        "Autore": "Rowlands, E.W.",
+        "Anno": "2023",
+        "Titolo": "Here, There, and Everywhere': Harold Parsons, the Italian Market and a Letter of 1948",
+        "Città, editore o rivista": "In Budd, Catterson",
+        "Pagine": "pp. 329-407",
+        "Tipologia": "articolo di monografia"
+    },
     "B_120": {
         "ID": "B_120",
         "Autore": "Sambo, E.",
@@ -1115,6 +1358,15 @@
         "Pagine": "pp. 94-107, 301-302",
         "Tipologia": "articolo di periodico"
     },
+    "B_121_1": {
+        "ID": "B_121_1",
+        "Autore": "Sambon G.",
+        "Anno": "1887",
+        "Titolo": "Catalogo delle monete italiane medioevali e moderne, monete estere, monete romane consolari ed imperiali, monete greche e medaglie componenti la collezione del sig. Achille Cantoni di Milano, Milano 25 aprile 1887",
+        "Città, editore o rivista": "Milano 1887",
+        "Pagine": "",
+        "Tipologia": "catalogo d'asta"
+    },
     "B_122": {
         "ID": "B_122",
         "Autore": "Sanvitale, F.",
@@ -1124,6 +1376,24 @@
         "Pagine": "",
         "Tipologia": "monografia"
     },
+    "B_122_1": {
+        "ID": "B_122_1",
+        "Autore": "Santamaria P. & P. ",
+        "Anno": "1920",
+        "Titolo": "Catalogo delle monete di zecche italiane componenti la raccolta di un distinto raccoglitore defunto, in vendita all’asta pubblica, Roma 26 aprile 1920",
+        "Città, editore o rivista": "Roma 1920",
+        "Pagine": "",
+        "Tipologia": "catalogo d'asta"
+    },
+    "B_122_2": {
+        "ID": "B_122_2",
+        "Autore": "Santamaria P. & P. ",
+        "Anno": "1920",
+        "Titolo": "Médailles romaines, aes grave, composant la collection d’un amateur décédé, Roma 29 novembre 1920",
+        "Città, editore o rivista": "Roma 1920",
+        "Pagine": "",
+        "Tipologia": "catalogo d'asta"
+    },
     "B_123": {
         "ID": "B_123",
         "Autore": "Scarpa, P.",
@@ -1132,6 +1402,15 @@
         "Città, editore o rivista": "In «L'Antiquario», XVI, 2",
         "Pagine": "pp. 69-71",
         "Tipologia": "articolo di periodico"
+    },
+    "B_123_1": {
+        "ID": "B_123_1",
+        "Autore": "Sciltian, G.",
+        "Anno": "1963",
+        "Titolo": "Mia aventura",
+        "Città, editore o rivista": "Milano, Rizzoli",
+        "Pagine": "",
+        "Tipologia": "monografia"
     },
     "B_124": {
         "ID": "B_124",
@@ -1412,6 +1691,15 @@
         "Pagine": "pp. 270-275",
         "Tipologia": "articolo di monografia"
     },
+    "B_154_1": {
+        "ID": "B_154_1",
+        "Autore": "Zaru, C.",
+        "Anno": "2022",
+        "Titolo": "L'affare Ventura: antiquari e collaborazionisti intorno alla seconda guerra mondiale. Una ricerca ispirata ai documenti dell’Archivio Siviero",
+        "Città, editore o rivista": "In «Contesti d'arte», anno 2, numero 2 (2022)",
+        "Pagine": "pp. 179-199",
+        "Tipologia": "articolo di periodico"
+    },
     "B_155": {
         "ID": "B_155",
         "Autore": "Zavatta, G.",
@@ -1420,6 +1708,15 @@
         "Città, editore o rivista": "In Imbelloni",
         "Pagine": "pp. 54-64",
         "Tipologia": "articolo di monografia"
+    },
+    "B_155_1": {
+        "ID": "B_155_1",
+        "Autore": "Zeri, F.",
+        "Anno": "1986",
+        "Titolo": "Una sala Alitalia ad Assisi nel sacro Convento. Le 57 opere più belle della collezione Mason Perkins",
+        "Città, editore o rivista": "In «Il Giornale dell'Arte», numero 37 (1986)",
+        "Pagine": "p. 16",
+        "Tipologia": "articolo di periodico"
     },
     "B_156": {
         "ID": "B_156",
@@ -1430,10 +1727,19 @@
         "Pagine": "",
         "Tipologia": "monografia"
     },
+    "B_156_1": {
+        "ID": "B_156_1",
+        "Autore": "Zorzi, E.",
+        "Anno": "1934",
+        "Titolo": "L'arte italiana in America",
+        "Città, editore o rivista": "In «Gazzetta di Venezia», 3 febbraio 1934",
+        "Pagine": "",
+        "Tipologia": "articolo di periodico"
+    },
     "B_157": {
         "ID": "B_157",
-        "Autore": "",
-        "Anno": "",
+        "Autore": "Sacchi Lodispoto, T., Spinazzè, S. (Ed.)",
+        "Anno": "2019",
         "Titolo": "Attilio Simonetti (1843-1925) : pittore alla moda e antiquario a Roma, catalogo della mostra (Galleria Berardi, Roma, 24 gennaio - 23 febbraio 2019) a cura di Sacchi Ladispoto, T., Spinazzé, S.",
         "Città, editore o rivista": "Roma, Berardi Galleria d'Arte, 2019",
         "Pagine": "",
@@ -1444,177 +1750,168 @@
         "Autore": "",
         "Anno": "",
         "Titolo": "Al Palazzo Davanzati",
-        "Città, editore o rivista": "In «L'Antiquario», III, 1-2, 1910",
+        "Città, editore o rivista": "In Â«L'AntiquarioÂ», III, 1-2, 1910",
         "Pagine": "pp. 1-2",
         "Tipologia": "articolo di periodico"
     },
     "B_159": {
         "ID": "B_159",
-        "Autore": "",
-        "Anno": "",
-        "Titolo": "An important collection of rare and valuable antiquities, gothic and renaissance furniture, important italian renaissance bronzes, stone and marble sculptures, primitive paintings and early wood carvings, rare greek and graecoroman sculptures and pottery, gathered from famous european collections by the late Ercole Canessa, expert antiquarian and expert at hotel Druout, Paris, catalogo della vendita American Art Association (New York, 29 marzo 1930)",
-        "Città, editore o rivista": "New York 1930",
+        "Autore": "American Art Association, Anderson Galleries, Canessa, Ercole",
+        "Anno": "1930",
+        "Titolo": "An important collection of rare and valuable antiquities, gothic and renaissance furniture, important italian renaissance bronzes, stone and marble sculptures, primitive paintings and early wood carvings, rare greek and graecoroman sculptures and pottery, gathered from famous european collections by the late Ercole Canessa, expert antiquarian and expert at hotel Druout, Paris, catalogo della vendita American Art Association (New York, 29 marzo 1930).",
+        "Città, editore o rivista": "New York 1930.",
         "Pagine": "",
         "Tipologia": "catalogo d'asta"
     },
     "B_160": {
         "ID": "B_160",
-        "Autore": "",
-        "Anno": "",
-        "Titolo": "Arredi e dipinti Ca’ Sagredo venezia, catalogo della vendita all'asta Finarte (Venezia, 28-29 novembre 1987)",
-        "Città, editore o rivista": "Venezia 1987",
+        "Autore": "Finarte",
+        "Anno": "1987",
+        "Titolo": "Arredi e dipinti, Ca’ Sagredo, Venezia, catalogo della vendita all'asta Finarte (Venezia, 28-29 novembre 1987).",
+        "Città, editore o rivista": "Venezia 1987.",
         "Pagine": "",
         "Tipologia": "catalogo d'asta"
     },
     "B_161": {
         "ID": "B_161",
         "Autore": "",
-        "Anno": "",
-        "Titolo": "Borrowed to Buy  Art Tresures Then Mortgaged Them To Buy More",
+        "Anno": "1925",
+        "Titolo": "Borrowed to Buy Art Tresures Then Mortgaged Them To Buy More.",
         "Città, editore o rivista": "In «The New York Herald», 1 novembre 1925",
         "Pagine": "p. 7",
         "Tipologia": "articolo di periodico"
     },
     "B_162": {
         "ID": "B_162",
-        "Autore": "",
-        "Anno": "",
-        "Titolo": "Catalogo degli oggetti già appartenenti all’Antiquario Pallotti,  arte e ammobiliamento antico, quadri, sculture, mobili, arazzi, stoffe, trine, porcellane, maioliche, bronzi, argenteria, cornici, tappeti, ecc, ecc, catalogo della vendita all'asta, (Firenze, 23 novembre-1 dicembre 1936)",
-        "Città, editore o rivista": "Firenze 1936",
+        "Autore": "Galleria Ciardiello",
+        "Anno": "1936",
+        "Titolo": "Catalogo degli oggetti già appartenenti all’Antiquario Pallotti, arte e ammobiliamento antico, quadri, sculture, mobili, arazzi, stoffe, trine, porcellane, maioliche, bronzi, argenteria, cornici, tappeti, ecc, ecc, catalogo della vendita all'asta Ciardiello, (Firenze, 23 novembre-1 dicembre 1936).",
+        "Città, editore o rivista": "Firenze 1936.",
         "Pagine": "",
         "Tipologia": "catalogo d'asta"
     },
     "B_163": {
         "ID": "B_163",
-        "Autore": "",
-        "Anno": "",
-        "Titolo": "Catalogo dei mobili ed oggetti d'arte antichi componenti la collezione appartenuta al compianto comm. Gustavo Corvisieri dei mobili antichi e moderni che arredavano due appartamenti e di altri numerosi oggetti d'arte, catalogo della vendita all'asta Galleria L'Antonina (Roma, 25 marzo-9 aprile 1936), Roma, Quintiily",
-        "Città, editore o rivista": "Roma 1936",
+        "Autore": "Galleria L'Antonina",
+        "Anno": "1936",
+        "Titolo": "Catalogo dei mobili ed oggetti d'arte antichi componenti la collezione appartenuta al compianto comm. Gustavo Corvisieri dei mobili antichi e moderni che arredavano due appartamenti e di altri numerosi oggetti d'arte, catalogo della vendita all'asta Galleria L'Antonina (Roma, 25 marzo-9 aprile 1936), Roma, Quintiily.",
+        "Città, editore o rivista": "Roma 1936.",
         "Pagine": "",
         "Tipologia": "catalogo d'asta"
     },
     "B_164": {
         "ID": "B_164",
-        "Autore": "",
-        "Anno": "",
-        "Titolo": "Catalogo dei pregevoli oggetti d’arte antichi e moderni di pertinenza del defunto sig. Antonio Jandolo e di un distinto collezionista, catalogo della vendita all'asta Jandolo & Tavazzi",
-        "Città, editore o rivista": "Roma 1912",
+        "Autore": "Jandolo & Tavazzi",
+        "Anno": "1912",
+        "Titolo": "Catalogo dei pregevoli oggetti d’arte antichi e moderni di pertinenza del defunto sig. Antonio Jandolo e di un distinto collezionista, catalogo della vendita all'asta Jandolo & Tavazzi.",
+        "Città, editore o rivista": "Roma 1912.",
         "Pagine": "",
         "Tipologia": "catalogo d'asta"
     },
     "B_165": {
         "ID": "B_165",
-        "Autore": "",
-        "Anno": "",
-        "Titolo": "Catalogo della collezione d'arte antica di proprietà Edoardo Villa & C., catalogo della vendita all'asta Vitelli (Genova, 15-22 dicembre 1923)",
-        "Città, editore o rivista": "Genova 1932",
+        "Autore": "Galleria d'arte Vitelli",
+        "Anno": "1932",
+        "Titolo": "Catalogo della collezione d'arte antica di proprietà Edoardo Villa & C., catalogo della vendita all'asta Vitelli (Genova, 15-22 dicembre 1923).",
+        "Città, editore o rivista": "Genova 1932.",
         "Pagine": "",
         "Tipologia": "catalogo d'asta"
     },
     "B_166": {
         "ID": "B_166",
-        "Autore": "",
-        "Anno": "",
-        "Titolo": "Catalogo della collezione Baslini de Milano da vendersi per conto degli eredi. Quadri, avori, medaglie, placchette, armi, bronzi, ferri, maioliche, porcellano, oggetti d’arte, marmi, terre cotte, arazzi, stoffe, merletti, mobili diversi, catalogo della vendita all'asta Impresa di Vendite in Italia Giulio Sambon (Milano, 26 Novembre 1888 e giorni successivi)",
-        "Città, editore o rivista": "Milano 1888",
+        "Autore": "Giulio Sambon",
+        "Anno": "1888",
+        "Titolo": "Catalogo della collezione Baslini de Milano da vendersi per conto degli eredi. Quadri, avori, medaglie, placchette, armi, bronzi, ferri, maioliche, porcellano, oggetti d’arte, marmi, terre cotte, arazzi, stoffe, merletti, mobili diversi, catalogo della vendita all'asta Impresa di Vendite in Italia Giulio Sambon (Milano, 26 Novembre 1888 e giorni successivi).",
+        "Città, editore o rivista": "Milano 1888.",
         "Pagine": "",
         "Tipologia": "catalogo d'asta"
     },
     "B_167": {
         "ID": "B_167",
-        "Autore": "",
-        "Anno": "",
-        "Titolo": "Catalogo della collezione De Clemente, oggetti di sola arte antica, quadri, sculture, bronzi, mobili, maioliche italiane, ecc., ecc, catalogo della vendita all'asta Ciardiello (Firenze, 29 aprile-3 maggio 1935)",
-        "Città, editore o rivista": "Firenze 1935",
+        "Autore": "Galleria Ciardiello",
+        "Anno": "1935",
+        "Titolo": "Catalogo della collezione De Clemente, oggetti di sola arte antica, quadri, sculture, bronzi, mobili, maioliche italiane, ecc., ecc, catalogo della vendita all'asta Ciardiello (Firenze, 29 aprile-3 maggio 1935).",
+        "Città, editore o rivista": "Firenze 1935.",
         "Pagine": "",
         "Tipologia": "catalogo d'asta"
     },
     "B_168": {
         "ID": "B_168",
-        "Autore": "",
-        "Anno": "",
-        "Titolo": "Catalogo della raccolta di arte antica appartenente al noto Antiquario Enrico Testa che viene venduta all’Asta Pubblica per definitivo ritiro dal commercio, catalogo della vendita all'asta Ciardiello (Firenze, 23 maggio-1 giugno 1932)",
-        "Città, editore o rivista": "Firenze 1932",
+        "Autore": "Galleria Ciardiello",
+        "Anno": "1932",
+        "Titolo": "Catalogo della raccolta di arte antica appartenente al noto Antiquario Enrico Testa che viene venduta all’Asta Pubblica per definitivo ritiro dal commercio, catalogo della vendita all'asta Ciardiello (Firenze, 23 maggio-1 giugno 1932).",
+        "Città, editore o rivista": "Firenze 1932.",
         "Pagine": "",
         "Tipologia": "catalogo d'asta"
     },
     "B_169": {
         "ID": "B_169",
-        "Autore": "",
-        "Anno": "",
-        "Titolo": "Catalogo della vendita di Arte Antica di proprietà del sig. L. M. Banti: mobili originali dal XV al XVII scolo. Quadri fondi oro, sculture classiche, terrecotte, stucchi, bronzi, maioliche, tre arazzi, stoffe, catalogo della vendita all'asta Galardelli (Firenze 14-16 aprile 1926)",
-        "Città, editore o rivista": "Firenze 1926",
+        "Autore": "Impresa vendite Cesare Galardelli",
+        "Anno": "1926",
+        "Titolo": "Catalogo della vendita di Arte Antica di proprietà del sig. L. M. Banti: mobili originali dal XV al XVII scolo. Quadri fondi oro, sculture classiche, terrecotte, stucchi, bronzi, maioliche, tre arazzi, stoffe, catalogo della vendita all'asta Galardelli (Firenze 14-16 aprile 1926).",
+        "Città, editore o rivista": "Firenze 1926.",
         "Pagine": "",
         "Tipologia": "catalogo d'asta"
     },
     "B_170": {
         "ID": "B_170",
-        "Autore": "",
-        "Anno": "",
-        "Titolo": "Catalogo delle raccolte d'arte ed arredamento antico dell'antiquario Pasquale Addeo, catalogo della vendita all'asta Guglielmi (Roma, 22-24 febbraio 1938)",
-        "Città, editore o rivista": "Roma 1938",
+        "Autore": "Casa di vendite Guglielmi",
+        "Anno": "1938",
+        "Titolo": "Catalogo delle raccolte d'arte ed arredamento antico dell'antiquario Pasquale Addeo, catalogo della vendita all'asta Guglielmi (Roma, 22-24 febbraio 1938).",
+        "Città, editore o rivista": "Roma 1938.",
         "Pagine": "",
         "Tipologia": "catalogo d'asta"
     },
     "B_171": {
         "ID": "B_171",
-        "Autore": "",
-        "Anno": "",
-        "Titolo": "Catalogo di quanto viene venduto dal Palazzo Internazionale delle Aste ed Esposizioni : Firenze, per ordine di Eredi Giugni, comprendente: mobili, quadri, sculture, arazzi, tappeti, maioliche, porcellane ed oggetti dal XIV al XIX secolo, catalogo della vendita all'asta Palazzo Internazionale, Firenze, 17-19 ottobre 1970)",
-        "Città, editore o rivista": "Bologna 1970",
+        "Autore": "Eredi Giugni",
+        "Anno": "1970",
+        "Titolo": "Catalogo di quanto viene venduto dal Palazzo Internazionale delle Aste ed Esposizioni : Firenze, per ordine di Eredi Giugni, comprendente: mobili, quadri, sculture, arazzi, tappeti, maioliche, porcellane ed oggetti dal XIV al XIX secolo, catalogo della vendita all'asta Palazzo Internazionale, Firenze, 17-19 ottobre 1970).",
+        "Città, editore o rivista": "Bologna 1970.",
         "Pagine": "",
         "Tipologia": "catalogo d'asta"
     },
     "B_172": {
         "ID": "B_172",
-        "Autore": "",
-        "Anno": "",
-        "Titolo": "Catalogue de la riche collection d'armes du Moyen Age et de la Renaissance et de rares objets d'art anciens et modernes appartenant a la liquidation du patrimoine de le baron M. A. Lazzaroni, dont la vente aux encheres publiques aura lieu a Rome sous la direction de M. Dominique Corvisieri Rome Impr. Edit. Romana, 1894",
-        "Città, editore o rivista": "Roma 1894",
-        "Pagine": "",
-        "Tipologia": "catalogo d'asta"
-    },
-    "B_173": {
-        "ID": "B_173",
-        "Autore": "",
-        "Anno": "",
-        "Titolo": "Catalogue de la riche collection d'armes du Moyen Age et de la Renaissance et de rares objets d'art anciens et modernes appartenant a la liquidation du patrimoine de le baron M. A. Lazzaroni, dont la vente aux encheres publiques aura lieu a Rome sous la direction de M. Dominique Corvisieri Rome Impr. Edit. Romana",
-        "Città, editore o rivista": "Roma 1894",
+        "Autore": "Domenico Corvisieri",
+        "Anno": "1894",
+        "Titolo": "Catalogue de la riche collection d'armes du Moyen Age et de la Renaissance et de rares objets d'art anciens et modernes appartenant a la liquidation du patrimoine de le baron M. A. Lazzaroni, dont la vente aux encheres publiques aura lieu a Rome sous la direction de M. Dominique Corvisieri Rome Impr. Edit. Romana, 1894.",
+        "Città, editore o rivista": "Roma 1894.",
         "Pagine": "",
         "Tipologia": "catalogo d'asta"
     },
     "B_174": {
         "ID": "B_174",
-        "Autore": "",
-        "Anno": "",
-        "Titolo": "Catalogue de la vente après décès de mr Joachim Ferroni?: se composant de tableaux des maîtres italiens et étrangers, catalogo della vendita all'asta  Jandolo & Tavazzi (Roma, 14-22 aprile 1909)",
-        "Città, editore o rivista": "Roma 1909",
+        "Autore": "Jandolo & Tavazzi, Galleria Sangiorgi",
+        "Anno": "1909",
+        "Titolo": "Catalogue de la vente après décès de mr Joachim Ferroni?: se composant de tableaux des maîtres italiens et étrangers, catalogo della vendita all'asta  Jandolo & Tavazzi (Roma, 14-22 aprile 1909).",
+        "Città, editore o rivista": "Roma 1909.",
         "Pagine": "",
         "Tipologia": "catalogo d'asta"
     },
     "B_175": {
         "ID": "B_175",
-        "Autore": "",
-        "Anno": "",
-        "Titolo": "Catalogue de la vente des objets d’art ancien composant les collections Elie Volpi, catalogo della vendita all'asta Jandolo & Tavazzi (Roma 25 aprile-3 maggio 1910)",
-        "Città, editore o rivista": "Roma 1910",
+        "Autore": "Jandolo & Tavazzi",
+        "Anno": "1910",
+        "Titolo": "Catalogue de la vente des objets d’art ancien composant les collections Elie Volpi, catalogo della vendita all'asta Jandolo & Tavazzi (Roma 25 aprile-3 maggio 1910).",
+        "Città, editore o rivista": "Roma 1910.",
         "Pagine": "",
         "Tipologia": "catalogo d'asta"
     },
     "B_176": {
         "ID": "B_176",
-        "Autore": "",
-        "Anno": "",
+        "Autore": "Clarke, A.W., Freund, K. (Ed.)",
+        "Anno": "1922",
         "Titolo": "Catalogue of the Rare and Valuable Collection Formed by the Widely Known and Eminent Expert and Connoisseur Chev. Raoul Tolentino: Removed from His Galleries at No. 57, Via Sistina, Rome, catalogo della vendita all'asta Clarke  (New York, 42 and 44 East 58th Street,  18-25 novembre 1922), a cura di Freund, K., Clarke, A. W.",
-        "Città, editore o rivista": "New York, 1922",
+        "Città, editore o rivista": "New York, 1922.",
         "Pagine": "",
         "Tipologia": "catalogo d'asta"
     },
     "B_177": {
         "ID": "B_177",
         "Autore": "",
-        "Anno": "",
-        "Titolo": "Coming italian art sale",
+        "Anno": "1919",
+        "Titolo": "Coming italian art sale. Raoul Tolentino",
         "Città, editore o rivista": "In «American Art News», 12 luglio 1919, 17, n. 36",
         "Pagine": "p. 5",
         "Tipologia": "articolo di periodico"
@@ -1622,8 +1919,8 @@
     "B_178": {
         "ID": "B_178",
         "Autore": "",
-        "Anno": "",
-        "Titolo": "Coming italian art sale",
+        "Anno": "1920",
+        "Titolo": "Coming italian art sale. Raoul Tolentino",
         "Città, editore o rivista": "In «American Art News», 17 aprile 1920",
         "Pagine": "p. 9",
         "Tipologia": "articolo di periodico"
@@ -1633,7 +1930,7 @@
         "Autore": "",
         "Anno": "",
         "Titolo": "Commemorazione di Arturo Rambaldi",
-        "Città, editore o rivista": "In «L'Antiquario», XVI, 3, 1929",
+        "Città, editore o rivista": "In Â«L'AntiquarioÂ», XVI, 3, 1929",
         "Pagine": "p. 177",
         "Tipologia": "articolo di periodico"
     },
@@ -1642,7 +1939,7 @@
         "Autore": "",
         "Anno": "",
         "Titolo": "Commemorazione di Cesare Lampronti",
-        "Città, editore o rivista": "In «L'Antiquario», XVIII-XXV, 1, 1932",
+        "Città, editore o rivista": "In Â«L'AntiquarioÂ», XVIII-XXV, 1, 1932",
         "Pagine": "pp. 45-46",
         "Tipologia": "articolo di periodico"
     },
@@ -1651,7 +1948,7 @@
         "Autore": "",
         "Anno": "",
         "Titolo": "Commemorazione di Edoardo Villa",
-        "Città, editore o rivista": "In «L'Antiquario», XII, 1, 1925",
+        "Città, editore o rivista": "In Â«L'AntiquarioÂ», XII, 1, 1925",
         "Pagine": "p. 45",
         "Tipologia": "articolo di periodico"
     },
@@ -1660,51 +1957,51 @@
         "Autore": "",
         "Anno": "",
         "Titolo": "Commemorazione di Vincenzo Ciampolini",
-        "Città, editore o rivista": "In «L'Antiquario», XVIII-XXV, 1, 1932",
+        "Città, editore o rivista": "In Â«L'AntiquarioÂ», XVIII-XXV, 1, 1932",
         "Pagine": "p. 46",
         "Tipologia": "articolo di periodico"
     },
     "B_183": {
         "ID": "B_183",
-        "Autore": "",
-        "Anno": "",
-        "Titolo": "De luxe catalogue of the rare artistic properties collected by Signor Raoul Tolentino, catalogo della vendita all'asta America Art Association (New York, 21-27 aprile 1920)",
+        "Autore": "American Art Association",
+        "Anno": "1920",
+        "Titolo": "De luxe catalogue of the rare artistic properties collected by Signor Raoul Tolentino, catalogo della vendita all'asta America Art Association (New York, 21-27 aprile 1920).",
         "Città, editore o rivista": "New York 1920",
         "Pagine": "",
         "Tipologia": "catalogo d'asta"
     },
     "B_183_b": {
         "ID": "B_183_b",
-        "Autore": "",
-        "Anno": "",
+        "Autore": "Townsend, H., American Art Association",
+        "Anno": "1921",
         "Titolo": "De luxe illustrated catalogue of the extensive and very valuable artistic antique property belonging to ... Luigi Orselli.To be sold at unrestricted public sale at the American Art Galleries.Catalogue written by Horace Townsend",
-        "Città, editore o rivista": "",
+        "Città, editore o rivista": "New York 1921",
         "Pagine": "",
         "Tipologia": "catalogo d'asta"
     },
     "B_184": {
         "ID": "B_184",
-        "Autore": "",
-        "Anno": "",
-        "Titolo": "Deluxe illustrated catalogue of the furniture and works of art from the castle formerly occupied by the savoy family in verzuolo (piedmont) italy?: and other valuable artistic property recently selected abroad by the connoisseur chevalier raoul tolentino, catalogo della vendita all'asta America Art Association (New York,  16-18 febbraio 1922)",
-        "Città, editore o rivista": "New York, 1922",
+        "Autore": "American Art Association",
+        "Anno": "1922",
+        "Titolo": "Deluxe illustrated catalogue of the furniture and works of art from the castle formerly occupied by the Savoy family in Verzuolo (Piedmont) Italy and other valuable artistic property recently selected abroad by the connoisseur chevalier raoul tolentino, catalogo della vendita all'asta America Art Association (New York, 16-18 febbraio 1922).",
+        "Città, editore o rivista": "New York, 1922.",
         "Pagine": "",
         "Tipologia": "catalogo d'asta"
     },
     "B_185": {
         "ID": "B_185",
-        "Autore": "",
-        "Anno": "",
-        "Titolo": "Galleria Pesaro: storia di un mercante creatore di collezioni, catalogo della mostra (Milano, Galleria Maspes, 21 settembre-14 ottobre 2017) a cura di Staudacher, E., Madesani, A., Crocetta del Montello",
-        "Città, editore o rivista": "Milano, Antiga Edizioni, 2017",
+        "Autore": "Madesani, A., Staudacher, E. (Ed.)",
+        "Anno": "2017",
+        "Titolo": "Galleria Pesaro: storia di un mercante creatore di collezioni, catalogo della mostra (Milano, Galleria Maspes, 21 settembre-14 ottobre 2017) a cura di Staudacher, E., Madesani, A., Crocetta del Montello.",
+        "Città, editore o rivista": "Milano, Antiga Edizioni, 2017.",
         "Pagine": "",
         "Tipologia": "monografia"
     },
     "B_186": {
         "ID": "B_186",
         "Autore": "",
-        "Anno": "",
-        "Titolo": "Gr. Uff. Prof. Luigi Grassi",
+        "Anno": "1927",
+        "Titolo": "Gr. Uff. Prof. Luigi Grassi.",
         "Città, editore o rivista": "In «L'Antiquario», XIV, 2, 1927",
         "Pagine": "p. 77",
         "Tipologia": "articolo di periodico"
@@ -1712,88 +2009,88 @@
     "B_187": {
         "ID": "B_187",
         "Autore": "",
-        "Anno": "",
-        "Titolo": "I grandi antiquari italiani: Stefano Bardini",
-        "Città, editore o rivista": "In «L'Antiquario. Rivista mensile in difesa degli interessi della classe», I, 1",
+        "Anno": "1908",
+        "Titolo": "I grandi antiquari italiani: Stefano Bardini.",
+        "Città, editore o rivista": "In «L'Antiquario. Rivista mensile in difesa degli interessi della classe», I, 1, 1908",
         "Pagine": "pp. 2-3",
         "Tipologia": "articolo di periodico"
     },
     "B_188": {
         "ID": "B_188",
-        "Autore": "",
-        "Anno": "",
-        "Titolo": "Illustrated catalogue of gothic and renaissance italian and frech art gathered by chevalier Raoul Tolentino, expert antiquarian of Rome, catalogo della vendita all'asta American Art Galleries (New York, 22-26 aprile 1924)",
-        "Città, editore o rivista": "New York 1924",
+        "Autore": "American Art Association",
+        "Anno": "1924",
+        "Titolo": "Illustrated catalogue of Gothic and Renaissance Italian and French art gathered by chevalier Raoul Tolentino, expert antiquarian of Rome, catalogo della vendita all'asta American Art Galleries (New York, 22-26 aprile 1924).",
+        "Città, editore o rivista": "New York 1924.",
         "Pagine": "",
         "Tipologia": "catalogo d'asta"
     },
     "B_189": {
         "ID": "B_189",
-        "Autore": "",
-        "Anno": "",
-        "Titolo": "Illustrated catalogue of the rare and valuable Italian Renaissance furniture, bronzes, ceramics, marbles, painings and textiles, greek and romann antiquities and othes rare objects comprising the Tolentino Galleries Collection, catalogo della vendita all'asta Amrican Art Association (New York, 1-2 maggio 1919)",
-        "Città, editore o rivista": "New York 1919",
+        "Autore": "American Art Association",
+        "Anno": "1919",
+        "Titolo": "Illustrated catalogue of the rare and valuable Italian Renaissance furniture, bronzes, ceramics, marbles, painings and textiles, greek and romann antiquities and othes rare objects comprising the Tolentino Galleries Collection, catalogo della vendita all'asta American Art Association (New York, 1-2 maggio 1919).",
+        "Città, editore o rivista": "New York 1919.",
         "Pagine": "",
         "Tipologia": "catalogo d'asta"
     },
     "B_190": {
         "ID": "B_190",
-        "Autore": "",
-        "Anno": "",
-        "Titolo": "Italian art: the collection of Professor Luigi Grassi, furniture, textiles, sculpture and jewelry, catalogo della vendita all'asta American Art Association (New York, 20-22 gennaio 1927)",
-        "Città, editore o rivista": "New York 1927",
+        "Autore": "de Nicola, G., Toesca, P., American Art Association",
+        "Anno": "1927",
+        "Titolo": "Italian art: the collection of Professor Luigi Grassi, furniture, textiles, sculpture and jewelry, catalogo della vendita all'asta American Art Association (New York, 20-22 gennaio 1927).",
+        "Città, editore o rivista": "New York 1927.",
         "Pagine": "",
         "Tipologia": "catalogo d'asta"
     },
     "B_191": {
         "ID": "B_191",
         "Autore": "",
-        "Anno": "",
-        "Titolo": "Italian Count marries American society woman",
+        "Anno": "1922",
+        "Titolo": "Italian Count marries American society woman.",
         "Città, editore o rivista": "In «The New York Herald», 20 settembre 1922",
         "Pagine": "p. 1",
         "Tipologia": "articolo di periodico"
     },
     "B_192": {
         "ID": "B_192",
-        "Autore": "",
-        "Anno": "",
-        "Titolo": "Italian furniture of the Renaissance, rare Majolica, brocades, velvets, Renaissance bronzes, sculptures, stone and terra cotta groups, Primitive and Renaissance paintings, the collection of Achille De Clemente, Florence, Italy, sold by his order, catalogo della vendita all'asta American Art Association (New York, 15-17 gennaio 1931)",
-        "Città, editore o rivista": "New York, 1931",
+        "Autore": "American Art Association, Anderson Galleries",
+        "Anno": "1931",
+        "Titolo": "Italian furniture of the Renaissance, rare Majolica, brocades, velvets, Renaissance bronzes, sculptures, stone and terra cotta groups, Primitive and Renaissance paintings, the collection of Achille De Clemente, Florence, Italy, sold by his order, catalogo della vendita all'asta American Art Association (New York, 15-17 gennaio 1931).",
+        "Città, editore o rivista": "New York, 1931.",
         "Pagine": "",
         "Tipologia": "catalogo d'asta"
     },
     "B_193": {
         "ID": "B_193",
-        "Autore": "",
-        "Anno": "",
-        "Titolo": "La collezione Gallino: dipinti antichi e del XIX secolo, catalogo della vendita all'asta Wannenes (Genova, 1 giugno 2016)",
-        "Città, editore o rivista": "Genova 2016",
+        "Autore": "Wannenes",
+        "Anno": "2016",
+        "Titolo": "La collezione Gallino: dipinti antichi e del XIX secolo, catalogo della vendita all'asta Wannenes (Genova, 1 giugno 2016).",
+        "Città, editore o rivista": "Genova 2016.",
         "Pagine": "",
         "Tipologia": "catalogo d'asta"
     },
     "B_194": {
         "ID": "B_194",
         "Autore": "",
-        "Anno": "",
-        "Titolo": "La statua del Prof. Costantini",
+        "Anno": "1911",
+        "Titolo": "La statua del Prof. Costantini.",
         "Città, editore o rivista": "In «L'Antiquario. Rivista indipendente», 3-4, 1911",
         "Pagine": "pp. 28-29",
         "Tipologia": "articolo di periodico"
     },
     "B_195": {
         "ID": "B_195",
-        "Autore": "",
-        "Anno": "",
+        "Autore": "Mannini, L. (Ed.)",
+        "Anno": "2011",
         "Titolo": "Le stanze dei tesori : collezionisti e antiquari a Firenze tra Ottocento e Novecento, catalogo della mostra (Firenze, Palazzo Medici Riccardi, 3 ottobre 2011 - 15 aprile 2012), a cura di Mannini, L.",
-        "Città, editore o rivista": "Firenze, Polistampa, 2011",
+        "Città, editore o rivista": "Firenze, Polistampa, 2011.",
         "Pagine": "",
         "Tipologia": "monografia"
     },
     "B_196": {
         "ID": "B_196",
         "Autore": "",
-        "Anno": "",
+        "Anno": "1923",
         "Titolo": "Nuovi antiquari a Firenze",
         "Città, editore o rivista": "In «L'Antiquario», X, 4-5, 1923",
         "Pagine": "p. 57",
@@ -1802,162 +2099,162 @@
     "B_197": {
         "ID": "B_197",
         "Autore": "",
-        "Anno": "",
-        "Titolo": "Pietro Bruschi di Arezzo",
+        "Anno": "1927",
+        "Titolo": "Pietro Bruschi di Arezzo.",
         "Città, editore o rivista": "In «L'Antiquario», XIV, 2, 1927",
         "Pagine": "p. 83",
         "Tipologia": "articolo di periodico"
     },
     "B_198": {
         "ID": "B_198",
-        "Autore": "",
-        "Anno": "",
-        "Titolo": "Property from the estate of Giancarlo Baroni, catalogo della vendita all'asta Sotheby’s (New York, 29-30 gennaio 2013)",
-        "Città, editore o rivista": "New York 2013",
+        "Autore": "Sotheby's",
+        "Anno": "2013",
+        "Titolo": "Property from the estate of Giancarlo Baroni, catalogo della vendita all'asta Sotheby’s (New York, 29-30 gennaio 2013).",
+        "Città, editore o rivista": "New York 2013.",
         "Pagine": "",
         "Tipologia": "catalogo d'asta"
     },
     "B_199": {
         "ID": "B_199",
         "Autore": "",
-        "Anno": "",
-        "Titolo": "Raimondo Orselli",
+        "Anno": "1930",
+        "Titolo": "Raimondo Orselli.",
         "Città, editore o rivista": "In «L'Antiquario», XVII, 1, 1930",
         "Pagine": "p. 10",
         "Tipologia": "articolo di periodico"
     },
     "B_200": {
         "ID": "B_200",
-        "Autore": "",
-        "Anno": "",
-        "Titolo": "Rare artistic properties collected by the expert and connoisseur chevalier Raoul Tolentino of Rome, catalogo della vendita all'asta Curtis Studio (San Francisco, 21-24 marzo 1923)",
-        "Città, editore o rivista": "San Francisco 1923",
+        "Autore": "Curtis Studio",
+        "Anno": "1922",
+        "Titolo": "Rare artistic properties collected by the expert and connoisseur chevalier Raoul Tolentino of Rome, catalogo della vendita all'asta Curtis Studio (San Francisco, 21-24 marzo 1923).",
+        "Città, editore o rivista": "San Francisco 1923.",
         "Pagine": "",
         "Tipologia": "catalogo d'asta"
     },
     "B_201": {
         "ID": "B_201",
         "Autore": "",
-        "Anno": "",
-        "Titolo": "Rare italian art in Tolentino sale",
+        "Anno": "1922",
+        "Titolo": "Rare italian art in Tolentino sale.",
         "Città, editore o rivista": "In «American Art News», 11 novembre 1922, 21, 5",
         "Pagine": "p. 4",
         "Tipologia": "articolo di periodico"
     },
     "B_202": {
         "ID": "B_202",
-        "Autore": "",
-        "Anno": "",
+        "Autore": "D'Italia, S., Mana, L., Natale, V., Galateri di Genola, M. (Ed.)",
+        "Anno": "2022",
         "Titolo": "Rinascimento Privato. Da Spanzotti a Defendente Ferrari nelle Collezioni Piemontesi, catalogo della mostra (Museo di Arti Decorative Accorsi-Ometto, Torino, 21 ottobre 2022 - 29 gennaio 2023) a cura di D'Italia, S., Mana, L., Natale, V., Galateri di Genola, M.",
-        "Città, editore o rivista": "Genova, Sagep, 2022",
+        "Città, editore o rivista": "Genova, Sagep, 2022.",
         "Pagine": "",
         "Tipologia": "monografia"
     },
     "B_203": {
         "ID": "B_203",
         "Autore": "",
-        "Anno": "",
-        "Titolo": "Roman antiquarian killed by autobus",
+        "Anno": "1928",
+        "Titolo": "Roman antiquarian killed by autobus.",
         "Città, editore o rivista": "In «The Paris Time», 5 p.m. Ed., 2 agosto 1928",
         "Pagine": "p. 1",
         "Tipologia": "articolo di periodico"
     },
     "B_204": {
         "ID": "B_204",
-        "Autore": "",
-        "Anno": "",
-        "Titolo": "Salvatore e Francesco Romano antiquari a Firenze, un secolo di attività a Palazzo Magnani Feroni, catalogo della vendita all'asta Sotheby's, (Firenze, 12-15 ottobre 2009)",
-        "Città, editore o rivista": "Firenze 2009",
+        "Autore": "Sotheby's",
+        "Anno": "2009",
+        "Titolo": "Salvatore e Francesco Romano antiquari a Firenze, un secolo di attività a Palazzo Magnani Feroni, catalogo della vendita all'asta Sotheby's, (Firenze, 12-15 ottobre 2009).",
+        "Città, editore o rivista": "Firenze 2009.",
         "Pagine": "",
         "Tipologia": "catalogo d'asta"
     },
     "B_205": {
         "ID": "B_205",
-        "Autore": "",
-        "Anno": "",
-        "Titolo": "The Achillito Chiesa collection, part IV, Italian, dutch and flemish XV-XVII century paintings, Portraits and Genre Subjects by english, french and german masters, catalogo della vendita all'asta American Art Association (New York, 22-23 novembre 1927)",
-        "Città, editore o rivista": "New York 1927",
+        "Autore": "American Art Association",
+        "Anno": "1927",
+        "Titolo": "The Achillito Chiesa collection, part IV, Italian, dutch and flemish XV-XVII century paintings, Portraits and Genre Subjects by english, french and german masters, catalogo della vendita all'asta American Art Association (New York, 22-23 novembre 1927).",
+        "Città, editore o rivista": "New York 1927.",
         "Pagine": "",
         "Tipologia": "catalogo d'asta"
     },
     "B_206": {
         "ID": "B_206",
-        "Autore": "",
-        "Anno": "",
+        "Autore": "American Art Association",
+        "Anno": "1925",
         "Titolo": "The collection of Achillito Chiesa Esq. of Milan, part I,  flemish and dutch paintings of the XV - XVI - XVII centuries, italian primitives and renaissance examples, a small group of canvases by english, french and spanish artists of the XVI-XIX century, catalogo della vendita all'asta American Art Association (New York, 27 novembre 1925) a cura di De Groot, H., Hoogerwerff, G. J., De Nicola, G.",
-        "Città, editore o rivista": "New York 1925",
+        "Città, editore o rivista": "New York 1925.",
         "Pagine": "",
         "Tipologia": "catalogo d'asta"
     },
     "B_207": {
         "ID": "B_207",
-        "Autore": "",
-        "Anno": "",
-        "Titolo": "The collection of Achillito Chiesa. part II, italian primitives and renaissance paintings, a small group of canvases by flemish and french masters, catalogo della vendita all'asta American Art Association (New York, 16 aprile 1926)",
-        "Città, editore o rivista": "New York 1926",
+        "Autore": "American Art Association",
+        "Anno": "1926",
+        "Titolo": "The collection of Achillito Chiesa. part II, italian primitives and renaissance paintings, a small group of canvases by flemish and french masters, catalogo della vendita all'asta American Art Association (New York, 16 aprile 1926).",
+        "Città, editore o rivista": "New York 1926.",
         "Pagine": "",
         "Tipologia": "catalogo d'asta"
     },
     "B_208": {
         "ID": "B_208",
-        "Autore": "",
-        "Anno": "",
-        "Titolo": "The collection of Professor Paolo Paolini,  distinguished paintings & sculptures by celebrated italian masters X-XVI Century, catalogo della vendita all'asta American Art Association (New York, 10-11 febbraio 1924)",
-        "Città, editore o rivista": "New York 1924",
+        "Autore": "American Art Association",
+        "Anno": "1924",
+        "Titolo": "The collection of Professor Paolo Paolini,  distinguished paintings & sculptures by celebrated italian masters X-XVI Century, catalogo della vendita all'asta American Art Association (New York, 10-11 febbraio 1924).",
+        "Città, editore o rivista": "New York 1924.",
         "Pagine": "",
         "Tipologia": "catalogo d'asta"
     },
     "B_209": {
         "ID": "B_209",
-        "Autore": "",
-        "Anno": "",
-        "Titolo": "The collection of Raoul Tolentino : paintings, with fine primitive and Renaissance examples ..., bronzes from the Roman excavations, terracotta and stucco groups and bas-reliefs, Gothic and Renaissance furniture, catalogo della vendita all'asta American Art Association, (New York, 8-11 dicembre)",
-        "Città, editore o rivista": "New York, 1926",
+        "Autore": "American Art Association",
+        "Anno": "1926",
+        "Titolo": "The collection of Raoul Tolentino : paintings, with fine primitive and Renaissance examples ..., bronzes from the Roman excavations, terracotta and stucco groups and bas-reliefs, Gothic and Renaissance furniture, catalogo della vendita all'asta American Art Association, (New York, 8-11 dicembre).",
+        "Città, editore o rivista": "New York, 1926.",
         "Pagine": "",
         "Tipologia": "catalogo d'asta"
     },
     "B_210": {
         "ID": "B_210",
-        "Autore": "",
-        "Anno": "",
-        "Titolo": "The collection of Sr. Achillito Chiesa of Milan, part III, XV-XVI century majolicas gothic ivories, early french and italian enamels renaissance velvets brocades and laces, italian XV-XVI century furniture, catalogo della vendita all'asta American Art Association (New York, 16-17 aprile 1926)",
-        "Città, editore o rivista": "New York 1926",
+        "Autore": "American Art Association",
+        "Anno": "1926",
+        "Titolo": "The collection of Sr. Achillito Chiesa of Milan, part III, XV-XVI century majolicas gothic ivories, early french and italian enamels renaissance velvets brocades and laces, italian XV-XVI century furniture, catalogo della vendita all'asta American Art Association (New York, 16-17 aprile 1926).",
+        "Città, editore o rivista": "New York 1926.",
         "Pagine": "",
         "Tipologia": "catalogo d'asta"
     },
     "B_211": {
         "ID": "B_211",
         "Autore": "",
-        "Anno": "",
-        "Titolo": "The man of the day",
-        "Città, editore o rivista": "«The Paris Time», 5 P.M. Edition, 8 marzo 1927, Parigi",
+        "Anno": "1927",
+        "Titolo": "The man of the day.",
+        "Città, editore o rivista": "«The Paris Time», 5 P.M. Edition, 8 marzo 1927, Parigi.",
         "Pagine": "",
         "Tipologia": "articolo di periodico"
     },
     "B_212": {
         "ID": "B_212",
-        "Autore": "",
-        "Anno": "",
-        "Titolo": "The Tolentino collection, important italian works of art, Gothic and renaissance marbles, scultures, bronzes and stuccos, rare forges iron of the XV and XVI centuries, superb velvets, embroideries, needlepoint and tapestries, an extensive and imposing group of itlaian furniture of the XV and XVI centuries, catalogo della vendita all'asta American art Association (New York, 29 31 gennaio 1925)",
-        "Città, editore o rivista": "New York 1925",
+        "Autore": "American Art Association",
+        "Anno": "1925",
+        "Titolo": "The Tolentino collection, important italian works of art, Gothic and renaissance marbles, scultures, bronzes and stuccos, rare forges iron of the XV and XVI centuries, superb velvets, embroideries, needlepoint and tapestries, an extensive and imposing group of itlaian furniture of the XV and XVI centuries, catalogo della vendita all'asta American art Association (New York, 29 31 gennaio 1925).",
+        "Città, editore o rivista": "New York 1925.",
         "Pagine": "",
         "Tipologia": "catalogo d'asta"
     },
     "B_213": {
         "ID": "B_213",
-        "Autore": "",
-        "Anno": "",
-        "Titolo": "Un secolo tra collezionismo e mercato antiquario a Firenze, catalogo della vendita all'asta Pandolfini (Firenze, 19 ottobre 2016)",
-        "Città, editore o rivista": "Firenze 2016",
+        "Autore": "Pandolfini",
+        "Anno": "2016",
+        "Titolo": "Un secolo tra collezionismo e mercato antiquario a Firenze, catalogo della vendita all'asta Pandolfini (Firenze, 19 ottobre 2016).",
+        "Città, editore o rivista": "Firenze 2016.",
         "Pagine": "",
         "Tipologia": "catalogo d'asta"
     },
     "B_214": {
         "ID": "B_214",
-        "Autore": "",
-        "Anno": "",
-        "Titolo": "Vendita all’asta dell’importante raccolta di dipinti antichi, mobili, oggetti d’arte e di arredamento, argenterie e preziosi appartenenti alla Successione di Miss Rita Miriam Bellesi, catalogo della vendita all'asta Pandolfini (Firenze, 14-17 ottobre 1968)",
-        "Città, editore o rivista": "Firenze 1968",
+        "Autore": "Pandolfini",
+        "Anno": "1968",
+        "Titolo": "Vendita all’asta dell’importante raccolta di dipinti antichi, mobili, oggetti d’arte e di arredamento, argenterie e preziosi appartenenti alla Successione di Miss Rita Miriam Bellesi, catalogo della vendita all'asta Pandolfini (Firenze, 14-17 ottobre 1968).",
+        "Città, editore o rivista": "Firenze 1968.",
         "Pagine": "",
         "Tipologia": "catalogo d'asta"
     },
@@ -1969,6 +2266,42 @@
         "Città, editore o rivista": "In «L'Antiquario», II, 9-10, 1910",
         "Pagine": "pp. 57-61",
         "Tipologia": "articolo di periodico"
+    },
+    "B_215_1": {
+        "ID": "B_215_1",
+        "Autore": "",
+        "Anno": "1913",
+        "Titolo": "L'Antiquario Alfredo Geri ha ritrovato la \"Gioconda\"",
+        "Città, editore o rivista": "In «L'Antiquario. Rivista indipendente», 6",
+        "Pagine": "",
+        "Tipologia": "articolo di periodico"
+    },
+    "B_215_2": {
+        "ID": "B_215_2",
+        "Autore": "",
+        "Anno": "1927",
+        "Titolo": "Negozianti d'arte (Roma-Rovereto)",
+        "Città, editore o rivista": "In «Maecenas», 1.1927, Berlino, Stern",
+        "Pagine": "p. 425",
+        "Tipologia": "articolo di periodico"
+    },
+    "B_215_3": {
+        "ID": "B_215_3",
+        "Autore": "",
+        "Anno": "1909",
+        "Titolo": "La Madonna del Giambellino rubata e recuperata a Venezia",
+        "Città, editore o rivista": "In «L'Antiquario», giugno 1909",
+        "Pagine": "pp. 6-8",
+        "Tipologia": "articolo di periodico"
+    },
+    "B_215_4": {
+        "ID": "B_215_4",
+        "Autore": "",
+        "Anno": "1935",
+        "Titolo": "Mostra dei quarant'anni della Biennale: 1895-1935. Venezia, maggio-luglio 1935",
+        "Città, editore o rivista": "Venezia, Tip. C. Ferrari",
+        "Pagine": "",
+        "Tipologia": "monografia"
     },
     "B_216": {
         "ID": "B_216",
