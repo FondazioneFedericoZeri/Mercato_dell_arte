@@ -416,50 +416,48 @@ footer img {
 }
 
 /*responsive*/
+/* Versione mobile */
 @media (max-width: 768px) {
-    /* Generale: Nascondi immagini e contenuti non testuali */
-    .columns-container, 
-    .image-container, 
-    .svg-container, 
-    .quote-mark-left, 
-    .quote-mark-right, 
-    .large-letter, 
-    .gallery-wrapper, 
-    .slider-container {
-        display: none; /* Nasconde contenuti extra */
+    /* Nascondi le immagini */
+    .left-column,
+    .image-container,
+    .quote-mark-left,
+    .quote-mark-right,
+    .large-letter,
+    .svg-container {
+        display: none;
     }
 
-    /* Mantieni solo titoli e testi */
-    #two-column-section, .new-section-container, #contatti {
+    /* Rendi il layout lineare */
+    .columns-container {
+        flex-direction: column; /* Disposizione verticale */
+        gap: 20px; /* Spazio tra le sezioni */
         padding: 20px;
+    }
+
+    /* Riduci il margine delle colonne */
+    .right-column, .left-column {
         margin: 0;
-        text-align: center; /* Centra il testo per leggibilità */
+        padding: 10px; /* Spazio interno per il testo */
     }
 
-    #two-column-section h2, 
-    .new-section-container h2, 
-    #contatti h2 {
-        font-size: 24px; /* Dimensione adeguata per dispositivi mobili */
-        margin-bottom: 10px;
+    /* Ottimizza i titoli e il testo */
+    .section-title {
+        text-align: center; /* Centra il titolo */
+        font-size: 24px; /* Ridimensiona per schermi piccoli */
+        margin: 20px 0;
     }
 
-    #two-column-section p, 
-    .new-section-container p, 
-    #contatti p {
-        font-size: 16px; /* Dimensione leggibile per il testo */
-        line-height: 1.5;
+    .right-content p {
+        text-align: justify;
+        font-size: 16px; /* Font più piccolo */
+        line-height: 1.5; /* Migliora la leggibilità */
     }
 
-    /* Sezioni specifiche: gestione dei margini */
-    .left-content, .right-content {
-        margin: 0; /* Rimuove margini */
-        padding: 10px; /* Padding per evitare sovrapposizioni */
-    }
-
+    /* Footer layout semplificato */
     footer {
-        flex-direction: column;
+        flex-direction: column; /* Disposizione verticale */
         text-align: center;
-        padding: 20px;
+        padding: 10px 20px;
     }
 }
-
