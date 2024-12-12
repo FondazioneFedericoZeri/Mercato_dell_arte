@@ -32,46 +32,50 @@ var cmp_geography = function(k1, k2){
     return k1 > k2
 }
 
-var sort_alphabetically = function () {
-    var entities_list = {}
-    for (ent in entities_json) {
+var sort_alphabetically = function (refined_entities) {
 
-        var ent_id = ent;
-        var ent_dict = entities_json[ent];
+    // fix: aggiunto argomento e check su di esso
+    const working_json = refined_entities || entities_json;    // se fornita lista alternativa, usa la lista
+    let entities_list = {}
+
+    for (const entita of Object.keys(working_json)) {
+
+        var entitaId = entita;
+        var ent_dict = working_json[entita];
 
         var firstletter = ent_dict["Nome"][0];
 
-        if (!(firstletter in entities_list)){
+        if (!(firstletter in entities_list)) {
             entities_list[firstletter] = {};
         }
 
-        entities_list[firstletter][ent_dict["ID"]] = ent_id;
+        entities_list[firstletter][ent_dict["ID"]] = entitaId;
     }
 
     document.getElementById('cards-section').innerHTML = '';
-    const div = document.getElementById('cards-section');
+    const cardSection = document.getElementById('cards-section');
 
-    for (letter in entities_list){
+    for (letter in entities_list) {
         const h2 = document.createElement('h2');
         h2.classList = "letter"
         h2.appendChild(document.createTextNode(letter));
-        div.appendChild(h2)
+        cardSection.appendChild(h2)
 
 
         const card_container = document.createElement('div');
         card_container.classList = "card-container";
 
-        for (ent_id in entities_list[letter]){
-            var ent_dict = entities_json[ent_id];
+        for (entitaId in entities_list[letter]) {
+            var ent_dict = working_json[entitaId];
 
             const a_link = document.createElement('a');
-            a_link.href = "dettagli/dettaglio_"+ent_id+".html";
+            a_link.href = "dettagli/dettaglio_" + entitaId + ".html";
 
             const card = document.createElement('div');
             card.classList = "card";
 
             const img = document.createElement("img")
-            img.src = "../img/antiquari-preview/"+ent_dict["Foto preview"]+".jpg"
+            img.src = "../img/antiquari-preview/" + ent_dict["Foto preview"] + ".jpg"
             img.alt = ent_dict["Nome"]
 
             const div_interno = document.createElement("div")
@@ -99,9 +103,9 @@ var sort_alphabetically = function () {
 
             //faccio comparire le città al posto delle regioni
             var cities = new Set();
-            for (person_id in ent_dict["Persone"]){
+            for (person_id in ent_dict["Persone"]) {
                 var luoghi = ent_dict["Persone"][person_id]["ID_luoghi"]
-                for (luogo_id in luoghi){
+                for (luogo_id in luoghi) {
                     var luogo = luoghi[luogo_id]
                     cities.add(luogo["Città"])
                 }
@@ -124,7 +128,7 @@ var sort_alphabetically = function () {
 
         }
 
-        div.appendChild(card_container)
+        cardSection.appendChild(card_container)
 
     }
 }
