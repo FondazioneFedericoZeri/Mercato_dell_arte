@@ -54,11 +54,12 @@
                 <!-- <a href="#Titolo" id="btn-luogo" class="btn">Vai</a> -->
                 <!-- <a href="#Titolo" id="btn-cognome" class="btn">Cerca per cognome</a> -->
                 <!-- Contenitore per la barra di ricerca e il pulsante -->
+
                 <div class="search-bar-container">
-                    <input type="text" id="search-input" placeholder="Cerca per nome o per luogo" onkeyup="performSearch()">
+                    <input type="text" id="search-input" placeholder="Cerca per nome o per luogo" onkeyup="performSearch(this.value)">
                     <a href="#Titolo">
-                        <button id="search-button" class="btn">Cerca</button>
-                        </a>
+                        <button id="search-button" class="btn" onclick="performSearch(document.getElementById('search-input').value)">Cerca</button>
+                    </a>
                 </div>
             </div>
 
