@@ -551,6 +551,16 @@ footer img {
         .image-gallery {
             display: none; /* Nasconde l'intera galleria su dispositivi mobili */
         }
+    }  
+    @media (max-width: 768px) { 
+        .gallery-wrapper {
+             display: none; /* Nasconde l'intera galleria su dispositivi mobili */
+        }
+    }
+    @media (max-width: 768px) { 
+        .slider-container {
+             display: none; /* Nasconde l'intera galleria su dispositivi mobili */
+        }
     }
     
 }
