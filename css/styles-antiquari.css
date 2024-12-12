@@ -605,55 +605,17 @@ body {
     }
 }
 
-.card-container .card img {
-    width: 100%; /* Adatta l'immagine alla larghezza del contenitore */
-    height: 100%; /* Assicura che l'immagine riempia completamente l'altezza */
-    object-fit: cover; /* Mantiene il rapporto d'aspetto e ritaglia l'eccesso */
-    object-position: center; /* Centra l'immagine nel contenitore */
-    display: block; /* Evita spazi indesiderati intorno all'immagine */
-}
-
 @media (max-width: 768px) {
-    .card-container .card {
-        width: 90%; /* Le card occupano quasi tutta la larghezza */
-        height: auto; /* Adatta l'altezza al contenuto */
-        margin: 10px auto; /* Centra le card con margini */
-    }
+
 
     .card-container .card img {
-        height: 200px; /* Altezza specifica per le immagini su mobile */
+        max-height: 150px; /* Altezza massima ridotta per schermi piccoli */
+        max-width: 100px;
     }
 }
-.card-container .card {
-    width: 100%; /* La larghezza della card si adatta al contenitore */
-    height: 350px; /* Altezza uniforme per tutte le card */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Allinea il contenuto in modo uniforme */
-    background-color: #f9f9f9;
-    border-radius: 5px;
-    overflow: hidden;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.card-text {
-    padding: 10px;
-    height: 30%; /* Assicura che il testo occupi uno spazio fisso */
-    overflow: hidden; /* Nasconde il contenuto in eccesso */
-    text-overflow: ellipsis; /* Mostra "..." se il testo è troppo lungo */
-    white-space: nowrap; /* Impedisce il ritorno a capo */
-}
-@media (max-width: 768px) {
-    .card-container .card {
-        width: 90%; /* Le card occupano quasi tutta la larghezza */
-        height: auto; /* Adatta l'altezza al contenuto */
-        margin: 10px auto; /* Centra le card con margini */
-    }
 
-    .card-container .card img {
-        height: 200px; /* Altezza specifica per le immagini su mobile */
-    }
-}
+
+
 
 @media (max-width: 768px) {
     footer {
