@@ -1,4 +1,5 @@
 import json
+import pathlib
 import airium as a
 import docx
 
@@ -226,10 +227,12 @@ def build_html(entity, entities):
                     with page.div(klass="content-card"):
                         with page.div(id="Bio", klass="content active-content"):
                             # content = getText(f"../bio/{entity['Bio']}.docx")
-                            content = getTXT(f"bio-txt/{entity['Bio']}.txt")
-                            # page.h3(_t=f"{content[0]}")
-                            for paragraph in content:
-                                page.p(_t=paragraph)
+                            bio_filename = pathlib.Path(f"bio-txt/{entity['Bio']}.txt")
+                            if bio_filename.is_file():
+                                content = getTXT(f"bio-txt/{entity['Bio']}.txt")
+                                # page.h3(_t=f"{content[0]}")
+                                for paragraph in content:
+                                    page.p(_t=paragraph)
 
                         with page.div(id="Persone", klass="content"):
                             page.h3(
@@ -313,7 +316,7 @@ def build_html(entity, entities):
                             with page.p():
                                 page("Vedi le opere transitate presso l'antiquario presenti nel ")
                                 with page.a(href=entity["Link Zeri"], klass="linkBio", target="_blank"):
-                                    page("catalogo della Fondazione Zeri") 
+                                    page("catalogo della Fondazione Zeri")
 
 
             with page.footer():
