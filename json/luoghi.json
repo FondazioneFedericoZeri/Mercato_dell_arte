@@ -12,8 +12,8 @@
         "Nome attività": "Emanuele e Guido Sestieri, \"Sestieri Gallery\" (succursale)",
         "": "",
         "geo": {
-            "lat": 40.755473,
-            "lon": -73.979309
+            "lat": 40.7569173877551,
+            "lon": -73.978254
         }
     },
     "USA_2": {
@@ -46,8 +46,8 @@
         "Nome attività": "Amedeo Canessa, \"C. & E. Canessa\"",
         "": "",
         "geo": {
-            "lat": 40.6677246,
-            "lon": -73.9871864412152
+            "lat": 40.7529151,
+            "lon": -73.9810898
         }
     },
     "USA_4": {
@@ -63,8 +63,8 @@
         "Nome attività": "Amedeo Canessa, \"C. & E. Canessa\"",
         "": "",
         "geo": {
-            "lat": 40.755473,
-            "lon": -73.979309
+            "lat": 40.7569173877551,
+            "lon": -73.978254
         }
     },
     "USA_5": {
@@ -97,8 +97,8 @@
         "Nome attività": "Amedeo Canessa, \"C. & E. Canessa\", Amedeo Canessa",
         "": "",
         "geo": {
-            "lat": 40.752273,
-            "lon": -73.979858
+            "lat": 40.75214155102041,
+            "lon": -73.97954595918368
         }
     },
     "USA_7": {
@@ -148,8 +148,8 @@
         "Nome attività": "Giuseppe Bellesi (Pall Mall Deposit, magazzino)",
         "": "",
         "geo": {
-            "lat": 51.508707672175376,
-            "lon": -0.13340129769412826
+            "lat": 51.5086356,
+            "lon": -0.1336046
         }
     },
     "UK_2": {
@@ -165,8 +165,8 @@
         "Nome attività": "Giuseppe Bellesi, \"The Italian Art Gallery\"",
         "": "",
         "geo": {
-            "lat": 51.3682459,
-            "lon": -0.1832648
+            "lat": 51.516173,
+            "lon": -0.152587
         }
     },
     "UK_3": {
@@ -182,8 +182,8 @@
         "Nome attività": "Giuseppe Volterra (succursale)",
         "": "",
         "geo": {
-            "lat": 51.5172813,
-            "lon": -0.1514937
+            "lat": 51.6012667,
+            "lon": -0.0704654
         }
     },
     "UK_4": {
@@ -199,8 +199,8 @@
         "Nome attività": "Giuseppe Bellesi, \"The Italian Art Gallery\"",
         "": "",
         "geo": {
-            "lat": 51.50975635,
-            "lon": -0.14196063763405797
+            "lat": 51.5097564,
+            "lon": -0.1419606
         }
     },
     "UK_5": {
@@ -216,8 +216,8 @@
         "Nome attività": "Giuseppe Bellesi, \"The Italian Art Gallery\"",
         "": "",
         "geo": {
-            "lat": 51.5228442,
-            "lon": -0.2000622
+            "lat": 51.52083206176758,
+            "lon": -0.17385241389274597
         }
     },
     "UK_7": {
@@ -250,8 +250,8 @@
         "Nome attività": "Michele Lazzaroni (abitazione privata)",
         "": "",
         "geo": {
-            "lat": 43.694091892866204,
-            "lon": 7.252171135672188
+            "lat": 43.6914121,
+            "lon": 7.2448839
         }
     },
     "FR_2": {
@@ -301,8 +301,8 @@
         "Nome attività": "Giuseppe Volterra (succursale)",
         "": "",
         "geo": {
-            "lat": 48.87082446793654,
-            "lon": 2.333356774585659
+            "lat": 48.8707892,
+            "lon": 2.3331608
         }
     },
     "FR_5": {
@@ -386,8 +386,8 @@
         "Nome attività": "Francesco Pospisil (Palazzo Sagredo, abitazione privata)",
         "": "",
         "geo": {
-            "lat": 45.43777295172513,
-            "lon": 12.335590408970237
+            "lat": 45.4420764,
+            "lon": 12.3156452
         }
     },
     "IT_1_b": {
@@ -420,8 +420,8 @@
         "Nome attività": "Paolo Viancini",
         "": "RIGA AGGIUNTA!!!",
         "geo": {
-            "lat": 45.43300382245571,
-            "lon": 12.335249837728778
+            "lat": 45.432893199999995,
+            "lon": 12.334566399734967
         }
     },
     "IT_1_d": {
@@ -471,8 +471,8 @@
         "Nome attività": "Alfredo Geri, \"Geri-Boralevi\"",
         "": "",
         "geo": {
-            "lat": null,
-            "lon": null
+            "lat": 41.8951009587497,
+            "lon": 12.476284893276052
         }
     },
     "IT_1_g": {
@@ -828,8 +828,8 @@
         "Nome attività": "Severino Crosa",
         "": "",
         "geo": {
-            "lat": null,
-            "lon": null
+            "lat": 44.408627949999996,
+            "lon": 8.930028765903387
         }
     },
     "IT_13": {
@@ -1049,8 +1049,8 @@
         "Nome attività": "Arturo Rambaldi, \"Galleria di Antichità e casa di vendite A. Rambaldi\"",
         "": "",
         "geo": {
-            "lat": 44.4934277,
-            "lon": 11.3463737
+            "lat": 44.4933222,
+            "lon": 11.346376
         }
     },
     "IT_25": {
@@ -1083,8 +1083,8 @@
         "Nome attività": "Publio Podio",
         "": "",
         "geo": {
-            "lat": 44.488288233042724,
-            "lon": 11.36200255948307
+            "lat": 44.4881605,
+            "lon": 11.3623538
         }
     },
     "IT_27": {
@@ -1134,8 +1134,8 @@
         "Nome attività": "Ivan Bruschi",
         "": "",
         "geo": {
-            "lat": 43.5715917,
-            "lon": 12.1419482
+            "lat": 43.464796050000004,
+            "lon": 11.880910299394806
         }
     },
     "IT_31": {
@@ -1236,8 +1236,8 @@
         "Nome attività": "Leonardo Lapiccirella, \"Galleria Lapiccirella\"",
         "": "",
         "geo": {
-            "lat": 43.772862480442,
-            "lon": 11.243077265793158
+            "lat": 43.7735474,
+            "lon": 11.241085
         }
     },
     "IT_37": {
@@ -1321,8 +1321,8 @@
         "Nome attività": "Vincenzo Ciampolini",
         "": "",
         "geo": {
-            "lat": 43.772876043521,
-            "lon": 11.249415903010988
+            "lat": 43.773116,
+            "lon": 11.2490357
         }
     },
     "IT_42_b": {
@@ -1355,8 +1355,8 @@
         "Nome attività": "Luigi, Giuseppe Jr e Mario Bellini (Palazzo Spini Feroni, show room)",
         "": "",
         "geo": {
-            "lat": 43.7698492,
-            "lon": 11.2511748
+            "lat": 43.7700572,
+            "lon": 11.251220681680373
         }
     },
     "IT_44": {
@@ -1508,8 +1508,8 @@
         "Nome attività": "Carlo e Riccardo Bruscoli, Marcello Guidi; dal 1957 al 1966 il negozio ai civici 50-52r è rilevato da Leonardo Lapiccirella",
         "": "",
         "geo": {
-            "lat": 43.77277041743597,
-            "lon": 11.245208562512012
+            "lat": 43.7716067,
+            "lon": 11.2468899
         }
     },
     "IT_52": {
@@ -1525,8 +1525,8 @@
         "Nome attività": "Carlo e Riccardo Bruscoli, Marcello Guidi",
         "": "",
         "geo": {
-            "lat": 43.77277041743597,
-            "lon": 11.245208562512012
+            "lat": 43.7716067,
+            "lon": 11.2468899
         }
     },
     "IT_52_b": {
@@ -1644,8 +1644,8 @@
         "Nome attività": "Stefano Bardini (Palazzo Canigiani)",
         "": "",
         "geo": {
-            "lat": 43.76831244155727,
-            "lon": 11.259975032221455
+            "lat": 43.7675835,
+            "lon": 11.2593399
         }
     },
     "IT_56": {
@@ -1746,8 +1746,8 @@
         "Nome attività": "Livio e Ivan Bruschi (fino al 1956), \"Antichità Bruschi\"",
         "": "",
         "geo": {
-            "lat": 43.771808153190584,
-            "lon": 11.248441399335693
+            "lat": 43.7713694,
+            "lon": 11.2479923
         }
     },
     "IT_61": {
@@ -1814,8 +1814,8 @@
         "Nome attività": "Rizieri Bacarelli",
         "": "",
         "geo": {
-            "lat": 43.772061293279926,
-            "lon": 11.24923527229892
+            "lat": 43.7732075,
+            "lon": 11.2506064
         }
     },
     "IT_70": {
@@ -1865,8 +1865,8 @@
         "Nome attività": "Giuliano Freschi (deposito)",
         "": "",
         "geo": {
-            "lat": 43.772794022765446,
-            "lon": 11.247318934474935
+            "lat": 43.7731154,
+            "lon": 11.2476722
         }
     },
     "IT_71_b": {
@@ -1899,8 +1899,8 @@
         "Nome attività": "Giuseppe Bellini",
         "": "",
         "geo": {
-            "lat": 43.772288984181834,
-            "lon": 11.250087771042342
+            "lat": 43.7725193,
+            "lon": 11.2498118
         }
     },
     "IT_73": {
@@ -1916,8 +1916,8 @@
         "Nome attività": "Luigi Grassi e figli, \"Luigi Grassi & Sons\"",
         "": "",
         "geo": {
-            "lat": 43.77770356570535,
-            "lon": 11.242555115657392
+            "lat": 43.7780668,
+            "lon": 11.2420376
         }
     },
     "IT_74": {
@@ -1933,8 +1933,8 @@
         "Nome attività": "Benvenuto Bacarelli",
         "": "",
         "geo": {
-            "lat": 43.77121394554101,
-            "lon": 11.249741815272415
+            "lat": 43.7715147,
+            "lon": 11.2513609
         }
     },
     "IT_74_b": {
@@ -1984,8 +1984,8 @@
         "Nome attività": "Giuseppe Volterra e fratelli e Adolfo Melli",
         "": "",
         "geo": {
-            "lat": 43.7271223,
-            "lon": 10.9452554
+            "lat": 43.76724,
+            "lon": 11.2519218
         }
     },
     "IT_76": {
@@ -2035,8 +2035,8 @@
         "Nome attività": "Damiano Lapiccirella, \"Galleria Lapiccirella\"",
         "": "",
         "geo": {
-            "lat": 43.76673442408757,
-            "lon": 11.248943884547185
+            "lat": 43.7665806,
+            "lon": 11.2488502
         }
     },
     "IT_78": {
@@ -2086,8 +2086,8 @@
         "Nome attività": "Giulio Sambon, \"Impresa di vendita in Italia Giulio Sambon\"",
         "": "",
         "geo": {
-            "lat": 43.7739603,
-            "lon": 11.2556328
+            "lat": 43.773821,
+            "lon": 11.255589
         }
     },
     "IT_81": {
@@ -2222,8 +2222,8 @@
         "Nome attività": "Leonardo Lapiccirella (studio)",
         "": "RIGA AGGIUNTA!!!",
         "geo": {
-            "lat": 43.77314009984652,
-            "lon": 11.251835122679655
+            "lat": 43.7733644,
+            "lon": 11.2521456
         }
     },
     "IT_87_c": {
@@ -2239,8 +2239,8 @@
         "Nome attività": "Salvatore e Francesco Romano (magazzino)",
         "": "RIGA AGGIUNTA!!!",
         "geo": {
-            "lat": 43.77750875234769,
-            "lon": 11.253779312054702
+            "lat": 43.7774079,
+            "lon": 11.253609
         }
     },
     "IT_87_d": {
@@ -2290,8 +2290,8 @@
         "Nome attività": "Giuseppe Grassi (abitazione privata)",
         "": "",
         "geo": {
-            "lat": 41.91210347384143,
-            "lon": 12.470433183334693
+            "lat": 41.9122797,
+            "lon": 12.4704206
         }
     },
     "IT_89": {
@@ -2324,8 +2324,8 @@
         "Nome attività": "Vincenzo Ciampolini",
         "": "",
         "geo": {
-            "lat": 41.89180657180695,
-            "lon": 12.484190889566198
+            "lat": 41.8917781,
+            "lon": 12.4842009
         }
     },
     "IT_92": {
@@ -2375,8 +2375,8 @@
         "Nome attività": "Emanuele e Guido Sestieri, \"Galleria Sestieri\"",
         "": "",
         "geo": {
-            "lat": 41.905751857213744,
-            "lon": 12.482124886316017
+            "lat": 41.9057477,
+            "lon": 12.4821294
         }
     },
     "IT_95": {
@@ -2477,8 +2477,8 @@
         "Nome attività": "Filippo Tavazzi",
         "": "",
         "geo": {
-            "lat": 41.904991963189254,
-            "lon": 12.480109397345917
+            "lat": 41.9057255,
+            "lon": 12.4820815
         }
     },
     "IT_101": {
@@ -2494,8 +2494,8 @@
         "Nome attività": "Giulio Sambon, \"Impresa di vendita in Italia Giulio Sambon\"",
         "": "",
         "geo": {
-            "lat": 41.904991963189254,
-            "lon": 12.480109397345917
+            "lat": 41.9057255,
+            "lon": 12.4820815
         }
     },
     "IT_102": {
@@ -2511,8 +2511,8 @@
         "Nome attività": "Alexandre Imbert, \"Galerie A. Imbert\" (Palazzo Caffarelli)",
         "": "",
         "geo": {
-            "lat": 41.904991963189254,
-            "lon": 12.480109397345917
+            "lat": 41.9057255,
+            "lon": 12.4820815
         }
     },
     "IT_102_b": {
@@ -2579,8 +2579,8 @@
         "Nome attività": "Emanuele Efrati, \"Galleria Efrati\"",
         "": "",
         "geo": {
-            "lat": 41.90834521500914,
-            "lon": 12.479089794624903
+            "lat": 41.9084557,
+            "lon": 12.4789596
         }
     },
     "IT_103_b": {
@@ -2596,8 +2596,8 @@
         "Nome attività": "Emanuele Efrati e Giuseppe Antonacci, \"Antonacci-Efrati\"",
         "": "RIGA AGGIUNTA!!!",
         "geo": {
-            "lat": 41.90834521500914,
-            "lon": 12.479089794624903
+            "lat": 41.9084557,
+            "lon": 12.4789596
         }
     },
     "IT_104": {
@@ -2613,8 +2613,8 @@
         "Nome attività": "Amedeo e Leone Di Castro, \"Antichità A. L. Di Castro\"",
         "": "",
         "geo": {
-            "lat": 41.90834521500914,
-            "lon": 12.479089794624903
+            "lat": 41.9084557,
+            "lon": 12.4789596
         }
     },
     "IT_105": {
@@ -2630,8 +2630,8 @@
         "Nome attività": "Alessandro e Antonio Jandolo (Palazzo Raffaelli)",
         "": "",
         "geo": {
-            "lat": 41.90834521500914,
-            "lon": 12.479089794624903
+            "lat": 41.9084557,
+            "lon": 12.4789596
         }
     },
     "IT_106": {
@@ -2647,8 +2647,8 @@
         "Nome attività": "Augusto e Salvatore Jandolo, Filippo e Guido Tavazzi, \"Casa di Vendita Jandolo & Tavazzi\"",
         "": "",
         "geo": {
-            "lat": 41.90834521500914,
-            "lon": 12.479089794624903
+            "lat": 41.9084557,
+            "lon": 12.4789596
         }
     },
     "IT_107": {
@@ -2664,8 +2664,8 @@
         "Nome attività": "Alberto Di Castro",
         "": "",
         "geo": {
-            "lat": 41.90834521500914,
-            "lon": 12.479089794624903
+            "lat": 41.9084557,
+            "lon": 12.4789596
         }
     },
     "IT_107_b": {
@@ -2681,8 +2681,8 @@
         "Nome attività": "Tommaso e Vincenzo Capobianchi",
         "": "RIGA AGGIUNTA!!!",
         "geo": {
-            "lat": 41.90834521500914,
-            "lon": 12.479089794624903
+            "lat": 41.9084557,
+            "lon": 12.4789596
         }
     },
     "IT_108": {
@@ -2698,8 +2698,8 @@
         "Nome attività": "Fabrizio e Marco Fabio Apolloni, \"W. Apolloni\"",
         "": "",
         "geo": {
-            "lat": 41.90834521500914,
-            "lon": 12.479089794624903
+            "lat": 41.9084557,
+            "lon": 12.4789596
         }
     },
     "IT_109": {
@@ -2715,8 +2715,8 @@
         "Nome attività": "Salvatore Jandolo e figli",
         "": "",
         "geo": {
-            "lat": 41.89167113647366,
-            "lon": 12.483295399849718
+            "lat": 41.8917164,
+            "lon": 12.4834113
         }
     },
     "IT_110": {
@@ -2834,8 +2834,8 @@
         "Nome attività": "Ettore Jandolo",
         "": "",
         "geo": {
-            "lat": 41.908616550000005,
-            "lon": 12.4795284
+            "lat": 41.9089407,
+            "lon": 12.4791801
         }
     },
     "IT_116": {
@@ -2868,8 +2868,8 @@
         "Nome attività": "Augusto Jandolo",
         "": "RIGA AGGIUNTA!!!",
         "geo": {
-            "lat": 41.908616550000005,
-            "lon": 12.4795284
+            "lat": 41.9089407,
+            "lon": 12.4791801
         }
     },
     "IT_117": {
@@ -2902,8 +2902,8 @@
         "Nome attività": "Pellegrino Sestieri e figli ",
         "": "",
         "geo": {
-            "lat": 41.91065933714786,
-            "lon": 12.473626354914295
+            "lat": 41.9105696,
+            "lon": 12.4733492
         }
     },
     "IT_121": {
@@ -2919,8 +2919,8 @@
         "Nome attività": "Alessandro Contini Bonacossi (abitazione privata)",
         "": "",
         "geo": {
-            "lat": 41.91370311121641,
-            "lon": 12.507556855698875
+            "lat": 41.9149169921875,
+            "lon": 12.509556770324707
         }
     },
     "IT_122": {
@@ -2936,8 +2936,8 @@
         "Nome attività": "Gioacchino Ferroni (sede e abitazione privata)",
         "": "",
         "geo": {
-            "lat": 41.908656565834534,
-            "lon": 12.487371691269852
+            "lat": 41.9073554,
+            "lon": 12.4862533
         }
     },
     "IT_123": {
@@ -2970,8 +2970,8 @@
         "Nome attività": "Giuseppe Sangiorgi, \"Negozio di arte antica e moderna\"",
         "": "",
         "geo": {
-            "lat": 41.90591006501754,
-            "lon": 12.4756252671297
+            "lat": 41.9058527,
+            "lon": 12.4756166
         }
     },
     "IT_125": {
@@ -3123,8 +3123,8 @@
         "Nome attività": "Vincenzo Ciampolini",
         "": "",
         "geo": {
-            "lat": 41.90576282169844,
-            "lon": 12.483717690146994
+            "lat": 41.9058072,
+            "lon": 12.4837775
         }
     },
     "IT_134": {
@@ -3140,8 +3140,8 @@
         "Nome attività": "Attilio Simonetti e figli, \"Galleria Simonetti\", dal 1925 \"Simonetti Aldo Giulio & C.\" (Palazzo Odescalchi)",
         "": "",
         "geo": {
-            "lat": null,
-            "lon": null
+            "lat": 41.905145,
+            "lon": 12.4720605
         }
     },
     "IT_135": {
@@ -3174,8 +3174,8 @@
         "Nome attività": "Ugo Jandolo",
         "": "RIGA AGGIUNTA!!!",
         "geo": {
-            "lat": 42.13639075850272,
-            "lon": 12.492994736818002
+            "lat": 41.9259153,
+            "lon": 12.4701764
         }
     },
     "IT_135_c": {
@@ -3191,8 +3191,8 @@
         "Nome attività": "Paolo Paolini",
         "": "RIGA AGGIUNTA!!!",
         "geo": {
-            "lat": 37.1277579,
-            "lon": -7.6493087
+            "lat": 41.8933203,
+            "lon": 12.4829321
         }
     },
     "IT_136": {
@@ -3242,8 +3242,8 @@
         "Nome attività": "Giulio Sambon, \"Impresa di vendita in Italia Giulio Sambon\"",
         "": "RIGA AGGIUNTA!!!",
         "geo": {
-            "lat": 40.93058962701163,
-            "lon": 14.295276808989765
+            "lat": 40.8356781,
+            "lon": 14.2462026
         }
     }
 }
