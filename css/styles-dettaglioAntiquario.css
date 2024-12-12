@@ -552,12 +552,13 @@ footer img {
         .slider-container {
              display: none; /* Nasconde l'intera galleria su dispositivi mobili */
         }
+        .single-image-container{
+            display: none; /* Nasconde l'intera galleria su dispositivi mobili */
+       }
         .img {
             display: none; /* Nasconde l'intera galleria su dispositivi mobili */
        }
-       .single-image-container{
-        display: none; /* Nasconde l'intera galleria su dispositivi mobili */
-   }
+
     }
     
 }
