@@ -500,7 +500,10 @@ body {
     }
 }
 /*responsive*/
-
+/* Nascondi il menu toggle su desktop */
+.menu-toggle {
+    display: none; /* Il pulsante non è visibile su desktop */
+}
 @media (max-width: 768px) {
     .header-container {
         flex-wrap: wrap;
@@ -541,10 +544,7 @@ body {
     }
 }
 
-/* Nascondi il menu toggle su desktop */
-.menu-toggle {
-    display: none; /* Il pulsante non è visibile su desktop */
-}
+
 
 /*intro section*/
 @media (max-width: 768px) {
