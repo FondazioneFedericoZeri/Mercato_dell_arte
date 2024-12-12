@@ -519,7 +519,7 @@ footer img {
         text-align: center;
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 768px) { 
     .gallery-wrapper {
         flex-direction: column; /* Disposizione verticale */
         align-items: center;
@@ -541,13 +541,14 @@ footer img {
     }
 
     .slide img {
-        height: auto; /* Mantiene proporzioni corrette */
+        display: none; /* Nasconde le immagini in versione mobile */
     }
 
     .prev, .next {
-        top: 90%; /* Sposta i pulsanti sotto l'immagine */
+        display: none; /* Nasconde i pulsanti di navigazione */
     }
 }
+
 @media (max-width: 768px) {
     .dual-content-wrapper {
         flex-direction: column;
