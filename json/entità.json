@@ -9667,9 +9667,7 @@
         },
         "Eventi": {},
         "Foto preview": "SA_V_preview",
-        "Foto gallery": [
-            ""
-        ],
+        "Foto gallery": [],
         "Persone": {
             "SA_V_1": {
                 "ID": "SA_V_1",
@@ -11251,9 +11249,7 @@
         },
         "Eventi": {},
         "Foto preview": "VE_preview",
-        "Foto gallery": [
-            ""
-        ],
+        "Foto gallery": [],
         "Persone": {
             "VE_1": {
                 "ID": "VE_1",
