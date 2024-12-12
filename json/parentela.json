@@ -93,13 +93,13 @@
         "Persone": {
             "AP_1": {
                 "Nome": "Wladimiro Apolloni",
-                "Nascita": "1888 ",
-                "Morte": "1948 "
+                "Nascita": "1888",
+                "Morte": "1948"
             },
             "AP_2": {
                 "Nome": "Fabrizio Apolloni",
-                "Nascita": "1928 ",
-                "Morte": "2006 "
+                "Nascita": "1928",
+                "Morte": "2006"
             },
             "AP_3": {
                 "Nome": "Marco Fabio Apolloni",
@@ -131,16 +131,16 @@
             "BA_I_1": {
                 "Nome": "Rizieri Bacarelli",
                 "Nascita": "",
-                "Morte": "1947 "
+                "Morte": "1947"
             },
             "BA_I_2": {
                 "Nome": "Benvenuto Bacarelli",
-                "Nascita": "1923 ",
-                "Morte": "2015 "
+                "Nascita": "1923",
+                "Morte": "2015"
             },
             "BA_I_3": {
                 "Nome": "Riccardo Bacarelli",
-                "Nascita": "1967 ",
+                "Nascita": "1967",
                 "Morte": ""
             }
         }
@@ -167,8 +167,8 @@
         "Persone": {
             "BA_II_1": {
                 "Nome": "Stefano Bardini",
-                "Nascita": "1836 ",
-                "Morte": "1922 "
+                "Nascita": "1836",
+                "Morte": "1922"
             },
             "BA_II_2": {
                 "Nome": "Emma Bardini",
@@ -177,8 +177,8 @@
             },
             "BA_II_3": {
                 "Nome": "Ugo Bardini",
-                "Nascita": "1892 ",
-                "Morte": "1965 "
+                "Nascita": "1892",
+                "Morte": "1965"
             }
         }
     },
@@ -239,18 +239,18 @@
             },
             "BE_I_3": {
                 "Nome": "Mario Bellini",
-                "Nascita": "1913 ",
-                "Morte": "2006 "
+                "Nascita": "1913",
+                "Morte": "2006"
             },
             "BE_I_4": {
                 "Nome": "Giuseppe Bellini",
-                "Nascita": "1909 ",
-                "Morte": "1994 "
+                "Nascita": "1909",
+                "Morte": "1994"
             },
             "BE_I_5": {
                 "Nome": "Luigi Bellini",
-                "Nascita": "1944 ",
-                "Morte": "2021 "
+                "Nascita": "1944",
+                "Morte": "2021"
             }
         }
     },
@@ -266,13 +266,13 @@
         "Persone": {
             "BR_I_1": {
                 "Nome": "Ivan Bruschi",
-                "Nascita": "1920 ",
-                "Morte": "1996 "
+                "Nascita": "1920",
+                "Morte": "1996"
             },
             "BR_II_1": {
                 "Nome": "Livio Bruschi",
-                "Nascita": "1906 ",
-                "Morte": "1973 "
+                "Nascita": "1906",
+                "Morte": "1973"
             }
         }
     },
@@ -303,13 +303,13 @@
         "Persone": {
             "BR_II_1": {
                 "Nome": "Livio Bruschi",
-                "Nascita": "1906 ",
-                "Morte": "1973 "
+                "Nascita": "1906",
+                "Morte": "1973"
             },
             "BR_I_1": {
                 "Nome": "Ivan Bruschi",
-                "Nascita": "1920 ",
-                "Morte": "1996 "
+                "Nascita": "1920",
+                "Morte": "1996"
             },
             "BR_II_2": {
                 "Nome": "",
@@ -350,13 +350,13 @@
             },
             "CA_I_2": {
                 "Nome": "Ercole Canessa",
-                "Nascita": "1867 ",
-                "Morte": "1929 "
+                "Nascita": "1867",
+                "Morte": "1929"
             },
             "CA_I_3": {
                 "Nome": "Amedeo Canessa",
-                "Nascita": "1874 ",
-                "Morte": "1934 "
+                "Nascita": "1874",
+                "Morte": "1934"
             }
         }
     },
@@ -1326,18 +1326,18 @@
         "Persone": {
             "BR_III_1": {
                 "Nome": "Italico Brass",
-                "Nascita": "1878 ",
-                "Morte": "1943 "
+                "Nascita": "1878",
+                "Morte": "1943"
             },
             "BR_III_2": {
                 "Nome": "Alessandro  Brass",
-                "Nascita": "1898 ",
+                "Nascita": "1898",
                 "Morte": ""
             },
             "BR_III_3": {
                 "Nome": "Italico Brass",
-                "Nascita": " ",
-                "Morte": " "
+                "Nascita": "",
+                "Morte": ""
             }
         }
     },
@@ -1353,8 +1353,8 @@
         "Persone": {
             "VE_1": {
                 "Nome": "Eugenio Ventura",
-                "Nascita": "1887 ",
-                "Morte": "1949 "
+                "Nascita": "1887",
+                "Morte": "1949"
             },
             "VE_2": {
                 "Nome": "Paola Ventura",
@@ -1380,8 +1380,8 @@
             },
             "GE_II_2": {
                 "Nome": "Aldo Geri",
-                "Nascita": "1903 ",
-                "Morte": "1981 "
+                "Nascita": "1903",
+                "Morte": "1981"
             }
         }
     },
@@ -1397,7 +1397,7 @@
         "Persone": {
             "SA_V_1": {
                 "Nome": "Isacco Sabatello",
-                "Nascita": "1883 ",
+                "Nascita": "1883",
                 "Morte": ""
             },
             "SA_V_3": {
@@ -1476,18 +1476,18 @@
         "Persone": {
             "GR_II_1": {
                 "Nome": "Antonio Grandi ",
-                "Nascita": "1810 ",
-                "Morte": "1877 "
+                "Nascita": "1810",
+                "Morte": "1877"
             },
             "GR_II_2": {
                 "Nome": "Carlo Grandi",
-                "Nascita": "1842 ",
-                "Morte": "1914 "
+                "Nascita": "1842",
+                "Morte": "1914"
             },
             "GR_II_3": {
                 "Nome": "Antonio Grandi ",
-                "Nascita": "1857 ",
-                "Morte": "1923 "
+                "Nascita": "1857",
+                "Morte": "1923"
             }
         }
     }
