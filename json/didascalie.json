@@ -79,6 +79,14 @@
         "ID": "BR_I_img1.jpg",
         "Didascalia": "Ivan Bruschi (foto Fondazione Bruschi)"
     },
+    "CA_I_img1.jpg": {
+        "ID": "CA_I_img1.jpg",
+        "Didascalia": "Cesare Canessa con il tenore Enrico Caruso e altri (da \"Canessa. Una famiglia di antiquari\")"
+    },
+    "CA_I_img2.jpg": {
+        "ID": "CA_I_img2.jpg",
+        "Didascalia": "Galleria Canessa in 479 Fifth  Avenue, New York (da \"Canessa. Una famiglia di antiquari\")   "
+    },
     "CA_II_img1.jpg": {
         "ID": "CA_II_img1.jpg",
         "Didascalia": "Autoritratto di Vincenzo Capobianchi"
@@ -326,6 +334,10 @@
     "SE_II_img3.jpg": {
         "ID": "SE_II_img3.jpg",
         "Didascalia": "Carlo Sestieri"
+    },
+    "SE_II_img4.jpg": {
+        "ID": "SE_II_img4.jpg",
+        "Didascalia": "Emanuele Sestieri (Archivio privato Sestieri)"
     },
     "SI_img1.jpg": {
         "ID": "SI_img1.jpg",
