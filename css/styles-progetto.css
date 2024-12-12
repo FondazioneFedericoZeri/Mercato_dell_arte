@@ -416,4 +416,50 @@ footer img {
 }
 
 /*responsive*/
+@media (max-width: 768px) {
+    /* Generale: Nascondi immagini e contenuti non testuali */
+    .columns-container, 
+    .image-container, 
+    .svg-container, 
+    .quote-mark-left, 
+    .quote-mark-right, 
+    .large-letter, 
+    .gallery-wrapper, 
+    .slider-container {
+        display: none; /* Nasconde contenuti extra */
+    }
+
+    /* Mantieni solo titoli e testi */
+    #two-column-section, .new-section-container, #contatti {
+        padding: 20px;
+        margin: 0;
+        text-align: center; /* Centra il testo per leggibilità */
+    }
+
+    #two-column-section h2, 
+    .new-section-container h2, 
+    #contatti h2 {
+        font-size: 24px; /* Dimensione adeguata per dispositivi mobili */
+        margin-bottom: 10px;
+    }
+
+    #two-column-section p, 
+    .new-section-container p, 
+    #contatti p {
+        font-size: 16px; /* Dimensione leggibile per il testo */
+        line-height: 1.5;
+    }
+
+    /* Sezioni specifiche: gestione dei margini */
+    .left-content, .right-content {
+        margin: 0; /* Rimuove margini */
+        padding: 10px; /* Padding per evitare sovrapposizioni */
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+}
 
