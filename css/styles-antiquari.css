@@ -499,4 +499,125 @@ body {
         font-size: 14px; /* Riduce il font per schermi più piccoli */
     }
 }
+/*responsive*/
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    nav ul {
+        display: none; /* Nasconde il menu per default */
+        flex-direction: column;
+        background-color: #f8f8f8;
+        position: absolute;
+        top: 60px; /* Posiziona il menu sotto l'header */
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    nav ul.show {
+        display: flex; /* Mostra il menu quando attivato */
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .menu-toggle:hover {
+        color: #5593C9;
+    }
+}
+
+/*intro section*/
+@media (max-width: 768px) {
+    #intro-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        margin: 0;
+    }
+
+    .text-container {
+        margin-bottom: 20px;
+    }
+
+    .svg-container {
+        margin: 0 auto;
+        max-width: 300px;
+    }
+
+    .search-bar-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-bar-container input[type="text"],
+    .search-bar-container button {
+        width: 90%;
+        margin: 10px 0;
+    }
+}
+@media (max-width: 768px) {
+    #Titolo {
+        text-align: center;
+        padding: 20px;
+        margin: 0;
+    }
+
+    #Titolo h2 {
+        font-size: 24px;
+    }
+
+    #Titolo p {
+        margin: 10px 0;
+        font-size: 16px;
+    }
+}
+@media (max-width: 768px) {
+    #cards-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .card-container {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .card-container .card {
+        width: 90%;
+        margin: 10px 0;
+    }
+}
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-left,
+    .footer-right {
+        margin: 10px 0;
+    }
+}
 
