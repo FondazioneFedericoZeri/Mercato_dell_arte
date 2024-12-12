@@ -14,7 +14,7 @@ def getText(filename):
 
 def getTXT(filename):
     fullText = []
-    with open(filename) as fin:
+    with open(filename, encoding="utf-8") as fin:
         for line in fin:
             line = line.strip()
             if len(line)>0:
