@@ -477,3 +477,121 @@ footer img {
     text-align: right;
 }
 
+/*Prova Responsive*/
+/* Nascondi il menu toggle su desktop */
+.menu-toggle {
+    display: none;
+}
+
+/* Mostra il menu toggle su dispositivi mobili */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        font-size: 24px;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .header-container {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        display: none; /* Nasconde il menu su mobile */
+        flex-direction: column;
+        background-color: #f8f8f8;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    nav ul.show {
+        display: flex; /* Mostra il menu quando attivato */
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+}
+@media (max-width: 768px) {
+    .gallery-wrapper {
+        flex-direction: column; /* Disposizione verticale */
+        align-items: center;
+        gap: 10px;
+        height: auto;
+        padding: 20px;
+    }
+
+    .gallery-title {
+        font-size: 28px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .slider-container {
+        position: static; /* Rimuove il posizionamento assoluto */
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .slide img {
+        height: auto; /* Mantiene proporzioni corrette */
+    }
+
+    .prev, .next {
+        top: 90%; /* Sposta i pulsanti sotto l'immagine */
+    }
+}
+@media (max-width: 768px) {
+    .dual-content-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .tab-container {
+        width: 100%; /* Tab occupano l'intera larghezza */
+        margin: 0;
+    }
+
+    .content-card {
+        width: 100%; /* Contenuto si adatta alla larghezza del dispositivo */
+        margin: 10px 0;
+        padding: 15px;
+    }
+
+    .tab {
+        width: 90%;
+        margin: 10px auto;
+        text-align: center;
+    }
+}
+@media (max-width: 768px) {
+    #chartdiv {
+        height: 300px;
+        min-height: 300px; /* Altezza minima per mappa */
+        width: 100%; /* Occupa tutta la larghezza */
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-left, .footer-right {
+        margin: 10px 0;
+    }
+}
