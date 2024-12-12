@@ -1390,17 +1390,7 @@
         "Relazioni": [
             {
                 "Persona_1": "SA_V_1",
-                "Persona_2": "SA_V_2",
-                "Tipo_di_relazione": "padre"
-            },
-            {
-                "Persona_1": "SA_V_2",
                 "Persona_2": "SA_V_3",
-                "Tipo_di_relazione": "padre"
-            },
-            {
-                "Persona_1": "SA_V_3",
-                "Persona_2": "SA_V_4",
                 "Tipo_di_relazione": "padre"
             }
         ],
@@ -1410,20 +1400,10 @@
                 "Nascita": "1883",
                 "Morte": ""
             },
-            "SA_V_2": {
-                "Nome": "Leone Sabatello",
-                "Nascita": "",
-                "Morte": ""
-            },
             "SA_V_3": {
                 "Nome": "Armando Sabatello",
                 "Nascita": "",
                 "Morte": ""
-            },
-            "SA_V_4": {
-                "Nome": "Dario Sabatello",
-                "Nascita": "1911",
-                "Morte": "1992"
             }
         }
     },
@@ -1436,17 +1416,17 @@
                 "Tipo_di_relazione": "padre"
             },
             {
-                "Persona_1": "ME_2",
+                "Persona_1": "ME_1",
                 "Persona_2": "ME_3",
                 "Tipo_di_relazione": "padre"
             },
             {
-                "Persona_1": "ME_3",
+                "Persona_1": "ME_1",
                 "Persona_2": "ME_4",
                 "Tipo_di_relazione": "padre"
             },
             {
-                "Persona_1": "ME_4",
+                "Persona_1": "ME_1",
                 "Persona_2": "ME_5",
                 "Tipo_di_relazione": "padre"
             }
