@@ -983,3 +983,18 @@ footer img {
     }
 }
 
+@media (max-width: 768px) {
+    section {
+        margin-bottom: 20px; /* Spazio uniforme tra le sezioni */
+    }
+
+    h1, h2, h3 {
+        text-align: center; /* Centra i titoli per migliore leggibilità */
+    }
+
+    p {
+        text-align: justify; /* Mantiene il testo leggibile su schermi piccoli */
+    }
+}
+
+
