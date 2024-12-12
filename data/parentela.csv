@@ -130,3 +130,17 @@ VO_II,VO_II_2,VO_II_5,fratello/sorella,
 VO_II,VO_II_3,VO_II_4,fratello/sorella,
 VO_II,VO_II_3,VO_II_5,fratello/sorella,
 VO_II,VO_II_4,VO_II_5,fratello/sorella,mancano tutti i legami nonno
+BR_III,BR_III_1,BR_III_2,padre
+BR_III,BR_III_2,BR_III_3,padre
+BR_III,BR_III_1,BR_III_3,nonno
+VE,VE_1,VE_2,padre
+GE,GE_II_1,GE_II_2,padre
+SA_V,SA_V_1,SA_V_2,padre
+SA_V,SA_V_2,SA_V_3,padre
+SA_V,SA_V_3,SA_V_4,padre
+ME,ME_1,ME_2,padre
+ME,ME_2,ME_3,padre
+ME,ME_3,ME_4,padre
+ME,ME_4,ME_5,padre
+GR_II,GR_II_1,GR_II_2,padre
+GR_II,GR_II_2,GR_II_3,padre
