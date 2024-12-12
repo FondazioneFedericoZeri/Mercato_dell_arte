@@ -1303,5 +1303,212 @@
                 "Morte": "1967"
             }
         }
+    },
+    "BR_III": {
+        "Nome": "Brass",
+        "Relazioni": [
+            {
+                "Persona_1": "BR_III_1",
+                "Persona_2": "BR_III_2",
+                "Tipo_di_relazione": "padre"
+            },
+            {
+                "Persona_1": "BR_III_2",
+                "Persona_2": "BR_III_3",
+                "Tipo_di_relazione": "padre"
+            },
+            {
+                "Persona_1": "BR_III_1",
+                "Persona_2": "BR_III_3",
+                "Tipo_di_relazione": "nonno"
+            }
+        ],
+        "Persone": {
+            "BR_III_1": {
+                "Nome": "Italico Brass",
+                "Nascita": "1878",
+                "Morte": "1943"
+            },
+            "BR_III_2": {
+                "Nome": "Alessandro  Brass",
+                "Nascita": "1898",
+                "Morte": ""
+            },
+            "BR_III_3": {
+                "Nome": "Italico Brass",
+                "Nascita": "",
+                "Morte": ""
+            }
+        }
+    },
+    "VE": {
+        "Nome": "Ventura",
+        "Relazioni": [
+            {
+                "Persona_1": "VE_1",
+                "Persona_2": "VE_2",
+                "Tipo_di_relazione": "padre"
+            }
+        ],
+        "Persone": {
+            "VE_1": {
+                "Nome": "Eugenio Ventura",
+                "Nascita": "1887",
+                "Morte": "1949"
+            },
+            "VE_2": {
+                "Nome": "Paola Ventura",
+                "Nascita": "",
+                "Morte": ""
+            }
+        }
+    },
+    "GE": {
+        "Nome": "",
+        "Relazioni": [
+            {
+                "Persona_1": "GE_II_1",
+                "Persona_2": "GE_II_2",
+                "Tipo_di_relazione": "padre"
+            }
+        ],
+        "Persone": {
+            "GE_II_1": {
+                "Nome": "Alfredo Geri",
+                "Nascita": "1867",
+                "Morte": "1947"
+            },
+            "GE_II_2": {
+                "Nome": "Aldo Geri",
+                "Nascita": "1903",
+                "Morte": "1981"
+            }
+        }
+    },
+    "SA_V": {
+        "Nome": "Sabatello",
+        "Relazioni": [
+            {
+                "Persona_1": "SA_V_1",
+                "Persona_2": "SA_V_2",
+                "Tipo_di_relazione": "padre"
+            },
+            {
+                "Persona_1": "SA_V_2",
+                "Persona_2": "SA_V_3",
+                "Tipo_di_relazione": "padre"
+            },
+            {
+                "Persona_1": "SA_V_3",
+                "Persona_2": "SA_V_4",
+                "Tipo_di_relazione": "padre"
+            }
+        ],
+        "Persone": {
+            "SA_V_1": {
+                "Nome": "Isacco Sabatello",
+                "Nascita": "1883",
+                "Morte": ""
+            },
+            "SA_V_2": {
+                "Nome": "Leone Sabatello",
+                "Nascita": "",
+                "Morte": ""
+            },
+            "SA_V_3": {
+                "Nome": "Armando Sabatello",
+                "Nascita": "",
+                "Morte": ""
+            },
+            "SA_V_4": {
+                "Nome": "Dario Sabatello",
+                "Nascita": "1911",
+                "Morte": "1992"
+            }
+        }
+    },
+    "ME": {
+        "Nome": "Melli",
+        "Relazioni": [
+            {
+                "Persona_1": "ME_1",
+                "Persona_2": "ME_2",
+                "Tipo_di_relazione": "padre"
+            },
+            {
+                "Persona_1": "ME_2",
+                "Persona_2": "ME_3",
+                "Tipo_di_relazione": "padre"
+            },
+            {
+                "Persona_1": "ME_3",
+                "Persona_2": "ME_4",
+                "Tipo_di_relazione": "padre"
+            },
+            {
+                "Persona_1": "ME_4",
+                "Persona_2": "ME_5",
+                "Tipo_di_relazione": "padre"
+            }
+        ],
+        "Persone": {
+            "ME_1": {
+                "Nome": "Angiolo Melli",
+                "Nascita": "",
+                "Morte": ""
+            },
+            "ME_2": {
+                "Nome": "Carlo Melli",
+                "Nascita": "",
+                "Morte": ""
+            },
+            "ME_3": {
+                "Nome": "Giuseppe Melli",
+                "Nascita": "",
+                "Morte": ""
+            },
+            "ME_4": {
+                "Nome": "Cesare Melli",
+                "Nascita": "",
+                "Morte": ""
+            },
+            "ME_5": {
+                "Nome": "Adolfo Melli",
+                "Nascita": "",
+                "Morte": ""
+            }
+        }
+    },
+    "GR_II": {
+        "Nome": "Grandi",
+        "Relazioni": [
+            {
+                "Persona_1": "GR_II_1",
+                "Persona_2": "GR_II_2",
+                "Tipo_di_relazione": "padre"
+            },
+            {
+                "Persona_1": "GR_II_2",
+                "Persona_2": "GR_II_3",
+                "Tipo_di_relazione": "padre"
+            }
+        ],
+        "Persone": {
+            "GR_II_1": {
+                "Nome": "Antonio Grandi ",
+                "Nascita": "1810",
+                "Morte": "1877"
+            },
+            "GR_II_2": {
+                "Nome": "Carlo Grandi",
+                "Nascita": "1842",
+                "Morte": "1914"
+            },
+            "GR_II_3": {
+                "Nome": "Antonio Grandi ",
+                "Nascita": "1857",
+                "Morte": "1923"
+            }
+        }
     }
 }
