@@ -547,16 +547,7 @@ footer img {
     .prev, .next {
         display: none; /* Nasconde i pulsanti di navigazione */
     }
-    @media (max-width: 768px) { 
-        .image-gallery {
-            display: none; /* Nasconde l'intera galleria su dispositivi mobili */
-        }
-    }  
-    @media (max-width: 768px) { 
-        .gallery-wrapper {
-             display: none; /* Nasconde l'intera galleria su dispositivi mobili */
-        }
-    }
+
     @media (max-width: 768px) { 
         .slider-container {
              display: none; /* Nasconde l'intera galleria su dispositivi mobili */
