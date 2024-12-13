@@ -431,4 +431,90 @@ footer img {
     text-align: right;
 }
 
+/* Imposta layout verticale per la legenda in versione mobile */
+@media (max-width: 768px) {
+    .legend-container {
+        display: flex;
+        flex-direction: column; /* Disposizione verticale */
+        align-items: center; /* Centra il contenuto */
+        gap: 10px; /* Spazio tra gli elementi */
+        padding: 10px; /* Aggiunge padding interno */
+    }
+
+    .legend-item {
+        display: flex;
+        align-items: center; /* Allinea il testo e i simboli */
+        gap: 8px; /* Spazio tra simbolo e testo */
+        width: 100%; /* Adatta la larghezza alla larghezza disponibile */
+        text-align: left; /* Allinea il testo a sinistra */
+    }
+
+    .legend-circle {
+        width: 16px; /* Riduce la dimensione del simbolo */
+        height: 16px;
+        border-radius: 50%;
+    }
+
+    .legend-label {
+        font-size: 14px; /* Ridimensiona il testo per dispositivi mobili */
+        line-height: 1.4; /* Spazio tra le righe */
+    }
+}
+/* Menù Desktop */
+nav ul {
+    display: flex; /* Disposizione orizzontale su desktop */
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.menu-toggle {
+    display: none; /* Nasconde il toggle su desktop */
+}
+
+/* Menù Mobile */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Mostra il pulsante toggle */
+        font-size: 24px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        margin-left: 10px;
+    }
+
+    nav ul {
+        display: none; /* Nasconde il menu per default */
+        flex-direction: column; /* Disposizione verticale */
+        background-color: #f8f8f8;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 10px 0;
+    }
+
+    nav ul.show {
+        display: flex; /* Mostra il menu quando attivato */
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        text-align: center; /* Centra gli elementi del menu */
+    }
+}
+/* Simboli per tutti i dispositivi */
+.legend-circle {
+    background-color: #5593C9; /* Colore del simbolo */
+    border: 1px solid #333; /* Bordo del simbolo */
+}
+
+/* Versione Mobile */
+@media (max-width: 768px) {
+    .legend-circle {
+        width: 16px; /* Simboli più piccoli su mobile */
+        height: 16px;
+    }
+}
 
