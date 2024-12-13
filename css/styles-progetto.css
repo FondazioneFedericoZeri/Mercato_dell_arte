@@ -415,3 +415,147 @@ footer img {
     text-align: right;
 }
 
+/*responsive*/
+/* Layout generale per dispositivi mobili */
+@media (max-width: 768px) {
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .menu-toggle {
+        display: block; /* Mostra il toggle su mobile */
+        font-size: 24px;
+    }
+
+    nav ul {
+        display: none; /* Nasconde il menu per default */
+        flex-direction: column;
+        width: 100%;
+        background-color: #f8f8f8;
+        padding: 10px 0;
+    }
+
+    nav ul.show {
+        display: flex; /* Mostra il menu quando attivato */
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    /* Titoli e testi */
+    .section-title {
+        font-size: 22px;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 1.5;
+        padding: 0 15px;
+    }
+}
+@media (max-width: 768px) {
+    #two-column-section {
+        padding: 10px 0;
+    }
+
+    .columns-container {
+        flex-direction: column; /* Disposizione verticale */
+        gap: 15px;
+    }
+
+    .left-column,
+    .right-column {
+        margin: 0;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .quote-mark-left,
+    .quote-mark-right {
+        font-size: 48px; /* Riduce la dimensione delle virgolette */
+    }
+
+    .large-letter {
+        font-size: 36px; /* Dimensione minore per schermi piccoli */
+    }
+}
+@media (max-width: 768px) {
+    .new-section-container {
+        flex-direction: column; /* Disposizione verticale */
+        gap: 20px;
+        padding: 15px;
+    }
+
+    .left-content {
+        display: none; /* Nasconde l'immagine di sfondo su mobile */
+    }
+
+    .right-content {
+        width: 100%; /* Adatta il contenuto alla larghezza */
+        padding: 10px;
+    }
+
+    .right-content ul {
+        padding-left: 20px; /* Spazio laterale per la lista */
+    }
+}
+@media (max-width: 768px) {
+    #contatti .columns-container {
+        flex-direction: column; /* Disposizione verticale */
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .left-column,
+    .right-column {
+        width: 100%; /* Adatta la larghezza */
+        padding: 10px;
+    }
+
+    .quote-mark-left,
+    .quote-mark-right {
+        font-size: 48px;
+    }
+}
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-left,
+    .footer-right {
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    footer img {
+        max-height: 20px; /* Ridimensiona l'immagine */
+    }
+}
