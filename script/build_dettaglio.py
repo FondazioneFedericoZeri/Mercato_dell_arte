@@ -265,7 +265,7 @@ def build_html(entity, entities):
                         if len(entity["Eventi"]) > 0:
                             with page.div(id="Eventi", klass="content"):
                                 page.h3(
-                                    _t="Eventi signficativi nell'attività antiquariale:")
+                                    _t="Eventi significativi nell'attività antiquariale:")
                                 with page.ul():
                                     for ev_item, ev_data in sorted(entity["Eventi"].items(), key=lambda x: x[1]["Anno"]):
                                         ev_string = getEvento(ev_data)
