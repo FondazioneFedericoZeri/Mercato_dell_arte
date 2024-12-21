@@ -80,8 +80,8 @@
         "Nome attività": "Ercole Canessa, \"Ercole Canessa\"",
         "": "",
         "geo": {
-            "lat": 40.6617857,
-            "lon": -73.9931918
+            "lat": 40.76124697225157,
+            "lon": -73.97589847116441
         }
     },
     "USA_6": {
@@ -165,8 +165,8 @@
         "Nome attività": "Giuseppe Bellesi, \"The Italian Art Gallery\"",
         "": "",
         "geo": {
-            "lat": 51.516173,
-            "lon": -0.152587
+            "lat": 51.51459585014354,
+            "lon": -0.1514252361877634
         }
     },
     "UK_3": {
@@ -182,8 +182,8 @@
         "Nome attività": "Giuseppe Volterra (succursale)",
         "": "",
         "geo": {
-            "lat": 51.6012667,
-            "lon": -0.0704654
+            "lat": 51.507231879332295,
+            "lon": -0.13602748236885986
         }
     },
     "UK_4": {
@@ -386,8 +386,8 @@
         "Nome attività": "Francesco Pospisil (Palazzo Sagredo, abitazione privata)",
         "": "",
         "geo": {
-            "lat": 45.4420764,
-            "lon": 12.3156452
+            "lat": 45.4423196937427,
+            "lon": 12.335120822738263
         }
     },
     "IT_1_b": {
@@ -1848,8 +1848,8 @@
         "Nome attività": "Emilio Costantini (studio)",
         "": "",
         "geo": {
-            "lat": null,
-            "lon": null
+            "lat": 43.78157043811011,
+            "lon": 11.254407144926208
         }
     },
     "IT_71": {
@@ -1916,8 +1916,8 @@
         "Nome attività": "Luigi Grassi e figli, \"Luigi Grassi & Sons\"",
         "": "",
         "geo": {
-            "lat": 43.7780668,
-            "lon": 11.2420376
+            "lat": 43.77374179835463,
+            "lon": 11.248260851771873
         }
     },
     "IT_74": {
@@ -2443,8 +2443,8 @@
         "Nome attività": "Angelo Di Castro (negozio)",
         "": "",
         "geo": {
-            "lat": null,
-            "lon": null
+            "lat": 41.90252764701485,
+            "lon": 12.461003542328857
         }
     },
     "IT_99": {
