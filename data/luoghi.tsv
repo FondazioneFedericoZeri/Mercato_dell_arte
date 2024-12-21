@@ -1,15 +1,16 @@
 ID	Nazione	Regione	Città	Via	Civico	ID_entità	Apertura	Chiusura	Nome attività		
-USA_1	Stati Uniti d'America	Stati Uniti d'America	New York City	547 5th Avenue		SE_II	1919 ca.	1929	"Emanuele e Guido Sestieri, ""Sestieri Gallery"" (succursale)"		
-USA_2	Stati Uniti d'America	Stati Uniti d'America	New York City	749 5th Avenue		TO	1919 ca. 	1928 ca.	"Raoul Tolentino, ""Tolentino Art Gallery"""		
-USA_3	Stati Uniti d'America	Stati Uniti d'America	New York City	479 5th Avenue		CA_I	1906	1914	"Amedeo Canessa, ""C. & E. Canessa"""		
-USA_4	Stati Uniti d'America	Stati Uniti d'America	New York City	547 5th Avenue		CA_I	1914	1915	"Amedeo Canessa, ""C. & E. Canessa"""		
-USA_5	Stati Uniti d'America	Stati Uniti d'America	New York City	680 5th Avenue		CA_I	1924	1929	"Ercole Canessa, ""Ercole Canessa"""		
+USA_1	Stati Uniti d'America	Stati Uniti d'America	New York City	547 5th av		SE_II	1919 ca.	1929	"Emanuele e Guido Sestieri, ""Sestieri Gallery"" (succursale)"		
+USA_2	Stati Uniti d'America	Stati Uniti d'America	New York City	749 5th av		TO	1919 ca. 	1928 ca.	"Raoul Tolentino, ""Tolentino Art Gallery"""		
+USA_3	Stati Uniti d'America	Stati Uniti d'America	New York City	479 5th av		CA_I	1906	1914	"Amedeo Canessa, ""C. & E. Canessa"""		
+USA_4	Stati Uniti d'America	Stati Uniti d'America	New York City	547 5th av		CA_I	1914	1915	"Amedeo Canessa, ""C. & E. Canessa"""		
+USA_5	Stati Uniti d'America	Stati Uniti d'America	New York City	680 5th av		CA_I	1924	1929	"Ercole Canessa, ""Ercole Canessa"""		
 USA_6	Stati Uniti d'America	Stati Uniti d'America	New York City	3 East 41st street		CA_I	1909	1916 ca.	"Amedeo Canessa, ""C. & E. Canessa"", Amedeo Canessa"		
-USA_7	Stati Uniti d'America	Stati Uniti d'America	New York City	New York	1	CA_I	1916	1928	"Amedeo e Ercole Canessa, ""Canessa Gallery"""		
+USA_7	Stati Uniti d'America	Stati Uniti d'America		New York		CA_I	1916	1928	"Amedeo e Ercole Canessa, ""Canessa Gallery"""		
 USA_8	Stati Uniti d'America	Stati Uniti d'America	New York City	15 East 47th street		OR	1900 ca.	1970 ca.	"Luigi e Raimondo Orselli, ""Luigi Orselli"" (succursale)"		RIGA AGGIUNTA!!!
+USA_9	Stati Uniti d'America	Stati Uniti d'America	New York City	New York		SA_IV			New York Studio: 55 E. 56th St		
 UK_1	Regno Unito	Regno Unito	Londra	Carlton Street		BE_II	1924	1925	Giuseppe Bellesi (Pall Mall Deposit, magazzino)		
 UK_2	Regno Unito	Regno Unito	Londra	Duke Street	2	BE_II	1937	1937	"Giuseppe Bellesi, ""The Italian Art Gallery"""		
-UK_3	Regno Unito	Regno Unito	Londra	King's Street		VO_II	1925 ca.	1932 ca.	Giuseppe Volterra (succursale)		
+UK_3	Regno Unito	Regno Unito	Londra	King Street		VO_II	1925 ca.	1932 ca.	Giuseppe Volterra (succursale)		
 UK_4	Regno Unito	Regno Unito	Londra	New Bond Street	174	BE_II	1929	1929	"Giuseppe Bellesi, ""The Italian Art Gallery"""		
 UK_5	Regno Unito	Regno Unito	Londra	Paddington Green	15	BE_II	1948	1957	"Giuseppe Bellesi, ""The Italian Art Gallery"""		
 UK_7	Regno Unito	Regno Unito	Londra	Savile Row	32	BE_II	1926	1926	"Giuseppe Bellesi, ""The Italian Art Gallery"""		
@@ -89,12 +90,12 @@ IT_49	Italia	Toscana	Firenze	Borgo Ognissanti	22	TO	1926 ca.	1927 ca.	Raul Tolen
 IT_50	Italia	Toscana	Firenze	Borgo Ognissanti	52	LA_I	1957	1966	"Leonardo Lapiccirella, ""Galleria Lapiccirella"""		
 IT_51	Italia	Toscana	Firenze	Borgo Ognissanti	50-56	GU-BR LA_I	1950 ca.	1957	Carlo e Riccardo Bruscoli, Marcello Guidi; dal 1957 al 1966 il negozio ai civici 50-52r è rilevato da Leonardo Lapiccirella		
 IT_52	Italia	Toscana	Firenze	Borgo Ognissanti	54-56R	GU-BR	1920 ca.	1950 ca.	Carlo e Riccardo Bruscoli, Marcello Guidi		
-IT_52_b	Italia	Toscana	Firenze	Borgo Ognissanti	46	GR	1966	1990 ca.	"Luigi Grassi Jr, ""Galleria Ognissanti"""		RIGA AGGIUNTA!!!
+IT_52_b	Italia	Toscana	Firenze	Borgo Ognissanti	46	GR	1966	1990 ca.	"Luigi Grassi Jr, ""Galleria Ognissanti"""		
 IT_52_c	Italia	Toscana	Firenze	Borgo Ognissanti		GE_II	1910 ca.	1931 ca.	Alfredo Geri, "Casa di vendite Arte Antica e Moderna" (sede e abitazione privata)		
 IT_52_d	Italia	Toscana	Firenze	via Borgo Santi Apostoli 	40r	ME	1900 ca.	1920 ca.	Cesare Melli (Giardino Borgherini, showroom per arredi da esterno)		
 IT_53	Italia	Toscana	Firenze	Via Cavour	88	GR	1909	1966	"Luigi e Arturo Grassi, ""Luigi Grassi & Sons"" (Palazzo Montagliari)"		
 IT_54	Italia	Toscana	Firenze	Via dei Banchi	5	GI	1929 ca.	1950 ca.	"Ubaldo Giugni, ""Galleria d'Arte"" (sede)"		
-IT_54_b	Italia	Toscana	Firenze	Via de' Bardi	1		1920	1920	"Giuseppe Volterra e fratelli, ""Gustavo Volterra"""		RIGA AGGIUNTA!!!
+IT_54_b	Italia	Toscana	Firenze	Via de' Bardi	1		1920	1920	"Giuseppe Volterra e fratelli, ""Gustavo Volterra"""		
 IT_55	Italia	Toscana	Firenze	Via dei Benci		BA_II	1877	1883	Stefano Bardini (Palazzo Canigiani)		
 IT_56	Italia	Toscana	Firenze	Via dei Fossi	7R	AL	1961	1979	Luigi Albrighi e Paola Ventura		
 IT_56_b	Italia	Toscana	Firenze	Via dei Fossi	8	GE_II	1920 ca.	1929 ca.	Alfredo Geri		
@@ -104,17 +105,17 @@ IT_59	Italia	Toscana	Firenze	Via dei Fossi	40R	SA_I	1938	1957	Giovanni Salocchi
 IT_60	Italia	Toscana	Firenze	Via dei Fossi	42R	BR_II	1940 ca.	1973	"Livio e Ivan Bruschi (fino al 1956), ""Antichità Bruschi"""		
 IT_61	Italia	Toscana	Firenze	Via dei Fossi	45R	BA_I	2016	2024	Riccardo Bacarelli (Palazzo della Manifattura Arte della Seta)		
 IT_67	Italia	Toscana	Firenze	Via dei Fossi	51R	BA_I	1925 ca.	1947 ca.	Rizieri e Benvenuto Bacarelli		
-IT_68	Italia	Toscana	Firenze	Via dei serragli	8	RO	1939	1981 ca.	Salvatore e Francesco Romano (Palazzo Magnani Feroni)		
+IT_68	Italia	Toscana	Firenze	Via dei Serragli	8	RO	1939	1981 ca.	Salvatore e Francesco Romano (Palazzo Magnani Feroni)		
 IT_69	Italia	Toscana	Firenze	Via del Moro		BA_I	1923	1925 ca.	Rizieri Bacarelli		
 IT_70	Italia	Toscana	Firenze	Via del Moro	30	GI	1950 ca.	1965 ca.	"Ubaldo Giugni, ""Galleria d'Arte"" (sede)"		
-IT_70_b	Italia	Toscana	Firenze	Via del Podere	6	CO_III	1876 ca.	1880 ca.	Emilio Costantini (studio)		
-IT_71	Italia	Toscana	Firenze	Via del porcellana		FR	1963	1972	Giuliano Freschi (deposito)		
+IT_70_b	Italia	Toscana	Firenze	Via del Podere	6	CO_III	1876 ca.	1876-1880 ca.	Emilio Costantini (studio), Firenze, ex Via del Podere 6		
+IT_71	Italia	Toscana	Firenze	Via del Porcellana		FR	1963	1972	Giuliano Freschi (deposito)		
 IT_71_b	Italia	Toscana	Firenze	via del Parione	2	ME	1910 ca.	1920 ca.	Giuseppe Melli		
 IT_72	Italia	Toscana	Firenze	Via Del Sole		BE_I	1880 ca.	1900 ca.	Giuseppe Bellini		
-IT_73	Italia	Toscana	Firenze	Via della scala		GR	1900 ca.	1909	"Luigi Grassi e figli, ""Luigi Grassi & Sons"""		
-IT_74	Italia	Toscana	Firenze	Via della vigna nuova		BA_I	1950 ca.	1989 ca.	Benvenuto Bacarelli		
-IT_74_b	Italia	Toscana	Firenze	Via della vigna nuova	79R	FR	1972	1990	Giuliano Freschi		RIGA AGGIUNTA!!!
-IT_75_a	Italia	Toscana	Firenze	Via delle belle donne	8	RO	1924	1939	Salvatore e Francesco Romano		
+IT_73	Italia	Toscana	Firenze	Via della Scala		GR	1900 ca.	1909	"Luigi Grassi e figli, ""Luigi Grassi & Sons"""		
+IT_74	Italia	Toscana	Firenze	Via della Vigna Nuova		BA_I	1950 ca.	1989 ca.	Benvenuto Bacarelli		
+IT_74_b	Italia	Toscana	Firenze	Via della Vigna Nuova	79R	FR	1972	1990	Giuliano Freschi		RIGA AGGIUNTA!!!
+IT_75_a	Italia	Toscana	Firenze	Via delle Belle Donne	8	RO	1924	1939	Salvatore e Francesco Romano		
 IT_75_b	Italia	Toscana	Firenze	Via Guicciardini	6	VO_II ME	1920 ca.	1932 ca.	Giuseppe Volterra e fratelli e Adolfo Melli		
 IT_76	Italia	Toscana	Firenze	Lungarno Soderini	5	BE_I	1920 ca.	2007	Luigi, Giuseppe Jr e Mario Bellini 		
 IT_76_b	Italia	Toscana	Firenze	Lungarno Guicciardini	7	CO_III	1900 ca.	1910 ca.	Emilio e Davide Luigi Costantini		
@@ -142,7 +143,7 @@ IT_94	Italia	Lazio	Roma	Piazza di Spagna	81	SE_II	1945	1985	"Emanuele e Guido Se
 IT_95	Italia	Lazio	Roma	Piazza di Spagna	83	SE_I	1880 ca.	1938 ca.	Isacco Segre		
 IT_96	Italia	Lazio	Roma	Piazza di Spagna	92	SE_I	1870	1938 ca.	Isacco e Emanuele Segre, poi solo Emanuele		
 IT_97	Italia	Lazio	Roma	Piazza Sant'Apollinare	46	SI	1870 ca.	1890	Attilio Simonetti (Palazzo Altemps, studio privato)		
-IT_98	Italia	Lazio	Roma	Piazza Scossacavalli		DI	1870 ca.	1920 ca.	Angelo Di Castro (negozio)		
+IT_98	Italia	Lazio	Roma	Piazza Scossacavalli		DI	1870 ca.	1920 ca.	Angelo Di Castro (negozio), ex Piazza Scossacavalli		
 IT_99	Italia	Lazio	Roma	Piazza della Trinità dei Monti	6	CA_II	1885	1901	"Giuseppe Giacomini e Vincenzo Capobianchi, ""Giacomini & Capobianchi"""		
 IT_100	Italia	Lazio	Roma	"Via dei Condotti, Campo Marzio"		TA	1880 ca.	1924	Filippo Tavazzi		
 IT_101	Italia	Lazio	Roma	"Via dei Condotti, Campo Marzio"	44	SA_III	1887	1905 ca.	"Giulio Sambon, ""Impresa di vendita in Italia Giulio Sambon"""		

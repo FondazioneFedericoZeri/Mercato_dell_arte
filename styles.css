@@ -935,6 +935,7 @@ footer img {
     #map .text-content {
         text-align: center; /* Centra il contenuto testuale */
         margin: 0;
+        width: 100%;
     }
 
     footer {
