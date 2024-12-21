@@ -129,7 +129,22 @@
         "Apertura": "1900 ca.",
         "Chiusura": "1970 ca.",
         "Nome attività": "Luigi e Raimondo Orselli, \"Luigi Orselli\" (succursale)",
-        "": "RIGA AGGIUNTA!!!",
+        "geo": {
+            "lat": 40.756407949999996,
+            "lon": -73.97735424999999
+        }
+    },
+    "USA_9": {
+        "ID": "USA_9",
+        "Nazione": "Stati Uniti d'America",
+        "Regione": "Stati Uniti d'America",
+        "Città": "New York",
+        "Via": "",
+        "Civico": "",
+        "ID_entità": "SA_IV",
+        "Apertura": "",
+        "Chiusura": "",
+        "Nome attività": "New York Studio: 55 E. 56th St.",
         "geo": {
             "lat": 40.756407949999996,
             "lon": -73.97735424999999
