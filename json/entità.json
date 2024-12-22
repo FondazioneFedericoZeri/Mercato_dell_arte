@@ -8849,6 +8849,381 @@
             "PA_I": true
         }
     },
+    "SA_V": {
+        "ID": "SA_V",
+        "Nome": "Sabatello",
+        "Bio": "SA_V_bio",
+        "Link Zeri": "https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=sabatello&page=1",
+        "Bibliografia": {
+            "B_90": {
+                "ID": "B_90",
+                "Autore": "Modestini, M.",
+                "Anno": "2018",
+                "Titolo": "Capolavori?: basato su un manoscritto di Mario Modestini",
+                "Città, editore o rivista": "Fiesole, Cadmo",
+                "Pagine": "",
+                "Tipologia": "monografia"
+            },
+            "B_215_2": {
+                "ID": "B_215_2",
+                "Autore": "",
+                "Anno": "1927",
+                "Titolo": "Negozianti d'arte (Roma-Rovereto)",
+                "Città, editore o rivista": "In «Maecenas», 1.1927, Berlino, Stern",
+                "Pagine": "p. 425",
+                "Tipologia": "articolo di periodico"
+            }
+        },
+        "Collaboratori": {
+            "C_11": {
+                "ID": "C_11",
+                "Nome": "Giuliano",
+                "Cognome / Denominazione": "Briganti",
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "AN-EF AP GR_II",
+                "Nome Antiquari": "Antonacci-Efrati Apolloni Grandi"
+            },
+            "C_42": {
+                "ID": "C_42",
+                "Nome": "Mario",
+                "Cognome / Denominazione": "Modestini",
+                "Tipologia": "restauratore",
+                "ID Antiquari": "CO_I",
+                "Nome Antiquari": "Contini Bonacossi"
+            },
+            "C_68": {
+                "ID": "C_68",
+                "Nome": "Federico",
+                "Cognome / Denominazione": "Zeri",
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "ZA SA_V",
+                "Nome Antiquari": "Zabert Sabatello"
+            }
+        },
+        "Eventi": {},
+        "Foto preview": "SA_V_preview",
+        "Foto gallery": [],
+        "Persone": {
+            "SA_V_1": {
+                "ID": "SA_V_1",
+                "Nome Persona": "Isacco Sabatello",
+                "ID_entità": "SA_V",
+                "ID_luoghi": {
+                    "IT_87_d": {
+                        "ID": "IT_87_d",
+                        "Nazione": "Italia",
+                        "Regione": "Lazio",
+                        "Città": "Roma",
+                        "Via": "Largo Arenula",
+                        "Civico": "54",
+                        "ID_entità": "SA_V",
+                        "Apertura": "1900 ca.",
+                        "Chiusura": "1930 ca.",
+                        "Nome attività": "Isacco Sabatello, \"Isacco Sabatello e figli\"",
+                        "": "",
+                        "geo": {
+                            "lat": 41.89470435,
+                            "lon": 12.476355478143148
+                        }
+                    },
+                    "IT_87_e": {
+                        "ID": "IT_87_e",
+                        "Nazione": "Italia",
+                        "Regione": "Lazio",
+                        "Città": "Roma",
+                        "Via": "Lungotevere Flaminio",
+                        "Civico": "24",
+                        "ID_entità": "SA_V",
+                        "Apertura": "1950 ca.",
+                        "Chiusura": "1970 ca.",
+                        "Nome attività": "Armando Sabatello (abitazione privata)",
+                        "": "",
+                        "geo": {
+                            "lat": 41.92681180682235,
+                            "lon": 12.461249389880953
+                        }
+                    },
+                    "IT_102_b": {
+                        "ID": "IT_102_b",
+                        "Nazione": "Italia",
+                        "Regione": "Lazio",
+                        "Città": "Roma",
+                        "Via": "Via del Babuino",
+                        "Civico": "15",
+                        "ID_entità": "SA_V",
+                        "Apertura": "1900 ca.",
+                        "Chiusura": "1930 ca.",
+                        "Nome attività": "Leone Sabatello",
+                        "": "",
+                        "geo": {
+                            "lat": 41.90834521500914,
+                            "lon": 12.479089794624903
+                        }
+                    },
+                    "IT_102_d": {
+                        "ID": "IT_102_d",
+                        "Nazione": "Italia",
+                        "Regione": "Lazio",
+                        "Città": "Roma",
+                        "Via": "Via del Babuino",
+                        "Civico": "61",
+                        "ID_entità": "SA_V",
+                        "Apertura": "1932",
+                        "Chiusura": "1935",
+                        "Nome attività": "Dario Sabatello, \"Galleria Sabatello\"",
+                        "": "",
+                        "geo": {
+                            "lat": 41.90834521500914,
+                            "lon": 12.479089794624903
+                        }
+                    }
+                },
+                "Professione": "antiquario",
+                "Nascita": "1883",
+                "Morte": "",
+                "Nome attività": "Isacco Sabatello e figli"
+            },
+            "SA_V_2": {
+                "ID": "SA_V_2",
+                "Nome Persona": "Leone Sabatello",
+                "ID_entità": "SA_V",
+                "ID_luoghi": {
+                    "IT_87_d": {
+                        "ID": "IT_87_d",
+                        "Nazione": "Italia",
+                        "Regione": "Lazio",
+                        "Città": "Roma",
+                        "Via": "Largo Arenula",
+                        "Civico": "54",
+                        "ID_entità": "SA_V",
+                        "Apertura": "1900 ca.",
+                        "Chiusura": "1930 ca.",
+                        "Nome attività": "Isacco Sabatello, \"Isacco Sabatello e figli\"",
+                        "": "",
+                        "geo": {
+                            "lat": 41.89470435,
+                            "lon": 12.476355478143148
+                        }
+                    },
+                    "IT_87_e": {
+                        "ID": "IT_87_e",
+                        "Nazione": "Italia",
+                        "Regione": "Lazio",
+                        "Città": "Roma",
+                        "Via": "Lungotevere Flaminio",
+                        "Civico": "24",
+                        "ID_entità": "SA_V",
+                        "Apertura": "1950 ca.",
+                        "Chiusura": "1970 ca.",
+                        "Nome attività": "Armando Sabatello (abitazione privata)",
+                        "": "",
+                        "geo": {
+                            "lat": 41.92681180682235,
+                            "lon": 12.461249389880953
+                        }
+                    },
+                    "IT_102_b": {
+                        "ID": "IT_102_b",
+                        "Nazione": "Italia",
+                        "Regione": "Lazio",
+                        "Città": "Roma",
+                        "Via": "Via del Babuino",
+                        "Civico": "15",
+                        "ID_entità": "SA_V",
+                        "Apertura": "1900 ca.",
+                        "Chiusura": "1930 ca.",
+                        "Nome attività": "Leone Sabatello",
+                        "": "",
+                        "geo": {
+                            "lat": 41.90834521500914,
+                            "lon": 12.479089794624903
+                        }
+                    },
+                    "IT_102_d": {
+                        "ID": "IT_102_d",
+                        "Nazione": "Italia",
+                        "Regione": "Lazio",
+                        "Città": "Roma",
+                        "Via": "Via del Babuino",
+                        "Civico": "61",
+                        "ID_entità": "SA_V",
+                        "Apertura": "1932",
+                        "Chiusura": "1935",
+                        "Nome attività": "Dario Sabatello, \"Galleria Sabatello\"",
+                        "": "",
+                        "geo": {
+                            "lat": 41.90834521500914,
+                            "lon": 12.479089794624903
+                        }
+                    }
+                },
+                "Professione": "antiquario",
+                "Nascita": "",
+                "Morte": "",
+                "Nome attività": "Non noto"
+            },
+            "SA_V_3": {
+                "ID": "SA_V_3",
+                "Nome Persona": "Armando Sabatello",
+                "ID_entità": "SA_V",
+                "ID_luoghi": {
+                    "IT_87_d": {
+                        "ID": "IT_87_d",
+                        "Nazione": "Italia",
+                        "Regione": "Lazio",
+                        "Città": "Roma",
+                        "Via": "Largo Arenula",
+                        "Civico": "54",
+                        "ID_entità": "SA_V",
+                        "Apertura": "1900 ca.",
+                        "Chiusura": "1930 ca.",
+                        "Nome attività": "Isacco Sabatello, \"Isacco Sabatello e figli\"",
+                        "": "",
+                        "geo": {
+                            "lat": 41.89470435,
+                            "lon": 12.476355478143148
+                        }
+                    },
+                    "IT_87_e": {
+                        "ID": "IT_87_e",
+                        "Nazione": "Italia",
+                        "Regione": "Lazio",
+                        "Città": "Roma",
+                        "Via": "Lungotevere Flaminio",
+                        "Civico": "24",
+                        "ID_entità": "SA_V",
+                        "Apertura": "1950 ca.",
+                        "Chiusura": "1970 ca.",
+                        "Nome attività": "Armando Sabatello (abitazione privata)",
+                        "": "",
+                        "geo": {
+                            "lat": 41.92681180682235,
+                            "lon": 12.461249389880953
+                        }
+                    },
+                    "IT_102_b": {
+                        "ID": "IT_102_b",
+                        "Nazione": "Italia",
+                        "Regione": "Lazio",
+                        "Città": "Roma",
+                        "Via": "Via del Babuino",
+                        "Civico": "15",
+                        "ID_entità": "SA_V",
+                        "Apertura": "1900 ca.",
+                        "Chiusura": "1930 ca.",
+                        "Nome attività": "Leone Sabatello",
+                        "": "",
+                        "geo": {
+                            "lat": 41.90834521500914,
+                            "lon": 12.479089794624903
+                        }
+                    },
+                    "IT_102_d": {
+                        "ID": "IT_102_d",
+                        "Nazione": "Italia",
+                        "Regione": "Lazio",
+                        "Città": "Roma",
+                        "Via": "Via del Babuino",
+                        "Civico": "61",
+                        "ID_entità": "SA_V",
+                        "Apertura": "1932",
+                        "Chiusura": "1935",
+                        "Nome attività": "Dario Sabatello, \"Galleria Sabatello\"",
+                        "": "",
+                        "geo": {
+                            "lat": 41.90834521500914,
+                            "lon": 12.479089794624903
+                        }
+                    }
+                },
+                "Professione": "antiquario",
+                "Nascita": "",
+                "Morte": "",
+                "Nome attività": "Non noto"
+            },
+            "SA_V_4": {
+                "ID": "SA_V_4",
+                "Nome Persona": "Dario Sabatello",
+                "ID_entità": "SA_V",
+                "ID_luoghi": {
+                    "IT_87_d": {
+                        "ID": "IT_87_d",
+                        "Nazione": "Italia",
+                        "Regione": "Lazio",
+                        "Città": "Roma",
+                        "Via": "Largo Arenula",
+                        "Civico": "54",
+                        "ID_entità": "SA_V",
+                        "Apertura": "1900 ca.",
+                        "Chiusura": "1930 ca.",
+                        "Nome attività": "Isacco Sabatello, \"Isacco Sabatello e figli\"",
+                        "": "",
+                        "geo": {
+                            "lat": 41.89470435,
+                            "lon": 12.476355478143148
+                        }
+                    },
+                    "IT_87_e": {
+                        "ID": "IT_87_e",
+                        "Nazione": "Italia",
+                        "Regione": "Lazio",
+                        "Città": "Roma",
+                        "Via": "Lungotevere Flaminio",
+                        "Civico": "24",
+                        "ID_entità": "SA_V",
+                        "Apertura": "1950 ca.",
+                        "Chiusura": "1970 ca.",
+                        "Nome attività": "Armando Sabatello (abitazione privata)",
+                        "": "",
+                        "geo": {
+                            "lat": 41.92681180682235,
+                            "lon": 12.461249389880953
+                        }
+                    },
+                    "IT_102_b": {
+                        "ID": "IT_102_b",
+                        "Nazione": "Italia",
+                        "Regione": "Lazio",
+                        "Città": "Roma",
+                        "Via": "Via del Babuino",
+                        "Civico": "15",
+                        "ID_entità": "SA_V",
+                        "Apertura": "1900 ca.",
+                        "Chiusura": "1930 ca.",
+                        "Nome attività": "Leone Sabatello",
+                        "": "",
+                        "geo": {
+                            "lat": 41.90834521500914,
+                            "lon": 12.479089794624903
+                        }
+                    },
+                    "IT_102_d": {
+                        "ID": "IT_102_d",
+                        "Nazione": "Italia",
+                        "Regione": "Lazio",
+                        "Città": "Roma",
+                        "Via": "Via del Babuino",
+                        "Civico": "61",
+                        "ID_entità": "SA_V",
+                        "Apertura": "1932",
+                        "Chiusura": "1935",
+                        "Nome attività": "Dario Sabatello, \"Galleria Sabatello\"",
+                        "": "",
+                        "geo": {
+                            "lat": 41.90834521500914,
+                            "lon": 12.479089794624903
+                        }
+                    }
+                },
+                "Professione": "gallerista",
+                "Nascita": "1911",
+                "Morte": "1992",
+                "Nome attività": "Non noto"
+            }
+        },
+        "Clienti": {},
+        "Relazioni": {}
+    },
     "SA_I": {
         "ID": "SA_I",
         "Nome": "Salocchi",
@@ -9025,6 +9400,61 @@
             "FR": true,
             "ZA": true
         }
+    },
+    "SA_VI": {
+        "ID": "SA_VI",
+        "Nome": "Salvadori Antonio",
+        "Bio": "SA_VI_bio",
+        "Link Zeri": "https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Salvadori&page=1&filtroprovenienza_OA=5829%7C5652",
+        "Bibliografia": {
+            "B_215_3": {
+                "ID": "B_215_3",
+                "Autore": "",
+                "Anno": "1909",
+                "Titolo": "La Madonna del Giambellino rubata e recuperata a Venezia",
+                "Città, editore o rivista": "In «L'Antiquario», giugno 1909",
+                "Pagine": "pp. 6-8",
+                "Tipologia": "articolo di periodico"
+            }
+        },
+        "Collaboratori": {},
+        "Eventi": {},
+        "Foto preview": "SA_VI_preview",
+        "Foto gallery": [
+            "SA_VI_img1"
+        ],
+        "Persone": {
+            "SA_VI_1": {
+                "ID": "SA_VI_1",
+                "Nome Persona": "Salvadori Antonio",
+                "ID_entità": "SA_VI",
+                "ID_luoghi": {
+                    "IT_1_g": {
+                        "ID": "IT_1_g",
+                        "Nazione": "Italia",
+                        "Regione": "Veneto",
+                        "Città": "Venezia",
+                        "Via": "",
+                        "Civico": "",
+                        "ID_entità": "SA_VI",
+                        "Apertura": "",
+                        "Chiusura": "",
+                        "Nome attività": "Antonio Salvadori",
+                        "": "",
+                        "geo": {
+                            "lat": 45.4371908,
+                            "lon": 12.3345898
+                        }
+                    }
+                },
+                "Professione": "antiquario",
+                "Nascita": "",
+                "Morte": "",
+                "Nome attività": ""
+            }
+        },
+        "Clienti": {},
+        "Relazioni": {}
     },
     "SA_II": {
         "ID": "SA_II",
@@ -9612,436 +10042,6 @@
                 "Nascita": "1925",
                 "Morte": "2015",
                 "Nome attività": "Galleria Sangiorgi - Roma Palazzo Borghese Galleria dei bronzi e dei marmi, negozio di arte antica e moderna"
-            }
-        },
-        "Clienti": {},
-        "Relazioni": {}
-    },
-    "SA_V": {
-        "ID": "SA_V",
-        "Nome": "Sabatello",
-        "Bio": "SA_V_bio",
-        "Link Zeri": "https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=sabatello&page=1",
-        "Bibliografia": {
-            "B_90": {
-                "ID": "B_90",
-                "Autore": "Modestini, M.",
-                "Anno": "2018",
-                "Titolo": "Capolavori?: basato su un manoscritto di Mario Modestini",
-                "Città, editore o rivista": "Fiesole, Cadmo",
-                "Pagine": "",
-                "Tipologia": "monografia"
-            },
-            "B_215_2": {
-                "ID": "B_215_2",
-                "Autore": "",
-                "Anno": "1927",
-                "Titolo": "Negozianti d'arte (Roma-Rovereto)",
-                "Città, editore o rivista": "In «Maecenas», 1.1927, Berlino, Stern",
-                "Pagine": "p. 425",
-                "Tipologia": "articolo di periodico"
-            }
-        },
-        "Collaboratori": {
-            "C_11": {
-                "ID": "C_11",
-                "Nome": "Giuliano",
-                "Cognome / Denominazione": "Briganti",
-                "Tipologia": "storico dell'arte",
-                "ID Antiquari": "AN-EF AP GR_II",
-                "Nome Antiquari": "Antonacci-Efrati Apolloni Grandi"
-            },
-            "C_42": {
-                "ID": "C_42",
-                "Nome": "Mario",
-                "Cognome / Denominazione": "Modestini",
-                "Tipologia": "restauratore",
-                "ID Antiquari": "CO_I",
-                "Nome Antiquari": "Contini Bonacossi"
-            },
-            "C_68": {
-                "ID": "C_68",
-                "Nome": "Federico",
-                "Cognome / Denominazione": "Zeri",
-                "Tipologia": "storico dell'arte",
-                "ID Antiquari": "ZA SA_V",
-                "Nome Antiquari": "Zabert Sabatello"
-            }
-        },
-        "Eventi": {},
-        "Foto preview": "SA_V_preview",
-        "Foto gallery": [],
-        "Persone": {
-            "SA_V_1": {
-                "ID": "SA_V_1",
-                "Nome Persona": "Isacco Sabatello",
-                "ID_entità": "SA_V",
-                "ID_luoghi": {
-                    "IT_87_d": {
-                        "ID": "IT_87_d",
-                        "Nazione": "Italia",
-                        "Regione": "Lazio",
-                        "Città": "Roma",
-                        "Via": "Largo Arenula",
-                        "Civico": "54",
-                        "ID_entità": "SA_V",
-                        "Apertura": "1900 ca.",
-                        "Chiusura": "1930 ca.",
-                        "Nome attività": "Isacco Sabatello, \"Isacco Sabatello e figli\"",
-                        "": "",
-                        "geo": {
-                            "lat": 41.89470435,
-                            "lon": 12.476355478143148
-                        }
-                    },
-                    "IT_87_e": {
-                        "ID": "IT_87_e",
-                        "Nazione": "Italia",
-                        "Regione": "Lazio",
-                        "Città": "Roma",
-                        "Via": "Lungotevere Flaminio",
-                        "Civico": "24",
-                        "ID_entità": "SA_V",
-                        "Apertura": "1950 ca.",
-                        "Chiusura": "1970 ca.",
-                        "Nome attività": "Armando Sabatello (abitazione privata)",
-                        "": "",
-                        "geo": {
-                            "lat": 41.92681180682235,
-                            "lon": 12.461249389880953
-                        }
-                    },
-                    "IT_102_b": {
-                        "ID": "IT_102_b",
-                        "Nazione": "Italia",
-                        "Regione": "Lazio",
-                        "Città": "Roma",
-                        "Via": "Via del Babuino",
-                        "Civico": "15",
-                        "ID_entità": "SA_V",
-                        "Apertura": "1900 ca.",
-                        "Chiusura": "1930 ca.",
-                        "Nome attività": "Leone Sabatello",
-                        "": "",
-                        "geo": {
-                            "lat": 41.90834521500914,
-                            "lon": 12.479089794624903
-                        }
-                    },
-                    "IT_102_d": {
-                        "ID": "IT_102_d",
-                        "Nazione": "Italia",
-                        "Regione": "Lazio",
-                        "Città": "Roma",
-                        "Via": "Via del Babuino",
-                        "Civico": "61",
-                        "ID_entità": "SA_V",
-                        "Apertura": "1932",
-                        "Chiusura": "1935",
-                        "Nome attività": "Dario Sabatello, \"Galleria Sabatello\"",
-                        "": "",
-                        "geo": {
-                            "lat": 41.90834521500914,
-                            "lon": 12.479089794624903
-                        }
-                    }
-                },
-                "Professione": "antiquario",
-                "Nascita": "1883",
-                "Morte": "",
-                "Nome attività": "Isacco Sabatello e figli"
-            },
-            "SA_V_2": {
-                "ID": "SA_V_2",
-                "Nome Persona": "Leone Sabatello",
-                "ID_entità": "SA_V",
-                "ID_luoghi": {
-                    "IT_87_d": {
-                        "ID": "IT_87_d",
-                        "Nazione": "Italia",
-                        "Regione": "Lazio",
-                        "Città": "Roma",
-                        "Via": "Largo Arenula",
-                        "Civico": "54",
-                        "ID_entità": "SA_V",
-                        "Apertura": "1900 ca.",
-                        "Chiusura": "1930 ca.",
-                        "Nome attività": "Isacco Sabatello, \"Isacco Sabatello e figli\"",
-                        "": "",
-                        "geo": {
-                            "lat": 41.89470435,
-                            "lon": 12.476355478143148
-                        }
-                    },
-                    "IT_87_e": {
-                        "ID": "IT_87_e",
-                        "Nazione": "Italia",
-                        "Regione": "Lazio",
-                        "Città": "Roma",
-                        "Via": "Lungotevere Flaminio",
-                        "Civico": "24",
-                        "ID_entità": "SA_V",
-                        "Apertura": "1950 ca.",
-                        "Chiusura": "1970 ca.",
-                        "Nome attività": "Armando Sabatello (abitazione privata)",
-                        "": "",
-                        "geo": {
-                            "lat": 41.92681180682235,
-                            "lon": 12.461249389880953
-                        }
-                    },
-                    "IT_102_b": {
-                        "ID": "IT_102_b",
-                        "Nazione": "Italia",
-                        "Regione": "Lazio",
-                        "Città": "Roma",
-                        "Via": "Via del Babuino",
-                        "Civico": "15",
-                        "ID_entità": "SA_V",
-                        "Apertura": "1900 ca.",
-                        "Chiusura": "1930 ca.",
-                        "Nome attività": "Leone Sabatello",
-                        "": "",
-                        "geo": {
-                            "lat": 41.90834521500914,
-                            "lon": 12.479089794624903
-                        }
-                    },
-                    "IT_102_d": {
-                        "ID": "IT_102_d",
-                        "Nazione": "Italia",
-                        "Regione": "Lazio",
-                        "Città": "Roma",
-                        "Via": "Via del Babuino",
-                        "Civico": "61",
-                        "ID_entità": "SA_V",
-                        "Apertura": "1932",
-                        "Chiusura": "1935",
-                        "Nome attività": "Dario Sabatello, \"Galleria Sabatello\"",
-                        "": "",
-                        "geo": {
-                            "lat": 41.90834521500914,
-                            "lon": 12.479089794624903
-                        }
-                    }
-                },
-                "Professione": "antiquario",
-                "Nascita": "",
-                "Morte": "",
-                "Nome attività": "Non noto"
-            },
-            "SA_V_3": {
-                "ID": "SA_V_3",
-                "Nome Persona": "Armando Sabatello",
-                "ID_entità": "SA_V",
-                "ID_luoghi": {
-                    "IT_87_d": {
-                        "ID": "IT_87_d",
-                        "Nazione": "Italia",
-                        "Regione": "Lazio",
-                        "Città": "Roma",
-                        "Via": "Largo Arenula",
-                        "Civico": "54",
-                        "ID_entità": "SA_V",
-                        "Apertura": "1900 ca.",
-                        "Chiusura": "1930 ca.",
-                        "Nome attività": "Isacco Sabatello, \"Isacco Sabatello e figli\"",
-                        "": "",
-                        "geo": {
-                            "lat": 41.89470435,
-                            "lon": 12.476355478143148
-                        }
-                    },
-                    "IT_87_e": {
-                        "ID": "IT_87_e",
-                        "Nazione": "Italia",
-                        "Regione": "Lazio",
-                        "Città": "Roma",
-                        "Via": "Lungotevere Flaminio",
-                        "Civico": "24",
-                        "ID_entità": "SA_V",
-                        "Apertura": "1950 ca.",
-                        "Chiusura": "1970 ca.",
-                        "Nome attività": "Armando Sabatello (abitazione privata)",
-                        "": "",
-                        "geo": {
-                            "lat": 41.92681180682235,
-                            "lon": 12.461249389880953
-                        }
-                    },
-                    "IT_102_b": {
-                        "ID": "IT_102_b",
-                        "Nazione": "Italia",
-                        "Regione": "Lazio",
-                        "Città": "Roma",
-                        "Via": "Via del Babuino",
-                        "Civico": "15",
-                        "ID_entità": "SA_V",
-                        "Apertura": "1900 ca.",
-                        "Chiusura": "1930 ca.",
-                        "Nome attività": "Leone Sabatello",
-                        "": "",
-                        "geo": {
-                            "lat": 41.90834521500914,
-                            "lon": 12.479089794624903
-                        }
-                    },
-                    "IT_102_d": {
-                        "ID": "IT_102_d",
-                        "Nazione": "Italia",
-                        "Regione": "Lazio",
-                        "Città": "Roma",
-                        "Via": "Via del Babuino",
-                        "Civico": "61",
-                        "ID_entità": "SA_V",
-                        "Apertura": "1932",
-                        "Chiusura": "1935",
-                        "Nome attività": "Dario Sabatello, \"Galleria Sabatello\"",
-                        "": "",
-                        "geo": {
-                            "lat": 41.90834521500914,
-                            "lon": 12.479089794624903
-                        }
-                    }
-                },
-                "Professione": "antiquario",
-                "Nascita": "",
-                "Morte": "",
-                "Nome attività": "Non noto"
-            },
-            "SA_V_4": {
-                "ID": "SA_V_4",
-                "Nome Persona": "Dario Sabatello",
-                "ID_entità": "SA_V",
-                "ID_luoghi": {
-                    "IT_87_d": {
-                        "ID": "IT_87_d",
-                        "Nazione": "Italia",
-                        "Regione": "Lazio",
-                        "Città": "Roma",
-                        "Via": "Largo Arenula",
-                        "Civico": "54",
-                        "ID_entità": "SA_V",
-                        "Apertura": "1900 ca.",
-                        "Chiusura": "1930 ca.",
-                        "Nome attività": "Isacco Sabatello, \"Isacco Sabatello e figli\"",
-                        "": "",
-                        "geo": {
-                            "lat": 41.89470435,
-                            "lon": 12.476355478143148
-                        }
-                    },
-                    "IT_87_e": {
-                        "ID": "IT_87_e",
-                        "Nazione": "Italia",
-                        "Regione": "Lazio",
-                        "Città": "Roma",
-                        "Via": "Lungotevere Flaminio",
-                        "Civico": "24",
-                        "ID_entità": "SA_V",
-                        "Apertura": "1950 ca.",
-                        "Chiusura": "1970 ca.",
-                        "Nome attività": "Armando Sabatello (abitazione privata)",
-                        "": "",
-                        "geo": {
-                            "lat": 41.92681180682235,
-                            "lon": 12.461249389880953
-                        }
-                    },
-                    "IT_102_b": {
-                        "ID": "IT_102_b",
-                        "Nazione": "Italia",
-                        "Regione": "Lazio",
-                        "Città": "Roma",
-                        "Via": "Via del Babuino",
-                        "Civico": "15",
-                        "ID_entità": "SA_V",
-                        "Apertura": "1900 ca.",
-                        "Chiusura": "1930 ca.",
-                        "Nome attività": "Leone Sabatello",
-                        "": "",
-                        "geo": {
-                            "lat": 41.90834521500914,
-                            "lon": 12.479089794624903
-                        }
-                    },
-                    "IT_102_d": {
-                        "ID": "IT_102_d",
-                        "Nazione": "Italia",
-                        "Regione": "Lazio",
-                        "Città": "Roma",
-                        "Via": "Via del Babuino",
-                        "Civico": "61",
-                        "ID_entità": "SA_V",
-                        "Apertura": "1932",
-                        "Chiusura": "1935",
-                        "Nome attività": "Dario Sabatello, \"Galleria Sabatello\"",
-                        "": "",
-                        "geo": {
-                            "lat": 41.90834521500914,
-                            "lon": 12.479089794624903
-                        }
-                    }
-                },
-                "Professione": "gallerista",
-                "Nascita": "1911",
-                "Morte": "1992",
-                "Nome attività": "Non noto"
-            }
-        },
-        "Clienti": {},
-        "Relazioni": {}
-    },
-    "SA_VI": {
-        "ID": "SA_VI",
-        "Nome": "Salvadori Antonio",
-        "Bio": "SA_VI_bio",
-        "Link Zeri": "https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Salvadori&page=1&filtroprovenienza_OA=5829%7C5652",
-        "Bibliografia": {
-            "B_215_3": {
-                "ID": "B_215_3",
-                "Autore": "",
-                "Anno": "1909",
-                "Titolo": "La Madonna del Giambellino rubata e recuperata a Venezia",
-                "Città, editore o rivista": "In «L'Antiquario», giugno 1909",
-                "Pagine": "pp. 6-8",
-                "Tipologia": "articolo di periodico"
-            }
-        },
-        "Collaboratori": {},
-        "Eventi": {},
-        "Foto preview": "SA_VI_preview",
-        "Foto gallery": [
-            "SA_VI_img1"
-        ],
-        "Persone": {
-            "SA_VI_1": {
-                "ID": "SA_VI_1",
-                "Nome Persona": "Salvadori Antonio",
-                "ID_entità": "SA_VI",
-                "ID_luoghi": {
-                    "IT_1_g": {
-                        "ID": "IT_1_g",
-                        "Nazione": "Italia",
-                        "Regione": "Veneto",
-                        "Città": "Venezia",
-                        "Via": "",
-                        "Civico": "",
-                        "ID_entità": "SA_VI",
-                        "Apertura": "",
-                        "Chiusura": "",
-                        "Nome attività": "Antonio Salvadori",
-                        "": "",
-                        "geo": {
-                            "lat": 45.4371908,
-                            "lon": 12.3345898
-                        }
-                    }
-                },
-                "Professione": "antiquario",
-                "Nascita": "",
-                "Morte": "",
-                "Nome attività": ""
             }
         },
         "Clienti": {},
