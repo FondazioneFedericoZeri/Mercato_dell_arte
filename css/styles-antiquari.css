@@ -560,10 +560,12 @@ body {
         margin-bottom: 20px;
     }
 
+    
     .svg-container {
-        margin: 0 auto;
-        max-width: 200px;
+        display: none; /* Nasconde l'SVG in versione mobile */
     }
+    
+    
 
     .search-bar-container {
         flex-direction: column;
