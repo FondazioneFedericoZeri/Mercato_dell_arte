@@ -559,10 +559,12 @@ body {
     .text-container {
         margin-bottom: 20px;
     }
-
+    .h2 {
+        margin-left: 0px;
+    }
     
     .svg-container {
-        display: none; /* Nasconde l'SVG in versione mobile */
+        align-items: center;
     }
     
     
