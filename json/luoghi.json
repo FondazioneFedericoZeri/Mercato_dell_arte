@@ -461,7 +461,7 @@
         "Nazione": "Italia",
         "Regione": "Veneto",
         "Città": "Venezia",
-        "Via": "Rio Novo ",
+        "Via": "Rio Novo",
         "Civico": "3498",
         "ID_entità": "GE_I",
         "Apertura": "",
@@ -665,7 +665,7 @@
         "Nazione": "Italia",
         "Regione": "Lombardia",
         "Città": "Milano",
-        "Via": "via Ugo Foscolo ",
+        "Via": "via Ugo Foscolo",
         "Civico": "1",
         "ID_entità": "CA_III",
         "Apertura": "1881",
@@ -707,9 +707,9 @@
         "Nome attività": "Carlo Alberto Foresti, \"Studio Artistico\" (Palazzo Borromeo)",
         "": "",
         "geo": {
-            "lat": 45.4961049,
-            "lon": 9.374718
-        }
+            "lat": 45.471955873902424,
+            "lon": 9.194398399999999
+        }    
     },
     "IT_5": {
         "ID": "IT_5",
@@ -1144,7 +1144,7 @@
         "Via": "Piazza S. Francesco",
         "Civico": "",
         "ID_entità": "BR_I",
-        "Apertura": "1958",
+        "Apertura": "1967",
         "Chiusura": "1996",
         "Nome attività": "Ivan Bruschi",
         "": "",
@@ -1583,7 +1583,7 @@
         "Nazione": "Italia",
         "Regione": "Toscana",
         "Città": "Firenze",
-        "Via": "via Borgo Santi Apostoli ",
+        "Via": "via Borgo Santi Apostoli",
         "Civico": "40r",
         "ID_entità": "ME",
         "Apertura": "1900 ca.",
@@ -1591,9 +1591,9 @@
         "Nome attività": "Cesare Melli (Giardino Borgherini, showroom per arredi da esterno)",
         "": "",
         "geo": {
-            "lat": null,
-            "lon": null
-        }
+            "lat": 43.828722992247144,
+            "lon": 11.261825061719664
+        } 
     },
     "IT_53": {
         "ID": "IT_53",
@@ -3224,6 +3224,22 @@
         "geo": {
             "lat": 41.8933203,
             "lon": 12.4829321
+        }
+    },
+    "IT_135_e": {
+        "ID": "IT_135_e",
+        "Nazione": "Italia",
+        "Regione": "Lazio",
+        "Città": "Roma",
+        "Via": "",
+        "Civico": "",
+        "ID_entità": "CE",
+        "Apertura": "2004",
+        "Chiusura": "2021",
+        "Nome attività": "Adriano Cera",
+        "geo": {
+            "lat": 41.892369805575214,
+            "lon": 12.486762280222667
         }
     },
     "IT_136": {
