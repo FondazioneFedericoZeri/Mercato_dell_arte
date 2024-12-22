@@ -79,6 +79,9 @@
         "ID": "BR_I_img1.jpg",
         "Didascalia": "Ivan Bruschi (foto Fondazione Bruschi)"
     },
+    "BR_III_img1.jpg Italico Brass al fronte, 1915-1916": {
+        "ID": "BR_III_img1.jpg Italico Brass al fronte, 1915-1916"
+    },
     "CA_I_img1.jpg": {
         "ID": "CA_I_img1.jpg",
         "Didascalia": "Cesare Canessa con il tenore Enrico Caruso e altri (da \"Canessa. Una famiglia di antiquari\")"
@@ -150,6 +153,9 @@
     "GI_img2.jpg": {
         "ID": "GI_img2.jpg",
         "Didascalia": "Pubblicità Galleria Giugni, anni '50"
+    },
+    "GE_I_img1.jpg Ritratto di Benno Geiger di Konrad von Kardorff, 1914 (Berlino, Altenationalgalerie)": {
+        "ID": "GE_I_img1.jpg Ritratto di Benno Geiger di Konrad von Kardorff, 1914 (Berlino, Altenationalgalerie)"
     },
     "GR_img1.jpg": {
         "ID": "GR_img1.jpg",
@@ -458,11 +464,5 @@
     "FO_img4.jpg": {
         "ID": "FO_img4.jpg",
         "Didascalia": "Studio artistico di Carlo Alberto Foresti a Milano (Archivio Foresti)"
-    },
-    "BR_III_img1.jpg Italico Brass al fronte, 1915-1916": {
-        "ID": "BR_III_img1.jpg Italico Brass al fronte, 1915-1916"
-    },
-    "GE_I_img1.jpg Ritratto di Benno Geiger di Konrad von Kardorff, 1914 (Berlino, Altenationalgalerie)": {
-        "ID": "GE_I_img1.jpg Ritratto di Benno Geiger di Konrad von Kardorff, 1914 (Berlino, Altenationalgalerie)"
     }
 }
