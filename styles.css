@@ -917,6 +917,9 @@ footer img {
     }
 
     /* Altre ottimizzazioni per mobile */
+    section {
+        margin-bottom:0;
+    }
     #hero h2 {
         font-size: 24px; /* Riduce la dimensione del font */
         margin-top: 5px; /* Riduce il margine superiore */
@@ -929,6 +932,8 @@ footer img {
         padding-top:0;
         min-height: 0;
         margin-bottom: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
     }
     #intro-section .btn {
         text-align: center; /* Centra il contenuto */
