@@ -978,6 +978,7 @@ footer img {
 
     #key-people .left-key-content{
         margin-left: 0;
+        padding:20px;
     }
 
     #biblio-vettoriale {
@@ -988,6 +989,7 @@ footer img {
     }
     .biblio-right {
         padding-left: 0;
+        padding:20px;
     }
 }
 
