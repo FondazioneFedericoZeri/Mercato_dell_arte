@@ -565,6 +565,7 @@ body {
     
         #Titolo h2 {
             font-size: 24px; /* Dimensione adatta per schermi piccoli */
+            margin-left: 0;
         }
     
         #Titolo p {
