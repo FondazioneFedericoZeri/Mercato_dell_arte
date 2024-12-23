@@ -306,6 +306,15 @@ nav ul li a:hover {
     border: 1px solid #333; /* Card attiva più evidenziata */
     transform: scale(1.05); /* Aumenta leggermente la dimensione della card attiva */
 }
+.carousel-card:first-child {
+    margin-top: 0; /* Rimuove margini extra */
+    padding-top: 0; /* Evita spazi non necessari */
+}
+.carousel-container {
+    overflow: visible; /* Garantisce che le card siano completamente visibili */
+    padding-top: 0; /* Rimuove padding superiore non necessario */
+}
+
 
 
 
@@ -556,7 +565,6 @@ footer img {
 }
 @media (max-width: 768px) {
     .carousel-card {
-        width: 90%; /* Adatta la larghezza al contenitore mobile */
         height: auto; /* Permette un'altezza flessibile basata sul contenuto */
         margin: 10px auto; /* Centra la card con margini uniformi */
         padding: 10px; /* Aggiunge spazio interno per leggibilità */
