@@ -921,6 +921,11 @@ footer img {
         flex-direction: column; /* Disposizione verticale */
         padding: 20px;
         text-align: center; /* Centra il contenuto */
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #intro-section .btn {
+        text-align: center; /* Centra il contenuto */
     }
 
     .svg-container {
@@ -937,11 +942,11 @@ footer img {
         margin: 0;
         width: 100%;
     }
-
-    footer {
-        flex-direction: column;
-        text-align: center;
+    #timeline {
+        padding:0;
+        width: 90%;
     }
+
 }
 /* Nascondi il menu toggle su desktop */
 .menu-toggle {
@@ -991,6 +996,7 @@ footer img {
 
     h1, h2, h3 {
         text-align: center; /* Centra i titoli per migliore leggibilità */
+        margin: 10px;
     }
 
     p {
