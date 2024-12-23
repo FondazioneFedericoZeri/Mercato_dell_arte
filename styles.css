@@ -972,9 +972,21 @@ footer img {
     #timeline p {
         order: 1; /* Testo prima del pulsante */
         text-align: center; /* Centra il testo */
-        margin-bottom: 10px; /* Aggiunge spazio sotto il testo */
+        margin-bottom: 20px; /* Aggiunge spazio sotto il testo */
     }
-    
+        
+    #timeline h2 {
+        text-align:center;
+        margin-left: 0;
+    }
+
+    #timeline .content-wrapper {
+        display: 0;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 0px;
+        margin-right: 0px; 
+    }
     #timeline .btn {
         order: 2; /* Pulsante sotto al testo */
         margin: 0 auto; /* Centra il pulsante */
@@ -984,10 +996,18 @@ footer img {
         text-align: center; /* Centra il testo nel pulsante */
     }
     
-
+    #key-people {
+        padding:40px;
+        padding-bottom: 0;
+        background-color: #fff;
+    }
     #key-people .left-key-content{
         margin-left: 0;
         padding:20px;
+        text-align: center;
+    }
+    #key-people p {
+        margin-bottom: 0;
     }
 
     #biblio-vettoriale {
@@ -998,7 +1018,11 @@ footer img {
     }
     .biblio-right {
         padding-left: 0;
-        padding:20px;
+        padding:40px;
+        text-align: center;
+    }
+    .biblio-right p {
+        text-align: center;
     }
 }
 
