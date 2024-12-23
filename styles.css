@@ -967,6 +967,7 @@ footer img {
         align-items: center; /* Centra gli elementi */
         gap: 10px; /* Spazio tra gli elementi */
         text-align: center; /* Centra il contenuto all'interno */
+        padding: 40px;
     }
     
     #timeline p {
@@ -981,11 +982,12 @@ footer img {
     }
 
     #timeline .content-wrapper {
-        display: 0;
+        display:block;
         justify-content: space-between;
         align-items: center;
         margin-left: 0px;
         margin-right: 0px; 
+        margin-bottom: 40px;
     }
     #timeline .btn {
         order: 2; /* Pulsante sotto al testo */
