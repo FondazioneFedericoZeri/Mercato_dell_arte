@@ -564,7 +564,11 @@ body {
     }
     
     .svg-container {
-        align-items: center;
+        width: 80%; /* Riduce la dimensione al 80% della larghezza dello schermo */
+        height: auto; /* Mantiene le proporzioni */
+        margin: 0 auto; /* Centra l'SVG */
+        display: flex; /* Garantisce il centramento */
+        justify-content: center;
     }
     
     
