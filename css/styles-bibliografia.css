@@ -224,32 +224,46 @@ footer img {
         font-size: 20px; /* Ridimensiona le icone */
     }
 }
-/* Nasconde il menu per default */
-nav ul {
-    display: none; /* Nascondi il menu */
-    flex-direction: column;
-    background-color: #f8f8f8;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    padding: 10px 0;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
 
-/* Mostra il menu quando la classe .show è presente */
-nav ul.show {
-    display: flex; /* Mostra il menu */
+.menu {
+    display: flex; /* Mostra il menu su desktop */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-direction: row; /* Disposizione orizzontale */
 }
-.menu-toggle {
-    display: none; /* Nasconde su desktop */
-}
-
 @media (max-width: 768px) {
+    .menu {
+        display: none; /* Nasconde il menu per default */
+        flex-direction: column; /* Disposizione verticale */
+        background-color: #f8f8f8;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        padding: 10px 0;
+    }
+
+    .menu.show {
+        display: flex; /* Mostra il menu quando attivato */
+    }
+
+    .menu li {
+        text-align: center;
+        padding: 10px 0;
+    }
+
     .menu-toggle {
-        display: block; /* Mostra su mobile */
+        display: block; /* Mostra il pulsante toggle */
+        font-size: 24px;
+        background: none;
+        border: none;
+        cursor: pointer;
     }
 }
+
+
 
 
 
