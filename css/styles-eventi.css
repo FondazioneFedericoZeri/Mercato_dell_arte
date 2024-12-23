@@ -590,7 +590,7 @@ footer img {
         gap: 10px; /* Spazio tra le card */
     }
     .carousel-wrapper {
-        margin-left: calc(950vw - 200px); 
+        margin-left: calc(2400vw - 100px); 
     }
 }
 
