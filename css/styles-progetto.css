@@ -463,14 +463,16 @@ footer img {
     /* Titoli e testi */
     .section-title {
         font-size: 22px;
-        text-align: center;
+        text-align: left;
         margin: 10px 0;
     }
 
     p {
         font-size: 16px;
         line-height: 1.5;
-        padding: 0 15px;
+    }
+    .right-content ul {
+        margin-right:0; 
     }
 }
 @media (max-width: 768px) {
@@ -479,8 +481,12 @@ footer img {
     }
 
     .columns-container {
-        flex-direction: column; /* Disposizione verticale */
-        gap: 15px;
+        flex-direction: column-reverse; /* Disposizione verticale */
+        gap:0;
+    }
+
+    .columns-container p {
+        padding: 20px;
     }
 
     .left-column,
@@ -498,12 +504,23 @@ footer img {
     .large-letter {
         font-size: 36px; /* Dimensione minore per schermi piccoli */
     }
+    #two-column-section .right-column {
+        padding: 0;
+        margin-left: 0;
+    }
+    right-content p {
+        text-align: left;
+        margin-right:0;
+    }
+    .section-title {
+        padding-top: 20px;
+    }
+
 }
 @media (max-width: 768px) {
     .new-section-container {
         flex-direction: column; /* Disposizione verticale */
         gap: 20px;
-        padding: 15px;
     }
 
     .left-content {
@@ -521,7 +538,7 @@ footer img {
 }
 @media (max-width: 768px) {
     #contatti .columns-container {
-        flex-direction: column; /* Disposizione verticale */
+        flex-direction: column-reverse; /* Disposizione verticale */
         gap: 20px;
         padding: 10px;
     }
