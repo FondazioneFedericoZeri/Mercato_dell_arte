@@ -256,3 +256,12 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const isMobile = window.innerWidth <= 768;
+
+    if (isMobile) {
+        // Modifica centro e zoom per dispositivi mobili
+        map.setView([54.5260, 15.2551], 4); // Europa
+    }
+});
