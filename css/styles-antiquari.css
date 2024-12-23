@@ -544,24 +544,40 @@ body {
     }
 }
 
-
-
-/*intro section*/
 @media (max-width: 768px) {
-    #intro-section {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 20px;
-        margin: 0;
-    }
+        .text-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center; /* Centra il testo */
+            padding: 10px; /* Spazio interno */
+        }
+    
+        #intro-section {
+            text-align: center;
+            margin: 0 auto; /* Centra il contenuto */
+        }
+    
+        #Titolo {
+            text-align: center;
+            padding: 20px 10px;
+        }
+    
+        #Titolo h2 {
+            font-size: 24px; /* Dimensione adatta per schermi piccoli */
+        }
+    
+        #Titolo p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin: 10px auto; /* Spazio uniforme */
+        }
 
-    .text-container {
-        margin-bottom: 20px;
-    }
-    .h2 {
-        margin-left: 0px;
-    }
+        footer {
+            padding: 20px;
+            text-align: center;
+            flex-direction: column;
+        }
     
     .svg-container {
         width: 80%; /* Riduce la dimensione al 80% della larghezza dello schermo */
@@ -570,9 +586,11 @@ body {
         display: flex; /* Garantisce il centramento */
         justify-content: center;
     }
+    .svg-container svg {
+        max-width: 100%; /* Adatta l'SVG alla dimensione del contenitore */
+        height: auto; /* Mantiene le proporzioni */
+    }
     
-    
-
     .search-bar-container {
         flex-direction: column;
         align-items: center;
@@ -584,22 +602,7 @@ body {
         margin: 10px 0;
     }
 }
-@media (max-width: 768px) {
-    #Titolo {
-        text-align: center;
-        padding: 20px;
-        margin: 0;
-    }
 
-    #Titolo h2 {
-        font-size: 24px;
-    }
-
-    #Titolo p {
-        margin: 10px 0;
-        font-size: 16px;
-    }
-}
 @media (max-width: 768px) {
     #cards-section {
         flex-direction: column;
@@ -614,25 +617,6 @@ body {
 
     .card-container .card {
         width: 90%;
-        margin: 10px 0;
-    }
-}
-
-
-
-@media (max-width: 768px) {
-    footer {
-        flex-direction: column;
-        text-align: center;
-        padding: 20px;
-    }
-
-    .footer-container {
-        flex-direction: column;
-    }
-
-    .footer-left,
-    .footer-right {
         margin: 10px 0;
     }
 }
