@@ -417,6 +417,10 @@ footer img {
 
 /*responsive*/
 /* Layout generale per dispositivi mobili */
+.menu-toggle {
+    display: none; /* Nasconde il pulsante */
+}
+
 @media (max-width: 768px) {
     body {
         padding: 0;
