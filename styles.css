@@ -917,12 +917,18 @@ footer img {
     }
 
     /* Altre ottimizzazioni per mobile */
+    #hero h2 {
+        font-size: 24px; /* Riduce la dimensione del font */
+        margin-top: 5px; /* Riduce il margine superiore */
+    }
     #intro-section {
         flex-direction: column; /* Disposizione verticale */
-        padding: 20px;
         text-align: center; /* Centra il contenuto */
         margin-left: 0;
         margin-right: 0;
+        padding-top:0;
+        min-height: 0;
+        margin-bottom: 10px;
     }
     #intro-section .btn {
         text-align: center; /* Centra il contenuto */
