@@ -375,3 +375,24 @@ function initializeChart(rootNode) {
   });
 
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  const chartDiv = document.getElementById("chartdiv");
+
+  function resizeCanvas() {
+      if (window.innerWidth <= 768) {
+          chartDiv.style.height = "300px";
+          chartDiv.style.width = "100%";
+      } else {
+          chartDiv.style.height = "550px";
+          chartDiv.style.width = "100%";
+      }
+  }
+
+  // Ridimensiona il canvas al caricamento della pagina
+  resizeCanvas();
+
+  // Ridimensiona il canvas quando la finestra cambia dimensione
+  window.addEventListener("resize", resizeCanvas);
+});
+
