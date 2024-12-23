@@ -554,4 +554,32 @@ footer img {
         cursor: pointer;
     }
 }
+@media (max-width: 768px) {
+    .carousel-card {
+        width: 90%; /* Adatta la larghezza al contenitore mobile */
+        height: auto; /* Permette un'altezza flessibile basata sul contenuto */
+        margin: 10px auto; /* Centra la card con margini uniformi */
+        padding: 10px; /* Aggiunge spazio interno per leggibilità */
+        flex-shrink: 0; /* Impedisce il ridimensionamento non voluto */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombra più leggera */
+    }
+
+    .card-title {
+        font-size: 14px; /* Ridimensiona il titolo */
+        padding: 10px; /* Riduce il padding per adattarsi alla card */
+        text-align: center; /* Centra il testo del titolo */
+    }
+
+    .card-content {
+        font-size: 12px; /* Riduce la dimensione del testo per leggibilità */
+        padding: 10px; /* Riduce il padding interno */
+        text-align: center; /* Centra il testo */
+    }
+
+    .carousel-container {
+        flex-direction: column; /* Disposizione verticale delle card */
+        align-items: center; /* Centra le card */
+        gap: 10px; /* Spazio tra le card */
+    }
+}
 
