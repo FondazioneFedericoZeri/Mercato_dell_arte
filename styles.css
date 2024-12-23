@@ -959,6 +959,7 @@ footer img {
         text-align: center; /* Centra il contenuto testuale */
         margin: 0;
         width: 100%;
+        margin-bottom: 30px;
     }
     #timeline {
         display: flex;
@@ -977,6 +978,7 @@ footer img {
         margin-top: 10px; /* Spazio tra il testo e il bottone */
         width: auto; /* Adatta la larghezza del bottone */
         text-align: center; /* Centra il contenuto del bottone */
+        margin-right: 0;
     }
 
     #key-people .left-key-content{
