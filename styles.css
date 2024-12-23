@@ -953,8 +953,13 @@ footer img {
         width: 90%;
     }
 
+    #key-people .left-key-content{
+        margin-left: 0;
+    }
+
     #biblio-vettoriale {
         display: none;
+        padding: 0;
     }
     .biblio-right {
         padding-left: 0;
