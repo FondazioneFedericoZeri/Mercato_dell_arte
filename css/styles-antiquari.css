@@ -580,16 +580,9 @@ body {
         }
     
     .svg-container {
-        width: 80%; /* Riduce la dimensione al 80% della larghezza dello schermo */
-        height: auto; /* Mantiene le proporzioni */
-        margin: 0 auto; /* Centra l'SVG */
-        display: flex; /* Garantisce il centramento */
-        justify-content: center;
+        display: none;
     }
-    .svg-container svg {
-        max-width: 100%; /* Adatta l'SVG alla dimensione del contenitore */
-        height: auto; /* Mantiene le proporzioni */
-    }
+   
     
     .search-bar-container {
         flex-direction: column;
