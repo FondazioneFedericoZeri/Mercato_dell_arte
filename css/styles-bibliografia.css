@@ -190,50 +190,6 @@ footer img {
       padding: 10px;
     }
   }
-
- /*responsive*/
-/* Hamburger Menu */
-.menu {
-    display: flex; /* Layout normale per desktop */
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.menu-toggle {
-    display: none; /* Nascondi il bottone su desktop */
-    background: none;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-}
-
-@media (max-width: 768px) {
-    .menu {
-        display: none; /* Nascondi il menu */
-        flex-direction: column;
-        background-color: #f8f8f8;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        padding: 10px 0;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-
-    .menu-toggle {
-        display: block; /* Mostra il bottone su mobile */
-    }
-
-    .menu.show {
-        display: flex; /* Mostra il menu quando attivato */
-    }
-
-    .menu li {
-        text-align: center;
-        padding: 10px 0;
-    }
-}
   
   @media (max-width: 768px) {
     footer {
