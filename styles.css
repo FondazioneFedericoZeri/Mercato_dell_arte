@@ -949,6 +949,7 @@ footer img {
     #map {
         flex-direction: column; /* Disposizione verticale */
         padding: 20px;
+        gap: 40px;
     }
 
     #map .text-content {
@@ -957,8 +958,22 @@ footer img {
         width: 100%;
     }
     #timeline {
-        padding:0;
-        width: 100%;
+        display: flex;
+        flex-direction: column; /* Disposizione verticale */
+        align-items: center; /* Centra gli elementi */
+        gap: 10px; /* Spazio tra gli elementi */
+    }
+
+    #timeline p {
+        order: 1; /* Testo prima del bottone */
+        text-align: center; /* Centra il testo */
+    }
+
+    #timeline .btn {
+        order: 2; /* Bottone sotto al testo */
+        margin-top: 10px; /* Spazio tra il testo e il bottone */
+        width: auto; /* Adatta la larghezza del bottone */
+        text-align: center; /* Centra il contenuto del bottone */
     }
 
     #key-people .left-key-content{
