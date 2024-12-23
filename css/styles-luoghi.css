@@ -422,7 +422,7 @@ footer img {
         order: 2;
         height: 300px;
         min-height: 300px;
-        width: 100%; /* Adatta la larghezza allo schermo */
+        width: 80%; /* Adatta la larghezza allo schermo */
         display: block;
         visibility: visible;
     }
