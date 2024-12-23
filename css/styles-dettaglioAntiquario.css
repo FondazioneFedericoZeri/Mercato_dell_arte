@@ -578,7 +578,6 @@ footer img {
     }
 
     .content-card {
-        width: 100%; /* Contenuto si adatta alla larghezza del dispositivo */
         margin: 10px 0;
         padding: 15px;
         margin-left: 15px;
