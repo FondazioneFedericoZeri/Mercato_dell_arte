@@ -107,3 +107,39 @@ footer img {
 .footer-right {
     text-align: right;
 }
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.credits-container {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+    text-align: left;
+}
+
+.credits-container p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.bold-text {
+    font-weight: bold;
+    color: #000;
+}
+
