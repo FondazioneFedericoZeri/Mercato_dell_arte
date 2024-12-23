@@ -600,16 +600,8 @@ footer img {
 }
 @media (max-width: 768px) {
     footer {
-        flex-direction: column;
-        text-align: center;
         padding: 20px;
-    }
-
-    .footer-container {
+        text-align: center;
         flex-direction: column;
-    }
-
-    .footer-left, .footer-right {
-        margin: 10px 0;
     }
 }
