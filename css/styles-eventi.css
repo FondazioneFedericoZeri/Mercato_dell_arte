@@ -460,50 +460,7 @@ footer img {
         line-height: 1.4; /* Spazio tra le righe */
     }
 }
-/* Menù Desktop */
-nav ul {
-    display: flex; /* Disposizione orizzontale su desktop */
-    justify-content: flex-end;
-    gap: 20px;
-}
 
-.menu-toggle {
-    display: none; /* Nasconde il toggle su desktop */
-}
-
-/* Menù Mobile */
-@media (max-width: 768px) {
-    .menu-toggle {
-        display: block; /* Mostra il pulsante toggle */
-        font-size: 24px;
-        background: none;
-        border: none;
-        cursor: pointer;
-        margin-left: 10px;
-    }
-
-    nav ul {
-        display: none; /* Nasconde il menu per default */
-        flex-direction: column; /* Disposizione verticale */
-        background-color: #f8f8f8;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        z-index: 1000;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-        padding: 10px 0;
-    }
-
-    nav ul.show {
-        display: flex; /* Mostra il menu quando attivato */
-    }
-
-    nav ul li {
-        margin: 10px 0;
-        text-align: center; /* Centra gli elementi del menu */
-    }
-}
 /* Simboli per tutti i dispositivi */
 .legend-circle {
     background-color: #5593C9; /* Colore del simbolo */
@@ -563,5 +520,38 @@ nav ul {
        font-size: 18px;
        padding: 20px; 
     }
-
 }
+/* Nasconde il menu per default su dispositivi mobili */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: #f8f8f8;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 10px 0;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .menu.show {
+        display: flex; /* Mostra il menu */
+    }
+}
+
+/* Nasconde il toggle in modalità desktop */
+.menu-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Mostra il toggle */
+        font-size: 24px;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+}
+
