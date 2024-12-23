@@ -930,8 +930,9 @@ footer img {
         align-items: center; /* Centra il contenuto orizzontalmente */
         justify-content: center; /* Centra il contenuto verticalmente */
         text-align: center; /* Centra il testo */
-        padding: 20px; /* Spazio interno */
-        height: 100vh; /* Occupa l'intera altezza dello schermo */
+        padding: 40px; /* Spazio interno */
+        min-height: 0;
+        margin-left: 0;
     }
 
     #intro-section .btn {
@@ -940,6 +941,8 @@ footer img {
 
     .text-container {
         margin-bottom: 20px; /* Spazio sotto il testo */
+        align-items: center;
+        text-align: center;
     }
 
     .svg-container {
