@@ -232,28 +232,42 @@ footer img {
     padding: 0;
     flex-direction: row; /* Disposizione orizzontale */
 }
+.menu-toggle {
+    display: none; /* Nasconde il pulsante toggle su desktop */
+}
 @media (max-width: 768px) {
     .menu {
-        display: none; /* Nasconde il menu per default */
+        display: none; /* Nasconde il menu di default */
         flex-direction: column; /* Disposizione verticale */
         background-color: #f8f8f8;
         position: absolute;
-        top: 60px;
+        top: 60px; /* Posiziona il menu sotto l'header */
         left: 0;
         width: 100%;
         z-index: 1000;
         padding: 10px 0;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     }
 
     .menu.show {
-        display: flex; /* Mostra il menu quando attivato */
+        display: flex; /* Mostra il menu */
     }
 
     .menu li {
-        text-align: center;
-        padding: 10px 0;
+        text-align: center; /* Centra il testo */
+        padding: 10px 0; /* Spazio uniforme tra le voci */
+        list-style: none; /* Rimuove i bullet */
     }
 
+    .menu li a {
+        text-decoration: none; /* Rimuove la sottolineatura */
+        color: #333; /* Colore del testo */
+        font-size: 16px; /* Dimensione del font */
+    }
+
+    .menu li a:hover {
+        color: #5593C9; /* Cambia colore al passaggio del mouse */
+    }
     .menu-toggle {
         display: block; /* Mostra il pulsante toggle */
         font-size: 24px;
@@ -262,6 +276,7 @@ footer img {
         cursor: pointer;
     }
 }
+
 
 
 
