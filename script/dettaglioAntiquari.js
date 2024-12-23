@@ -396,3 +396,18 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("resize", resizeCanvas);
 });
 
+
+//funzione per comparsa menù toggle
+document.addEventListener("DOMContentLoaded", function () {
+  // Seleziona il pulsante toggle e il menu
+  const toggleButton = document.querySelector(".menu-toggle");
+  const menu = document.querySelector("nav ul");
+
+  if (toggleButton && menu) {
+      // Aggiungi evento click per mostrare/nascondere il menu
+      toggleButton.addEventListener("click", function () {
+          menu.classList.toggle("show");
+      });
+  }
+});
+

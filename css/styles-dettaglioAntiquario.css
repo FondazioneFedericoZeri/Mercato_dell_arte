@@ -479,33 +479,6 @@ footer img {
 
 /*Prova Responsive*/
 
-/* Mostra il menu toggle su dispositivi mobili */
-@media (max-width: 768px) {
-    .menu-toggle {
-        display: block; /* Mostra il pulsante toggle */
-        font-size: 24px;
-        background: none;
-        border: none;
-        cursor: pointer;
-    }
-
-    nav ul {
-        display: none; /* Nasconde il menu per default */
-        flex-direction: column;
-        background-color: #f8f8f8;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        z-index: 1000;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    nav ul.show {
-        display: flex; /* Mostra il menu quando attivato */
-    }
-}
-
 @media (max-width: 768px) { 
     .gallery-wrapper {
         flex-direction: column; /* Disposizione verticale */
@@ -625,5 +598,37 @@ footer img {
 
     .footer-social a {
         font-size: 20px; /* Ridimensiona le icone */
+    }
+}
+
+/* Mostra il pulsante toggle solo su dispositivi mobili */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Mostra il pulsante */
+        font-size: 24px;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    nav ul {
+        display: none; /* Nasconde il menu per default */
+        flex-direction: column;
+        background-color: #f8f8f8;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    nav ul.show {
+        display: flex; /* Mostra il menu quando attivato */
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        text-align: center;
     }
 }
