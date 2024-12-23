@@ -224,13 +224,13 @@ footer img {
         font-size: 20px; /* Ridimensiona le icone */
     }
 }
- /* Nasconde il menu per default */
+/* Nasconde il menu per default */
 nav ul {
     display: none; /* Nascondi il menu */
     flex-direction: column;
     background-color: #f8f8f8;
     position: absolute;
-    top: 60px; /* Posiziona il menu sotto l'header */
+    top: 60px;
     left: 0;
     width: 100%;
     padding: 10px 0;
@@ -242,24 +242,6 @@ nav ul.show {
     display: flex; /* Mostra il menu */
 }
 
-/* Stile del toggle button */
-.menu-toggle {
-    display: none; /* Nasconde su desktop */
-}
-
-@media (max-width: 768px) {
-    .menu-toggle {
-        display: block; /* Mostra su mobile */
-        font-size: 24px;
-        background: none;
-        border: none;
-        cursor: pointer;
-    }
-
-    .menu-toggle:hover {
-        color: #5593C9;
-    }
-}
 
 
         
