@@ -925,18 +925,21 @@ footer img {
         margin-top: 5px; /* Riduce il margine superiore */
     }
     #intro-section {
+        display: flex;
         flex-direction: column; /* Disposizione verticale */
-        text-align: center; /* Centra il contenuto */
-        margin-left: 0;
-        margin-right: 0;
-        padding-top:0;
-        min-height: 0;
-        margin-bottom: 10px;
-        padding-right: 10px;
-        padding-left: 10px;
+        align-items: center; /* Centra il contenuto orizzontalmente */
+        justify-content: center; /* Centra il contenuto verticalmente */
+        text-align: center; /* Centra il testo */
+        padding: 20px; /* Spazio interno */
+        height: 100vh; /* Occupa l'intera altezza dello schermo */
     }
+
     #intro-section .btn {
-        text-align: center; /* Centra il contenuto */
+        margin-top: 20px; /* Spazio tra il pulsante e il testo */
+    }
+
+    .text-container {
+        margin-bottom: 20px; /* Spazio sotto il testo */
     }
 
     .svg-container {
