@@ -966,20 +966,24 @@ footer img {
         flex-direction: column; /* Disposizione verticale */
         align-items: center; /* Centra gli elementi */
         gap: 10px; /* Spazio tra gli elementi */
+        text-align: center; /* Centra il contenuto all'interno */
     }
-
+    
     #timeline p {
-        order: 1; /* Testo prima del bottone */
+        order: 1; /* Testo prima del pulsante */
         text-align: center; /* Centra il testo */
+        margin-bottom: 10px; /* Aggiunge spazio sotto il testo */
     }
-
+    
     #timeline .btn {
-        order: 2; /* Bottone sotto al testo */
-        margin-top: 10px; /* Spazio tra il testo e il bottone */
-        width: auto; /* Adatta la larghezza del bottone */
-        text-align: center; /* Centra il contenuto del bottone */
-        margin-right: 0;
+        order: 2; /* Pulsante sotto al testo */
+        margin: 0 auto; /* Centra il pulsante */
+        padding: 10px 20px; /* Spazio interno del pulsante */
+        width: auto; /* Adatta la larghezza */
+        max-width: 90%; /* Limita la larghezza su dispositivi più piccoli */
+        text-align: center; /* Centra il testo nel pulsante */
     }
+    
 
     #key-people .left-key-content{
         margin-left: 0;
