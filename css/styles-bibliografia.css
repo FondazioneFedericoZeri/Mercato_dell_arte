@@ -241,6 +241,15 @@ nav ul {
 nav ul.show {
     display: flex; /* Mostra il menu */
 }
+.menu-toggle {
+    display: none; /* Nasconde su desktop */
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Mostra su mobile */
+    }
+}
 
 
 
