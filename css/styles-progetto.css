@@ -553,6 +553,24 @@ footer img {
     .quote-mark-right {
         font-size: 48px;
     }
+    .right-content p {
+        text-align: left;
+        margin-right: 0;
+    }
+    #contatti .column.right-column p {
+        margin-top: 0;
+        margin-left: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    #contatti .columns-container {
+        padding: 0; 
+        gap:0
+    }
+    #contatti .left-column {
+        margin-left: 0; 
+        padding: 40px;
+    }
 }
 @media (max-width: 768px) {
     footer {
