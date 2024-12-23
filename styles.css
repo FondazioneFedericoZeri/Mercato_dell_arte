@@ -950,7 +950,7 @@ footer img {
     }
     #timeline {
         padding:0;
-        width: 90%;
+        width: 100%;
     }
 
     #key-people .left-key-content{
@@ -958,8 +958,10 @@ footer img {
     }
 
     #biblio-vettoriale {
-        display: none;
         padding: 0;
+    }
+    .biblio-left {
+    display: none;
     }
     .biblio-right {
         padding-left: 0;
@@ -1063,5 +1065,27 @@ footer img {
         font-size: 20px; /* Ridimensiona le icone */
     }
 }
+
+@media (max-width: 768px) {
+    #map {
+        display: flex;
+        flex-direction: column; /* Disposizione verticale */
+        gap: 15px; /* Spazio tra gli elementi */
+    }
+
+    #map h2, /* Titolo */
+    #map p,  /* Testo */
+    #map button { /* Bottone */
+        order: 1; /* Appaiono prima */
+    }
+
+    #map #chartdiv {
+        order: 2; /* Appare dopo titolo, testo e bottone */
+        width: 100%; /* Adatta la larghezza */
+        height: 300px; /* Altezza fissa per il responsive */
+        min-height: 250px;
+    }
+}
+
 
 
