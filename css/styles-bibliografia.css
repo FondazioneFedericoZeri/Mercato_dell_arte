@@ -189,31 +189,27 @@ footer img {
     body {
       padding: 10px;
     }
-  
-    footer {
-      padding: 10px;
-    }
   }
 
   /*toggle menu*/
-  /* Menu Hamburger */
+/* Hamburger Menu */
 .menu {
-    display: flex; /* Layout normale per desktop */
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .menu-toggle {
-    display: none; /* Nascondi il bottone su desktop */
-    background: none;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-  }
-  
-  @media (max-width: 768px) {
-    .menu {
+  display: flex; /* Layout normale per desktop */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-toggle {
+  display: none; /* Nascondi il bottone su desktop */
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menu {
       display: none; /* Nascondi il menu */
       flex-direction: column;
       background-color: #f8f8f8;
@@ -223,21 +219,63 @@ footer img {
       width: 100%;
       padding: 10px 0;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-  
-    .menu-toggle {
-      display: block; /* Mostra il bottone su mobile */
-    }
-  
-    .menu.show {
-      display: flex; /* Mostra il menu quando attivato */
-    }
-  
-    .menu li {
-      text-align: center; /* Centra gli elementi */
-      padding: 10px 0;
-    }
   }
+
+  .menu-toggle {
+      display: block; /* Mostra il bottone su mobile */
+  }
+
+  .menu.show {
+      display: flex; /* Mostra il menu quando attivato */
+  }
+
+  .menu li {
+      text-align: center;
+      padding: 10px 0;
+  }
+}
   
+  @media (max-width: 768px) {
+    footer {
+        display: flex;
+        flex-direction: column; /* Disposizione verticale */
+        text-align: center; /* Centra il contenuto */
+        padding: 15px; /* Riduce il padding */
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: column; /* Disposizione verticale */
+        align-items: center; /* Centra gli elementi */
+        gap: 10px; /* Spazio tra le sezioni */
+    }
+
+    .footer-left, .footer-right {
+        text-align: center; /* Centra il testo */
+        margin: 5px 0; /* Riduce il margine */
+    }
+
+    footer img {
+        max-width: 100px; /* Riduce la larghezza delle immagini */
+        height: auto; /* Mantiene le proporzioni */
+    }
+
+    .footer-links {
+        font-size: 14px; /* Ridimensiona i link */
+        line-height: 1.5; /* Migliora la leggibilità */
+        margin-bottom: 10px;
+    }
+
+    .footer-social {
+        display: flex;
+        justify-content: center; /* Centra le icone dei social */
+        gap: 15px; /* Spazio tra le icone */
+        margin-top: 10px;
+    }
+
+    .footer-social a {
+        font-size: 20px; /* Ridimensiona le icone */
+    }
+}
   
         
