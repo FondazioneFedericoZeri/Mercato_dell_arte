@@ -478,10 +478,6 @@ footer img {
 }
 
 /*Prova Responsive*/
-/* Nascondi il menu toggle su desktop */
-.menu-toggle {
-    display: none;
-}
 
 /* Mostra il menu toggle su dispositivi mobili */
 @media (max-width: 768px) {
