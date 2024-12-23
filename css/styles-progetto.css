@@ -569,7 +569,13 @@ footer img {
     }
     #contatti .left-column {
         margin-left: 0; 
-        padding: 40px;
+        padding: 0;
+    }
+    .column{
+        padding: 0;
+    }
+    .section-title {
+        margin: 20px 20px;
     }
 }
 @media (max-width: 768px) {
