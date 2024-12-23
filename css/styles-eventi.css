@@ -558,4 +558,10 @@ nav ul {
     .footer-social a {
         font-size: 20px; /* Ridimensiona le icone */
     }
+    .section-title{
+       margin-left: 0;
+       font-size: 18px;
+       padding: 20px; 
+    }
+
 }
