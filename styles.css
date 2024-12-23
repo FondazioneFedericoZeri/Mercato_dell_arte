@@ -947,7 +947,14 @@ footer img {
         width: 90%;
     }
 
+    #biblio-vettoriale {
+        display: none;
+    }
+    .biblio-right {
+        padding-left: 0;
+    }
 }
+
 /* Nascondi il menu toggle su desktop */
 .menu-toggle {
     display: none;
