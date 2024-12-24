@@ -225,61 +225,46 @@ footer img {
     }
 }
 
-.menu {
-    display: flex; /* Mostra il menu su desktop */
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    flex-direction: row; /* Disposizione orizzontale */
-}
+/* Nascondi il menu toggle su desktop */
 .menu-toggle {
-    display: none; /* Nasconde il pulsante toggle su desktop */
+    display: none; /* Il pulsante non è visibile su desktop */
 }
 @media (max-width: 768px) {
-    .menu {
-        display: none; /* Nasconde il menu di default */
-        flex-direction: column; /* Disposizione verticale */
+    .header-container {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    nav ul {
+        display: none; /* Nasconde il menu per default */
+        flex-direction: column;
         background-color: #f8f8f8;
         position: absolute;
         top: 60px; /* Posiziona il menu sotto l'header */
         left: 0;
         width: 100%;
         z-index: 1000;
-        padding: 10px 0;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     }
 
-    .menu.show {
-        display: flex; /* Mostra il menu */
+    nav ul.show {
+        display: flex; /* Mostra il menu quando attivato */
     }
 
-    .menu li {
-        text-align: center; /* Centra il testo */
-        padding: 10px 0; /* Spazio uniforme tra le voci */
-        list-style: none; /* Rimuove i bullet */
+    nav ul li {
+        margin: 10px 0;
+        text-align: center;
     }
 
-    .menu li a {
-        text-decoration: none; /* Rimuove la sottolineatura */
-        color: #333; /* Colore del testo */
-        font-size: 16px; /* Dimensione del font */
-    }
-
-    .menu li a:hover {
-        color: #5593C9; /* Cambia colore al passaggio del mouse */
-    }
     .menu-toggle {
-        display: block; /* Mostra il pulsante toggle */
-        font-size: 24px;
+        display: block;
         background: none;
         border: none;
+        font-size: 24px;
         cursor: pointer;
     }
+
+    .menu-toggle:hover {
+        color: #5593C9;
+    }
 }
-
-
-
-
-
-
-        
