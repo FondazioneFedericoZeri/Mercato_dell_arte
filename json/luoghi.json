@@ -142,9 +142,9 @@
         "Via": "",
         "Civico": "",
         "ID_entità": "SA_IV",
-        "Apertura": "",
-        "Chiusura": "",
-        "Nome attività": "New York Studio: 55 E. 56th St.",
+        "Apertura": "1914 ca.",
+        "Chiusura": "1970",
+        "Nome attività": "Giuseppe, Giorgio e Sergio Sangiorgi, “New York Studio”, New York, 55 E. 56th Street",
         "geo": {
             "lat": 40.756407949999996,
             "lon": -73.97735424999999
@@ -1153,6 +1153,22 @@
             "lon": 11.880910299394806
         }
     },
+    "IT_30": {
+        "ID": "IT_30",
+        "Nazione": "Italia",
+        "Regione": "Toscana",
+        "Città": "Arezzo",
+        "Via": "Corso Italia",
+        "Civico": "14",
+        "ID_entità": "BR_I",
+        "Apertura": "1967",
+        "Chiusura": "1996",
+        "Nome attività": "Palazzo del Capitano del Popolo, sede e abitazione privata",
+        "geo": {
+            "lat": 43.46601005303453,
+            "lon": 11.883034285625772
+        } 
+    },
     "IT_31": {
         "ID": "IT_31",
         "Nazione": "Italia",
@@ -1693,8 +1709,8 @@
         "Nome attività": "Alfredo Geri",
         "": "",
         "geo": {
-            "lat": 43.6588619,
-            "lon": 11.1867972
+            "lat": 43.77146533655273,
+            "lon": 11.247942326986577
         }
     },
     "IT_57": {
@@ -1855,7 +1871,7 @@
         "Nazione": "Italia",
         "Regione": "Toscana",
         "Città": "Firenze",
-        "Via": "Via del Podere",
+        "Via": "ex Via del Podere",
         "Civico": "6",
         "ID_entità": "CO_III",
         "Apertura": "1876 ca.",
@@ -1872,7 +1888,7 @@
         "Nazione": "Italia",
         "Regione": "Toscana",
         "Città": "Firenze",
-        "Via": "Via del porcellana",
+        "Via": "Via del Porcellana",
         "Civico": "",
         "ID_entità": "FR",
         "Apertura": "1963",
@@ -1923,7 +1939,7 @@
         "Nazione": "Italia",
         "Regione": "Toscana",
         "Città": "Firenze",
-        "Via": "Via della scala",
+        "Via": "Via della Scala",
         "Civico": "",
         "ID_entità": "GR",
         "Apertura": "1900 ca.",
@@ -2449,7 +2465,7 @@
         "Nazione": "Italia",
         "Regione": "Lazio",
         "Città": "Roma",
-        "Via": "Piazza Scossacavalli",
+        "Via": "ex Piazza Scossacavalli",
         "Civico": "",
         "ID_entità": "DI",
         "Apertura": "1870 ca.",
@@ -2500,7 +2516,7 @@
         "Nazione": "Italia",
         "Regione": "Lazio",
         "Città": "Roma",
-        "Via": "Via dei Condotti, Campo Marzio",
+        "Via": "ex Via dei Condotti, Campo Marzio",
         "Civico": "44",
         "ID_entità": "SA_III",
         "Apertura": "1887",
@@ -2655,7 +2671,7 @@
         "Città": "Roma",
         "Via": "Via del Babuino",
         "Civico": "96-97",
-        "ID_entità": "JA TA ",
+        "ID_entità": "JA-TA",
         "Apertura": "1907 ca.",
         "Chiusura": "1940 ca.",
         "Nome attività": "Augusto e Salvatore Jandolo, Filippo e Guido Tavazzi, \"Casa di Vendita Jandolo & Tavazzi\"",
@@ -2859,7 +2875,7 @@
         "Città": "Roma",
         "Via": "Via Margutta",
         "Civico": "53",
-        "ID_entità": "JA SE_II",
+        "ID_entità": "JA,SE_II",
         "Apertura": "1932",
         "Chiusura": "1939",
         "Nome attività": "Guido Sestieri",
@@ -3180,7 +3196,7 @@
         "Nazione": "Italia",
         "Regione": "Lazio",
         "Città": "Roma",
-        "Via": "Via Flaminia",
+        "Via": "ex Via Flaminia",
         "Civico": "170",
         "ID_entità": "JA",
         "Apertura": "1920",
@@ -3219,7 +3235,7 @@
         "ID_entità": "GR",
         "Apertura": "1915",
         "Chiusura": "",
-        "Nome attività": "Attività Grassi, Palazzo Simonetti",
+        "Nome attività": "Giuseppe Grassi, Palazzo Simonetti (segnalato nel 1915)",
         "": "RIGA AGGIUNTA!!!",
         "geo": {
             "lat": 41.8933203,
