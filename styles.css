@@ -945,6 +945,11 @@ footer img {
         text-align: center;
     }
 
+    .text-container h2 {
+        margin-left: 0;
+        font-size: 32px;
+    }
+
     .svg-container {
         display: none; /* Nasconde il contenitore SVG */
     }
@@ -1005,7 +1010,7 @@ footer img {
     }
     #key-people .left-key-content{
         margin-left: 0;
-        padding:20px;
+        padding:0;
         text-align: center;
     }
     #key-people p {

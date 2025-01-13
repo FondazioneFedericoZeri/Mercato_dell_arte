@@ -567,19 +567,19 @@ footer img {
     .carousel-card {
         height: auto; /* Permette un'altezza flessibile basata sul contenuto */
         margin: 10px auto; /* Centra la card con margini uniformi */
-        padding: 10px; /* Aggiunge spazio interno per leggibilità */
+        padding: 0px; /* Aggiunge spazio interno per leggibilità */
         flex-shrink: 0; /* Impedisce il ridimensionamento non voluto */
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombra più leggera */
     }
 
     .card-title {
-        font-size: 14px; /* Ridimensiona il titolo */
+        font-size: 15px; /* Ridimensiona il titolo */
         padding: 10px; /* Riduce il padding per adattarsi alla card */
         text-align: center; /* Centra il testo del titolo */
     }
 
     .card-content {
-        font-size: 12px; /* Riduce la dimensione del testo per leggibilità */
+        font-size: 14px; /* Riduce la dimensione del testo per leggibilità */
         padding: 10px; /* Riduce il padding interno */
         text-align: center; /* Centra il testo */
     }
@@ -590,7 +590,10 @@ footer img {
         gap: 10px; /* Spazio tra le card */
     }
     .carousel-wrapper {
-        margin-left: calc(2400vw - 100px); 
+        margin-left: calc(2650vw - 100px); 
+    }
+    .carousel-card.active {
+        transform: scale(0.78);
     }
 }
 
