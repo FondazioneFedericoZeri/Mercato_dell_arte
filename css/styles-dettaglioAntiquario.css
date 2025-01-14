@@ -539,9 +539,13 @@ footer img {
 
     .content-card {
         margin: 10px 0;
-        padding: 15px;
         margin-left: 15px;
         margin-right: 15px;
+    }
+
+    .content-card p {
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
     .tab {

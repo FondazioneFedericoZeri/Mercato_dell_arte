@@ -1048,6 +1048,10 @@ footer img {
     .biblio-right p {
         text-align: center;
     }
+
+    .biblio-right h2 {
+        font-size: 32px;
+    }
 }
 
 /* Nascondi il menu toggle su desktop */
