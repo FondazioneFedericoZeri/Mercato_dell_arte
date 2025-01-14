@@ -970,7 +970,9 @@ footer img {
     #map p {
         text-align: center; /* Centra il testo */
     }
-
+    #map h2 {
+        font-size:32px;
+    }
     .text-container p {
         text-align: center;
     }
@@ -993,6 +995,7 @@ footer img {
     #timeline h2 {
         text-align:center;
         margin-left: 0;
+        font-size: 32px;
     }
 
     #timeline .content-wrapper {
@@ -1024,6 +1027,11 @@ footer img {
     }
     #key-people p {
         margin-bottom: 0;
+        text-align: center;
+    }
+
+    #key-people h2 {
+        font-size: 32px;
     }
 
     #biblio-vettoriale {
