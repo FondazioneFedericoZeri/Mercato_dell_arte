@@ -966,6 +966,15 @@ footer img {
         width: 100%;
         margin-bottom: 30px;
     }
+
+    #map p {
+        text-align: center; /* Centra il testo */
+    }
+
+    .text-container p {
+        text-align: center;
+    }
+
     #timeline {
         display: flex;
         flex-direction: column; /* Disposizione verticale */
