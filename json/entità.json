@@ -1982,6 +1982,178 @@
         },
         "Relazioni": {}
     },
+    "BR_III": {
+        "ID": "BR_III",
+        "Nome": "Brass",
+        "Bio": "BR_III_bio",
+        "Link Zeri": "https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=brass&page=1",
+        "Bibliografia": {
+            "B_91": {
+                "ID": "B_91",
+                "Autore": "Morandotti, A.",
+                "Anno": "2001",
+                "Titolo": "Italico Bras, pittore, conoscitore e mercante nell’età di Giuseppe Fiocco",
+                "Città, editore o rivista": "In Orlando",
+                "Pagine": "pp. 241-250",
+                "Tipologia": "articolo di monografia"
+            },
+            "B_119_3": {
+                "ID": "B_119_3",
+                "Autore": "Rowlands, E.W.",
+                "Anno": "2023",
+                "Titolo": "Here, There, and Everywhere': Harold Parsons, the Italian Market and a Letter of 1948",
+                "Città, editore o rivista": "In Budd, Catterson",
+                "Pagine": "pp. 329-407",
+                "Tipologia": "articolo di monografia"
+            },
+            "B_78_1": {
+                "ID": "B_78_1",
+                "Autore": "Malni Pascoletti, M.",
+                "Anno": "1991",
+                "Titolo": "Una delle gallerie private più interessanti del mondo intero. Note su Italico Brass collezionista",
+                "Città, editore o rivista": "In Masau Dan",
+                "Pagine": "pp. 43-52",
+                "Tipologia": "articolo di monografia"
+            },
+            "B_156_1": {
+                "ID": "B_156_1",
+                "Autore": "Zorzi, E.",
+                "Anno": "1934",
+                "Titolo": "L'arte italiana in America",
+                "Città, editore o rivista": "In «Gazzetta di Venezia», 3 febbraio 1934",
+                "Pagine": "",
+                "Tipologia": "articolo di periodico"
+            },
+            "B_215_4": {
+                "ID": "B_215_4",
+                "Autore": "",
+                "Anno": "1935",
+                "Titolo": "Mostra dei quarant'anni della Biennale: 1895-1935. Venezia, maggio-luglio 1935",
+                "Città, editore o rivista": "Venezia, Tip. C. Ferrari",
+                "Pagine": "",
+                "Tipologia": "monografia"
+            }
+        },
+        "Collaboratori": {
+            "C_25": {
+                "ID": "C_25",
+                "Nome": "Giuseppe",
+                "Cognome / Denominazione": "Fiocco",
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "CO_I ST BR_III",
+                "Nome Antiquari": "Contini Bonacossi Steffanoni Brass"
+            },
+            "C_46_b": {
+                "ID": "C_46_b",
+                "Nome": "Harold",
+                "Cognome / Denominazione": "Parson",
+                "Tipologia": "intermediatore",
+                "ID Antiquari": "BR_III",
+                "Nome Antiquari": "Brass"
+            },
+            "C_19": {
+                "ID": "C_19",
+                "Nome": "",
+                "Cognome / Denominazione": "Duveen Brothers",
+                "Tipologia": "antiquario",
+                "ID Antiquari": "BR_III",
+                "Nome Antiquari": "Brass"
+            }
+        },
+        "Eventi": {},
+        "Foto preview": "BR_III_preview",
+        "Foto gallery": [
+            "BR_III_img1"
+        ],
+        "Persone": {
+            "BR_III_1": {
+                "ID": "BR_III_1",
+                "Nome Persona": "Italico Brass",
+                "ID_entità": "BR_III",
+                "ID_luoghi": {
+                    "IT_1_d": {
+                        "ID": "IT_1_d",
+                        "Nazione": "Italia",
+                        "Regione": "Veneto",
+                        "Città": "Venezia",
+                        "Via": "Campo de l'Abazia",
+                        "Civico": "3551",
+                        "ID_entità": "BR_III",
+                        "Apertura": "1920",
+                        "Chiusura": "1974",
+                        "Nome attività": "Brass (Scuola Vecchia di S. Maria della Misericordia, atelier e sede)",
+                        "": "",
+                        "geo": {
+                            "lat": 45.4437078661016,
+                            "lon": 12.33507058619225
+                        }
+                    }
+                },
+                "Professione": "pittore; collezionista; antiquario",
+                "Nascita": "1878",
+                "Morte": "1943",
+                "Nome attività": "Non noto"
+            },
+            "BR_III_2": {
+                "ID": "BR_III_2",
+                "Nome Persona": "Alessandro  Brass",
+                "ID_entità": "BR_III",
+                "ID_luoghi": {
+                    "IT_1_d": {
+                        "ID": "IT_1_d",
+                        "Nazione": "Italia",
+                        "Regione": "Veneto",
+                        "Città": "Venezia",
+                        "Via": "Campo de l'Abazia",
+                        "Civico": "3551",
+                        "ID_entità": "BR_III",
+                        "Apertura": "1920",
+                        "Chiusura": "1974",
+                        "Nome attività": "Brass (Scuola Vecchia di S. Maria della Misericordia, atelier e sede)",
+                        "": "",
+                        "geo": {
+                            "lat": 45.4437078661016,
+                            "lon": 12.33507058619225
+                        }
+                    }
+                },
+                "Professione": "avvocato; antiquario",
+                "Nascita": "1898",
+                "Morte": "",
+                "Nome attività": "Non noto"
+            },
+            "BR_III_3": {
+                "ID": "BR_III_3",
+                "Nome Persona": "Italico Brass",
+                "ID_entità": "BR_III",
+                "ID_luoghi": {
+                    "IT_1_d": {
+                        "ID": "IT_1_d",
+                        "Nazione": "Italia",
+                        "Regione": "Veneto",
+                        "Città": "Venezia",
+                        "Via": "Campo de l'Abazia",
+                        "Civico": "3551",
+                        "ID_entità": "BR_III",
+                        "Apertura": "1920",
+                        "Chiusura": "1974",
+                        "Nome attività": "Brass (Scuola Vecchia di S. Maria della Misericordia, atelier e sede)",
+                        "": "",
+                        "geo": {
+                            "lat": 45.4437078661016,
+                            "lon": 12.33507058619225
+                        }
+                    }
+                },
+                "Professione": "antiquario",
+                "Nascita": "",
+                "Morte": "",
+                "Nome attività": "Non noto"
+            }
+        },
+        "Clienti": {},
+        "Relazioni": {}
+    },
     "BR_I": {
         "ID": "BR_I",
         "Nome": "Bruschi Ivan",
@@ -2244,178 +2416,6 @@
         "Relazioni": {
             "BR_I": true
         }
-    },
-    "BR_III": {
-        "ID": "BR_III",
-        "Nome": "Brass",
-        "Bio": "BR_III_bio",
-        "Link Zeri": "https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=brass&page=1",
-        "Bibliografia": {
-            "B_91": {
-                "ID": "B_91",
-                "Autore": "Morandotti, A.",
-                "Anno": "2001",
-                "Titolo": "Italico Bras, pittore, conoscitore e mercante nell’età di Giuseppe Fiocco",
-                "Città, editore o rivista": "In Orlando",
-                "Pagine": "pp. 241-250",
-                "Tipologia": "articolo di monografia"
-            },
-            "B_119_3": {
-                "ID": "B_119_3",
-                "Autore": "Rowlands, E.W.",
-                "Anno": "2023",
-                "Titolo": "Here, There, and Everywhere': Harold Parsons, the Italian Market and a Letter of 1948",
-                "Città, editore o rivista": "In Budd, Catterson",
-                "Pagine": "pp. 329-407",
-                "Tipologia": "articolo di monografia"
-            },
-            "B_78_1": {
-                "ID": "B_78_1",
-                "Autore": "Malni Pascoletti, M.",
-                "Anno": "1991",
-                "Titolo": "Una delle gallerie private più interessanti del mondo intero. Note su Italico Brass collezionista",
-                "Città, editore o rivista": "In Masau Dan",
-                "Pagine": "pp. 43-52",
-                "Tipologia": "articolo di monografia"
-            },
-            "B_156_1": {
-                "ID": "B_156_1",
-                "Autore": "Zorzi, E.",
-                "Anno": "1934",
-                "Titolo": "L'arte italiana in America",
-                "Città, editore o rivista": "In «Gazzetta di Venezia», 3 febbraio 1934",
-                "Pagine": "",
-                "Tipologia": "articolo di periodico"
-            },
-            "B_215_4": {
-                "ID": "B_215_4",
-                "Autore": "",
-                "Anno": "1935",
-                "Titolo": "Mostra dei quarant'anni della Biennale: 1895-1935. Venezia, maggio-luglio 1935",
-                "Città, editore o rivista": "Venezia, Tip. C. Ferrari",
-                "Pagine": "",
-                "Tipologia": "monografia"
-            }
-        },
-        "Collaboratori": {
-            "C_25": {
-                "ID": "C_25",
-                "Nome": "Giuseppe",
-                "Cognome / Denominazione": "Fiocco",
-                "Tipologia": "storico dell'arte",
-                "ID Antiquari": "CO_I ST BR_III",
-                "Nome Antiquari": "Contini Bonacossi Steffanoni Brass"
-            },
-            "C_46_b": {
-                "ID": "C_46_b",
-                "Nome": "Harold",
-                "Cognome / Denominazione": "Parson",
-                "Tipologia": "intermediatore",
-                "ID Antiquari": "BR_III",
-                "Nome Antiquari": "Brass"
-            },
-            "C_19": {
-                "ID": "C_19",
-                "Nome": "",
-                "Cognome / Denominazione": "Duveen Brothers",
-                "Tipologia": "antiquario",
-                "ID Antiquari": "BR_III",
-                "Nome Antiquari": "Brass"
-            }
-        },
-        "Eventi": {},
-        "Foto preview": "BR_III_preview",
-        "Foto gallery": [
-            "BR_III_img1"
-        ],
-        "Persone": {
-            "BR_III_1": {
-                "ID": "BR_III_1",
-                "Nome Persona": "Italico Brass",
-                "ID_entità": "BR_III",
-                "ID_luoghi": {
-                    "IT_1_d": {
-                        "ID": "IT_1_d",
-                        "Nazione": "Italia",
-                        "Regione": "Veneto",
-                        "Città": "Venezia",
-                        "Via": "Campo de l'Abazia",
-                        "Civico": "3551",
-                        "ID_entità": "BR_III",
-                        "Apertura": "1920",
-                        "Chiusura": "1974",
-                        "Nome attività": "Brass (Scuola Vecchia di S. Maria della Misericordia, atelier e sede)",
-                        "": "",
-                        "geo": {
-                            "lat": 45.4437078661016,
-                            "lon": 12.33507058619225
-                        }
-                    }
-                },
-                "Professione": "pittore; collezionista; antiquario",
-                "Nascita": "1878",
-                "Morte": "1943",
-                "Nome attività": "Non noto"
-            },
-            "BR_III_2": {
-                "ID": "BR_III_2",
-                "Nome Persona": "Alessandro  Brass",
-                "ID_entità": "BR_III",
-                "ID_luoghi": {
-                    "IT_1_d": {
-                        "ID": "IT_1_d",
-                        "Nazione": "Italia",
-                        "Regione": "Veneto",
-                        "Città": "Venezia",
-                        "Via": "Campo de l'Abazia",
-                        "Civico": "3551",
-                        "ID_entità": "BR_III",
-                        "Apertura": "1920",
-                        "Chiusura": "1974",
-                        "Nome attività": "Brass (Scuola Vecchia di S. Maria della Misericordia, atelier e sede)",
-                        "": "",
-                        "geo": {
-                            "lat": 45.4437078661016,
-                            "lon": 12.33507058619225
-                        }
-                    }
-                },
-                "Professione": "avvocato; antiquario",
-                "Nascita": "1898",
-                "Morte": "",
-                "Nome attività": "Non noto"
-            },
-            "BR_III_3": {
-                "ID": "BR_III_3",
-                "Nome Persona": "Italico Brass",
-                "ID_entità": "BR_III",
-                "ID_luoghi": {
-                    "IT_1_d": {
-                        "ID": "IT_1_d",
-                        "Nazione": "Italia",
-                        "Regione": "Veneto",
-                        "Città": "Venezia",
-                        "Via": "Campo de l'Abazia",
-                        "Civico": "3551",
-                        "ID_entità": "BR_III",
-                        "Apertura": "1920",
-                        "Chiusura": "1974",
-                        "Nome attività": "Brass (Scuola Vecchia di S. Maria della Misericordia, atelier e sede)",
-                        "": "",
-                        "geo": {
-                            "lat": 45.4437078661016,
-                            "lon": 12.33507058619225
-                        }
-                    }
-                },
-                "Professione": "antiquario",
-                "Nascita": "",
-                "Morte": "",
-                "Nome attività": "Non noto"
-            }
-        },
-        "Clienti": {},
-        "Relazioni": {}
     },
     "CA_I": {
         "ID": "CA_I",
@@ -2783,98 +2783,6 @@
             "SA_III": true
         }
     },
-    "CA_II": {
-        "ID": "CA_II",
-        "Nome": "Capobianchi",
-        "Bio": "CA_II_bio",
-        "Link Zeri": "https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=capobianchi",
-        "Bibliografia": {
-            "B_37": {
-                "ID": "B_37",
-                "Autore": "De Callataÿ, F.",
-                "Anno": "2016",
-                "Titolo": "Il venditore d'antichità by Vincenzo Capobianchi (1880): possibly the most scholarly work of the neo-Pompeian painting",
-                "Città, editore o rivista": "In «Anabases», XXIII",
-                "Pagine": "pp. 47-73",
-                "Tipologia": "articolo di periodico"
-            }
-        },
-        "Collaboratori": {},
-        "Eventi": {},
-        "Foto preview": "CA_II_preview",
-        "Foto gallery": [
-            "CA_II_img1"
-        ],
-        "Persone": {
-            "CA_II_1": {
-                "ID": "CA_II_1",
-                "Nome Persona": "Vincenzo Capobianchi",
-                "ID_entità": "CA_II",
-                "ID_luoghi": {
-                    "IT_99": {
-                        "ID": "IT_99",
-                        "Nazione": "Italia",
-                        "Regione": "Lazio",
-                        "Città": "Roma",
-                        "Via": "Piazza della Trinità dei Monti",
-                        "Civico": "6",
-                        "ID_entità": "CA_II",
-                        "Apertura": "1885",
-                        "Chiusura": "1901",
-                        "Nome attività": "Giuseppe Giacomini e Vincenzo Capobianchi, \"Giacomini & Capobianchi\"",
-                        "": "",
-                        "geo": {
-                            "lat": 41.9059856,
-                            "lon": 12.4836915
-                        }
-                    },
-                    "IT_113": {
-                        "ID": "IT_113",
-                        "Nazione": "Italia",
-                        "Regione": "Lazio",
-                        "Città": "Roma",
-                        "Via": "Via Due Macelli",
-                        "Civico": "86",
-                        "ID_entità": "CA_II CO_II",
-                        "Apertura": "1891",
-                        "Chiusura": "1919",
-                        "Nome attività": "Gustavo Corvisieri, \"Casa di Vendite Corvisieri & C.\", con Vincenzo Capobianchi dal 1901",
-                        "": "",
-                        "geo": {
-                            "lat": 41.9039747,
-                            "lon": 12.4843312
-                        }
-                    },
-                    "IT_125": {
-                        "ID": "IT_125",
-                        "Nazione": "Italia",
-                        "Regione": "Lazio",
-                        "Città": "Roma",
-                        "Via": "Via Sistina",
-                        "Civico": "16",
-                        "ID_entità": "CA_II",
-                        "Apertura": "1885",
-                        "Chiusura": "1901",
-                        "Nome attività": "Giuseppe Giacomini e Vincenzo Capobianchi, \"Giacomini & C.\"",
-                        "": "",
-                        "geo": {
-                            "lat": 41.9039736,
-                            "lon": 12.4870662
-                        }
-                    }
-                },
-                "Professione": "pittore e antiquario",
-                "Nascita": "1836",
-                "Morte": "1928",
-                "Nome attività": "Giacomini & C Corvisieri &C."
-            }
-        },
-        "Clienti": {},
-        "Relazioni": {
-            "SI": true,
-            "CO_II": true
-        }
-    },
     "CA_III": {
         "ID": "CA_III",
         "Nome": "Cantoni",
@@ -3064,6 +2972,98 @@
             }
         },
         "Relazioni": {}
+    },
+    "CA_II": {
+        "ID": "CA_II",
+        "Nome": "Capobianchi",
+        "Bio": "CA_II_bio",
+        "Link Zeri": "https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=capobianchi",
+        "Bibliografia": {
+            "B_37": {
+                "ID": "B_37",
+                "Autore": "De Callataÿ, F.",
+                "Anno": "2016",
+                "Titolo": "Il venditore d'antichità by Vincenzo Capobianchi (1880): possibly the most scholarly work of the neo-Pompeian painting",
+                "Città, editore o rivista": "In «Anabases», XXIII",
+                "Pagine": "pp. 47-73",
+                "Tipologia": "articolo di periodico"
+            }
+        },
+        "Collaboratori": {},
+        "Eventi": {},
+        "Foto preview": "CA_II_preview",
+        "Foto gallery": [
+            "CA_II_img1"
+        ],
+        "Persone": {
+            "CA_II_1": {
+                "ID": "CA_II_1",
+                "Nome Persona": "Vincenzo Capobianchi",
+                "ID_entità": "CA_II",
+                "ID_luoghi": {
+                    "IT_99": {
+                        "ID": "IT_99",
+                        "Nazione": "Italia",
+                        "Regione": "Lazio",
+                        "Città": "Roma",
+                        "Via": "Piazza della Trinità dei Monti",
+                        "Civico": "6",
+                        "ID_entità": "CA_II",
+                        "Apertura": "1885",
+                        "Chiusura": "1901",
+                        "Nome attività": "Giuseppe Giacomini e Vincenzo Capobianchi, \"Giacomini & Capobianchi\"",
+                        "": "",
+                        "geo": {
+                            "lat": 41.9059856,
+                            "lon": 12.4836915
+                        }
+                    },
+                    "IT_113": {
+                        "ID": "IT_113",
+                        "Nazione": "Italia",
+                        "Regione": "Lazio",
+                        "Città": "Roma",
+                        "Via": "Via Due Macelli",
+                        "Civico": "86",
+                        "ID_entità": "CA_II CO_II",
+                        "Apertura": "1891",
+                        "Chiusura": "1919",
+                        "Nome attività": "Gustavo Corvisieri, \"Casa di Vendite Corvisieri & C.\", con Vincenzo Capobianchi dal 1901",
+                        "": "",
+                        "geo": {
+                            "lat": 41.9039747,
+                            "lon": 12.4843312
+                        }
+                    },
+                    "IT_125": {
+                        "ID": "IT_125",
+                        "Nazione": "Italia",
+                        "Regione": "Lazio",
+                        "Città": "Roma",
+                        "Via": "Via Sistina",
+                        "Civico": "16",
+                        "ID_entità": "CA_II",
+                        "Apertura": "1885",
+                        "Chiusura": "1901",
+                        "Nome attività": "Giuseppe Giacomini e Vincenzo Capobianchi, \"Giacomini & C.\"",
+                        "": "",
+                        "geo": {
+                            "lat": 41.9039736,
+                            "lon": 12.4870662
+                        }
+                    }
+                },
+                "Professione": "pittore e antiquario",
+                "Nascita": "1836",
+                "Morte": "1928",
+                "Nome attività": "Giacomini & C Corvisieri &C."
+            }
+        },
+        "Clienti": {},
+        "Relazioni": {
+            "SI": true,
+            "CO_II": true
+        }
     },
     "CE": {
         "ID": "CE",
@@ -4530,7 +4530,7 @@
                 "ID": "B_153",
                 "Autore": "Zaninelli, F.",
                 "Anno": "2023",
-                "Titolo": "Some Remarks on Wilhelm BOde and the Art Market in Italy, 1880-1909: The Cases of Pietro Foresti (1854-1926) and A. Chiesa",
+                "Titolo": "Some Remarks on Wilhelm Bode and the Art Market in Italy, 1880-1909: The Cases of Pietro Foresti (1854-1926) and A. Chiesa",
                 "Città, editore o rivista": "In Smalcerz",
                 "Pagine": "pp. 151-205",
                 "Tipologia": "articolo di monografia"
@@ -4772,88 +4772,6 @@
                     }
                 },
                 "Professione": "antiquario"
-            }
-        },
-        "Clienti": {},
-        "Relazioni": {}
-    },
-    "GI": {
-        "ID": "GI",
-        "Nome": "Giugni",
-        "Bio": "GI_bio",
-        "Link Zeri": "https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=U.+Giugni",
-        "Bibliografia": {
-            "B_11": {
-                "ID": "B_11",
-                "Autore": "Batini, G.",
-                "Anno": "1961",
-                "Titolo": "L'antiquario",
-                "Città, editore o rivista": "Firenze, Vallecchi",
-                "Pagine": "",
-                "Tipologia": "monografia"
-            },
-            "B_171": {
-                "ID": "B_171",
-                "Autore": "Eredi Giugni",
-                "Anno": "1970",
-                "Titolo": "Catalogo di quanto viene venduto dal Palazzo Internazionale delle Aste ed Esposizioni : Firenze, per ordine di Eredi Giugni, comprendente: mobili, quadri, sculture, arazzi, tappeti, maioliche, porcellane ed oggetti dal XIV al XIX secolo, catalogo della vendita all'asta Palazzo Internazionale, Firenze, 17-19 ottobre 1970).",
-                "Città, editore o rivista": "Bologna 1970.",
-                "Pagine": "",
-                "Tipologia": "catalogo d'asta"
-            }
-        },
-        "Collaboratori": {},
-        "Eventi": {},
-        "Foto preview": "GI_preview",
-        "Foto gallery": [
-            "GI_img1",
-            "GI_img2"
-        ],
-        "Persone": {
-            "GI_1": {
-                "ID": "GI_1",
-                "Nome Persona": "Ubaldo Giugni",
-                "ID_entità": "GI",
-                "ID_luoghi": {
-                    "IT_54": {
-                        "ID": "IT_54",
-                        "Nazione": "Italia",
-                        "Regione": "Toscana",
-                        "Città": "Firenze",
-                        "Via": "Via dei Banchi",
-                        "Civico": "5",
-                        "ID_entità": "GI",
-                        "Apertura": "1929 ca.",
-                        "Chiusura": "1950 ca.",
-                        "Nome attività": "Ubaldo Giugni, \"Galleria d'Arte\" (sede)",
-                        "": "",
-                        "geo": {
-                            "lat": 43.7734769,
-                            "lon": 11.2510577
-                        }
-                    },
-                    "IT_70": {
-                        "ID": "IT_70",
-                        "Nazione": "Italia",
-                        "Regione": "Toscana",
-                        "Città": "Firenze",
-                        "Via": "Via del Moro",
-                        "Civico": "30",
-                        "ID_entità": "GI",
-                        "Apertura": "1950 ca.",
-                        "Chiusura": "1965 ca.",
-                        "Nome attività": "Ubaldo Giugni, \"Galleria d'Arte\" (sede)",
-                        "": "",
-                        "geo": {
-                            "lat": 43.7716012,
-                            "lon": 11.2487145
-                        }
-                    }
-                },
-                "Professione": "antiquario",
-                "Nascita": "",
-                "Morte": "",
-                "Nome attività": "Galleria d’Arte"
             }
         },
         "Clienti": {},
@@ -5311,6 +5229,88 @@
                 "Nascita": "1903",
                 "Morte": "1981",
                 "Nome attività": "Galleria Geri; \"Galleria Geri, del Bramante, del Portico\""
+            }
+        },
+        "Clienti": {},
+        "Relazioni": {}
+    },
+    "GI": {
+        "ID": "GI",
+        "Nome": "Giugni",
+        "Bio": "GI_bio",
+        "Link Zeri": "https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=U.+Giugni",
+        "Bibliografia": {
+            "B_11": {
+                "ID": "B_11",
+                "Autore": "Batini, G.",
+                "Anno": "1961",
+                "Titolo": "L'antiquario",
+                "Città, editore o rivista": "Firenze, Vallecchi",
+                "Pagine": "",
+                "Tipologia": "monografia"
+            },
+            "B_171": {
+                "ID": "B_171",
+                "Autore": "Eredi Giugni",
+                "Anno": "1970",
+                "Titolo": "Catalogo di quanto viene venduto dal Palazzo Internazionale delle Aste ed Esposizioni : Firenze, per ordine di Eredi Giugni, comprendente: mobili, quadri, sculture, arazzi, tappeti, maioliche, porcellane ed oggetti dal XIV al XIX secolo, catalogo della vendita all'asta Palazzo Internazionale, Firenze, 17-19 ottobre 1970).",
+                "Città, editore o rivista": "Bologna 1970.",
+                "Pagine": "",
+                "Tipologia": "catalogo d'asta"
+            }
+        },
+        "Collaboratori": {},
+        "Eventi": {},
+        "Foto preview": "GI_preview",
+        "Foto gallery": [
+            "GI_img1",
+            "GI_img2"
+        ],
+        "Persone": {
+            "GI_1": {
+                "ID": "GI_1",
+                "Nome Persona": "Ubaldo Giugni",
+                "ID_entità": "GI",
+                "ID_luoghi": {
+                    "IT_54": {
+                        "ID": "IT_54",
+                        "Nazione": "Italia",
+                        "Regione": "Toscana",
+                        "Città": "Firenze",
+                        "Via": "Via dei Banchi",
+                        "Civico": "5",
+                        "ID_entità": "GI",
+                        "Apertura": "1929 ca.",
+                        "Chiusura": "1950 ca.",
+                        "Nome attività": "Ubaldo Giugni, \"Galleria d'Arte\" (sede)",
+                        "": "",
+                        "geo": {
+                            "lat": 43.7734769,
+                            "lon": 11.2510577
+                        }
+                    },
+                    "IT_70": {
+                        "ID": "IT_70",
+                        "Nazione": "Italia",
+                        "Regione": "Toscana",
+                        "Città": "Firenze",
+                        "Via": "Via del Moro",
+                        "Civico": "30",
+                        "ID_entità": "GI",
+                        "Apertura": "1950 ca.",
+                        "Chiusura": "1965 ca.",
+                        "Nome attività": "Ubaldo Giugni, \"Galleria d'Arte\" (sede)",
+                        "": "",
+                        "geo": {
+                            "lat": 43.7716012,
+                            "lon": 11.2487145
+                        }
+                    }
+                },
+                "Professione": "antiquario",
+                "Nascita": "",
+                "Morte": "",
+                "Nome attività": "Galleria d’Arte"
             }
         },
         "Clienti": {},
