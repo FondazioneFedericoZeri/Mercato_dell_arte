@@ -184,6 +184,13 @@ document.addEventListener("DOMContentLoaded", function () {
     function updateMarkers(period) {
         markers.clearLayers(); // Clear all clusters before adding new markers
 
+        $.getJSON("https://raw.githubusercontent.com/FondazioneFedericoZeri/Mercato_dell_arte/main/json/entità.json",
+            function(entities_json) {
+                entities = entities_json
+            }).fail(function () {
+                console.error("Failed to load the JSON file.");
+            });
+
         $.getJSON("https://raw.githubusercontent.com/FondazioneFedericoZeri/Mercato_dell_arte/main/json/luoghi.json", function (luoghi_json) {
             for (let luogo in luoghi_json) {
                 if (luoghi_json[luogo]["geo"]["lat"] && filterByTimePeriod(luoghi_json[luogo], period)) {
@@ -192,6 +199,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     let place_name = luoghi_json[luogo]["Città"] || "";
                     let nome_attivita = luoghi_json[luogo]["Nome attività"];
                     let id_entita = luoghi_json[luogo]["ID_entità"];
+                    let nome_entita = entities[id_entita]
 
                     // Format the address
                     if (luoghi_json[luogo]["Via"] && luoghi_json[luogo]["Via"].length > 0) {
@@ -217,7 +225,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
                     ids.forEach(function (id) {
                         if (id.trim() !== "") {  // Check if id is not an empty string
-                            content += `<a href="https://fondazionefedericozeri.github.io/Mercato_dell_arte/html/dettagli/dettaglio_${id}.html" target="_blank">Vai a ${id}</a><br>`;
+                            // content += `<a href="https://fondazionefedericozeri.github.io/Mercato_dell_arte/html/dettagli/dettaglio_${id}.html" target="_blank">Vai a ${id}</a><br>`;
+                            content += `<a href="https://fondazionefedericozeri.github.io/Mercato_dell_arte/html/dettagli/dettaglio_${id}.html" target="_blank">Vai a ${nome_entita}</a><br>`;
                         }
                     });
 
