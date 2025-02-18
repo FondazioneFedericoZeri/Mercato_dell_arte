@@ -183,71 +183,68 @@ document.addEventListener("DOMContentLoaded", function () {
     // Function to update markers based on the selected period
     function updateMarkers(period) {
         markers.clearLayers(); // Clear all clusters before adding new markers
-
         $.getJSON("https://raw.githubusercontent.com/FondazioneFedericoZeri/Mercato_dell_arte/main/json/entità.json",
-            function(entities_json) {
-                entities = entities_json
-            }).fail(function () {
-                console.error("Failed to load the JSON file.");
+            function (entities_json){
+                $.getJSON("https://raw.githubusercontent.com/FondazioneFedericoZeri/Mercato_dell_arte/main/json/luoghi.json", function (luoghi_json) {
+
+                    for (let luogo in luoghi_json) {
+                        if (luoghi_json[luogo]["geo"]["lat"] && filterByTimePeriod(luoghi_json[luogo], period)) {
+
+                            // Start with Città
+                            let place_name = luoghi_json[luogo]["Città"] || "";
+                            let nome_attivita = luoghi_json[luogo]["Nome attività"];
+                            let id_entita = luoghi_json[luogo]["ID_entità"];
+
+
+                            // Format the address
+                            if (luoghi_json[luogo]["Via"] && luoghi_json[luogo]["Via"].length > 0) {
+                                place_name += `, ${luoghi_json[luogo]["Via"]}`;  // Add Via if present
+                                if (luoghi_json[luogo]["Civico"] && luoghi_json[luogo]["Civico"].length > 0) {
+                                    place_name += `, ${luoghi_json[luogo]["Civico"]}`;  // Add Civico if present
+                                }
+                            }
+
+                            // Create the tooltip content
+                            let content = `<b>${nome_attivita}</b><br>${place_name}<br>`;
+
+                            // Add the period of activity (Apertura - Chiusura)
+                            var apertura = luoghi_json[luogo]["Apertura"] || "";  // Get Apertura or empty string if not present
+                            var chiusura = luoghi_json[luogo]["Chiusura"] || "";  // Get Chiusura or empty string if not present
+
+                            // Only show "Periodo attività" if at least one of the fields is not empty
+                            if (apertura || chiusura) {
+                                content += `Periodo attività: (${apertura}-${chiusura})<br>`;
+                            }
+
+                            let ids = id_entita.split(' ');
+
+                            ids.forEach(function (id) {
+                                if (id.trim() !== "") {  // Check if id is not an empty string
+                                    // content += `<a href="https://fondazionefedericozeri.github.io/Mercato_dell_arte/html/dettagli/dettaglio_${id}.html" target="_blank">Vai a ${id}</a><br>`;
+                                    let nome_entita = entities_json[id]["Nome"];
+                                    content += `<a href="https://fondazionefedericozeri.github.io/Mercato_dell_arte/html/dettagli/dettaglio_${id}.html" target="_blank">Vai a ${nome_entita}</a><br>`;
+                                }
+                            });
+
+                            // Create the marker using appropriate color icon based on the period
+                            var marker = L.marker([luoghi_json[luogo]["geo"]["lat"], luoghi_json[luogo]["geo"]["lon"]], {
+                                icon: getIconForPeriod(luoghi_json[luogo]) // Get icon based on period
+                            });
+
+                            marker.bindTooltip(content, { permanent: false, direction: "top" });
+                            marker.bindPopup(content);
+                            marker.on('click', function () {
+                                marker.openPopup();
+                            });
+
+                            // Add marker to the cluster group instead of directly to the map
+                            markers.addLayer(marker);
+                        }
+                    }
+                }).fail(function () {
+                    console.error("Failed to load the JSON file.");
+                });
             });
-
-        $.getJSON("https://raw.githubusercontent.com/FondazioneFedericoZeri/Mercato_dell_arte/main/json/luoghi.json", function (luoghi_json) {
-            for (let luogo in luoghi_json) {
-                if (luoghi_json[luogo]["geo"]["lat"] && filterByTimePeriod(luoghi_json[luogo], period)) {
-
-                    // Start with Città
-                    let place_name = luoghi_json[luogo]["Città"] || "";
-                    let nome_attivita = luoghi_json[luogo]["Nome attività"];
-                    let id_entita = luoghi_json[luogo]["ID_entità"];
-                    let nome_entita = entities[id_entita]
-
-                    // Format the address
-                    if (luoghi_json[luogo]["Via"] && luoghi_json[luogo]["Via"].length > 0) {
-                        place_name += `, ${luoghi_json[luogo]["Via"]}`;  // Add Via if present
-                        if (luoghi_json[luogo]["Civico"] && luoghi_json[luogo]["Civico"].length > 0) {
-                            place_name += `, ${luoghi_json[luogo]["Civico"]}`;  // Add Civico if present
-                        }
-                    }
-
-                    // Create the tooltip content
-                    let content = `<b>${nome_attivita}</b><br>${place_name}<br>`;
-
-                    // Add the period of activity (Apertura - Chiusura)
-                    var apertura = luoghi_json[luogo]["Apertura"] || "";  // Get Apertura or empty string if not present
-                    var chiusura = luoghi_json[luogo]["Chiusura"] || "";  // Get Chiusura or empty string if not present
-
-                    // Only show "Periodo attività" if at least one of the fields is not empty
-                    if (apertura || chiusura) {
-                        content += `Periodo attività: (${apertura}-${chiusura})<br>`;
-                    }
-
-                    let ids = id_entita.split(' ');
-
-                    ids.forEach(function (id) {
-                        if (id.trim() !== "") {  // Check if id is not an empty string
-                            // content += `<a href="https://fondazionefedericozeri.github.io/Mercato_dell_arte/html/dettagli/dettaglio_${id}.html" target="_blank">Vai a ${id}</a><br>`;
-                            content += `<a href="https://fondazionefedericozeri.github.io/Mercato_dell_arte/html/dettagli/dettaglio_${id}.html" target="_blank">Vai a ${nome_entita}</a><br>`;
-                        }
-                    });
-
-                    // Create the marker using appropriate color icon based on the period
-                    var marker = L.marker([luoghi_json[luogo]["geo"]["lat"], luoghi_json[luogo]["geo"]["lon"]], {
-                        icon: getIconForPeriod(luoghi_json[luogo]) // Get icon based on period
-                    });
-
-                    marker.bindTooltip(content, { permanent: false, direction: "top" });
-                    marker.bindPopup(content);
-                    marker.on('click', function () {
-                        marker.openPopup();
-                    });
-
-                    // Add marker to the cluster group instead of directly to the map
-                    markers.addLayer(marker);
-                }
-            }
-        }).fail(function () {
-            console.error("Failed to load the JSON file.");
-        });
 
         // Add the cluster group to the map after markers are added
         map.addLayer(markers);
