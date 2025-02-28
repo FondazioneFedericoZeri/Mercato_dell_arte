@@ -1165,8 +1165,8 @@
         "Chiusura": "1996",
         "Nome attività": "Palazzo del Capitano del Popolo, sede e abitazione privata",
         "geo": {
-            "lat": 43.46601005303453,
-            "lon": 11.883034285625772
+            "lat": 43.465164962623355,
+            "lon": 11.883164208651733
         } 
     },
     "IT_31": {
@@ -1398,7 +1398,7 @@
         "Via": "Ponte Vecchio",
         "Civico": "1",
         "ID_entità": "VO_II",
-        "Apertura": "1900 ca.",
+        "Apertura": "1887 ca.",
         "Chiusura": "1932 ca.",
         "Nome attività": "Gustavo Volterra",
         "": "",
