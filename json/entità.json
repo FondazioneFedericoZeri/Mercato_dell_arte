@@ -5316,6 +5316,202 @@
         "Clienti": {},
         "Relazioni": {}
     },
+    "GR_II": {
+        "ID": "GR_II",
+        "Nome": "Grandi",
+        "Bio": "GR_II_bio",
+        "Link Zeri": "https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&fulltextOA=Milano&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Grandi",
+        "Bibliografia": {
+            "B_34_2": {
+                "ID": "B_34_2",
+                "Autore": "Colombi, M.",
+                "Anno": "2021-2022",
+                "Titolo": "Milano e il mercato dell'arte nella seconda metà dell'Ottocento. Il ruolo degli antiquari",
+                "Città, editore o rivista": "Tesi di dottorato, Università di Milano",
+                "Pagine": "",
+                "Tipologia": "monografia"
+            },
+            "B_91_1": {
+                "ID": "B_91_1",
+                "Autore": "Morandotti, A.",
+                "Anno": "2008",
+                "Titolo": "Il Collezionismo in Lombardia. Studi e Ricerche tra '600 e '800",
+                "Città, editore o rivista": "Milano, Officina Libraria",
+                "Pagine": "",
+                "Tipologia": "monografia"
+            },
+            "B_28_3": {
+                "ID": "B_28_3",
+                "Autore": "Ceriana, M.",
+                "Anno": "2004",
+                "Titolo": "Antonio Grandi",
+                "Città, editore o rivista": "in Ceriana Quattrini",
+                "Pagine": "pp. 265",
+                "Tipologia": "articolo di monografia"
+            },
+            "B_40_1": {
+                "ID": "B_40_1",
+                "Autore": "Di Lorenzo, A. ",
+                "Anno": "2002",
+                "Titolo": "Édouard e Nélie a Milano: i loro rapporti con gli antiquari, i restauratori e i collezionisti",
+                "Città, editore o rivista": "in Di Lorenzo",
+                "Pagine": "pp. 37-45",
+                "Tipologia": "articolo di monografia"
+            },
+            "B_21_3": {
+                "ID": "B_21_3",
+                "Autore": "Calzini, R.",
+                "Anno": "1946",
+                "Titolo": "Milano fin de siècle",
+                "Città, editore o rivista": "Milano, Hoepli, 1946",
+                "Pagine": "pp. 111-113",
+                "Tipologia": "monografia"
+            },
+            "B_24_3": {
+                "ID": "B_24_3",
+                "Autore": "Carotti, G.",
+                "Anno": "1905",
+                "Titolo": "Una nuova raccolta di opere d'arte",
+                "Città, editore o rivista": "In «L’Arte», VIII, 1905",
+                "Pagine": "pp. 50-52",
+                "Tipologia": "articolo di periodico"
+            }
+        },
+        "Collaboratori": {
+            "C_6_c": {
+                "ID": "C_6_c",
+                "Nome": "Luca",
+                "Cognome / Denominazione": "Beltrami",
+                "Tipologia": "architetto",
+                "ID Antiquari": "GR_II",
+                "Nome Antiquari": "Grandi"
+            },
+            "C_15": {
+                "ID": "C_15",
+                "Nome": "Luigi",
+                "Cognome / Denominazione": "Cavenaghi",
+                "Tipologia": "restauratore",
+                "ID Antiquari": "SA_V",
+                "Nome Antiquari": "Sabatello"
+            },
+            "C_61_b": {
+                "ID": "C_61_b",
+                "Nome": "Giuseppe ",
+                "Cognome / Denominazione": "Steffanoni",
+                "Tipologia": "restauratore",
+                "ID Antiquari": "GR_II",
+                "Nome Antiquari": "Grandi"
+            }
+        },
+        "Eventi": {},
+        "Foto preview": "GR_II_preview",
+        "Foto gallery": [
+            "GR_II_img1"
+        ],
+        "Persone": {
+            "GR_II_1": {
+                "ID": "GR_II_1",
+                "Nome Persona": "Antonio Grandi ",
+                "ID_entità": "GR_II",
+                "ID_luoghi": {
+                    "IT_4_g": {
+                        "ID": "IT_4_g",
+                        "Nazione": "Italia",
+                        "Regione": "Lombardia",
+                        "Città": "Milano",
+                        "Via": "Corso Venezia",
+                        "Civico": "12",
+                        "ID_entità": "GR_II",
+                        "Apertura": "1866",
+                        "Chiusura": "1926",
+                        "Nome attività": "Antonio e Carlo Grandi, \"Ditta Antonio Grandi\"",
+                        "": "",
+                        "geo": {
+                            "lat": 45.4683575,
+                            "lon": 9.1990461
+                        }
+                    }
+                },
+                "Professione": "antiquario",
+                "Nascita": "1810",
+                "Morte": "1877",
+                "Nome attività": ""
+            },
+            "GR_II_2": {
+                "ID": "GR_II_2",
+                "Nome Persona": "Carlo Grandi",
+                "ID_entità": "GR_II",
+                "ID_luoghi": {
+                    "IT_4_g": {
+                        "ID": "IT_4_g",
+                        "Nazione": "Italia",
+                        "Regione": "Lombardia",
+                        "Città": "Milano",
+                        "Via": "Corso Venezia",
+                        "Civico": "12",
+                        "ID_entità": "GR_II",
+                        "Apertura": "1866",
+                        "Chiusura": "1926",
+                        "Nome attività": "Antonio e Carlo Grandi, \"Ditta Antonio Grandi\"",
+                        "": "",
+                        "geo": {
+                            "lat": 45.4683575,
+                            "lon": 9.1990461
+                        }
+                    }
+                },
+                "Professione": "antiquario",
+                "Nascita": "1842",
+                "Morte": "1914",
+                "Nome attività": "Ditta Antonio Grandi"
+            },
+            "GR_II_3": {
+                "ID": "GR_II_3",
+                "Nome Persona": "Antonio Grandi ",
+                "ID_entità": "GR_II",
+                "ID_luoghi": {
+                    "IT_4_g": {
+                        "ID": "IT_4_g",
+                        "Nazione": "Italia",
+                        "Regione": "Lombardia",
+                        "Città": "Milano",
+                        "Via": "Corso Venezia",
+                        "Civico": "12",
+                        "ID_entità": "GR_II",
+                        "Apertura": "1866",
+                        "Chiusura": "1926",
+                        "Nome attività": "Antonio e Carlo Grandi, \"Ditta Antonio Grandi\"",
+                        "": "",
+                        "geo": {
+                            "lat": 45.4683575,
+                            "lon": 9.1990461
+                        }
+                    }
+                },
+                "Professione": "antiquario",
+                "Nascita": "1857",
+                "Morte": "1923",
+                "Nome attività": "Ditta Antonio Grandi"
+            }
+        },
+        "Clienti": {
+            "CL_19_b": {
+                "Nome": "Antonio",
+                "Cognome": "Borgogna",
+                "vendite": [
+                    "GR_II_1"
+                ]
+            },
+            "CL_46_b": {
+                "Nome": "Aldo",
+                "Cognome": "Noseda",
+                "vendite": [
+                    ""
+                ]
+            }
+        },
+        "Relazioni": {}
+    },
     "GR": {
         "ID": "GR",
         "Nome": "Grassi",
@@ -5617,202 +5813,6 @@
             "BA_II": true,
             "CO_III": true
         }
-    },
-    "GR_II": {
-        "ID": "GR_II",
-        "Nome": "Grandi",
-        "Bio": "GR_II_bio",
-        "Link Zeri": "https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&fulltextOA=Milano&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Grandi",
-        "Bibliografia": {
-            "B_34_2": {
-                "ID": "B_34_2",
-                "Autore": "Colombi, M.",
-                "Anno": "2021-2022",
-                "Titolo": "Milano e il mercato dell'arte nella seconda metà dell'Ottocento. Il ruolo degli antiquari",
-                "Città, editore o rivista": "Tesi di dottorato, Università di Milano",
-                "Pagine": "",
-                "Tipologia": "monografia"
-            },
-            "B_91_1": {
-                "ID": "B_91_1",
-                "Autore": "Morandotti, A.",
-                "Anno": "2008",
-                "Titolo": "Il Collezionismo in Lombardia. Studi e Ricerche tra '600 e '800",
-                "Città, editore o rivista": "Milano, Officina Libraria",
-                "Pagine": "",
-                "Tipologia": "monografia"
-            },
-            "B_28_3": {
-                "ID": "B_28_3",
-                "Autore": "Ceriana, M.",
-                "Anno": "2004",
-                "Titolo": "Antonio Grandi",
-                "Città, editore o rivista": "in Ceriana Quattrini",
-                "Pagine": "pp. 265",
-                "Tipologia": "articolo di monografia"
-            },
-            "B_40_1": {
-                "ID": "B_40_1",
-                "Autore": "Di Lorenzo, A. ",
-                "Anno": "2002",
-                "Titolo": "Édouard e Nélie a Milano: i loro rapporti con gli antiquari, i restauratori e i collezionisti",
-                "Città, editore o rivista": "in Di Lorenzo",
-                "Pagine": "pp. 37-45",
-                "Tipologia": "articolo di monografia"
-            },
-            "B_21_3": {
-                "ID": "B_21_3",
-                "Autore": "Calzini, R.",
-                "Anno": "1946",
-                "Titolo": "Milano fin de siècle",
-                "Città, editore o rivista": "Milano, Hoepli, 1946",
-                "Pagine": "pp. 111-113",
-                "Tipologia": "monografia"
-            },
-            "B_24_3": {
-                "ID": "B_24_3",
-                "Autore": "Carotti, G.",
-                "Anno": "1905",
-                "Titolo": "Una nuova raccolta di opere d'arte",
-                "Città, editore o rivista": "In «L’Arte», VIII, 1905",
-                "Pagine": "pp. 50-52",
-                "Tipologia": "articolo di periodico"
-            }
-        },
-        "Collaboratori": {
-            "C_6_c": {
-                "ID": "C_6_c",
-                "Nome": "Luca",
-                "Cognome / Denominazione": "Beltrami",
-                "Tipologia": "architetto",
-                "ID Antiquari": "GR_II",
-                "Nome Antiquari": "Grandi"
-            },
-            "C_15": {
-                "ID": "C_15",
-                "Nome": "Luigi",
-                "Cognome / Denominazione": "Cavenaghi",
-                "Tipologia": "restauratore",
-                "ID Antiquari": "SA_V",
-                "Nome Antiquari": "Sabatello"
-            },
-            "C_61_b": {
-                "ID": "C_61_b",
-                "Nome": "Giuseppe ",
-                "Cognome / Denominazione": "Steffanoni",
-                "Tipologia": "restauratore",
-                "ID Antiquari": "GR_II",
-                "Nome Antiquari": "Grandi"
-            }
-        },
-        "Eventi": {},
-        "Foto preview": "GR_II_preview",
-        "Foto gallery": [
-            "GR_II_img1"
-        ],
-        "Persone": {
-            "GR_II_1": {
-                "ID": "GR_II_1",
-                "Nome Persona": "Antonio Grandi ",
-                "ID_entità": "GR_II",
-                "ID_luoghi": {
-                    "IT_4_g": {
-                        "ID": "IT_4_g",
-                        "Nazione": "Italia",
-                        "Regione": "Lombardia",
-                        "Città": "Milano",
-                        "Via": "Corso Venezia",
-                        "Civico": "12",
-                        "ID_entità": "GR_II",
-                        "Apertura": "1866",
-                        "Chiusura": "1926",
-                        "Nome attività": "Antonio e Carlo Grandi, \"Ditta Antonio Grandi\"",
-                        "": "",
-                        "geo": {
-                            "lat": 45.4683575,
-                            "lon": 9.1990461
-                        }
-                    }
-                },
-                "Professione": "antiquario",
-                "Nascita": "1810",
-                "Morte": "1877",
-                "Nome attività": ""
-            },
-            "GR_II_2": {
-                "ID": "GR_II_2",
-                "Nome Persona": "Carlo Grandi",
-                "ID_entità": "GR_II",
-                "ID_luoghi": {
-                    "IT_4_g": {
-                        "ID": "IT_4_g",
-                        "Nazione": "Italia",
-                        "Regione": "Lombardia",
-                        "Città": "Milano",
-                        "Via": "Corso Venezia",
-                        "Civico": "12",
-                        "ID_entità": "GR_II",
-                        "Apertura": "1866",
-                        "Chiusura": "1926",
-                        "Nome attività": "Antonio e Carlo Grandi, \"Ditta Antonio Grandi\"",
-                        "": "",
-                        "geo": {
-                            "lat": 45.4683575,
-                            "lon": 9.1990461
-                        }
-                    }
-                },
-                "Professione": "antiquario",
-                "Nascita": "1842",
-                "Morte": "1914",
-                "Nome attività": "Ditta Antonio Grandi"
-            },
-            "GR_II_3": {
-                "ID": "GR_II_3",
-                "Nome Persona": "Antonio Grandi ",
-                "ID_entità": "GR_II",
-                "ID_luoghi": {
-                    "IT_4_g": {
-                        "ID": "IT_4_g",
-                        "Nazione": "Italia",
-                        "Regione": "Lombardia",
-                        "Città": "Milano",
-                        "Via": "Corso Venezia",
-                        "Civico": "12",
-                        "ID_entità": "GR_II",
-                        "Apertura": "1866",
-                        "Chiusura": "1926",
-                        "Nome attività": "Antonio e Carlo Grandi, \"Ditta Antonio Grandi\"",
-                        "": "",
-                        "geo": {
-                            "lat": 45.4683575,
-                            "lon": 9.1990461
-                        }
-                    }
-                },
-                "Professione": "antiquario",
-                "Nascita": "1857",
-                "Morte": "1923",
-                "Nome attività": "Ditta Antonio Grandi"
-            }
-        },
-        "Clienti": {
-            "CL_19_b": {
-                "Nome": "Antonio",
-                "Cognome": "Borgogna",
-                "vendite": [
-                    "GR_II_1"
-                ]
-            },
-            "CL_46_b": {
-                "Nome": "Aldo",
-                "Cognome": "Noseda",
-                "vendite": [
-                    ""
-                ]
-            }
-        },
-        "Relazioni": {}
     },
     "GU-BR": {
         "ID": "GU-BR",
