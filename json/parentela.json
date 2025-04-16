@@ -1215,11 +1215,7 @@
                 "Nascita": "",
                 "Morte": ""
             },
-            "SI_5": {
-                "Nome": "Giulio Simonetti",
-                "Nascita": "",
-                "Morte": ""
-            }
+            "SI_5": {}
         }
     },
     "VO_II": {
