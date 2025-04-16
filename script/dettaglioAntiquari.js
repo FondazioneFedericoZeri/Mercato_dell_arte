@@ -201,7 +201,7 @@ function buildTreeFromData(entity) {
   // Helper function to add a node one level below (parent-child relationship)
   function addOneLevelBelow(parentID, childID) {
     if (!addedNodes[childID]) {
-      console.log(`Adding ${nodes[childID].name} as a child of ${nodes[parentID].name}`);
+      //console.log(`Adding ${nodes[childID].name} as a child of ${nodes[parentID].name}`);
       nodes[parentID].children.push(nodes[childID]); // Add child to parent
       addedNodes[childID] = true; // Mark as added
     }
@@ -224,7 +224,7 @@ function buildTreeFromData(entity) {
     let person2 = relation.Persona_2; // The second person in the relationship
     let relationshipType = relation["Tipo_di_relazione"]; // Relationship type
 
-    console.log(`Processing relationship between ${nodes[person1].name} and ${nodes[person2].name} (${relationshipType})`);
+    //console.log(`Processing relationship between ${nodes[person1].name} and ${nodes[person2].name} (${relationshipType})`);
 
     // Handle parent-child relationships (padre)
     if (relationshipType === "padre" || relationshipType === "madre") {
