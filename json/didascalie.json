@@ -431,11 +431,19 @@
     },
     "ME_img1.jpg": {
         "ID": "ME_img1.jpg",
-        "Didascalia": "Negozio di Giuseppe Melli in via del Parione a Firenze"
+        "Didascalia": "Angiolo Melli"
     },
     "ME_img2.jpg": {
         "ID": "ME_img2.jpg",
+        "Didascalia": "Cesare Melli"
+    },
+    "ME_img3.jpg": {
+        "ID": "ME_img3.jpg",
         "Didascalia": "Caricatura di Gustavo Melli, da \"L'Antiquario\", marzo 1929"
+    },
+    "ME_img4.jpg": {
+        "ID": "ME_img4.jpg",
+        "Didascalia": "Gustavo Melli"
     },
     "SA_VI_img1.jpg": {
         "ID": "SA_VI_img1.jpg",
