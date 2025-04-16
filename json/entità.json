@@ -7072,7 +7072,9 @@
         "Foto preview": "ME_preview",
         "Foto gallery": [
             "ME_img1",
-            "ME_img2"
+            "ME_img2",
+            "ME_img3",
+            "ME_img4"
         ],
         "Persone": {
             "ME_1": {
