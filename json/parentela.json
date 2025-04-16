@@ -1171,7 +1171,7 @@
             },
             {
                 "Persona_1": "SI_3",
-                "Persona_2": "SI_4",
+                "Persona_2": "SI_5",
                 "Tipo_di_relazione": "fratello/sorella"
             },
     
@@ -1197,6 +1197,11 @@
                 "Nascita": "",
                 "Morte": ""
             },
+            "SI_5": {
+                "Nome": "Giulio Simonetti",
+                "Nascita": "",
+                "Morte": ""
+            }
         }
     },
     "VO_II": {
