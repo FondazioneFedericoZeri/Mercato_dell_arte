@@ -322,6 +322,7 @@ function initializeChart(rootNode) {
       fixed: false
     }));
 
+    series.labels.template.set("visible", false);
 
 
     // Customize the link between nodes to control distance
