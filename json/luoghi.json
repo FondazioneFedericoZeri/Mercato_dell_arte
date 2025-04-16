@@ -1407,6 +1407,25 @@
             "lon": 11.253158002899507
         }
     },
+
+    "IT_44_a": {
+        "ID": "IT_44_a",
+        "Nazione": "Italia",
+        "Regione": "Toscana",
+        "Città": "Firenze",
+        "Via": "Ponte Vecchio",
+        "Civico": "7",
+        "ID_entità": "ME",
+        "Apertura": "1885 ca.",
+        "Chiusura": "1899 ca.",
+        "Nome attività": "Angiolo Melli",
+        "": "",
+        "geo": {
+            "lat": 43.76834,
+            "lon": 11.25344
+        }
+    },
+
     "IT_44_b": {
         "ID": "IT_44_b",
         "Nazione": "Italia",
@@ -1730,6 +1749,24 @@
             "lon": 11.2479887
         }
     },
+
+    "IT_57_b": {
+        "ID": "IT_57_b",
+        "Nazione": "Italia",
+        "Regione": "Toscana",
+        "Città": "Firenze",
+        "Via": "Via dei Fossi",
+        "Civico": "31",
+        "ID_entità": "ME",
+        "Apertura": "1885 ca.",
+        "Chiusura": "1888 ca.",
+        "Nome attività": "Giuseppe Melli",
+        "geo": {
+            "lat": 43.77176,
+            "lon": 11.24831
+        }
+    },
+
     "IT_58": {
         "ID": "IT_58",
         "Nazione": "Italia",
