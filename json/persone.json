@@ -4409,34 +4409,6 @@
         "Morte": "",
         "Nome attività": "Simonetti Aldo Giulio & C."
     },
-    "SI_5": {
-        "ID": "SI_5",
-        "Nome Persona": "Giulio Simonetti",
-        "ID_entità": "SI",
-        "ID_luoghi": {
-            "IT_134": {
-                "ID": "IT_134",
-                "Nazione": "Italia",
-                "Regione": "Lazio",
-                "Città": "Roma",
-                "Via": "Via Vittoria Colonna, Prati",
-                "Civico": "11",
-                "ID_entità": "SI",
-                "Apertura": "1890",
-                "Chiusura": "1932",
-                "Nome attività": "Attilio Simonetti e figli, \"Galleria Simonetti\", dal 1925 \"Simonetti Aldo Giulio & C.\" (Palazzo Odescalchi)",
-                "": "",
-                "geo": {
-                    "lat": null,
-                    "lon": null
-                }
-            }
-        },
-        "Professione": "antiquario",
-        "Nascita": "",
-        "Morte": "",
-        "Nome attività": "Simonetti Aldo Giulio & C."
-    },
     "ST_1": {
         "ID": "ST_1",
         "Nome Persona": "Attilio Steffanoni",
