@@ -1158,7 +1158,7 @@
                 "Persona_2": "SI_4",
                 "Tipo_di_relazione": "padre"
             },
-            
+
             {
                 "Persona_1": "SI_2",
                 "Persona_2": "SI_3",
@@ -1167,11 +1167,6 @@
             {
                 "Persona_1": "SI_2",
                 "Persona_2": "SI_4",
-                "Tipo_di_relazione": "fratello/sorella"
-            },
-            {
-                "Persona_1": "SI_2",
-                "Persona_2": "SI_5",
                 "Tipo_di_relazione": "fratello/sorella"
             },
             {
