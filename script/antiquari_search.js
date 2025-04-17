@@ -24,28 +24,6 @@ var cmp_geography = function(k1, k2){
         return -1;
     }
 
-
-    // if (k1 == "Francia"){
-    //     return -1;
-    // }
-    // if (k2 == "Francia") {
-    //     return 1
-    // }
-
-    // if (k1 == "Gran Bretagna"){
-    //     return -1;
-    // }
-    // if (k2 == "Gran Bretagna") {
-    //     return 1
-    // }
-
-    // if (k1 == "Stati Uniti d'America"){
-    //     return -1
-    // }
-    // if (k2 == "Stati Uniti d'America"){
-    //     return 1
-    // }
-
     return k1 > k2
 }
 
