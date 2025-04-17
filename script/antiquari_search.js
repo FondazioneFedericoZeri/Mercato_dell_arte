@@ -8,26 +8,43 @@ $.getJSON("https://raw.githubusercontent.com/FondazioneFedericoZeri/Mercato_dell
 });
 
 var cmp_geography = function(k1, k2){
-    if (k1 == "Francia"){
+
+    regioni = ["Toscana", "Liguria", "Piemonte", "Lombardia", "Veneto",
+        "Friuli-Venezia Giulia", "Trentino-Alto Adige", "Emilia-Romagna", "Lazio", "Marche",
+        "Valle d'Aosta", "Umbria", "Abruzzo", "Molise", "Puglia",
+        "Campania", "Calabria", "Basilicata", "Sicilia", "Sardegna"]
+
+    if (!regioni.includes(k1)) {
+        if (!regioni.includes(k2)) {
+            return k1 > k2 ? 1 : -1;
+        }
+        return 1;
+    }
+    if (!regioni.includes(k2)) {
         return -1;
     }
-    if (k2 == "Francia") {
-        return 1
-    }
 
-    if (k1 == "Gran Bretagna"){
-        return -1;
-    }
-    if (k2 == "Gran Bretagna") {
-        return 1
-    }
 
-    if (k1 == "Stati Uniti d'America"){
-        return -1
-    }
-    if (k2 == "Stati Uniti d'America"){
-        return 1
-    }
+    // if (k1 == "Francia"){
+    //     return -1;
+    // }
+    // if (k2 == "Francia") {
+    //     return 1
+    // }
+
+    // if (k1 == "Gran Bretagna"){
+    //     return -1;
+    // }
+    // if (k2 == "Gran Bretagna") {
+    //     return 1
+    // }
+
+    // if (k1 == "Stati Uniti d'America"){
+    //     return -1
+    // }
+    // if (k2 == "Stati Uniti d'America"){
+    //     return 1
+    // }
 
     return k1 > k2
 }
@@ -235,7 +252,7 @@ $(document).ready(function(){
 
 /**
  * performSearch accetta un valore che utilizzerà per la ricerca nel json delle entità.
- * 
+ *
  * Per compatibilità, cerca nei valori del json quelli corrispondenti, poi li invia alla sort. se non c'è valore alla ricerca: chiama la sort normalmente.
  * questo mantiene la compatibilità con la maggior parte del codice precedente della funzione sort.
  */
@@ -244,13 +261,13 @@ var performSearch = function (searchValue = "") {
     if (searchValue) {
         const searchValue_lw = searchValue.toLowerCase(); // lowercase per rendere la ricerca case insensitive
 
-        const filteredEntities = {}; // variabile per contenere le entità corrispondenti alla ricerca utente 
+        const filteredEntities = {}; // variabile per contenere le entità corrispondenti alla ricerca utente
 
         for (const [key, entita] of Object.entries(entities_json)) {
 
             let searchValues = []; // prepara contenitore con i valori su cui cercare
 
-            // --- nome 
+            // --- nome
             searchValues.push(entita['Nome']);
 
             // --- città
