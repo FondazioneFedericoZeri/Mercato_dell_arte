@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dettaglio Antiquari</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="../../css/styles-dettaglioAntiquario.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/hierarchy.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+    <script type="text/javascript" src="../../script/dettaglioAntiquari.js"></script>
+    <script type="text/javascript" src="../../script/mappaDettaglio.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <a href="../../index.html">
+          <img id="logo.png" src="../../img/homepage/logo.png" alt="Fondazione Federico Zeri" />
+        </a>
+        <nav>
+          <ul>
+            <li>
+              <a href="../progetto.html">Progetto</a>
+              <a href="../antiquari.html">Antiquari</a>
+              <a href="../luoghi.html">Luoghi</a>
+              <a href="../eventi.html">Eventi</a>
+              <a href="../persone.html">Persone</a>
+              <a href="../bibliografia.html">Bibliografia</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="image-gallery">
+        <div class="gallery-wrapper">
+          <h2 class="gallery-title">Gianetti</h2>
+          <div class="slider-container">
+            <div class="slider">
+              <div class="slide">
+                <img src="../../img/slider-antiquari/GI_I_img1.jpg" alt="{'Gianetti'}" />
+                <div class="caption">{'Gianetti'}</div>
+              </div>
+              <div class="slide">
+                <img src="../../img/slider-antiquari/GI_I_img2.jpg" alt="{'Gianetti'}" />
+                <div class="caption">{'Gianetti'}</div>
+              </div>
+            </div>
+            <button &#10094; class="prev" onclick="prevSlide()"><</button>
+            <button &#10095; class="next" onclick="nextSlide()">></button>
+          </div>
+        </div>
+      </section>
+      <div class="dual-content-wrapper">
+        <div class="tab-container">
+          <ul class="tab-list">
+            <li class="tab active" data_content="Bio">Dati biografici</li>
+            <li class="tab" data_content="Persone">Albero familiare</li>
+            <li class="tab" data_content="Localizzazioni">Luoghi</li>
+            <li class="tab" data_content="Relazioni">Relazioni</li>
+            <li class="tab" data_content="Opere trattate">Opere trattate</li>
+          </ul>
+        </div>
+        <div class="content-card">
+          <div id="Bio" class="content active-content">
+            <p>Nata a Milano, Maria Antonia Gianetti (28 agosto 1915 Milano – 27 giugno 2002) iniziò a</p>
+            <p>dedicarsi al commercio di opere d’arte nel secondo dopoguerra. Cresciuta in una famiglia</p>
+            <p>altoborghese, il padre fu un collezionista di rilievo e Maria Antonia, dopo aver svolto diversi</p>
+            <p>lavori, tornò a questa passione famigliare mettendosi a bottega da un mercante milanese per poi</p>
+            <p>aprire una prima attività in via Fiori Oscuri, anche grazie allo stretto rapporto intessuto con i</p>
+            <p>fratelli Pallesi, antiquari fiorentini, con i quali percorre l’Italia visitando colleghi, collezionisti e</p>
+            <p>musei.</p>
+            <p>Nel corso degli anni Settanta aveva un negozio con affaccio su strada in via Gesù 3, “Maria</p>
+            <p>Antonia Gianetti Antichità”, al quale venne affiancata una galleria in via Gesù 7, aperta già nel</p>
+            <p>1981, ma che divenne la sede della ditta a partire dal 1998 fino alla cessazione dell’attività</p>
+            <p>avvenuta con la morte dell’antiquaria nel 2002.  La galleria fu punto di incontro con i clienti</p>
+            <p>privati, colleghi e storici dell’arte, come Federico Zeri e Giuliano Briganti.</p>
+            <p>Gianetti si dedicò soprattutto all’antiquariato classico, come era uso al tempo, vendendo mobili</p>
+            <p>antichi, dipinti, arti decorative, ma soprattutto maioliche, di cui divenne grande amante ed</p>
+            <p>esperta, di cui raccolse prestigiosi esemplari, come dimostra anche il catalogo della vendita della</p>
+            <p>sua collezione avvenuta nel 2003 presso Sotheby’s.</p>
+            <p>Non aveva una formazione specifica nel settore, ma fu donna di gusto e di grande istinto, due</p>
+            <p>qualità che la portarono a partecipare fin da subito alle mostre di antiquariato milanesi, a</p>
+            <p>prendere parte del consiglio del Sindacato Provinciale Mercanti D’arte Antica di Milano, che la</p>
+            <p>premiò per i 25 anni di attività nel 1991, e a essere insignita del titolo di Cavaliere del lavoro.</p>
+          </div>
+          <div id="Persone" class="content">
+            <h3>Relazioni familiari:</h3>
+            <div id="albero-genealogico"></div>
+          </div>
+          <div id="Localizzazioni" class="content">
+            <section id="map">
+              <div id="chartdiv"></div>
+            </section>
+          </div>
+          <div id="Relazioni" class="content">
+            <h3>Altri antiquari:</h3>
+            <ul>
+            </ul>
+            <h3>Clienti:</h3>
+            <ul>
+            </ul>
+            <h3>Collaboratori:</h3>
+            <ul>
+              <li>Federico Zeri (storico dell'arte)</li>
+              <li>Giuliano Briganti (storico dell'arte)</li>
+            </ul>
+          </div>
+          <div id="Opere trattate" class="content">
+            <p>
+              Vedi le opere transitate presso l'antiquario presenti nel 
+              <a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Gianetti" class="linkBio" target="_blank">
+                catalogo della Fondazione Zeri
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <p>Licenza dati e immagini:</p>
+          <img id="license.png" src="../../img/homepage/license.png" alt="License" />
+        </div>
+        <div class="footer-right">
+          <p>
+            <a href="../../html/crediti.html">
+              Crediti
+            </a>
+            |
+            <a href="https://github.com/FondazioneFedericoZeri/Mercato_dell_arte" target="_blank">
+              Documentazione
+            </a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

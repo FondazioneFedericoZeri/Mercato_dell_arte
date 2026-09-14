@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dettaglio Antiquari</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="../../css/styles-dettaglioAntiquario.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/hierarchy.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+    <script type="text/javascript" src="../../script/dettaglioAntiquari.js"></script>
+    <script type="text/javascript" src="../../script/mappaDettaglio.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <a href="../../index.html">
+          <img id="logo.png" src="../../img/homepage/logo.png" alt="Fondazione Federico Zeri" />
+        </a>
+        <nav>
+          <ul>
+            <li>
+              <a href="../progetto.html">Progetto</a>
+              <a href="../antiquari.html">Antiquari</a>
+              <a href="../luoghi.html">Luoghi</a>
+              <a href="../eventi.html">Eventi</a>
+              <a href="../persone.html">Persone</a>
+              <a href="../bibliografia.html">Bibliografia</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="image-gallery">
+        <div class="gallery-wrapper">
+          <h2 class="gallery-title">Guggenheim</h2>
+          <div id="single-image-container">
+            <img src="../../img/slider-antiquari/GU_img1.jpg" alt="Ritratto di Michelangelo Guggenheim all'età di quarant'anni" />
+            <div class="caption overlay-caption">Ritratto di Michelangelo Guggenheim all'età di quarant'anni</div>
+          </div>
+        </div>
+      </section>
+      <div class="dual-content-wrapper">
+        <div class="tab-container">
+          <ul class="tab-list">
+            <li class="tab active" data_content="Bio">Dati biografici</li>
+            <li class="tab" data_content="Persone">Albero familiare</li>
+            <li class="tab" data_content="Localizzazioni">Luoghi</li>
+            <li class="tab" data_content="Relazioni">Relazioni</li>
+            <li class="tab" data_content="Opere trattate">Opere trattate</li>
+          </ul>
+        </div>
+        <div class="content-card">
+          <div id="Bio" class="content active-content">
+            <p>Moisè Michelangelo Guggenheim, secondo di sette figli, nacque a Venezia il 17 novembre 1837</p>
+            <p>da Samuel Joseph, di professione mercante, e Sara Defelbach, entrambi ebrei tedeschi di</p>
+            <p>Gailingen, una cittadina dell’estremo sud-ovest della Germania.</p>
+            <p>Michelangelo è stato uno dei più importanti antiquari veneziani degli ultimi decenni</p>
+            <p>dell’Ottocento. Forse già attivo alla fine degli anni Cinquanta, partì da un “Gabinetto di oggetti</p>
+            <p>di antichità e di belle arti” di modeste dimensioni in campo Santa Maria del Giglio 2467 nel</p>
+            <p>1869, per arrivare ad acquistare nel 1887 il celebre palazzo Balbi in volta de’ Canal, costruito</p>
+            <p>su disegno di Alessandro Vittoria.</p>
+            <p>Nelle sontuose sale del palazzo stabilì la propria residenza e la sua galleria antiquaria, sotto</p>
+            <p>l’insegna ‹‹M. Guggenheim. Objets d’Art & Antiquités, Décoration complète d’appartements</p>
+            <p>dans tous les styles Fabrique meubles & bronzes artistiques››. Vi lavorò affiancato dalla moglie</p>
+            <p>Clementina Goldschmiedt, di 14 anni più giovane di lui, sposata il 25 giugno 1876.</p>
+            <p>All’attività antiquaria, come moltissimi colleghi suoi contemporanei, affiancò la produzione di</p>
+            <p>mobili in stile e oggetti in bronzo e sculture già a partire dal 1860. Tra le varie residenze e i</p>
+            <p>numerosi ambienti che progettò, si ricordano palazzo Papadopoli (ex Tiepolo) sul Canal</p>
+            <p>Grande, le sale neorococò della reggia di Monza allestite in vista della visita dell’imperatore</p>
+            <p>tedesco Guglielmo II e alcune stanze di Villa Monastero sul lago di Como, di proprietà del</p>
+            <p>tedesco Walter Erich Jacob Kees, tra il 1897 e il 1906.</p>
+            <p>‹‹Michelangelo Guggenheim, spirito intraprendente e battagliero a cui vennero affidate le</p>
+            <p>decorazioni di palazzi reali e che ebbe amici assai e nemici non pochi››, così lo descrive Cesare</p>
+            <p>Augusto Levi nei suoi volumi dedicati alla storia del collezionismo veneziano.</p>
+            <p>Il successo a livello internazionale fu tale da fargli meritare la medaglia d’oro delle Arti e delle</p>
+            <p>Scienze conferita da Ludovico II re di Baviera e da aprirgli una rete di acquirenti del calibro di</p>
+            <p>Wilhelm von Bode, che ricorda di avere acquistato da lui (e da <a href="dettaglio_BA_II.html"</p>
+            <p>target="_blank"> Stefano Bardini </a>  a Firenze) ‹‹targhe e la bellissima collezione di battenti</p>
+            <p>per porte, mortai in bronzo e calamai›› per il museo di Arti Decorative di Berlino, Isabella</p>
+            <p>Stewart Gardner o ancora i coniugi Edouard André e Nélie Jacquemart.</p>
+            <p>Guggenheim partecipò anche alla vita culturale veneziana. Nel 1872 fu tra i fondatori della</p>
+            <p>Scuola Veneta d’arte applicata all’Industria; promosse poi, insieme a numerosi politici, eruditi</p>
+            <p>e artisti, la nascita dell’Esposizione Nazionale d’Arte (la futura Biennale) dove decise di</p>
+            <p>esporre i suoi mobili in stile, compresa una sedia lombardesca commissionatagli da Umberto I</p>
+            <p>per il Quirinale.</p>
+            <p>Oltre all’impegno negli affari, si dedicò appassionatamente allo studio. Negli anni Ottanta</p>
+            <p>dell’Ottocento pubblicò due contributi sul restauro dei marmi della basilica di San Marco e</p>
+            <p>numerosi volumi dedicati all’utilità delle arti applicate all’industria. Nel 1897 diede inoltre alle</p>
+            <p>stampe la prima monografia dedicata alle cornici antiche, Le cornici italiane dalla metà del</p>
+            <p>secolo XV allo scorcio del XVI.</p>
+            <p>Guggenheim rimase a palazzo Balbi fino al 1910, anno di chiusura della sua galleria antiquaria.</p>
+            <p>Tre anni più tardi la casa d’aste tedesca di Hugo Helbing, proprio a palazzo Balbi, organizzò la</p>
+            <p>vendita all’asta della sua collezione che comprendeva sia opere d’arte antica – soprattutto</p>
+            <p>dipinti dei grandi maestri veneziani – sia oggetti di fabbricazione moderna, quali mobili in</p>
+            <p>stile rinascimentale, camini, vasi, bassorilievi in marmo e bronzi.</p>
+            <p>Non tutto fu venduto all’asta perché l’antiquario decise di lasciare la collezione di merletti</p>
+            <p>antichi e le stoffe al Museo Civico e Raccolta Correr e le matrici e i modelli in legno alla Scuola</p>
+            <p>Reale di Arti applicate all’industria di Venezia. Questi manufatti si aggiunsero ad altri destinati</p>
+            <p>alla città negli anni precedenti, come la più antica vera da pozzo rimasta a Venezia, di forma</p>
+            <p>cubica con croci a braccia patenti dell’VIII secolo, donata nel 1875.</p>
+            <p>Guggenheim morì a Venezia il 21 settembre 1914, lasciando l’attività ai figli Giorgio e Gabriella</p>
+            <p>che continuarono sulle orme del padre almeno fino al 23 marzo del 1944, quando i ‹‹beni</p>
+            <p>appartenenti alla ditta di razza ebraica Guggenheim Luzzatti Gabriella›› furono confiscati per</p>
+            <p>effetto delle Leggi razziali.</p>
+          </div>
+          <div id="Persone" class="content">
+            <h3>Relazioni familiari:</h3>
+            <div id="albero-genealogico"></div>
+          </div>
+          <div id="Localizzazioni" class="content">
+            <section id="map">
+              <div id="chartdiv"></div>
+            </section>
+          </div>
+          <div id="Relazioni" class="content">
+            <h3>Altri antiquari:</h3>
+            <ul>
+            </ul>
+            <h3>Clienti:</h3>
+            <ul>
+            </ul>
+            <h3>Collaboratori:</h3>
+            <ul>
+              <li>Hugo Helbing (impresario di casa d'asta)</li>
+            </ul>
+          </div>
+          <div id="Opere trattate" class="content">
+            <p>
+              Vedi le opere transitate presso l'antiquario presenti nel 
+              <a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=guggenheim&page=1&filtroprovenienza_OA=5829%7C7672" class="linkBio" target="_blank">
+                catalogo della Fondazione Zeri
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <p>Licenza dati e immagini:</p>
+          <img id="license.png" src="../../img/homepage/license.png" alt="License" />
+        </div>
+        <div class="footer-right">
+          <p>
+            <a href="../../html/crediti.html">
+              Crediti
+            </a>
+            |
+            <a href="https://github.com/FondazioneFedericoZeri/Mercato_dell_arte" target="_blank">
+              Documentazione
+            </a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

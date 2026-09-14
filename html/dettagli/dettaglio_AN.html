@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dettaglio Antiquari</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="../../css/styles-dettaglioAntiquario.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/hierarchy.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+    <script type="text/javascript" src="../../script/dettaglioAntiquari.js"></script>
+    <script type="text/javascript" src="../../script/mappaDettaglio.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <a href="../../index.html">
+          <img id="logo.png" src="../../img/homepage/logo.png" alt="Fondazione Federico Zeri" />
+        </a>
+        <nav>
+          <ul>
+            <li>
+              <a href="../progetto.html">Progetto</a>
+              <a href="../antiquari.html">Antiquari</a>
+              <a href="../luoghi.html">Luoghi</a>
+              <a href="../eventi.html">Eventi</a>
+              <a href="../persone.html">Persone</a>
+              <a href="../bibliografia.html">Bibliografia</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="image-gallery">
+        <div class="gallery-wrapper">
+          <h2 class="gallery-title">Angiolini</h2>
+          <div id="single-image-container">
+            <img src="../../img/slider-antiquari/.jpg" alt="Angiolini" />
+            <div class="caption overlay-caption">Angiolini</div>
+          </div>
+        </div>
+      </section>
+      <div class="dual-content-wrapper">
+        <div class="tab-container">
+          <ul class="tab-list">
+            <li class="tab active" data_content="Bio">Dati biografici</li>
+            <li class="tab" data_content="Persone">Albero familiare</li>
+            <li class="tab" data_content="Localizzazioni">Luoghi</li>
+            <li class="tab" data_content="Relazioni">Relazioni</li>
+            <li class="tab" data_content="Bibliografia">Bibliografia</li>
+            <li class="tab" data_content="Opere trattate">Opere trattate</li>
+          </ul>
+        </div>
+        <div class="content-card">
+          <div id="Bio" class="content active-content">
+            <p>L’antiquario bolognese Raffaele Angiolini (fu Giuseppe) esercitò la professione a cavallo tra XIX e</p>
+            <p>XX secolo. Dal 1873 al 1879 gestì un’attività di compravendita di opere d’arte, la “Angiolini e</p>
+            <p>Ascoli”, al civico 87 di via Ugo Bassi, in società con l’anconetano <a href="dettaglio_AS.html"</p>
+            <p>target="_blank"> Alessandro Ascoli</a> . Sciolta la società e morto Ascoli nel 1897, Angiolini portò</p>
+            <p>avanti la ditta fino al 1899.</p>
+            <p>Nel 1905 Angiolini aprì un’altra impresa con il conte Alessandro Ranuzzi, con ragione sociale</p>
+            <p>“Alessandro Ranuzzi e C.” in via Barberia 13. Ne prese il controllo individuale nel 1906 fino al 1907,</p>
+            <p>quando l’attività si concluse.</p>
+            <p>Demetrio Tolosani sulle pagine de “L’Antiquario” lo ricorda come specializzato nella</p>
+            <p>compravendita di dipinti antichi laddove il suo pupillo, <a href="dettaglio_RA.html"</p>
+            <p>target="_blank"> Arturo Rambaldi </a> , che rilevò per pochi soldi le merci e persino il dipendente</p>
+            <p>del suo negozio alla sua morte, preferì gli oggetti d’arredo e la mobilia.</p>
+            <p>Ebbe fruttuosi rapporti professionali con <a href="dettaglio_BA_II.html" target="_blank"> Stefano</p>
+            <p>Bardini</a> , per il quale funse da mediatore nell’acquisto di due importanti stacchi eseguiti a</p>
+            <p>Bergamo dagli <a href="dettaglio_ST_NEW.html" target="_blank"> Steffanoni </a>, quello dei</p>
+            <p>soffitti lignei di Casa Maffi (oggi al Victoria and Albert di Londra), nel 1888, e quello degli affreschi</p>
+            <p>di Casa Raffi nel 1889.</p>
+          </div>
+          <div id="Persone" class="content">
+            <h3>Relazioni familiari:</h3>
+            <div id="albero-genealogico"></div>
+          </div>
+          <div id="Localizzazioni" class="content">
+            <section id="map">
+              <div id="chartdiv"></div>
+            </section>
+          </div>
+          <div id="Relazioni" class="content">
+            <h3>Altri antiquari:</h3>
+            <ul>
+              <li>
+                <a href="dettaglio_AS.html">Ascoli</a>
+              </li>
+            </ul>
+            <h3>Clienti:</h3>
+            <ul>
+            </ul>
+            <h3>Collaboratori:</h3>
+            <ul>
+            </ul>
+          </div>
+          <div id="Bibliografia" class="content">
+            <h3>Bibliografia essenziale:</h3>
+            <ul>
+              <li>Giometti, C., Ciancabilla, L. (2019), <i>Stefano Bardini estrattista : affreschi staccati nell'Italia unita fra antiquariato, collezionismo e musei</i>, Pisa, ETS</li>
+            </ul>
+          </div>
+          <div id="Opere trattate" class="content">
+            <p>
+              Vedi le opere transitate presso l'antiquario presenti nel 
+              <a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=R.+Angiolini" class="linkBio" target="_blank">
+                catalogo della Fondazione Zeri
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <p>Licenza dati e immagini:</p>
+          <img id="license.png" src="../../img/homepage/license.png" alt="License" />
+        </div>
+        <div class="footer-right">
+          <p>
+            <a href="../../html/crediti.html">
+              Crediti
+            </a>
+            |
+            <a href="https://github.com/FondazioneFedericoZeri/Mercato_dell_arte" target="_blank">
+              Documentazione
+            </a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

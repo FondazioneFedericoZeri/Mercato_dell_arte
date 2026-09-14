@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dettaglio Antiquari</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="../../css/styles-dettaglioAntiquario.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/hierarchy.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+    <script type="text/javascript" src="../../script/dettaglioAntiquari.js"></script>
+    <script type="text/javascript" src="../../script/mappaDettaglio.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <a href="../../index.html">
+          <img id="logo.png" src="../../img/homepage/logo.png" alt="Fondazione Federico Zeri" />
+        </a>
+        <nav>
+          <ul>
+            <li>
+              <a href="../progetto.html">Progetto</a>
+              <a href="../antiquari.html">Antiquari</a>
+              <a href="../luoghi.html">Luoghi</a>
+              <a href="../eventi.html">Eventi</a>
+              <a href="../persone.html">Persone</a>
+              <a href="../bibliografia.html">Bibliografia</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="image-gallery">
+        <div class="gallery-wrapper">
+          <h2 class="gallery-title">D'Atri</h2>
+          <div class="slider-container">
+            <div class="slider">
+              <div class="slide">
+                <img src="../../img/slider-antiquari/DA_img1.jpg" alt="Timbro con il monogramma di Pietro D'Atri sul verso di una fotografia conservata presso la Fototeca Zeri (inv. 101762)" />
+                <div class="caption">Timbro con il monogramma di Pietro D'Atri sul verso di una fotografia conservata presso la Fototeca Zeri (inv. 101762)</div>
+              </div>
+              <div class="slide">
+                <img src="../../img/slider-antiquari/DA_img2.jpg" alt="Rue La Boétie a Parigi, sede della Galleria D'Atri" />
+                <div class="caption">Rue La Boétie a Parigi, sede della Galleria D'Atri</div>
+              </div>
+            </div>
+            <button &#10094; class="prev" onclick="prevSlide()"><</button>
+            <button &#10095; class="next" onclick="nextSlide()">></button>
+          </div>
+        </div>
+      </section>
+      <div class="dual-content-wrapper">
+        <div class="tab-container">
+          <ul class="tab-list">
+            <li class="tab active" data_content="Bio">Dati biografici</li>
+            <li class="tab" data_content="Persone">Albero familiare</li>
+            <li class="tab" data_content="Localizzazioni">Luoghi</li>
+            <li class="tab" data_content="Relazioni">Relazioni</li>
+            <li class="tab" data_content="Bibliografia">Bibliografia</li>
+            <li class="tab" data_content="Opere trattate">Opere trattate</li>
+          </ul>
+        </div>
+        <div class="content-card">
+          <div id="Bio" class="content active-content">
+            <p>Poche sono le notizie sulla “Galleria D’Atri”, fondata a Parigi negli anni Venti da Pietro D’Atri</p>
+            <p>(Viterbo 1876-1957) e portata avanti dalla fine degli anni Quaranta dal figlio Alberto (1908-?) sia a</p>
+            <p>Parigi che a Roma. Grazie a ricerche condotte sulla dispersione del patrimonio artistico durante la</p>
+            <p>Seconda guerra mondiale, confluite sul sito dell’Institute National d’Histoire de l’Art francese, si</p>
+            <p>conoscono i rapporti tra D’Atri e mercanti a servizio del regime nazista, come Walter Andreas</p>
+            <p>Hofer o Karl Haberstock.</p>
+            <p>La galleria aveva sede a Parigi in rue La Boétie al numero 52 negli anni Venti, al 23 nel decennio</p>
+            <p>successivo. Esisteva anche una succursale romana in via Lima 28, gestita da Alberto che si</p>
+            <p>interessò sempre di più all’arte contemporanea e in particolare ad Amadeo Modigliani, di cui stilò</p>
+            <p>anche un registro di opere, rimasto inedito, e oggi conservato presso la Smithsonian Institution a</p>
+            <p>Washington.</p>
+            <p>Secondo le testimonianze di Augusto Jandolo (1873-1952) e Ludvig Pollak (1868-1943), Pietro</p>
+            <p>D’Atri fu in contatto anche con Giuseppe, fratello di <a href="dettaglio_GR.html" target="_blank"></p>
+            <p>Luigi Grassi</a> , a Roma procurando a quest’ultimo per lo più opere archeologiche.</p>
+            <p>A Mario, il cui rapporto di parentela con gli altri membri della famiglia non è chiaro, Pietro cedette</p>
+            <p>il controllo della società “D’Atri” nel 1955 (come risulta dal quotidiano “Announces de la Seine" del</p>
+            <p>primo dicembre di quell’anno). Zeri fu in contatto con Mario D’Atri e forse da lui lo studioso</p>
+            <p>acquisì le oltre duecento stampe per lo più databili entro la prima metà del Novecento che,</p>
+            <p>riconoscibili per la presenza di annotazioni ricorrenti e talvolta di timbri, documentano opere</p>
+            <p>transitate presso la galleria parigina.</p>
+          </div>
+          <div id="Persone" class="content">
+            <h3>Relazioni familiari:</h3>
+            <div id="albero-genealogico"></div>
+          </div>
+          <div id="Localizzazioni" class="content">
+            <section id="map">
+              <div id="chartdiv"></div>
+            </section>
+          </div>
+          <div id="Relazioni" class="content">
+            <h3>Altri antiquari:</h3>
+            <ul>
+            </ul>
+            <h3>Clienti:</h3>
+            <ul>
+            </ul>
+            <h3>Collaboratori:</h3>
+            <ul>
+              <li>Federico Zeri (storico dell'arte)</li>
+            </ul>
+          </div>
+          <div id="Bibliografia" class="content">
+            <h3>Bibliografia essenziale:</h3>
+            <ul>
+              <li>Jandolo, A. (1935), <i>Le memorie di un antiquario</i>, Milano, Ceschina</li>
+              <li>Pollak, L., Merkel Guldan, M. (1994), <i>Römische Memoiren : Künstler, Kunstliebhaber und Gelehrte, 1893-1943</i>, Roma, L'Erma di Bretschneider</li>
+            </ul>
+          </div>
+          <div id="Opere trattate" class="content">
+            <p>
+              Vedi le opere transitate presso l'antiquario presenti nel 
+              <a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=D%27Atri" class="linkBio" target="_blank">
+                catalogo della Fondazione Zeri
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <p>Licenza dati e immagini:</p>
+          <img id="license.png" src="../../img/homepage/license.png" alt="License" />
+        </div>
+        <div class="footer-right">
+          <p>
+            <a href="../../html/crediti.html">
+              Crediti
+            </a>
+            |
+            <a href="https://github.com/FondazioneFedericoZeri/Mercato_dell_arte" target="_blank">
+              Documentazione
+            </a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
