@@ -7610,7 +7610,8 @@
         "Clienti": {},
         "Relazioni": {
             "JA": true,
-            "TA": true
+            "TA": true,
+            "PO_III": true
         }
     },
     "LA_I": {
@@ -9928,7 +9929,7 @@
             "BA_III": true,
             "JA": true,
             "SI": true,
-            "JA_TA": true,
+            "JA-TA": true,
             "SA_IV": true
         }
     },
