@@ -19,7 +19,7 @@
     "R_4": {
         "ID": "R_4",
         "ID_entità_1": "AC",
-        "ID_entità_2": "ST"
+        "ID_entità_2": "ST_NEW"
     },
     "R_5": {
         "ID": "R_5",
@@ -129,7 +129,7 @@
     "R_24": {
         "ID": "R_24",
         "ID_entità_1": "IM",
-        "ID_entità_2": "RA"
+        "ID_entità_2": "RA_NEW"
     },
     "R_25": {
         "ID": "R_25",
@@ -180,5 +180,173 @@
         "ID": "R_34",
         "ID_entità_1": "ZA",
         "ID_entità_2": "SA_I"
+    },
+    "R_35": {
+        "ID": "R_35",
+        "ID_entità_1": "BR_III",
+        "ID_entità_2": "PO_II",
+        "ID_entità_Persona_1": "",
+        "ID_entità_Persona_2": ""
+    },
+    "R_36": {
+        "ID": "R_36",
+        "ID_entità_1": "VE",
+        "ID_entità_2": "AL",
+        "ID_entità_Persona_1": "",
+        "ID_entità_Persona_2": ""
+    },
+    "R_37": {
+        "ID": "R_37",
+        "ID_entità_1": "VE",
+        "ID_entità_2": "CO_I",
+        "ID_entità_Persona_1": "",
+        "ID_entità_Persona_2": ""
+    },
+    "R_38": {
+        "ID": "R_38",
+        "ID_entità_1": "SA_VI_NEW",
+        "ID_entità_2": "GE_II",
+        "ID_entità_Persona_1": "",
+        "ID_entità_Persona_2": ""
+    },
+    "R_39": {
+        "ID": "R_39",
+        "ID_entità_1": "SA_V",
+        "ID_entità_2": "SA_II",
+        "ID_entità_Persona_1": "",
+        "ID_entità_Persona_2": ""
+    },
+    "R_40": {
+        "ID": "R_40",
+        "ID_entità_1": "ME",
+        "ID_entità_2": "RO",
+        "ID_entità_Persona_1": "",
+        "ID_entità_Persona_2": ""
+    },
+    "R_41": {
+        "ID": "R_41",
+        "ID_entità_1": "ME",
+        "ID_entità_2": "VO_II",
+        "ID_entità_Persona_1": "",
+        "ID_entità_Persona_2": ""
+    },
+    "R_42": {
+        "ID": "R_42",
+        "ID_entità_1": "GR_II",
+        "ID_entità_2": "SA_IV",
+        "ID_entità_Persona_1": "",
+        "ID_entità_Persona_2": ""
+    },
+    "R_43": {
+        "ID": "R_43",
+        "ID_entità_1": "GR_II",
+        "ID_entità_2": "AC",
+        "ID_entità_Persona_1": "",
+        "ID_entità_Persona_2": ""
+    },
+    "R_44": {
+        "ID": "R_44",
+        "ID_entità_1": "GR_II",
+        "ID_entità_2": "BA_IV",
+        "ID_entità_Persona_1": "",
+        "ID_entità_Persona_2": ""
+    },
+    "R_45": {
+        "ID": "R_45",
+        "ID_entità_1": "GE_II",
+        "ID_entità_2": "CO_II",
+        "ID_entità_Persona_1": "",
+        "ID_entità_Persona_2": ""
+    },
+    "R_46": {
+        "ID": "R_46",
+        "ID_entità_1": "GE_II",
+        "ID_entità_2": "JA",
+        "ID_entità_Persona_1": "",
+        "ID_entità_Persona_2": ""
+    },
+    "R_47": {
+        "ID": "R_47",
+        "ID_entità_1": "GE_I",
+        "ID_entità_2": "AL",
+        "ID_entità_Persona_1": "",
+        "ID_entità_Persona_2": ""
+    },
+    "R_48": {
+        "ID": "R_48",
+        "ID_entità_1": "GE_I",
+        "ID_entità_2": "BR_III",
+        "ID_entità_Persona_1": "",
+        "ID_entità_Persona_2": ""
+    },
+    "R_49": {
+        "ID": "R_49",
+        "ID_entità_1": "GE_I",
+        "ID_entità_2": "SA_III",
+        "ID_entità_Persona_1": "",
+        "ID_entità_Persona_2": ""
+    },
+    "R_50": {
+        "ID": "R_50",
+        "ID_entità_1": "FO",
+        "ID_entità_2": "CO_I",
+        "ID_entità_Persona_1": "",
+        "ID_entità_Persona_2": ""
+    },
+    "R_51": {
+        "ID": "R_51",
+        "ID_entità_1": "CE",
+        "ID_entità_2": "PO_I",
+        "ID_entità_Persona_1": "",
+        "ID_entità_Persona_2": ""
+    },
+    "R_52": {
+        "ID": "R_52",
+        "ID_entità_1": "CA_III",
+        "ID_entità_2": "SA_III",
+        "ID_entità_Persona_1": "",
+        "ID_entità_Persona_2": ""
+    },
+    "R_53": {
+        "ID": "R_53",
+        "ID_entità_1": "PO_III",
+        "ID_entità_2": "BA_III",
+        "ID_entità_Persona_1": "PO_III_1",
+        "ID_entità_Persona_2": "BA_III_1"
+    },
+    "R_54": {
+        "ID": "R_54",
+        "ID_entità_1": "PO_III",
+        "ID_entità_2": "JA",
+        "ID_entità_Persona_1": "PO_III_1",
+        "ID_entità_Persona_2": "JA_5"
+    },
+    "R_55": {
+        "ID": "R_55",
+        "ID_entità_1": "PO_III",
+        "ID_entità_2": "SI",
+        "ID_entità_Persona_1": "PO_III_1",
+        "ID_entità_Persona_2": "SI_1"
+    },
+    "R_56": {
+        "ID": "R_56",
+        "ID_entità_1": "PO_III",
+        "ID_entità_2": "JA_TA",
+        "ID_entità_Persona_1": "PO_III_1",
+        "ID_entità_Persona_2": "JA_TA_4"
+    },
+    "R_57": {
+        "ID": "R_57",
+        "ID_entità_1": "PO_III",
+        "ID_entità_2": "SA_IV",
+        "ID_entità_Persona_1": "PO_III_1",
+        "ID_entità_Persona_2": "SA_IV_1"
+    },
+    "R_58": {
+        "ID": "R_58",
+        "ID_entità_1": "AN",
+        "ID_entità_2": "AS",
+        "ID_entità_Persona_1": "AN_1",
+        "ID_entità_Persona_2": "AS_1"
     }
 }

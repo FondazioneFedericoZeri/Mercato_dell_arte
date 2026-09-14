@@ -117,8 +117,9 @@
             "AP": true,
             "SE_II": true,
             "CO_III": true,
-            "ST": true,
-            "VI_I": true
+            "ST_NEW": true,
+            "VI_I": true,
+            "GR_II": true
         }
     },
     "AL": {
@@ -143,8 +144,8 @@
                 "Nome": "Bernard",
                 "Cognome / Denominazione": "Berenson",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "AL CO_I RO ST VO_I FO",
-                "Nome Antiquari": "Albrighi Contini-Bonacossi Romano Steffanoni Volpi Foresti"
+                "ID Antiquari": "AL CO_I RO ST_NEW VO_I FO CO_IV",
+                "Nome Antiquari": "Albrighi Contini-Bonacossi Romano Steffanoni Volpi Foresti Colnaghi"
             }
         },
         "Eventi": {},
@@ -191,7 +192,10 @@
                 ]
             }
         },
-        "Relazioni": {}
+        "Relazioni": {
+            "VE": true,
+            "GE_I": true
+        }
     },
     "AN": {
         "ID": "AN",
@@ -228,7 +232,9 @@
             }
         },
         "Clienti": {},
-        "Relazioni": {}
+        "Relazioni": {
+            "AS": true
+        }
     },
     "AN-EF": {
         "ID": "AN-EF",
@@ -261,24 +267,24 @@
                 "Nome": "Giuliano",
                 "Cognome / Denominazione": "Briganti",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "AN-EF AP GR_II",
-                "Nome Antiquari": "Antonacci-Efrati Apolloni Grandi"
+                "ID Antiquari": "AN-EF AP GR_II PA_III GI_I",
+                "Nome Antiquari": "Antonacci-Efrati Apolloni Grandi Studio d'Arte Palma Gianetti"
             },
             "C_30": {
                 "ID": "C_30",
                 "Nome": "Alvar",
                 "Cognome / Denominazione": "Gonzáles Palacios",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "AN-EF AP DI SE_II",
-                "Nome Antiquari": "Antonacci-Efrati Apolloni Di Castro Sestieri"
+                "ID Antiquari": "AN-EF AP DI SE_II PR",
+                "Nome Antiquari": "Antonacci-Efrati Apolloni Di Castro Sestieri Pratesi"
             },
             "C_68": {
                 "ID": "C_68",
                 "Nome": "Federico",
                 "Cognome / Denominazione": "Zeri",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "ZA SA_V",
-                "Nome Antiquari": "Zabert Sabatello"
+                "ID Antiquari": "ZA SA_V SA_VII LO_I CA_V CO_V GI_I DA FO_I RI PA_III",
+                "Nome Antiquari": "Zabert Sabatello Salamon Longari Caretto Cortinovis Gianetti D'Atri Forti Riccardi Studio d'Arte Palma"
             }
         },
         "Eventi": {},
@@ -472,8 +478,8 @@
                 "Nome": "Giuliano",
                 "Cognome / Denominazione": "Briganti",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "AN-EF AP GR_II",
-                "Nome Antiquari": "Antonacci-Efrati Apolloni Grandi"
+                "ID Antiquari": "AN-EF AP GR_II PA_III GI_I",
+                "Nome Antiquari": "Antonacci-Efrati Apolloni Grandi Studio d'Arte Palma Gianetti"
             },
             "C_51": {
                 "ID": "C_51",
@@ -488,8 +494,8 @@
                 "Nome": "Alvar",
                 "Cognome / Denominazione": "Gonzáles Palacios",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "AN-EF AP DI SE_II",
-                "Nome Antiquari": "Antonacci-Efrati Apolloni Di Castro Sestieri"
+                "ID Antiquari": "AN-EF AP DI SE_II PR",
+                "Nome Antiquari": "Antonacci-Efrati Apolloni Di Castro Sestieri Pratesi"
             }
         },
         "Eventi": {},
@@ -651,7 +657,9 @@
             }
         },
         "Clienti": {},
-        "Relazioni": {}
+        "Relazioni": {
+            "AN": true
+        }
     },
     "BA_I": {
         "ID": "BA_I",
@@ -675,24 +683,24 @@
                 "Nome": "Federico",
                 "Cognome / Denominazione": "Zeri",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "ZA SA_V",
-                "Nome Antiquari": "Zabert Sabatello"
+                "ID Antiquari": "ZA SA_V SA_VII LO_I CA_V CO_V GI_I DA FO_I RI PA_III",
+                "Nome Antiquari": "Zabert Sabatello Salamon Longari Caretto Cortinovis Gianetti D'Atri Forti Riccardi Studio d'Arte Palma"
             },
             "C_11": {
                 "ID": "C_11",
                 "Nome": "Giuliano",
                 "Cognome / Denominazione": "Briganti",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "AN-EF AP GR_II",
-                "Nome Antiquari": "Antonacci-Efrati Apolloni Grandi"
+                "ID Antiquari": "AN-EF AP GR_II PA_III GI_I",
+                "Nome Antiquari": "Antonacci-Efrati Apolloni Grandi Studio d'Arte Palma Gianetti"
             },
             "C_32": {
                 "ID": "C_32",
                 "Nome": "Mina",
                 "Cognome / Denominazione": "Gregori",
                 "Tipologia": "storica dell'arte",
-                "ID Antiquari": "BA_I",
-                "Nome Antiquari": "Bacarelli"
+                "ID Antiquari": "BA_I PR",
+                "Nome Antiquari": "Bacarelli Pratesi"
             }
         },
         "Eventi": {},
@@ -1177,8 +1185,8 @@
                 "Nome": "Cesare",
                 "Cognome / Denominazione": "Faraglia",
                 "Tipologia": "fotografo",
-                "ID Antiquari": "BA_III",
-                "Nome Antiquari": "Barsanti"
+                "ID Antiquari": "BA_III PO_III",
+                "Nome Antiquari": "Barsanti Pollak"
             },
             "C_50": {
                 "ID": "C_50",
@@ -1333,7 +1341,8 @@
             }
         },
         "Relazioni": {
-            "SI": true
+            "SI": true,
+            "PO_III": true
         }
     },
     "BA_IV": {
@@ -1455,7 +1464,9 @@
                 ]
             }
         },
-        "Relazioni": {}
+        "Relazioni": {
+            "GR_II": true
+        }
     },
     "BA_V": {
         "ID": "BA_V",
@@ -1463,7 +1474,24 @@
         "Bio": "BA_V_bio",
         "Link Zeri": "https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=barozzi",
         "Bibliografia": {},
-        "Collaboratori": {},
+        "Collaboratori": {
+            "C_69": {
+                "ID": "C_69",
+                "Nome": "",
+                "Cognome / Denominazione": "Fischer & Rechsteiner",
+                "Tipologia": "ditta di trasporti",
+                "ID Antiquari": "BA_V CA_V",
+                "Nome Antiquari": "Barozzi Carrer"
+            },
+            "C_70": {
+                "ID": "C_70",
+                "Nome": "Francesco",
+                "Cognome / Denominazione": "Dorigo",
+                "Tipologia": "antiquario, marmista",
+                "ID Antiquari": "BA_V",
+                "Nome Antiquari": "Barozzi"
+            }
+        },
         "Eventi": {},
         "Foto preview": "BA_V_preview",
         "Foto gallery": [
@@ -2153,7 +2181,7 @@
                 "Nome": "Giuseppe",
                 "Cognome / Denominazione": "Fiocco",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "CO_I ST BR_III",
+                "ID Antiquari": "CO_I ST_NEW BR_III",
                 "Nome Antiquari": "Contini Bonacossi Steffanoni Brass"
             },
             "C_46_b": {
@@ -2265,7 +2293,10 @@
             }
         },
         "Clienti": {},
-        "Relazioni": {}
+        "Relazioni": {
+            "PO_II": true,
+            "GE_I": true
+        }
     },
     "BR_I": {
         "ID": "BR_I",
@@ -2401,8 +2432,8 @@
                 "Nome": "Roberto",
                 "Cognome / Denominazione": "Longhi",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "BR_II CO_I",
-                "Nome Antiquari": "Bruschi Livio Contini Bonacossi"
+                "ID Antiquari": "BR_II CO_I CO_V",
+                "Nome Antiquari": "Bruschi Livio Contini Bonacossi Cortinovis"
             },
             "C_53": {
                 "ID": "C_53",
@@ -3178,7 +3209,9 @@
                 ]
             }
         },
-        "Relazioni": {}
+        "Relazioni": {
+            "SA_III": true
+        }
     },
     "CA_IV": {
         "ID": "CA_IV",
@@ -3192,8 +3225,16 @@
                 "Nome": "Giuseppe ",
                 "Cognome / Denominazione": "Steffanoni",
                 "Tipologia": "restauratore",
-                "ID Antiquari": "GR_II",
-                "Nome Antiquari": "Grandi"
+                "ID Antiquari": "GR_II CA_IV",
+                "Nome Antiquari": "Grandi Carrer"
+            },
+            "C_69": {
+                "ID": "C_69",
+                "Nome": "",
+                "Cognome / Denominazione": "Fischer & Rechsteiner",
+                "Tipologia": "ditta di trasporti",
+                "ID Antiquari": "BA_V CA_V",
+                "Nome Antiquari": "Barozzi Carrer"
             }
         },
         "Eventi": {},
@@ -3250,8 +3291,32 @@
                 "Nome": "Federico",
                 "Cognome / Denominazione": "Zeri",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "ZA SA_V",
-                "Nome Antiquari": "Zabert Sabatello"
+                "ID Antiquari": "ZA SA_V SA_VII LO_I CA_V CO_V GI_I DA FO_I RI PA_III",
+                "Nome Antiquari": "Zabert Sabatello Salamon Longari Caretto Cortinovis Gianetti D'Atri Forti Riccardi Studio d'Arte Palma"
+            },
+            "C_130": {
+                "ID": "C_130",
+                "Nome": "Bert",
+                "Cognome / Denominazione": "Meyer",
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "CA_V",
+                "Nome Antiquari": "Caretto"
+            },
+            "C_131": {
+                "ID": "C_131",
+                "Nome": "Luigi",
+                "Cognome / Denominazione": "Scagliotti",
+                "Tipologia": "antiquario",
+                "ID Antiquari": "CA_V",
+                "Nome Antiquari": "Caretto"
+            },
+            "C_132": {
+                "ID": "C_132",
+                "Nome": "Gustavo Adolfo",
+                "Cognome / Denominazione": "Rol",
+                "Tipologia": "antiquario",
+                "ID Antiquari": "CA_V",
+                "Nome Antiquari": "Caretto"
             }
         },
         "Eventi": {},
@@ -3349,7 +3414,9 @@
             }
         },
         "Clienti": {},
-        "Relazioni": {}
+        "Relazioni": {
+            "PO_I": true
+        }
     },
     "CI": {
         "ID": "CI",
@@ -3642,8 +3709,8 @@
                 "Nome": "Bernard",
                 "Cognome / Denominazione": "Berenson",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "AL CO_I RO ST VO_I FO",
-                "Nome Antiquari": "Albrighi Contini-Bonacossi Romano Steffanoni Volpi Foresti"
+                "ID Antiquari": "AL CO_I RO ST_NEW VO_I FO CO_IV",
+                "Nome Antiquari": "Albrighi Contini-Bonacossi Romano Steffanoni Volpi Foresti Colnaghi"
             },
             "C_20": {
                 "ID": "C_20",
@@ -3658,7 +3725,7 @@
                 "Nome": "Giuseppe",
                 "Cognome / Denominazione": "Fiocco",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "CO_I ST BR_III",
+                "ID Antiquari": "CO_I ST_NEW BR_III",
                 "Nome Antiquari": "Contini Bonacossi Steffanoni Brass"
             },
             "C_37": {
@@ -3666,16 +3733,16 @@
                 "Nome": "Roberto",
                 "Cognome / Denominazione": "Longhi",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "BR_II CO_I",
-                "Nome Antiquari": "Bruschi Livio Contini Bonacossi"
+                "ID Antiquari": "BR_II CO_I CO_V",
+                "Nome Antiquari": "Bruschi Livio Contini Bonacossi Cortinovis"
             },
             "C_42": {
                 "ID": "C_42",
                 "Nome": "Mario",
                 "Cognome / Denominazione": "Modestini",
                 "Tipologia": "restauratore",
-                "ID Antiquari": "CO_I",
-                "Nome Antiquari": "Contini Bonacossi"
+                "ID Antiquari": "CO_I PA_III",
+                "Nome Antiquari": "Contini Bonacossi Studio d'Arte Palma"
             },
             "C_39": {
                 "ID": "C_39",
@@ -3698,8 +3765,8 @@
                 "Nome": "Lionello",
                 "Cognome / Denominazione": "Venturi",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "CO_I",
-                "Nome Antiquari": "Contini Bonacossi"
+                "ID Antiquari": "CO_I PA_III",
+                "Nome Antiquari": "Contini Bonacossi Studio d'Arte Palma"
             },
             "C_66": {
                 "ID": "C_66",
@@ -3714,8 +3781,8 @@
                 "Nome": "Federico",
                 "Cognome / Denominazione": "Zeri",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "ZA SA_V",
-                "Nome Antiquari": "Zabert Sabatello"
+                "ID Antiquari": "ZA SA_V SA_VII LO_I CA_V CO_V GI_I DA FO_I RI PA_III",
+                "Nome Antiquari": "Zabert Sabatello Salamon Longari Caretto Cortinovis Gianetti D'Atri Forti Riccardi Studio d'Arte Palma"
             }
         },
         "Eventi": {},
@@ -3801,7 +3868,9 @@
         "Relazioni": {
             "BE_II": true,
             "PO_I": true,
-            "VO_II": true
+            "VO_II": true,
+            "VE": true,
+            "FO": true
         }
     },
     "CO_II": {
@@ -3876,7 +3945,8 @@
         },
         "Clienti": {},
         "Relazioni": {
-            "CA_II": true
+            "CA_II": true,
+            "GE_II": true
         }
     },
     "CO_III": {
@@ -4097,7 +4167,24 @@
         "Bio": "CO_IV_bio",
         "Link Zeri": "https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Colnaghi",
         "Bibliografia": {},
-        "Collaboratori": {},
+        "Collaboratori": {
+            "C_97": {
+                "ID": "C_97",
+                "Nome": "",
+                "Cognome / Denominazione": "Ciceri",
+                "Tipologia": "ottico",
+                "ID Antiquari": "CO_IV",
+                "Nome Antiquari": "Colnaghi"
+            },
+            "C_118": {
+                "ID": "C_118",
+                "Nome": "Chloe",
+                "Cognome / Denominazione": "Stead",
+                "Tipologia": "direttrice",
+                "ID Antiquari": "CO_IV",
+                "Nome Antiquari": "Colnaghi"
+            }
+        },
         "Eventi": {},
         "Foto preview": "CO_IV_preview",
         "Foto gallery": [
@@ -4220,16 +4307,56 @@
                 "Nome": "Roberto",
                 "Cognome / Denominazione": "Longhi",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "BR_II CO_I",
-                "Nome Antiquari": "Bruschi Livio Contini Bonacossi"
+                "ID Antiquari": "BR_II CO_I CO_V",
+                "Nome Antiquari": "Bruschi Livio Contini Bonacossi Cortinovis"
             },
             "C_68": {
                 "ID": "C_68",
                 "Nome": "Federico",
                 "Cognome / Denominazione": "Zeri",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "ZA SA_V",
-                "Nome Antiquari": "Zabert Sabatello"
+                "ID Antiquari": "ZA SA_V SA_VII LO_I CA_V CO_V GI_I DA FO_I RI PA_III",
+                "Nome Antiquari": "Zabert Sabatello Salamon Longari Caretto Cortinovis Gianetti D'Atri Forti Riccardi Studio d'Arte Palma"
+            },
+            "C_133": {
+                "ID": "C_133",
+                "Nome": "Carlo",
+                "Cognome / Denominazione": "Volpe",
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "CO_V",
+                "Nome Antiquari": "Cortinovis"
+            },
+            "C_134": {
+                "ID": "C_134",
+                "Nome": "Dwight",
+                "Cognome / Denominazione": "Millet",
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "CO_V",
+                "Nome Antiquari": "Cortinovis"
+            },
+            "C_135": {
+                "ID": "C_135",
+                "Nome": "Denis",
+                "Cognome / Denominazione": "Mahon",
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "CO_V",
+                "Nome Antiquari": "Cortinovis"
+            },
+            "C_136": {
+                "ID": "C_136",
+                "Nome": "",
+                "Cognome / Denominazione": "Fototecnica Bolognese",
+                "Tipologia": "fotografo",
+                "ID Antiquari": "CO_V",
+                "Nome Antiquari": "Cortinovis"
+            },
+            "C_137": {
+                "ID": "C_137",
+                "Nome": "",
+                "Cognome / Denominazione": "A. Villani e Figli",
+                "Tipologia": "fotografo",
+                "ID Antiquari": "CO_V",
+                "Nome Antiquari": "Cortinovis"
             }
         },
         "Eventi": {},
@@ -4402,8 +4529,8 @@
                 "Nome": "Federico",
                 "Cognome / Denominazione": "Zeri",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "ZA SA_V",
-                "Nome Antiquari": "Zabert Sabatello"
+                "ID Antiquari": "ZA SA_V SA_VII LO_I CA_V CO_V GI_I DA FO_I RI PA_III",
+                "Nome Antiquari": "Zabert Sabatello Salamon Longari Caretto Cortinovis Gianetti D'Atri Forti Riccardi Studio d'Arte Palma"
             }
         },
         "Eventi": {},
@@ -4595,8 +4722,8 @@
                 "Nome": "Giuliano",
                 "Cognome / Denominazione": "Briganti",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "AN-EF AP GR_II",
-                "Nome Antiquari": "Antonacci-Efrati Apolloni Grandi"
+                "ID Antiquari": "AN-EF AP GR_II PA_III GI_I",
+                "Nome Antiquari": "Antonacci-Efrati Apolloni Grandi Studio d'Arte Palma Gianetti"
             },
             "C_16": {
                 "ID": "C_16",
@@ -4619,16 +4746,16 @@
                 "Nome": "Alvar",
                 "Cognome / Denominazione": "Gonzáles Palacios",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "AN-EF AP DI SE_II",
-                "Nome Antiquari": "Antonacci-Efrati Apolloni Di Castro Sestieri"
+                "ID Antiquari": "AN-EF AP DI SE_II PR",
+                "Nome Antiquari": "Antonacci-Efrati Apolloni Di Castro Sestieri Pratesi"
             },
             "C_68": {
                 "ID": "C_68",
                 "Nome": "Federico",
                 "Cognome / Denominazione": "Zeri",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "ZA SA_V",
-                "Nome Antiquari": "Zabert Sabatello"
+                "ID Antiquari": "ZA SA_V SA_VII LO_I CA_V CO_V GI_I DA FO_I RI PA_III",
+                "Nome Antiquari": "Zabert Sabatello Salamon Longari Caretto Cortinovis Gianetti D'Atri Forti Riccardi Studio d'Arte Palma"
             }
         },
         "Eventi": {},
@@ -4859,8 +4986,8 @@
                 "Nome": "Federico",
                 "Cognome / Denominazione": "Zeri",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "ZA SA_V",
-                "Nome Antiquari": "Zabert Sabatello"
+                "ID Antiquari": "ZA SA_V SA_VII LO_I CA_V CO_V GI_I DA FO_I RI PA_III",
+                "Nome Antiquari": "Zabert Sabatello Salamon Longari Caretto Cortinovis Gianetti D'Atri Forti Riccardi Studio d'Arte Palma"
             }
         },
         "Eventi": {},
@@ -5077,8 +5204,8 @@
                 "Nome": "Bernard",
                 "Cognome / Denominazione": "Berenson",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "AL CO_I RO ST VO_I FO",
-                "Nome Antiquari": "Albrighi Contini-Bonacossi Romano Steffanoni Volpi Foresti"
+                "ID Antiquari": "AL CO_I RO ST_NEW VO_I FO CO_IV",
+                "Nome Antiquari": "Albrighi Contini-Bonacossi Romano Steffanoni Volpi Foresti Colnaghi"
             },
             "C_20": {
                 "ID": "C_20",
@@ -5159,7 +5286,9 @@
                 ]
             }
         },
-        "Relazioni": {}
+        "Relazioni": {
+            "CO_I": true
+        }
     },
     "FO_I": {
         "ID": "FO_I",
@@ -5168,13 +5297,21 @@
         "Link Zeri": "https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Forti",
         "Bibliografia": {},
         "Collaboratori": {
+            "C_138": {
+                "ID": "C_138",
+                "Nome": "Tammaro ",
+                "Cognome / Denominazione": "De Marinis",
+                "Tipologia": "antiquario",
+                "ID Antiquari": "FO_I",
+                "Nome Antiquari": "Forti"
+            },
             "C_68": {
                 "ID": "C_68",
                 "Nome": "Federico",
                 "Cognome / Denominazione": "Zeri",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "ZA SA_V",
-                "Nome Antiquari": "Zabert Sabatello"
+                "ID Antiquari": "ZA SA_V SA_VII LO_I CA_V CO_V GI_I DA FO_I RI PA_III",
+                "Nome Antiquari": "Zabert Sabatello Salamon Longari Caretto Cortinovis Gianetti D'Atri Forti Riccardi Studio d'Arte Palma"
             }
         },
         "Eventi": {},
@@ -5415,7 +5552,11 @@
             }
         },
         "Clienti": {},
-        "Relazioni": {}
+        "Relazioni": {
+            "AL": true,
+            "BR_III": true,
+            "SA_III": true
+        }
     },
     "GE_II": {
         "ID": "GE_II",
@@ -5808,7 +5949,11 @@
             }
         },
         "Clienti": {},
-        "Relazioni": {}
+        "Relazioni": {
+            "SA_VI_NEW": true,
+            "CO_II": true,
+            "JA": true
+        }
     },
     "GI": {
         "ID": "GI",
@@ -5904,16 +6049,16 @@
                 "Nome": "Federico",
                 "Cognome / Denominazione": "Zeri",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "ZA SA_V",
-                "Nome Antiquari": "Zabert Sabatello"
+                "ID Antiquari": "ZA SA_V SA_VII LO_I CA_V CO_V GI_I DA FO_I RI PA_III",
+                "Nome Antiquari": "Zabert Sabatello Salamon Longari Caretto Cortinovis Gianetti D'Atri Forti Riccardi Studio d'Arte Palma"
             },
             "C_11": {
                 "ID": "C_11",
                 "Nome": "Giuliano",
                 "Cognome / Denominazione": "Briganti",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "AN-EF AP GR_II",
-                "Nome Antiquari": "Antonacci-Efrati Apolloni Grandi"
+                "ID Antiquari": "AN-EF AP GR_II PA_III GI_I",
+                "Nome Antiquari": "Antonacci-Efrati Apolloni Grandi Studio d'Arte Palma Gianetti"
             }
         },
         "Eventi": {},
@@ -5943,7 +6088,16 @@
         "Bio": "GU_bio",
         "Link Zeri": "https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=guggenheim&page=1&filtroprovenienza_OA=5829%7C7672",
         "Bibliografia": {},
-        "Collaboratori": {},
+        "Collaboratori": {
+            "C_79": {
+                "ID": "C_79",
+                "Nome": "Hugo",
+                "Cognome / Denominazione": "Helbing",
+                "Tipologia": "impresario di casa d'asta",
+                "ID Antiquari": "GU RA_NEW",
+                "Nome Antiquari": "Guggenheim Rambaldi"
+            }
+        },
         "Eventi": {},
         "Foto preview": "GU_preview",
         "Foto gallery": [
@@ -6067,8 +6221,8 @@
                 "Nome": "Giuseppe ",
                 "Cognome / Denominazione": "Steffanoni",
                 "Tipologia": "restauratore",
-                "ID Antiquari": "GR_II",
-                "Nome Antiquari": "Grandi"
+                "ID Antiquari": "GR_II CA_IV",
+                "Nome Antiquari": "Grandi Carrer"
             }
         },
         "Eventi": {},
@@ -6178,7 +6332,11 @@
                 ]
             }
         },
-        "Relazioni": {}
+        "Relazioni": {
+            "SA_IV": true,
+            "AC": true,
+            "BA_IV": true
+        }
     },
     "GR": {
         "ID": "GR",
@@ -6310,8 +6468,8 @@
                 "Nome": "Federico",
                 "Cognome / Denominazione": "Zeri",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "ZA SA_V",
-                "Nome Antiquari": "Zabert Sabatello"
+                "ID Antiquari": "ZA SA_V SA_VII LO_I CA_V CO_V GI_I DA FO_I RI PA_III",
+                "Nome Antiquari": "Zabert Sabatello Salamon Longari Caretto Cortinovis Gianetti D'Atri Forti Riccardi Studio d'Arte Palma"
             }
         },
         "Eventi": {
@@ -6847,7 +7005,7 @@
             }
         },
         "Relazioni": {
-            "RA": true
+            "RA_NEW": true
         }
     },
     "JA": {
@@ -7318,7 +7476,9 @@
         },
         "Relazioni": {
             "JA-TA": true,
-            "TA": true
+            "TA": true,
+            "GE_II": true,
+            "PO_III": true
         }
     },
     "JA-TA": {
@@ -7800,7 +7960,32 @@
                 "Tipologia": "articolo di periodico"
             }
         },
-        "Collaboratori": {},
+        "Collaboratori": {
+            "C_80": {
+                "ID": "C_80",
+                "Nome": "Alessandro",
+                "Cognome / Denominazione": "Morandotti",
+                "Tipologia": "antiquario",
+                "ID Antiquari": "LO",
+                "Nome Antiquari": "Loewi"
+            },
+            "C_81": {
+                "ID": "C_81",
+                "Nome": "William",
+                "Cognome / Denominazione": "Robertson",
+                "Tipologia": "antiquario",
+                "ID Antiquari": "LO",
+                "Nome Antiquari": "Loewi"
+            },
+            "C_82": {
+                "ID": "C_82",
+                "Nome": "Arnold",
+                "Cognome / Denominazione": "Seligman",
+                "Tipologia": "antiquario",
+                "ID Antiquari": "LO",
+                "Nome Antiquari": "Loewi"
+            }
+        },
         "Eventi": {},
         "Foto preview": "LO_preview",
         "Foto gallery": [
@@ -7845,24 +8030,72 @@
                 "Nome": "Giuliano",
                 "Cognome / Denominazione": "Briganti",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "AN-EF AP GR_II",
-                "Nome Antiquari": "Antonacci-Efrati Apolloni Grandi"
+                "ID Antiquari": "AN-EF AP GR_II PA_III GI_I",
+                "Nome Antiquari": "Antonacci-Efrati Apolloni Grandi Studio d'Arte Palma Gianetti"
             },
             "C_32": {
                 "ID": "C_32",
                 "Nome": "Mina",
                 "Cognome / Denominazione": "Gregori",
                 "Tipologia": "storica dell'arte",
-                "ID Antiquari": "BA_I",
-                "Nome Antiquari": "Bacarelli"
+                "ID Antiquari": "BA_I PR",
+                "Nome Antiquari": "Bacarelli Pratesi"
             },
             "C_68": {
                 "ID": "C_68",
                 "Nome": "Federico",
                 "Cognome / Denominazione": "Zeri",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "ZA SA_V",
-                "Nome Antiquari": "Zabert Sabatello"
+                "ID Antiquari": "ZA SA_V SA_VII LO_I CA_V CO_V GI_I DA FO_I RI PA_III",
+                "Nome Antiquari": "Zabert Sabatello Salamon Longari Caretto Cortinovis Gianetti D'Atri Forti Riccardi Studio d'Arte Palma"
+            },
+            "C_125": {
+                "ID": "C_125",
+                "Nome": "Luigi",
+                "Cognome / Denominazione": "Cavenaghi",
+                "Tipologia": "restauratore",
+                "ID Antiquari": "ST_NEW",
+                "Nome Antiquari": "Steffanoni"
+            },
+            "C_126": {
+                "ID": "C_126",
+                "Nome": "Luciano",
+                "Cognome / Denominazione": "Bellosi",
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "LO_I",
+                "Nome Antiquari": "Longari"
+            },
+            "C_127": {
+                "ID": "C_127",
+                "Nome": "Carlo",
+                "Cognome / Denominazione": "Bertelli",
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "LO_I",
+                "Nome Antiquari": "Longari"
+            },
+            "C_128": {
+                "ID": "C_128",
+                "Nome": "Miklós ",
+                "Cognome / Denominazione": "Boskovits",
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "LO_I",
+                "Nome Antiquari": "Longari"
+            },
+            "C_129": {
+                "ID": "C_129",
+                "Nome": "Enzo",
+                "Cognome / Denominazione": "Carli",
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "LO_I",
+                "Nome Antiquari": "Longari"
+            },
+            "C_130": {
+                "ID": "C_130",
+                "Nome": "Bert",
+                "Cognome / Denominazione": "Meyer",
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "CA_V",
+                "Nome Antiquari": "Caretto"
             }
         },
         "Eventi": {},
@@ -8499,7 +8732,10 @@
             }
         },
         "Clienti": {},
-        "Relazioni": {}
+        "Relazioni": {
+            "RO": true,
+            "VO_II": true
+        }
     },
     "MO": {
         "ID": "MO",
@@ -8523,8 +8759,8 @@
                 "Nome": "Federico",
                 "Cognome / Denominazione": "Zeri",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "ZA SA_V",
-                "Nome Antiquari": "Zabert Sabatello"
+                "ID Antiquari": "ZA SA_V SA_VII LO_I CA_V CO_V GI_I DA FO_I RI PA_III",
+                "Nome Antiquari": "Zabert Sabatello Salamon Longari Caretto Cortinovis Gianetti D'Atri Forti Riccardi Studio d'Arte Palma"
             }
         },
         "Eventi": {},
@@ -8947,29 +9183,61 @@
         "Link Zeri": "https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Galleria+Palma",
         "Bibliografia": {},
         "Collaboratori": {
+            "C_139": {
+                "ID": "C_139",
+                "Nome": "Francesco",
+                "Cognome / Denominazione": "Monotti",
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "PA_III",
+                "Nome Antiquari": "Studio d'Arte Palma"
+            },
+            "C_140": {
+                "ID": "C_140",
+                "Nome": "Manlio",
+                "Cognome / Denominazione": "Goffi",
+                "Tipologia": "antiquario",
+                "ID Antiquari": "PA_III",
+                "Nome Antiquari": "Studio d'Arte Palma"
+            },
+            "C_141": {
+                "ID": "C_141",
+                "Nome": "Giò",
+                "Cognome / Denominazione": "Ponti",
+                "Tipologia": "designer",
+                "ID Antiquari": "PA_III",
+                "Nome Antiquari": "Studio d'Arte Palma"
+            },
+            "C_142": {
+                "ID": "C_142",
+                "Nome": "Bruno",
+                "Cognome / Denominazione": "Zevi",
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "PA_III",
+                "Nome Antiquari": "Studio d'Arte Palma"
+            },
             "C_68": {
                 "ID": "C_68",
                 "Nome": "Federico",
                 "Cognome / Denominazione": "Zeri",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "ZA SA_V",
-                "Nome Antiquari": "Zabert Sabatello"
+                "ID Antiquari": "ZA SA_V SA_VII LO_I CA_V CO_V GI_I DA FO_I RI PA_III",
+                "Nome Antiquari": "Zabert Sabatello Salamon Longari Caretto Cortinovis Gianetti D'Atri Forti Riccardi Studio d'Arte Palma"
             },
             "C_11": {
                 "ID": "C_11",
                 "Nome": "Giuliano",
                 "Cognome / Denominazione": "Briganti",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "AN-EF AP GR_II",
-                "Nome Antiquari": "Antonacci-Efrati Apolloni Grandi"
+                "ID Antiquari": "AN-EF AP GR_II PA_III GI_I",
+                "Nome Antiquari": "Antonacci-Efrati Apolloni Grandi Studio d'Arte Palma Gianetti"
             },
             "C_64": {
                 "ID": "C_64",
                 "Nome": "Lionello",
                 "Cognome / Denominazione": "Venturi",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "CO_I",
-                "Nome Antiquari": "Contini Bonacossi"
+                "ID Antiquari": "CO_I PA_III",
+                "Nome Antiquari": "Contini Bonacossi Studio d'Arte Palma"
             }
         },
         "Eventi": {},
@@ -9000,7 +9268,72 @@
         "Bio": "PE_bio",
         "Link Zeri": "https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Asta+Galleria+Pesaro",
         "Bibliografia": {},
-        "Collaboratori": {},
+        "Collaboratori": {
+            "C_71": {
+                "ID": "C_71",
+                "Nome": "Vittorio",
+                "Cognome / Denominazione": "Pica",
+                "Tipologia": "curatore",
+                "ID Antiquari": "PE",
+                "Nome Antiquari": "Pesaro"
+            },
+            "C_72": {
+                "ID": "C_72",
+                "Nome": "Margherita",
+                "Cognome / Denominazione": "Grassini Scarfatti",
+                "Tipologia": "critica d'arte",
+                "ID Antiquari": "PE",
+                "Nome Antiquari": "Pesaro"
+            },
+            "C_73": {
+                "ID": "C_73",
+                "Nome": "Luigi",
+                "Cognome / Denominazione": "Pisani",
+                "Tipologia": "antiquario",
+                "ID Antiquari": "PE",
+                "Nome Antiquari": "Pesaro"
+            },
+            "C_74": {
+                "ID": "C_74",
+                "Nome": "Carlo",
+                "Cognome / Denominazione": "Feltrinelli",
+                "Tipologia": "socio",
+                "ID Antiquari": "PE",
+                "Nome Antiquari": "Pesaro"
+            },
+            "C_75": {
+                "ID": "C_75",
+                "Nome": "Luigi",
+                "Cognome / Denominazione": "Della Torre",
+                "Tipologia": "socio",
+                "ID Antiquari": "PE",
+                "Nome Antiquari": "Pesaro"
+            },
+            "C_76": {
+                "ID": "C_76",
+                "Nome": "Antonio",
+                "Cognome / Denominazione": "Fradeletto",
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "PE",
+                "Nome Antiquari": "Pesaro"
+            },
+            "C_77": {
+                "ID": "C_77",
+                "Nome": "Enrico",
+                "Cognome / Denominazione": "Somarè",
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "PE",
+                "Nome Antiquari": "Pesaro"
+            },
+            "C_78": {
+                "ID": "C_78",
+                "Nome": "Ugo",
+                "Cognome / Denominazione": "Ojetti",
+                "Tipologia": "critico d'arte",
+                "ID Antiquari": "PE",
+                "Nome Antiquari": "Pesaro"
+            }
+        },
         "Eventi": {},
         "Foto preview": "PE_preview",
         "Foto gallery": [
@@ -9047,7 +9380,16 @@
                 "Tipologia": "articolo di periodico"
             }
         },
-        "Collaboratori": {},
+        "Collaboratori": {
+            "C_143": {
+                "ID": "C_143",
+                "Nome": "Carlo Francesco",
+                "Cognome / Denominazione": "Fornasini",
+                "Tipologia": "collaboratore",
+                "ID Antiquari": "PI_NEW",
+                "Nome Antiquari": "Pini"
+            }
+        },
         "Eventi": {},
         "Foto preview": "PI_preview",
         "Foto gallery": [
@@ -9337,7 +9679,8 @@
         },
         "Clienti": {},
         "Relazioni": {
-            "CO_I": true
+            "CO_I": true,
+            "CE": true
         }
     },
     "PO_II": {
@@ -9418,7 +9761,9 @@
             }
         },
         "Clienti": {},
-        "Relazioni": {}
+        "Relazioni": {
+            "BR_III": true
+        }
     },
     "PO_III": {
         "ID": "PO_III",
@@ -9451,16 +9796,112 @@
                 "Nome": "",
                 "Cognome / Denominazione": "Alinari",
                 "Tipologia": "fotografo",
-                "ID Antiquari": "VO_I",
-                "Nome Antiquari": "Volpi"
+                "ID Antiquari": "VO_I PO_III",
+                "Nome Antiquari": "Volpi Pollak"
             },
             "C_24": {
                 "ID": "C_24",
                 "Nome": "Cesare",
                 "Cognome / Denominazione": "Faraglia",
                 "Tipologia": "fotografo",
-                "ID Antiquari": "BA_III",
-                "Nome Antiquari": "Barsanti"
+                "ID Antiquari": "BA_III PO_III",
+                "Nome Antiquari": "Barsanti Pollak"
+            },
+            "C_83": {
+                "ID": "C_83",
+                "Nome": "A.",
+                "Cognome / Denominazione": "Fauconnet",
+                "Tipologia": "ditta di trasporti",
+                "ID Antiquari": "PO_III",
+                "Nome Antiquari": "Pollak"
+            },
+            "C_84": {
+                "ID": "C_84",
+                "Nome": "Carl",
+                "Cognome / Denominazione": "Stein",
+                "Tipologia": "ditta di trasporti",
+                "ID Antiquari": "PO_III",
+                "Nome Antiquari": "Pollak"
+            },
+            "C_85": {
+                "ID": "C_85",
+                "Nome": "Gustav",
+                "Cognome / Denominazione": "Knauer",
+                "Tipologia": "ditta di trasporti",
+                "ID Antiquari": "PO_III",
+                "Nome Antiquari": "Pollak"
+            },
+            "C_86": {
+                "ID": "C_86",
+                "Nome": "Ettore e figli",
+                "Cognome / Denominazione": "Roesler Franz",
+                "Tipologia": "ditta di trasporti",
+                "ID Antiquari": "PO_III",
+                "Nome Antiquari": "Pollak"
+            },
+            "C_87": {
+                "ID": "C_87",
+                "Nome": "",
+                "Cognome / Denominazione": "Tartaglia & Co. ",
+                "Tipologia": "ditta di trasporti",
+                "ID Antiquari": "PO_III",
+                "Nome Antiquari": "Pollak"
+            },
+            "C_88": {
+                "ID": "C_88",
+                "Nome": "",
+                "Cognome / Denominazione": "Otto H. W. Internationale Transporte ",
+                "Tipologia": "ditta di trasporti",
+                "ID Antiquari": "PO_III",
+                "Nome Antiquari": "Pollak"
+            },
+            "C_89": {
+                "ID": "C_89",
+                "Nome": "Remo",
+                "Cognome / Denominazione": "Lizzani",
+                "Tipologia": "ditta di deposito opere d'arte",
+                "ID Antiquari": "PO_III",
+                "Nome Antiquari": "Pollak"
+            },
+            "C_90": {
+                "ID": "C_90",
+                "Nome": "Cosimo",
+                "Cognome / Denominazione": "Boccardi",
+                "Tipologia": "fotografo",
+                "ID Antiquari": "PO_III",
+                "Nome Antiquari": "Pollak"
+            },
+            "C_91": {
+                "ID": "C_91",
+                "Nome": "Oscar",
+                "Cognome / Denominazione": "Savio",
+                "Tipologia": "fotografo",
+                "ID Antiquari": "PO_III",
+                "Nome Antiquari": "Pollak"
+            },
+            "C_92": {
+                "ID": "C_92",
+                "Nome": "Antonio",
+                "Cognome / Denominazione": "Muñoz",
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "PO_III",
+                "Nome Antiquari": "Pollak"
+            },
+            "C_93": {
+                "ID": "C_93",
+                "Nome": "Guido",
+                "Cognome / Denominazione": "Libertini",
+                "Tipologia": "archeologo",
+                "ID Antiquari": "PO_III",
+                "Nome Antiquari": "Pollak"
+            },
+            "C_94": {
+                "ID": "C_94",
+                "Nome": "",
+                "Cognome / Denominazione": "Ditta Danubio società anonima",
+                "Tipologia": "compagnia di assicurazioni",
+                "ID Antiquari": "PO_III",
+                "Nome Antiquari": "Pollak"
             }
         },
         "Eventi": {},
@@ -9483,7 +9924,13 @@
             }
         },
         "Clienti": {},
-        "Relazioni": {}
+        "Relazioni": {
+            "BA_III": true,
+            "JA": true,
+            "SI": true,
+            "JA_TA": true,
+            "SA_IV": true
+        }
     },
     "PR": {
         "ID": "PR",
@@ -9492,21 +9939,61 @@
         "Link Zeri": "https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Pratesi",
         "Bibliografia": {},
         "Collaboratori": {
+            "C_148": {
+                "ID": "C_148",
+                "Nome": "Giuseppe",
+                "Cognome / Denominazione": "Cantelli",
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "PR",
+                "Nome Antiquari": "Pratesi"
+            },
+            "C_149": {
+                "ID": "C_149",
+                "Nome": "Andrea",
+                "Cognome / Denominazione": "Bacchi",
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "PR",
+                "Nome Antiquari": "Pratesi"
+            },
+            "C_150": {
+                "ID": "C_150",
+                "Nome": "Maria Cecilia",
+                "Cognome / Denominazione": "Fabbri",
+                "Tipologia": "storica dell'arte",
+                "ID Antiquari": "PR",
+                "Nome Antiquari": "Pratesi"
+            },
+            "C_151": {
+                "ID": "C_151",
+                "Nome": "Sandro",
+                "Cognome / Denominazione": "Bellesi",
+                "Tipologia": "storica dell'arte",
+                "ID Antiquari": "PR",
+                "Nome Antiquari": "Pratesi"
+            },
+            "C_152": {
+                "ID": "C_152",
+                "Nome": "Massino",
+                "Cognome / Denominazione": "Listri",
+                "Tipologia": "fotografo",
+                "ID Antiquari": "PR",
+                "Nome Antiquari": "Pratesi"
+            },
             "C_30": {
                 "ID": "C_30",
                 "Nome": "Alvar",
                 "Cognome / Denominazione": "Gonzáles Palacios",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "AN-EF AP DI SE_II",
-                "Nome Antiquari": "Antonacci-Efrati Apolloni Di Castro Sestieri"
+                "ID Antiquari": "AN-EF AP DI SE_II PR",
+                "Nome Antiquari": "Antonacci-Efrati Apolloni Di Castro Sestieri Pratesi"
             },
             "C_32": {
                 "ID": "C_32",
                 "Nome": "Mina",
                 "Cognome / Denominazione": "Gregori",
                 "Tipologia": "storica dell'arte",
-                "ID Antiquari": "BA_I",
-                "Nome Antiquari": "Bacarelli"
+                "ID Antiquari": "BA_I PR",
+                "Nome Antiquari": "Bacarelli Pratesi"
             }
         },
         "Eventi": {},
@@ -9564,7 +10051,48 @@
                 "Tipologia": "articolo di periodico"
             }
         },
-        "Collaboratori": {},
+        "Collaboratori": {
+            "C_79": {
+                "ID": "C_79",
+                "Nome": "Hugo",
+                "Cognome / Denominazione": "Helbing",
+                "Tipologia": "impresario di casa d'asta",
+                "ID Antiquari": "GU RA_NEW",
+                "Nome Antiquari": "Guggenheim Rambaldi"
+            },
+            "C_144": {
+                "ID": "C_144",
+                "Nome": "Giuseppe",
+                "Cognome / Denominazione": "Simoni",
+                "Tipologia": "intagliatore",
+                "ID Antiquari": "RA_NEW",
+                "Nome Antiquari": "Rambaldi"
+            },
+            "C_145": {
+                "ID": "C_145",
+                "Nome": "Augusto",
+                "Cognome / Denominazione": "Pagliarini",
+                "Tipologia": "restauratore e pittore",
+                "ID Antiquari": "RA_NEW",
+                "Nome Antiquari": "Rambaldi"
+            },
+            "C_146": {
+                "ID": "C_146",
+                "Nome": "Giuseppe",
+                "Cognome / Denominazione": "Alberani",
+                "Tipologia": "falegname",
+                "ID Antiquari": "RA_NEW",
+                "Nome Antiquari": "Rambaldi"
+            },
+            "C_147": {
+                "ID": "C_147",
+                "Nome": "Daniele",
+                "Cognome / Denominazione": "Ferné",
+                "Tipologia": "collaboratore",
+                "ID Antiquari": "RA_NEW",
+                "Nome Antiquari": "Rambaldi"
+            }
+        },
         "Eventi": {},
         "Foto preview": "RA_preview",
         "Foto gallery": [
@@ -9686,7 +10214,9 @@
             }
         },
         "Clienti": {},
-        "Relazioni": {}
+        "Relazioni": {
+            "IM": true
+        }
     },
     "RI": {
         "ID": "RI",
@@ -9700,8 +10230,8 @@
                 "Nome": "Federico",
                 "Cognome / Denominazione": "Zeri",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "ZA SA_V",
-                "Nome Antiquari": "Zabert Sabatello"
+                "ID Antiquari": "ZA SA_V SA_VII LO_I CA_V CO_V GI_I DA FO_I RI PA_III",
+                "Nome Antiquari": "Zabert Sabatello Salamon Longari Caretto Cortinovis Gianetti D'Atri Forti Riccardi Studio d'Arte Palma"
             }
         },
         "Eventi": {},
@@ -9884,8 +10414,8 @@
                 "Nome": "Bernard",
                 "Cognome / Denominazione": "Berenson",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "AL CO_I RO ST VO_I FO",
-                "Nome Antiquari": "Albrighi Contini-Bonacossi Romano Steffanoni Volpi Foresti"
+                "ID Antiquari": "AL CO_I RO ST_NEW VO_I FO CO_IV",
+                "Nome Antiquari": "Albrighi Contini-Bonacossi Romano Steffanoni Volpi Foresti Colnaghi"
             }
         },
         "Eventi": {
@@ -9982,7 +10512,9 @@
             }
         },
         "Clienti": {},
-        "Relazioni": {}
+        "Relazioni": {
+            "ME": true
+        }
     },
     "RU": {
         "ID": "RU",
@@ -10532,7 +11064,9 @@
                 ]
             }
         },
-        "Relazioni": {}
+        "Relazioni": {
+            "SA_V": true
+        }
     },
     "SA_III": {
         "ID": "SA_III",
@@ -10657,7 +11191,9 @@
         },
         "Clienti": {},
         "Relazioni": {
-            "CA_I": true
+            "CA_I": true,
+            "GE_I": true,
+            "CA_III": true
         }
     },
     "SA_IV": {
@@ -10876,7 +11412,10 @@
             }
         },
         "Clienti": {},
-        "Relazioni": {}
+        "Relazioni": {
+            "GR_II": true,
+            "PO_III": true
+        }
     },
     "SA_V": {
         "ID": "SA_V",
@@ -10909,24 +11448,24 @@
                 "Nome": "Giuliano",
                 "Cognome / Denominazione": "Briganti",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "AN-EF AP GR_II",
-                "Nome Antiquari": "Antonacci-Efrati Apolloni Grandi"
+                "ID Antiquari": "AN-EF AP GR_II PA_III GI_I",
+                "Nome Antiquari": "Antonacci-Efrati Apolloni Grandi Studio d'Arte Palma Gianetti"
             },
             "C_42": {
                 "ID": "C_42",
                 "Nome": "Mario",
                 "Cognome / Denominazione": "Modestini",
                 "Tipologia": "restauratore",
-                "ID Antiquari": "CO_I",
-                "Nome Antiquari": "Contini Bonacossi"
+                "ID Antiquari": "CO_I PA_III",
+                "Nome Antiquari": "Contini Bonacossi Studio d'Arte Palma"
             },
             "C_68": {
                 "ID": "C_68",
                 "Nome": "Federico",
                 "Cognome / Denominazione": "Zeri",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "ZA SA_V",
-                "Nome Antiquari": "Zabert Sabatello"
+                "ID Antiquari": "ZA SA_V SA_VII LO_I CA_V CO_V GI_I DA FO_I RI PA_III",
+                "Nome Antiquari": "Zabert Sabatello Salamon Longari Caretto Cortinovis Gianetti D'Atri Forti Riccardi Studio d'Arte Palma"
             }
         },
         "Eventi": {},
@@ -11253,7 +11792,9 @@
             }
         },
         "Clienti": {},
-        "Relazioni": {}
+        "Relazioni": {
+            "SA_II": true
+        }
     },
     "SA_VI_NEW": {
         "ID": "SA_VI_NEW",
@@ -11277,8 +11818,16 @@
                 "Nome": "Giuseppe ",
                 "Cognome / Denominazione": "Steffanoni",
                 "Tipologia": "restauratore",
-                "ID Antiquari": "GR_II",
-                "Nome Antiquari": "Grandi"
+                "ID Antiquari": "GR_II CA_IV",
+                "Nome Antiquari": "Grandi Carrer"
+            },
+            "C_120": {
+                "ID": "C_120",
+                "Nome": "Giuseppe",
+                "Cognome / Denominazione": "Spoldi",
+                "Tipologia": "antiquario",
+                "ID Antiquari": "SA_VI_NEW",
+                "Nome Antiquari": "Antonio Salvadori"
             }
         },
         "Eventi": {},
@@ -11301,7 +11850,9 @@
             }
         },
         "Clienti": {},
-        "Relazioni": {}
+        "Relazioni": {
+            "GE_II": true
+        }
     },
     "SA_VII": {
         "ID": "SA_VII",
@@ -11315,8 +11866,24 @@
                 "Nome": "Federico",
                 "Cognome / Denominazione": "Zeri",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "ZA SA_V",
-                "Nome Antiquari": "Zabert Sabatello"
+                "ID Antiquari": "ZA SA_V SA_VII LO_I CA_V CO_V GI_I DA FO_I RI PA_III",
+                "Nome Antiquari": "Zabert Sabatello Salamon Longari Caretto Cortinovis Gianetti D'Atri Forti Riccardi Studio d'Arte Palma"
+            },
+            "C_95": {
+                "ID": "C_95",
+                "Nome": "Gilberto",
+                "Cognome / Denominazione": "Algranti",
+                "Tipologia": "impresario di casa d'asta",
+                "ID Antiquari": "SA_VII",
+                "Nome Antiquari": "Salamon"
+            },
+            "C_96": {
+                "ID": "C_96",
+                "Nome": "Fabrizio",
+                "Cognome / Denominazione": "Agustoni",
+                "Tipologia": "impresario di casa d'asta",
+                "ID Antiquari": "SA_VII",
+                "Nome Antiquari": "Salamon"
             }
         },
         "Eventi": {},
@@ -11596,8 +12163,8 @@
                 "Nome": "Alvar",
                 "Cognome / Denominazione": "Gonzáles Palacios",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "AN-EF AP DI SE_II",
-                "Nome Antiquari": "Antonacci-Efrati Apolloni Di Castro Sestieri"
+                "ID Antiquari": "AN-EF AP DI SE_II PR",
+                "Nome Antiquari": "Antonacci-Efrati Apolloni Di Castro Sestieri Pratesi"
             },
             "C_16_b": {
                 "ID": "C_16_b",
@@ -11620,8 +12187,8 @@
                 "Nome": "Giuliano",
                 "Cognome / Denominazione": "Briganti",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "AN-EF AP GR_II",
-                "Nome Antiquari": "Antonacci-Efrati Apolloni Grandi"
+                "ID Antiquari": "AN-EF AP GR_II PA_III GI_I",
+                "Nome Antiquari": "Antonacci-Efrati Apolloni Grandi Studio d'Arte Palma Gianetti"
             },
             "C_14_b": {
                 "ID": "C_14_b",
@@ -11660,8 +12227,8 @@
                 "Nome": "Federico",
                 "Cognome / Denominazione": "Zeri",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "ZA SA_V",
-                "Nome Antiquari": "Zabert Sabatello"
+                "ID Antiquari": "ZA SA_V SA_VII LO_I CA_V CO_V GI_I DA FO_I RI PA_III",
+                "Nome Antiquari": "Zabert Sabatello Salamon Longari Caretto Cortinovis Gianetti D'Atri Forti Riccardi Studio d'Arte Palma"
             }
         },
         "Eventi": {},
@@ -12091,7 +12658,8 @@
         "Clienti": {},
         "Relazioni": {
             "BA_III": true,
-            "CA_II": true
+            "CA_II": true,
+            "PO_III": true
         }
     },
     "ST_NEW": {
@@ -12125,15 +12693,15 @@
                 "Nome": "Bernard",
                 "Cognome / Denominazione": "Berenson",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "AL CO_I RO ST VO_I FO",
-                "Nome Antiquari": "Albrighi Contini-Bonacossi Romano Steffanoni Volpi Foresti"
+                "ID Antiquari": "AL CO_I RO ST_NEW VO_I FO CO_IV",
+                "Nome Antiquari": "Albrighi Contini-Bonacossi Romano Steffanoni Volpi Foresti Colnaghi"
             },
             "C_13": {
                 "ID": "C_13",
                 "Nome": "Paul",
                 "Cognome / Denominazione": "Cassirer",
                 "Tipologia": "antiquario",
-                "ID Antiquari": "ST",
+                "ID Antiquari": "ST_NEW",
                 "Nome Antiquari": "Steffanoni"
             },
             "C_15": {
@@ -12149,7 +12717,7 @@
                 "Nome": "Benno",
                 "Cognome / Denominazione": "Geiger",
                 "Tipologia": "antiquario",
-                "ID Antiquari": "ST",
+                "ID Antiquari": "ST_NEW",
                 "Nome Antiquari": "Steffanoni"
             },
             "C_4": {
@@ -12157,7 +12725,7 @@
                 "Nome": "Wart",
                 "Cognome / Denominazione": "Arslan",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "ST",
+                "ID Antiquari": "ST_NEW",
                 "Nome Antiquari": "Steffanoni"
             },
             "C_37": {
@@ -12165,15 +12733,15 @@
                 "Nome": "Roberto",
                 "Cognome / Denominazione": "Longhi",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "BR_II CO_I",
-                "Nome Antiquari": "Bruschi Livio Contini Bonacossi"
+                "ID Antiquari": "BR_II CO_I CO_V",
+                "Nome Antiquari": "Bruschi Livio Contini Bonacossi Cortinovis"
             },
             "C_25": {
                 "ID": "C_25",
                 "Nome": "Giuseppe",
                 "Cognome / Denominazione": "Fiocco",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "CO_I ST BR_III",
+                "ID Antiquari": "CO_I ST_NEW BR_III",
                 "Nome Antiquari": "Contini Bonacossi Steffanoni Brass"
             },
             "C_26": {
@@ -12181,7 +12749,47 @@
                 "Nome": "Ugo",
                 "Cognome / Denominazione": "Frizzoni",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "ST",
+                "ID Antiquari": "ST_NEW",
+                "Nome Antiquari": "Steffanoni"
+            },
+            "C_121": {
+                "ID": "C_121",
+                "Nome": "Arturo",
+                "Cognome / Denominazione": "Cividini",
+                "Tipologia": "restauratore",
+                "ID Antiquari": "ST_NEW",
+                "Nome Antiquari": "Steffanoni"
+            },
+            "C_122": {
+                "ID": "C_122",
+                "Nome": "Antonio",
+                "Cognome / Denominazione": "Zanchi",
+                "Tipologia": "restauratore",
+                "ID Antiquari": "ST_NEW",
+                "Nome Antiquari": "Steffanoni"
+            },
+            "C_123": {
+                "ID": "C_123",
+                "Nome": "Ugo",
+                "Cognome / Denominazione": "Frizzoni",
+                "Tipologia": "storico dell’arte",
+                "ID Antiquari": "ST_NEW",
+                "Nome Antiquari": "Steffanoni"
+            },
+            "C_124": {
+                "ID": "C_124",
+                "Nome": "Cesare",
+                "Cognome / Denominazione": "Laurenti",
+                "Tipologia": "pittore",
+                "ID Antiquari": "ST_NEW",
+                "Nome Antiquari": "Steffanoni"
+            },
+            "C_125": {
+                "ID": "C_125",
+                "Nome": "Luigi",
+                "Cognome / Denominazione": "Cavenaghi",
+                "Tipologia": "restauratore",
+                "ID Antiquari": "ST_NEW",
                 "Nome Antiquari": "Steffanoni"
             }
         },
@@ -12243,7 +12851,9 @@
             }
         },
         "Clienti": {},
-        "Relazioni": {}
+        "Relazioni": {
+            "AC": true
+        }
     },
     "SU": {
         "ID": "SU",
@@ -12665,8 +13275,8 @@
                 "Nome": "Roberto",
                 "Cognome / Denominazione": "Longhi",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "BR_II CO_I",
-                "Nome Antiquari": "Bruschi Livio Contini Bonacossi"
+                "ID Antiquari": "BR_II CO_I CO_V",
+                "Nome Antiquari": "Bruschi Livio Contini Bonacossi Cortinovis"
             }
         },
         "Eventi": {},
@@ -12741,7 +13351,10 @@
                 ]
             }
         },
-        "Relazioni": {}
+        "Relazioni": {
+            "AL": true,
+            "CO_I": true
+        }
     },
     "VE_I": {
         "ID": "VE_I",
@@ -12895,8 +13508,8 @@
                 "Nome": "Federico",
                 "Cognome / Denominazione": "Zeri",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "ZA SA_V",
-                "Nome Antiquari": "Zabert Sabatello"
+                "ID Antiquari": "ZA SA_V SA_VII LO_I CA_V CO_V GI_I DA FO_I RI PA_III",
+                "Nome Antiquari": "Zabert Sabatello Salamon Longari Caretto Cortinovis Gianetti D'Atri Forti Riccardi Studio d'Arte Palma"
             }
         },
         "Eventi": {},
@@ -13132,8 +13745,8 @@
                 "Nome": "",
                 "Cognome / Denominazione": "Alinari",
                 "Tipologia": "fotografo",
-                "ID Antiquari": "VO_I",
-                "Nome Antiquari": "Volpi"
+                "ID Antiquari": "VO_I PO_III",
+                "Nome Antiquari": "Volpi Pollak"
             },
             "C_12": {
                 "ID": "C_12",
@@ -13148,8 +13761,8 @@
                 "Nome": "Bernard",
                 "Cognome / Denominazione": "Berenson",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "AL CO_I RO ST VO_I FO",
-                "Nome Antiquari": "Albrighi Contini-Bonacossi Romano Steffanoni Volpi Foresti"
+                "ID Antiquari": "AL CO_I RO ST_NEW VO_I FO CO_IV",
+                "Nome Antiquari": "Albrighi Contini-Bonacossi Romano Steffanoni Volpi Foresti Colnaghi"
             }
         },
         "Eventi": {},
@@ -13628,7 +14241,8 @@
             }
         },
         "Relazioni": {
-            "CO_I": true
+            "CO_I": true,
+            "ME": true
         }
     },
     "ZA": {
@@ -13653,8 +14267,8 @@
                 "Nome": "Federico",
                 "Cognome / Denominazione": "Zeri",
                 "Tipologia": "storico dell'arte",
-                "ID Antiquari": "ZA SA_V",
-                "Nome Antiquari": "Zabert Sabatello"
+                "ID Antiquari": "ZA SA_V SA_VII LO_I CA_V CO_V GI_I DA FO_I RI PA_III",
+                "Nome Antiquari": "Zabert Sabatello Salamon Longari Caretto Cortinovis Gianetti D'Atri Forti Riccardi Studio d'Arte Palma"
             }
         },
         "Eventi": {},
