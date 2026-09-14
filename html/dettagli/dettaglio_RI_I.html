@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dettaglio Antiquari</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="../../css/styles-dettaglioAntiquario.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/hierarchy.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+    <script type="text/javascript" src="../../script/dettaglioAntiquari.js"></script>
+    <script type="text/javascript" src="../../script/mappaDettaglio.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <a href="../../index.html">
+          <img id="logo.png" src="../../img/homepage/logo.png" alt="Fondazione Federico Zeri" />
+        </a>
+        <nav>
+          <ul>
+            <li>
+              <a href="../progetto.html">Progetto</a>
+              <a href="../antiquari.html">Antiquari</a>
+              <a href="../luoghi.html">Luoghi</a>
+              <a href="../eventi.html">Eventi</a>
+              <a href="../persone.html">Persone</a>
+              <a href="../bibliografia.html">Bibliografia</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="image-gallery">
+        <div class="gallery-wrapper">
+          <h2 class="gallery-title">Ricchetti</h2>
+          <div class="slider-container">
+            <div class="slider">
+              <div class="slide">
+                <img src="../../img/slider-antiquari/RI_I_img1.jpg" alt="Palazzo Marcello, Venezia, fine del XIX secolo (Collezione privata)" />
+                <div class="caption">Palazzo Marcello, Venezia, fine del XIX secolo (Collezione privata)</div>
+              </div>
+              <div class="slide">
+                <img src="../../img/slider-antiquari/RI_I_img2.jpg" alt="Palazzo Garzoni, Venezia, XXI secolo" />
+                <div class="caption">Palazzo Garzoni, Venezia, XXI secolo</div>
+              </div>
+            </div>
+            <button &#10094; class="prev" onclick="prevSlide()"><</button>
+            <button &#10095; class="next" onclick="nextSlide()">></button>
+          </div>
+        </div>
+      </section>
+      <div class="dual-content-wrapper">
+        <div class="tab-container">
+          <ul class="tab-list">
+            <li class="tab active" data_content="Bio">Dati biografici</li>
+            <li class="tab" data_content="Persone">Albero familiare</li>
+            <li class="tab" data_content="Localizzazioni">Luoghi</li>
+            <li class="tab" data_content="Opere trattate">Opere trattate</li>
+          </ul>
+        </div>
+        <div class="content-card">
+          <div id="Bio" class="content active-content">
+            <p>Consiglio Ricchetti (o Richetti) risulta attestato già nel 1847 in corte Erizzo, presso Palazzo</p>
+            <p>Marcello, edificio affacciato sul Canal Grande. A partire da almeno il 1877, la ditta occupava, con</p>
+            <p>opere e oggetti antichi e moderni, anche Palazzo Barbarigo, immobile situato a breve distanza da</p>
+            <p>Palazzo Marcello.</p>
+            <p>All’interno di tali edifici erano esposti numerosi dipinti delle antiche scuole pittoriche italiane,</p>
+            <p>accanto a tele contemporanee, tra cui opere dello Schiavoni, del Busato, del Comirato, del Chilone</p>
+            <p>e di molti altri autori. Erano inoltre presenti preziose sculture antiche, molte delle quali già</p>
+            <p>appartenute alle collezioni Grimani, Nani, Corniani e Giustinian-Recanati; si annoveravano altresì</p>
+            <p>elementi architettonici, bronzi, gemme incise, armi, tessuti, tappeti, vasi, vetri, ceramiche,</p>
+            <p>argenteria, mobilia, cimeli e altri manufatti. Nella Galleria si commercializzavano anche mobili e</p>
+            <p>oggetti lignei “in stile” – in particolare ispirati ai manufatti del XVII e XVIII secolo – realizzati a</p>
+            <p>Venezia e altrove, alcuni dei quali appositamente commissionati ad artigiani locali. Ricchetti vi</p>
+            <p>esponeva inoltre la propria celebre e preziosa raccolta, costituita da oltre quattrocento cammei</p>
+            <p>antichi e moderni, nonché numerosi gioielli.</p>
+            <p>Nel 1880, l’attività risultava rappresentata dai figli David G. e Mazzo, i quali, nel gennaio 1882, la</p>
+            <p>trasferirono presso Palazzo Garzoni a San Samuele, edificio con facciata sul Canal Grande.</p>
+            <p>Numerosi, lungo tutta l’attività dell’impresa, furono i rapporti con i più importanti mercanti</p>
+            <p>cittadini, tra cui <a href="dettaglio_BA_V.html" target="_blank">Dino Barozzi</a>  e <a</p>
+            <p>href="dettaglio_GU.html" target="_blank">Michelangelo Guggenheim</a> .</p>
+            <p>Dopo aver donato alcune opere a rilevanti collezioni pubbliche lagunari, tra cui le Gallerie</p>
+            <p>dell’Accademia, il Museo Correr, il Palazzo Ducale e i musei di Murano e Torcello, nel 1899 David</p>
+            <p>G. Ricchetti alienò i beni della Galleria e Palazzo Garzoni, edificio in cui essi erano custoditi, alla</p>
+            <p>“The Venice Art Company”, società anglo-veneziana attiva nel commercio di opere e oggetti d’arte</p>
+            <p>antichi e moderni.</p>
+          </div>
+          <div id="Persone" class="content">
+            <h3>Relazioni familiari:</h3>
+            <div id="albero-genealogico"></div>
+          </div>
+          <div id="Localizzazioni" class="content">
+            <section id="map">
+              <div id="chartdiv"></div>
+            </section>
+          </div>
+          <div id="Opere trattate" class="content">
+            <p>
+              Vedi le opere transitate presso l'antiquario presenti nel 
+              <a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=ricchetti&page=1&filtroprovenienza_OA=5829%7C7673" class="linkBio" target="_blank">
+                catalogo della Fondazione Zeri
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <p>Licenza dati e immagini:</p>
+          <img id="license.png" src="../../img/homepage/license.png" alt="License" />
+        </div>
+        <div class="footer-right">
+          <p>
+            <a href="../../html/crediti.html">
+              Crediti
+            </a>
+            |
+            <a href="https://github.com/FondazioneFedericoZeri/Mercato_dell_arte" target="_blank">
+              Documentazione
+            </a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

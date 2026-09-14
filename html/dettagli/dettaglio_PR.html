@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dettaglio Antiquari</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="../../css/styles-dettaglioAntiquario.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/hierarchy.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+    <script type="text/javascript" src="../../script/dettaglioAntiquari.js"></script>
+    <script type="text/javascript" src="../../script/mappaDettaglio.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <a href="../../index.html">
+          <img id="logo.png" src="../../img/homepage/logo.png" alt="Fondazione Federico Zeri" />
+        </a>
+        <nav>
+          <ul>
+            <li>
+              <a href="../progetto.html">Progetto</a>
+              <a href="../antiquari.html">Antiquari</a>
+              <a href="../luoghi.html">Luoghi</a>
+              <a href="../eventi.html">Eventi</a>
+              <a href="../persone.html">Persone</a>
+              <a href="../bibliografia.html">Bibliografia</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="image-gallery">
+        <div class="gallery-wrapper">
+          <h2 class="gallery-title">Pratesi</h2>
+          <div class="slider-container">
+            <div class="slider">
+              <div class="slide">
+                <img src="../../img/slider-antiquari/PR_img1.jpg" alt="Ritratto di Giovanni Pratesi" />
+                <div class="caption">Ritratto di Giovanni Pratesi</div>
+              </div>
+              <div class="slide">
+                <img src="../../img/slider-antiquari/PR_img2.jpg" alt="Giovanni Pratesi nella sua galleria di via Maggio a Firenze" />
+                <div class="caption">Giovanni Pratesi nella sua galleria di via Maggio a Firenze</div>
+              </div>
+            </div>
+            <button &#10094; class="prev" onclick="prevSlide()"><</button>
+            <button &#10095; class="next" onclick="nextSlide()">></button>
+          </div>
+        </div>
+      </section>
+      <div class="dual-content-wrapper">
+        <div class="tab-container">
+          <ul class="tab-list">
+            <li class="tab active" data_content="Bio">Dati biografici</li>
+            <li class="tab" data_content="Persone">Albero familiare</li>
+            <li class="tab" data_content="Localizzazioni">Luoghi</li>
+            <li class="tab" data_content="Relazioni">Relazioni</li>
+            <li class="tab" data_content="Opere trattate">Opere trattate</li>
+          </ul>
+        </div>
+        <div class="content-card">
+          <div id="Bio" class="content active-content">
+            <p>Giovanni Pratesi è nato a Figline Valdarno (FI) il 29 novembre 1939. La sua provenienza figlinese e</p>
+            <p>la vicinanza a importanti città come Firenze e Siena hanno segnato felicemente tutta la sua</p>
+            <p>carriera da antiquario.</p>
+            <p>Quando iniziò la sua attività, Pratesi non aveva un’istruzione artistica, se non per i due anni di liceo</p>
+            <p>artistico frequentati in Francia qualche anno prima. Dopo l’esperienza maturata da giovanissimo</p>
+            <p>lavorando per una Filatelia fiorentina, la sua carriera da antiquario iniziò nel 1960 con la fortunata</p>
+            <p>vendita degli arredi d’epoca di una villa cinquecentesca nei pressi di Loppiano. Pur privo di</p>
+            <p>conoscenze specifiche, ne intuì il valore e li acquistò dai nuovi proprietari, i Focolarini, per poi</p>
+            <p>rivenderli a un prezzo molto più alto.</p>
+            <p>Nel 1964 Pratesi comprò da <a href="dettaglio_ BR_I.html" target="_blank"> Ivan Bruschi </a>  un</p>
+            <p>piccolo busto in terracotta raffigurante Giovan Gastone dei Medici, che tutt’ora conserva nella sua</p>
+            <p>casa a Figline come caro ricordo di un inizio di una carriera piena di successi.</p>
+            <p>Non molto tempo dopo aprì la sua galleria in Palazzo Ridolfi in Via Maggio 13 a Firenze, luogo che</p>
+            <p>nei decenni ha visto il passaggio dei più importanti antiquari, storici dell’arte e clienti del tempo.</p>
+            <p>Lui stesso si ispirava all’operato di colleghi come <a href="dettaglio_ LA_I.html" target="_blank"></p>
+            <p>Leonardo Lapiccirella </a> o Marcello Guidi a Firenze; a Torino visitava <a</p>
+            <p>href="dettaglio_AC.html" target="_blank"> Pietro Accorsi </a>, a Venezia <a href="dettaglio_</p>
+            <p>VI_I.html" target="_blank"> Ettore Viancini </a>, a Roma <a href="dettaglio_DI.html"</p>
+            <p>target="_blank"> Franco Di Castro </a> e <a href="dettaglio_AP.html" target="_blank"> Fabrizio</p>
+            <p>Apolloni </a>.</p>
+            <p>I suoi interessi, pur spaziando tra opere di qualunque epoca e tipo, si sono rivolti in particolare alla</p>
+            <p>pittura e scultura barocca toscana. Agli esordi della sua carriera, era facile trovare opere barocche</p>
+            <p>perché il mercato antiquario non era ancora particolarmente interessato al Seicento. Pratesi,</p>
+            <p>quindi,  le acquistava (da antiche famiglie aristocratiche, da altri mercanti o in occasione di</p>
+            <p>importanti mostre d’antiquariato) in base al suo gusto personale e alla sua intuizione, delegando</p>
+            <p>poi lo studio di ricerca storico-artistica e la redazione di schede critiche per i propri cataloghi a</p>
+            <p>storici dell’arte come Giuseppe Cantelli, Mina Gregori, Alvar González-Palacios e Andrea Bacchi.</p>
+            <p>Dal 1979 al 2019, Pratesi ha partecipato a quasi tutte le edizioni della Biennale Internazionale</p>
+            <p>dell’Antiquariato di Firenze (BIAF) dove era solito presentare i suoi acquisti più interessanti. La</p>
+            <p>raccolta di pitture senesi del Seicento, da lui esposta alla Biennale del 1989 e, qualche mese dopo,</p>
+            <p>ai Magazzini del Sale di Siena, è stata acquistata nel 1995 dalla Pinacoteca cittadina, per volontà di</p>
+            <p>Antonio Paolucci. Tra gli anni Novanta e i primi anni Duemila ha inoltre preso parte al TEFAF di</p>
+            <p>Maastricht, alla Biennale di Palazzo Venezia a Roma (nata, nel 1998, da un’iniziativa</p>
+            <p>dell’Associazione Antiquari d’Italia maturata durante la sua presidenza), alle mostre antiquarie</p>
+            <p>Gotha di Parma e AMART di Milano.</p>
+            <p>Ha avuto anche ruoli istituzionali importanti come direttore della Gazzetta Antiquaria dal 1987,</p>
+            <p>presidente dell’Associazione Antiquari d’Italia dal 1996 al 2013 e, dal 2001 al 2013, segretario</p>
+            <p>generale del BIAF per il quale ha ideato i premi per la migliore scultura e il miglior dipinto e il</p>
+            <p>Lorenzo d’Oro. Grazie al legame professionale con Paolucci, ha infine collaborato alla definizione</p>
+            <p>legislativa volta ad abolire i vincoli alla libera circolazione delle opere in Italia.</p>
+            <p>Il legame mai sciolto con Figline Valdarno, dove tutt’ora risiede, ha portato Pratesi nel 1987 ad</p>
+            <p>acquistare la chiesa dell’ex Ospedale Serristori per preservarla e consegnarla alla cittadinanza, con</p>
+            <p>l’intenzione di porvi una Fondazione. Dopo i restauri che permisero, tra l’altro, lo svelamento</p>
+            <p>dell’affresco di una Crocifissione trecentesca, la <a href="https://cultura.gov.it/luogo/fondazione-</p>
+            <p>giovanni-pratesi">Fondazione Pratesi</a> è stata inaugurata nel 2008 e oggi ospita una raccolta di</p>
+            <p>opere d’arte selezionata dall’antiquario ed esposta al pubblico. Nel 2019 ha anche ospitato una</p>
+            <p>sua mostra personale di fotografie di Nature morte, realizzate da amatore negli ultimi dieci anni.</p>
+            <p>Dopo la chiusura della sua galleria fiorentina nel 2023, Pratesi ha trasferito le sue opere in un</p>
+            <p>magazzino accanto alla Fondazione, dove conserva anche il suo archivio documentario e</p>
+            <p>fotografico che, fin dal 1960, è servito da supporto alla sua attività ed è stato a disposizione degli</p>
+            <p>storici dell’arte che hanno collaborato con lui e di altri studiosi.</p>
+            <p>L’archivio fotografico è in fase di riordino e studio. Una piccola porzione di questo, in particolare le</p>
+            <p>oltre 800 foto appartenute all’archeologo Ranuccio Bianchi Bandinelli acquistate da Pratesi nel</p>
+            <p>1987, sono state di recente donate alla Fondazione Zeri e descritte sul modulo Esplora i fondi del</p>
+            <p>catalogo online.</p>
+          </div>
+          <div id="Persone" class="content">
+            <h3>Relazioni familiari:</h3>
+            <div id="albero-genealogico"></div>
+          </div>
+          <div id="Localizzazioni" class="content">
+            <section id="map">
+              <div id="chartdiv"></div>
+            </section>
+          </div>
+          <div id="Relazioni" class="content">
+            <h3>Altri antiquari:</h3>
+            <ul>
+            </ul>
+            <h3>Clienti:</h3>
+            <ul>
+            </ul>
+            <h3>Collaboratori:</h3>
+            <ul>
+              <li>Alvar Gonzáles Palacios (storico dell'arte)</li>
+              <li>Andrea Bacchi (storico dell'arte)</li>
+              <li>Giuseppe Cantelli (storico dell'arte)</li>
+              <li>Maria Cecilia Fabbri (storica dell'arte)</li>
+              <li>Massino Listri (fotografo)</li>
+              <li>Mina Gregori (storica dell'arte)</li>
+              <li>Sandro Bellesi (storica dell'arte)</li>
+            </ul>
+          </div>
+          <div id="Opere trattate" class="content">
+            <p>
+              Vedi le opere transitate presso l'antiquario presenti nel 
+              <a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Pratesi" class="linkBio" target="_blank">
+                catalogo della Fondazione Zeri
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <p>Licenza dati e immagini:</p>
+          <img id="license.png" src="../../img/homepage/license.png" alt="License" />
+        </div>
+        <div class="footer-right">
+          <p>
+            <a href="../../html/crediti.html">
+              Crediti
+            </a>
+            |
+            <a href="https://github.com/FondazioneFedericoZeri/Mercato_dell_arte" target="_blank">
+              Documentazione
+            </a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -814,7 +814,7 @@
         }
     },
     "PI": {
-        "Nome": "Pini",
+        "Nome": "",
         "Relazioni": [
             {
                 "Persona_1": "PI_1",
@@ -833,21 +833,9 @@
             }
         ],
         "Persone": {
-            "PI_1": {
-                "Nome": "Cesare Pini",
-                "Nascita": "",
-                "Morte": ""
-            },
-            "PI_2": {
-                "Nome": "Umberto Pini",
-                "Nascita": "",
-                "Morte": ""
-            },
-            "PI_3": {
-                "Nome": "Giovanni Pini",
-                "Nascita": "",
-                "Morte": ""
-            }
+            "PI_1": {},
+            "PI_2": {},
+            "PI_3": {}
         }
     },
     "PO_I": {
@@ -1464,6 +1452,341 @@
                 "Nascita": "1857",
                 "Morte": "1923"
             }
+        }
+    },
+    "BA_V": {
+        "Nome": "Barozzi",
+        "Relazioni": [
+            {
+                "Persona_1": " BA_V_1",
+                "Persona_2": " BA_V_2",
+                "Tipo_di_relazione": " padre"
+            }
+        ],
+        "Persone": {
+            " BA_V_1": {},
+            " BA_V_2": {}
+        }
+    },
+    "BA_V ": {
+        "Nome": "",
+        "Relazioni": [
+            {
+                "Persona_1": " BA_V_2",
+                "Persona_2": " BA_V_3",
+                "Tipo_di_relazione": " padre"
+            }
+        ],
+        "Persone": {
+            " BA_V_2": {},
+            " BA_V_3": {}
+        }
+    },
+    "CA_IV": {
+        "Nome": "Carrer",
+        "Relazioni": [
+            {
+                "Persona_1": " CA_IV_2",
+                "Persona_2": " CA_IV_1",
+                "Tipo_di_relazione": " padre"
+            },
+            {
+                "Persona_1": " CA_IV_1",
+                "Persona_2": " CA_IV_3",
+                "Tipo_di_relazione": " padre"
+            }
+        ],
+        "Persone": {
+            " CA_IV_2": {},
+            " CA_IV_1": {},
+            " CA_IV_3": {}
+        }
+    },
+    "GU": {
+        "Nome": "Guggenheim",
+        "Relazioni": [
+            {
+                "Persona_1": " GU_1",
+                "Persona_2": " GU_2",
+                "Tipo_di_relazione": " padre"
+            },
+            {
+                "Persona_1": " GU_1",
+                "Persona_2": " GU_3",
+                "Tipo_di_relazione": " padre"
+            }
+        ],
+        "Persone": {
+            " GU_1": {},
+            " GU_2": {},
+            " GU_3": {}
+        }
+    },
+    "LO": {
+        "Nome": "Loewi",
+        "Relazioni": [
+            {
+                "Persona_1": " LO_1",
+                "Persona_2": " LO_2",
+                "Tipo_di_relazione": " padre"
+            }
+        ],
+        "Persone": {
+            " LO_1": {},
+            " LO_2": {}
+        }
+    },
+    "SA_VII": {
+        "Nome": "Salamon",
+        "Relazioni": [
+            {
+                "Persona_1": " SA_VII_1",
+                "Persona_2": "  SA_VII_4",
+                "Tipo_di_relazione": " padre"
+            },
+            {
+                "Persona_1": " SA_VII_1",
+                "Persona_2": " SA_VII_5",
+                "Tipo_di_relazione": " padre"
+            },
+            {
+                "Persona_1": " SA_VII_1",
+                "Persona_2": " SA_VII_6",
+                "Tipo_di_relazione": " padre"
+            },
+            {
+                "Persona_1": " SA_VII_5",
+                "Persona_2": " SA_VII_8",
+                "Tipo_di_relazione": " padre"
+            },
+            {
+                "Persona_1": " SA_VII_6",
+                "Persona_2": " SA_VII_1 SA_VII_7",
+                "Tipo_di_relazione": " padre"
+            },
+            {
+                "Persona_1": " SA_VII_2 ",
+                "Persona_2": " SA_VII_3",
+                "Tipo_di_relazione": " marito"
+            }
+        ],
+        "Persone": {
+            " SA_VII_1": {},
+            "  SA_VII_4": {},
+            " SA_VII_5": {},
+            " SA_VII_6": {},
+            " SA_VII_8": {},
+            " SA_VII_1 SA_VII_7": {},
+            " SA_VII_2 ": {},
+            " SA_VII_3": {}
+        }
+    },
+    "CO_IV": {
+        "Nome": "Colnaghi",
+        "Relazioni": [
+            {
+                "Persona_1": " CO_IV_3",
+                "Persona_2": " CO_IV_4",
+                "Tipo_di_relazione": " padre"
+            },
+            {
+                "Persona_1": " CO_IV_3",
+                "Persona_2": " CO_IV_5",
+                "Tipo_di_relazione": " padre"
+            },
+            {
+                "Persona_1": " CO_IV_4",
+                "Persona_2": " CO_IV_6",
+                "Tipo_di_relazione": " zio"
+            },
+            {
+                "Persona_1": " CO_IV_6",
+                "Persona_2": " CO_IV_8",
+                "Tipo_di_relazione": " cugino"
+            },
+            {
+                "Persona_1": " CO_IV_5",
+                "Persona_2": " CO_IV_9",
+                "Tipo_di_relazione": " padre"
+            },
+            {
+                "Persona_1": " CO_IV_7",
+                "Persona_2": " CO_IV_8",
+                "Tipo_di_relazione": " padre"
+            }
+        ],
+        "Persone": {
+            " CO_IV_3": {},
+            " CO_IV_4": {},
+            " CO_IV_5": {},
+            " CO_IV_6": {},
+            " CO_IV_8": {},
+            " CO_IV_9": {},
+            " CO_IV_7": {}
+        }
+    },
+    "LO_I": {
+        "Nome": "Longari",
+        "Relazioni": [
+            {
+                "Persona_1": " LO_I_1",
+                "Persona_2": " LO_I_2",
+                "Tipo_di_relazione": " madre"
+            },
+            {
+                "Persona_1": " LO_I_1",
+                "Persona_2": " LO_I_3",
+                "Tipo_di_relazione": " madre"
+            },
+            {
+                "Persona_1": " LO_I_2",
+                "Persona_2": " LO_I_4",
+                "Tipo_di_relazione": " padre"
+            }
+        ],
+        "Persone": {
+            " LO_I_1": {},
+            " LO_I_2": {},
+            " LO_I_3": {},
+            " LO_I_4": {}
+        }
+    },
+    "SU": {
+        "Nome": "Subert",
+        "Relazioni": [
+            {
+                "Persona_1": " SU_1",
+                "Persona_2": " SU_2",
+                "Tipo_di_relazione": " padre"
+            },
+            {
+                "Persona_1": " SU_2",
+                "Persona_2": " SU_3",
+                "Tipo_di_relazione": " padre"
+            },
+            {
+                "Persona_1": " SU_3",
+                "Persona_2": " SU_4",
+                "Tipo_di_relazione": " padre"
+            },
+            {
+                "Persona_1": " SU_4",
+                "Persona_2": " SU_5",
+                "Tipo_di_relazione": " padre"
+            }
+        ],
+        "Persone": {
+            " SU_1": {},
+            " SU_2": {},
+            " SU_3": {},
+            " SU_4": {},
+            " SU_5": {}
+        }
+    },
+    "CA_V": {
+        "Nome": "Caretto",
+        "Relazioni": [
+            {
+                "Persona_1": " CA_V_1",
+                "Persona_2": " CA_V_2",
+                "Tipo_di_relazione": " padre"
+            },
+            {
+                "Persona_1": " CA_V_2",
+                "Persona_2": " CA_V_3",
+                "Tipo_di_relazione": " padre"
+            }
+        ],
+        "Persone": {
+            " CA_V_1": {},
+            " CA_V_2": {},
+            " CA_V_3": {}
+        }
+    },
+    "DI_I": {
+        "Nome": "Di Castro Eugenio",
+        "Relazioni": [
+            {
+                "Persona_1": " DI_I_1",
+                "Persona_2": " DI_I_2",
+                "Tipo_di_relazione": " padre"
+            },
+            {
+                "Persona_1": " DI_I_2",
+                "Persona_2": " DI_I_3",
+                "Tipo_di_relazione": " padre"
+            },
+            {
+                "Persona_1": " DI_I_1",
+                "Persona_2": " DI_I_5",
+                "Tipo_di_relazione": " padre"
+            }
+        ],
+        "Persone": {
+            " DI_I_1": {},
+            " DI_I_2": {},
+            " DI_I_3": {},
+            " DI_I_5": {}
+        }
+    },
+    "DA": {
+        "Nome": "D'Atri",
+        "Relazioni": [
+            {
+                "Persona_1": " DA_1",
+                "Persona_2": " DA_2",
+                "Tipo_di_relazione": " padre"
+            }
+        ],
+        "Persone": {
+            " DA_1": {},
+            " DA_2": {}
+        }
+    },
+    "RA_NEW": {
+        "Nome": "Rambaldi",
+        "Relazioni": [
+            {
+                "Persona_1": " RA_NEW_1",
+                "Persona_2": " RA_NEW_2",
+                "Tipo_di_relazione": " padre"
+            },
+            {
+                "Persona_1": " RA_NEW_1",
+                "Persona_2": " RA_NEW_3",
+                "Tipo_di_relazione": " padre"
+            },
+            {
+                "Persona_1": " RA_NEW_1",
+                "Persona_2": " RA_NEW_4",
+                "Tipo_di_relazione": " marito"
+            }
+        ],
+        "Persone": {
+            " RA_NEW_1": {},
+            " RA_NEW_2": {},
+            " RA_NEW_3": {},
+            " RA_NEW_4": {}
+        }
+    },
+    "RI_I": {
+        "Nome": "Ricchetti",
+        "Relazioni": [
+            {
+                "Persona_1": " RI_I_1",
+                "Persona_2": " RI_I_2",
+                "Tipo_di_relazione": " padre"
+            },
+            {
+                "Persona_1": " RI_I_1",
+                "Persona_2": " RI_I_3",
+                "Tipo_di_relazione": " padre"
+            }
+        ],
+        "Persone": {
+            " RI_I_1": {},
+            " RI_I_2": {},
+            " RI_I_3": {}
         }
     }
 }

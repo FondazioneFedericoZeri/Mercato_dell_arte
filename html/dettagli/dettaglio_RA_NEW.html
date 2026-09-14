@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dettaglio Antiquari</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="../../css/styles-dettaglioAntiquario.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/hierarchy.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+    <script type="text/javascript" src="../../script/dettaglioAntiquari.js"></script>
+    <script type="text/javascript" src="../../script/mappaDettaglio.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <a href="../../index.html">
+          <img id="logo.png" src="../../img/homepage/logo.png" alt="Fondazione Federico Zeri" />
+        </a>
+        <nav>
+          <ul>
+            <li>
+              <a href="../progetto.html">Progetto</a>
+              <a href="../antiquari.html">Antiquari</a>
+              <a href="../luoghi.html">Luoghi</a>
+              <a href="../eventi.html">Eventi</a>
+              <a href="../persone.html">Persone</a>
+              <a href="../bibliografia.html">Bibliografia</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="image-gallery">
+        <div class="gallery-wrapper">
+          <h2 class="gallery-title">Rambaldi</h2>
+          <div class="slider-container">
+            <div class="slider">
+              <div class="slide">
+                <img src="../../img/slider-antiquari/RA_img1.jpg" alt="Arturo Rambaldi. Da &quot;L'Antiquario&quot;, 1913" />
+                <div class="caption">Arturo Rambaldi. Da "L'Antiquario", 1913</div>
+              </div>
+              <div class="slide">
+                <img src="../../img/slider-antiquari/RA_NEW_img1.jpg" alt="{'Rambaldi'}" />
+                <div class="caption">{'Rambaldi'}</div>
+              </div>
+            </div>
+            <button &#10094; class="prev" onclick="prevSlide()"><</button>
+            <button &#10095; class="next" onclick="nextSlide()">></button>
+          </div>
+        </div>
+      </section>
+      <div class="dual-content-wrapper">
+        <div class="tab-container">
+          <ul class="tab-list">
+            <li class="tab active" data_content="Bio">Dati biografici</li>
+            <li class="tab" data_content="Persone">Albero familiare</li>
+            <li class="tab" data_content="Localizzazioni">Luoghi</li>
+            <li class="tab" data_content="Relazioni">Relazioni</li>
+            <li class="tab" data_content="Bibliografia">Bibliografia</li>
+            <li class="tab" data_content="Opere trattate">Opere trattate</li>
+          </ul>
+        </div>
+        <div class="content-card">
+          <div id="Bio" class="content active-content">
+            <p>Arturo Rambaldi (1859-1929) intraprese la carriera di mercante d’arte a Bologna sotto l’egida del</p>
+            <p>collega più anziano <a href="dettaglio_AN.html" target="_blank">Raffaele Angiolini</a>  per poi</p>
+            <p>aprire, nel 1900, la propria galleria antiquaria e casa di vendite, in via Castiglione 1. Demetrio</p>
+            <p>Tolosani, sulle pagine della rivista "L'Antiquario", lo descrive come specializzato negli arredi</p>
+            <p>antichi. Dal 1926 ne avviò infatti anche la produzione in stile, con un laboratorio autonomo di</p>
+            <p>falegnameria sito al piano terra del palazzo che ospitava la sua galleria. Con i manufatti realizzati</p>
+            <p>riforniva, tra gli altri, il genero <a href="dettaglio_I.html" target="_blank"> Eugène Imbert</a></p>
+            <p>attivo a Milano in via Napoleone.</p>
+            <p>Per le necessità della galleria e del laboratorio, Arturo Rambaldi ebbe tra i suoi collaboratori</p>
+            <p>l’esperto di intaglio ligneo Giuseppe Simoni che la Prima Guerra mondiale allontanò dal</p>
+            <p>laboratorio di produzione con grande disagio della ditta, oltre al pittore e restauratore ferrarese</p>
+            <p>Augusto Pagliarini (1872-1960) e al falegname Giuseppe Alberani. Nel 1921, questi ultimi furono</p>
+            <p>inviati a Vienna per mettere in opera e restaurare diversi soffitti che il finanziere, collezionista</p>
+            <p>d’arte e di bronzi, Camillo Castiglioni, aveva da lui acquistato per il proprio palazzo in Prinz Eugen</p>
+            <p>Strasse.</p>
+            <p>Arturo viaggiò molto all’estero per acquistare opere e organizzò alcune vendite all’asta importanti,</p>
+            <p>come quella della collezione bolognese Gozzadini, tenutasi nell'omonimo palazzo nel 1906, e</p>
+            <p>quella della raccolta Podestà-Luciardi negli spazi della galleria nel 1909. A Venezia, nel 1913, si</p>
+            <p>occupò anche di quella dell’antiquario <a href="dettaglio_GU.html" target="_blank"></p>
+            <p>Michelangelo Guggenheim</a>, in collaborazione con l’antiquario Hugo Helbing di Monaco di</p>
+            <p>Baviera.</p>
+            <p>Per motivi di salute, nel 1927, lasciò l’attività ai figli Angelo (1883-) e Aldo (1885-1964) che</p>
+            <p>portarono avanti la ditta con il nome di “Galleria A. Rambaldi” anche dopo la sua morte. Angelo,</p>
+            <p>Aldo e la sorella Alberta viaggiavano in Italia ed Europa per procacciare opere da vendere e</p>
+            <p>sappiamo dalle carte d’archivio della Camera di Commercio cittadina che un collaboratore, tale</p>
+            <p>Daniele Ferné, nel 1930 fu inviato in Cina, India, Giappone, Indocina e Russia allo stesso scopo.</p>
+            <p>Nel 1938, i fratelli cessarono “l’industria del legno” con la chiusura del laboratorio, per dedicarsi</p>
+            <p>esclusivamente all’attività antiquariale.</p>
+            <p>Nel 1966, morto Aldo, Angelo Rambaldi cessò l’impresa di famiglia che fu rilevata dalla vedova di</p>
+            <p>Aldo Rambaldi, Olga Tcherukine, originaria di Kiev (1901-).</p>
+          </div>
+          <div id="Persone" class="content">
+            <h3>Relazioni familiari:</h3>
+            <div id="albero-genealogico"></div>
+          </div>
+          <div id="Localizzazioni" class="content">
+            <section id="map">
+              <div id="chartdiv"></div>
+            </section>
+          </div>
+          <div id="Relazioni" class="content">
+            <h3>Altri antiquari:</h3>
+            <ul>
+              <li>
+                <a href="dettaglio_IM.html">Imbert</a>
+              </li>
+            </ul>
+            <h3>Clienti:</h3>
+            <ul>
+            </ul>
+            <h3>Collaboratori:</h3>
+            <ul>
+              <li>Augusto Pagliarini (restauratore e pittore)</li>
+              <li>Daniele Ferné (collaboratore)</li>
+              <li>Giuseppe Alberani (falegname)</li>
+              <li>Giuseppe Simoni (intagliatore)</li>
+              <li>Hugo Helbing (impresario di casa d'asta)</li>
+            </ul>
+          </div>
+          <div id="Bibliografia" class="content">
+            <h3>Bibliografia essenziale:</h3>
+            <ul>
+              <li><i>Commemorazione di Arturo Rambaldi</i>, In «L'Antiquario», XVI, 3, 1929, p. 177</li>
+              <li>Bellini, L., De Chirico, G. (1947), <i>Nel mondo degli antiquari</i>, Firenze, Arnaud</li>
+              <li>Tolosani, D. (1913), <i>I colleghi d'Italia: Bolognesi</i>, In «L'Antiquario», VI, 2-3, pp. 9-12</li>
+            </ul>
+          </div>
+          <div id="Opere trattate" class="content">
+            <p>
+              Vedi le opere transitate presso l'antiquario presenti nel 
+              <a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=A.+Rambaldi" class="linkBio" target="_blank">
+                catalogo della Fondazione Zeri
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <p>Licenza dati e immagini:</p>
+          <img id="license.png" src="../../img/homepage/license.png" alt="License" />
+        </div>
+        <div class="footer-right">
+          <p>
+            <a href="../../html/crediti.html">
+              Crediti
+            </a>
+            |
+            <a href="https://github.com/FondazioneFedericoZeri/Mercato_dell_arte" target="_blank">
+              Documentazione
+            </a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

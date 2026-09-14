@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dettaglio Antiquari</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="../../css/styles-dettaglioAntiquario.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/hierarchy.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+    <script type="text/javascript" src="../../script/dettaglioAntiquari.js"></script>
+    <script type="text/javascript" src="../../script/mappaDettaglio.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <a href="../../index.html">
+          <img id="logo.png" src="../../img/homepage/logo.png" alt="Fondazione Federico Zeri" />
+        </a>
+        <nav>
+          <ul>
+            <li>
+              <a href="../progetto.html">Progetto</a>
+              <a href="../antiquari.html">Antiquari</a>
+              <a href="../luoghi.html">Luoghi</a>
+              <a href="../eventi.html">Eventi</a>
+              <a href="../persone.html">Persone</a>
+              <a href="../bibliografia.html">Bibliografia</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="image-gallery">
+        <div class="gallery-wrapper">
+          <h2 class="gallery-title">Caretto</h2>
+          <div id="single-image-container">
+            <img src="../../img/slider-antiquari/CA_V_img1.jpg" alt="Giorgio Caretto nella sua galleria negli anni Ottanta" />
+            <div class="caption overlay-caption">Giorgio Caretto nella sua galleria negli anni Ottanta</div>
+          </div>
+        </div>
+      </section>
+      <div class="dual-content-wrapper">
+        <div class="tab-container">
+          <ul class="tab-list">
+            <li class="tab active" data_content="Bio">Dati biografici</li>
+            <li class="tab" data_content="Persone">Albero familiare</li>
+            <li class="tab" data_content="Localizzazioni">Luoghi</li>
+            <li class="tab" data_content="Relazioni">Relazioni</li>
+            <li class="tab" data_content="Opere trattate">Opere trattate</li>
+          </ul>
+        </div>
+        <div class="content-card">
+          <div id="Bio" class="content active-content">
+            <p>La storia della Galleria Caretto affonda le proprie radici nella Torino della Belle Époque, in un</p>
+            <p>contesto cittadino sospeso tra la tradizione ottocentesca e il rapido sviluppo industriale del primo</p>
+            <p>Novecento. La galleria venne fondata nel 1911 da Luigi Caretto (1878-1940), il quale, animato da</p>
+            <p>una profonda passione per l’arte antica, abbandonò l’attività bancaria della Banca Caretto e Nani</p>
+            <p>per dedicarsi interamente al mercato antiquario. Le prime sedi della galleria sono legate al centro</p>
+            <p>storico torinese: inizialmente via dell’Arsenale, già documentata nel 1937, e successivamente, a</p>
+            <p>partire dal 1950, via Maria Vittoria.</p>
+            <p>Luigi Caretto scomparse prematuramente nel 1940 e a prendere le redini dell’attività fu il figlio</p>
+            <p>Giorgio Caretto (1925-2008). Nel 1946, appena ventenne, Giorgio iniziò però a costruire con</p>
+            <p>determinazione un percorso autonomo, scegliendo con decisione di concentrarsi sulla pittura</p>
+            <p>antica. Sono gli anni di crescita, studio, viaggi e scoperte (come quella che si tramanda in famiglia</p>
+            <p>di un’opera di Tintoretto) che portano il giovane a una piena comprensione della pittura antica,</p>
+            <p>tanto da essere considerato un conoscitore raffinato.</p>
+            <p>Nel 1950 aprì la sede di via Maria Vittoria 11, spazio che segnò l’avvio di una nuova fase della</p>
+            <p>galleria, per poi spostarsi nel 1964 al numero 10. Parallelamente, Giorgio consolidò rapporti</p>
+            <p>importanti con figure del mondo antiquario e culturale, tra cui Luigi Scagliotti e Gustavo Adolfo</p>
+            <p>Rol, noto non solo per le sue celebri attività esoteriche ma anche come raffinato antiquario e</p>
+            <p>conoscitore d’arte.</p>
+            <p>La vera svolta della Galleria Caretto fu però la specializzazione nella pittura fiamminga e</p>
+            <p>olandese del Cinquecento e del Seicento, facendo della pittura nord-europea il principale ambito</p>
+            <p>di studio, ricerca e mercato della galleria. Tale scelta nacque anche dal contesto culturale torinese,</p>
+            <p>storicamente sensibile all’arte nordica grazie alle collezioni del Museo Civico e soprattutto della</p>
+            <p>Galleria Sabauda, ricca di opere rinascimentali e primitivi fiamminghi.</p>
+            <p>A partire dagli anni Sessanta, in un periodo di trasformazione del mercato antiquario</p>
+            <p>internazionale, la galleria spostò progressivamente il proprio baricentro verso Londra, nuovo</p>
+            <p>centro europeo del commercio d’arte, sostituendo progressivamente Parigi come riferimento</p>
+            <p>privilegiato. Parallelamente si sviluppò un intenso lavoro di ricerca e divulgazione attraverso</p>
+            <p>mostre tematiche dedicate alla pittura fiammingo-olandese. Le mostre annuali della Galleria</p>
+            <p>Caretto divennero così un appuntamento stabile e riconosciuto, dedicato a temi specifici quali il</p>
+            <p>paesaggio, le scene di genere e altri soggetti caratteristici della pittura fiamminga e olandese.</p>
+            <p>Negli anni Ottanta e Novanta Giorgio fu progressivamente affiancato dai figli Patrizia e Luigi</p>
+            <p>Caretto (1957-). Patrizia si orientò verso la pittura del XVIII e XIX secolo, mentre Luigi a partire</p>
+            <p>dal 1981 raccolse più direttamente l’eredità paterna nella gestione della galleria e nella</p>
+            <p>specializzazione nordica. Sotto la sua guida l’attività rafforzò ulteriormente il proprio profilo</p>
+            <p>scientifico e internazionale, sviluppando importanti rapporti con il mondo accademico e con</p>
+            <p>studiosi di primo piano come Federico Zeri e Bert Meyer.</p>
+            <p>Da tali collaborazioni nacquero progetti espositivi di rilievo, tra cui mostre come Ut Pictura Ita</p>
+            <p>Visio (1999) e Cielo Terra e Acque (2006), dedicate a temi specifici della pittura fiammingo-</p>
+            <p>olandese. Accanto all’attività espositiva e scientifica, Luigi Caretto ha anche le relazioni</p>
+            <p>commerciali internazionali della galleria, instaurando una solida collaborazione con la Galleria</p>
+            <p>Soraya Cartategui di Madrid e aprendo così un importante collegamento con il mercato</p>
+            <p>spagnolo.</p>
+          </div>
+          <div id="Persone" class="content">
+            <h3>Relazioni familiari:</h3>
+            <div id="albero-genealogico"></div>
+          </div>
+          <div id="Localizzazioni" class="content">
+            <section id="map">
+              <div id="chartdiv"></div>
+            </section>
+          </div>
+          <div id="Relazioni" class="content">
+            <h3>Altri antiquari:</h3>
+            <ul>
+            </ul>
+            <h3>Clienti:</h3>
+            <ul>
+            </ul>
+            <h3>Collaboratori:</h3>
+            <ul>
+              <li>Bert Meyer (storico dell'arte)</li>
+              <li>Federico Zeri (storico dell'arte)</li>
+              <li>Gustavo Adolfo Rol (antiquario)</li>
+              <li>Luigi Scagliotti (antiquario)</li>
+            </ul>
+          </div>
+          <div id="Opere trattate" class="content">
+            <p>
+              Vedi le opere transitate presso l'antiquario presenti nel 
+              <a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Caretto" class="linkBio" target="_blank">
+                catalogo della Fondazione Zeri
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <p>Licenza dati e immagini:</p>
+          <img id="license.png" src="../../img/homepage/license.png" alt="License" />
+        </div>
+        <div class="footer-right">
+          <p>
+            <a href="../../html/crediti.html">
+              Crediti
+            </a>
+            |
+            <a href="https://github.com/FondazioneFedericoZeri/Mercato_dell_arte" target="_blank">
+              Documentazione
+            </a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

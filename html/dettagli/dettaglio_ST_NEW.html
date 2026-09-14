@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dettaglio Antiquari</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="../../css/styles-dettaglioAntiquario.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/hierarchy.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+    <script type="text/javascript" src="../../script/dettaglioAntiquari.js"></script>
+    <script type="text/javascript" src="../../script/mappaDettaglio.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <a href="../../index.html">
+          <img id="logo.png" src="../../img/homepage/logo.png" alt="Fondazione Federico Zeri" />
+        </a>
+        <nav>
+          <ul>
+            <li>
+              <a href="../progetto.html">Progetto</a>
+              <a href="../antiquari.html">Antiquari</a>
+              <a href="../luoghi.html">Luoghi</a>
+              <a href="../eventi.html">Eventi</a>
+              <a href="../persone.html">Persone</a>
+              <a href="../bibliografia.html">Bibliografia</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="image-gallery">
+        <div class="gallery-wrapper">
+          <h2 class="gallery-title">Steffanoni</h2>
+          <div id="single-image-container">
+            <img src="../../img/slider-antiquari/ST_NEW_img1.jpg" alt="Carta intestata della Ditta Giuseppe Steffanoni e figli (Musei Statali di Berlino, Archivio centrale)" />
+            <div class="caption overlay-caption">Carta intestata della Ditta Giuseppe Steffanoni e figli (Musei Statali di Berlino, Archivio centrale)</div>
+          </div>
+        </div>
+      </section>
+      <div class="dual-content-wrapper">
+        <div class="tab-container">
+          <ul class="tab-list">
+            <li class="tab active" data_content="Bio">Dati biografici</li>
+            <li class="tab" data_content="Persone">Albero familiare</li>
+            <li class="tab" data_content="Localizzazioni">Luoghi</li>
+            <li class="tab" data_content="Relazioni">Relazioni</li>
+            <li class="tab" data_content="Bibliografia">Bibliografia</li>
+            <li class="tab" data_content="Opere trattate">Opere trattate</li>
+          </ul>
+        </div>
+        <div class="content-card">
+          <div id="Bio" class="content active-content">
+            <p>La bottega di restauro Steffanoni viene fondata poco prima del 1880 a Bergamo da Giuseppe,</p>
+            <p>al quale negli anni seguenti si affiancano i due figli Franco e Attilio, nati rispettivamente nel</p>
+            <p>1870 e 1881, che insieme portano avanti l’attività paterna sotto l’insegna “Fratelli Steffanoni-</p>
+            <p>Belle Arti-Bergamo” e quindi “Giuseppe Steffanoni e figli, trasponitori di pitture. Ristauratori</p>
+            <p>meccanici di dipinti sulla tela, tavole, lastre metalliche, a fresco, olio, tempera, ecc., ecc.</p>
+            <p>(premiati con medaglia d’oro)”.</p>
+            <p>Giuseppe risulta già attivo nel 1878, quando, insieme al restauratore Antonio Zanchi, di cui era</p>
+            <p>stato allievo, viene incaricato dall’Accademia di Belle Arti di Brera di ripulire dallo scialbo,</p>
+            <p>staccare e trasporre su tela alcuni affreschi del Bergognone che versavano in condizioni</p>
+            <p>critiche nel transetto nella chiesa di San Satiro a Milano, raffiguranti Santa Caterina</p>
+            <p>d’Alessandria, S. Maria Maddalena e Santa Marta. I due restauratori, a partire dal 1883,</p>
+            <p>collaborano anche per i lavori di recupero degli affreschi quattrocenteschi dei fratelli Zavattari</p>
+            <p>nella cappella di Teodolinda del Duomo di Monza che, dopo la morte di Zanchi, saranno portati</p>
+            <p>a termine da Giuseppe nel 1889. Dal 1884 al 1901, Giuseppe collabora spesso con i fratelli</p>
+            <p>Mora, esperti intagliatori, ebanisti e stuccatori, bergamaschi come lui in attività di foderatura,</p>
+            <p>stuccatura e pulitura su dipinti.</p>
+            <p>L’attività della famiglia lombarda si concentrò tuttavia in Veneto e in particolare a Venezia,</p>
+            <p>centro fondamentale del mercato dell’arte, dove venivano chiamati restauratori specializzati</p>
+            <p>nel distacco di interi cicli di affreschi dalle sale dei palazzi cittadini o delle ville di campagna</p>
+            <p>dell’entroterra lagunare, un’operazione che necessitava di grande perizia tecnica e</p>
+            <p>tempestività. La Ditta Steffanoni era la prediletta dai principali antiquari veneziani attivi tra la</p>
+            <p>fine dell’Ottocento e i primi decenni del Novecento.</p>
+            <p>Il conte antiquario <a href="dettaglio_BA_V.html" target="_blank">Dino Barozzi</a> nel 1893</p>
+            <p>affidò loro lo stacco e il trasporto su tela degli affreschi di Giambattista Tiepolo – pari a 100</p>
+            <p>mq di superficie - eseguiti a villa Contarini a Mira, che furono acquistati dai coniugi</p>
+            <p>Jacquemart-Andrè per il proprio palazzo parigino. Gli affreschi, avvolti su rulli lunghi 25 metri,</p>
+            <p>furono trasferiti a Parigi per ferrovia, dove arrivarono nell'autunno dello stesso anno.</p>
+            <p><a href="dettaglio_CA_IV.html" target="_blank">Antonio Carrer</a>, nel 1897, collaborò con</p>
+            <p>gli Steffanoni per un’analoga delicata operazione per il distacco e il trasporto su tela di</p>
+            <p>ventidue affreschi monocromi su fondo dorato dipinti nel 1754 da Giambattista e Domenico</p>
+            <p>Tiepolo per La stanza dei satiri di palazzo Volpato Panigai a Nervesa della Battaglia, che furono</p>
+            <p>acquistati da Wilhelm Bode per il Kaiser-Friedrich Museum di Berlino. Infine, <a</p>
+            <p>href="dettaglio_SA_VI.html" target="_blank">Antonio Salvadori </a>, nel 1906, si rivolse alla</p>
+            <p>ditta di Giuseppe e dei figli per lo stacco e il trasporto dei dipinti eseguiti da Giambattista</p>
+            <p>Tiepolo per la villa di famiglia a Zianigo, oggi esposti nelle sale di Cà Rezzonico sul Canal</p>
+            <p>Grande.</p>
+            <p>Tra il 1908 e il 1928 Franco è impegnato in importanti interventi di restauro sui dipinti della</p>
+            <p>Pinacoteca Civica di Vicenza e nella basilica di Santa Maria Maggiore a Bergamo. Oltre ad</p>
+            <p>essere uno stimato restauratore, insieme al fratello Attilio, è anche un appassionato</p>
+            <p>collezionista, tra le opere passate nelle loro raccolte ricordiamo Una Madonna col Bambino di</p>
+            <p>Giovanni Bellini, il Ritratto del conte Gerolamo Colloredo Mansfeld, attribuito ad Alessandro</p>
+            <p>Magnasco, un’accattivante scena mitologica con Venere e Marte di Antonio Bellucci, oltre a</p>
+            <p>numerose nature morte di Felice Boselli.</p>
+            <p>L’ultimo erede Attilio, artista incisore scomparso nel 2025, ha deciso di donare l’archivio di</p>
+            <p>famiglia all’Accademia Carrara di Bergamo. Vi sono conservati la documentazione tecnica e</p>
+            <p>contabile della ditta, inclusi i libri dei conti, che sono in attesa di inventariazione. La studiosa</p>
+            <p>Cristina Giannini negli anni scorsi ha effettuato una copia dei materiali documentari che ha</p>
+            <p>suddiviso in dieci faldoni.</p>
+          </div>
+          <div id="Persone" class="content">
+            <h3>Relazioni familiari:</h3>
+            <div id="albero-genealogico"></div>
+          </div>
+          <div id="Localizzazioni" class="content">
+            <section id="map">
+              <div id="chartdiv"></div>
+            </section>
+          </div>
+          <div id="Relazioni" class="content">
+            <h3>Altri antiquari:</h3>
+            <ul>
+              <li>
+                <a href="dettaglio_AC.html">Accorsi</a>
+              </li>
+            </ul>
+            <h3>Clienti:</h3>
+            <ul>
+            </ul>
+            <h3>Collaboratori:</h3>
+            <ul>
+              <li>Antonio Zanchi (restauratore)</li>
+              <li>Arturo Cividini (restauratore)</li>
+              <li>Benno Geiger (antiquario)</li>
+              <li>Bernard Berenson (storico dell'arte)</li>
+              <li>Cesare Laurenti (pittore)</li>
+              <li>Giuseppe Fiocco (storico dell'arte)</li>
+              <li>Luigi Cavenaghi (restauratore)</li>
+              <li>Luigi Cavenaghi (restauratore)</li>
+              <li>Paul Cassirer (antiquario)</li>
+              <li>Roberto Longhi (storico dell'arte)</li>
+              <li>Ugo Frizzoni (storico dell'arte)</li>
+              <li>Ugo Frizzoni (storico dell’arte)</li>
+              <li>Wart Arslan (storico dell'arte)</li>
+            </ul>
+          </div>
+          <div id="Bibliografia" class="content">
+            <h3>Bibliografia essenziale:</h3>
+            <ul>
+              <li>Giannini, C. (2002), <i>L’attimo fuggente. Storie di collezionisti e mercanti</i>, Bergamo, ?Lubrina Bramani Editore</li>
+              <li>Giannini, C. (2011), <i>Attilio Steffanoni, restauratore e antiquario. Un diario inedito, in (2011) Francesco Malagusgi Valeri (1867- 1928). Tra storiografia artistica, museo e tutela, Atti del convegno (Milano-Bologna, 20-21 ottobre 2011), a cura di Sciolla, G.C., Rovetta, A.</i>, Milano, Segrate, pp. 205-216</li>
+            </ul>
+          </div>
+          <div id="Opere trattate" class="content">
+            <p>
+              Vedi le opere transitate presso l'antiquario presenti nel 
+              <a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Steffanoni" class="linkBio" target="_blank">
+                catalogo della Fondazione Zeri
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <p>Licenza dati e immagini:</p>
+          <img id="license.png" src="../../img/homepage/license.png" alt="License" />
+        </div>
+        <div class="footer-right">
+          <p>
+            <a href="../../html/crediti.html">
+              Crediti
+            </a>
+            |
+            <a href="https://github.com/FondazioneFedericoZeri/Mercato_dell_arte" target="_blank">
+              Documentazione
+            </a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

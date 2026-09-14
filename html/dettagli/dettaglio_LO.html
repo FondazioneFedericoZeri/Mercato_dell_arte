@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dettaglio Antiquari</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="../../css/styles-dettaglioAntiquario.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/hierarchy.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+    <script type="text/javascript" src="../../script/dettaglioAntiquari.js"></script>
+    <script type="text/javascript" src="../../script/mappaDettaglio.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <a href="../../index.html">
+          <img id="logo.png" src="../../img/homepage/logo.png" alt="Fondazione Federico Zeri" />
+        </a>
+        <nav>
+          <ul>
+            <li>
+              <a href="../progetto.html">Progetto</a>
+              <a href="../antiquari.html">Antiquari</a>
+              <a href="../luoghi.html">Luoghi</a>
+              <a href="../eventi.html">Eventi</a>
+              <a href="../persone.html">Persone</a>
+              <a href="../bibliografia.html">Bibliografia</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="image-gallery">
+        <div class="gallery-wrapper">
+          <h2 class="gallery-title">Loewi</h2>
+          <div class="slider-container">
+            <div class="slider">
+              <div class="slide">
+                <img src="../../img/slider-antiquari/LO_img1.jpg" alt="Adolph Loewi con William Robertson nella galleria di Los Angeles, 1968 ca. (da Rosenbaum 1989)" />
+                <div class="caption">Adolph Loewi con William Robertson nella galleria di Los Angeles, 1968 ca. (da Rosenbaum 1989)</div>
+              </div>
+              <div class="slide">
+                <img src="../../img/slider-antiquari/LO_img2.jpg" alt="The &quot;Italian Room&quot; from Chiavenna, (foto Seattle Art Museum)" />
+                <div class="caption">The "Italian Room" from Chiavenna, (foto Seattle Art Museum)</div>
+              </div>
+              <div class="slide">
+                <img src="../../img/slider-antiquari/LO_img3.jpg" alt="The Burgundian Library, The Rosen House at Caramoor" />
+                <div class="caption">The Burgundian Library, The Rosen House at Caramoor</div>
+              </div>
+            </div>
+            <button &#10094; class="prev" onclick="prevSlide()"><</button>
+            <button &#10095; class="next" onclick="nextSlide()">></button>
+          </div>
+        </div>
+      </section>
+      <div class="dual-content-wrapper">
+        <div class="tab-container">
+          <ul class="tab-list">
+            <li class="tab active" data_content="Bio">Dati biografici</li>
+            <li class="tab" data_content="Persone">Albero familiare</li>
+            <li class="tab" data_content="Localizzazioni">Luoghi</li>
+            <li class="tab" data_content="Relazioni">Relazioni</li>
+            <li class="tab" data_content="Bibliografia">Bibliografia</li>
+            <li class="tab" data_content="Opere trattate">Opere trattate</li>
+          </ul>
+        </div>
+        <div class="content-card">
+          <div id="Bio" class="content active-content">
+            <p>Adolph (Adolfo) Loewi nacque il 16 febbraio 1888 a Monaco di Baviera da Jacob ed Emma</p>
+            <p>Bernheimer, figlia di Lehman Bernheimer, fondatore della galleria antiquaria omonima della</p>
+            <p>capitale bavarese.</p>
+            <p>Dopo aver mosso i primi passi nel mondo dell’antiquariato tra il 1906 e il 1909, prima nella</p>
+            <p>sede newyorkese della “Baumgarten Gallery”, poi presso un antiquario di Madrid, nel 1911</p>
+            <p>decise di aprire la propria attività a Venezia con l’aiuto del nonno.</p>
+            <p>Scelse di stabilirsi nel sestiere di Dorsoduro, prendendo in affitto gli spazi dell’Abbazia di San</p>
+            <p>Gregorio e, in seguito, il prestigioso palazzo Nani-Mocenigo, già Barbarigo dei Dogi.</p>
+            <p>Dopo aver prestato servizio militare come volontario tra le fila dell’esercito tedesco durante la</p>
+            <p>Prima guerra mondiale, nel 1919, tornò a Venezia dove cercò di tornare in possesso dei beni</p>
+            <p>che gli erano stati confiscati come cittadino nemico dell’Italia. Alcune opere confiscate dalla</p>
+            <p>sua collezione entrarono nelle collezioni di musei importanti di Venezia, come la Galleria</p>
+            <p>Giorgio Franchetti alla Ca’ d’Oro, il Museo Archeologico nazionale e il Museo d’Arte Orientale di</p>
+            <p>Ca’ Pesaro.</p>
+            <p>La sua attività antiquaria in Italia proseguì di pari passo con la costruzione di una fitta rete di</p>
+            <p>contatti con collezionisti privati e direttori di museo negli Stati Uniti, che gli tornerà utile dopo</p>
+            <p>il definitivo trasferimento in America.</p>
+            <p>Loewi si era specializzato nella vendita di dipinti, sculture e arti decorative - in particolare</p>
+            <p>tessuti, arazzi, antichi tappeti orientali e ceramiche islamiche - che rivendeva a numerosi</p>
+            <p>collezionisti europei e americani, oltre che a prestigiosi musei italiani e internazionali. Tra i</p>
+            <p>primi, figurano i coniugi svizzeri Abegg, appassionati collezionisti di tessuti antichi, e Walter</p>
+            <p>Tower e Lucie Rosen che arredarono sia il loro appartamento di Manhattan, sia la residenza di</p>
+            <p>campagna Caramoor (oggi casa-museo aperta al pubblico) con mobili antichi, preziosi tessuti</p>
+            <p>e opere d’arte da lui selezionati. Tra le istituzioni che rifornì di opere ricordiamo le Gallerie</p>
+            <p>dell’Accademia di Venezia, la Cà d’Oro, il Metropolitan Museum di New York e il Los Angeles</p>
+            <p>County Museum of Art, che acquistò dalla galleria di Adolph Loewi la maggior parte della</p>
+            <p>collezione di tessuti antichi.</p>
+            <p>Dal 21 settembre 1921 fino al 30 settembre 1933, Loewi ricoprì l’incarico di console onorario</p>
+            <p>tedesco a Venezia. Sempre nel 1933, aprì una filiale a New York, dove in seguito alla</p>
+            <p>promulgazione delle leggi razziali si trasferì nel 1939 con tutta la famiglia. Adolph portò con sé</p>
+            <p>gran parte delle opere di sua proprietà, ma decise di non chiudere la galleria veneziana</p>
+            <p>affidandola ad Alessandro Morandotti (1909–1979), che aveva iniziato a lavorarvi nel 1937,</p>
+            <p>prima come semplice impiegato, poi in qualità di direttore. Nel 1940 Morandotti trasferì</p>
+            <p>l’attività a Roma, a Palazzo Massimo alle Colonne, sotto l’insegna ‹‹Antiquaria›› e nel 1950</p>
+            <p>decise di acquistarla da Loewi.</p>
+            <p>Dopo soli sei mesi a New York, dove collaborò con la galleria Arnold Seligmann Rey & Co.,</p>
+            <p>Adolph trasferì la galleria a Beverly Hills - sotto l’insegna Adolph Loewi, Inc. – occupandosi di</p>
+            <p>alcune vendite eclatanti, come quella del prezioso studiolo di Francesco di Giorgio Martini per</p>
+            <p>Federico da Montefeltro proveniente dal palazzo ducale di Gubbio confluito nel 1939 nelle</p>
+            <p>collezioni del Met di New York, e della cosiddetta ‹‹Italian Room››, una tipica stüa alpina del</p>
+            <p>Cinquecento proveniente da Chiavenna, rivestita interamente da raffinati pannelli in legno</p>
+            <p>intagliato che, dopo alcuni passaggi in collezioni private, fu donata al Museo di Seattle.</p>
+            <p>Ricordiamo inoltre che nel 1946 Loewi acquistò gran parte della collezione dell’amico e</p>
+            <p>antiquario Giorgio <a href=" dettaglio_SA_IV.html" target="_blank"> Sangiorgi </a>.</p>
+            <p>La Adolph Loewi, Inc. in seguito fu divisa in due imprese distinte e la vendita di tessuti e</p>
+            <p>tappeti antichi continuò a cura della figlia Gabriella Katherine detta “Kay” e del marito William</p>
+            <p>Robertson con il nome di Loewi-Robertson. Adolph trascorse i suoi ultimi anni ad Honolulu,</p>
+            <p>dove morì nel 1977, dopo aver venduto alcune opere dalla sua collezione all’Honolulu</p>
+            <p>Museum of Art.</p>
+            <p>I documenti relativi all’attività della galleria antiquaria a Venezia sono andati dispersi a causa</p>
+            <p>di un incendio, mentre quelli degli anni americani, quali stock books e fotografie delle opere,</p>
+            <p>sono conservati negli archivi del Los Angeles County Museum of Art.</p>
+          </div>
+          <div id="Persone" class="content">
+            <h3>Relazioni familiari:</h3>
+            <div id="albero-genealogico"></div>
+          </div>
+          <div id="Localizzazioni" class="content">
+            <section id="map">
+              <div id="chartdiv"></div>
+            </section>
+          </div>
+          <div id="Relazioni" class="content">
+            <h3>Altri antiquari:</h3>
+            <ul>
+            </ul>
+            <h3>Clienti:</h3>
+            <ul>
+            </ul>
+            <h3>Collaboratori:</h3>
+            <ul>
+              <li>Alessandro Morandotti (antiquario)</li>
+              <li>Arnold Seligman (antiquario)</li>
+              <li>William Robertson (antiquario)</li>
+            </ul>
+          </div>
+          <div id="Bibliografia" class="content">
+            <h3>Bibliografia essenziale:</h3>
+            <ul>
+              <li>Cecutti, D. (2012), <i>Adolph Loewi e il commercio di tappeti orientali a Venezia fra Otto e Novecento</i>, In «MDCCC 1800», 1, pp. 33-42</li>
+            </ul>
+          </div>
+          <div id="Opere trattate" class="content">
+            <p>
+              Vedi le opere transitate presso l'antiquario presenti nel 
+              <a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=loewi" class="linkBio" target="_blank">
+                catalogo della Fondazione Zeri
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <p>Licenza dati e immagini:</p>
+          <img id="license.png" src="../../img/homepage/license.png" alt="License" />
+        </div>
+        <div class="footer-right">
+          <p>
+            <a href="../../html/crediti.html">
+              Crediti
+            </a>
+            |
+            <a href="https://github.com/FondazioneFedericoZeri/Mercato_dell_arte" target="_blank">
+              Documentazione
+            </a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

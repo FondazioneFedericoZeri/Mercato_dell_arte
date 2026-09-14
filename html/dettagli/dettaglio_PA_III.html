@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dettaglio Antiquari</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="../../css/styles-dettaglioAntiquario.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/hierarchy.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+    <script type="text/javascript" src="../../script/dettaglioAntiquari.js"></script>
+    <script type="text/javascript" src="../../script/mappaDettaglio.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <a href="../../index.html">
+          <img id="logo.png" src="../../img/homepage/logo.png" alt="Fondazione Federico Zeri" />
+        </a>
+        <nav>
+          <ul>
+            <li>
+              <a href="../progetto.html">Progetto</a>
+              <a href="../antiquari.html">Antiquari</a>
+              <a href="../luoghi.html">Luoghi</a>
+              <a href="../eventi.html">Eventi</a>
+              <a href="../persone.html">Persone</a>
+              <a href="../bibliografia.html">Bibliografia</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="image-gallery">
+        <div class="gallery-wrapper">
+          <h2 class="gallery-title">Palma</h2>
+          <div class="slider-container">
+            <div class="slider">
+              <div class="slide">
+                <img src="../../img/slider-antiquari/PA_III_img1.jpg" alt="Pietro Maria Bardi con Le Corbusier nel 1936" />
+                <div class="caption">Pietro Maria Bardi con Le Corbusier nel 1936</div>
+              </div>
+              <div class="slide">
+                <img src="../../img/slider-antiquari/PA_III_img2.jpg" alt="Pietro Maria Bardi all'esposizione di Pittura italiana antica a Rio de Janeiro, 1946" />
+                <div class="caption">Pietro Maria Bardi all'esposizione di Pittura italiana antica a Rio de Janeiro, 1946</div>
+              </div>
+              <div class="slide">
+                <img src="../../img/slider-antiquari/PA_III_img3.jpg" alt="Interni dello Studio d'Arte Palma a Roma" />
+                <div class="caption">Interni dello Studio d'Arte Palma a Roma</div>
+              </div>
+            </div>
+            <button &#10094; class="prev" onclick="prevSlide()"><</button>
+            <button &#10095; class="next" onclick="nextSlide()">></button>
+          </div>
+        </div>
+      </section>
+      <div class="dual-content-wrapper">
+        <div class="tab-container">
+          <ul class="tab-list">
+            <li class="tab active" data_content="Bio">Dati biografici</li>
+            <li class="tab" data_content="Persone">Albero familiare</li>
+            <li class="tab" data_content="Localizzazioni">Luoghi</li>
+            <li class="tab" data_content="Relazioni">Relazioni</li>
+            <li class="tab" data_content="Opere trattate">Opere trattate</li>
+          </ul>
+        </div>
+        <div class="content-card">
+          <div id="Bio" class="content active-content">
+            <p>Lo Studio d’Arte Palma venne inaugurato a ridosso della liberazione di Roma, nel maggio del 1944,</p>
+            <p>in piazza Imperatore Augusto 32.</p>
+            <p>Fu concepito dal suo fondatore, il giornalista e critico d’arte Pietro Maria Bardi (1900-1999), come</p>
+            <p>uno spazio in cui si concentravano attività di esposizione, restauro, compravendita ed expertise</p>
+            <p>sulle opere d’arte. Suoi soci furono Francesco Monotti, già storico collaboratore di Bardi, e Manlio</p>
+            <p>Goffi, antiquario romano, che era stato a capo della Federazione nazionale fascista dei mercanti</p>
+            <p>d’arte. Nel 1945 entrò nella società anche il restauratore Mario Modestini che, fino alla partenza</p>
+            <p>per gli Stati Uniti nel 1949, assunse la direzione del gabinetto di restauro interno alla galleria.</p>
+            <p>Questa, dispiegata su 600 metri quadri al piano nobile del palazzo di stile razionalista che la</p>
+            <p>ospitava, comprendeva infatti, oltre agli spazi espositivi e ad ambienti dedicati alla progettazione</p>
+            <p>di interni e alla fotografia, anche un gabinetto di restauro dotato delle tecnologie più innovative e</p>
+            <p>un laboratorio di diagnostica. Gran parte dei ricavati dello Studio d’Arte Palma derivarono dalle</p>
+            <p>commesse di restauro assunte da Modestini tra 1948 e 1949 (per la Galleria Spada, la Collezione</p>
+            <p>Contini Bonacossi e la Galleria d’Arte Moderna di Roma), oltre che dalla produzione di cornici e</p>
+            <p>dalle riproduzioni fotografiche conto terzi.</p>
+            <p>In accordo con il gusto dell’epoca che lo stesso Bardi contribuì a formare e diffondere</p>
+            <p>collaborando con Giò Ponti a diverse imprese editoriali, lo Studio d’Arte Palma promosse,</p>
+            <p>nell’arredo e nel design, un felice accordo tra arte antica e contemporanea, commercializzando</p>
+            <p>entrambe. Per l’arte antica, si servì della collaborazione dei più capaci e promettenti conoscitori di</p>
+            <p>quegli anni, da Roberto Longhi a Giuliano Briganti, da Federico Zeri a Lionello Venturi.</p>
+            <p>Le esposizioni promosse dalla galleria, concepite più come occasioni di ricerca storico artistica che</p>
+            <p>di vendita, consolidarono via via il prestigio culturale e la vocazione internazionale della galleria. In</p>
+            <p>questa scia, nel 1946, Bardi promosse una serie di mostre didattiche sull’arte italiana in varie città</p>
+            <p>del Brasile, curate da un’équipe di storici dell’arte formata da Monotti, Zeri, Briganti, Modestini,</p>
+            <p>Bruno Zevi e altri.</p>
+            <p>Con il trasferimento definitivo di Bardi in Brasile per organizzare e dirigere il nascente Museu de</p>
+            <p>Arte de São Paulo e il concomitante allontanamento di Modestini, entrato a New York alle</p>
+            <p>dipendenze di S.H. Kress, l’attività dello Studio d’Arte Palma – dopo una brevissima parentesi</p>
+            <p>espositiva dedicata esclusivamente all’arte contemporanea –  si concluse nel 1951.</p>
+            <p>La fototeca di Zeri conserva numerose stampe (anche prodotte dal laboratorio interno allo Studio</p>
+            <p>d’Arte) che riproducono opere passate dalla Palma o tra le mani di Bardi o ancora destinate al</p>
+            <p>museo di San Paolo, per le quali il giovane conoscitore venne interpellato in particolare nel</p>
+            <p>triennio 1946-1948. Tramite Modestini, sappiamo inoltre che Zeri acquisì dalla Palma il gruppo di</p>
+            <p>foto al carbone di grande formato di dipinti del Rinascimento italiano, già appartenute al conte</p>
+            <p>marchand-amateur <a href="dettaglio_LA_II.html" target="_blank"> Michele Lazzaroni </a> .</p>
+          </div>
+          <div id="Persone" class="content">
+            <h3>Relazioni familiari:</h3>
+            <div id="albero-genealogico"></div>
+          </div>
+          <div id="Localizzazioni" class="content">
+            <section id="map">
+              <div id="chartdiv"></div>
+            </section>
+          </div>
+          <div id="Relazioni" class="content">
+            <h3>Altri antiquari:</h3>
+            <ul>
+            </ul>
+            <h3>Clienti:</h3>
+            <ul>
+            </ul>
+            <h3>Collaboratori:</h3>
+            <ul>
+              <li>Bruno Zevi (storico dell'arte)</li>
+              <li>Federico Zeri (storico dell'arte)</li>
+              <li>Francesco Monotti (storico dell'arte)</li>
+              <li>Giuliano Briganti (storico dell'arte)</li>
+              <li>Giò Ponti (designer)</li>
+              <li>Lionello Venturi (storico dell'arte)</li>
+              <li>Manlio Goffi (antiquario)</li>
+            </ul>
+          </div>
+          <div id="Opere trattate" class="content">
+            <p>
+              Vedi le opere transitate presso l'antiquario presenti nel 
+              <a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Galleria+Palma" class="linkBio" target="_blank">
+                catalogo della Fondazione Zeri
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <p>Licenza dati e immagini:</p>
+          <img id="license.png" src="../../img/homepage/license.png" alt="License" />
+        </div>
+        <div class="footer-right">
+          <p>
+            <a href="../../html/crediti.html">
+              Crediti
+            </a>
+            |
+            <a href="https://github.com/FondazioneFedericoZeri/Mercato_dell_arte" target="_blank">
+              Documentazione
+            </a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dettaglio Antiquari</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="../../css/styles-dettaglioAntiquario.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/hierarchy.js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+    <script type="text/javascript" src="../../script/dettaglioAntiquari.js"></script>
+    <script type="text/javascript" src="../../script/mappaDettaglio.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <a href="../../index.html">
+          <img id="logo.png" src="../../img/homepage/logo.png" alt="Fondazione Federico Zeri" />
+        </a>
+        <nav>
+          <ul>
+            <li>
+              <a href="../progetto.html">Progetto</a>
+              <a href="../antiquari.html">Antiquari</a>
+              <a href="../luoghi.html">Luoghi</a>
+              <a href="../eventi.html">Eventi</a>
+              <a href="../persone.html">Persone</a>
+              <a href="../bibliografia.html">Bibliografia</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="image-gallery">
+        <div class="gallery-wrapper">
+          <h2 class="gallery-title">Subert</h2>
+          <div class="slider-container">
+            <div class="slider">
+              <div class="slide">
+                <img src="../../img/slider-antiquari/SU_img1.jpg" alt="Emanuele Subert 1830-1888" />
+                <div class="caption">Emanuele Subert 1830-1888</div>
+              </div>
+              <div class="slide">
+                <img src="../../img/slider-antiquari/SU_img2.jpg" alt="Rodolfo Subert 1873-1958" />
+                <div class="caption">Rodolfo Subert 1873-1958</div>
+              </div>
+              <div class="slide">
+                <img src="../../img/slider-antiquari/SU_img3.jpg" alt="Rodolfo Subert (Duda) 1898-1978" />
+                <div class="caption">Rodolfo Subert (Duda) 1898-1978</div>
+              </div>
+              <div class="slide">
+                <img src="../../img/slider-antiquari/SU_img4.jpg" alt="Alberto Subert 1929-2021" />
+                <div class="caption">Alberto Subert 1929-2021</div>
+              </div>
+            </div>
+            <button &#10094; class="prev" onclick="prevSlide()"><</button>
+            <button &#10095; class="next" onclick="nextSlide()">></button>
+          </div>
+        </div>
+      </section>
+      <div class="dual-content-wrapper">
+        <div class="tab-container">
+          <ul class="tab-list">
+            <li class="tab active" data_content="Bio">Dati biografici</li>
+            <li class="tab" data_content="Persone">Albero familiare</li>
+            <li class="tab" data_content="Localizzazioni">Luoghi</li>
+            <li class="tab" data_content="Opere trattate">Opere trattate</li>
+          </ul>
+        </div>
+        <div class="content-card">
+          <div id="Bio" class="content active-content">
+            <p>Emanuele Subert (1830-1888) fu un mercante di origine polacca o ceca. Trasferitosi prima a</p>
+            <p>Trieste, città natale della moglie Elisa Berger (1832-post 1900), e poi a Milano, fondò la galleria</p>
+            <p>“Emanuele Subert Antichità e Belle Arti” nel 1860 in via Monte di Pietà al numero 2.</p>
+            <p>Seguendo il mercato dell’epoca, l’antiquario volse i propri interessi verso arredi, armi e tessuti</p>
+            <p>antichi, ma anche arte sacra, archeologia, gioielli e oreficerie, contribuendo all’ampliamento e alla</p>
+            <p>costituzione delle collezioni di numerosi musei e collezionisti, tra i quali spiccano Frederick</p>
+            <p>Stibbert, a Firenze, e il nascente Museo Poldi Pezzoli.</p>
+            <p>Il figlio Rodolfo Subert (1873-1958), in società con il fratello Carlo, rilevò nel 1903 i negozi</p>
+            <p>paterni di via Monte di Pietà e di Galleria Vittorio Emanuele II, quest’ultimo aperto in un</p>
+            <p>secondo momento. Quando Carlo si trasferì negli Stati Uniti nel 1910, Rodolfo cambiò</p>
+            <p>l’intestazione dei negozi in: “Rodolfo Subert Antichità e Belle Arti”.</p>
+            <p>Rodolfo colse il momento particolarmente favorevole per aprire altre due attività a Bellagio,</p>
+            <p>all’epoca meta di villeggiatura dell’élite internazionale, grazie anche alla presenza del casinò.</p>
+            <p>Anche Rodolfo fu tra i fornitori di musei e nuovi collezionisti, tra cui Giuseppe Gianetti,</p>
+            <p>appassionato conoscitore di maioliche, che acquistò numerosi oggetti poi confluiti poi</p>
+            <p>nell’omonimo museo a Saronno. Cospicue furono inoltre le donazioni tra il 1940 e il 1941 a</p>
+            <p>nome della moglie di Rodolfo, Ambrogina Bergomi Subert, ad alcuni importanti musei, tra cui il</p>
+            <p>Museo di Arti Applicate del Castello Sforzesco.</p>
+            <p>Rodolfo, affiancato da alcuni figli, continuò la conduzione del negozio in Galleria Vittorio</p>
+            <p>Emanuele II fino al luglio 1943, quando i bombardamenti distrussero la galleria con tutto il</p>
+            <p>contenuto, compreso l’archivio di più di ottant’anni di attività.</p>
+            <p>L’omonimo figlio maggiore Rodolfo (1898-1978) nel 1926 aprì in via Sant’ Andrea 11 la “Galleria</p>
+            <p>S. Andrea” dove rimase fino al 1945, affiancato nell’attività dalla moglie Gina Gandus (1900-</p>
+            <p>1968). Il negozio trattava arte italiana con una particolare predilezione per i gioielli e per la</p>
+            <p>pittura italiana dell’Ottocento.</p>
+            <p>Dopo la guerra, nel 1951, Rodolfo Subert riaprì sotto la denominazione “G. G. Subert” in via</p>
+            <p>San Pietro all’Orto 26, mentre l’anno seguente il figlio Alberto avviò una propria galleria in via</p>
+            <p>della Spiga 22.</p>
+            <p>Fu questo il periodo delle prime mostre di antiquariato: Biennale dell’Antiquariato di Firenze e</p>
+            <p>l’Esposizione di Palazzo Reale a Milano, cui partecipavano entrambi i negozi.</p>
+            <p>Nel 1996 i due esercizi confluirono nella galleria “Antichità e Oggetti d’Arte” con sede al 24 di</p>
+            <p>via Santo Spirito, dove Alberto Subert. continuò la propria attività affiancato dal figlio Michele</p>
+            <p>fino al 2012.  Seguendo la tradizione familiare, la sua attività fu caratterizzata dall’eclettismo, con</p>
+            <p>una predilizione particolare verso gli strumenti scientifici, sfere armillari, globi e oggetti da</p>
+            <p>collezione.</p>
+            <p>Dal 2013 il figlio Michele Subert ha aperto una nuova sede al 42 di via della Spiga. Il suo interesse</p>
+            <p>è incentrato sull’arte italiana dal XVI al XIX secolo, in particolare sugli oggetti da collezione,</p>
+            <p>proseguendo così la passione condivisa con il padre.</p>
+          </div>
+          <div id="Persone" class="content">
+            <h3>Relazioni familiari:</h3>
+            <div id="albero-genealogico"></div>
+          </div>
+          <div id="Localizzazioni" class="content">
+            <section id="map">
+              <div id="chartdiv"></div>
+            </section>
+          </div>
+          <div id="Opere trattate" class="content">
+            <p>
+              Vedi le opere transitate presso l'antiquario presenti nel 
+              <a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Subert" class="linkBio" target="_blank">
+                catalogo della Fondazione Zeri
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <p>Licenza dati e immagini:</p>
+          <img id="license.png" src="../../img/homepage/license.png" alt="License" />
+        </div>
+        <div class="footer-right">
+          <p>
+            <a href="../../html/crediti.html">
+              Crediti
+            </a>
+            |
+            <a href="https://github.com/FondazioneFedericoZeri/Mercato_dell_arte" target="_blank">
+              Documentazione
+            </a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
