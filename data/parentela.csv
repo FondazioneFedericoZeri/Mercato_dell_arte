@@ -138,3 +138,41 @@ ME,ME_1,ME_4,padre
 ME,ME_1,ME_5,padre
 GR_II,GR_II_1,GR_II_2,padre
 GR_II,GR_II_2,GR_II_3,padre
+
+BA_V, BA_V_1, BA_V_2, padre
+BA_V , BA_V_2, BA_V_3, padre
+CA_IV, CA_IV_2, CA_IV_1, padre
+CA_IV, CA_IV_1, CA_IV_3, padre
+GU, GU_1, GU_2, padre
+GU, GU_1, GU_3, padre
+LO, LO_1, LO_2, padre
+SA_VII, SA_VII_1,  SA_VII_4, padre
+SA_VII, SA_VII_1, SA_VII_5, padre
+SA_VII, SA_VII_1, SA_VII_6, padre
+SA_VII, SA_VII_5, SA_VII_8, padre
+SA_VII, SA_VII_6, SA_VII_1 SA_VII_7, padre
+SA_VII, SA_VII_2 , SA_VII_3, marito
+CO_IV, CO_IV_3, CO_IV_4, padre
+CO_IV, CO_IV_3, CO_IV_5, padre
+CO_IV, CO_IV_4, CO_IV_6, zio
+CO_IV, CO_IV_6, CO_IV_8, cugino
+CO_IV, CO_IV_5, CO_IV_9, padre
+CO_IV, CO_IV_7, CO_IV_8, padre
+LO_I, LO_I_1, LO_I_2, madre
+LO_I, LO_I_1, LO_I_3, madre
+LO_I, LO_I_2, LO_I_4, padre
+SU, SU_1, SU_2, padre
+SU, SU_2, SU_3, padre
+SU, SU_3, SU_4, padre
+SU, SU_4, SU_5, padre
+CA_V, CA_V_1, CA_V_2, padre
+CA_V, CA_V_2, CA_V_3, padre
+DI_I, DI_I_1, DI_I_2, padre
+DI_I, DI_I_2, DI_I_3, padre
+DI_I, DI_I_1, DI_I_5, padre
+DA, DA_1, DA_2, padre
+RA_NEW, RA_NEW_1, RA_NEW_2, padre
+RA_NEW, RA_NEW_1, RA_NEW_3, padre
+RA_NEW, RA_NEW_1, RA_NEW_4, marito
+RI_I, RI_I_1, RI_I_2, padre
+RI_I, RI_I_1, RI_I_3, padre

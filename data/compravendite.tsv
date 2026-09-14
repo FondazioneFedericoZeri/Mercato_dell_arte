@@ -1,38 +1,61 @@
 ID	ID_cliente	Nome	Cognome	ID_entità	ID_persone
-CV_1	CL_1	Emanuele Filiberto di Savoia-Aosta 		CA_I
-CV_2	CL_2	Giorgio V d'Inghilterra		CA_I
+CV_1	CL_1	Emanuele Filiberto di Savoia-Aosta		CA_I	
+CV_2	CL_2	Giorgio V d'Inghilterra		CA_I	
 CV_3	CL_3	Gustavo V di Svezia		BA_III	BA_III_1
-CV_4	CL_4	Giovanni II del Liechtenstein 		BA_III	BA_III_1
-CV_5	CL_5	Nélie	Jacquemart	CA_I GR_II CA_III	
+CV_4	CL_4	Giovanni II del Liechtenstein		BA_III	BA_III_1
+CV_4_a	CL_4	Giovanni II del Liechtenstein		RI_I	RI_I_1 RI_I_2 RI_I_4
+CV_5	CL_5	Nélie	Jacquemart	CA_I	
+CV_5_a	CL_5	Nélie	Jacquemart	GR_II	
+CV_5_b	CL_5	Nélie	Jacquemart	CA_III	
+CV_5_c	CL_5	Nélie	Jacquemart	BA_V	BA_V_1
+CV_5_d	CL_5	Nélie	Jacquemart	CA_IV	CA_IV_1
+CV_5_e	CL_5	Nélie	Jacquemart	GU	GU_1
+CV_5_f	CL_5	Nélie	Jacquemart	RI_I	RI_I_1 RI_I_2 RI_I_3
+CV_5_g	CL_5	Nélie	Jacquemart	VE_I	VE_I_1 VE_I_2
 CV_6	CL_6	Principe del Liechtenstein*		FE	FE_1
-CV_7	CL_7	Ugolino della Gherardesca		GU-BR
+CV_7	CL_7	Ugolino della Gherardesca		GU-BR	
 CV_8	CL_8	Umberto II di Savoia		AC	AC_1
-CV_9	CL_9	William Henry Vanderbilt		CA_I
-CV_10	CL_10	Vittorio Emanuele III di Savoia		CA_I
-CV_11	CL_11	Arthur	Acton	ST	ST_1
-CV_11_b	CL_11_b	Édouard 	André	GR_II CA_III	
-CV_12	CL_12	Fausto	Bagatti Valsecchi	BA_IV GR_II	BA_IV_1 GR_II_1
-CV_13	CL_13	Giuseppe	Bagatti Valsecchi	BA_IV GR_II	BA_IV_1 GR_II_1
+CV_9	CL_9	William Henry Vanderbilt		CA_I	
+CV_10	CL_10	Vittorio Emanuele III di Savoia		CA_I	
+CV_11	CL_11	Arthur	Acton	ST_NEW	ST_NEW_1
+CV_11_b	CL_11_b	Édouard	André	GR_II	
+CV_11_b_a	CL_11_b	Édouard	André	CA_III	
+CV_11_b_b	CL_11_b	Édouard	André	BA_V	BA_V_1
+CV_11_b_c	CL_11_b	Édouard	André	CA_IV	CA_IV_1
+CV_11_b_d	CL_11_b	Édouard	André	GU	GU_1
+CV_11_b_e	CL_11_b	Édouard	André	VE_I	VE_I_1 VE_I_2
+CV_12	CL_12	Fausto	Bagatti Valsecchi	BA_IV	BA_IV_1
+CV_12_a	CL_12	Fausto	Bagatti Valsecchi	GR_II	GR_II_1
+CV_13	CL_13	Giuseppe	Bagatti Valsecchi	BA_IV	BA_IV_1
+CV_13_a	CL_13	Giuseppe	Bagatti Valsecchi	GR_II	GR_II_1
 CV_14	CL_14	Orazio	Bagnasco	PA_I	PA_I_1
 CV_15	CL_15	Stefano	Bardini	CO_III	CO_III_1
-CV_16	CL_16	Giovanni	Barraco	JA
-CV_17	CL_17	Bernard	Berenson	CO_III GR_II CA_III	CO_III_1 GR_II_1 CA_III_1
-CV_18	CL_17	Bernard	Berenson	SA_II
+CV_15_a	CL_15	Stefano	Bardini	BA_V	BA_V_1
+CV_15_b	CL_15	Stefano	Bardini	CA_IV	CA_IV_1
+CV_16	CL_16	Giovanni	Barraco	JA	
+CV_16_a	CL_16	Giovanni	Barraco	PO_III	PO_III_1
+CV_17	CL_17	Bernard	Berenson	CO_III	CO_III_1
+CV_17_a	CL_17	Bernard	Berenson	GR_II	GR_II_1
+CV_17_b	CL_17	Bernard	Berenson	CA_III	CA_III_1
+CV_18	CL_17	Bernard	Berenson	SA_II	
 CV_18_b	CL_17_b	Giuseppe	Bertini	CA_III	CA_III_1
-CV_19	CL_18	Alfonso	Bialetti	SA_I
+CV_19	CL_18	Alfonso	Bialetti	SA_I	
 CV_20	CL_19	Oscar	Bondy	BA_III	BA_III_1
 CV_20_b	CL_19_b	Antonio	Borgogna	GR_II	GR_II_1
-CV_21	CL_20	Enrico	Caruso	CA_I
-CV_22	CL_21	Paul	Chalfin	SA_II
+CV_21	CL_20	Enrico	Caruso	CA_I	
+CV_22	CL_21	Paul	Chalfin	SA_II	
 CV_23	CL_22	Achillito	Chiesa	AL	AL_1
 CV_23_b	CL_22_b	Karel	Chytil	CA_III	
-CV_24	CL_23	Vittorio	Cini	SA_I
+CV_24	CL_23	Vittorio	Cini	SA_I	
+CV_24_a	CL_23	Vittorio	Cini	BA_V	BA_V_1
+CV_24_b	CL_23	Vittorio	Cini	CA_IV	CA_IV_1
 CV_25	CL_24	Henry	Clay Frick	VO_I	VO_I_1
 CV_26	CL_25	Galeazzo	Cora	BR_II	BR_II_1
-CV_27	CL_26	Galeazzo	Cora	GU-BR
+CV_27	CL_26	Galeazzo	Cora	GU-BR	
 CV_28	CL_27	Angelo	Costa	BO	BO_1
-CV_29	CL_28	John	Davison Rockefeller	CA_I
-CV_30	CL_29	Edmond	De Rothschild	CA_I
+CV_29	CL_28	John	Davison Rockefeller	CA_I	
+CV_30	CL_29	Edmond	De Rothschild	CA_I	
+CV_30_a	CL_29	Edmond	De Rothschild	PO_III	PO_III_1
 CV_30_b	CL_29_b	Isabelle	Errera	CA_III	
 CV_31	CL_30	Dan	Fellows Platt	PA_II	PA_II_1
 CV_32	CL_31	Albert	Figdor	BA_III	BA_III_1
@@ -41,54 +64,142 @@ CV_34	CL_33	Jean Paul	Getty	BA_III	BA_III_1
 CV_34_b	CL_33_b	Herman	Goering	VE	
 CV_35	CL_34	Karl	Graf Lanckoro?ski	BA_III	BA_III_1
 CV_36	CL_35	Samuel	Henry Kress	CO_I	CO_I_1
-CV_37	CL_35	Samuel	Henry Kress	VO_II
+CV_37	CL_35	Samuel	Henry Kress	VO_II	
 CV_38	CL_36	John	J. Johnson	PA_II	PA_II_1
-CV_39	CL_37	Carl	Jacobsen	JA
-CV_40	CL_38	Otto	Kahn	CA_I
-CV_41	CL_39	Otto	Lanz	GR
-CV_42	CL_40	Arthur	Lee (primo visconte Lee di Fareham)	GR
+CV_39	CL_37	Carl	Jacobsen	JA	
+CV_39_a	CL_37	Carl	Jacobsen	PO_III	PO_III_1
+CV_40	CL_38	Otto	Kahn	CA_I	
+CV_41	CL_39	Otto	Lanz	GR	
+CV_42	CL_40	Arthur	Lee (primo visconte Lee di Fareham)	GR	
 CV_43	CL_41	Philip	Lehman	PA_II	PA_II_1
 CV_43_b	CL_41_b	Julius	Lessing	CA_III	
 CV_44	CL_42	Charles	Lock Eastlake	BA_IV	BA_IV_1
-CV_45	CL_43	Charles	Loeser	SA_II
-CV_46	CL_44	Charles	Mather Ffoulke	SA_II
+CV_45	CL_43	Charles	Loeser	SA_II	
+CV_46	CL_44	Charles	Mather Ffoulke	SA_II	
 CV_47	CL_45	Otto	Mündler	BA_IV	BA_IV_1
 CV_48	CL_46	Richard	Norton	FE	FE_1
 CV_48_b	CL_46_b	Aldo	Noseda	GR_II	
 CV_48_c	CL_46_c	Arthur	Pabst	CA_III	
 CV_49	CL_47	Herbert	Percy Horne	CO_III	CO_III_1
-CV_50	CL_48	John	Pierpont Morgan	CA_I
+CV_50	CL_48	John	Pierpont Morgan	CA_I	
 CV_51	CL_48	John	Pierpont Morgan	IM	IM_1
 CV_52	CL_48	John	Pierpont Morgan	VO_I	VO_I_1
+CV_52_a	CL_48	John	Pierpont Morgan	PO_III	PO_III_1
+CV_52_b	CL_48	John	Pierpont Morgan	CO_IV	CO_IV_3 CO_IV_5 CO_IV_8
 CV_53	CL_49	Leo	Planiscig	BA_III	BA_III_1
 CV_54	CL_50	Gian Giacomo	Poldi Pezzoli d'Albertone	BA_IV	BA_IV_1
 CV_54_b	CL_50_b	Natale	Prampolini	FO	
 CV_55	CL_51	Károly	Pulszky	CO_III	CO_III_1
+CV_55_a	CL_51	Károly	Pulszky	VE_I	VE_I_1 VE_I_2
 CV_55_b	CL_51_b	Giovanni	Rasini	FO	
-CV_56	CL_52	Giacomo	Riva	SA_I
-CV_57	CL_53	Alberto	Saibene	SA_I
-CV_58	CL_54	Elizabeth	Stewart Gardner	CA_I CA_III	
-CV_59	CL_54	Elizabeth	Stewart Gardner	SA_II
-CV_60	CL_54	Elizabeth	Stewart Gardner	VO_I	VO_I_1
-CV_61	CL_55	Adolphe	Stoclet	GR
-CV_62	CL_55	Adolphe	Stoclet	VO_II
+CV_56	CL_52	Giacomo	Riva	SA_I	
+CV_57	CL_53	Alberto	Saibene	SA_I	
+CV_58	CL_54	Isabella	Stewart Gardner	CA_I	
+CV_58_a	CL_54	Isabella	Stewart Gardner	CA_III	
+CV_59	CL_54	Isabella	Stewart Gardner	SA_II	
+CV_60	CL_54	Isabella	Stewart Gardner	VO_I	VO_I_1
+CV_60_a	CL_54	Isabella	Stewart Gardner	BA_V	BA_V_1
+CV_60_b	CL_54	Isabella	Stewart Gardner	CA_IV	CA_IV_1
+CV_60_c	CL_54	Isabella	Stewart Gardner	GU	GU_1
+CV_60_d	CL_54	Isabella	Stewart Gardner	CO_IV	CO_IV_3 CO_IV_5 CO_IV_9
+CV_61	CL_55	Adolphe	Stoclet	GR	
+CV_62	CL_55	Adolphe	Stoclet	VO_II	
 CV_63	CL_56	Gregor	Stroganoff	TA	TA_1
+CV_63_a	CL_56	Gregor	Stroganoff	PO_III	PO_III_1
 CV_64	CL_57	Isabelle	Sursock Colonna	AC	AC_1
-CV_65	CL_58	Mario	Tozzi	SA_II
-CV_66	CL_58	Mario	Tozzi	SA_I
-CV_66_b	CL_58_b	Luigi Alberico	Trivulzio	CA_III FO	
+CV_65	CL_58	Mario	Tozzi	SA_II	
+CV_66	CL_58	Mario	Tozzi	SA_I	
+CV_66_b	CL_58_b	Luigi Alberico	Trivulzio	CA_III	
+CV_66_b_a	CL_58_b	Luigi Alberico	Trivulzio	FO	
 CV_67	CL_59	Adolf	von Beckerath	FE	FE_1
-CV_68	CL_59	Adolf	von Beckerath	GR
-CV_69	CL_60	Gustav	von Benda	BA_III CA_III	BA_III_1
+CV_68	CL_59	Adolf	von Beckerath	GR	
+CV_69	CL_60	Gustav	von Benda	BA_III	BA_III_1
+CV_69_a	CL_60	Gustav	von Benda	CA_III	
 CV_70	CL_61	Wilhelm	von Bode	BA_II	BA_II_1
+CV_70_a	CL_61	Wilhelm	von Bode	BA_V	BA_V_1
 CV_71	CL_61	Wilhelm	von Bode	BA_III	BA_III_1
 CV_72	CL_61	Wilhelm	von Bode	BA_IV	BA_IV_1
 CV_73	CL_61	Wilhelm	von Bode	CI	CI_1
 CV_74	CL_61	Wilhelm	von Bode	CO_III	CO_III_1
 CV_75	CL_61	Wilhelm	von Bode	FE	FE_1
-CV_76	CL_62	Wilhelm	von Bode	GR
-CV_77	CL_62	Henry	Walters	CA_I
+CV_76	CL_61	Wilhelm	von Bode	GR	
+CV_76_a	CL_61	Wilhelm	von Bode	CA_IV	CA_IV_1
+CV_76_b	CL_61	Wilhelm	von Bode	GU	GU_1
+CV_76_c	CL_61	Wilhelm	von Bode	PO_III	PO_III_1
+CV_76_d	CL_61	Wilhelm	von Bode	CO_IV	CO_IV_3 CO_IV_5 CO_IV_8
+CV_76_e	CL_61	Wilhelm	von Bode	SA_VI_NEW	SA_VI_NEW_1
+CV_76_f	CL_61	Wilhelm	von Bode	VE_I	VE_I_1 VE_I_2
+CV_77	CL_62	Henry	Walters	CA_I	
 CV_78	CL_62	Henry	Walters	PA_II	PA_II_1
-CV_79	CL_63	Joseph	Widener	SA_II
-CV_80	CL_64	Luigi	Zauli Nardi	GU-BR
+CV_79	CL_63	Joseph	Widener	SA_II	
+CV_80	CL_64	Luigi	Zauli Nardi	GU-BR	
 CV_81	CL_65	Aldo	Zerbone	PA_I	PA_I_1
+CV_82	CL_66	Nino	Barbantini	BA_V	BA_V_1
+CV_82_a	CL_66	Nino	Barbantini	CA_IV	CA_IV_1
+CV_83	CL_67	Giorgio	Franchetti	BA_V	BA_V_1
+CV_83_a	CL_67	Giorgio	Franchetti	CA_IV	CA_IV_1
+CV_84	CL_68	Raymond	Van Marle	BA_V	BA_V_1
+CV_85	CL_69	Frits	Lugt	BA_V	BA_V_1
+CV_86	CL_70	Wilhelm	Suida	BA_V	BA_V_1
+CV_87	CL_71	Joseph	Duveen	BA_V	BA_V_1
+CV_88	CL_72	Joseph	Breck	BA_V	BA_V_1
+CV_89	CL_73	Gaetano	Marzotto	BA_V	BA_V_1
+CV_89_a	CL_73	Gaetano	Marzotto	PE	PE_1
+CV_90	CL_74	Gabrielle	Chanel	BA_V	BA_V_1
+CV_91	CL_75	Enrico Carlo Luigi	Borbone	BA_V	BA_V_1
+CV_91_a	CL_75	Enrico Carlo Luigi	Borbone	CA_IV	CA_IV_1
+CV_92	CL_76	Eugène Daniel	Rothschild	BA_V	BA_V_1
+CV_93	CL_77	Aldo	Crespi	BA_V	BA_V_1
+CV_94	CL_78	Fiske	Kimball	BA_V	BA_V_1
+CV_95	CL_79	Giacomo	Jucker	PE	PE_1
+CV_96	CL_80	Giuseppe	Ricci Oddi	PE	PE_1
+CV_97	CL_81	Luigi	Margherita	PE	PE_1
+CV_98	CL_82	Alberto	Clerici	PE	PE_1
+CV_99	CL_82_b	Alberto	Grubicy	PE	PE_1
+CV_100	CL_83	Giulio	Cantalamessa	GU	GU_1
+CV_100_a	CL_83	Giulio	Cantalamessa	SA_VI_NEW	SA_VI_NEW_3
+CV_101	CL_84	Ludovico II di Baviera		GU	GU_1
+CV_102	CL_85	Umberto I di Savoia		GU	GU_1
+CV_103	CL_86	Walter Erich Jacob	Kees	GU	GU_1
+CV_104	CL_87	Walter Tower	Rosen	LO	LO_1
+CV_105	CL_88	Werner	Abegg	LO	LO_1
+CV_106	CL_89	Edward Waldo	Forbes	PO_III	PO_III_1
+CV_107	CL_90	Denis	Mahon	PO_III	PO_III_1
+CV_108	CL_92	Robert	Zahn	PO_III	PO_III_1
+CV_109	CL_93	Johann Albrecht	duca di Mecklemburg-Schwerin	PO_III	PO_III_1
+CV_110	CL_94	Francesco	marchese Cappelli	PO_III	PO_III_1
+CV_111	CL_95	Louis	Saulini	PO_III	PO_III_1
+CV_112	CL_96	Alexandr Iovanovitsch	conte von Nelidow	PO_III	PO_III_1
+CV_113	CL_97	Arturo	De Sanctis Mangelli	PO_III	PO_III_1
+CV_114	CL_98	Sigmund	Freud	PO_III	PO_III_1
+CV_115	CL_99	Ernesto	Tucci	PO_III	PO_III_1
+CV_116	CL_100	Richard	Norton	PO_III	PO_III_1
+CV_117	CL_101	John	Marshall	PO_III	PO_III_1
+CV_118	CL_102	Remy	conte von Kwiatkowski	PO_III	PO_III_1
+CV_119	CL_103	Harold	Woodbury Parsons	PO_III	PO_III_1
+CV_120	CL_104	Giorgio IV d’Inghilterra		CO_IV	CO_IV_3 CO_IV_5 CO_IV_8
+CV_121	CL_105	Luigi Filippo duca d'Orleans		CO_IV	CO_IV_3 CO_IV_5 CO_IV_8
+CV_122	CL_106	David	Roberts	CO_IV	CO_IV_3 CO_IV_5 CO_IV_8
+CV_123	CL_107	Andrew W.	Mellon	CO_IV	CO_IV_3 CO_IV_5 CO_IV_8
+CV_124	CL_108	Paul	Mellon	CO_IV	CO_IV_3 CO_IV_5 CO_IV_8
+CV_125	CL_109	Samuel	Putnam Avery	CO_IV	CO_IV_3 CO_IV_5 CO_IV_8
+CV_126	CL_110	Peter	Widener	CO_IV	CO_IV_3 CO_IV_5 CO_IV_8
+CV_127	CL_111	Frederic Allen	Whiting	CO_IV	CO_IV_3 CO_IV_5 CO_IV_8
+CV_128	CL_112	Adrian	Eeles	CO_IV	CO_IV_3 CO_IV_5 CO_IV_8
+CV_129	CL_113	Calouste	Goulbenkian	CO_IV	CO_IV_3 CO_IV_5 CO_IV_8
+CV_130	CL_114	Barbara	Johnson	CO_IV	CO_IV_3 CO_IV_5 CO_IV_8
+CV_131	CL_115	Angelo	Duodo	SA_VI_NEW	SA_VI_NEW_2
+CV_132	CL_116	Gino	Fogolari	SA_VI_NEW	SA_VI_NEW_4
+CV_133	CL_117	Beatrice	Ephrussi de Rothschild	SA_VI_NEW	SA_VI_NEW_5
+CV_134	CL_118		Fratelli Mora	ST_NEW	ST_NEW_2
+CV_135	CL_119	Frederick	Stibbert	SU	SU_1
+CV_136	CL_120	Giuseppe	Gianetti	SU	SU_2
+CV_137	CL_121	Walter Andreas	Hofer	DA	DA_1
+CV_138	CL_122	Karl	Haberstock	DA	DA_2
+CV_139	CL_123	Austen Henry	Layard	RI_I	RI_I_1 RI_I_2 RI_I_3
+CV_140	CL_124	Valentino	Garavani	PR	PR_1
+CV_141	CL_125	Gerolamo	Etro	PR	PR_2
+CV_142	CL_126	Patrizio	Bertelli	PR	PR_3
+CV_143	CL_127	Mortimer Clifford	Leventritt	LO	LO_1
+CV_144	CL_128	George Hewitt	Myers	LO	LO_1
+

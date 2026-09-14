@@ -1,5 +1,5 @@
 ID	Nome	Cognome / Denominazione	Tipologia	ID Antiquari	Nome Antiquari
-C_1		Alinari	fotografo	VO_I	Volpi
+C_1		Alinari	fotografo	VO_I PO_III	Volpi Pollak
 C_2		Anderson	fotografo	PA_II	Paolini
 C_3	Leopoldo	Aretini	antiquario
 C_4	Wart	Arslan	storico dell'arte	ST	Steffanoni
@@ -7,13 +7,13 @@ C_5		Arte Fotografica	fotografo	DI	Di castro
 C_6	Valentina	Barbareschi	restauratrice
 C_6_b	Luigi	Battistelli	impresario di casa d'aste	GE_II	Geri
 C_6_c	Luca	Beltrami	architetto	GR_II	Grandi
-C_7	Bernard	Berenson	storico dell'arte	AL CO_I RO ST VO_I FO	Albrighi Contini-Bonacossi Romano Steffanoni Volpi Foresti
+C_7	Bernard	Berenson	storico dell'arte	AL CO_I RO ST_NEW VO_I FO CO_IV	Albrighi Contini-Bonacossi Romano Steffanoni Volpi Foresti Colnaghi
 C_8		Boccardi	fotografo
 C_9	Ferdinando	Bologna	storico dell'arte	SE_II	Sestieri
 C_10_1		Braun & C.ie	fotografo	LA_II	Lazzaroni
 C_10_2		Giraudon	fotografo	LA_II	Lazzaroni
 C_10_3		Bernès, Marouteau & C.ie	fotografo	LA_II	Lazzaroni
-C_11	Giuliano	Briganti	storico dell'arte	AN-EF AP GR_II	Antonacci-Efrati Apolloni Grandi
+C_11	Giuliano	Briganti	storico dell'arte	AN-EF AP GR_II PA_III GI_I	Antonacci-Efrati Apolloni Grandi Studio d'Arte Palma Gianetti
 C_12		Brogi	fotografo	VO_I	Volpi
 C_13	Paul	Cassirer	antiquario	ST	Steffanoni
 C_14	Raffaello	Causa	storico dell'arte	SE_II	Sestieri
@@ -29,28 +29,28 @@ C_20	Robert Langton	Douglas	storico dell'arte	BE_II CO_I FO	Bellesi Contini Bona
 C_21	Alvaro	Esposti	restauratore	SE_II	Sestieri
 C_22	Antonio	Faccioli	capo-restauratore e direttore laboratori della sede succursale	SE_II	Sestieri
 C_23	Italo	Faldi	storico dell'arte
-C_24	Cesare	Faraglia	fotografo	BA_III	Barsanti
+C_24	Cesare	Faraglia	fotografo	BA_III PO_III	Barsanti Pollak
 C_25	Giuseppe	Fiocco	storico dell'arte	CO_I ST BR_III	Contini Bonacossi Steffanoni Brass
 C_26	Ugo	Frizzoni	storico dell'arte	ST	Steffanoni
 C_27		Gasparini	fotografo
 C_28	Benno	Geiger	antiquario	ST	Steffanoni
 C_29		Gonnella	fotografo
-C_30	Alvar	Gonzáles Palacios	storico dell'arte	AN-EF AP DI SE_II	Antonacci-Efrati Apolloni Di Castro Sestieri
+C_30	Alvar	Gonzáles Palacios	storico dell'arte	AN-EF AP DI SE_II PR	Antonacci-Efrati Apolloni Di Castro Sestieri Pratesi
 C_31	Marco	Grassi	restauratore
-C_32	Mina	Gregori	storica dell'arte	BA_I	Bacarelli
+C_32	Mina	Gregori	storica dell'arte	BA_I PR	Bacarelli Pratesi
 C_33		Industrial foto	fotografo	SA_I	Salocchi
 C_34	Vittorio	Jacquier	fotografo
 C_35	Icilio Federico	Joni	restauratore	VO_II	Volterra
 C_36	Franz	Kieslinger	mercante	PO_II	Pospisil
 C_36_b	Jacob	Heimann	antiquario	FO	Foresti
-C_37	Roberto	Longhi	storico dell'arte	BR_II CO_I	Bruschi Livio Contini Bonacossi
+C_37	Roberto	Longhi	storico dell'arte	BR_II CO_I CO_V	Bruschi Livio Contini Bonacossi Cortinovis
 C_38	Matteo	Marangoni	storico dell'arte	BE_II	Bellesi
 C_38_b	Egidio	Martini	storico dell'arte	VI_I	Viancini
 C_39	Frederick	Mason Perkins	storico dell'arte	CO_I SA_IV FO	Contini Bonacossi Sangiorgi Foresti
 C_40	Angiolo	Melli	antiquario	VO_II	Volterra
 C_41	Cesare	Melli	antiquario	VO_II	Volterra
 C_41_b	Ferruccio	Mestrovich	storico dell'arte	VI_I	Viancini
-C_42	Mario	Modestini	restauratore	CO_I	Contini Bonacossi
+C_42	Mario	Modestini	restauratore	CO_I PA_III	Contini Bonacossi Studio d'Arte Palma
 C_43	Bruno	Molajoli	storico dell'arte	SE_II	Sestieri
 C_44	Giulio	Ometto	curatore	AC	Accorsi
 C_45	Kajetan 'Kai'	Mühlmann	storico dell'arte	PO_II	Pospisil
@@ -71,12 +71,98 @@ C_58	Giovanni	Sassu	restauratore
 C_59	Tommaso	Schneider	restauratore
 C_60	Nicola	Spinosa	storico dell'arte
 C_61	Arthur E.	Sulley	antiquario
-C_61_b	Giuseppe 	Steffanoni	restauratore	GR_II	Grandi
+C_61_b	Giuseppe 	Steffanoni	restauratore	GR_II CA_IV	Grandi Carrer
 C_62	Pietro	Toesca	storico dell'arte	CO_I	Contini Bonacossi
 C_63	Adolfo	Venturi	storico dell'arte	SA_IV	Sangiorgi
-C_64	Lionello	Venturi	storico dell'arte	CO_I	Contini Bonacossi
+C_64	Lionello	Venturi	storico dell'arte	CO_I PA_III	Contini Bonacossi Studio d'Arte Palma
 C_65	Louise	Vergetas	restauratore
 C_65_b	Angelo	Visoni	pittore, falsario	GE_I	Geiger
 C_66	Wilhelm	Von Bode	storico dell'arte	BA_III BA_IV	Barsanti Baslini
 C_67	Silvio	Zanchi	restauratore	VO_II	Volterra
-C_68	Federico	Zeri	storico dell'arte	ZA SA_V	Zabert Sabatello
+C_68	Federico	Zeri	storico dell'arte	ZA SA_V SA_VII LO_I CA_V CO_V GI_I DA FO_I RI PA_III	Zabert Sabatello Salamon Longari Caretto Cortinovis Gianetti D'Atri Forti Riccardi Studio d'Arte Palma
+C_69		Fischer & Rechsteiner	ditta di trasporti	BA_V CA_V	Barozzi Carrer
+C_70	Francesco	Dorigo	antiquario, marmista	BA_V	Barozzi
+C_71	Vittorio	Pica	curatore	PE	Pesaro
+C_72	Margherita	Grassini Scarfatti	critica d'arte	PE	Pesaro
+C_73	Luigi	Pisani	antiquario	PE	Pesaro
+C_74	Carlo	Feltrinelli	socio	PE	Pesaro
+C_75	Luigi	Della Torre	socio	PE	Pesaro
+C_76	Antonio	Fradeletto	storico dell'arte	PE	Pesaro
+C_77	Enrico	Somarè	storico dell'arte	PE	Pesaro
+C_78	Ugo	Ojetti	critico d'arte	PE	Pesaro
+C_79	Hugo	Helbing	impresario di casa d'asta	GU RA_NEW	Guggenheim Rambaldi
+C_80	Alessandro	Morandotti	antiquario	LO	Loewi
+C_81	William	Robertson	antiquario	LO	Loewi
+C_82	Arnold	Seligman	antiquario	LO	Loewi
+C_83	A.	Fauconnet	ditta di trasporti	PO_III	Pollak
+C_84	Carl	Stein	ditta di trasporti	PO_III	Pollak
+C_85	Gustav	Knauer	ditta di trasporti	PO_III	Pollak
+C_86	Ettore e figli	Roesler Franz	ditta di trasporti	PO_III	Pollak
+C_87		Tartaglia & Co. 	ditta di trasporti	PO_III	Pollak
+C_88		Otto H. W. Internationale Transporte 	ditta di trasporti	PO_III	Pollak
+C_89	Remo	Lizzani	ditta di deposito opere d'arte	PO_III	Pollak
+C_90	Cosimo	Boccardi	fotografo	PO_III	Pollak
+C_91	Oscar	Savio	fotografo	PO_III	Pollak
+C_92	Antonio	Muñoz	storico dell'arte	PO_III	Pollak
+C_93	Guido	Libertini	archeologo	PO_III	Pollak
+C_94		Ditta Danubio società anonima	compagnia di assicurazioni	PO_III	Pollak
+C_95	Gilberto	Algranti	impresario di casa d'asta	SA_VII	Salamon
+C_96	Fabrizio	Agustoni	impresario di casa d'asta	SA_VII	Salamon
+C_97		Ciceri	ottico	CO_IV	Colnaghi
+C_98	Otto	Gutekunst	comproprietario	CO_IV	Colnaghi
+C_99	Edmund F.	Deprez	comproprietario	CO_IV	Colnaghi
+C_100	Gustavus	Mayer	comproprietario	CO_IV	Colnaghi
+C_101	James 	Byam Shaw	comproprietario	CO_IV	Colnaghi
+C_102	H.J.L.	Wright	comproprietario	CO_IV	Colnaghi
+C_103	D.C.	Baskett	comproprietario	CO_IV	Colnaghi
+C_104	R.M.D.	Thesiger	comproprietario	CO_IV	Colnaghi
+C_105	Jorge	Coll	comproprietario	CO_IV	Colnaghi
+C_106	Nicolas	Cortés	comproprietario	CO_IV	Colnaghi
+C_107	Jacob	Rothschild	proprietario	CO_IV	Colnaghi
+C_108	Michael 	Goedius	comproprietario	CO_IV	Colnaghi
+C_109	Rudolf	Oetker	comproprietario	CO_IV	Colnaghi
+C_110	Franco	Zangrilli	direttore	CO_IV	Colnaghi
+C_111	Richard	Knight	direttore	CO_IV	Colnaghi
+C_112	Konrad	Bernheimer	comproprietario	CO_IV	Colnaghi
+C_113	Katrin	Bellinger	comproprietario	CO_IV	Colnaghi
+C_114	Carlos	Picon	direttore	CO_IV	Colnaghi
+C_115	Will	Elliott	antiquario	CO_IV	Colnaghi
+C_116	Franz	Zatzenstein	antiquario	CO_IV	Colnaghi
+C_117	Victoria	Golembiovskaya	comproprietaria	CO_IV	Colnaghi
+C_118	Chloe	Stead	direttrice	CO_IV	Colnaghi
+C_119	Gustavo 	Frizzoni	storico dell'arte	SA_VI_NEW	Antonio Salvadori
+C_120	Giuseppe	Spoldi	antiquario	SA_VI_NEW	Antonio Salvadori
+C_121	Arturo	Cividini	restauratore	ST_NEW	Steffanoni
+C_122	Antonio	Zanchi	restauratore	ST_NEW	Steffanoni
+C_123	Ugo	Frizzoni	storico dell’arte	ST_NEW	Steffanoni
+C_124	Cesare	Laurenti	pittore	ST_NEW	Steffanoni
+C_125	Luigi	Cavenaghi	restauratore	ST_NEW	Steffanoni
+C_126	Luciano	Bellosi	storico dell'arte	LO_I	Longari
+C_127	Carlo	Bertelli	storico dell'arte	LO_I	Longari
+C_128	Miklós 	Boskovits	storico dell'arte	LO_I	Longari
+C_129	Enzo	Carli	storico dell'arte	LO_I	Longari
+C_130	Giovanni	Previtali	storico dell'arte	LO_I	Longari
+C_130	Bert	Meyer	storico dell'arte	CA_V	Caretto
+C_131	Luigi	Scagliotti	antiquario	CA_V	Caretto
+C_132	Gustavo Adolfo	Rol	antiquario	CA_V	Caretto
+C_133	Carlo	Volpe	storico dell'arte	CO_V	Cortinovis
+C_134	Dwight	Millet	storico dell'arte	CO_V	Cortinovis
+C_135	Denis	Mahon	storico dell'arte	CO_V	Cortinovis
+C_136		Fototecnica Bolognese	fotografo	CO_V	Cortinovis
+C_137		A. Villani e Figli	fotografo	CO_V	Cortinovis
+C_138	Tammaro 	De Marinis	antiquario	FO_I	Forti
+C_139	Francesco	Monotti	storico dell'arte	PA_III	Studio d'Arte Palma
+C_140	Manlio	Goffi	antiquario	PA_III	Studio d'Arte Palma
+C_141	Giò	Ponti	designer	PA_III	Studio d'Arte Palma
+C_142	Bruno	Zevi	storico dell'arte	PA_III	Studio d'Arte Palma
+C_143	Carlo Francesco	Fornasini	collaboratore	PI_NEW	Pini
+C_144	Giuseppe	Simoni	intagliatore	RA_NEW	Rambaldi
+C_145	Augusto	Pagliarini	restauratore e pittore	RA_NEW	Rambaldi
+C_146	Giuseppe	Alberani	falegname	RA_NEW	Rambaldi
+C_147	Daniele	Ferné	collaboratore	RA_NEW	Rambaldi
+C_148	Giuseppe	Cantelli	storico dell'arte	PR	Pratesi
+C_149	Andrea	Bacchi	storico dell'arte	PR	Pratesi
+C_150	Maria Cecilia	Fabbri	storica dell'arte	PR	Pratesi
+C_151	Sandro	Bellesi	storica dell'arte	PR	Pratesi
+C_152	Massino	Listri	fotografo	PR	Pratesi
+
