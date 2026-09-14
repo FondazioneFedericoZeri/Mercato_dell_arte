@@ -203,13 +203,13 @@ DA_2	Alberto D'Atri	DA	FR_10 FR_11 IT_197	antiquario	1908		"Galleria D'Atri"
 FO_I_1	Vittorio Forti	FO_I	IT_198	antiquario	1881	1980 	
 PA_III_1	Pietro Maria Bardi	PA_III	IT_199	antiquario	1990	1999	"Studio d'Arte Palma"
 MO_I_1	Aldo Modena Molena	MO_I	IT_200 IT_201 IT_202 IT_203 IT_204 IT_205	antiquario	1867		
-PI_NEW_1	Cesare Pini	PI	IT_25	antiquario	1870		
-PI_NEW_2	Umberto Pini	PI	IT_83 IT_85	antiquario	1902		
-PI_NEW_3	Giovanni Pini	PI	IT_83 IT_85	antiquario	1895		
-RA_NEW_1	Arturo Rambaldi	RA	IT_24	antiquario	1859	1929	Galleria di Antichità e Casa di vendite A. Rambaldi
-RA_NEW_2	Angelo Rambaldi	RA	IT_24	antiquario	1883		“Galleria A. Rambaldi”
-RA_NEW_3	Aldo Rambaldi	RA	IT_24	antiquario	1885	1964	“Galleria A. Rambaldi”
-RA_NEW_4	Olga Tcherukine	RA	IT_24	antiquario	1901		“Galleria A. Rambaldi”
+PI_NEW_1	Cesare Pini	PI_NEW	IT_25	antiquario	1870		
+PI_NEW_2	Umberto Pini	PI_NEW	IT_83 IT_85	antiquario	1902		
+PI_NEW_3	Giovanni Pini	PI_NEW	IT_83 IT_85	antiquario	1895		
+RA_NEW_1	Arturo Rambaldi	RA_NEW	IT_24	antiquario	1859	1929	Galleria di Antichità e Casa di vendite A. Rambaldi
+RA_NEW_2	Angelo Rambaldi	RA_NEW	IT_24	antiquario	1883		“Galleria A. Rambaldi”
+RA_NEW_3	Aldo Rambaldi	RA_NEW	IT_24	antiquario	1885	1964	“Galleria A. Rambaldi”
+RA_NEW_4	Olga Tcherukine	RA_NEW	IT_24	antiquario	1901		“Galleria A. Rambaldi”
 RI_1	Ennio Riccardi	RI	IT_207	antiquario			“Riccardi Antichità”
 RI_2	Piero Riccardi	RI	IT_207	antiquario			“Riccardi Antichità”
 RI_I_1	Consiglio Ricchetti	RI_I	IT_208 IT_209 IT_210	antiquario			"Galleria d'arte e di antichità"

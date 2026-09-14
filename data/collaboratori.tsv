@@ -2,7 +2,7 @@ ID	Nome	Cognome / Denominazione	Tipologia	ID Antiquari	Nome Antiquari
 C_1		Alinari	fotografo	VO_I PO_III	Volpi Pollak
 C_2		Anderson	fotografo	PA_II	Paolini
 C_3	Leopoldo	Aretini	antiquario
-C_4	Wart	Arslan	storico dell'arte	ST	Steffanoni
+C_4	Wart	Arslan	storico dell'arte	ST_NEW	Steffanoni
 C_5		Arte Fotografica	fotografo	DI	Di castro
 C_6	Valentina	Barbareschi	restauratrice
 C_6_b	Luigi	Battistelli	impresario di casa d'aste	GE_II	Geri
@@ -15,7 +15,7 @@ C_10_2		Giraudon	fotografo	LA_II	Lazzaroni
 C_10_3		Bernès, Marouteau & C.ie	fotografo	LA_II	Lazzaroni
 C_11	Giuliano	Briganti	storico dell'arte	AN-EF AP GR_II PA_III GI_I	Antonacci-Efrati Apolloni Grandi Studio d'Arte Palma Gianetti
 C_12		Brogi	fotografo	VO_I	Volpi
-C_13	Paul	Cassirer	antiquario	ST	Steffanoni
+C_13	Paul	Cassirer	antiquario	ST_NEW	Steffanoni
 C_14	Raffaello	Causa	storico dell'arte	SE_II	Sestieri
 C_14_b	Maurizio	Calvesi	storico dell'arte	SE_II	Sestieri
 C_15	Luigi	Cavenaghi	restauratore	SA_V	Sabatello
@@ -30,10 +30,10 @@ C_21	Alvaro	Esposti	restauratore	SE_II	Sestieri
 C_22	Antonio	Faccioli	capo-restauratore e direttore laboratori della sede succursale	SE_II	Sestieri
 C_23	Italo	Faldi	storico dell'arte
 C_24	Cesare	Faraglia	fotografo	BA_III PO_III	Barsanti Pollak
-C_25	Giuseppe	Fiocco	storico dell'arte	CO_I ST BR_III	Contini Bonacossi Steffanoni Brass
-C_26	Ugo	Frizzoni	storico dell'arte	ST	Steffanoni
+C_25	Giuseppe	Fiocco	storico dell'arte	CO_I ST_NEW BR_III	Contini Bonacossi Steffanoni Brass
+C_26	Ugo	Frizzoni	storico dell'arte	ST_NEW	Steffanoni
 C_27		Gasparini	fotografo
-C_28	Benno	Geiger	antiquario	ST	Steffanoni
+C_28	Benno	Geiger	antiquario	ST_NEW	Steffanoni
 C_29		Gonnella	fotografo
 C_30	Alvar	Gonzáles Palacios	storico dell'arte	AN-EF AP DI SE_II PR	Antonacci-Efrati Apolloni Di Castro Sestieri Pratesi
 C_31	Marco	Grassi	restauratore

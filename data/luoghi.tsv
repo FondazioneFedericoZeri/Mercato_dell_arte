@@ -18,8 +18,8 @@ IT_1_c	Italia	Veneto	Venezia	Calle Larga XXII marzo		VI_I	1976	1982	Paolo Vianci
 IT_1_d	Italia	Veneto	Venezia	Campo de l'Abazia	3551	BR_III	1920	1974	Brass (Scuola Vecchia di S. Maria della Misericordia, atelier e sede)
 IT_1_e	Italia	Veneto	Venezia	Rio Novo 	3498	GE_I			Benno Geiger (abitazione privata)
 IT_1_f	Italia	Veneto	Venezia	Sotoportego dei Dai		GE_II	1920 ca.	1929 ca.	Alfredo Geri, "Geri-Boralevi"
-IT_1_g	Italia	Veneto	Venezia			SA_VI			Antonio Salvadori
-IT_2	Italia	Lombardia	Bergamo	Via Evaristo Baschenis	5	ST	1921	1947 ca.	Attilio e Franco Steffanoni, "F.lli Steffanoni Belle Arti"
+IT_1_g	Italia	Veneto	Venezia			SA_VI_NEW			Antonio Salvadori
+IT_2	Italia	Lombardia	Bergamo	Via Evaristo Baschenis	5	ST_NEW	1921	1947 ca.	Attilio e Franco Steffanoni, "F.lli Steffanoni Belle Arti"
 IT_3	Italia	Lombardia	Milano	Via Monte Napoleone	11	BA_IV	1840 ca.	1887	Giuseppe Baslini (abitazione privata)
 IT_4	Italia	Lombardia	Milano	Corso vittorio Emanuele	37	SA_III	1885	1905 ca.	Giulio Sambon, "Impresa di vendita in Italia Giulio Sambon"
 IT_4_b	Italia	Lombardia	Varese	Piazza Podestà	2	ZA	1980 ca.	1990 ca.	Gilberto Zabert (Corte Vecchio Broletto)
@@ -51,8 +51,8 @@ IT_21	Italia	Liguria	Genova	Via XX Settembre	44	VI_III	1920 ca.	1936	Edoardo Vil
 IT_22	Italia	Liguria	Genova	Viale Sauli	3	NI	1942 ca.	1967	Costantino Nigro
 IT_22_b	Italia	Emilia-Romagna	Bologna			CE	1976	2004	Adriano Cera
 IT_23	Italia	Emilia-Romagna	Bologna	Piazza della Mercanzia	6	PO_I	1926 ca.	1929 ca.	Publio Podio e figli, "Cav. Prof. Publio Podio & C." (Palazzo del Commercio)
-IT_24	Italia	Emilia-Romagna	Bologna	Via Castiglione	1	RA	1900 ca.	1929	Arturo Rambaldi, "Galleria di Antichità e casa di vendite A. Rambaldi" poi "Galleria A. Rambaldi" con Angelo, Aldo e Olga Tcherukine
-IT_25	Italia	Emilia-Romagna	Bologna	Via del Monte, Ghetto Ebraico	8	PI	1922 ca.	1923 ca.	Cesare e Umberto Pini
+IT_24	Italia	Emilia-Romagna	Bologna	Via Castiglione	1	RA_NEW	1900 ca.	1929	Arturo Rambaldi, "Galleria di Antichità e casa di vendite A. Rambaldi" poi "Galleria A. Rambaldi" con Angelo, Aldo e Olga Tcherukine
+IT_25	Italia	Emilia-Romagna	Bologna	Via del Monte, Ghetto Ebraico	8	PI_NEW	1922 ca.	1923 ca.	Cesare e Umberto Pini
 IT_26	Italia	Emilia-Romagna	Bologna	Via Giuseppe Mazzini, Murri	25	PO_I	1910 ca.	1926 ca.	Publio Podio
 IT_27	Italia	Emilia-Romagna	Bologna	Via Giuseppe Mazzini, Murri	48	PO_I	1929 ca.	1932	Publio Podio e figli, "Fratelli Podio Antichità"
 IT_28	Italia	Emilia-Romagna	Bologna	Via Giuseppe Mazzini, Murri	50	GA	1910 ca.	1919 ca.	Antonio Galliani
@@ -118,9 +118,9 @@ IT_79	Italia	Toscana	Firenze	Via Malcontenti	4	CI	1877	1882 ca.	Vincenzo Ciampol
 IT_80	Italia	Toscana	Firenze	Via dei Martelli	4	SA_III	1887	1905 ca.	Giulio Sambon, "Impresa di vendita in Italia Giulio Sambon"
 IT_81	Italia	Toscana	Firenze	Via di Montughi	31	BE_II	1943	1955	Giuseppe Bellesi (abitazione privata)
 IT_82	Italia	Toscana	Firenze	Via Porta Rossa	9	VO_I	1910	1923	Elia Volpi (Palazzo Davanzati)
-IT_83	Italia	Toscana	Firenze	Via di San Niccolò	95	PI	1923	1930 ca.	Giovanni Pini (deposito)
+IT_83	Italia	Toscana	Firenze	Via di San Niccolò	95	PI_NEW	1923	1930 ca.	Giovanni Pini (deposito)
 IT_84	Italia	Toscana	Firenze	Via Tornabuoni	7	LA_I	1978	1986	Leonardo Lapiccirella, "Galleria Lapiccirella"
-IT_85	Italia	Toscana	Firenze	Via Tornabuoni	4	PI	1920 ca.	1940 ca.	Cesare, Umberto e Giovanni Pini "Cesare Pini e figli"
+IT_85	Italia	Toscana	Firenze	Via Tornabuoni	4	PI_NEW	1920 ca.	1940 ca.	Cesare, Umberto e Giovanni Pini "Cesare Pini e figli"
 IT_86	Italia	Toscana	Firenze	Via Tornabuoni	12	VO_II ME	1901	1913 ca.	Gustavo Volterra e Cesare Melli, "Volterra & Melli" (sede e laboratori)
 IT_87	Italia	Toscana	Firenze	Viale Filippo Strozzi	2	CO_I	1931	1955	Alessandro Contini Bonacossi (Villa Vittoria, abitazione privata)
 IT_87_b	Italia	Toscana	Firenze	Via dei Rondinelli		LA_I	1950 ca.	1957	Leonardo Lapiccirella (studio)
