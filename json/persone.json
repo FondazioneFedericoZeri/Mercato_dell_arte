@@ -7145,7 +7145,7 @@
     "PI_NEW_1": {
         "ID": "PI_NEW_1",
         "Nome Persona": "Cesare Pini",
-        "ID_entità": "PI",
+        "ID_entità": "PI_NEW",
         "ID_luoghi": {
             "IT_25": {
                 "ID": "IT_25",
@@ -7173,7 +7173,7 @@
     "PI_NEW_2": {
         "ID": "PI_NEW_2",
         "Nome Persona": "Umberto Pini",
-        "ID_entità": "PI",
+        "ID_entità": "PI_NEW",
         "ID_luoghi": {
             "IT_83": {
                 "ID": "IT_83",
@@ -7218,7 +7218,7 @@
     "PI_NEW_3": {
         "ID": "PI_NEW_3",
         "Nome Persona": "Giovanni Pini",
-        "ID_entità": "PI",
+        "ID_entità": "PI_NEW",
         "ID_luoghi": {
             "IT_83": {
                 "ID": "IT_83",
@@ -7263,7 +7263,7 @@
     "RA_NEW_1": {
         "ID": "RA_NEW_1",
         "Nome Persona": "Arturo Rambaldi",
-        "ID_entità": "RA",
+        "ID_entità": "RA_NEW",
         "ID_luoghi": {
             "IT_24": {
                 "ID": "IT_24",
@@ -7291,7 +7291,7 @@
     "RA_NEW_2": {
         "ID": "RA_NEW_2",
         "Nome Persona": "Angelo Rambaldi",
-        "ID_entità": "RA",
+        "ID_entità": "RA_NEW",
         "ID_luoghi": {
             "IT_24": {
                 "ID": "IT_24",
@@ -7319,7 +7319,7 @@
     "RA_NEW_3": {
         "ID": "RA_NEW_3",
         "Nome Persona": "Aldo Rambaldi",
-        "ID_entità": "RA",
+        "ID_entità": "RA_NEW",
         "ID_luoghi": {
             "IT_24": {
                 "ID": "IT_24",
@@ -7347,7 +7347,7 @@
     "RA_NEW_4": {
         "ID": "RA_NEW_4",
         "Nome Persona": "Olga Tcherukine",
-        "ID_entità": "RA",
+        "ID_entità": "RA_NEW",
         "ID_luoghi": {
             "IT_24": {
                 "ID": "IT_24",
