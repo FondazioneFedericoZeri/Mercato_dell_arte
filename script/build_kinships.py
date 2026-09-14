@@ -9,6 +9,7 @@ def build_kinships(input_csv, entity_json, person_tsv, output_json):
     # Load the person data from persone.json
     persons = pd.read_csv(person_tsv, sep="\t")
     persons = persons.loc[:, ~persons.columns.str.startswith('Unnamed')]
+    persons = persons.astype(object)
     persons.fillna("", inplace=True)
     persons['Nascita'] = persons['Nascita'].apply(
         lambda x: str(int(x)) if pd.notna(x) and x != "" else "")
