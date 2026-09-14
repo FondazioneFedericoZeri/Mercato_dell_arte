@@ -193,6 +193,43 @@
         },
         "Relazioni": {}
     },
+    "AN": {
+        "ID": "AN",
+        "Nome": "Angiolini",
+        "Bio": "AN_bio",
+        "Link Zeri": "https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=R.+Angiolini",
+        "Bibliografia": {
+            "B_56": {
+                "ID": "B_56",
+                "Autore": "Giometti, C., Ciancabilla, L.",
+                "Anno": "2019",
+                "Titolo": "Stefano Bardini estrattista : affreschi staccati nell'Italia unita fra antiquariato, collezionismo e musei",
+                "Città, editore o rivista": "Pisa, ETS",
+                "Pagine": "",
+                "Tipologia": "monografia"
+            }
+        },
+        "Collaboratori": {},
+        "Eventi": {},
+        "Foto preview": "",
+        "Foto gallery": [
+            ""
+        ],
+        "Persone": {
+            "AN_1": {
+                "ID": "AN_1",
+                "Nome Persona": "Raffaele Angiolini",
+                "ID_entità": "AN",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "1850 ",
+                "Morte": "1920 ",
+                "Nome attività": "“Angiolini e Ascoli”; “Alessandro Ranuzzi e C.”"
+            }
+        },
+        "Clienti": {},
+        "Relazioni": {}
+    },
     "AN-EF": {
         "ID": "AN-EF",
         "Nome": "Antonacci-Efrati",
@@ -269,8 +306,8 @@
                         "Nome attività": "Emanuele Efrati, \"Galleria Efrati\"",
                         "": "",
                         "geo": {
-                            "lat": 41.90834521500914,
-                            "lon": 12.479089794624903
+                            "lat": 41.9084557,
+                            "lon": 12.4789596
                         }
                     }
                 },
@@ -297,8 +334,8 @@
                         "Nome attività": "Emanuele Efrati, \"Galleria Efrati\"",
                         "": "",
                         "geo": {
-                            "lat": 41.90834521500914,
-                            "lon": 12.479089794624903
+                            "lat": 41.9084557,
+                            "lon": 12.4789596
                         }
                     }
                 },
@@ -325,8 +362,8 @@
                         "Nome attività": "Emanuele Efrati, \"Galleria Efrati\"",
                         "": "",
                         "geo": {
-                            "lat": 41.90834521500914,
-                            "lon": 12.479089794624903
+                            "lat": 41.9084557,
+                            "lon": 12.4789596
                         }
                     }
                 },
@@ -353,8 +390,8 @@
                         "Nome attività": "Emanuele Efrati, \"Galleria Efrati\"",
                         "": "",
                         "geo": {
-                            "lat": 41.90834521500914,
-                            "lon": 12.479089794624903
+                            "lat": 41.9084557,
+                            "lon": 12.4789596
                         }
                     }
                 },
@@ -381,8 +418,8 @@
                         "Nome attività": "Emanuele Efrati, \"Galleria Efrati\"",
                         "": "",
                         "geo": {
-                            "lat": 41.90834521500914,
-                            "lon": 12.479089794624903
+                            "lat": 41.9084557,
+                            "lon": 12.4789596
                         }
                     }
                 },
@@ -524,8 +561,8 @@
                         "Nome attività": "Fabrizio e Marco Fabio Apolloni, \"W. Apolloni\"",
                         "": "",
                         "geo": {
-                            "lat": 41.90834521500914,
-                            "lon": 12.479089794624903
+                            "lat": 41.9084557,
+                            "lon": 12.4789596
                         }
                     }
                 },
@@ -552,8 +589,8 @@
                         "Nome attività": "Fabrizio e Marco Fabio Apolloni, \"W. Apolloni\"",
                         "": "",
                         "geo": {
-                            "lat": 41.90834521500914,
-                            "lon": 12.479089794624903
+                            "lat": 41.9084557,
+                            "lon": 12.4789596
                         }
                     },
                     "IT_117": {
@@ -588,6 +625,33 @@
             "SE_II": true,
             "SA_I": true
         }
+    },
+    "AS": {
+        "ID": "AS",
+        "Nome": "Ascoli",
+        "Bio": "AS_bio",
+        "Link Zeri": "https://catalogo.fondazionezeri.unibo.it/scheda/opera/109115/Strozzi%20Zanobi%20%28Pseudo%20Domenico%20di%20Michelino%20Master%20of%20the%20Buckingham%20Palace%20Madonna%29%2C%20Dio%20Padre%20in%20trono%20e%20angeli ",
+        "Bibliografia": {},
+        "Collaboratori": {},
+        "Eventi": {},
+        "Foto preview": "",
+        "Foto gallery": [
+            ""
+        ],
+        "Persone": {
+            "AS_1": {
+                "ID": "AS_1",
+                "Nome Persona": "Alessandro Ascoli",
+                "ID_entità": "AS",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "",
+                "Morte": "1897",
+                "Nome attività": "“Alessandro Ascoli e Comp.o”; “Angiolini e Ascoli”"
+            }
+        },
+        "Clienti": {},
+        "Relazioni": {}
     },
     "BA_I": {
         "ID": "BA_I",
@@ -689,8 +753,8 @@
                         "Nome attività": "Rizieri Bacarelli",
                         "": "",
                         "geo": {
-                            "lat": 43.772061293279926,
-                            "lon": 11.24923527229892
+                            "lat": 43.7732075,
+                            "lon": 11.2506064
                         }
                     }
                 },
@@ -734,8 +798,8 @@
                         "Nome attività": "Rizieri Bacarelli",
                         "": "",
                         "geo": {
-                            "lat": 43.772061293279926,
-                            "lon": 11.24923527229892
+                            "lat": 43.7732075,
+                            "lon": 11.2506064
                         }
                     },
                     "IT_74": {
@@ -743,7 +807,7 @@
                         "Nazione": "Italia",
                         "Regione": "Toscana",
                         "Città": "Firenze",
-                        "Via": "Via della vigna nuova",
+                        "Via": "Via della Vigna Nuova",
                         "Civico": "",
                         "ID_entità": "BA_I",
                         "Apertura": "1950 ca.",
@@ -751,8 +815,8 @@
                         "Nome attività": "Benvenuto Bacarelli",
                         "": "",
                         "geo": {
-                            "lat": 43.77121394554101,
-                            "lon": 11.249741815272415
+                            "lat": 43.7715147,
+                            "lon": 11.2513609
                         }
                     }
                 },
@@ -936,8 +1000,8 @@
                         "Nome attività": "Stefano Bardini (Palazzo Canigiani)",
                         "": "",
                         "geo": {
-                            "lat": 43.76831244155727,
-                            "lon": 11.259975032221455
+                            "lat": 43.7675835,
+                            "lon": 11.2593399
                         }
                     },
                     "IT_37": {
@@ -1393,6 +1457,55 @@
         },
         "Relazioni": {}
     },
+    "BA_V": {
+        "ID": "BA_V",
+        "Nome": "Barozzi",
+        "Bio": "BA_V_bio",
+        "Link Zeri": "https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=barozzi",
+        "Bibliografia": {},
+        "Collaboratori": {},
+        "Eventi": {},
+        "Foto preview": "BA_V_preview",
+        "Foto gallery": [
+            "BA_V_img1",
+            "BA_V_img2",
+            "BA_V_img3"
+        ],
+        "Persone": {
+            "BA_V_1": {
+                "ID": "BA_V_1",
+                "Nome Persona": "Alvise Bernardino 'Dino'  Barozzi",
+                "ID_entità": "BA_V",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "1863",
+                "Morte": "1942",
+                "Nome attività": ""
+            },
+            "BA_V_2": {
+                "ID": "BA_V_2",
+                "Nome Persona": "Sebastiano Alvise Barozzi",
+                "ID_entità": "BA_V",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "1887",
+                "Morte": "1969",
+                "Nome attività": ""
+            },
+            "BA_V_3": {
+                "ID": "BA_V_3",
+                "Nome Persona": "Alvise Barozzi",
+                "ID_entità": "BA_V",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "1915",
+                "Morte": "",
+                "Nome attività": ""
+            }
+        },
+        "Clienti": {},
+        "Relazioni": {}
+    },
     "BE_I": {
         "ID": "BE_I",
         "Nome": "Bellini",
@@ -1528,8 +1641,8 @@
                         "Nome attività": "Giuseppe Bellini",
                         "": "",
                         "geo": {
-                            "lat": 43.772288984181834,
-                            "lon": 11.250087771042342
+                            "lat": 43.7725193,
+                            "lon": 11.2498118
                         }
                     }
                 },
@@ -1573,8 +1686,8 @@
                         "Nome attività": "Luigi, Giuseppe Jr e Mario Bellini (Palazzo Spini Feroni, show room)",
                         "": "",
                         "geo": {
-                            "lat": 43.7698492,
-                            "lon": 11.2511748
+                            "lat": 43.7700572,
+                            "lon": 11.251220681680373
                         }
                     }
                 },
@@ -1618,8 +1731,8 @@
                         "Nome attività": "Luigi, Giuseppe Jr e Mario Bellini (Palazzo Spini Feroni, show room)",
                         "": "",
                         "geo": {
-                            "lat": 43.7698492,
-                            "lon": 11.2511748
+                            "lat": 43.7700572,
+                            "lon": 11.251220681680373
                         }
                     }
                 },
@@ -1663,8 +1776,8 @@
                         "Nome attività": "Luigi, Giuseppe Jr e Mario Bellini (Palazzo Spini Feroni, show room)",
                         "": "",
                         "geo": {
-                            "lat": 43.7698492,
-                            "lon": 11.2511748
+                            "lat": 43.7700572,
+                            "lon": 11.251220681680373
                         }
                     }
                 },
@@ -1708,8 +1821,8 @@
                         "Nome attività": "Luigi, Giuseppe Jr e Mario Bellini (Palazzo Spini Feroni, show room)",
                         "": "",
                         "geo": {
-                            "lat": 43.7698492,
-                            "lon": 11.2511748
+                            "lat": 43.7700572,
+                            "lon": 11.251220681680373
                         }
                     }
                 },
@@ -1809,8 +1922,8 @@
                         "Nome attività": "Giuseppe Bellesi (Pall Mall Deposit, magazzino)",
                         "": "",
                         "geo": {
-                            "lat": 51.508707672175376,
-                            "lon": -0.13340129769412826
+                            "lat": 51.5086356,
+                            "lon": -0.1336046
                         }
                     },
                     "UK_2": {
@@ -1826,8 +1939,8 @@
                         "Nome attività": "Giuseppe Bellesi, \"The Italian Art Gallery\"",
                         "": "",
                         "geo": {
-                            "lat": 51.3682459,
-                            "lon": -0.1832648
+                            "lat": 51.51459585014354,
+                            "lon": -0.1514252361877634
                         }
                     },
                     "UK_4": {
@@ -1843,8 +1956,8 @@
                         "Nome attività": "Giuseppe Bellesi, \"The Italian Art Gallery\"",
                         "": "",
                         "geo": {
-                            "lat": 51.50975635,
-                            "lon": -0.14196063763405797
+                            "lat": 51.5097564,
+                            "lon": -0.1419606
                         }
                     },
                     "UK_5": {
@@ -1860,8 +1973,8 @@
                         "Nome attività": "Giuseppe Bellesi, \"The Italian Art Gallery\"",
                         "": "",
                         "geo": {
-                            "lat": 51.5228442,
-                            "lon": -0.2000622
+                            "lat": 51.52083206176758,
+                            "lon": -0.17385241389274597
                         }
                     },
                     "UK_7": {
@@ -2218,13 +2331,13 @@
                         "Via": "Piazza S. Francesco",
                         "Civico": "",
                         "ID_entità": "BR_I",
-                        "Apertura": "1958",
+                        "Apertura": "1967",
                         "Chiusura": "1996",
                         "Nome attività": "Ivan Bruschi",
                         "": "",
                         "geo": {
-                            "lat": 43.5715917,
-                            "lon": 12.1419482
+                            "lat": 43.464796050000004,
+                            "lon": 11.880910299394806
                         }
                     }
                 },
@@ -2300,7 +2413,9 @@
         },
         "Eventi": {},
         "Foto preview": "BR_II_preview",
-        "Foto gallery": [],
+        "Foto gallery": [
+            ""
+        ],
         "Persone": {
             "BR_II_1": {
                 "ID": "BR_II_1",
@@ -2337,8 +2452,8 @@
                         "Nome attività": "Livio e Ivan Bruschi (fino al 1956), \"Antichità Bruschi\"",
                         "": "",
                         "geo": {
-                            "lat": 43.771808153190584,
-                            "lon": 11.248441399335693
+                            "lat": 43.7713694,
+                            "lon": 11.2479923
                         }
                     }
                 },
@@ -2365,8 +2480,8 @@
                         "Nome attività": "Livio e Ivan Bruschi (fino al 1956), \"Antichità Bruschi\"",
                         "": "",
                         "geo": {
-                            "lat": 43.771808153190584,
-                            "lon": 11.248441399335693
+                            "lat": 43.7713694,
+                            "lon": 11.2479923
                         }
                     }
                 },
@@ -2393,8 +2508,8 @@
                         "Nome attività": "Livio e Ivan Bruschi (fino al 1956), \"Antichità Bruschi\"",
                         "": "",
                         "geo": {
-                            "lat": 43.771808153190584,
-                            "lon": 11.248441399335693
+                            "lat": 43.7713694,
+                            "lon": 11.2479923
                         }
                     }
                 },
@@ -2619,8 +2734,8 @@
                         "ID": "USA_3",
                         "Nazione": "Stati Uniti d'America",
                         "Regione": "Stati Uniti d'America",
-                        "Città": "New York City",
-                        "Via": "479 5th Avenue",
+                        "Città": "New York",
+                        "Via": "479 5th av",
                         "Civico": "",
                         "ID_entità": "CA_I",
                         "Apertura": "1906",
@@ -2628,16 +2743,16 @@
                         "Nome attività": "Amedeo Canessa, \"C. & E. Canessa\"",
                         "": "",
                         "geo": {
-                            "lat": 40.6677246,
-                            "lon": -73.9871864412152
+                            "lat": 40.7529151,
+                            "lon": -73.9810898
                         }
                     },
                     "USA_4": {
                         "ID": "USA_4",
                         "Nazione": "Stati Uniti d'America",
                         "Regione": "Stati Uniti d'America",
-                        "Città": "New York City",
-                        "Via": "547 5th Avenue",
+                        "Città": "New York",
+                        "Via": "547 5th av",
                         "Civico": "",
                         "ID_entità": "CA_I",
                         "Apertura": "1914",
@@ -2645,16 +2760,16 @@
                         "Nome attività": "Amedeo Canessa, \"C. & E. Canessa\"",
                         "": "",
                         "geo": {
-                            "lat": 40.755473,
-                            "lon": -73.979309
+                            "lat": 40.7569173877551,
+                            "lon": -73.978254
                         }
                     },
                     "USA_5": {
                         "ID": "USA_5",
                         "Nazione": "Stati Uniti d'America",
                         "Regione": "Stati Uniti d'America",
-                        "Città": "New York City",
-                        "Via": "680 5th Avenue",
+                        "Città": "New York",
+                        "Via": "680 5th av",
                         "Civico": "",
                         "ID_entità": "CA_I",
                         "Apertura": "1924",
@@ -2662,15 +2777,15 @@
                         "Nome attività": "Ercole Canessa, \"Ercole Canessa\"",
                         "": "",
                         "geo": {
-                            "lat": 40.6617857,
-                            "lon": -73.9931918
+                            "lat": 40.76124697225157,
+                            "lon": -73.97589847116441
                         }
                     },
                     "USA_6": {
                         "ID": "USA_6",
                         "Nazione": "Stati Uniti d'America",
                         "Regione": "Stati Uniti d'America",
-                        "Città": "New York City",
+                        "Città": "New York",
                         "Via": "3 East 41st street",
                         "Civico": "",
                         "ID_entità": "CA_I",
@@ -2679,17 +2794,17 @@
                         "Nome attività": "Amedeo Canessa, \"C. & E. Canessa\", Amedeo Canessa",
                         "": "",
                         "geo": {
-                            "lat": 40.752273,
-                            "lon": -73.979858
+                            "lat": 40.75214155102041,
+                            "lon": -73.97954595918368
                         }
                     },
                     "USA_7": {
                         "ID": "USA_7",
                         "Nazione": "Stati Uniti d'America",
                         "Regione": "Stati Uniti d'America",
-                        "Città": "New York City",
-                        "Via": "New York",
-                        "Civico": "1",
+                        "Città": "New York",
+                        "Via": "",
+                        "Civico": "",
                         "ID_entità": "CA_I",
                         "Apertura": "1916",
                         "Chiusura": "1928",
@@ -2781,6 +2896,98 @@
         },
         "Relazioni": {
             "SA_III": true
+        }
+    },
+    "CA_II": {
+        "ID": "CA_II",
+        "Nome": "Capobianchi",
+        "Bio": "CA_II_bio",
+        "Link Zeri": "https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=capobianchi",
+        "Bibliografia": {
+            "B_37": {
+                "ID": "B_37",
+                "Autore": "De Callataÿ, F.",
+                "Anno": "2016",
+                "Titolo": "Il venditore d'antichità by Vincenzo Capobianchi (1880): possibly the most scholarly work of the neo-Pompeian painting",
+                "Città, editore o rivista": "In «Anabases», XXIII",
+                "Pagine": "pp. 47-73",
+                "Tipologia": "articolo di periodico"
+            }
+        },
+        "Collaboratori": {},
+        "Eventi": {},
+        "Foto preview": "CA_II_preview",
+        "Foto gallery": [
+            "CA_II_img1"
+        ],
+        "Persone": {
+            "CA_II_1": {
+                "ID": "CA_II_1",
+                "Nome Persona": "Vincenzo Capobianchi",
+                "ID_entità": "CA_II",
+                "ID_luoghi": {
+                    "IT_99": {
+                        "ID": "IT_99",
+                        "Nazione": "Italia",
+                        "Regione": "Lazio",
+                        "Città": "Roma",
+                        "Via": "Piazza della Trinità dei Monti",
+                        "Civico": "6",
+                        "ID_entità": "CA_II",
+                        "Apertura": "1885",
+                        "Chiusura": "1901",
+                        "Nome attività": "Giuseppe Giacomini e Vincenzo Capobianchi, \"Giacomini & Capobianchi\"",
+                        "": "",
+                        "geo": {
+                            "lat": 41.9059856,
+                            "lon": 12.4836915
+                        }
+                    },
+                    "IT_113": {
+                        "ID": "IT_113",
+                        "Nazione": "Italia",
+                        "Regione": "Lazio",
+                        "Città": "Roma",
+                        "Via": "Via Due Macelli",
+                        "Civico": "86",
+                        "ID_entità": "CA_II CO_II",
+                        "Apertura": "1891",
+                        "Chiusura": "1919",
+                        "Nome attività": "Gustavo Corvisieri, \"Casa di Vendite Corvisieri & C.\", con Vincenzo Capobianchi dal 1901",
+                        "": "",
+                        "geo": {
+                            "lat": 41.9039747,
+                            "lon": 12.4843312
+                        }
+                    },
+                    "IT_125": {
+                        "ID": "IT_125",
+                        "Nazione": "Italia",
+                        "Regione": "Lazio",
+                        "Città": "Roma",
+                        "Via": "Via Sistina",
+                        "Civico": "16",
+                        "ID_entità": "CA_II",
+                        "Apertura": "1885",
+                        "Chiusura": "1901",
+                        "Nome attività": "Giuseppe Giacomini e Vincenzo Capobianchi, \"Giacomini & C.\"",
+                        "": "",
+                        "geo": {
+                            "lat": 41.9039736,
+                            "lon": 12.4870662
+                        }
+                    }
+                },
+                "Professione": "pittore e antiquario",
+                "Nascita": "1836",
+                "Morte": "1928",
+                "Nome attività": "Giacomini & C Corvisieri &C."
+            }
+        },
+        "Clienti": {},
+        "Relazioni": {
+            "SI": true,
+            "CO_II": true
         }
     },
     "CA_III": {
@@ -2898,7 +3105,7 @@
                         "Nazione": "Italia",
                         "Regione": "Lombardia",
                         "Città": "Milano",
-                        "Via": "via Ugo Foscolo ",
+                        "Via": "via Ugo Foscolo",
                         "Civico": "1",
                         "ID_entità": "CA_III",
                         "Apertura": "1881",
@@ -2973,97 +3180,119 @@
         },
         "Relazioni": {}
     },
-    "CA_II": {
-        "ID": "CA_II",
-        "Nome": "Capobianchi",
-        "Bio": "CA_II_bio",
-        "Link Zeri": "https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=capobianchi",
-        "Bibliografia": {
-            "B_37": {
-                "ID": "B_37",
-                "Autore": "De Callataÿ, F.",
-                "Anno": "2016",
-                "Titolo": "Il venditore d'antichità by Vincenzo Capobianchi (1880): possibly the most scholarly work of the neo-Pompeian painting",
-                "Città, editore o rivista": "In «Anabases», XXIII",
-                "Pagine": "pp. 47-73",
-                "Tipologia": "articolo di periodico"
+    "CA_IV": {
+        "ID": "CA_IV",
+        "Nome": "Carrer",
+        "Bio": "CA_IV_bio",
+        "Link Zeri": "https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=carrer",
+        "Bibliografia": {},
+        "Collaboratori": {
+            "C_61_b": {
+                "ID": "C_61_b",
+                "Nome": "Giuseppe ",
+                "Cognome / Denominazione": "Steffanoni",
+                "Tipologia": "restauratore",
+                "ID Antiquari": "GR_II",
+                "Nome Antiquari": "Grandi"
             }
         },
-        "Collaboratori": {},
         "Eventi": {},
-        "Foto preview": "CA_II_preview",
+        "Foto preview": "CA_IV_preview",
         "Foto gallery": [
-            "CA_II_img1"
+            "CA_IV_img1",
+            "CA_IV_img2",
+            "CA_IV_img3"
         ],
         "Persone": {
-            "CA_II_1": {
-                "ID": "CA_II_1",
-                "Nome Persona": "Vincenzo Capobianchi",
-                "ID_entità": "CA_II",
-                "ID_luoghi": {
-                    "IT_99": {
-                        "ID": "IT_99",
-                        "Nazione": "Italia",
-                        "Regione": "Lazio",
-                        "Città": "Roma",
-                        "Via": "Piazza della Trinità dei Monti",
-                        "Civico": "6",
-                        "ID_entità": "CA_II",
-                        "Apertura": "1885",
-                        "Chiusura": "1901",
-                        "Nome attività": "Giuseppe Giacomini e Vincenzo Capobianchi, \"Giacomini & Capobianchi\"",
-                        "": "",
-                        "geo": {
-                            "lat": 41.9059856,
-                            "lon": 12.4836915
-                        }
-                    },
-                    "IT_113": {
-                        "ID": "IT_113",
-                        "Nazione": "Italia",
-                        "Regione": "Lazio",
-                        "Città": "Roma",
-                        "Via": "Via Due Macelli",
-                        "Civico": "86",
-                        "ID_entità": "CA_II CO_II",
-                        "Apertura": "1891",
-                        "Chiusura": "1919",
-                        "Nome attività": "Gustavo Corvisieri, \"Casa di Vendite Corvisieri & C.\", con Vincenzo Capobianchi dal 1901",
-                        "": "",
-                        "geo": {
-                            "lat": 41.9039747,
-                            "lon": 12.4843312
-                        }
-                    },
-                    "IT_125": {
-                        "ID": "IT_125",
-                        "Nazione": "Italia",
-                        "Regione": "Lazio",
-                        "Città": "Roma",
-                        "Via": "Via Sistina",
-                        "Civico": "16",
-                        "ID_entità": "CA_II",
-                        "Apertura": "1885",
-                        "Chiusura": "1901",
-                        "Nome attività": "Giuseppe Giacomini e Vincenzo Capobianchi, \"Giacomini & C.\"",
-                        "": "",
-                        "geo": {
-                            "lat": 41.9039736,
-                            "lon": 12.4870662
-                        }
-                    }
-                },
-                "Professione": "pittore e antiquario",
-                "Nascita": "1836",
-                "Morte": "1928",
-                "Nome attività": "Giacomini & C Corvisieri &C."
+            "CA_IV_1": {
+                "ID": "CA_IV_1",
+                "Nome Persona": "Antonio Carrer",
+                "ID_entità": "CA_IV",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "1868",
+                "Morte": "1952?",
+                "Nome attività": ""
+            },
+            "CA_IV_2": {
+                "ID": "CA_IV_2",
+                "Nome Persona": "Giovanni Battista Carrer",
+                "ID_entità": "CA_IV",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "",
+                "Morte": "",
+                "Nome attività": ""
+            },
+            "CA_IV_3": {
+                "ID": "CA_IV_3",
+                "Nome Persona": "Giovanni Battista Carrer",
+                "ID_entità": "CA_IV",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "",
+                "Morte": "",
+                "Nome attività": ""
             }
         },
         "Clienti": {},
-        "Relazioni": {
-            "SI": true,
-            "CO_II": true
-        }
+        "Relazioni": {}
+    },
+    "CA_V": {
+        "ID": "CA_V",
+        "Nome": "Caretto",
+        "Bio": "CA_V_bio",
+        "Link Zeri": "https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Caretto",
+        "Bibliografia": {},
+        "Collaboratori": {
+            "C_68": {
+                "ID": "C_68",
+                "Nome": "Federico",
+                "Cognome / Denominazione": "Zeri",
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "ZA SA_V",
+                "Nome Antiquari": "Zabert Sabatello"
+            }
+        },
+        "Eventi": {},
+        "Foto preview": "CA_V_preview",
+        "Foto gallery": [
+            "CA_V_img1"
+        ],
+        "Persone": {
+            "CA_V_1": {
+                "ID": "CA_V_1",
+                "Nome Persona": "Luigi Caretto",
+                "ID_entità": "CA_V",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "1878",
+                "Morte": "1940",
+                "Nome attività": "“Galleria Luigi Caretto”"
+            },
+            "CA_V_2": {
+                "ID": "CA_V_2",
+                "Nome Persona": "Giorgio Caretto",
+                "ID_entità": "CA_V",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "1925",
+                "Morte": "2008",
+                "Nome attività": ""
+            },
+            "CA_V_3": {
+                "ID": "CA_V_3",
+                "Nome Persona": "Luigi Caretto",
+                "ID_entità": "CA_V",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "1957",
+                "Morte": "in vita",
+                "Nome attività": ""
+            }
+        },
+        "Clienti": {},
+        "Relazioni": {}
     },
     "CE": {
         "ID": "CE",
@@ -3226,8 +3455,8 @@
                         "Nome attività": "Vincenzo Ciampolini",
                         "": "",
                         "geo": {
-                            "lat": 43.772876043521,
-                            "lon": 11.249415903010988
+                            "lat": 43.773116,
+                            "lon": 11.2490357
                         }
                     },
                     "IT_79": {
@@ -3277,8 +3506,8 @@
                         "Nome attività": "Vincenzo Ciampolini",
                         "": "",
                         "geo": {
-                            "lat": 41.89180657180695,
-                            "lon": 12.484190889566198
+                            "lat": 41.8917781,
+                            "lon": 12.4842009
                         }
                     },
                     "IT_133": {
@@ -3294,8 +3523,8 @@
                         "Nome attività": "Vincenzo Ciampolini",
                         "": "",
                         "geo": {
-                            "lat": 41.90576282169844,
-                            "lon": 12.483717690146994
+                            "lat": 41.9058072,
+                            "lon": 12.4837775
                         }
                     }
                 },
@@ -3532,8 +3761,8 @@
                         "Nome attività": "Alessandro Contini Bonacossi (abitazione privata)",
                         "": "",
                         "geo": {
-                            "lat": 41.91370311121641,
-                            "lon": 12.507556855698875
+                            "lat": 41.9149169921875,
+                            "lon": 12.509556770324707
                         }
                     },
                     "IT_132": {
@@ -3745,7 +3974,7 @@
                         "Nazione": "Italia",
                         "Regione": "Toscana",
                         "Città": "Firenze",
-                        "Via": "Via del Podere",
+                        "Via": "ex Via del Podere",
                         "Civico": "6",
                         "ID_entità": "CO_III",
                         "Apertura": "1876 ca.",
@@ -3753,8 +3982,8 @@
                         "Nome attività": "Emilio Costantini (studio)",
                         "": "",
                         "geo": {
-                            "lat": null,
-                            "lon": null
+                            "lat": 43.78157043811011,
+                            "lon": 11.254407144926208
                         }
                     },
                     "IT_76_b": {
@@ -3862,6 +4091,177 @@
             "CI": true
         }
     },
+    "CO_IV": {
+        "ID": "CO_IV",
+        "Nome": "Colnaghi",
+        "Bio": "CO_IV_bio",
+        "Link Zeri": "https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Colnaghi",
+        "Bibliografia": {},
+        "Collaboratori": {},
+        "Eventi": {},
+        "Foto preview": "CO_IV_preview",
+        "Foto gallery": [
+            "CO_IV_img1"
+        ],
+        "Persone": {
+            "CO_IV_1": {
+                "ID": "CO_IV_1",
+                "Nome Persona": "Giovanni Battista Torre",
+                "ID_entità": "CO_IV",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "",
+                "Morte": "1780",
+                "Nome attività": "“Cabinet de Physique Expérimentale”; \"Torre &Co.\""
+            },
+            "CO_IV_2": {
+                "ID": "CO_IV_2",
+                "Nome Persona": "Anthony Torre",
+                "ID_entità": "CO_IV",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "",
+                "Morte": "",
+                "Nome attività": "“Cabinet de Physique Expérimentale”; \"Torre &Co.\""
+            },
+            "CO_IV_3": {
+                "ID": "CO_IV_3",
+                "Nome Persona": "Paul Colnaghi",
+                "ID_entità": "CO_IV",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "1751",
+                "Morte": "1833",
+                "Nome attività": "Torre &Co.; \"Colnaghi & Co.\""
+            },
+            "CO_IV_4": {
+                "ID": "CO_IV_4",
+                "Nome Persona": "Dominic Charles Colnaghi",
+                "ID_entità": "CO_IV",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "1790",
+                "Morte": "1879",
+                "Nome attività": "Colnaghi & Co."
+            },
+            "CO_IV_5": {
+                "ID": "CO_IV_5",
+                "Nome Persona": "Martin Colnaghi",
+                "ID_entità": "CO_IV",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "1792",
+                "Morte": "1851",
+                "Nome attività": "Colnaghi & Co.; \"P. & D. Colnaghi & Co.\""
+            },
+            "CO_IV_6": {
+                "ID": "CO_IV_6",
+                "Nome Persona": "John Anthony Scott",
+                "ID_entità": "CO_IV",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "",
+                "Morte": "1864",
+                "Nome attività": "P. & D. Colnaghi & Co."
+            },
+            "CO_IV_7": {
+                "ID": "CO_IV_7",
+                "Nome Persona": "Andrew McKay",
+                "ID_entità": "CO_IV",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "",
+                "Morte": "1899",
+                "Nome attività": ""
+            },
+            "CO_IV_8": {
+                "ID": "CO_IV_8",
+                "Nome Persona": "William McKay",
+                "ID_entità": "CO_IV",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "1850",
+                "Morte": "",
+                "Nome attività": "P. & D. Colnaghi & Co."
+            },
+            "CO_IV_9": {
+                "ID": "CO_IV_9",
+                "Nome Persona": "Martin Henry Colnaghi II",
+                "ID_entità": "CO_IV",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "1821",
+                "Morte": "1908",
+                "Nome attività": ""
+            }
+        },
+        "Clienti": {},
+        "Relazioni": {}
+    },
+    "CO_V": {
+        "ID": "CO_V",
+        "Nome": "Cortinovis",
+        "Bio": "CO_V_bio",
+        "Link Zeri": "https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Galleria+Cortinovis",
+        "Bibliografia": {
+            "B_11": {
+                "ID": "B_11",
+                "Autore": "Batini, G.",
+                "Anno": "1961",
+                "Titolo": "L'antiquario",
+                "Città, editore o rivista": "Firenze, Vallecchi",
+                "Pagine": "",
+                "Tipologia": "monografia"
+            }
+        },
+        "Collaboratori": {
+            "C_37": {
+                "ID": "C_37",
+                "Nome": "Roberto",
+                "Cognome / Denominazione": "Longhi",
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "BR_II CO_I",
+                "Nome Antiquari": "Bruschi Livio Contini Bonacossi"
+            },
+            "C_68": {
+                "ID": "C_68",
+                "Nome": "Federico",
+                "Cognome / Denominazione": "Zeri",
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "ZA SA_V",
+                "Nome Antiquari": "Zabert Sabatello"
+            }
+        },
+        "Eventi": {},
+        "Foto preview": "CO_V_preview",
+        "Foto gallery": [
+            "CO_V_img1"
+        ],
+        "Persone": {
+            "CO_V_1": {
+                "ID": "CO_V_1",
+                "Nome Persona": "Guido Cortinovis",
+                "ID_entità": "CO_V",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "1912",
+                "Morte": "1988",
+                "Nome attività": "“Antichità Cortinovis”"
+            },
+            "CO_V_2": {
+                "ID": "CO_V_2",
+                "Nome Persona": "Marzio Cortinovis",
+                "ID_entità": "CO_V",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "1944",
+                "Morte": "in vita",
+                "Nome attività": ""
+            }
+        },
+        "Clienti": {},
+        "Relazioni": {}
+    },
     "CR": {
         "ID": "CR",
         "Nome": "Crosa",
@@ -3923,8 +4323,8 @@
                         "Nome attività": "Severino Crosa",
                         "": "",
                         "geo": {
-                            "lat": null,
-                            "lon": null
+                            "lat": 44.408627949999996,
+                            "lon": 8.930028765903387
                         }
                     },
                     "IT_14": {
@@ -3966,6 +4366,72 @@
                 "Nascita": "1897",
                 "Morte": "1979",
                 "Nome attività": "Non noto"
+            }
+        },
+        "Clienti": {},
+        "Relazioni": {}
+    },
+    "DA": {
+        "ID": "DA",
+        "Nome": "D'Atri",
+        "Bio": "DA_bio",
+        "Link Zeri": "https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=D%27Atri",
+        "Bibliografia": {
+            "B_65": {
+                "ID": "B_65",
+                "Autore": "Jandolo, A.",
+                "Anno": "1935",
+                "Titolo": "Le memorie di un antiquario",
+                "Città, editore o rivista": "Milano, Ceschina",
+                "Pagine": "",
+                "Tipologia": "monografia"
+            },
+            "B_111": {
+                "ID": "B_111",
+                "Autore": "Pollak, L., Merkel Guldan, M.",
+                "Anno": "1994",
+                "Titolo": "Römische Memoiren : Künstler, Kunstliebhaber und Gelehrte, 1893-1943",
+                "Città, editore o rivista": "Roma, L'Erma di Bretschneider",
+                "Pagine": "",
+                "Tipologia": "monografia"
+            }
+        },
+        "Collaboratori": {
+            "C_68": {
+                "ID": "C_68",
+                "Nome": "Federico",
+                "Cognome / Denominazione": "Zeri",
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "ZA SA_V",
+                "Nome Antiquari": "Zabert Sabatello"
+            }
+        },
+        "Eventi": {},
+        "Foto preview": "DA_preview",
+        "Foto gallery": [
+            "DA_img1",
+            "DA_img2"
+        ],
+        "Persone": {
+            "DA_1": {
+                "ID": "DA_1",
+                "Nome Persona": "Pietro D'Atri",
+                "ID_entità": "DA",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "1876",
+                "Morte": "1957",
+                "Nome attività": "Galleria D'Atri"
+            },
+            "DA_2": {
+                "ID": "DA_2",
+                "Nome Persona": "Alberto D'Atri",
+                "ID_entità": "DA",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "1908",
+                "Morte": "",
+                "Nome attività": "Galleria D'Atri"
             }
         },
         "Clienti": {},
@@ -4045,7 +4511,9 @@
             }
         },
         "Foto preview": "DE_preview",
-        "Foto gallery": [],
+        "Foto gallery": [
+            ""
+        ],
         "Persone": {
             "DE_1": {
                 "ID": "DE_1",
@@ -4180,7 +4648,7 @@
                         "Nazione": "Italia",
                         "Regione": "Lazio",
                         "Città": "Roma",
-                        "Via": "Piazza Scossacavalli",
+                        "Via": "ex Piazza Scossacavalli",
                         "Civico": "",
                         "ID_entità": "DI",
                         "Apertura": "1870 ca.",
@@ -4188,8 +4656,8 @@
                         "Nome attività": "Angelo Di Castro (negozio)",
                         "": "",
                         "geo": {
-                            "lat": null,
-                            "lon": null
+                            "lat": 41.90252764701485,
+                            "lon": 12.461003542328857
                         }
                     }
                 },
@@ -4216,8 +4684,8 @@
                         "Nome attività": "Amedeo e Leone Di Castro, \"Antichità A. L. Di Castro\"",
                         "": "",
                         "geo": {
-                            "lat": 41.90834521500914,
-                            "lon": 12.479089794624903
+                            "lat": 41.9084557,
+                            "lon": 12.4789596
                         }
                     }
                 },
@@ -4244,8 +4712,8 @@
                         "Nome attività": "Amedeo e Leone Di Castro, \"Antichità A. L. Di Castro\"",
                         "": "",
                         "geo": {
-                            "lat": 41.90834521500914,
-                            "lon": 12.479089794624903
+                            "lat": 41.9084557,
+                            "lon": 12.4789596
                         }
                     },
                     "IT_107": {
@@ -4261,8 +4729,8 @@
                         "Nome attività": "Alberto Di Castro",
                         "": "",
                         "geo": {
-                            "lat": 41.90834521500914,
-                            "lon": 12.479089794624903
+                            "lat": 41.9084557,
+                            "lon": 12.4789596
                         }
                     }
                 },
@@ -4289,8 +4757,8 @@
                         "Nome attività": "Alberto Di Castro",
                         "": "",
                         "geo": {
-                            "lat": 41.90834521500914,
-                            "lon": 12.479089794624903
+                            "lat": 41.9084557,
+                            "lon": 12.4789596
                         }
                     },
                     "IT_92": {
@@ -4379,6 +4847,73 @@
             "ZA": true
         }
     },
+    "DI_I": {
+        "ID": "DI_I",
+        "Nome": "Di Castro Eugenio",
+        "Bio": "DI_I_bio",
+        "Link Zeri": "https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Di%20Castro&page=1&filtroprovenienza_OA=4531%7C8268",
+        "Bibliografia": {},
+        "Collaboratori": {
+            "C_68": {
+                "ID": "C_68",
+                "Nome": "Federico",
+                "Cognome / Denominazione": "Zeri",
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "ZA SA_V",
+                "Nome Antiquari": "Zabert Sabatello"
+            }
+        },
+        "Eventi": {},
+        "Foto preview": "DI_I_preview",
+        "Foto gallery": [
+            "DI_I_img1",
+            "DI_I_img2"
+        ],
+        "Persone": {
+            "DI_I_1": {
+                "ID": "DI_I_1",
+                "Nome Persona": "Eugenio Di Castro",
+                "ID_entità": "DI_I",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "1890",
+                "Morte": "1976",
+                "Nome attività": ""
+            },
+            "DI_I_2": {
+                "ID": "DI_I_2",
+                "Nome Persona": "Nicola Di Castro",
+                "ID_entità": "DI_I",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "",
+                "Morte": "",
+                "Nome attività": ""
+            },
+            "DI_I_3": {
+                "ID": "DI_I_3",
+                "Nome Persona": "Angelo Di Castro",
+                "ID_entità": "DI_I",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "",
+                "Morte": "",
+                "Nome attività": ""
+            },
+            "DI_I_4": {
+                "ID": "DI_I_4",
+                "Nome Persona": "Angelo Di Castro",
+                "ID_entità": "DI_I",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "1925",
+                "Morte": "2012",
+                "Nome attività": ""
+            }
+        },
+        "Clienti": {},
+        "Relazioni": {}
+    },
     "FE": {
         "ID": "FE",
         "Nome": "Ferroni",
@@ -4457,8 +4992,8 @@
                         "Nome attività": "Gioacchino Ferroni (sede e abitazione privata)",
                         "": "",
                         "geo": {
-                            "lat": 41.908656565834534,
-                            "lon": 12.487371691269852
+                            "lat": 41.9073554,
+                            "lon": 12.4862533
                         }
                     }
                 },
@@ -4597,8 +5132,8 @@
                         "Nome attività": "Carlo Alberto Foresti, \"Studio Artistico\" (Palazzo Borromeo)",
                         "": "",
                         "geo": {
-                            "lat": 45.4961049,
-                            "lon": 9.374718
+                            "lat": 45.471955873902424,
+                            "lon": 9.194398399999999
                         }
                     }
                 },
@@ -4626,6 +5161,42 @@
         },
         "Relazioni": {}
     },
+    "FO_I": {
+        "ID": "FO_I",
+        "Nome": "Forti",
+        "Bio": "FO_I_bio",
+        "Link Zeri": "https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Forti",
+        "Bibliografia": {},
+        "Collaboratori": {
+            "C_68": {
+                "ID": "C_68",
+                "Nome": "Federico",
+                "Cognome / Denominazione": "Zeri",
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "ZA SA_V",
+                "Nome Antiquari": "Zabert Sabatello"
+            }
+        },
+        "Eventi": {},
+        "Foto preview": "FO_I_preview",
+        "Foto gallery": [
+            "FO_I_img1"
+        ],
+        "Persone": {
+            "FO_I_1": {
+                "ID": "FO_I_1",
+                "Nome Persona": "Vittorio Forti",
+                "ID_entità": "FO_I",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "1881",
+                "Morte": "1980 ",
+                "Nome attività": ""
+            }
+        },
+        "Clienti": {},
+        "Relazioni": {}
+    },
     "FR": {
         "ID": "FR",
         "Nome": "Freschi",
@@ -4635,7 +5206,9 @@
         "Collaboratori": {},
         "Eventi": {},
         "Foto preview": "FR_preview",
-        "Foto gallery": [],
+        "Foto gallery": [
+            ""
+        ],
         "Persone": {
             "FR_1": {
                 "ID": "FR_1",
@@ -4664,7 +5237,7 @@
                         "Nazione": "Italia",
                         "Regione": "Toscana",
                         "Città": "Firenze",
-                        "Via": "Via della vigna nuova",
+                        "Via": "Via della Vigna Nuova",
                         "Civico": "",
                         "ID_entità": "BA_I",
                         "Apertura": "1950 ca.",
@@ -4672,8 +5245,8 @@
                         "Nome attività": "Benvenuto Bacarelli",
                         "": "",
                         "geo": {
-                            "lat": 43.77121394554101,
-                            "lon": 11.249741815272415
+                            "lat": 43.7715147,
+                            "lon": 11.2513609
                         }
                     }
                 },
@@ -4692,7 +5265,7 @@
                         "Nazione": "Italia",
                         "Regione": "Toscana",
                         "Città": "Firenze",
-                        "Via": "Via della vigna nuova",
+                        "Via": "Via della Vigna Nuova",
                         "Civico": "",
                         "ID_entità": "BA_I",
                         "Apertura": "1950 ca.",
@@ -4700,8 +5273,8 @@
                         "Nome attività": "Benvenuto Bacarelli",
                         "": "",
                         "geo": {
-                            "lat": 43.77121394554101,
-                            "lon": 11.249741815272415
+                            "lat": 43.7715147,
+                            "lon": 11.2513609
                         }
                     }
                 },
@@ -4771,7 +5344,10 @@
                         }
                     }
                 },
-                "Professione": "antiquario"
+                "Professione": "antiquario",
+                "Nascita": "",
+                "Morte": "",
+                "Nome attività": ""
             }
         },
         "Clienti": {},
@@ -4819,7 +5395,7 @@
                         "Nazione": "Italia",
                         "Regione": "Veneto",
                         "Città": "Venezia",
-                        "Via": "Rio Novo ",
+                        "Via": "Rio Novo",
                         "Civico": "3498",
                         "ID_entità": "GE_I",
                         "Apertura": "",
@@ -4920,8 +5496,8 @@
                         "Nome attività": "Alfredo Geri, \"Geri-Boralevi\"",
                         "": "",
                         "geo": {
-                            "lat": null,
-                            "lon": null
+                            "lat": 41.8951009587497,
+                            "lon": 12.476284893276052
                         }
                     },
                     "IT_4_c": {
@@ -5039,8 +5615,8 @@
                         "Nome attività": "Alfredo Geri",
                         "": "",
                         "geo": {
-                            "lat": 43.6588619,
-                            "lon": 11.1867972
+                            "lat": 43.77146533655273,
+                            "lon": 11.247942326986577
                         }
                     },
                     "IT_102_c": {
@@ -5084,8 +5660,8 @@
                         "Nome attività": "Alfredo Geri, \"Geri-Boralevi\"",
                         "": "",
                         "geo": {
-                            "lat": null,
-                            "lon": null
+                            "lat": 41.8951009587497,
+                            "lon": 12.476284893276052
                         }
                     },
                     "IT_4_c": {
@@ -5203,8 +5779,8 @@
                         "Nome attività": "Alfredo Geri",
                         "": "",
                         "geo": {
-                            "lat": 43.6588619,
-                            "lon": 11.1867972
+                            "lat": 43.77146533655273,
+                            "lon": 11.247942326986577
                         }
                     },
                     "IT_102_c": {
@@ -5311,6 +5887,98 @@
                 "Nascita": "",
                 "Morte": "",
                 "Nome attività": "Galleria d’Arte"
+            }
+        },
+        "Clienti": {},
+        "Relazioni": {}
+    },
+    "GI_I": {
+        "ID": "GI_I",
+        "Nome": "Gianetti",
+        "Bio": "GI_I_bio",
+        "Link Zeri": "https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Gianetti",
+        "Bibliografia": {},
+        "Collaboratori": {
+            "C_68": {
+                "ID": "C_68",
+                "Nome": "Federico",
+                "Cognome / Denominazione": "Zeri",
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "ZA SA_V",
+                "Nome Antiquari": "Zabert Sabatello"
+            },
+            "C_11": {
+                "ID": "C_11",
+                "Nome": "Giuliano",
+                "Cognome / Denominazione": "Briganti",
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "AN-EF AP GR_II",
+                "Nome Antiquari": "Antonacci-Efrati Apolloni Grandi"
+            }
+        },
+        "Eventi": {},
+        "Foto preview": "GI_I_preview",
+        "Foto gallery": [
+            "GI_I_img1",
+            "GI_I_img2"
+        ],
+        "Persone": {
+            "GI_I_1": {
+                "ID": "GI_I_1",
+                "Nome Persona": "Maria Antonia Gianetti",
+                "ID_entità": "GI_I",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "1915",
+                "Morte": "2002",
+                "Nome attività": "“Maria Antonia Gianetti Antichità”"
+            }
+        },
+        "Clienti": {},
+        "Relazioni": {}
+    },
+    "GU": {
+        "ID": "GU",
+        "Nome": "Guggenheim",
+        "Bio": "GU_bio",
+        "Link Zeri": "https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=guggenheim&page=1&filtroprovenienza_OA=5829%7C7672",
+        "Bibliografia": {},
+        "Collaboratori": {},
+        "Eventi": {},
+        "Foto preview": "GU_preview",
+        "Foto gallery": [
+            "GU_img1"
+        ],
+        "Persone": {
+            "GU_1": {
+                "ID": "GU_1",
+                "Nome Persona": "Moisè Michelangelo Guggenheim",
+                "ID_entità": "GU",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "1837",
+                "Morte": "1914",
+                "Nome attività": "M. Guggenheim. Objets d’Art & Antiquités"
+            },
+            "GU_2": {
+                "ID": "GU_2",
+                "Nome Persona": "Giorgio Guggenheim",
+                "ID_entità": "GU",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "1877",
+                "Morte": "1953",
+                "Nome attività": ""
+            },
+            "GU_3": {
+                "ID": "GU_3",
+                "Nome Persona": "Gabriella Guggenheim Luzzatti",
+                "ID_entità": "GU",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "1879",
+                "Morte": "1972",
+                "Nome attività": ""
             }
         },
         "Clienti": {},
@@ -5673,7 +6341,7 @@
                         "Nazione": "Italia",
                         "Regione": "Toscana",
                         "Città": "Firenze",
-                        "Via": "Via della scala",
+                        "Via": "Via della Scala",
                         "Civico": "",
                         "ID_entità": "GR",
                         "Apertura": "1900 ca.",
@@ -5681,8 +6349,8 @@
                         "Nome attività": "Luigi Grassi e figli, \"Luigi Grassi & Sons\"",
                         "": "",
                         "geo": {
-                            "lat": 43.77770356570535,
-                            "lon": 11.242555115657392
+                            "lat": 43.77374179835463,
+                            "lon": 11.248260851771873
                         }
                     },
                     "IT_53": {
@@ -5701,6 +6369,23 @@
                             "lat": 43.780777,
                             "lon": 11.26058
                         }
+                    },
+                    "IT_134": {
+                        "ID": "IT_134",
+                        "Nazione": "Italia",
+                        "Regione": "Lazio",
+                        "Città": "Roma",
+                        "Via": "Via Vittoria Colonna, Prati",
+                        "Civico": "11",
+                        "ID_entità": "SI",
+                        "Apertura": "1890",
+                        "Chiusura": "1932",
+                        "Nome attività": "Attilio Simonetti e figli, \"Galleria Simonetti\", dal 1925 \"Simonetti Aldo Giulio & C.\" (Palazzo Odescalchi)",
+                        "": "",
+                        "geo": {
+                            "lat": 41.905145,
+                            "lon": 12.4720605
+                        }
                     }
                 },
                 "Professione": "antiquario e restauroatore",
@@ -5712,7 +6397,24 @@
                 "ID": "GR_2",
                 "Nome Persona": "Arturo Grassi",
                 "ID_entità": "GR",
-                "ID_luoghi": {},
+                "ID_luoghi": {
+                    "IT_30": {
+                        "ID": "IT_30",
+                        "Nazione": "Italia",
+                        "Regione": "Toscana",
+                        "Città": "Arezzo",
+                        "Via": "Corso Italia",
+                        "Civico": "14",
+                        "ID_entità": "BR_I",
+                        "Apertura": "1967",
+                        "Chiusura": "1996",
+                        "Nome attività": "Palazzo del Capitano del Popolo, sede e abitazione privata",
+                        "geo": {
+                            "lat": 43.465164962623355,
+                            "lon": 11.883164208651733
+                        }
+                    }
+                },
                 "Professione": "antiquario",
                 "Nascita": "1899",
                 "Morte": "1971",
@@ -5728,7 +6430,7 @@
                         "Nazione": "Italia",
                         "Regione": "Toscana",
                         "Città": "Firenze",
-                        "Via": "Via del porcellana",
+                        "Via": "Via del Porcellana",
                         "Civico": "",
                         "ID_entità": "FR",
                         "Apertura": "1963",
@@ -5736,8 +6438,8 @@
                         "Nome attività": "Giuliano Freschi (deposito)",
                         "": "",
                         "geo": {
-                            "lat": 43.772794022765446,
-                            "lon": 11.247318934474935
+                            "lat": 43.7731154,
+                            "lon": 11.2476722
                         }
                     }
                 },
@@ -5751,6 +6453,22 @@
                 "Nome Persona": "Giuseppe Grassi",
                 "ID_entità": "GR",
                 "ID_luoghi": {
+                    "IT_30": {
+                        "ID": "IT_30",
+                        "Nazione": "Italia",
+                        "Regione": "Toscana",
+                        "Città": "Arezzo",
+                        "Via": "Corso Italia",
+                        "Civico": "14",
+                        "ID_entità": "BR_I",
+                        "Apertura": "1967",
+                        "Chiusura": "1996",
+                        "Nome attività": "Palazzo del Capitano del Popolo, sede e abitazione privata",
+                        "geo": {
+                            "lat": 43.465164962623355,
+                            "lon": 11.883164208651733
+                        }
+                    },
                     "IT_88": {
                         "ID": "IT_88",
                         "Nazione": "Italia",
@@ -5764,12 +6482,15 @@
                         "Nome attività": "Giuseppe Grassi (abitazione privata)",
                         "": "",
                         "geo": {
-                            "lat": 41.91210347384143,
-                            "lon": 12.470433183334693
+                            "lat": 41.9122797,
+                            "lon": 12.4704206
                         }
                     }
                 },
-                "Professione": "antiquario"
+                "Professione": "antiquario",
+                "Nascita": "",
+                "Morte": "",
+                "Nome attività": ""
             }
         },
         "Clienti": {
@@ -5833,7 +6554,9 @@
         "Collaboratori": {},
         "Eventi": {},
         "Foto preview": "GU-BR_preview",
-        "Foto gallery": [],
+        "Foto gallery": [
+            ""
+        ],
         "Persone": {
             "GU-BR_1": {
                 "ID": "GU-BR_1",
@@ -5853,8 +6576,8 @@
                         "Nome attività": "Carlo e Riccardo Bruscoli, Marcello Guidi; dal 1957 al 1966 il negozio ai civici 50-52r è rilevato da Leonardo Lapiccirella",
                         "": "",
                         "geo": {
-                            "lat": 43.77277041743597,
-                            "lon": 11.245208562512012
+                            "lat": 43.7716067,
+                            "lon": 11.2468899
                         }
                     },
                     "IT_52": {
@@ -5870,8 +6593,8 @@
                         "Nome attività": "Carlo e Riccardo Bruscoli, Marcello Guidi",
                         "": "",
                         "geo": {
-                            "lat": 43.77277041743597,
-                            "lon": 11.245208562512012
+                            "lat": 43.7716067,
+                            "lon": 11.2468899
                         }
                     }
                 },
@@ -5898,8 +6621,8 @@
                         "Nome attività": "Carlo e Riccardo Bruscoli, Marcello Guidi; dal 1957 al 1966 il negozio ai civici 50-52r è rilevato da Leonardo Lapiccirella",
                         "": "",
                         "geo": {
-                            "lat": 43.77277041743597,
-                            "lon": 11.245208562512012
+                            "lat": 43.7716067,
+                            "lon": 11.2468899
                         }
                     },
                     "IT_52": {
@@ -5915,8 +6638,8 @@
                         "Nome attività": "Carlo e Riccardo Bruscoli, Marcello Guidi",
                         "": "",
                         "geo": {
-                            "lat": 43.77277041743597,
-                            "lon": 11.245208562512012
+                            "lat": 43.7716067,
+                            "lon": 11.2468899
                         }
                     }
                 },
@@ -5943,8 +6666,8 @@
                         "Nome attività": "Carlo e Riccardo Bruscoli, Marcello Guidi; dal 1957 al 1966 il negozio ai civici 50-52r è rilevato da Leonardo Lapiccirella",
                         "": "",
                         "geo": {
-                            "lat": 43.77277041743597,
-                            "lon": 11.245208562512012
+                            "lat": 43.7716067,
+                            "lon": 11.2468899
                         }
                     },
                     "IT_52": {
@@ -5960,8 +6683,8 @@
                         "Nome attività": "Carlo e Riccardo Bruscoli, Marcello Guidi",
                         "": "",
                         "geo": {
-                            "lat": 43.77277041743597,
-                            "lon": 11.245208562512012
+                            "lat": 43.7716067,
+                            "lon": 11.2468899
                         }
                     }
                 },
@@ -5988,8 +6711,8 @@
                         "Nome attività": "Carlo e Riccardo Bruscoli, Marcello Guidi; dal 1957 al 1966 il negozio ai civici 50-52r è rilevato da Leonardo Lapiccirella",
                         "": "",
                         "geo": {
-                            "lat": 43.77277041743597,
-                            "lon": 11.245208562512012
+                            "lat": 43.7716067,
+                            "lon": 11.2468899
                         }
                     },
                     "IT_52": {
@@ -6005,8 +6728,8 @@
                         "Nome attività": "Carlo e Riccardo Bruscoli, Marcello Guidi",
                         "": "",
                         "geo": {
-                            "lat": 43.77277041743597,
-                            "lon": 11.245208562512012
+                            "lat": 43.7716067,
+                            "lon": 11.2468899
                         }
                     }
                 },
@@ -6103,8 +6826,8 @@
                         "Nome attività": "Alexandre Imbert, \"Galerie A. Imbert\" (Palazzo Caffarelli)",
                         "": "",
                         "geo": {
-                            "lat": 41.904991963189254,
-                            "lon": 12.480109397345917
+                            "lat": 41.9057255,
+                            "lon": 12.4820815
                         }
                     }
                 },
@@ -6273,7 +6996,7 @@
                         "Città": "Roma",
                         "Via": "Via Margutta",
                         "Civico": "53",
-                        "ID_entità": "JA SE_II",
+                        "ID_entità": "SE_II",
                         "Apertura": "1932",
                         "Chiusura": "1939",
                         "Nome attività": "Guido Sestieri",
@@ -6307,8 +7030,8 @@
                         "Nome attività": "Salvatore Jandolo e figli",
                         "": "",
                         "geo": {
-                            "lat": 41.89167113647366,
-                            "lon": 12.483295399849718
+                            "lat": 41.8917164,
+                            "lon": 12.4834113
                         }
                     },
                     "IT_105": {
@@ -6324,8 +7047,8 @@
                         "Nome attività": "Alessandro e Antonio Jandolo (Palazzo Raffaelli)",
                         "": "",
                         "geo": {
-                            "lat": 41.90834521500914,
-                            "lon": 12.479089794624903
+                            "lat": 41.9084557,
+                            "lon": 12.4789596
                         }
                     },
                     "IT_128": {
@@ -6369,8 +7092,8 @@
                         "Nome attività": "Salvatore Jandolo e figli",
                         "": "",
                         "geo": {
-                            "lat": 41.89167113647366,
-                            "lon": 12.483295399849718
+                            "lat": 41.8917164,
+                            "lon": 12.4834113
                         }
                     },
                     "IT_105": {
@@ -6386,8 +7109,8 @@
                         "Nome attività": "Alessandro e Antonio Jandolo (Palazzo Raffaelli)",
                         "": "",
                         "geo": {
-                            "lat": 41.90834521500914,
-                            "lon": 12.479089794624903
+                            "lat": 41.9084557,
+                            "lon": 12.4789596
                         }
                     },
                     "IT_128": {
@@ -6431,8 +7154,8 @@
                         "Nome attività": "Salvatore Jandolo e figli",
                         "": "",
                         "geo": {
-                            "lat": 41.89167113647366,
-                            "lon": 12.483295399849718
+                            "lat": 41.8917164,
+                            "lon": 12.4834113
                         }
                     },
                     "IT_105": {
@@ -6448,8 +7171,8 @@
                         "Nome attività": "Alessandro e Antonio Jandolo (Palazzo Raffaelli)",
                         "": "",
                         "geo": {
-                            "lat": 41.90834521500914,
-                            "lon": 12.479089794624903
+                            "lat": 41.9084557,
+                            "lon": 12.4789596
                         }
                     },
                     "IT_115": {
@@ -6465,8 +7188,8 @@
                         "Nome attività": "Ettore Jandolo",
                         "": "",
                         "geo": {
-                            "lat": 41.908616550000005,
-                            "lon": 12.4795284
+                            "lat": 41.9089407,
+                            "lon": 12.4791801
                         }
                     }
                 },
@@ -6566,8 +7289,8 @@
                         "Nome attività": "Salvatore Jandolo e figli",
                         "": "",
                         "geo": {
-                            "lat": 41.89167113647366,
-                            "lon": 12.483295399849718
+                            "lat": 41.8917164,
+                            "lon": 12.4834113
                         }
                     }
                 },
@@ -6623,14 +7346,14 @@
                         "Città": "Roma",
                         "Via": "Via del Babuino",
                         "Civico": "96-97",
-                        "ID_entità": "JA TA ",
+                        "ID_entità": "JA-TA",
                         "Apertura": "1907 ca.",
                         "Chiusura": "1940 ca.",
                         "Nome attività": "Augusto e Salvatore Jandolo, Filippo e Guido Tavazzi, \"Casa di Vendita Jandolo & Tavazzi\"",
                         "": "",
                         "geo": {
-                            "lat": 41.90834521500914,
-                            "lon": 12.479089794624903
+                            "lat": 41.90714284843539,
+                            "lon": 12.480859357671143
                         }
                     }
                 },
@@ -6651,14 +7374,14 @@
                         "Città": "Roma",
                         "Via": "Via del Babuino",
                         "Civico": "96-97",
-                        "ID_entità": "JA TA ",
+                        "ID_entità": "JA-TA",
                         "Apertura": "1907 ca.",
                         "Chiusura": "1940 ca.",
                         "Nome attività": "Augusto e Salvatore Jandolo, Filippo e Guido Tavazzi, \"Casa di Vendita Jandolo & Tavazzi\"",
                         "": "",
                         "geo": {
-                            "lat": 41.90834521500914,
-                            "lon": 12.479089794624903
+                            "lat": 41.90714284843539,
+                            "lon": 12.480859357671143
                         }
                     }
                 },
@@ -6679,14 +7402,14 @@
                         "Città": "Roma",
                         "Via": "Via del Babuino",
                         "Civico": "96-97",
-                        "ID_entità": "JA TA ",
+                        "ID_entità": "JA-TA",
                         "Apertura": "1907 ca.",
                         "Chiusura": "1940 ca.",
                         "Nome attività": "Augusto e Salvatore Jandolo, Filippo e Guido Tavazzi, \"Casa di Vendita Jandolo & Tavazzi\"",
                         "": "",
                         "geo": {
-                            "lat": 41.90834521500914,
-                            "lon": 12.479089794624903
+                            "lat": 41.90714284843539,
+                            "lon": 12.480859357671143
                         }
                     }
                 },
@@ -6707,14 +7430,14 @@
                         "Città": "Roma",
                         "Via": "Via del Babuino",
                         "Civico": "96-97",
-                        "ID_entità": "JA TA ",
+                        "ID_entità": "JA-TA",
                         "Apertura": "1907 ca.",
                         "Chiusura": "1940 ca.",
                         "Nome attività": "Augusto e Salvatore Jandolo, Filippo e Guido Tavazzi, \"Casa di Vendita Jandolo & Tavazzi\"",
                         "": "",
                         "geo": {
-                            "lat": 41.90834521500914,
-                            "lon": 12.479089794624903
+                            "lat": 41.90714284843539,
+                            "lon": 12.480859357671143
                         }
                     }
                 },
@@ -6807,8 +7530,8 @@
                         "Nome attività": "Leonardo Lapiccirella, \"Galleria Lapiccirella\"",
                         "": "",
                         "geo": {
-                            "lat": 43.772862480442,
-                            "lon": 11.243077265793158
+                            "lat": 43.7735474,
+                            "lon": 11.241085
                         }
                     },
                     "IT_50": {
@@ -6841,8 +7564,8 @@
                         "Nome attività": "Damiano Lapiccirella, \"Galleria Lapiccirella\"",
                         "": "",
                         "geo": {
-                            "lat": 43.76673442408757,
-                            "lon": 11.248943884547185
+                            "lat": 43.7665806,
+                            "lon": 11.2488502
                         }
                     },
                     "IT_84": {
@@ -6886,8 +7609,8 @@
                         "Nome attività": "Damiano Lapiccirella, \"Galleria Lapiccirella\"",
                         "": "",
                         "geo": {
-                            "lat": 43.76673442408757,
-                            "lon": 11.248943884547185
+                            "lat": 43.7665806,
+                            "lon": 11.2488502
                         }
                     }
                 },
@@ -7013,8 +7736,8 @@
                         "Nome attività": "Michele Lazzaroni (abitazione privata)",
                         "": "",
                         "geo": {
-                            "lat": 43.694091892866204,
-                            "lon": 7.252171135672188
+                            "lat": 43.6914121,
+                            "lon": 7.2448839
                         }
                     },
                     "FR_8": {
@@ -7056,6 +7779,138 @@
                 "Nascita": "1863",
                 "Morte": "1934",
                 "Nome attività": "Non noto"
+            }
+        },
+        "Clienti": {},
+        "Relazioni": {}
+    },
+    "LO": {
+        "ID": "LO",
+        "Nome": "Loewi",
+        "Bio": "LO_bio",
+        "Link Zeri": "https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=loewi",
+        "Bibliografia": {
+            "B_28": {
+                "ID": "B_28",
+                "Autore": "Cecutti, D.",
+                "Anno": "2012",
+                "Titolo": "Adolph Loewi e il commercio di tappeti orientali a Venezia fra Otto e Novecento",
+                "Città, editore o rivista": "In «MDCCC 1800», 1",
+                "Pagine": "pp. 33-42",
+                "Tipologia": "articolo di periodico"
+            }
+        },
+        "Collaboratori": {},
+        "Eventi": {},
+        "Foto preview": "LO_preview",
+        "Foto gallery": [
+            "LO_img1",
+            "LO_img2",
+            "LO_img3"
+        ],
+        "Persone": {
+            "LO_1": {
+                "ID": "LO_1",
+                "Nome Persona": "Adolph (Adolfo) Loewi",
+                "ID_entità": "LO",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "1888",
+                "Morte": "1977",
+                "Nome attività": "Adolph Loewi, Inc."
+            },
+            "LO_2": {
+                "ID": "LO_2",
+                "Nome Persona": "Gabriella Katherine \"Kay\" Loewi",
+                "ID_entità": "LO",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "1920",
+                "Morte": "2020",
+                "Nome attività": "Loewi-Robertson, Inc."
+            }
+        },
+        "Clienti": {},
+        "Relazioni": {}
+    },
+    "LO_I": {
+        "ID": "LO_I",
+        "Nome": "Longari",
+        "Bio": "LO_I_bio",
+        "Link Zeri": "https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Longari",
+        "Bibliografia": {},
+        "Collaboratori": {
+            "C_11": {
+                "ID": "C_11",
+                "Nome": "Giuliano",
+                "Cognome / Denominazione": "Briganti",
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "AN-EF AP GR_II",
+                "Nome Antiquari": "Antonacci-Efrati Apolloni Grandi"
+            },
+            "C_32": {
+                "ID": "C_32",
+                "Nome": "Mina",
+                "Cognome / Denominazione": "Gregori",
+                "Tipologia": "storica dell'arte",
+                "ID Antiquari": "BA_I",
+                "Nome Antiquari": "Bacarelli"
+            },
+            "C_68": {
+                "ID": "C_68",
+                "Nome": "Federico",
+                "Cognome / Denominazione": "Zeri",
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "ZA SA_V",
+                "Nome Antiquari": "Zabert Sabatello"
+            }
+        },
+        "Eventi": {},
+        "Foto preview": "LO_I_preview",
+        "Foto gallery": [
+            "LO_I_img1",
+            "LO_I_img2"
+        ],
+        "Persone": {
+            "LO_I_1": {
+                "ID": "LO_I_1",
+                "Nome Persona": "Nella Longari",
+                "ID_entità": "LO_I",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "1906",
+                "Morte": "1995",
+                "Nome attività": "“Galleria Nella Longari”"
+            },
+            "LO_I_2": {
+                "ID": "LO_I_2",
+                "Nome Persona": "Ruggero Longari",
+                "ID_entità": "LO_I",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "1934",
+                "Morte": "",
+                "Nome attività": "“Longari Arte Milano”"
+            },
+            "LO_I_3": {
+                "ID": "LO_I_3",
+                "Nome Persona": "Mario Longari",
+                "ID_entità": "LO_I",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "1929",
+                "Morte": "2022",
+                "Nome attività": "“Longari Arte Milano”"
+            },
+            "LO_I_4": {
+                "ID": "LO_I_4",
+                "Nome Persona": "Marco Longari",
+                "ID_entità": "LO_I",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "",
+                "Morte": "in vita",
+                "Nome attività": "“Longari Arte Milano”"
             }
         },
         "Clienti": {},
@@ -7121,7 +7976,7 @@
                         "Nazione": "Italia",
                         "Regione": "Toscana",
                         "Città": "Firenze",
-                        "Via": "via Borgo Santi Apostoli ",
+                        "Via": "via Borgo Santi Apostoli",
                         "Civico": "40r",
                         "ID_entità": "ME",
                         "Apertura": "1900 ca.",
@@ -7129,8 +7984,8 @@
                         "Nome attività": "Cesare Melli (Giardino Borgherini, showroom per arredi da esterno)",
                         "": "",
                         "geo": {
-                            "lat": null,
-                            "lon": null
+                            "lat": 43.76950043757896,
+                            "lon": 11.252398366905815
                         }
                     },
                     "IT_71_b": {
@@ -7163,8 +8018,8 @@
                         "Nome attività": "Giuseppe Volterra e fratelli e Adolfo Melli",
                         "": "",
                         "geo": {
-                            "lat": 43.7271223,
-                            "lon": 10.9452554
+                            "lat": 43.76724,
+                            "lon": 11.2519218
                         }
                     },
                     "IT_86": {
@@ -7234,7 +8089,7 @@
                         "Nazione": "Italia",
                         "Regione": "Toscana",
                         "Città": "Firenze",
-                        "Via": "via Borgo Santi Apostoli ",
+                        "Via": "via Borgo Santi Apostoli",
                         "Civico": "40r",
                         "ID_entità": "ME",
                         "Apertura": "1900 ca.",
@@ -7242,8 +8097,8 @@
                         "Nome attività": "Cesare Melli (Giardino Borgherini, showroom per arredi da esterno)",
                         "": "",
                         "geo": {
-                            "lat": null,
-                            "lon": null
+                            "lat": 43.76950043757896,
+                            "lon": 11.252398366905815
                         }
                     },
                     "IT_71_b": {
@@ -7276,8 +8131,8 @@
                         "Nome attività": "Giuseppe Volterra e fratelli e Adolfo Melli",
                         "": "",
                         "geo": {
-                            "lat": 43.7271223,
-                            "lon": 10.9452554
+                            "lat": 43.76724,
+                            "lon": 11.2519218
                         }
                     },
                     "IT_86": {
@@ -7347,7 +8202,7 @@
                         "Nazione": "Italia",
                         "Regione": "Toscana",
                         "Città": "Firenze",
-                        "Via": "via Borgo Santi Apostoli ",
+                        "Via": "via Borgo Santi Apostoli",
                         "Civico": "40r",
                         "ID_entità": "ME",
                         "Apertura": "1900 ca.",
@@ -7355,8 +8210,8 @@
                         "Nome attività": "Cesare Melli (Giardino Borgherini, showroom per arredi da esterno)",
                         "": "",
                         "geo": {
-                            "lat": null,
-                            "lon": null
+                            "lat": 43.76950043757896,
+                            "lon": 11.252398366905815
                         }
                     },
                     "IT_71_b": {
@@ -7389,8 +8244,8 @@
                         "Nome attività": "Giuseppe Volterra e fratelli e Adolfo Melli",
                         "": "",
                         "geo": {
-                            "lat": 43.7271223,
-                            "lon": 10.9452554
+                            "lat": 43.76724,
+                            "lon": 11.2519218
                         }
                     },
                     "IT_86": {
@@ -7477,7 +8332,7 @@
                         "Nazione": "Italia",
                         "Regione": "Toscana",
                         "Città": "Firenze",
-                        "Via": "via Borgo Santi Apostoli ",
+                        "Via": "via Borgo Santi Apostoli",
                         "Civico": "40r",
                         "ID_entità": "ME",
                         "Apertura": "1900 ca.",
@@ -7485,8 +8340,8 @@
                         "Nome attività": "Cesare Melli (Giardino Borgherini, showroom per arredi da esterno)",
                         "": "",
                         "geo": {
-                            "lat": null,
-                            "lon": null
+                            "lat": 43.76950043757896,
+                            "lon": 11.252398366905815
                         }
                     },
                     "IT_71_b": {
@@ -7519,8 +8374,8 @@
                         "Nome attività": "Giuseppe Volterra e fratelli e Adolfo Melli",
                         "": "",
                         "geo": {
-                            "lat": 43.7271223,
-                            "lon": 10.9452554
+                            "lat": 43.76724,
+                            "lon": 11.2519218
                         }
                     }
                 },
@@ -7581,8 +8436,8 @@
                         "Nome attività": "Giuseppe Volterra e fratelli e Adolfo Melli",
                         "": "",
                         "geo": {
-                            "lat": 43.7271223,
-                            "lon": 10.9452554
+                            "lat": 43.76724,
+                            "lon": 11.2519218
                         }
                     },
                     "IT_52_d": {
@@ -7590,7 +8445,7 @@
                         "Nazione": "Italia",
                         "Regione": "Toscana",
                         "Città": "Firenze",
-                        "Via": "via Borgo Santi Apostoli ",
+                        "Via": "via Borgo Santi Apostoli",
                         "Civico": "40r",
                         "ID_entità": "ME",
                         "Apertura": "1900 ca.",
@@ -7598,8 +8453,8 @@
                         "Nome attività": "Cesare Melli (Giardino Borgherini, showroom per arredi da esterno)",
                         "": "",
                         "geo": {
-                            "lat": null,
-                            "lon": null
+                            "lat": 43.76950043757896,
+                            "lon": 11.252398366905815
                         }
                     },
                     "IT_71_b": {
@@ -7674,7 +8529,9 @@
         },
         "Eventi": {},
         "Foto preview": "MO_preview",
-        "Foto gallery": [],
+        "Foto gallery": [
+            ""
+        ],
         "Persone": {
             "MO_1": {
                 "ID": "MO_1",
@@ -7703,6 +8560,33 @@
                 "Nascita": "1901",
                 "Morte": "1973",
                 "Nome attività": "Non noto"
+            }
+        },
+        "Clienti": {},
+        "Relazioni": {}
+    },
+    "MO_I": {
+        "ID": "MO_I",
+        "Nome": "Molena",
+        "Bio": "MO_I_bio",
+        "Link Zeri": "https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=molena",
+        "Bibliografia": {},
+        "Collaboratori": {},
+        "Eventi": {},
+        "Foto preview": "",
+        "Foto gallery": [
+            ""
+        ],
+        "Persone": {
+            "MO_I_1": {
+                "ID": "MO_I_1",
+                "Nome Persona": "Aldo Modena Molena",
+                "ID_entità": "MO_I",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "1867",
+                "Morte": "",
+                "Nome attività": ""
             }
         },
         "Clienti": {},
@@ -7874,7 +8758,9 @@
         "Collaboratori": {},
         "Eventi": {},
         "Foto preview": "PA_I_preview",
-        "Foto gallery": [],
+        "Foto gallery": [
+            ""
+        ],
         "Persone": {
             "PA_I_1": {
                 "ID": "PA_I_1",
@@ -7989,7 +8875,9 @@
             }
         },
         "Foto preview": "PA_II_preview",
-        "Foto gallery": [],
+        "Foto gallery": [
+            ""
+        ],
         "Persone": {
             "PA_II_1": {
                 "ID": "PA_II_1",
@@ -8009,8 +8897,8 @@
                         "Nome attività": "Giuseppe Grassi (abitazione privata)",
                         "": "",
                         "geo": {
-                            "lat": 41.91210347384143,
-                            "lon": 12.470433183334693
+                            "lat": 41.9122797,
+                            "lon": 12.4704206
                         }
                     }
                 },
@@ -8052,10 +8940,92 @@
         },
         "Relazioni": {}
     },
-    "PI": {
-        "ID": "PI",
+    "PA_III": {
+        "ID": "PA_III",
+        "Nome": "Palma",
+        "Bio": "PA_III_bio",
+        "Link Zeri": "https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Galleria+Palma",
+        "Bibliografia": {},
+        "Collaboratori": {
+            "C_68": {
+                "ID": "C_68",
+                "Nome": "Federico",
+                "Cognome / Denominazione": "Zeri",
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "ZA SA_V",
+                "Nome Antiquari": "Zabert Sabatello"
+            },
+            "C_11": {
+                "ID": "C_11",
+                "Nome": "Giuliano",
+                "Cognome / Denominazione": "Briganti",
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "AN-EF AP GR_II",
+                "Nome Antiquari": "Antonacci-Efrati Apolloni Grandi"
+            },
+            "C_64": {
+                "ID": "C_64",
+                "Nome": "Lionello",
+                "Cognome / Denominazione": "Venturi",
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "CO_I",
+                "Nome Antiquari": "Contini Bonacossi"
+            }
+        },
+        "Eventi": {},
+        "Foto preview": "PA_III_preview",
+        "Foto gallery": [
+            "PA_III_img1",
+            "PA_III_img2",
+            "PA_III_img3"
+        ],
+        "Persone": {
+            "PA_III_1": {
+                "ID": "PA_III_1",
+                "Nome Persona": "Pietro Maria Bardi",
+                "ID_entità": "PA_III",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "1990",
+                "Morte": "1999",
+                "Nome attività": "Studio d'Arte Palma"
+            }
+        },
+        "Clienti": {},
+        "Relazioni": {}
+    },
+    "PE": {
+        "ID": "PE",
+        "Nome": "Pesaro",
+        "Bio": "PE_bio",
+        "Link Zeri": "https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Asta+Galleria+Pesaro",
+        "Bibliografia": {},
+        "Collaboratori": {},
+        "Eventi": {},
+        "Foto preview": "PE_preview",
+        "Foto gallery": [
+            "PE_img1",
+            "PE_img2"
+        ],
+        "Persone": {
+            "PE_1": {
+                "ID": "PE_1",
+                "Nome Persona": "Lino Pesaro",
+                "ID_entità": "PE",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "1879",
+                "Morte": "1938",
+                "Nome attività": "Galleria Pesaro"
+            }
+        },
+        "Clienti": {},
+        "Relazioni": {}
+    },
+    "PI_NEW": {
+        "ID": "PI_NEW",
         "Nome": "Pini",
-        "Bio": "PI_bio",
+        "Bio": "PI_NEW_bio",
         "Link Zeri": "https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=pini",
         "Bibliografia": {
             "B_196": {
@@ -8084,126 +9054,7 @@
             "PI_img1",
             "PI_img2"
         ],
-        "Persone": {
-            "PI_1": {
-                "ID": "PI_1",
-                "Nome Persona": "Cesare Pini",
-                "ID_entità": "PI",
-                "ID_luoghi": {
-                    "IT_25": {
-                        "ID": "IT_25",
-                        "Nazione": "Italia",
-                        "Regione": "Emilia-Romagna",
-                        "Città": "Bologna",
-                        "Via": "Via del Monte, Ghetto Ebraico",
-                        "Civico": "8",
-                        "ID_entità": "PI",
-                        "Apertura": "1922 ca.",
-                        "Chiusura": "1923 ca.",
-                        "Nome attività": "Cesare e Umberto Pini",
-                        "": "",
-                        "geo": {
-                            "lat": 44.4963071,
-                            "lon": 11.3440354
-                        }
-                    }
-                },
-                "Professione": "antiquario",
-                "Nascita": "",
-                "Morte": "",
-                "Nome attività": "Non noto"
-            },
-            "PI_2": {
-                "ID": "PI_2",
-                "Nome Persona": "Umberto Pini",
-                "ID_entità": "PI",
-                "ID_luoghi": {
-                    "IT_83": {
-                        "ID": "IT_83",
-                        "Nazione": "Italia",
-                        "Regione": "Toscana",
-                        "Città": "Firenze",
-                        "Via": "Via di San Niccolò",
-                        "Civico": "95",
-                        "ID_entità": "PI",
-                        "Apertura": "1923",
-                        "Chiusura": "1930 ca.",
-                        "Nome attività": "Giovanni Pini (deposito)",
-                        "": "",
-                        "geo": {
-                            "lat": 43.7645554,
-                            "lon": 11.2593975
-                        }
-                    },
-                    "IT_85": {
-                        "ID": "IT_85",
-                        "Nazione": "Italia",
-                        "Regione": "Toscana",
-                        "Città": "Firenze",
-                        "Via": "Via Tornabuoni",
-                        "Civico": "4",
-                        "ID_entità": "PI",
-                        "Apertura": "1920 ca.",
-                        "Chiusura": "1940 ca.",
-                        "Nome attività": "Umberto Pini",
-                        "": "",
-                        "geo": {
-                            "lat": 43.7704385,
-                            "lon": 11.2514389
-                        }
-                    }
-                },
-                "Professione": "antiquario",
-                "Nascita": "",
-                "Morte": "",
-                "Nome attività": "Non noto"
-            },
-            "PI_3": {
-                "ID": "PI_3",
-                "Nome Persona": "Giovanni Pini",
-                "ID_entità": "PI",
-                "ID_luoghi": {
-                    "IT_83": {
-                        "ID": "IT_83",
-                        "Nazione": "Italia",
-                        "Regione": "Toscana",
-                        "Città": "Firenze",
-                        "Via": "Via di San Niccolò",
-                        "Civico": "95",
-                        "ID_entità": "PI",
-                        "Apertura": "1923",
-                        "Chiusura": "1930 ca.",
-                        "Nome attività": "Giovanni Pini (deposito)",
-                        "": "",
-                        "geo": {
-                            "lat": 43.7645554,
-                            "lon": 11.2593975
-                        }
-                    },
-                    "IT_85": {
-                        "ID": "IT_85",
-                        "Nazione": "Italia",
-                        "Regione": "Toscana",
-                        "Città": "Firenze",
-                        "Via": "Via Tornabuoni",
-                        "Civico": "4",
-                        "ID_entità": "PI",
-                        "Apertura": "1920 ca.",
-                        "Chiusura": "1940 ca.",
-                        "Nome attività": "Umberto Pini",
-                        "": "",
-                        "geo": {
-                            "lat": 43.7704385,
-                            "lon": 11.2514389
-                        }
-                    }
-                },
-                "Professione": "antiquario",
-                "Nascita": "",
-                "Morte": "",
-                "Nome attività": "Non noto"
-            }
-        },
+        "Persone": {},
         "Clienti": {},
         "Relazioni": {}
     },
@@ -8270,8 +9121,8 @@
                         "Nome attività": "Publio Podio",
                         "": "",
                         "geo": {
-                            "lat": 44.488288233042724,
-                            "lon": 11.36200255948307
+                            "lat": 44.4881605,
+                            "lon": 11.3623538
                         }
                     }
                 },
@@ -8414,7 +9265,9 @@
         },
         "Eventi": {},
         "Foto preview": "PO_II_preview",
-        "Foto gallery": [],
+        "Foto gallery": [
+            ""
+        ],
         "Persone": {
             "PO_II_1": {
                 "ID": "PO_II_1",
@@ -8434,8 +9287,8 @@
                         "Nome attività": "Francesco Pospisil (Palazzo Sagredo, abitazione privata)",
                         "": "",
                         "geo": {
-                            "lat": 45.43777295172513,
-                            "lon": 12.335590408970237
+                            "lat": 45.4423196937427,
+                            "lon": 12.335120822738263
                         }
                     }
                 },
@@ -8448,10 +9301,120 @@
         "Clienti": {},
         "Relazioni": {}
     },
-    "RA": {
-        "ID": "RA",
+    "PO_III": {
+        "ID": "PO_III",
+        "Nome": "Pollak",
+        "Bio": "PO_bio",
+        "Link Zeri": "https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Pollak",
+        "Bibliografia": {
+            "B_111": {
+                "ID": "B_111",
+                "Autore": "Pollak, L., Merkel Guldan, M.",
+                "Anno": "1994",
+                "Titolo": "Römische Memoiren : Künstler, Kunstliebhaber und Gelehrte, 1893-1943",
+                "Città, editore o rivista": "Roma, L'Erma di Bretschneider",
+                "Pagine": "",
+                "Tipologia": "monografia"
+            },
+            "B_65": {
+                "ID": "B_65",
+                "Autore": "Jandolo, A.",
+                "Anno": "1935",
+                "Titolo": "Le memorie di un antiquario",
+                "Città, editore o rivista": "Milano, Ceschina",
+                "Pagine": "",
+                "Tipologia": "monografia"
+            }
+        },
+        "Collaboratori": {
+            "C_1": {
+                "ID": "C_1",
+                "Nome": "",
+                "Cognome / Denominazione": "Alinari",
+                "Tipologia": "fotografo",
+                "ID Antiquari": "VO_I",
+                "Nome Antiquari": "Volpi"
+            },
+            "C_24": {
+                "ID": "C_24",
+                "Nome": "Cesare",
+                "Cognome / Denominazione": "Faraglia",
+                "Tipologia": "fotografo",
+                "ID Antiquari": "BA_III",
+                "Nome Antiquari": "Barsanti"
+            }
+        },
+        "Eventi": {},
+        "Foto preview": "PO_III_preview",
+        "Foto gallery": [
+            "PO_III_img1",
+            "PO_III_img2",
+            "PO_IIII_img3"
+        ],
+        "Persone": {
+            "PO_III_1": {
+                "ID": "PO_III_1",
+                "Nome Persona": "Adolph (Adolfo) Pollak",
+                "ID_entità": "PO_III",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "1868",
+                "Morte": "1943",
+                "Nome attività": ""
+            }
+        },
+        "Clienti": {},
+        "Relazioni": {}
+    },
+    "PR": {
+        "ID": "PR",
+        "Nome": "Pratesi",
+        "Bio": "PR_bio",
+        "Link Zeri": "https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Pratesi",
+        "Bibliografia": {},
+        "Collaboratori": {
+            "C_30": {
+                "ID": "C_30",
+                "Nome": "Alvar",
+                "Cognome / Denominazione": "Gonzáles Palacios",
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "AN-EF AP DI SE_II",
+                "Nome Antiquari": "Antonacci-Efrati Apolloni Di Castro Sestieri"
+            },
+            "C_32": {
+                "ID": "C_32",
+                "Nome": "Mina",
+                "Cognome / Denominazione": "Gregori",
+                "Tipologia": "storica dell'arte",
+                "ID Antiquari": "BA_I",
+                "Nome Antiquari": "Bacarelli"
+            }
+        },
+        "Eventi": {},
+        "Foto preview": "PR_preview",
+        "Foto gallery": [
+            "PR_img1",
+            "PR_img2"
+        ],
+        "Persone": {
+            "PR_1": {
+                "ID": "PR_1",
+                "Nome Persona": "Giovanni Pratesi",
+                "ID_entità": "PR",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "1939",
+                "Morte": "in vita",
+                "Nome attività": "Giovanni Pratesi Antiquario"
+            }
+        },
+        "Clienti": {},
+        "Relazioni": {}
+    },
+    "RA_NEW": {
+        "ID": "RA_NEW",
         "Nome": "Rambaldi",
-        "Bio": "RA_bio",
+        "Bio": "RA_NEW_bio",
         "Link Zeri": "https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=A.+Rambaldi",
         "Bibliografia": {
             "B_14": {
@@ -8486,42 +9449,106 @@
         "Eventi": {},
         "Foto preview": "RA_preview",
         "Foto gallery": [
-            "RA_img1"
+            "RA_img1",
+            "RA_NEW_img1"
+        ],
+        "Persone": {},
+        "Clienti": {},
+        "Relazioni": {}
+    },
+    "RI": {
+        "ID": "RI",
+        "Nome": "Riccardi",
+        "Bio": "RI_bio",
+        "Link Zeri": "https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Riccardi",
+        "Bibliografia": {},
+        "Collaboratori": {
+            "C_68": {
+                "ID": "C_68",
+                "Nome": "Federico",
+                "Cognome / Denominazione": "Zeri",
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "ZA SA_V",
+                "Nome Antiquari": "Zabert Sabatello"
+            }
+        },
+        "Eventi": {},
+        "Foto preview": "RI_preview",
+        "Foto gallery": [
+            "RI_img1"
         ],
         "Persone": {
-            "RA_1": {
-                "ID": "RA_1",
-                "Nome Persona": "Arturo Rambaldi",
-                "ID_entità": "RA",
-                "ID_luoghi": {
-                    "IT_24": {
-                        "ID": "IT_24",
-                        "Nazione": "Italia",
-                        "Regione": "Emilia-Romagna",
-                        "Città": "Bologna",
-                        "Via": "Via Castiglione",
-                        "Civico": "1",
-                        "ID_entità": "RA",
-                        "Apertura": "1900 ca.",
-                        "Chiusura": "1929",
-                        "Nome attività": "Arturo Rambaldi, \"Galleria di Antichità e casa di vendite A. Rambaldi\"",
-                        "": "",
-                        "geo": {
-                            "lat": 44.4934277,
-                            "lon": 11.3463737
-                        }
-                    }
-                },
+            "RI_1": {
+                "ID": "RI_1",
+                "Nome Persona": "Ennio Riccardi",
+                "ID_entità": "RI",
+                "ID_luoghi": {},
                 "Professione": "antiquario",
                 "Nascita": "",
-                "Morte": "1929",
-                "Nome attività": "Galleria di Antichità e Casa di vendite A. Rambaldi"
+                "Morte": "",
+                "Nome attività": "“Riccardi Antichità”"
+            },
+            "RI_2": {
+                "ID": "RI_2",
+                "Nome Persona": "Piero Riccardi",
+                "ID_entità": "RI",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "",
+                "Morte": "",
+                "Nome attività": "“Riccardi Antichità”"
             }
         },
         "Clienti": {},
-        "Relazioni": {
-            "IM": true
-        }
+        "Relazioni": {}
+    },
+    "RI_I": {
+        "ID": "RI_I",
+        "Nome": "Ricchetti",
+        "Bio": "RI_I_bio",
+        "Link Zeri": "https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=ricchetti&page=1&filtroprovenienza_OA=5829%7C7673",
+        "Bibliografia": {},
+        "Collaboratori": {},
+        "Eventi": {},
+        "Foto preview": "RI_I_preview",
+        "Foto gallery": [
+            "RI_I_img1",
+            "RI_I_img2"
+        ],
+        "Persone": {
+            "RI_I_1": {
+                "ID": "RI_I_1",
+                "Nome Persona": "Consiglio Ricchetti",
+                "ID_entità": "RI_I",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "",
+                "Morte": "",
+                "Nome attività": "Galleria d'arte e di antichità"
+            },
+            "RI_I_2": {
+                "ID": "RI_I_2",
+                "Nome Persona": "David G. Ricchetti",
+                "ID_entità": "RI_I",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "",
+                "Morte": "",
+                "Nome attività": "Galleria d'arte e di antichità"
+            },
+            "RI_I_3": {
+                "ID": "RI_I_3",
+                "Nome Persona": "Mazzo Ricchetti",
+                "ID_entità": "RI_I",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "",
+                "Morte": "",
+                "Nome attività": "Galleria d'arte e di antichità"
+            }
+        },
+        "Clienti": {},
+        "Relazioni": {}
     },
     "RO": {
         "ID": "RO",
@@ -8658,7 +9685,7 @@
                         "Nazione": "Italia",
                         "Regione": "Toscana",
                         "Città": "Firenze",
-                        "Via": "Via dei serragli",
+                        "Via": "Via dei Serragli",
                         "Civico": "8",
                         "ID_entità": "RO",
                         "Apertura": "1939",
@@ -8675,7 +9702,7 @@
                         "Nazione": "Italia",
                         "Regione": "Toscana",
                         "Città": "Firenze",
-                        "Via": "Via delle belle donne",
+                        "Via": "Via delle Belle Donne",
                         "Civico": "8",
                         "ID_entità": "RO",
                         "Apertura": "1924",
@@ -8703,7 +9730,7 @@
                         "Nazione": "Italia",
                         "Regione": "Toscana",
                         "Città": "Firenze",
-                        "Via": "Via dei serragli",
+                        "Via": "Via dei Serragli",
                         "Civico": "8",
                         "ID_entità": "RO",
                         "Apertura": "1939",
@@ -8850,381 +9877,6 @@
         "Relazioni": {
             "PA_I": true
         }
-    },
-    "SA_V": {
-        "ID": "SA_V",
-        "Nome": "Sabatello",
-        "Bio": "SA_V_bio",
-        "Link Zeri": "https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=sabatello&page=1",
-        "Bibliografia": {
-            "B_90": {
-                "ID": "B_90",
-                "Autore": "Modestini, M.",
-                "Anno": "2018",
-                "Titolo": "Capolavori?: basato su un manoscritto di Mario Modestini",
-                "Città, editore o rivista": "Fiesole, Cadmo",
-                "Pagine": "",
-                "Tipologia": "monografia"
-            },
-            "B_215_2": {
-                "ID": "B_215_2",
-                "Autore": "",
-                "Anno": "1927",
-                "Titolo": "Negozianti d'arte (Roma-Rovereto)",
-                "Città, editore o rivista": "In «Maecenas», 1.1927, Berlino, Stern",
-                "Pagine": "p. 425",
-                "Tipologia": "articolo di periodico"
-            }
-        },
-        "Collaboratori": {
-            "C_11": {
-                "ID": "C_11",
-                "Nome": "Giuliano",
-                "Cognome / Denominazione": "Briganti",
-                "Tipologia": "storico dell'arte",
-                "ID Antiquari": "AN-EF AP GR_II",
-                "Nome Antiquari": "Antonacci-Efrati Apolloni Grandi"
-            },
-            "C_42": {
-                "ID": "C_42",
-                "Nome": "Mario",
-                "Cognome / Denominazione": "Modestini",
-                "Tipologia": "restauratore",
-                "ID Antiquari": "CO_I",
-                "Nome Antiquari": "Contini Bonacossi"
-            },
-            "C_68": {
-                "ID": "C_68",
-                "Nome": "Federico",
-                "Cognome / Denominazione": "Zeri",
-                "Tipologia": "storico dell'arte",
-                "ID Antiquari": "ZA SA_V",
-                "Nome Antiquari": "Zabert Sabatello"
-            }
-        },
-        "Eventi": {},
-        "Foto preview": "SA_V_preview",
-        "Foto gallery": [],
-        "Persone": {
-            "SA_V_1": {
-                "ID": "SA_V_1",
-                "Nome Persona": "Isacco Sabatello",
-                "ID_entità": "SA_V",
-                "ID_luoghi": {
-                    "IT_87_d": {
-                        "ID": "IT_87_d",
-                        "Nazione": "Italia",
-                        "Regione": "Lazio",
-                        "Città": "Roma",
-                        "Via": "Largo Arenula",
-                        "Civico": "54",
-                        "ID_entità": "SA_V",
-                        "Apertura": "1900 ca.",
-                        "Chiusura": "1930 ca.",
-                        "Nome attività": "Isacco Sabatello, \"Isacco Sabatello e figli\"",
-                        "": "",
-                        "geo": {
-                            "lat": 41.89470435,
-                            "lon": 12.476355478143148
-                        }
-                    },
-                    "IT_87_e": {
-                        "ID": "IT_87_e",
-                        "Nazione": "Italia",
-                        "Regione": "Lazio",
-                        "Città": "Roma",
-                        "Via": "Lungotevere Flaminio",
-                        "Civico": "24",
-                        "ID_entità": "SA_V",
-                        "Apertura": "1950 ca.",
-                        "Chiusura": "1970 ca.",
-                        "Nome attività": "Armando Sabatello (abitazione privata)",
-                        "": "",
-                        "geo": {
-                            "lat": 41.92681180682235,
-                            "lon": 12.461249389880953
-                        }
-                    },
-                    "IT_102_b": {
-                        "ID": "IT_102_b",
-                        "Nazione": "Italia",
-                        "Regione": "Lazio",
-                        "Città": "Roma",
-                        "Via": "Via del Babuino",
-                        "Civico": "15",
-                        "ID_entità": "SA_V",
-                        "Apertura": "1900 ca.",
-                        "Chiusura": "1930 ca.",
-                        "Nome attività": "Leone Sabatello",
-                        "": "",
-                        "geo": {
-                            "lat": 41.90834521500914,
-                            "lon": 12.479089794624903
-                        }
-                    },
-                    "IT_102_d": {
-                        "ID": "IT_102_d",
-                        "Nazione": "Italia",
-                        "Regione": "Lazio",
-                        "Città": "Roma",
-                        "Via": "Via del Babuino",
-                        "Civico": "61",
-                        "ID_entità": "SA_V",
-                        "Apertura": "1932",
-                        "Chiusura": "1935",
-                        "Nome attività": "Dario Sabatello, \"Galleria Sabatello\"",
-                        "": "",
-                        "geo": {
-                            "lat": 41.90834521500914,
-                            "lon": 12.479089794624903
-                        }
-                    }
-                },
-                "Professione": "antiquario",
-                "Nascita": "1883",
-                "Morte": "",
-                "Nome attività": "Isacco Sabatello e figli"
-            },
-            "SA_V_2": {
-                "ID": "SA_V_2",
-                "Nome Persona": "Leone Sabatello",
-                "ID_entità": "SA_V",
-                "ID_luoghi": {
-                    "IT_87_d": {
-                        "ID": "IT_87_d",
-                        "Nazione": "Italia",
-                        "Regione": "Lazio",
-                        "Città": "Roma",
-                        "Via": "Largo Arenula",
-                        "Civico": "54",
-                        "ID_entità": "SA_V",
-                        "Apertura": "1900 ca.",
-                        "Chiusura": "1930 ca.",
-                        "Nome attività": "Isacco Sabatello, \"Isacco Sabatello e figli\"",
-                        "": "",
-                        "geo": {
-                            "lat": 41.89470435,
-                            "lon": 12.476355478143148
-                        }
-                    },
-                    "IT_87_e": {
-                        "ID": "IT_87_e",
-                        "Nazione": "Italia",
-                        "Regione": "Lazio",
-                        "Città": "Roma",
-                        "Via": "Lungotevere Flaminio",
-                        "Civico": "24",
-                        "ID_entità": "SA_V",
-                        "Apertura": "1950 ca.",
-                        "Chiusura": "1970 ca.",
-                        "Nome attività": "Armando Sabatello (abitazione privata)",
-                        "": "",
-                        "geo": {
-                            "lat": 41.92681180682235,
-                            "lon": 12.461249389880953
-                        }
-                    },
-                    "IT_102_b": {
-                        "ID": "IT_102_b",
-                        "Nazione": "Italia",
-                        "Regione": "Lazio",
-                        "Città": "Roma",
-                        "Via": "Via del Babuino",
-                        "Civico": "15",
-                        "ID_entità": "SA_V",
-                        "Apertura": "1900 ca.",
-                        "Chiusura": "1930 ca.",
-                        "Nome attività": "Leone Sabatello",
-                        "": "",
-                        "geo": {
-                            "lat": 41.90834521500914,
-                            "lon": 12.479089794624903
-                        }
-                    },
-                    "IT_102_d": {
-                        "ID": "IT_102_d",
-                        "Nazione": "Italia",
-                        "Regione": "Lazio",
-                        "Città": "Roma",
-                        "Via": "Via del Babuino",
-                        "Civico": "61",
-                        "ID_entità": "SA_V",
-                        "Apertura": "1932",
-                        "Chiusura": "1935",
-                        "Nome attività": "Dario Sabatello, \"Galleria Sabatello\"",
-                        "": "",
-                        "geo": {
-                            "lat": 41.90834521500914,
-                            "lon": 12.479089794624903
-                        }
-                    }
-                },
-                "Professione": "antiquario",
-                "Nascita": "",
-                "Morte": "",
-                "Nome attività": "Non noto"
-            },
-            "SA_V_3": {
-                "ID": "SA_V_3",
-                "Nome Persona": "Armando Sabatello",
-                "ID_entità": "SA_V",
-                "ID_luoghi": {
-                    "IT_87_d": {
-                        "ID": "IT_87_d",
-                        "Nazione": "Italia",
-                        "Regione": "Lazio",
-                        "Città": "Roma",
-                        "Via": "Largo Arenula",
-                        "Civico": "54",
-                        "ID_entità": "SA_V",
-                        "Apertura": "1900 ca.",
-                        "Chiusura": "1930 ca.",
-                        "Nome attività": "Isacco Sabatello, \"Isacco Sabatello e figli\"",
-                        "": "",
-                        "geo": {
-                            "lat": 41.89470435,
-                            "lon": 12.476355478143148
-                        }
-                    },
-                    "IT_87_e": {
-                        "ID": "IT_87_e",
-                        "Nazione": "Italia",
-                        "Regione": "Lazio",
-                        "Città": "Roma",
-                        "Via": "Lungotevere Flaminio",
-                        "Civico": "24",
-                        "ID_entità": "SA_V",
-                        "Apertura": "1950 ca.",
-                        "Chiusura": "1970 ca.",
-                        "Nome attività": "Armando Sabatello (abitazione privata)",
-                        "": "",
-                        "geo": {
-                            "lat": 41.92681180682235,
-                            "lon": 12.461249389880953
-                        }
-                    },
-                    "IT_102_b": {
-                        "ID": "IT_102_b",
-                        "Nazione": "Italia",
-                        "Regione": "Lazio",
-                        "Città": "Roma",
-                        "Via": "Via del Babuino",
-                        "Civico": "15",
-                        "ID_entità": "SA_V",
-                        "Apertura": "1900 ca.",
-                        "Chiusura": "1930 ca.",
-                        "Nome attività": "Leone Sabatello",
-                        "": "",
-                        "geo": {
-                            "lat": 41.90834521500914,
-                            "lon": 12.479089794624903
-                        }
-                    },
-                    "IT_102_d": {
-                        "ID": "IT_102_d",
-                        "Nazione": "Italia",
-                        "Regione": "Lazio",
-                        "Città": "Roma",
-                        "Via": "Via del Babuino",
-                        "Civico": "61",
-                        "ID_entità": "SA_V",
-                        "Apertura": "1932",
-                        "Chiusura": "1935",
-                        "Nome attività": "Dario Sabatello, \"Galleria Sabatello\"",
-                        "": "",
-                        "geo": {
-                            "lat": 41.90834521500914,
-                            "lon": 12.479089794624903
-                        }
-                    }
-                },
-                "Professione": "antiquario",
-                "Nascita": "",
-                "Morte": "",
-                "Nome attività": "Non noto"
-            },
-            "SA_V_4": {
-                "ID": "SA_V_4",
-                "Nome Persona": "Dario Sabatello",
-                "ID_entità": "SA_V",
-                "ID_luoghi": {
-                    "IT_87_d": {
-                        "ID": "IT_87_d",
-                        "Nazione": "Italia",
-                        "Regione": "Lazio",
-                        "Città": "Roma",
-                        "Via": "Largo Arenula",
-                        "Civico": "54",
-                        "ID_entità": "SA_V",
-                        "Apertura": "1900 ca.",
-                        "Chiusura": "1930 ca.",
-                        "Nome attività": "Isacco Sabatello, \"Isacco Sabatello e figli\"",
-                        "": "",
-                        "geo": {
-                            "lat": 41.89470435,
-                            "lon": 12.476355478143148
-                        }
-                    },
-                    "IT_87_e": {
-                        "ID": "IT_87_e",
-                        "Nazione": "Italia",
-                        "Regione": "Lazio",
-                        "Città": "Roma",
-                        "Via": "Lungotevere Flaminio",
-                        "Civico": "24",
-                        "ID_entità": "SA_V",
-                        "Apertura": "1950 ca.",
-                        "Chiusura": "1970 ca.",
-                        "Nome attività": "Armando Sabatello (abitazione privata)",
-                        "": "",
-                        "geo": {
-                            "lat": 41.92681180682235,
-                            "lon": 12.461249389880953
-                        }
-                    },
-                    "IT_102_b": {
-                        "ID": "IT_102_b",
-                        "Nazione": "Italia",
-                        "Regione": "Lazio",
-                        "Città": "Roma",
-                        "Via": "Via del Babuino",
-                        "Civico": "15",
-                        "ID_entità": "SA_V",
-                        "Apertura": "1900 ca.",
-                        "Chiusura": "1930 ca.",
-                        "Nome attività": "Leone Sabatello",
-                        "": "",
-                        "geo": {
-                            "lat": 41.90834521500914,
-                            "lon": 12.479089794624903
-                        }
-                    },
-                    "IT_102_d": {
-                        "ID": "IT_102_d",
-                        "Nazione": "Italia",
-                        "Regione": "Lazio",
-                        "Città": "Roma",
-                        "Via": "Via del Babuino",
-                        "Civico": "61",
-                        "ID_entità": "SA_V",
-                        "Apertura": "1932",
-                        "Chiusura": "1935",
-                        "Nome attività": "Dario Sabatello, \"Galleria Sabatello\"",
-                        "": "",
-                        "geo": {
-                            "lat": 41.90834521500914,
-                            "lon": 12.479089794624903
-                        }
-                    }
-                },
-                "Professione": "gallerista",
-                "Nascita": "1911",
-                "Morte": "1992",
-                "Nome attività": "Non noto"
-            }
-        },
-        "Clienti": {},
-        "Relazioni": {}
     },
     "SA_I": {
         "ID": "SA_I",
@@ -9402,61 +10054,6 @@
             "FR": true,
             "ZA": true
         }
-    },
-    "SA_VI": {
-        "ID": "SA_VI",
-        "Nome": "Salvadori Antonio",
-        "Bio": "SA_VI_bio",
-        "Link Zeri": "https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Salvadori&page=1&filtroprovenienza_OA=5829%7C5652",
-        "Bibliografia": {
-            "B_215_3": {
-                "ID": "B_215_3",
-                "Autore": "",
-                "Anno": "1909",
-                "Titolo": "La Madonna del Giambellino rubata e recuperata a Venezia",
-                "Città, editore o rivista": "In «L'Antiquario», giugno 1909",
-                "Pagine": "pp. 6-8",
-                "Tipologia": "articolo di periodico"
-            }
-        },
-        "Collaboratori": {},
-        "Eventi": {},
-        "Foto preview": "SA_VI_preview",
-        "Foto gallery": [
-            "SA_VI_img1"
-        ],
-        "Persone": {
-            "SA_VI_1": {
-                "ID": "SA_VI_1",
-                "Nome Persona": "Salvadori Antonio",
-                "ID_entità": "SA_VI",
-                "ID_luoghi": {
-                    "IT_1_g": {
-                        "ID": "IT_1_g",
-                        "Nazione": "Italia",
-                        "Regione": "Veneto",
-                        "Città": "Venezia",
-                        "Via": "",
-                        "Civico": "",
-                        "ID_entità": "SA_VI",
-                        "Apertura": "",
-                        "Chiusura": "",
-                        "Nome attività": "Antonio Salvadori",
-                        "": "",
-                        "geo": {
-                            "lat": 45.4371908,
-                            "lon": 12.3345898
-                        }
-                    }
-                },
-                "Professione": "antiquario",
-                "Nascita": "",
-                "Morte": "",
-                "Nome attività": ""
-            }
-        },
-        "Clienti": {},
-        "Relazioni": {}
     },
     "SA_II": {
         "ID": "SA_II",
@@ -9781,8 +10378,8 @@
                         "Nome attività": "Giulio Sambon, \"Impresa di vendita in Italia Giulio Sambon\"",
                         "": "",
                         "geo": {
-                            "lat": 43.7739603,
-                            "lon": 11.2556328
+                            "lat": 43.773821,
+                            "lon": 11.255589
                         }
                     },
                     "IT_101": {
@@ -9790,7 +10387,7 @@
                         "Nazione": "Italia",
                         "Regione": "Lazio",
                         "Città": "Roma",
-                        "Via": "Via dei Condotti, Campo Marzio",
+                        "Via": "ex Via dei Condotti, Campo Marzio",
                         "Civico": "44",
                         "ID_entità": "SA_III",
                         "Apertura": "1887",
@@ -9798,8 +10395,8 @@
                         "Nome attività": "Giulio Sambon, \"Impresa di vendita in Italia Giulio Sambon\"",
                         "": "",
                         "geo": {
-                            "lat": 41.904991963189254,
-                            "lon": 12.480109397345917
+                            "lat": 41.904579862550044,
+                            "lon": 12.478932388942422
                         }
                     },
                     "IT_110": {
@@ -9979,8 +10576,8 @@
                         "Nome attività": "Giuseppe Sangiorgi, \"Negozio di arte antica e moderna\"",
                         "": "",
                         "geo": {
-                            "lat": 41.90591006501754,
-                            "lon": 12.4756252671297
+                            "lat": 41.9058527,
+                            "lon": 12.4756166
                         }
                     }
                 },
@@ -10044,6 +10641,539 @@
                 "Nascita": "1925",
                 "Morte": "2015",
                 "Nome attività": "Galleria Sangiorgi - Roma Palazzo Borghese Galleria dei bronzi e dei marmi, negozio di arte antica e moderna"
+            }
+        },
+        "Clienti": {},
+        "Relazioni": {}
+    },
+    "SA_V": {
+        "ID": "SA_V",
+        "Nome": "Sabatello",
+        "Bio": "SA_V_bio",
+        "Link Zeri": "https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=sabatello&page=1",
+        "Bibliografia": {
+            "B_90": {
+                "ID": "B_90",
+                "Autore": "Modestini, M.",
+                "Anno": "2018",
+                "Titolo": "Capolavori?: basato su un manoscritto di Mario Modestini",
+                "Città, editore o rivista": "Fiesole, Cadmo",
+                "Pagine": "",
+                "Tipologia": "monografia"
+            },
+            "B_215_2": {
+                "ID": "B_215_2",
+                "Autore": "",
+                "Anno": "1927",
+                "Titolo": "Negozianti d'arte (Roma-Rovereto)",
+                "Città, editore o rivista": "In «Maecenas», 1.1927, Berlino, Stern",
+                "Pagine": "p. 425",
+                "Tipologia": "articolo di periodico"
+            }
+        },
+        "Collaboratori": {
+            "C_11": {
+                "ID": "C_11",
+                "Nome": "Giuliano",
+                "Cognome / Denominazione": "Briganti",
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "AN-EF AP GR_II",
+                "Nome Antiquari": "Antonacci-Efrati Apolloni Grandi"
+            },
+            "C_42": {
+                "ID": "C_42",
+                "Nome": "Mario",
+                "Cognome / Denominazione": "Modestini",
+                "Tipologia": "restauratore",
+                "ID Antiquari": "CO_I",
+                "Nome Antiquari": "Contini Bonacossi"
+            },
+            "C_68": {
+                "ID": "C_68",
+                "Nome": "Federico",
+                "Cognome / Denominazione": "Zeri",
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "ZA SA_V",
+                "Nome Antiquari": "Zabert Sabatello"
+            }
+        },
+        "Eventi": {},
+        "Foto preview": "SA_V_preview",
+        "Foto gallery": [
+            ""
+        ],
+        "Persone": {
+            "SA_V_1": {
+                "ID": "SA_V_1",
+                "Nome Persona": "Isacco Sabatello",
+                "ID_entità": "SA_V",
+                "ID_luoghi": {
+                    "IT_87_d": {
+                        "ID": "IT_87_d",
+                        "Nazione": "Italia",
+                        "Regione": "Lazio",
+                        "Città": "Roma",
+                        "Via": "Largo Arenula",
+                        "Civico": "54",
+                        "ID_entità": "SA_V",
+                        "Apertura": "1900 ca.",
+                        "Chiusura": "1930 ca.",
+                        "Nome attività": "Isacco Sabatello, \"Isacco Sabatello e figli\"",
+                        "": "",
+                        "geo": {
+                            "lat": 41.89470435,
+                            "lon": 12.476355478143148
+                        }
+                    },
+                    "IT_87_e": {
+                        "ID": "IT_87_e",
+                        "Nazione": "Italia",
+                        "Regione": "Lazio",
+                        "Città": "Roma",
+                        "Via": "Lungotevere Flaminio",
+                        "Civico": "24",
+                        "ID_entità": "SA_V",
+                        "Apertura": "1950 ca.",
+                        "Chiusura": "1970 ca.",
+                        "Nome attività": "Armando Sabatello (abitazione privata)",
+                        "": "",
+                        "geo": {
+                            "lat": 41.92681180682235,
+                            "lon": 12.461249389880953
+                        }
+                    },
+                    "IT_102_b": {
+                        "ID": "IT_102_b",
+                        "Nazione": "Italia",
+                        "Regione": "Lazio",
+                        "Città": "Roma",
+                        "Via": "Via del Babuino",
+                        "Civico": "15",
+                        "ID_entità": "SA_V",
+                        "Apertura": "1900 ca.",
+                        "Chiusura": "1930 ca.",
+                        "Nome attività": "Leone Sabatello",
+                        "": "",
+                        "geo": {
+                            "lat": 41.90834521500914,
+                            "lon": 12.479089794624903
+                        }
+                    },
+                    "IT_102_d": {
+                        "ID": "IT_102_d",
+                        "Nazione": "Italia",
+                        "Regione": "Lazio",
+                        "Città": "Roma",
+                        "Via": "Via del Babuino",
+                        "Civico": "61",
+                        "ID_entità": "SA_V",
+                        "Apertura": "1932",
+                        "Chiusura": "1935",
+                        "Nome attività": "Dario Sabatello, \"Galleria Sabatello\"",
+                        "": "",
+                        "geo": {
+                            "lat": 41.90834521500914,
+                            "lon": 12.479089794624903
+                        }
+                    }
+                },
+                "Professione": "antiquario",
+                "Nascita": "1883",
+                "Morte": "",
+                "Nome attività": "Isacco Sabatello e figli"
+            },
+            "SA_V_2": {
+                "ID": "SA_V_2",
+                "Nome Persona": "Leone Sabatello",
+                "ID_entità": "SA_V",
+                "ID_luoghi": {
+                    "IT_87_d": {
+                        "ID": "IT_87_d",
+                        "Nazione": "Italia",
+                        "Regione": "Lazio",
+                        "Città": "Roma",
+                        "Via": "Largo Arenula",
+                        "Civico": "54",
+                        "ID_entità": "SA_V",
+                        "Apertura": "1900 ca.",
+                        "Chiusura": "1930 ca.",
+                        "Nome attività": "Isacco Sabatello, \"Isacco Sabatello e figli\"",
+                        "": "",
+                        "geo": {
+                            "lat": 41.89470435,
+                            "lon": 12.476355478143148
+                        }
+                    },
+                    "IT_87_e": {
+                        "ID": "IT_87_e",
+                        "Nazione": "Italia",
+                        "Regione": "Lazio",
+                        "Città": "Roma",
+                        "Via": "Lungotevere Flaminio",
+                        "Civico": "24",
+                        "ID_entità": "SA_V",
+                        "Apertura": "1950 ca.",
+                        "Chiusura": "1970 ca.",
+                        "Nome attività": "Armando Sabatello (abitazione privata)",
+                        "": "",
+                        "geo": {
+                            "lat": 41.92681180682235,
+                            "lon": 12.461249389880953
+                        }
+                    },
+                    "IT_102_b": {
+                        "ID": "IT_102_b",
+                        "Nazione": "Italia",
+                        "Regione": "Lazio",
+                        "Città": "Roma",
+                        "Via": "Via del Babuino",
+                        "Civico": "15",
+                        "ID_entità": "SA_V",
+                        "Apertura": "1900 ca.",
+                        "Chiusura": "1930 ca.",
+                        "Nome attività": "Leone Sabatello",
+                        "": "",
+                        "geo": {
+                            "lat": 41.90834521500914,
+                            "lon": 12.479089794624903
+                        }
+                    },
+                    "IT_102_d": {
+                        "ID": "IT_102_d",
+                        "Nazione": "Italia",
+                        "Regione": "Lazio",
+                        "Città": "Roma",
+                        "Via": "Via del Babuino",
+                        "Civico": "61",
+                        "ID_entità": "SA_V",
+                        "Apertura": "1932",
+                        "Chiusura": "1935",
+                        "Nome attività": "Dario Sabatello, \"Galleria Sabatello\"",
+                        "": "",
+                        "geo": {
+                            "lat": 41.90834521500914,
+                            "lon": 12.479089794624903
+                        }
+                    }
+                },
+                "Professione": "antiquario",
+                "Nascita": "",
+                "Morte": "",
+                "Nome attività": "Non noto"
+            },
+            "SA_V_3": {
+                "ID": "SA_V_3",
+                "Nome Persona": "Armando Sabatello",
+                "ID_entità": "SA_V",
+                "ID_luoghi": {
+                    "IT_87_d": {
+                        "ID": "IT_87_d",
+                        "Nazione": "Italia",
+                        "Regione": "Lazio",
+                        "Città": "Roma",
+                        "Via": "Largo Arenula",
+                        "Civico": "54",
+                        "ID_entità": "SA_V",
+                        "Apertura": "1900 ca.",
+                        "Chiusura": "1930 ca.",
+                        "Nome attività": "Isacco Sabatello, \"Isacco Sabatello e figli\"",
+                        "": "",
+                        "geo": {
+                            "lat": 41.89470435,
+                            "lon": 12.476355478143148
+                        }
+                    },
+                    "IT_87_e": {
+                        "ID": "IT_87_e",
+                        "Nazione": "Italia",
+                        "Regione": "Lazio",
+                        "Città": "Roma",
+                        "Via": "Lungotevere Flaminio",
+                        "Civico": "24",
+                        "ID_entità": "SA_V",
+                        "Apertura": "1950 ca.",
+                        "Chiusura": "1970 ca.",
+                        "Nome attività": "Armando Sabatello (abitazione privata)",
+                        "": "",
+                        "geo": {
+                            "lat": 41.92681180682235,
+                            "lon": 12.461249389880953
+                        }
+                    },
+                    "IT_102_b": {
+                        "ID": "IT_102_b",
+                        "Nazione": "Italia",
+                        "Regione": "Lazio",
+                        "Città": "Roma",
+                        "Via": "Via del Babuino",
+                        "Civico": "15",
+                        "ID_entità": "SA_V",
+                        "Apertura": "1900 ca.",
+                        "Chiusura": "1930 ca.",
+                        "Nome attività": "Leone Sabatello",
+                        "": "",
+                        "geo": {
+                            "lat": 41.90834521500914,
+                            "lon": 12.479089794624903
+                        }
+                    },
+                    "IT_102_d": {
+                        "ID": "IT_102_d",
+                        "Nazione": "Italia",
+                        "Regione": "Lazio",
+                        "Città": "Roma",
+                        "Via": "Via del Babuino",
+                        "Civico": "61",
+                        "ID_entità": "SA_V",
+                        "Apertura": "1932",
+                        "Chiusura": "1935",
+                        "Nome attività": "Dario Sabatello, \"Galleria Sabatello\"",
+                        "": "",
+                        "geo": {
+                            "lat": 41.90834521500914,
+                            "lon": 12.479089794624903
+                        }
+                    }
+                },
+                "Professione": "antiquario",
+                "Nascita": "",
+                "Morte": "",
+                "Nome attività": "Non noto"
+            },
+            "SA_V_4": {
+                "ID": "SA_V_4",
+                "Nome Persona": "Dario Sabatello",
+                "ID_entità": "SA_V",
+                "ID_luoghi": {
+                    "IT_87_d": {
+                        "ID": "IT_87_d",
+                        "Nazione": "Italia",
+                        "Regione": "Lazio",
+                        "Città": "Roma",
+                        "Via": "Largo Arenula",
+                        "Civico": "54",
+                        "ID_entità": "SA_V",
+                        "Apertura": "1900 ca.",
+                        "Chiusura": "1930 ca.",
+                        "Nome attività": "Isacco Sabatello, \"Isacco Sabatello e figli\"",
+                        "": "",
+                        "geo": {
+                            "lat": 41.89470435,
+                            "lon": 12.476355478143148
+                        }
+                    },
+                    "IT_87_e": {
+                        "ID": "IT_87_e",
+                        "Nazione": "Italia",
+                        "Regione": "Lazio",
+                        "Città": "Roma",
+                        "Via": "Lungotevere Flaminio",
+                        "Civico": "24",
+                        "ID_entità": "SA_V",
+                        "Apertura": "1950 ca.",
+                        "Chiusura": "1970 ca.",
+                        "Nome attività": "Armando Sabatello (abitazione privata)",
+                        "": "",
+                        "geo": {
+                            "lat": 41.92681180682235,
+                            "lon": 12.461249389880953
+                        }
+                    },
+                    "IT_102_b": {
+                        "ID": "IT_102_b",
+                        "Nazione": "Italia",
+                        "Regione": "Lazio",
+                        "Città": "Roma",
+                        "Via": "Via del Babuino",
+                        "Civico": "15",
+                        "ID_entità": "SA_V",
+                        "Apertura": "1900 ca.",
+                        "Chiusura": "1930 ca.",
+                        "Nome attività": "Leone Sabatello",
+                        "": "",
+                        "geo": {
+                            "lat": 41.90834521500914,
+                            "lon": 12.479089794624903
+                        }
+                    },
+                    "IT_102_d": {
+                        "ID": "IT_102_d",
+                        "Nazione": "Italia",
+                        "Regione": "Lazio",
+                        "Città": "Roma",
+                        "Via": "Via del Babuino",
+                        "Civico": "61",
+                        "ID_entità": "SA_V",
+                        "Apertura": "1932",
+                        "Chiusura": "1935",
+                        "Nome attività": "Dario Sabatello, \"Galleria Sabatello\"",
+                        "": "",
+                        "geo": {
+                            "lat": 41.90834521500914,
+                            "lon": 12.479089794624903
+                        }
+                    }
+                },
+                "Professione": "gallerista",
+                "Nascita": "1911",
+                "Morte": "1992",
+                "Nome attività": "Non noto"
+            }
+        },
+        "Clienti": {},
+        "Relazioni": {}
+    },
+    "SA_VI_NEW": {
+        "ID": "SA_VI_NEW",
+        "Nome": "Salvadori Antonio",
+        "Bio": "SA_VI_NEW_bio",
+        "Link Zeri": "https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Salvadori&page=1&filtroprovenienza_OA=5829%7C5652",
+        "Bibliografia": {
+            "B_215_3": {
+                "ID": "B_215_3",
+                "Autore": "",
+                "Anno": "1909",
+                "Titolo": "La Madonna del Giambellino rubata e recuperata a Venezia",
+                "Città, editore o rivista": "In «L'Antiquario», giugno 1909",
+                "Pagine": "pp. 6-8",
+                "Tipologia": "articolo di periodico"
+            }
+        },
+        "Collaboratori": {
+            "C_61_b": {
+                "ID": "C_61_b",
+                "Nome": "Giuseppe ",
+                "Cognome / Denominazione": "Steffanoni",
+                "Tipologia": "restauratore",
+                "ID Antiquari": "GR_II",
+                "Nome Antiquari": "Grandi"
+            }
+        },
+        "Eventi": {},
+        "Foto preview": "SA_VI_preview",
+        "Foto gallery": [
+            "SA_VI_img1",
+            "SA_VI_NEW_img1",
+            "SA_VI_NEW_img2"
+        ],
+        "Persone": {
+            "SA_VI_NEW_1": {
+                "ID": "SA_VI_NEW_1",
+                "Nome Persona": "Antonio Salvadori",
+                "ID_entità": "SA_VI_NEW",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "1866",
+                "Morte": "",
+                "Nome attività": ""
+            }
+        },
+        "Clienti": {},
+        "Relazioni": {}
+    },
+    "SA_VII": {
+        "ID": "SA_VII",
+        "Nome": "Salamon",
+        "Bio": "SA_VII_bio",
+        "Link Zeri": "https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Salamon",
+        "Bibliografia": {},
+        "Collaboratori": {
+            "C_68": {
+                "ID": "C_68",
+                "Nome": "Federico",
+                "Cognome / Denominazione": "Zeri",
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "ZA SA_V",
+                "Nome Antiquari": "Zabert Sabatello"
+            }
+        },
+        "Eventi": {},
+        "Foto preview": "SA_VII_preview",
+        "Foto gallery": [
+            "SA_VII_img1",
+            "SA_VII_img2",
+            "SA_VII_img3"
+        ],
+        "Persone": {
+            "SA_VII_1": {
+                "ID": "SA_VII_1",
+                "Nome Persona": "Matteo Salamon",
+                "ID_entità": "SA_VII",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "1964",
+                "Morte": "",
+                "Nome attività": "“Salamon & C.”; “Matteo Salamon”"
+            },
+            "SA_VII_2": {
+                "ID": "SA_VII_2",
+                "Nome Persona": "Ferdinando Salamon",
+                "ID_entità": "SA_VII",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "",
+                "Morte": "",
+                "Nome attività": ""
+            },
+            "SA_VII_3": {
+                "ID": "SA_VII_3",
+                "Nome Persona": "Teresa Salamon",
+                "ID_entità": "SA_VII",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "",
+                "Morte": "",
+                "Nome attività": ""
+            },
+            "SA_VII_4": {
+                "ID": "SA_VII_4",
+                "Nome Persona": "Silverio Salamon",
+                "ID_entità": "SA_VII",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "1955",
+                "Morte": "2014",
+                "Nome attività": "“Arte antica”"
+            },
+            "SA_VII_5": {
+                "ID": "SA_VII_5",
+                "Nome Persona": "Gian Alvise Salamon",
+                "ID_entità": "SA_VII",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "",
+                "Morte": "",
+                "Nome attività": ""
+            },
+            "SA_VII_6": {
+                "ID": "SA_VII_6",
+                "Nome Persona": "Harry Salamon",
+                "ID_entità": "SA_VII",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "1943",
+                "Morte": "",
+                "Nome attività": "“Il Gabinetto delle stampe”"
+            },
+            "SA_VII_7": {
+                "ID": "SA_VII_7",
+                "Nome Persona": "Lorenza Salamon",
+                "ID_entità": "SA_VII",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "1963",
+                "Morte": "",
+                "Nome attività": "“Salamon & C.”; “Salamon Fine Art”"
+            },
+            "SA_VII_8": {
+                "ID": "SA_VII_8",
+                "Nome Persona": "Elena Salamon",
+                "ID_entità": "SA_VII",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "1969",
+                "Morte": "",
+                "Nome attività": ""
             }
         },
         "Clienti": {},
@@ -10345,8 +11475,8 @@
                         "Nome attività": "Pellegrino Sestieri e figli ",
                         "": "",
                         "geo": {
-                            "lat": 41.91065933714786,
-                            "lon": 12.473626354914295
+                            "lat": 41.9105696,
+                            "lon": 12.4733492
                         }
                     }
                 },
@@ -10381,8 +11511,8 @@
                         "ID": "USA_1",
                         "Nazione": "Stati Uniti d'America",
                         "Regione": "Stati Uniti d'America",
-                        "Città": "New York City",
-                        "Via": "547 5th Avenue",
+                        "Città": "New York",
+                        "Via": "547 5th av",
                         "Civico": "",
                         "ID_entità": "SE_II",
                         "Apertura": "1919 ca.",
@@ -10390,8 +11520,8 @@
                         "Nome attività": "Emanuele e Guido Sestieri, \"Sestieri Gallery\" (succursale)",
                         "": "",
                         "geo": {
-                            "lat": 40.755473,
-                            "lon": -73.979309
+                            "lat": 40.7569173877551,
+                            "lon": -73.978254
                         }
                     },
                     "IT_94": {
@@ -10407,8 +11537,8 @@
                         "Nome attività": "Emanuele e Guido Sestieri, \"Galleria Sestieri\"",
                         "": "",
                         "geo": {
-                            "lat": 41.905751857213744,
-                            "lon": 12.482124886316017
+                            "lat": 41.9057477,
+                            "lon": 12.4821294
                         }
                     }
                 },
@@ -10429,7 +11559,7 @@
                         "Città": "Roma",
                         "Via": "Via Margutta",
                         "Civico": "53",
-                        "ID_entità": "JA SE_II",
+                        "ID_entità": "SE_II",
                         "Apertura": "1932",
                         "Chiusura": "1939",
                         "Nome attività": "Guido Sestieri",
@@ -10452,8 +11582,8 @@
                         "Nome attività": "Emanuele e Guido Sestieri, \"Galleria Sestieri\"",
                         "": "",
                         "geo": {
-                            "lat": 41.905751857213744,
-                            "lon": 12.482124886316017
+                            "lat": 41.9057477,
+                            "lon": 12.4821294
                         }
                     }
                 },
@@ -10480,8 +11610,8 @@
                         "Nome attività": "Emanuele e Guido Sestieri, \"Galleria Sestieri\"",
                         "": "",
                         "geo": {
-                            "lat": 41.905751857213744,
-                            "lon": 12.482124886316017
+                            "lat": 41.9057477,
+                            "lon": 12.4821294
                         }
                     }
                 },
@@ -10508,8 +11638,8 @@
                         "Nome attività": "Emanuele e Guido Sestieri, \"Galleria Sestieri\"",
                         "": "",
                         "geo": {
-                            "lat": 41.905751857213744,
-                            "lon": 12.482124886316017
+                            "lat": 41.9057477,
+                            "lon": 12.4821294
                         }
                     }
                 },
@@ -10631,8 +11761,8 @@
                         "Nome attività": "Attilio Simonetti e figli, \"Galleria Simonetti\", dal 1925 \"Simonetti Aldo Giulio & C.\" (Palazzo Odescalchi)",
                         "": "",
                         "geo": {
-                            "lat": null,
-                            "lon": null
+                            "lat": 41.905145,
+                            "lon": 12.4720605
                         }
                     }
                 },
@@ -10659,8 +11789,8 @@
                         "Nome attività": "Attilio Simonetti e figli, \"Galleria Simonetti\", dal 1925 \"Simonetti Aldo Giulio & C.\" (Palazzo Odescalchi)",
                         "": "",
                         "geo": {
-                            "lat": null,
-                            "lon": null
+                            "lat": 41.905145,
+                            "lon": 12.4720605
                         }
                     }
                 },
@@ -10687,8 +11817,8 @@
                         "Nome attività": "Attilio Simonetti e figli, \"Galleria Simonetti\", dal 1925 \"Simonetti Aldo Giulio & C.\" (Palazzo Odescalchi)",
                         "": "",
                         "geo": {
-                            "lat": null,
-                            "lon": null
+                            "lat": 41.905145,
+                            "lon": 12.4720605
                         }
                     }
                 },
@@ -10715,8 +11845,8 @@
                         "Nome attività": "Attilio Simonetti e figli, \"Galleria Simonetti\", dal 1925 \"Simonetti Aldo Giulio & C.\" (Palazzo Odescalchi)",
                         "": "",
                         "geo": {
-                            "lat": null,
-                            "lon": null
+                            "lat": 41.905145,
+                            "lon": 12.4720605
                         }
                     }
                 },
@@ -10732,10 +11862,10 @@
             "CA_II": true
         }
     },
-    "ST": {
-        "ID": "ST",
+    "ST_NEW": {
+        "ID": "ST_NEW",
         "Nome": "Steffanoni",
-        "Bio": "ST_bio",
+        "Bio": "ST_NEW_bio",
         "Link Zeri": "https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Steffanoni",
         "Bibliografia": {
             "B_52": {
@@ -10755,18 +11885,17 @@
                 "Città, editore o rivista": "Milano, Segrate",
                 "Pagine": "pp. 205-216",
                 "Tipologia": "articolo di monografia"
-            },
-            "B_54": {
-                "ID": "B_54",
-                "Autore": "Giannini, F.",
-                "Anno": "2017",
-                "Titolo": "Franco Steffanoni per Gian Battista Tiepolo. Frammenti di lettere famigliari, in Tiepolo e la prima guerra mondiale, a cura di Giulio Manieri Elia e Chiara Piva",
-                "Città, editore o rivista": "Firenze",
-                "Pagine": "",
-                "Tipologia": "articolo di monografia"
             }
         },
         "Collaboratori": {
+            "C_7": {
+                "ID": "C_7",
+                "Nome": "Bernard",
+                "Cognome / Denominazione": "Berenson",
+                "Tipologia": "storico dell'arte",
+                "ID Antiquari": "AL CO_I RO ST VO_I FO",
+                "Nome Antiquari": "Albrighi Contini-Bonacossi Romano Steffanoni Volpi Foresti"
+            },
             "C_13": {
                 "ID": "C_13",
                 "Nome": "Paul",
@@ -10774,6 +11903,14 @@
                 "Tipologia": "antiquario",
                 "ID Antiquari": "ST",
                 "Nome Antiquari": "Steffanoni"
+            },
+            "C_15": {
+                "ID": "C_15",
+                "Nome": "Luigi",
+                "Cognome / Denominazione": "Cavenaghi",
+                "Tipologia": "restauratore",
+                "ID Antiquari": "SA_V",
+                "Nome Antiquari": "Sabatello"
             },
             "C_28": {
                 "ID": "C_28",
@@ -10807,14 +11944,6 @@
                 "ID Antiquari": "CO_I ST BR_III",
                 "Nome Antiquari": "Contini Bonacossi Steffanoni Brass"
             },
-            "C_7": {
-                "ID": "C_7",
-                "Nome": "Bernard",
-                "Cognome / Denominazione": "Berenson",
-                "Tipologia": "storico dell'arte",
-                "ID Antiquari": "AL CO_I RO ST VO_I FO",
-                "Nome Antiquari": "Albrighi Contini-Bonacossi Romano Steffanoni Volpi Foresti"
-            },
             "C_26": {
                 "ID": "C_26",
                 "Nome": "Ugo",
@@ -10825,50 +11954,134 @@
             }
         },
         "Eventi": {},
-        "Foto preview": "ST_preview",
-        "Foto gallery": [],
+        "Foto preview": "ST_NEW_preview",
+        "Foto gallery": [
+            "ST_NEW_img1"
+        ],
         "Persone": {
-            "ST_1": {
-                "ID": "ST_1",
+            "ST_NEW_1": {
+                "ID": "ST_NEW_1",
+                "Nome Persona": "Giuseppe Steffanoni",
+                "ID_entità": "ST_NEW",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "1841",
+                "Morte": "1902",
+                "Nome attività": "Fratelli Steffanoni-Belle Arti-Bergamo; \"Giuseppe Steffanoni & figli, Trasponitori di pitture\""
+            },
+            "ST_NEW_2": {
+                "ID": "ST_NEW_2",
+                "Nome Persona": "Francesco/Franco Steffanoni",
+                "ID_entità": "ST_NEW",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "1870",
+                "Morte": "1942",
+                "Nome attività": "Fratelli Steffanoni-Belle Arti-Bergamo; \"Giuseppe Steffanoni & figli, Trasponitori di pitture\""
+            },
+            "ST_NEW_3": {
+                "ID": "ST_NEW_3",
                 "Nome Persona": "Attilio Steffanoni",
-                "ID_entità": "ST",
-                "ID_luoghi": {
-                    "IT_2": {
-                        "ID": "IT_2",
-                        "Nazione": "Italia",
-                        "Regione": "Lombardia",
-                        "Città": "Bergamo",
-                        "Via": "Via Evaristo Baschenis",
-                        "Civico": "5",
-                        "ID_entità": "ST",
-                        "Apertura": "1921",
-                        "Chiusura": "1947 ca.",
-                        "Nome attività": "Attilio e Franco Steffanoni, \"F.lli Steffanoni Belle Arti\"",
-                        "": "",
-                        "geo": {
-                            "lat": 45.6880984,
-                            "lon": 9.6642575
-                        }
-                    }
-                },
+                "ID_entità": "ST_NEW",
+                "ID_luoghi": {},
                 "Professione": "antiquario",
                 "Nascita": "1881",
                 "Morte": "1947",
-                "Nome attività": "Non noto"
+                "Nome attività": "Fratelli Steffanoni-Belle Arti-Bergamo; \"Giuseppe Steffanoni & figli, Trasponitori di pitture\""
+            },
+            "ST_NEW_4": {
+                "ID": "ST_NEW_4",
+                "Nome Persona": "Attilio Steffanoni",
+                "ID_entità": "ST_NEW",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "1938",
+                "Morte": "2025",
+                "Nome attività": ""
+            },
+            "ST_NEW_5": {
+                "ID": "ST_NEW_5",
+                "Nome Persona": "Franco Steffanoni",
+                "ID_entità": "ST_NEW",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "1907",
+                "Morte": "1987",
+                "Nome attività": ""
             }
         },
-        "Clienti": {
-            "CL_11": {
-                "Nome": "Arthur",
-                "Cognome": "Acton",
-                "vendite": [
-                    "ST_1"
-                ]
+        "Clienti": {},
+        "Relazioni": {}
+    },
+    "SU": {
+        "ID": "SU",
+        "Nome": "Subert",
+        "Bio": "SU_bio",
+        "Link Zeri": "https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Subert",
+        "Bibliografia": {},
+        "Collaboratori": {},
+        "Eventi": {},
+        "Foto preview": "SU_preview",
+        "Foto gallery": [
+            "SU_img1",
+            "SU_img2",
+            "SU_img3",
+            "SU_img4"
+        ],
+        "Persone": {
+            "SU_1": {
+                "ID": "SU_1",
+                "Nome Persona": "Emanuele Subert",
+                "ID_entità": "SU",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "1830",
+                "Morte": "1888",
+                "Nome attività": "“Emanuele Subert Antichità e Belle Arti”"
+            },
+            "SU_2": {
+                "ID": "SU_2",
+                "Nome Persona": "Rodoldo Subert",
+                "ID_entità": "SU",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "1873",
+                "Morte": "1958",
+                "Nome attività": "“Rodolfo Subert Antichità e Belle Arti”"
+            },
+            "SU_3": {
+                "ID": "SU_3",
+                "Nome Persona": "Rodolfo Subert",
+                "ID_entità": "SU",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "1898",
+                "Morte": "1978",
+                "Nome attività": "“Galleria S. Andrea”; “G.G. Subert”"
+            },
+            "SU_4": {
+                "ID": "SU_4",
+                "Nome Persona": "Alberto Subert",
+                "ID_entità": "SU",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "1929",
+                "Morte": "2021",
+                "Nome attività": "“Antichità e Oggetti d’Arte”"
+            },
+            "SU_5": {
+                "ID": "SU_5",
+                "Nome Persona": "Michele Subert",
+                "ID_entità": "SU",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "",
+                "Morte": "in vita",
+                "Nome attività": "“Antichità e Oggetti d’Arte”"
             }
         },
-        "Relazioni": {
-            "AC": true
-        }
+        "Clienti": {},
+        "Relazioni": {}
     },
     "TA": {
         "ID": "TA",
@@ -10929,8 +12142,8 @@
                         "Nome attività": "Filippo Tavazzi",
                         "": "",
                         "geo": {
-                            "lat": 41.904991963189254,
-                            "lon": 12.480109397345917
+                            "lat": 41.9057255,
+                            "lon": 12.4820815
                         }
                     },
                     "IT_112": {
@@ -11139,8 +12352,8 @@
                         "ID": "USA_2",
                         "Nazione": "Stati Uniti d'America",
                         "Regione": "Stati Uniti d'America",
-                        "Città": "New York City",
-                        "Via": "749 5th Avenue",
+                        "Città": "New York",
+                        "Via": "749 5th av",
                         "Civico": "",
                         "ID_entità": "TO",
                         "Apertura": "1919 ca. ",
@@ -11226,7 +12439,9 @@
         },
         "Eventi": {},
         "Foto preview": "VE_preview",
-        "Foto gallery": [],
+        "Foto gallery": [
+            ""
+        ],
         "Persone": {
             "VE_1": {
                 "ID": "VE_1",
@@ -11294,6 +12509,44 @@
                 ]
             }
         },
+        "Relazioni": {}
+    },
+    "VE_I": {
+        "ID": "VE_I",
+        "Nome": "The Venice Art Company",
+        "Bio": "VE_I_bio",
+        "Link Zeri": "",
+        "Bibliografia": {},
+        "Collaboratori": {},
+        "Eventi": {},
+        "Foto preview": "VE_I_preview",
+        "Foto gallery": [
+            "VE_I_img1",
+            "VE_I_img2"
+        ],
+        "Persone": {
+            "VE_I_1": {
+                "ID": "VE_I_1",
+                "Nome Persona": "Gino Sarfatti",
+                "ID_entità": "VE_I",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "",
+                "Morte": "",
+                "Nome attività": "The Venice Art Gallery"
+            },
+            "VE_I_2": {
+                "ID": "VE_I_2",
+                "Nome Persona": "Giuseppe Guetta",
+                "ID_entità": "VE_I",
+                "ID_luoghi": {},
+                "Professione": "antiquario",
+                "Nascita": "",
+                "Morte": "",
+                "Nome attività": "The Venice Art Gallery"
+            }
+        },
+        "Clienti": {},
         "Relazioni": {}
     },
     "VI_I": {
@@ -11416,7 +12669,9 @@
         },
         "Eventi": {},
         "Foto preview": "VI_II_preview",
-        "Foto gallery": [],
+        "Foto gallery": [
+            ""
+        ],
         "Persone": {
             "VI_II_1": {
                 "ID": "VI_II_1",
@@ -11866,8 +13121,8 @@
                         "Nome attività": "Giuseppe Volterra (succursale)",
                         "": "",
                         "geo": {
-                            "lat": 51.5172813,
-                            "lon": -0.1514937
+                            "lat": 51.507231879332295,
+                            "lon": -0.13602748236885986
                         }
                     }
                 },
@@ -11894,8 +13149,8 @@
                         "Nome attività": "Giuseppe Volterra (succursale)",
                         "": "",
                         "geo": {
-                            "lat": 51.5172813,
-                            "lon": -0.1514937
+                            "lat": 51.507231879332295,
+                            "lon": -0.13602748236885986
                         }
                     }
                 },
@@ -11922,8 +13177,8 @@
                         "Nome attività": "Giuseppe Volterra (succursale)",
                         "": "",
                         "geo": {
-                            "lat": 51.5172813,
-                            "lon": -0.1514937
+                            "lat": 51.507231879332295,
+                            "lon": -0.13602748236885986
                         }
                     }
                 },
@@ -11950,8 +13205,8 @@
                         "Nome attività": "Giuseppe Volterra (succursale)",
                         "": "",
                         "geo": {
-                            "lat": 51.5172813,
-                            "lon": -0.1514937
+                            "lat": 51.507231879332295,
+                            "lon": -0.13602748236885986
                         }
                     }
                 },
@@ -11990,7 +13245,7 @@
                         "Via": "Ponte Vecchio",
                         "Civico": "1",
                         "ID_entità": "VO_II",
-                        "Apertura": "1900 ca.",
+                        "Apertura": "1887 ca.",
                         "Chiusura": "1932 ca.",
                         "Nome attività": "Gustavo Volterra",
                         "": "",
@@ -12050,6 +13305,22 @@
                             "lon": 11.2525885
                         }
                     },
+                    "IT_30": {
+                        "ID": "IT_30",
+                        "Nazione": "Italia",
+                        "Regione": "Toscana",
+                        "Città": "Arezzo",
+                        "Via": "Corso Italia",
+                        "Civico": "14",
+                        "ID_entità": "BR_I",
+                        "Apertura": "1967",
+                        "Chiusura": "1996",
+                        "Nome attività": "Palazzo del Capitano del Popolo, sede e abitazione privata",
+                        "geo": {
+                            "lat": 43.465164962623355,
+                            "lon": 11.883164208651733
+                        }
+                    },
                     "IT_75_b": {
                         "ID": "IT_75_b",
                         "Nazione": "Italia",
@@ -12063,8 +13334,8 @@
                         "Nome attività": "Giuseppe Volterra e fratelli e Adolfo Melli",
                         "": "",
                         "geo": {
-                            "lat": 43.7271223,
-                            "lon": 10.9452554
+                            "lat": 43.76724,
+                            "lon": 11.2519218
                         }
                     },
                     "FR_4": {
@@ -12080,8 +13351,8 @@
                         "Nome attività": "Giuseppe Volterra (succursale)",
                         "": "",
                         "geo": {
-                            "lat": 48.87082446793654,
-                            "lon": 2.333356774585659
+                            "lat": 48.8707892,
+                            "lon": 2.3331608
                         }
                     },
                     "UK_3": {
@@ -12097,8 +13368,8 @@
                         "Nome attività": "Giuseppe Volterra (succursale)",
                         "": "",
                         "geo": {
-                            "lat": 51.5172813,
-                            "lon": -0.1514937
+                            "lat": 51.507231879332295,
+                            "lon": -0.13602748236885986
                         }
                     }
                 },
