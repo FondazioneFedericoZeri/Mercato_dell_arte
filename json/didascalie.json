@@ -79,8 +79,9 @@
         "ID": "BR_I_img1.jpg",
         "Didascalia": "Ivan Bruschi (foto Fondazione Bruschi)"
     },
-    "BR_III_img1.jpg Italico Brass al fronte, 1915-1916": {
-        "ID": "BR_III_img1.jpg Italico Brass al fronte, 1915-1916"
+    "BR_III_img1.jpg": {
+        "ID": "BR_III_img1.jpg",
+        "Didascalia": "Italico Brass al fronte, 1915-1916 "
     },
     "CA_I_img1.jpg": {
         "ID": "CA_I_img1.jpg",
@@ -146,6 +147,10 @@
         "ID": "GA_img1.jpg",
         "Didascalia": "Antonio Galliani. Da \"L'Antiquario\", 1913"
     },
+    "GE_I_img1.jpg": {
+        "ID": "GE_I_img1.jpg",
+        "Didascalia": "Ritratto di Benno Geiger di Konrad von Kardorff, 1914 (Berlino, Altenationalgalerie) "
+    },
     "GI_img1.jpg": {
         "ID": "GI_img1.jpg",
         "Didascalia": "Ubaldo Giugni. Da \"L'Antiquario\", 1928"
@@ -153,9 +158,6 @@
     "GI_img2.jpg": {
         "ID": "GI_img2.jpg",
         "Didascalia": "Pubblicità Galleria Giugni, anni '50"
-    },
-    "GE_I_img1.jpg Ritratto di Benno Geiger di Konrad von Kardorff, 1914 (Berlino, Altenationalgalerie)": {
-        "ID": "GE_I_img1.jpg Ritratto di Benno Geiger di Konrad von Kardorff, 1914 (Berlino, Altenationalgalerie)"
     },
     "GR_img1.jpg": {
         "ID": "GR_img1.jpg",
@@ -175,7 +177,7 @@
     },
     "JA_img1.jpg": {
         "ID": "JA_img1.jpg",
-        "Didascalia": "Augusto Jandolo nel suo studio, 1930 (Museo della Fondazione, Circolo Artistico Politecnico, Ets.)"
+        "Didascalia": "Augusto Jandolo nel suo studio, 1930, (Museo della Fondazione, Circolo Artistico Politecnico, Ets.)\""
     },
     "JA_img2.jpg": {
         "ID": "JA_img2.jpg",
@@ -347,11 +349,11 @@
     },
     "SI_img1.jpg": {
         "ID": "SI_img1.jpg",
-        "Didascalia": "Attilio Simonetti (Archivio Simonetti di Giovanni Carboni)"
+        "Didascalia": "Attilio Simonetti (Archivio Simonetti di Giovanni Carboni) "
     },
     "SI_img2.jpg": {
         "ID": "SI_img2.jpg",
-        "Didascalia": "Studio, Palazzo Altemps (Archivio Simonetti di Giovanni Carboni)"
+        "Didascalia": "Studio, Palazzo Altemps (Archivio Simonetti di Giovanni Carboni) "
     },
     "TA_img1.jpg": {
         "ID": "TA_img1.jpg",
@@ -459,7 +461,7 @@
     },
     "FO_img1.jpg": {
         "ID": "FO_img1.jpg",
-        "Didascalia": "Carlo Alberto Foresti con Robert Langton Douglas a Venezia nel 1922 (Archivio Foresti)"
+        "Didascalia": "Libreria antiquaria di Tammaro De Marinis a Firenze in società con Vittorio Forti"
     },
     "FO_img2.jpg": {
         "ID": "FO_img2.jpg",
@@ -472,5 +474,181 @@
     "FO_img4.jpg": {
         "ID": "FO_img4.jpg",
         "Didascalia": "Studio artistico di Carlo Alberto Foresti a Milano (Archivio Foresti)"
+    },
+    "BA_V_img1.jpg": {
+        "ID": "BA_V_img1.jpg",
+        "Didascalia": "Dino Barozzi nel 1883 (Archivio Francesca Barozzi)"
+    },
+    "BA_V_img2.jpg": {
+        "ID": "BA_V_img2.jpg",
+        "Didascalia": "Pubblicità della galleria Barozzi (dal Catalogo delle R.R. Gallerie di Venezia, 1914)"
+    },
+    "BA_V_img3.jpg": {
+        "ID": "BA_V_img3.jpg",
+        "Didascalia": "Sala d'ingresso di Palazzo Soranzo Van Axel (foto Alinari, 1922-1923)"
+    },
+    "CA_IV_img1.jpg": {
+        "ID": "CA_IV_img1.jpg",
+        "Didascalia": "La galleria Carrer da \"Der Grosse Canal in Venedig\", 1890"
+    },
+    "CA_IV_img2.jpg": {
+        "ID": "CA_IV_img2.jpg",
+        "Didascalia": "Iniziali di Antonio Carrer sul portale d'ingresso della Scuola dei Battiloro"
+    },
+    "CA_IV_img3.jpg": {
+        "ID": "CA_IV_img3.jpg",
+        "Didascalia": "Tiepolo, affresco staccato da Palazzo Volpato Panigai a Nervesa (foto Musei Statali di Berlino)"
+    },
+    "PE_img1.jpg": {
+        "ID": "PE_img1.jpg",
+        "Didascalia": "Guido Tallone, Ritratto di Lino Pesaro nel 1930"
+    },
+    "PE_img2.jpg": {
+        "ID": "PE_img2.jpg",
+        "Didascalia": "Biglietto da visita della Galleria Pesaro disegnato da Alberto Martini (Milano, Castello Sforzesco, Raccolta Achille Bertarelli)"
+    },
+    "GU_img1.jpg": {
+        "ID": "GU_img1.jpg",
+        "Didascalia": "Ritratto di Michelangelo Guggenheim all'età di quarant'anni"
+    },
+    "LO_img1.jpg": {
+        "ID": "LO_img1.jpg",
+        "Didascalia": "Adolph Loewi con William Robertson nella galleria di Los Angeles, 1968 ca. (da Rosenbaum 1989)"
+    },
+    "LO_img2.jpg": {
+        "ID": "LO_img2.jpg",
+        "Didascalia": "The \"Italian Room\" from Chiavenna, (foto Seattle Art Museum)"
+    },
+    "LO_img3.jpg": {
+        "ID": "LO_img3.jpg",
+        "Didascalia": "The Burgundian Library, The Rosen House at Caramoor"
+    },
+    "PO_III_img1.jpg": {
+        "ID": "PO_III_img1.jpg",
+        "Didascalia": "Fotoritratto di Ludwig Pollak contenuta nell’album per celebrare i settant’anni del Prof. Eugen Bormann, 1912 ca."
+    },
+    "PO_III_img2.jpg": {
+        "ID": "PO_III_img2.jpg",
+        "Didascalia": "Ludwig Pollak nel suo studio a Palazzo Odescalchi in piazza Santi Apostoli, 1935-1943"
+    },
+    "PO_III_img3.jpg": {
+        "ID": "PO_III_img3.jpg",
+        "Didascalia": "Cesare Faraglia, Salotto dell'abitazione di Ludwig Pollak a Palazzo Odescalchi, 1928-1943 ca."
+    },
+    "SA_VII_img1.jpg": {
+        "ID": "SA_VII_img1.jpg",
+        "Didascalia": "La galleria della famiglia Salamon \"Arte antica\" a Torino, anni cinquanta del Novecento"
+    },
+    "SA_VII_img2.jpg": {
+        "ID": "SA_VII_img2.jpg",
+        "Didascalia": "Uno degli ambienti della galleria di Matteo Salamon in via San Damiano 2 a Milano, 2025"
+    },
+    "SA_VII_img3.jpg": {
+        "ID": "SA_VII_img3.jpg",
+        "Didascalia": "Matteo Salamon nel suo stand all'edizione 2026 di TEFAF Maastricht, 14 marzo 2026"
+    },
+    "CO_IV_img1.jpg": {
+        "ID": "CO_IV_img1.jpg",
+        "Didascalia": "Leonida Caldesi, Dominic Charles Colnaghi nello studio del fotografo a Londra, in Pall Mall East 13 (Londra National Portrait Gallery)"
+    },
+    "CO_IV_img2.jpg": {
+        "ID": "CO_IV_img2.jpg",
+        "Didascalia": "Particolare dello stand Colnaghi a TEFAF Maastricht 2026"
+    },
+    "SA_VI_NEW_img2.jpg": {
+        "ID": "SA_VI_NEW_img2.jpg",
+        "Didascalia": "Giulio Genova, palazzo Moro Lin sul Canal Grande, 1894-1915 (Venezia. I.P.A.V., fondo fotografico Tomaso Filippi)"
+    },
+    "SA_VI_NEW_img1.jpg": {
+        "ID": "SA_VI_NEW_img1.jpg",
+        "Didascalia": "Carta intestata della Galleria Salvadori in via XXII Marzo (ACS, Archivio Generale)"
+    },
+    "ST_NEW_img1.jpg": {
+        "ID": "ST_NEW_img1.jpg",
+        "Didascalia": "Carta intestata della Ditta Giuseppe Steffanoni e figli (Musei Statali di Berlino, Archivio centrale)"
+    },
+    "LO_I_img1.jpg": {
+        "ID": "LO_I_img1.jpg",
+        "Didascalia": "Nella Longari e la passione per la scultura medievale"
+    },
+    "LO_I_img2.jpg": {
+        "ID": "LO_I_img2.jpg",
+        "Didascalia": "La nuova generazione Longari"
+    },
+    "SU_img1.jpg": {
+        "ID": "SU_img1.jpg",
+        "Didascalia": "Emanuele Subert 1830-1888"
+    },
+    "SU_img2.jpg": {
+        "ID": "SU_img2.jpg",
+        "Didascalia": "Rodolfo Subert 1873-1958"
+    },
+    "SU_img3.jpg": {
+        "ID": "SU_img3.jpg",
+        "Didascalia": "Rodolfo Subert (Duda) 1898-1978"
+    },
+    "SU_img4.jpg": {
+        "ID": "SU_img4.jpg",
+        "Didascalia": "Alberto Subert 1929-2021"
+    },
+    "CA_V_img1.jpg": {
+        "ID": "CA_V_img1.jpg",
+        "Didascalia": "Giorgio Caretto nella sua galleria negli anni Ottanta"
+    },
+    "CO_V_Img1.jpg": {
+        "ID": "CO_V_Img1.jpg",
+        "Didascalia": "Guido Cortinovis, Autoritratto, 1942, collezione privata"
+    },
+    "GI_I_img1.pg": {
+        "ID": "GI_I_img1.pg",
+        "Didascalia": "Maria Antonia Gianetti e Federico Zeri"
+    },
+    "DI_I_img1.jpg": {
+        "ID": "DI_I_img1.jpg",
+        "Didascalia": "L'antiquario \"romanista\" Eugenio Di Castro negli anni Sessanta"
+    },
+    "PA_III_img1.jpg": {
+        "ID": "PA_III_img1.jpg",
+        "Didascalia": "Pietro Maria Bardi con Le Corbusier nel 1936"
+    },
+    "PA_III_img2.jpg": {
+        "ID": "PA_III_img2.jpg",
+        "Didascalia": "Pietro Maria Bardi all'esposizione di Pittura italiana antica a Rio de Janeiro, 1946"
+    },
+    "PA_III_img3.jpg": {
+        "ID": "PA_III_img3.jpg",
+        "Didascalia": "Interni dello Studio d'Arte Palma a Roma"
+    },
+    "DA_img1.jpg": {
+        "ID": "DA_img1.jpg",
+        "Didascalia": "Timbro con il monogramma di Pietro D'Atri sul verso di una fotografia conservata presso la Fototeca Zeri (inv. 101762)"
+    },
+    "DA_img2.jpg": {
+        "ID": "DA_img2.jpg",
+        "Didascalia": "Rue La Boétie a Parigi, sede della Galleria D'Atri"
+    },
+    "PR_img1.jpg": {
+        "ID": "PR_img1.jpg",
+        "Didascalia": "Ritratto di Giovanni Pratesi"
+    },
+    "PR_img2.jpg": {
+        "ID": "PR_img2.jpg",
+        "Didascalia": "Giovanni Pratesi nella sua galleria di via Maggio a Firenze"
+    },
+    "RI_I_img1.jpg": {
+        "ID": "RI_I_img1.jpg",
+        "Didascalia": "Palazzo Marcello, Venezia, fine del XIX secolo (Collezione privata)"
+    },
+    "RI_I_img2.jpg": {
+        "ID": "RI_I_img2.jpg",
+        "Didascalia": "Palazzo Garzoni, Venezia, XXI secolo"
+    },
+    "VE_I_img1.jpg": {
+        "ID": "VE_I_img1.jpg",
+        "Didascalia": "Veduta da Punta della Dogana con Palazzo Dandolo, sede della The Venice Art Gallery  (1890-1891)"
+    },
+    "VE_I_img2.jpg": {
+        "ID": "VE_I_img2.jpg",
+        "Didascalia": "Mariano Fortuny y Madrazo, Veduta da Punta della Dogana (con Palazzo Dandolo), Venezia, 1907"
     }
 }
