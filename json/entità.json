@@ -9054,7 +9054,126 @@
             "PI_img1",
             "PI_img2"
         ],
-        "Persone": {},
+        "Persone": {
+            "PI_NEW_1": {
+                "ID": "PI_NEW_1",
+                "Nome Persona": "Cesare Pini",
+                "ID_entità": "PI_NEW",
+                "ID_luoghi": {
+                    "IT_25": {
+                        "ID": "IT_25",
+                        "Nazione": "Italia",
+                        "Regione": "Emilia-Romagna",
+                        "Città": "Bologna",
+                        "Via": "Via del Monte, Ghetto Ebraico",
+                        "Civico": "8",
+                        "ID_entità": "PI",
+                        "Apertura": "1922 ca.",
+                        "Chiusura": "1923 ca.",
+                        "Nome attività": "Cesare e Umberto Pini",
+                        "": "",
+                        "geo": {
+                            "lat": 44.4963071,
+                            "lon": 11.3440354
+                        }
+                    }
+                },
+                "Professione": "antiquario",
+                "Nascita": "1870",
+                "Morte": "",
+                "Nome attività": ""
+            },
+            "PI_NEW_2": {
+                "ID": "PI_NEW_2",
+                "Nome Persona": "Umberto Pini",
+                "ID_entità": "PI_NEW",
+                "ID_luoghi": {
+                    "IT_83": {
+                        "ID": "IT_83",
+                        "Nazione": "Italia",
+                        "Regione": "Toscana",
+                        "Città": "Firenze",
+                        "Via": "Via di San Niccolò",
+                        "Civico": "95",
+                        "ID_entità": "PI",
+                        "Apertura": "1923",
+                        "Chiusura": "1930 ca.",
+                        "Nome attività": "Giovanni Pini (deposito)",
+                        "": "",
+                        "geo": {
+                            "lat": 43.7645554,
+                            "lon": 11.2593975
+                        }
+                    },
+                    "IT_85": {
+                        "ID": "IT_85",
+                        "Nazione": "Italia",
+                        "Regione": "Toscana",
+                        "Città": "Firenze",
+                        "Via": "Via Tornabuoni",
+                        "Civico": "4",
+                        "ID_entità": "PI",
+                        "Apertura": "1920 ca.",
+                        "Chiusura": "1940 ca.",
+                        "Nome attività": "Umberto Pini",
+                        "": "",
+                        "geo": {
+                            "lat": 43.7704385,
+                            "lon": 11.2514389
+                        }
+                    }
+                },
+                "Professione": "antiquario",
+                "Nascita": "1902",
+                "Morte": "",
+                "Nome attività": ""
+            },
+            "PI_NEW_3": {
+                "ID": "PI_NEW_3",
+                "Nome Persona": "Giovanni Pini",
+                "ID_entità": "PI_NEW",
+                "ID_luoghi": {
+                    "IT_83": {
+                        "ID": "IT_83",
+                        "Nazione": "Italia",
+                        "Regione": "Toscana",
+                        "Città": "Firenze",
+                        "Via": "Via di San Niccolò",
+                        "Civico": "95",
+                        "ID_entità": "PI",
+                        "Apertura": "1923",
+                        "Chiusura": "1930 ca.",
+                        "Nome attività": "Giovanni Pini (deposito)",
+                        "": "",
+                        "geo": {
+                            "lat": 43.7645554,
+                            "lon": 11.2593975
+                        }
+                    },
+                    "IT_85": {
+                        "ID": "IT_85",
+                        "Nazione": "Italia",
+                        "Regione": "Toscana",
+                        "Città": "Firenze",
+                        "Via": "Via Tornabuoni",
+                        "Civico": "4",
+                        "ID_entità": "PI",
+                        "Apertura": "1920 ca.",
+                        "Chiusura": "1940 ca.",
+                        "Nome attività": "Umberto Pini",
+                        "": "",
+                        "geo": {
+                            "lat": 43.7704385,
+                            "lon": 11.2514389
+                        }
+                    }
+                },
+                "Professione": "antiquario",
+                "Nascita": "1895",
+                "Morte": "",
+                "Nome attività": ""
+            }
+        },
         "Clienti": {},
         "Relazioni": {}
     },
@@ -9452,7 +9571,120 @@
             "RA_img1",
             "RA_NEW_img1"
         ],
-        "Persone": {},
+        "Persone": {
+            "RA_NEW_1": {
+                "ID": "RA_NEW_1",
+                "Nome Persona": "Arturo Rambaldi",
+                "ID_entità": "RA_NEW",
+                "ID_luoghi": {
+                    "IT_24": {
+                        "ID": "IT_24",
+                        "Nazione": "Italia",
+                        "Regione": "Emilia-Romagna",
+                        "Città": "Bologna",
+                        "Via": "Via Castiglione",
+                        "Civico": "1",
+                        "ID_entità": "RA",
+                        "Apertura": "1900 ca.",
+                        "Chiusura": "1929",
+                        "Nome attività": "Arturo Rambaldi, \"Galleria di Antichità e casa di vendite A. Rambaldi\"",
+                        "": "",
+                        "geo": {
+                            "lat": 44.4933222,
+                            "lon": 11.346376
+                        }
+                    }
+                },
+                "Professione": "antiquario",
+                "Nascita": "1859",
+                "Morte": "1929",
+                "Nome attività": "Galleria di Antichità e Casa di vendite A. Rambaldi"
+            },
+            "RA_NEW_2": {
+                "ID": "RA_NEW_2",
+                "Nome Persona": "Angelo Rambaldi",
+                "ID_entità": "RA_NEW",
+                "ID_luoghi": {
+                    "IT_24": {
+                        "ID": "IT_24",
+                        "Nazione": "Italia",
+                        "Regione": "Emilia-Romagna",
+                        "Città": "Bologna",
+                        "Via": "Via Castiglione",
+                        "Civico": "1",
+                        "ID_entità": "RA",
+                        "Apertura": "1900 ca.",
+                        "Chiusura": "1929",
+                        "Nome attività": "Arturo Rambaldi, \"Galleria di Antichità e casa di vendite A. Rambaldi\"",
+                        "": "",
+                        "geo": {
+                            "lat": 44.4933222,
+                            "lon": 11.346376
+                        }
+                    }
+                },
+                "Professione": "antiquario",
+                "Nascita": "1883",
+                "Morte": "",
+                "Nome attività": "“Galleria A. Rambaldi”"
+            },
+            "RA_NEW_3": {
+                "ID": "RA_NEW_3",
+                "Nome Persona": "Aldo Rambaldi",
+                "ID_entità": "RA_NEW",
+                "ID_luoghi": {
+                    "IT_24": {
+                        "ID": "IT_24",
+                        "Nazione": "Italia",
+                        "Regione": "Emilia-Romagna",
+                        "Città": "Bologna",
+                        "Via": "Via Castiglione",
+                        "Civico": "1",
+                        "ID_entità": "RA",
+                        "Apertura": "1900 ca.",
+                        "Chiusura": "1929",
+                        "Nome attività": "Arturo Rambaldi, \"Galleria di Antichità e casa di vendite A. Rambaldi\"",
+                        "": "",
+                        "geo": {
+                            "lat": 44.4933222,
+                            "lon": 11.346376
+                        }
+                    }
+                },
+                "Professione": "antiquario",
+                "Nascita": "1885",
+                "Morte": "1964",
+                "Nome attività": "“Galleria A. Rambaldi”"
+            },
+            "RA_NEW_4": {
+                "ID": "RA_NEW_4",
+                "Nome Persona": "Olga Tcherukine",
+                "ID_entità": "RA_NEW",
+                "ID_luoghi": {
+                    "IT_24": {
+                        "ID": "IT_24",
+                        "Nazione": "Italia",
+                        "Regione": "Emilia-Romagna",
+                        "Città": "Bologna",
+                        "Via": "Via Castiglione",
+                        "Civico": "1",
+                        "ID_entità": "RA",
+                        "Apertura": "1900 ca.",
+                        "Chiusura": "1929",
+                        "Nome attività": "Arturo Rambaldi, \"Galleria di Antichità e casa di vendite A. Rambaldi\"",
+                        "": "",
+                        "geo": {
+                            "lat": 44.4933222,
+                            "lon": 11.346376
+                        }
+                    }
+                },
+                "Professione": "antiquario",
+                "Nascita": "1901",
+                "Morte": "",
+                "Nome attività": "“Galleria A. Rambaldi”"
+            }
+        },
         "Clienti": {},
         "Relazioni": {}
     },
