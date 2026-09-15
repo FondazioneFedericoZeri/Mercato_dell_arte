@@ -28,10 +28,12 @@ def build_kinships(input_csv, entity_json, person_tsv, output_json):
     # Iterate over each row in the kinship CSV
     for _, row in kinship_data.iterrows():
         # Normalize the entity_id and person IDs by converting them to uppercase for comparison
-        entity_id = row['ID_entità'].upper()
-        person1 = row['ID_persona_1'].upper()
-        person2 = row['ID_persona_2'].upper()
-        relation_type = row['tipologia']
+        # .strip() guards against stray leading/trailing spaces in the source CSV
+        # (e.g. "BA_V " or " BA_V_2"), which would otherwise silently fail to match.
+        entity_id = row['ID_entità'].strip().upper()
+        person1 = row['ID_persona_1'].strip().upper()
+        person2 = row['ID_persona_2'].strip().upper()
+        relation_type = row['tipologia'].strip()
 
         # Initialize the dictionary for the entity if not already done
         if entity_id not in kinships_dict:
@@ -51,11 +53,12 @@ def build_kinships(input_csv, entity_json, person_tsv, output_json):
         # Function to safely fetch a person's info, and log if it's missing
         def get_person_info(entity_id, person):
             try:
-                if person in persons['ID'].str.upper().values:
+                ids_upper = persons['ID'].str.strip().str.upper()
+                if person in ids_upper.values:
                     return {
-                        "Nome": str(persons.loc[persons['ID'].str.upper() == person, 'Nome Persona'].values[0]),
-                        "Nascita": str(persons.loc[persons['ID'].str.upper() == person, 'Nascita'].values[0]),
-                        "Morte": str(persons.loc[persons['ID'].str.upper() == person, 'Morte'].values[0])
+                        "Nome": str(persons.loc[ids_upper == person, 'Nome Persona'].values[0]),
+                        "Nascita": str(persons.loc[ids_upper == person, 'Nascita'].values[0]),
+                        "Morte": str(persons.loc[ids_upper == person, 'Morte'].values[0])
                     }
                 else:
                     missing_persons.append((entity_id, person))
