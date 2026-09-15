@@ -9769,7 +9769,7 @@
     "PO_III": {
         "ID": "PO_III",
         "Nome": "Pollak",
-        "Bio": "PO_bio",
+        "Bio": "PO_III_bio",
         "Link Zeri": "https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Pollak",
         "Bibliografia": {
             "B_111": {
