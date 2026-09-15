@@ -1,14 +1,33 @@
 import csv
 import json
+import os
 import time
 import tqdm
 from geopy.geocoders import Nominatim
 
 
-def build_places(input_csv, output_json):
-    geolocator = Nominatim(user_agent="mercato-dell-arte")
+def _address_key(place):
+    # The fields that feed the geocoding query: if any of these changed
+    # since the last build, the cached coordinates are no longer valid
+    # and the place must be re-geocoded.
+    return f"{place['Via']}|{place['Civico']}|{place['Città']}|{place['Nazione']}"
 
-    fout = open(output_json, "w", encoding="utf-8")
+
+def build_places(input_csv, output_json):
+    # Reuse coordinates already geocoded in a previous run: Nominatim's usage
+    # policy caps requests at ~1/second, so re-geocoding hundreds of unchanged
+    # addresses on every run (e.g. after adding a single new place) is both
+    # slow and disrespectful of that limit. Only new places, or places whose
+    # address changed, or places that failed to geocode last time, hit the API.
+    existing = {}
+    if os.path.isfile(output_json):
+        try:
+            with open(output_json, encoding="utf-8") as f:
+                existing = json.load(f)
+        except (json.JSONDecodeError, OSError):
+            existing = {}
+
+    geolocator = Nominatim(user_agent="mercato-dell-arte")
 
     places_dicts = {}
 
@@ -23,21 +42,32 @@ def build_places(input_csv, output_json):
             for x in place_tmp:
                 place[x] = place_tmp[x]
 
-            location = geolocator.geocode(
-                f"{place['Via']} {place['Civico']} {place['Città']} {place['Nazione']}", timeout=None)
-            if location is not None:
-                place["geo"] = {"lat": location.latitude,
-                                "lon": location.longitude}
+            cached = existing.get(place['ID'])
+            can_reuse = (
+                cached is not None
+                and cached.get("geo", {}).get("lat") is not None
+                and _address_key(cached) == _address_key(place)
+            )
 
+            if can_reuse:
+                place["geo"] = cached["geo"]
             else:
-                place["geo"] = {"lat": None,
-                                "lon": None}
-            places_dicts[place['ID']] = place
-            time.sleep(1.3)
+                location = geolocator.geocode(
+                    f"{place['Via']} {place['Civico']} {place['Città']} {place['Nazione']}", timeout=None)
+                if location is not None:
+                    place["geo"] = {"lat": location.latitude,
+                                    "lon": location.longitude}
+                else:
+                    place["geo"] = {"lat": None,
+                                    "lon": None}
+                time.sleep(1.3)
 
-    print(json.dumps(places_dicts,
-                     ensure_ascii=False,
-                     indent=4), file=fout)
+            places_dicts[place['ID']] = place
+
+    with open(output_json, "w", encoding="utf-8") as fout:
+        print(json.dumps(places_dicts,
+                         ensure_ascii=False,
+                         indent=4), file=fout)
 
 
 def build_generic(input_csv, output_json):
