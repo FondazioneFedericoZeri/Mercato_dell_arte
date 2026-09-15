@@ -1458,335 +1458,527 @@
         "Nome": "Barozzi",
         "Relazioni": [
             {
-                "Persona_1": " BA_V_1",
-                "Persona_2": " BA_V_2",
-                "Tipo_di_relazione": " padre"
-            }
-        ],
-        "Persone": {
-            " BA_V_1": {},
-            " BA_V_2": {}
-        }
-    },
-    "BA_V ": {
-        "Nome": "",
-        "Relazioni": [
+                "Persona_1": "BA_V_1",
+                "Persona_2": "BA_V_2",
+                "Tipo_di_relazione": "padre"
+            },
             {
-                "Persona_1": " BA_V_2",
-                "Persona_2": " BA_V_3",
-                "Tipo_di_relazione": " padre"
+                "Persona_1": "BA_V_2",
+                "Persona_2": "BA_V_3",
+                "Tipo_di_relazione": "padre"
             }
         ],
         "Persone": {
-            " BA_V_2": {},
-            " BA_V_3": {}
+            "BA_V_1": {
+                "Nome": "Alvise Bernardino 'Dino'  Barozzi",
+                "Nascita": "1863",
+                "Morte": "1942"
+            },
+            "BA_V_2": {
+                "Nome": "Sebastiano Alvise Barozzi",
+                "Nascita": "1887",
+                "Morte": "1969"
+            },
+            "BA_V_3": {
+                "Nome": "Alvise Barozzi",
+                "Nascita": "1915",
+                "Morte": ""
+            }
         }
     },
     "CA_IV": {
         "Nome": "Carrer",
         "Relazioni": [
             {
-                "Persona_1": " CA_IV_2",
-                "Persona_2": " CA_IV_1",
-                "Tipo_di_relazione": " padre"
+                "Persona_1": "CA_IV_2",
+                "Persona_2": "CA_IV_1",
+                "Tipo_di_relazione": "padre"
             },
             {
-                "Persona_1": " CA_IV_1",
-                "Persona_2": " CA_IV_3",
-                "Tipo_di_relazione": " padre"
+                "Persona_1": "CA_IV_1",
+                "Persona_2": "CA_IV_3",
+                "Tipo_di_relazione": "padre"
             }
         ],
         "Persone": {
-            " CA_IV_2": {},
-            " CA_IV_1": {},
-            " CA_IV_3": {}
+            "CA_IV_2": {
+                "Nome": "Giovanni Battista Carrer",
+                "Nascita": "",
+                "Morte": ""
+            },
+            "CA_IV_1": {
+                "Nome": "Antonio Carrer",
+                "Nascita": "1868",
+                "Morte": "1952?"
+            },
+            "CA_IV_3": {
+                "Nome": "Giovanni Battista Carrer",
+                "Nascita": "",
+                "Morte": ""
+            }
         }
     },
     "GU": {
         "Nome": "Guggenheim",
         "Relazioni": [
             {
-                "Persona_1": " GU_1",
-                "Persona_2": " GU_2",
-                "Tipo_di_relazione": " padre"
+                "Persona_1": "GU_1",
+                "Persona_2": "GU_2",
+                "Tipo_di_relazione": "padre"
             },
             {
-                "Persona_1": " GU_1",
-                "Persona_2": " GU_3",
-                "Tipo_di_relazione": " padre"
+                "Persona_1": "GU_1",
+                "Persona_2": "GU_3",
+                "Tipo_di_relazione": "padre"
             }
         ],
         "Persone": {
-            " GU_1": {},
-            " GU_2": {},
-            " GU_3": {}
+            "GU_1": {
+                "Nome": "Moisè Michelangelo Guggenheim",
+                "Nascita": "1837",
+                "Morte": "1914"
+            },
+            "GU_2": {
+                "Nome": "Giorgio Guggenheim",
+                "Nascita": "1877",
+                "Morte": "1953"
+            },
+            "GU_3": {
+                "Nome": "Gabriella Guggenheim Luzzatti",
+                "Nascita": "1879",
+                "Morte": "1972"
+            }
         }
     },
     "LO": {
         "Nome": "Loewi",
         "Relazioni": [
             {
-                "Persona_1": " LO_1",
-                "Persona_2": " LO_2",
-                "Tipo_di_relazione": " padre"
+                "Persona_1": "LO_1",
+                "Persona_2": "LO_2",
+                "Tipo_di_relazione": "padre"
             }
         ],
         "Persone": {
-            " LO_1": {},
-            " LO_2": {}
+            "LO_1": {
+                "Nome": "Adolph (Adolfo) Loewi",
+                "Nascita": "1888",
+                "Morte": "1977"
+            },
+            "LO_2": {
+                "Nome": "Gabriella Katherine \"Kay\" Loewi",
+                "Nascita": "1920",
+                "Morte": "2020"
+            }
         }
     },
     "SA_VII": {
         "Nome": "Salamon",
         "Relazioni": [
             {
-                "Persona_1": " SA_VII_1",
-                "Persona_2": "  SA_VII_4",
-                "Tipo_di_relazione": " padre"
+                "Persona_1": "SA_VII_1",
+                "Persona_2": "SA_VII_4",
+                "Tipo_di_relazione": "padre"
             },
             {
-                "Persona_1": " SA_VII_1",
-                "Persona_2": " SA_VII_5",
-                "Tipo_di_relazione": " padre"
+                "Persona_1": "SA_VII_1",
+                "Persona_2": "SA_VII_5",
+                "Tipo_di_relazione": "padre"
             },
             {
-                "Persona_1": " SA_VII_1",
-                "Persona_2": " SA_VII_6",
-                "Tipo_di_relazione": " padre"
+                "Persona_1": "SA_VII_1",
+                "Persona_2": "SA_VII_6",
+                "Tipo_di_relazione": "padre"
             },
             {
-                "Persona_1": " SA_VII_5",
-                "Persona_2": " SA_VII_8",
-                "Tipo_di_relazione": " padre"
+                "Persona_1": "SA_VII_5",
+                "Persona_2": "SA_VII_8",
+                "Tipo_di_relazione": "padre"
             },
             {
-                "Persona_1": " SA_VII_6",
-                "Persona_2": " SA_VII_1 SA_VII_7",
-                "Tipo_di_relazione": " padre"
+                "Persona_1": "SA_VII_6",
+                "Persona_2": "SA_VII_7",
+                "Tipo_di_relazione": "padre"
             },
             {
-                "Persona_1": " SA_VII_2 ",
-                "Persona_2": " SA_VII_3",
-                "Tipo_di_relazione": " marito"
+                "Persona_1": "SA_VII_2",
+                "Persona_2": "SA_VII_3",
+                "Tipo_di_relazione": "marito"
             }
         ],
         "Persone": {
-            " SA_VII_1": {},
-            "  SA_VII_4": {},
-            " SA_VII_5": {},
-            " SA_VII_6": {},
-            " SA_VII_8": {},
-            " SA_VII_1 SA_VII_7": {},
-            " SA_VII_2 ": {},
-            " SA_VII_3": {}
+            "SA_VII_1": {
+                "Nome": "Matteo Salamon",
+                "Nascita": "1964",
+                "Morte": ""
+            },
+            "SA_VII_4": {
+                "Nome": "Silverio Salamon",
+                "Nascita": "1955",
+                "Morte": "2014"
+            },
+            "SA_VII_5": {
+                "Nome": "Gian Alvise Salamon",
+                "Nascita": "",
+                "Morte": ""
+            },
+            "SA_VII_6": {
+                "Nome": "Harry Salamon",
+                "Nascita": "1943",
+                "Morte": ""
+            },
+            "SA_VII_8": {
+                "Nome": "Elena Salamon",
+                "Nascita": "1969",
+                "Morte": ""
+            },
+            "SA_VII_7": {
+                "Nome": "Lorenza Salamon",
+                "Nascita": "1963",
+                "Morte": ""
+            },
+            "SA_VII_2": {
+                "Nome": "Ferdinando Salamon",
+                "Nascita": "",
+                "Morte": ""
+            },
+            "SA_VII_3": {
+                "Nome": "Teresa Salamon",
+                "Nascita": "",
+                "Morte": ""
+            }
         }
     },
     "CO_IV": {
         "Nome": "Colnaghi",
         "Relazioni": [
             {
-                "Persona_1": " CO_IV_3",
-                "Persona_2": " CO_IV_4",
-                "Tipo_di_relazione": " padre"
+                "Persona_1": "CO_IV_3",
+                "Persona_2": "CO_IV_4",
+                "Tipo_di_relazione": "padre"
             },
             {
-                "Persona_1": " CO_IV_3",
-                "Persona_2": " CO_IV_5",
-                "Tipo_di_relazione": " padre"
+                "Persona_1": "CO_IV_3",
+                "Persona_2": "CO_IV_5",
+                "Tipo_di_relazione": "padre"
             },
             {
-                "Persona_1": " CO_IV_4",
-                "Persona_2": " CO_IV_6",
-                "Tipo_di_relazione": " zio"
+                "Persona_1": "CO_IV_4",
+                "Persona_2": "CO_IV_6",
+                "Tipo_di_relazione": "zio"
             },
             {
-                "Persona_1": " CO_IV_6",
-                "Persona_2": " CO_IV_8",
-                "Tipo_di_relazione": " cugino"
+                "Persona_1": "CO_IV_6",
+                "Persona_2": "CO_IV_8",
+                "Tipo_di_relazione": "cugino"
             },
             {
-                "Persona_1": " CO_IV_5",
-                "Persona_2": " CO_IV_9",
-                "Tipo_di_relazione": " padre"
+                "Persona_1": "CO_IV_5",
+                "Persona_2": "CO_IV_9",
+                "Tipo_di_relazione": "padre"
             },
             {
-                "Persona_1": " CO_IV_7",
-                "Persona_2": " CO_IV_8",
-                "Tipo_di_relazione": " padre"
+                "Persona_1": "CO_IV_7",
+                "Persona_2": "CO_IV_8",
+                "Tipo_di_relazione": "padre"
             }
         ],
         "Persone": {
-            " CO_IV_3": {},
-            " CO_IV_4": {},
-            " CO_IV_5": {},
-            " CO_IV_6": {},
-            " CO_IV_8": {},
-            " CO_IV_9": {},
-            " CO_IV_7": {}
+            "CO_IV_3": {
+                "Nome": "Paul Colnaghi",
+                "Nascita": "1751",
+                "Morte": "1833"
+            },
+            "CO_IV_4": {
+                "Nome": "Dominic Charles Colnaghi",
+                "Nascita": "1790",
+                "Morte": "1879"
+            },
+            "CO_IV_5": {
+                "Nome": "Martin Colnaghi",
+                "Nascita": "1792",
+                "Morte": "1851"
+            },
+            "CO_IV_6": {
+                "Nome": "John Anthony Scott",
+                "Nascita": "",
+                "Morte": "1864"
+            },
+            "CO_IV_8": {
+                "Nome": "William McKay",
+                "Nascita": "1850",
+                "Morte": ""
+            },
+            "CO_IV_9": {
+                "Nome": "Martin Henry Colnaghi II",
+                "Nascita": "1821",
+                "Morte": "1908"
+            },
+            "CO_IV_7": {
+                "Nome": "Andrew McKay",
+                "Nascita": "",
+                "Morte": "1899"
+            }
         }
     },
     "LO_I": {
         "Nome": "Longari",
         "Relazioni": [
             {
-                "Persona_1": " LO_I_1",
-                "Persona_2": " LO_I_2",
-                "Tipo_di_relazione": " madre"
+                "Persona_1": "LO_I_1",
+                "Persona_2": "LO_I_2",
+                "Tipo_di_relazione": "madre"
             },
             {
-                "Persona_1": " LO_I_1",
-                "Persona_2": " LO_I_3",
-                "Tipo_di_relazione": " madre"
+                "Persona_1": "LO_I_1",
+                "Persona_2": "LO_I_3",
+                "Tipo_di_relazione": "madre"
             },
             {
-                "Persona_1": " LO_I_2",
-                "Persona_2": " LO_I_4",
-                "Tipo_di_relazione": " padre"
+                "Persona_1": "LO_I_2",
+                "Persona_2": "LO_I_4",
+                "Tipo_di_relazione": "padre"
             }
         ],
         "Persone": {
-            " LO_I_1": {},
-            " LO_I_2": {},
-            " LO_I_3": {},
-            " LO_I_4": {}
+            "LO_I_1": {
+                "Nome": "Nella Longari",
+                "Nascita": "1906",
+                "Morte": "1995"
+            },
+            "LO_I_2": {
+                "Nome": "Ruggero Longari",
+                "Nascita": "1934",
+                "Morte": ""
+            },
+            "LO_I_3": {
+                "Nome": "Mario Longari",
+                "Nascita": "1929",
+                "Morte": "2022"
+            },
+            "LO_I_4": {
+                "Nome": "Marco Longari",
+                "Nascita": "",
+                "Morte": "in vita"
+            }
         }
     },
     "SU": {
         "Nome": "Subert",
         "Relazioni": [
             {
-                "Persona_1": " SU_1",
-                "Persona_2": " SU_2",
-                "Tipo_di_relazione": " padre"
+                "Persona_1": "SU_1",
+                "Persona_2": "SU_2",
+                "Tipo_di_relazione": "padre"
             },
             {
-                "Persona_1": " SU_2",
-                "Persona_2": " SU_3",
-                "Tipo_di_relazione": " padre"
+                "Persona_1": "SU_2",
+                "Persona_2": "SU_3",
+                "Tipo_di_relazione": "padre"
             },
             {
-                "Persona_1": " SU_3",
-                "Persona_2": " SU_4",
-                "Tipo_di_relazione": " padre"
+                "Persona_1": "SU_3",
+                "Persona_2": "SU_4",
+                "Tipo_di_relazione": "padre"
             },
             {
-                "Persona_1": " SU_4",
-                "Persona_2": " SU_5",
-                "Tipo_di_relazione": " padre"
+                "Persona_1": "SU_4",
+                "Persona_2": "SU_5",
+                "Tipo_di_relazione": "padre"
             }
         ],
         "Persone": {
-            " SU_1": {},
-            " SU_2": {},
-            " SU_3": {},
-            " SU_4": {},
-            " SU_5": {}
+            "SU_1": {
+                "Nome": "Emanuele Subert",
+                "Nascita": "1830",
+                "Morte": "1888"
+            },
+            "SU_2": {
+                "Nome": "Rodoldo Subert",
+                "Nascita": "1873",
+                "Morte": "1958"
+            },
+            "SU_3": {
+                "Nome": "Rodolfo Subert",
+                "Nascita": "1898",
+                "Morte": "1978"
+            },
+            "SU_4": {
+                "Nome": "Alberto Subert",
+                "Nascita": "1929",
+                "Morte": "2021"
+            },
+            "SU_5": {
+                "Nome": "Michele Subert",
+                "Nascita": "",
+                "Morte": "in vita"
+            }
         }
     },
     "CA_V": {
         "Nome": "Caretto",
         "Relazioni": [
             {
-                "Persona_1": " CA_V_1",
-                "Persona_2": " CA_V_2",
-                "Tipo_di_relazione": " padre"
+                "Persona_1": "CA_V_1",
+                "Persona_2": "CA_V_2",
+                "Tipo_di_relazione": "padre"
             },
             {
-                "Persona_1": " CA_V_2",
-                "Persona_2": " CA_V_3",
-                "Tipo_di_relazione": " padre"
+                "Persona_1": "CA_V_2",
+                "Persona_2": "CA_V_3",
+                "Tipo_di_relazione": "padre"
             }
         ],
         "Persone": {
-            " CA_V_1": {},
-            " CA_V_2": {},
-            " CA_V_3": {}
+            "CA_V_1": {
+                "Nome": "Luigi Caretto",
+                "Nascita": "1878",
+                "Morte": "1940"
+            },
+            "CA_V_2": {
+                "Nome": "Giorgio Caretto",
+                "Nascita": "1925",
+                "Morte": "2008"
+            },
+            "CA_V_3": {
+                "Nome": "Luigi Caretto",
+                "Nascita": "1957",
+                "Morte": "in vita"
+            }
         }
     },
     "DI_I": {
         "Nome": "Di Castro Eugenio",
         "Relazioni": [
             {
-                "Persona_1": " DI_I_1",
-                "Persona_2": " DI_I_2",
-                "Tipo_di_relazione": " padre"
+                "Persona_1": "DI_I_1",
+                "Persona_2": "DI_I_2",
+                "Tipo_di_relazione": "padre"
             },
             {
-                "Persona_1": " DI_I_2",
-                "Persona_2": " DI_I_3",
-                "Tipo_di_relazione": " padre"
+                "Persona_1": "DI_I_2",
+                "Persona_2": "DI_I_3",
+                "Tipo_di_relazione": "padre"
             },
             {
-                "Persona_1": " DI_I_1",
-                "Persona_2": " DI_I_5",
-                "Tipo_di_relazione": " padre"
+                "Persona_1": "DI_I_1",
+                "Persona_2": "DI_I_5",
+                "Tipo_di_relazione": "padre"
             }
         ],
         "Persone": {
-            " DI_I_1": {},
-            " DI_I_2": {},
-            " DI_I_3": {},
-            " DI_I_5": {}
+            "DI_I_1": {
+                "Nome": "Eugenio Di Castro",
+                "Nascita": "1890",
+                "Morte": "1976"
+            },
+            "DI_I_2": {
+                "Nome": "Nicola Di Castro",
+                "Nascita": "",
+                "Morte": ""
+            },
+            "DI_I_3": {
+                "Nome": "Angelo Di Castro",
+                "Nascita": "",
+                "Morte": ""
+            },
+            "DI_I_5": {}
         }
     },
     "DA": {
         "Nome": "D'Atri",
         "Relazioni": [
             {
-                "Persona_1": " DA_1",
-                "Persona_2": " DA_2",
-                "Tipo_di_relazione": " padre"
+                "Persona_1": "DA_1",
+                "Persona_2": "DA_2",
+                "Tipo_di_relazione": "padre"
             }
         ],
         "Persone": {
-            " DA_1": {},
-            " DA_2": {}
+            "DA_1": {
+                "Nome": "Pietro D'Atri",
+                "Nascita": "1876",
+                "Morte": "1957"
+            },
+            "DA_2": {
+                "Nome": "Alberto D'Atri",
+                "Nascita": "1908",
+                "Morte": ""
+            }
         }
     },
     "RA_NEW": {
         "Nome": "Rambaldi",
         "Relazioni": [
             {
-                "Persona_1": " RA_NEW_1",
-                "Persona_2": " RA_NEW_2",
-                "Tipo_di_relazione": " padre"
+                "Persona_1": "RA_NEW_1",
+                "Persona_2": "RA_NEW_2",
+                "Tipo_di_relazione": "padre"
             },
             {
-                "Persona_1": " RA_NEW_1",
-                "Persona_2": " RA_NEW_3",
-                "Tipo_di_relazione": " padre"
+                "Persona_1": "RA_NEW_1",
+                "Persona_2": "RA_NEW_3",
+                "Tipo_di_relazione": "padre"
             },
             {
-                "Persona_1": " RA_NEW_1",
-                "Persona_2": " RA_NEW_4",
-                "Tipo_di_relazione": " marito"
+                "Persona_1": "RA_NEW_1",
+                "Persona_2": "RA_NEW_4",
+                "Tipo_di_relazione": "marito"
             }
         ],
         "Persone": {
-            " RA_NEW_1": {},
-            " RA_NEW_2": {},
-            " RA_NEW_3": {},
-            " RA_NEW_4": {}
+            "RA_NEW_1": {
+                "Nome": "Arturo Rambaldi",
+                "Nascita": "1859",
+                "Morte": "1929"
+            },
+            "RA_NEW_2": {
+                "Nome": "Angelo Rambaldi",
+                "Nascita": "1883",
+                "Morte": ""
+            },
+            "RA_NEW_3": {
+                "Nome": "Aldo Rambaldi",
+                "Nascita": "1885",
+                "Morte": "1964"
+            },
+            "RA_NEW_4": {
+                "Nome": "Olga Tcherukine",
+                "Nascita": "1901",
+                "Morte": ""
+            }
         }
     },
     "RI_I": {
         "Nome": "Ricchetti",
         "Relazioni": [
             {
-                "Persona_1": " RI_I_1",
-                "Persona_2": " RI_I_2",
-                "Tipo_di_relazione": " padre"
+                "Persona_1": "RI_I_1",
+                "Persona_2": "RI_I_2",
+                "Tipo_di_relazione": "padre"
             },
             {
-                "Persona_1": " RI_I_1",
-                "Persona_2": " RI_I_3",
-                "Tipo_di_relazione": " padre"
+                "Persona_1": "RI_I_1",
+                "Persona_2": "RI_I_3",
+                "Tipo_di_relazione": "padre"
             }
         ],
         "Persone": {
-            " RI_I_1": {},
-            " RI_I_2": {},
-            " RI_I_3": {}
+            "RI_I_1": {
+                "Nome": "Consiglio Ricchetti",
+                "Nascita": "",
+                "Morte": ""
+            },
+            "RI_I_2": {
+                "Nome": "David G. Ricchetti",
+                "Nascita": "",
+                "Morte": ""
+            },
+            "RI_I_3": {
+                "Nome": "Mazzo Ricchetti",
+                "Nascita": "",
+                "Morte": ""
+            }
         }
     }
 }
