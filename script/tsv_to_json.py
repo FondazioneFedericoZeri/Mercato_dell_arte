@@ -1,8 +1,10 @@
 import csv
 import json
 import os
+import sys
 import time
 import tqdm
+from geopy.exc import GeocoderServiceError, GeocoderTimedOut, GeocoderUnavailable
 from geopy.geocoders import Nominatim
 
 
@@ -11,6 +13,25 @@ def _address_key(place):
     # since the last build, the cached coordinates are no longer valid
     # and the place must be re-geocoded.
     return f"{place['Via']}|{place['Civico']}|{place['Città']}|{place['Nazione']}"
+
+
+def _geocode_with_retries(geolocator, query, retries=3, base_delay=2):
+    """Geocode a query, retrying on transient failures instead of letting
+    one bad/blocked request take down the whole build. Returns a Location
+    or None (never raises)."""
+    for attempt in range(retries):
+        try:
+            return geolocator.geocode(query, timeout=10)
+        except (GeocoderTimedOut, GeocoderUnavailable, GeocoderServiceError) as e:
+            print(f"  [geocoding] tentativo {attempt + 1}/{retries} fallito per "
+                  f"'{query}': {e}", file=sys.stderr)
+            time.sleep(base_delay * (attempt + 1))
+        except Exception as e:
+            # Catch-all: a single malformed row must never abort the whole run.
+            print(f"  [geocoding] errore imprevisto per '{query}': {e}", file=sys.stderr)
+            return None
+    print(f"  [geocoding] rinuncio dopo {retries} tentativi per '{query}'", file=sys.stderr)
+    return None
 
 
 def build_places(input_csv, output_json):
@@ -30,6 +51,7 @@ def build_places(input_csv, output_json):
     geolocator = Nominatim(user_agent="mercato-dell-arte")
 
     places_dicts = {}
+    failed = []
 
     with open(input_csv, encoding="utf-8") as csv_fin:
         reader = csv.reader(csv_fin, delimiter='\t')
@@ -37,10 +59,17 @@ def build_places(input_csv, output_json):
         # print(header)
         # input()
         for row in tqdm.tqdm(reader):
+            # Skip fully blank lines (e.g. a stray trailing newline at end of file).
+            if not any(cell.strip() for cell in row):
+                continue
+
             place = {x: "" for x in header}
             place_tmp = dict(zip(header, row))
             for x in place_tmp:
                 place[x] = place_tmp[x]
+
+            if not place.get('ID', '').strip():
+                continue
 
             cached = existing.get(place['ID'])
             can_reuse = (
@@ -52,22 +81,31 @@ def build_places(input_csv, output_json):
             if can_reuse:
                 place["geo"] = cached["geo"]
             else:
-                location = geolocator.geocode(
-                    f"{place['Via']} {place['Civico']} {place['Città']} {place['Nazione']}", timeout=None)
+                location = _geocode_with_retries(
+                    geolocator,
+                    f"{place['Via']} {place['Civico']} {place['Città']} {place['Nazione']}")
                 if location is not None:
                     place["geo"] = {"lat": location.latitude,
                                     "lon": location.longitude}
                 else:
                     place["geo"] = {"lat": None,
                                     "lon": None}
+                    failed.append(place['ID'])
                 time.sleep(1.3)
 
             places_dicts[place['ID']] = place
 
+    # Always write out whatever was successfully built, even if some
+    # addresses failed to geocode — a partial update beats none at all,
+    # and failed entries (geo.lat == None) are retried on the next run.
     with open(output_json, "w", encoding="utf-8") as fout:
         print(json.dumps(places_dicts,
                          ensure_ascii=False,
                          indent=4), file=fout)
+
+    if failed:
+        print(f"Luoghi non geocodificati ({len(failed)}), saranno ritentati "
+              f"al prossimo run: {', '.join(failed)}", file=sys.stderr)
 
 
 def build_generic(input_csv, output_json):
