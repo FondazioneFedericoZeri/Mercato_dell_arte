@@ -115,7 +115,7 @@ def build_entities(input_csv_entità, output_json):
                 if x in collaboratori:
                     entity["Collaboratori"][x] = collaboratori[x]
 
-            if "Foto gallery" in entity:
+            if "Foto gallery" in entity and entity["Foto gallery"].strip():
                 entity["Foto gallery"] = entity["Foto gallery"].split(" ")
             else:
                 entity["Foto gallery"] = []

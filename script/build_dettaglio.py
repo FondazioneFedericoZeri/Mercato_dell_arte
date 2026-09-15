@@ -146,7 +146,7 @@ def build_html(entity, entities):
         open("json/didascalie.json", encoding="utf-8").read())
     people = json.loads(open("json/persone.json", encoding="utf-8").read())
 
-    imgs = entity["Foto gallery"]
+    imgs = [img for img in entity["Foto gallery"] if img and img.strip()]
 
     page = a.Airium()
     page('<!DOCTYPE html>')

@@ -1,0 +1,26 @@
+diff --git a/script/build_dettaglio.py b/script/build_dettaglio.py
+index 1278f93..3bd2172 100644
+--- a/script/build_dettaglio.py
++++ b/script/build_dettaglio.py
+@@ -146,7 +146,7 @@ def build_html(entity, entities):
+         open("json/didascalie.json", encoding="utf-8").read())
+     people = json.loads(open("json/persone.json", encoding="utf-8").read())
+ 
+-    imgs = entity["Foto gallery"]
++    imgs = [img for img in entity["Foto gallery"] if img and img.strip()]
+ 
+     page = a.Airium()
+     page('<!DOCTYPE html>')
+diff --git a/script/tsv_to_json.py b/script/tsv_to_json.py
+index 6bbe30d..3d6a385 100644
+--- a/script/tsv_to_json.py
++++ b/script/tsv_to_json.py
+@@ -115,7 +115,7 @@ def build_entities(input_csv_entità, output_json):
+                 if x in collaboratori:
+                     entity["Collaboratori"][x] = collaboratori[x]
+ 
+-            if "Foto gallery" in entity:
++            if "Foto gallery" in entity and entity["Foto gallery"].strip():
+                 entity["Foto gallery"] = entity["Foto gallery"].split(" ")
+             else:
+                 entity["Foto gallery"] = []
