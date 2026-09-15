@@ -1,255 +1,36 @@
 {
-    "USA_1": {
-        "ID": "USA_1",
-        "Nazione": "Stati Uniti d'America",
-        "Regione": "Stati Uniti d'America",
-        "Città": "New York",
-        "Via": "547 5th av",
-        "Civico": "",
-        "ID_entità": "SE_II",
-        "Apertura": "1919 ca.",
-        "Chiusura": "1929",
-        "Nome attività": "Emanuele e Guido Sestieri, \"Sestieri Gallery\" (succursale)",
+    "BE_1": {
+        "ID": "BE_1",
+        "Nazione": "Belgio",
+        "Regione": "Belgio",
+        "Città": "Bruxelles",
+        "Via": "Rue Jacques Jordaens",
+        "Civico": "30",
+        "ID_entità": "CO_IV",
+        "Apertura": "2022",
+        "Chiusura": "in attività",
+        "Nome attività": "Colnaghi",
         "": "",
         "geo": {
-            "lat": 40.7569173877551,
-            "lon": -73.978254
+            "lat": 50.8211931,
+            "lon": 4.3682525
         }
     },
-    "USA_2": {
-        "ID": "USA_2",
-        "Nazione": "Stati Uniti d'America",
-        "Regione": "Stati Uniti d'America",
-        "Città": "New York",
-        "Via": "749 5th av",
-        "Civico": "",
-        "ID_entità": "TO",
-        "Apertura": "1919 ca. ",
-        "Chiusura": "1928 ca.",
-        "Nome attività": "Raoul Tolentino, \"Tolentino Art Gallery\"",
-        "": "",
-        "geo": {
-            "lat": 40.6590234,
-            "lon": -73.9960462
-        }
-    },
-    "USA_3": {
-        "ID": "USA_3",
-        "Nazione": "Stati Uniti d'America",
-        "Regione": "Stati Uniti d'America",
-        "Città": "New York",
-        "Via": "479 5th av",
-        "Civico": "",
-        "ID_entità": "CA_I",
-        "Apertura": "1906",
-        "Chiusura": "1914",
-        "Nome attività": "Amedeo Canessa, \"C. & E. Canessa\"",
-        "": "",
-        "geo": {
-            "lat": 40.7529151,
-            "lon": -73.9810898
-        }
-    },
-    "USA_4": {
-        "ID": "USA_4",
-        "Nazione": "Stati Uniti d'America",
-        "Regione": "Stati Uniti d'America",
-        "Città": "New York",
-        "Via": "547 5th av",
-        "Civico": "",
-        "ID_entità": "CA_I",
-        "Apertura": "1914",
-        "Chiusura": "1915",
-        "Nome attività": "Amedeo Canessa, \"C. & E. Canessa\"",
-        "": "",
-        "geo": {
-            "lat": 40.7569173877551,
-            "lon": -73.978254
-        }
-    },
-    "USA_5": {
-        "ID": "USA_5",
-        "Nazione": "Stati Uniti d'America",
-        "Regione": "Stati Uniti d'America",
-        "Città": "New York",
-        "Via": "680 5th av",
-        "Civico": "",
-        "ID_entità": "CA_I",
-        "Apertura": "1924",
-        "Chiusura": "1929",
-        "Nome attività": "Ercole Canessa, \"Ercole Canessa\"",
-        "": "",
-        "geo": {
-            "lat": 40.76124697225157,
-            "lon": -73.97589847116441
-        }
-    },
-    "USA_6": {
-        "ID": "USA_6",
-        "Nazione": "Stati Uniti d'America",
-        "Regione": "Stati Uniti d'America",
-        "Città": "New York",
-        "Via": "3 East 41st street",
-        "Civico": "",
-        "ID_entità": "CA_I",
-        "Apertura": "1909",
-        "Chiusura": "1916 ca.",
-        "Nome attività": "Amedeo Canessa, \"C. & E. Canessa\", Amedeo Canessa",
-        "": "",
-        "geo": {
-            "lat": 40.75214155102041,
-            "lon": -73.97954595918368
-        }
-    },
-    "USA_7": {
-        "ID": "USA_7",
-        "Nazione": "Stati Uniti d'America",
-        "Regione": "Stati Uniti d'America",
-        "Città": "New York",
+    "CA_1": {
+        "ID": "CA_1",
+        "Nazione": "Canada",
+        "Regione": "Canada",
+        "Città": "Toronto",
         "Via": "",
         "Civico": "",
-        "ID_entità": "CA_I",
-        "Apertura": "1916",
-        "Chiusura": "1928",
-        "Nome attività": "Amedeo e Ercole Canessa, \"Canessa Gallery\"",
+        "ID_entità": "SA_VII",
+        "Apertura": "1950",
+        "Chiusura": "1952",
+        "Nome attività": "Ferdinando Salamon, \"Salamon Gallery\"",
         "": "",
         "geo": {
-            "lat": 40.7514539,
-            "lon": -73.9928208
-        }
-    },
-    "USA_8": {
-        "ID": "USA_8",
-        "Nazione": "Stati Uniti d'America",
-        "Regione": "Stati Uniti d'America",
-        "Città": "New York",
-        "Via": "15 East 47th street",
-        "Civico": "",
-        "ID_entità": "OR",
-        "Apertura": "1900 ca.",
-        "Chiusura": "1970 ca.",
-        "Nome attività": "Luigi e Raimondo Orselli, \"Luigi Orselli\" (succursale)",
-        "geo": {
-            "lat": 40.756407949999996,
-            "lon": -73.97735424999999
-        }
-    },
-    "USA_9": {
-        "ID": "USA_9",
-        "Nazione": "Stati Uniti d'America",
-        "Regione": "Stati Uniti d'America",
-        "Città": "New York",
-        "Via": "",
-        "Civico": "",
-        "ID_entità": "SA_IV",
-        "Apertura": "1914 ca.",
-        "Chiusura": "1970",
-        "Nome attività": "Giuseppe, Giorgio e Sergio Sangiorgi, “New York Studio”, New York, 55 E. 56th Street",
-        "geo": {
-            "lat": 40.756407949999996,
-            "lon": -73.97735424999999
-        }
-    },
-    "UK_1": {
-        "ID": "UK_1",
-        "Nazione": "Regno Unito",
-        "Regione": "Regno Unito",
-        "Città": "Londra",
-        "Via": "Carlton Street",
-        "Civico": "",
-        "ID_entità": "BE_II",
-        "Apertura": "1924",
-        "Chiusura": "1925",
-        "Nome attività": "Giuseppe Bellesi (Pall Mall Deposit, magazzino)",
-        "": "",
-        "geo": {
-            "lat": 51.5086356,
-            "lon": -0.1336046
-        }
-    },
-    "UK_2": {
-        "ID": "UK_2",
-        "Nazione": "Regno Unito",
-        "Regione": "Regno Unito",
-        "Città": "Londra",
-        "Via": "Duke Street",
-        "Civico": "2",
-        "ID_entità": "BE_II",
-        "Apertura": "1937",
-        "Chiusura": "1937",
-        "Nome attività": "Giuseppe Bellesi, \"The Italian Art Gallery\"",
-        "": "",
-        "geo": {
-            "lat": 51.51459585014354,
-            "lon": -0.1514252361877634
-        }
-    },
-    "UK_3": {
-        "ID": "UK_3",
-        "Nazione": "Regno Unito",
-        "Regione": "Regno Unito",
-        "Città": "Londra",
-        "Via": "King's Street",
-        "Civico": "",
-        "ID_entità": "VO_II",
-        "Apertura": "1925 ca.",
-        "Chiusura": "1932 ca.",
-        "Nome attività": "Giuseppe Volterra (succursale)",
-        "": "",
-        "geo": {
-            "lat": 51.507231879332295,
-            "lon": -0.13602748236885986
-        }
-    },
-    "UK_4": {
-        "ID": "UK_4",
-        "Nazione": "Regno Unito",
-        "Regione": "Regno Unito",
-        "Città": "Londra",
-        "Via": "New Bond Street",
-        "Civico": "174",
-        "ID_entità": "BE_II",
-        "Apertura": "1929",
-        "Chiusura": "1929",
-        "Nome attività": "Giuseppe Bellesi, \"The Italian Art Gallery\"",
-        "": "",
-        "geo": {
-            "lat": 51.5097564,
-            "lon": -0.1419606
-        }
-    },
-    "UK_5": {
-        "ID": "UK_5",
-        "Nazione": "Regno Unito",
-        "Regione": "Regno Unito",
-        "Città": "Londra",
-        "Via": "Paddington Green",
-        "Civico": "15",
-        "ID_entità": "BE_II",
-        "Apertura": "1948",
-        "Chiusura": "1957",
-        "Nome attività": "Giuseppe Bellesi, \"The Italian Art Gallery\"",
-        "": "",
-        "geo": {
-            "lat": 51.52083206176758,
-            "lon": -0.17385241389274597
-        }
-    },
-    "UK_7": {
-        "ID": "UK_7",
-        "Nazione": "Regno Unito",
-        "Regione": "Regno Unito",
-        "Città": "Londra",
-        "Via": "Savile Row",
-        "Civico": "32",
-        "ID_entità": "BE_II",
-        "Apertura": "1926",
-        "Chiusura": "1926",
-        "Nome attività": "Giuseppe Bellesi, \"The Italian Art Gallery\"",
-        "": "",
-        "geo": {
-            "lat": 51.5109849,
-            "lon": -0.140622
+            "lat": 43.6534817,
+            "lon": -79.3839347
         }
     },
     "FR_1": {
@@ -388,6 +169,57 @@
             "lon": 2.2785919
         }
     },
+    "FR_9": {
+        "ID": "FR_9",
+        "Nazione": "Francia",
+        "Regione": "Francia",
+        "Città": "Parigi",
+        "Via": "Rue St. Honoré",
+        "Civico": "",
+        "ID_entità": "CO_IV",
+        "Apertura": "1760",
+        "Chiusura": "1790",
+        "Nome attività": "Giovanni Battista Torre, “Cabinet de Physique Expérimentale”, poi \"Torre &Co.\"",
+        "": "",
+        "geo": {
+            "lat": 48.8660502,
+            "lon": 2.3296993
+        }
+    },
+    "FR_10": {
+        "ID": "FR_10",
+        "Nazione": "Francia",
+        "Regione": "Francia",
+        "Città": "Parigi",
+        "Via": "rue La Boétie",
+        "Civico": "52",
+        "ID_entità": "DA",
+        "Apertura": "1920",
+        "Chiusura": "1929",
+        "Nome attività": "Pietro e Alberto D'Atri, \"Galleria D'Atri\"",
+        "": "",
+        "geo": {
+            "lat": 48.8735191,
+            "lon": 2.313025
+        }
+    },
+    "FR_11": {
+        "ID": "FR_11",
+        "Nazione": "Francia",
+        "Regione": "Francia",
+        "Città": "Parigi",
+        "Via": "rue La Boéie",
+        "Civico": "23",
+        "ID_entità": "DA",
+        "Apertura": "1929",
+        "Chiusura": "1970",
+        "Nome attività": "Pietro, Alberto e Mario D'Atri, \"Galleria D'Atri\"",
+        "": "",
+        "geo": {
+            "lat": null,
+            "lon": null
+        }
+    },
     "IT_1": {
         "ID": "IT_1",
         "Nazione": "Italia",
@@ -433,7 +265,7 @@
         "Apertura": "1976",
         "Chiusura": "1982",
         "Nome attività": "Paolo Viancini",
-        "": "RIGA AGGIUNTA!!!",
+        "": "",
         "geo": {
             "lat": 45.432893199999995,
             "lon": 12.334566399734967
@@ -461,7 +293,7 @@
         "Nazione": "Italia",
         "Regione": "Veneto",
         "Città": "Venezia",
-        "Via": "Rio Novo",
+        "Via": "Rio Novo ",
         "Civico": "3498",
         "ID_entità": "GE_I",
         "Apertura": "",
@@ -469,8 +301,8 @@
         "Nome attività": "Benno Geiger (abitazione privata)",
         "": "",
         "geo": {
-            "lat": 45.436926153826214,
-            "lon": 12.320241109690999
+            "lat": 45.4359863,
+            "lon": 12.3209832
         }
     },
     "IT_1_f": {
@@ -497,7 +329,7 @@
         "Città": "Venezia",
         "Via": "",
         "Civico": "",
-        "ID_entità": "SA_VI",
+        "ID_entità": "SA_VI_NEW",
         "Apertura": "",
         "Chiusura": "",
         "Nome attività": "Antonio Salvadori",
@@ -514,7 +346,7 @@
         "Città": "Bergamo",
         "Via": "Via Evaristo Baschenis",
         "Civico": "5",
-        "ID_entità": "ST",
+        "ID_entità": "ST_NEW",
         "Apertura": "1921",
         "Chiusura": "1947 ca.",
         "Nome attività": "Attilio e Franco Steffanoni, \"F.lli Steffanoni Belle Arti\"",
@@ -569,7 +401,7 @@
         "Apertura": "1980 ca.",
         "Chiusura": "1990 ca.",
         "Nome attività": "Gilberto Zabert (Corte Vecchio Broletto)",
-        "": "RIGA AGGIUNTA!!!",
+        "": "",
         "geo": {
             "lat": 45.8185093,
             "lon": 8.8260094
@@ -665,7 +497,7 @@
         "Nazione": "Italia",
         "Regione": "Lombardia",
         "Città": "Milano",
-        "Via": "via Ugo Foscolo",
+        "Via": "via Ugo Foscolo ",
         "Civico": "1",
         "ID_entità": "CA_III",
         "Apertura": "1881",
@@ -673,8 +505,8 @@
         "Nome attività": "Achille Cantoni (abitazione privata)",
         "": "",
         "geo": {
-            "lat": 45.4651752,
-            "lon": 9.1906536
+            "lat": 45.4650381,
+            "lon": 9.1906739
         }
     },
     "IT_4_i": {
@@ -709,7 +541,7 @@
         "geo": {
             "lat": 45.471955873902424,
             "lon": 9.194398399999999
-        }    
+        }
     },
     "IT_5": {
         "ID": "IT_5",
@@ -853,15 +685,15 @@
         "Regione": "Liguria",
         "Città": "Genova",
         "Via": "Piazza Fontane Marose",
-        "Civico": "3-4",
+        "Civico": "03-apr",
         "ID_entità": "PA_I RU",
         "Apertura": "1960",
         "Chiusura": "1987",
         "Nome attività": "Pompeo Rubinacci e Piero Pagano, \"Rubinacci Galleria d'Arte\" (Palazzo Negrone)",
         "": "",
         "geo": {
-            "lat": 44.41042335,
-            "lon": 8.93494211372963
+            "lat": null,
+            "lon": null
         }
     },
     "IT_14": {
@@ -960,7 +792,7 @@
         "Apertura": "1987",
         "Chiusura": "2000",
         "Nome attività": "Piero Pagano, \"Casa d'Aste Rubinacci\"",
-        "": "RIGA AGGIUNTA!!!",
+        "": "",
         "geo": {
             "lat": 44.4109549,
             "lon": 8.9333733
@@ -1058,10 +890,10 @@
         "Città": "Bologna",
         "Via": "Via Castiglione",
         "Civico": "1",
-        "ID_entità": "RA",
+        "ID_entità": "RA_NEW",
         "Apertura": "1900 ca.",
         "Chiusura": "1929",
-        "Nome attività": "Arturo Rambaldi, \"Galleria di Antichità e casa di vendite A. Rambaldi\"",
+        "Nome attività": "Arturo Rambaldi, \"Galleria di Antichità e casa di vendite A. Rambaldi\" poi \"Galleria A. Rambaldi\" con Angelo, Aldo e Olga Tcherukine",
         "": "",
         "geo": {
             "lat": 44.4933222,
@@ -1075,7 +907,7 @@
         "Città": "Bologna",
         "Via": "Via del Monte, Ghetto Ebraico",
         "Civico": "8",
-        "ID_entità": "PI",
+        "ID_entità": "PI_NEW",
         "Apertura": "1922 ca.",
         "Chiusura": "1923 ca.",
         "Nome attività": "Cesare e Umberto Pini",
@@ -1144,7 +976,7 @@
         "Via": "Piazza S. Francesco",
         "Civico": "",
         "ID_entità": "BR_I",
-        "Apertura": "1967",
+        "Apertura": "1958",
         "Chiusura": "1996",
         "Nome attività": "Ivan Bruschi",
         "": "",
@@ -1158,16 +990,17 @@
         "Nazione": "Italia",
         "Regione": "Toscana",
         "Città": "Arezzo",
-        "Via": "Corso Italia",
-        "Civico": "14",
-        "ID_entità": "BR_I",
-        "Apertura": "1967",
-        "Chiusura": "1996",
-        "Nome attività": "Palazzo del Capitano del Popolo, sede e abitazione privata",
+        "Via": "Corso Italia    14  BR_I",
+        "Civico": "1967",
+        "ID_entità": "1996",
+        "Apertura": "Ivan Bruschi",
+        "Chiusura": "",
+        "Nome attività": "",
+        "": "",
         "geo": {
-            "lat": 43.465164962623355,
-            "lon": 11.883164208651733
-        } 
+            "lat": null,
+            "lon": null
+        }
     },
     "IT_31": {
         "ID": "IT_31",
@@ -1398,7 +1231,7 @@
         "Via": "Ponte Vecchio",
         "Civico": "1",
         "ID_entità": "VO_II",
-        "Apertura": "1887 ca.",
+        "Apertura": "1900 ca.",
         "Chiusura": "1932 ca.",
         "Nome attività": "Gustavo Volterra",
         "": "",
@@ -1407,7 +1240,6 @@
             "lon": 11.253158002899507
         }
     },
-
     "IT_44_a": {
         "ID": "IT_44_a",
         "Nazione": "Italia",
@@ -1425,7 +1257,6 @@
             "lon": 11.25344
         }
     },
-
     "IT_44_b": {
         "ID": "IT_44_b",
         "Nazione": "Italia",
@@ -1453,7 +1284,7 @@
         "ID_entità": "FR SA_I",
         "Apertura": "1959",
         "Chiusura": "1963",
-        "Nome attività": "\"Galleria antiquaria Salocchi e Freschi\" (sede)",
+        "Nome attività": "Galleria antiquaria Salocchi e Freschi (sede)",
         "": "",
         "geo": {
             "lat": 43.7729972,
@@ -1590,7 +1421,7 @@
         "Apertura": "1966",
         "Chiusura": "1990 ca.",
         "Nome attività": "Luigi Grassi Jr, \"Galleria Ognissanti\"",
-        "": "RIGA AGGIUNTA!!!",
+        "": "",
         "geo": {
             "lat": 43.7726913,
             "lon": 11.2454179
@@ -1618,7 +1449,7 @@
         "Nazione": "Italia",
         "Regione": "Toscana",
         "Città": "Firenze",
-        "Via": "via Borgo Santi Apostoli",
+        "Via": "via Borgo Santi Apostoli ",
         "Civico": "40r",
         "ID_entità": "ME",
         "Apertura": "1900 ca.",
@@ -1626,9 +1457,9 @@
         "Nome attività": "Cesare Melli (Giardino Borgherini, showroom per arredi da esterno)",
         "": "",
         "geo": {
-            "lat": 43.76950043757896,
-            "lon": 11.252398366905815
-        } 
+            "lat": null,
+            "lon": null
+        }
     },
     "IT_53": {
         "ID": "IT_53",
@@ -1675,7 +1506,7 @@
         "Apertura": "1920",
         "Chiusura": "1920",
         "Nome attività": "Giuseppe Volterra e fratelli, \"Gustavo Volterra\"",
-        "": "RIGA AGGIUNTA!!!",
+        "": "",
         "geo": {
             "lat": 43.7647987,
             "lon": 11.257733
@@ -1749,7 +1580,6 @@
             "lon": 11.2479887
         }
     },
-
     "IT_57_b": {
         "ID": "IT_57_b",
         "Nazione": "Italia",
@@ -1761,12 +1591,12 @@
         "Apertura": "1885 ca.",
         "Chiusura": "1888 ca.",
         "Nome attività": "Giuseppe Melli",
+        "": "",
         "geo": {
             "lat": 43.77176,
             "lon": 11.24831
         }
     },
-
     "IT_58": {
         "ID": "IT_58",
         "Nazione": "Italia",
@@ -1908,16 +1738,16 @@
         "Nazione": "Italia",
         "Regione": "Toscana",
         "Città": "Firenze",
-        "Via": "ex Via del Podere",
+        "Via": "Via del Podere",
         "Civico": "6",
         "ID_entità": "CO_III",
         "Apertura": "1876 ca.",
-        "Chiusura": "1880 ca.",
-        "Nome attività": "Emilio Costantini (studio)",
+        "Chiusura": "1876-1880 ca.",
+        "Nome attività": "Emilio Costantini (studio), Firenze, ex Via del Podere 6",
         "": "",
         "geo": {
-            "lat": 43.78157043811011,
-            "lon": 11.254407144926208
+            "lat": 43.7583546,
+            "lon": 11.3124781
         }
     },
     "IT_71": {
@@ -2016,7 +1846,7 @@
         "Apertura": "1972",
         "Chiusura": "1990",
         "Nome attività": "Giuliano Freschi",
-        "": "RIGA AGGIUNTA!!!",
+        "": "",
         "geo": {
             "lat": 43.7710558,
             "lon": 11.2489301
@@ -2199,7 +2029,7 @@
         "Città": "Firenze",
         "Via": "Via di San Niccolò",
         "Civico": "95",
-        "ID_entità": "PI",
+        "ID_entità": "PI_NEW",
         "Apertura": "1923",
         "Chiusura": "1930 ca.",
         "Nome attività": "Giovanni Pini (deposito)",
@@ -2233,10 +2063,10 @@
         "Città": "Firenze",
         "Via": "Via Tornabuoni",
         "Civico": "4",
-        "ID_entità": "PI",
+        "ID_entità": "PI_NEW",
         "Apertura": "1920 ca.",
         "Chiusura": "1940 ca.",
-        "Nome attività": "Umberto Pini",
+        "Nome attività": "Cesare, Umberto e Giovanni Pini \"Cesare Pini e figli\"",
         "": "",
         "geo": {
             "lat": 43.7704385,
@@ -2288,7 +2118,7 @@
         "Apertura": "1950 ca.",
         "Chiusura": "1957",
         "Nome attività": "Leonardo Lapiccirella (studio)",
-        "": "RIGA AGGIUNTA!!!",
+        "": "",
         "geo": {
             "lat": 43.7733644,
             "lon": 11.2521456
@@ -2305,6 +2135,7 @@
         "Apertura": "1924 ca.",
         "Chiusura": "1960 ca.",
         "Nome attività": "Salvatore e Francesco Romano (magazzino)",
+        "": "",
         "geo": {
             "lat": 43.7774079,
             "lon": 11.253609
@@ -2502,16 +2333,16 @@
         "Nazione": "Italia",
         "Regione": "Lazio",
         "Città": "Roma",
-        "Via": "ex Piazza Scossacavalli",
+        "Via": "Piazza Scossacavalli",
         "Civico": "",
         "ID_entità": "DI",
         "Apertura": "1870 ca.",
         "Chiusura": "1920 ca.",
-        "Nome attività": "Angelo Di Castro (negozio)",
+        "Nome attività": "Angelo Di Castro (negozio), ex Piazza Scossacavalli",
         "": "",
         "geo": {
-            "lat": 41.90252764701485,
-            "lon": 12.461003542328857
+            "lat": 41.8966423,
+            "lon": 12.4743514
         }
     },
     "IT_99": {
@@ -2553,7 +2384,7 @@
         "Nazione": "Italia",
         "Regione": "Lazio",
         "Città": "Roma",
-        "Via": "ex Via dei Condotti, Campo Marzio",
+        "Via": "Via dei Condotti, Campo Marzio",
         "Civico": "44",
         "ID_entità": "SA_III",
         "Apertura": "1887",
@@ -2561,8 +2392,8 @@
         "Nome attività": "Giulio Sambon, \"Impresa di vendita in Italia Giulio Sambon\"",
         "": "",
         "geo": {
-            "lat": 41.904579862550044,
-            "lon": 12.478932388942422
+            "lat": null,
+            "lon": null
         }
     },
     "IT_102": {
@@ -2661,7 +2492,7 @@
         "Apertura": "1955 ca.",
         "Chiusura": "1998",
         "Nome attività": "Emanuele Efrati e Giuseppe Antonacci, \"Antonacci-Efrati\"",
-        "": "RIGA AGGIUNTA!!!",
+        "": "",
         "geo": {
             "lat": 41.9084557,
             "lon": 12.4789596
@@ -2708,7 +2539,7 @@
         "Città": "Roma",
         "Via": "Via del Babuino",
         "Civico": "96-97",
-        "ID_entità": "JA-TA",
+        "ID_entità": "JA TA ",
         "Apertura": "1907 ca.",
         "Chiusura": "1940 ca.",
         "Nome attività": "Augusto e Salvatore Jandolo, Filippo e Guido Tavazzi, \"Casa di Vendita Jandolo & Tavazzi\"",
@@ -2737,7 +2568,7 @@
     },
     "IT_107_b": {
         "ID": "IT_107_b",
-        "Nazione": "",
+        "Nazione": "Italia",
         "Regione": "Lazio",
         "Città": "Roma",
         "Via": "Via del Babuino",
@@ -2746,10 +2577,10 @@
         "Apertura": "1830 ca.",
         "Chiusura": "1885 ca.",
         "Nome attività": "Tommaso e Vincenzo Capobianchi",
-        "": "RIGA AGGIUNTA!!!",
+        "": "",
         "geo": {
-            "lat": 41.9084557,
-            "lon": 12.4789596
+            "lat": 41.9083445,
+            "lon": 12.4790906
         }
     },
     "IT_108": {
@@ -2865,7 +2696,7 @@
         "Apertura": "1891",
         "Chiusura": "1919",
         "Nome attività": "Gustavo Corvisieri e Vincenzo Capobianchi",
-        "": "RIGA AGGIUNTA!!!",
+        "": "",
         "geo": {
             "lat": 41.9043884,
             "lon": 12.4830508
@@ -2912,7 +2743,7 @@
         "Città": "Roma",
         "Via": "Via Margutta",
         "Civico": "53",
-        "ID_entità": "SE_II",
+        "ID_entità": "JA SE_II",
         "Apertura": "1932",
         "Chiusura": "1939",
         "Nome attività": "Guido Sestieri",
@@ -2933,7 +2764,7 @@
         "Apertura": "1900 ca.",
         "Chiusura": "1949",
         "Nome attività": "Augusto Jandolo",
-        "": "RIGA AGGIUNTA!!!",
+        "": "",
         "geo": {
             "lat": 41.9089407,
             "lon": 12.4791801
@@ -3233,16 +3064,16 @@
         "Nazione": "Italia",
         "Regione": "Lazio",
         "Città": "Roma",
-        "Via": "ex Via Flaminia",
+        "Via": "Via Flaminia",
         "Civico": "170",
         "ID_entità": "JA",
         "Apertura": "1920",
         "Chiusura": "1929",
         "Nome attività": "Ugo Jandolo",
-        "": "RIGA AGGIUNTA!!!",
+        "": "",
         "geo": {
-            "lat": 41.91943639184258,
-            "lon": 12.473608528843906
+            "lat": 41.9553984,
+            "lon": 12.4871875
         }
     },
     "IT_135_c": {
@@ -3256,7 +3087,7 @@
         "Apertura": "1880 ca.",
         "Chiusura": "1924",
         "Nome attività": "Paolo Paolini",
-        "": "RIGA AGGIUNTA!!!",
+        "": "",
         "geo": {
             "lat": 41.8933203,
             "lon": 12.4829321
@@ -3272,27 +3103,11 @@
         "ID_entità": "GR",
         "Apertura": "1915",
         "Chiusura": "",
-        "Nome attività": "Giuseppe Grassi, Palazzo Simonetti (segnalato nel 1915)",
-        "": "RIGA AGGIUNTA!!!",
+        "Nome attività": "Palazzo Simonetti",
+        "": "",
         "geo": {
             "lat": 41.8933203,
             "lon": 12.4829321
-        }
-    },
-    "IT_135_e": {
-        "ID": "IT_135_e",
-        "Nazione": "Italia",
-        "Regione": "Lazio",
-        "Città": "Roma",
-        "Via": "",
-        "Civico": "",
-        "ID_entità": "CE",
-        "Apertura": "2004",
-        "Chiusura": "2021",
-        "Nome attività": "Adriano Cera",
-        "geo": {
-            "lat": 41.892369805575214,
-            "lon": 12.486762280222667
         }
     },
     "IT_136": {
@@ -3323,7 +3138,7 @@
         "Apertura": "1902",
         "Chiusura": "1920",
         "Nome attività": "Salvatore Romano",
-        "": "RIGA AGGIUNTA!!!",
+        "": "",
         "geo": {
             "lat": 40.8358846,
             "lon": 14.2487679
@@ -3340,10 +3155,1829 @@
         "Apertura": "1886",
         "Chiusura": "1905 ca.",
         "Nome attività": "Giulio Sambon, \"Impresa di vendita in Italia Giulio Sambon\"",
-        "": "RIGA AGGIUNTA!!!",
+        "": "",
         "geo": {
             "lat": 40.8356781,
             "lon": 14.2462026
+        }
+    },
+    "IT_139": {
+        "ID": "IT_139",
+        "Nazione": "Italia",
+        "Regione": "Veneto",
+        "Città": "Venezia",
+        "Via": "San Barnaba ",
+        "Civico": "3207",
+        "ID_entità": "BA_V_1",
+        "Apertura": "1890 ca.",
+        "Chiusura": "1895",
+        "Nome attività": "Dino Barozzi",
+        "": "",
+        "geo": {
+            "lat": 45.4330713,
+            "lon": 12.3249789
+        }
+    },
+    "IT_140": {
+        "ID": "IT_140",
+        "Nazione": "Italia",
+        "Regione": "Veneto",
+        "Città": "Venezia",
+        "Via": "Campo Santo Stefano",
+        "Civico": "2950",
+        "ID_entità": "BA_V_1",
+        "Apertura": "1895",
+        "Chiusura": "1922 ca.",
+        "Nome attività": "Dino Barozzi, \"Dino Barozzi. Pittore, restauratore e antiquario\" (Palazzo Barbaro)",
+        "": "",
+        "geo": {
+            "lat": 45.4330944,
+            "lon": 12.3304167
+        }
+    },
+    "IT_141": {
+        "ID": "IT_141",
+        "Nazione": "Italia",
+        "Regione": "Veneto",
+        "Città": "Venezia",
+        "Via": "Corte del Duca Sforza ",
+        "Civico": "3056",
+        "ID_entità": "BA_V_1",
+        "Apertura": "1895",
+        "Chiusura": "1922",
+        "Nome attività": "Dino Barozzi",
+        "": "",
+        "geo": {
+            "lat": 45.4327832,
+            "lon": 12.3282559
+        }
+    },
+    "IT_142": {
+        "ID": "IT_142",
+        "Nazione": "Italia",
+        "Regione": "Veneto",
+        "Città": "Venezia",
+        "Via": "Calle San Maurizio ",
+        "Civico": "2769",
+        "ID_entità": "BA_V_1",
+        "Apertura": "1895",
+        "Chiusura": "1922",
+        "Nome attività": "Dino Barozzi",
+        "": "",
+        "geo": {
+            "lat": null,
+            "lon": null
+        }
+    },
+    "IT_143": {
+        "ID": "IT_143",
+        "Nazione": "Italia",
+        "Regione": "Veneto",
+        "Città": "Venezia",
+        "Via": "San Marco ",
+        "Civico": "2888",
+        "ID_entità": "BA_V_1",
+        "Apertura": "1925",
+        "Chiusura": "1930 ca.",
+        "Nome attività": "Dino Barozzi",
+        "": "",
+        "geo": {
+            "lat": 45.4348289,
+            "lon": 12.3340247
+        }
+    },
+    "IT_144": {
+        "ID": "IT_144",
+        "Nazione": "Italia",
+        "Regione": "Veneto",
+        "Città": "Venezia",
+        "Via": "Campiello San Vidal ",
+        "Civico": "2859",
+        "ID_entità": "BA_V_1",
+        "Apertura": "1930 ca.",
+        "Chiusura": "1942 ca.",
+        "Nome attività": "Dino Barozzi",
+        "": "",
+        "geo": {
+            "lat": 45.4322067,
+            "lon": 12.3295601
+        }
+    },
+    "IT_145": {
+        "ID": "IT_145",
+        "Nazione": "Italia",
+        "Regione": "Veneto",
+        "Città": "Venezia",
+        "Via": "Sottoportico Giustinian ",
+        "Civico": "2888",
+        "ID_entità": "BA_V_1",
+        "Apertura": "1930 ca.",
+        "Chiusura": "1942 ca.",
+        "Nome attività": "Dino Barozzi",
+        "": "",
+        "geo": {
+            "lat": null,
+            "lon": null
+        }
+    },
+    "IT_146": {
+        "ID": "IT_146",
+        "Nazione": "Italia",
+        "Regione": "Veneto",
+        "Città": "Venezia",
+        "Via": "Fondamenta Van Axel o de le Erbe",
+        "Civico": "",
+        "ID_entità": "BA_V_1",
+        "Apertura": "1919",
+        "Chiusura": "1942",
+        "Nome attività": "Dino Barozzi (Palazzo Soranzo Van Axel, abitazione privata e sede)",
+        "": "",
+        "geo": {
+            "lat": null,
+            "lon": null
+        }
+    },
+    "IT_147": {
+        "ID": "IT_147",
+        "Nazione": "Italia",
+        "Regione": "Veneto",
+        "Città": "Venezia",
+        "Via": "Campo San Stae",
+        "Civico": "2603",
+        "ID_entità": "CA_IV_1",
+        "Apertura": "1884",
+        "Chiusura": "1930 ca.",
+        "Nome attività": "Antonio Carrer",
+        "": "",
+        "geo": {
+            "lat": 45.4414922,
+            "lon": 12.3308869
+        }
+    },
+    "IT_148": {
+        "ID": "IT_148",
+        "Nazione": "Italia",
+        "Regione": "Veneto",
+        "Città": "Venezia",
+        "Via": "Fondamenta Santa Maria Mater Domini",
+        "Civico": "2068",
+        "ID_entità": "CA_IV_1",
+        "Apertura": "1932",
+        "Chiusura": "1934",
+        "Nome attività": "Antonio Carrer",
+        "": "",
+        "geo": {
+            "lat": null,
+            "lon": null
+        }
+    },
+    "IT_149": {
+        "ID": "IT_149",
+        "Nazione": "Italia",
+        "Regione": "Lombardia",
+        "Città": "Milano",
+        "Via": "via Meravigli",
+        "Civico": "10",
+        "ID_entità": "PE",
+        "Apertura": "1904 ca.",
+        "Chiusura": "1916",
+        "Nome attività": "Lino Pesaro",
+        "": "",
+        "geo": {
+            "lat": 45.4658037,
+            "lon": 9.1829259
+        }
+    },
+    "IT_150": {
+        "ID": "IT_150",
+        "Nazione": "Italia",
+        "Regione": "Lombardia",
+        "Città": "Milano",
+        "Via": "via Manzoni",
+        "Civico": "12",
+        "ID_entità": "CA_IV_1",
+        "Apertura": "1917",
+        "Chiusura": "1938",
+        "Nome attività": "Lino Pesaro, \"Galleria Pesaro\"",
+        "": "",
+        "geo": {
+            "lat": 45.5477706,
+            "lon": 9.175727
+        }
+    },
+    "IT_151": {
+        "ID": "IT_151",
+        "Nazione": "Italia",
+        "Regione": "Veneto",
+        "Città": "Venezia",
+        "Via": "Campo Santa Maria del Giglio",
+        "Civico": "2467",
+        "ID_entità": "GU",
+        "Apertura": "1869",
+        "Chiusura": "1916",
+        "Nome attività": "Michelangelo Guggenheim, \"Gabinetto di oggetti di antichità e di belle arti\" ",
+        "": "",
+        "geo": {
+            "lat": 45.4316384,
+            "lon": 12.3331068
+        }
+    },
+    "IT_152": {
+        "ID": "IT_152",
+        "Nazione": "Italia",
+        "Regione": "Veneto",
+        "Città": "Venezia",
+        "Via": "Calle dei Fusei",
+        "Civico": "",
+        "ID_entità": "GU",
+        "Apertura": "1869 ca.",
+        "Chiusura": "1874",
+        "Nome attività": "Michelangelo Guggenheim, \"Gabinetto di oggetti di antichità e di belle arti\" ",
+        "": "",
+        "geo": {
+            "lat": null,
+            "lon": null
+        }
+    },
+    "IT_153": {
+        "ID": "IT_153",
+        "Nazione": "Italia",
+        "Regione": "Veneto",
+        "Città": "Venezia",
+        "Via": "Calle del Remer",
+        "Civico": "3901",
+        "ID_entità": "GU",
+        "Apertura": "1887",
+        "Chiusura": "1914",
+        "Nome attività": "Michelangelo Guggenheim, \"M. Guggenheim. Objets d’Art & Antiquités\" (Palazzo Balbi, sede e abitazione privata)",
+        "": "",
+        "geo": {
+            "lat": 45.4379606,
+            "lon": 12.3413359
+        }
+    },
+    "IT_154": {
+        "ID": "IT_154",
+        "Nazione": "Italia",
+        "Regione": "Veneto",
+        "Città": "Venezia",
+        "Via": "Campo San Gregorio",
+        "Civico": "172",
+        "ID_entità": "LO",
+        "Apertura": "1911",
+        "Chiusura": "1919",
+        "Nome attività": "Adolph Loewi, \"Galleria di San Gregorio\" (Abbazia di S. Gregorio)",
+        "": "",
+        "geo": {
+            "lat": 45.4306843,
+            "lon": 12.3335415
+        }
+    },
+    "IT_155": {
+        "ID": "IT_155",
+        "Nazione": "Italia",
+        "Regione": "Veneto",
+        "Città": "Venezia",
+        "Via": "San Trovaso",
+        "Civico": "960",
+        "ID_entità": "LO",
+        "Apertura": "1919",
+        "Chiusura": "1939",
+        "Nome attività": "Adolph Loewi, \"Adolph Loewi per il commercio di Antichità ed Oggetti d'arte antica\" (Palazzo Nani-Mocenigo)",
+        "": "",
+        "geo": {
+            "lat": 45.4306217,
+            "lon": 12.3256667
+        }
+    },
+    "IT_156": {
+        "ID": "IT_156",
+        "Nazione": "Italia",
+        "Regione": "Lazio",
+        "Città": "Roma",
+        "Via": "via del Tritone",
+        "Civico": "183",
+        "ID_entità": "PO_III",
+        "Apertura": "1903",
+        "Chiusura": "1927",
+        "Nome attività": "Ludwig Pollak (Palazzo Alberoni Bacchettoni, sede e abitazione privata)",
+        "": "",
+        "geo": {
+            "lat": 41.9031614,
+            "lon": 12.486873
+        }
+    },
+    "IT_157": {
+        "ID": "IT_157",
+        "Nazione": "Italia",
+        "Regione": "Lazio",
+        "Città": "Roma",
+        "Via": "piazza Santi Apostoli",
+        "Civico": "81",
+        "ID_entità": "PO_III",
+        "Apertura": "1927",
+        "Chiusura": "1943",
+        "Nome attività": "Ludwig Pollak (Palazzo Odescalchi, sede e abitazione privata)",
+        "": "",
+        "geo": {
+            "lat": 41.8978203,
+            "lon": 12.483012
+        }
+    },
+    "IT_158": {
+        "ID": "IT_158",
+        "Nazione": "Italia",
+        "Regione": "Piemonte",
+        "Città": "Torino",
+        "Via": "via Volta",
+        "Civico": "9",
+        "ID_entità": "SA_VII",
+        "Apertura": "1952",
+        "Chiusura": "2014",
+        "Nome attività": "Ferdinando e Teresa Salamon, \"Art Ancienne\" poi Silverio Salamon \"Arte Antica\"",
+        "": "",
+        "geo": {
+            "lat": 45.0646542,
+            "lon": 7.6780314
+        }
+    },
+    "IT_159": {
+        "ID": "IT_159",
+        "Nazione": "Italia",
+        "Regione": "Lombardia",
+        "Città": "Milano",
+        "Via": "via Bagutta",
+        "Civico": "14",
+        "ID_entità": "SA_VII",
+        "Apertura": "1966",
+        "Chiusura": "1967",
+        "Nome attività": "Harry Salamon",
+        "": "",
+        "geo": {
+            "lat": 45.4677542,
+            "lon": 9.1965254
+        }
+    },
+    "IT_160": {
+        "ID": "IT_160",
+        "Nazione": "Italia",
+        "Regione": "Lombardia",
+        "Città": "Milano",
+        "Via": "via Bigli",
+        "Civico": "25",
+        "ID_entità": "SA_VII",
+        "Apertura": "1967",
+        "Chiusura": "1970",
+        "Nome attività": "Harry Salamon",
+        "": "",
+        "geo": {
+            "lat": 45.4688674,
+            "lon": 9.1936196
+        }
+    },
+    "IT_161": {
+        "ID": "IT_161",
+        "Nazione": "Italia",
+        "Regione": "Lombardia",
+        "Città": "Milano",
+        "Via": "via Montenapoleone",
+        "Civico": "3",
+        "ID_entità": "SA_VII",
+        "Apertura": "1970",
+        "Chiusura": "1982",
+        "Nome attività": "Harry Salamon",
+        "": "",
+        "geo": {
+            "lat": null,
+            "lon": null
+        }
+    },
+    "IT_162": {
+        "ID": "IT_162",
+        "Nazione": "Italia",
+        "Regione": "Lombardia",
+        "Città": "Milano",
+        "Via": "piazza Sant'Eufemia",
+        "Civico": "",
+        "ID_entità": "SA_VII",
+        "Apertura": "1982",
+        "Chiusura": "1985",
+        "Nome attività": "Harry Salamon",
+        "": "",
+        "geo": {
+            "lat": 45.4572173,
+            "lon": 9.1877377
+        }
+    },
+    "IT_163": {
+        "ID": "IT_163",
+        "Nazione": "Italia",
+        "Regione": "Lombardia",
+        "Città": "Milano",
+        "Via": "via San Damiano",
+        "Civico": "2",
+        "ID_entità": "SA_VII",
+        "Apertura": "1986",
+        "Chiusura": "1993",
+        "Nome attività": "Harry Salamon, \"Il Gabinetto Salamon\"",
+        "": "",
+        "geo": {
+            "lat": 45.4674685,
+            "lon": 9.2005712
+        }
+    },
+    "IT_164": {
+        "ID": "IT_164",
+        "Nazione": "Italia",
+        "Regione": "Lombardia",
+        "Città": "Milano",
+        "Via": "via San Damiano",
+        "Civico": "3",
+        "ID_entità": "SA_VII",
+        "Apertura": "1993",
+        "Chiusura": "in attività",
+        "Nome attività": "Harry, Matteo e Lorenza Salamon, \"“Salamon & C.”, poi “Matteo Salamon” e “Salamon Fine Art”",
+        "": "",
+        "geo": {
+            "lat": 45.4611775,
+            "lon": 8.8882216
+        }
+    },
+    "IT_165": {
+        "ID": "IT_165",
+        "Nazione": "Italia",
+        "Regione": "Piemonte",
+        "Città": "Torino",
+        "Via": "via Tasso",
+        "Civico": "11",
+        "ID_entità": "SA_VII",
+        "Apertura": "2002",
+        "Chiusura": "in attività",
+        "Nome attività": "Elena Salamon",
+        "": "",
+        "geo": {
+            "lat": 45.0736822,
+            "lon": 7.6830678
+        }
+    },
+    "IT_166": {
+        "ID": "IT_166",
+        "Nazione": "Italia",
+        "Regione": "Veneto",
+        "Città": "Venezia",
+        "Via": "San Benedetto ",
+        "Civico": "3952-53",
+        "ID_entità": "SA_VI_NEW",
+        "Apertura": "1902",
+        "Chiusura": "1906",
+        "Nome attività": "Antonio Salvadori (Palazzo Tron)",
+        "": "",
+        "geo": {
+            "lat": 45.4703627,
+            "lon": 9.2097091
+        }
+    },
+    "IT_167": {
+        "ID": "IT_167",
+        "Nazione": "Italia",
+        "Regione": "Veneto",
+        "Città": "Venezia",
+        "Via": "Calle Moro Lin",
+        "Civico": "3242",
+        "ID_entità": "SA_VI_NEW",
+        "Apertura": "1907",
+        "Chiusura": "1928",
+        "Nome attività": "Antonio Salvadori (Palazzo Moro Lin)",
+        "": "",
+        "geo": {
+            "lat": 45.4370866,
+            "lon": 12.3285123
+        }
+    },
+    "IT_168": {
+        "ID": "IT_168",
+        "Nazione": "Italia",
+        "Regione": "Veneto",
+        "Città": "Venezia",
+        "Via": "San Severo",
+        "Civico": "5013",
+        "ID_entità": "SA_VI_NEW",
+        "Apertura": "1928",
+        "Chiusura": "1929",
+        "Nome attività": "Antonio Salvadori",
+        "": "",
+        "geo": {
+            "lat": 45.4361168,
+            "lon": 12.3433831
+        }
+    },
+    "IT_169": {
+        "ID": "IT_169",
+        "Nazione": "Italia",
+        "Regione": "Veneto",
+        "Città": "Venezia",
+        "Via": "calle XX marzo a San Moisè",
+        "Civico": "2251",
+        "ID_entità": "SA_VI_NEW",
+        "Apertura": "1929",
+        "Chiusura": "1930",
+        "Nome attività": "Antonio Salvadori",
+        "": "",
+        "geo": {
+            "lat": null,
+            "lon": null
+        }
+    },
+    "IT_170": {
+        "ID": "IT_170",
+        "Nazione": "Italia",
+        "Regione": "Lombardia",
+        "Città": "Bergamo",
+        "Via": "via San Bernardino 66",
+        "Civico": "66",
+        "ID_entità": "ST_NEW",
+        "Apertura": "1878",
+        "Chiusura": "1903",
+        "Nome attività": "Giuseppe, Franco e Attilio Steffanoni, \"Fratelli Steffanoni-Belle Arti-Bergamo\"",
+        "": "",
+        "geo": {
+            "lat": 45.6863617,
+            "lon": 9.6627716
+        }
+    },
+    "IT_171": {
+        "ID": "IT_171",
+        "Nazione": "Italia",
+        "Regione": "Lombardia",
+        "Città": "Bergamo",
+        "Via": "via San Bernardino 88",
+        "Civico": "88",
+        "ID_entità": "ST_NEW",
+        "Apertura": "1903",
+        "Chiusura": "1987",
+        "Nome attività": "Giuseppe, Franco e Attilio Steffanoni, \"Giuseppe Steffanoni & figli, Trasponitori di pitture\"",
+        "": "",
+        "geo": {
+            "lat": 45.675026,
+            "lon": 9.6609375
+        }
+    },
+    "IT_172": {
+        "ID": "IT_172",
+        "Nazione": "Italia",
+        "Regione": "Lombardia",
+        "Città": "Milano",
+        "Via": "via Bigli",
+        "Civico": "15",
+        "ID_entità": "LO_I",
+        "Apertura": "1951",
+        "Chiusura": "2018",
+        "Nome attività": "Nella Longari, “Galleria Nella Longari”",
+        "": "",
+        "geo": {
+            "lat": 45.4688712,
+            "lon": 9.1935686
+        }
+    },
+    "IT_173": {
+        "ID": "IT_173",
+        "Nazione": "Italia",
+        "Regione": "Lombardia",
+        "Città": "Milano",
+        "Via": "Corso Monforte",
+        "Civico": "23",
+        "ID_entità": "LO_I",
+        "Apertura": "1951",
+        "Chiusura": "2018",
+        "Nome attività": "Longari, “Longari Arte Milano” (Palazzo Cicogna)",
+        "": "",
+        "geo": {
+            "lat": 45.467112,
+            "lon": 9.2012094
+        }
+    },
+    "IT_174": {
+        "ID": "IT_174",
+        "Nazione": "Italia",
+        "Regione": "Lombardia",
+        "Città": "Milano",
+        "Via": "via Monte di Pietà",
+        "Civico": "2",
+        "ID_entità": "SU",
+        "Apertura": "1860",
+        "Chiusura": "1926 ca.",
+        "Nome attività": "Emanuele Subert, “Emanuele Subert Antichità e Belle Arti” poi con Rodolfo Subert",
+        "": "",
+        "geo": {
+            "lat": 45.4699933,
+            "lon": 9.1914825
+        }
+    },
+    "IT_175": {
+        "ID": "IT_175",
+        "Nazione": "Italia",
+        "Regione": "Lombardia",
+        "Città": "Milano",
+        "Via": "Galleria Vittorio Emanuele II",
+        "Civico": "",
+        "ID_entità": "SU",
+        "Apertura": "1900",
+        "Chiusura": "1926 ca.",
+        "Nome attività": "Emanuele e Roldolfo Subert, “Rodolfo Subert Antichità e Belle Arti”",
+        "": "",
+        "geo": {
+            "lat": 45.4647182,
+            "lon": 9.1900276
+        }
+    },
+    "IT_176": {
+        "ID": "IT_176",
+        "Nazione": "Italia",
+        "Regione": "Lombardia",
+        "Città": "Milano",
+        "Via": "via S. Andrea",
+        "Civico": "11",
+        "ID_entità": "SU",
+        "Apertura": "1926",
+        "Chiusura": "1945",
+        "Nome attività": "Rodolfo Subert, “Galleria S. Andrea”",
+        "": "",
+        "geo": {
+            "lat": null,
+            "lon": null
+        }
+    },
+    "IT_177": {
+        "ID": "IT_177",
+        "Nazione": "Italia",
+        "Regione": "Lombardia",
+        "Città": "Milano",
+        "Via": "via S. Pietro all'Orto",
+        "Civico": "26",
+        "ID_entità": "SU",
+        "Apertura": "1951",
+        "Chiusura": "1966",
+        "Nome attività": "Rodolfo Subert, “G.G. Subert”",
+        "": "",
+        "geo": {
+            "lat": 45.4674802,
+            "lon": 9.1950227
+        }
+    },
+    "IT_178": {
+        "ID": "IT_178",
+        "Nazione": "Italia",
+        "Regione": "Lombardia",
+        "Città": "Milano",
+        "Via": "via della Spiga",
+        "Civico": "22",
+        "ID_entità": "SU",
+        "Apertura": "1952",
+        "Chiusura": "1966",
+        "Nome attività": "Alberto Subert",
+        "": "",
+        "geo": {
+            "lat": 45.4698681,
+            "lon": 9.197276
+        }
+    },
+    "IT_179": {
+        "ID": "IT_179",
+        "Nazione": "Italia",
+        "Regione": "Lombardia",
+        "Città": "Milano",
+        "Via": "via Santo Spirito",
+        "Civico": "24",
+        "ID_entità": "SU",
+        "Apertura": "1966",
+        "Chiusura": "2012",
+        "Nome attività": "Alberto e Michele Subert, “Antichità e Oggetti d’Arte”",
+        "": "",
+        "geo": {
+            "lat": 45.4704923,
+            "lon": 9.1956436
+        }
+    },
+    "IT_180": {
+        "ID": "IT_180",
+        "Nazione": "Italia",
+        "Regione": "Lombardia",
+        "Città": "Milano",
+        "Via": "via della Spiga",
+        "Civico": "42",
+        "ID_entità": "SU",
+        "Apertura": "2013",
+        "Chiusura": "in attività",
+        "Nome attività": "Michele Subert",
+        "": "",
+        "geo": {
+            "lat": 45.4712999,
+            "lon": 9.1955898
+        }
+    },
+    "IT_181": {
+        "ID": "IT_181",
+        "Nazione": "Italia",
+        "Regione": "Piemonte",
+        "Città": "Torino",
+        "Via": "via dell'Arsenale",
+        "Civico": "",
+        "ID_entità": "CA_V",
+        "Apertura": "1937",
+        "Chiusura": "1950",
+        "Nome attività": "Luigi e Giorgio Caretto, “Galleria Luigi Caretto”",
+        "": "",
+        "geo": {
+            "lat": 45.0642371,
+            "lon": 7.6769174
+        }
+    },
+    "IT_182": {
+        "ID": "IT_182",
+        "Nazione": "Italia",
+        "Regione": "Piemonte",
+        "Città": "Torino",
+        "Via": "via Maria Vittoria",
+        "Civico": "11",
+        "ID_entità": "CA_V",
+        "Apertura": "1950",
+        "Chiusura": "1964",
+        "Nome attività": "Giorgio Caretto",
+        "": "",
+        "geo": {
+            "lat": 45.0675126,
+            "lon": 7.6857501
+        }
+    },
+    "IT_183": {
+        "ID": "IT_183",
+        "Nazione": "Italia",
+        "Regione": "Piemonte",
+        "Città": "Torino",
+        "Via": "via Maria Vittoria",
+        "Civico": "10",
+        "ID_entità": "CA_V",
+        "Apertura": "1964",
+        "Chiusura": "in attività",
+        "Nome attività": "Giorgio, Patrizia e Luigi Caretto",
+        "": "",
+        "geo": {
+            "lat": 45.0675466,
+            "lon": 7.6852018
+        }
+    },
+    "IT_184": {
+        "ID": "IT_184",
+        "Nazione": "Italia",
+        "Regione": "Emilia Romagna",
+        "Città": "Bologna",
+        "Via": "via Castiglione",
+        "Civico": "12",
+        "ID_entità": "CO_V",
+        "Apertura": "1954",
+        "Chiusura": "1992",
+        "Nome attività": "Guido e Marzio Cortinovis, “Antichità Cortinovis”",
+        "": "",
+        "geo": {
+            "lat": 44.4917528,
+            "lon": 11.3465298
+        }
+    },
+    "IT_185": {
+        "ID": "IT_185",
+        "Nazione": "Italia",
+        "Regione": "Emilia Romagna",
+        "Città": "Bologna",
+        "Via": "via Castiglione",
+        "Civico": "31",
+        "ID_entità": "CO_V",
+        "Apertura": "1960 ca.",
+        "Chiusura": "in attività",
+        "Nome attività": "Guido e Marzio Cortinovis (studio privato)",
+        "": "",
+        "geo": {
+            "lat": 44.4895926,
+            "lon": 11.3470562
+        }
+    },
+    "IT_186": {
+        "ID": "IT_186",
+        "Nazione": "Italia",
+        "Regione": "Lombardia",
+        "Città": "Milano",
+        "Via": "via S. Andrea",
+        "Civico": "11",
+        "ID_entità": "SU",
+        "Apertura": "1926",
+        "Chiusura": "1945",
+        "Nome attività": "Rodolfo Subert, “Galleria S. Andrea”",
+        "": "",
+        "geo": {
+            "lat": null,
+            "lon": null
+        }
+    },
+    "IT_187": {
+        "ID": "IT_187",
+        "Nazione": "Italia",
+        "Regione": "Lombardia",
+        "Città": "Milano",
+        "Via": "via S. Andrea",
+        "Civico": "11",
+        "ID_entità": "SU",
+        "Apertura": "1926",
+        "Chiusura": "1945",
+        "Nome attività": "Rodolfo Subert, “Galleria S. Andrea”",
+        "": "",
+        "geo": {
+            "lat": null,
+            "lon": null
+        }
+    },
+    "IT_188": {
+        "ID": "IT_188",
+        "Nazione": "Italia",
+        "Regione": "Lombardia",
+        "Città": "Milano",
+        "Via": "via Fiori Oscuri",
+        "Civico": "",
+        "ID_entità": "GI_I",
+        "Apertura": "1940 ca.",
+        "Chiusura": "1962",
+        "Nome attività": "Antonia Maria Gianetti",
+        "": "",
+        "geo": {
+            "lat": 45.4724669,
+            "lon": 9.1885665
+        }
+    },
+    "IT_189": {
+        "ID": "IT_189",
+        "Nazione": "Italia",
+        "Regione": "Lombardia",
+        "Città": "Milano",
+        "Via": "via Gesù",
+        "Civico": "2",
+        "ID_entità": "GI_I",
+        "Apertura": "1962",
+        "Chiusura": "1988",
+        "Nome attività": "Antonia Maria Gianetti, “Maria Antonia Gianetti Antichità”",
+        "": "",
+        "geo": {
+            "lat": 45.4691366,
+            "lon": 9.1946662
+        }
+    },
+    "IT_190": {
+        "ID": "IT_190",
+        "Nazione": "Italia",
+        "Regione": "Lombardia",
+        "Città": "Milano",
+        "Via": "via Gesù",
+        "Civico": "7",
+        "ID_entità": "GI_I",
+        "Apertura": "1981",
+        "Chiusura": "2002",
+        "Nome attività": "Antonia Maria Gianetti, “Maria Antonia Gianetti Antichità”",
+        "": "",
+        "geo": {
+            "lat": 45.4695352,
+            "lon": 9.1951754
+        }
+    },
+    "IT_191": {
+        "ID": "IT_191",
+        "Nazione": "Italia",
+        "Regione": "Lazio",
+        "Città": "Roma",
+        "Via": "via dei Greci",
+        "Civico": "",
+        "ID_entità": "DI_I",
+        "Apertura": "",
+        "Chiusura": "",
+        "Nome attività": "Eugenio Di Castro",
+        "": "",
+        "geo": {
+            "lat": 41.9074985,
+            "lon": 12.4788258
+        }
+    },
+    "IT_192": {
+        "ID": "IT_192",
+        "Nazione": "Italia",
+        "Regione": "Lazio",
+        "Città": "Roma",
+        "Via": "via del Babuino",
+        "Civico": "82",
+        "ID_entità": "DI_I",
+        "Apertura": "",
+        "Chiusura": "",
+        "Nome attività": "Eugenio Di Castro",
+        "": "",
+        "geo": {
+            "lat": 41.9083445,
+            "lon": 12.4790906
+        }
+    },
+    "IT_193": {
+        "ID": "IT_193",
+        "Nazione": "Italia",
+        "Regione": "Lazio",
+        "Città": "Roma",
+        "Via": "via del Babuino",
+        "Civico": "92 a/b",
+        "ID_entità": "DI_I",
+        "Apertura": "1932",
+        "Chiusura": "1976",
+        "Nome attività": "Eugenio Di Castro (Palazzo Raffaelli)",
+        "": "",
+        "geo": {
+            "lat": 41.9083445,
+            "lon": 12.4790906
+        }
+    },
+    "IT_194": {
+        "ID": "IT_194",
+        "Nazione": "Italia",
+        "Regione": "Lazio",
+        "Città": "Roma",
+        "Via": "via Alibert",
+        "Civico": "20-23",
+        "ID_entità": "DI_I",
+        "Apertura": "1976",
+        "Chiusura": "2006",
+        "Nome attività": "Angelo Di Castro (Palazzo Raffaelli)",
+        "": "",
+        "geo": {
+            "lat": 41.907359,
+            "lon": 12.4812456
+        }
+    },
+    "IT_195": {
+        "ID": "IT_195",
+        "Nazione": "Italia",
+        "Regione": "Emilia Romagna",
+        "Città": "Bologna",
+        "Via": "via Ugo Bassi",
+        "Civico": "87",
+        "ID_entità": "AN AS",
+        "Apertura": "1873",
+        "Chiusura": "1879",
+        "Nome attività": "Raffaele Angiolini e Alessandro Ascoli, prima “Alessandro Ascoli e Comp.o”, poi “Angiolini e Ascoli”",
+        "": "",
+        "geo": {
+            "lat": 44.4953671,
+            "lon": 11.3396733
+        }
+    },
+    "IT_196": {
+        "ID": "IT_196",
+        "Nazione": "Italia",
+        "Regione": "Emilia Romagna",
+        "Città": "Bologna",
+        "Via": "via Barberia",
+        "Civico": "13",
+        "ID_entità": "AN",
+        "Apertura": "1905",
+        "Chiusura": "1907",
+        "Nome attività": "Raffaele Angiolini e Alessandro Ranuzzi, “Alessandro Ranuzzi e C.”",
+        "": "",
+        "geo": {
+            "lat": 44.4920386,
+            "lon": 11.3381429
+        }
+    },
+    "IT_197": {
+        "ID": "IT_197",
+        "Nazione": "Italia",
+        "Regione": "Lazio",
+        "Città": "Roma",
+        "Via": "via Lima",
+        "Civico": "28",
+        "ID_entità": "DA",
+        "Apertura": "1905",
+        "Chiusura": "1907",
+        "Nome attività": "Alberto D'Atri",
+        "": "",
+        "geo": {
+            "lat": 41.9235732,
+            "lon": 12.4960667
+        }
+    },
+    "IT_198": {
+        "ID": "IT_198",
+        "Nazione": "Italia",
+        "Regione": "Lazio",
+        "Città": "Roma",
+        "Via": "via Panama",
+        "Civico": "102/104",
+        "ID_entità": "FO_I",
+        "Apertura": "1920",
+        "Chiusura": "1980 ca.",
+        "Nome attività": "Vittorio Forti (abitazione privata)",
+        "": "",
+        "geo": {
+            "lat": 41.9253158,
+            "lon": 12.4962847
+        }
+    },
+    "IT_199": {
+        "ID": "IT_199",
+        "Nazione": "Italia",
+        "Regione": "Lazio",
+        "Città": "Roma",
+        "Via": "Piazza Augusto Imperatore",
+        "Civico": "",
+        "ID_entità": "FO_I",
+        "Apertura": "1944",
+        "Chiusura": "1951",
+        "Nome attività": "Pietro Maria Bardi \"Studio d’Arte Palma\"",
+        "": "",
+        "geo": {
+            "lat": 41.9059105,
+            "lon": 12.4764057
+        }
+    },
+    "IT_200": {
+        "ID": "IT_200",
+        "Nazione": "Italia",
+        "Regione": "Emilia Romagna",
+        "Città": "Bologna",
+        "Via": "via Volturno",
+        "Civico": "4/G",
+        "ID_entità": "MO_I",
+        "Apertura": "1901",
+        "Chiusura": "1901",
+        "Nome attività": "Aldo Molena",
+        "": "",
+        "geo": {
+            "lat": 44.4976229,
+            "lon": 11.3430291
+        }
+    },
+    "IT_201": {
+        "ID": "IT_201",
+        "Nazione": "Italia",
+        "Regione": "Emilia Romagna",
+        "Città": "Bologna",
+        "Via": "via Saffi",
+        "Civico": "11",
+        "ID_entità": "MO_I",
+        "Apertura": "1911",
+        "Chiusura": "1901",
+        "Nome attività": "Aldo Molena",
+        "": "",
+        "geo": {
+            "lat": 44.5035904,
+            "lon": 11.3171441
+        }
+    },
+    "IT_202": {
+        "ID": "IT_202",
+        "Nazione": "Italia",
+        "Regione": "Emilia Romagna",
+        "Città": "Bologna",
+        "Via": "via Zamboni",
+        "Civico": "11",
+        "ID_entità": "MO_I",
+        "Apertura": "1910 ca.",
+        "Chiusura": "1930",
+        "Nome attività": "Aldo Molena",
+        "": "",
+        "geo": {
+            "lat": 44.495142,
+            "lon": 11.3480059
+        }
+    },
+    "IT_203": {
+        "ID": "IT_203",
+        "Nazione": "Italia",
+        "Regione": "Emilia Romagna",
+        "Città": "Bologna",
+        "Via": "via S. Vitale",
+        "Civico": "32",
+        "ID_entità": "MO_I",
+        "Apertura": "1930",
+        "Chiusura": "1933",
+        "Nome attività": "Aldo Molena (abitazione privata)",
+        "": "",
+        "geo": {
+            "lat": 44.4945202,
+            "lon": 11.349349
+        }
+    },
+    "IT_204": {
+        "ID": "IT_204",
+        "Nazione": "Italia",
+        "Regione": "Emilia Romagna",
+        "Città": "Bologna",
+        "Via": "via S. Vitale",
+        "Civico": "40",
+        "ID_entità": "MO_I",
+        "Apertura": "1930 ca.",
+        "Chiusura": "1936",
+        "Nome attività": "Aldo Molena",
+        "": "",
+        "geo": {
+            "lat": 44.4944193,
+            "lon": 11.3503346
+        }
+    },
+    "IT_205": {
+        "ID": "IT_205",
+        "Nazione": "Italia",
+        "Regione": "Emilia Romagna",
+        "Città": "Bologna",
+        "Via": "Strada Maggiore",
+        "Civico": "15",
+        "ID_entità": "MO_I",
+        "Apertura": "1936 ca.",
+        "Chiusura": "1946",
+        "Nome attività": "Aldo Molena",
+        "": "",
+        "geo": {
+            "lat": 44.4933884,
+            "lon": 11.3484404
+        }
+    },
+    "IT_206": {
+        "ID": "IT_206",
+        "Nazione": "Italia",
+        "Regione": "Emilia Romagna",
+        "Città": "Bologna",
+        "Via": "via Stallatici",
+        "Civico": "4/A",
+        "ID_entità": "PI_NEW",
+        "Apertura": "1897",
+        "Chiusura": "1946",
+        "Nome attività": "Cesare Pini",
+        "": "",
+        "geo": {
+            "lat": null,
+            "lon": null
+        }
+    },
+    "IT_207": {
+        "ID": "IT_207",
+        "Nazione": "Italia",
+        "Regione": "Umbria",
+        "Città": "Assisi",
+        "Via": "Piazza S. Chiara",
+        "Civico": "3/B",
+        "ID_entità": "RI",
+        "Apertura": "1962",
+        "Chiusura": "2017",
+        "Nome attività": "Ennio e Piero Riccardi, \"Riccardi Antichità\"",
+        "": "",
+        "geo": {
+            "lat": 43.0693024,
+            "lon": 12.6168303
+        }
+    },
+    "IT_208": {
+        "ID": "IT_208",
+        "Nazione": "Italia",
+        "Regione": "Veneto",
+        "Città": "Venezia",
+        "Via": "Cannaregio, corte Erizzo",
+        "Civico": "2187",
+        "ID_entità": "RI_I",
+        "Apertura": "1847",
+        "Chiusura": "1882",
+        "Nome attività": "Consiglio Ricchetti, \"Galleria d'arte e di antichità\" (Palazzo Marcello)",
+        "": "",
+        "geo": {
+            "lat": null,
+            "lon": null
+        }
+    },
+    "IT_209": {
+        "ID": "IT_209",
+        "Nazione": "Italia",
+        "Regione": "Veneto",
+        "Città": "Venezia",
+        "Via": "Cannaregio",
+        "Civico": "",
+        "ID_entità": "RI_I",
+        "Apertura": "1877",
+        "Chiusura": "1890 ca.",
+        "Nome attività": "Consiglio con David G. e Mazzo Ricchetti (dal 1880), \"Galleria d'arte e di antichità\" (Palazzo Barbarigo)",
+        "": "",
+        "geo": {
+            "lat": 45.4438257,
+            "lon": 12.3270367
+        }
+    },
+    "IT_210": {
+        "ID": "IT_210",
+        "Nazione": "Italia",
+        "Regione": "Veneto",
+        "Città": "Venezia",
+        "Via": "San Marco",
+        "Civico": "3486",
+        "ID_entità": "RI_I",
+        "Apertura": "1882",
+        "Chiusura": "1899",
+        "Nome attività": "Consiglio con David G. e Mazzo Ricchetti (dal 1880), \"Galleria d'arte e di antichità\" (Palazzo Garzoni a San Samuele)",
+        "": "",
+        "geo": {
+            "lat": 45.4348289,
+            "lon": 12.3340247
+        }
+    },
+    "IT_211": {
+        "ID": "IT_211",
+        "Nazione": "Italia",
+        "Regione": "Toscana",
+        "Città": "Figline",
+        "Via": "vicolo Calugi",
+        "Civico": "",
+        "ID_entità": "PR",
+        "Apertura": "1960",
+        "Chiusura": "1967",
+        "Nome attività": "Giovanni Pratesi (magazzino)",
+        "": "",
+        "geo": {
+            "lat": 43.619002,
+            "lon": 11.4706668
+        }
+    },
+    "IT_212": {
+        "ID": "IT_212",
+        "Nazione": "Italia",
+        "Regione": "Toscana",
+        "Città": "Firenze",
+        "Via": "via Maggio",
+        "Civico": "13",
+        "ID_entità": "PR",
+        "Apertura": "1967",
+        "Chiusura": "2023",
+        "Nome attività": "Giovanni Pratesi \"Giovanni Pratesi Antiquario\" (Palazzo Ridolfi)",
+        "": "",
+        "geo": {
+            "lat": 43.7668127,
+            "lon": 11.2490565
+        }
+    },
+    "IT_213": {
+        "ID": "IT_213",
+        "Nazione": "Italia",
+        "Regione": "Veneto",
+        "Città": "Venezia",
+        "Via": "San Moisé",
+        "Civico": "1473",
+        "ID_entità": "VE_I",
+        "Apertura": "1899 ca.",
+        "Chiusura": "1903 ca.",
+        "Nome attività": "Gino Sarfatti e Giuseppe Guetta, \"The Venice Art Company\"",
+        "": "",
+        "geo": {
+            "lat": 45.4331386,
+            "lon": 12.3357414
+        }
+    },
+    "IT_214": {
+        "ID": "IT_214",
+        "Nazione": "Italia",
+        "Regione": "Veneto",
+        "Città": "Venezia",
+        "Via": "San Moisé",
+        "Civico": "1777-1778",
+        "ID_entità": "VE_I",
+        "Apertura": "1901 ca.",
+        "Chiusura": "1903 ca.",
+        "Nome attività": "Gino Sarfatti e Giuseppe Guetta, \"The Venice Art Company\"",
+        "": "",
+        "geo": {
+            "lat": 45.4331386,
+            "lon": 12.3357414
+        }
+    },
+    "IT_215": {
+        "ID": "IT_215",
+        "Nazione": "Italia",
+        "Regione": "Veneto",
+        "Città": "Venezia",
+        "Via": "San Moisé",
+        "Civico": "1777-1778",
+        "ID_entità": "VE_I",
+        "Apertura": "1901 ca.",
+        "Chiusura": "1903 ca.",
+        "Nome attività": "Gino Sarfatti e Giuseppe Guetta, \"The Venice Art Company\"",
+        "": "",
+        "geo": {
+            "lat": 45.4331386,
+            "lon": 12.3357414
+        }
+    },
+    "IT_216": {
+        "ID": "IT_216",
+        "Nazione": "Italia",
+        "Regione": "Veneto",
+        "Città": "Venezia",
+        "Via": "Calle Ridotto",
+        "Civico": "1361",
+        "ID_entità": "VE_I",
+        "Apertura": "1901 ca.",
+        "Chiusura": "1903 ca.",
+        "Nome attività": "Gino Sarfatti e Giuseppe Guetta, \"The Venice Art Company\" (Palazzo Dandolo o Palazzo Ridotto)",
+        "": "",
+        "geo": {
+            "lat": 45.4323765,
+            "lon": 12.3366987
+        }
+    },
+    "UK_1": {
+        "ID": "UK_1",
+        "Nazione": "Regno Unito",
+        "Regione": "Regno Unito",
+        "Città": "Londra",
+        "Via": "Carlton Street",
+        "Civico": "",
+        "ID_entità": "BE_II",
+        "Apertura": "1924",
+        "Chiusura": "1925",
+        "Nome attività": "Giuseppe Bellesi (Pall Mall Deposit, magazzino)",
+        "": "",
+        "geo": {
+            "lat": 51.5086356,
+            "lon": -0.1336046
+        }
+    },
+    "UK_2": {
+        "ID": "UK_2",
+        "Nazione": "Regno Unito",
+        "Regione": "Regno Unito",
+        "Città": "Londra",
+        "Via": "Duke Street",
+        "Civico": "2",
+        "ID_entità": "BE_II",
+        "Apertura": "1937",
+        "Chiusura": "1937",
+        "Nome attività": "Giuseppe Bellesi, \"The Italian Art Gallery\"",
+        "": "",
+        "geo": {
+            "lat": 51.51459585014354,
+            "lon": -0.1514252361877634
+        }
+    },
+    "UK_3": {
+        "ID": "UK_3",
+        "Nazione": "Regno Unito",
+        "Regione": "Regno Unito",
+        "Città": "Londra",
+        "Via": "King Street",
+        "Civico": "",
+        "ID_entità": "VO_II",
+        "Apertura": "1925 ca.",
+        "Chiusura": "1932 ca.",
+        "Nome attività": "Giuseppe Volterra (succursale)",
+        "": "",
+        "geo": {
+            "lat": 51.506273,
+            "lon": -0.1378776
+        }
+    },
+    "UK_4": {
+        "ID": "UK_4",
+        "Nazione": "Regno Unito",
+        "Regione": "Regno Unito",
+        "Città": "Londra",
+        "Via": "New Bond Street",
+        "Civico": "174",
+        "ID_entità": "BE_II",
+        "Apertura": "1929",
+        "Chiusura": "1929",
+        "Nome attività": "Giuseppe Bellesi, \"The Italian Art Gallery\"",
+        "": "",
+        "geo": {
+            "lat": 51.5097564,
+            "lon": -0.1419606
+        }
+    },
+    "UK_5": {
+        "ID": "UK_5",
+        "Nazione": "Regno Unito",
+        "Regione": "Regno Unito",
+        "Città": "Londra",
+        "Via": "Paddington Green",
+        "Civico": "15",
+        "ID_entità": "BE_II",
+        "Apertura": "1948",
+        "Chiusura": "1957",
+        "Nome attività": "Giuseppe Bellesi, \"The Italian Art Gallery\"",
+        "": "",
+        "geo": {
+            "lat": 51.52083206176758,
+            "lon": -0.17385241389274597
+        }
+    },
+    "UK_7": {
+        "ID": "UK_7",
+        "Nazione": "Regno Unito",
+        "Regione": "Regno Unito",
+        "Città": "Londra",
+        "Via": "Savile Row",
+        "Civico": "32",
+        "ID_entità": "BE_II",
+        "Apertura": "1926",
+        "Chiusura": "1926",
+        "Nome attività": "Giuseppe Bellesi, \"The Italian Art Gallery\"",
+        "": "",
+        "geo": {
+            "lat": 51.5109849,
+            "lon": -0.140622
+        }
+    },
+    "UK_8": {
+        "ID": "UK_8",
+        "Nazione": "Regno Unito",
+        "Regione": "Regno Unito",
+        "Città": "Londra",
+        "Via": "Market Lane",
+        "Civico": "",
+        "ID_entità": "CO_IV",
+        "Apertura": "1767",
+        "Chiusura": "1786",
+        "Nome attività": "Giovanni Battista Torre e Paul Colnaghi, \"Torre & Co.\"",
+        "": "",
+        "geo": {
+            "lat": 51.6014267,
+            "lon": -0.2651974
+        }
+    },
+    "UK_9": {
+        "ID": "UK_9",
+        "Nazione": "Regno Unito",
+        "Regione": "Regno Unito",
+        "Città": "Londra",
+        "Via": "Pall Mall",
+        "Civico": "132",
+        "ID_entità": "CO_IV",
+        "Apertura": "1786",
+        "Chiusura": "1799",
+        "Nome attività": "Giovanni Battista Torre e Paul Colnaghi, \"Torre & Co.\"; dal 1788 solo Paul Colnaghi, \"Colnaghi & Co.\"",
+        "": "",
+        "geo": {
+            "lat": 51.5057719,
+            "lon": -0.1363183
+        }
+    },
+    "UK_10": {
+        "ID": "UK_10",
+        "Nazione": "Regno Unito",
+        "Regione": "Regno Unito",
+        "Città": "Londra",
+        "Via": "Cockspur Lane",
+        "Civico": "23",
+        "ID_entità": "CO_IV",
+        "Apertura": "1799",
+        "Chiusura": "1825",
+        "Nome attività": "Paul, Dominic e Martin Colnaghi, \"Colnaghi & Co.\", poi Dominic Colnaghi e John Antony Scott, poi William McKay, \"P. & D. Colnaghi & Co.\"",
+        "": "",
+        "geo": {
+            "lat": null,
+            "lon": null
+        }
+    },
+    "UK_11": {
+        "ID": "UK_11",
+        "Nazione": "Regno Unito",
+        "Regione": "Regno Unito",
+        "Città": "Londra",
+        "Via": "Pall Mall East",
+        "Civico": "53",
+        "ID_entità": "CO_IV",
+        "Apertura": "1825",
+        "Chiusura": "1911",
+        "Nome attività": "P. & D. Colnaghi & Co.",
+        "": "",
+        "geo": {
+            "lat": 51.5082443,
+            "lon": -0.129519
+        }
+    },
+    "UK_12": {
+        "ID": "UK_12",
+        "Nazione": "Regno Unito",
+        "Regione": "Regno Unito",
+        "Città": "Londra",
+        "Via": "New Bond Street",
+        "Civico": "144-146",
+        "ID_entità": "CO_IV",
+        "Apertura": "1912",
+        "Chiusura": "1914",
+        "Nome attività": "Colnaghi e Gustavus Mayer, \"Messrs. P. & D. Colnaghi and Obach\", poi \"P. & D. Colnaghi & Co.\"",
+        "": "",
+        "geo": {
+            "lat": 51.5114028,
+            "lon": -0.1439363
+        }
+    },
+    "UK_13": {
+        "ID": "UK_13",
+        "Nazione": "Regno Unito",
+        "Regione": "Regno Unito",
+        "Città": "Londra",
+        "Via": "Old Bond Street  14",
+        "Civico": "14",
+        "ID_entità": "CO_IV",
+        "Apertura": "1940",
+        "Chiusura": "2010",
+        "Nome attività": "Colnaghi, \"P. & D. Colnaghi & Co.\"",
+        "": "",
+        "geo": {
+            "lat": 51.5089078,
+            "lon": -0.1408282
+        }
+    },
+    "UK_14": {
+        "ID": "UK_14",
+        "Nazione": "Regno Unito",
+        "Regione": "Regno Unito",
+        "Città": "Londra",
+        "Via": "Old Bond Street 15",
+        "Civico": "15",
+        "ID_entità": "CO_IV",
+        "Apertura": "2010",
+        "Chiusura": "2015",
+        "Nome attività": "Colnaghi, \"P. & D. Colnaghi & Co.\"",
+        "": "",
+        "geo": {
+            "lat": 51.5081309,
+            "lon": -0.1400425
+        }
+    },
+    "UK_15": {
+        "ID": "UK_15",
+        "Nazione": "Regno Unito",
+        "Regione": "Regno Unito",
+        "Città": "Londra",
+        "Via": "Bury Street 26",
+        "Civico": "26",
+        "ID_entità": "CO_IV",
+        "Apertura": "2015",
+        "Chiusura": "in attività",
+        "Nome attività": "Colnaghi",
+        "": "",
+        "geo": {
+            "lat": 51.5069312,
+            "lon": -0.1385263
+        }
+    },
+    "UK_16": {
+        "ID": "UK_16",
+        "Nazione": "Regno Unito",
+        "Regione": "Regno Unito",
+        "Città": "Manchester",
+        "Via": "Cannon Street",
+        "Civico": "21",
+        "ID_entità": "VE_I",
+        "Apertura": "1916 ca.",
+        "Chiusura": "1930 ca.",
+        "Nome attività": "Gino Sarfatti e Giuseppe Guetta, \"The Venice Art Company\"",
+        "": "",
+        "geo": {
+            "lat": 53.5707489,
+            "lon": -2.4418426
+        }
+    },
+    "ES_1": {
+        "ID": "ES_1",
+        "Nazione": "Spagna",
+        "Regione": "Spagna",
+        "Città": "Madrid",
+        "Via": "Calle General Castaños",
+        "Civico": "9",
+        "ID_entità": "CO_IV",
+        "Apertura": "2015",
+        "Chiusura": "in attività",
+        "Nome attività": "Colnaghi",
+        "": "",
+        "geo": {
+            "lat": 40.4255555,
+            "lon": -3.6940717
+        }
+    },
+    "USA_1": {
+        "ID": "USA_1",
+        "Nazione": "Stati Uniti d'America",
+        "Regione": "Stati Uniti d'America",
+        "Città": "New York City",
+        "Via": "547 5th av",
+        "Civico": "",
+        "ID_entità": "SE_II",
+        "Apertura": "1919 ca.",
+        "Chiusura": "1929",
+        "Nome attività": "Emanuele e Guido Sestieri, \"Sestieri Gallery\" (succursale)",
+        "": "",
+        "geo": {
+            "lat": 40.755473,
+            "lon": -73.979309
+        }
+    },
+    "USA_2": {
+        "ID": "USA_2",
+        "Nazione": "Stati Uniti d'America",
+        "Regione": "Stati Uniti d'America",
+        "Città": "New York City",
+        "Via": "749 5th av",
+        "Civico": "",
+        "ID_entità": "TO",
+        "Apertura": "1919 ca. ",
+        "Chiusura": "1928 ca.",
+        "Nome attività": "Raoul Tolentino, \"Tolentino Art Gallery\"",
+        "": "",
+        "geo": {
+            "lat": 40.6590234,
+            "lon": -73.9960462
+        }
+    },
+    "USA_3": {
+        "ID": "USA_3",
+        "Nazione": "Stati Uniti d'America",
+        "Regione": "Stati Uniti d'America",
+        "Città": "New York City",
+        "Via": "479 5th av",
+        "Civico": "",
+        "ID_entità": "CA_I",
+        "Apertura": "1906",
+        "Chiusura": "1914",
+        "Nome attività": "Amedeo Canessa, \"C. & E. Canessa\"",
+        "": "",
+        "geo": {
+            "lat": 40.6677246,
+            "lon": -73.9871864
+        }
+    },
+    "USA_4": {
+        "ID": "USA_4",
+        "Nazione": "Stati Uniti d'America",
+        "Regione": "Stati Uniti d'America",
+        "Città": "New York City",
+        "Via": "547 5th av",
+        "Civico": "",
+        "ID_entità": "CA_I",
+        "Apertura": "1914",
+        "Chiusura": "1915",
+        "Nome attività": "Amedeo Canessa, \"C. & E. Canessa\"",
+        "": "",
+        "geo": {
+            "lat": 40.755473,
+            "lon": -73.979309
+        }
+    },
+    "USA_5": {
+        "ID": "USA_5",
+        "Nazione": "Stati Uniti d'America",
+        "Regione": "Stati Uniti d'America",
+        "Città": "New York City",
+        "Via": "680 5th av",
+        "Civico": "",
+        "ID_entità": "CA_I",
+        "Apertura": "1924",
+        "Chiusura": "1929",
+        "Nome attività": "Ercole Canessa, \"Ercole Canessa\"",
+        "": "",
+        "geo": {
+            "lat": 40.6618222,
+            "lon": -73.9932524
+        }
+    },
+    "USA_6": {
+        "ID": "USA_6",
+        "Nazione": "Stati Uniti d'America",
+        "Regione": "Stati Uniti d'America",
+        "Città": "New York City",
+        "Via": "3 East 41st street",
+        "Civico": "",
+        "ID_entità": "CA_I",
+        "Apertura": "1909",
+        "Chiusura": "1916 ca.",
+        "Nome attività": "Amedeo Canessa, \"C. & E. Canessa\", Amedeo Canessa",
+        "": "",
+        "geo": {
+            "lat": 40.752273,
+            "lon": -73.979858
+        }
+    },
+    "USA_7": {
+        "ID": "USA_7",
+        "Nazione": "Stati Uniti d'America",
+        "Regione": "Stati Uniti d'America",
+        "Città": "",
+        "Via": "New York",
+        "Civico": "",
+        "ID_entità": "CA_I",
+        "Apertura": "1916",
+        "Chiusura": "1928",
+        "Nome attività": "Amedeo e Ercole Canessa, \"Canessa Gallery\"",
+        "": "",
+        "geo": {
+            "lat": 40.7127281,
+            "lon": -74.0060152
+        }
+    },
+    "USA_8": {
+        "ID": "USA_8",
+        "Nazione": "Stati Uniti d'America",
+        "Regione": "Stati Uniti d'America",
+        "Città": "New York City",
+        "Via": "15 East 47th street",
+        "Civico": "",
+        "ID_entità": "OR",
+        "Apertura": "1900 ca.",
+        "Chiusura": "1970 ca.",
+        "Nome attività": "Luigi e Raimondo Orselli, \"Luigi Orselli\" (succursale)",
+        "": "",
+        "geo": {
+            "lat": 40.7564079,
+            "lon": -73.9773542
+        }
+    },
+    "USA_9": {
+        "ID": "USA_9",
+        "Nazione": "Stati Uniti d'America",
+        "Regione": "Stati Uniti d'America",
+        "Città": "New York City",
+        "Via": "New York",
+        "Civico": "",
+        "ID_entità": "SA_IV",
+        "Apertura": "",
+        "Chiusura": "",
+        "Nome attività": "New York Studio: 55 E. 56th St",
+        "": "",
+        "geo": {
+            "lat": 36.1021436,
+            "lon": -115.1744946
+        }
+    },
+    "USA_10": {
+        "ID": "USA_10",
+        "Nazione": "Stati Uniti d'America",
+        "Regione": "Stati Uniti d'America",
+        "Città": "New York City",
+        "Via": "11 East 52nd Street",
+        "Civico": "",
+        "ID_entità": "LO",
+        "Apertura": "1933",
+        "Chiusura": "1944 ca.",
+        "Nome attività": "Adolph Loewi, \"Adolfo Loewi, Inc.\"",
+        "": "",
+        "geo": {
+            "lat": 40.7595749,
+            "lon": -73.9752552
+        }
+    },
+    "USA_11": {
+        "ID": "USA_11",
+        "Nazione": "Stati Uniti d'America",
+        "Regione": "Stati Uniti d'America",
+        "Città": "Los Angeles",
+        "Via": "Beverly Hills",
+        "Civico": "",
+        "ID_entità": "LO",
+        "Apertura": "1939",
+        "Chiusura": "2003",
+        "Nome attività": "Gabriella Katherine \"Kay\" Loewi e William Robertson, \"Loewi-Robertson, Inc.\"",
+        "": "",
+        "geo": {
+            "lat": 34.0696501,
+            "lon": -118.3963062
+        }
+    },
+    "USA_12": {
+        "ID": "USA_12",
+        "Nazione": "Stati Uniti d'America",
+        "Regione": "Stati Uniti d'America",
+        "Città": "New York",
+        "Via": "East 67th Street",
+        "Civico": "23",
+        "ID_entità": "CO_IV",
+        "Apertura": "2015",
+        "Chiusura": "in attività",
+        "Nome attività": "Colnaghi",
+        "": "",
+        "geo": {
+            "lat": 40.7688568,
+            "lon": -73.9678937
+        }
+    },
+    "USA_13": {
+        "ID": "USA_13",
+        "Nazione": "Stati Uniti d'America",
+        "Regione": "Stati Uniti d'America",
+        "Città": "New York",
+        "Via": "59 W 30th St. ",
+        "Civico": "",
+        "ID_entità": "VE_I",
+        "Apertura": "1922 ca.",
+        "Chiusura": "1930 ca.",
+        "Nome attività": "Gino Sarfatti e Giuseppe Guetta, \"The Venice Art Company\"",
+        "": "",
+        "geo": {
+            "lat": 40.7470437,
+            "lon": -73.9888357
         }
     }
 }
