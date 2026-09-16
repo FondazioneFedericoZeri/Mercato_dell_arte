@@ -216,9 +216,7 @@
         "Collaboratori": {},
         "Eventi": {},
         "Foto preview": "AN_preview",
-        "Foto gallery": [
-            ""
-        ],
+        "Foto gallery": [],
         "Persone": {
             "AN_1": {
                 "ID": "AN_1",
@@ -641,9 +639,7 @@
         "Collaboratori": {},
         "Eventi": {},
         "Foto preview": "AS_preview",
-        "Foto gallery": [
-            ""
-        ],
+        "Foto gallery": [],
         "Persone": {
             "AS_1": {
                 "ID": "AS_1",
@@ -1492,7 +1488,62 @@
                 "Nome Antiquari": "Barozzi"
             }
         },
-        "Eventi": {},
+        "Eventi": {
+            "E_28": {
+                "ID": "E_28",
+                "ID_entità": "BA_V",
+                "ID_persone": "BA_V_1",
+                "Anno": "1893",
+                "Tipologia Evento": "vendita",
+                "Descrizione sintetica": "Vendita degli affreschi di Villa Contarini a Mira",
+                "Descrizione dettagliata": "Gli affreschi di Tiepolo strappati e trasporati su tela da Steffanoni vengono venduti da Barozzi ai coniugi Jacquemart-André. Ancora oggi ornano lo scalone di ingresso dell'omonimo museo parigino"
+            },
+            "E_29": {
+                "ID": "E_29",
+                "ID_entità": "BA_V",
+                "ID_persone": "BA_V_1",
+                "Anno": "1901",
+                "Tipologia Evento": "vendita",
+                "Descrizione sintetica": "Tentativo di vendita degli affreschi tiepoleschi di Palazzo Gradenigo",
+                "Descrizione dettagliata": "Dino Barozzi tenta di vendere gli affreschi di Tiepolo strappati da Palazzo Gradenigo in Campo Santa Giustina a Wilhelm Bode"
+            },
+            "E_30": {
+                "ID": "E_30",
+                "ID_entità": "BA_V",
+                "ID_persone": "BA_V_1",
+                "Anno": "1914",
+                "Tipologia Evento": "onoreficenza",
+                "Descrizione sintetica": "Dino Barozzi cavaliere della Corona d’Italia",
+                "Descrizione dettagliata": "Il Sindaco di Venezia nomina Dino Barozzi cavaliere della Corona d’Italia"
+            },
+            "E_31": {
+                "ID": "E_31",
+                "ID_entità": "BA_V",
+                "ID_persone": "BA_V_1",
+                "Anno": "1919",
+                "Tipologia Evento": "acquisto",
+                "Descrizione sintetica": "Acquisto di palazzo Soranzo van Axel",
+                "Descrizione dettagliata": "Dino Barozzi acquista il lussuoso palazzo tardogotico Soranzo van Axel per farne la propria residenza privata e sede della galleria"
+            },
+            "E_32": {
+                "ID": "E_32",
+                "ID_entità": "BA_V",
+                "ID_persone": "BA_V_1",
+                "Anno": "1923",
+                "Tipologia Evento": "prestito",
+                "Descrizione sintetica": "Prestito di opere alla mostra sul Ritratto veneziano dell'Ottocento",
+                "Descrizione dettagliata": "Barozzi presta alcuni ritratti della sua collezione per la mostra sul ritratto veneziano dell'Ottocento curata da Nino Barbantini a Cà Pesaro"
+            },
+            "E_33": {
+                "ID": "E_33",
+                "ID_entità": "BA_V",
+                "ID_persone": "BA_V_1",
+                "Anno": "1936",
+                "Tipologia Evento": "vendita",
+                "Descrizione sintetica": "Vendita a Vittorio Cini",
+                "Descrizione dettagliata": "Vendita di numerosi mobili e oggetti d'arte applicata al conte Vittorio Cini per il castello di Monselice"
+            }
+        },
         "Foto preview": "BA_V_preview",
         "Foto gallery": [
             "BA_V_img1",
@@ -2444,9 +2495,7 @@
         },
         "Eventi": {},
         "Foto preview": "BR_II_preview",
-        "Foto gallery": [
-            ""
-        ],
+        "Foto gallery": [],
         "Persone": {
             "BR_II_1": {
                 "ID": "BR_II_1",
@@ -2637,7 +2686,7 @@
                 "ID": "E_7",
                 "ID_entità": "CA_I",
                 "ID_persone": "",
-                "Anno": "1904-1925ca",
+                "Anno": "1904-1925",
                 "Tipologia Evento": "pubblicazione",
                 "Descrizione sintetica": "Pubblicazione 'Le Musée. Revue d'art mensuelle'",
                 "Descrizione dettagliata": "Fondazione da parte degli antiquari Canessa, insieme ad Arthur Sambon, della rivista \"Le Musée. Revue d'art mensuelle\", pubblicata fino al 1925"
@@ -3237,7 +3286,35 @@
                 "Nome Antiquari": "Barozzi Carrer"
             }
         },
-        "Eventi": {},
+        "Eventi": {
+            "E_34": {
+                "ID": "E_34",
+                "ID_entità": "CA_IV",
+                "ID_persone": "CA_IV_1 CA_IV_3",
+                "Anno": "1889-1890",
+                "Tipologia Evento": "curatela",
+                "Descrizione sintetica": "Allestimento di palazzo Vendramin Calergi",
+                "Descrizione dettagliata": "Antonio e il figlio Giovan Battista Carrer curano l'allestimento di palazzo Vendramin Calergi con la collezione di arte estremo orientale del principe principe Enrico di Borbone"
+            },
+            "E_35": {
+                "ID": "E_35",
+                "ID_entità": "CA_IV",
+                "ID_persone": "CA_IV_1",
+                "Anno": "1897",
+                "Tipologia Evento": "vendita",
+                "Descrizione sintetica": "Vendita di affreschi tiepoleschi a Wilhelm Bode",
+                "Descrizione dettagliata": "Antonio Carrer vende a Wilhelm Bode ventidue affreschi di Giambattista e Domenico Tiepolo provenienti dalla Stanza dei satiri di palazzo Volpato Panigai a Nervesa"
+            },
+            "E_36": {
+                "ID": "E_36",
+                "ID_entità": "CA_IV",
+                "ID_persone": "CA_IV_1",
+                "Anno": "1937",
+                "Tipologia Evento": "partecipazione a fiera",
+                "Descrizione sintetica": "Partecipazione alla Prima Fiera Nazionale d'Arte Antica",
+                "Descrizione dettagliata": "Antonio Carrer partecipa alla Prima Fiera Nazionale d'Arte Antica organizzata a Cremona nel 1937"
+            }
+        },
         "Foto preview": "CA_IV_preview",
         "Foto gallery": [
             "CA_IV_img1",
@@ -3319,7 +3396,26 @@
                 "Nome Antiquari": "Caretto"
             }
         },
-        "Eventi": {},
+        "Eventi": {
+            "E_70": {
+                "ID": "E_70",
+                "ID_entità": "CA_V",
+                "ID_persone": "CA_V_2",
+                "Anno": "1999",
+                "Tipologia Evento": "mostra",
+                "Descrizione sintetica": "Ut Pictura Ita Visio",
+                "Descrizione dettagliata": "La Galleria Caretto organizza la mostra \"Ut Pictura Ita Visio\" dedicata all'arte fiammingo-olandese"
+            },
+            "E_71": {
+                "ID": "E_71",
+                "ID_entità": "CA_V",
+                "ID_persone": "CA_V_3",
+                "Anno": "2006",
+                "Tipologia Evento": "mostra",
+                "Descrizione sintetica": "Cielo Terra e Acque",
+                "Descrizione dettagliata": "La Galleria Caretto organizza la mostra \"Cielo Terra e Acque\" dedicata all'arte fiammingo-olandese"
+            }
+        },
         "Foto preview": "CA_V_preview",
         "Foto gallery": [
             "CA_V_img1"
@@ -4638,9 +4734,7 @@
             }
         },
         "Foto preview": "DE_preview",
-        "Foto gallery": [
-            ""
-        ],
+        "Foto gallery": [],
         "Persone": {
             "DE_1": {
                 "ID": "DE_1",
@@ -4990,7 +5084,17 @@
                 "Nome Antiquari": "Zabert Sabatello Salamon Longari Caretto Cortinovis Gianetti D'Atri Forti Riccardi Studio d'Arte Palma"
             }
         },
-        "Eventi": {},
+        "Eventi": {
+            "E_73": {
+                "ID": "E_73",
+                "ID_entità": "DI_I",
+                "ID_persone": "DI_I_1",
+                "Anno": "1971",
+                "Tipologia Evento": "pubblicazione",
+                "Descrizione sintetica": "Eugenio Di Castro, “Una vita”",
+                "Descrizione dettagliata": "Eugenio Di Castro pubblica la propria biografia con molti passi dedicati alla sua professione di antiquario"
+            }
+        },
         "Foto preview": "DI_I_preview",
         "Foto gallery": [
             "DI_I_img1",
@@ -5343,9 +5447,7 @@
         "Collaboratori": {},
         "Eventi": {},
         "Foto preview": "FR_preview",
-        "Foto gallery": [
-            ""
-        ],
+        "Foto gallery": [],
         "Persone": {
             "FR_1": {
                 "ID": "FR_1",
@@ -6061,7 +6163,17 @@
                 "Nome Antiquari": "Antonacci-Efrati Apolloni Grandi Studio d'Arte Palma Gianetti"
             }
         },
-        "Eventi": {},
+        "Eventi": {
+            "E_72": {
+                "ID": "E_72",
+                "ID_entità": "GI_I",
+                "ID_persone": "GI_I_1",
+                "Anno": "1991",
+                "Tipologia Evento": "onoreficenza",
+                "Descrizione sintetica": "Maria Antonia Gianetti insignita del titolo di Cavaliere del Lavoro",
+                "Descrizione dettagliata": "Maria Antonia Gianetti prende parte del consiglio del Sindacato Provinciale Mercanti D’arte Antica di Milano. Viene premiata per i 25 anni di attività nel 1991 e viene insignita del titolo di Cavaliere del lavoro"
+            }
+        },
         "Foto preview": "GI_I_preview",
         "Foto gallery": [
             "GI_I_img1",
@@ -6098,7 +6210,35 @@
                 "Nome Antiquari": "Guggenheim Rambaldi"
             }
         },
-        "Eventi": {},
+        "Eventi": {
+            "E_42": {
+                "ID": "E_42",
+                "ID_entità": "GU",
+                "ID_persone": "GU_1",
+                "Anno": "1860",
+                "Tipologia Evento": "inaugurazione / fondazione",
+                "Descrizione sintetica": "Apertura della fabbrica di mobili in stile",
+                "Descrizione dettagliata": "Guggenheim apre una fabbrica di mobili in stile, oggetti d'arredo in bronzo e sculture"
+            },
+            "E_43": {
+                "ID": "E_43",
+                "ID_entità": "GU",
+                "ID_persone": "GU_1",
+                "Anno": "1875",
+                "Tipologia Evento": "donazione",
+                "Descrizione sintetica": "Donazione al Museo Civico di Venezia",
+                "Descrizione dettagliata": "Guggenheim dona al Museo Civico di Venezia (oggi Correr) la più antica vera da pozzo veneziana (VIII secolo)"
+            },
+            "E_44": {
+                "ID": "E_44",
+                "ID_entità": "GU",
+                "ID_persone": "GU_1",
+                "Anno": "1897",
+                "Tipologia Evento": "pubblicazione",
+                "Descrizione sintetica": "Pubblicazione \"Le cornici italiane...\"",
+                "Descrizione dettagliata": "Pubblicazione per i tipi di Hoepli del volume \"Le cornici italiane dalla metà del secolo XV allo scorcio del XVI\" di Michelangelo Guggenheim"
+            }
+        },
         "Foto preview": "GU_preview",
         "Foto gallery": [
             "GU_img1"
@@ -6712,9 +6852,7 @@
         "Collaboratori": {},
         "Eventi": {},
         "Foto preview": "GU-BR_preview",
-        "Foto gallery": [
-            ""
-        ],
+        "Foto gallery": [],
         "Persone": {
             "GU-BR_1": {
                 "ID": "GU-BR_1",
@@ -7987,7 +8125,35 @@
                 "Nome Antiquari": "Loewi"
             }
         },
-        "Eventi": {},
+        "Eventi": {
+            "E_46": {
+                "ID": "E_46",
+                "ID_entità": "LO",
+                "ID_persone": "LO_1",
+                "Anno": "1939",
+                "Tipologia Evento": "vendita",
+                "Descrizione sintetica": "Vendita dello Studiolo Montefeltro di Gubbio",
+                "Descrizione dettagliata": "Loewi vende lo Studiolo di Francesco di Giorgio Martini proveniente dal Palazzo Ducale di Gubbio al Metropolitan Museum di New York"
+            },
+            "E_47": {
+                "ID": "E_47",
+                "ID_entità": "LO",
+                "ID_persone": "LO_1",
+                "Anno": "1935",
+                "Tipologia Evento": "acquisto",
+                "Descrizione sintetica": "Acquisto della \"Burgundian Room\"",
+                "Descrizione dettagliata": "Loewi acquista e installa in Palazzo Nani-Mocenigo la \"Burgundian Room\", una stüa alpina del Cinquecento proveniente da Chiavenna, oggi nelle collezioni del Seattle Art Museum"
+            },
+            "E_48": {
+                "ID": "E_48",
+                "ID_entità": "LO",
+                "ID_persone": "LO_1",
+                "Anno": "1946",
+                "Tipologia Evento": "acquisto",
+                "Descrizione sintetica": "Acquisto della collezione Sangiorgi",
+                "Descrizione dettagliata": "Loewi acquista gran parte della collezione d'arte dell'amico antiquario Giorgio Sangiorgi"
+            }
+        },
         "Foto preview": "LO_preview",
         "Foto gallery": [
             "LO_img1",
@@ -8099,7 +8265,17 @@
                 "Nome Antiquari": "Caretto"
             }
         },
-        "Eventi": {},
+        "Eventi": {
+            "E_69": {
+                "ID": "E_69",
+                "ID_entità": "LO_I",
+                "ID_persone": "LO_I_1",
+                "Anno": "1971",
+                "Tipologia Evento": "mostra",
+                "Descrizione sintetica": "Mostra \"Tre secoli di sculture lignee\"",
+                "Descrizione dettagliata": "Esce il catalogo della mostra \"Tre secoli di sculture lignee\" con prefazione di Enzo Carli, organizzata da Nella Longari al Centro Culturale Pirelli di Milano"
+            }
+        },
         "Foto preview": "LO_I_preview",
         "Foto gallery": [
             "LO_I_img1",
@@ -8766,9 +8942,7 @@
         },
         "Eventi": {},
         "Foto preview": "MO_preview",
-        "Foto gallery": [
-            ""
-        ],
+        "Foto gallery": [],
         "Persone": {
             "MO_1": {
                 "ID": "MO_1",
@@ -8811,9 +8985,7 @@
         "Collaboratori": {},
         "Eventi": {},
         "Foto preview": "MO_I_preview",
-        "Foto gallery": [
-            ""
-        ],
+        "Foto gallery": [],
         "Persone": {
             "MO_I_1": {
                 "ID": "MO_I_1",
@@ -8995,9 +9167,7 @@
         "Collaboratori": {},
         "Eventi": {},
         "Foto preview": "PA_I_preview",
-        "Foto gallery": [
-            ""
-        ],
+        "Foto gallery": [],
         "Persone": {
             "PA_I_1": {
                 "ID": "PA_I_1",
@@ -9112,9 +9282,7 @@
             }
         },
         "Foto preview": "PA_II_preview",
-        "Foto gallery": [
-            ""
-        ],
+        "Foto gallery": [],
         "Persone": {
             "PA_II_1": {
                 "ID": "PA_II_1",
@@ -9335,7 +9503,53 @@
                 "Nome Antiquari": "Pesaro"
             }
         },
-        "Eventi": {},
+        "Eventi": {
+            "E_37": {
+                "ID": "E_37",
+                "ID_entità": "PE",
+                "ID_persone": "PE_1",
+                "Anno": "1913",
+                "Tipologia Evento": "vendita all'asta",
+                "Descrizione sintetica": "Exposition et vente de tableaux de Giovanni Segantini à Saint Moritz ",
+                "Descrizione dettagliata": "Lino Pesaro organizza la prestigiosa vendita di ventitré dipinti di Segantini provenienti dalla collezione Grubicy"
+            },
+            "E_38": {
+                "ID": "E_38",
+                "ID_entità": "PE",
+                "ID_persone": "PE_1",
+                "Anno": "1923",
+                "Tipologia Evento": "mostra",
+                "Descrizione sintetica": "Esposizione \"Sette pittori del Novecento\" presso la Galleria Pesaro",
+                "Descrizione dettagliata": "Lino Pesaro espone con Margherita Sarfatti il nucleo fondativo di pittori che nel 1924 alla Biennale di Venezia si costituirà come gruppo \"Novecento\""
+            },
+            "E_39": {
+                "ID": "E_39",
+                "ID_entità": "PE",
+                "ID_persone": "PE_1",
+                "Anno": "1933",
+                "Tipologia Evento": "mostra",
+                "Descrizione sintetica": "Esposizione \"Omaggio futurista a Umberto Boccioni\" presso la Galleria Pesaro",
+                "Descrizione dettagliata": "Lino Pesaro organizza un'importante mostra dedicata a Boccioni con oltre settanta opere"
+            },
+            "E_40": {
+                "ID": "E_40",
+                "ID_entità": "PE",
+                "ID_persone": "PE_1",
+                "Anno": "1933",
+                "Tipologia Evento": "causa giudiziaria",
+                "Descrizione sintetica": "Causa giudiziaria per vendita di opere d'arte false",
+                "Descrizione dettagliata": "L'imprenditore e collezionista Gaetano Marzotto, suo affezionato cliente, accusa Lino Pesaro di avergli venduto un Raffaello e un Pinturicchio falsi"
+            },
+            "E_41": {
+                "ID": "E_41",
+                "ID_entità": "PE",
+                "ID_persone": "PE_1",
+                "Anno": "1938",
+                "Tipologia Evento": "mostra",
+                "Descrizione sintetica": "Esposizione dei XXXV anni",
+                "Descrizione dettagliata": "Prima di lasciare l'attività e togliersi la vita, Lino Pesaro organizza una retrospettiva sulla sua lunga carriera di mercante d'arte"
+            }
+        },
         "Foto preview": "PE_preview",
         "Foto gallery": [
             "PE_img1",
@@ -9728,9 +9942,7 @@
         },
         "Eventi": {},
         "Foto preview": "PO_II_preview",
-        "Foto gallery": [
-            ""
-        ],
+        "Foto gallery": [],
         "Persone": {
             "PO_II_1": {
                 "ID": "PO_II_1",
@@ -9905,7 +10117,71 @@
                 "Nome Antiquari": "Pollak"
             }
         },
-        "Eventi": {},
+        "Eventi": {
+            "E_49": {
+                "ID": "E_49",
+                "ID_entità": "PO_III",
+                "ID_persone": "PO_III_1",
+                "Anno": "1905",
+                "Tipologia Evento": "pubblicazione",
+                "Descrizione sintetica": "Articolo \"Der rechte Arm des Laokoon\"",
+                "Descrizione dettagliata": "Articolo dedicato al sensazionale ritrovamento del braccio destro originale del Laocoonte vaticano uscito su «Mitteilungen des Deutschen Archäologischen Instituts, Römische Abteilung» "
+            },
+            "E_50": {
+                "ID": "E_50",
+                "ID_entità": "PO_III",
+                "ID_persone": "PO_III_1",
+                "Anno": "1905",
+                "Tipologia Evento": "pubblicazione",
+                "Descrizione sintetica": "Catalogo \"Joseph v. Kopf als Sammler. Beschreibung der von ihm hinterlassenen Sammlung\"",
+                "Descrizione dettagliata": "Pollak cura il catalogo dedicato alla collezione dello scultore Joseph Kopf"
+            },
+            "E_51": {
+                "ID": "E_51",
+                "ID_entità": "PO_III",
+                "ID_persone": "PO_III_1",
+                "Anno": "1906",
+                "Tipologia Evento": "donazione",
+                "Descrizione sintetica": "Donazione a Pio X del braccio destro originale del Laocoonte vaticano",
+                "Descrizione dettagliata": "Pollak per questo gesto è il primo ebreo ad essere insignito della Gran Croce alla Cultura da parte di un pontefice"
+            },
+            "E_52": {
+                "ID": "E_52",
+                "ID_entità": "PO_III",
+                "ID_persone": "PO_III_1",
+                "Anno": "1908",
+                "Tipologia Evento": "vendita",
+                "Descrizione sintetica": "Vendita dell'Athena Stroganoff alla Liebieghaus di Francoforte sul Meno",
+                "Descrizione dettagliata": "Pollak vende con regolare permesso di esportazione la scultura \"Athena Stroganoff\" che suscitò molti malumori tra gli addetti ai lavori"
+            },
+            "E_53": {
+                "ID": "E_53",
+                "ID_entità": "PO_III",
+                "ID_persone": "PO_III_1",
+                "Anno": "1910",
+                "Tipologia Evento": "pubblicazione",
+                "Descrizione sintetica": "Pubblicazione del \"Catalogo del Museo di Scultura Antica. Fondazione Barracco\"",
+                "Descrizione dettagliata": "Pollak pubblica il catalogo della collezione Barracco insieme al suo proprietario, il senatore Giovanni Barracco"
+            },
+            "E_54": {
+                "ID": "E_54",
+                "ID_entità": "PO_III",
+                "ID_persone": "PO_III_1",
+                "Anno": "1912",
+                "Tipologia Evento": "pubblicazione",
+                "Descrizione sintetica": "Pubblicazione di \"Pièces des choix de la collection du Comte Grégoire Stroganoff\"",
+                "Descrizione dettagliata": "Pollak pubblica il catalogo della celebre collezione del conte russo Grigorij pubblicato insieme al bizantinista Antonio Muñoz"
+            },
+            "E_55": {
+                "ID": "E_55",
+                "ID_entità": "PO_III",
+                "ID_persone": "PO_III_1",
+                "Anno": "1922",
+                "Tipologia Evento": "pubblicazione",
+                "Descrizione sintetica": "Pubblicazione della Raccolta Alfredo Barsanti, con prefazione di Guglielmo Bode",
+                "Descrizione dettagliata": "Pollak pubblica il catalogo dei bronzetti rinascimentali della collezione dell'antiquario Alfredo Barsanti con prefazione di Wilhelm von Bode"
+            }
+        },
         "Foto preview": "PO_III_preview",
         "Foto gallery": [
             "PO_III_img1",
@@ -9997,7 +10273,89 @@
                 "Nome Antiquari": "Bacarelli Pratesi"
             }
         },
-        "Eventi": {},
+        "Eventi": {
+            "E_78": {
+                "ID": "E_78",
+                "ID_entità": "PR",
+                "ID_persone": "PR_1",
+                "Anno": "1979",
+                "Tipologia Evento": "pubblicazione",
+                "Descrizione sintetica": "Una raccolta fiorentina di medaglie tra '600 e '700 a cura di Giuseppe Cantelli",
+                "Descrizione dettagliata": "In occasione della prima partecipazione alla Biennale dell'Antiquariato di Firenze, Giovanni Pratesi promuove la pubblicazione del catalogo delle medaglie antiche lì esposte"
+            },
+            "E_79": {
+                "ID": "E_79",
+                "ID_entità": "PR",
+                "ID_persone": "PR_1",
+                "Anno": "1987",
+                "Tipologia Evento": "mostra",
+                "Descrizione sintetica": "Mostra \"Pitture Fiorentine del Seicento\" a Palazzo Ridolfi",
+                "Descrizione dettagliata": "Pratesi organizza  nella sua galleria un'espozione della sua raccolta di dipinti fiorentini del Seicento, in concomitanza  alla mostra sullo stesso tema curata da Mina Gregori a Palazzo Strozzi"
+            },
+            "E_80": {
+                "ID": "E_80",
+                "ID_entità": "PR",
+                "ID_persone": "PR_1",
+                "Anno": "1989",
+                "Tipologia Evento": "vendita",
+                "Descrizione sintetica": "Vendita di trentasei dipinti senesi del Seicento alla Pinacoteca Nazionale di Siena ",
+                "Descrizione dettagliata": "Dopo averla esposto in varie occasioni, Pratesi vende la sua raccolta di dipinti seicenteschi senesi, notificata dalla Soprintendenza, alla Pinacoteca Nazionale di Siena"
+            },
+            "E_81": {
+                "ID": "E_81",
+                "ID_entità": "PR",
+                "ID_persone": "PR_1",
+                "Anno": "1993",
+                "Tipologia Evento": "pubblicazione",
+                "Descrizione sintetica": "Repertorio della Scultura Fiorentina del Sei e Settecento",
+                "Descrizione dettagliata": "Con la consulenza scientifica di Ursula Schlegel e Sandro Bellesi, Pratesi pubblica tre volumi sulla Scultura Fiorentina del Sei e Settecento editi da Umberto Allemandi"
+            },
+            "E_82": {
+                "ID": "E_82",
+                "ID_entità": "PR",
+                "ID_persone": "PR_1",
+                "Anno": "2003",
+                "Tipologia Evento": "pubblicazione",
+                "Descrizione sintetica": "Repertorio della Scultura Fiorentina del Cinquecento",
+                "Descrizione dettagliata": "Dieci anni dopo il primo Repertorio, Pratesi cura un nuovo Repertorio dedicato alla scultura cinquecentesca fiorentina, con la collaborazione di Nicoletta Pons"
+            },
+            "E_83": {
+                "ID": "E_83",
+                "ID_entità": "PR",
+                "ID_persone": "PR_1",
+                "Anno": "2003",
+                "Tipologia Evento": "donazione",
+                "Descrizione sintetica": "Donazione di dodici busti alla Fondazione Cassa di Risparmio in Bologna",
+                "Descrizione dettagliata": "Giovanni Pratesi dona  la raccolta di busti di dame, già esposti alla XXIII edizione del BIAF e oggetto della pubblicazione di Stefano Tumidei \"Dell'eccellenza delle dame di Bologna\", alla Fondazione Cassa di Risparmio"
+            },
+            "E_84": {
+                "ID": "E_84",
+                "ID_entità": "PR",
+                "ID_persone": "PR_1",
+                "Anno": "1987",
+                "Tipologia Evento": "acquisizione",
+                "Descrizione sintetica": "Acquisizione dell'ex oratorio dell'Ospedale Serristori di Figline Valdarno",
+                "Descrizione dettagliata": "Pratesi acquisisce l'ex oratorio dell'Ospedale Serristori di Figline Valdarno per farne la sede espositiva della propria Fondazione "
+            },
+            "E_85": {
+                "ID": "E_85",
+                "ID_entità": "PR",
+                "ID_persone": "PR_1",
+                "Anno": "2011",
+                "Tipologia Evento": "donazione",
+                "Descrizione sintetica": "Donazione alla chiesa di San Francesco di Figline Valdarno",
+                "Descrizione dettagliata": "Pratesi dona alla chiesa di San Francesco, una raccolta di rilievi in terracotta rappresentanti le verie scene dalla Via Crucis realizzate da Antonio Maraini"
+            },
+            "E_86": {
+                "ID": "E_86",
+                "ID_entità": "PR",
+                "ID_persone": "PR_1",
+                "Anno": "2022",
+                "Tipologia Evento": "donazione ",
+                "Descrizione sintetica": "Donazione di un busto di Giovacchino Fortini alla Galleria di Arte Moderna di Palazzo Pitti",
+                "Descrizione dettagliata": "Nel 2008 Pratesi dona  alla Galleria d'Arte Moderna di Palazzo Pitti il busto attribuito da Sandro Bellesi a Giovacchino Fortini, riconoscendo nelle sembianze dell'effigiato quelle del cantante Gaetano Berenstadt"
+            }
+        },
         "Foto preview": "PR_preview",
         "Foto gallery": [
             "PR_img1",
@@ -10094,7 +10452,26 @@
                 "Nome Antiquari": "Rambaldi"
             }
         },
-        "Eventi": {},
+        "Eventi": {
+            "E_74": {
+                "ID": "E_74",
+                "ID_entità": "RA_NEW",
+                "ID_persone": "RA_NEW_1",
+                "Anno": "1906",
+                "Tipologia Evento": "vendita all'asta",
+                "Descrizione sintetica": "Vendita all'asta Gozzadini",
+                "Descrizione dettagliata": "Arturo Rambaldi organizza la vendita all'asta della collezione bolognese Gozzadini"
+            },
+            "E_75": {
+                "ID": "E_75",
+                "ID_entità": "RA_NEW",
+                "ID_persone": "RA_NEW_2",
+                "Anno": "1909",
+                "Tipologia Evento": "vendita all'asta",
+                "Descrizione sintetica": "Vendita all'asta Podestà-Luciardi",
+                "Descrizione dettagliata": "Arturo Rambaldi organizza la vendita all'asta della collezione bolognese Podestà-Luciardi"
+            }
+        },
         "Foto preview": "RA_preview",
         "Foto gallery": [
             "RA_img1",
@@ -10235,7 +10612,17 @@
                 "Nome Antiquari": "Zabert Sabatello Salamon Longari Caretto Cortinovis Gianetti D'Atri Forti Riccardi Studio d'Arte Palma"
             }
         },
-        "Eventi": {},
+        "Eventi": {
+            "E_76": {
+                "ID": "E_76",
+                "ID_entità": "RI",
+                "ID_persone": "RI_1 RI_2",
+                "Anno": "1973",
+                "Tipologia Evento": "inaugurazione / fondazione",
+                "Descrizione sintetica": "Prima edizione della Mostra-Mercato di Antiquariato di Assisi",
+                "Descrizione dettagliata": "I Riccardi di Assisi inaugurano la prima edizione della Mostra-Mercato di Assisi con l'esposizione dei dipinti senesi della collezione Mason Perkins donati al Sacro Convento"
+            }
+        },
         "Foto preview": "RI_preview",
         "Foto gallery": [
             "RI_img1"
@@ -10272,7 +10659,17 @@
         "Link Zeri": "https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=ricchetti&page=1&filtroprovenienza_OA=5829%7C7673",
         "Bibliografia": {},
         "Collaboratori": {},
-        "Eventi": {},
+        "Eventi": {
+            "E_77": {
+                "ID": "E_77",
+                "ID_entità": "RI_I",
+                "ID_persone": "RI_I_2",
+                "Anno": "1899",
+                "Tipologia Evento": "vendita",
+                "Descrizione sintetica": "Vendita della galleria dei Ricchetti alla \"The Venice Art Company\"",
+                "Descrizione dettagliata": "Vendita da parte di David G. Ricchetti dei beni della galleria d'arte e di antichità e di Palazzo Garzoni, sede della stessa, alla \"The Venice Art Company\""
+            }
+        },
         "Foto preview": "RI_I_preview",
         "Foto gallery": [
             "RI_I_img1",
@@ -11471,9 +11868,7 @@
         },
         "Eventi": {},
         "Foto preview": "SA_V_preview",
-        "Foto gallery": [
-            ""
-        ],
+        "Foto gallery": [],
         "Persone": {
             "SA_V_1": {
                 "ID": "SA_V_1",
@@ -11831,7 +12226,44 @@
                 "Nome Antiquari": "Antonio Salvadori"
             }
         },
-        "Eventi": {},
+        "Eventi": {
+            "E_57": {
+                "ID": "E_57",
+                "ID_entità": "SA_VI_NEW",
+                "ID_persone": "SA_VI_NEW_1",
+                "Anno": "1902",
+                "Tipologia Evento": "vendita",
+                "Descrizione sintetica": "Tentata vendita a Wilhelm von Bode ",
+                "Descrizione dettagliata": "Antonio Salvadori tenta di vendere gli affreschi di Gian Battista Tiepolo provenienti da palazzo Calbo Crotta senza successo"
+            },
+            "E_58": {
+                "ID": "E_58",
+                "ID_entità": "SA_VI_NEW",
+                "ID_persone": "SA_VI_NEW_1",
+                "Anno": "1906",
+                "Tipologia Evento": "acquisto",
+                "Descrizione sintetica": "Acquisto dal conte Angelo Duodo",
+                "Descrizione dettagliata": "Antonio Salvadori acquista gli affreschi di villa Tiepolo a Zianigo e tratta con Beatrice Ephrussi de Rothschild per rivenderli"
+            },
+            "E_59": {
+                "ID": "E_59",
+                "ID_entità": "SA_VI_NEW",
+                "ID_persone": "SA_VI_NEW_1",
+                "Anno": "1908",
+                "Tipologia Evento": "vendita",
+                "Descrizione sintetica": "Vendita degli affreschi di villa Tiepolo a Zianigo",
+                "Descrizione dettagliata": "Antonio Salvadori vende al Ministero della Pubblica Istruzione e al Museo Correr 48 affreschi staccati da Villa Tiepolo a Zianigo"
+            },
+            "E_60": {
+                "ID": "E_60",
+                "ID_entità": "SA_VI_NEW",
+                "ID_persone": "SA_VI_NEW_1",
+                "Anno": "1919",
+                "Tipologia Evento": "vendita all'asta",
+                "Descrizione sintetica": "Collaborazione con la Galleria Geri di Milano per la vendita all'asta della collezione di Antonio Dal Zotto, già Giuseppe Piccoli",
+                "Descrizione dettagliata": "La vendita fu organizzata tra agosto e settembre, in tre sedi: palazzo Piccoli a San Polo, palazzo Moro Lin a San Samuele e palazzo Dolfin-Brusà sul rio di Cà Foscari"
+            }
+        },
         "Foto preview": "SA_VI_preview",
         "Foto gallery": [
             "SA_VI_img1",
@@ -11887,7 +12319,17 @@
                 "Nome Antiquari": "Salamon"
             }
         },
-        "Eventi": {},
+        "Eventi": {
+            "E_56": {
+                "ID": "E_56",
+                "ID_entità": "SA_VII",
+                "ID_persone": "SA_VII_6",
+                "Anno": "1983",
+                "Tipologia Evento": "avvio attività",
+                "Descrizione sintetica": "Apertura della casa d'asta Salamon, Agustoni, Algranti",
+                "Descrizione dettagliata": "Harry Salamon apre con Gilberto Algranti e Fabrizio Agustoni una casa d'asta con sede nella chiesa sconsacrata di Sant'Eufemia a Milano"
+            }
+        },
         "Foto preview": "SA_VII_preview",
         "Foto gallery": [
             "SA_VII_img1",
@@ -12794,7 +13236,80 @@
                 "Nome Antiquari": "Steffanoni"
             }
         },
-        "Eventi": {},
+        "Eventi": {
+            "E_61": {
+                "ID": "E_61",
+                "ID_entità": "ST_NEW",
+                "ID_persone": "ST_NEW_1",
+                "Anno": "1878",
+                "Tipologia Evento": "restauro",
+                "Descrizione sintetica": "Restauro nella chiesa di S. Satiro a Milano",
+                "Descrizione dettagliata": "Giuseppe Steffanoni, allievo del restauratore Antonio Zanchi, collabora con lui per il distacco degli affreschi del Bergognone dal transetto destro della chiesa di San Satiro a Milano"
+            },
+            "E_62": {
+                "ID": "E_62",
+                "ID_entità": "ST_NEW",
+                "ID_persone": "ST_NEW_1",
+                "Anno": "1883-1889",
+                "Tipologia Evento": "restauro",
+                "Descrizione sintetica": "Restauro nella cappella di Teodolinda nel Duomo di Monza",
+                "Descrizione dettagliata": "Giuseppe, dopo la morte di Zanchi, porta avanti i lavori di restauro sugli affreschi dei fratelli Zavattari nella cappella di Teodolinda del Duomo di Monza"
+            },
+            "E_63": {
+                "ID": "E_63",
+                "ID_entità": "ST_NEW",
+                "ID_persone": "ST_NEW_1 ST_NEW_2 ST_NEW_3",
+                "Anno": "1893",
+                "Tipologia Evento": "restauro",
+                "Descrizione sintetica": "Distacco di affreschi di Tiepolo",
+                "Descrizione dettagliata": "La ditta Steffanoni si occupa del distacco e trasporto su tela degli affreschi di Giambattista Tiepolo nella villa Contarini a Mira, collaborazione con Dino Barozzi"
+            },
+            "E_64": {
+                "ID": "E_64",
+                "ID_entità": "ST_NEW",
+                "ID_persone": "ST_NEW_1 ST_NEW_2 ST_NEW_3",
+                "Anno": "1897",
+                "Tipologia Evento": "restauro",
+                "Descrizione sintetica": "Distacco di affreschi di Tiepolo",
+                "Descrizione dettagliata": "La ditta Steffanoni si occupa del distacco  e trasporto su tela di ventidue affreschi monocromi su fondo dorato dipinti nel 1754 da Giambattista e Domenico Tiepolo per La stanza dei satiri di palazzo Volpato Panigai a Nervesa della Battaglia, collaborazione con Antonio Carrer"
+            },
+            "E_65": {
+                "ID": "E_65",
+                "ID_entità": "ST_NEW",
+                "ID_persone": "ST_NEW_1",
+                "Anno": "1900",
+                "Tipologia Evento": "restauro",
+                "Descrizione sintetica": "Restauro degli affreschi di Tiepolo a Udine",
+                "Descrizione dettagliata": "Giuseppe Steffanoni restaura gli affreschi di Giambattista Tiepolo nel Palazzo Arcivescovile di Udine"
+            },
+            "E_66": {
+                "ID": "E_66",
+                "ID_entità": "ST_NEW",
+                "ID_persone": "ST_NEW_2",
+                "Anno": "1908-1928",
+                "Tipologia Evento": "restauro",
+                "Descrizione sintetica": "Restauri a dipinti della Pinacoteca Civica di Vicenza",
+                "Descrizione dettagliata": "Franco si occupa del restauro dei dipinti della Pinacoteca civica di Vicenza e di alcuni interventi nella cattedrale di Santa Maria Maggiore di Bergamo"
+            },
+            "E_67": {
+                "ID": "E_67",
+                "ID_entità": "ST_NEW",
+                "ID_persone": "ST_NEW_1 ST_NEW_2 ST_NEW_3",
+                "Anno": "1987",
+                "Tipologia Evento": "chiusura dell’attività",
+                "Descrizione sintetica": "Chiusura della Ditta Steffanoni",
+                "Descrizione dettagliata": "La ditta di restauro Steffanoni chiude definitivamente"
+            },
+            "E_68": {
+                "ID": "E_68",
+                "ID_entità": "ST_NEW",
+                "ID_persone": "ST_NEW_4",
+                "Anno": "2024",
+                "Tipologia Evento": "donazione",
+                "Descrizione sintetica": "Donazione dell'archivio Steffanoni",
+                "Descrizione dettagliata": "Attilio Steffanoni dona l’archivio di famiglia all’Accademia Carrara di Bergamo"
+            }
+        },
         "Foto preview": "ST_NEW_preview",
         "Foto gallery": [
             "ST_NEW_img1"
@@ -13282,9 +13797,7 @@
         },
         "Eventi": {},
         "Foto preview": "VE_preview",
-        "Foto gallery": [
-            ""
-        ],
+        "Foto gallery": [],
         "Persone": {
             "VE_1": {
                 "ID": "VE_1",
@@ -13364,7 +13877,35 @@
         "Link Zeri": "",
         "Bibliografia": {},
         "Collaboratori": {},
-        "Eventi": {},
+        "Eventi": {
+            "E_87": {
+                "ID": "E_87",
+                "ID_entità": "VE_I",
+                "ID_persone": "VE_I_1 VE_I_2",
+                "Anno": "1897",
+                "Tipologia Evento": "acquisto",
+                "Descrizione sintetica": "Acquisto di Palazzo Grimani e collezione Querini",
+                "Descrizione dettagliata": "Acquisto da parte della \"The Venice Art Company\" di Palazzo Grimani di Santa Maria Formosa e di parte della prestigiosa collezione di Antonio Querini"
+            },
+            "E_88": {
+                "ID": "E_88",
+                "ID_entità": "VE_I",
+                "ID_persone": "VE_I_1 VE_I_3",
+                "Anno": "1899",
+                "Tipologia Evento": "acquisto",
+                "Descrizione sintetica": "Acquisto dei beni di Consiglio Ricchetti",
+                "Descrizione dettagliata": "Acquisto da parte della \"The Venice Art Company\" dei beni della galleria d'arte e di antichità \"Consiglio Ricchetti\" e di Palazzo Garzoni da David G. Ricchetti"
+            },
+            "E_89": {
+                "ID": "E_89",
+                "ID_entità": "VE_I",
+                "ID_persone": "VE_I_1 VE_I_4",
+                "Anno": "1922",
+                "Tipologia Evento": "avvio attività",
+                "Descrizione sintetica": "Avvio di attività a New York",
+                "Descrizione dettagliata": "La \"The Venice Art Company\" prende in affitto un locale a New York sbarcando sul mercato americano"
+            }
+        },
         "Foto preview": "VE_I_preview",
         "Foto gallery": [
             "VE_I_img1",
@@ -13515,9 +14056,7 @@
         },
         "Eventi": {},
         "Foto preview": "VI_II_preview",
-        "Foto gallery": [
-            ""
-        ],
+        "Foto gallery": [],
         "Persone": {
             "VI_II_1": {
                 "ID": "VI_II_1",
