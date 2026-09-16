@@ -6,7 +6,7 @@ E_3	CA_I		1896	vendita all'asta	Vendita 'Argenti Cacace'	Vendita degli 'Argenti 
 E_4	SA_IV		1896	vendita all'asta	Vendita Collezione Principe Orsini	Vendita della collezione del Principe Orsini curata dalla Galleria Sangiorgi
 E_5	SA_IV		1901	vendita all'asta	Vendita Collezione Principe Torlonia	Vendita della collezione del Principe Torlonia curata dalla Galleria Sangiorgi
 E_6	CA_I		1903	vendita all'asta	Vendita 'Affreschi di Boscoreale'	Vendita degli 'Affreschi di Boscoreale' da parte degli antiquari Canessa, con catalogo curato da Arthur Sambon
-E_7	CA_I		1904-1925ca	pubblicazione	Pubblicazione 'Le Musée. Revue d'art mensuelle'	Fondazione da parte degli antiquari Canessa, insieme ad Arthur Sambon, della rivista "Le Musée. Revue d'art mensuelle", pubblicata fino al 1925
+E_7	CA_I		1904-1925	pubblicazione	Pubblicazione 'Le Musée. Revue d'art mensuelle'	Fondazione da parte degli antiquari Canessa, insieme ad Arthur Sambon, della rivista "Le Musée. Revue d'art mensuelle", pubblicata fino al 1925
 E_8	JA TA	JA-TA_1 JA-TA_2 JA-TA_3	1905	inaugurazione / fondazione	Inaugurazione Casa di vendite Jandolo & Tavazzi	Creazione della società Casa di vendita Jandolo & Tavazzi, con sede in via del Babuino 96-97, poi responsabile, tra il 1907 e il 1937 di alcune delle vendite italiane più importanti dell'epoca, come quelle degli antiquari Gioacchino Ferroni ed Elia Volpi
 E_9	FE JA-TA SA_IV		1909	vendita all'asta	Vendita Collezione G. Ferroni	Vendita della collezione dell'antiquario Gioacchino Ferroni da parte della Casa di vendita Jandolo & Tavazzi, in collaborazione con la Galleria Sangiorgi
 E_10	VO_I JA-TA		1910	inaugurazione / fondazione	Inaugurazione Palazzo Davanzati	Apertura di Palazzo Davanzati da parte di Elia Volpi e vendita di parte della sua collezione da parte della Casa di vendita Jandolo & Tavazzi a Roma
@@ -44,7 +44,7 @@ E_38	PE	PE_1	1923	mostra	Esposizione "Sette pittori del Novecento" presso la Gal
 E_39	PE	PE_1	1933	mostra	Esposizione "Omaggio futurista a Umberto Boccioni" presso la Galleria Pesaro	Lino Pesaro organizza un'importante mostra dedicata a Boccioni con oltre settanta opere
 E_40	PE	PE_1	1933	causa giudiziaria	Causa giudiziaria per vendita di opere d'arte false	L'imprenditore e collezionista Gaetano Marzotto, suo affezionato cliente, accusa Lino Pesaro di avergli venduto un Raffaello e un Pinturicchio falsi
 E_41	PE	PE_1	1938	mostra	"Esposizione dei XXXV anni"	Prima di lasciare l'attività e togliersi la vita, Lino Pesaro organizza una retrospettiva sulla sua lunga carriera di mercante d'arte
-E_42	GU	GU_1	1860 ca.	inaugurazione / fondazione	Apertura della fabbrica di mobili in stile	Guggenheim apre una fabbrica di mobili in stile, oggetti d'arredo in bronzo e sculture
+E_42	GU	GU_1	1860	inaugurazione / fondazione	Apertura della fabbrica di mobili in stile	Guggenheim apre una fabbrica di mobili in stile, oggetti d'arredo in bronzo e sculture
 E_43	GU	GU_1	1875	donazione	Donazione al Museo Civico di Venezia	Guggenheim dona al Museo Civico di Venezia (oggi Correr) la più antica vera da pozzo veneziana (VIII secolo)
 E_44	GU	GU_1	1897	pubblicazione	Pubblicazione "Le cornici italiane..."	Pubblicazione per i tipi di Hoepli del volume "Le cornici italiane dalla metà del secolo XV allo scorcio del XVI" di Michelangelo Guggenheim
 E_45	GU RA_NEW	GU_1 RA_NEW_1	1913	vendita all'asta	Vendita della collezione Guggenheim	La casa d'asta di Hugo Helbing, in collaborazione con Rambaldi di Bologna, organizza la vendita della collezione di Michelangelo Guggenheim a Palazzo Balbi
@@ -71,7 +71,7 @@ E_64	ST_NEW	ST_NEW_1 ST_NEW_2 ST_NEW_3	1897	restauro	Distacco di affreschi di Ti
 E_65	ST_NEW	ST_NEW_1	1900	restauro	Restauro degli affreschi di Tiepolo a Udine	Giuseppe Steffanoni restaura gli affreschi di Giambattista Tiepolo nel Palazzo Arcivescovile di Udine
 E_66	ST_NEW	ST_NEW_2	1908-1928	restauro	Restauri a dipinti della Pinacoteca Civica di Vicenza	Franco si occupa del restauro dei dipinti della Pinacoteca civica di Vicenza e di alcuni interventi nella cattedrale di Santa Maria Maggiore di Bergamo
 E_67	ST_NEW	ST_NEW_1 ST_NEW_2 ST_NEW_3	1987	chiusura dell’attività	Chiusura della Ditta Steffanoni	La ditta di restauro Steffanoni chiude definitivamente
-E_68	ST_NEW	ST_NEW_4	2024?	donazione	Donazione dell'archivio Steffanoni	Attilio Steffanoni dona l’archivio di famiglia all’Accademia Carrara di Bergamo
+E_68	ST_NEW	ST_NEW_4	2024	donazione	Donazione dell'archivio Steffanoni	Attilio Steffanoni dona l’archivio di famiglia all’Accademia Carrara di Bergamo
 E_69	LO_I	LO_I_1	1971	mostra	Mostra "Tre secoli di sculture lignee"	Esce il catalogo della mostra "Tre secoli di sculture lignee" con prefazione di Enzo Carli, organizzata da Nella Longari al Centro Culturale Pirelli di Milano
 E_70	CA_V	CA_V_2	1999	mostra	Ut Pictura Ita Visio	La Galleria Caretto organizza la mostra "Ut Pictura Ita Visio" dedicata all'arte fiammingo-olandese
 E_71	CA_V	CA_V_3	2006	mostra	Cielo Terra e Acque	La Galleria Caretto organizza la mostra "Cielo Terra e Acque" dedicata all'arte fiammingo-olandese
