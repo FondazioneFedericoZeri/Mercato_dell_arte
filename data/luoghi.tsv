@@ -230,8 +230,8 @@ IT_180	Italia	Lombardia	Milano	via della Spiga	42	SU	2013	in attività	Michele S
 IT_181	Italia	Piemonte	Torino	via dell'Arsenale		CA_V	1937	1950	Luigi e Giorgio Caretto, “Galleria Luigi Caretto”		
 IT_182	Italia	Piemonte	Torino	via Maria Vittoria	11	CA_V	1950	1964	Giorgio Caretto		
 IT_183	Italia	Piemonte	Torino	via Maria Vittoria	10	CA_V	1964	in attività	Giorgio, Patrizia e Luigi Caretto		
-IT_184	Italia	Emilia Romagna	Bologna	via Castiglione	12	CO_V	1954	1992	Guido e Marzio Cortinovis, “Antichità Cortinovis”		
-IT_185	Italia	Emilia Romagna	Bologna	via Castiglione	31	CO_V	1960 ca.	in attività	Guido e Marzio Cortinovis (studio privato)		
+IT_184	Italia	Emilia-Romagna	Bologna	via Castiglione	12	CO_V	1954	1992	Guido e Marzio Cortinovis, “Antichità Cortinovis”		
+IT_185	Italia	Emilia-Romagna	Bologna	via Castiglione	31	CO_V	1960 ca.	in attività	Guido e Marzio Cortinovis (studio privato)		
 IT_186	Italia	Lombardia	Milano	via S. Andrea	11	SU	1926	1945	Rodolfo Subert, “Galleria S. Andrea”		
 IT_187	Italia	Lombardia	Milano	via S. Andrea	11	SU	1926	1945	Rodolfo Subert, “Galleria S. Andrea”		
 IT_188	Italia	Lombardia	Milano	via Fiori Oscuri		GI_I	1940 ca.	1962	Antonia Maria Gianetti		
@@ -241,18 +241,18 @@ IT_191	Italia	Lazio	Roma	via dei Greci		DI_I			Eugenio Di Castro
 IT_192	Italia	Lazio	Roma	via del Babuino	82	DI_I			Eugenio Di Castro		
 IT_193	Italia	Lazio	Roma	via del Babuino	92 a/b	DI_I	1932	1976	Eugenio Di Castro (Palazzo Raffaelli)		
 IT_194	Italia	Lazio	Roma	via Alibert	20-23	DI_I	1976	2006	Angelo Di Castro (Palazzo Raffaelli)		
-IT_195	Italia	Emilia Romagna	Bologna	via Ugo Bassi	87	AN AS	1873	1879	Raffaele Angiolini e Alessandro Ascoli, prima “Alessandro Ascoli e Comp.o”, poi “Angiolini e Ascoli”		
-IT_196	Italia	Emilia Romagna	Bologna	via Barberia	13	AN	1905	1907	Raffaele Angiolini e Alessandro Ranuzzi, “Alessandro Ranuzzi e C.”		
+IT_195	Italia	Emilia-Romagna	Bologna	via Ugo Bassi	87	AN AS	1873	1879	Raffaele Angiolini e Alessandro Ascoli, prima “Alessandro Ascoli e Comp.o”, poi “Angiolini e Ascoli”		
+IT_196	Italia	Emilia-Romagna	Bologna	via Barberia	13	AN	1905	1907	Raffaele Angiolini e Alessandro Ranuzzi, “Alessandro Ranuzzi e C.”		
 IT_197	Italia	Lazio	Roma	via Lima	28	DA	1905	1907	Alberto D'Atri		
 IT_198	Italia	Lazio	Roma	via Panama	102/104	FO_I	1920	1980 ca.	Vittorio Forti (abitazione privata)		
 IT_199	Italia	Lazio	Roma	Piazza Augusto Imperatore		FO_I	1944	1951	Pietro Maria Bardi "Studio d’Arte Palma"		
-IT_200	Italia	Emilia Romagna	Bologna	via Volturno	4/G	MO_I	1901	1901	Aldo Molena		
-IT_201	Italia	Emilia Romagna	Bologna	via Saffi	11	MO_I	1911	1901	Aldo Molena		
-IT_202	Italia	Emilia Romagna	Bologna	via Zamboni	11	MO_I	1910 ca.	1930	Aldo Molena		
-IT_203	Italia	Emilia Romagna	Bologna	via S. Vitale	32	MO_I	1930	1933	Aldo Molena (abitazione privata)		
-IT_204	Italia	Emilia Romagna	Bologna	via S. Vitale	40	MO_I	1930 ca.	1936	Aldo Molena		
-IT_205	Italia	Emilia Romagna	Bologna	Strada Maggiore	15	MO_I	1936 ca.	1946	Aldo Molena		
-IT_206	Italia	Emilia Romagna	Bologna	via Stallatici	4/A	PI_NEW	1897	1946	Cesare Pini		
+IT_200	Italia	Emilia-Romagna	Bologna	via Volturno	4/G	MO_I	1901	1901	Aldo Molena		
+IT_201	Italia	Emilia-Romagna	Bologna	via Saffi	11	MO_I	1911	1901	Aldo Molena		
+IT_202	Italia	Emilia-Romagna	Bologna	via Zamboni	11	MO_I	1910 ca.	1930	Aldo Molena		
+IT_203	Italia	Emilia-Romagna	Bologna	via S. Vitale	32	MO_I	1930	1933	Aldo Molena (abitazione privata)		
+IT_204	Italia	Emilia-Romagna	Bologna	via S. Vitale	40	MO_I	1930 ca.	1936	Aldo Molena		
+IT_205	Italia	Emilia-Romagna	Bologna	Strada Maggiore	15	MO_I	1936 ca.	1946	Aldo Molena		
+IT_206	Italia	Emilia-Romagna	Bologna	via Stallatici	4/A	PI_NEW	1897	1946	Cesare Pini		
 IT_207	Italia	Umbria	Assisi	Piazza S. Chiara	3/B	RI	1962	2017	Ennio e Piero Riccardi, "Riccardi Antichità"		
 IT_208	Italia	Veneto	Venezia	Cannaregio, corte Erizzo	2187	RI_I	1847	1882	Consiglio Ricchetti, "Galleria d'arte e di antichità" (Palazzo Marcello)		
 IT_209	Italia	Veneto	Venezia	Cannaregio		RI_I	1877	1890 ca.	Consiglio con David G. e Mazzo Ricchetti (dal 1880), "Galleria d'arte e di antichità" (Palazzo Barbarigo)		

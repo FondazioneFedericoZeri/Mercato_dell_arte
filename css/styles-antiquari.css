@@ -729,3 +729,30 @@ body {
         font-size: 20px; /* Ridimensiona le icone */
     }
 }
+
+/* ─────────────────────────────────────────────────────────
+   Riepilogo dell'elenco e conteggi dei gruppi
+   (scritti da script/antiquari_search.js)
+   ───────────────────────────────────────────────────────── */
+
+.riepilogo-elenco {
+    margin: 6px 0 0;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #7a7a7a;
+    max-width: 640px;
+}
+
+.riepilogo-elenco:empty {
+    display: none;
+}
+
+/* Numero accanto al titolo di ogni gruppo (lettera o area) */
+.conteggio-gruppo {
+    margin-left: 12px;
+    font-size: 0.55em;
+    font-weight: 400;
+    color: #9a9a9a;
+    vertical-align: middle;
+    letter-spacing: .02em;
+}

@@ -17,30 +17,60 @@ caricaEntita(function (json) {
     entities_json = json;
 });
 
-var cmp_geography = function(k1, k2){
+/* Ordine dei gruppi per luogo: prima le aree piu' documentate.
+   Il comparatore precedente finiva con "return k1 > k2", che restituisce
+   vero/falso invece di un numero: Array.sort ha bisogno di un valore
+   negativo per spostare un elemento in su e non lo riceveva mai, quindi
+   l'ordine risultava di fatto casuale e la lista di regioni scritta a mano
+   qui sopra non veniva mai applicata. */
+var cmp_per_numero = function (gruppi) {
+    return function (k1, k2) {
+        var n1 = Object.keys(gruppi[k1]).length;
+        var n2 = Object.keys(gruppi[k2]).length;
+        if (n1 !== n2) return n2 - n1;                 // piu' numerose prima
+        return k1.localeCompare(k2, "it");             // a parita', alfabetico
+    };
+};
 
-    regioni = ["Toscana", "Liguria", "Piemonte", "Lombardia", "Veneto",
-        "Friuli-Venezia Giulia", "Trentino-Alto Adige", "Emilia-Romagna", "Lazio", "Marche",
-        "Valle d'Aosta", "Umbria", "Abruzzo", "Molise", "Puglia",
-        "Campania", "Calabria", "Basilicata", "Sicilia", "Sardegna"]
 
-    if (!regioni.includes(k1)) {
-        if (!regioni.includes(k2)) {
-            return k1 > k2 ? 1 : -1;
-        }
-        return 1;
+
+
+/* Riga sopra l'elenco: dice quante schede si stanno vedendo e con che
+   criterio sono ordinate. Serve perche' i due ordinamenti non sono
+   confrontabili: per nome c'e' una scheda per antiquario, per luogo un
+   antiquario con sedi in piu' aree compare in ciascuna, quindi il totale
+   mostrato supera il numero di antiquari. */
+var ricerca_attiva = null;   // insieme filtrato dalla ricerca, o null
+
+function aggiorna_riepilogo(modo, n_gruppi, n_schede, n_antiquari) {
+    var el = document.getElementById('riepilogo-elenco');
+    if (!el) return;
+    var testo;
+    if (modo === 'nome') {
+        testo = n_antiquari + (n_antiquari === 1 ? ' antiquario' : ' antiquari')
+              + ', in ordine alfabetico.';
+    } else {
+        testo = n_schede + ' schede in ' + n_gruppi
+              + (n_gruppi === 1 ? ' area' : ' aree')
+              + ', dalla pi\u00f9 documentata alla meno. Chi ha avuto sedi in '
+              + 'pi\u00f9 aree compare in ciascuna, perci\u00f2 il totale supera i '
+              + n_antiquari + ' antiquari.';
     }
-    if (!regioni.includes(k2)) {
-        return -1;
-    }
-
-    return k1 > k2
+    if (ricerca_attiva) testo = 'Risultati della ricerca: ' + testo;
+    el.textContent = testo;
 }
 
 var sort_alphabetically = function (refined_entities) {
 
-    // fix: aggiunto argomento e check su di esso
-    const working_json = refined_entities || entities_json;    // se fornita lista alternativa, usa la lista
+    // Gli handler dei link passavano qui l'oggetto Event del clic, che essendo
+    // "truthy" veniva scambiato per la lista di entita' e mandava la funzione in
+    // errore: si accetta solo un oggetto che sia davvero una lista di entita'.
+    if (refined_entities instanceof Event || !(refined_entities instanceof Object)) {
+        refined_entities = null;
+    }
+    // Senza argomento si riusa il filtro di ricerca in corso, se c'e': cambiare
+    // ordinamento non deve far ricomparire gli antiquari esclusi dalla ricerca.
+    const working_json = refined_entities || ricerca_attiva || entities_json;
     let entities_list = {}
 
     for (const entita of Object.keys(working_json)) {
@@ -64,6 +94,10 @@ var sort_alphabetically = function (refined_entities) {
         const h2 = document.createElement('h2');
         h2.classList = "letter"
         h2.appendChild(document.createTextNode(letter));
+        const conta = document.createElement('span');
+        conta.className = 'conteggio-gruppo';
+        conta.textContent = Object.keys(entities_list[letter]).length;
+        h2.appendChild(conta);
         cardSection.appendChild(h2)
 
 
@@ -136,13 +170,21 @@ var sort_alphabetically = function (refined_entities) {
         cardSection.appendChild(card_container)
 
     }
+
+    aggiorna_riepilogo('nome', Object.keys(entities_list).length,
+                       Object.keys(working_json).length,
+                       Object.keys(working_json).length);
 }
 
 var sort_geographically = function () {
+    // Come sopra: si parte dal filtro di ricerca in corso, se c'e'. Prima
+    // questa funzione leggeva sempre l'elenco completo, quindi passando a
+    // "luogo" la ricerca dell'utente veniva silenziosamente annullata.
+    var sorgente = ricerca_attiva || entities_json;
     var entities_list = {}
-    for (ent in entities_json) {
+    for (ent in sorgente) {
         var ent_id = ent;
-        var ent_dict = entities_json[ent];
+        var ent_dict = sorgente[ent];
         var regioni = new Set();
 
         var persone = ent_dict["Persone"];
@@ -162,7 +204,7 @@ var sort_geographically = function () {
         }
     }
     var keys = Object.keys(entities_list);
-    var sorted_keys = Array.from(keys).sort(cmp_geography);
+    var sorted_keys = Array.from(keys).sort(cmp_per_numero(entities_list));
 
     document.getElementById('cards-section').innerHTML = '';
     const div = document.getElementById('cards-section');
@@ -171,6 +213,10 @@ var sort_geographically = function () {
         const h2 = document.createElement('h2');
         h2.classList = "letter"
         h2.appendChild(document.createTextNode(regione));
+        const conta = document.createElement('span');
+        conta.className = 'conteggio-gruppo';
+        conta.textContent = Object.keys(entities_list[regione]).length;
+        h2.appendChild(conta);
         div.appendChild(h2)
 
 
@@ -224,6 +270,11 @@ var sort_geographically = function () {
         div.appendChild(card_container)
 
     }
+    var n_schede = sorted_keys.reduce(function (t, r) {
+        return t + Object.keys(entities_list[r]).length;
+    }, 0);
+    aggiorna_riepilogo('luogo', sorted_keys.length, n_schede, Object.keys(sorgente).length);
+
 }
 
 
@@ -231,10 +282,12 @@ var sort_geographically = function () {
 $(document).ready(function(){
     sort_alphabetically();
 
-    $("#cognome").click(sort_alphabetically);
-    $("#luogo").click(sort_geographically);
-    $("#btn-luogo").click(sort_geographically);
-    $("#btn-cognome").click(sort_alphabetically);
+    // Senza la funzione anonima jQuery passerebbe l'oggetto Event come primo
+    // argomento, che sort_alphabetically scambierebbe per la lista di entita'.
+    $("#cognome").click(function () { sort_alphabetically(); });
+    $("#luogo").click(function () { sort_geographically(); });
+    $("#btn-luogo").click(function () { sort_geographically(); });
+    $("#btn-cognome").click(function () { sort_alphabetically(); });
 
 });
 
@@ -277,10 +330,12 @@ var performSearch = function (searchValue = "") {
             }
         }
 
-        sort_alphabetically(filteredEntities);  // invia la lista modificata di entità alla funzione
+        ricerca_attiva = filteredEntities;     // resta valido cambiando ordinamento
+        sort_alphabetically(filteredEntities);
 
     } else {
-        sort_alphabetically();  // la funzione non riceve la lista modificata e dovrebbe utilizzare la lista originale
+        ricerca_attiva = null;                 // ricerca svuotata: si torna a tutti
+        sort_alphabetically();
     }
 };
 
