@@ -157,19 +157,25 @@ document.addEventListener("DOMContentLoaded", function () {
       n.el = el("circle", {
         "class": "pr-nodo " + (n.tipo === "ent" ? "pr-ent" : (n.ponte ? "pr-ponte" : "pr-col")),
         "r": n.r,
+        "data-ent": n.id,
         "tabindex": n.tipo === "ent" ? "0" : null
       });
       if (n.tipo !== "ent") n.el.removeAttribute("tabindex");
       gNodi.appendChild(n.el);
     });
     lista.filter(function (n) { return n.tipo === "ent"; }).forEach(function (n) {
-      n.txt = el("text", { "class": "pr-etichetta", "text-anchor": "middle" });
+      n.txt = el("text", { "class": "pr-etichetta", "text-anchor": "middle", "data-ent": n.id });
       n.txt.textContent = n.label;
       gNodi.appendChild(n.txt);
     });
 
     // ---- 6. simulazione a forze ----
     var alpha = 1;
+    var hub = lista.filter(function (n) { return n.tipo === "ent"; });
+    // Distanza minima garantita fra due hub, in unità del viewBox (620x420).
+    // Sotto questa soglia i due ciuffi di collaboratori si sovrappongono.
+    var DIST_MIN_HUB = 118;
+
     function passo() {
       var i, j;
       for (i = 0; i < lista.length; i++) {
@@ -178,9 +184,15 @@ document.addEventListener("DOMContentLoaded", function () {
           var b = lista[j];
           var dx = b.x - a.x, dy = b.y - a.y;
           var d2 = dx * dx + dy * dy || 0.01;
-          if (d2 > 26000) continue; // lontani: si ignorano
+          var fraHub = a.tipo === "ent" && b.tipo === "ent";
+          // I due nodi lontani si ignorano, per non fare calcoli inutili. Gli
+          // hub però si respingono a QUALSIASI distanza: sono solo 9 (36 coppie,
+          // costo trascurabile) e devono restare ben separati, altrimenti i loro
+          // raggi di collaboratori si intrecciano e il grafo diventa illeggibile.
+          if (!fraHub && d2 > 26000) continue;
           var d = Math.sqrt(d2);
-          var f = (a.tipo === "ent" || b.tipo === "ent" ? 560 : 210) / d2;
+          var forza = fraHub ? 5200 : (a.tipo === "ent" || b.tipo === "ent" ? 560 : 210);
+          var f = forza / d2;
           var fx = dx / d * f, fy = dy / d * f;
           a.vx -= fx; a.vy -= fy; b.vx += fx; b.vy += fy;
         }
@@ -198,6 +210,23 @@ document.addEventListener("DOMContentLoaded", function () {
         n.x += n.vx * alpha; n.y += n.vy * alpha;
         n.vx *= 0.82; n.vy *= 0.82;
       });
+
+      // Vincolo rigido: se due hub sono comunque finiti troppo vicini, li
+      // allontano a mano. La repulsione da sola può lasciarli incastrati in
+      // una posizione di equilibrio troppo stretta; questo lo impedisce.
+      for (i = 0; i < hub.length; i++) {
+        for (j = i + 1; j < hub.length; j++) {
+          var A = hub[i], B = hub[j];
+          var hx = B.x - A.x, hy = B.y - A.y;
+          var hd = Math.sqrt(hx * hx + hy * hy) || 0.01;
+          if (hd < DIST_MIN_HUB) {
+            var spinta = (DIST_MIN_HUB - hd) / 2;
+            var ux = hx / hd, uy = hy / hd;
+            A.x -= ux * spinta; A.y -= uy * spinta;
+            B.x += ux * spinta; B.y += uy * spinta;
+          }
+        }
+      }
     }
 
     // Inquadra il grafo nel riquadro: riempie sempre lo spazio disponibile,
@@ -218,21 +247,28 @@ document.addEventListener("DOMContentLoaded", function () {
       lista.forEach(function (n) { n.px = n.x * s + ox; n.py = n.y * s + oy; });
     }
 
-    // Scosta le etichette che si sovrappongono.
+    // Posiziona le etichette degli hub. Ognuna resta SEMPRE attaccata al
+    // proprio nodo: sopra di default, sotto se sopra è già occupato. La
+    // versione precedente, quando due etichette si scontravano, spingeva la
+    // seconda sempre più in basso, e poteva finire accanto al nodo sbagliato.
     function etichette() {
-      var labs = lista.filter(function (n) { return n.txt; })
-        .map(function (n) { return { n: n, x: n.px, y: n.py - n.r - 7 }; })
-        .sort(function (a, b) { return a.y - b.y; });
-      for (var i = 0; i < labs.length; i++) {
-        for (var j = 0; j < i; j++) {
-          if (Math.abs(labs[i].x - labs[j].x) < 78 && Math.abs(labs[i].y - labs[j].y) < 14) {
-            labs[i].y = labs[j].y + 14;
-          }
-        }
-        labs[i].y = Math.max(11, Math.min(H - 4, labs[i].y));
-        labs[i].n.txt.setAttribute("x", labs[i].x.toFixed(1));
-        labs[i].n.txt.setAttribute("y", labs[i].y.toFixed(1));
+      var poste = [];
+      function libera(x, y) {
+        return poste.every(function (p) {
+          return Math.abs(p.x - x) >= 78 || Math.abs(p.y - y) >= 14;
+        });
       }
+      lista.filter(function (n) { return n.txt; })
+        .sort(function (a, b) { return a.py - b.py; })
+        .forEach(function (n) {
+          var sopra = n.py - n.r - 7;
+          var sotto = n.py + n.r + 14;
+          var y = libera(n.px, sopra) ? sopra : (libera(n.px, sotto) ? sotto : sopra);
+          y = Math.max(11, Math.min(H - 4, y));
+          poste.push({ x: n.px, y: y });
+          n.txt.setAttribute("x", n.px.toFixed(1));
+          n.txt.setAttribute("y", y.toFixed(1));
+        });
     }
 
     function disegna() {

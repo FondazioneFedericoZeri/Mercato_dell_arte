@@ -12,6 +12,12 @@
 document.addEventListener("DOMContentLoaded", function () {
   "use strict";
 
+  // Etichetta di un decennio come intervallo esplicito: 1890 -> "1890-1899".
+  // Prima si usava la forma inglese "1890s", che in italiano non si scrive.
+  function decennio(d) {
+    return d + "-" + (d + 9);
+  }
+
   var EVENTI_URL = "https://raw.githubusercontent.com/FondazioneFedericoZeri/Mercato_dell_arte/main/json/eventi.json";
   var ENTITA_URL = "https://raw.githubusercontent.com/FondazioneFedericoZeri/Mercato_dell_arte/main/json/entit%C3%A0.json";
 
@@ -213,7 +219,7 @@ document.addEventListener("DOMContentLoaded", function () {
         var byCat = {};
         d.events.forEach(function (e) { byCat[e.category] = (byCat[e.category] || 0) + 1; });
         var decadeTotal = focusCategory ? (byCat[focusCategory] || 0) : d.events.length;
-        col.setAttribute("aria-label", d.decade + "s, " + decadeTotal + " eventi" + (focusCategory ? " (" + CAT_LABEL[focusCategory] + ")" : ""));
+        col.setAttribute("aria-label", decennio(d.decade) + ", " + decadeTotal + " eventi" + (focusCategory ? " (" + CAT_LABEL[focusCategory] + ")" : ""));
         var pxPerEvent = maxCount ? (160 / maxCount) : 0;
 
         var catsToDraw = focusCategory ? [[focusCategory, CAT_LABEL[focusCategory]]] : CATS;
@@ -231,7 +237,7 @@ document.addEventListener("DOMContentLoaded", function () {
             strong.textContent = CAT_LABEL[key] + " — " + n;
             var sub = document.createElement("div");
             sub.className = "ed-tip-sub";
-            sub.textContent = d.decade + "s";
+            sub.textContent = decennio(d.decade);
             tip.appendChild(strong); tip.appendChild(sub);
             tip.style.left = e.clientX + "px";
             tip.style.top = e.clientY + "px";
@@ -253,7 +259,7 @@ document.addEventListener("DOMContentLoaded", function () {
           if (e.target !== col) return;
           tip.innerHTML = "";
           var strong = document.createElement("div");
-          strong.textContent = d.decade + "s";
+          strong.textContent = decennio(d.decade);
           var sub = document.createElement("div");
           sub.className = "ed-tip-sub";
           sub.textContent = decadeTotal + " eventi";

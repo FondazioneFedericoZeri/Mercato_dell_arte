@@ -308,6 +308,8 @@ nav ul li a:hover {
 /* inizio della sezione successiva */
 
 #map {
+    background-color: #fff;
+    /* Sezione dispari: visual a sinistra, testo a destra, fondo bianco */
     display: flex;
     /* Usa flexbox per allineare gli elementi */
     align-items: center;
@@ -418,7 +420,10 @@ nav ul li a:hover {
     --ep-cat-donazioni:     #E86040;
     --ep-cat-altro:         #6e519d;
     --ep-cat-acquisizioni:  #EB7055;
+    background-color: #f8f8f8;
+    /* Sezione pari: visual a destra, testo a sinistra, fondo grigio */
     display: flex;
+    flex-direction: row-reverse;
     align-items: center;
     justify-content: flex-end;
     padding: 40px 20px;
@@ -570,21 +575,40 @@ nav ul li a:hover {
 
 /* inizio della sezione parole chiave */
 
+/* ═════════════════════════════════════════════════════════
+   ALTERNANZA DELLE SEZIONI DELLA HOME
+   Dopo la fascia blu del contatore le quattro sezioni si
+   alternano, una immagine e un testo per riga:
+
+     1. #map              visual SX · testo DX · fondo bianco
+     2. #eventi-preview   visual DX · testo SX · fondo grigio
+     3. #key-people       visual SX · testo DX · fondo bianco
+     4. #biblio-vettoriale visual DX · testo SX · fondo grigio
+
+   Regola unica: in tutte e quattro il visual viene PRIMA del
+   testo nell'HTML, quindi di base sta a sinistra. Le sezioni
+   pari ribaltano le colonne con flex-direction: row-reverse e
+   prendono il fondo grigio. Per aggiungere una quinta sezione
+   basta continuare l'alternanza: dispari come la 3, pari come
+   la 4. Su mobile l'alternanza decade e il testo va sempre
+   prima del visual (vedi la media query in fondo al file).
+   ═════════════════════════════════════════════════════════ */
+
 #key-people {
     padding: 80px 70px;
     /* Margini superiori e laterali */
     padding-bottom: 60px;
-    background-color: #f8f8f8;
-    /* Colore di sfondo grigio chiaro */
+    background-color: #fff;
+    /* Sezione dispari: fondo bianco */
     display: flex;
     justify-content: space-between;
     /* Spazia gli elementi a sinistra e a destra */
     align-items: center;
-    /* Centra verticalmente testo e rete */
+    /* Centra verticalmente rete e testo */
     gap: 40px;
 }
 
-#key-people .left-key-content {
+#key-people .key-people-text {
     text-align: left;
     /* Allinea il contenuto a sinistra */
     max-width: 550px;
@@ -878,6 +902,8 @@ nav ul li a:hover {
 
 /* inizio della sezione bibliografia SVG  */
 #biblio-vettoriale {
+    background-color: #f8f8f8;
+    /* Sezione pari: visual a destra, testo a sinistra, fondo grigio */
     padding: 60px 150px;
     /* Margini superiori e laterali */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -888,6 +914,8 @@ nav ul li a:hover {
 
 .biblio-container {
     display: flex;
+    flex-direction: row-reverse;
+    /* Ribalta le colonne: l'SVG va a destra, il testo a sinistra */
     justify-content: space-between;
     /* Spazia le due colonne */
     align-items: center;
@@ -1120,10 +1148,12 @@ footer img {
         padding:40px;
         padding-bottom: 0;
         background-color: #fff;
-        flex-direction: column;
+        /* Come in #eventi-preview: nell'HTML il visual viene prima, qui si
+           ribalta la colonna così sul telefono il testo resta in cima. */
+        flex-direction: column-reverse;
         gap: 24px;
     }
-    #key-people .left-key-content{
+    #key-people .key-people-text{
         margin-left: 0;
         padding:0;
         text-align: center;

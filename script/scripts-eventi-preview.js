@@ -12,6 +12,13 @@
 document.addEventListener("DOMContentLoaded", function () {
   "use strict";
 
+
+  // Etichetta di un decennio come intervallo esplicito: 1890 -> "1890-1899".
+  // Prima si usava la forma inglese "1890s", che in italiano non si scrive.
+  function decennio(d) {
+    return d + "-" + (d + 9);
+  }
+
   var root = document.getElementById("eventi-preview");
   if (!root) return; // sezione non presente in questa pagina
 
@@ -118,7 +125,7 @@ document.addEventListener("DOMContentLoaded", function () {
       col.addEventListener("mousemove", function (e) {
         tip.innerHTML = "";
         var strong = document.createElement("div");
-        strong.textContent = dd.decade + "s";
+        strong.textContent = decennio(dd.decade);
         var sub = document.createElement("div");
         sub.className = "ep-tip-sub";
         sub.textContent = total + (total === 1 ? " evento" : " eventi");
