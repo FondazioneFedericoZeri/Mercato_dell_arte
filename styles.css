@@ -565,6 +565,10 @@ nav ul li a:hover {
     border-radius: 5px;
     transition: background-color 0.3s ease, color 0.3s ease;
     display: inline-block;
+    /* Riduce lo stacco dal paragrafo: senza questa riga vale il margine di
+       40px di .btn che, sommato ai 30px sotto al paragrafo, dava 70px di
+       vuoto (il piu' largo della home). Qui il totale scende a 44px. */
+    margin-top: 14px;
 }
 
 #eventi-preview .btn:hover {
