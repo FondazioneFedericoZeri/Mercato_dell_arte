@@ -1,17 +1,21 @@
-"""Generates html/persone.html from the three source datasets that feed it:
+"""Generates html/persone.html from the three source datasets che lo alimentano:
 data/persone.tsv (singoli professionisti legati a un'entità antiquaria),
 data/collaboratori.tsv (fotografi, restauratori, storici dell'arte, ecc.) e
 data/compravendite.tsv (clienti).
 
-Prima di questo script la pagina era scritta e aggiornata a mano: restava
-sistematicamente indietro rispetto ai dati man mano che venivano aggiunte
-nuove persone, collaboratori o compravendite. Ora viene rigenerata da zero
-a ogni run, con lo stesso markup/CSS/JS (script/persone.js) della versione
-precedente, cosi' i tooltip continuano a funzionare senza modifiche.
+La pagina e' un'app di ricerca/filtro lato client: questo script produce solo
+i dati (un array JSON con un oggetto per persona, per ruolo: antiquario /
+collaboratore / cliente) incorporati in html/persone.html dentro
+<script id="persone-data" type="application/json">; tutta la logica di
+ricerca, filtro per tipologia ed elenco a tre colonne vive in
+script/persone.js e nel CSS in css/persone.css, che NON vengono toccati da
+questo script. Ad ogni run la pagina viene rigenerata da zero, cosi' i nuovi
+dati compaiono automaticamente senza bisogno di aggiornare l'HTML a mano.
 """
 
 import csv
 import html
+import json
 import pathlib
 
 
@@ -30,35 +34,19 @@ def esc(s):
     return html.escape(s or "", quote=False)
 
 
-def entity_link(ent_id, ent_name):
-    return f'<a href="../html/dettagli/dettaglio_{esc(ent_id)}.html">{esc(ent_name)}</a>'
+def norm_morte(morte):
+    """Ripulisce il campo Morte prima di metterlo nei dati JSON.
 
-
-def join_it(items):
-    """Italian list join: 'a, b e c.' (single item: 'a.')."""
-    items = [i for i in items if i]
-    if not items:
-        return ""
-    if len(items) == 1:
-        return items[0] + "."
-    return ", ".join(items[:-1]) + " e " + items[-1] + "."
-
-
-def format_dates(nascita, morte):
-    n = (nascita or "").strip()
+    In alcune righe "Morte" contiene il testo letterale "in vita" invece di
+    restare vuoto: lo script/persone.js che genera l'etichetta "1836–1922"
+    lato client si aspetta un anno o una stringa vuota, quindi "in vita" va
+    normalizzato a stringa vuota qui (altrimenti comparirebbe come se fosse
+    un anno di morte).
+    """
     m = (morte or "").strip()
-    # In alcune righe "Morte" contiene il testo letterale "in vita" invece di
-    # restare vuoto: va reso come "(1957-)", non come il fuorviante "(1957-in
-    # vita)" (che sembrerebbe un anno di morte).
     if m.lower() == "in vita":
-        m = ""
-    if not n and not m:
         return ""
-    if n and m:
-        return f" ({n}-{m})"
-    if n:
-        return f" ({n}-)"
-    return f" (-{m})"
+    return m
 
 
 # Particelle che, quando precedono l'ultima parola, fanno parte del
@@ -108,7 +96,8 @@ def surname_key(full_name):
     return " ".join(key_words).lower()
 
 
-def build_persone_section(entita_by_id):
+def build_persone_data(entita_by_id):
+    """Antiquari: una entità sola a testa (persone.tsv non ha righe multi-entità)."""
     persone = load_tsv("data/persone.tsv")
     items = []
     for p in persone:
@@ -118,24 +107,21 @@ def build_persone_section(entita_by_id):
         name = p.get("Nome Persona", "")
         if not name:
             # Riga senza nome persona (es. compilata solo con il nome
-            # dell'attività): non c'è nulla da mostrare come link.
+            # dell'attività): non c'è nulla da mostrare come voce.
             continue
-        dates = format_dates(p.get("Nascita", ""), p.get("Morte", ""))
         items.append({
-            "sort_key": surname_key(name),
-            "html": f'<a href="../html/dettagli/dettaglio_{esc(ent_id)}.html" class="link">{esc(name)}{dates}</a>',
+            "role": "antiquario",
+            "name": name,
+            "sort": surname_key(name),
+            "nascita": (p.get("Nascita", "") or "").strip(),
+            "morte": norm_morte(p.get("Morte", "")),
+            "entity_id": ent_id,
+            "entity_name": entita_by_id[ent_id],
         })
-    items.sort(key=lambda x: x["sort_key"])
-
-    lines = ['            <div class="column">', "                <h2>Antiquari</h2>"]
-    for it in items:
-        lines.append("                " + it["html"])
-    lines.append("")
-    lines.append("            </div>")
-    return "\n".join(lines), len(items)
+    return items
 
 
-def build_collaboratori_section(entita_by_id):
+def build_collaboratori_data(entita_by_id):
     rows = load_tsv("data/collaboratori.tsv")
 
     # Stessa persona puo' comparire su piu' righe (aggiunte in momenti
@@ -162,39 +148,17 @@ def build_collaboratori_section(entita_by_id):
         nome, cognome = key
         entry = merged[key]
         display = (nome + " " + cognome).strip() if nome else cognome
-        tipologia = " / ".join(entry["tipologie"])
-        label = f"{esc(display)}" + (f" ({esc(tipologia)})" if tipologia else "")
         items.append({
-            "sort_key": (cognome or display).lower(),
-            "label": label,
-            "entities": entry["entities"],
+            "role": "collaboratore",
+            "name": display,
+            "sort": (cognome or display).lower(),
+            "tipologia": entry["tipologie"],
+            "entities": [{"id": e, "name": entita_by_id[e]} for e in entry["entities"]],
         })
-    items.sort(key=lambda x: x["sort_key"])
-
-    p_lines = []
-    div_lines = []
-    for i, it in enumerate(items, start=1):
-        tid = f"tooltip-content-c{i}"
-        p_lines.append(f'                <p class="collaborator" data-tooltip-content="#{tid}">{it["label"]}</p>')
-        if it["entities"]:
-            links = [entity_link(e, entita_by_id[e]) for e in it["entities"]]
-            tooltip_text = "Ha collaborato con " + join_it(links)
-        else:
-            tooltip_text = "Nessuna entità collegata in archivio."
-        div_lines.append(f'                <div id="{tid}" class="tooltip-content" style="display:none;">')
-        div_lines.append(f"                    {tooltip_text}")
-        div_lines.append("                </div>")
-
-    lines = ['            <div class="column">', "                <h2>Collaboratori</h2>"]
-    lines.extend(p_lines)
-    lines.append("")
-    lines.extend(div_lines)
-    lines.append("")
-    lines.append("            </div>")
-    return "\n".join(lines), len(items)
+    return items
 
 
-def build_clienti_section(entita_by_id):
+def build_clienti_data(entita_by_id):
     rows = load_tsv("data/compravendite.tsv")
 
     by_client = {}
@@ -222,33 +186,12 @@ def build_clienti_section(entita_by_id):
         entry = by_client[cid]
         display = (entry["nome"] + " " + entry["cognome"]).strip()
         items.append({
-            "sort_key": (entry["cognome"] or display).lower(),
-            "label": esc(display),
-            "entities": entry["entities"],
+            "role": "cliente",
+            "name": display,
+            "sort": (entry["cognome"] or display).lower(),
+            "entities": [{"id": e, "name": entita_by_id[e]} for e in entry["entities"]],
         })
-    items.sort(key=lambda x: x["sort_key"])
-
-    p_lines = []
-    div_lines = []
-    for i, it in enumerate(items, start=1):
-        tid = f"tooltip-content-cl{i}"
-        p_lines.append(f'                <p class="client" data-tooltip-content="#{tid}">{it["label"]}</p>')
-        if it["entities"]:
-            links = [entity_link(e, entita_by_id[e]) for e in it["entities"]]
-            tooltip_text = "È stato cliente di " + join_it(links)
-        else:
-            tooltip_text = "Nessuna entità collegata in archivio."
-        div_lines.append(f'                <div id="{tid}" class="tooltip-content" style="display:none;">')
-        div_lines.append(f"                    {tooltip_text}")
-        div_lines.append("                </div>")
-
-    lines = ['            <div class="column">', "                <h2>Clienti</h2>"]
-    lines.extend(p_lines)
-    lines.append("")
-    lines.extend(div_lines)
-    lines.append("")
-    lines.append("            </div>")
-    return "\n".join(lines), len(items)
+    return items
 
 
 PAGE_TEMPLATE = """<!DOCTYPE html>
@@ -258,9 +201,10 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Persone</title>
-    <link rel="stylesheet" href="../css/styles-persone.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/persone.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script type="text/javascript" src="../script/scripts-antiquari.js"></script>
     <script type="text/javascript" src="../script/antiquari_search.js"></script>
     <script type="text/javascript" src="../script/persone.js"></script>
@@ -293,17 +237,58 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
 
     <!-- Contenuto principale: generato automaticamente da script/build_persone.py -->
     <!-- NON MODIFICARE A MANO: le modifiche vengono sovrascritte al prossimo run. -->
-    <!-- Per cambiare i dati, modifica data/persone.tsv, data/collaboratori.tsv o data/compravendite.tsv -->
+    <!-- Per cambiare i dati, modifica data/persone.tsv, data/collaboratori.tsv, -->
+    <!-- data/compravendite.tsv o data/entità.tsv. Markup/CSS/JS della pagina -->
+    <!-- (ricerca, filtro per tipologia, colonne) vivono in css/persone.css e -->
+    <!-- script/persone.js e non vengono toccati da questo script. -->
     <main>
-        <a href="#" id="back-to-top" class="btn-back-to-top"> ˄ </a>
+        <div class="wrap">
+            <div class="controls">
+                <div class="search-row">
+                    <div class="search-box">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+                        <input id="search" type="text" placeholder="Cerca un nome in tutte e tre le colonne…" autocomplete="off">
+                    </div>
+                    <button class="tipo-toggle" id="tipoToggle" type="button" aria-expanded="false">
+                        Filtra i collaboratori per tipologia
+                        <svg class="car" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="m6 9 6 6 6-6"/></svg>
+                    </button>
+                </div>
+                <div class="tipologia-row" id="tipologiaRow"></div>
+                <div class="mobile-tabs" id="mobileTabs" role="tablist" aria-label="Scegli colonna">
+                    <button class="mobile-tab" type="button" data-role="antiquario" aria-selected="true">antiquari <span class="n" id="mcnt-antiquario"></span></button>
+                    <button class="mobile-tab" type="button" data-role="collaboratore" aria-selected="false">collaboratori <span class="n" id="mcnt-collaboratore"></span></button>
+                    <button class="mobile-tab" type="button" data-role="cliente" aria-selected="false">clienti <span class="n" id="mcnt-cliente"></span></button>
+                </div>
+                <div class="result-line" id="resultLine"></div>
+            </div>
 
-        <section id="Persone">
-{antiquari}
+            <div class="columns" id="columns" data-mobile="antiquario">
+                <section class="col" data-role="antiquario">
+                    <div class="col-head">
+                        <h2>antiquari</h2>
+                        <span class="col-count" id="cnt-antiquario"></span>
+                    </div>
+                    <div class="col-list" id="list-antiquario"></div>
+                </section>
+                <section class="col" data-role="collaboratore">
+                    <div class="col-head">
+                        <h2>collaboratori</h2>
+                        <span class="col-count" id="cnt-collaboratore"></span>
+                    </div>
+                    <div class="col-list" id="list-collaboratore"></div>
+                </section>
+                <section class="col" data-role="cliente">
+                    <div class="col-head">
+                        <h2>clienti</h2>
+                        <span class="col-count" id="cnt-cliente"></span>
+                    </div>
+                    <div class="col-list" id="list-cliente"></div>
+                </section>
+            </div>
+        </div>
 
-{collaboratori}
-
-{clienti}
-        </section>
+        <script id="persone-data" type="application/json">__PERSONE_DATA__</script>
     </main>
 
     <!-- Footer copiato dalla pagina esistente -->
@@ -329,17 +314,23 @@ def build_persone_html(entita_tsv="data/entità.tsv", output="html/persone.html"
     entita = load_tsv(entita_tsv)
     entita_by_id = {e["ID"]: e["Nome"] for e in entita}
 
-    antiquari_html, n_ant = build_persone_section(entita_by_id)
-    collaboratori_html, n_collab = build_collaboratori_section(entita_by_id)
-    clienti_html, n_client = build_clienti_section(entita_by_id)
-
-    page = PAGE_TEMPLATE.format(
-        antiquari=antiquari_html,
-        collaboratori=collaboratori_html,
-        clienti=clienti_html,
+    data = (
+        build_persone_data(entita_by_id)
+        + build_collaboratori_data(entita_by_id)
+        + build_clienti_data(entita_by_id)
     )
 
+    data_json = json.dumps(data, ensure_ascii=False)
+    # Evita che una tipologia o un nome contenente "</script" chiuda in
+    # anticipo il tag <script> in cui il JSON viene incorporato.
+    data_json = data_json.replace("</", "<\\/")
+
+    page = PAGE_TEMPLATE.replace("__PERSONE_DATA__", data_json)
+
     pathlib.Path(output).write_text(page, encoding="utf-8")
+    n_ant = sum(1 for d in data if d["role"] == "antiquario")
+    n_collab = sum(1 for d in data if d["role"] == "collaboratore")
+    n_client = sum(1 for d in data if d["role"] == "cliente")
     print(f"html/persone.html generato: {n_ant} antiquari, {n_collab} collaboratori, {n_client} clienti.")
 
 

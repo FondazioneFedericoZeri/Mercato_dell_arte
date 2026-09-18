@@ -287,3 +287,156 @@
     .columns[data-mobile="collaboratore"] .col[data-role="collaboratore"],
     .columns[data-mobile="cliente"] .col[data-role="cliente"] { display: block; }
   }
+
+  /* ══════════════════════════════════════════════════════════
+     Intestazione, menu e footer del sito: stessa struttura/stile
+     di ogni altra pagina (vedi es. css/styles-eventi.css). Questa
+     pagina non li aveva mai avuti: prima di build_persone.py li
+     generava un template a parte che includeva tutta la struttura
+     del sito, poi sostituito da questo frammento (senza chrome).
+     ══════════════════════════════════════════════════════════ */
+  header {
+    background-color: #f8f8f8;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header img {
+    max-height: 50px;
+  }
+
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    margin-right: 20px;
+    padding: 0;
+  }
+
+  nav ul li {
+    margin-left: 20px;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    padding: 5px 10px;
+  }
+
+  nav ul li a:hover {
+    background-color: var(--accent);
+    color: #fff;
+    border-radius: 5px;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  /* Sotto l'header (sticky) c'è anche la barra di ricerca (.controls,
+     sticky a sua volta): le si dà un margine dall'alto pari all'incirca
+     all'altezza dell'header, altrimenti le due si sovrapporrebbero
+     scorrendo la pagina. */
+  .controls {
+    top: 82px;
+  }
+
+  footer {
+    padding: 5px 40px;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+
+  footer img {
+    vertical-align: middle;
+    margin-left: 5px;
+    max-height: 30px;
+  }
+
+  .footer-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-left {
+    text-align: left;
+  }
+
+  .footer-right {
+    text-align: right;
+  }
+
+  @media (max-width: 768px) {
+    .menu {
+      display: none;
+      flex-direction: column;
+      background-color: #f8f8f8;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      padding: 10px 0;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+    }
+
+    .menu.show {
+      display: flex;
+    }
+
+    .menu-toggle {
+      display: block;
+      font-size: 24px;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    .controls {
+      top: 70px;
+    }
+
+    footer {
+      flex-direction: column;
+      text-align: center;
+      padding: 15px;
+    }
+
+    .footer-container {
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .footer-left, .footer-right {
+      text-align: center;
+      margin: 5px 0;
+    }
+
+    footer img {
+      max-width: 100px;
+      height: auto;
+    }
+  }
