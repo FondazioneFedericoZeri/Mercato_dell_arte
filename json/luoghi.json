@@ -733,8 +733,8 @@
         "Latitudine": "",
         "Longitudine": "",
         "geo": {
-            "lat": null,
-            "lon": null
+            "lat": 44.4104234,
+            "lon": 8.9349421
         }
     },
     "IT_14": {
@@ -1057,8 +1057,8 @@
         "Latitudine": "",
         "Longitudine": "",
         "geo": {
-            "lat": null,
-            "lon": null
+            "lat": 43.4650819,
+            "lon": 11.8831391
         }
     },
     "IT_31": {
@@ -1543,8 +1543,8 @@
         "Latitudine": "",
         "Longitudine": "",
         "geo": {
-            "lat": null,
-            "lon": null
+            "lat": 43.769386,
+            "lon": 11.2523829
         }
     },
     "IT_53": {
