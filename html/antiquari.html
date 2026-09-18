@@ -12,6 +12,7 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
     <script type="text/javascript" src="../script/scripts-antiquari.js"></script>
     <script type="text/javascript" src="../script/antiquari_search.js"></script>
+    <script type="text/javascript" src="../script/antiquari_autocomplete.js"></script>
     <script src="../script/menu.js" defer></script>
 
 </head>
@@ -55,8 +56,20 @@
                 <!-- <a href="#Titolo" id="btn-cognome" class="btn">Cerca per cognome</a> -->
                 <!-- Contenitore per la barra di ricerca e il pulsante -->
 
+                <!-- Il filtro dal vivo, il tasto Invio e i suggerimenti sono
+                     gestiti da script/antiquari_autocomplete.js -->
                 <div class="search-bar-container">
-                    <input type="text" id="search-input" placeholder="Cerca per nome o per luogo" onkeyup="performSearch(this.value)">
+                    <div class="search-field">
+                        <input type="text" id="search-input"
+                               placeholder="Cerca per nome o per luogo"
+                               autocomplete="off"
+                               role="combobox"
+                               aria-expanded="false"
+                               aria-controls="search-suggestions"
+                               aria-autocomplete="list">
+                        <ul id="search-suggestions" role="listbox"
+                            aria-label="Suggerimenti di ricerca" hidden></ul>
+                    </div>
                     <a href="#Titolo">
                         <button id="search-button" class="btn" onclick="performSearch(document.getElementById('search-input').value)">Cerca</button>
                     </a>

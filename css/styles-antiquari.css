@@ -149,6 +149,74 @@ nav ul li a:hover {
     width: 100%; /* Imposta la larghezza del contenitore */
 }
 
+/* ─────────────────────────────────────────────────────────
+   Suggerimenti della barra di ricerca
+   (popolati da script/antiquari_autocomplete.js)
+   ───────────────────────────────────────────────────────── */
+
+/* Contenitore relativo: la tendina si posiziona sotto al campo
+   senza spostare il bottone "Cerca" accanto. */
+.search-field {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+}
+
+#search-suggestions {
+    position: absolute;
+    top: calc(100% + 4px);
+    left: 0;
+    right: 0;
+    z-index: 200;
+    margin: 0;
+    padding: 4px 0;
+    list-style: none;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, .12);
+    max-height: 320px;
+    overflow-y: auto;
+    text-align: left;
+}
+
+#search-suggestions[hidden] {
+    display: none;
+}
+
+.sugg-voce {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 14px;
+    padding: 9px 18px;
+    cursor: pointer;
+    font-size: 17px;
+    color: #333;
+}
+
+.sugg-voce:hover,
+.sugg-voce.is-attivo {
+    background: #eef4fa;
+}
+
+.sugg-voce.is-attivo {
+    box-shadow: inset 3px 0 0 #5593C9;
+}
+
+/* La parte di testo che corrisponde a quanto digitato */
+.sugg-testo strong {
+    font-weight: 700;
+    color: #5593C9;
+}
+
+.sugg-tipo {
+    flex: none;
+    font-size: 12.5px;
+    color: #9a9a9a;
+    letter-spacing: .02em;
+}
+
 .search-bar-container input[type="text"] {
     padding: 12px 24px; /* Aumenta il padding per rendere la barra più alta */
     width: 100%; /* Imposta la larghezza al 100% del contenitore */
@@ -588,6 +656,17 @@ body {
     .search-bar-container button {
         width: 90%;
         margin: 10px 0;
+    }
+
+    /* Il 90% va applicato al contenitore, non al campo: la tendina dei
+       suggerimenti si allinea a .search-field, e se il campo fosse piu'
+       stretto del contenitore risulterebbe piu' larga del campo stesso. */
+    .search-field {
+        width: 90%;
+    }
+
+    .search-bar-container input[type="text"] {
+        width: 100%;
     }
 }
 
