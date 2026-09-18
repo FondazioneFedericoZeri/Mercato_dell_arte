@@ -198,11 +198,18 @@ nav ul li a:hover {
 .ed-col:focus-visible { outline: 2px solid var(--ed-accent); outline-offset: 3px; }
 .ed-seg {
     width: 100%;
-    transition: filter .1s ease;
+    transition: filter .1s ease, box-shadow .1s ease;
+    box-sizing: border-box;
 }
 .ed-seg:last-child { border-radius: 3px 3px 0 0; }
 .ed-col:hover .ed-seg,
 .ed-col.is-selected .ed-seg { filter: brightness(1.08); }
+/* Il singolo box (segmento) sotto il cursore si distingue ulteriormente
+   dal resto della colonna, cosi' e' chiaro quale evento si sta per aprire. */
+.ed-seg:hover {
+    filter: brightness(1.25);
+    box-shadow: inset 0 0 0 2px rgba(255, 255, 255, .7);
+}
 .ed-col.is-active-decade::after {
     content: "";
     position: absolute;

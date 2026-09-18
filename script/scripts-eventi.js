@@ -173,6 +173,18 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function toggleFocus(key) { setFocus(focusCategory === key ? null : key); }
+    // Scorre fino al box di dettaglio sotto il grafico, tenendo conto
+    // dell'header sticky del sito (altrimenti il box finirebbe nascosto
+    // sotto l'header). Richiamata quando si clicca una barra/segmento.
+    function scrollToDetail() {
+      var detail = document.querySelector(".ed-detail");
+      if (!detail) return;
+      var header = document.querySelector("header");
+      var headerH = header ? header.getBoundingClientRect().height : 0;
+      var top = detail.getBoundingClientRect().top + window.pageYOffset - headerH - 16;
+      window.scrollTo({ top: top, behavior: "smooth" });
+    }
+
     function setFocus(key) {
       focusCategory = key;
       drilldownCategory = key; // il drill-down aperto segue il nuovo focus
@@ -232,6 +244,7 @@ document.addEventListener("DOMContentLoaded", function () {
             drilldownCategory = key;
             renderChart();
             renderCards();
+            scrollToDetail();
           });
           col.appendChild(seg);
         });
@@ -255,6 +268,7 @@ document.addEventListener("DOMContentLoaded", function () {
           drilldownCategory = focusCategory; // click sulla colonna: segue il focus (o nessuno)
           renderChart();
           renderCards();
+          scrollToDetail();
         });
         col.addEventListener("keydown", function (e) {
           if (e.key === "Enter" || e.key === " ") { e.preventDefault(); col.click(); }
