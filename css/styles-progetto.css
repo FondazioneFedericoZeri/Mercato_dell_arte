@@ -214,6 +214,11 @@ p {
 /* Stile per la sezione OBIETTIVI E METODOLOGIA */
 #new-section {
     background-color: #f8f8f8;
+    /* Spazio grigio sotto il contenuto: prima era zero e la fascia grigia
+       finiva esattamente sul bordo dell'immagine. I 60px corrispondono al
+       padding-top di .section-title, così la sezione respira uguale sopra
+       e sotto. */
+    padding-bottom: 60px;
 }
 
 .section-title {
@@ -333,6 +338,10 @@ p {
     margin-right: 80px;
     font-size: 32px;
     font-family: 'Playfair Display', serif;
+    /* Stessa interlinea della citazione in #two-column-section: senza questa
+       riga la regola ereditava l'1.6 del body e le due citazioni, identiche
+       nel markup, risultavano spaziate in modo diverso. */
+    line-height: 1.2;
     margin-bottom:10px;
     flex: 1;
     font-style: italic;

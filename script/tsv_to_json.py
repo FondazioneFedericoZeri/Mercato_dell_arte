@@ -8,6 +8,72 @@ from geopy.exc import GeocoderServiceError, GeocoderTimedOut, GeocoderUnavailabl
 from geopy.geocoders import Nominatim
 
 
+def _coppia_incollata(testo):
+    """Riconosce una coppia lat/lon incollata in un campo solo.
+
+    Google Maps copia le coordinate come "43.466, 11.882"; in italiano puo'
+    scriverle "43,466, 11,882", usando la virgola sia come separatore
+    decimale sia fra i due numeri. Restituisce (lat, lon) come stringhe con
+    il punto decimale, oppure None se non e' una coppia riconoscibile.
+    """
+    parti = [x.strip() for x in testo.split(",") if x.strip()]
+    # "43.466, 11.882" -> due pezzi, ciascuno gia' un numero
+    if len(parti) == 2 and all("." in x or x.lstrip("-").isdigit() for x in parti):
+        return parti[0], parti[1]
+    # "43,466, 11,882" -> quattro pezzi, nessun punto: la virgola fa entrambi i mestieri
+    if len(parti) == 4 and not any("." in x for x in parti):
+        return f"{parti[0]}.{parti[1]}", f"{parti[2]}.{parti[3]}"
+    return None
+
+
+def _coordinate_manuali(place):
+    """Coordinate inserite a mano nelle colonne Latitudine/Longitudine del TSV.
+
+    Servono per i luoghi che il geocodificatore non trova: indirizzi storici
+    spariti, civici che le mappe non conoscono (la numerazione rossa
+    fiorentina, i civici doppi), toponimi cambiati. Quando sono compilate
+    vincono su tutto e il luogo non viene mai geocodificato, così una
+    coordinata verificata da una persona non viene sovrascritta da una
+    ricerca automatica.
+
+    Accetta sia il punto sia la virgola come separatore decimale, perché
+    aprendo il TSV in Excel in italiano i decimali vengono scritti con la
+    virgola. Restituisce None se le colonne sono vuote o illeggibili.
+    """
+    lat = (place.get("Latitudine") or "").strip()
+    lon = (place.get("Longitudine") or "").strip()
+    if not lat and not lon:
+        return None
+
+    # Caso comodo: l'intera coppia incollata da Google Maps nella sola colonna
+    # Latitudine ("43.466, 11.882"), senza doverla dividere a mano.
+    if lat and not lon:
+        coppia = _coppia_incollata(lat)
+        if coppia is not None:
+            lat, lon = coppia
+
+    lat = lat.replace(",", ".")
+    lon = lon.replace(",", ".")
+    if not lat or not lon:
+        mancante = "la longitudine" if lat else "la latitudine"
+        valore = lat or lon
+        print(f"  [coordinate] {place.get('ID')}: manca {mancante} ({valore!r}). "
+              f"Servono entrambe le colonne, oppure la coppia \"lat, lon\" "
+              f"in Latitudine. Le ignoro.", file=sys.stderr)
+        return None
+    try:
+        lat_f, lon_f = float(lat), float(lon)
+    except ValueError:
+        print(f"  [coordinate] {place.get('ID')}: valori non numerici "
+              f"({lat!r}, {lon!r}), li ignoro", file=sys.stderr)
+        return None
+    if not (-90 <= lat_f <= 90 and -180 <= lon_f <= 180):
+        print(f"  [coordinate] {place.get('ID')}: fuori intervallo "
+              f"({lat_f}, {lon_f}), le ignoro", file=sys.stderr)
+        return None
+    return {"lat": lat_f, "lon": lon_f}
+
+
 def _address_key(place):
     # The fields that feed the geocoding query: if any of these changed
     # since the last build, the cached coordinates are no longer valid
@@ -69,6 +135,12 @@ def build_places(input_csv, output_json):
                 place[x] = place_tmp[x]
 
             if not place.get('ID', '').strip():
+                continue
+
+            manuali = _coordinate_manuali(place)
+            if manuali is not None:
+                place["geo"] = manuali
+                places_dicts[place['ID']] = place
                 continue
 
             cached = existing.get(place['ID'])
@@ -234,12 +306,27 @@ def build_entities(input_csv_entità, output_json):
                      indent=4), file=fout)
 
 
+# ── Catena di dipendenze fra i JSON ────────────────────────────────
+# persone.json incorpora i dati di luoghi.json, ed entità.json
+# incorpora persone.json, bibliografia.json, collaboratori.json,
+# compravendite.json, eventi.json e relazioni.json.
+# Chi rigenera un JSON a monte deve quindi rigenerare anche quelli a
+# valle, nello stesso comando: farlo con workflow separati non basta,
+# perché partono in parallelo e leggerebbero la versione vecchia.
+# (Senza questo, aggiungendo luoghi nuovi le schede degli antiquari
+# restavano senza città: i luoghi erano in luoghi.json ma persone.json
+# e entità.json non venivano più ricostruiti.)
+# ───────────────────────────────────────────────────────────────────
+
 if __name__ == "__main__":
 
     import sys
 
     if sys.argv[1] == "luoghi":
         build_places("data/luoghi.tsv", "json/luoghi.json")
+        # persone.json incorpora i luoghi, entità.json incorpora le persone
+        build_people("data/persone.tsv", "json/persone.json")
+        build_entities("data/entità.tsv", "json/entità.json")
 
     if sys.argv[1] == "didascalie":
         build_generic("data/didascalie.tsv", "json/didascalie.json")
@@ -247,10 +334,12 @@ if __name__ == "__main__":
     if sys.argv[1] == "bibliografia":
         build_generic("data/bibliografiaGenerale.tsv",
                       "json/bibliografia.json")
+        build_entities("data/entità.tsv", "json/entità.json")
 
     if sys.argv[1] == "collaboratori":
         build_generic("data/collaboratori.tsv",
                       "json/collaboratori.json")
+        build_entities("data/entità.tsv", "json/entità.json")
 
     if sys.argv[1] == "eventi":
         build_generic("data/eventi.tsv", "json/eventi.json")

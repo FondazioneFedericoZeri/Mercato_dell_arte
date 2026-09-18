@@ -10,7 +10,8 @@
         "Apertura": "2022",
         "Chiusura": "in attività",
         "Nome attività": "Colnaghi",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 50.8211931,
             "lon": 4.3682525
@@ -27,7 +28,8 @@
         "Apertura": "1950",
         "Chiusura": "1952",
         "Nome attività": "Ferdinando Salamon, \"Salamon Gallery\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 43.6534817,
             "lon": -79.3839347
@@ -44,7 +46,8 @@
         "Apertura": "1900 ca.",
         "Chiusura": "1934",
         "Nome attività": "Michele Lazzaroni (abitazione privata)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 43.6914121,
             "lon": 7.2448839
@@ -61,7 +64,8 @@
         "Apertura": "1920",
         "Chiusura": "1926",
         "Nome attività": "Ercole Canessa, \"C. & E. Canessa\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 48.8712613,
             "lon": 2.3018456
@@ -78,7 +82,8 @@
         "Apertura": "1911",
         "Chiusura": "1920",
         "Nome attività": "Ercole Canessa, \"C. & E. Canessa\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 48.8725047,
             "lon": 2.2978839
@@ -95,7 +100,8 @@
         "Apertura": "1925 ca.",
         "Chiusura": "1932 ca.",
         "Nome attività": "Giuseppe Volterra (succursale)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 48.8707892,
             "lon": 2.3331608
@@ -112,7 +118,8 @@
         "Apertura": "1924",
         "Chiusura": "1929",
         "Nome attività": "Ercole Canessa, \"Ercole Canessa\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 48.8668543,
             "lon": 2.3291442
@@ -129,7 +136,8 @@
         "Apertura": "1940 ca.",
         "Chiusura": "1973",
         "Nome attività": "Edoardo Moratilla (abitazione privata)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 48.8829207,
             "lon": 2.2991725
@@ -146,7 +154,8 @@
         "Apertura": "1889",
         "Chiusura": "1911",
         "Nome attività": "Ercole Canessa, \"C. & E. Canessa\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 48.8774382,
             "lon": 2.3493277
@@ -163,7 +172,8 @@
         "Apertura": "1895 ca.",
         "Chiusura": "1934",
         "Nome attività": "Michele Lazzaroni (abitazione privata)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 48.8705218,
             "lon": 2.2785919
@@ -180,7 +190,8 @@
         "Apertura": "1760",
         "Chiusura": "1790",
         "Nome attività": "Giovanni Battista Torre, “Cabinet de Physique Expérimentale”, poi \"Torre &Co.\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 48.8660502,
             "lon": 2.3296993
@@ -197,7 +208,8 @@
         "Apertura": "1920",
         "Chiusura": "1929",
         "Nome attività": "Pietro e Alberto D'Atri, \"Galleria D'Atri\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 48.8735191,
             "lon": 2.313025
@@ -214,7 +226,8 @@
         "Apertura": "1929",
         "Chiusura": "1970",
         "Nome attività": "Pietro, Alberto e Mario D'Atri, \"Galleria D'Atri\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": null,
             "lon": null
@@ -231,7 +244,8 @@
         "Apertura": "1936",
         "Chiusura": "1980 ca.",
         "Nome attività": "Francesco Pospisil (Palazzo Sagredo, abitazione privata)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 45.4423196937427,
             "lon": 12.335120822738263
@@ -248,7 +262,8 @@
         "Apertura": "1950 ca.",
         "Chiusura": "1976",
         "Nome attività": "Ettore Viancini (abitazione privata)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 45.43482885,
             "lon": 12.334024740406221
@@ -265,7 +280,8 @@
         "Apertura": "1976",
         "Chiusura": "1982",
         "Nome attività": "Paolo Viancini",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 45.432893199999995,
             "lon": 12.334566399734967
@@ -282,7 +298,8 @@
         "Apertura": "1920",
         "Chiusura": "1974",
         "Nome attività": "Brass (Scuola Vecchia di S. Maria della Misericordia, atelier e sede)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 45.4437078661016,
             "lon": 12.33507058619225
@@ -293,13 +310,14 @@
         "Nazione": "Italia",
         "Regione": "Veneto",
         "Città": "Venezia",
-        "Via": "Rio Novo ",
+        "Via": "Rio Novo",
         "Civico": "3498",
         "ID_entità": "GE_I",
         "Apertura": "",
         "Chiusura": "",
         "Nome attività": "Benno Geiger (abitazione privata)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 45.4359863,
             "lon": 12.3209832
@@ -316,7 +334,8 @@
         "Apertura": "1920 ca.",
         "Chiusura": "1929 ca.",
         "Nome attività": "Alfredo Geri, \"Geri-Boralevi\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 41.8951009587497,
             "lon": 12.476284893276052
@@ -333,7 +352,8 @@
         "Apertura": "",
         "Chiusura": "",
         "Nome attività": "Antonio Salvadori",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 45.4371908,
             "lon": 12.3345898
@@ -350,7 +370,8 @@
         "Apertura": "1921",
         "Chiusura": "1947 ca.",
         "Nome attività": "Attilio e Franco Steffanoni, \"F.lli Steffanoni Belle Arti\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 45.6880984,
             "lon": 9.6642575
@@ -367,7 +388,8 @@
         "Apertura": "1840 ca.",
         "Chiusura": "1887",
         "Nome attività": "Giuseppe Baslini (abitazione privata)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 45.4683471,
             "lon": 9.1949813
@@ -384,7 +406,8 @@
         "Apertura": "1885",
         "Chiusura": "1905 ca.",
         "Nome attività": "Giulio Sambon, \"Impresa di vendita in Italia Giulio Sambon\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 45.4662089,
             "lon": 9.196937
@@ -401,7 +424,8 @@
         "Apertura": "1980 ca.",
         "Chiusura": "1990 ca.",
         "Nome attività": "Gilberto Zabert (Corte Vecchio Broletto)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 45.8185093,
             "lon": 8.8260094
@@ -418,7 +442,8 @@
         "Apertura": "1916",
         "Chiusura": "1921",
         "Nome attività": "Alfredo Geri, Aldo Geri, \"Casa di vendite Arte Antica e Moderna\" (Palazzo Sormani, sede e abitazione privata)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 45.47140081454712,
             "lon": 9.190727672937813
@@ -435,7 +460,8 @@
         "Apertura": "1923",
         "Chiusura": "1931",
         "Nome attività": "Alfredo Geri, Aldo Geri \"Galleria Geri\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 45.472435,
             "lon": 9.188084
@@ -452,7 +478,8 @@
         "Apertura": "1926",
         "Chiusura": "1931",
         "Nome attività": "Alfredo Geri, \"Galleria Geri\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 45.4707971,
             "lon": 9.1877328
@@ -469,7 +496,8 @@
         "Apertura": "1946",
         "Chiusura": "1981",
         "Nome attività": "Aldo Geri, \"Galleria Geri, del Bramante, del Portico\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 45.471556500000005,
             "lon": 9.2021163
@@ -486,7 +514,8 @@
         "Apertura": "1866",
         "Chiusura": "1926",
         "Nome attività": "Antonio e Carlo Grandi, \"Ditta Antonio Grandi\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 45.4683575,
             "lon": 9.1990461
@@ -497,13 +526,14 @@
         "Nazione": "Italia",
         "Regione": "Lombardia",
         "Città": "Milano",
-        "Via": "via Ugo Foscolo ",
+        "Via": "via Ugo Foscolo",
         "Civico": "1",
         "ID_entità": "CA_III",
         "Apertura": "1881",
         "Chiusura": "1908 ca. ",
         "Nome attività": "Achille Cantoni (abitazione privata)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 45.4650381,
             "lon": 9.1906739
@@ -520,7 +550,8 @@
         "Apertura": "1881",
         "Chiusura": "1890 ca.",
         "Nome attività": "Achille Cantoni",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 45.46906162966357,
             "lon": 9.190640711432142
@@ -537,7 +568,8 @@
         "Apertura": "1920 ca.",
         "Chiusura": "1944",
         "Nome attività": "Carlo Alberto Foresti, \"Studio Artistico\" (Palazzo Borromeo)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 45.471955873902424,
             "lon": 9.194398399999999
@@ -554,7 +586,8 @@
         "Apertura": "1969 ca.",
         "Chiusura": "2001",
         "Nome attività": "Gilberto Zabert, \"Galleria Zabert. Dipinti di antichi maestri\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 45.063657,
             "lon": 7.6909258
@@ -571,7 +604,8 @@
         "Apertura": "1990 ca.",
         "Chiusura": "1999 ca.",
         "Nome attività": "Gilberto Zabert (studio)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 45.0628603,
             "lon": 7.6910829
@@ -588,7 +622,8 @@
         "Apertura": "1981",
         "Chiusura": "1985",
         "Nome attività": "Gilberto Zabert",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 45.0627822,
             "lon": 7.692271
@@ -605,7 +640,8 @@
         "Apertura": "1960",
         "Chiusura": "1985 ca.",
         "Nome attività": "Gilberto Zabert,  \"Mobili – Oggetti di alta epoca\" ",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 45.0675975,
             "lon": 7.6850584
@@ -622,7 +658,8 @@
         "Apertura": "1912",
         "Chiusura": "1975",
         "Nome attività": "Pietro Accorsi,\"Galleria Accorsi\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 45.0663916,
             "lon": 7.6932729
@@ -639,7 +676,8 @@
         "Apertura": "1930 ca.",
         "Chiusura": "1967",
         "Nome attività": "Mario Viezzoli (abitazione privata)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 44.40726,
             "lon": 8.9338624
@@ -656,7 +694,8 @@
         "Apertura": "2000",
         "Chiusura": "2006",
         "Nome attività": "Piero Pagano, \"Casa d'Aste Rubinacci\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 44.4097588,
             "lon": 8.9478655
@@ -673,7 +712,8 @@
         "Apertura": "1920 ca.",
         "Chiusura": "1950 ca.",
         "Nome attività": "Severino Crosa",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 44.408627949999996,
             "lon": 8.930028765903387
@@ -685,12 +725,13 @@
         "Regione": "Liguria",
         "Città": "Genova",
         "Via": "Piazza Fontane Marose",
-        "Civico": "03-apr",
+        "Civico": "3/4",
         "ID_entità": "PA_I RU",
         "Apertura": "1960",
         "Chiusura": "1987",
         "Nome attività": "Pompeo Rubinacci e Piero Pagano, \"Rubinacci Galleria d'Arte\" (Palazzo Negrone)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": null,
             "lon": null
@@ -707,7 +748,8 @@
         "Apertura": "1952",
         "Chiusura": "1979",
         "Nome attività": "Severino Crosa (Palazzo Granello, abitazione privata)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 44.407076,
             "lon": 8.930221472761197
@@ -724,7 +766,8 @@
         "Apertura": "1960",
         "Chiusura": "1974",
         "Nome attività": "Pompeo Rubinacci, \"Rubinacci Galleria d'Arte\" (Palazzetto Doria)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 44.408339049999995,
             "lon": 8.93287550281141
@@ -741,7 +784,8 @@
         "Apertura": "1920 ca.",
         "Chiusura": "1970",
         "Nome attività": "Ferruccio Ildebrando Bossi (abitazione privata)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 44.4102956,
             "lon": 8.938931
@@ -758,7 +802,8 @@
         "Apertura": "1933 ca.",
         "Chiusura": "1933 ca.",
         "Nome attività": "Pompeo Rubinacci, \"Studio d'arte di Pompeo Rubinacci\" (laboratorio di restauro)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 44.404954,
             "lon": 8.9492257
@@ -775,7 +820,8 @@
         "Apertura": "1950 ca.",
         "Chiusura": "1965",
         "Nome attività": "Severino Crosa",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 44.4110725,
             "lon": 8.9333773
@@ -792,7 +838,8 @@
         "Apertura": "1987",
         "Chiusura": "2000",
         "Nome attività": "Piero Pagano, \"Casa d'Aste Rubinacci\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 44.4109549,
             "lon": 8.9333733
@@ -809,7 +856,8 @@
         "Apertura": "1910 ca.",
         "Chiusura": "1920 ca.",
         "Nome attività": "Edoardo Villa, \"Galleria Permanente d'Arte Antica e Moderna A. Vitelli\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 44.4111614,
             "lon": 8.932403
@@ -826,7 +874,8 @@
         "Apertura": "1920 ca.",
         "Chiusura": "1936",
         "Nome attività": "Edoardo Villa, \"Galleria Permanente d'Arte Antica e Moderna A. Vitelli\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 44.4068949,
             "lon": 8.9350535
@@ -843,7 +892,8 @@
         "Apertura": "1942 ca.",
         "Chiusura": "1967",
         "Nome attività": "Costantino Nigro",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 44.4072471,
             "lon": 8.9424667
@@ -860,7 +910,8 @@
         "Apertura": "1976",
         "Chiusura": "2004",
         "Nome attività": "Adriano Cera",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 44.4938203,
             "lon": 11.3426327
@@ -877,7 +928,8 @@
         "Apertura": "1926 ca.",
         "Chiusura": "1929 ca.",
         "Nome attività": "Publio Podio e figli, \"Cav. Prof. Publio Podio & C.\" (Palazzo del Commercio)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 44.4938201,
             "lon": 11.3463673
@@ -894,7 +946,8 @@
         "Apertura": "1900 ca.",
         "Chiusura": "1929",
         "Nome attività": "Arturo Rambaldi, \"Galleria di Antichità e casa di vendite A. Rambaldi\" poi \"Galleria A. Rambaldi\" con Angelo, Aldo e Olga Tcherukine",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 44.4933222,
             "lon": 11.346376
@@ -911,7 +964,8 @@
         "Apertura": "1922 ca.",
         "Chiusura": "1923 ca.",
         "Nome attività": "Cesare e Umberto Pini",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 44.4963071,
             "lon": 11.3440354
@@ -928,7 +982,8 @@
         "Apertura": "1910 ca.",
         "Chiusura": "1926 ca.",
         "Nome attività": "Publio Podio",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 44.4881605,
             "lon": 11.3623538
@@ -945,7 +1000,8 @@
         "Apertura": "1929 ca.",
         "Chiusura": "1932",
         "Nome attività": "Publio Podio e figli, \"Fratelli Podio Antichità\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 44.4893872,
             "lon": 11.3609086
@@ -962,7 +1018,8 @@
         "Apertura": "1910 ca.",
         "Chiusura": "1919 ca.",
         "Nome attività": "Antonio Galliani",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 44.4890566,
             "lon": 11.3605112
@@ -979,7 +1036,8 @@
         "Apertura": "1958",
         "Chiusura": "1996",
         "Nome attività": "Ivan Bruschi",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 43.464796050000004,
             "lon": 11.880910299394806
@@ -990,13 +1048,14 @@
         "Nazione": "Italia",
         "Regione": "Toscana",
         "Città": "Arezzo",
-        "Via": "Corso Italia    14  BR_I",
-        "Civico": "1967",
-        "ID_entità": "1996",
-        "Apertura": "Ivan Bruschi",
-        "Chiusura": "",
-        "Nome attività": "",
-        "": "",
+        "Via": "Corso Italia",
+        "Civico": "14",
+        "ID_entità": "BR_I",
+        "Apertura": "1967",
+        "Chiusura": "1996",
+        "Nome attività": "Ivan Bruschi",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": null,
             "lon": null
@@ -1013,7 +1072,8 @@
         "Apertura": "1920 ca.",
         "Chiusura": "1931",
         "Nome attività": "Giuseppe e Salvadore detto Salvino Salvadori (Palazzo Magnani-Feroni, show room, laboratorio di restauro)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 43.7690618,
             "lon": 11.2463678
@@ -1030,7 +1090,8 @@
         "Apertura": "1883",
         "Chiusura": "1918",
         "Nome attività": "Emilio e Davide Luigi Costantini, anticamente Corso Regina Elena",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 43.7741402,
             "lon": 11.2404002
@@ -1047,7 +1108,8 @@
         "Apertura": "1930 ca.",
         "Chiusura": "1939 ca.",
         "Nome attività": "Livio Bruschi (Palazzo Corsini, sede e abitazione privata)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 43.7703574,
             "lon": 11.2488863
@@ -1064,7 +1126,8 @@
         "Apertura": "1920 ca.",
         "Chiusura": "1926 ca.",
         "Nome attività": "Raoul Tolentino (Palazzo Acciaiuoli)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 43.7688217,
             "lon": 11.2528604
@@ -1081,7 +1144,8 @@
         "Apertura": "1920 ca.",
         "Chiusura": "1932 ca.",
         "Nome attività": "Giuseppe Volterra e fratelli",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 43.76882,
             "lon": 11.2525885
@@ -1098,7 +1162,8 @@
         "Apertura": "1966",
         "Chiusura": "1978",
         "Nome attività": "Leonardo Lapiccirella, \"Galleria Lapiccirella\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 43.7735474,
             "lon": 11.241085
@@ -1115,7 +1180,8 @@
         "Apertura": "1883",
         "Chiusura": "1922",
         "Nome attività": "Stefano Bardini (Palazzo Mozzi Bardini)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 43.7649299,
             "lon": 11.2582299
@@ -1132,7 +1198,8 @@
         "Apertura": "1900 ca.",
         "Chiusura": "1910",
         "Nome attività": "Elia Volpi",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 43.7708732,
             "lon": 11.2480322
@@ -1149,7 +1216,8 @@
         "Apertura": "1910 ca.",
         "Chiusura": "1923",
         "Nome attività": "Rizieri Bacarelli",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 43.772528199999996,
             "lon": 11.249230444642855
@@ -1166,7 +1234,8 @@
         "Apertura": "1870 ca.",
         "Chiusura": "1880 ca.",
         "Nome attività": "Salvadore Salvadori (sede e laboratorio di restauro)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 43.7658033,
             "lon": 11.2494315
@@ -1183,7 +1252,8 @@
         "Apertura": "1875 ca.",
         "Chiusura": "1909 ca.",
         "Nome attività": "Vincenzo Ciampolini",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 43.773116,
             "lon": 11.2490357
@@ -1200,7 +1270,8 @@
         "Apertura": "1890 ca.",
         "Chiusura": "1910 ca.",
         "Nome attività": "Alfredo Geri",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 43.7764552,
             "lon": 11.260598338751876
@@ -1217,7 +1288,8 @@
         "Apertura": "1931",
         "Chiusura": "1957",
         "Nome attività": "Luigi, Giuseppe Jr e Mario Bellini (Palazzo Spini Feroni, show room)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 43.7700572,
             "lon": 11.251220681680373
@@ -1234,7 +1306,8 @@
         "Apertura": "1900 ca.",
         "Chiusura": "1932 ca.",
         "Nome attività": "Gustavo Volterra",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 43.768025449999996,
             "lon": 11.253158002899507
@@ -1251,7 +1324,8 @@
         "Apertura": "1885 ca.",
         "Chiusura": "1899 ca.",
         "Nome attività": "Angiolo Melli",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 43.76834,
             "lon": 11.25344
@@ -1268,7 +1342,8 @@
         "Apertura": "1979",
         "Chiusura": "1985",
         "Nome attività": "Paola Ventura",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 43.77277041743597,
             "lon": 11.245208562512012
@@ -1285,7 +1360,8 @@
         "Apertura": "1959",
         "Chiusura": "1963",
         "Nome attività": "Galleria antiquaria Salocchi e Freschi (sede)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 43.7729972,
             "lon": 11.2449173
@@ -1302,7 +1378,8 @@
         "Apertura": "1909",
         "Chiusura": "1918",
         "Nome attività": "Gustavo Volterra e Cesare Melli",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 43.771499,
             "lon": 11.2471461
@@ -1319,7 +1396,8 @@
         "Apertura": "1900 ca.",
         "Chiusura": "1970 ca.",
         "Nome attività": "Luigi e Raimondo Orselli, \"Luigi Orselli\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 43.7716388,
             "lon": 11.2467163
@@ -1336,7 +1414,8 @@
         "Apertura": "1886",
         "Chiusura": "1909",
         "Nome attività": "Gustavo Volterra e Cesare Melli, \"Galleria Leonardo\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 43.7720989,
             "lon": 11.2460541
@@ -1353,7 +1432,8 @@
         "Apertura": "1926 ca.",
         "Chiusura": "1927 ca.",
         "Nome attività": "Raul Tolentino",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 43.7719008,
             "lon": 11.2465505
@@ -1370,7 +1450,8 @@
         "Apertura": "1957",
         "Chiusura": "1966",
         "Nome attività": "Leonardo Lapiccirella, \"Galleria Lapiccirella\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 43.7728775,
             "lon": 11.2450995
@@ -1387,7 +1468,8 @@
         "Apertura": "1950 ca.",
         "Chiusura": "1957",
         "Nome attività": "Carlo e Riccardo Bruscoli, Marcello Guidi; dal 1957 al 1966 il negozio ai civici 50-52r è rilevato da Leonardo Lapiccirella",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 43.7716067,
             "lon": 11.2468899
@@ -1404,7 +1486,8 @@
         "Apertura": "1920 ca.",
         "Chiusura": "1950 ca.",
         "Nome attività": "Carlo e Riccardo Bruscoli, Marcello Guidi",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 43.7716067,
             "lon": 11.2468899
@@ -1421,7 +1504,8 @@
         "Apertura": "1966",
         "Chiusura": "1990 ca.",
         "Nome attività": "Luigi Grassi Jr, \"Galleria Ognissanti\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 43.7726913,
             "lon": 11.2454179
@@ -1438,7 +1522,8 @@
         "Apertura": "1910 ca.",
         "Chiusura": "1931 ca.",
         "Nome attività": "Alfredo Geri, \"Casa di vendite Arte Antica e Moderna\" (sede e abitazione privata)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 43.77277041743597,
             "lon": 11.245208562512012
@@ -1449,13 +1534,14 @@
         "Nazione": "Italia",
         "Regione": "Toscana",
         "Città": "Firenze",
-        "Via": "via Borgo Santi Apostoli ",
+        "Via": "Borgo Santi Apostoli",
         "Civico": "40r",
         "ID_entità": "ME",
         "Apertura": "1900 ca.",
         "Chiusura": "1920 ca.",
         "Nome attività": "Cesare Melli (Giardino Borgherini, showroom per arredi da esterno)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": null,
             "lon": null
@@ -1472,7 +1558,8 @@
         "Apertura": "1909",
         "Chiusura": "1966",
         "Nome attività": "Luigi e Arturo Grassi, \"Luigi Grassi & Sons\" (Palazzo Montagliari)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 43.780777,
             "lon": 11.26058
@@ -1489,7 +1576,8 @@
         "Apertura": "1929 ca.",
         "Chiusura": "1950 ca.",
         "Nome attività": "Ubaldo Giugni, \"Galleria d'Arte\" (sede)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 43.7734769,
             "lon": 11.2510577
@@ -1506,7 +1594,8 @@
         "Apertura": "1920",
         "Chiusura": "1920",
         "Nome attività": "Giuseppe Volterra e fratelli, \"Gustavo Volterra\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 43.7647987,
             "lon": 11.257733
@@ -1523,7 +1612,8 @@
         "Apertura": "1877",
         "Chiusura": "1883",
         "Nome attività": "Stefano Bardini (Palazzo Canigiani)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 43.7675835,
             "lon": 11.2593399
@@ -1540,7 +1630,8 @@
         "Apertura": "1961",
         "Chiusura": "1979",
         "Nome attività": "Luigi Albrighi e Paola Ventura",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 43.771403,
             "lon": 11.2479697
@@ -1557,7 +1648,8 @@
         "Apertura": "1920 ca.",
         "Chiusura": "1929 ca.",
         "Nome attività": "Alfredo Geri",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 43.77146533655273,
             "lon": 11.247942326986577
@@ -1574,7 +1666,8 @@
         "Apertura": "1890 ca.",
         "Chiusura": "1940 ca.",
         "Nome attività": "Giuseppe e Salvadore detto Salvino Salvadori",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 43.7714236,
             "lon": 11.2479887
@@ -1591,7 +1684,8 @@
         "Apertura": "1885 ca.",
         "Chiusura": "1888 ca.",
         "Nome attività": "Giuseppe Melli",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 43.77176,
             "lon": 11.24831
@@ -1608,7 +1702,8 @@
         "Apertura": "1980 ca.",
         "Chiusura": "2015",
         "Nome attività": "Benvenuto e Riccardo Bacarelli dal 1996",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 43.7717915,
             "lon": 11.2483676
@@ -1625,7 +1720,8 @@
         "Apertura": "1938",
         "Chiusura": "1957",
         "Nome attività": "Giovanni Salocchi",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 43.7718275,
             "lon": 11.2485274
@@ -1642,7 +1738,8 @@
         "Apertura": "1940 ca.",
         "Chiusura": "1973",
         "Nome attività": "Livio e Ivan Bruschi (fino al 1956), \"Antichità Bruschi\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 43.7713694,
             "lon": 11.2479923
@@ -1659,7 +1756,8 @@
         "Apertura": "2016",
         "Chiusura": "2024",
         "Nome attività": "Riccardo Bacarelli (Palazzo della Manifattura Arte della Seta)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 43.7720118,
             "lon": 11.2485931
@@ -1676,7 +1774,8 @@
         "Apertura": "1925 ca.",
         "Chiusura": "1947 ca.",
         "Nome attività": "Rizieri e Benvenuto Bacarelli",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 43.7721056,
             "lon": 11.2486878
@@ -1693,7 +1792,8 @@
         "Apertura": "1939",
         "Chiusura": "1981 ca.",
         "Nome attività": "Salvatore e Francesco Romano (Palazzo Magnani Feroni)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 43.768538,
             "lon": 11.2462163
@@ -1710,7 +1810,8 @@
         "Apertura": "1923",
         "Chiusura": "1925 ca.",
         "Nome attività": "Rizieri Bacarelli",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 43.7732075,
             "lon": 11.2506064
@@ -1727,7 +1828,8 @@
         "Apertura": "1950 ca.",
         "Chiusura": "1965 ca.",
         "Nome attività": "Ubaldo Giugni, \"Galleria d'Arte\" (sede)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 43.7716012,
             "lon": 11.2487145
@@ -1744,7 +1846,8 @@
         "Apertura": "1876 ca.",
         "Chiusura": "1876-1880 ca.",
         "Nome attività": "Emilio Costantini (studio), Firenze, ex Via del Podere 6",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 43.7583546,
             "lon": 11.3124781
@@ -1761,7 +1864,8 @@
         "Apertura": "1963",
         "Chiusura": "1972",
         "Nome attività": "Giuliano Freschi (deposito)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 43.7731154,
             "lon": 11.2476722
@@ -1778,7 +1882,8 @@
         "Apertura": "1910 ca.",
         "Chiusura": "1920 ca.",
         "Nome attività": "Giuseppe Melli",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 43.770456,
             "lon": 11.2506521
@@ -1795,7 +1900,8 @@
         "Apertura": "1880 ca.",
         "Chiusura": "1900 ca.",
         "Nome attività": "Giuseppe Bellini",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 43.7725193,
             "lon": 11.2498118
@@ -1812,7 +1918,8 @@
         "Apertura": "1900 ca.",
         "Chiusura": "1909",
         "Nome attività": "Luigi Grassi e figli, \"Luigi Grassi & Sons\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 43.77374179835463,
             "lon": 11.248260851771873
@@ -1829,7 +1936,8 @@
         "Apertura": "1950 ca.",
         "Chiusura": "1989 ca.",
         "Nome attività": "Benvenuto Bacarelli",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 43.7715147,
             "lon": 11.2513609
@@ -1846,7 +1954,8 @@
         "Apertura": "1972",
         "Chiusura": "1990",
         "Nome attività": "Giuliano Freschi",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 43.7710558,
             "lon": 11.2489301
@@ -1863,7 +1972,8 @@
         "Apertura": "1924",
         "Chiusura": "1939",
         "Nome attività": "Salvatore e Francesco Romano",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 43.7721556,
             "lon": 11.2506725
@@ -1880,7 +1990,8 @@
         "Apertura": "1920 ca.",
         "Chiusura": "1932 ca.",
         "Nome attività": "Giuseppe Volterra e fratelli e Adolfo Melli",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 43.76724,
             "lon": 11.2519218
@@ -1897,7 +2008,8 @@
         "Apertura": "1920 ca.",
         "Chiusura": "2007",
         "Nome attività": "Luigi, Giuseppe Jr e Mario Bellini ",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 43.7696787,
             "lon": 11.2464656
@@ -1914,7 +2026,8 @@
         "Apertura": "1900 ca.",
         "Chiusura": "1910 ca.",
         "Nome attività": "Emilio e Davide Luigi Costantini",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 43.7688942,
             "lon": 11.248804
@@ -1931,7 +2044,8 @@
         "Apertura": "1986",
         "Chiusura": "2000",
         "Nome attività": "Damiano Lapiccirella, \"Galleria Lapiccirella\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 43.7665806,
             "lon": 11.2488502
@@ -1948,7 +2062,8 @@
         "Apertura": "1920 ca.",
         "Chiusura": "1940",
         "Nome attività": "Achille De Clemente (Palazzo Ricasoli Firidolfi, sede e abitazione privata)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 43.7675405,
             "lon": 11.2494555
@@ -1965,7 +2080,8 @@
         "Apertura": "1877",
         "Chiusura": "1882 ca.",
         "Nome attività": "Vincenzo Ciampolini, \"Fabbrica di Mobili Artistici. Pia Casa di Lavoro\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 43.7672433,
             "lon": 11.2673138
@@ -1982,7 +2098,8 @@
         "Apertura": "1887",
         "Chiusura": "1905 ca.",
         "Nome attività": "Giulio Sambon, \"Impresa di vendita in Italia Giulio Sambon\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 43.773821,
             "lon": 11.255589
@@ -1999,7 +2116,8 @@
         "Apertura": "1943",
         "Chiusura": "1955",
         "Nome attività": "Giuseppe Bellesi (abitazione privata)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 43.7961246,
             "lon": 11.2574072
@@ -2016,7 +2134,8 @@
         "Apertura": "1910",
         "Chiusura": "1923",
         "Nome attività": "Elia Volpi (Palazzo Davanzati)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 43.7701708,
             "lon": 11.2528464
@@ -2033,7 +2152,8 @@
         "Apertura": "1923",
         "Chiusura": "1930 ca.",
         "Nome attività": "Giovanni Pini (deposito)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 43.7645554,
             "lon": 11.2593975
@@ -2050,7 +2170,8 @@
         "Apertura": "1978",
         "Chiusura": "1986",
         "Nome attività": "Leonardo Lapiccirella, \"Galleria Lapiccirella\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 43.7708267,
             "lon": 11.2512907
@@ -2067,7 +2188,8 @@
         "Apertura": "1920 ca.",
         "Chiusura": "1940 ca.",
         "Nome attività": "Cesare, Umberto e Giovanni Pini \"Cesare Pini e figli\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 43.7704385,
             "lon": 11.2514389
@@ -2084,7 +2206,8 @@
         "Apertura": "1901",
         "Chiusura": "1913 ca.",
         "Nome attività": "Gustavo Volterra e Cesare Melli, \"Volterra & Melli\" (sede e laboratori)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 43.7710805,
             "lon": 11.2514307
@@ -2101,7 +2224,8 @@
         "Apertura": "1931",
         "Chiusura": "1955",
         "Nome attività": "Alessandro Contini Bonacossi (Villa Vittoria, abitazione privata)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 43.7799864,
             "lon": 11.2488546
@@ -2118,7 +2242,8 @@
         "Apertura": "1950 ca.",
         "Chiusura": "1957",
         "Nome attività": "Leonardo Lapiccirella (studio)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 43.7733644,
             "lon": 11.2521456
@@ -2135,7 +2260,8 @@
         "Apertura": "1924 ca.",
         "Chiusura": "1960 ca.",
         "Nome attività": "Salvatore e Francesco Romano (magazzino)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 43.7774079,
             "lon": 11.253609
@@ -2152,7 +2278,8 @@
         "Apertura": "1900 ca.",
         "Chiusura": "1930 ca.",
         "Nome attività": "Isacco Sabatello, \"Isacco Sabatello e figli\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 41.89470435,
             "lon": 12.476355478143148
@@ -2169,7 +2296,8 @@
         "Apertura": "1950 ca.",
         "Chiusura": "1970 ca.",
         "Nome attività": "Armando Sabatello (abitazione privata)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 41.92681180682235,
             "lon": 12.461249389880953
@@ -2186,7 +2314,8 @@
         "Apertura": "1880 ca.",
         "Chiusura": "1920 ca.",
         "Nome attività": "Giuseppe Grassi (abitazione privata)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 41.9122797,
             "lon": 12.4704206
@@ -2203,7 +2332,8 @@
         "Apertura": "1874",
         "Chiusura": "1877 ca.",
         "Nome attività": "Vincenzo Ciampolini, ex Borgo Vecchio 165",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 41.902499042563406,
             "lon": 12.462562662887734
@@ -2220,7 +2350,8 @@
         "Apertura": "1877",
         "Chiusura": "1891 ca.",
         "Nome attività": "Vincenzo Ciampolini",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 41.8917781,
             "lon": 12.4842009
@@ -2237,7 +2368,8 @@
         "Apertura": "1955",
         "Chiusura": "2024",
         "Nome attività": "Alberto e Franco Di Castro",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 41.9056375,
             "lon": 12.482346487653565
@@ -2254,7 +2386,8 @@
         "Apertura": "1880 ca.",
         "Chiusura": "1924",
         "Nome attività": "Filippo Tavazzi",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 41.9056375,
             "lon": 12.482346487653565
@@ -2271,7 +2404,8 @@
         "Apertura": "1945",
         "Chiusura": "1985",
         "Nome attività": "Emanuele e Guido Sestieri, \"Galleria Sestieri\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 41.9057477,
             "lon": 12.4821294
@@ -2288,7 +2422,8 @@
         "Apertura": "1880 ca.",
         "Chiusura": "1938 ca.",
         "Nome attività": "Isacco Segre",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 41.9056375,
             "lon": 12.482346487653565
@@ -2305,7 +2440,8 @@
         "Apertura": "1870",
         "Chiusura": "1938 ca.",
         "Nome attività": "Isacco e Emanuele Segre, poi solo Emanuele",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 41.9056375,
             "lon": 12.482346487653565
@@ -2322,7 +2458,8 @@
         "Apertura": "1870 ca.",
         "Chiusura": "1890",
         "Nome attività": "Attilio Simonetti (Palazzo Altemps, studio privato)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 41.90121775,
             "lon": 12.473099153916351
@@ -2339,7 +2476,8 @@
         "Apertura": "1870 ca.",
         "Chiusura": "1920 ca.",
         "Nome attività": "Angelo Di Castro (negozio), ex Piazza Scossacavalli",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 41.8966423,
             "lon": 12.4743514
@@ -2356,7 +2494,8 @@
         "Apertura": "1885",
         "Chiusura": "1901",
         "Nome attività": "Giuseppe Giacomini e Vincenzo Capobianchi, \"Giacomini & Capobianchi\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 41.9059856,
             "lon": 12.4836915
@@ -2373,7 +2512,8 @@
         "Apertura": "1880 ca.",
         "Chiusura": "1924",
         "Nome attività": "Filippo Tavazzi",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 41.9057255,
             "lon": 12.4820815
@@ -2390,7 +2530,8 @@
         "Apertura": "1887",
         "Chiusura": "1905 ca.",
         "Nome attività": "Giulio Sambon, \"Impresa di vendita in Italia Giulio Sambon\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": null,
             "lon": null
@@ -2407,7 +2548,8 @@
         "Apertura": "1897",
         "Chiusura": "1943 ca.",
         "Nome attività": "Alexandre Imbert, \"Galerie A. Imbert\" (Palazzo Caffarelli)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 41.9057255,
             "lon": 12.4820815
@@ -2424,7 +2566,8 @@
         "Apertura": "1900 ca.",
         "Chiusura": "1930 ca.",
         "Nome attività": "Leone Sabatello",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 41.90834521500914,
             "lon": 12.479089794624903
@@ -2441,7 +2584,8 @@
         "Apertura": "1929",
         "Chiusura": "1931 ca.",
         "Nome attività": "Alfredo Geri, \"Galleria Geri\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 41.90834521500914,
             "lon": 12.479089794624903
@@ -2458,7 +2602,8 @@
         "Apertura": "1932",
         "Chiusura": "1935",
         "Nome attività": "Dario Sabatello, \"Galleria Sabatello\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 41.90834521500914,
             "lon": 12.479089794624903
@@ -2475,7 +2620,8 @@
         "Apertura": "1916",
         "Chiusura": "1955 ca.",
         "Nome attività": "Emanuele Efrati, \"Galleria Efrati\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 41.9084557,
             "lon": 12.4789596
@@ -2492,7 +2638,8 @@
         "Apertura": "1955 ca.",
         "Chiusura": "1998",
         "Nome attività": "Emanuele Efrati e Giuseppe Antonacci, \"Antonacci-Efrati\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 41.9084557,
             "lon": 12.4789596
@@ -2509,7 +2656,8 @@
         "Apertura": "1930 ca.",
         "Chiusura": "1939 ca.",
         "Nome attività": "Amedeo e Leone Di Castro, \"Antichità A. L. Di Castro\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 41.9084557,
             "lon": 12.4789596
@@ -2526,7 +2674,8 @@
         "Apertura": "1885 ca.",
         "Chiusura": "1891",
         "Nome attività": "Alessandro e Antonio Jandolo (Palazzo Raffaelli)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 41.9084557,
             "lon": 12.4789596
@@ -2543,7 +2692,8 @@
         "Apertura": "1907 ca.",
         "Chiusura": "1940 ca.",
         "Nome attività": "Augusto e Salvatore Jandolo, Filippo e Guido Tavazzi, \"Casa di Vendita Jandolo & Tavazzi\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 41.90714284843539,
             "lon": 12.480859357671143
@@ -2560,7 +2710,8 @@
         "Apertura": "1946 ca.",
         "Chiusura": "1960 ca.",
         "Nome attività": "Alberto Di Castro",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 41.9084557,
             "lon": 12.4789596
@@ -2577,7 +2728,8 @@
         "Apertura": "1830 ca.",
         "Chiusura": "1885 ca.",
         "Nome attività": "Tommaso e Vincenzo Capobianchi",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 41.9083445,
             "lon": 12.4790906
@@ -2594,7 +2746,8 @@
         "Apertura": "1970",
         "Chiusura": "2018",
         "Nome attività": "Fabrizio e Marco Fabio Apolloni, \"W. Apolloni\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 41.9084557,
             "lon": 12.4789596
@@ -2611,7 +2764,8 @@
         "Apertura": "1870 ca.",
         "Chiusura": "1885 ca.",
         "Nome attività": "Salvatore Jandolo e figli",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 41.8917164,
             "lon": 12.4834113
@@ -2628,7 +2782,8 @@
         "Apertura": "1886",
         "Chiusura": "1887",
         "Nome attività": "Giulio Sambon, \"Impresa di vendita in Italia Giulio Sambon\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 41.9060309,
             "lon": 12.4790414
@@ -2645,7 +2800,8 @@
         "Apertura": "1880 ca.",
         "Chiusura": "1915",
         "Nome attività": "Filippo Tavazzi (1880 ca.-1895); Pellegrino Sestieri (1895 ca.-1915 ca.)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 41.9036731,
             "lon": 12.4767172
@@ -2662,7 +2818,8 @@
         "Apertura": "1880 ca.",
         "Chiusura": "1915",
         "Nome attività": "Filippo Tavazzi (1880 ca.-1895); Pellegrino Sestieri (1895 ca.-1915 ca.)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 41.9036731,
             "lon": 12.4767172
@@ -2679,7 +2836,8 @@
         "Apertura": "1891",
         "Chiusura": "1919",
         "Nome attività": "Gustavo Corvisieri, \"Casa di Vendite Corvisieri & C.\", con Vincenzo Capobianchi dal 1901",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 41.9039747,
             "lon": 12.4843312
@@ -2690,13 +2848,14 @@
         "Nazione": "Italia",
         "Regione": "Lazio",
         "Città": "Roma",
-        "Via": "Via di Propaganda ",
+        "Via": "Via di Propaganda",
         "Civico": "26",
         "ID_entità": "CA_II CO_II",
         "Apertura": "1891",
         "Chiusura": "1919",
         "Nome attività": "Gustavo Corvisieri e Vincenzo Capobianchi",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 41.9043884,
             "lon": 12.4830508
@@ -2713,7 +2872,8 @@
         "Apertura": "1926",
         "Chiusura": "1970",
         "Nome attività": "Wladimiro Apolloni e Fabrizio, \"W. Apolloni\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 41.9044614,
             "lon": 12.4822583
@@ -2730,7 +2890,8 @@
         "Apertura": "1885 ca.",
         "Chiusura": "1920 ca.",
         "Nome attività": "Ettore Jandolo",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 41.9089407,
             "lon": 12.4791801
@@ -2747,7 +2908,8 @@
         "Apertura": "1932",
         "Chiusura": "1939",
         "Nome attività": "Guido Sestieri",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 41.9080943,
             "lon": 12.4802159
@@ -2764,7 +2926,8 @@
         "Apertura": "1900 ca.",
         "Chiusura": "1949",
         "Nome attività": "Augusto Jandolo",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 41.9089407,
             "lon": 12.4791801
@@ -2781,7 +2944,8 @@
         "Apertura": "2018",
         "Chiusura": "2024",
         "Nome attività": "Marco Fabio Apolloni, \"W. Apolloni\" (Palazzo Patrizi)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 41.9080943,
             "lon": 12.4802159
@@ -2798,7 +2962,8 @@
         "Apertura": "1915 ca.",
         "Chiusura": "1932",
         "Nome attività": "Pellegrino Sestieri e figli ",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 41.9105696,
             "lon": 12.4733492
@@ -2815,7 +2980,8 @@
         "Apertura": "1921",
         "Chiusura": "1931",
         "Nome attività": "Alessandro Contini Bonacossi (abitazione privata)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 41.9149169921875,
             "lon": 12.509556770324707
@@ -2832,7 +2998,8 @@
         "Apertura": "1895",
         "Chiusura": "1909",
         "Nome attività": "Gioacchino Ferroni (sede e abitazione privata)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 41.9073554,
             "lon": 12.4862533
@@ -2849,7 +3016,8 @@
         "Apertura": "1892",
         "Chiusura": "1970",
         "Nome attività": "Giuseppe, Giorgio e Sergio Sangiorgi, \"Hotel de Ventes Sangiorgi\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 41.9037496,
             "lon": 12.476095922547149
@@ -2866,7 +3034,8 @@
         "Apertura": "1898",
         "Chiusura": "1924",
         "Nome attività": "Giuseppe Sangiorgi, \"Negozio di arte antica e moderna\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 41.9058527,
             "lon": 12.4756166
@@ -2883,7 +3052,8 @@
         "Apertura": "1885",
         "Chiusura": "1901",
         "Nome attività": "Giuseppe Giacomini e Vincenzo Capobianchi, \"Giacomini & C.\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 41.9039736,
             "lon": 12.4870662
@@ -2900,7 +3070,8 @@
         "Apertura": "1905",
         "Chiusura": "1925 ca.",
         "Nome attività": "Alfredo Barsanti (Casa Buti)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 41.9049566,
             "lon": 12.4853209
@@ -2917,7 +3088,8 @@
         "Apertura": "1910 ca.",
         "Chiusura": "1922",
         "Nome attività": "Raoul Tolentino, \"Galerie d'Art Ancien\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 41.9051422,
             "lon": 12.4849876
@@ -2934,7 +3106,8 @@
         "Apertura": "1891",
         "Chiusura": "1920 ca.",
         "Nome attività": "Alessandro e Antonio Jandolo",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 41.9058579,
             "lon": 12.483887
@@ -2951,7 +3124,8 @@
         "Apertura": "1932",
         "Chiusura": "1938 ca.",
         "Nome attività": "Emanuele Sestieri, \"Galleria Sestieri\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 41.9049228,
             "lon": 12.4855537
@@ -2968,7 +3142,8 @@
         "Apertura": "1925 ca.",
         "Chiusura": "1935 ca.",
         "Nome attività": "Alfredo Barsanti",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 41.9041242,
             "lon": 12.4870227
@@ -2985,7 +3160,8 @@
         "Apertura": "1935 ca.",
         "Chiusura": "1946",
         "Nome attività": "Alfredo Barsanti",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 41.90398,
             "lon": 12.4872761
@@ -3002,7 +3178,8 @@
         "Apertura": "1909",
         "Chiusura": "1921",
         "Nome attività": "Alessandro Contini Bonacossi (abitazione privata)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 41.9142301,
             "lon": 12.4963669
@@ -3019,7 +3196,8 @@
         "Apertura": "1891 ca.",
         "Chiusura": "1909 ca.",
         "Nome attività": "Vincenzo Ciampolini",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 41.9058072,
             "lon": 12.4837775
@@ -3036,7 +3214,8 @@
         "Apertura": "1890",
         "Chiusura": "1932",
         "Nome attività": "Attilio Simonetti e figli, \"Galleria Simonetti\", dal 1925 \"Simonetti Aldo Giulio & C.\" (Palazzo Odescalchi)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 41.905145,
             "lon": 12.4720605
@@ -3053,7 +3232,8 @@
         "Apertura": "1892",
         "Chiusura": "1934",
         "Nome attività": "Michele Lazzaroni (abitazione privata)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 41.9373142,
             "lon": 12.4755238
@@ -3070,7 +3250,8 @@
         "Apertura": "1920",
         "Chiusura": "1929",
         "Nome attività": "Ugo Jandolo",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 41.9553984,
             "lon": 12.4871875
@@ -3087,7 +3268,8 @@
         "Apertura": "1880 ca.",
         "Chiusura": "1924",
         "Nome attività": "Paolo Paolini",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 41.8933203,
             "lon": 12.4829321
@@ -3104,7 +3286,8 @@
         "Apertura": "1915",
         "Chiusura": "",
         "Nome attività": "Palazzo Simonetti",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 41.8933203,
             "lon": 12.4829321
@@ -3121,7 +3304,8 @@
         "Apertura": "1884",
         "Chiusura": "1929",
         "Nome attività": "Ercole, Cesare e Amedeo Canessa, \"Canessa Antiquaires – Numismates\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 40.834286399999996,
             "lon": 14.241816012496823
@@ -3138,7 +3322,8 @@
         "Apertura": "1902",
         "Chiusura": "1920",
         "Nome attività": "Salvatore Romano",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 40.8358846,
             "lon": 14.2487679
@@ -3155,7 +3340,8 @@
         "Apertura": "1886",
         "Chiusura": "1905 ca.",
         "Nome attività": "Giulio Sambon, \"Impresa di vendita in Italia Giulio Sambon\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 40.8356781,
             "lon": 14.2462026
@@ -3166,13 +3352,14 @@
         "Nazione": "Italia",
         "Regione": "Veneto",
         "Città": "Venezia",
-        "Via": "San Barnaba ",
+        "Via": "San Barnaba",
         "Civico": "3207",
-        "ID_entità": "BA_V_1",
+        "ID_entità": "BA_V",
         "Apertura": "1890 ca.",
         "Chiusura": "1895",
         "Nome attività": "Dino Barozzi",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 45.4330713,
             "lon": 12.3249789
@@ -3185,11 +3372,12 @@
         "Città": "Venezia",
         "Via": "Campo Santo Stefano",
         "Civico": "2950",
-        "ID_entità": "BA_V_1",
+        "ID_entità": "BA_V",
         "Apertura": "1895",
         "Chiusura": "1922 ca.",
         "Nome attività": "Dino Barozzi, \"Dino Barozzi. Pittore, restauratore e antiquario\" (Palazzo Barbaro)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 45.4330944,
             "lon": 12.3304167
@@ -3200,13 +3388,14 @@
         "Nazione": "Italia",
         "Regione": "Veneto",
         "Città": "Venezia",
-        "Via": "Corte del Duca Sforza ",
+        "Via": "Corte del Duca Sforza",
         "Civico": "3056",
-        "ID_entità": "BA_V_1",
+        "ID_entità": "BA_V",
         "Apertura": "1895",
         "Chiusura": "1922",
         "Nome attività": "Dino Barozzi",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 45.4327832,
             "lon": 12.3282559
@@ -3217,13 +3406,14 @@
         "Nazione": "Italia",
         "Regione": "Veneto",
         "Città": "Venezia",
-        "Via": "Calle San Maurizio ",
+        "Via": "Calle San Maurizio",
         "Civico": "2769",
-        "ID_entità": "BA_V_1",
+        "ID_entità": "BA_V",
         "Apertura": "1895",
         "Chiusura": "1922",
         "Nome attività": "Dino Barozzi",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": null,
             "lon": null
@@ -3234,13 +3424,14 @@
         "Nazione": "Italia",
         "Regione": "Veneto",
         "Città": "Venezia",
-        "Via": "San Marco ",
+        "Via": "San Marco",
         "Civico": "2888",
-        "ID_entità": "BA_V_1",
+        "ID_entità": "BA_V",
         "Apertura": "1925",
         "Chiusura": "1930 ca.",
         "Nome attività": "Dino Barozzi",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 45.4348289,
             "lon": 12.3340247
@@ -3251,13 +3442,14 @@
         "Nazione": "Italia",
         "Regione": "Veneto",
         "Città": "Venezia",
-        "Via": "Campiello San Vidal ",
+        "Via": "Campiello San Vidal",
         "Civico": "2859",
-        "ID_entità": "BA_V_1",
+        "ID_entità": "BA_V",
         "Apertura": "1930 ca.",
         "Chiusura": "1942 ca.",
         "Nome attività": "Dino Barozzi",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 45.4322067,
             "lon": 12.3295601
@@ -3268,13 +3460,14 @@
         "Nazione": "Italia",
         "Regione": "Veneto",
         "Città": "Venezia",
-        "Via": "Sottoportico Giustinian ",
+        "Via": "Sottoportico Giustinian",
         "Civico": "2888",
-        "ID_entità": "BA_V_1",
+        "ID_entità": "BA_V",
         "Apertura": "1930 ca.",
         "Chiusura": "1942 ca.",
         "Nome attività": "Dino Barozzi",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": null,
             "lon": null
@@ -3287,11 +3480,12 @@
         "Città": "Venezia",
         "Via": "Fondamenta Van Axel o de le Erbe",
         "Civico": "",
-        "ID_entità": "BA_V_1",
+        "ID_entità": "BA_V",
         "Apertura": "1919",
         "Chiusura": "1942",
         "Nome attività": "Dino Barozzi (Palazzo Soranzo Van Axel, abitazione privata e sede)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": null,
             "lon": null
@@ -3304,11 +3498,12 @@
         "Città": "Venezia",
         "Via": "Campo San Stae",
         "Civico": "2603",
-        "ID_entità": "CA_IV_1",
+        "ID_entità": "CA_IV",
         "Apertura": "1884",
         "Chiusura": "1930 ca.",
         "Nome attività": "Antonio Carrer",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 45.4414922,
             "lon": 12.3308869
@@ -3321,11 +3516,12 @@
         "Città": "Venezia",
         "Via": "Fondamenta Santa Maria Mater Domini",
         "Civico": "2068",
-        "ID_entità": "CA_IV_1",
+        "ID_entità": "CA_IV",
         "Apertura": "1932",
         "Chiusura": "1934",
         "Nome attività": "Antonio Carrer",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": null,
             "lon": null
@@ -3342,7 +3538,8 @@
         "Apertura": "1904 ca.",
         "Chiusura": "1916",
         "Nome attività": "Lino Pesaro",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 45.4658037,
             "lon": 9.1829259
@@ -3355,11 +3552,12 @@
         "Città": "Milano",
         "Via": "via Manzoni",
         "Civico": "12",
-        "ID_entità": "CA_IV_1",
+        "ID_entità": "CA_IV",
         "Apertura": "1917",
         "Chiusura": "1938",
         "Nome attività": "Lino Pesaro, \"Galleria Pesaro\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 45.5477706,
             "lon": 9.175727
@@ -3376,7 +3574,8 @@
         "Apertura": "1869",
         "Chiusura": "1916",
         "Nome attività": "Michelangelo Guggenheim, \"Gabinetto di oggetti di antichità e di belle arti\" ",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 45.4316384,
             "lon": 12.3331068
@@ -3393,7 +3592,8 @@
         "Apertura": "1869 ca.",
         "Chiusura": "1874",
         "Nome attività": "Michelangelo Guggenheim, \"Gabinetto di oggetti di antichità e di belle arti\" ",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": null,
             "lon": null
@@ -3410,7 +3610,8 @@
         "Apertura": "1887",
         "Chiusura": "1914",
         "Nome attività": "Michelangelo Guggenheim, \"M. Guggenheim. Objets d’Art & Antiquités\" (Palazzo Balbi, sede e abitazione privata)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 45.4379606,
             "lon": 12.3413359
@@ -3427,7 +3628,8 @@
         "Apertura": "1911",
         "Chiusura": "1919",
         "Nome attività": "Adolph Loewi, \"Galleria di San Gregorio\" (Abbazia di S. Gregorio)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 45.4306843,
             "lon": 12.3335415
@@ -3444,7 +3646,8 @@
         "Apertura": "1919",
         "Chiusura": "1939",
         "Nome attività": "Adolph Loewi, \"Adolph Loewi per il commercio di Antichità ed Oggetti d'arte antica\" (Palazzo Nani-Mocenigo)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 45.4306217,
             "lon": 12.3256667
@@ -3461,7 +3664,8 @@
         "Apertura": "1903",
         "Chiusura": "1927",
         "Nome attività": "Ludwig Pollak (Palazzo Alberoni Bacchettoni, sede e abitazione privata)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 41.9031614,
             "lon": 12.486873
@@ -3478,7 +3682,8 @@
         "Apertura": "1927",
         "Chiusura": "1943",
         "Nome attività": "Ludwig Pollak (Palazzo Odescalchi, sede e abitazione privata)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 41.8978203,
             "lon": 12.483012
@@ -3495,7 +3700,8 @@
         "Apertura": "1952",
         "Chiusura": "2014",
         "Nome attività": "Ferdinando e Teresa Salamon, \"Art Ancienne\" poi Silverio Salamon \"Arte Antica\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 45.0646542,
             "lon": 7.6780314
@@ -3512,7 +3718,8 @@
         "Apertura": "1966",
         "Chiusura": "1967",
         "Nome attività": "Harry Salamon",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 45.4677542,
             "lon": 9.1965254
@@ -3529,7 +3736,8 @@
         "Apertura": "1967",
         "Chiusura": "1970",
         "Nome attività": "Harry Salamon",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 45.4688674,
             "lon": 9.1936196
@@ -3546,7 +3754,8 @@
         "Apertura": "1970",
         "Chiusura": "1982",
         "Nome attività": "Harry Salamon",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": null,
             "lon": null
@@ -3563,7 +3772,8 @@
         "Apertura": "1982",
         "Chiusura": "1985",
         "Nome attività": "Harry Salamon",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 45.4572173,
             "lon": 9.1877377
@@ -3580,7 +3790,8 @@
         "Apertura": "1986",
         "Chiusura": "1993",
         "Nome attività": "Harry Salamon, \"Il Gabinetto Salamon\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 45.4674685,
             "lon": 9.2005712
@@ -3597,7 +3808,8 @@
         "Apertura": "1993",
         "Chiusura": "in attività",
         "Nome attività": "Harry, Matteo e Lorenza Salamon, \"“Salamon & C.”, poi “Matteo Salamon” e “Salamon Fine Art”",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 45.4611775,
             "lon": 8.8882216
@@ -3614,7 +3826,8 @@
         "Apertura": "2002",
         "Chiusura": "in attività",
         "Nome attività": "Elena Salamon",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 45.0736822,
             "lon": 7.6830678
@@ -3625,13 +3838,14 @@
         "Nazione": "Italia",
         "Regione": "Veneto",
         "Città": "Venezia",
-        "Via": "San Benedetto ",
+        "Via": "San Benedetto",
         "Civico": "3952-53",
         "ID_entità": "SA_VI_NEW",
         "Apertura": "1902",
         "Chiusura": "1906",
         "Nome attività": "Antonio Salvadori (Palazzo Tron)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 45.4703627,
             "lon": 9.2097091
@@ -3648,7 +3862,8 @@
         "Apertura": "1907",
         "Chiusura": "1928",
         "Nome attività": "Antonio Salvadori (Palazzo Moro Lin)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 45.4370866,
             "lon": 12.3285123
@@ -3665,7 +3880,8 @@
         "Apertura": "1928",
         "Chiusura": "1929",
         "Nome attività": "Antonio Salvadori",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 45.4361168,
             "lon": 12.3433831
@@ -3682,7 +3898,8 @@
         "Apertura": "1929",
         "Chiusura": "1930",
         "Nome attività": "Antonio Salvadori",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": null,
             "lon": null
@@ -3699,7 +3916,8 @@
         "Apertura": "1878",
         "Chiusura": "1903",
         "Nome attività": "Giuseppe, Franco e Attilio Steffanoni, \"Fratelli Steffanoni-Belle Arti-Bergamo\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 45.6863617,
             "lon": 9.6627716
@@ -3716,7 +3934,8 @@
         "Apertura": "1903",
         "Chiusura": "1987",
         "Nome attività": "Giuseppe, Franco e Attilio Steffanoni, \"Giuseppe Steffanoni & figli, Trasponitori di pitture\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 45.675026,
             "lon": 9.6609375
@@ -3733,7 +3952,8 @@
         "Apertura": "1951",
         "Chiusura": "2018",
         "Nome attività": "Nella Longari, “Galleria Nella Longari”",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 45.4688712,
             "lon": 9.1935686
@@ -3750,7 +3970,8 @@
         "Apertura": "1951",
         "Chiusura": "2018",
         "Nome attività": "Longari, “Longari Arte Milano” (Palazzo Cicogna)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 45.467112,
             "lon": 9.2012094
@@ -3767,7 +3988,8 @@
         "Apertura": "1860",
         "Chiusura": "1926 ca.",
         "Nome attività": "Emanuele Subert, “Emanuele Subert Antichità e Belle Arti” poi con Rodolfo Subert",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 45.4699933,
             "lon": 9.1914825
@@ -3784,7 +4006,8 @@
         "Apertura": "1900",
         "Chiusura": "1926 ca.",
         "Nome attività": "Emanuele e Roldolfo Subert, “Rodolfo Subert Antichità e Belle Arti”",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 45.4647182,
             "lon": 9.1900276
@@ -3801,7 +4024,8 @@
         "Apertura": "1926",
         "Chiusura": "1945",
         "Nome attività": "Rodolfo Subert, “Galleria S. Andrea”",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": null,
             "lon": null
@@ -3818,7 +4042,8 @@
         "Apertura": "1951",
         "Chiusura": "1966",
         "Nome attività": "Rodolfo Subert, “G.G. Subert”",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 45.4674802,
             "lon": 9.1950227
@@ -3835,7 +4060,8 @@
         "Apertura": "1952",
         "Chiusura": "1966",
         "Nome attività": "Alberto Subert",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 45.4698681,
             "lon": 9.197276
@@ -3852,7 +4078,8 @@
         "Apertura": "1966",
         "Chiusura": "2012",
         "Nome attività": "Alberto e Michele Subert, “Antichità e Oggetti d’Arte”",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 45.4704923,
             "lon": 9.1956436
@@ -3869,7 +4096,8 @@
         "Apertura": "2013",
         "Chiusura": "in attività",
         "Nome attività": "Michele Subert",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 45.4712999,
             "lon": 9.1955898
@@ -3886,7 +4114,8 @@
         "Apertura": "1937",
         "Chiusura": "1950",
         "Nome attività": "Luigi e Giorgio Caretto, “Galleria Luigi Caretto”",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 45.0642371,
             "lon": 7.6769174
@@ -3903,7 +4132,8 @@
         "Apertura": "1950",
         "Chiusura": "1964",
         "Nome attività": "Giorgio Caretto",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 45.0675126,
             "lon": 7.6857501
@@ -3920,7 +4150,8 @@
         "Apertura": "1964",
         "Chiusura": "in attività",
         "Nome attività": "Giorgio, Patrizia e Luigi Caretto",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 45.0675466,
             "lon": 7.6852018
@@ -3937,7 +4168,8 @@
         "Apertura": "1954",
         "Chiusura": "1992",
         "Nome attività": "Guido e Marzio Cortinovis, “Antichità Cortinovis”",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 44.4917528,
             "lon": 11.3465298
@@ -3954,7 +4186,8 @@
         "Apertura": "1960 ca.",
         "Chiusura": "in attività",
         "Nome attività": "Guido e Marzio Cortinovis (studio privato)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 44.4895926,
             "lon": 11.3470562
@@ -3971,7 +4204,8 @@
         "Apertura": "1926",
         "Chiusura": "1945",
         "Nome attività": "Rodolfo Subert, “Galleria S. Andrea”",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": null,
             "lon": null
@@ -3988,7 +4222,8 @@
         "Apertura": "1926",
         "Chiusura": "1945",
         "Nome attività": "Rodolfo Subert, “Galleria S. Andrea”",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": null,
             "lon": null
@@ -4005,7 +4240,8 @@
         "Apertura": "1940 ca.",
         "Chiusura": "1962",
         "Nome attività": "Antonia Maria Gianetti",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 45.4724669,
             "lon": 9.1885665
@@ -4022,7 +4258,8 @@
         "Apertura": "1962",
         "Chiusura": "1988",
         "Nome attività": "Antonia Maria Gianetti, “Maria Antonia Gianetti Antichità”",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 45.4691366,
             "lon": 9.1946662
@@ -4039,7 +4276,8 @@
         "Apertura": "1981",
         "Chiusura": "2002",
         "Nome attività": "Antonia Maria Gianetti, “Maria Antonia Gianetti Antichità”",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 45.4695352,
             "lon": 9.1951754
@@ -4056,7 +4294,8 @@
         "Apertura": "",
         "Chiusura": "",
         "Nome attività": "Eugenio Di Castro",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 41.9074985,
             "lon": 12.4788258
@@ -4073,7 +4312,8 @@
         "Apertura": "",
         "Chiusura": "",
         "Nome attività": "Eugenio Di Castro",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 41.9083445,
             "lon": 12.4790906
@@ -4090,7 +4330,8 @@
         "Apertura": "1932",
         "Chiusura": "1976",
         "Nome attività": "Eugenio Di Castro (Palazzo Raffaelli)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 41.9083445,
             "lon": 12.4790906
@@ -4107,7 +4348,8 @@
         "Apertura": "1976",
         "Chiusura": "2006",
         "Nome attività": "Angelo Di Castro (Palazzo Raffaelli)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 41.907359,
             "lon": 12.4812456
@@ -4124,7 +4366,8 @@
         "Apertura": "1873",
         "Chiusura": "1879",
         "Nome attività": "Raffaele Angiolini e Alessandro Ascoli, prima “Alessandro Ascoli e Comp.o”, poi “Angiolini e Ascoli”",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 44.4953671,
             "lon": 11.3396733
@@ -4141,7 +4384,8 @@
         "Apertura": "1905",
         "Chiusura": "1907",
         "Nome attività": "Raffaele Angiolini e Alessandro Ranuzzi, “Alessandro Ranuzzi e C.”",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 44.4920386,
             "lon": 11.3381429
@@ -4158,7 +4402,8 @@
         "Apertura": "1905",
         "Chiusura": "1907",
         "Nome attività": "Alberto D'Atri",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 41.9235732,
             "lon": 12.4960667
@@ -4175,7 +4420,8 @@
         "Apertura": "1920",
         "Chiusura": "1980 ca.",
         "Nome attività": "Vittorio Forti (abitazione privata)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 41.9253158,
             "lon": 12.4962847
@@ -4192,7 +4438,8 @@
         "Apertura": "1944",
         "Chiusura": "1951",
         "Nome attività": "Pietro Maria Bardi \"Studio d’Arte Palma\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 41.9059105,
             "lon": 12.4764057
@@ -4209,7 +4456,8 @@
         "Apertura": "1901",
         "Chiusura": "1901",
         "Nome attività": "Aldo Molena",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 44.4976229,
             "lon": 11.3430291
@@ -4226,7 +4474,8 @@
         "Apertura": "1911",
         "Chiusura": "1901",
         "Nome attività": "Aldo Molena",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 44.5035904,
             "lon": 11.3171441
@@ -4243,7 +4492,8 @@
         "Apertura": "1910 ca.",
         "Chiusura": "1930",
         "Nome attività": "Aldo Molena",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 44.495142,
             "lon": 11.3480059
@@ -4260,7 +4510,8 @@
         "Apertura": "1930",
         "Chiusura": "1933",
         "Nome attività": "Aldo Molena (abitazione privata)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 44.4945202,
             "lon": 11.349349
@@ -4277,7 +4528,8 @@
         "Apertura": "1930 ca.",
         "Chiusura": "1936",
         "Nome attività": "Aldo Molena",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 44.4944193,
             "lon": 11.3503346
@@ -4294,7 +4546,8 @@
         "Apertura": "1936 ca.",
         "Chiusura": "1946",
         "Nome attività": "Aldo Molena",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 44.4933884,
             "lon": 11.3484404
@@ -4311,7 +4564,8 @@
         "Apertura": "1897",
         "Chiusura": "1946",
         "Nome attività": "Cesare Pini",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": null,
             "lon": null
@@ -4328,7 +4582,8 @@
         "Apertura": "1962",
         "Chiusura": "2017",
         "Nome attività": "Ennio e Piero Riccardi, \"Riccardi Antichità\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 43.0693024,
             "lon": 12.6168303
@@ -4345,7 +4600,8 @@
         "Apertura": "1847",
         "Chiusura": "1882",
         "Nome attività": "Consiglio Ricchetti, \"Galleria d'arte e di antichità\" (Palazzo Marcello)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": null,
             "lon": null
@@ -4362,7 +4618,8 @@
         "Apertura": "1877",
         "Chiusura": "1890 ca.",
         "Nome attività": "Consiglio con David G. e Mazzo Ricchetti (dal 1880), \"Galleria d'arte e di antichità\" (Palazzo Barbarigo)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 45.4438257,
             "lon": 12.3270367
@@ -4379,7 +4636,8 @@
         "Apertura": "1882",
         "Chiusura": "1899",
         "Nome attività": "Consiglio con David G. e Mazzo Ricchetti (dal 1880), \"Galleria d'arte e di antichità\" (Palazzo Garzoni a San Samuele)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 45.4348289,
             "lon": 12.3340247
@@ -4396,7 +4654,8 @@
         "Apertura": "1960",
         "Chiusura": "1967",
         "Nome attività": "Giovanni Pratesi (magazzino)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 43.619002,
             "lon": 11.4706668
@@ -4413,7 +4672,8 @@
         "Apertura": "1967",
         "Chiusura": "2023",
         "Nome attività": "Giovanni Pratesi \"Giovanni Pratesi Antiquario\" (Palazzo Ridolfi)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 43.7668127,
             "lon": 11.2490565
@@ -4430,7 +4690,8 @@
         "Apertura": "1899 ca.",
         "Chiusura": "1903 ca.",
         "Nome attività": "Gino Sarfatti e Giuseppe Guetta, \"The Venice Art Company\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 45.4331386,
             "lon": 12.3357414
@@ -4447,7 +4708,8 @@
         "Apertura": "1901 ca.",
         "Chiusura": "1903 ca.",
         "Nome attività": "Gino Sarfatti e Giuseppe Guetta, \"The Venice Art Company\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 45.4331386,
             "lon": 12.3357414
@@ -4464,7 +4726,8 @@
         "Apertura": "1901 ca.",
         "Chiusura": "1903 ca.",
         "Nome attività": "Gino Sarfatti e Giuseppe Guetta, \"The Venice Art Company\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 45.4331386,
             "lon": 12.3357414
@@ -4481,7 +4744,8 @@
         "Apertura": "1901 ca.",
         "Chiusura": "1903 ca.",
         "Nome attività": "Gino Sarfatti e Giuseppe Guetta, \"The Venice Art Company\" (Palazzo Dandolo o Palazzo Ridotto)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 45.4323765,
             "lon": 12.3366987
@@ -4498,7 +4762,8 @@
         "Apertura": "1924",
         "Chiusura": "1925",
         "Nome attività": "Giuseppe Bellesi (Pall Mall Deposit, magazzino)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 51.5086356,
             "lon": -0.1336046
@@ -4515,7 +4780,8 @@
         "Apertura": "1937",
         "Chiusura": "1937",
         "Nome attività": "Giuseppe Bellesi, \"The Italian Art Gallery\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 51.51459585014354,
             "lon": -0.1514252361877634
@@ -4532,7 +4798,8 @@
         "Apertura": "1925 ca.",
         "Chiusura": "1932 ca.",
         "Nome attività": "Giuseppe Volterra (succursale)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 51.506273,
             "lon": -0.1378776
@@ -4549,7 +4816,8 @@
         "Apertura": "1929",
         "Chiusura": "1929",
         "Nome attività": "Giuseppe Bellesi, \"The Italian Art Gallery\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 51.5097564,
             "lon": -0.1419606
@@ -4566,7 +4834,8 @@
         "Apertura": "1948",
         "Chiusura": "1957",
         "Nome attività": "Giuseppe Bellesi, \"The Italian Art Gallery\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 51.52083206176758,
             "lon": -0.17385241389274597
@@ -4583,7 +4852,8 @@
         "Apertura": "1926",
         "Chiusura": "1926",
         "Nome attività": "Giuseppe Bellesi, \"The Italian Art Gallery\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 51.5109849,
             "lon": -0.140622
@@ -4600,7 +4870,8 @@
         "Apertura": "1767",
         "Chiusura": "1786",
         "Nome attività": "Giovanni Battista Torre e Paul Colnaghi, \"Torre & Co.\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 51.6014267,
             "lon": -0.2651974
@@ -4617,7 +4888,8 @@
         "Apertura": "1786",
         "Chiusura": "1799",
         "Nome attività": "Giovanni Battista Torre e Paul Colnaghi, \"Torre & Co.\"; dal 1788 solo Paul Colnaghi, \"Colnaghi & Co.\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 51.5057719,
             "lon": -0.1363183
@@ -4634,7 +4906,8 @@
         "Apertura": "1799",
         "Chiusura": "1825",
         "Nome attività": "Paul, Dominic e Martin Colnaghi, \"Colnaghi & Co.\", poi Dominic Colnaghi e John Antony Scott, poi William McKay, \"P. & D. Colnaghi & Co.\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": null,
             "lon": null
@@ -4651,7 +4924,8 @@
         "Apertura": "1825",
         "Chiusura": "1911",
         "Nome attività": "P. & D. Colnaghi & Co.",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 51.5082443,
             "lon": -0.129519
@@ -4668,7 +4942,8 @@
         "Apertura": "1912",
         "Chiusura": "1914",
         "Nome attività": "Colnaghi e Gustavus Mayer, \"Messrs. P. & D. Colnaghi and Obach\", poi \"P. & D. Colnaghi & Co.\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 51.5114028,
             "lon": -0.1439363
@@ -4679,13 +4954,14 @@
         "Nazione": "Regno Unito",
         "Regione": "Regno Unito",
         "Città": "Londra",
-        "Via": "Old Bond Street  14",
+        "Via": "Old Bond Street 14",
         "Civico": "14",
         "ID_entità": "CO_IV",
         "Apertura": "1940",
         "Chiusura": "2010",
         "Nome attività": "Colnaghi, \"P. & D. Colnaghi & Co.\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 51.5089078,
             "lon": -0.1408282
@@ -4702,7 +4978,8 @@
         "Apertura": "2010",
         "Chiusura": "2015",
         "Nome attività": "Colnaghi, \"P. & D. Colnaghi & Co.\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 51.5081309,
             "lon": -0.1400425
@@ -4719,7 +4996,8 @@
         "Apertura": "2015",
         "Chiusura": "in attività",
         "Nome attività": "Colnaghi",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 51.5069312,
             "lon": -0.1385263
@@ -4736,7 +5014,8 @@
         "Apertura": "1916 ca.",
         "Chiusura": "1930 ca.",
         "Nome attività": "Gino Sarfatti e Giuseppe Guetta, \"The Venice Art Company\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 53.5707489,
             "lon": -2.4418426
@@ -4753,7 +5032,8 @@
         "Apertura": "2015",
         "Chiusura": "in attività",
         "Nome attività": "Colnaghi",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 40.4255555,
             "lon": -3.6940717
@@ -4763,14 +5043,15 @@
         "ID": "USA_1",
         "Nazione": "Stati Uniti d'America",
         "Regione": "Stati Uniti d'America",
-        "Città": "New York City",
+        "Città": "New York",
         "Via": "547 5th av",
         "Civico": "",
         "ID_entità": "SE_II",
         "Apertura": "1919 ca.",
         "Chiusura": "1929",
         "Nome attività": "Emanuele e Guido Sestieri, \"Sestieri Gallery\" (succursale)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 40.755473,
             "lon": -73.979309
@@ -4780,14 +5061,15 @@
         "ID": "USA_2",
         "Nazione": "Stati Uniti d'America",
         "Regione": "Stati Uniti d'America",
-        "Città": "New York City",
+        "Città": "New York",
         "Via": "749 5th av",
         "Civico": "",
         "ID_entità": "TO",
         "Apertura": "1919 ca. ",
         "Chiusura": "1928 ca.",
         "Nome attività": "Raoul Tolentino, \"Tolentino Art Gallery\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 40.6590234,
             "lon": -73.9960462
@@ -4797,14 +5079,15 @@
         "ID": "USA_3",
         "Nazione": "Stati Uniti d'America",
         "Regione": "Stati Uniti d'America",
-        "Città": "New York City",
+        "Città": "New York",
         "Via": "479 5th av",
         "Civico": "",
         "ID_entità": "CA_I",
         "Apertura": "1906",
         "Chiusura": "1914",
         "Nome attività": "Amedeo Canessa, \"C. & E. Canessa\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 40.6677246,
             "lon": -73.9871864
@@ -4814,14 +5097,15 @@
         "ID": "USA_4",
         "Nazione": "Stati Uniti d'America",
         "Regione": "Stati Uniti d'America",
-        "Città": "New York City",
+        "Città": "New York",
         "Via": "547 5th av",
         "Civico": "",
         "ID_entità": "CA_I",
         "Apertura": "1914",
         "Chiusura": "1915",
         "Nome attività": "Amedeo Canessa, \"C. & E. Canessa\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 40.755473,
             "lon": -73.979309
@@ -4831,14 +5115,15 @@
         "ID": "USA_5",
         "Nazione": "Stati Uniti d'America",
         "Regione": "Stati Uniti d'America",
-        "Città": "New York City",
+        "Città": "New York",
         "Via": "680 5th av",
         "Civico": "",
         "ID_entità": "CA_I",
         "Apertura": "1924",
         "Chiusura": "1929",
         "Nome attività": "Ercole Canessa, \"Ercole Canessa\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 40.6618222,
             "lon": -73.9932524
@@ -4848,14 +5133,15 @@
         "ID": "USA_6",
         "Nazione": "Stati Uniti d'America",
         "Regione": "Stati Uniti d'America",
-        "Città": "New York City",
+        "Città": "New York",
         "Via": "3 East 41st street",
         "Civico": "",
         "ID_entità": "CA_I",
         "Apertura": "1909",
         "Chiusura": "1916 ca.",
         "Nome attività": "Amedeo Canessa, \"C. & E. Canessa\", Amedeo Canessa",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 40.752273,
             "lon": -73.979858
@@ -4872,7 +5158,8 @@
         "Apertura": "1916",
         "Chiusura": "1928",
         "Nome attività": "Amedeo e Ercole Canessa, \"Canessa Gallery\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 40.7127281,
             "lon": -74.0060152
@@ -4882,14 +5169,15 @@
         "ID": "USA_8",
         "Nazione": "Stati Uniti d'America",
         "Regione": "Stati Uniti d'America",
-        "Città": "New York City",
+        "Città": "New York",
         "Via": "15 East 47th street",
         "Civico": "",
         "ID_entità": "OR",
         "Apertura": "1900 ca.",
         "Chiusura": "1970 ca.",
         "Nome attività": "Luigi e Raimondo Orselli, \"Luigi Orselli\" (succursale)",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 40.7564079,
             "lon": -73.9773542
@@ -4899,14 +5187,15 @@
         "ID": "USA_9",
         "Nazione": "Stati Uniti d'America",
         "Regione": "Stati Uniti d'America",
-        "Città": "New York City",
+        "Città": "New York",
         "Via": "New York",
         "Civico": "",
         "ID_entità": "SA_IV",
         "Apertura": "",
         "Chiusura": "",
         "Nome attività": "New York Studio: 55 E. 56th St",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 36.1021436,
             "lon": -115.1744946
@@ -4916,14 +5205,15 @@
         "ID": "USA_10",
         "Nazione": "Stati Uniti d'America",
         "Regione": "Stati Uniti d'America",
-        "Città": "New York City",
+        "Città": "New York",
         "Via": "11 East 52nd Street",
         "Civico": "",
         "ID_entità": "LO",
         "Apertura": "1933",
         "Chiusura": "1944 ca.",
         "Nome attività": "Adolph Loewi, \"Adolfo Loewi, Inc.\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 40.7595749,
             "lon": -73.9752552
@@ -4940,7 +5230,8 @@
         "Apertura": "1939",
         "Chiusura": "2003",
         "Nome attività": "Gabriella Katherine \"Kay\" Loewi e William Robertson, \"Loewi-Robertson, Inc.\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 34.0696501,
             "lon": -118.3963062
@@ -4957,7 +5248,8 @@
         "Apertura": "2015",
         "Chiusura": "in attività",
         "Nome attività": "Colnaghi",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 40.7688568,
             "lon": -73.9678937
@@ -4968,13 +5260,14 @@
         "Nazione": "Stati Uniti d'America",
         "Regione": "Stati Uniti d'America",
         "Città": "New York",
-        "Via": "59 W 30th St. ",
+        "Via": "59 W 30th St.",
         "Civico": "",
         "ID_entità": "VE_I",
         "Apertura": "1922 ca.",
         "Chiusura": "1930 ca.",
         "Nome attività": "Gino Sarfatti e Giuseppe Guetta, \"The Venice Art Company\"",
-        "": "",
+        "Latitudine": "",
+        "Longitudine": "",
         "geo": {
             "lat": 40.7470437,
             "lon": -73.9888357
