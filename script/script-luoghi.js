@@ -1,3 +1,20 @@
+/* Il file delle entita' sta passando da "entità" (accentato) a "entita":
+   si prova prima il nome nuovo e si ricade sul vecchio, cosi' la rinomina
+   nel repo e l'aggiornamento di questo file possono avvenire in momenti
+   diversi senza lasciare la pagina senza dati. */
+// Il nome senza accento viene usato appena e' disponibile nel repo.
+function urlEntita() {
+    return "https://raw.githubusercontent.com/FondazioneFedericoZeri/Mercato_dell_arte/main/json/entita.json";
+}
+function urlEntitaVecchio() {
+    return "https://raw.githubusercontent.com/FondazioneFedericoZeri/Mercato_dell_arte/main/json/entit%C3%A0.json";
+}
+function caricaEntita(cb) {
+    return $.getJSON(urlEntita(), cb).fail(function () {
+        $.getJSON(urlEntitaVecchio(), cb);
+    });
+}
+
 document.addEventListener("DOMContentLoaded", function () {
     // Define map bounds to restrict panning and zooming to specific areas
     var bounds = L.latLngBounds(
@@ -183,7 +200,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Function to update markers based on the selected period
     function updateMarkers(period) {
         markers.clearLayers(); // Clear all clusters before adding new markers
-        $.getJSON("https://raw.githubusercontent.com/FondazioneFedericoZeri/Mercato_dell_arte/main/json/entità.json",
+        caricaEntita(
             function (entities_json){
                 $.getJSON("https://raw.githubusercontent.com/FondazioneFedericoZeri/Mercato_dell_arte/main/json/luoghi.json", function (luoghi_json) {
 

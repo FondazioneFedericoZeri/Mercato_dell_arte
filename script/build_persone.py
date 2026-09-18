@@ -13,10 +13,33 @@ questo script. Ad ogni run la pagina viene rigenerata da zero, cosi' i nuovi
 dati compaiono automaticamente senza bisogno di aggiornare l'HTML a mano.
 """
 
+import os
 import csv
 import html
 import json
 import pathlib
+
+# ── Nome del file delle entita' ────────────────────────────────────
+# Il file sta passando da "entità" (accentato) a "entita" senza accento.
+# Un nome accentato attraversa male i trasferimenti fra sistemi diversi:
+# e' gia' successo che arrivasse nel repo con "á" al posto di "à",
+# facendo sparire il file e fallire la CI con un FileNotFoundError.
+# Finche' la migrazione non e' conclusa si accetta il nome che c'e'.
+def _file_entita(*candidati):
+    for c in candidati:
+        if os.path.isfile(c):
+            return c
+    return candidati[0]   # nessuno dei due: si usa il primo, per l'errore
+
+
+def ENTITA_TSV():
+    return _file_entita("data/entita.tsv", "data/entit\u00e0.tsv")
+
+
+def ENTITA_JSON():
+    return _file_entita("json/entita.json", "json/entit\u00e0.json")
+
+
 
 
 def load_tsv(path):
@@ -333,7 +356,8 @@ def build_statistiche(data, n_entita, output="json/statistiche.json"):
     return stats
 
 
-def build_persone_html(entita_tsv="data/entità.tsv", output="html/persone.html"):
+def build_persone_html(entita_tsv=None, output="html/persone.html"):
+    entita_tsv = entita_tsv or ENTITA_TSV()
     entita = load_tsv(entita_tsv)
     entita_by_id = {e["ID"]: e["Nome"] for e in entita}
 

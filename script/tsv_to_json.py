@@ -7,6 +7,28 @@ import tqdm
 from geopy.exc import GeocoderServiceError, GeocoderTimedOut, GeocoderUnavailable
 from geopy.geocoders import Nominatim
 
+# ── Nome del file delle entita' ────────────────────────────────────
+# Il file sta passando da "entità" (accentato) a "entita" senza accento.
+# Un nome accentato attraversa male i trasferimenti fra sistemi diversi:
+# e' gia' successo che arrivasse nel repo con "á" al posto di "à",
+# facendo sparire il file e fallire la CI con un FileNotFoundError.
+# Finche' la migrazione non e' conclusa si accetta il nome che c'e'.
+def _file_entita(*candidati):
+    for c in candidati:
+        if os.path.isfile(c):
+            return c
+    return candidati[0]   # nessuno dei due: si usa il primo, per l'errore
+
+
+def ENTITA_TSV():
+    return _file_entita("data/entita.tsv", "data/entit\u00e0.tsv")
+
+
+def ENTITA_JSON():
+    return _file_entita("json/entita.json", "json/entit\u00e0.json")
+
+
+
 
 def _coppia_incollata(testo):
     """Riconosce una coppia lat/lon incollata in un campo solo.
@@ -326,7 +348,7 @@ if __name__ == "__main__":
         build_places("data/luoghi.tsv", "json/luoghi.json")
         # persone.json incorpora i luoghi, entità.json incorpora le persone
         build_people("data/persone.tsv", "json/persone.json")
-        build_entities("data/entità.tsv", "json/entità.json")
+        build_entities(ENTITA_TSV(), ENTITA_JSON())
 
     if sys.argv[1] == "didascalie":
         build_generic("data/didascalie.tsv", "json/didascalie.json")
@@ -334,32 +356,33 @@ if __name__ == "__main__":
     if sys.argv[1] == "bibliografia":
         build_generic("data/bibliografiaGenerale.tsv",
                       "json/bibliografia.json")
-        build_entities("data/entità.tsv", "json/entità.json")
+        build_entities(ENTITA_TSV(), ENTITA_JSON())
 
     if sys.argv[1] == "collaboratori":
         build_generic("data/collaboratori.tsv",
                       "json/collaboratori.json")
-        build_entities("data/entità.tsv", "json/entità.json")
+        build_entities(ENTITA_TSV(), ENTITA_JSON())
 
     if sys.argv[1] == "eventi":
         build_generic("data/eventi.tsv", "json/eventi.json")
         # TODO: modify build people and account for data from eventi
-        build_entities("data/entità.tsv", "json/entità.json")
+        build_entities(ENTITA_TSV(), ENTITA_JSON())
 
     if sys.argv[1] == "compravendite":
         build_generic("data/compravendite.tsv",
                       "json/compravendite.json")
         # TODO: modify build people and account for data from compravendite
-        build_entities("data/entità.tsv", "json/entità.json")
+        build_entities(ENTITA_TSV(), ENTITA_JSON())
 
     if sys.argv[1] == "relazioni":
         build_generic("data/relazioni.tsv", "json/relazioni.json")
         # TODO: modify build people and account for data from relazioni
-        build_entities("data/entità.tsv", "json/entità.json")
+        build_entities(ENTITA_TSV(), ENTITA_JSON())
 
     if sys.argv[1] == "persone":
         build_people("data/persone.tsv", "json/persone.json")
-        build_entities("data/entità.tsv", "json/entità.json")
+        build_entities(ENTITA_TSV(), ENTITA_JSON())
 
-    if sys.argv[1] == "entità":
-        build_entities("data/entità.tsv", "json/entità.json")
+    # Si accetta sia "entita" sia "entità": il workflow usa il primo.
+    if sys.argv[1] in ("entita", "entità"):
+        build_entities(ENTITA_TSV(), ENTITA_JSON())

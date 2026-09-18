@@ -1,5 +1,28 @@
+import os
 import json
 import pandas as pd
+
+# ── Nome del file delle entita' ────────────────────────────────────
+# Il file sta passando da "entità" (accentato) a "entita" senza accento.
+# Un nome accentato attraversa male i trasferimenti fra sistemi diversi:
+# e' gia' successo che arrivasse nel repo con "á" al posto di "à",
+# facendo sparire il file e fallire la CI con un FileNotFoundError.
+# Finche' la migrazione non e' conclusa si accetta il nome che c'e'.
+def _file_entita(*candidati):
+    for c in candidati:
+        if os.path.isfile(c):
+            return c
+    return candidati[0]   # nessuno dei due: si usa il primo, per l'errore
+
+
+def ENTITA_TSV():
+    return _file_entita("data/entita.tsv", "data/entit\u00e0.tsv")
+
+
+def ENTITA_JSON():
+    return _file_entita("json/entita.json", "json/entit\u00e0.json")
+
+
 
 
 def build_kinships(input_csv, entity_json, person_tsv, output_json):
@@ -90,4 +113,4 @@ if __name__ == "__main__":
 
     if sys.argv[1] == "parentela":
         build_kinships('data/parentela.csv',
-                       'json/entità.json', 'data/persone.tsv', 'json/parentela.json')
+                       ENTITA_JSON(), 'data/persone.tsv', 'json/parentela.json')

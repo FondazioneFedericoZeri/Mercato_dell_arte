@@ -1,4 +1,14 @@
-$.getJSON("https://raw.githubusercontent.com/FondazioneFedericoZeri/Mercato_dell_arte/main/json/entit%C3%A0.json", function (json) {
+/* Il file delle entita' sta passando da "entità" (accentato) a "entita":
+   si prova prima il nome nuovo e si ricade sul vecchio, cosi' la rinomina
+   nel repo e l'aggiornamento di questo file possono avvenire in momenti
+   diversi senza lasciare la pagina senza dati. */
+function caricaEntitaBiblio(cb) {
+    $.getJSON("https://raw.githubusercontent.com/FondazioneFedericoZeri/Mercato_dell_arte/main/json/entita.json", cb).fail(function () {
+        $.getJSON("https://raw.githubusercontent.com/FondazioneFedericoZeri/Mercato_dell_arte/main/json/entit%C3%A0.json", cb);
+    });
+}
+
+caricaEntitaBiblio(function (json) {
     entities_json = json;
 });
 

@@ -19,7 +19,9 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   var EVENTI_URL = "https://raw.githubusercontent.com/FondazioneFedericoZeri/Mercato_dell_arte/main/json/eventi.json";
-  var ENTITA_URL = "https://raw.githubusercontent.com/FondazioneFedericoZeri/Mercato_dell_arte/main/json/entit%C3%A0.json";
+  var ENTITA_URL = "https://raw.githubusercontent.com/FondazioneFedericoZeri/Mercato_dell_arte/main/json/entita.json";
+  // Nome precedente, accentato: usato se il primo non c'e' ancora.
+  var ENTITA_URL_VECCHIO = "https://raw.githubusercontent.com/FondazioneFedericoZeri/Mercato_dell_arte/main/json/entit%C3%A0.json";
 
   var root = document.querySelector(".eventi-decadi");
   if (!root) return; // sezione non presente in questa pagina
@@ -69,7 +71,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   Promise.all([
     fetch(EVENTI_URL).then(function (r) { return r.json(); }),
-    fetch(ENTITA_URL).then(function (r) { return r.json(); })
+    fetch(ENTITA_URL)
+      .then(function (r) { return r.ok ? r : fetch(ENTITA_URL_VECCHIO); })
+      .then(function (r) { return r.json(); })
   ]).then(function (results) {
     init(results[0], results[1]);
   }).catch(function (err) {
