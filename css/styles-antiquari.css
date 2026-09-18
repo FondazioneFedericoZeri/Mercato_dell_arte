@@ -747,12 +747,17 @@ body {
     display: none;
 }
 
-/* Numero accanto al titolo di ogni gruppo (lettera o area) */
+/* Conteggio accanto al titolo di ogni gruppo: "Toscana (28 antiquari)".
+   .letter e' sottolineato, e per specifica CSS la sottolineatura di un
+   elemento non si puo' annullare su un discendente inline: serve
+   inline-block, che crea un nuovo contesto e la interrompe. */
 .conteggio-gruppo {
+    display: inline-block;
     margin-left: 12px;
-    font-size: 0.55em;
+    font-size: 0.5em;
     font-weight: 400;
     color: #9a9a9a;
     vertical-align: middle;
     letter-spacing: .02em;
+    text-decoration: none;
 }

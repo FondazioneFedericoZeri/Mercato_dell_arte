@@ -42,6 +42,11 @@ var cmp_per_numero = function (gruppi) {
    mostrato supera il numero di antiquari. */
 var ricerca_attiva = null;   // insieme filtrato dalla ricerca, o null
 
+/* Etichetta del conteggio accanto al titolo di un gruppo: "(28 antiquari)". */
+function etichetta_conteggio(n) {
+    return '(' + n + (n === 1 ? ' antiquario)' : ' antiquari)');
+}
+
 function aggiorna_riepilogo(modo, n_gruppi, n_schede, n_antiquari) {
     var el = document.getElementById('riepilogo-elenco');
     if (!el) return;
@@ -96,7 +101,7 @@ var sort_alphabetically = function (refined_entities) {
         h2.appendChild(document.createTextNode(letter));
         const conta = document.createElement('span');
         conta.className = 'conteggio-gruppo';
-        conta.textContent = Object.keys(entities_list[letter]).length;
+        conta.textContent = etichetta_conteggio(Object.keys(entities_list[letter]).length);
         h2.appendChild(conta);
         cardSection.appendChild(h2)
 
@@ -215,7 +220,7 @@ var sort_geographically = function () {
         h2.appendChild(document.createTextNode(regione));
         const conta = document.createElement('span');
         conta.className = 'conteggio-gruppo';
-        conta.textContent = Object.keys(entities_list[regione]).length;
+        conta.textContent = etichetta_conteggio(Object.keys(entities_list[regione]).length);
         h2.appendChild(conta);
         div.appendChild(h2)
 
