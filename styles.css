@@ -402,238 +402,170 @@ nav ul li a:hover {
 
 /* inizio della sezione successiva */
 
-#timeline {
-    padding: 60px 60px;
-    background-color: #f8f8f8;
+/* ══════════════════════════════════════════════════════════
+   Sezione Eventi (preview in home): mini istogramma per decadi,
+   stessi 7 colori e stessa fonte dati (json/eventi.json) della
+   pagina html/eventi.html — vedi script/scripts-eventi-preview.js.
+   Nessun drill-down: solo hover con decennio + conteggio; l'intera
+   preview è un link a html/eventi.html. Sostituisce le vecchie
+   sezioni #timeline/#timeline2 (4 box fissi con foto all'hover).
+   ══════════════════════════════════════════════════════════ */
+#eventi-preview {
+    --ep-cat-pubblicazioni: #B03008;
+    --ep-cat-aperture:      #2A6FA8;
+    --ep-cat-vendite:       #D94010;
+    --ep-cat-esposizioni:   #4A8EC0;
+    --ep-cat-donazioni:     #E86040;
+    --ep-cat-altro:         #6e519d;
+    --ep-cat-acquisizioni:  #EB7055;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 40px 20px;
+    gap: 20px;
+}
+
+.eventi-chart-link {
+    display: block;
+    width: 55%;
+    max-width: 700px;
+    text-decoration: none;
+    color: inherit;
+    margin-left: 20px;
+}
+
+.eventi-chart-card {
+    background: #fff;
+    border: 1px solid #e2e0d8;
+    border-radius: 10px;
+    padding: 28px 28px 14px;
+    box-shadow: 0 1px 2px rgba(51, 51, 51, .06), 0 6px 16px rgba(51, 51, 51, .05);
+    transition: box-shadow .2s ease, transform .2s ease;
+}
+
+.eventi-chart-link:hover .eventi-chart-card {
+    box-shadow: 0 2px 6px rgba(51, 51, 51, .10), 0 10px 24px rgba(51, 51, 51, .08);
+    transform: translateY(-2px);
+}
+
+.eventi-chart {
+    display: flex;
+    align-items: flex-end;
+    gap: 3px;
+    height: 140px;
+}
+
+.eventi-chart .ep-col {
+    flex: 1 1 0;
+    min-width: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1px;
+    cursor: pointer;
+}
+
+.eventi-chart .ep-seg {
+    width: 100%;
+    transition: filter .1s ease;
+}
+
+.eventi-chart .ep-seg:last-child {
+    border-radius: 2px 2px 0 0;
+}
+
+.eventi-chart .ep-col:hover .ep-seg {
+    filter: brightness(1.12);
+}
+
+.eventi-chart-labels {
+    display: flex;
+    gap: 3px;
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid #e2e0d8;
+}
+
+.eventi-chart-labels span {
+    flex: 1 1 0;
+    min-width: 0;
     text-align: center;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-    /* Aggiunge l'ombreggiatura */
-    border-radius: 8px;
-    /* Opzionale: arrotonda gli angoli */
+    font-size: 11px;
+    color: #9b9b9b;
+    font-variant-numeric: tabular-nums;
 }
 
-#timeline h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    margin-left: 80px;
-    /* Aggiunge margine a sinistra per allineare */
+.eventi-chart-tip {
+    position: fixed;
+    pointer-events: none;
+    background: #333;
+    color: #fff;
+    font-size: 12px;
+    line-height: 1.4;
+    font-weight: 600;
+    padding: 6px 10px;
+    border-radius: 7px;
+    transform: translate(-50%, -122%);
+    white-space: nowrap;
+    z-index: 20;
+    opacity: 0;
+    transition: opacity .1s ease;
+}
+
+.eventi-chart-tip .ep-tip-sub {
+    font-weight: 500;
+    opacity: .75;
+}
+
+.eventi-chart-tip.is-shown {
+    opacity: 1;
+}
+
+#eventi-preview .text-content {
+    width: 45%;
     text-align: left;
+    margin-left: 60px;
+    margin-right: 60px;
 }
 
-#timeline h2 .highlight {
+#eventi-preview .text-content h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    color: #333;
+}
+
+#eventi-preview .text-content h2 .highlight {
     color: #5593C9;
     font-weight: 700;
 }
 
-#timeline h2 .regular-text {
+#eventi-preview .text-content h2 .regular-text {
     color: #000;
     font-weight: 400;
 }
 
-
-#timeline .content-wrapper {
-    display: flex;
-    justify-content: space-between; /* Spazia il paragrafo e il pulsante */
-    align-items: center;/* Allinea verticalmente il paragrafo e il pulsante */
-    margin-left: 80px;
-    margin-right: 80px;
-}
-
-#timeline p {
-    margin-bottom: 0;
-    /* Rimuove il margine inferiore del paragrafo */
+#eventi-preview .text-content p {
+    margin-bottom: 30px;
+    margin-top: 10px;
     font-size: 24px;
     font-weight: 400;
-    text-align: left;
-    max-width: 600px;
 }
 
-#timeline .btn {
+#eventi-preview .btn {
     background-color: #333;
     color: #fff;
-    padding: 10px 20px;
+    padding: 12px 20px;
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
-    float: none;
-    /* Rimuove il float */
-    margin-right: 260px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: inline-block;
 }
 
-#timeline .btn:hover {
+#eventi-preview .btn:hover {
     background-color: #5593C9;
     color: #fff;
 }
-
-
-
-/* inizio prova timeline 2 */
-#timeline2 {
-    display: flex;
-    background-color: #5593C9;
-    /* #031625; */
-    height: 56vh;
-    /* Riduce l'altezza della sezione */
-    min-height: 370px;
-    /* Imposta un'altezza minima per evitare che diventi troppo piccola */
-    overflow: hidden;
-    /* Nasconde gli elementi che escono fuori dalla sezione */
-}
-
-.tl-item {
-    transform: translate3d(0, 0, 0);
-    position: relative;
-    width: 25%;
-    height: 150px;
-    color: #fff;
-    overflow: hidden;
-    transition: width 0.5s ease, height 0.5s ease;
-
-    &:before,
-    &:after {
-        transform: translate3d(0, 0, 0);
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-    }
-
-    &:after {
-        background: transparentize(#031625, 0.15);
-        opacity: 1;
-        transition: opacity 0.5s ease;
-    }
-
-    &:before {
-        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 75%);
-        z-index: 1;
-        opacity: 0;
-        transform: translate3d(0, 0, 0) translateY(50%);
-        transition: opacity 0.5s ease, transform 0.5s ease;
-    }
-
-    &:hover {
-        width: 30% !important;
-
-        &:after {
-            opacity: 0;
-        }
-
-        &:before {
-            opacity: 1;
-            transform: translate3d(0, 0, 0) translateY(0);
-            transition: opacity 1s ease, transform 1s ease 0.25s;
-        }
-
-        .tl-content {
-            font-size: 18px;
-            opacity: 1;
-            transform: translateY(0);
-            transition: all 0.75s ease 0.5s;
-        }
-
-        .tl-bg {
-            filter: grayscale(0);
-        }
-    }
-}
-
-.tl-content {
-    transform: translate3d(0, 0, 0) translateY(25px);
-    position: relative;
-    z-index: 1;
-    text-align: center;
-    margin: 0 1.618em;
-    top: 20%;
-    transform: translateY(-20%);
-    opacity: 0;
-    text-align: left;
-
-    h1 {
-        color: #ffffff;
-        font-size: 24px;
-        font-weight: normal;
-        margin-bottom: 20px;
-        margin-top: 40px;
-        text-align: left;
-    }
-}
-
-#timeline2 .tl-year p {
-    font-size: 42px;
-    padding-top: 30px;
-    padding-bottom: 20px;
-    line-height: 1;
-    text-decoration-color: #fff;
-    text-decoration: underline overline;
-    /* Applica sia underline che overline */
-    text-decoration-color: #fff;
-    /* Colore bianco per le linee */
-    text-decoration-thickness: 2px;
-    /* Spessore delle linee */
-    text-underline-offset: 15px;
-    /* Spazio tra il testo e la sottolineatura */
-    text-overline-offset: 15px;
-    /* Spazio tra il testo e la sovralineatura */
-    margin-bottom: 40px;
-    /* Aumenta lo spazio tra il numero e il titolo */
-    margin-top: 40px;
-}
-
-#timeline2 .tl-year p::before {
-    content: none;
-}
-
-#timeline2 .tl-year {
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    z-index: 1;
-    border-top: none;
-    border-bottom: none;
-}
-
-.tl-item {
-    position: relative;
-    width: 25%;
-    height: 68vh;
-    min-height: 400px;
-    color: #fff;
-    overflow: hidden;
-    transition: width 0.5s ease, height 0.5s ease;
-    background-size: cover;
-    /* Assicura che l'immagine copra l'intero box */
-    background-position: center;
-    /* Centra l'immagine */
-    background-image: none;
-}
-
-
-.tl-item:hover {
-    background-image: url('img/homepage/Canessa.png');
-    /* Sostituisci con l'immagine corretta */
-}
-
-.tl-item:nth-child(2):hover {
-    background-image: url('img/homepage/Bardini.jpg');
-    /* Sostituisci con l'immagine corretta */
-}
-
-.tl-item:nth-child(3):hover {
-    background-image: url('img/homepage/Simonetti.jpg');
-    /* Sostituisci con l'immagine corretta */
-}
-
-.tl-item:nth-child(4):hover {
-    background-image: url('img/homepage/Jandolo.jpg');
-    /* Sostituisci con l'immagine corretta */
-}
-
-/* fine prova timeline 2 */
 
 
 /* inizio della sezione parole chiave */
@@ -911,8 +843,7 @@ footer img {
 
 /*responsive*/
 @media (max-width: 768px) {
-    #statistics,
-    #timeline2 {
+    #statistics {
         display: none; /* Nasconde le sezioni in versione mobile */
     }
 
@@ -977,44 +908,43 @@ footer img {
         text-align: center;
     }
 
-    #timeline {
-        display: flex;
-        flex-direction: column; /* Disposizione verticale */
-        align-items: center; /* Centra gli elementi */
-        gap: 10px; /* Spazio tra gli elementi */
-        text-align: center; /* Centra il contenuto all'interno */
-        padding: 40px;
-    }
-    
-    #timeline p {
-        order: 1; /* Testo prima del pulsante */
-        text-align: center; /* Centra il testo */
-        margin-bottom: 20px; /* Aggiunge spazio sotto il testo */
-    }
-        
-    #timeline h2 {
-        text-align:center;
-        margin-left: 0;
-        font-size: 32px;
+    #eventi-preview {
+        flex-direction: column-reverse; /* testo prima, grafico sotto */
+        padding: 20px;
+        gap: 24px;
     }
 
-    #timeline .content-wrapper {
-        display:block;
-        justify-content: space-between;
-        align-items: center;
-        margin-left: 0px;
-        margin-right: 0px; 
-        margin-bottom: 40px;
+    #eventi-preview .text-content {
+        width: 100%;
+        margin: 0;
+        text-align: center;
     }
-    #timeline .btn {
-        order: 2; /* Pulsante sotto al testo */
-        margin: 0 auto; /* Centra il pulsante */
-        padding: 10px 20px; /* Spazio interno del pulsante */
-        width: auto; /* Adatta la larghezza */
-        max-width: 90%; /* Limita la larghezza su dispositivi più piccoli */
-        text-align: center; /* Centra il testo nel pulsante */
+
+    #eventi-preview .text-content p {
+        text-align: center;
     }
-    
+
+    #eventi-preview .text-content h2 {
+        text-align: center;
+        font-size: 28px;
+    }
+
+    #eventi-preview .btn {
+        display: block;
+        margin: 0 auto;
+        width: fit-content;
+    }
+
+    .eventi-chart-link {
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+    .eventi-chart {
+        height: 100px;
+    }
+
     #key-people {
         padding:40px;
         padding-bottom: 0;

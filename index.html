@@ -24,6 +24,7 @@
     <script type="text/javascript" src="script/scripts-antiquari.js"></script>
     <script type="text/javascript" src="script/antiquari_search.js"></script>
     <script src="../Mercato_dell_arte/script/scripts-homepage.js"></script>
+    <script src="../Mercato_dell_arte/script/scripts-eventi-preview.js"></script>
     <script src="../Mercato_dell_arte/script/menu.js" defer></script>
 
 </head>
@@ -125,62 +126,27 @@
         </div>
     </section>
 
-    <section id="timeline" class="fade-in">
-        <h2>
-            <span class="regular-text">GLI</span>
-            <span class="highlight">EVENTI</span>
-        </h2>
-        <div class="content-wrapper">
+    <!-- Sezione Eventi: mini istogramma per decadi (stessi dati/colori di
+         html/eventi.html), popolato da script/scripts-eventi-preview.js.
+         Sostituisce le vecchie sezioni #timeline/#timeline2 (box a 4 anni
+         fissi con foto al passaggio del mouse). -->
+    <section id="eventi-preview" class="fade-in">
+        <a href="html/eventi.html" class="eventi-chart-link" aria-label="Vai alla cronologia completa degli eventi">
+            <div class="eventi-chart-card">
+                <div class="eventi-chart" id="home-ed-chart"></div>
+                <div class="eventi-chart-labels" id="home-ed-labels"></div>
+            </div>
+        </a>
+        <div class="text-content">
+            <h2>
+                <span class="regular-text">GLI</span>
+                <span class="highlight">EVENTI</span>
+            </h2>
             <p>Ripercorri la storia del mercato dell’arte tra XIX e XX secolo attraverso alcuni eventi significativi.</p>
-            <a href="html/eventi.html" class="btn">Scopri di più</a>
+            <a href="html/eventi.html" class="btn">Vai alla Cronologia</a>
         </div>
-        </div>
+        <div class="eventi-chart-tip" id="home-ed-tip"></div>
     </section>
-
-
-    <!-- inizio prova timeline 2 -->
-    <section id="timeline2">
-
-        <div class="tl-item">
-            <div class="tl-year">
-                <p class="f2 heading--sanSerif">1895</p>
-            </div>
-            <div class="tl-content">
-                <h1>Scoperta "tesoro di Boscoreale" </h1>
-                <p>Gli antiquari Canessa scoprono il "Tesoro di Boscoreale", un servizio di argenteria di oltre 100 pezzi di epoca romana, esportato e ceduto al barone Edmond De Rothschild. La collezione si conserva oggi al Museo del Louvre.</p>
-            </div>
-        </div>
-
-        <div class="tl-item">
-            <div class="tl-year">
-                <p class="f2 heading--sanSerif">1925</p>
-            </div>
-            <div class="tl-content">
-                <h1 class="f3 text--accent ttu">Inaugurazione Museo Bardini</h1>
-                <p>Apertura di un museo dedicato a Stefano Bardini che tre anni prima aveva donato la propria collezione e il palazzo al Comune di Firenze.</p>
-            </div>
-        </div>
-
-        <div class="tl-item">
-            <div class="tl-year">
-                <p class="f2 heading--sanSerif">1932</p>
-            </div>
-            <div class="tl-content">
-                <h1 class="f3 text--accent ttu">Vendita Collezione Simonetti</h1>
-                <p>Vendita dell'intera collezione di Attilio Simonetti, organizzata dagli eredi presso la casa d'aste Guido Tavazzi, con catalogo curato da Ludwig Pollak.</p>
-            </div>
-        </div>
-
-        <div class="tl-item">
-            <div class="tl-year">
-                <p class="f2 heading--sanSerif">1935</p>
-            </div>
-            <div class="tl-content">
-                <h1 class="f3 text--accent ttu">Pubblicazione "Memorie di un antiquario"</h1>
-                <p>Augusto Jandolo pubblica l'autobiografia "Memorie di un antiquario", fonte imprescindibile per la comprensione del mercato dell’arte romano a cavallo tra Otto e Novecento.</p>
-            </div>
-    </section>
-    <!-- fine prova timeline 2 -->
 
     <section id="key-people" class="fade-in">
         <div class="left-key-content">
