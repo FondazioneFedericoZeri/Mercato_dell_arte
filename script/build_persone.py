@@ -310,6 +310,29 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
 """
 
 
+def build_statistiche(data, n_entita, output="json/statistiche.json"):
+    """Numeri del contatore in home (sezione #statistics di index.html).
+
+    Vengono ricavati dagli stessi dati con cui si costruisce html/persone.html,
+    così il numero mostrato in home coincide sempre con quello che l'utente
+    trova nella pagina in cui il contatore lo manda. Il file generato è di
+    poche centinaia di byte: la home lo scarica senza dover leggere i JSON
+    completi (entità.json da solo pesa ~600 KB).
+    """
+    luoghi = load_tsv("data/luoghi.tsv")
+    stats = {
+        "entita": n_entita,
+        "professionisti": sum(1 for d in data if d["role"] == "antiquario"),
+        "clienti_collaboratori": sum(1 for d in data if d["role"] in ("collaboratore", "cliente")),
+        "luoghi": len(luoghi),
+    }
+    pathlib.Path(output).write_text(
+        json.dumps(stats, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+    )
+    print(f"{output} generato: {stats}")
+    return stats
+
+
 def build_persone_html(entita_tsv="data/entità.tsv", output="html/persone.html"):
     entita = load_tsv(entita_tsv)
     entita_by_id = {e["ID"]: e["Nome"] for e in entita}
@@ -332,6 +355,8 @@ def build_persone_html(entita_tsv="data/entità.tsv", output="html/persone.html"
     n_collab = sum(1 for d in data if d["role"] == "collaboratore")
     n_client = sum(1 for d in data if d["role"] == "cliente")
     print(f"html/persone.html generato: {n_ant} antiquari, {n_collab} collaboratori, {n_client} clienti.")
+
+    build_statistiche(data, len(entita))
 
 
 if __name__ == "__main__":

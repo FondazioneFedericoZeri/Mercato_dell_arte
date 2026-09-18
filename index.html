@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Il mercato antiquario in Italia tra Otto e Novecento</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Precarica l'immagine di sfondo dell'hero: il browser normalmente la scopre solo dopo aver
+         applicato il CSS a #hero, con questo hint parte a scaricarla subito, in parallelo al resto -->
+    <link rel="preload" href="img/homepage/hero-image.jpg" as="image">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;700&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" defer></script>
     <!-- Resources Mappa-->
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
@@ -16,15 +19,18 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
     <!-- Leaflet JS -->
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" defer></script>
     <!-- MarkerCluster JS -->
-    <script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+    <script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js" defer></script>
 
     <!-- My Scripts -->
-    <script type="text/javascript" src="script/scripts-antiquari.js"></script>
-    <script type="text/javascript" src="script/antiquari_search.js"></script>
-    <script src="../Mercato_dell_arte/script/scripts-homepage.js"></script>
-    <script src="../Mercato_dell_arte/script/scripts-eventi-preview.js"></script>
+    <!-- Tutti gli script sono "defer": si scaricano in parallelo senza bloccare il rendering della
+         pagina (e quindi la comparsa dell'immagine hero), ed eseguono in ordine subito dopo il parsing dell'HTML -->
+    <script type="text/javascript" src="script/scripts-antiquari.js" defer></script>
+    <script type="text/javascript" src="script/antiquari_search.js" defer></script>
+    <script src="../Mercato_dell_arte/script/scripts-homepage.js" defer></script>
+    <script src="../Mercato_dell_arte/script/scripts-eventi-preview.js" defer></script>
+    <script src="../Mercato_dell_arte/script/scripts-protagonisti.js" defer></script>
     <script src="../Mercato_dell_arte/script/menu.js" defer></script>
 
 </head>
@@ -97,21 +103,26 @@
     </section>
 
 
+    <!-- Contatore: i numeri qui sotto sono solo un ripiego se il caricamento
+         fallisce. Quelli veri arrivano da json/statistiche.json, generato da
+         script/build_persone.py insieme a html/persone.html, così restano
+         allineati ai dati senza doverli aggiornare a mano
+         (vedi script/scripts-homepage.js). -->
     <section id="statistics">
         <div class="stat">
-            <h3>95</h3>
+            <h3 data-stat="entita">95</h3>
             <a href="html/antiquari.html">Entità antiquariali</a>
         </div>
         <div class="stat">
-            <h3>219</h3>
-            <a href="html/antiquari.html #Titolo">Singoli professionisti</a>
+            <h3 data-stat="professionisti">218</h3>
+            <a href="html/persone.html">Singoli professionisti</a>
         </div>
         <div class="stat">
-            <h3>306</h3>
+            <h3 data-stat="clienti_collaboratori">304</h3>
             <a href="html/persone.html">Clienti e collaboratori</a>
         </div>
         <div class="stat">
-            <h3>293</h3>
+            <h3 data-stat="luoghi">293</h3>
             <a href="html/luoghi.html">Luoghi del mercato dell'arte</a>
         </div>
     </section>
@@ -148,6 +159,9 @@
         <div class="eventi-chart-tip" id="home-ed-tip"></div>
     </section>
 
+    <!-- Sezione Protagonisti: rete di relazioni fra le entità antiquariali più
+         documentate e i loro collaboratori, popolata da
+         script/scripts-protagonisti.js a partire da json/collaboratori.json. -->
     <section id="key-people" class="fade-in">
         <div class="left-key-content">
             <h2>
@@ -157,15 +171,20 @@
             <p>Consulta la lista di <a href="../Mercato_dell_arte/html/persone.html" class="link">antiquari, collaboratori o clienti</a> coinvolti nelle transazioni antiquariali.</p>
         </div>
 
-
-
-        <!--  <div class="wrapper">
-            <div class="word">Antiquari</div>
-            <div class="word">Storici dell'arte</div>
-            <div class="word">Fotografi</div>
-            <div class="word">Restauratori</div>
-            <div class="word">Clienti</div>
-          </div> -->
+        <div class="key-people-visual">
+            <a href="../Mercato_dell_arte/html/persone.html" class="pr-link" aria-label="Vai all'elenco completo di antiquari, collaboratori e clienti">
+                <div id="protagonisti-rete" class="pr-card">
+                    <svg id="pr-net" viewBox="0 0 620 420" preserveAspectRatio="xMidYMid meet"
+                         role="img"
+                         aria-label="Rete delle relazioni fra le principali entità antiquariali e i loro collaboratori"></svg>
+                    <div class="pr-tip" id="pr-tip"></div>
+                </div>
+            </a>
+            <div class="pr-legenda">
+                <span><i class="pr-key-ent"></i>entità antiquariale</span>
+                <span><i class="pr-key-col"></i>collaboratore / cliente</span>
+            </div>
+        </div>
 
     </section>
 

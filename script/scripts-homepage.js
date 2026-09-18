@@ -1,5 +1,28 @@
 // INIZIO SCRIPTS JAVASCRIPT
 
+// Spegne il cursore lampeggiante del titolo "hero-typewriter" una volta che
+// l'animazione di scrittura/cancellazione (definita in styles.css) è terminata.
+// Senza questo, la barra "|" continua a lampeggiare all'infinito (animazione
+// "blink" con infinite) anche a testo fermo, facendo pensare che si possa
+// scrivere lì dentro. La classe "finished" (già presente nel CSS) rimuove il
+// bordo che simula il cursore.
+document.addEventListener("DOMContentLoaded", function () {
+  const typewriter = document.querySelector(".hero-typewriter");
+  if (!typewriter) return;
+
+  let typingCompletions = 0;
+  typewriter.addEventListener("animationend", function (event) {
+    // La sequenza CSS è: typing (scrittura) -> delete (cancellazione) -> typing (riscrittura).
+    // Aspettiamo la SECONDA "typing" perché è quella con cui si conclude la sequenza.
+    if (event.animationName === "typing") {
+      typingCompletions++;
+      if (typingCompletions >= 2) {
+        typewriter.classList.add("finished");
+      }
+    }
+  });
+});
+
 
 $.ajaxSetup({
   async: true // Assicura che tutte le richieste siano asincrone (impostazione predefinita)
@@ -32,8 +55,30 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 // scripts js sezione 3: permette di incrementare i numeri
+//
+// I valori arrivano da json/statistiche.json (poche centinaia di byte),
+// generato da script/build_persone.py a partire dagli stessi TSV con cui si
+// costruisce html/persone.html: così il contatore non si scolla mai dai dati
+// e non serve scaricare i JSON completi (entità.json pesa da solo ~600 KB).
+// Se il file non è raggiungibile restano i numeri scritti in index.html.
 
 document.addEventListener("DOMContentLoaded", function () {
+  var STATS_URL = "https://raw.githubusercontent.com/FondazioneFedericoZeri/Mercato_dell_arte/main/json/statistiche.json";
+
+  // Parte subito, in parallelo: quando la sezione entra in vista i numeri
+  // aggiornati sono quasi sempre già arrivati.
+  var statsPronte = fetch(STATS_URL)
+    .then(function (r) { return r.ok ? r.json() : null; })
+    .catch(function () { return null; });
+
+  function applicaStatistiche(stats) {
+    if (!stats) return;
+    document.querySelectorAll("#statistics .stat h3[data-stat]").forEach(function (h3) {
+      var v = stats[h3.getAttribute("data-stat")];
+      if (typeof v === "number" && isFinite(v)) h3.innerHTML = String(v);
+    });
+  }
+
   function animateValue(obj, start, end, duration) {
     let startTimestamp = null;
     const step = (timestamp) => {
@@ -51,14 +96,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function checkStatisticsVisibility() {
     const statsSection = document.querySelector("#statistics");
+    if (!statsSection) return;
     const rect = statsSection.getBoundingClientRect();
     if (rect.top < window.innerHeight && rect.bottom >= 0 && !statsSection.classList.contains('animated')) {
       statsSection.classList.add('animated');
-      const stats = document.querySelectorAll("#statistics .stat h3");
-      stats.forEach(stat => {
-        const endValue = parseInt(stat.innerHTML, 10);
-        stat.innerHTML = "0";
-        animateValue(stat, 0, endValue, 2000);
+      // Aspetta i numeri aggiornati prima di far partire il conteggio, così
+      // non si vede il valore cambiare a animazione finita.
+      statsPronte.then(function (stats) {
+        applicaStatistiche(stats);
+        const stats_el = document.querySelectorAll("#statistics .stat h3");
+        stats_el.forEach(stat => {
+          const endValue = parseInt(stat.innerHTML, 10);
+          stat.innerHTML = "0";
+          animateValue(stat, 0, endValue, 2000);
+        });
       });
     }
   }

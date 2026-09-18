@@ -62,8 +62,8 @@ nav ul li a:hover {
 }
 
 #hero {
-    background-image: url('img/homepage/hero-image.PNG');
-    /* Sostituisci con il percorso dell'immagine */
+    background-image: url('img/homepage/hero-image.jpg');
+    /* Immagine compressa (JPEG, ~300KB invece di 3.3MB) per un caricamento più rapido */
     background-size: cover;
     /* Assicura che l'immagine copra l'intera area */
     background-position: center;
@@ -579,7 +579,9 @@ nav ul li a:hover {
     display: flex;
     justify-content: space-between;
     /* Spazia gli elementi a sinistra e a destra */
-    align-items: flex-start;
+    align-items: center;
+    /* Centra verticalmente testo e rete */
+    gap: 40px;
 }
 
 #key-people .left-key-content {
@@ -589,6 +591,175 @@ nav ul li a:hover {
     /* Limita la larghezza del contenuto */
     margin-left: 80px;
     margin-top: 0;
+    flex: none;
+}
+
+/* ─────────────────────────────────────────────────────────
+   Rete di relazioni della sezione Protagonisti
+   (popolata da script/scripts-protagonisti.js)
+   ───────────────────────────────────────────────────────── */
+
+#key-people .key-people-visual {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pr-link {
+    display: block;
+    width: 100%;
+    max-width: 620px;
+    text-decoration: none;
+}
+
+.pr-card {
+    position: relative;
+    width: 100%;
+    /* Finché i dati non arrivano il riquadro resta vuoto ma non collassa:
+       evita lo sballo di layout quando la rete compare. */
+    opacity: 0;
+    transition: opacity .6s ease-in-out;
+}
+
+.pr-card.pr-pronto {
+    opacity: 1;
+}
+
+/* Se i dati non si caricano la sezione resta col solo testo. */
+#key-people .key-people-visual.pr-vuoto {
+    display: none;
+}
+
+#pr-net {
+    width: 100%;
+    height: 390px;
+    display: block;
+}
+
+.pr-arco {
+    stroke: #cfcfcf;
+    stroke-width: 1;
+}
+
+.pr-nodo {
+    stroke: #f8f8f8;
+    stroke-width: 1.2;
+    cursor: pointer;
+    transition: opacity .18s;
+}
+
+.pr-nodo.pr-ent {
+    fill: #5593C9;
+    stroke-width: 2;
+}
+
+.pr-nodo.pr-ponte {
+    fill: #9db9d4;
+}
+
+.pr-nodo.pr-col {
+    fill: #c4c4c4;
+}
+
+.pr-etichetta {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11.5px;
+    font-weight: 700;
+    fill: #33556f;
+    paint-order: stroke;
+    stroke: #f8f8f8;
+    stroke-width: 3.5px;
+    stroke-linejoin: round;
+    pointer-events: none;
+}
+
+/* Al passaggio del mouse resta acceso solo il nodo con i suoi collegamenti */
+#pr-net.pr-dim .pr-nodo,
+#pr-net.pr-dim .pr-arco {
+    opacity: .18;
+    transition: opacity .18s;
+}
+
+#pr-net .pr-nodo.pr-on,
+#pr-net .pr-arco.pr-on {
+    opacity: 1;
+}
+
+#pr-net .pr-arco.pr-on {
+    stroke: #5593C9;
+    stroke-width: 1.6;
+}
+
+#pr-net .pr-nodo.pr-ent:focus {
+    outline: none;
+    stroke: #f58300;
+    stroke-width: 3;
+}
+
+.pr-tip {
+    position: absolute;
+    pointer-events: none;
+    background: #fff;
+    border: 1px solid #e3e3e3;
+    border-left: 3px solid #5593C9;
+    padding: 8px 12px;
+    border-radius: 3px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, .09);
+    font-size: 13px;
+    line-height: 1.35;
+    color: #333;
+    opacity: 0;
+    transform: translateY(4px);
+    transition: opacity .15s, transform .15s;
+    white-space: nowrap;
+    z-index: 5;
+}
+
+.pr-tip.pr-on {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.pr-tip b {
+    display: block;
+    font-weight: 700;
+    font-size: 13.5px;
+}
+
+.pr-tip span {
+    color: #888;
+    font-size: 12px;
+}
+
+.pr-legenda {
+    display: flex;
+    gap: 22px;
+    justify-content: center;
+    margin-top: 6px;
+    font-size: 12.5px;
+    color: #8a8a8a;
+}
+
+.pr-legenda i {
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    margin-right: 6px;
+    vertical-align: middle;
+}
+
+.pr-legenda i.pr-key-ent {
+    background: #5593C9;
+}
+
+.pr-legenda i.pr-key-col {
+    width: 6px;
+    height: 6px;
+    background: #bcbcbc;
 }
 
 #key-people h2 {
@@ -949,11 +1120,38 @@ footer img {
         padding:40px;
         padding-bottom: 0;
         background-color: #fff;
+        flex-direction: column;
+        gap: 24px;
     }
     #key-people .left-key-content{
         margin-left: 0;
         padding:0;
         text-align: center;
+        max-width: none;
+    }
+
+    /* Rete Protagonisti: più bassa e su sfondo bianco come il resto
+       della sezione in versione mobile */
+    #key-people .key-people-visual {
+        width: 100%;
+        padding-bottom: 30px;
+    }
+    #pr-net {
+        height: 300px;
+    }
+    .pr-nodo,
+    .pr-etichetta {
+        stroke: #fff;
+    }
+    /* L'SVG si rimpicciolisce con lo schermo: ingrandisco le etichette
+       in coordinate interne per tenerle leggibili sul telefono */
+    .pr-etichetta {
+        font-size: 15px;
+        stroke-width: 4px;
+    }
+    .pr-legenda {
+        font-size: 11.5px;
+        gap: 16px;
     }
     #key-people p {
         margin-bottom: 0;
