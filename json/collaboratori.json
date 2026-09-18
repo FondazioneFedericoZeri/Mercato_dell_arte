@@ -41,13 +41,13 @@
         "ID": "C_6",
         "Nome": "Valentina",
         "Cognome / Denominazione": "Barbareschi",
-        "Tipologia": "restauratrice"
+        "Tipologia": "restauratore"
     },
     "C_6_b": {
         "ID": "C_6_b",
         "Nome": "Luigi",
         "Cognome / Denominazione": "Battistelli",
-        "Tipologia": "impresario di casa d'aste",
+        "Tipologia": "impresario",
         "ID Antiquari": "GE_II",
         "Nome Antiquari": "Geri"
     },
@@ -221,7 +221,7 @@
         "ID": "C_22",
         "Nome": "Antonio",
         "Cognome / Denominazione": "Faccioli",
-        "Tipologia": "capo-restauratore e direttore laboratori della sede succursale",
+        "Tipologia": "restauratore",
         "ID Antiquari": "SE_II",
         "Nome Antiquari": "Sestieri"
     },
@@ -293,7 +293,7 @@
         "ID": "C_32",
         "Nome": "Mina",
         "Cognome / Denominazione": "Gregori",
-        "Tipologia": "storica dell'arte",
+        "Tipologia": "storico dell'arte",
         "ID Antiquari": "BA_I PR",
         "Nome Antiquari": "Bacarelli Pratesi"
     },
@@ -323,7 +323,7 @@
         "ID": "C_36",
         "Nome": "Franz",
         "Cognome / Denominazione": "Kieslinger",
-        "Tipologia": "mercante",
+        "Tipologia": "antiquario",
         "ID Antiquari": "PO_II",
         "Nome Antiquari": "Pospisil"
     },
@@ -411,7 +411,7 @@
         "ID": "C_44",
         "Nome": "Giulio",
         "Cognome / Denominazione": "Ometto",
-        "Tipologia": "curatore",
+        "Tipologia": "storico dell'arte",
         "ID Antiquari": "AC",
         "Nome Antiquari": "Accorsi"
     },
@@ -435,7 +435,7 @@
         "ID": "C_46_b",
         "Nome": "Harold",
         "Cognome / Denominazione": "Parson",
-        "Tipologia": "intermediatore",
+        "Tipologia": "intermediario",
         "ID Antiquari": "BR_III",
         "Nome Antiquari": "Brass"
     },
@@ -455,7 +455,7 @@
         "ID": "C_49",
         "Nome": "Paolo",
         "Cognome / Denominazione": "Polidori",
-        "Tipologia": "fotografi"
+        "Tipologia": "fotografo"
     },
     "C_50": {
         "ID": "C_50",
@@ -575,7 +575,7 @@
         "ID": "C_65_b",
         "Nome": "Angelo",
         "Cognome / Denominazione": "Visoni",
-        "Tipologia": "pittore, falsario",
+        "Tipologia": "pittore",
         "ID Antiquari": "GE_I",
         "Nome Antiquari": "Geiger"
     },
@@ -615,7 +615,7 @@
         "ID": "C_70",
         "Nome": "Francesco",
         "Cognome / Denominazione": "Dorigo",
-        "Tipologia": "antiquario, marmista",
+        "Tipologia": "antiquario",
         "ID Antiquari": "BA_V",
         "Nome Antiquari": "Barozzi"
     },
@@ -623,7 +623,7 @@
         "ID": "C_71",
         "Nome": "Vittorio",
         "Cognome / Denominazione": "Pica",
-        "Tipologia": "curatore",
+        "Tipologia": "critico d'arte",
         "ID Antiquari": "PE",
         "Nome Antiquari": "Pesaro"
     },
@@ -631,7 +631,7 @@
         "ID": "C_72",
         "Nome": "Margherita",
         "Cognome / Denominazione": "Grassini Scarfatti",
-        "Tipologia": "critica d'arte",
+        "Tipologia": "critico d'arte",
         "ID Antiquari": "PE",
         "Nome Antiquari": "Pesaro"
     },
@@ -687,7 +687,7 @@
         "ID": "C_79",
         "Nome": "Hugo",
         "Cognome / Denominazione": "Helbing",
-        "Tipologia": "impresario di casa d'asta",
+        "Tipologia": "impresario",
         "ID Antiquari": "GU RA_NEW",
         "Nome Antiquari": "Guggenheim Rambaldi"
     },
@@ -767,7 +767,7 @@
         "ID": "C_89",
         "Nome": "Remo",
         "Cognome / Denominazione": "Lizzani",
-        "Tipologia": "ditta di deposito opere d'arte",
+        "Tipologia": "ditta di deposito",
         "ID Antiquari": "PO_III",
         "Nome Antiquari": "Pollak"
     },
@@ -815,7 +815,7 @@
         "ID": "C_95",
         "Nome": "Gilberto",
         "Cognome / Denominazione": "Algranti",
-        "Tipologia": "impresario di casa d'asta",
+        "Tipologia": "impresario",
         "ID Antiquari": "SA_VII",
         "Nome Antiquari": "Salamon"
     },
@@ -823,7 +823,7 @@
         "ID": "C_96",
         "Nome": "Fabrizio",
         "Cognome / Denominazione": "Agustoni",
-        "Tipologia": "impresario di casa d'asta",
+        "Tipologia": "impresario",
         "ID Antiquari": "SA_VII",
         "Nome Antiquari": "Salamon"
     },
@@ -831,7 +831,7 @@
         "ID": "C_97",
         "Nome": "",
         "Cognome / Denominazione": "Ciceri",
-        "Tipologia": "ottico",
+        "Tipologia": "socio",
         "ID Antiquari": "CO_IV",
         "Nome Antiquari": "Colnaghi"
     },
@@ -839,7 +839,7 @@
         "ID": "C_98",
         "Nome": "Otto",
         "Cognome / Denominazione": "Gutekunst",
-        "Tipologia": "comproprietario",
+        "Tipologia": "proprietario",
         "ID Antiquari": "CO_IV",
         "Nome Antiquari": "Colnaghi"
     },
@@ -847,7 +847,7 @@
         "ID": "C_99",
         "Nome": "Edmund F.",
         "Cognome / Denominazione": "Deprez",
-        "Tipologia": "comproprietario",
+        "Tipologia": "proprietario",
         "ID Antiquari": "CO_IV",
         "Nome Antiquari": "Colnaghi"
     },
@@ -855,7 +855,7 @@
         "ID": "C_100",
         "Nome": "Gustavus",
         "Cognome / Denominazione": "Mayer",
-        "Tipologia": "comproprietario",
+        "Tipologia": "proprietario",
         "ID Antiquari": "CO_IV",
         "Nome Antiquari": "Colnaghi"
     },
@@ -863,7 +863,7 @@
         "ID": "C_101",
         "Nome": "James ",
         "Cognome / Denominazione": "Byam Shaw",
-        "Tipologia": "comproprietario",
+        "Tipologia": "proprietario",
         "ID Antiquari": "CO_IV",
         "Nome Antiquari": "Colnaghi"
     },
@@ -871,7 +871,7 @@
         "ID": "C_102",
         "Nome": "H.J.L.",
         "Cognome / Denominazione": "Wright",
-        "Tipologia": "comproprietario",
+        "Tipologia": "proprietario",
         "ID Antiquari": "CO_IV",
         "Nome Antiquari": "Colnaghi"
     },
@@ -879,7 +879,7 @@
         "ID": "C_103",
         "Nome": "D.C.",
         "Cognome / Denominazione": "Baskett",
-        "Tipologia": "comproprietario",
+        "Tipologia": "proprietario",
         "ID Antiquari": "CO_IV",
         "Nome Antiquari": "Colnaghi"
     },
@@ -887,7 +887,7 @@
         "ID": "C_104",
         "Nome": "R.M.D.",
         "Cognome / Denominazione": "Thesiger",
-        "Tipologia": "comproprietario",
+        "Tipologia": "proprietario",
         "ID Antiquari": "CO_IV",
         "Nome Antiquari": "Colnaghi"
     },
@@ -895,7 +895,7 @@
         "ID": "C_105",
         "Nome": "Jorge",
         "Cognome / Denominazione": "Coll",
-        "Tipologia": "comproprietario",
+        "Tipologia": "proprietario",
         "ID Antiquari": "CO_IV",
         "Nome Antiquari": "Colnaghi"
     },
@@ -903,7 +903,7 @@
         "ID": "C_106",
         "Nome": "Nicolas",
         "Cognome / Denominazione": "Cortés",
-        "Tipologia": "comproprietario",
+        "Tipologia": "proprietario",
         "ID Antiquari": "CO_IV",
         "Nome Antiquari": "Colnaghi"
     },
@@ -919,7 +919,7 @@
         "ID": "C_108",
         "Nome": "Michael ",
         "Cognome / Denominazione": "Goedius",
-        "Tipologia": "comproprietario",
+        "Tipologia": "proprietario",
         "ID Antiquari": "CO_IV",
         "Nome Antiquari": "Colnaghi"
     },
@@ -927,7 +927,7 @@
         "ID": "C_109",
         "Nome": "Rudolf",
         "Cognome / Denominazione": "Oetker",
-        "Tipologia": "comproprietario",
+        "Tipologia": "proprietario",
         "ID Antiquari": "CO_IV",
         "Nome Antiquari": "Colnaghi"
     },
@@ -951,7 +951,7 @@
         "ID": "C_112",
         "Nome": "Konrad",
         "Cognome / Denominazione": "Bernheimer",
-        "Tipologia": "comproprietario",
+        "Tipologia": "proprietario",
         "ID Antiquari": "CO_IV",
         "Nome Antiquari": "Colnaghi"
     },
@@ -959,7 +959,7 @@
         "ID": "C_113",
         "Nome": "Katrin",
         "Cognome / Denominazione": "Bellinger",
-        "Tipologia": "comproprietario",
+        "Tipologia": "proprietario",
         "ID Antiquari": "CO_IV",
         "Nome Antiquari": "Colnaghi"
     },
@@ -991,7 +991,7 @@
         "ID": "C_117",
         "Nome": "Victoria",
         "Cognome / Denominazione": "Golembiovskaya",
-        "Tipologia": "comproprietaria",
+        "Tipologia": "proprietario",
         "ID Antiquari": "CO_IV",
         "Nome Antiquari": "Colnaghi"
     },
@@ -999,7 +999,7 @@
         "ID": "C_118",
         "Nome": "Chloe",
         "Cognome / Denominazione": "Stead",
-        "Tipologia": "direttrice",
+        "Tipologia": "direttore",
         "ID Antiquari": "CO_IV",
         "Nome Antiquari": "Colnaghi"
     },
@@ -1039,7 +1039,7 @@
         "ID": "C_123",
         "Nome": "Ugo",
         "Cognome / Denominazione": "Frizzoni",
-        "Tipologia": "storico dell’arte",
+        "Tipologia": "storico dell'arte",
         "ID Antiquari": "ST_NEW",
         "Nome Antiquari": "Steffanoni"
     },
@@ -1199,7 +1199,7 @@
         "ID": "C_143",
         "Nome": "Carlo Francesco",
         "Cognome / Denominazione": "Fornasini",
-        "Tipologia": "collaboratore",
+        "Tipologia": "agente",
         "ID Antiquari": "PI_NEW",
         "Nome Antiquari": "Pini"
     },
@@ -1215,7 +1215,7 @@
         "ID": "C_145",
         "Nome": "Augusto",
         "Cognome / Denominazione": "Pagliarini",
-        "Tipologia": "restauratore e pittore",
+        "Tipologia": "restauratore",
         "ID Antiquari": "RA_NEW",
         "Nome Antiquari": "Rambaldi"
     },
@@ -1231,7 +1231,7 @@
         "ID": "C_147",
         "Nome": "Daniele",
         "Cognome / Denominazione": "Ferné",
-        "Tipologia": "collaboratore",
+        "Tipologia": "agente",
         "ID Antiquari": "RA_NEW",
         "Nome Antiquari": "Rambaldi"
     },
@@ -1255,7 +1255,7 @@
         "ID": "C_150",
         "Nome": "Maria Cecilia",
         "Cognome / Denominazione": "Fabbri",
-        "Tipologia": "storica dell'arte",
+        "Tipologia": "storico dell'arte",
         "ID Antiquari": "PR",
         "Nome Antiquari": "Pratesi"
     },
@@ -1263,7 +1263,7 @@
         "ID": "C_151",
         "Nome": "Sandro",
         "Cognome / Denominazione": "Bellesi",
-        "Tipologia": "storica dell'arte",
+        "Tipologia": "storico dell'arte",
         "ID Antiquari": "PR",
         "Nome Antiquari": "Pratesi"
     },
