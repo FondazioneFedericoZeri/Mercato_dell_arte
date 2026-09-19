@@ -52,14 +52,15 @@ function aggiorna_riepilogo(modo, n_gruppi, n_schede, n_antiquari) {
     if (!el) return;
     var testo;
     if (modo === 'nome') {
-        testo = n_antiquari + (n_antiquari === 1 ? ' antiquario' : ' antiquari')
+        testo = n_antiquari
+              + (n_antiquari === 1 ? ' entit\u00e0 antiquariale'
+                                   : ' entit\u00e0 antiquariali')
               + ', in ordine alfabetico.';
     } else {
         testo = n_schede + ' schede in ' + n_gruppi
               + (n_gruppi === 1 ? ' area' : ' aree')
               + ', dalla pi\u00f9 documentata alla meno. Chi ha avuto sedi in '
-              + 'pi\u00f9 aree compare in ciascuna, perci\u00f2 il totale supera i '
-              + n_antiquari + ' antiquari.';
+              + 'pi\u00f9 aree compare in ciascuna.';
     }
     if (ricerca_attiva) testo = 'Risultati della ricerca: ' + testo;
     el.textContent = testo;
