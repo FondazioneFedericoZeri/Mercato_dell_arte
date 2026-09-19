@@ -224,10 +224,11 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Persone</title>
+    <link rel="stylesheet" href="../css/tokens.css">
     <link rel="stylesheet" href="../css/persone.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
     <script type="text/javascript" src="../script/scripts-antiquari.js"></script>
     <script type="text/javascript" src="../script/antiquari_search.js"></script>
     <script type="text/javascript" src="../script/persone.js"></script>

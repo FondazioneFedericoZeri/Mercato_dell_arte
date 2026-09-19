@@ -112,16 +112,25 @@ def build_html_head(page):
                   content="width=device-width, initial-scale=1.0")
         page.title(_t="Dettaglio Antiquari")
 
+        # Tipografia condivisa con il sito dei cataloghi d'asta:
+        # Playfair Display per i titoli, DM Sans per il testo.
+        page.link(rel="preconnect", href="https://fonts.googleapis.com")
+        page.link(rel="preconnect",
+                  href="https://fonts.gstatic.com", crossorigin="")
         page.link(
-            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap", rel="stylesheet")
-        page.link(
-            href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;700&display=swap", rel="stylesheet")
+            href="https://fonts.googleapis.com/css2?"
+                 "family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&"
+                 "family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&"
+                 "display=swap", rel="stylesheet")
         page.link(rel="stylesheet",
                   href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css")
         page.link(rel="stylesheet",
                   href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css")
         page.link(rel="stylesheet",
                   href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css")
+        # tokens.css va prima del foglio di pagina: definisce le variabili
+        # (--ff-head, --ff-body, --link...) che il foglio di pagina usa.
+        page.link(rel="stylesheet", href="../../css/tokens.css")
         page.link(rel="stylesheet",
                   href="../../css/styles-dettaglioAntiquario.css")
         page.script(type="text/javascript",

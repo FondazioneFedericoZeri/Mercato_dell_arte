@@ -9,7 +9,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Assicura che il corpo occupi almeno l'altezza della finestra */
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--ff-body);
     color: #333;
     line-height: 1.6;
 }
@@ -360,7 +360,7 @@ nav ul li a:hover {
 
 /* Stile al passaggio del mouse */
 #Titolo a:hover {
-    color: #f58300c4;
+    color: var(--link-hover);
     text-decoration: underline;
     text-underline-offset: 4px; /* Distanza tra il testo e la sottolineatura */
 }
@@ -550,7 +550,7 @@ html, body {
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--ff-body);
     color: #333;
     line-height: 1.6;
 }

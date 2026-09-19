@@ -1,0 +1,54 @@
+/* ============================================================
+   tokens.css — variabili condivise del sito "Mercato dell'arte"
+
+   Allineate al design system del progetto sui cataloghi d'asta
+   (lots_of_zeri, frontend/static/css/style.css), così che i due
+   siti si riconoscano come parti della stessa ricerca.
+
+   Da qui NON si cambia l'impianto grafico del sito antiquari:
+   il blu resta il colore d'identità delle fasce e dei tab.
+   Cambiano le due famiglie tipografiche e il colore dei link.
+   ============================================================ */
+
+:root {
+
+    /* --- Tipografia (identica al sito cataloghi) --- */
+    --ff-head: 'Playfair Display', Georgia, serif;
+    --ff-body: 'DM Sans', system-ui, sans-serif;
+
+    /* --- Terracotta: palette del sito cataloghi ---
+       Sul sito cataloghi i link a riposo usano --terra su fondo
+       "paper". Qui il fondo è bianco, quindi per il testo si usa
+       --terra-dark, che su bianco dà 6,42:1 ed è conforme WCAG AA
+       anche per il corpo piccolo in grassetto (--terra si ferma a
+       4,48:1, appena sotto la soglia di 4,5:1).
+       I due toni chiari restano per hover su fondo scuro e accenti. */
+    --terra:        #D94010;
+    --terra-dark:   #B03008;
+    --terra-light:  #E86040;
+    --terra-muted:  #EB7055;
+
+    /* --- Ruoli d'uso dei link --------------------------------
+       Cambiare queste due righe cambia i link di tutto il sito. */
+    --link:         var(--terra-dark);
+    --link-hover:   var(--terra);
+
+    /* --- Identità preesistente del sito antiquari ------------ */
+    --blu:          #5593C9;
+    --testo:        #333;
+    --fondo-chiaro: #f8f8f8;
+}
+
+/* ------------------------------------------------------------
+   Base: la stessa regola del sito cataloghi — i titoli in
+   Playfair Display, tutto il resto in DM Sans. I fogli di stile
+   delle singole pagine si caricano dopo e possono sovrascriverla.
+   ------------------------------------------------------------ */
+
+body {
+    font-family: var(--ff-body);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--ff-head);
+}

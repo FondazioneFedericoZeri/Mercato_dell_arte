@@ -9,7 +9,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Assicura che il corpo occupi almeno l'altezza della finestra */
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--ff-body);
     color: #333;
     line-height: 1.6;
 }
@@ -105,7 +105,7 @@ nav ul li a:hover {
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Aggiunge un'ombra per coerenza con la sezione contatti */
     margin-left: 100px; /* Spazio simile alla sezione contatti */
     margin-right: -30px;
-    font-family: 'Playfair Display', serif; /* Mantiene lo stile del font */
+    font-family: var(--ff-head); /* Mantiene lo stile del font */
     font-size: 32px; /* Mantiene la dimensione del testo coerente */
     line-height: 1.6; /* Migliora la leggibilità */
 }
@@ -127,7 +127,7 @@ nav ul li a:hover {
 
 /* Stile per i link all'interno di .left-column */
 .column.left-column a {
-    color: #5593C9; /* Colore del link di default */
+    color: var(--link); /* terracotta condiviso con il sito cataloghi */
     text-decoration: none; /* Rimuove la sottolineatura di default */
     transition: color 0.3s ease; /* Aggiunge una transizione morbida */
     text-decoration: underline;
@@ -135,7 +135,7 @@ nav ul li a:hover {
 
 /* Stile per il link al passaggio del mouse */
 .column.left-column a:hover {
-    color: #f7a240; /* Cambia il colore in arancione al passaggio del mouse */
+    color: var(--link-hover); /* Al passaggio del mouse schiarisce verso --terra */
 }
 
 
@@ -167,7 +167,7 @@ p {
     margin-left: 60px;
     margin-right: 80px;
     font-size: 32px;
-    font-family: 'Playfair Display', serif;
+    font-family: var(--ff-head);
     line-height: 1.2;
     margin-bottom:10px;
     flex: 1;
@@ -275,7 +275,7 @@ p {
 
 /* Stile per i link all'interno di .right-content */
 .right-content a {
-    color: #5593C9; /* Colore di default del link */
+    color: var(--link); /* terracotta condiviso con il sito cataloghi */
     text-decoration: none; /* Rimuove la sottolineatura di default */
     transition: color 0.3s ease; /* Aggiunge una transizione morbida */
     text-decoration: underline;
@@ -283,7 +283,7 @@ p {
 
 /* Stile per il link al passaggio del mouse */
 .right-content a:hover {
-    color: #f7a240; /* Cambia il colore in arancione al passaggio del mouse */
+    color: var(--link-hover); /* Al passaggio del mouse schiarisce verso --terra */
 }
 
 
@@ -337,7 +337,7 @@ p {
     margin-left: 80px;
     margin-right: 80px;
     font-size: 32px;
-    font-family: 'Playfair Display', serif;
+    font-family: var(--ff-head);
     /* Stessa interlinea della citazione in #two-column-section: senza questa
        riga la regola ereditava l'1.6 del body e le due citazioni, identiche
        nel markup, risultavano spaziate in modo diverso. */
@@ -379,7 +379,7 @@ p {
 }
 
 #contatti a:hover {
-    color: #f7a240; /* Cambia il colore del link su hover */
+    color: var(--link-hover); /* Cambia il colore del link su hover */
 }
 
 

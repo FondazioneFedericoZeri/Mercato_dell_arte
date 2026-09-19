@@ -9,7 +9,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Assicura che il corpo occupi almeno l'altezza della finestra */
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--ff-body);
     color: #333;
     line-height: 1.6;
 }
@@ -120,7 +120,7 @@ nav ul li a:hover {
     display: inline-flex;
     align-items: center;
     gap: 7px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--ff-body);
     font-size: 13px;
     font-weight: 500;
     color: var(--ed-ink-soft);
@@ -152,7 +152,7 @@ nav ul li a:hover {
     box-shadow: inset 0 0 0 1px var(--ed-ink);
 }
 .ed-reset-link {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--ff-body);
     font-size: 13px;
     font-weight: 600;
     color: var(--ed-accent);
@@ -273,7 +273,7 @@ nav ul li a:hover {
     box-sizing: border-box;
 }
 .ed-detail h3 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--ff-body);
     font-weight: 700;
     font-size: 20px;
     margin: 0 0 4px;
@@ -290,7 +290,7 @@ nav ul li a:hover {
     margin-bottom: 16px;
 }
 .ed-count-reset {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--ff-body);
     font-size: 13px;
     font-weight: 600;
     color: var(--ed-accent);

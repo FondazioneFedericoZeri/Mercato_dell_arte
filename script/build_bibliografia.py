@@ -44,9 +44,15 @@ def build_html_head(page):
 		page.meta(charset="UTF-8")
 		page.meta(name="viewport", content="width=device-width, initial-scale=1.0")
 		page.title(_t="Bibliografia")
+		page.link(rel="stylesheet", href="../css/tokens.css")
 		page.link(rel="stylesheet", href="../css/styles-bibliografia.css")
-		page.link(href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap", rel="stylesheet")
-		page.link(href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;700&display=swap", rel="stylesheet")
+		# Tipografia condivisa con il sito dei cataloghi d'asta.
+		page.link(rel="preconnect", href="https://fonts.googleapis.com")
+		page.link(rel="preconnect", href="https://fonts.gstatic.com", crossorigin="")
+		page.link(href="https://fonts.googleapis.com/css2?"
+		               "family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&"
+		               "family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&"
+		               "display=swap", rel="stylesheet")
 
 
 def build_header(page):

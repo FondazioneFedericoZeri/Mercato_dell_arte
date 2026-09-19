@@ -13,7 +13,7 @@
     --text-muted: #888888;
     --accent: #5593C9;
     --accent-bg: #e8f0fa;
-    --accent-hover: #ffb907;
+    --accent-hover: var(--link-hover);
     --chip-bg: #ffffff;
     --chip-border: #cccccc;
     --shadow: 0 1px 2px rgba(51, 51, 51, 0.08), 0 6px 16px rgba(51, 51, 51, 0.06);
@@ -24,10 +24,10 @@
     margin: 0;
     background: var(--surface-0);
     color: var(--text-primary);
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family: var(--ff-body);
     padding-inline: 20px;
   }
-  h1, h2 { font-family: 'Fraunces', Georgia, serif; }
+  h1, h2 { font-family: var(--ff-head); }
 
   .wrap { max-width: 1080px; margin: 0 auto; }
 
@@ -194,9 +194,9 @@
   .entity-link {
     font-size: 12px;
     font-weight: 500;
-    color: var(--accent);
+    color: var(--link);
     text-decoration: none;
-    border-bottom: 1px solid color-mix(in srgb, var(--accent) 40%, transparent);
+    border-bottom: 1px solid color-mix(in srgb, var(--link) 40%, transparent);
   }
   .entity-link:hover {
     color: var(--accent-hover);

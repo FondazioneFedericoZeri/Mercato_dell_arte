@@ -11,7 +11,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     /* Assicura che il corpo occupi almeno l'altezza della finestra */
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--ff-body);
     color: #333;
     line-height: 1.6;
 }
@@ -400,41 +400,22 @@ nav ul li a:hover {
 
 
 
-/* Imposta i link all'interno della biografia in grassetto */
-#Bio a {
-    font-weight: bold;
-    color: #5593C9; /* Colore predefinito del link */
-    transition: color 0.3s ease; /* Aggiunge una transizione morbida per il colore */
-}
-
-/* Cambia il colore a arancione al passaggio del mouse */
-#Bio a:hover {
-    color: #FFA500; /* Colore arancione */
-    text-decoration: underline; /* Opzionale: aggiunge la sottolineatura al passaggio del mouse */
-}
-
-#Relazioni a {
-    font-weight: bold;
-    color: #5593C9; /* Colore predefinito del link */
-    transition: color 0.3s ease; /* Aggiunge una transizione morbida per il colore */
-}
-
-/* Cambia il colore a arancione al passaggio del mouse */
-#Relazioni a:hover {
-    color: #FFA500; /* Colore arancione */
-    text-decoration: underline; /* Opzionale: aggiunge la sottolineatura al passaggio del mouse */
-}
-
+/* Link di testo: terracotta come sul sito dei cataloghi d'asta.
+   A riposo --link (#B03008), al passaggio del mouse --link-hover (#D94010)
+   con la sottolineatura. I due valori stanno in css/tokens.css. */
+#Bio a,
+#Relazioni a,
 a.linkBio {
     font-weight: bold;
-    color: #5593C9; /* Colore predefinito del link */
-    transition: color 0.3s ease; /* Aggiunge una transizione morbida per il colore */
+    color: var(--link);
+    transition: color 0.3s ease;
 }
 
-/* Cambia il colore a arancione al passaggio del mouse */
-a.linkBio a:hover {
-    color: #FFA500; /* Colore arancione */
-    text-decoration: underline; /* Opzionale: aggiunge la sottolineatura al passaggio del mouse */
+#Bio a:hover,
+#Relazioni a:hover,
+a.linkBio:hover {
+    color: var(--link-hover);
+    text-decoration: underline;
 }
 
 
@@ -770,7 +751,7 @@ footer img {
 .af-etichetta {
     font-size: 10px;
     fill: #93a5b5;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--ff-body);
     text-anchor: middle;
     paint-order: stroke;
     stroke: #fbfcfd;
