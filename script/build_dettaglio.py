@@ -127,15 +127,11 @@ def build_html_head(page):
         page.script(type="text/javascript",
                     src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js")
         page.script(type="text/javascript",
-                    src="https://cdn.amcharts.com/lib/5/index.js")
-        page.script(type="text/javascript",
-                    src="https://cdn.amcharts.com/lib/5/hierarchy.js")
-        page.script(type="text/javascript",
-                    src="https://cdn.amcharts.com/lib/5/themes/Animated.js")
-        page.script(type="text/javascript",
                     src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js")
         page.script(type="text/javascript",
                     src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js")
+        page.script(type="text/javascript",
+                    src="../../script/albero-familiare.js")
         page.script(type="text/javascript",
                     src="../../script/dettaglioAntiquari.js")
         page.script(type="text/javascript",
