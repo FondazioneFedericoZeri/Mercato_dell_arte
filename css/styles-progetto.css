@@ -156,7 +156,7 @@ h2 {
 }
 
 p {
-    font-size: 18px;
+    font-size: var(--fs-lettura);
     line-height: 1.5;
     color: #666;
 }
@@ -269,7 +269,7 @@ p {
     text-align: left; /* Allinea il testo a sinistra */
     margin-bottom: 10px;
     margin-right: 100px;
-    font-size:18px;
+    font-size:var(--fs-lettura);
     text-align: justify;
 }
 
@@ -291,7 +291,7 @@ p {
     list-style-type: disc; /* Elenco puntato */
     padding-left: 60px; /* Aggiunge spazio a sinistra per i punti */
     margin-right: 100px;
-    font-size:18px;
+    font-size:var(--fs-lettura);
 }
 
 .right-content li {
@@ -326,7 +326,7 @@ p {
 
 /* Stile per il testo all'interno delle colonne */
 #contatti p {
-    font-size: 18px;
+    font-size: var(--fs-lettura);
     line-height: 1.6;
 }
 

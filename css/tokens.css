@@ -17,11 +17,8 @@
     --ff-body: 'DM Sans', system-ui, sans-serif;
 
     /* --- Terracotta: palette del sito cataloghi ---
-       Sul sito cataloghi i link a riposo usano --terra su fondo
-       "paper". Qui il fondo è bianco, quindi per il testo si usa
-       --terra-dark, che su bianco dà 6,42:1 ed è conforme WCAG AA
-       anche per il corpo piccolo in grassetto (--terra si ferma a
-       4,48:1, appena sotto la soglia di 4,5:1).
+       Contrasti su fondo bianco: --terra 4,48:1 (appena sotto la
+       soglia WCAG AA di 4,5:1), --terra-dark 6,42:1.
        I due toni chiari restano per hover su fondo scuro e accenti. */
     --terra:        #D94010;
     --terra-dark:   #B03008;
@@ -29,9 +26,21 @@
     --terra-muted:  #EB7055;
 
     /* --- Ruoli d'uso dei link --------------------------------
-       Cambiare queste due righe cambia i link di tutto il sito. */
-    --link:         var(--terra-dark);
-    --link-hover:   var(--terra);
+       Cambiare queste due righe cambia i link di tutto il sito.
+       Scelta di Valentina: stesso colore del sito cataloghi a
+       riposo, --terra-dark al passaggio del mouse. */
+    --link:         var(--terra);
+    --link-hover:   var(--terra-dark);
+
+    /* --- Scala tipografica -----------------------------------
+       Prima della scala ogni pagina aveva la sua: la bibliografia
+       a 18px, le schede a 16px, gli eventi a 13px, le persone a
+       12px. Quattro ruoli, nessuna pagina inventa più misure. */
+    --fs-intro:    1.5rem;    /* 24px — occhielli della home */
+    --fs-lettura:  1.125rem;  /* 18px — prosa lunga: biografie, progetto, bibliografia */
+    --fs-body:     1rem;      /* 16px — testo corrente, elenchi, card, bottoni */
+    --fs-body-sm:  0.875rem;  /* 14px — metadati, chip, etichette */
+    --fs-caption:  0.75rem;   /* 12px — didascalie e scritte di servizio */
 
     /* --- Identità preesistente del sito antiquari ------------ */
     --blu:          #5593C9;

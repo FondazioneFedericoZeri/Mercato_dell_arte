@@ -95,7 +95,8 @@ nav ul li a:hover {
 
 .gallery-title {
     font-size: 62px;
-    font-weight: 700;
+    font-weight: 400;  /* niente grassetto */
+    font-style: italic;
     color: #fff;
     text-align: left;
     margin-bottom: 20px;
@@ -375,6 +376,14 @@ nav ul li a:hover {
 .content-card p {
     margin-left: 40px;
     margin-right: 40px;
+}
+
+/* Le biografie sono prosa lunga come la bibliografia e la pagina
+   del progetto: stessa misura di lettura (18px), non i 16px
+   ereditati dal body. */
+.content-card p,
+.content-card li {
+    font-size: var(--fs-lettura);
 }
 
 /*Imposta altezza card per albero genealogico*/

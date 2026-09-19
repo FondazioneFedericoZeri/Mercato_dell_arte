@@ -113,7 +113,7 @@ nav ul li a:hover {
 
 .column p {
     break-inside: avoid;
-    font-size: 18px;
+    font-size: var(--fs-lettura);
     color: #333;
     line-height: 1.6;
     margin-bottom: 5px;

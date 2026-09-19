@@ -139,7 +139,7 @@ body {
 }
 
 .credits-container p {
-    font-size: 18px;
+    font-size: var(--fs-lettura);
     margin-bottom: 15px;
     line-height: 1.5;
 }
