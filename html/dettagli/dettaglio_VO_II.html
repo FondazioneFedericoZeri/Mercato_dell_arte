@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dettaglio Antiquari</title>
+    <title>Volterra | Mercato dell'arte</title>
+    <meta name="description" content="Volterra: scheda dell'entità antiquariale nel progetto Mercato dell'arte della Fondazione Federico Zeri." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet" />
@@ -39,97 +40,118 @@
         </nav>
       </div>
     </header>
-    <main>
-      <section id="image-gallery">
-        <div class="gallery-wrapper">
-          <h2 class="gallery-title">Volterra</h2>
-          <div class="slider-container">
-            <div class="slider">
-              <div class="slide">
-                <img src="../../img/slider-antiquari/VO_II_img1.jpg" alt="Giuseppe Volterra. Da &quot;L'Antiquario&quot;, 1923" />
-                <div class="caption">Giuseppe Volterra. Da "L'Antiquario", 1923</div>
-              </div>
-              <div class="slide">
-                <img src="../../img/slider-antiquari/VO_II_img2.jpg" alt="Gualtiero Volterra con Felice Boghen (foto Mario Nunes Vais)" />
-                <div class="caption">Gualtiero Volterra con Felice Boghen (foto Mario Nunes Vais)</div>
-              </div>
+    <main class="scheda">
+      <div class="scheda-torna">
+        <a href="../antiquari.html">&#8592; Tutti gli antiquari</a>
+      </div>
+      <section class="scheda-fascia">
+        <div class="scheda-fascia-testo">
+          <h1 class="scheda-nome">Volterra</h1>
+          <p class="scheda-sottotitolo">Firenze e Londra e altre 2 città, entità attiva dal 1886 al 1996</p>
+        </div>
+        <div class="slider-container">
+          <div class="slider">
+            <div class="slide">
+              <img src="../../img/slider-antiquari/VO_II_img1.jpg" alt="Giuseppe Volterra. Da &quot;L'Antiquario&quot;, 1923" />
+              <div class="caption">Giuseppe Volterra. Da "L'Antiquario", 1923</div>
             </div>
-            <button &#10094; class="prev" onclick="prevSlide()"><</button>
-            <button &#10095; class="next" onclick="nextSlide()">></button>
+            <div class="slide">
+              <img src="../../img/slider-antiquari/VO_II_img2.jpg" alt="Gualtiero Volterra con Felice Boghen (foto Mario Nunes Vais)" />
+              <div class="caption">Gualtiero Volterra con Felice Boghen (foto Mario Nunes Vais)</div>
+            </div>
           </div>
+          <button class="prev" onclick="prevSlide()" type="button">&#10094;</button>
+          <button class="next" onclick="nextSlide()" type="button">&#10095;</button>
         </div>
       </section>
-      <div class="dual-content-wrapper">
-        <div class="tab-container">
-          <ul class="tab-list">
-            <li class="tab active" data_content="Bio">Dati biografici</li>
-            <li class="tab" data_content="Persone">Albero familiare</li>
-            <li class="tab" data_content="Localizzazioni">Luoghi</li>
-            <li class="tab" data_content="Relazioni">Relazioni</li>
-            <li class="tab" data_content="Bibliografia">Bibliografia</li>
-            <li class="tab" data_content="Opere trattate">Opere trattate</li>
+      <section class="scheda-dati">
+        <dl class="scheda-record">
+          <dt>PERSONE</dt>
+          <dd>Gustavo Volterra, 1855–1918, antiquario<br>Giuseppe Volterra, 1882–1932, antiquario<br>Gastone Volterra, 1887–1944, antiquario<br>Umberto Angelo Volterra, 1886–1944, antiquario<br>Gualtiero Volterra, 1901–1967, antiquario</dd>
+          <dt>INSEGNE</dt>
+          <dd>Galleria Leonardo<br>Volterra & Melli</dd>
+          <dt>SEDI</dt>
+          <dd>Borgo Ognissanti 17, Firenze · 1886–1909<br>Ponte Vecchio 1, Firenze · 1900 ca.–1932 ca.<br>Via Tornabuoni 12, Firenze · 1901–1913 ca.<br>e altre 10 sedi, nella scheda Luoghi</dd>
+          <dt>IN CATALOGO</dt>
+          <dd><a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Volterra" class="linkBio" target="_blank">Opere transitate, catalogo della Fondazione Zeri &#8594;</a></dd>
+        </dl>
+      </section>
+      <nav class="scheda-tab" aria-label="Sezioni della scheda">
+        <button class="tab active" type="button" data_content="Bio">
+          Dati biografici
+        </button>
+        <button class="tab" type="button" data_content="Persone">
+          Albero familiare
+          <span class="tab-num">5</span>
+        </button>
+        <button class="tab" type="button" data_content="Localizzazioni">
+          Luoghi
+          <span class="tab-num">13</span>
+        </button>
+        <button class="tab" type="button" data_content="Relazioni">
+          Relazioni
+          <span class="tab-num">8</span>
+        </button>
+        <button class="tab" type="button" data_content="Bibliografia">
+          Bibliografia
+          <span class="tab-num">6</span>
+        </button>
+      </nav>
+      <div class="scheda-contenuto">
+        <div id="Bio" class="content active-content">
+          <p>La famiglia ebraica di antiquari fiorentini Volterra ha il proprio capostipite in Gustavo (1855-1918), che si trasferì nel 1880 presso il mercante Angiolo Melli (1829-1908) a Firenze, per imparare il mestiere e approfittare, come tanti all'epoca, del ruolo di snodo collezionistico della città. Il primo negozio, denominato "Galleria Leonardo", venne aperto da Gustavo con il figlio di Angiolo, Cesare Melli, nel 1886. Volterra dovette lavorarci fino al 1909, ma contemporaneamente inaugurare anche un negozio in proprio sul Ponte Vecchio, specializzato in oggetti in stile per la clientela straniera soprattutto anglosassone. In un altro negozio "Volterra e Melli" aperto in via Tornabuoni 12 (1901-1913?) trovava probabilmente sede il laboratorio artigiano per la creazione di tali manufatti artistici.</p>
+          <p>La svolta nell'attività di famiglia si ebbe con il primogenito di Gustavo, Giuseppe Volterra (1882-1932), ricordato da Simone Bargellini e <a href="dettaglio_BE_I.html" target="_blank">Luigi Bellini</a> (1884-1957) come pianista, intenditore d'arte e, dalla morte del padre, guida indiscussa dell'attività di famiglia. Seppe in particolare approfittare del vuoto lasciato nel mercato cittadino dalla scomparsa di <a href="dettaglio_BA_II.html" target="_blank">Stefano Bardini</a> (1836-1922), aprendosi al commercio dei Primitivi italiani. Ampliò il numero delle sedi e contribuì ad allestire la Galleria Michelozzo in via Sassetti 1 come una casa museo fiorentina privata del XIV-XVI secolo, aperta al pubblico dei compratori, su modello di quello che era stato Palazzo Davanzati per <a href="dettaglio_VO_I.html" target="_blank">Elia Volpi</a> (1858-1938).</p>
+          <p>Nel 1927 venne inaugurata anche la sede della Galleria Feroni, e negli stessi anni, su iniziativa di Giuseppe, l'attività fu estesa all'estero, a Parigi e a Londra, conquistando la fiducia di collezionisti come Adolphe Stoclet. In probabili rapporti con il falsario Icilio Federico Joni e il restauratore di Elia Volpi, Silvio Zanchi, alcune delle opere commercializzate dai Volterra in quegli anni destarono polemiche, come il candelabro venduto proprio a Stoclet alla fine degli anni Venti, riconosciuto come un falso da Frederick Mason Perkins. Nel frattempo, la crisi internazionale del 1929, la morte di Giuseppe nel 1932 e l'inasprimento della politica discriminatoria nei confronti degli ebrei culminata nella deportazione dei fratelli Gastone (1887-1944) e Umberto Angelo (1886-1944), portò al declino della fortuna commerciale dei Volterra.</p>
+          <p>Fu solo l'ultimogenito di Gustavo, Gualtiero (1901-1967), già pianista professionista, a continuare l'attività nel settore. Dal 1927 fino al trasferimento in Australia nel 1938, collaborò con <a href="dettaglio_CO_I.html" target="_blank">Alessandro Contini Bonacossi</a> (1878-1955) in qualità di agente, per procurare dipinti prestigiosi destinati soprattutto al collezionista Samuel H. Kress e alla fondazione a lui intitolata, poi confluiti nei maggiori musei americani. Il sodalizio con Contini continuò dopo la guerra con l'acquisto di un importante gruppo di quadri della collezione Cook di Richmond (Surrey), anch'essi comprati da Kress. Con la morte di Gualtiero, la parabola dei Volterra terminò.</p>
+        </div>
+        <div id="Persone" class="content">
+          <h2>Relazioni familiari</h2>
+          <div id="albero-genealogico"></div>
+        </div>
+        <div id="Localizzazioni" class="content">
+          <section id="map">
+            <div id="chartdiv"></div>
+          </section>
+        </div>
+        <div id="Relazioni" class="content">
+          <h2>Altri antiquari</h2>
+          <ul>
+            <li>
+              <a href="dettaglio_CO_I.html">Contini Bonacossi</a>
+            </li>
+            <li>
+              <a href="dettaglio_ME.html">Melli</a>
+            </li>
+          </ul>
+          <h2>Clienti</h2>
+          <ul>
+            <li>Adolphe Stoclet </li>
+            <li>Samuel Henry Kress </li>
+          </ul>
+          <h2>Collaboratori</h2>
+          <ul>
+            <li>Angiolo Melli (antiquario)</li>
+            <li>Cesare Melli (antiquario)</li>
+            <li>Icilio Federico Joni (restauratore)</li>
+            <li>Silvio Zanchi (restauratore)</li>
           </ul>
         </div>
-        <div class="content-card">
-          <div id="Bio" class="content active-content">
-            <p>La famiglia ebraica di antiquari fiorentini Volterra ha il proprio capostipite in Gustavo (1855-1918), che si trasferì nel 1880 presso il mercante Angiolo Melli (1829-1908) a Firenze, per imparare il mestiere e approfittare, come tanti all'epoca, del ruolo di snodo collezionistico della città. Il primo negozio, denominato "Galleria Leonardo", venne aperto da Gustavo con il figlio di Angiolo, Cesare Melli, nel 1886. Volterra dovette lavorarci fino al 1909, ma contemporaneamente inaugurare anche un negozio in proprio sul Ponte Vecchio, specializzato in oggetti in stile per la clientela straniera soprattutto anglosassone. In un altro negozio "Volterra e Melli" aperto in via Tornabuoni 12 (1901-1913?) trovava probabilmente sede il laboratorio artigiano per la creazione di tali manufatti artistici.</p>
-            <p>La svolta nell'attività di famiglia si ebbe con il primogenito di Gustavo, Giuseppe Volterra (1882-1932), ricordato da Simone Bargellini e <a href="dettaglio_BE_I.html" target="_blank">Luigi Bellini</a> (1884-1957) come pianista, intenditore d'arte e, dalla morte del padre, guida indiscussa dell'attività di famiglia. Seppe in particolare approfittare del vuoto lasciato nel mercato cittadino dalla scomparsa di <a href="dettaglio_BA_II.html" target="_blank">Stefano Bardini</a> (1836-1922), aprendosi al commercio dei Primitivi italiani. Ampliò il numero delle sedi e contribuì ad allestire la Galleria Michelozzo in via Sassetti 1 come una casa museo fiorentina privata del XIV-XVI secolo, aperta al pubblico dei compratori, su modello di quello che era stato Palazzo Davanzati per <a href="dettaglio_VO_I.html" target="_blank">Elia Volpi</a> (1858-1938).</p>
-            <p>Nel 1927 venne inaugurata anche la sede della Galleria Feroni, e negli stessi anni, su iniziativa di Giuseppe, l'attività fu estesa all'estero, a Parigi e a Londra, conquistando la fiducia di collezionisti come Adolphe Stoclet. In probabili rapporti con il falsario Icilio Federico Joni e il restauratore di Elia Volpi, Silvio Zanchi, alcune delle opere commercializzate dai Volterra in quegli anni destarono polemiche, come il candelabro venduto proprio a Stoclet alla fine degli anni Venti, riconosciuto come un falso da Frederick Mason Perkins. Nel frattempo, la crisi internazionale del 1929, la morte di Giuseppe nel 1932 e l'inasprimento della politica discriminatoria nei confronti degli ebrei culminata nella deportazione dei fratelli Gastone (1887-1944) e Umberto Angelo (1886-1944), portò al declino della fortuna commerciale dei Volterra.</p>
-            <p>Fu solo l'ultimogenito di Gustavo, Gualtiero (1901-1967), già pianista professionista, a continuare l'attività nel settore. Dal 1927 fino al trasferimento in Australia nel 1938, collaborò con <a href="dettaglio_CO_I.html" target="_blank">Alessandro Contini Bonacossi</a> (1878-1955) in qualità di agente, per procurare dipinti prestigiosi destinati soprattutto al collezionista Samuel H. Kress e alla fondazione a lui intitolata, poi confluiti nei maggiori musei americani. Il sodalizio con Contini continuò dopo la guerra con l'acquisto di un importante gruppo di quadri della collezione Cook di Richmond (Surrey), anch'essi comprati da Kress. Con la morte di Gualtiero, la parabola dei Volterra terminò.</p>
-          </div>
-          <div id="Persone" class="content">
-            <h3>Relazioni familiari:</h3>
-            <div id="albero-genealogico"></div>
-          </div>
-          <div id="Localizzazioni" class="content">
-            <section id="map">
-              <div id="chartdiv"></div>
-            </section>
-          </div>
-          <div id="Relazioni" class="content">
-            <h3>Altri antiquari:</h3>
-            <ul>
-              <li>
-                <a href="dettaglio_CO_I.html">Contini Bonacossi</a>
-              </li>
-              <li>
-                <a href="dettaglio_ME.html">Melli</a>
-              </li>
-            </ul>
-            <h3>Clienti:</h3>
-            <ul>
-              <li>Adolphe Stoclet </li>
-              <li>Samuel Henry Kress </li>
-            </ul>
-            <h3>Collaboratori:</h3>
-            <ul>
-              <li>Angiolo Melli (antiquario)</li>
-              <li>Cesare Melli (antiquario)</li>
-              <li>Icilio Federico Joni (restauratore)</li>
-              <li>Silvio Zanchi (restauratore)</li>
-            </ul>
-          </div>
-          <div id="Bibliografia" class="content">
-            <h3>Bibliografia essenziale:</h3>
-            <ul>
-              <li>Bargellini, S. (1981), <i>Antiquari di ieri a Firenze</i>, Firenze, Bonechi</li>
-              <li>Bellini, L., De Chirico, G. (1947), <i>Nel mondo degli antiquari</i>, Firenze, Arnaud</li>
-              <li>Glaros, M. (2012), <i>Sometimes a Little Injustice Must Be Suffered for the Public Good: How National Security (Aliens Control) Regulations 1939 (CHT) Affected lives of German, Italian, Japanese, and Australian-born Women Living in Australia during World War II.</i>, PhD diss., University of Western Sidney, pp.  337-342</li>
-              <li>Marano, V. (2007-2008), <i>Due generazioni di antiquari, i Volterra</i>, Tesi di Laurea, Università di Bologna</li>
-              <li>Modestini, M. (2018), <i>Capolavori?: basato su un manoscritto di Mario Modestini</i>, Fiesole, Cadmo</li>
-              <li>Zaninelli, F. (2018), <i>Alessandro Contini Bonacossi, Antiquario (1875-1955): the art market and cultural philantropy in the formation of american museum</i>, The University of Edinburgh</li>
-            </ul>
-          </div>
-          <div id="Opere trattate" class="content">
-            <p>
-              Vedi le opere transitate presso l'antiquario presenti nel 
-              <a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Volterra" class="linkBio" target="_blank">
-                catalogo della Fondazione Zeri
-              </a>
-            </p>
-          </div>
+        <div id="Bibliografia" class="content">
+          <h2>Bibliografia essenziale</h2>
+          <ul>
+            <li>Bargellini, S. (1981), <i>Antiquari di ieri a Firenze</i>, Firenze, Bonechi</li>
+            <li>Bellini, L., De Chirico, G. (1947), <i>Nel mondo degli antiquari</i>, Firenze, Arnaud</li>
+            <li>Glaros, M. (2012), <i>Sometimes a Little Injustice Must Be Suffered for the Public Good: How National Security (Aliens Control) Regulations 1939 (CHT) Affected lives of German, Italian, Japanese, and Australian-born Women Living in Australia during World War II.</i>, PhD diss., University of Western Sidney, pp.  337-342</li>
+            <li>Marano, V. (2007-2008), <i>Due generazioni di antiquari, i Volterra</i>, Tesi di Laurea, Università di Bologna</li>
+            <li>Modestini, M. (2018), <i>Capolavori?: basato su un manoscritto di Mario Modestini</i>, Fiesole, Cadmo</li>
+            <li>Zaninelli, F. (2018), <i>Alessandro Contini Bonacossi, Antiquario (1875-1955): the art market and cultural philantropy in the formation of american museum</i>, The University of Edinburgh</li>
+          </ul>
         </div>
       </div>
+      <nav class="scheda-sfoglia" aria-label="Altre schede">
+        <a href="dettaglio_VO_I.html">&#8592; Volpi</a>
+        <a href="dettaglio_ZA.html">Zabert &#8594;</a>
+      </nav>
     </main>
     <footer>
       <div class="footer-container">

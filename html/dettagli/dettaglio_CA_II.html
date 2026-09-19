@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dettaglio Antiquari</title>
+    <title>Capobianchi | Mercato dell'arte</title>
+    <meta name="description" content="Capobianchi: scheda dell'entità antiquariale nel progetto Mercato dell'arte della Fondazione Federico Zeri." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet" />
@@ -39,75 +40,82 @@
         </nav>
       </div>
     </header>
-    <main>
-      <section id="image-gallery">
-        <div class="gallery-wrapper">
-          <h2 class="gallery-title">Capobianchi</h2>
-          <div id="single-image-container">
-            <img src="../../img/slider-antiquari/CA_II_img1.jpg" alt="Autoritratto di Vincenzo Capobianchi" />
-            <div class="caption overlay-caption">Autoritratto di Vincenzo Capobianchi</div>
-          </div>
+    <main class="scheda">
+      <div class="scheda-torna">
+        <a href="../antiquari.html">&#8592; Tutti gli antiquari</a>
+      </div>
+      <section class="scheda-fascia">
+        <div class="scheda-fascia-testo">
+          <h1 class="scheda-nome">Capobianchi</h1>
+          <p class="scheda-sottotitolo">Roma, entità attiva dal 1885 al 1919</p>
         </div>
+        <figure id="single-image-container">
+          <img src="../../img/slider-antiquari/CA_II_img1.jpg" alt="Autoritratto di Vincenzo Capobianchi" />
+          <figcaption class="caption">Autoritratto di Vincenzo Capobianchi</figcaption>
+        </figure>
       </section>
-      <div class="dual-content-wrapper">
-        <div class="tab-container">
-          <ul class="tab-list">
-            <li class="tab active" data_content="Bio">Dati biografici</li>
-            <li class="tab" data_content="Persone">Albero familiare</li>
-            <li class="tab" data_content="Localizzazioni">Luoghi</li>
-            <li class="tab" data_content="Relazioni">Relazioni</li>
-            <li class="tab" data_content="Bibliografia">Bibliografia</li>
-            <li class="tab" data_content="Opere trattate">Opere trattate</li>
+      <section class="scheda-dati">
+        <dl class="scheda-record">
+          <dt>PERSONA</dt>
+          <dd>Vincenzo Capobianchi, 1836–1928, pittore e antiquario</dd>
+          <dt>INSEGNE</dt>
+          <dd>Giacomini & Capobianchi<br>Giacomini & C.<br>Casa di Vendite Corvisieri & C.</dd>
+          <dt>SEDI</dt>
+          <dd>Piazza della Trinità dei Monti 6, Roma · 1885–1901<br>Via Sistina 16, Roma · 1885–1901<br>Via Due Macelli 86, Roma · 1891–1919</dd>
+          <dt>IN CATALOGO</dt>
+          <dd><a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=capobianchi" class="linkBio" target="_blank">Opere transitate, catalogo della Fondazione Zeri &#8594;</a></dd>
+        </dl>
+      </section>
+      <nav class="scheda-tab" aria-label="Sezioni della scheda">
+        <button class="tab active" type="button" data_content="Bio">
+          Dati biografici
+        </button>
+        <button class="tab" type="button" data_content="Localizzazioni">
+          Luoghi
+          <span class="tab-num">3</span>
+        </button>
+        <button class="tab" type="button" data_content="Relazioni">
+          Relazioni
+          <span class="tab-num">2</span>
+        </button>
+        <button class="tab" type="button" data_content="Bibliografia">
+          Bibliografia
+          <span class="tab-num">1</span>
+        </button>
+      </nav>
+      <div class="scheda-contenuto">
+        <div id="Bio" class="content active-content">
+          <p>Vincenzo Capobianchi (1836-1928) nacque a Roma il 19 gennaio 1836, figlio di Tommaso Capobianchi, antiquario romano che aveva una galleria in via del Babuino 152. Formatosi presso l'Accademia di San Luca, dove studiò sotto la guida di Tommaso Minardi (1787-1871), si specializzò nella riproduzione di oggetti di antichità appartenenti alle collezioni pubbliche romane. Nell'iniziale carriera di pittore strinse un forte legame con l'artista catalano Mariano Fortuny (1838-1874), il quale ebbe su di lui un notevole ascendente.</p>
+          <p>Verosimilmente, iniziò parallelamente a lavorare con il padre nella galleria di via del Babuino, specializzandosi nello studio della numismatica e curando diversi cataloghi di vendita all'asta di monete antiche.</p>
+          <p>Nel corso degli anni Ottanta abbandonò gradualmente l'attività pittorica, per dedicarsi interamente al commercio di antichità. Intorno al 1885 si associò all'antiquario Giuseppe Giacomini, erede di un'attiva casa di vendite, fondando insieme la "Giacomini & C.", con sedi in Piazza Trinità dei Monti 6 e in via Sistina 16. Tra il 1892 e il 1893 Vincenzo Capobianchi fu incaricato di curare la vendita della collezione Borghese. Lasciata la società, nel 1901 si unì a <a href="dettaglio_CO_II.html" target="_blank">Gustavo Corvisieri</a> (?-1935) nell'impresa "Corvisieri & C.". Vincenzo Capobianchi morì nel 1928. La sua ultima dimora attestata fu una casa in Piazza Barberini 47.</p>
+        </div>
+        <div id="Localizzazioni" class="content">
+          <section id="map">
+            <div id="chartdiv"></div>
+          </section>
+        </div>
+        <div id="Relazioni" class="content">
+          <h2>Altri antiquari</h2>
+          <ul>
+            <li>
+              <a href="dettaglio_SI.html">Simonetti</a>
+            </li>
+            <li>
+              <a href="dettaglio_CO_II.html">Corvisieri</a>
+            </li>
           </ul>
         </div>
-        <div class="content-card">
-          <div id="Bio" class="content active-content">
-            <p>Vincenzo Capobianchi (1836-1928) nacque a Roma il 19 gennaio 1836, figlio di Tommaso Capobianchi, antiquario romano che aveva una galleria in via del Babuino 152. Formatosi presso l'Accademia di San Luca, dove studiò sotto la guida di Tommaso Minardi (1787-1871), si specializzò nella riproduzione di oggetti di antichità appartenenti alle collezioni pubbliche romane. Nell'iniziale carriera di pittore strinse un forte legame con l'artista catalano Mariano Fortuny (1838-1874), il quale ebbe su di lui un notevole ascendente.</p>
-            <p>Verosimilmente, iniziò parallelamente a lavorare con il padre nella galleria di via del Babuino, specializzandosi nello studio della numismatica e curando diversi cataloghi di vendita all'asta di monete antiche.</p>
-            <p>Nel corso degli anni Ottanta abbandonò gradualmente l'attività pittorica, per dedicarsi interamente al commercio di antichità. Intorno al 1885 si associò all'antiquario Giuseppe Giacomini, erede di un'attiva casa di vendite, fondando insieme la "Giacomini & C.", con sedi in Piazza Trinità dei Monti 6 e in via Sistina 16. Tra il 1892 e il 1893 Vincenzo Capobianchi fu incaricato di curare la vendita della collezione Borghese. Lasciata la società, nel 1901 si unì a <a href="dettaglio_CO_II.html" target="_blank">Gustavo Corvisieri</a> (?-1935) nell'impresa "Corvisieri & C.". Vincenzo Capobianchi morì nel 1928. La sua ultima dimora attestata fu una casa in Piazza Barberini 47.</p>
-          </div>
-          <div id="Persone" class="content">
-            <h3>Relazioni familiari:</h3>
-            <div id="albero-genealogico"></div>
-          </div>
-          <div id="Localizzazioni" class="content">
-            <section id="map">
-              <div id="chartdiv"></div>
-            </section>
-          </div>
-          <div id="Relazioni" class="content">
-            <h3>Altri antiquari:</h3>
-            <ul>
-              <li>
-                <a href="dettaglio_SI.html">Simonetti</a>
-              </li>
-              <li>
-                <a href="dettaglio_CO_II.html">Corvisieri</a>
-              </li>
-            </ul>
-            <h3>Clienti:</h3>
-            <ul>
-            </ul>
-            <h3>Collaboratori:</h3>
-            <ul>
-            </ul>
-          </div>
-          <div id="Bibliografia" class="content">
-            <h3>Bibliografia essenziale:</h3>
-            <ul>
-              <li>De Callataÿ, F. (2016), <i>Il venditore d'antichità by Vincenzo Capobianchi (1880): possibly the most scholarly work of the neo-Pompeian painting</i>, In «Anabases», XXIII, pp. 47-73</li>
-            </ul>
-          </div>
-          <div id="Opere trattate" class="content">
-            <p>
-              Vedi le opere transitate presso l'antiquario presenti nel 
-              <a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=capobianchi" class="linkBio" target="_blank">
-                catalogo della Fondazione Zeri
-              </a>
-            </p>
-          </div>
+        <div id="Bibliografia" class="content">
+          <h2>Bibliografia essenziale</h2>
+          <ul>
+            <li>De Callataÿ, F. (2016), <i>Il venditore d'antichità by Vincenzo Capobianchi (1880): possibly the most scholarly work of the neo-Pompeian painting</i>, In «Anabases», XXIII, pp. 47-73</li>
+          </ul>
         </div>
       </div>
+      <nav class="scheda-sfoglia" aria-label="Altre schede">
+        <a href="dettaglio_CA_III.html">&#8592; Cantoni</a>
+        <a href="dettaglio_CA_V.html">Caretto &#8594;</a>
+      </nav>
     </main>
     <footer>
       <div class="footer-container">

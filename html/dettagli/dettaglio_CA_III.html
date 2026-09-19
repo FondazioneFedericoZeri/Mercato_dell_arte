@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dettaglio Antiquari</title>
+    <title>Cantoni | Mercato dell'arte</title>
+    <meta name="description" content="Cantoni: scheda dell'entità antiquariale nel progetto Mercato dell'arte della Fondazione Federico Zeri." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet" />
@@ -39,92 +40,103 @@
         </nav>
       </div>
     </header>
-    <main>
-      <section id="image-gallery">
-        <div class="gallery-wrapper">
-          <h2 class="gallery-title">Cantoni</h2>
-          <div id="single-image-container">
-            <img src="../../img/slider-antiquari/CA_III_img1.jpg" alt="Achille Cantoni (Gabinetto Vieusseux, Firenze, Archivio &quot;Alessandro Bonsanti&quot;, Fondo Orvieto, Or. 6B.11.22)" />
-            <div class="caption overlay-caption">Achille Cantoni (Gabinetto Vieusseux, Firenze, Archivio "Alessandro Bonsanti", Fondo Orvieto, Or. 6B.11.22)</div>
-          </div>
+    <main class="scheda">
+      <div class="scheda-torna">
+        <a href="../antiquari.html">&#8592; Tutti gli antiquari</a>
+      </div>
+      <section class="scheda-fascia">
+        <div class="scheda-fascia-testo">
+          <h1 class="scheda-nome">Cantoni</h1>
+          <p class="scheda-sottotitolo">Milano, entità attiva dal 1881 al 1908</p>
         </div>
+        <figure id="single-image-container">
+          <img src="../../img/slider-antiquari/CA_III_img1.jpg" alt="Achille Cantoni (Gabinetto Vieusseux, Firenze, Archivio &quot;Alessandro Bonsanti&quot;, Fondo Orvieto, Or. 6B.11.22)" />
+          <figcaption class="caption">Achille Cantoni (Gabinetto Vieusseux, Firenze, Archivio "Alessandro Bonsanti", Fondo Orvieto, Or. 6B.11.22)</figcaption>
+        </figure>
       </section>
-      <div class="dual-content-wrapper">
-        <div class="tab-container">
-          <ul class="tab-list">
-            <li class="tab active" data_content="Bio">Dati biografici</li>
-            <li class="tab" data_content="Persone">Albero familiare</li>
-            <li class="tab" data_content="Localizzazioni">Luoghi</li>
-            <li class="tab" data_content="Relazioni">Relazioni</li>
-            <li class="tab" data_content="Eventi">Eventi</li>
-            <li class="tab" data_content="Bibliografia">Bibliografia</li>
-            <li class="tab" data_content="Opere trattate">Opere trattate</li>
+      <section class="scheda-dati">
+        <dl class="scheda-record">
+          <dt>PERSONA</dt>
+          <dd>Achille Cantoni, 1844–1914, antiquario</dd>
+          <dt>SEDI</dt>
+          <dd>via Ugo Foscolo 1, Milano · 1881–1908 ca.<br>via Andegari, Milano · 1881–1890 ca.</dd>
+          <dt>IN CATALOGO</dt>
+          <dd><a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=cantoni&page=1&filtroprovenienza_OA=7526%7C5129" class="linkBio" target="_blank">Opere transitate, catalogo della Fondazione Zeri &#8594;</a></dd>
+        </dl>
+      </section>
+      <nav class="scheda-tab" aria-label="Sezioni della scheda">
+        <button class="tab active" type="button" data_content="Bio">
+          Dati biografici
+        </button>
+        <button class="tab" type="button" data_content="Localizzazioni">
+          Luoghi
+          <span class="tab-num">2</span>
+        </button>
+        <button class="tab" type="button" data_content="Relazioni">
+          Relazioni
+          <span class="tab-num">6</span>
+        </button>
+        <button class="tab" type="button" data_content="Eventi">
+          Eventi
+          <span class="tab-num">3</span>
+        </button>
+        <button class="tab" type="button" data_content="Bibliografia">
+          Bibliografia
+          <span class="tab-num">7</span>
+        </button>
+      </nav>
+      <div class="scheda-contenuto">
+        <div id="Bio" class="content active-content">
+          <p>﻿Achille Cantoni (1844-1914) nacque a Viadana, provincia di Mantova, da una famiglia di proprietari terrieri di tradizione ebraica. Nel 1866, a poco più di vent’anni, partecipò come volontario garibaldino alla Terza Guerra d’Indipendenza. Dopo il matrimonio con Maria Cantoni, si trasferì a Milano dove cominciò a lavorare nella Banca Zaccaria Pisa, dedicandosi parallelamente al commercio d’antiquariato, sua grande passione. Senza mai aprire un vero e proprio negozio, tra il 1881 e il 1908 fece del suo appartamento di via Ugo Foscolo 1, in uno degli edifici perimetrali della Galleria Vittorio Emanuele II, un crocevia per collezionisti privati molto prestigiosi e per i curatori museali di molti musei italiani ed europei. Prima ebbe probabilmente anche una sede in via Andegari, sempre nel capoluogo lombardo.</p>
+          <p>Nella sua casa raccolse una collezione eclettica, tipica della seconda metà dell’Ottocento e pur trattando anche dipinti, sculture, monete e medaglie, tappeti e tessuti, si affermò soprattutto come esperto di arte orientale e islamica. Tra i più celebri clienti e frequentatori di casa Cantoni si annoverano collezionisti come i coniugi Jacquemart André, i Berenson, il principe Trivulzio, la studiosa di arte tessile Isabelle Errera e Isabella Stewart Gardner; curatori di importanti musei europei come Wilhelm von Bode a Berlino (col quale intrattenne un fitto carteggio conservato all’Archivio Centrale degli Staatliche Museen) o Arthur Pabst a Colonia, direttori di raccolte pubbliche di arti decorative come Julius Lessing, Karel Chytil e Giuseppe Bertini, alla guida delle collezioni del Poldi Pezzoli. Cantoni stesso donò diversi oggetti a istituzioni pubbliche e private milanesi, come il Regio Museo Patrio d’Archeologia, la Pinacoteca di Brera e la Società Numismatica Italiana.</p>
+          <p>Alla sua morte, nel 1914, nessuno dei suoi cinque figli continuò l’attività paterna. Il fiore all’occhiello delle sue collezioni, la raccolta numismatica, già oggetto di un’importante vendita <a href="dettaglio_SA_III.html" target="_blank">Sambon</a> nel 1887, venne definitivamente disperso in due vendite pubbliche postume, organizzate a Roma da Pietro e Pio Santamaria nel 1920: il 26 aprile l’asta riguardò le monete italiane; il 29 novembre il nucleo più importante della collezione di monete romane.</p>
+        </div>
+        <div id="Localizzazioni" class="content">
+          <section id="map">
+            <div id="chartdiv"></div>
+          </section>
+        </div>
+        <div id="Relazioni" class="content">
+          <h2>Altri antiquari</h2>
+          <ul>
+            <li>
+              <a href="dettaglio_SA_III.html">Sambon</a>
+            </li>
+          </ul>
+          <h2>Clienti</h2>
+          <ul>
+            <li>Arthur Pabst </li>
+            <li>Giuseppe Bertini </li>
+            <li>Isabelle Errera </li>
+            <li>Julius Lessing </li>
+            <li>Karel Chytil </li>
           </ul>
         </div>
-        <div class="content-card">
-          <div id="Bio" class="content active-content">
-            <p>﻿Achille Cantoni (1844-1914) nacque a Viadana, provincia di Mantova, da una famiglia di proprietari terrieri di tradizione ebraica. Nel 1866, a poco più di vent’anni, partecipò come volontario garibaldino alla Terza Guerra d’Indipendenza. Dopo il matrimonio con Maria Cantoni, si trasferì a Milano dove cominciò a lavorare nella Banca Zaccaria Pisa, dedicandosi parallelamente al commercio d’antiquariato, sua grande passione. Senza mai aprire un vero e proprio negozio, tra il 1881 e il 1908 fece del suo appartamento di via Ugo Foscolo 1, in uno degli edifici perimetrali della Galleria Vittorio Emanuele II, un crocevia per collezionisti privati molto prestigiosi e per i curatori museali di molti musei italiani ed europei. Prima ebbe probabilmente anche una sede in via Andegari, sempre nel capoluogo lombardo.</p>
-            <p>Nella sua casa raccolse una collezione eclettica, tipica della seconda metà dell’Ottocento e pur trattando anche dipinti, sculture, monete e medaglie, tappeti e tessuti, si affermò soprattutto come esperto di arte orientale e islamica. Tra i più celebri clienti e frequentatori di casa Cantoni si annoverano collezionisti come i coniugi Jacquemart André, i Berenson, il principe Trivulzio, la studiosa di arte tessile Isabelle Errera e Isabella Stewart Gardner; curatori di importanti musei europei come Wilhelm von Bode a Berlino (col quale intrattenne un fitto carteggio conservato all’Archivio Centrale degli Staatliche Museen) o Arthur Pabst a Colonia, direttori di raccolte pubbliche di arti decorative come Julius Lessing, Karel Chytil e Giuseppe Bertini, alla guida delle collezioni del Poldi Pezzoli. Cantoni stesso donò diversi oggetti a istituzioni pubbliche e private milanesi, come il Regio Museo Patrio d’Archeologia, la Pinacoteca di Brera e la Società Numismatica Italiana.</p>
-            <p>Alla sua morte, nel 1914, nessuno dei suoi cinque figli continuò l’attività paterna. Il fiore all’occhiello delle sue collezioni, la raccolta numismatica, già oggetto di un’importante vendita <a href="dettaglio_SA_III.html" target="_blank">Sambon</a> nel 1887, venne definitivamente disperso in due vendite pubbliche postume, organizzate a Roma da Pietro e Pio Santamaria nel 1920: il 26 aprile l’asta riguardò le monete italiane; il 29 novembre il nucleo più importante della collezione di monete romane.</p>
-          </div>
-          <div id="Persone" class="content">
-            <h3>Relazioni familiari:</h3>
-            <div id="albero-genealogico"></div>
-          </div>
-          <div id="Localizzazioni" class="content">
-            <section id="map">
-              <div id="chartdiv"></div>
-            </section>
-          </div>
-          <div id="Eventi" class="content">
-            <h3>Eventi significativi nell'attività antiquariale:</h3>
-            <ul>
-              <li>1887 - <i>Vendita Collezione Cantoni</i>: Vendita all'asta presso Giulio Sambon di un'importante porzione della collezione numismatica di Achille Cantoni, il 25 aprile 1887</li>
-              <li>1920 - <i>Vendita collezione Cantoni</i>: Vendita delle monete italiane della collezione di Achille Cantoni, a Roma presso Pietro e Pio Santamaria, il 26 aprile 1920</li>
-              <li>1920 - <i>Vendita collezione Cantoni</i>: Vendita delle monete romane della collezione di Achille Cantoni, a Roma presso Pietro e Pio Santamaria, il 29 novembre 1920</li>
-            </ul>
-          </div>
-          <div id="Relazioni" class="content">
-            <h3>Altri antiquari:</h3>
-            <ul>
-              <li>
-                <a href="dettaglio_SA_III.html">Sambon</a>
-              </li>
-            </ul>
-            <h3>Clienti:</h3>
-            <ul>
-              <li>Arthur Pabst </li>
-              <li>Giuseppe Bertini </li>
-              <li>Isabelle Errera </li>
-              <li>Julius Lessing </li>
-              <li>Karel Chytil </li>
-            </ul>
-            <h3>Collaboratori:</h3>
-            <ul>
-            </ul>
-          </div>
-          <div id="Bibliografia" class="content">
-            <h3>Bibliografia essenziale:</h3>
-            <ul>
-              <li>Cecutti, D. (2013), <i>Una miniera inesauribile. Collezionisti e antiquari di arte islamica. L'Italia e il contesto internazionale tra Ottocento e Novecento</i>, Firenze, Maschietto Editore, pp. 82, 202-203, 238</li>
-              <li>Ceriana, M. (2004), <i>Achille Cantoni</i>, In Ceriana Quattrini, pp. 51-52</li>
-              <li>Clain-Stefanelli, E. E. (1985), <i>Numismatic bibliography</i>, Monaco, n.3653</li>
-              <li>Di Lorenzo, A. (2002), <i>Édouard e Nélie a Milano: i loro rapporti con gli antiquari, i restauratori e i collezionisti</i>, in Di Lorenzo, pp. 37-45</li>
-              <li>Sambon G. (1887), <i>Catalogo delle monete italiane medioevali e moderne, monete estere, monete romane consolari ed imperiali, monete greche e medaglie componenti la collezione del sig. Achille Cantoni di Milano, Milano 25 aprile 1887</i>, Milano 1887</li>
-              <li>Santamaria P. & P. (1920), <i>Catalogo delle monete di zecche italiane componenti la raccolta di un distinto raccoglitore defunto, in vendita all’asta pubblica, Roma 26 aprile 1920</i>, Roma 1920</li>
-              <li>Santamaria P. & P. (1920), <i>Médailles romaines, aes grave, composant la collection d’un amateur décédé, Roma 29 novembre 1920</i>, Roma 1920</li>
-            </ul>
-          </div>
-          <div id="Opere trattate" class="content">
-            <p>
-              Vedi le opere transitate presso l'antiquario presenti nel 
-              <a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=cantoni&page=1&filtroprovenienza_OA=7526%7C5129" class="linkBio" target="_blank">
-                catalogo della Fondazione Zeri
-              </a>
-            </p>
-          </div>
+        <div id="Eventi" class="content">
+          <h2>Eventi significativi nell'attività antiquariale</h2>
+          <ul>
+            <li>1887 - <i>Vendita Collezione Cantoni</i>: Vendita all'asta presso Giulio Sambon di un'importante porzione della collezione numismatica di Achille Cantoni, il 25 aprile 1887</li>
+            <li>1920 - <i>Vendita collezione Cantoni</i>: Vendita delle monete italiane della collezione di Achille Cantoni, a Roma presso Pietro e Pio Santamaria, il 26 aprile 1920</li>
+            <li>1920 - <i>Vendita collezione Cantoni</i>: Vendita delle monete romane della collezione di Achille Cantoni, a Roma presso Pietro e Pio Santamaria, il 29 novembre 1920</li>
+          </ul>
+        </div>
+        <div id="Bibliografia" class="content">
+          <h2>Bibliografia essenziale</h2>
+          <ul>
+            <li>Cecutti, D. (2013), <i>Una miniera inesauribile. Collezionisti e antiquari di arte islamica. L'Italia e il contesto internazionale tra Ottocento e Novecento</i>, Firenze, Maschietto Editore, pp. 82, 202-203, 238</li>
+            <li>Ceriana, M. (2004), <i>Achille Cantoni</i>, In Ceriana Quattrini, pp. 51-52</li>
+            <li>Clain-Stefanelli, E. E. (1985), <i>Numismatic bibliography</i>, Monaco, n.3653</li>
+            <li>Di Lorenzo, A. (2002), <i>Édouard e Nélie a Milano: i loro rapporti con gli antiquari, i restauratori e i collezionisti</i>, in Di Lorenzo, pp. 37-45</li>
+            <li>Sambon G. (1887), <i>Catalogo delle monete italiane medioevali e moderne, monete estere, monete romane consolari ed imperiali, monete greche e medaglie componenti la collezione del sig. Achille Cantoni di Milano, Milano 25 aprile 1887</i>, Milano 1887</li>
+            <li>Santamaria P. & P. (1920), <i>Catalogo delle monete di zecche italiane componenti la raccolta di un distinto raccoglitore defunto, in vendita all’asta pubblica, Roma 26 aprile 1920</i>, Roma 1920</li>
+            <li>Santamaria P. & P. (1920), <i>Médailles romaines, aes grave, composant la collection d’un amateur décédé, Roma 29 novembre 1920</i>, Roma 1920</li>
+          </ul>
         </div>
       </div>
+      <nav class="scheda-sfoglia" aria-label="Altre schede">
+        <a href="dettaglio_CA_I.html">&#8592; Canessa</a>
+        <a href="dettaglio_CA_II.html">Capobianchi &#8594;</a>
+      </nav>
     </main>
     <footer>
       <div class="footer-container">

@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dettaglio Antiquari</title>
+    <title>Melli | Mercato dell'arte</title>
+    <meta name="description" content="Melli: scheda dell'entità antiquariale nel progetto Mercato dell'arte della Fondazione Federico Zeri." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet" />
@@ -39,88 +40,100 @@
         </nav>
       </div>
     </header>
-    <main>
-      <section id="image-gallery">
-        <div class="gallery-wrapper">
-          <h2 class="gallery-title">Melli</h2>
-          <div class="slider-container">
-            <div class="slider">
-              <div class="slide">
-                <img src="../../img/slider-antiquari/ME_img1.jpg" alt="Angiolo Melli" />
-                <div class="caption">Angiolo Melli</div>
-              </div>
-              <div class="slide">
-                <img src="../../img/slider-antiquari/ME_img2.jpg" alt="Cesare Melli" />
-                <div class="caption">Cesare Melli</div>
-              </div>
-              <div class="slide">
-                <img src="../../img/slider-antiquari/ME_img3.jpg" alt="Caricatura di Gustavo Melli, da &quot;L'Antiquario&quot;, marzo 1929" />
-                <div class="caption">Caricatura di Gustavo Melli, da "L'Antiquario", marzo 1929</div>
-              </div>
-              <div class="slide">
-                <img src="../../img/slider-antiquari/ME_img4.jpg" alt="Gustavo Melli" />
-                <div class="caption">Gustavo Melli</div>
-              </div>
+    <main class="scheda">
+      <div class="scheda-torna">
+        <a href="../antiquari.html">&#8592; Tutti gli antiquari</a>
+      </div>
+      <section class="scheda-fascia">
+        <div class="scheda-fascia-testo">
+          <h1 class="scheda-nome">Melli</h1>
+          <p class="scheda-sottotitolo">Firenze, entità attiva dal 1886 al 1970</p>
+        </div>
+        <div class="slider-container">
+          <div class="slider">
+            <div class="slide">
+              <img src="../../img/slider-antiquari/ME_img1.jpg" alt="Angiolo Melli" />
+              <div class="caption">Angiolo Melli</div>
             </div>
-            <button &#10094; class="prev" onclick="prevSlide()"><</button>
-            <button &#10095; class="next" onclick="nextSlide()">></button>
+            <div class="slide">
+              <img src="../../img/slider-antiquari/ME_img2.jpg" alt="Cesare Melli" />
+              <div class="caption">Cesare Melli</div>
+            </div>
+            <div class="slide">
+              <img src="../../img/slider-antiquari/ME_img3.jpg" alt="Caricatura di Gustavo Melli, da &quot;L'Antiquario&quot;, marzo 1929" />
+              <div class="caption">Caricatura di Gustavo Melli, da "L'Antiquario", marzo 1929</div>
+            </div>
+            <div class="slide">
+              <img src="../../img/slider-antiquari/ME_img4.jpg" alt="Gustavo Melli" />
+              <div class="caption">Gustavo Melli</div>
+            </div>
           </div>
+          <button class="prev" onclick="prevSlide()" type="button">&#10094;</button>
+          <button class="next" onclick="nextSlide()" type="button">&#10095;</button>
         </div>
       </section>
-      <div class="dual-content-wrapper">
-        <div class="tab-container">
-          <ul class="tab-list">
-            <li class="tab active" data_content="Bio">Dati biografici</li>
-            <li class="tab" data_content="Persone">Albero familiare</li>
-            <li class="tab" data_content="Localizzazioni">Luoghi</li>
-            <li class="tab" data_content="Relazioni">Relazioni</li>
-            <li class="tab" data_content="Opere trattate">Opere trattate</li>
+      <section class="scheda-dati">
+        <dl class="scheda-record">
+          <dt>PERSONE</dt>
+          <dd>Angiolo Melli, antiquario<br>Carlo Melli, antiquario<br>Giuseppe Melli, antiquario<br>Cesare Melli, antiquario<br>Adolfo Melli, antiquario</dd>
+          <dt>INSEGNE</dt>
+          <dd>Galleria Leonardo<br>Luigi Orselli<br>Volterra & Melli</dd>
+          <dt>SEDI</dt>
+          <dd>Borgo Ognissanti 17, Firenze · 1886–1909<br>Borgo Ognissanti 17, Firenze · 1886–1909<br>Borgo Ognissanti 9, Firenze · 1900 ca.–1970 ca.<br>e altre 27 sedi, nella scheda Luoghi</dd>
+          <dt>IN CATALOGO</dt>
+          <dd><a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Melli" class="linkBio" target="_blank">Opere transitate, catalogo della Fondazione Zeri &#8594;</a></dd>
+        </dl>
+      </section>
+      <nav class="scheda-tab" aria-label="Sezioni della scheda">
+        <button class="tab active" type="button" data_content="Bio">
+          Dati biografici
+        </button>
+        <button class="tab" type="button" data_content="Persone">
+          Albero familiare
+          <span class="tab-num">5</span>
+        </button>
+        <button class="tab" type="button" data_content="Localizzazioni">
+          Luoghi
+          <span class="tab-num">30</span>
+        </button>
+        <button class="tab" type="button" data_content="Relazioni">
+          Relazioni
+          <span class="tab-num">2</span>
+        </button>
+      </nav>
+      <div class="scheda-contenuto">
+        <div id="Bio" class="content active-content">
+          <p>Angiolo Melli nacque a Ferrara nel 1829 nel ghetto ebraico. Dopo aver prestato servizio come soldato contro l’Austria nei moti di Milano del 1848, si dedicò al commercio di opere d’arte, prima a Ferrara, poi a Firenze, nel frattempo divenuta capitale. Nel capoluogo toscano, nel 1875, aprì la sua prima attività stabile, dedicandosi soprattutto alla vendita di gioielli, antichità e opere d’arte e, in quegli anni, avviò al mestiere <a href=" dettaglio_VO_II.html" target="_blank">Gustavo Volterra</a>.</p>
+          <p>Dalla moglie Rosina Tedeschi, ebbe sei figli: Elisa e Adele e Carlo, Giuseppe, Cesare e Adolfo, questi ultimi tutti impiegati nell’attività di famiglia.</p>
+          <p>Uno dei fratelli, Cesare, aprì nel 1886 la “Galleria Leonardo” in Borgo Ognissanti 17 insieme a Gustavo Volterra, che nel frattempo aveva sposato una delle donne di casa, Adele. Nei primissimi anni del Novecento sempre Cesare vendeva antichità come arredi da esterno nel Giardino Borgherini di via Borgo Santi Apostoli 40r, come ricorda Angiolo Pucci, nel suo volume "I giardini di Firenze".</p>
+          <p>Nel 1909, i Melli aprirono la galleria sul Ponte Vecchio al civico 44 che divenne negli anni la loro sede storica, specializzata in oggetti preziosi. La collaborazione con i Volterra portò prima all’apertura del negozio e laboratorio per la produzione di oggetti in stile di Gustavo Volterra e Cesare Melli in via Tornabuoni poi, dal 1920, all’inaugurazione della sede di via Guicciardini 6 (Volterra con Adolfo Melli) dove si vendevano dipinti, mobili e complementi d’arredo. Per il commercio di opere d’arte, i Melli collaboravano anche con <a href="dettaglio_RO.html" target="_blank">Salvatore Romano</a>.</p>
+          <p>Un altro negozio, intitolato a Giuseppe Melli, è documentato nel secondo decennio del Novecento in via del Parione 2. La variegata attività di questa prospera famiglia di mercanti ha proseguito per tutta la seconda metà del Novecento con Gustavo Melli (ricordato da Batini nel 1961) e oltre, nel XXI, soprattutto nel campo della gioielleria antica.</p>
+        </div>
+        <div id="Persone" class="content">
+          <h2>Relazioni familiari</h2>
+          <div id="albero-genealogico"></div>
+        </div>
+        <div id="Localizzazioni" class="content">
+          <section id="map">
+            <div id="chartdiv"></div>
+          </section>
+        </div>
+        <div id="Relazioni" class="content">
+          <h2>Altri antiquari</h2>
+          <ul>
+            <li>
+              <a href="dettaglio_RO.html">Romano</a>
+            </li>
+            <li>
+              <a href="dettaglio_VO_II.html">Volterra</a>
+            </li>
           </ul>
         </div>
-        <div class="content-card">
-          <div id="Bio" class="content active-content">
-            <p>Angiolo Melli nacque a Ferrara nel 1829 nel ghetto ebraico. Dopo aver prestato servizio come soldato contro l’Austria nei moti di Milano del 1848, si dedicò al commercio di opere d’arte, prima a Ferrara, poi a Firenze, nel frattempo divenuta capitale. Nel capoluogo toscano, nel 1875, aprì la sua prima attività stabile, dedicandosi soprattutto alla vendita di gioielli, antichità e opere d’arte e, in quegli anni, avviò al mestiere <a href=" dettaglio_VO_II.html" target="_blank">Gustavo Volterra</a>.</p>
-            <p>Dalla moglie Rosina Tedeschi, ebbe sei figli: Elisa e Adele e Carlo, Giuseppe, Cesare e Adolfo, questi ultimi tutti impiegati nell’attività di famiglia.</p>
-            <p>Uno dei fratelli, Cesare, aprì nel 1886 la “Galleria Leonardo” in Borgo Ognissanti 17 insieme a Gustavo Volterra, che nel frattempo aveva sposato una delle donne di casa, Adele. Nei primissimi anni del Novecento sempre Cesare vendeva antichità come arredi da esterno nel Giardino Borgherini di via Borgo Santi Apostoli 40r, come ricorda Angiolo Pucci, nel suo volume "I giardini di Firenze".</p>
-            <p>Nel 1909, i Melli aprirono la galleria sul Ponte Vecchio al civico 44 che divenne negli anni la loro sede storica, specializzata in oggetti preziosi. La collaborazione con i Volterra portò prima all’apertura del negozio e laboratorio per la produzione di oggetti in stile di Gustavo Volterra e Cesare Melli in via Tornabuoni poi, dal 1920, all’inaugurazione della sede di via Guicciardini 6 (Volterra con Adolfo Melli) dove si vendevano dipinti, mobili e complementi d’arredo. Per il commercio di opere d’arte, i Melli collaboravano anche con <a href="dettaglio_RO.html" target="_blank">Salvatore Romano</a>.</p>
-            <p>Un altro negozio, intitolato a Giuseppe Melli, è documentato nel secondo decennio del Novecento in via del Parione 2. La variegata attività di questa prospera famiglia di mercanti ha proseguito per tutta la seconda metà del Novecento con Gustavo Melli (ricordato da Batini nel 1961) e oltre, nel XXI, soprattutto nel campo della gioielleria antica.</p>
-          </div>
-          <div id="Persone" class="content">
-            <h3>Relazioni familiari:</h3>
-            <div id="albero-genealogico"></div>
-          </div>
-          <div id="Localizzazioni" class="content">
-            <section id="map">
-              <div id="chartdiv"></div>
-            </section>
-          </div>
-          <div id="Relazioni" class="content">
-            <h3>Altri antiquari:</h3>
-            <ul>
-              <li>
-                <a href="dettaglio_RO.html">Romano</a>
-              </li>
-              <li>
-                <a href="dettaglio_VO_II.html">Volterra</a>
-              </li>
-            </ul>
-            <h3>Clienti:</h3>
-            <ul>
-            </ul>
-            <h3>Collaboratori:</h3>
-            <ul>
-            </ul>
-          </div>
-          <div id="Opere trattate" class="content">
-            <p>
-              Vedi le opere transitate presso l'antiquario presenti nel 
-              <a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Melli" class="linkBio" target="_blank">
-                catalogo della Fondazione Zeri
-              </a>
-            </p>
-          </div>
-        </div>
       </div>
+      <nav class="scheda-sfoglia" aria-label="Altre schede">
+        <a href="dettaglio_LO_I.html">&#8592; Longari</a>
+        <a href="dettaglio_MO_I.html">Molena &#8594;</a>
+      </nav>
     </main>
     <footer>
       <div class="footer-container">

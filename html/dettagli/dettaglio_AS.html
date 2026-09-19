@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dettaglio Antiquari</title>
+    <title>Ascoli | Mercato dell'arte</title>
+    <meta name="description" content="Ascoli: scheda dell'entità antiquariale nel progetto Mercato dell'arte della Fondazione Federico Zeri." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet" />
@@ -39,61 +40,65 @@
         </nav>
       </div>
     </header>
-    <main>
-      <section id="image-gallery">
-        <div class="gallery-wrapper no-imgs">
-          <h2 class="gallery-title">Ascoli</h2>
+    <main class="scheda">
+      <div class="scheda-torna">
+        <a href="../antiquari.html">&#8592; Tutti gli antiquari</a>
+      </div>
+      <section class="scheda-fascia senza-foto">
+        <div class="scheda-fascia-testo">
+          <h1 class="scheda-nome">Ascoli</h1>
+          <p class="scheda-sottotitolo">Bologna, entità attiva dal 1873 al 1879</p>
         </div>
       </section>
-      <div class="dual-content-wrapper">
-        <div class="tab-container">
-          <ul class="tab-list">
-            <li class="tab active" data_content="Bio">Dati biografici</li>
-            <li class="tab" data_content="Persone">Albero familiare</li>
-            <li class="tab" data_content="Localizzazioni">Luoghi</li>
-            <li class="tab" data_content="Relazioni">Relazioni</li>
-            <li class="tab" data_content="Opere trattate">Opere trattate</li>
+      <section class="scheda-dati">
+        <dl class="scheda-record">
+          <dt>PERSONA</dt>
+          <dd>Alessandro Ascoli, ?–1897, antiquario</dd>
+          <dt>INSEGNE</dt>
+          <dd>Alessandro Ascoli e Comp.o<br>Angiolini e Ascoli</dd>
+          <dt>SEDE</dt>
+          <dd>via Ugo Bassi 87, Bologna · 1873–1879</dd>
+          <dt>IN CATALOGO</dt>
+          <dd><a href="https://catalogo.fondazionezeri.unibo.it/scheda/opera/109115/Strozzi%20Zanobi%20%28Pseudo%20Domenico%20di%20Michelino%20Master%20of%20the%20Buckingham%20Palace%20Madonna%29%2C%20Dio%20Padre%20in%20trono%20e%20angeliĀ" class="linkBio" target="_blank">Opere transitate, catalogo della Fondazione Zeri &#8594;</a></dd>
+        </dl>
+      </section>
+      <nav class="scheda-tab" aria-label="Sezioni della scheda">
+        <button class="tab active" type="button" data_content="Bio">
+          Dati biografici
+        </button>
+        <button class="tab" type="button" data_content="Localizzazioni">
+          Luoghi
+          <span class="tab-num">1</span>
+        </button>
+        <button class="tab" type="button" data_content="Relazioni">
+          Relazioni
+          <span class="tab-num">1</span>
+        </button>
+      </nav>
+      <div class="scheda-contenuto">
+        <div id="Bio" class="content active-content">
+          <p>L’antiquario anconetano di origini ebraiche Alessandro Ascoli (fu Abramo) gestì un’attività di compravendita di opere d’arte in società con <a href="dettaglio_AN.html" target="_blank">Raffaele Angiolini</a> a Bologna in via Ugo Bassi 87, dal 1873 al 1879. Dapprima denominata “Alessandro Ascoli e Comp.o”, la ditta, dal 1874, assunse la ragione sociale “Angiolini e Ascoli”.</p>
+          <p>Viene ricordato per aver rifornito, tra gli anni Settanta e Ottanta dell’Ottocento, il Museo Civico di Torino, sotto la direzione di Emanuele Tapparelli d’Azeglio, e il South Kensington Museum di Londra, di oggetti d’arte applicata nel contesto del movimento Arts and Crafts.</p>
+          <p>Morì a Bologna nel 1897.</p>
+        </div>
+        <div id="Localizzazioni" class="content">
+          <section id="map">
+            <div id="chartdiv"></div>
+          </section>
+        </div>
+        <div id="Relazioni" class="content">
+          <h2>Altri antiquari</h2>
+          <ul>
+            <li>
+              <a href="dettaglio_AN.html">Angiolini</a>
+            </li>
           </ul>
         </div>
-        <div class="content-card">
-          <div id="Bio" class="content active-content">
-            <p>L’antiquario anconetano di origini ebraiche Alessandro Ascoli (fu Abramo) gestì un’attività di compravendita di opere d’arte in società con <a href="dettaglio_AN.html" target="_blank">Raffaele Angiolini</a> a Bologna in via Ugo Bassi 87, dal 1873 al 1879. Dapprima denominata “Alessandro Ascoli e Comp.o”, la ditta, dal 1874, assunse la ragione sociale “Angiolini e Ascoli”.</p>
-            <p>Viene ricordato per aver rifornito, tra gli anni Settanta e Ottanta dell’Ottocento, il Museo Civico di Torino, sotto la direzione di Emanuele Tapparelli d’Azeglio, e il South Kensington Museum di Londra, di oggetti d’arte applicata nel contesto del movimento Arts and Crafts.</p>
-            <p>Morì a Bologna nel 1897.</p>
-          </div>
-          <div id="Persone" class="content">
-            <h3>Relazioni familiari:</h3>
-            <div id="albero-genealogico"></div>
-          </div>
-          <div id="Localizzazioni" class="content">
-            <section id="map">
-              <div id="chartdiv"></div>
-            </section>
-          </div>
-          <div id="Relazioni" class="content">
-            <h3>Altri antiquari:</h3>
-            <ul>
-              <li>
-                <a href="dettaglio_AN.html">Angiolini</a>
-              </li>
-            </ul>
-            <h3>Clienti:</h3>
-            <ul>
-            </ul>
-            <h3>Collaboratori:</h3>
-            <ul>
-            </ul>
-          </div>
-          <div id="Opere trattate" class="content">
-            <p>
-              Vedi le opere transitate presso l'antiquario presenti nel 
-              <a href="https://catalogo.fondazionezeri.unibo.it/scheda/opera/109115/Strozzi%20Zanobi%20%28Pseudo%20Domenico%20di%20Michelino%20Master%20of%20the%20Buckingham%20Palace%20Madonna%29%2C%20Dio%20Padre%20in%20trono%20e%20angeliĀ " class="linkBio" target="_blank">
-                catalogo della Fondazione Zeri
-              </a>
-            </p>
-          </div>
-        </div>
       </div>
+      <nav class="scheda-sfoglia" aria-label="Altre schede">
+        <a href="dettaglio_AP.html">&#8592; Apolloni</a>
+        <a href="dettaglio_BA_I.html">Bacarelli &#8594;</a>
+      </nav>
     </main>
     <footer>
       <div class="footer-container">

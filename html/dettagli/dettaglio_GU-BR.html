@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dettaglio Antiquari</title>
+    <title>Guidi-Bruscoli | Mercato dell'arte</title>
+    <meta name="description" content="Guidi-Bruscoli: scheda dell'entità antiquariale nel progetto Mercato dell'arte della Fondazione Federico Zeri." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet" />
@@ -39,72 +40,88 @@
         </nav>
       </div>
     </header>
-    <main>
-      <section id="image-gallery">
-        <div class="gallery-wrapper no-imgs">
-          <h2 class="gallery-title">Guidi-Bruscoli</h2>
+    <main class="scheda">
+      <div class="scheda-torna">
+        <a href="../antiquari.html">&#8592; Tutti gli antiquari</a>
+      </div>
+      <section class="scheda-fascia senza-foto">
+        <div class="scheda-fascia-testo">
+          <h1 class="scheda-nome">Guidi-Bruscoli</h1>
+          <p class="scheda-sottotitolo">Firenze, entità attiva dal 1920 al 1957</p>
         </div>
       </section>
-      <div class="dual-content-wrapper">
-        <div class="tab-container">
-          <ul class="tab-list">
-            <li class="tab active" data_content="Bio">Dati biografici</li>
-            <li class="tab" data_content="Persone">Albero familiare</li>
-            <li class="tab" data_content="Localizzazioni">Luoghi</li>
-            <li class="tab" data_content="Relazioni">Relazioni</li>
-            <li class="tab" data_content="Bibliografia">Bibliografia</li>
-            <li class="tab" data_content="Opere trattate">Opere trattate</li>
+      <section class="scheda-dati">
+        <dl class="scheda-record">
+          <dt>PERSONE</dt>
+          <dd>Carlo Bruscoli, 1879–1955, Libraio e antiquario<br>Riccardo Bruscoli, 1913–1989, antiquario<br>Marcello Guidi, 1903–1979, antiquario<br>Fabrizio Guidi-Bruscoli, 1940–, antiquario</dd>
+          <dt>SEDI</dt>
+          <dd>Borgo Ognissanti 54-56R, Firenze · 1920 ca.–1950 ca.<br>Borgo Ognissanti 54-56R, Firenze · 1920 ca.–1950 ca.<br>Borgo Ognissanti 54-56R, Firenze · 1920 ca.–1950 ca.<br>e altre 5 sedi, nella scheda Luoghi</dd>
+          <dt>IN CATALOGO</dt>
+          <dd><a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=guidi+bruscoli" class="linkBio" target="_blank">Opere transitate, catalogo della Fondazione Zeri &#8594;</a></dd>
+        </dl>
+      </section>
+      <nav class="scheda-tab" aria-label="Sezioni della scheda">
+        <button class="tab active" type="button" data_content="Bio">
+          Dati biografici
+        </button>
+        <button class="tab" type="button" data_content="Persone">
+          Albero familiare
+          <span class="tab-num">4</span>
+        </button>
+        <button class="tab" type="button" data_content="Localizzazioni">
+          Luoghi
+          <span class="tab-num">8</span>
+        </button>
+        <button class="tab" type="button" data_content="Relazioni">
+          Relazioni
+          <span class="tab-num">4</span>
+        </button>
+        <button class="tab" type="button" data_content="Bibliografia">
+          Bibliografia
+          <span class="tab-num">1</span>
+        </button>
+      </nav>
+      <div class="scheda-contenuto">
+        <div id="Bio" class="content active-content">
+          <p>Carlo Bruscoli (1879-1955) fu dapprima proprietario di una libreria teatrale a Firenze, un luogo che fu un punto di riferimento nel panorama culturale del suo tempo. Nel corso degli anni, la sua attività si trasformò in libreria antiquaria e poi in negozio di antiquariato e subì vari cambiamenti di sede. A partire dagli anni Venti la galleria si stabilì in via Borgo Ognissanti, inizialmente ai numeri 54, 56r. Successivamente, dopo il 1950, si espanse, includendo anche i numeri 50 e 52r, con un ingresso posteriore in via del Porcellana 3.</p>
+          <p>Nel 1930 Carlo Bruscoli si ritirò dal commercio, lasciando la conduzione della ditta al figlio Riccardo (1913-1989) e a Marcello Guidi (1903-1979), che aveva adottato. Riccardo Bruscoli come esperto di ceramica rifornì collezionisti come i conti Ugolino della Gherardesca, Luigi Zauli Nardi e Galeazzo Cora, la cui raccolta di maioliche è oggi conservata al Museo della Ceramica di Faenza.</p>
+          <p>Nel 1957, dopo il ritiro dell'attività di Riccardo, il negozio originario venne diviso. La parte con ingresso in Borgo Ognissanti fu acquistata dal libraio e antiquario <a href="dettaglio_LA_I.html" target="_blank">Leonardo Lapiccirella</a>   (1927-2022), mentre quella con accesso da via del Porcellana 3 rimase a Marcello Guidi.</p>
+          <p>Il figlio di Guidi, Fabrizio Guidi Bruscoli (1940) ha proseguito l'attività paterna fino ad anni recenti, dedicandosi al commercio di dipinti antichi e ricomponendo la galleria originaria con l'acquisizione dall'antiquario Giancarlo Baroni (1926-1982), subentrato a Lapiccirella, della parte del negozio con ingresso da Borgo Ognissanti.</p>
+        </div>
+        <div id="Persone" class="content">
+          <h2>Relazioni familiari</h2>
+          <div id="albero-genealogico"></div>
+        </div>
+        <div id="Localizzazioni" class="content">
+          <section id="map">
+            <div id="chartdiv"></div>
+          </section>
+        </div>
+        <div id="Relazioni" class="content">
+          <h2>Altri antiquari</h2>
+          <ul>
+            <li>
+              <a href="dettaglio_LA_I.html">Lapicirella</a>
+            </li>
+          </ul>
+          <h2>Clienti</h2>
+          <ul>
+            <li>Galeazzo Cora </li>
+            <li>Luigi Zauli Nardi </li>
+            <li>Ugolino della Gherardesca  </li>
           </ul>
         </div>
-        <div class="content-card">
-          <div id="Bio" class="content active-content">
-            <p>Carlo Bruscoli (1879-1955) fu dapprima proprietario di una libreria teatrale a Firenze, un luogo che fu un punto di riferimento nel panorama culturale del suo tempo. Nel corso degli anni, la sua attività si trasformò in libreria antiquaria e poi in negozio di antiquariato e subì vari cambiamenti di sede. A partire dagli anni Venti la galleria si stabilì in via Borgo Ognissanti, inizialmente ai numeri 54, 56r. Successivamente, dopo il 1950, si espanse, includendo anche i numeri 50 e 52r, con un ingresso posteriore in via del Porcellana 3.</p>
-            <p>Nel 1930 Carlo Bruscoli si ritirò dal commercio, lasciando la conduzione della ditta al figlio Riccardo (1913-1989) e a Marcello Guidi (1903-1979), che aveva adottato. Riccardo Bruscoli come esperto di ceramica rifornì collezionisti come i conti Ugolino della Gherardesca, Luigi Zauli Nardi e Galeazzo Cora, la cui raccolta di maioliche è oggi conservata al Museo della Ceramica di Faenza.</p>
-            <p>Nel 1957, dopo il ritiro dell'attività di Riccardo, il negozio originario venne diviso. La parte con ingresso in Borgo Ognissanti fu acquistata dal libraio e antiquario <a href="dettaglio_LA_I.html" target="_blank">Leonardo Lapiccirella</a>   (1927-2022), mentre quella con accesso da via del Porcellana 3 rimase a Marcello Guidi.</p>
-            <p>Il figlio di Guidi, Fabrizio Guidi Bruscoli (1940) ha proseguito l'attività paterna fino ad anni recenti, dedicandosi al commercio di dipinti antichi e ricomponendo la galleria originaria con l'acquisizione dall'antiquario Giancarlo Baroni (1926-1982), subentrato a Lapiccirella, della parte del negozio con ingresso da Borgo Ognissanti.</p>
-          </div>
-          <div id="Persone" class="content">
-            <h3>Relazioni familiari:</h3>
-            <div id="albero-genealogico"></div>
-          </div>
-          <div id="Localizzazioni" class="content">
-            <section id="map">
-              <div id="chartdiv"></div>
-            </section>
-          </div>
-          <div id="Relazioni" class="content">
-            <h3>Altri antiquari:</h3>
-            <ul>
-              <li>
-                <a href="dettaglio_LA_I.html">Lapicirella</a>
-              </li>
-            </ul>
-            <h3>Clienti:</h3>
-            <ul>
-              <li>Galeazzo Cora </li>
-              <li>Luigi Zauli Nardi </li>
-              <li>Ugolino della Gherardesca  </li>
-            </ul>
-            <h3>Collaboratori:</h3>
-            <ul>
-            </ul>
-          </div>
-          <div id="Bibliografia" class="content">
-            <h3>Bibliografia essenziale:</h3>
-            <ul>
-              <li>Riccio, B. (Ed.) (1996), <i>Lettere sull’antiquariato?: di Mario Praz e Luigi Magnani 1952-1981</i>, Torino, U. Allemandi, p. 116</li>
-            </ul>
-          </div>
-          <div id="Opere trattate" class="content">
-            <p>
-              Vedi le opere transitate presso l'antiquario presenti nel 
-              <a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=guidi+bruscoli" class="linkBio" target="_blank">
-                catalogo della Fondazione Zeri
-              </a>
-            </p>
-          </div>
+        <div id="Bibliografia" class="content">
+          <h2>Bibliografia essenziale</h2>
+          <ul>
+            <li>Riccio, B. (Ed.) (1996), <i>Lettere sull’antiquariato?: di Mario Praz e Luigi Magnani 1952-1981</i>, Torino, U. Allemandi, p. 116</li>
+          </ul>
         </div>
       </div>
+      <nav class="scheda-sfoglia" aria-label="Altre schede">
+        <a href="dettaglio_GU.html">&#8592; Guggenheim</a>
+        <a href="dettaglio_IM.html">Imbert &#8594;</a>
+      </nav>
     </main>
     <footer>
       <div class="footer-container">

@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dettaglio Antiquari</title>
+    <title>Sabatello | Mercato dell'arte</title>
+    <meta name="description" content="Sabatello: scheda dell'entità antiquariale nel progetto Mercato dell'arte della Fondazione Federico Zeri." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet" />
@@ -39,75 +40,93 @@
         </nav>
       </div>
     </header>
-    <main>
-      <section id="image-gallery">
-        <div class="gallery-wrapper no-imgs">
-          <h2 class="gallery-title">Sabatello</h2>
+    <main class="scheda">
+      <div class="scheda-torna">
+        <a href="../antiquari.html">&#8592; Tutti gli antiquari</a>
+      </div>
+      <section class="scheda-fascia senza-foto">
+        <div class="scheda-fascia-testo">
+          <h1 class="scheda-nome">Sabatello</h1>
+          <p class="scheda-sottotitolo">Roma, entità attiva dal 1900 al 1970</p>
         </div>
       </section>
-      <div class="dual-content-wrapper">
-        <div class="tab-container">
-          <ul class="tab-list">
-            <li class="tab active" data_content="Bio">Dati biografici</li>
-            <li class="tab" data_content="Persone">Albero familiare</li>
-            <li class="tab" data_content="Localizzazioni">Luoghi</li>
-            <li class="tab" data_content="Relazioni">Relazioni</li>
-            <li class="tab" data_content="Bibliografia">Bibliografia</li>
-            <li class="tab" data_content="Opere trattate">Opere trattate</li>
+      <section class="scheda-dati">
+        <dl class="scheda-record">
+          <dt>PERSONE</dt>
+          <dd>Isacco Sabatello, 1883–?, antiquario<br>Leone Sabatello, antiquario<br>Armando Sabatello, antiquario<br>Dario Sabatello, 1911–1992, gallerista</dd>
+          <dt>INSEGNE</dt>
+          <dd>Isacco Sabatello e figli<br>Galleria Sabatello</dd>
+          <dt>SEDI</dt>
+          <dd>Largo Arenula 54, Roma · 1900 ca.–1930 ca.<br>Via del Babuino 15, Roma · 1900 ca.–1930 ca.<br>Largo Arenula 54, Roma · 1900 ca.–1930 ca.<br>e altre 13 sedi, nella scheda Luoghi</dd>
+          <dt>IN CATALOGO</dt>
+          <dd><a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=sabatello&page=1" class="linkBio" target="_blank">Opere transitate, catalogo della Fondazione Zeri &#8594;</a></dd>
+        </dl>
+      </section>
+      <nav class="scheda-tab" aria-label="Sezioni della scheda">
+        <button class="tab active" type="button" data_content="Bio">
+          Dati biografici
+        </button>
+        <button class="tab" type="button" data_content="Persone">
+          Albero familiare
+          <span class="tab-num">2</span>
+        </button>
+        <button class="tab" type="button" data_content="Localizzazioni">
+          Luoghi
+          <span class="tab-num">16</span>
+        </button>
+        <button class="tab" type="button" data_content="Relazioni">
+          Relazioni
+          <span class="tab-num">4</span>
+        </button>
+        <button class="tab" type="button" data_content="Bibliografia">
+          Bibliografia
+          <span class="tab-num">2</span>
+        </button>
+      </nav>
+      <div class="scheda-contenuto">
+        <div id="Bio" class="content active-content">
+          <p>Il capostipite della famiglia ebraica di antiquari romani Sabatello fu Isacco (1883-?) che aprì un negozio in Largo Arenula 34, presumibilmente agli inizi del Novecento. Alcune lettere di Isacco al mercante fiorentino <a href=" dettaglio_SA_II.html " target="_blank"> Giuseppe Salvadori </a> databili tra il 1908 e il 1923 sono conservate nell’archivio Salvadori, oggi presso la Biblioteca Berenson, I Tatti - The Harvard University Center for Italian Renaissance Studies.</p>
+          <p>Negli anni Venti, oltre a Isacco, è documentato anche un Leone Sabatello tra i mercanti d’arte della Capitale, con uno spazio commerciale in via del Babuino 15.</p>
+          <p>Il figlio di Isacco, Armando Sabatello, continuò nel campo antiquariale, prima con il padre e poi sicuramente in proprio. Negli anni Trenta il restauratore Mario Modestini, che spesso lavorava per lui, racconta che tra i mercanti d’arte israelitici era detto ‘Il principe’ e lo descrive come «alto, elegante, colto, quello che allora si chiamava un ‘uomo di mondo’». Lo ricorda per l’episodio di una consulenza chiestagli in merito a un falso Neroccio de’ Landi, rivelatosi poi opera di Federico Icilio Joni.</p>
+          <p>Negli anni successivi Armando Sabatello si servì della consulenza di storici dell’arte come Federico Zeri e Giuliano Briganti. Dalle annotazioni di Zeri sui versi delle numerose fotografie di opere provenienti da Sabatello si ipotizza che l’attività di Armando sia proseguita fino ai primi anni Ottanta. Commerciò e collezionò soprattutto dipinti di Seicento romano e Settecento veneziano.</p>
+          <p>Poco altro è noto della sua biografia. Sappiamo da cronache locali che il primo maggio del 1944 scampò al rastrellamento nazista del piccolo centro di Villapietra, in provincia di Roma, grazie all’eroismo del parroco del posto e che per ringraziarlo donò alla chiesa una Crocifissione attribuita a Orazio Borgianni.</p>
+          <p>Più documentata, anche se brevissima (1932-1935), l’attività della “Galleria Sabatello” di Dario Sabatello (1911-1992), uno dei primi spazi espositivi romani dedicati all’arte contemporanea.</p>
+        </div>
+        <div id="Persone" class="content">
+          <h2>Relazioni familiari</h2>
+          <div id="albero-genealogico"></div>
+        </div>
+        <div id="Localizzazioni" class="content">
+          <section id="map">
+            <div id="chartdiv"></div>
+          </section>
+        </div>
+        <div id="Relazioni" class="content">
+          <h2>Altri antiquari</h2>
+          <ul>
+            <li>
+              <a href="dettaglio_SA_II.html">Salvadori Giuseppe</a>
+            </li>
+          </ul>
+          <h2>Collaboratori</h2>
+          <ul>
+            <li>Federico Zeri (storico dell'arte)</li>
+            <li>Giuliano Briganti (storico dell'arte)</li>
+            <li>Mario Modestini (restauratore)</li>
           </ul>
         </div>
-        <div class="content-card">
-          <div id="Bio" class="content active-content">
-            <p>Il capostipite della famiglia ebraica di antiquari romani Sabatello fu Isacco (1883-?) che aprì un negozio in Largo Arenula 34, presumibilmente agli inizi del Novecento. Alcune lettere di Isacco al mercante fiorentino <a href=" dettaglio_SA_II.html " target="_blank"> Giuseppe Salvadori </a> databili tra il 1908 e il 1923 sono conservate nell’archivio Salvadori, oggi presso la Biblioteca Berenson, I Tatti - The Harvard University Center for Italian Renaissance Studies.</p>
-            <p>Negli anni Venti, oltre a Isacco, è documentato anche un Leone Sabatello tra i mercanti d’arte della Capitale, con uno spazio commerciale in via del Babuino 15.</p>
-            <p>Il figlio di Isacco, Armando Sabatello, continuò nel campo antiquariale, prima con il padre e poi sicuramente in proprio. Negli anni Trenta il restauratore Mario Modestini, che spesso lavorava per lui, racconta che tra i mercanti d’arte israelitici era detto ‘Il principe’ e lo descrive come «alto, elegante, colto, quello che allora si chiamava un ‘uomo di mondo’». Lo ricorda per l’episodio di una consulenza chiestagli in merito a un falso Neroccio de’ Landi, rivelatosi poi opera di Federico Icilio Joni.</p>
-            <p>Negli anni successivi Armando Sabatello si servì della consulenza di storici dell’arte come Federico Zeri e Giuliano Briganti. Dalle annotazioni di Zeri sui versi delle numerose fotografie di opere provenienti da Sabatello si ipotizza che l’attività di Armando sia proseguita fino ai primi anni Ottanta. Commerciò e collezionò soprattutto dipinti di Seicento romano e Settecento veneziano.</p>
-            <p>Poco altro è noto della sua biografia. Sappiamo da cronache locali che il primo maggio del 1944 scampò al rastrellamento nazista del piccolo centro di Villapietra, in provincia di Roma, grazie all’eroismo del parroco del posto e che per ringraziarlo donò alla chiesa una Crocifissione attribuita a Orazio Borgianni.</p>
-            <p>Più documentata, anche se brevissima (1932-1935), l’attività della “Galleria Sabatello” di Dario Sabatello (1911-1992), uno dei primi spazi espositivi romani dedicati all’arte contemporanea.</p>
-          </div>
-          <div id="Persone" class="content">
-            <h3>Relazioni familiari:</h3>
-            <div id="albero-genealogico"></div>
-          </div>
-          <div id="Localizzazioni" class="content">
-            <section id="map">
-              <div id="chartdiv"></div>
-            </section>
-          </div>
-          <div id="Relazioni" class="content">
-            <h3>Altri antiquari:</h3>
-            <ul>
-              <li>
-                <a href="dettaglio_SA_II.html">Salvadori Giuseppe</a>
-              </li>
-            </ul>
-            <h3>Clienti:</h3>
-            <ul>
-            </ul>
-            <h3>Collaboratori:</h3>
-            <ul>
-              <li>Federico Zeri (storico dell'arte)</li>
-              <li>Giuliano Briganti (storico dell'arte)</li>
-              <li>Mario Modestini (restauratore)</li>
-            </ul>
-          </div>
-          <div id="Bibliografia" class="content">
-            <h3>Bibliografia essenziale:</h3>
-            <ul>
-              <li>1927, <i>Negozianti d'arte (Roma-Rovereto)</i>, In «Maecenas», 1.1927, Berlino, Stern, p. 425</li>
-              <li>Modestini, M. (2018), <i>Capolavori?: basato su un manoscritto di Mario Modestini</i>, Fiesole, Cadmo</li>
-            </ul>
-          </div>
-          <div id="Opere trattate" class="content">
-            <p>
-              Vedi le opere transitate presso l'antiquario presenti nel 
-              <a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=sabatello&page=1" class="linkBio" target="_blank">
-                catalogo della Fondazione Zeri
-              </a>
-            </p>
-          </div>
+        <div id="Bibliografia" class="content">
+          <h2>Bibliografia essenziale</h2>
+          <ul>
+            <li>1927, <i>Negozianti d'arte (Roma-Rovereto)</i>, In «Maecenas», 1.1927, Berlino, Stern, p. 425</li>
+            <li>Modestini, M. (2018), <i>Capolavori?: basato su un manoscritto di Mario Modestini</i>, Fiesole, Cadmo</li>
+          </ul>
         </div>
       </div>
+      <nav class="scheda-sfoglia" aria-label="Altre schede">
+        <a href="dettaglio_RU.html">&#8592; Rubinacci</a>
+        <a href="dettaglio_SA_VII.html">Salamon &#8594;</a>
+      </nav>
     </main>
     <footer>
       <div class="footer-container">

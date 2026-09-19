@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dettaglio Antiquari</title>
+    <title>Antonacci-Efrati | Mercato dell'arte</title>
+    <meta name="description" content="Antonacci-Efrati: scheda dell'entità antiquariale nel progetto Mercato dell'arte della Fondazione Federico Zeri." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet" />
@@ -39,84 +40,99 @@
         </nav>
       </div>
     </header>
-    <main>
-      <section id="image-gallery">
-        <div class="gallery-wrapper">
-          <h2 class="gallery-title">Antonacci-Efrati</h2>
-          <div class="slider-container">
-            <div class="slider">
-              <div class="slide">
-                <img src="../../img/slider-antiquari/AN-EF_img1.jpg" alt="Giuseppe Antonacci (foto Antonacci La Piccirella)" />
-                <div class="caption">Giuseppe Antonacci (foto Antonacci La Piccirella)</div>
-              </div>
-              <div class="slide">
-                <img src="../../img/slider-antiquari/AN-EF_img2.jpg" alt="Galleria Antonacci-Efrati, via del Babuino 146" />
-                <div class="caption">Galleria Antonacci-Efrati, via del Babuino 146</div>
-              </div>
+    <main class="scheda">
+      <div class="scheda-torna">
+        <a href="../antiquari.html">&#8592; Tutti gli antiquari</a>
+      </div>
+      <section class="scheda-fascia">
+        <div class="scheda-fascia-testo">
+          <h1 class="scheda-nome">Antonacci-Efrati</h1>
+          <p class="scheda-sottotitolo">Roma, entità attiva dal 1916 al 1955</p>
+        </div>
+        <div class="slider-container">
+          <div class="slider">
+            <div class="slide">
+              <img src="../../img/slider-antiquari/AN-EF_img1.jpg" alt="Giuseppe Antonacci (foto Antonacci La Piccirella)" />
+              <div class="caption">Giuseppe Antonacci (foto Antonacci La Piccirella)</div>
             </div>
-            <button &#10094; class="prev" onclick="prevSlide()"><</button>
-            <button &#10095; class="next" onclick="nextSlide()">></button>
+            <div class="slide">
+              <img src="../../img/slider-antiquari/AN-EF_img2.jpg" alt="Galleria Antonacci-Efrati, via del Babuino 146" />
+              <div class="caption">Galleria Antonacci-Efrati, via del Babuino 146</div>
+            </div>
           </div>
+          <button class="prev" onclick="prevSlide()" type="button">&#10094;</button>
+          <button class="next" onclick="nextSlide()" type="button">&#10095;</button>
         </div>
       </section>
-      <div class="dual-content-wrapper">
-        <div class="tab-container">
-          <ul class="tab-list">
-            <li class="tab active" data_content="Bio">Dati biografici</li>
-            <li class="tab" data_content="Persone">Albero familiare</li>
-            <li class="tab" data_content="Localizzazioni">Luoghi</li>
-            <li class="tab" data_content="Relazioni">Relazioni</li>
-            <li class="tab" data_content="Bibliografia">Bibliografia</li>
-            <li class="tab" data_content="Opere trattate">Opere trattate</li>
+      <section class="scheda-dati">
+        <dl class="scheda-record">
+          <dt>PERSONE</dt>
+          <dd>Emanuele Efrati, antiquario<br>Luigia Efrati, antiquaria<br>Giuseppe Antonacci, antiquario<br>Paolo Antonacci, antiquario<br>Francesca Antonacci, antiquaria</dd>
+          <dt>INSEGNA</dt>
+          <dd>Galleria Efrati</dd>
+          <dt>SEDI</dt>
+          <dd>Via del Babuino 144, Roma · 1916–1955 ca.<br>Via del Babuino 144, Roma · 1916–1955 ca.<br>Via del Babuino 144, Roma · 1916–1955 ca.<br>e altre 2 sedi, nella scheda Luoghi</dd>
+          <dt>IN CATALOGO</dt>
+          <dd><a href="https://catalogo.fondazionezeri.unibo.it/ricerca.xd.jsp?sortby=PUNTEGGIO&view=list&page=1&batch=10&decorator=layout_resp&apply=true&locale=it&percorso_ricerca=XD&fulltext=antonacci" class="linkBio" target="_blank">Opere transitate, catalogo della Fondazione Zeri &#8594;</a></dd>
+        </dl>
+      </section>
+      <nav class="scheda-tab" aria-label="Sezioni della scheda">
+        <button class="tab active" type="button" data_content="Bio">
+          Dati biografici
+        </button>
+        <button class="tab" type="button" data_content="Persone">
+          Albero familiare
+          <span class="tab-num">5</span>
+        </button>
+        <button class="tab" type="button" data_content="Localizzazioni">
+          Luoghi
+          <span class="tab-num">5</span>
+        </button>
+        <button class="tab" type="button" data_content="Relazioni">
+          Relazioni
+          <span class="tab-num">3</span>
+        </button>
+        <button class="tab" type="button" data_content="Bibliografia">
+          Bibliografia
+          <span class="tab-num">2</span>
+        </button>
+      </nav>
+      <div class="scheda-contenuto">
+        <div id="Bio" class="content active-content">
+          <p>Emanuele Efrati fu tra i primi ad aprire un'attività di antiquariato in via del Babuino a Roma negli anni Dieci del Novecento. Nel 1916 fondò la "Galleria Efrati", con sede al civico 144, specializzandosi nella vendita di mobili antichi, oggetti d'arte e paramenti sacri.</p>
+          <p>Nel corso del tempo gli subentrò la figlia, Luigia Efrati, che continuò la professione dedicandosi alla vendita di mobili rinascimentali, porcellane e argenti assai ricercati all'epoca. A partire dal 1941, il figlio di Luigia, Giuseppe Antonacci (1923-2010), diede un nuovo impulso al commercio famigliare, portando l'impresa ad una dimensione internazionale. Sotto la sua direzione, negli anni Cinquanta, il negozio fu ampliato fino al civico 146 e cambiò nome in “Antonacci Efrati”.</p>
+          <p>Durante la sua carriera di antiquario, Giuseppe Antonacci viaggiò in tutto il mondo, recandosi frequentemente a Londra, allora centro del mercato dell'arte. Iniziò a trattare, oltre a mobili italiani e europei di alta qualità, sculture antiche e moderne e dipinti, dai fondi oro alle opere dei vedutisti del Settecento. La galleria divenne un punto di incontro per collezionisti e studiosi. Tra i frequentatori più assidui ci furono Giuliano Briganti, Alvar González-Palacios, Federico Zeri e Giancarlo Sestieri.</p>
+          <p>Agli inizi degli anni Ottanta del Novecento Giuseppe è stato affiancato nell'attività dai figli Paolo e Francesca ai quali ha lasciato la conduzione nel 1988. Questi hanno portato avanti la galleria fino al 1998, anno di chiusura definitiva della “Antonacci Efrati”.</p>
+        </div>
+        <div id="Persone" class="content">
+          <h2>Relazioni familiari</h2>
+          <div id="albero-genealogico"></div>
+        </div>
+        <div id="Localizzazioni" class="content">
+          <section id="map">
+            <div id="chartdiv"></div>
+          </section>
+        </div>
+        <div id="Relazioni" class="content">
+          <h2>Collaboratori</h2>
+          <ul>
+            <li>Alvar Gonzáles Palacios (storico dell'arte)</li>
+            <li>Federico Zeri (storico dell'arte)</li>
+            <li>Giuliano Briganti (storico dell'arte)</li>
           </ul>
         </div>
-        <div class="content-card">
-          <div id="Bio" class="content active-content">
-            <p>Emanuele Efrati fu tra i primi ad aprire un'attività di antiquariato in via del Babuino a Roma negli anni Dieci del Novecento. Nel 1916 fondò la "Galleria Efrati", con sede al civico 144, specializzandosi nella vendita di mobili antichi, oggetti d'arte e paramenti sacri.</p>
-            <p>Nel corso del tempo gli subentrò la figlia, Luigia Efrati, che continuò la professione dedicandosi alla vendita di mobili rinascimentali, porcellane e argenti assai ricercati all'epoca. A partire dal 1941, il figlio di Luigia, Giuseppe Antonacci (1923-2010), diede un nuovo impulso al commercio famigliare, portando l'impresa ad una dimensione internazionale. Sotto la sua direzione, negli anni Cinquanta, il negozio fu ampliato fino al civico 146 e cambiò nome in “Antonacci Efrati”.</p>
-            <p>Durante la sua carriera di antiquario, Giuseppe Antonacci viaggiò in tutto il mondo, recandosi frequentemente a Londra, allora centro del mercato dell'arte. Iniziò a trattare, oltre a mobili italiani e europei di alta qualità, sculture antiche e moderne e dipinti, dai fondi oro alle opere dei vedutisti del Settecento. La galleria divenne un punto di incontro per collezionisti e studiosi. Tra i frequentatori più assidui ci furono Giuliano Briganti, Alvar González-Palacios, Federico Zeri e Giancarlo Sestieri.</p>
-            <p>Agli inizi degli anni Ottanta del Novecento Giuseppe è stato affiancato nell'attività dai figli Paolo e Francesca ai quali ha lasciato la conduzione nel 1988. Questi hanno portato avanti la galleria fino al 1998, anno di chiusura definitiva della “Antonacci Efrati”.</p>
-          </div>
-          <div id="Persone" class="content">
-            <h3>Relazioni familiari:</h3>
-            <div id="albero-genealogico"></div>
-          </div>
-          <div id="Localizzazioni" class="content">
-            <section id="map">
-              <div id="chartdiv"></div>
-            </section>
-          </div>
-          <div id="Relazioni" class="content">
-            <h3>Altri antiquari:</h3>
-            <ul>
-            </ul>
-            <h3>Clienti:</h3>
-            <ul>
-            </ul>
-            <h3>Collaboratori:</h3>
-            <ul>
-              <li>Alvar Gonzáles Palacios (storico dell'arte)</li>
-              <li>Federico Zeri (storico dell'arte)</li>
-              <li>Giuliano Briganti (storico dell'arte)</li>
-            </ul>
-          </div>
-          <div id="Bibliografia" class="content">
-            <h3>Bibliografia essenziale:</h3>
-            <ul>
-              <li>Batini, G. (1961), <i>L'antiquario</i>, Firenze, Vallecchi</li>
-              <li>Riccio, B. (Ed.) (1996), <i>Lettere sull’antiquariato?: di Mario Praz e Luigi Magnani 1952-1981</i>, Torino, U. Allemandi, p. 116</li>
-            </ul>
-          </div>
-          <div id="Opere trattate" class="content">
-            <p>
-              Vedi le opere transitate presso l'antiquario presenti nel 
-              <a href="https://catalogo.fondazionezeri.unibo.it/ricerca.xd.jsp?sortby=PUNTEGGIO&view=list&page=1&batch=10&decorator=layout_resp&apply=true&locale=it&percorso_ricerca=XD&fulltext=antonacci " class="linkBio" target="_blank">
-                catalogo della Fondazione Zeri
-              </a>
-            </p>
-          </div>
+        <div id="Bibliografia" class="content">
+          <h2>Bibliografia essenziale</h2>
+          <ul>
+            <li>Batini, G. (1961), <i>L'antiquario</i>, Firenze, Vallecchi</li>
+            <li>Riccio, B. (Ed.) (1996), <i>Lettere sull’antiquariato?: di Mario Praz e Luigi Magnani 1952-1981</i>, Torino, U. Allemandi, p. 116</li>
+          </ul>
         </div>
       </div>
+      <nav class="scheda-sfoglia" aria-label="Altre schede">
+        <a href="dettaglio_AN.html">&#8592; Angiolini</a>
+        <a href="dettaglio_AP.html">Apolloni &#8594;</a>
+      </nav>
     </main>
     <footer>
       <div class="footer-container">

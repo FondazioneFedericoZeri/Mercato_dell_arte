@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dettaglio Antiquari</title>
+    <title>Bruschi Ivan | Mercato dell'arte</title>
+    <meta name="description" content="Bruschi Ivan: scheda dell'entità antiquariale nel progetto Mercato dell'arte della Fondazione Federico Zeri." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet" />
@@ -39,83 +40,99 @@
         </nav>
       </div>
     </header>
-    <main>
-      <section id="image-gallery">
-        <div class="gallery-wrapper">
-          <h2 class="gallery-title">Bruschi Ivan</h2>
-          <div id="single-image-container">
-            <img src="../../img/slider-antiquari/BR_I_img1.jpg" alt="Ivan Bruschi (foto Fondazione Bruschi)" />
-            <div class="caption overlay-caption">Ivan Bruschi (foto Fondazione Bruschi)</div>
-          </div>
+    <main class="scheda">
+      <div class="scheda-torna">
+        <a href="../antiquari.html">&#8592; Tutti gli antiquari</a>
+      </div>
+      <section class="scheda-fascia">
+        <div class="scheda-fascia-testo">
+          <h1 class="scheda-nome">Bruschi Ivan</h1>
+          <p class="scheda-sottotitolo">Arezzo, entità attiva dal 1958 al 1996</p>
         </div>
+        <figure id="single-image-container">
+          <img src="../../img/slider-antiquari/BR_I_img1.jpg" alt="Ivan Bruschi (foto Fondazione Bruschi)" />
+          <figcaption class="caption">Ivan Bruschi (foto Fondazione Bruschi)</figcaption>
+        </figure>
       </section>
-      <div class="dual-content-wrapper">
-        <div class="tab-container">
-          <ul class="tab-list">
-            <li class="tab active" data_content="Bio">Dati biografici</li>
-            <li class="tab" data_content="Persone">Albero familiare</li>
-            <li class="tab" data_content="Localizzazioni">Luoghi</li>
-            <li class="tab" data_content="Relazioni">Relazioni</li>
-            <li class="tab" data_content="Eventi">Eventi</li>
-            <li class="tab" data_content="Bibliografia">Bibliografia</li>
-            <li class="tab" data_content="Opere trattate">Opere trattate</li>
+      <section class="scheda-dati">
+        <dl class="scheda-record">
+          <dt>PERSONA</dt>
+          <dd>Ivan Bruschi, 1920–1996, antiquario</dd>
+          <dt>SEDE</dt>
+          <dd>Piazza S. Francesco, Arezzo · 1958–1996</dd>
+          <dt>IN CATALOGO</dt>
+          <dd><a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Fondazione+Ivan+Bruschi" class="linkBio" target="_blank">Opere transitate, catalogo della Fondazione Zeri &#8594;</a></dd>
+        </dl>
+      </section>
+      <nav class="scheda-tab" aria-label="Sezioni della scheda">
+        <button class="tab active" type="button" data_content="Bio">
+          Dati biografici
+        </button>
+        <button class="tab" type="button" data_content="Persone">
+          Albero familiare
+          <span class="tab-num">2</span>
+        </button>
+        <button class="tab" type="button" data_content="Localizzazioni">
+          Luoghi
+          <span class="tab-num">1</span>
+        </button>
+        <button class="tab" type="button" data_content="Relazioni">
+          Relazioni
+          <span class="tab-num">1</span>
+        </button>
+        <button class="tab" type="button" data_content="Eventi">
+          Eventi
+          <span class="tab-num">2</span>
+        </button>
+        <button class="tab" type="button" data_content="Bibliografia">
+          Bibliografia
+          <span class="tab-num">2</span>
+        </button>
+      </nav>
+      <div class="scheda-contenuto">
+        <div id="Bio" class="content active-content">
+          <p>Nato ad Arezzo nel 1920, Ivan Bruschi (1920-1996) ereditò dal padre Pietro la passione per gli oggetti d’arte e l’antiquariato e mosse i primi passi nella galleria fiorentina gestita dal fratello <a href="dettaglio_BR_II.html" target="_blank">Livio</a> (1906-1973).</p>
+          <p>Nel 1956 tornò nella città natale, scegliendo il Palazzo del Capitano del Popolo, posseduto dalla famiglia fin dall’inizio del Novecento, come propria residenza e sede della collezione personale in via di formazione. Danneggiato durante la Seconda Guerra Mondiale, lo restaurò a partire dagli anni Sessanta, rendendolo negli anni un importante salotto culturale cittadino.</p>
+          <p>Nel 1967 aprì la “Galleria Bruschi” in piazza San Francesco e contemporaneamente ideò la Fiera Antiquaria di Arezzo, una manifestazione a cadenza mensile ospitata tra Piazza Grande e alcune vie cittadine, che sarebbe diventata nel corso degli anni un appuntamento frequentato dal circuito antiquariale nazionale e un volano per le attività artigiane del centro storico. Nel contesto cittadino, Bruschi assunse sempre maggiore rilevanza economica e culturale.</p>
+          <p>Alla sua morte, nel 1996, lasciò a Banca Etruria il Palazzo e la sua variegata collezione di arte antica, dipinti toscani soprattutto del Cinque e dell’Ottocento, monete, armi, sculture e gioielli.  Per sua volontà testamentaria, la Fondazione a lui intitolata divenne casa museo e centro di promozione culturale in materia artistica e antiquariale con l’organizzazione di mostre, convegni, concerti e spettacoli.</p>
+          <p>Dal 2021, la <a href="https://www.fondazioneivanbruschi.it/" target="_blank">Fondazione Ivan Bruschi</a> è parte del patrimonio artistico di Intesa Sanpaolo.</p>
+        </div>
+        <div id="Persone" class="content">
+          <h2>Relazioni familiari</h2>
+          <div id="albero-genealogico"></div>
+        </div>
+        <div id="Localizzazioni" class="content">
+          <section id="map">
+            <div id="chartdiv"></div>
+          </section>
+        </div>
+        <div id="Relazioni" class="content">
+          <h2>Altri antiquari</h2>
+          <ul>
+            <li>
+              <a href="dettaglio_BR_II.html">Bruschi Livio</a>
+            </li>
           </ul>
         </div>
-        <div class="content-card">
-          <div id="Bio" class="content active-content">
-            <p>Nato ad Arezzo nel 1920, Ivan Bruschi (1920-1996) ereditò dal padre Pietro la passione per gli oggetti d’arte e l’antiquariato e mosse i primi passi nella galleria fiorentina gestita dal fratello <a href="dettaglio_BR_II.html" target="_blank">Livio</a> (1906-1973).</p>
-            <p>Nel 1956 tornò nella città natale, scegliendo il Palazzo del Capitano del Popolo, posseduto dalla famiglia fin dall’inizio del Novecento, come propria residenza e sede della collezione personale in via di formazione. Danneggiato durante la Seconda Guerra Mondiale, lo restaurò a partire dagli anni Sessanta, rendendolo negli anni un importante salotto culturale cittadino.</p>
-            <p>Nel 1967 aprì la “Galleria Bruschi” in piazza San Francesco e contemporaneamente ideò la Fiera Antiquaria di Arezzo, una manifestazione a cadenza mensile ospitata tra Piazza Grande e alcune vie cittadine, che sarebbe diventata nel corso degli anni un appuntamento frequentato dal circuito antiquariale nazionale e un volano per le attività artigiane del centro storico. Nel contesto cittadino, Bruschi assunse sempre maggiore rilevanza economica e culturale.</p>
-            <p>Alla sua morte, nel 1996, lasciò a Banca Etruria il Palazzo e la sua variegata collezione di arte antica, dipinti toscani soprattutto del Cinque e dell’Ottocento, monete, armi, sculture e gioielli.  Per sua volontà testamentaria, la Fondazione a lui intitolata divenne casa museo e centro di promozione culturale in materia artistica e antiquariale con l’organizzazione di mostre, convegni, concerti e spettacoli.</p>
-            <p>Dal 2021, la <a href="https://www.fondazioneivanbruschi.it/" target="_blank">Fondazione Ivan Bruschi</a> è parte del patrimonio artistico di Intesa Sanpaolo.</p>
-          </div>
-          <div id="Persone" class="content">
-            <h3>Relazioni familiari:</h3>
-            <div id="albero-genealogico"></div>
-          </div>
-          <div id="Localizzazioni" class="content">
-            <section id="map">
-              <div id="chartdiv"></div>
-            </section>
-          </div>
-          <div id="Eventi" class="content">
-            <h3>Eventi significativi nell'attività antiquariale:</h3>
-            <ul>
-              <li>1968 - <i>Inaugurazione Fiera Antiquaria di Arezzo</i>: Ivan Bruschi organizza la prima Fiera antiquaria, che da allora si svolge ogni mese ad Arezzo</li>
-              <li>1996 - <i>Inaugurazione Fondazione Ivan Bruschi</i>: L'antiquario Ivan Bruschi lascia in eredità a Banca Etruria il Palazzo del Capitano del Popolo e la sua collezione. Oggi la Fondazione Ivan Bruschi è parte del patrimonio artistico di Intesa Sanpaolo </li>
-            </ul>
-          </div>
-          <div id="Relazioni" class="content">
-            <h3>Altri antiquari:</h3>
-            <ul>
-              <li>
-                <a href="dettaglio_BR_II.html">Bruschi Livio</a>
-              </li>
-            </ul>
-            <h3>Clienti:</h3>
-            <ul>
-            </ul>
-            <h3>Collaboratori:</h3>
-            <ul>
-            </ul>
-          </div>
-          <div id="Bibliografia" class="content">
-            <h3>Bibliografia essenziale:</h3>
-            <ul>
-              <li>Batini, G. (1961), <i>L'antiquario</i>, Firenze, Vallecchi</li>
-              <li>Bellini, L., De Chirico, G. (1947), <i>Nel mondo degli antiquari</i>, Firenze, Arnaud</li>
-            </ul>
-          </div>
-          <div id="Opere trattate" class="content">
-            <p>
-              Vedi le opere transitate presso l'antiquario presenti nel 
-              <a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Fondazione+Ivan+Bruschi" class="linkBio" target="_blank">
-                catalogo della Fondazione Zeri
-              </a>
-            </p>
-          </div>
+        <div id="Eventi" class="content">
+          <h2>Eventi significativi nell'attività antiquariale</h2>
+          <ul>
+            <li>1968 - <i>Inaugurazione Fiera Antiquaria di Arezzo</i>: Ivan Bruschi organizza la prima Fiera antiquaria, che da allora si svolge ogni mese ad Arezzo</li>
+            <li>1996 - <i>Inaugurazione Fondazione Ivan Bruschi</i>: L'antiquario Ivan Bruschi lascia in eredità a Banca Etruria il Palazzo del Capitano del Popolo e la sua collezione. Oggi la Fondazione Ivan Bruschi è parte del patrimonio artistico di Intesa Sanpaolo </li>
+          </ul>
+        </div>
+        <div id="Bibliografia" class="content">
+          <h2>Bibliografia essenziale</h2>
+          <ul>
+            <li>Batini, G. (1961), <i>L'antiquario</i>, Firenze, Vallecchi</li>
+            <li>Bellini, L., De Chirico, G. (1947), <i>Nel mondo degli antiquari</i>, Firenze, Arnaud</li>
+          </ul>
         </div>
       </div>
+      <nav class="scheda-sfoglia" aria-label="Altre schede">
+        <a href="dettaglio_BR_III.html">&#8592; Brass</a>
+        <a href="dettaglio_BR_II.html">Bruschi Livio &#8594;</a>
+      </nav>
     </main>
     <footer>
       <div class="footer-container">

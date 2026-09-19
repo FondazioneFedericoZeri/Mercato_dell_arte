@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dettaglio Antiquari</title>
+    <title>Salamon | Mercato dell'arte</title>
+    <meta name="description" content="Salamon: scheda dell'entità antiquariale nel progetto Mercato dell'arte della Fondazione Federico Zeri." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet" />
@@ -39,89 +40,104 @@
         </nav>
       </div>
     </header>
-    <main>
-      <section id="image-gallery">
-        <div class="gallery-wrapper">
-          <h2 class="gallery-title">Salamon</h2>
-          <div class="slider-container">
-            <div class="slider">
-              <div class="slide">
-                <img src="../../img/slider-antiquari/SA_VII_img1.jpg" alt="La galleria della famiglia Salamon &quot;Arte antica&quot; a Torino, anni cinquanta del Novecento" />
-                <div class="caption">La galleria della famiglia Salamon "Arte antica" a Torino, anni cinquanta del Novecento</div>
-              </div>
-              <div class="slide">
-                <img src="../../img/slider-antiquari/SA_VII_img2.jpg" alt="Uno degli ambienti della galleria di Matteo Salamon in via San Damiano 2 a Milano, 2025" />
-                <div class="caption">Uno degli ambienti della galleria di Matteo Salamon in via San Damiano 2 a Milano, 2025</div>
-              </div>
-              <div class="slide">
-                <img src="../../img/slider-antiquari/SA_VII_img3.jpg" alt="Matteo Salamon nel suo stand all'edizione 2026 di TEFAF Maastricht, 14 marzo 2026" />
-                <div class="caption">Matteo Salamon nel suo stand all'edizione 2026 di TEFAF Maastricht, 14 marzo 2026</div>
-              </div>
+    <main class="scheda">
+      <div class="scheda-torna">
+        <a href="../antiquari.html">&#8592; Tutti gli antiquari</a>
+      </div>
+      <section class="scheda-fascia">
+        <div class="scheda-fascia-testo">
+          <h1 class="scheda-nome">Salamon</h1>
+          <p class="scheda-sottotitolo">Toronto, Torino e Milano, entità attiva dal 1950, tuttora in attività</p>
+        </div>
+        <div class="slider-container">
+          <div class="slider">
+            <div class="slide">
+              <img src="../../img/slider-antiquari/SA_VII_img1.jpg" alt="La galleria della famiglia Salamon &quot;Arte antica&quot; a Torino, anni cinquanta del Novecento" />
+              <div class="caption">La galleria della famiglia Salamon "Arte antica" a Torino, anni cinquanta del Novecento</div>
             </div>
-            <button &#10094; class="prev" onclick="prevSlide()"><</button>
-            <button &#10095; class="next" onclick="nextSlide()">></button>
+            <div class="slide">
+              <img src="../../img/slider-antiquari/SA_VII_img2.jpg" alt="Uno degli ambienti della galleria di Matteo Salamon in via San Damiano 2 a Milano, 2025" />
+              <div class="caption">Uno degli ambienti della galleria di Matteo Salamon in via San Damiano 2 a Milano, 2025</div>
+            </div>
+            <div class="slide">
+              <img src="../../img/slider-antiquari/SA_VII_img3.jpg" alt="Matteo Salamon nel suo stand all'edizione 2026 di TEFAF Maastricht, 14 marzo 2026" />
+              <div class="caption">Matteo Salamon nel suo stand all'edizione 2026 di TEFAF Maastricht, 14 marzo 2026</div>
+            </div>
           </div>
+          <button class="prev" onclick="prevSlide()" type="button">&#10094;</button>
+          <button class="next" onclick="nextSlide()" type="button">&#10095;</button>
         </div>
       </section>
-      <div class="dual-content-wrapper">
-        <div class="tab-container">
-          <ul class="tab-list">
-            <li class="tab active" data_content="Bio">Dati biografici</li>
-            <li class="tab" data_content="Persone">Albero familiare</li>
-            <li class="tab" data_content="Localizzazioni">Luoghi</li>
-            <li class="tab" data_content="Relazioni">Relazioni</li>
-            <li class="tab" data_content="Eventi">Eventi</li>
-            <li class="tab" data_content="Opere trattate">Opere trattate</li>
+      <section class="scheda-dati">
+        <dl class="scheda-record">
+          <dt>PERSONE</dt>
+          <dd>Matteo Salamon, 1964–?, antiquario<br>Ferdinando Salamon, antiquario<br>Teresa Salamon, antiquario<br>Silverio Salamon, 1955–2014, antiquario<br>Gian Alvise Salamon, antiquario<br>Harry Salamon, 1943–?, antiquario<br>Lorenza Salamon, 1963–?, antiquario<br>Elena Salamon, 1969–?, antiquario</dd>
+          <dt>INSEGNE</dt>
+          <dd>Salamon Gallery<br>Art Ancienne<br>Arte Antica<br>Il Gabinetto Salamon<br>Salamon & C.<br>Matteo Salamon<br>Salamon Fine Art</dd>
+          <dt>SEDI</dt>
+          <dd>Toronto · 1950–1952<br>via Volta 9, Torino · 1952–2014<br>via Bagutta 14, Milano · 1966–1967<br>e altre 8 sedi, nella scheda Luoghi</dd>
+          <dt>IN CATALOGO</dt>
+          <dd><a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Salamon" class="linkBio" target="_blank">Opere transitate, catalogo della Fondazione Zeri &#8594;</a></dd>
+        </dl>
+      </section>
+      <nav class="scheda-tab" aria-label="Sezioni della scheda">
+        <button class="tab active" type="button" data_content="Bio">
+          Dati biografici
+        </button>
+        <button class="tab" type="button" data_content="Persone">
+          Albero familiare
+          <span class="tab-num">8</span>
+        </button>
+        <button class="tab" type="button" data_content="Localizzazioni">
+          Luoghi
+          <span class="tab-num">11</span>
+        </button>
+        <button class="tab" type="button" data_content="Relazioni">
+          Relazioni
+          <span class="tab-num">3</span>
+        </button>
+        <button class="tab" type="button" data_content="Eventi">
+          Eventi
+          <span class="tab-num">1</span>
+        </button>
+      </nav>
+      <div class="scheda-contenuto">
+        <div id="Bio" class="content active-content">
+          <p>La famiglia Salamon, di origine veneziana, si stabilì prima a Firenze e quindi a Torino, dove Ferdinando, nel 1950, decise di lasciare il proprio lavoro di dirigente della Italgas per trasferirsi all’estero e aprire, da grande appassionato di stampe antiche qual era, una galleria d’arte a Toronto insieme alla moglie Teresa Villa.</p>
+          <p>Dopo solo due anni i Salamon tornarono in Italia, a Torino, dove aprirono la galleria “Art Ancienne” che, dopo la loro separazione, fu gestita sostanzialmente da Teresa. La galleria si specializzò nella vendita di incisioni antiche e stampe giapponesi, tanto che Teresa Villa fu la prima a esporre in città la famosa Grande Onda di Katsushika Hokusai. I tre figli della coppia, Harry, Silverio e Gian Alvise proseguirono l’attività dei genitori, seppure ognuno per la propria strada. Silverio Salamon proseguì l’attività nella galleria torinese sotto l’insegna “Arte antica”, mentre Gian Alvise, scelse di dedicarsi alla vendita di stampe contemporanee, sulle quali scrisse anche un manuale, decidendo di puntare sulle vendite televisive, una scelta che però si dimostrò fallimentare. La sua attività prosegue attualmente con la galleria della figlia Elena, specializzata nella vendita di stampe moderne.</p>
+          <p>Harry, il primogenito, si dimostrò il più lungimirante. Nel 1966 infatti decise di aprile una sede nel centro di Milano, “Il Gabinetto delle stampe”, allargando il campo d’azione dal commercio delle incisioni alla vendita di disegni degli Old master. La sede milanese della galleria negli anni cambiò più volte indirizzo, dalle vie del celebre quadrilatero della moda, fino alla chiesa sconsacrata di Sant’Eufemia, dove, nel 1983, Harry entrò in società con Fabrizio Agustoni e Gilberto Algranti per aprire la “Casa d’aste Salamon, Agustoni, Algranti”. Questa attività all’inizio riscosse un grande successo, tanto da fare una seria concorrenza a Finarte, la principale casa d’asta dell’epoca, ma dopo soli tre anni i soci decisero di separare le proprie strade a causa di dissapori legati a problemi gestionali. Subito dopo, nel 1986, Harry decise di stabilirsi definitivamente a palazzo Cicogna in via San Damiano 2, aprendo il “Gabinetto Salamon” dove iniziarono ad affiancarlo i due figli e dove ancora oggi hanno sede le loro gallerie.</p>
+          <p>Harry Salamon consultò più volte Federico Zeri per la richiesta di perizie su opere che intendeva vendere sul mercato, come nel caso di una Sacra famiglia, attribuita dal critico romano alla collaborazione tra Cosimo Rosselli e Piero di Cosimo. Il loro rapporto professionale sfociò col tempo in un legame di forte amicizia, che includeva anche il celebre scrittore Giovanni Testori.</p>
+          <p>Nel 1993 Harry lascia la galleria per dedicarsi alla sua passione naturalistica, cedendo a Lorenza e a Matteo la completa gestione, la galleria nel frattempo ha cambiato nome in “Galleria Salamon” e in “Salamon & C.”. Nel 2018 i due fratelli hanno deciso di proseguire l’attività su linee distinte, Lorenza, con la “Salamon Fine Art”, si è focalizzata sull’arte contemporanea, mentre Matteo, con la galleria “Matteo Salamon”, prosegue con la vendita di opere degli Old masters, con particolare attenzione al periodo medievale. La galleria di Matteo Salamon partecipa con continuità alle più importanti fiere internazionali quali TEFAF Maastricht - da più di dieci anni - e la Biennale dell’antiquariato a palazzo Corsini a Firenze, attirando una clientela composta prevalentemente da privati di età compresa tra i 40 e i 60 anni.</p>
+          <p>I documenti e i cataloghi d’asta relativi all’attività della Galleria sono conservati presso le gallerie di Lorenza e Matteo Salamon. I due antiquari inoltre sono proprietari di una ricca biblioteca specialistica, che conta oltre 15.000 titoli, disponibili per la consultazione su richiesta.</p>
+        </div>
+        <div id="Persone" class="content">
+          <h2>Relazioni familiari</h2>
+          <div id="albero-genealogico"></div>
+        </div>
+        <div id="Localizzazioni" class="content">
+          <section id="map">
+            <div id="chartdiv"></div>
+          </section>
+        </div>
+        <div id="Relazioni" class="content">
+          <h2>Collaboratori</h2>
+          <ul>
+            <li>Fabrizio Agustoni (impresario)</li>
+            <li>Federico Zeri (storico dell'arte)</li>
+            <li>Gilberto Algranti (impresario)</li>
           </ul>
         </div>
-        <div class="content-card">
-          <div id="Bio" class="content active-content">
-            <p>La famiglia Salamon, di origine veneziana, si stabilì prima a Firenze e quindi a Torino, dove Ferdinando, nel 1950, decise di lasciare il proprio lavoro di dirigente della Italgas per trasferirsi all’estero e aprire, da grande appassionato di stampe antiche qual era, una galleria d’arte a Toronto insieme alla moglie Teresa Villa.</p>
-            <p>Dopo solo due anni i Salamon tornarono in Italia, a Torino, dove aprirono la galleria “Art Ancienne” che, dopo la loro separazione, fu gestita sostanzialmente da Teresa. La galleria si specializzò nella vendita di incisioni antiche e stampe giapponesi, tanto che Teresa Villa fu la prima a esporre in città la famosa Grande Onda di Katsushika Hokusai. I tre figli della coppia, Harry, Silverio e Gian Alvise proseguirono l’attività dei genitori, seppure ognuno per la propria strada. Silverio Salamon proseguì l’attività nella galleria torinese sotto l’insegna “Arte antica”, mentre Gian Alvise, scelse di dedicarsi alla vendita di stampe contemporanee, sulle quali scrisse anche un manuale, decidendo di puntare sulle vendite televisive, una scelta che però si dimostrò fallimentare. La sua attività prosegue attualmente con la galleria della figlia Elena, specializzata nella vendita di stampe moderne.</p>
-            <p>Harry, il primogenito, si dimostrò il più lungimirante. Nel 1966 infatti decise di aprile una sede nel centro di Milano, “Il Gabinetto delle stampe”, allargando il campo d’azione dal commercio delle incisioni alla vendita di disegni degli Old master. La sede milanese della galleria negli anni cambiò più volte indirizzo, dalle vie del celebre quadrilatero della moda, fino alla chiesa sconsacrata di Sant’Eufemia, dove, nel 1983, Harry entrò in società con Fabrizio Agustoni e Gilberto Algranti per aprire la “Casa d’aste Salamon, Agustoni, Algranti”. Questa attività all’inizio riscosse un grande successo, tanto da fare una seria concorrenza a Finarte, la principale casa d’asta dell’epoca, ma dopo soli tre anni i soci decisero di separare le proprie strade a causa di dissapori legati a problemi gestionali. Subito dopo, nel 1986, Harry decise di stabilirsi definitivamente a palazzo Cicogna in via San Damiano 2, aprendo il “Gabinetto Salamon” dove iniziarono ad affiancarlo i due figli e dove ancora oggi hanno sede le loro gallerie.</p>
-            <p>Harry Salamon consultò più volte Federico Zeri per la richiesta di perizie su opere che intendeva vendere sul mercato, come nel caso di una Sacra famiglia, attribuita dal critico romano alla collaborazione tra Cosimo Rosselli e Piero di Cosimo. Il loro rapporto professionale sfociò col tempo in un legame di forte amicizia, che includeva anche il celebre scrittore Giovanni Testori.</p>
-            <p>Nel 1993 Harry lascia la galleria per dedicarsi alla sua passione naturalistica, cedendo a Lorenza e a Matteo la completa gestione, la galleria nel frattempo ha cambiato nome in “Galleria Salamon” e in “Salamon & C.”. Nel 2018 i due fratelli hanno deciso di proseguire l’attività su linee distinte, Lorenza, con la “Salamon Fine Art”, si è focalizzata sull’arte contemporanea, mentre Matteo, con la galleria “Matteo Salamon”, prosegue con la vendita di opere degli Old masters, con particolare attenzione al periodo medievale. La galleria di Matteo Salamon partecipa con continuità alle più importanti fiere internazionali quali TEFAF Maastricht - da più di dieci anni - e la Biennale dell’antiquariato a palazzo Corsini a Firenze, attirando una clientela composta prevalentemente da privati di età compresa tra i 40 e i 60 anni.</p>
-            <p>I documenti e i cataloghi d’asta relativi all’attività della Galleria sono conservati presso le gallerie di Lorenza e Matteo Salamon. I due antiquari inoltre sono proprietari di una ricca biblioteca specialistica, che conta oltre 15.000 titoli, disponibili per la consultazione su richiesta.</p>
-          </div>
-          <div id="Persone" class="content">
-            <h3>Relazioni familiari:</h3>
-            <div id="albero-genealogico"></div>
-          </div>
-          <div id="Localizzazioni" class="content">
-            <section id="map">
-              <div id="chartdiv"></div>
-            </section>
-          </div>
-          <div id="Eventi" class="content">
-            <h3>Eventi significativi nell'attività antiquariale:</h3>
-            <ul>
-              <li>1983 - <i>Apertura della casa d'asta Salamon, Agustoni, Algranti</i>: Harry Salamon apre con Gilberto Algranti e Fabrizio Agustoni una casa d'asta con sede nella chiesa sconsacrata di Sant'Eufemia a Milano</li>
-            </ul>
-          </div>
-          <div id="Relazioni" class="content">
-            <h3>Altri antiquari:</h3>
-            <ul>
-            </ul>
-            <h3>Clienti:</h3>
-            <ul>
-            </ul>
-            <h3>Collaboratori:</h3>
-            <ul>
-              <li>Fabrizio Agustoni (impresario)</li>
-              <li>Federico Zeri (storico dell'arte)</li>
-              <li>Gilberto Algranti (impresario)</li>
-            </ul>
-          </div>
-          <div id="Opere trattate" class="content">
-            <p>
-              Vedi le opere transitate presso l'antiquario presenti nel 
-              <a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Salamon" class="linkBio" target="_blank">
-                catalogo della Fondazione Zeri
-              </a>
-            </p>
-          </div>
+        <div id="Eventi" class="content">
+          <h2>Eventi significativi nell'attività antiquariale</h2>
+          <ul>
+            <li>1983 - <i>Apertura della casa d'asta Salamon, Agustoni, Algranti</i>: Harry Salamon apre con Gilberto Algranti e Fabrizio Agustoni una casa d'asta con sede nella chiesa sconsacrata di Sant'Eufemia a Milano</li>
+          </ul>
         </div>
       </div>
+      <nav class="scheda-sfoglia" aria-label="Altre schede">
+        <a href="dettaglio_SA_V.html">&#8592; Sabatello</a>
+        <a href="dettaglio_SA_I.html">Salocchi &#8594;</a>
+      </nav>
     </main>
     <footer>
       <div class="footer-container">

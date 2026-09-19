@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dettaglio Antiquari</title>
+    <title>Corvisieri | Mercato dell'arte</title>
+    <meta name="description" content="Corvisieri: scheda dell'entità antiquariale nel progetto Mercato dell'arte della Fondazione Federico Zeri." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet" />
@@ -39,77 +40,84 @@
         </nav>
       </div>
     </header>
-    <main>
-      <section id="image-gallery">
-        <div class="gallery-wrapper">
-          <h2 class="gallery-title">Corvisieri</h2>
-          <div id="single-image-container">
-            <img src="../../img/slider-antiquari/CO_II_img1.jpg" alt="Augusto Corvisieri. Dal catalogo Asta L'Antonina, 1936" />
-            <div class="caption overlay-caption">Augusto Corvisieri. Dal catalogo Asta L'Antonina, 1936</div>
-          </div>
+    <main class="scheda">
+      <div class="scheda-torna">
+        <a href="../antiquari.html">&#8592; Tutti gli antiquari</a>
+      </div>
+      <section class="scheda-fascia">
+        <div class="scheda-fascia-testo">
+          <h1 class="scheda-nome">Corvisieri</h1>
+          <p class="scheda-sottotitolo">Roma, entità attiva dal 1891 al 1919</p>
         </div>
+        <figure id="single-image-container">
+          <img src="../../img/slider-antiquari/CO_II_img1.jpg" alt="Augusto Corvisieri. Dal catalogo Asta L'Antonina, 1936" />
+          <figcaption class="caption">Augusto Corvisieri. Dal catalogo Asta L'Antonina, 1936</figcaption>
+        </figure>
       </section>
-      <div class="dual-content-wrapper">
-        <div class="tab-container">
-          <ul class="tab-list">
-            <li class="tab active" data_content="Bio">Dati biografici</li>
-            <li class="tab" data_content="Persone">Albero familiare</li>
-            <li class="tab" data_content="Localizzazioni">Luoghi</li>
-            <li class="tab" data_content="Relazioni">Relazioni</li>
-            <li class="tab" data_content="Bibliografia">Bibliografia</li>
-            <li class="tab" data_content="Opere trattate">Opere trattate</li>
+      <section class="scheda-dati">
+        <dl class="scheda-record">
+          <dt>PERSONA</dt>
+          <dd>Gustavo Corvisieri, ?–1935, antiquario</dd>
+          <dt>INSEGNA</dt>
+          <dd>Casa di Vendite Corvisieri & C.</dd>
+          <dt>SEDE</dt>
+          <dd>Via Due Macelli 86, Roma · 1891–1919</dd>
+          <dt>IN CATALOGO</dt>
+          <dd><a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=corvisieri" class="linkBio" target="_blank">Opere transitate, catalogo della Fondazione Zeri &#8594;</a></dd>
+        </dl>
+      </section>
+      <nav class="scheda-tab" aria-label="Sezioni della scheda">
+        <button class="tab active" type="button" data_content="Bio">
+          Dati biografici
+        </button>
+        <button class="tab" type="button" data_content="Localizzazioni">
+          Luoghi
+          <span class="tab-num">1</span>
+        </button>
+        <button class="tab" type="button" data_content="Relazioni">
+          Relazioni
+          <span class="tab-num">2</span>
+        </button>
+        <button class="tab" type="button" data_content="Bibliografia">
+          Bibliografia
+          <span class="tab-num">3</span>
+        </button>
+      </nav>
+      <div class="scheda-contenuto">
+        <div id="Bio" class="content active-content">
+          <p>Gustavo Corvisieri (?-1935) fu un antiquario romano titolare di una casa d'aste, la "Casa di Vendite Corvisieri & C.". Ricordato come uno dei primi mercanti romani insieme ai Castellani, agli <a href="dettaglio_JA.html" target="_blank"> Jandolo </a> e a Giacomini, si avvicinò al mercato di oggetti antichi attraverso l'interesse del padre e dello zio, appassionati cultori di antichità. Era infatti figlio di Domenico Corvisieri, che aveva un negozio di antichità in via Propaganda 26 e nipote di Costantino (1822-1898), noto paleologo e archeologo. Con i loro commerci i due avevano riportato a Roma tesori artistici di pregevole fattura: maioliche, arazzi, bronzi, quadri a fondo d'oro e codici miniati.</p>
+          <p>Gustavo aprì la sua attività nel 1891, intitolandola al padre. A partire dal 1901 nella ditta Corvisieri iniziò a lavorare <a href="dettaglio_CA_II.html" target="_blank">Vincenzo Capobianchi</a> (1836-1928), pittore, studioso di numismatica e di porcellane antiche, nonché mercante.</p>
+          <p>Nel 1919 Corvisieri vendette l'azienda ai dipendenti, ritirandosi nei vasti locali al piano terra di Palazzo Patrizi in via Margutta 53b e dedicandosi alla propria collezione di antichità, poi messa all'asta nel 1936, l'anno successivo alla morte.</p>
+        </div>
+        <div id="Localizzazioni" class="content">
+          <section id="map">
+            <div id="chartdiv"></div>
+          </section>
+        </div>
+        <div id="Relazioni" class="content">
+          <h2>Altri antiquari</h2>
+          <ul>
+            <li>
+              <a href="dettaglio_CA_II.html">Capobianchi</a>
+            </li>
+            <li>
+              <a href="dettaglio_GE_II.html">Geri</a>
+            </li>
           </ul>
         </div>
-        <div class="content-card">
-          <div id="Bio" class="content active-content">
-            <p>Gustavo Corvisieri (?-1935) fu un antiquario romano titolare di una casa d'aste, la "Casa di Vendite Corvisieri & C.". Ricordato come uno dei primi mercanti romani insieme ai Castellani, agli <a href="dettaglio_JA.html" target="_blank"> Jandolo </a> e a Giacomini, si avvicinò al mercato di oggetti antichi attraverso l'interesse del padre e dello zio, appassionati cultori di antichità. Era infatti figlio di Domenico Corvisieri, che aveva un negozio di antichità in via Propaganda 26 e nipote di Costantino (1822-1898), noto paleologo e archeologo. Con i loro commerci i due avevano riportato a Roma tesori artistici di pregevole fattura: maioliche, arazzi, bronzi, quadri a fondo d'oro e codici miniati.</p>
-            <p>Gustavo aprì la sua attività nel 1891, intitolandola al padre. A partire dal 1901 nella ditta Corvisieri iniziò a lavorare <a href="dettaglio_CA_II.html" target="_blank">Vincenzo Capobianchi</a> (1836-1928), pittore, studioso di numismatica e di porcellane antiche, nonché mercante.</p>
-            <p>Nel 1919 Corvisieri vendette l'azienda ai dipendenti, ritirandosi nei vasti locali al piano terra di Palazzo Patrizi in via Margutta 53b e dedicandosi alla propria collezione di antichità, poi messa all'asta nel 1936, l'anno successivo alla morte.</p>
-          </div>
-          <div id="Persone" class="content">
-            <h3>Relazioni familiari:</h3>
-            <div id="albero-genealogico"></div>
-          </div>
-          <div id="Localizzazioni" class="content">
-            <section id="map">
-              <div id="chartdiv"></div>
-            </section>
-          </div>
-          <div id="Relazioni" class="content">
-            <h3>Altri antiquari:</h3>
-            <ul>
-              <li>
-                <a href="dettaglio_CA_II.html">Capobianchi</a>
-              </li>
-              <li>
-                <a href="dettaglio_GE_II.html">Geri</a>
-              </li>
-            </ul>
-            <h3>Clienti:</h3>
-            <ul>
-            </ul>
-            <h3>Collaboratori:</h3>
-            <ul>
-            </ul>
-          </div>
-          <div id="Bibliografia" class="content">
-            <h3>Bibliografia essenziale:</h3>
-            <ul>
-              <li>Coen P. (2020), <i>Il dibattito arte-industria, fra aspirazioni museologiche e casi concreti</i>, In Coen, pp. 51-94</li>
-              <li>Galleria L'Antonina (1936), <i>Catalogo dei mobili ed oggetti d'arte antichi componenti la collezione appartenuta al compianto comm. Gustavo Corvisieri dei mobili antichi e moderni che arredavano due appartamenti e di altri numerosi oggetti d'arte, catalogo della vendita all'asta Galleria L'Antonina (Roma, 25 marzo-9 aprile 1936), Roma, Quintiily.</i>, Roma 1936.</li>
-              <li>Napoleone, V. (2017), <i>Bardini e Roma, collaborazioni antiquarie per una clientela d'oltreoceano</i>, In Teodori, Celani, pp. 69-81: p. 80, nota 19</li>
-            </ul>
-          </div>
-          <div id="Opere trattate" class="content">
-            <p>
-              Vedi le opere transitate presso l'antiquario presenti nel 
-              <a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=corvisieri" class="linkBio" target="_blank">
-                catalogo della Fondazione Zeri
-              </a>
-            </p>
-          </div>
+        <div id="Bibliografia" class="content">
+          <h2>Bibliografia essenziale</h2>
+          <ul>
+            <li>Coen P. (2020), <i>Il dibattito arte-industria, fra aspirazioni museologiche e casi concreti</i>, In Coen, pp. 51-94</li>
+            <li>Galleria L'Antonina (1936), <i>Catalogo dei mobili ed oggetti d'arte antichi componenti la collezione appartenuta al compianto comm. Gustavo Corvisieri dei mobili antichi e moderni che arredavano due appartamenti e di altri numerosi oggetti d'arte, catalogo della vendita all'asta Galleria L'Antonina (Roma, 25 marzo-9 aprile 1936), Roma, Quintiily.</i>, Roma 1936.</li>
+            <li>Napoleone, V. (2017), <i>Bardini e Roma, collaborazioni antiquarie per una clientela d'oltreoceano</i>, In Teodori, Celani, pp. 69-81: p. 80, nota 19</li>
+          </ul>
         </div>
       </div>
+      <nav class="scheda-sfoglia" aria-label="Altre schede">
+        <a href="dettaglio_CO_V.html">&#8592; Cortinovis</a>
+        <a href="dettaglio_CO_III.html">Costantini &#8594;</a>
+      </nav>
     </main>
     <footer>
       <div class="footer-container">

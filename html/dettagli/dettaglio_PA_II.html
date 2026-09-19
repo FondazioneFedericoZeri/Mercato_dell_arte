@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dettaglio Antiquari</title>
+    <title>Paolini | Mercato dell'arte</title>
+    <meta name="description" content="Paolini: scheda dell'entità antiquariale nel progetto Mercato dell'arte della Fondazione Federico Zeri." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet" />
@@ -39,78 +40,89 @@
         </nav>
       </div>
     </header>
-    <main>
-      <section id="image-gallery">
-        <div class="gallery-wrapper no-imgs">
-          <h2 class="gallery-title">Paolini</h2>
+    <main class="scheda">
+      <div class="scheda-torna">
+        <a href="../antiquari.html">&#8592; Tutti gli antiquari</a>
+      </div>
+      <section class="scheda-fascia senza-foto">
+        <div class="scheda-fascia-testo">
+          <h1 class="scheda-nome">Paolini</h1>
+          <p class="scheda-sottotitolo">Roma, entità attiva dal 1880 al 1920</p>
         </div>
       </section>
-      <div class="dual-content-wrapper">
-        <div class="tab-container">
-          <ul class="tab-list">
-            <li class="tab active" data_content="Bio">Dati biografici</li>
-            <li class="tab" data_content="Persone">Albero familiare</li>
-            <li class="tab" data_content="Localizzazioni">Luoghi</li>
-            <li class="tab" data_content="Relazioni">Relazioni</li>
-            <li class="tab" data_content="Eventi">Eventi</li>
-            <li class="tab" data_content="Bibliografia">Bibliografia</li>
-            <li class="tab" data_content="Opere trattate">Opere trattate</li>
+      <section class="scheda-dati">
+        <dl class="scheda-record">
+          <dt>PERSONA</dt>
+          <dd>Paolo Paolini, ?–1924, antiquario</dd>
+          <dt>SEDE</dt>
+          <dd>Lungotevere Michelangelo, Roma · 1880 ca.–1920 ca.</dd>
+          <dt>IN CATALOGO</dt>
+          <dd><a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=P.%20Paolini&page=1" class="linkBio" target="_blank">Opere transitate, catalogo della Fondazione Zeri &#8594;</a></dd>
+        </dl>
+      </section>
+      <nav class="scheda-tab" aria-label="Sezioni della scheda">
+        <button class="tab active" type="button" data_content="Bio">
+          Dati biografici
+        </button>
+        <button class="tab" type="button" data_content="Localizzazioni">
+          Luoghi
+          <span class="tab-num">1</span>
+        </button>
+        <button class="tab" type="button" data_content="Relazioni">
+          Relazioni
+          <span class="tab-num">5</span>
+        </button>
+        <button class="tab" type="button" data_content="Eventi">
+          Eventi
+          <span class="tab-num">1</span>
+        </button>
+        <button class="tab" type="button" data_content="Bibliografia">
+          Bibliografia
+          <span class="tab-num">2</span>
+        </button>
+      </nav>
+      <div class="scheda-contenuto">
+        <div id="Bio" class="content active-content">
+          <p>Paolo Paolini (?-1924) rivestì un ruolo centrale nel mercato artistico italiano e internazionale a cavallo tra Otto e Novecento. Lo testimonia Bernard Berenson che, in una lettera del 1912, ricorda la fertile e assidua collaborazione tra l'antiquario romano e i più importanti mercanti newyorkesi del tempo, i Duveen Brothers, che proprio Berenson aveva messo in contatto. Pochi sono i dettagli noti in merito all'attività di Paolini, ma si desume che l'inizio della sua attività sia collocabile alla metà degli anni Novanta dell'Ottocento. Nell'introduzione al catalogo di vendita post mortem della sua collezione (asta American Art Association, 10 dicembre 1924), si precisa infatti che nei trent'anni precedenti, Paolini aveva rifornito tutti i più rilevanti collezionisti d'oltreoceano, appassionati di Rinascimento italiano, come John J. Johnson, Henry Walters, Dan Fellows Platt, Philip Lehman.</p>
+          <p>Paolini aveva un negozio a Roma e una casa privata a Montepulciano, nota grazie alle missive che da lì partivano per Berenson. Da questa corrispondenza (oggi conservata nell'archivio de I Tatti - The Harvard University Center for Italian Renaissance Studies) si desume anche che, in caso di necessità, Paolini operava interventi di restauro sulle opere che commercializzava. L'intermediario a Firenze nella gestione di alcuni affari era un mercante poco conosciuto, tale Leopoldo Aretini, che svolgeva anche il compito di trait-d'union con Berenson. Lo strumento per mostrare le opere a quest'ultimo e ottenerne expertise era la fotografia: sono infatti documentati i rapporti di Paolini con il fotografo romano Anderson e il fiorentino Vittorio Jaquier.</p>
+          <p>Tra gli affari realizzati grazie al supporto di Berenson, si ricorda l'importante cessione di numerosi dipinti a Arthur J. Sulley, il mercante londinese specializzato in Old Masters Paintings olandesi.</p>
+        </div>
+        <div id="Localizzazioni" class="content">
+          <section id="map">
+            <div id="chartdiv"></div>
+          </section>
+        </div>
+        <div id="Relazioni" class="content">
+          <h2>Clienti</h2>
+          <ul>
+            <li>Dan Fellows Platt </li>
+            <li>Henry Walters </li>
+            <li>John J. Johnson </li>
+            <li>Philip Lehman </li>
+          </ul>
+          <h2>Collaboratori</h2>
+          <ul>
+            <li>Anderson (fotografo)</li>
           </ul>
         </div>
-        <div class="content-card">
-          <div id="Bio" class="content active-content">
-            <p>Paolo Paolini (?-1924) rivestì un ruolo centrale nel mercato artistico italiano e internazionale a cavallo tra Otto e Novecento. Lo testimonia Bernard Berenson che, in una lettera del 1912, ricorda la fertile e assidua collaborazione tra l'antiquario romano e i più importanti mercanti newyorkesi del tempo, i Duveen Brothers, che proprio Berenson aveva messo in contatto. Pochi sono i dettagli noti in merito all'attività di Paolini, ma si desume che l'inizio della sua attività sia collocabile alla metà degli anni Novanta dell'Ottocento. Nell'introduzione al catalogo di vendita post mortem della sua collezione (asta American Art Association, 10 dicembre 1924), si precisa infatti che nei trent'anni precedenti, Paolini aveva rifornito tutti i più rilevanti collezionisti d'oltreoceano, appassionati di Rinascimento italiano, come John J. Johnson, Henry Walters, Dan Fellows Platt, Philip Lehman.</p>
-            <p>Paolini aveva un negozio a Roma e una casa privata a Montepulciano, nota grazie alle missive che da lì partivano per Berenson. Da questa corrispondenza (oggi conservata nell'archivio de I Tatti - The Harvard University Center for Italian Renaissance Studies) si desume anche che, in caso di necessità, Paolini operava interventi di restauro sulle opere che commercializzava. L'intermediario a Firenze nella gestione di alcuni affari era un mercante poco conosciuto, tale Leopoldo Aretini, che svolgeva anche il compito di trait-d'union con Berenson. Lo strumento per mostrare le opere a quest'ultimo e ottenerne expertise era la fotografia: sono infatti documentati i rapporti di Paolini con il fotografo romano Anderson e il fiorentino Vittorio Jaquier.</p>
-            <p>Tra gli affari realizzati grazie al supporto di Berenson, si ricorda l'importante cessione di numerosi dipinti a Arthur J. Sulley, il mercante londinese specializzato in Old Masters Paintings olandesi.</p>
-          </div>
-          <div id="Persone" class="content">
-            <h3>Relazioni familiari:</h3>
-            <div id="albero-genealogico"></div>
-          </div>
-          <div id="Localizzazioni" class="content">
-            <section id="map">
-              <div id="chartdiv"></div>
-            </section>
-          </div>
-          <div id="Eventi" class="content">
-            <h3>Eventi significativi nell'attività antiquariale:</h3>
-            <ul>
-              <li>1924 - <i>Vendita Collezione Paolini</i>: Vendita della collezione di Paolo Paolini presso l'American Art Association di New York</li>
-            </ul>
-          </div>
-          <div id="Relazioni" class="content">
-            <h3>Altri antiquari:</h3>
-            <ul>
-            </ul>
-            <h3>Clienti:</h3>
-            <ul>
-              <li>Dan Fellows Platt </li>
-              <li>Henry Walters </li>
-              <li>John J. Johnson </li>
-              <li>Philip Lehman </li>
-            </ul>
-            <h3>Collaboratori:</h3>
-            <ul>
-              <li>Anderson (fotografo)</li>
-            </ul>
-          </div>
-          <div id="Bibliografia" class="content">
-            <h3>Bibliografia essenziale:</h3>
-            <ul>
-              <li>American Art Association (1924), <i>The collection of Professor Paolo Paolini,  distinguished paintings & sculptures by celebrated italian masters X-XVI Century, catalogo della vendita all'asta American Art Association (New York, 10-11 febbraio 1924).</i>, New York 1924.</li>
-              <li>Provo, A. (2017), <i>Surrogates and Intermediaries: The Informational Role of Photographs in the Art Market</i>, In Catterson, pp. 269-190</li>
-            </ul>
-          </div>
-          <div id="Opere trattate" class="content">
-            <p>
-              Vedi le opere transitate presso l'antiquario presenti nel 
-              <a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=P.%20Paolini&page=1" class="linkBio" target="_blank">
-                catalogo della Fondazione Zeri
-              </a>
-            </p>
-          </div>
+        <div id="Eventi" class="content">
+          <h2>Eventi significativi nell'attività antiquariale</h2>
+          <ul>
+            <li>1924 - <i>Vendita Collezione Paolini</i>: Vendita della collezione di Paolo Paolini presso l'American Art Association di New York</li>
+          </ul>
+        </div>
+        <div id="Bibliografia" class="content">
+          <h2>Bibliografia essenziale</h2>
+          <ul>
+            <li>American Art Association (1924), <i>The collection of Professor Paolo Paolini,  distinguished paintings & sculptures by celebrated italian masters X-XVI Century, catalogo della vendita all'asta American Art Association (New York, 10-11 febbraio 1924).</i>, New York 1924.</li>
+            <li>Provo, A. (2017), <i>Surrogates and Intermediaries: The Informational Role of Photographs in the Art Market</i>, In Catterson, pp. 269-190</li>
+          </ul>
         </div>
       </div>
+      <nav class="scheda-sfoglia" aria-label="Altre schede">
+        <a href="dettaglio_PA_III.html">&#8592; Palma</a>
+        <a href="dettaglio_PE.html">Pesaro &#8594;</a>
+      </nav>
     </main>
     <footer>
       <div class="footer-container">

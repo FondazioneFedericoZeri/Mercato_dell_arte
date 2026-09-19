@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dettaglio Antiquari</title>
+    <title>Colnaghi | Mercato dell'arte</title>
+    <meta name="description" content="Colnaghi: scheda dell'entità antiquariale nel progetto Mercato dell'arte della Fondazione Federico Zeri." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet" />
@@ -39,72 +40,84 @@
         </nav>
       </div>
     </header>
-    <main>
-      <section id="image-gallery">
-        <div class="gallery-wrapper">
-          <h2 class="gallery-title">Colnaghi</h2>
-          <div id="single-image-container">
-            <img src="../../img/slider-antiquari/CO_IV_img1.jpg" alt="Leonida Caldesi, Dominic Charles Colnaghi nello studio del fotografo a Londra, in Pall Mall East 13 (Londra National Portrait Gallery)" />
-            <div class="caption overlay-caption">Leonida Caldesi, Dominic Charles Colnaghi nello studio del fotografo a Londra, in Pall Mall East 13 (Londra National Portrait Gallery)</div>
-          </div>
+    <main class="scheda">
+      <div class="scheda-torna">
+        <a href="../antiquari.html">&#8592; Tutti gli antiquari</a>
+      </div>
+      <section class="scheda-fascia">
+        <div class="scheda-fascia-testo">
+          <h1 class="scheda-nome">Colnaghi</h1>
+          <p class="scheda-sottotitolo">Parigi e Londra, entità attiva dal 1760 al 1911</p>
         </div>
+        <figure id="single-image-container">
+          <img src="../../img/slider-antiquari/CO_IV_img1.jpg" alt="Leonida Caldesi, Dominic Charles Colnaghi nello studio del fotografo a Londra, in Pall Mall East 13 (Londra National Portrait Gallery)" />
+          <figcaption class="caption">Leonida Caldesi, Dominic Charles Colnaghi nello studio del fotografo a Londra, in Pall Mall East 13 (Londra National Portrait Gallery)</figcaption>
+        </figure>
       </section>
-      <div class="dual-content-wrapper">
-        <div class="tab-container">
-          <ul class="tab-list">
-            <li class="tab active" data_content="Bio">Dati biografici</li>
-            <li class="tab" data_content="Persone">Albero familiare</li>
-            <li class="tab" data_content="Localizzazioni">Luoghi</li>
-            <li class="tab" data_content="Relazioni">Relazioni</li>
-            <li class="tab" data_content="Opere trattate">Opere trattate</li>
+      <section class="scheda-dati">
+        <dl class="scheda-record">
+          <dt>PERSONE</dt>
+          <dd>Giovanni Battista Torre, ?–1780, antiquario<br>Anthony Torre, antiquario<br>Paul Colnaghi, 1751–1833, antiquario<br>Dominic Charles Colnaghi, 1790–1879, antiquario<br>Martin Colnaghi, 1792–1851, antiquario<br>John Anthony Scott, ?–1864, antiquario<br>Andrew McKay, ?–1899, antiquario<br>William McKay, 1850–?, antiquario<br>Martin Henry Colnaghi II, 1821–1908, antiquario</dd>
+          <dt>INSEGNE</dt>
+          <dd>Cabinet de Physique Expérimentale<br>Torre &Co.<br>Torre & Co.<br>Colnaghi & Co.<br>P. & D. Colnaghi & Co.</dd>
+          <dt>SEDI</dt>
+          <dd>Rue St. Honoré, Parigi · 1760–1790<br>Rue St. Honoré, Parigi · 1760–1790<br>Market Lane, Londra · 1767–1786<br>e altre 9 sedi, nella scheda Luoghi</dd>
+          <dt>IN CATALOGO</dt>
+          <dd><a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Colnaghi" class="linkBio" target="_blank">Opere transitate, catalogo della Fondazione Zeri &#8594;</a></dd>
+        </dl>
+      </section>
+      <nav class="scheda-tab" aria-label="Sezioni della scheda">
+        <button class="tab active" type="button" data_content="Bio">
+          Dati biografici
+        </button>
+        <button class="tab" type="button" data_content="Persone">
+          Albero familiare
+          <span class="tab-num">7</span>
+        </button>
+        <button class="tab" type="button" data_content="Localizzazioni">
+          Luoghi
+          <span class="tab-num">12</span>
+        </button>
+        <button class="tab" type="button" data_content="Relazioni">
+          Relazioni
+          <span class="tab-num">2</span>
+        </button>
+      </nav>
+      <div class="scheda-contenuto">
+        <div id="Bio" class="content active-content">
+          <p>Colnaghi è annoverata tra le più antiche gallerie antiquarie al mondo e, come tale, presenta una storia particolarmente articolata, sia per quanto riguarda l’avvicendarsi di numerosi proprietari e direttori, sia per l’ampiezza del mercato collezionistico di riferimento. La Galleria fu fondata nel 1760 a Parigi dall’italiano Giovanni Battista Torre, fabbricante di fuochi d’artificio, sotto l’insegna “Cabinet de Physique Expérimentale”. Torre si concentrò sulla vendita di libri antichi, stampe e strumenti scientifici, aiutato dal figlio Anthony che aprì una seconda sede nei pressi del Palais Royal in società con Ciceri, un ottico milanese. Nel 1782 la collaborazione cessò e, due anni dopo, entrò nello staff della galleria Paul Colnaghi, figlio di un avvocato milanese, vendendo soprattutto stampe inglesi. L’anno successivo Colnaghi raggiunse Torre a Londra, lavorando in un negozio in Market Lane che, nel 1786, fu trasferito al numero 132 di Pall Mall. L’attività della galleria londinese, che nel 1788 fu rilevata dal solo Paul Colnaghi, aumentò negli anni, tanto che il titolare fu nominato venditore di stampe del Principe Reggente, il futuro Re Giorgio IV.</p>
+          <p>Tra il 1792 e il 1797 Colnaghi pubblicò la popolare serie di stampe a colori The Cries of London, nel 1799 trasferì nuovamente la sede in Cockspur Street 23. Intorno al 1810 Paul fu affiancato dal figlio maggiore Dominic e dal minore Martin che, negli anni successivi, cedette la sua quota. Dominic nel 1825 cambiò la denominazione dell’attività in P. & D. Colnaghi & Co. e nel 1839 fu affiancato dal nipote John Anthony Scott, figlio della sorella Caroline. Alla sua morte, nel 1864, l’attività fu ereditata in toto dal cugino William McKay al quale nel 1879 si affiancherà il figlio William. Quest’ultimo nel 1894 fece entrare in società Otto Gutekunst e Edmund F. Deprez, ampliando ulteriormente l'influenza dell'azienda nel mercato internazionale dell'arte. Deprez si ritirò dall’attività nel 1907 e l’anno seguente morì Martin Henry Colnaghi II, che aveva portato avanti separatamente l’attività del padre all’indirizzo londinese di Pall Mall 53. Sotto la guida di William, Colnaghi spostò l'attenzione dalla vendita di stampe al commercio di dipinti antichi, rivolgendosi a collezionisti e istituzioni di alto livello e assumendo un ruolo di primo piano per la creazione delle maggiori collezioni d’arte americane sul finire dell’Ottocento, tra le quali quella dell’ereditiera Isabella Stuart Gardner a Boston e del magnate newyorkese John Pierpont Morgan.</p>
+          <p>William si ritirò nel 1911, cedendo il passo a Gustavus Mayer, già socio della galleria londinese Obach and Company. La denominazione ufficiale divenne Messrs. P. & D. Colnaghi and Obach e la nuova sede fu stabilita al civico 144-6 di New Bond Street. Quattro anni dopo, la denominazione fu ripristinata in P. and D. Colnaghi and Company.</p>
+          <p>Nel 1930-31 i soci della galleria, insieme alla galleria newyorkese Knoedler & Co., all’art dealer Franz Zatzenstein della Galleria Matthiesen di Berlino e con il sostegno finanziario di Andrew W. Mellon, parteciparono all’asta indetta dal governo sovietico per la vendita di molti capolavori dell’Ermitage di San Pietroburgo/Leningrado; Colnaghi si aggiudicò ben 21 dipinti tra i quali la Venere allo specchio di Tiziano, l’Annunciazione di Jan van Eyck e il Ritratto di un nobiluomo polacco di Rembrandt.</p>
+          <p>Nel 1937 l'azienda divenne una società a responsabilità limitata con tre amministratori: O.C.H. Gutekunst, G. Mayer e J. Byam Shaw, ai quali, nel 1939 si aggiunsero H.J.L. Wright e D.C. Baskett, mentre Gutekunst si ritirò. Nel 1955, si aggiunse un nuovo amministratore, R.M.D. Thesiger.</p>
+          <p>Sotto la direzione di Shaw, iniziata dopo la morte di Mayer nel 1954, la galleria si concentrò sempre più sulla compravendita di disegni e stampe di pregio, infatti, tra il 1948 e il 1951, acquisì la collezione di stampe del Principe del Liechtenstein e, grazie ai contatti accademici e alla competenza di Byam Shaw, Colnaghi rafforzò i suoi legami con collezioni istituzionali e accademiche.</p>
+          <p>Nel 1970, Jacob Rothschild acquistò la galleria, privilegiando la sua attenzione alla fotografia, con una mostra organizzata nel 1976 dedicata ai primi 50 anni della fotografia, che presentava le opere di Roger Fenton e Julia Margaret Cameron. Nel 1975, Michael Goedhuis avviò il dipartimento di arte orientale della galleria, con una mostra, organizzata l’anno successivo, sull'arte persiana e moghul. La galleria fu acquistata nel 1981 dal Gruppo Oetker di Rudolf Oetker, che attribuì sempre maggiore importanza alla vendita di opere degli Old masters, mantenendone la proprietà fino al 2001. Negli anni Ottanta, sotto la direzione di Franco Zangrilli, Colnaghi aprì altre sedi a New York e Parigi, concentrandosi sull’organizzazione di numerose mostre collettive in collaborazione con istituzioni prestigiose come la Frick Collection. Nel 1989 Colnaghi chiuse il dipartimento di stampe e acquerelli, oltre alla galleria di Parigi.</p>
+          <p>Nel 2001 subentrano nella proprietà Konrad Bernheimer e Katrin Bellinger, che orientano l'attenzione verso il disegno e le opere d'arte nordeuropee, nell’ottobre del 2015 la proprietà cambia nuovamente con l’ingresso dei soci spagnoli Jorge Coll e Nicols Cortés, che rilanciano le attività nella sede di New York, aperta nel 1982, specializzandosi nella vendita di antichità egiziane, greche e romane, e aprendo nuove sedi a Madrid e Bruxelles. Il 2017 si rivela un anno particolarmente intenso per la nuova proprietà; infatti, viene aperta una sede a Madrid, viene riaperta la sede di New York e nasce a Londra la Colnaghi Foundation, dedicata al supporto della ricerca scientifica, di attività editoriali e alla promozione della conoscenza delle opere degli Old masters. Nel 2022 Colnaghi ha inoltre creato una partnership con la galleria Elliott Fine Art, dando vita alla Colnaghi Elliott Master Drawings, dedicata al mercato dei disegni e delle stampe antiche.</p>
+          <p>Nella sua plurisecolare attività Colnaghi ha trattato la compravendita di opere di artisti di assoluto primo piano, tra i quali Sandro Botticelli, Giovanni Bellini, Tintoretto, Tiziano, Guercino, Francisco Goya, Edgar Degas, Claude Monet, Marc Chagall, Edvard Munch e Pablo Picasso.</p>
+          <p>Colnaghi partecipa con continuità alle più importanti fiere d’arte internazionali, da TEFAF a Maastricht e New York, alla Biennale di Firenze a Palazzo Corsini, da ARCO a Madrid a Brafa a Bruxelles, da Master Drawings a New York a Frieze Masters a Londra, per ricordare solo le principali.</p>
+          <p>Nel 2025 è stata annunciata l’apertura di una nuova sede a Riyadh, capitale dell’Arabia Saudita. La maggior parte dei documenti d’archivio relativi alla galleria, fin dai tempi della fondazione, è conservato presso la P. & D. Colnaghi Ltd, 1800–2000, Colnaghi Library and Archives, Windmill Hill Archives, Waddesdon Manor, UK e comprende gli stock-books, i registri dei clienti, i libri contabili e i cataloghi di mostra dal 1895 ad oggi.</p>
+        </div>
+        <div id="Persone" class="content">
+          <h2>Relazioni familiari</h2>
+          <div id="albero-genealogico"></div>
+        </div>
+        <div id="Localizzazioni" class="content">
+          <section id="map">
+            <div id="chartdiv"></div>
+          </section>
+        </div>
+        <div id="Relazioni" class="content">
+          <h2>Collaboratori</h2>
+          <ul>
+            <li>Ciceri (socio)</li>
+            <li>Chloe Stead (direttore)</li>
           </ul>
         </div>
-        <div class="content-card">
-          <div id="Bio" class="content active-content">
-            <p>Colnaghi è annoverata tra le più antiche gallerie antiquarie al mondo e, come tale, presenta una storia particolarmente articolata, sia per quanto riguarda l’avvicendarsi di numerosi proprietari e direttori, sia per l’ampiezza del mercato collezionistico di riferimento. La Galleria fu fondata nel 1760 a Parigi dall’italiano Giovanni Battista Torre, fabbricante di fuochi d’artificio, sotto l’insegna “Cabinet de Physique Expérimentale”. Torre si concentrò sulla vendita di libri antichi, stampe e strumenti scientifici, aiutato dal figlio Anthony che aprì una seconda sede nei pressi del Palais Royal in società con Ciceri, un ottico milanese. Nel 1782 la collaborazione cessò e, due anni dopo, entrò nello staff della galleria Paul Colnaghi, figlio di un avvocato milanese, vendendo soprattutto stampe inglesi. L’anno successivo Colnaghi raggiunse Torre a Londra, lavorando in un negozio in Market Lane che, nel 1786, fu trasferito al numero 132 di Pall Mall. L’attività della galleria londinese, che nel 1788 fu rilevata dal solo Paul Colnaghi, aumentò negli anni, tanto che il titolare fu nominato venditore di stampe del Principe Reggente, il futuro Re Giorgio IV.</p>
-            <p>Tra il 1792 e il 1797 Colnaghi pubblicò la popolare serie di stampe a colori The Cries of London, nel 1799 trasferì nuovamente la sede in Cockspur Street 23. Intorno al 1810 Paul fu affiancato dal figlio maggiore Dominic e dal minore Martin che, negli anni successivi, cedette la sua quota. Dominic nel 1825 cambiò la denominazione dell’attività in P. & D. Colnaghi & Co. e nel 1839 fu affiancato dal nipote John Anthony Scott, figlio della sorella Caroline. Alla sua morte, nel 1864, l’attività fu ereditata in toto dal cugino William McKay al quale nel 1879 si affiancherà il figlio William. Quest’ultimo nel 1894 fece entrare in società Otto Gutekunst e Edmund F. Deprez, ampliando ulteriormente l'influenza dell'azienda nel mercato internazionale dell'arte. Deprez si ritirò dall’attività nel 1907 e l’anno seguente morì Martin Henry Colnaghi II, che aveva portato avanti separatamente l’attività del padre all’indirizzo londinese di Pall Mall 53. Sotto la guida di William, Colnaghi spostò l'attenzione dalla vendita di stampe al commercio di dipinti antichi, rivolgendosi a collezionisti e istituzioni di alto livello e assumendo un ruolo di primo piano per la creazione delle maggiori collezioni d’arte americane sul finire dell’Ottocento, tra le quali quella dell’ereditiera Isabella Stuart Gardner a Boston e del magnate newyorkese John Pierpont Morgan.</p>
-            <p>William si ritirò nel 1911, cedendo il passo a Gustavus Mayer, già socio della galleria londinese Obach and Company. La denominazione ufficiale divenne Messrs. P. & D. Colnaghi and Obach e la nuova sede fu stabilita al civico 144-6 di New Bond Street. Quattro anni dopo, la denominazione fu ripristinata in P. and D. Colnaghi and Company.</p>
-            <p>Nel 1930-31 i soci della galleria, insieme alla galleria newyorkese Knoedler & Co., all’art dealer Franz Zatzenstein della Galleria Matthiesen di Berlino e con il sostegno finanziario di Andrew W. Mellon, parteciparono all’asta indetta dal governo sovietico per la vendita di molti capolavori dell’Ermitage di San Pietroburgo/Leningrado; Colnaghi si aggiudicò ben 21 dipinti tra i quali la Venere allo specchio di Tiziano, l’Annunciazione di Jan van Eyck e il Ritratto di un nobiluomo polacco di Rembrandt.</p>
-            <p>Nel 1937 l'azienda divenne una società a responsabilità limitata con tre amministratori: O.C.H. Gutekunst, G. Mayer e J. Byam Shaw, ai quali, nel 1939 si aggiunsero H.J.L. Wright e D.C. Baskett, mentre Gutekunst si ritirò. Nel 1955, si aggiunse un nuovo amministratore, R.M.D. Thesiger.</p>
-            <p>Sotto la direzione di Shaw, iniziata dopo la morte di Mayer nel 1954, la galleria si concentrò sempre più sulla compravendita di disegni e stampe di pregio, infatti, tra il 1948 e il 1951, acquisì la collezione di stampe del Principe del Liechtenstein e, grazie ai contatti accademici e alla competenza di Byam Shaw, Colnaghi rafforzò i suoi legami con collezioni istituzionali e accademiche.</p>
-            <p>Nel 1970, Jacob Rothschild acquistò la galleria, privilegiando la sua attenzione alla fotografia, con una mostra organizzata nel 1976 dedicata ai primi 50 anni della fotografia, che presentava le opere di Roger Fenton e Julia Margaret Cameron. Nel 1975, Michael Goedhuis avviò il dipartimento di arte orientale della galleria, con una mostra, organizzata l’anno successivo, sull'arte persiana e moghul. La galleria fu acquistata nel 1981 dal Gruppo Oetker di Rudolf Oetker, che attribuì sempre maggiore importanza alla vendita di opere degli Old masters, mantenendone la proprietà fino al 2001. Negli anni Ottanta, sotto la direzione di Franco Zangrilli, Colnaghi aprì altre sedi a New York e Parigi, concentrandosi sull’organizzazione di numerose mostre collettive in collaborazione con istituzioni prestigiose come la Frick Collection. Nel 1989 Colnaghi chiuse il dipartimento di stampe e acquerelli, oltre alla galleria di Parigi.</p>
-            <p>Nel 2001 subentrano nella proprietà Konrad Bernheimer e Katrin Bellinger, che orientano l'attenzione verso il disegno e le opere d'arte nordeuropee, nell’ottobre del 2015 la proprietà cambia nuovamente con l’ingresso dei soci spagnoli Jorge Coll e Nicols Cortés, che rilanciano le attività nella sede di New York, aperta nel 1982, specializzandosi nella vendita di antichità egiziane, greche e romane, e aprendo nuove sedi a Madrid e Bruxelles. Il 2017 si rivela un anno particolarmente intenso per la nuova proprietà; infatti, viene aperta una sede a Madrid, viene riaperta la sede di New York e nasce a Londra la Colnaghi Foundation, dedicata al supporto della ricerca scientifica, di attività editoriali e alla promozione della conoscenza delle opere degli Old masters. Nel 2022 Colnaghi ha inoltre creato una partnership con la galleria Elliott Fine Art, dando vita alla Colnaghi Elliott Master Drawings, dedicata al mercato dei disegni e delle stampe antiche.</p>
-            <p>Nella sua plurisecolare attività Colnaghi ha trattato la compravendita di opere di artisti di assoluto primo piano, tra i quali Sandro Botticelli, Giovanni Bellini, Tintoretto, Tiziano, Guercino, Francisco Goya, Edgar Degas, Claude Monet, Marc Chagall, Edvard Munch e Pablo Picasso.</p>
-            <p>Colnaghi partecipa con continuità alle più importanti fiere d’arte internazionali, da TEFAF a Maastricht e New York, alla Biennale di Firenze a Palazzo Corsini, da ARCO a Madrid a Brafa a Bruxelles, da Master Drawings a New York a Frieze Masters a Londra, per ricordare solo le principali.</p>
-            <p>Nel 2025 è stata annunciata l’apertura di una nuova sede a Riyadh, capitale dell’Arabia Saudita. La maggior parte dei documenti d’archivio relativi alla galleria, fin dai tempi della fondazione, è conservato presso la P. & D. Colnaghi Ltd, 1800–2000, Colnaghi Library and Archives, Windmill Hill Archives, Waddesdon Manor, UK e comprende gli stock-books, i registri dei clienti, i libri contabili e i cataloghi di mostra dal 1895 ad oggi.</p>
-          </div>
-          <div id="Persone" class="content">
-            <h3>Relazioni familiari:</h3>
-            <div id="albero-genealogico"></div>
-          </div>
-          <div id="Localizzazioni" class="content">
-            <section id="map">
-              <div id="chartdiv"></div>
-            </section>
-          </div>
-          <div id="Relazioni" class="content">
-            <h3>Altri antiquari:</h3>
-            <ul>
-            </ul>
-            <h3>Clienti:</h3>
-            <ul>
-            </ul>
-            <h3>Collaboratori:</h3>
-            <ul>
-              <li>Ciceri (socio)</li>
-              <li>Chloe Stead (direttore)</li>
-            </ul>
-          </div>
-          <div id="Opere trattate" class="content">
-            <p>
-              Vedi le opere transitate presso l'antiquario presenti nel 
-              <a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Colnaghi" class="linkBio" target="_blank">
-                catalogo della Fondazione Zeri
-              </a>
-            </p>
-          </div>
-        </div>
       </div>
+      <nav class="scheda-sfoglia" aria-label="Altre schede">
+        <a href="dettaglio_CI.html">&#8592; Ciampolini</a>
+        <a href="dettaglio_CO_I.html">Contini Bonacossi &#8594;</a>
+      </nav>
     </main>
     <footer>
       <div class="footer-container">

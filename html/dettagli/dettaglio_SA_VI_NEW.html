@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dettaglio Antiquari</title>
+    <title>Salvadori Antonio | Mercato dell'arte</title>
+    <meta name="description" content="Salvadori Antonio: scheda dell'entità antiquariale nel progetto Mercato dell'arte della Fondazione Federico Zeri." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet" />
@@ -39,103 +40,114 @@
         </nav>
       </div>
     </header>
-    <main>
-      <section id="image-gallery">
-        <div class="gallery-wrapper">
-          <h2 class="gallery-title">Salvadori Antonio</h2>
-          <div class="slider-container">
-            <div class="slider">
-              <div class="slide">
-                <img src="../../img/slider-antiquari/SA_VI_img1.jpg" alt="Antonio Salvadori 'americaneggiante' recupera il Bellini rubato, da &quot;L'Antiquario&quot;, giugno 1909" />
-                <div class="caption">Antonio Salvadori 'americaneggiante' recupera il Bellini rubato, da "L'Antiquario", giugno 1909</div>
-              </div>
-              <div class="slide">
-                <img src="../../img/slider-antiquari/SA_VI_NEW_img1.jpg" alt="Carta intestata della Galleria Salvadori in via XXII Marzo (ACS, Archivio Generale)" />
-                <div class="caption">Carta intestata della Galleria Salvadori in via XXII Marzo (ACS, Archivio Generale)</div>
-              </div>
-              <div class="slide">
-                <img src="../../img/slider-antiquari/SA_VI_NEW_img2.jpg" alt="Giulio Genova, palazzo Moro Lin sul Canal Grande, 1894-1915 (Venezia. I.P.A.V., fondo fotografico Tomaso Filippi)" />
-                <div class="caption">Giulio Genova, palazzo Moro Lin sul Canal Grande, 1894-1915 (Venezia. I.P.A.V., fondo fotografico Tomaso Filippi)</div>
-              </div>
+    <main class="scheda">
+      <div class="scheda-torna">
+        <a href="../antiquari.html">&#8592; Tutti gli antiquari</a>
+      </div>
+      <section class="scheda-fascia">
+        <div class="scheda-fascia-testo">
+          <h1 class="scheda-nome">Salvadori Antonio</h1>
+          <p class="scheda-sottotitolo">Venezia, entità attiva dal 1902 al 1930</p>
+        </div>
+        <div class="slider-container">
+          <div class="slider">
+            <div class="slide">
+              <img src="../../img/slider-antiquari/SA_VI_img1.jpg" alt="Antonio Salvadori 'americaneggiante' recupera il Bellini rubato, da &quot;L'Antiquario&quot;, giugno 1909" />
+              <div class="caption">Antonio Salvadori 'americaneggiante' recupera il Bellini rubato, da "L'Antiquario", giugno 1909</div>
             </div>
-            <button &#10094; class="prev" onclick="prevSlide()"><</button>
-            <button &#10095; class="next" onclick="nextSlide()">></button>
+            <div class="slide">
+              <img src="../../img/slider-antiquari/SA_VI_NEW_img1.jpg" alt="Carta intestata della Galleria Salvadori in via XXII Marzo (ACS, Archivio Generale)" />
+              <div class="caption">Carta intestata della Galleria Salvadori in via XXII Marzo (ACS, Archivio Generale)</div>
+            </div>
+            <div class="slide">
+              <img src="../../img/slider-antiquari/SA_VI_NEW_img2.jpg" alt="Giulio Genova, palazzo Moro Lin sul Canal Grande, 1894-1915 (Venezia. I.P.A.V., fondo fotografico Tomaso Filippi)" />
+              <div class="caption">Giulio Genova, palazzo Moro Lin sul Canal Grande, 1894-1915 (Venezia. I.P.A.V., fondo fotografico Tomaso Filippi)</div>
+            </div>
           </div>
+          <button class="prev" onclick="prevSlide()" type="button">&#10094;</button>
+          <button class="next" onclick="nextSlide()" type="button">&#10095;</button>
         </div>
       </section>
-      <div class="dual-content-wrapper">
-        <div class="tab-container">
-          <ul class="tab-list">
-            <li class="tab active" data_content="Bio">Dati biografici</li>
-            <li class="tab" data_content="Persone">Albero familiare</li>
-            <li class="tab" data_content="Localizzazioni">Luoghi</li>
-            <li class="tab" data_content="Relazioni">Relazioni</li>
-            <li class="tab" data_content="Eventi">Eventi</li>
-            <li class="tab" data_content="Bibliografia">Bibliografia</li>
-            <li class="tab" data_content="Opere trattate">Opere trattate</li>
+      <section class="scheda-dati">
+        <dl class="scheda-record">
+          <dt>PERSONA</dt>
+          <dd>Antonio Salvadori, 1866–?, antiquario</dd>
+          <dt>SEDI</dt>
+          <dd>San Benedetto 3952-53, Venezia · 1902–1906<br>Calle Moro Lin 3242, Venezia · 1907–1928<br>San Severo 5013, Venezia · 1928–1929<br>e altre 1 sedi, nella scheda Luoghi</dd>
+          <dt>IN CATALOGO</dt>
+          <dd><a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Salvadori&page=1&filtroprovenienza_OA=5829%7C5652" class="linkBio" target="_blank">Opere transitate, catalogo della Fondazione Zeri &#8594;</a></dd>
+        </dl>
+      </section>
+      <nav class="scheda-tab" aria-label="Sezioni della scheda">
+        <button class="tab active" type="button" data_content="Bio">
+          Dati biografici
+        </button>
+        <button class="tab" type="button" data_content="Localizzazioni">
+          Luoghi
+          <span class="tab-num">4</span>
+        </button>
+        <button class="tab" type="button" data_content="Relazioni">
+          Relazioni
+          <span class="tab-num">3</span>
+        </button>
+        <button class="tab" type="button" data_content="Eventi">
+          Eventi
+          <span class="tab-num">4</span>
+        </button>
+        <button class="tab" type="button" data_content="Bibliografia">
+          Bibliografia
+          <span class="tab-num">1</span>
+        </button>
+      </nav>
+      <div class="scheda-contenuto">
+        <div id="Bio" class="content active-content">
+          <p>Antonio Francesco Maria Salvadori nacque a Venezia il 17 marzo 1866 da Francesco Michele Arcangelo e Maria Teresa Jaguier ed ebbe un fratello minore, Daniele Camillo, nato il 21 marzo 1868. La sua famiglia doveva avere ascendenze nobiliari perché Antonio per ben quattro anni, tra il 1925 e il 1929, cercò con insistenza di farsi riconoscere il titolo di conte in possesso dei suoi antenati (l’8 novembre 1592 Teofilo Salvadori fu insignito del titolo comitale dal Sacro Romano Imperatore Rodolfo II) da parte della Regia Commissione Araldica per le Venezie e della Consulta Araldica di Roma, che però respinsero ripetutamente la richiesta.</p>
+          <p>Le notizie in merito alla sua professione di gallerista d’arte sono scarse. Sicuramente nel 1884 non era ancora attivo perché il suo nome non compare nell’elenco dei ventisette antiquari presenti a Venezia a quella data, pubblicato nella celebre Guida commerciale della città e provincia di Venezia a cura di Vittorio Mangiarotti.</p>
+          <p>La galleria di Antonio Salvadori cambiò più volte sede: da Palazzo Tron a San Benedetto all’inizio del ‘900, a palazzo Moro Lin sul Canal Grande, dove l’antiquario tenne per molti anni - dal 1909 circa al 1927 - sia l’attività che la propria residenza, fino a San Severo 5013, nel sestiere di Castello e quindi in calle XX marzo a San Moisè 2251.</p>
+          <p>Nel 1906 Salvadori fu protagonista di una celebre compravendita, infatti acquistò per 28.500 lire dal conte Angelo Duodo, l’ultimo proprietario di villa Tiepolo a Zianigo, gli affreschi ‘privati’ che Gian Domenico aveva realizzato negli ambienti della residenza di famiglia, tra il 1759 e il 1797. L’antiquario, dopo esserne entrato in possesso, ne affidò lo stacco e il trasporto su tela alla ditta dei fratelli Steffanoni di Bergamo, specializzata in questo tipo di attività, con l’intenzione di rivenderli alla celebre collezionista francese Beatrice Ephrussi de Rothschild. Il lucroso affare sfumò in seguito alla notifica imposta dal Ministero della Pubblica Istruzione-Direzione Generale Antichità e Belle Arti, che, insieme al Museo Correr, il 10 settembre 1908, decise di acquistare i 48 affreschi per la somma totale di 33.478 lire (17.738,5 a carico del Museo Correr, 15.738,5 a carico del Ministero). Nel 1935 il ciclo di affreschi fu assegnato alla collezione di Ca’ Rezzonico, dove ancora si trovano, disposti in piccoli ambienti che ne ripropongono la collocazione originaria.</p>
+          <p>Pochi anni più tardi Salvadori fu coinvolto nel recupero di una pregevole tela di Giovanni Bellini, rubata dalla chiesa della Madonna dell’Orto nel sestiere di Cannaregio. L’antiquario riuscì a entrare in contatto con il ladro fingendosi un misterioso compratore inglese interessato all’acquisto; dopo aver organizzato un incontro presso l’Hotel Danieli di Venezia ne uscì poco dopo con il dipinto sotto il braccio, un episodio ricordato dalla rivista “L’Antiquario”, che pubblicò una caricatura di Salvadori con il dipinto sottobraccio; l’opera fu poi nuovamente rubata nel 1993 e mai più riapparsa.</p>
+          <p>Tra il 1901 e il 1913 Antonio Salvadori procurò alle Gallerie dell’Accademia di Venezia alcune opere di particolare pregio, come testimoniano i relativi atti d’acquisto attualmente conservati nell’Archivio storico della Direzione regionale Musei nazionali Veneto. Tra le opere ricordo un Ritratto virile a mezzo busto di Jacopo Bassano venduto per 300 lire, un Giovane in camicia che suona il liuto di Domenico Fetti, proveniente dalla collezione della famiglia Baglioni a San Cassian, ceduto per 500 lire, e una rara tavola di Paolo Veneziano con la Vergine in trono col Bambino e angeli e due donatori, che lo Stato acquistò per 4.000 lire.</p>
+          <p>Nello stesso periodo Salvadori, insieme a <a href="dettaglio_BA_V.html" target="_blank">Dino Barozzi</a>, <a href="dettaglio_CA_IV.html" target="_blank">Antonio Carrer</a>, <a href="dettaglio_PO_III.html" target="_blank">Ludwig Pollak</a>, Antonio Marcato e molti altri, fu tra gli antiquari italiani che rifornivano abitualmente Wilhelm Bode con opere utili a colmare le lacune delle collezioni dei Musei Reali di Berlino, da lui dirette. Risalgono infatti agli anni tra il 1901 e il 1913 poco più di una cinquantina di lettere inviate a Bode dall’antiquario veneziano, contenenti varie proposte di acquisto, una tra le più interessanti, datata al 31 luglio 1902, riguarda la tentata vendita di: ‹‹un plafond completo in affreschi composto di 20 pezzi›› di Gian Battista Tiepolo, dipinti per alcune sale di palazzo Calbo Crotta sul Canal Grande, che erano stati da poco stacccati e trasportati su tela da Giuseppe Steffanoni, fondatore e titolare della ditta nella quale erano impegnati anche i suoi figli.</p>
+          <p>Antonio Salvadori nel 1919 collaborò con la Galleria Geri di Milano per la vendita della collezione d’arte dello scultore Antonio dal Zotto già Giuseppe Piccoli. Dopo questa data le notizie sulla sua attività diventano sempre più scarse, sicuramente fu attivo fino al 1930, ma con un tenore di vendite che immaginiamo più contenuto rispetto ai primi quindici anni del Novecento, il periodo più intenso della sua professione.</p>
+        </div>
+        <div id="Localizzazioni" class="content">
+          <section id="map">
+            <div id="chartdiv"></div>
+          </section>
+        </div>
+        <div id="Relazioni" class="content">
+          <h2>Altri antiquari</h2>
+          <ul>
+            <li>
+              <a href="dettaglio_GE_II.html">Geri</a>
+            </li>
+          </ul>
+          <h2>Collaboratori</h2>
+          <ul>
+            <li>Giuseppe Spoldi (antiquario)</li>
+            <li>Giuseppe  Steffanoni (restauratore)</li>
           </ul>
         </div>
-        <div class="content-card">
-          <div id="Bio" class="content active-content">
-            <p>Antonio Francesco Maria Salvadori nacque a Venezia il 17 marzo 1866 da Francesco Michele Arcangelo e Maria Teresa Jaguier ed ebbe un fratello minore, Daniele Camillo, nato il 21 marzo 1868. La sua famiglia doveva avere ascendenze nobiliari perché Antonio per ben quattro anni, tra il 1925 e il 1929, cercò con insistenza di farsi riconoscere il titolo di conte in possesso dei suoi antenati (l’8 novembre 1592 Teofilo Salvadori fu insignito del titolo comitale dal Sacro Romano Imperatore Rodolfo II) da parte della Regia Commissione Araldica per le Venezie e della Consulta Araldica di Roma, che però respinsero ripetutamente la richiesta.</p>
-            <p>Le notizie in merito alla sua professione di gallerista d’arte sono scarse. Sicuramente nel 1884 non era ancora attivo perché il suo nome non compare nell’elenco dei ventisette antiquari presenti a Venezia a quella data, pubblicato nella celebre Guida commerciale della città e provincia di Venezia a cura di Vittorio Mangiarotti.</p>
-            <p>La galleria di Antonio Salvadori cambiò più volte sede: da Palazzo Tron a San Benedetto all’inizio del ‘900, a palazzo Moro Lin sul Canal Grande, dove l’antiquario tenne per molti anni - dal 1909 circa al 1927 - sia l’attività che la propria residenza, fino a San Severo 5013, nel sestiere di Castello e quindi in calle XX marzo a San Moisè 2251.</p>
-            <p>Nel 1906 Salvadori fu protagonista di una celebre compravendita, infatti acquistò per 28.500 lire dal conte Angelo Duodo, l’ultimo proprietario di villa Tiepolo a Zianigo, gli affreschi ‘privati’ che Gian Domenico aveva realizzato negli ambienti della residenza di famiglia, tra il 1759 e il 1797. L’antiquario, dopo esserne entrato in possesso, ne affidò lo stacco e il trasporto su tela alla ditta dei fratelli Steffanoni di Bergamo, specializzata in questo tipo di attività, con l’intenzione di rivenderli alla celebre collezionista francese Beatrice Ephrussi de Rothschild. Il lucroso affare sfumò in seguito alla notifica imposta dal Ministero della Pubblica Istruzione-Direzione Generale Antichità e Belle Arti, che, insieme al Museo Correr, il 10 settembre 1908, decise di acquistare i 48 affreschi per la somma totale di 33.478 lire (17.738,5 a carico del Museo Correr, 15.738,5 a carico del Ministero). Nel 1935 il ciclo di affreschi fu assegnato alla collezione di Ca’ Rezzonico, dove ancora si trovano, disposti in piccoli ambienti che ne ripropongono la collocazione originaria.</p>
-            <p>Pochi anni più tardi Salvadori fu coinvolto nel recupero di una pregevole tela di Giovanni Bellini, rubata dalla chiesa della Madonna dell’Orto nel sestiere di Cannaregio. L’antiquario riuscì a entrare in contatto con il ladro fingendosi un misterioso compratore inglese interessato all’acquisto; dopo aver organizzato un incontro presso l’Hotel Danieli di Venezia ne uscì poco dopo con il dipinto sotto il braccio, un episodio ricordato dalla rivista “L’Antiquario”, che pubblicò una caricatura di Salvadori con il dipinto sottobraccio; l’opera fu poi nuovamente rubata nel 1993 e mai più riapparsa.</p>
-            <p>Tra il 1901 e il 1913 Antonio Salvadori procurò alle Gallerie dell’Accademia di Venezia alcune opere di particolare pregio, come testimoniano i relativi atti d’acquisto attualmente conservati nell’Archivio storico della Direzione regionale Musei nazionali Veneto. Tra le opere ricordo un Ritratto virile a mezzo busto di Jacopo Bassano venduto per 300 lire, un Giovane in camicia che suona il liuto di Domenico Fetti, proveniente dalla collezione della famiglia Baglioni a San Cassian, ceduto per 500 lire, e una rara tavola di Paolo Veneziano con la Vergine in trono col Bambino e angeli e due donatori, che lo Stato acquistò per 4.000 lire.</p>
-            <p>Nello stesso periodo Salvadori, insieme a <a href="dettaglio_BA_V.html" target="_blank">Dino Barozzi</a>, <a href="dettaglio_CA_IV.html" target="_blank">Antonio Carrer</a>, <a href="dettaglio_PO_III.html" target="_blank">Ludwig Pollak</a>, Antonio Marcato e molti altri, fu tra gli antiquari italiani che rifornivano abitualmente Wilhelm Bode con opere utili a colmare le lacune delle collezioni dei Musei Reali di Berlino, da lui dirette. Risalgono infatti agli anni tra il 1901 e il 1913 poco più di una cinquantina di lettere inviate a Bode dall’antiquario veneziano, contenenti varie proposte di acquisto, una tra le più interessanti, datata al 31 luglio 1902, riguarda la tentata vendita di: ‹‹un plafond completo in affreschi composto di 20 pezzi›› di Gian Battista Tiepolo, dipinti per alcune sale di palazzo Calbo Crotta sul Canal Grande, che erano stati da poco stacccati e trasportati su tela da Giuseppe Steffanoni, fondatore e titolare della ditta nella quale erano impegnati anche i suoi figli.</p>
-            <p>Antonio Salvadori nel 1919 collaborò con la Galleria Geri di Milano per la vendita della collezione d’arte dello scultore Antonio dal Zotto già Giuseppe Piccoli. Dopo questa data le notizie sulla sua attività diventano sempre più scarse, sicuramente fu attivo fino al 1930, ma con un tenore di vendite che immaginiamo più contenuto rispetto ai primi quindici anni del Novecento, il periodo più intenso della sua professione.</p>
-          </div>
-          <div id="Persone" class="content">
-            <h3>Relazioni familiari:</h3>
-            <div id="albero-genealogico"></div>
-          </div>
-          <div id="Localizzazioni" class="content">
-            <section id="map">
-              <div id="chartdiv"></div>
-            </section>
-          </div>
-          <div id="Eventi" class="content">
-            <h3>Eventi significativi nell'attività antiquariale:</h3>
-            <ul>
-              <li>1902 - <i>Tentata vendita a Wilhelm von Bode </i>: Antonio Salvadori tenta di vendere gli affreschi di Gian Battista Tiepolo provenienti da palazzo Calbo Crotta senza successo</li>
-              <li>1906 - <i>Acquisto dal conte Angelo Duodo</i>: Antonio Salvadori acquista gli affreschi di villa Tiepolo a Zianigo e tratta con Beatrice Ephrussi de Rothschild per rivenderli</li>
-              <li>1908 - <i>Vendita degli affreschi di villa Tiepolo a Zianigo</i>: Antonio Salvadori vende al Ministero della Pubblica Istruzione e al Museo Correr 48 affreschi staccati da Villa Tiepolo a Zianigo</li>
-              <li>1919 - <i>Collaborazione con la Galleria Geri di Milano per la vendita all'asta della collezione di Antonio Dal Zotto, già Giuseppe Piccoli</i>: La vendita fu organizzata tra agosto e settembre, in tre sedi: palazzo Piccoli a San Polo, palazzo Moro Lin a San Samuele e palazzo Dolfin-Brusà sul rio di Cà Foscari</li>
-            </ul>
-          </div>
-          <div id="Relazioni" class="content">
-            <h3>Altri antiquari:</h3>
-            <ul>
-              <li>
-                <a href="dettaglio_GE_II.html">Geri</a>
-              </li>
-            </ul>
-            <h3>Clienti:</h3>
-            <ul>
-            </ul>
-            <h3>Collaboratori:</h3>
-            <ul>
-              <li>Giuseppe Spoldi (antiquario)</li>
-              <li>Giuseppe  Steffanoni (restauratore)</li>
-            </ul>
-          </div>
-          <div id="Bibliografia" class="content">
-            <h3>Bibliografia essenziale:</h3>
-            <ul>
-              <li>1909, <i>La Madonna del Giambellino rubata e recuperata a Venezia</i>, In «L'Antiquario», giugno 1909, pp. 6-8</li>
-            </ul>
-          </div>
-          <div id="Opere trattate" class="content">
-            <p>
-              Vedi le opere transitate presso l'antiquario presenti nel 
-              <a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Salvadori&page=1&filtroprovenienza_OA=5829%7C5652" class="linkBio" target="_blank">
-                catalogo della Fondazione Zeri
-              </a>
-            </p>
-          </div>
+        <div id="Eventi" class="content">
+          <h2>Eventi significativi nell'attività antiquariale</h2>
+          <ul>
+            <li>1902 - <i>Tentata vendita a Wilhelm von Bode </i>: Antonio Salvadori tenta di vendere gli affreschi di Gian Battista Tiepolo provenienti da palazzo Calbo Crotta senza successo</li>
+            <li>1906 - <i>Acquisto dal conte Angelo Duodo</i>: Antonio Salvadori acquista gli affreschi di villa Tiepolo a Zianigo e tratta con Beatrice Ephrussi de Rothschild per rivenderli</li>
+            <li>1908 - <i>Vendita degli affreschi di villa Tiepolo a Zianigo</i>: Antonio Salvadori vende al Ministero della Pubblica Istruzione e al Museo Correr 48 affreschi staccati da Villa Tiepolo a Zianigo</li>
+            <li>1919 - <i>Collaborazione con la Galleria Geri di Milano per la vendita all'asta della collezione di Antonio Dal Zotto, già Giuseppe Piccoli</i>: La vendita fu organizzata tra agosto e settembre, in tre sedi: palazzo Piccoli a San Polo, palazzo Moro Lin a San Samuele e palazzo Dolfin-Brusà sul rio di Cà Foscari</li>
+          </ul>
+        </div>
+        <div id="Bibliografia" class="content">
+          <h2>Bibliografia essenziale</h2>
+          <ul>
+            <li>1909, <i>La Madonna del Giambellino rubata e recuperata a Venezia</i>, In «L'Antiquario», giugno 1909, pp. 6-8</li>
+          </ul>
         </div>
       </div>
+      <nav class="scheda-sfoglia" aria-label="Altre schede">
+        <a href="dettaglio_SA_I.html">&#8592; Salocchi</a>
+        <a href="dettaglio_SA_II.html">Salvadori Giuseppe &#8594;</a>
+      </nav>
     </main>
     <footer>
       <div class="footer-container">

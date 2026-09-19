@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dettaglio Antiquari</title>
+    <title>Geri | Mercato dell'arte</title>
+    <meta name="description" content="Geri: scheda dell'entità antiquariale nel progetto Mercato dell'arte della Fondazione Federico Zeri." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet" />
@@ -39,101 +40,114 @@
         </nav>
       </div>
     </header>
-    <main>
-      <section id="image-gallery">
-        <div class="gallery-wrapper">
-          <h2 class="gallery-title">Geri</h2>
-          <div class="slider-container">
-            <div class="slider">
-              <div class="slide">
-                <img src="../../img/slider-antiquari/GE_II_img1.jpg" alt="Ritratto di Alfredo Geri, foto di Mario Nunes Vais (ICCD)" />
-                <div class="caption">Ritratto di Alfredo Geri, foto di Mario Nunes Vais (ICCD)</div>
-              </div>
-              <div class="slide">
-                <img src="../../img/slider-antiquari/GE_II_img2.jpg" alt="Ritratto di famiglia con Alfredo Geri e il figlio Aldo (1905 ca.), foto di Mario Nunes Vais (ICCD)" />
-                <div class="caption">Ritratto di famiglia con Alfredo Geri e il figlio Aldo (1905 ca.), foto di Mario Nunes Vais (ICCD)</div>
-              </div>
+    <main class="scheda">
+      <div class="scheda-torna">
+        <a href="../antiquari.html">&#8592; Tutti gli antiquari</a>
+      </div>
+      <section class="scheda-fascia">
+        <div class="scheda-fascia-testo">
+          <h1 class="scheda-nome">Geri</h1>
+          <p class="scheda-sottotitolo">Firenze e Milano e altre 2 città, entità attiva dal 1890 al 1981</p>
+        </div>
+        <div class="slider-container">
+          <div class="slider">
+            <div class="slide">
+              <img src="../../img/slider-antiquari/GE_II_img1.jpg" alt="Ritratto di Alfredo Geri, foto di Mario Nunes Vais (ICCD)" />
+              <div class="caption">Ritratto di Alfredo Geri, foto di Mario Nunes Vais (ICCD)</div>
             </div>
-            <button &#10094; class="prev" onclick="prevSlide()"><</button>
-            <button &#10095; class="next" onclick="nextSlide()">></button>
+            <div class="slide">
+              <img src="../../img/slider-antiquari/GE_II_img2.jpg" alt="Ritratto di famiglia con Alfredo Geri e il figlio Aldo (1905 ca.), foto di Mario Nunes Vais (ICCD)" />
+              <div class="caption">Ritratto di famiglia con Alfredo Geri e il figlio Aldo (1905 ca.), foto di Mario Nunes Vais (ICCD)</div>
+            </div>
           </div>
+          <button class="prev" onclick="prevSlide()" type="button">&#10094;</button>
+          <button class="next" onclick="nextSlide()" type="button">&#10095;</button>
         </div>
       </section>
-      <div class="dual-content-wrapper">
-        <div class="tab-container">
-          <ul class="tab-list">
-            <li class="tab active" data_content="Bio">Dati biografici</li>
-            <li class="tab" data_content="Persone">Albero familiare</li>
-            <li class="tab" data_content="Localizzazioni">Luoghi</li>
-            <li class="tab" data_content="Relazioni">Relazioni</li>
-            <li class="tab" data_content="Eventi">Eventi</li>
-            <li class="tab" data_content="Bibliografia">Bibliografia</li>
-            <li class="tab" data_content="Opere trattate">Opere trattate</li>
+      <section class="scheda-dati">
+        <dl class="scheda-record">
+          <dt>PERSONE</dt>
+          <dd>Alfredo Geri, 1867–1947, antiquario<br>Aldo Geri, 1903–1981, antiquario</dd>
+          <dt>INSEGNE</dt>
+          <dd>Casa di vendite Arte Antica e Moderna<br>Geri-Boralevi<br>Galleria Geri<br>Galleria Geri, del Bramante, del Portico</dd>
+          <dt>SEDI</dt>
+          <dd>Piazza SS. Annunziata, Firenze · 1890 ca.–1910 ca.<br>Piazza SS. Annunziata, Firenze · 1890 ca.–1910 ca.<br>Borgo Ognissanti, Firenze · 1910 ca.–1931 ca.<br>e altre 15 sedi, nella scheda Luoghi</dd>
+          <dt>IN CATALOGO</dt>
+          <dd><a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Geri" class="linkBio" target="_blank">Opere transitate, catalogo della Fondazione Zeri &#8594;</a></dd>
+        </dl>
+      </section>
+      <nav class="scheda-tab" aria-label="Sezioni della scheda">
+        <button class="tab active" type="button" data_content="Bio">
+          Dati biografici
+        </button>
+        <button class="tab" type="button" data_content="Localizzazioni">
+          Luoghi
+          <span class="tab-num">18</span>
+        </button>
+        <button class="tab" type="button" data_content="Relazioni">
+          Relazioni
+          <span class="tab-num">4</span>
+        </button>
+        <button class="tab" type="button" data_content="Eventi">
+          Eventi
+          <span class="tab-num">1</span>
+        </button>
+        <button class="tab" type="button" data_content="Bibliografia">
+          Bibliografia
+          <span class="tab-num">3</span>
+        </button>
+      </nav>
+      <div class="scheda-contenuto">
+        <div id="Bio" class="content active-content">
+          <p>Il fiorentino Alfredo Geri (1867-1947) aprì il primo negozio di antiquariato in Piazza SS. Annunziata sullo scorcio del XIX secolo, sfruttando i proventi derivatigli dal suo impiego giovanile come segretario della compagnia di Eleonora Duse. Nel primo decennio del Novecento, all’attività di mercante accostò quella di impresario teatrale, ma a causa di dissesti economici fu costretto a vendere il negozio. Ricominciò grazie a Luigi Battistelli, impresario di aste pubbliche, che lo sostenne nell’avviamento della galleria e casa di vendita “Arte antica e moderna” in via Borgognissanti 12.</p>
+          <p>Alcune notizie biografiche sull’antiquario si desumono dagli atti processuali legati all’arresto di Vincenzo Peruggia, il celebre ladro della Gioconda. Due anni dopo il furto, nel 1913, Geri fu infatti contattato con la proposta di riacquistare il dipinto per gli Uffizi. Immediatamente coinvolto il direttore della Galleria, Giovanni Poggi, e le autorità, Geri portò all’arresto di Peruggia e, come decantato sulle pagine de «L’Antiquario» del settembre-dicembre di quell’anno, concorse decisamente al ritrovamento della Gioconda.Peruggia si rivolse a lui, dopo un primo tentativo presso <a href=" dettaglio_CO_II.html " target="_blank">Corvisieri</a> a Roma, probabilmente perché a quelle date Geri rivestiva un ruolo rilevante nel panorama fiorentino. Proprio in quell’anno, infatti, si era occupato della vendita di quadri moderni dell’illustre antiquario romano <a href="dettaglio_JA.html" target="_blank"> Augusto Jandolo</a>.</p>
+          <p>Nel periodo seguente, anche grazie alla notorietà acquisita per l’affaire Leonardo, l'impresa aprì altre sedi. Nel 1916 venne inaugurata quella di Milano, in via Borgonuovo 24, gestita da Alfredo e dal giovanissimo figlio Aldo (1903-1981) all’epoca tredicenne, poi spostata nel 1923 in via Fiori Oscuri 3. Negli anni Venti si aprirono negozi a Firenze, in via de’ Fossi 8; a Venezia, nei pressi di piazza S. Marco con ragione sociale "Geri-Boralevi"; infine, nel 1929, a Roma, in via del Babuino 45.</p>
+          <p>La sede milanese chiuse nel 1931, quando fu messa all’incanto dalla Galleria di Lino Pesaro di Milano anche la collezione privata di Alfredo, con un sontuoso catalogo, curato da Giuseppe Fiocco per i quadri antichi e da Enrico Somaré per la raccolta di Macchiaioli. Dopo quell’anno e fino alla morte di Alfredo Geri, l’attività continuò solo occupandosi di vendite conto terzi.</p>
+          <p>Aldo proseguì sulle orme del padre sempre a Milano, fondando nel 1946 la ditta “Galleria Geri, del Bramante, del Portico" aperta fino al 1981. In quell’anno l’attività fu rilevata dalla casa d’aste veneziana Semenzato che la rinominò "Semenzato-Nuova Geri”.</p>
+          <p>L’archivio degli antiquari Geri, comprensivo di biblioteca e fototeca, si trova oggi presso la Fondazione Carlo Ludovico Ragghianti di Lucca dove è giunta in seguito alla donazione di Aldo.</p>
+        </div>
+        <div id="Localizzazioni" class="content">
+          <section id="map">
+            <div id="chartdiv"></div>
+          </section>
+        </div>
+        <div id="Relazioni" class="content">
+          <h2>Altri antiquari</h2>
+          <ul>
+            <li>
+              <a href="dettaglio_SA_VI_NEW.html">Salvadori Antonio</a>
+            </li>
+            <li>
+              <a href="dettaglio_CO_II.html">Corvisieri</a>
+            </li>
+            <li>
+              <a href="dettaglio_JA.html">Jandolo</a>
+            </li>
+          </ul>
+          <h2>Collaboratori</h2>
+          <ul>
+            <li>Luigi Battistelli (impresario)</li>
           </ul>
         </div>
-        <div class="content-card">
-          <div id="Bio" class="content active-content">
-            <p>Il fiorentino Alfredo Geri (1867-1947) aprì il primo negozio di antiquariato in Piazza SS. Annunziata sullo scorcio del XIX secolo, sfruttando i proventi derivatigli dal suo impiego giovanile come segretario della compagnia di Eleonora Duse. Nel primo decennio del Novecento, all’attività di mercante accostò quella di impresario teatrale, ma a causa di dissesti economici fu costretto a vendere il negozio. Ricominciò grazie a Luigi Battistelli, impresario di aste pubbliche, che lo sostenne nell’avviamento della galleria e casa di vendita “Arte antica e moderna” in via Borgognissanti 12.</p>
-            <p>Alcune notizie biografiche sull’antiquario si desumono dagli atti processuali legati all’arresto di Vincenzo Peruggia, il celebre ladro della Gioconda. Due anni dopo il furto, nel 1913, Geri fu infatti contattato con la proposta di riacquistare il dipinto per gli Uffizi. Immediatamente coinvolto il direttore della Galleria, Giovanni Poggi, e le autorità, Geri portò all’arresto di Peruggia e, come decantato sulle pagine de «L’Antiquario» del settembre-dicembre di quell’anno, concorse decisamente al ritrovamento della Gioconda.Peruggia si rivolse a lui, dopo un primo tentativo presso <a href=" dettaglio_CO_II.html " target="_blank">Corvisieri</a> a Roma, probabilmente perché a quelle date Geri rivestiva un ruolo rilevante nel panorama fiorentino. Proprio in quell’anno, infatti, si era occupato della vendita di quadri moderni dell’illustre antiquario romano <a href="dettaglio_JA.html" target="_blank"> Augusto Jandolo</a>.</p>
-            <p>Nel periodo seguente, anche grazie alla notorietà acquisita per l’affaire Leonardo, l'impresa aprì altre sedi. Nel 1916 venne inaugurata quella di Milano, in via Borgonuovo 24, gestita da Alfredo e dal giovanissimo figlio Aldo (1903-1981) all’epoca tredicenne, poi spostata nel 1923 in via Fiori Oscuri 3. Negli anni Venti si aprirono negozi a Firenze, in via de’ Fossi 8; a Venezia, nei pressi di piazza S. Marco con ragione sociale "Geri-Boralevi"; infine, nel 1929, a Roma, in via del Babuino 45.</p>
-            <p>La sede milanese chiuse nel 1931, quando fu messa all’incanto dalla Galleria di Lino Pesaro di Milano anche la collezione privata di Alfredo, con un sontuoso catalogo, curato da Giuseppe Fiocco per i quadri antichi e da Enrico Somaré per la raccolta di Macchiaioli. Dopo quell’anno e fino alla morte di Alfredo Geri, l’attività continuò solo occupandosi di vendite conto terzi.</p>
-            <p>Aldo proseguì sulle orme del padre sempre a Milano, fondando nel 1946 la ditta “Galleria Geri, del Bramante, del Portico" aperta fino al 1981. In quell’anno l’attività fu rilevata dalla casa d’aste veneziana Semenzato che la rinominò "Semenzato-Nuova Geri”.</p>
-            <p>L’archivio degli antiquari Geri, comprensivo di biblioteca e fototeca, si trova oggi presso la Fondazione Carlo Ludovico Ragghianti di Lucca dove è giunta in seguito alla donazione di Aldo.</p>
-          </div>
-          <div id="Persone" class="content">
-            <h3>Relazioni familiari:</h3>
-            <div id="albero-genealogico"></div>
-          </div>
-          <div id="Localizzazioni" class="content">
-            <section id="map">
-              <div id="chartdiv"></div>
-            </section>
-          </div>
-          <div id="Eventi" class="content">
-            <h3>Eventi significativi nell'attività antiquariale:</h3>
-            <ul>
-              <li>1931 - <i>Vendita della collezione Alfredo Geri</i>: La Galleria Pesaro di Milano vende la collezione personale dell'antiquario Geri pubblicando un ricco catalogo curato da Giuseppe Fiocco ed Enrico Somaré</li>
-            </ul>
-          </div>
-          <div id="Relazioni" class="content">
-            <h3>Altri antiquari:</h3>
-            <ul>
-              <li>
-                <a href="dettaglio_SA_VI_NEW.html">Salvadori Antonio</a>
-              </li>
-              <li>
-                <a href="dettaglio_CO_II.html">Corvisieri</a>
-              </li>
-              <li>
-                <a href="dettaglio_JA.html">Jandolo</a>
-              </li>
-            </ul>
-            <h3>Clienti:</h3>
-            <ul>
-            </ul>
-            <h3>Collaboratori:</h3>
-            <ul>
-              <li>Luigi Battistelli (impresario)</li>
-            </ul>
-          </div>
-          <div id="Bibliografia" class="content">
-            <h3>Bibliografia essenziale:</h3>
-            <ul>
-              <li>1913, <i>L'Antiquario Alfredo Geri ha ritrovato la "Gioconda"</i>, In «L'Antiquario. Rivista indipendente», 6</li>
-              <li>Bargellini, S. (1981), <i>Antiquari di ieri a Firenze</i>, Firenze, Bonechi</li>
-              <li>Piccolo, O. (2008), <i>La collezione dispersa: le opere Cagnola-Lattuada prima e dopo l'asta Geri del 1916</i>, Verona, Scripta Edizioni</li>
-            </ul>
-          </div>
-          <div id="Opere trattate" class="content">
-            <p>
-              Vedi le opere transitate presso l'antiquario presenti nel 
-              <a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Geri" class="linkBio" target="_blank">
-                catalogo della Fondazione Zeri
-              </a>
-            </p>
-          </div>
+        <div id="Eventi" class="content">
+          <h2>Eventi significativi nell'attività antiquariale</h2>
+          <ul>
+            <li>1931 - <i>Vendita della collezione Alfredo Geri</i>: La Galleria Pesaro di Milano vende la collezione personale dell'antiquario Geri pubblicando un ricco catalogo curato da Giuseppe Fiocco ed Enrico Somaré</li>
+          </ul>
+        </div>
+        <div id="Bibliografia" class="content">
+          <h2>Bibliografia essenziale</h2>
+          <ul>
+            <li>1913, <i>L'Antiquario Alfredo Geri ha ritrovato la "Gioconda"</i>, In «L'Antiquario. Rivista indipendente», 6</li>
+            <li>Bargellini, S. (1981), <i>Antiquari di ieri a Firenze</i>, Firenze, Bonechi</li>
+            <li>Piccolo, O. (2008), <i>La collezione dispersa: le opere Cagnola-Lattuada prima e dopo l'asta Geri del 1916</i>, Verona, Scripta Edizioni</li>
+          </ul>
         </div>
       </div>
+      <nav class="scheda-sfoglia" aria-label="Altre schede">
+        <a href="dettaglio_GE_I.html">&#8592; Geiger</a>
+        <a href="dettaglio_GI_I.html">Gianetti &#8594;</a>
+      </nav>
     </main>
     <footer>
       <div class="footer-container">

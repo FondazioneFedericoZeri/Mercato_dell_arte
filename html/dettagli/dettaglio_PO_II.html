@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dettaglio Antiquari</title>
+    <title>Pospisil | Mercato dell'arte</title>
+    <meta name="description" content="Pospisil: scheda dell'entità antiquariale nel progetto Mercato dell'arte della Fondazione Federico Zeri." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet" />
@@ -39,72 +40,80 @@
         </nav>
       </div>
     </header>
-    <main>
-      <section id="image-gallery">
-        <div class="gallery-wrapper no-imgs">
-          <h2 class="gallery-title">Pospisil</h2>
+    <main class="scheda">
+      <div class="scheda-torna">
+        <a href="../antiquari.html">&#8592; Tutti gli antiquari</a>
+      </div>
+      <section class="scheda-fascia senza-foto">
+        <div class="scheda-fascia-testo">
+          <h1 class="scheda-nome">Pospisil</h1>
+          <p class="scheda-sottotitolo">Venezia, entità attiva dal 1936 al 1980</p>
         </div>
       </section>
-      <div class="dual-content-wrapper">
-        <div class="tab-container">
-          <ul class="tab-list">
-            <li class="tab active" data_content="Bio">Dati biografici</li>
-            <li class="tab" data_content="Persone">Albero familiare</li>
-            <li class="tab" data_content="Localizzazioni">Luoghi</li>
-            <li class="tab" data_content="Relazioni">Relazioni</li>
-            <li class="tab" data_content="Bibliografia">Bibliografia</li>
-            <li class="tab" data_content="Opere trattate">Opere trattate</li>
+      <section class="scheda-dati">
+        <dl class="scheda-record">
+          <dt>PERSONA</dt>
+          <dd>Francesco Pospisil, antiquario</dd>
+          <dt>SEDE</dt>
+          <dd>Canal Grande, Venezia · 1936–1980 ca.</dd>
+          <dt>IN CATALOGO</dt>
+          <dd><a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=100&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Pospisil" class="linkBio" target="_blank">Opere transitate, catalogo della Fondazione Zeri &#8594;</a></dd>
+        </dl>
+      </section>
+      <nav class="scheda-tab" aria-label="Sezioni della scheda">
+        <button class="tab active" type="button" data_content="Bio">
+          Dati biografici
+        </button>
+        <button class="tab" type="button" data_content="Localizzazioni">
+          Luoghi
+          <span class="tab-num">1</span>
+        </button>
+        <button class="tab" type="button" data_content="Relazioni">
+          Relazioni
+          <span class="tab-num">4</span>
+        </button>
+        <button class="tab" type="button" data_content="Bibliografia">
+          Bibliografia
+          <span class="tab-num">1</span>
+        </button>
+      </nav>
+      <div class="scheda-contenuto">
+        <div id="Bio" class="content active-content">
+          <p>Mentre il padre Arturo Pospisil (1868-1924) praticò la professione di fotografo a Padova con due studi, uno in via del Sale 1, l'altro in via Pedrocchi, Francesco, di cui si ignorano le date di nascita e morte, si dedicò al commercio antiquario a Venezia. La sua attività, con sede nel prestigioso Palazzo Sagredo, sul Canal Grande, è documentata dal 1936.</p>
+          <p>Specializzato in arte veneziana ma attivo in molti altri settori, lavorò con gli austriaci Kajetan "Kai" Muehlmann, storico dell'arte, e Franz Kieslinger (1891-1955), studioso e mercante, entrambi coinvolti con posizioni di alta responsabilità nel regime nazista. Proprio tramite Muehlmann, Pospisil offrì a Hermann Goering opere di Tiepolo. Anche se la vendita non andò a buon fine, i legami con il gotha nazista gli offrirono la possibilità di viaggiare tra Francia e Belgio alla ricerca di opere per il 'Dienststelle Muehlmann', un ufficio sito a L'Aja e diretto da Muehlmann stesso dove confluivano opere d'arte acquistate o più spesso confiscate agli Ebrei da vendere a facoltosi e appassionati membri del Partito.</p>
+          <p>Dopo la fine della Seconda guerra mondiale, Pospisil continuò la sua attività di mercante stringendo dagli anni Cinquanta un forte legame con uno dei massimi esperti di arte veneta, Rodolfo Pallucchini, ma anche allargando il suo interesse all'arte contemporanea, come testimonia la ricca documentazione su opere di artisti del Novecento proveniente dal suo archivio confluita nella fototeca Zeri.</p>
+          <p>Francesco fu anche collezionista e studioso. Nel 1946 scrisse, insieme alla figlia Maria, una monografia sul pittore Guglielmo Ciardi pubblicata dalla Fratelli Alinari. La sua figura di marchand-amateur venne ricordata in un articolo del quotidiano "La Repubblica" uscito in occasione della vendita Finarte dei beni di Maria Pospisil, tenutasi nel 1987 a Palazzo Sagredo.</p>
+        </div>
+        <div id="Localizzazioni" class="content">
+          <section id="map">
+            <div id="chartdiv"></div>
+          </section>
+        </div>
+        <div id="Relazioni" class="content">
+          <h2>Altri antiquari</h2>
+          <ul>
+            <li>
+              <a href="dettaglio_BR_III.html">Brass</a>
+            </li>
+          </ul>
+          <h2>Collaboratori</h2>
+          <ul>
+            <li>Franz Kieslinger (antiquario)</li>
+            <li>Kajetan 'Kai' Mühlmann (storico dell'arte)</li>
+            <li>Rodolfo Pallucchini (storico dell'arte)</li>
           </ul>
         </div>
-        <div class="content-card">
-          <div id="Bio" class="content active-content">
-            <p>Mentre il padre Arturo Pospisil (1868-1924) praticò la professione di fotografo a Padova con due studi, uno in via del Sale 1, l'altro in via Pedrocchi, Francesco, di cui si ignorano le date di nascita e morte, si dedicò al commercio antiquario a Venezia. La sua attività, con sede nel prestigioso Palazzo Sagredo, sul Canal Grande, è documentata dal 1936.</p>
-            <p>Specializzato in arte veneziana ma attivo in molti altri settori, lavorò con gli austriaci Kajetan "Kai" Muehlmann, storico dell'arte, e Franz Kieslinger (1891-1955), studioso e mercante, entrambi coinvolti con posizioni di alta responsabilità nel regime nazista. Proprio tramite Muehlmann, Pospisil offrì a Hermann Goering opere di Tiepolo. Anche se la vendita non andò a buon fine, i legami con il gotha nazista gli offrirono la possibilità di viaggiare tra Francia e Belgio alla ricerca di opere per il 'Dienststelle Muehlmann', un ufficio sito a L'Aja e diretto da Muehlmann stesso dove confluivano opere d'arte acquistate o più spesso confiscate agli Ebrei da vendere a facoltosi e appassionati membri del Partito.</p>
-            <p>Dopo la fine della Seconda guerra mondiale, Pospisil continuò la sua attività di mercante stringendo dagli anni Cinquanta un forte legame con uno dei massimi esperti di arte veneta, Rodolfo Pallucchini, ma anche allargando il suo interesse all'arte contemporanea, come testimonia la ricca documentazione su opere di artisti del Novecento proveniente dal suo archivio confluita nella fototeca Zeri.</p>
-            <p>Francesco fu anche collezionista e studioso. Nel 1946 scrisse, insieme alla figlia Maria, una monografia sul pittore Guglielmo Ciardi pubblicata dalla Fratelli Alinari. La sua figura di marchand-amateur venne ricordata in un articolo del quotidiano "La Repubblica" uscito in occasione della vendita Finarte dei beni di Maria Pospisil, tenutasi nel 1987 a Palazzo Sagredo.</p>
-          </div>
-          <div id="Persone" class="content">
-            <h3>Relazioni familiari:</h3>
-            <div id="albero-genealogico"></div>
-          </div>
-          <div id="Localizzazioni" class="content">
-            <section id="map">
-              <div id="chartdiv"></div>
-            </section>
-          </div>
-          <div id="Relazioni" class="content">
-            <h3>Altri antiquari:</h3>
-            <ul>
-              <li>
-                <a href="dettaglio_BR_III.html">Brass</a>
-              </li>
-            </ul>
-            <h3>Clienti:</h3>
-            <ul>
-            </ul>
-            <h3>Collaboratori:</h3>
-            <ul>
-              <li>Franz Kieslinger (antiquario)</li>
-              <li>Kajetan 'Kai' Mühlmann (storico dell'arte)</li>
-              <li>Rodolfo Pallucchini (storico dell'arte)</li>
-            </ul>
-          </div>
-          <div id="Bibliografia" class="content">
-            <h3>Bibliografia essenziale:</h3>
-            <ul>
-              <li>Bianchin R. (1987), <i>Asta Ca’ Sagredo 1987</i>, La Repubblica 29 novembre 1987</li>
-            </ul>
-          </div>
-          <div id="Opere trattate" class="content">
-            <p>
-              Vedi le opere transitate presso l'antiquario presenti nel 
-              <a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=100&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Pospisil" class="linkBio" target="_blank">
-                catalogo della Fondazione Zeri
-              </a>
-            </p>
-          </div>
+        <div id="Bibliografia" class="content">
+          <h2>Bibliografia essenziale</h2>
+          <ul>
+            <li>Bianchin R. (1987), <i>Asta Ca’ Sagredo 1987</i>, La Repubblica 29 novembre 1987</li>
+          </ul>
         </div>
       </div>
+      <nav class="scheda-sfoglia" aria-label="Altre schede">
+        <a href="dettaglio_PO_III.html">&#8592; Pollak</a>
+        <a href="dettaglio_PR.html">Pratesi &#8594;</a>
+      </nav>
     </main>
     <footer>
       <div class="footer-container">

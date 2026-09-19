@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dettaglio Antiquari</title>
+    <title>Pini | Mercato dell'arte</title>
+    <meta name="description" content="Pini: scheda dell'entità antiquariale nel progetto Mercato dell'arte della Fondazione Federico Zeri." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet" />
@@ -39,82 +40,89 @@
         </nav>
       </div>
     </header>
-    <main>
-      <section id="image-gallery">
-        <div class="gallery-wrapper">
-          <h2 class="gallery-title">Pini</h2>
-          <div class="slider-container">
-            <div class="slider">
-              <div class="slide">
-                <img src="../../img/slider-antiquari/PI_img1.jpg" alt="Giovanni Pini. Da &quot;L'Antiquario&quot;, 1925" />
-                <div class="caption">Giovanni Pini. Da "L'Antiquario", 1925</div>
-              </div>
-              <div class="slide">
-                <img src="../../img/slider-antiquari/PI_img2.jpg" alt="Umberto Pini. Da &quot;L'Antiquario&quot;, 1926" />
-                <div class="caption">Umberto Pini. Da "L'Antiquario", 1926</div>
-              </div>
+    <main class="scheda">
+      <div class="scheda-torna">
+        <a href="../antiquari.html">&#8592; Tutti gli antiquari</a>
+      </div>
+      <section class="scheda-fascia">
+        <div class="scheda-fascia-testo">
+          <h1 class="scheda-nome">Pini</h1>
+          <p class="scheda-sottotitolo">Firenze e Bologna, entità attiva dal 1920 al 1940</p>
+        </div>
+        <div class="slider-container">
+          <div class="slider">
+            <div class="slide">
+              <img src="../../img/slider-antiquari/PI_img1.jpg" alt="Giovanni Pini. Da &quot;L'Antiquario&quot;, 1925" />
+              <div class="caption">Giovanni Pini. Da "L'Antiquario", 1925</div>
             </div>
-            <button &#10094; class="prev" onclick="prevSlide()"><</button>
-            <button &#10095; class="next" onclick="nextSlide()">></button>
+            <div class="slide">
+              <img src="../../img/slider-antiquari/PI_img2.jpg" alt="Umberto Pini. Da &quot;L'Antiquario&quot;, 1926" />
+              <div class="caption">Umberto Pini. Da "L'Antiquario", 1926</div>
+            </div>
           </div>
+          <button class="prev" onclick="prevSlide()" type="button">&#10094;</button>
+          <button class="next" onclick="nextSlide()" type="button">&#10095;</button>
         </div>
       </section>
-      <div class="dual-content-wrapper">
-        <div class="tab-container">
-          <ul class="tab-list">
-            <li class="tab active" data_content="Bio">Dati biografici</li>
-            <li class="tab" data_content="Persone">Albero familiare</li>
-            <li class="tab" data_content="Localizzazioni">Luoghi</li>
-            <li class="tab" data_content="Relazioni">Relazioni</li>
-            <li class="tab" data_content="Bibliografia">Bibliografia</li>
-            <li class="tab" data_content="Opere trattate">Opere trattate</li>
+      <section class="scheda-dati">
+        <dl class="scheda-record">
+          <dt>PERSONE</dt>
+          <dd>Cesare Pini, 1870–?, antiquario<br>Umberto Pini, 1902–?, antiquario<br>Giovanni Pini, 1895–?, antiquario</dd>
+          <dt>INSEGNA</dt>
+          <dd>Cesare Pini e figli</dd>
+          <dt>SEDI</dt>
+          <dd>Via Tornabuoni 4, Firenze · 1920 ca.–1940 ca.<br>Via Tornabuoni 4, Firenze · 1920 ca.–1940 ca.<br>Via del Monte, Ghetto Ebraico 8, Bologna · 1922 ca.–1923 ca.<br>e altre 2 sedi, nella scheda Luoghi</dd>
+          <dt>IN CATALOGO</dt>
+          <dd><a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=pini" class="linkBio" target="_blank">Opere transitate, catalogo della Fondazione Zeri &#8594;</a></dd>
+        </dl>
+      </section>
+      <nav class="scheda-tab" aria-label="Sezioni della scheda">
+        <button class="tab active" type="button" data_content="Bio">
+          Dati biografici
+        </button>
+        <button class="tab" type="button" data_content="Localizzazioni">
+          Luoghi
+          <span class="tab-num">5</span>
+        </button>
+        <button class="tab" type="button" data_content="Relazioni">
+          Relazioni
+          <span class="tab-num">1</span>
+        </button>
+        <button class="tab" type="button" data_content="Bibliografia">
+          Bibliografia
+          <span class="tab-num">2</span>
+        </button>
+      </nav>
+      <div class="scheda-contenuto">
+        <div id="Bio" class="content active-content">
+          <p>L’antiquario Cesare Pini nasce a Scandiano Emilia nel 1870 ed entra nel mercato dell’arte nel 1897 con un negozio sito in via Stallatici 4/A (nella zona di Bologna, oggi completamente mutata, di via della Zecca). Dal 1924, la ditta con ragione sociale “Cesare Pini e figli”, vede Umberto (1902-?) e Giovanni (1895-?) entrare nel commercio, dedicandosi in particolare alla filiale fiorentina dell’impresa in via de’ Tornabuoni 4.</p>
+          <p>Nel 1925 il negozio fiorentino si sposta in via S. Niccolò 95 (sede di un deposito dal 1923, come risulta da un trafiletto presente sulla rivista “L’Antiquario”), mentre a Bologna Cesare Pini vende dipinti e oggetti d’arte nella sua casa di via del Monte 8.</p>
+          <p>Tra i collaboratori che si recavano all’estero per procacciarsi opere d’arte risulta, negli anni Venti, un certo Carlo Francesco Fornasini.</p>
+          <p>Vendette opere alle Gallerie dell’Accademia di Firenze.</p>
+        </div>
+        <div id="Localizzazioni" class="content">
+          <section id="map">
+            <div id="chartdiv"></div>
+          </section>
+        </div>
+        <div id="Relazioni" class="content">
+          <h2>Collaboratori</h2>
+          <ul>
+            <li>Carlo Francesco Fornasini (agente)</li>
           </ul>
         </div>
-        <div class="content-card">
-          <div id="Bio" class="content active-content">
-            <p>L’antiquario Cesare Pini nasce a Scandiano Emilia nel 1870 ed entra nel mercato dell’arte nel 1897 con un negozio sito in via Stallatici 4/A (nella zona di Bologna, oggi completamente mutata, di via della Zecca). Dal 1924, la ditta con ragione sociale “Cesare Pini e figli”, vede Umberto (1902-?) e Giovanni (1895-?) entrare nel commercio, dedicandosi in particolare alla filiale fiorentina dell’impresa in via de’ Tornabuoni 4.</p>
-            <p>Nel 1925 il negozio fiorentino si sposta in via S. Niccolò 95 (sede di un deposito dal 1923, come risulta da un trafiletto presente sulla rivista “L’Antiquario”), mentre a Bologna Cesare Pini vende dipinti e oggetti d’arte nella sua casa di via del Monte 8.</p>
-            <p>Tra i collaboratori che si recavano all’estero per procacciarsi opere d’arte risulta, negli anni Venti, un certo Carlo Francesco Fornasini.</p>
-            <p>Vendette opere alle Gallerie dell’Accademia di Firenze.</p>
-          </div>
-          <div id="Persone" class="content">
-            <h3>Relazioni familiari:</h3>
-            <div id="albero-genealogico"></div>
-          </div>
-          <div id="Localizzazioni" class="content">
-            <section id="map">
-              <div id="chartdiv"></div>
-            </section>
-          </div>
-          <div id="Relazioni" class="content">
-            <h3>Altri antiquari:</h3>
-            <ul>
-            </ul>
-            <h3>Clienti:</h3>
-            <ul>
-            </ul>
-            <h3>Collaboratori:</h3>
-            <ul>
-              <li>Carlo Francesco Fornasini (agente)</li>
-            </ul>
-          </div>
-          <div id="Bibliografia" class="content">
-            <h3>Bibliografia essenziale:</h3>
-            <ul>
-              <li>1923, <i>Nuovi antiquari a Firenze</i>, In «L'Antiquario», X, 4-5, 1923, p. 57</li>
-              <li>L'Etrusco (1925), <i>I fratelli Pini</i>, In «L'Antiquario», XII, 3, p. 144</li>
-            </ul>
-          </div>
-          <div id="Opere trattate" class="content">
-            <p>
-              Vedi le opere transitate presso l'antiquario presenti nel 
-              <a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=pini" class="linkBio" target="_blank">
-                catalogo della Fondazione Zeri
-              </a>
-            </p>
-          </div>
+        <div id="Bibliografia" class="content">
+          <h2>Bibliografia essenziale</h2>
+          <ul>
+            <li>1923, <i>Nuovi antiquari a Firenze</i>, In «L'Antiquario», X, 4-5, 1923, p. 57</li>
+            <li>L'Etrusco (1925), <i>I fratelli Pini</i>, In «L'Antiquario», XII, 3, p. 144</li>
+          </ul>
         </div>
       </div>
+      <nav class="scheda-sfoglia" aria-label="Altre schede">
+        <a href="dettaglio_PE.html">&#8592; Pesaro</a>
+        <a href="dettaglio_PO_I.html">Podio &#8594;</a>
+      </nav>
     </main>
     <footer>
       <div class="footer-container">

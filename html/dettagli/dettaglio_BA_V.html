@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dettaglio Antiquari</title>
+    <title>Barozzi | Mercato dell'arte</title>
+    <meta name="description" content="Barozzi: scheda dell'entità antiquariale nel progetto Mercato dell'arte della Fondazione Federico Zeri." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet" />
@@ -39,91 +40,106 @@
         </nav>
       </div>
     </header>
-    <main>
-      <section id="image-gallery">
-        <div class="gallery-wrapper">
-          <h2 class="gallery-title">Barozzi</h2>
-          <div class="slider-container">
-            <div class="slider">
-              <div class="slide">
-                <img src="../../img/slider-antiquari/BA_V_img1.jpg" alt="Dino Barozzi nel 1883 (Archivio Francesca Barozzi)" />
-                <div class="caption">Dino Barozzi nel 1883 (Archivio Francesca Barozzi)</div>
-              </div>
-              <div class="slide">
-                <img src="../../img/slider-antiquari/BA_V_img2.jpg" alt="Pubblicità della galleria Barozzi (dal Catalogo delle R.R. Gallerie di Venezia, 1914)" />
-                <div class="caption">Pubblicità della galleria Barozzi (dal Catalogo delle R.R. Gallerie di Venezia, 1914)</div>
-              </div>
-              <div class="slide">
-                <img src="../../img/slider-antiquari/BA_V_img3.jpg" alt="Sala d'ingresso di Palazzo Soranzo Van Axel (foto Alinari, 1922-1923)" />
-                <div class="caption">Sala d'ingresso di Palazzo Soranzo Van Axel (foto Alinari, 1922-1923)</div>
-              </div>
+    <main class="scheda">
+      <div class="scheda-torna">
+        <a href="../antiquari.html">&#8592; Tutti gli antiquari</a>
+      </div>
+      <section class="scheda-fascia">
+        <div class="scheda-fascia-testo">
+          <h1 class="scheda-nome">Barozzi</h1>
+          <p class="scheda-sottotitolo">Venezia, entità attiva dal 1890 al 1942</p>
+        </div>
+        <div class="slider-container">
+          <div class="slider">
+            <div class="slide">
+              <img src="../../img/slider-antiquari/BA_V_img1.jpg" alt="Dino Barozzi nel 1883 (Archivio Francesca Barozzi)" />
+              <div class="caption">Dino Barozzi nel 1883 (Archivio Francesca Barozzi)</div>
             </div>
-            <button &#10094; class="prev" onclick="prevSlide()"><</button>
-            <button &#10095; class="next" onclick="nextSlide()">></button>
+            <div class="slide">
+              <img src="../../img/slider-antiquari/BA_V_img2.jpg" alt="Pubblicità della galleria Barozzi (dal Catalogo delle R.R. Gallerie di Venezia, 1914)" />
+              <div class="caption">Pubblicità della galleria Barozzi (dal Catalogo delle R.R. Gallerie di Venezia, 1914)</div>
+            </div>
+            <div class="slide">
+              <img src="../../img/slider-antiquari/BA_V_img3.jpg" alt="Sala d'ingresso di Palazzo Soranzo Van Axel (foto Alinari, 1922-1923)" />
+              <div class="caption">Sala d'ingresso di Palazzo Soranzo Van Axel (foto Alinari, 1922-1923)</div>
+            </div>
           </div>
+          <button class="prev" onclick="prevSlide()" type="button">&#10094;</button>
+          <button class="next" onclick="nextSlide()" type="button">&#10095;</button>
         </div>
       </section>
-      <div class="dual-content-wrapper">
-        <div class="tab-container">
-          <ul class="tab-list">
-            <li class="tab active" data_content="Bio">Dati biografici</li>
-            <li class="tab" data_content="Persone">Albero familiare</li>
-            <li class="tab" data_content="Localizzazioni">Luoghi</li>
-            <li class="tab" data_content="Relazioni">Relazioni</li>
-            <li class="tab" data_content="Eventi">Eventi</li>
-            <li class="tab" data_content="Opere trattate">Opere trattate</li>
+      <section class="scheda-dati">
+        <dl class="scheda-record">
+          <dt>PERSONE</dt>
+          <dd>Alvise Bernardino 'Dino'  Barozzi, 1863–1942, antiquario<br>Sebastiano Alvise Barozzi, 1887–1969, antiquario<br>Alvise Barozzi, 1915–?, antiquario</dd>
+          <dt>INSEGNA</dt>
+          <dd>Dino Barozzi. Pittore, restauratore e antiquario</dd>
+          <dt>SEDI</dt>
+          <dd>San Barnaba 3207, Venezia · 1890 ca.–1895<br>Campo Santo Stefano 2950, Venezia · 1895–1922 ca.<br>Corte del Duca Sforza 3056, Venezia · 1895–1922<br>e altre 5 sedi, nella scheda Luoghi</dd>
+          <dt>IN CATALOGO</dt>
+          <dd><a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=barozzi" class="linkBio" target="_blank">Opere transitate, catalogo della Fondazione Zeri &#8594;</a></dd>
+        </dl>
+      </section>
+      <nav class="scheda-tab" aria-label="Sezioni della scheda">
+        <button class="tab active" type="button" data_content="Bio">
+          Dati biografici
+        </button>
+        <button class="tab" type="button" data_content="Persone">
+          Albero familiare
+          <span class="tab-num">3</span>
+        </button>
+        <button class="tab" type="button" data_content="Localizzazioni">
+          Luoghi
+          <span class="tab-num">8</span>
+        </button>
+        <button class="tab" type="button" data_content="Relazioni">
+          Relazioni
+          <span class="tab-num">2</span>
+        </button>
+        <button class="tab" type="button" data_content="Eventi">
+          Eventi
+          <span class="tab-num">6</span>
+        </button>
+      </nav>
+      <div class="scheda-contenuto">
+        <div id="Bio" class="content active-content">
+          <p>Il ‘nobil uomo’ Alvise Bernardino Barozzi detto ‘Dino’ nacque a Venezia nel 1863 da una delle dodici famiglie cosiddette ‘apostoliche’ che, nel 697, concorsero all’elezione del primo doge Paoluccio Anafesto. Dino partì da una posizione di indubbio privilegio per intraprendere l’attività di antiquario, a partire all’incirca dalla metà degli anni ottanta dell’Ottocento, grazie alla sua antica nobiltà e soprattutto ai contatti di alto livello istituzionale stabiliti dal padre Niccolò che, dal 1865 al 1882, fu curatore e poi direttore del Museo Civico Correr, quindi direttore delle Reali Gallerie di Palazzo Ducale e della Villa Nazionale di Stra, in seguito, direttore del Regio Museo Archeologico di Venezia e membro della Commissione per le licenze di esportazione di oggetti d'arte e antichità.</p>
+          <p>Dino Barozzi, dopo un’iniziale attività di abile disegnatore, testimoniata da alcuni disegni e acquerelli conservati nell’archivio di famiglia, oggi di proprietà della pronipote Francesca, si dedicò esclusivamente al commercio di opere d’arte di varia epoca e tipologia: da sculture medievali a dipinti dei maggiori artisti veneti, da preziosi oggetti di arte applicata a mobili d’epoca, fino alla vendita di affreschi staccati e trasportati su tela, grazie alla collaborazione con la ditta bergamasca di <a href="dettaglio_ST_NEW.html" target="_blank">Giuseppe Steffanoni</a> e dei suoi figli. Come gli altri antiquari attivi a Venezia tra la fine del XIX e i primi decenni del secolo scorso, Dino Barozzi reperì numerose opere d’arte grazie alle cospicue alienazioni dei patrimoni familiari da parte di molti esponenti della nobiltà veneziana e alla secolarizzazione di numerosi edifici ecclesiastici. Tra le sue vendite più eclatanti si segnala quella degli affreschi di Giambattista Tiepolo raffiguranti Il Ricevimento di Enrico III nella villa Contarini, La fama che annuncia l'arrivo dell'ospite, e le Figure di spettatori al balcone, staccati dalle pareti di Villa Contarini a Mira e trasportati su tela dagli Steffanoni, che furono acquistati nel 1893 dai coniugi Jacquemart-Andrè e trasportati a Parigi e che, da allora, ornano lo scalone d’ingresso della loro prestigiosa dimora, diventata in seguito una casa-museo. La coppia acquistò da Barozzi, anche alcuni affreschi provenienti da palazzo Corner Mocenigo a San Polo, sempre del Tiepolo, con La Pace e la Giustizia divina e l’Amor della Patria. In questo caso la vendita fu conclusa in collaborazione con l’antiquario <a href="dettaglio_GR_II.html" target="_blank">Antonio Grandi</a> di Milano. Barozzi cercò di vendere anche a Wilhelm Bode un ciclo di affreschi di scuola tiepolesca staccati dal soffitto e dalle sopra porte di alcuni ambienti di Palazzo Gradenigo a Santa Giustina, nel sestiere di Castello; ne siamo a conoscenza grazie alle numerose lettere che egli scrisse al direttore berlinese tra l’estate e l’inverno del 1901. Tra le più ricche raccolte di opere d'arte medievali veneziane vendute all'estero dal conte-antiquario, è d'obbligo ricordare quella conservata presso la Skulpturensammlung und Museum für Byzantinische Kunst dei Musei Statali di Berlino, acquisita tra il 1895 e il 1915 da Wilhelm Bode, oltre ad altre rare sculture altomedievali che arricchirono le collezioni di prestigiosi musei americani, come il Cleveland Museum of Art e l'Isabella Stuart Gardner Museum di Boston.</p>
+          <p>Dino cambiò più volte l’indirizzo della propria galleria antiquaria, fino ad aggiudicarsi un posto di assoluta visibilità lungo il Canal Grande, all’altezza della corte del duca Sforza, dove poteva usufruire anche di un attracco privato per il trasporto delle opere via acqua. Dopo alcuni decenni di attività, grazie al successo commerciale, nel 1919 Dino Barozzi riuscì ad acquistare palazzo Soranzo Van Axel, una delle più raffinate residenze tardogotiche veneziane, facendone la sua dimora, che trasformò in parte in galleria antiquaria dove riceveva i suoi ospiti più illustri, tra i quali Maria Pavlovna di Russia, Gabrielle Chanel, Frits Lugt, Wilhelm Suida, Sir Joseph Duveen e il conte Vittorio Cini. Nei due cortili del palazzo Dino Barozzi riunì la maggiore collezione privata lapidaria di Venezia, che dopo la sua morte fu in gran parte dispersa, a parte alcuni pregevoli pezzi tuttora in loco.</p>
+          <p>Nel 1922 Dino collaborò con il pittore e antiquario <a href="dettaglio_BR_III.html" target="_blank">Italico Brass</a> per stimare la collezione che il conte Giorgio Franchetti aveva donato allo Stato italiano insieme alla Cà d’Oro, nel biennio 1936-1937 inoltre procurò molti mobili d’epoca e oggetti di arte applicata a Vittorio Cini, che si stava occupando di arredare il castello di Monselice, di sua proprietà. Dopo la morte di Dino Barozzi proseguirono l’attività antiquaria sia il figlio Sebastiano, che il nipote Alvise, ma con un tenore sensibilmente inferiore rispetto ai primi decenni del Novecento.</p>
+        </div>
+        <div id="Persone" class="content">
+          <h2>Relazioni familiari</h2>
+          <div id="albero-genealogico"></div>
+        </div>
+        <div id="Localizzazioni" class="content">
+          <section id="map">
+            <div id="chartdiv"></div>
+          </section>
+        </div>
+        <div id="Relazioni" class="content">
+          <h2>Collaboratori</h2>
+          <ul>
+            <li>Fischer & Rechsteiner (ditta di trasporti)</li>
+            <li>Francesco Dorigo (antiquario)</li>
           </ul>
         </div>
-        <div class="content-card">
-          <div id="Bio" class="content active-content">
-            <p>Il ‘nobil uomo’ Alvise Bernardino Barozzi detto ‘Dino’ nacque a Venezia nel 1863 da una delle dodici famiglie cosiddette ‘apostoliche’ che, nel 697, concorsero all’elezione del primo doge Paoluccio Anafesto. Dino partì da una posizione di indubbio privilegio per intraprendere l’attività di antiquario, a partire all’incirca dalla metà degli anni ottanta dell’Ottocento, grazie alla sua antica nobiltà e soprattutto ai contatti di alto livello istituzionale stabiliti dal padre Niccolò che, dal 1865 al 1882, fu curatore e poi direttore del Museo Civico Correr, quindi direttore delle Reali Gallerie di Palazzo Ducale e della Villa Nazionale di Stra, in seguito, direttore del Regio Museo Archeologico di Venezia e membro della Commissione per le licenze di esportazione di oggetti d'arte e antichità.</p>
-            <p>Dino Barozzi, dopo un’iniziale attività di abile disegnatore, testimoniata da alcuni disegni e acquerelli conservati nell’archivio di famiglia, oggi di proprietà della pronipote Francesca, si dedicò esclusivamente al commercio di opere d’arte di varia epoca e tipologia: da sculture medievali a dipinti dei maggiori artisti veneti, da preziosi oggetti di arte applicata a mobili d’epoca, fino alla vendita di affreschi staccati e trasportati su tela, grazie alla collaborazione con la ditta bergamasca di <a href="dettaglio_ST_NEW.html" target="_blank">Giuseppe Steffanoni</a> e dei suoi figli. Come gli altri antiquari attivi a Venezia tra la fine del XIX e i primi decenni del secolo scorso, Dino Barozzi reperì numerose opere d’arte grazie alle cospicue alienazioni dei patrimoni familiari da parte di molti esponenti della nobiltà veneziana e alla secolarizzazione di numerosi edifici ecclesiastici. Tra le sue vendite più eclatanti si segnala quella degli affreschi di Giambattista Tiepolo raffiguranti Il Ricevimento di Enrico III nella villa Contarini, La fama che annuncia l'arrivo dell'ospite, e le Figure di spettatori al balcone, staccati dalle pareti di Villa Contarini a Mira e trasportati su tela dagli Steffanoni, che furono acquistati nel 1893 dai coniugi Jacquemart-Andrè e trasportati a Parigi e che, da allora, ornano lo scalone d’ingresso della loro prestigiosa dimora, diventata in seguito una casa-museo. La coppia acquistò da Barozzi, anche alcuni affreschi provenienti da palazzo Corner Mocenigo a San Polo, sempre del Tiepolo, con La Pace e la Giustizia divina e l’Amor della Patria. In questo caso la vendita fu conclusa in collaborazione con l’antiquario <a href="dettaglio_GR_II.html" target="_blank">Antonio Grandi</a> di Milano. Barozzi cercò di vendere anche a Wilhelm Bode un ciclo di affreschi di scuola tiepolesca staccati dal soffitto e dalle sopra porte di alcuni ambienti di Palazzo Gradenigo a Santa Giustina, nel sestiere di Castello; ne siamo a conoscenza grazie alle numerose lettere che egli scrisse al direttore berlinese tra l’estate e l’inverno del 1901. Tra le più ricche raccolte di opere d'arte medievali veneziane vendute all'estero dal conte-antiquario, è d'obbligo ricordare quella conservata presso la Skulpturensammlung und Museum für Byzantinische Kunst dei Musei Statali di Berlino, acquisita tra il 1895 e il 1915 da Wilhelm Bode, oltre ad altre rare sculture altomedievali che arricchirono le collezioni di prestigiosi musei americani, come il Cleveland Museum of Art e l'Isabella Stuart Gardner Museum di Boston.</p>
-            <p>Dino cambiò più volte l’indirizzo della propria galleria antiquaria, fino ad aggiudicarsi un posto di assoluta visibilità lungo il Canal Grande, all’altezza della corte del duca Sforza, dove poteva usufruire anche di un attracco privato per il trasporto delle opere via acqua. Dopo alcuni decenni di attività, grazie al successo commerciale, nel 1919 Dino Barozzi riuscì ad acquistare palazzo Soranzo Van Axel, una delle più raffinate residenze tardogotiche veneziane, facendone la sua dimora, che trasformò in parte in galleria antiquaria dove riceveva i suoi ospiti più illustri, tra i quali Maria Pavlovna di Russia, Gabrielle Chanel, Frits Lugt, Wilhelm Suida, Sir Joseph Duveen e il conte Vittorio Cini. Nei due cortili del palazzo Dino Barozzi riunì la maggiore collezione privata lapidaria di Venezia, che dopo la sua morte fu in gran parte dispersa, a parte alcuni pregevoli pezzi tuttora in loco.</p>
-            <p>Nel 1922 Dino collaborò con il pittore e antiquario <a href="dettaglio_BR_III.html" target="_blank">Italico Brass</a> per stimare la collezione che il conte Giorgio Franchetti aveva donato allo Stato italiano insieme alla Cà d’Oro, nel biennio 1936-1937 inoltre procurò molti mobili d’epoca e oggetti di arte applicata a Vittorio Cini, che si stava occupando di arredare il castello di Monselice, di sua proprietà. Dopo la morte di Dino Barozzi proseguirono l’attività antiquaria sia il figlio Sebastiano, che il nipote Alvise, ma con un tenore sensibilmente inferiore rispetto ai primi decenni del Novecento.</p>
-          </div>
-          <div id="Persone" class="content">
-            <h3>Relazioni familiari:</h3>
-            <div id="albero-genealogico"></div>
-          </div>
-          <div id="Localizzazioni" class="content">
-            <section id="map">
-              <div id="chartdiv"></div>
-            </section>
-          </div>
-          <div id="Eventi" class="content">
-            <h3>Eventi significativi nell'attività antiquariale:</h3>
-            <ul>
-              <li>1893 - <i>Vendita degli affreschi di Villa Contarini a Mira</i>: Gli affreschi di Tiepolo strappati e trasporati su tela da Steffanoni vengono venduti da Barozzi ai coniugi Jacquemart-André. Ancora oggi ornano lo scalone di ingresso dell'omonimo museo parigino</li>
-              <li>1901 - <i>Tentativo di vendita degli affreschi tiepoleschi di Palazzo Gradenigo</i>: Dino Barozzi tenta di vendere gli affreschi di Tiepolo strappati da Palazzo Gradenigo in Campo Santa Giustina a Wilhelm Bode</li>
-              <li>1914 - <i>Dino Barozzi cavaliere della Corona d’Italia</i>: Il Sindaco di Venezia nomina Dino Barozzi cavaliere della Corona d’Italia</li>
-              <li>1919 - <i>Acquisto di palazzo Soranzo van Axel</i>: Dino Barozzi acquista il lussuoso palazzo tardogotico Soranzo van Axel per farne la propria residenza privata e sede della galleria</li>
-              <li>1923 - <i>Prestito di opere alla mostra sul Ritratto veneziano dell'Ottocento</i>: Barozzi presta alcuni ritratti della sua collezione per la mostra sul ritratto veneziano dell'Ottocento curata da Nino Barbantini a Cà Pesaro</li>
-              <li>1936 - <i>Vendita a Vittorio Cini</i>: Vendita di numerosi mobili e oggetti d'arte applicata al conte Vittorio Cini per il castello di Monselice</li>
-            </ul>
-          </div>
-          <div id="Relazioni" class="content">
-            <h3>Altri antiquari:</h3>
-            <ul>
-            </ul>
-            <h3>Clienti:</h3>
-            <ul>
-            </ul>
-            <h3>Collaboratori:</h3>
-            <ul>
-              <li>Fischer & Rechsteiner (ditta di trasporti)</li>
-              <li>Francesco Dorigo (antiquario)</li>
-            </ul>
-          </div>
-          <div id="Opere trattate" class="content">
-            <p>
-              Vedi le opere transitate presso l'antiquario presenti nel 
-              <a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=barozzi" class="linkBio" target="_blank">
-                catalogo della Fondazione Zeri
-              </a>
-            </p>
-          </div>
+        <div id="Eventi" class="content">
+          <h2>Eventi significativi nell'attività antiquariale</h2>
+          <ul>
+            <li>1893 - <i>Vendita degli affreschi di Villa Contarini a Mira</i>: Gli affreschi di Tiepolo strappati e trasporati su tela da Steffanoni vengono venduti da Barozzi ai coniugi Jacquemart-André. Ancora oggi ornano lo scalone di ingresso dell'omonimo museo parigino</li>
+            <li>1901 - <i>Tentativo di vendita degli affreschi tiepoleschi di Palazzo Gradenigo</i>: Dino Barozzi tenta di vendere gli affreschi di Tiepolo strappati da Palazzo Gradenigo in Campo Santa Giustina a Wilhelm Bode</li>
+            <li>1914 - <i>Dino Barozzi cavaliere della Corona d’Italia</i>: Il Sindaco di Venezia nomina Dino Barozzi cavaliere della Corona d’Italia</li>
+            <li>1919 - <i>Acquisto di palazzo Soranzo van Axel</i>: Dino Barozzi acquista il lussuoso palazzo tardogotico Soranzo van Axel per farne la propria residenza privata e sede della galleria</li>
+            <li>1923 - <i>Prestito di opere alla mostra sul Ritratto veneziano dell'Ottocento</i>: Barozzi presta alcuni ritratti della sua collezione per la mostra sul ritratto veneziano dell'Ottocento curata da Nino Barbantini a Cà Pesaro</li>
+            <li>1936 - <i>Vendita a Vittorio Cini</i>: Vendita di numerosi mobili e oggetti d'arte applicata al conte Vittorio Cini per il castello di Monselice</li>
+          </ul>
         </div>
       </div>
+      <nav class="scheda-sfoglia" aria-label="Altre schede">
+        <a href="dettaglio_BA_II.html">&#8592; Bardini</a>
+        <a href="dettaglio_BA_III.html">Barsanti &#8594;</a>
+      </nav>
     </main>
     <footer>
       <div class="footer-container">

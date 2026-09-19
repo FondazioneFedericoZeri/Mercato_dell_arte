@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dettaglio Antiquari</title>
+    <title>Pesaro | Mercato dell'arte</title>
+    <meta name="description" content="Pesaro: scheda dell'entità antiquariale nel progetto Mercato dell'arte della Fondazione Federico Zeri." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet" />
@@ -39,99 +40,106 @@
         </nav>
       </div>
     </header>
-    <main>
-      <section id="image-gallery">
-        <div class="gallery-wrapper">
-          <h2 class="gallery-title">Pesaro</h2>
-          <div class="slider-container">
-            <div class="slider">
-              <div class="slide">
-                <img src="../../img/slider-antiquari/PE_img1.jpg" alt="Guido Tallone, Ritratto di Lino Pesaro nel 1930" />
-                <div class="caption">Guido Tallone, Ritratto di Lino Pesaro nel 1930</div>
-              </div>
-              <div class="slide">
-                <img src="../../img/slider-antiquari/PE_img2.jpg" alt="Biglietto da visita della Galleria Pesaro disegnato da Alberto Martini (Milano, Castello Sforzesco, Raccolta Achille Bertarelli)" />
-                <div class="caption">Biglietto da visita della Galleria Pesaro disegnato da Alberto Martini (Milano, Castello Sforzesco, Raccolta Achille Bertarelli)</div>
-              </div>
+    <main class="scheda">
+      <div class="scheda-torna">
+        <a href="../antiquari.html">&#8592; Tutti gli antiquari</a>
+      </div>
+      <section class="scheda-fascia">
+        <div class="scheda-fascia-testo">
+          <h1 class="scheda-nome">Pesaro</h1>
+          <p class="scheda-sottotitolo">Milano, entità attiva dal 1904 al 1938</p>
+        </div>
+        <div class="slider-container">
+          <div class="slider">
+            <div class="slide">
+              <img src="../../img/slider-antiquari/PE_img1.jpg" alt="Guido Tallone, Ritratto di Lino Pesaro nel 1930" />
+              <div class="caption">Guido Tallone, Ritratto di Lino Pesaro nel 1930</div>
             </div>
-            <button &#10094; class="prev" onclick="prevSlide()"><</button>
-            <button &#10095; class="next" onclick="nextSlide()">></button>
+            <div class="slide">
+              <img src="../../img/slider-antiquari/PE_img2.jpg" alt="Biglietto da visita della Galleria Pesaro disegnato da Alberto Martini (Milano, Castello Sforzesco, Raccolta Achille Bertarelli)" />
+              <div class="caption">Biglietto da visita della Galleria Pesaro disegnato da Alberto Martini (Milano, Castello Sforzesco, Raccolta Achille Bertarelli)</div>
+            </div>
           </div>
+          <button class="prev" onclick="prevSlide()" type="button">&#10094;</button>
+          <button class="next" onclick="nextSlide()" type="button">&#10095;</button>
         </div>
       </section>
-      <div class="dual-content-wrapper">
-        <div class="tab-container">
-          <ul class="tab-list">
-            <li class="tab active" data_content="Bio">Dati biografici</li>
-            <li class="tab" data_content="Persone">Albero familiare</li>
-            <li class="tab" data_content="Localizzazioni">Luoghi</li>
-            <li class="tab" data_content="Relazioni">Relazioni</li>
-            <li class="tab" data_content="Eventi">Eventi</li>
-            <li class="tab" data_content="Opere trattate">Opere trattate</li>
+      <section class="scheda-dati">
+        <dl class="scheda-record">
+          <dt>PERSONA</dt>
+          <dd>Lino Pesaro, 1879–1938, antiquario</dd>
+          <dt>INSEGNA</dt>
+          <dd>Galleria Pesaro</dd>
+          <dt>SEDI</dt>
+          <dd>via Meravigli 10, Milano · 1904 ca.–1916<br>via Manzoni 12, Milano · 1917–1938</dd>
+          <dt>IN CATALOGO</dt>
+          <dd><a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Asta+Galleria+Pesaro" class="linkBio" target="_blank">Opere transitate, catalogo della Fondazione Zeri &#8594;</a></dd>
+        </dl>
+      </section>
+      <nav class="scheda-tab" aria-label="Sezioni della scheda">
+        <button class="tab active" type="button" data_content="Bio">
+          Dati biografici
+        </button>
+        <button class="tab" type="button" data_content="Localizzazioni">
+          Luoghi
+          <span class="tab-num">2</span>
+        </button>
+        <button class="tab" type="button" data_content="Relazioni">
+          Relazioni
+          <span class="tab-num">8</span>
+        </button>
+        <button class="tab" type="button" data_content="Eventi">
+          Eventi
+          <span class="tab-num">5</span>
+        </button>
+      </nav>
+      <div class="scheda-contenuto">
+        <div id="Bio" class="content active-content">
+          <p>Michelangelo Pesaro, detto familiarmente ‘Lino’, è stato uno dei principali mercanti d’arte dei primi decenni del Novecento, anche se la sua carriera fu molto breve, poco più di una ventina d’anni, dal 1917 al 1938. Lino si appassionò all’arte grazie al nonno materno Angelo Spadoni, un importante collezionista di dipinti del Seicento napoletano che, alla sua morte, lasciò a lui e alla sorella Ida la propria raccolta.</p>
+          <p>Dopo aver passato gli anni della formazione tra Reggio Calabria, la sua città natale, e Venezia, dove frequentò l’università, Lino nel 1904 arrivò a Milano. Nel capoluogo lombardo, fervido di iniziative, Lino iniziò a lavorare come mercante d’arte, organizzando mostre con opere della sua collezione o appartenenti a famiglie nobili e alto borghesi, come quelle di Davide Leonino, <a href="dettaglio_FO.html" target="_blank">Pietro Foresti</a>, Alberto Clerici e del celebre mercante d'arte fiorentino Luigi Pisani, titolare della Galleria Pisani.</p>
+          <p>Nel 1913 Lino si occupò della prestigiosa vendita all’asta, a St. Moritz, di ben ventitré dipinti di Giovanni Segantini della collezione privata di Alberto Grubicy. Questa opportunità gli garantì fama a livello internazionale, tanto da permettergli di aprire nel 1917 la propria galleria antiquaria: la Galleria Pesaro.</p>
+          <p>Lino scelse una sede esclusiva, il piano terra del palazzo storico che ospitava, e tuttora ospita, il Museo Poldi Pezzoli in via Manzoni 12. Nelle sale della galleria passarono molti capolavori italiani dell’Ottocento, tra i quali Il Quarto Stato di Giuseppe Pellizza da Volpedo e Le due madri di Giovanni Segantini.</p>
+          <p>Dal 1914 al 1929, Pesaro collaborò con lo scrittore e critico d'arte Vittorio Pica per l’organizzazione di oltre quaranta mostre, a partire da quella allestita per la vendita della collezione di Luigi Pisani. Il gallerista curò sempre con particolare attenzione i cataloghi che accompagnavano le esposizioni, riconoscibili per eleganza dell’impaginato e per i testi introduttivi affidati ai più stimati intellettuali dell'epoca, come Antonio Fradeletto, il critico d'arte e poeta Enrico Somarè, il giornalista e critico Ugo Ojetti e il mercante d'arte, critico e giornalista Pier Maria Bardi dello <a href="dettaglio_PA_III.html" target="_blank">Studio d’Arte Palma</a>.</p>
+          <p>Nel 1922, insieme all'influente critica d'arte Margherita Grassini Sarfatti, Lino Pesaro contribuì alla nascita del gruppo “Novecento”, composto da Achille Funi, Gian Emilio Malerba, Ubaldo Oppi, Leonardo Dudreville, Pietro Marussig, Anselmo Bucci e Mario Sironi. Benito Mussolini presenziò, su insistenza della Sarfatti, all'inaugurazione della loro prima mostra il 26 marzo 1923.</p>
+          <p>Nel 1925, Pesaro decise di allargare la propria impresa a nuovi azionisti, tra cui Carlo Feltrinelli e Luigi Della Torre, mantenendo per sé il ruolo di consigliere e direttore generale. Nel 1927 fu inaugurata l’attività editoriale promossa dalla Galleria, con la rivista in inglese “The Studio” e le serie “L'odierna arte del bianco e nero” e “L'Arte decorativa moderna” dedicate specificamente alla pubblicazione di cataloghi di mostre.</p>
+          <p>In quegli anni, Pesaro diventò il principale rappresentante dei mercanti d'arte italiani nelle associazioni di categoria, denunciando in particolare i problemi legati alla falsificazione e lavorando costantemente ad accordi tra artisti, mercanti, collezionisti e istituzioni.</p>
+          <p>Nel 1931 l’accumularsi di ingenti difficoltà economiche, lo costrinse a vendere all’asta la propria collezione di dipinti e, nel 1933, nonostante l’organizzazione di una mostra importante dedicata a Umberto Boccioni e al movimento futurista, con oltre settanta opere, fu coinvolto in una causa per falsificazione che contribuì alla fine della sua carriera. La causa intentatagli da Gaetano Marzotto, suo assiduo cliente, per la vendita di presunte opere contraffatte, rappresentò un duro colpo alla sua autostima e credibilità pubblica.</p>
+          <p>Nel 1938, Pesaro organizzò dunque l’Esposizione dei XXXV anni, la sua ultima mostra, dedicata alla sua lunga e proficua attività nel mondo dell'arte. Poco dopo decise di suicidarsi per ragioni tuttora ignote.</p>
+          <p>Le Gallerie Maspes in via Manzoni a Milano conservano una ricca collezione dei cataloghi d’asta e di mostre organizzate da Lino Pesaro, che risulta assai utile per ricostruire la sua lunga parabola professionale ed esistenziale.</p>
+        </div>
+        <div id="Localizzazioni" class="content">
+          <section id="map">
+            <div id="chartdiv"></div>
+          </section>
+        </div>
+        <div id="Relazioni" class="content">
+          <h2>Collaboratori</h2>
+          <ul>
+            <li>Antonio Fradeletto (storico dell'arte)</li>
+            <li>Carlo Feltrinelli (socio)</li>
+            <li>Enrico Somarè (storico dell'arte)</li>
+            <li>Luigi Della Torre (socio)</li>
+            <li>Luigi Pisani (antiquario)</li>
+            <li>Margherita Grassini Scarfatti (critico d'arte)</li>
+            <li>Ugo Ojetti (critico d'arte)</li>
+            <li>Vittorio Pica (critico d'arte)</li>
           </ul>
         </div>
-        <div class="content-card">
-          <div id="Bio" class="content active-content">
-            <p>Michelangelo Pesaro, detto familiarmente ‘Lino’, è stato uno dei principali mercanti d’arte dei primi decenni del Novecento, anche se la sua carriera fu molto breve, poco più di una ventina d’anni, dal 1917 al 1938. Lino si appassionò all’arte grazie al nonno materno Angelo Spadoni, un importante collezionista di dipinti del Seicento napoletano che, alla sua morte, lasciò a lui e alla sorella Ida la propria raccolta.</p>
-            <p>Dopo aver passato gli anni della formazione tra Reggio Calabria, la sua città natale, e Venezia, dove frequentò l’università, Lino nel 1904 arrivò a Milano. Nel capoluogo lombardo, fervido di iniziative, Lino iniziò a lavorare come mercante d’arte, organizzando mostre con opere della sua collezione o appartenenti a famiglie nobili e alto borghesi, come quelle di Davide Leonino, <a href="dettaglio_FO.html" target="_blank">Pietro Foresti</a>, Alberto Clerici e del celebre mercante d'arte fiorentino Luigi Pisani, titolare della Galleria Pisani.</p>
-            <p>Nel 1913 Lino si occupò della prestigiosa vendita all’asta, a St. Moritz, di ben ventitré dipinti di Giovanni Segantini della collezione privata di Alberto Grubicy. Questa opportunità gli garantì fama a livello internazionale, tanto da permettergli di aprire nel 1917 la propria galleria antiquaria: la Galleria Pesaro.</p>
-            <p>Lino scelse una sede esclusiva, il piano terra del palazzo storico che ospitava, e tuttora ospita, il Museo Poldi Pezzoli in via Manzoni 12. Nelle sale della galleria passarono molti capolavori italiani dell’Ottocento, tra i quali Il Quarto Stato di Giuseppe Pellizza da Volpedo e Le due madri di Giovanni Segantini.</p>
-            <p>Dal 1914 al 1929, Pesaro collaborò con lo scrittore e critico d'arte Vittorio Pica per l’organizzazione di oltre quaranta mostre, a partire da quella allestita per la vendita della collezione di Luigi Pisani. Il gallerista curò sempre con particolare attenzione i cataloghi che accompagnavano le esposizioni, riconoscibili per eleganza dell’impaginato e per i testi introduttivi affidati ai più stimati intellettuali dell'epoca, come Antonio Fradeletto, il critico d'arte e poeta Enrico Somarè, il giornalista e critico Ugo Ojetti e il mercante d'arte, critico e giornalista Pier Maria Bardi dello <a href="dettaglio_PA_III.html" target="_blank">Studio d’Arte Palma</a>.</p>
-            <p>Nel 1922, insieme all'influente critica d'arte Margherita Grassini Sarfatti, Lino Pesaro contribuì alla nascita del gruppo “Novecento”, composto da Achille Funi, Gian Emilio Malerba, Ubaldo Oppi, Leonardo Dudreville, Pietro Marussig, Anselmo Bucci e Mario Sironi. Benito Mussolini presenziò, su insistenza della Sarfatti, all'inaugurazione della loro prima mostra il 26 marzo 1923.</p>
-            <p>Nel 1925, Pesaro decise di allargare la propria impresa a nuovi azionisti, tra cui Carlo Feltrinelli e Luigi Della Torre, mantenendo per sé il ruolo di consigliere e direttore generale. Nel 1927 fu inaugurata l’attività editoriale promossa dalla Galleria, con la rivista in inglese “The Studio” e le serie “L'odierna arte del bianco e nero” e “L'Arte decorativa moderna” dedicate specificamente alla pubblicazione di cataloghi di mostre.</p>
-            <p>In quegli anni, Pesaro diventò il principale rappresentante dei mercanti d'arte italiani nelle associazioni di categoria, denunciando in particolare i problemi legati alla falsificazione e lavorando costantemente ad accordi tra artisti, mercanti, collezionisti e istituzioni.</p>
-            <p>Nel 1931 l’accumularsi di ingenti difficoltà economiche, lo costrinse a vendere all’asta la propria collezione di dipinti e, nel 1933, nonostante l’organizzazione di una mostra importante dedicata a Umberto Boccioni e al movimento futurista, con oltre settanta opere, fu coinvolto in una causa per falsificazione che contribuì alla fine della sua carriera. La causa intentatagli da Gaetano Marzotto, suo assiduo cliente, per la vendita di presunte opere contraffatte, rappresentò un duro colpo alla sua autostima e credibilità pubblica.</p>
-            <p>Nel 1938, Pesaro organizzò dunque l’Esposizione dei XXXV anni, la sua ultima mostra, dedicata alla sua lunga e proficua attività nel mondo dell'arte. Poco dopo decise di suicidarsi per ragioni tuttora ignote.</p>
-            <p>Le Gallerie Maspes in via Manzoni a Milano conservano una ricca collezione dei cataloghi d’asta e di mostre organizzate da Lino Pesaro, che risulta assai utile per ricostruire la sua lunga parabola professionale ed esistenziale.</p>
-          </div>
-          <div id="Persone" class="content">
-            <h3>Relazioni familiari:</h3>
-            <div id="albero-genealogico"></div>
-          </div>
-          <div id="Localizzazioni" class="content">
-            <section id="map">
-              <div id="chartdiv"></div>
-            </section>
-          </div>
-          <div id="Eventi" class="content">
-            <h3>Eventi significativi nell'attività antiquariale:</h3>
-            <ul>
-              <li>1913 - <i>Exposition et vente de tableaux de Giovanni Segantini à Saint Moritz </i>: Lino Pesaro organizza la prestigiosa vendita di ventitré dipinti di Segantini provenienti dalla collezione Grubicy</li>
-              <li>1923 - <i>Esposizione "Sette pittori del Novecento" presso la Galleria Pesaro</i>: Lino Pesaro espone con Margherita Sarfatti il nucleo fondativo di pittori che nel 1924 alla Biennale di Venezia si costituirà come gruppo "Novecento"</li>
-              <li>1933 - <i>Esposizione "Omaggio futurista a Umberto Boccioni" presso la Galleria Pesaro</i>: Lino Pesaro organizza un'importante mostra dedicata a Boccioni con oltre settanta opere</li>
-              <li>1933 - <i>Causa giudiziaria per vendita di opere d'arte false</i>: L'imprenditore e collezionista Gaetano Marzotto, suo affezionato cliente, accusa Lino Pesaro di avergli venduto un Raffaello e un Pinturicchio falsi</li>
-              <li>1938 - <i>Esposizione dei XXXV anni</i>: Prima di lasciare l'attività e togliersi la vita, Lino Pesaro organizza una retrospettiva sulla sua lunga carriera di mercante d'arte</li>
-            </ul>
-          </div>
-          <div id="Relazioni" class="content">
-            <h3>Altri antiquari:</h3>
-            <ul>
-            </ul>
-            <h3>Clienti:</h3>
-            <ul>
-            </ul>
-            <h3>Collaboratori:</h3>
-            <ul>
-              <li>Antonio Fradeletto (storico dell'arte)</li>
-              <li>Carlo Feltrinelli (socio)</li>
-              <li>Enrico Somarè (storico dell'arte)</li>
-              <li>Luigi Della Torre (socio)</li>
-              <li>Luigi Pisani (antiquario)</li>
-              <li>Margherita Grassini Scarfatti (critico d'arte)</li>
-              <li>Ugo Ojetti (critico d'arte)</li>
-              <li>Vittorio Pica (critico d'arte)</li>
-            </ul>
-          </div>
-          <div id="Opere trattate" class="content">
-            <p>
-              Vedi le opere transitate presso l'antiquario presenti nel 
-              <a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Asta+Galleria+Pesaro" class="linkBio" target="_blank">
-                catalogo della Fondazione Zeri
-              </a>
-            </p>
-          </div>
+        <div id="Eventi" class="content">
+          <h2>Eventi significativi nell'attività antiquariale</h2>
+          <ul>
+            <li>1913 - <i>Exposition et vente de tableaux de Giovanni Segantini à Saint Moritz </i>: Lino Pesaro organizza la prestigiosa vendita di ventitré dipinti di Segantini provenienti dalla collezione Grubicy</li>
+            <li>1923 - <i>Esposizione "Sette pittori del Novecento" presso la Galleria Pesaro</i>: Lino Pesaro espone con Margherita Sarfatti il nucleo fondativo di pittori che nel 1924 alla Biennale di Venezia si costituirà come gruppo "Novecento"</li>
+            <li>1933 - <i>Esposizione "Omaggio futurista a Umberto Boccioni" presso la Galleria Pesaro</i>: Lino Pesaro organizza un'importante mostra dedicata a Boccioni con oltre settanta opere</li>
+            <li>1933 - <i>Causa giudiziaria per vendita di opere d'arte false</i>: L'imprenditore e collezionista Gaetano Marzotto, suo affezionato cliente, accusa Lino Pesaro di avergli venduto un Raffaello e un Pinturicchio falsi</li>
+            <li>1938 - <i>Esposizione dei XXXV anni</i>: Prima di lasciare l'attività e togliersi la vita, Lino Pesaro organizza una retrospettiva sulla sua lunga carriera di mercante d'arte</li>
+          </ul>
         </div>
       </div>
+      <nav class="scheda-sfoglia" aria-label="Altre schede">
+        <a href="dettaglio_PA_II.html">&#8592; Paolini</a>
+        <a href="dettaglio_PI_NEW.html">Pini &#8594;</a>
+      </nav>
     </main>
     <footer>
       <div class="footer-container">

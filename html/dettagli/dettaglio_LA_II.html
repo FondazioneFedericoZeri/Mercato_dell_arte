@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dettaglio Antiquari</title>
+    <title>Lazzaroni | Mercato dell'arte</title>
+    <meta name="description" content="Lazzaroni: scheda dell'entità antiquariale nel progetto Mercato dell'arte della Fondazione Federico Zeri." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet" />
@@ -39,78 +40,83 @@
         </nav>
       </div>
     </header>
-    <main>
-      <section id="image-gallery">
-        <div class="gallery-wrapper">
-          <h2 class="gallery-title">Lazzaroni</h2>
-          <div id="single-image-container">
-            <img src="../../img/slider-antiquari/LA_II_img1.jpg" alt="Michele Lazzaroni. Da &quot;Tribuna illustrata&quot;, 1893" />
-            <div class="caption overlay-caption">Michele Lazzaroni. Da "Tribuna illustrata", 1893</div>
-          </div>
+    <main class="scheda">
+      <div class="scheda-torna">
+        <a href="../antiquari.html">&#8592; Tutti gli antiquari</a>
+      </div>
+      <section class="scheda-fascia">
+        <div class="scheda-fascia-testo">
+          <h1 class="scheda-nome">Lazzaroni</h1>
+          <p class="scheda-sottotitolo">Roma, Parigi e Nizza, entità attiva dal 1892 al 1934</p>
         </div>
+        <figure id="single-image-container">
+          <img src="../../img/slider-antiquari/LA_II_img1.jpg" alt="Michele Lazzaroni. Da &quot;Tribuna illustrata&quot;, 1893" />
+          <figcaption class="caption">Michele Lazzaroni. Da "Tribuna illustrata", 1893</figcaption>
+        </figure>
       </section>
-      <div class="dual-content-wrapper">
-        <div class="tab-container">
-          <ul class="tab-list">
-            <li class="tab active" data_content="Bio">Dati biografici</li>
-            <li class="tab" data_content="Persone">Albero familiare</li>
-            <li class="tab" data_content="Localizzazioni">Luoghi</li>
-            <li class="tab" data_content="Relazioni">Relazioni</li>
-            <li class="tab" data_content="Bibliografia">Bibliografia</li>
-            <li class="tab" data_content="Opere trattate">Opere trattate</li>
+      <section class="scheda-dati">
+        <dl class="scheda-record">
+          <dt>PERSONA</dt>
+          <dd>Michel Lazzaroni, 1863–1934, antiquario</dd>
+          <dt>SEDI</dt>
+          <dd>Viale di Tor di Quinto 58, Roma · 1892–1934<br>Rue Spontini 16, Parigi · 1895 ca.–1934<br>Rue de France 94, Nizza · 1900 ca.–1934</dd>
+          <dt>IN CATALOGO</dt>
+          <dd><a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=lazzaroni" class="linkBio" target="_blank">Opere transitate, catalogo della Fondazione Zeri &#8594;</a></dd>
+        </dl>
+      </section>
+      <nav class="scheda-tab" aria-label="Sezioni della scheda">
+        <button class="tab active" type="button" data_content="Bio">
+          Dati biografici
+        </button>
+        <button class="tab" type="button" data_content="Localizzazioni">
+          Luoghi
+          <span class="tab-num">3</span>
+        </button>
+        <button class="tab" type="button" data_content="Relazioni">
+          Relazioni
+          <span class="tab-num">3</span>
+        </button>
+        <button class="tab" type="button" data_content="Bibliografia">
+          Bibliografia
+          <span class="tab-num">6</span>
+        </button>
+      </nav>
+      <div class="scheda-contenuto">
+        <div id="Bio" class="content active-content">
+          <p>Michele Lazzaroni (1863-1934), singolare figura di marchand-amateur, nonché collezionista e restauratore, è stata approfondita negli ultimi anni dagli studi di Elisabetta Sambo e Loredana Lorizzo. Nato a Roma nel 1863, si formò come pittore alla scuola dell'artista sivigliano Francisco Peralta del Campo ma intraprese ben presto una carriera nel campo dell'alta finanza divenendo il direttore della Banca Romana. Nel 1893 uno grosso scandalo travolse l'istituto bancario portando Lazzaroni a una condanna, scontata anche con una breve detenzione. Egli si rivolse quindi al mondo dell'antiquariato iniziando ad acquisire e a vendere opere, in parte destinate alla sua collezione privata, in parte rimesse sul mercato.</p>
+          <p>Lazzaroni esercitò la sua attività presso le proprie abitazioni: a Roma, in una Villa fatta costruire nel 1892 nel quartiere di Tor di Quinto che probabilmente lui stesso contribuì a decorare; a Parigi in un palazzo al numero 16 di Rue Spontini; a Nizza a Villa Madeleine, eretta all'inizio del XX secolo.</p>
+          <p>Fin dai primi anni del 1900 prese contatti con i maggiori storici dell'arte dell'epoca, in particolare Adolfo Venturi e Bernard Berenson, che utilizzò come consulenti e mediatori. Corredate dai loro expertises, che egli chiedeva di vergare sul retro di fotografie che si faceva realizzare da ditte quali Braun & Cie, Giraudon e Bernès, Marouteau & C.ie, i dipinti esaminati venivano proposti a collezionisti o ad alti agenti, in particolare alla casa Duveen, che procedeva a piazzarli sul mercato, soprattutto americano. Qualora il pezzo antico non fosse di qualità ritenuta sufficiente, Lazzaroni provvedeva, di suo pugno o tramite restauratori conniventi, a 'migliorarne' l'apparenza estetica, intervenendo anche con pesanti ridipinture. Tra i professionisti con cui collaborò ci furono in particolare Louis Vergetas (1882-1961), detto 'Verzetta', e Luigi Cavenaghi. Con le sue operazioni trattò e commerciò centinaia di dipinti finendo per saturare musei e collezioni d'oltreoceano di opere molto ritoccate e al limite della falsificazione, che trasmettevano un'immagine alterata del Rinascimento, creata ad hoc per compiacere la clientela.</p>
+          <p>Lazzaroni morì nel 1934. La sua collezione personale, già oggetto di due diverse alienazioni nel 1894 in occasione di un'asta <a href="dettaglio_CO_II.html" target="_blank"> Corvisieri </a>, e nel 1952 a Nizza, fu definitivamente dispersa in seguito a una vendita avvenuta nel 2003 a Roma. L'archivio fotografico fu ceduto dal figlio Edgardo allo Studio d'Arte Palma di Roma per tramite del restauratore Mario Modestini. Lì venne acquistato tra il 1946 e il 1949 da Federico Zeri che ne fece un nucleo importante della propria nascente fototeca.</p>
+        </div>
+        <div id="Localizzazioni" class="content">
+          <section id="map">
+            <div id="chartdiv"></div>
+          </section>
+        </div>
+        <div id="Relazioni" class="content">
+          <h2>Collaboratori</h2>
+          <ul>
+            <li>Bernès, Marouteau & C.ie (fotografo)</li>
+            <li>Braun & C.ie (fotografo)</li>
+            <li>Giraudon (fotografo)</li>
           </ul>
         </div>
-        <div class="content-card">
-          <div id="Bio" class="content active-content">
-            <p>Michele Lazzaroni (1863-1934), singolare figura di marchand-amateur, nonché collezionista e restauratore, è stata approfondita negli ultimi anni dagli studi di Elisabetta Sambo e Loredana Lorizzo. Nato a Roma nel 1863, si formò come pittore alla scuola dell'artista sivigliano Francisco Peralta del Campo ma intraprese ben presto una carriera nel campo dell'alta finanza divenendo il direttore della Banca Romana. Nel 1893 uno grosso scandalo travolse l'istituto bancario portando Lazzaroni a una condanna, scontata anche con una breve detenzione. Egli si rivolse quindi al mondo dell'antiquariato iniziando ad acquisire e a vendere opere, in parte destinate alla sua collezione privata, in parte rimesse sul mercato.</p>
-            <p>Lazzaroni esercitò la sua attività presso le proprie abitazioni: a Roma, in una Villa fatta costruire nel 1892 nel quartiere di Tor di Quinto che probabilmente lui stesso contribuì a decorare; a Parigi in un palazzo al numero 16 di Rue Spontini; a Nizza a Villa Madeleine, eretta all'inizio del XX secolo.</p>
-            <p>Fin dai primi anni del 1900 prese contatti con i maggiori storici dell'arte dell'epoca, in particolare Adolfo Venturi e Bernard Berenson, che utilizzò come consulenti e mediatori. Corredate dai loro expertises, che egli chiedeva di vergare sul retro di fotografie che si faceva realizzare da ditte quali Braun & Cie, Giraudon e Bernès, Marouteau & C.ie, i dipinti esaminati venivano proposti a collezionisti o ad alti agenti, in particolare alla casa Duveen, che procedeva a piazzarli sul mercato, soprattutto americano. Qualora il pezzo antico non fosse di qualità ritenuta sufficiente, Lazzaroni provvedeva, di suo pugno o tramite restauratori conniventi, a 'migliorarne' l'apparenza estetica, intervenendo anche con pesanti ridipinture. Tra i professionisti con cui collaborò ci furono in particolare Louis Vergetas (1882-1961), detto 'Verzetta', e Luigi Cavenaghi. Con le sue operazioni trattò e commerciò centinaia di dipinti finendo per saturare musei e collezioni d'oltreoceano di opere molto ritoccate e al limite della falsificazione, che trasmettevano un'immagine alterata del Rinascimento, creata ad hoc per compiacere la clientela.</p>
-            <p>Lazzaroni morì nel 1934. La sua collezione personale, già oggetto di due diverse alienazioni nel 1894 in occasione di un'asta <a href="dettaglio_CO_II.html" target="_blank"> Corvisieri </a>, e nel 1952 a Nizza, fu definitivamente dispersa in seguito a una vendita avvenuta nel 2003 a Roma. L'archivio fotografico fu ceduto dal figlio Edgardo allo Studio d'Arte Palma di Roma per tramite del restauratore Mario Modestini. Lì venne acquistato tra il 1946 e il 1949 da Federico Zeri che ne fece un nucleo importante della propria nascente fototeca.</p>
-          </div>
-          <div id="Persone" class="content">
-            <h3>Relazioni familiari:</h3>
-            <div id="albero-genealogico"></div>
-          </div>
-          <div id="Localizzazioni" class="content">
-            <section id="map">
-              <div id="chartdiv"></div>
-            </section>
-          </div>
-          <div id="Relazioni" class="content">
-            <h3>Altri antiquari:</h3>
-            <ul>
-            </ul>
-            <h3>Clienti:</h3>
-            <ul>
-            </ul>
-            <h3>Collaboratori:</h3>
-            <ul>
-              <li>Bernès, Marouteau & C.ie (fotografo)</li>
-              <li>Braun & C.ie (fotografo)</li>
-              <li>Giraudon (fotografo)</li>
-            </ul>
-          </div>
-          <div id="Bibliografia" class="content">
-            <h3>Bibliografia essenziale:</h3>
-            <ul>
-              <li>Domenico Corvisieri (1894), <i>Catalogue de la riche collection d'armes du Moyen Age et de la Renaissance et de rares objets d'art anciens et modernes appartenant a la liquidation du patrimoine de le baron M. A. Lazzaroni, dont la vente aux encheres publiques aura lieu a Rome sous la direction de M. Dominique Corvisieri Rome Impr. Edit. Romana, 1894.</i>, Roma 1894.</li>
-              <li>Lorizzo, L. (2015), <i>Un falso Rinascimento?: 2. il barone Michele Lazzaroni e la scultura</i>, In «Studiolo», 11, 2014, pp. 108-119, 301-302</li>
-              <li>Lorizzo, L. (2018), <i>L’arte di falsificare l’arte. Michele Lazzaroni e la Fototeca di Adolfo Venturi, in La fototeca di Adolfo Venturi alla Sapienza, catalogo della mostra, a cura di I. Schiaffini</i>, Roma, pp. 85-94</li>
-              <li>Sambo, E. (2014), <i>«Braun & C.ie» nelle commissioni Lazzaroni, in I colori del bianco e nero: fotografie storiche nella Fototeca Zeri 1870 - 1920, a cura di Bacchi, A., Mambelli, F., Rossini,  M., Sambo, E.</i>, Bologna, Fondazione Federico Zeri, pp. 133-138</li>
-              <li>Sambo, E. (2015), <i>Un falso Rinascimento?: 1. Michele Lazzaroni (1863-1934), tra contraffazione e restauro</i>, In «Studiolo», 11, 2014, pp. 94-107, 301-302</li>
-              <li>Terris, J. J. (1952), <i>Catalogue des meubles et objets d'art anciens et modernes, très important tableaux ... très nombreuses sculptures ... provenant des collections des Barons Lazzaroni et garnissant la Villa Madeleine ... Nice : vente ... sur lieu ... lundi 16 ... samedi 21 juin 1952. [S.l. s.n.]</i>, 1952</li>
-            </ul>
-          </div>
-          <div id="Opere trattate" class="content">
-            <p>
-              Vedi le opere transitate presso l'antiquario presenti nel 
-              <a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=lazzaroni" class="linkBio" target="_blank">
-                catalogo della Fondazione Zeri
-              </a>
-            </p>
-          </div>
+        <div id="Bibliografia" class="content">
+          <h2>Bibliografia essenziale</h2>
+          <ul>
+            <li>Domenico Corvisieri (1894), <i>Catalogue de la riche collection d'armes du Moyen Age et de la Renaissance et de rares objets d'art anciens et modernes appartenant a la liquidation du patrimoine de le baron M. A. Lazzaroni, dont la vente aux encheres publiques aura lieu a Rome sous la direction de M. Dominique Corvisieri Rome Impr. Edit. Romana, 1894.</i>, Roma 1894.</li>
+            <li>Lorizzo, L. (2015), <i>Un falso Rinascimento?: 2. il barone Michele Lazzaroni e la scultura</i>, In «Studiolo», 11, 2014, pp. 108-119, 301-302</li>
+            <li>Lorizzo, L. (2018), <i>L’arte di falsificare l’arte. Michele Lazzaroni e la Fototeca di Adolfo Venturi, in La fototeca di Adolfo Venturi alla Sapienza, catalogo della mostra, a cura di I. Schiaffini</i>, Roma, pp. 85-94</li>
+            <li>Sambo, E. (2014), <i>«Braun & C.ie» nelle commissioni Lazzaroni, in I colori del bianco e nero: fotografie storiche nella Fototeca Zeri 1870 - 1920, a cura di Bacchi, A., Mambelli, F., Rossini,  M., Sambo, E.</i>, Bologna, Fondazione Federico Zeri, pp. 133-138</li>
+            <li>Sambo, E. (2015), <i>Un falso Rinascimento?: 1. Michele Lazzaroni (1863-1934), tra contraffazione e restauro</i>, In «Studiolo», 11, 2014, pp. 94-107, 301-302</li>
+            <li>Terris, J. J. (1952), <i>Catalogue des meubles et objets d'art anciens et modernes, très important tableaux ... très nombreuses sculptures ... provenant des collections des Barons Lazzaroni et garnissant la Villa Madeleine ... Nice : vente ... sur lieu ... lundi 16 ... samedi 21 juin 1952. [S.l. s.n.]</i>, 1952</li>
+          </ul>
         </div>
       </div>
+      <nav class="scheda-sfoglia" aria-label="Altre schede">
+        <a href="dettaglio_LA_I.html">&#8592; Lapicirella</a>
+        <a href="dettaglio_LO.html">Loewi &#8594;</a>
+      </nav>
     </main>
     <footer>
       <div class="footer-container">

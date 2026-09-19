@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dettaglio Antiquari</title>
+    <title>Pollak | Mercato dell'arte</title>
+    <meta name="description" content="Pollak: scheda dell'entità antiquariale nel progetto Mercato dell'arte della Fondazione Federico Zeri." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet" />
@@ -39,136 +40,147 @@
         </nav>
       </div>
     </header>
-    <main>
-      <section id="image-gallery">
-        <div class="gallery-wrapper">
-          <h2 class="gallery-title">Pollak</h2>
-          <div class="slider-container">
-            <div class="slider">
-              <div class="slide">
-                <img src="../../img/slider-antiquari/PO_III_img1.jpg" alt="Fotoritratto di Ludwig Pollak contenuta nell’album per celebrare i settant’anni del Prof. Eugen Bormann, 1912 ca." />
-                <div class="caption">Fotoritratto di Ludwig Pollak contenuta nell’album per celebrare i settant’anni del Prof. Eugen Bormann, 1912 ca.</div>
-              </div>
-              <div class="slide">
-                <img src="../../img/slider-antiquari/PO_III_img2.jpg" alt="Ludwig Pollak nel suo studio a Palazzo Odescalchi in piazza Santi Apostoli, 1935-1943" />
-                <div class="caption">Ludwig Pollak nel suo studio a Palazzo Odescalchi in piazza Santi Apostoli, 1935-1943</div>
-              </div>
-              <div class="slide">
-                <img src="../../img/slider-antiquari/PO_IIII_img3.jpg" alt="{'Pollak'}" />
-                <div class="caption">{'Pollak'}</div>
-              </div>
+    <main class="scheda">
+      <div class="scheda-torna">
+        <a href="../antiquari.html">&#8592; Tutti gli antiquari</a>
+      </div>
+      <section class="scheda-fascia">
+        <div class="scheda-fascia-testo">
+          <h1 class="scheda-nome">Pollak</h1>
+          <p class="scheda-sottotitolo">Roma, entità attiva dal 1903 al 1943</p>
+        </div>
+        <div class="slider-container">
+          <div class="slider">
+            <div class="slide">
+              <img src="../../img/slider-antiquari/PO_III_img1.jpg" alt="Fotoritratto di Ludwig Pollak contenuta nell’album per celebrare i settant’anni del Prof. Eugen Bormann, 1912 ca." />
+              <div class="caption">Fotoritratto di Ludwig Pollak contenuta nell’album per celebrare i settant’anni del Prof. Eugen Bormann, 1912 ca.</div>
             </div>
-            <button &#10094; class="prev" onclick="prevSlide()"><</button>
-            <button &#10095; class="next" onclick="nextSlide()">></button>
+            <div class="slide">
+              <img src="../../img/slider-antiquari/PO_III_img2.jpg" alt="Ludwig Pollak nel suo studio a Palazzo Odescalchi in piazza Santi Apostoli, 1935-1943" />
+              <div class="caption">Ludwig Pollak nel suo studio a Palazzo Odescalchi in piazza Santi Apostoli, 1935-1943</div>
+            </div>
+            <div class="slide">
+              <img src="../../img/slider-antiquari/PO_IIII_img3.jpg" alt="Pollak" />
+              <div class="caption">Pollak</div>
+            </div>
           </div>
+          <button class="prev" onclick="prevSlide()" type="button">&#10094;</button>
+          <button class="next" onclick="nextSlide()" type="button">&#10095;</button>
         </div>
       </section>
-      <div class="dual-content-wrapper">
-        <div class="tab-container">
-          <ul class="tab-list">
-            <li class="tab active" data_content="Bio">Dati biografici</li>
-            <li class="tab" data_content="Persone">Albero familiare</li>
-            <li class="tab" data_content="Localizzazioni">Luoghi</li>
-            <li class="tab" data_content="Relazioni">Relazioni</li>
-            <li class="tab" data_content="Eventi">Eventi</li>
-            <li class="tab" data_content="Bibliografia">Bibliografia</li>
-            <li class="tab" data_content="Opere trattate">Opere trattate</li>
+      <section class="scheda-dati">
+        <dl class="scheda-record">
+          <dt>PERSONA</dt>
+          <dd>Adolph (Adolfo) Pollak, 1868–1943, antiquario</dd>
+          <dt>SEDI</dt>
+          <dd>via del Tritone 183, Roma · 1903–1927<br>piazza Santi Apostoli 81, Roma · 1927–1943</dd>
+          <dt>IN CATALOGO</dt>
+          <dd><a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Pollak" class="linkBio" target="_blank">Opere transitate, catalogo della Fondazione Zeri &#8594;</a></dd>
+        </dl>
+      </section>
+      <nav class="scheda-tab" aria-label="Sezioni della scheda">
+        <button class="tab active" type="button" data_content="Bio">
+          Dati biografici
+        </button>
+        <button class="tab" type="button" data_content="Localizzazioni">
+          Luoghi
+          <span class="tab-num">2</span>
+        </button>
+        <button class="tab" type="button" data_content="Relazioni">
+          Relazioni
+          <span class="tab-num">19</span>
+        </button>
+        <button class="tab" type="button" data_content="Eventi">
+          Eventi
+          <span class="tab-num">7</span>
+        </button>
+        <button class="tab" type="button" data_content="Bibliografia">
+          Bibliografia
+          <span class="tab-num">2</span>
+        </button>
+      </nav>
+      <div class="scheda-contenuto">
+        <div id="Bio" class="content active-content">
+          <p>Ludwig Pollak, nato a Praga nel 1868 e morto ad Auschwitz nel 1943, è stato uno dei più importanti connoisseurs, mercanti d’arte e collezionisti vissuti tra Otto e Novecento. Proveniente da una famiglia ebrea di commercianti di tessuti, trascorse l’infanzia e l’adolescenza nel ghetto di Praga per poi formarsi in Archeologia e Filologia classica presso le Università di Praga e Vienna.</p>
+          <p>Nel 1893, dopo averla visitata, Pollak decise di trasferirsi stabilmente a Roma, che definì la sua ‹‹alpha e omega›› e ‹‹Mecca del Sud››. Nella capitale del Regno d’Italia, strinse importanti rapporti professionali con alcuni dei principali rappresentanti dell’élite culturale cittadina, grazie al legame con Emanuel Löwy, il primo professore a ricoprire, dal 1889, la cattedra di Archeologia e Storia dell’arte antica all’Università Sapienza.</p>
+          <p>Dall’inizio del Novecento, curò numerosi cataloghi di collezioni private, come quello dedicato alla raccolta di oreficeria bizantina dell’ambasciatore russo in Italia von Nelidow, edito Lipsia nel 1903 (il Klassisch-Antike Goldschmiedearbeiten im Besitze Sr. Excellenz A. J. von Nelidow) o il Catalogo del Museo di Scultura Antica del senatore Giovanni Barraco (1910), o ancora, con Antonio Muñoz, il primo volume del lussuoso Pièces des choix de la collection du Comte Grégoire Stroganoff à Rome dedicato alla collezione Stroganoff, pubblicato a Parigi nel 1912.</p>
+          <p>Ludwig Pollak affiancò allo studio un’intensa attività di art dealer che subì una sensibile svolta nel 1902 quando, all’asta della collezione Guidi di Faenza, tenutasi a Roma, incontrò Wilhelm Bode. Quest'ultimo, interessato all’acquisto di opere di epoca medievale e rinascimentale di scuola romana e meridionale per implementare le collezioni del Kaiser-Friedrich-Museum, divenne il suo principale cliente. Ne resta una viva testimonianza nelle oltre 360 lettere che Pollak scrisse a Bode dal 1902 e il 1929, così come nei documenti di trasporto a cura di varie ditte specializzate, da Carl Stein, Roesler Franz & Figli e Tartaglia a Roma, a Gustav Knauer, Leinkauf e Matthias Rohde & Co. in Germania, che sono conservati presso l’Archivio centrale dei Musei Statali di Berlino.</p>
+          <p>Oltre a Bode, figuravano tra i clienti di Pollak i più importanti collezionisti dell’epoca, come John Pierpont Morgan, Carl Jacobsen, John Marshall, Edmond de Rothschild, Sigmund Freud, e anche il giovane Denis Mahon.</p>
+          <p>Pollak divenne celebre nella comunità scientifica per il ritrovamento, presso la bottega di uno scalpellino romano sull’Esquilino, del braccio destro originale del Laocoonte vaticano, che gli valse il prestigioso riconoscimento della Gran Croce alla Cultura da parte di papa Pio X e per il riconoscimento del valore della cosiddetta ‹‹Athena Stroganoff››, replica romana in marmo dell’Atena bronzea di Mirone che decorava l’Acropoli di Atene.</p>
+          <p>Grazie alla sua abilità di mercante e conoscitore, raggiunse una posizione agiata e visse in sontuose residenze romane, come Palazzo Alberoni Bacchettoni in via del Tritone e, dal 1927 al 1943, a Palazzo Odescalchi in piazza Santi Apostoli, dove espose anche alcuni dei pezzi più prestigiosi della sua collezione di sculture, dipinti, bozzetti in terracotta e disegni di Old masters.</p>
+          <p>Gli anni d’oro si interruppero con lo scoppio della Prima Guerra mondiale, che lo costrinse a riparare in Svizzera e poi a Vienna. Fece ritorno a Roma solo alcuni anni dopo, riprendendo la sua attività nel mercato dell’arte, ma con un tenore minore rispetto al primo decennio del Novecento. Il crescente sentimento antisemita e le leggi razziali entrate in vigore nel 1939 determinarono un clima di sospetto sulla sua attività, che si ridusse progressivamente, oltre a causargli, nel 1935, il doloroso allontanamento dalla Biblioteca Hertziana, per lui una seconda casa.</p>
+          <p>Tentò, in quegli anni, di ricoverare in depositi all’estero alcune delle sue opere più importanti, come un prezioso nucleo di sculture greche e romane (oggi presso il Musée d’ Art et d’Histoire di Ginevra). Al contempo, cercò di venderne all’asta altre, come è testimoniato dai cataloghi delle case di vendita di Palazzo Simonetti e “L’Antonina” del 1942 e del 1943.</p>
+          <p>Il 16 ottobre 1943, insieme alla moglie Julia e i figli Susanna e Wolfgang, fu vittima del tragico rastrellamento nazifascista del Ghetto di Roma.</p>
+          <p>Dopo la morte di Pollak e della sua famiglia, quanto rimase della sua collezione, della biblioteca e dei suoi Diari (che, compilati costantemente dal 18 luglio 1886, si interrompono al 31 dicembre 1934, per la dispersione dei successivi nel rastrellamento), fu in parte donato ai Musei del Comune di Roma dalla cognata Margaret Süssmann Nicod. Il nucleo principale si trova oggi presso il Museo di Scultura Antica Giovanni Barracco.</p>
+          <p>Altre opere, soprattutto pregevoli disegni di artisti italiani dal XVI al XVIII secolo, sono state vendute sul mercato e ancora oggi compaiono alle aste internazionali.</p>
+          <p>Un tentativo di ricostruzione della collezione di Ludwig Pollak è in corso di pubblicazione a cura di chi scrive.</p>
+        </div>
+        <div id="Localizzazioni" class="content">
+          <section id="map">
+            <div id="chartdiv"></div>
+          </section>
+        </div>
+        <div id="Relazioni" class="content">
+          <h2>Altri antiquari</h2>
+          <ul>
+            <li>
+              <a href="dettaglio_BA_III.html">Barsanti</a>
+            </li>
+            <li>
+              <a href="dettaglio_JA.html">Jandolo</a>
+            </li>
+            <li>
+              <a href="dettaglio_SI.html">Simonetti</a>
+            </li>
+            <li>
+              <a href="dettaglio_JA-TA.html">Jandolo-Tavazzi</a>
+            </li>
+            <li>
+              <a href="dettaglio_SA_IV.html">Sangiorgi</a>
+            </li>
+          </ul>
+          <h2>Collaboratori</h2>
+          <ul>
+            <li>Alinari (fotografo)</li>
+            <li>Ditta Danubio società anonima (compagnia di assicurazioni)</li>
+            <li>Otto H. W. Internationale Transporte  (ditta di trasporti)</li>
+            <li>Tartaglia & Co.  (ditta di trasporti)</li>
+            <li>A. Fauconnet (ditta di trasporti)</li>
+            <li>Antonio Muñoz (storico dell'arte)</li>
+            <li>Carl Stein (ditta di trasporti)</li>
+            <li>Cesare Faraglia (fotografo)</li>
+            <li>Cosimo Boccardi (fotografo)</li>
+            <li>Ettore e figli Roesler Franz (ditta di trasporti)</li>
+            <li>Guido Libertini (archeologo)</li>
+            <li>Gustav Knauer (ditta di trasporti)</li>
+            <li>Oscar Savio (fotografo)</li>
+            <li>Remo Lizzani (ditta di deposito)</li>
           </ul>
         </div>
-        <div class="content-card">
-          <div id="Bio" class="content active-content">
-            <p>Ludwig Pollak, nato a Praga nel 1868 e morto ad Auschwitz nel 1943, è stato uno dei più importanti connoisseurs, mercanti d’arte e collezionisti vissuti tra Otto e Novecento. Proveniente da una famiglia ebrea di commercianti di tessuti, trascorse l’infanzia e l’adolescenza nel ghetto di Praga per poi formarsi in Archeologia e Filologia classica presso le Università di Praga e Vienna.</p>
-            <p>Nel 1893, dopo averla visitata, Pollak decise di trasferirsi stabilmente a Roma, che definì la sua ‹‹alpha e omega›› e ‹‹Mecca del Sud››. Nella capitale del Regno d’Italia, strinse importanti rapporti professionali con alcuni dei principali rappresentanti dell’élite culturale cittadina, grazie al legame con Emanuel Löwy, il primo professore a ricoprire, dal 1889, la cattedra di Archeologia e Storia dell’arte antica all’Università Sapienza.</p>
-            <p>Dall’inizio del Novecento, curò numerosi cataloghi di collezioni private, come quello dedicato alla raccolta di oreficeria bizantina dell’ambasciatore russo in Italia von Nelidow, edito Lipsia nel 1903 (il Klassisch-Antike Goldschmiedearbeiten im Besitze Sr. Excellenz A. J. von Nelidow) o il Catalogo del Museo di Scultura Antica del senatore Giovanni Barraco (1910), o ancora, con Antonio Muñoz, il primo volume del lussuoso Pièces des choix de la collection du Comte Grégoire Stroganoff à Rome dedicato alla collezione Stroganoff, pubblicato a Parigi nel 1912.</p>
-            <p>Ludwig Pollak affiancò allo studio un’intensa attività di art dealer che subì una sensibile svolta nel 1902 quando, all’asta della collezione Guidi di Faenza, tenutasi a Roma, incontrò Wilhelm Bode. Quest'ultimo, interessato all’acquisto di opere di epoca medievale e rinascimentale di scuola romana e meridionale per implementare le collezioni del Kaiser-Friedrich-Museum, divenne il suo principale cliente. Ne resta una viva testimonianza nelle oltre 360 lettere che Pollak scrisse a Bode dal 1902 e il 1929, così come nei documenti di trasporto a cura di varie ditte specializzate, da Carl Stein, Roesler Franz & Figli e Tartaglia a Roma, a Gustav Knauer, Leinkauf e Matthias Rohde & Co. in Germania, che sono conservati presso l’Archivio centrale dei Musei Statali di Berlino.</p>
-            <p>Oltre a Bode, figuravano tra i clienti di Pollak i più importanti collezionisti dell’epoca, come John Pierpont Morgan, Carl Jacobsen, John Marshall, Edmond de Rothschild, Sigmund Freud, e anche il giovane Denis Mahon.</p>
-            <p>Pollak divenne celebre nella comunità scientifica per il ritrovamento, presso la bottega di uno scalpellino romano sull’Esquilino, del braccio destro originale del Laocoonte vaticano, che gli valse il prestigioso riconoscimento della Gran Croce alla Cultura da parte di papa Pio X e per il riconoscimento del valore della cosiddetta ‹‹Athena Stroganoff››, replica romana in marmo dell’Atena bronzea di Mirone che decorava l’Acropoli di Atene.</p>
-            <p>Grazie alla sua abilità di mercante e conoscitore, raggiunse una posizione agiata e visse in sontuose residenze romane, come Palazzo Alberoni Bacchettoni in via del Tritone e, dal 1927 al 1943, a Palazzo Odescalchi in piazza Santi Apostoli, dove espose anche alcuni dei pezzi più prestigiosi della sua collezione di sculture, dipinti, bozzetti in terracotta e disegni di Old masters.</p>
-            <p>Gli anni d’oro si interruppero con lo scoppio della Prima Guerra mondiale, che lo costrinse a riparare in Svizzera e poi a Vienna. Fece ritorno a Roma solo alcuni anni dopo, riprendendo la sua attività nel mercato dell’arte, ma con un tenore minore rispetto al primo decennio del Novecento. Il crescente sentimento antisemita e le leggi razziali entrate in vigore nel 1939 determinarono un clima di sospetto sulla sua attività, che si ridusse progressivamente, oltre a causargli, nel 1935, il doloroso allontanamento dalla Biblioteca Hertziana, per lui una seconda casa.</p>
-            <p>Tentò, in quegli anni, di ricoverare in depositi all’estero alcune delle sue opere più importanti, come un prezioso nucleo di sculture greche e romane (oggi presso il Musée d’ Art et d’Histoire di Ginevra). Al contempo, cercò di venderne all’asta altre, come è testimoniato dai cataloghi delle case di vendita di Palazzo Simonetti e “L’Antonina” del 1942 e del 1943.</p>
-            <p>Il 16 ottobre 1943, insieme alla moglie Julia e i figli Susanna e Wolfgang, fu vittima del tragico rastrellamento nazifascista del Ghetto di Roma.</p>
-            <p>Dopo la morte di Pollak e della sua famiglia, quanto rimase della sua collezione, della biblioteca e dei suoi Diari (che, compilati costantemente dal 18 luglio 1886, si interrompono al 31 dicembre 1934, per la dispersione dei successivi nel rastrellamento), fu in parte donato ai Musei del Comune di Roma dalla cognata Margaret Süssmann Nicod. Il nucleo principale si trova oggi presso il Museo di Scultura Antica Giovanni Barracco.</p>
-            <p>Altre opere, soprattutto pregevoli disegni di artisti italiani dal XVI al XVIII secolo, sono state vendute sul mercato e ancora oggi compaiono alle aste internazionali.</p>
-            <p>Un tentativo di ricostruzione della collezione di Ludwig Pollak è in corso di pubblicazione a cura di chi scrive.</p>
-          </div>
-          <div id="Persone" class="content">
-            <h3>Relazioni familiari:</h3>
-            <div id="albero-genealogico"></div>
-          </div>
-          <div id="Localizzazioni" class="content">
-            <section id="map">
-              <div id="chartdiv"></div>
-            </section>
-          </div>
-          <div id="Eventi" class="content">
-            <h3>Eventi significativi nell'attività antiquariale:</h3>
-            <ul>
-              <li>1905 - <i>Articolo "Der rechte Arm des Laokoon"</i>: Articolo dedicato al sensazionale ritrovamento del braccio destro originale del Laocoonte vaticano uscito su «Mitteilungen des Deutschen Archäologischen Instituts, Römische Abteilung» </li>
-              <li>1905 - <i>Catalogo "Joseph v. Kopf als Sammler. Beschreibung der von ihm hinterlassenen Sammlung"</i>: Pollak cura il catalogo dedicato alla collezione dello scultore Joseph Kopf</li>
-              <li>1906 - <i>Donazione a Pio X del braccio destro originale del Laocoonte vaticano</i>: Pollak per questo gesto è il primo ebreo ad essere insignito della Gran Croce alla Cultura da parte di un pontefice</li>
-              <li>1908 - <i>Vendita dell'Athena Stroganoff alla Liebieghaus di Francoforte sul Meno</i>: Pollak vende con regolare permesso di esportazione la scultura "Athena Stroganoff" che suscitò molti malumori tra gli addetti ai lavori</li>
-              <li>1910 - <i>Pubblicazione del "Catalogo del Museo di Scultura Antica. Fondazione Barracco"</i>: Pollak pubblica il catalogo della collezione Barracco insieme al suo proprietario, il senatore Giovanni Barracco</li>
-              <li>1912 - <i>Pubblicazione di "Pièces des choix de la collection du Comte Grégoire Stroganoff"</i>: Pollak pubblica il catalogo della celebre collezione del conte russo Grigorij pubblicato insieme al bizantinista Antonio Muñoz</li>
-              <li>1922 - <i>Pubblicazione della Raccolta Alfredo Barsanti, con prefazione di Guglielmo Bode</i>: Pollak pubblica il catalogo dei bronzetti rinascimentali della collezione dell'antiquario Alfredo Barsanti con prefazione di Wilhelm von Bode</li>
-            </ul>
-          </div>
-          <div id="Relazioni" class="content">
-            <h3>Altri antiquari:</h3>
-            <ul>
-              <li>
-                <a href="dettaglio_BA_III.html">Barsanti</a>
-              </li>
-              <li>
-                <a href="dettaglio_JA.html">Jandolo</a>
-              </li>
-              <li>
-                <a href="dettaglio_SI.html">Simonetti</a>
-              </li>
-              <li>
-                <a href="dettaglio_JA-TA.html">Jandolo-Tavazzi</a>
-              </li>
-              <li>
-                <a href="dettaglio_SA_IV.html">Sangiorgi</a>
-              </li>
-            </ul>
-            <h3>Clienti:</h3>
-            <ul>
-            </ul>
-            <h3>Collaboratori:</h3>
-            <ul>
-              <li>Alinari (fotografo)</li>
-              <li>Ditta Danubio società anonima (compagnia di assicurazioni)</li>
-              <li>Otto H. W. Internationale Transporte  (ditta di trasporti)</li>
-              <li>Tartaglia & Co.  (ditta di trasporti)</li>
-              <li>A. Fauconnet (ditta di trasporti)</li>
-              <li>Antonio Muñoz (storico dell'arte)</li>
-              <li>Carl Stein (ditta di trasporti)</li>
-              <li>Cesare Faraglia (fotografo)</li>
-              <li>Cosimo Boccardi (fotografo)</li>
-              <li>Ettore e figli Roesler Franz (ditta di trasporti)</li>
-              <li>Guido Libertini (archeologo)</li>
-              <li>Gustav Knauer (ditta di trasporti)</li>
-              <li>Oscar Savio (fotografo)</li>
-              <li>Remo Lizzani (ditta di deposito)</li>
-            </ul>
-          </div>
-          <div id="Bibliografia" class="content">
-            <h3>Bibliografia essenziale:</h3>
-            <ul>
-              <li>Jandolo, A. (1935), <i>Le memorie di un antiquario</i>, Milano, Ceschina</li>
-              <li>Pollak, L., Merkel Guldan, M. (1994), <i>Römische Memoiren : Künstler, Kunstliebhaber und Gelehrte, 1893-1943</i>, Roma, L'Erma di Bretschneider</li>
-            </ul>
-          </div>
-          <div id="Opere trattate" class="content">
-            <p>
-              Vedi le opere transitate presso l'antiquario presenti nel 
-              <a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Pollak" class="linkBio" target="_blank">
-                catalogo della Fondazione Zeri
-              </a>
-            </p>
-          </div>
+        <div id="Eventi" class="content">
+          <h2>Eventi significativi nell'attività antiquariale</h2>
+          <ul>
+            <li>1905 - <i>Articolo "Der rechte Arm des Laokoon"</i>: Articolo dedicato al sensazionale ritrovamento del braccio destro originale del Laocoonte vaticano uscito su «Mitteilungen des Deutschen Archäologischen Instituts, Römische Abteilung» </li>
+            <li>1905 - <i>Catalogo "Joseph v. Kopf als Sammler. Beschreibung der von ihm hinterlassenen Sammlung"</i>: Pollak cura il catalogo dedicato alla collezione dello scultore Joseph Kopf</li>
+            <li>1906 - <i>Donazione a Pio X del braccio destro originale del Laocoonte vaticano</i>: Pollak per questo gesto è il primo ebreo ad essere insignito della Gran Croce alla Cultura da parte di un pontefice</li>
+            <li>1908 - <i>Vendita dell'Athena Stroganoff alla Liebieghaus di Francoforte sul Meno</i>: Pollak vende con regolare permesso di esportazione la scultura "Athena Stroganoff" che suscitò molti malumori tra gli addetti ai lavori</li>
+            <li>1910 - <i>Pubblicazione del "Catalogo del Museo di Scultura Antica. Fondazione Barracco"</i>: Pollak pubblica il catalogo della collezione Barracco insieme al suo proprietario, il senatore Giovanni Barracco</li>
+            <li>1912 - <i>Pubblicazione di "Pièces des choix de la collection du Comte Grégoire Stroganoff"</i>: Pollak pubblica il catalogo della celebre collezione del conte russo Grigorij pubblicato insieme al bizantinista Antonio Muñoz</li>
+            <li>1922 - <i>Pubblicazione della Raccolta Alfredo Barsanti, con prefazione di Guglielmo Bode</i>: Pollak pubblica il catalogo dei bronzetti rinascimentali della collezione dell'antiquario Alfredo Barsanti con prefazione di Wilhelm von Bode</li>
+          </ul>
+        </div>
+        <div id="Bibliografia" class="content">
+          <h2>Bibliografia essenziale</h2>
+          <ul>
+            <li>Jandolo, A. (1935), <i>Le memorie di un antiquario</i>, Milano, Ceschina</li>
+            <li>Pollak, L., Merkel Guldan, M. (1994), <i>Römische Memoiren : Künstler, Kunstliebhaber und Gelehrte, 1893-1943</i>, Roma, L'Erma di Bretschneider</li>
+          </ul>
         </div>
       </div>
+      <nav class="scheda-sfoglia" aria-label="Altre schede">
+        <a href="dettaglio_PO_I.html">&#8592; Podio</a>
+        <a href="dettaglio_PO_II.html">Pospisil &#8594;</a>
+      </nav>
     </main>
     <footer>
       <div class="footer-container">

@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dettaglio Antiquari</title>
+    <title>Rambaldi | Mercato dell'arte</title>
+    <meta name="description" content="Rambaldi: scheda dell'entità antiquariale nel progetto Mercato dell'arte della Fondazione Federico Zeri." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet" />
@@ -39,99 +40,120 @@
         </nav>
       </div>
     </header>
-    <main>
-      <section id="image-gallery">
-        <div class="gallery-wrapper">
-          <h2 class="gallery-title">Rambaldi</h2>
-          <div class="slider-container">
-            <div class="slider">
-              <div class="slide">
-                <img src="../../img/slider-antiquari/RA_img1.jpg" alt="Arturo Rambaldi. Da &quot;L'Antiquario&quot;, 1913" />
-                <div class="caption">Arturo Rambaldi. Da "L'Antiquario", 1913</div>
-              </div>
-              <div class="slide">
-                <img src="../../img/slider-antiquari/RA_NEW_img1.jpg" alt="{'Rambaldi'}" />
-                <div class="caption">{'Rambaldi'}</div>
-              </div>
+    <main class="scheda">
+      <div class="scheda-torna">
+        <a href="../antiquari.html">&#8592; Tutti gli antiquari</a>
+      </div>
+      <section class="scheda-fascia">
+        <div class="scheda-fascia-testo">
+          <h1 class="scheda-nome">Rambaldi</h1>
+          <p class="scheda-sottotitolo">Bologna, entità attiva dal 1900 al 1929</p>
+        </div>
+        <div class="slider-container">
+          <div class="slider">
+            <div class="slide">
+              <img src="../../img/slider-antiquari/RA_img1.jpg" alt="Arturo Rambaldi. Da &quot;L'Antiquario&quot;, 1913" />
+              <div class="caption">Arturo Rambaldi. Da "L'Antiquario", 1913</div>
             </div>
-            <button &#10094; class="prev" onclick="prevSlide()"><</button>
-            <button &#10095; class="next" onclick="nextSlide()">></button>
+            <div class="slide">
+              <img src="../../img/slider-antiquari/RA_NEW_img1.jpg" alt="Rambaldi" />
+              <div class="caption">Rambaldi</div>
+            </div>
           </div>
+          <button class="prev" onclick="prevSlide()" type="button">&#10094;</button>
+          <button class="next" onclick="nextSlide()" type="button">&#10095;</button>
         </div>
       </section>
-      <div class="dual-content-wrapper">
-        <div class="tab-container">
-          <ul class="tab-list">
-            <li class="tab active" data_content="Bio">Dati biografici</li>
-            <li class="tab" data_content="Persone">Albero familiare</li>
-            <li class="tab" data_content="Localizzazioni">Luoghi</li>
-            <li class="tab" data_content="Relazioni">Relazioni</li>
-            <li class="tab" data_content="Eventi">Eventi</li>
-            <li class="tab" data_content="Bibliografia">Bibliografia</li>
-            <li class="tab" data_content="Opere trattate">Opere trattate</li>
+      <section class="scheda-dati">
+        <dl class="scheda-record">
+          <dt>PERSONE</dt>
+          <dd>Arturo Rambaldi, 1859–1929, antiquario<br>Angelo Rambaldi, 1883–?, antiquario<br>Aldo Rambaldi, 1885–1964, antiquario<br>Olga Tcherukine, 1901–?, antiquario</dd>
+          <dt>INSEGNE</dt>
+          <dd>Galleria di Antichità e casa di vendite A. Rambaldi<br>Galleria A. Rambaldi</dd>
+          <dt>SEDI</dt>
+          <dd>Via Castiglione 1, Bologna · 1900 ca.–1929<br>Via Castiglione 1, Bologna · 1900 ca.–1929<br>Via Castiglione 1, Bologna · 1900 ca.–1929<br>e altre 1 sedi, nella scheda Luoghi</dd>
+          <dt>IN CATALOGO</dt>
+          <dd><a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=A.+Rambaldi" class="linkBio" target="_blank">Opere transitate, catalogo della Fondazione Zeri &#8594;</a></dd>
+        </dl>
+      </section>
+      <nav class="scheda-tab" aria-label="Sezioni della scheda">
+        <button class="tab active" type="button" data_content="Bio">
+          Dati biografici
+        </button>
+        <button class="tab" type="button" data_content="Persone">
+          Albero familiare
+          <span class="tab-num">4</span>
+        </button>
+        <button class="tab" type="button" data_content="Localizzazioni">
+          Luoghi
+          <span class="tab-num">4</span>
+        </button>
+        <button class="tab" type="button" data_content="Relazioni">
+          Relazioni
+          <span class="tab-num">6</span>
+        </button>
+        <button class="tab" type="button" data_content="Eventi">
+          Eventi
+          <span class="tab-num">2</span>
+        </button>
+        <button class="tab" type="button" data_content="Bibliografia">
+          Bibliografia
+          <span class="tab-num">3</span>
+        </button>
+      </nav>
+      <div class="scheda-contenuto">
+        <div id="Bio" class="content active-content">
+          <p>Arturo Rambaldi (1859-1929) intraprese la carriera di mercante d’arte a Bologna sotto l’egida del collega più anziano <a href="dettaglio_AN.html" target="_blank">Raffaele Angiolini</a> per poi aprire, nel 1900, la propria galleria antiquaria e casa di vendite, in via Castiglione 1. Demetrio Tolosani, sulle pagine della rivista "L'Antiquario", lo descrive come specializzato negli arredi antichi. Dal 1926 ne avviò infatti anche la produzione in stile, con un laboratorio autonomo di falegnameria sito al piano terra del palazzo che ospitava la sua galleria. Con i manufatti realizzati riforniva, tra gli altri, il genero <a href="dettaglio_IM.html" target="_blank">Eugène Imbert</a> attivo a Milano in via Napoleone.</p>
+          <p>Per le necessità della galleria e del laboratorio, Arturo Rambaldi ebbe tra i suoi collaboratori l’esperto di intaglio ligneo Giuseppe Simoni che la Prima Guerra mondiale allontanò dal laboratorio di produzione con grande disagio della ditta, oltre al pittore e restauratore ferrarese Augusto Pagliarini (1872-1960) e al falegname Giuseppe Alberani. Nel 1921, questi ultimi furono inviati a Vienna per mettere in opera e restaurare diversi soffitti che il finanziere, collezionista d’arte e di bronzi, Camillo Castiglioni, aveva da lui acquistato per il proprio palazzo in Prinz Eugen Strasse.</p>
+          <p>Arturo viaggiò molto all’estero per acquistare opere e organizzò alcune vendite all’asta importanti, come quella della collezione bolognese Gozzadini, tenutasi nell'omonimo palazzo nel 1906, e quella della raccolta Podestà-Luciardi negli spazi della galleria nel 1909. A Venezia, nel 1913, si occupò anche di quella dell’antiquario <a href="dettaglio_GU.html" target="_blank">Michelangelo Guggenheim</a>, in collaborazione con l’antiquario Hugo Helbing di Monaco di Baviera.</p>
+          <p>Per motivi di salute, nel 1927, lasciò l’attività ai figli Angelo (1883-) e Aldo (1885-1964) che portarono avanti la ditta con il nome di “Galleria A. Rambaldi” anche dopo la sua morte. Angelo, Aldo e la sorella Alberta viaggiavano in Italia ed Europa per procacciare opere da vendere e sappiamo dalle carte d’archivio della Camera di Commercio cittadina che un collaboratore, tale Daniele Ferné, nel 1930 fu inviato in Cina, India, Giappone, Indocina e Russia allo stesso scopo. Nel 1938, i fratelli cessarono “l’industria del legno” con la chiusura del laboratorio, per dedicarsi esclusivamente all’attività antiquariale.</p>
+          <p>Nel 1966, morto Aldo, Angelo Rambaldi cessò l’impresa di famiglia che fu rilevata dalla vedova di Aldo Rambaldi, Olga Tcherukine, originaria di Kiev (1901-).</p>
+        </div>
+        <div id="Persone" class="content">
+          <h2>Relazioni familiari</h2>
+          <div id="albero-genealogico"></div>
+        </div>
+        <div id="Localizzazioni" class="content">
+          <section id="map">
+            <div id="chartdiv"></div>
+          </section>
+        </div>
+        <div id="Relazioni" class="content">
+          <h2>Altri antiquari</h2>
+          <ul>
+            <li>
+              <a href="dettaglio_IM.html">Imbert</a>
+            </li>
+          </ul>
+          <h2>Collaboratori</h2>
+          <ul>
+            <li>Augusto Pagliarini (restauratore)</li>
+            <li>Daniele Ferné (agente)</li>
+            <li>Giuseppe Alberani (falegname)</li>
+            <li>Giuseppe Simoni (intagliatore)</li>
+            <li>Hugo Helbing (impresario)</li>
           </ul>
         </div>
-        <div class="content-card">
-          <div id="Bio" class="content active-content">
-            <p>Arturo Rambaldi (1859-1929) intraprese la carriera di mercante d’arte a Bologna sotto l’egida del collega più anziano <a href="dettaglio_AN.html" target="_blank">Raffaele Angiolini</a> per poi aprire, nel 1900, la propria galleria antiquaria e casa di vendite, in via Castiglione 1. Demetrio Tolosani, sulle pagine della rivista "L'Antiquario", lo descrive come specializzato negli arredi antichi. Dal 1926 ne avviò infatti anche la produzione in stile, con un laboratorio autonomo di falegnameria sito al piano terra del palazzo che ospitava la sua galleria. Con i manufatti realizzati riforniva, tra gli altri, il genero <a href="dettaglio_IM.html" target="_blank">Eugène Imbert</a> attivo a Milano in via Napoleone.</p>
-            <p>Per le necessità della galleria e del laboratorio, Arturo Rambaldi ebbe tra i suoi collaboratori l’esperto di intaglio ligneo Giuseppe Simoni che la Prima Guerra mondiale allontanò dal laboratorio di produzione con grande disagio della ditta, oltre al pittore e restauratore ferrarese Augusto Pagliarini (1872-1960) e al falegname Giuseppe Alberani. Nel 1921, questi ultimi furono inviati a Vienna per mettere in opera e restaurare diversi soffitti che il finanziere, collezionista d’arte e di bronzi, Camillo Castiglioni, aveva da lui acquistato per il proprio palazzo in Prinz Eugen Strasse.</p>
-            <p>Arturo viaggiò molto all’estero per acquistare opere e organizzò alcune vendite all’asta importanti, come quella della collezione bolognese Gozzadini, tenutasi nell'omonimo palazzo nel 1906, e quella della raccolta Podestà-Luciardi negli spazi della galleria nel 1909. A Venezia, nel 1913, si occupò anche di quella dell’antiquario <a href="dettaglio_GU.html" target="_blank">Michelangelo Guggenheim</a>, in collaborazione con l’antiquario Hugo Helbing di Monaco di Baviera.</p>
-            <p>Per motivi di salute, nel 1927, lasciò l’attività ai figli Angelo (1883-) e Aldo (1885-1964) che portarono avanti la ditta con il nome di “Galleria A. Rambaldi” anche dopo la sua morte. Angelo, Aldo e la sorella Alberta viaggiavano in Italia ed Europa per procacciare opere da vendere e sappiamo dalle carte d’archivio della Camera di Commercio cittadina che un collaboratore, tale Daniele Ferné, nel 1930 fu inviato in Cina, India, Giappone, Indocina e Russia allo stesso scopo. Nel 1938, i fratelli cessarono “l’industria del legno” con la chiusura del laboratorio, per dedicarsi esclusivamente all’attività antiquariale.</p>
-            <p>Nel 1966, morto Aldo, Angelo Rambaldi cessò l’impresa di famiglia che fu rilevata dalla vedova di Aldo Rambaldi, Olga Tcherukine, originaria di Kiev (1901-).</p>
-          </div>
-          <div id="Persone" class="content">
-            <h3>Relazioni familiari:</h3>
-            <div id="albero-genealogico"></div>
-          </div>
-          <div id="Localizzazioni" class="content">
-            <section id="map">
-              <div id="chartdiv"></div>
-            </section>
-          </div>
-          <div id="Eventi" class="content">
-            <h3>Eventi significativi nell'attività antiquariale:</h3>
-            <ul>
-              <li>1906 - <i>Vendita all'asta Gozzadini</i>: Arturo Rambaldi organizza la vendita all'asta della collezione bolognese Gozzadini</li>
-              <li>1909 - <i>Vendita all'asta Podestà-Luciardi</i>: Arturo Rambaldi organizza la vendita all'asta della collezione bolognese Podestà-Luciardi</li>
-            </ul>
-          </div>
-          <div id="Relazioni" class="content">
-            <h3>Altri antiquari:</h3>
-            <ul>
-              <li>
-                <a href="dettaglio_IM.html">Imbert</a>
-              </li>
-            </ul>
-            <h3>Clienti:</h3>
-            <ul>
-            </ul>
-            <h3>Collaboratori:</h3>
-            <ul>
-              <li>Augusto Pagliarini (restauratore)</li>
-              <li>Daniele Ferné (agente)</li>
-              <li>Giuseppe Alberani (falegname)</li>
-              <li>Giuseppe Simoni (intagliatore)</li>
-              <li>Hugo Helbing (impresario)</li>
-            </ul>
-          </div>
-          <div id="Bibliografia" class="content">
-            <h3>Bibliografia essenziale:</h3>
-            <ul>
-              <li><i>Commemorazione di Arturo Rambaldi</i>, In «L'Antiquario», XVI, 3, 1929, p. 177</li>
-              <li>Bellini, L., De Chirico, G. (1947), <i>Nel mondo degli antiquari</i>, Firenze, Arnaud</li>
-              <li>Tolosani, D. (1913), <i>I colleghi d'Italia: Bolognesi</i>, In «L'Antiquario», VI, 2-3, pp. 9-12</li>
-            </ul>
-          </div>
-          <div id="Opere trattate" class="content">
-            <p>
-              Vedi le opere transitate presso l'antiquario presenti nel 
-              <a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=A.+Rambaldi" class="linkBio" target="_blank">
-                catalogo della Fondazione Zeri
-              </a>
-            </p>
-          </div>
+        <div id="Eventi" class="content">
+          <h2>Eventi significativi nell'attività antiquariale</h2>
+          <ul>
+            <li>1906 - <i>Vendita all'asta Gozzadini</i>: Arturo Rambaldi organizza la vendita all'asta della collezione bolognese Gozzadini</li>
+            <li>1909 - <i>Vendita all'asta Podestà-Luciardi</i>: Arturo Rambaldi organizza la vendita all'asta della collezione bolognese Podestà-Luciardi</li>
+          </ul>
+        </div>
+        <div id="Bibliografia" class="content">
+          <h2>Bibliografia essenziale</h2>
+          <ul>
+            <li><i>Commemorazione di Arturo Rambaldi</i>, In «L'Antiquario», XVI, 3, 1929, p. 177</li>
+            <li>Bellini, L., De Chirico, G. (1947), <i>Nel mondo degli antiquari</i>, Firenze, Arnaud</li>
+            <li>Tolosani, D. (1913), <i>I colleghi d'Italia: Bolognesi</i>, In «L'Antiquario», VI, 2-3, pp. 9-12</li>
+          </ul>
         </div>
       </div>
+      <nav class="scheda-sfoglia" aria-label="Altre schede">
+        <a href="dettaglio_PR.html">&#8592; Pratesi</a>
+        <a href="dettaglio_RI.html">Riccardi &#8594;</a>
+      </nav>
     </main>
     <footer>
       <div class="footer-container">

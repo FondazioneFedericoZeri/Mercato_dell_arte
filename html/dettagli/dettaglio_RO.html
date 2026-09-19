@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dettaglio Antiquari</title>
+    <title>Romano | Mercato dell'arte</title>
+    <meta name="description" content="Romano: scheda dell'entità antiquariale nel progetto Mercato dell'arte della Fondazione Federico Zeri." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet" />
@@ -39,111 +40,130 @@
         </nav>
       </div>
     </header>
-    <main>
-      <section id="image-gallery">
-        <div class="gallery-wrapper">
-          <h2 class="gallery-title">Romano</h2>
-          <div class="slider-container">
-            <div class="slider">
-              <div class="slide">
-                <img src="../../img/slider-antiquari/RO_img1.jpg" alt="Salvatore Romano. Da &quot;L'Antiquario&quot;, 1932" />
-                <div class="caption">Salvatore Romano. Da "L'Antiquario", 1932</div>
-              </div>
-              <div class="slide">
-                <img src="../../img/slider-antiquari/RO_img2.jpg" alt="Salvatore Romano e Carmine Ciardello. Da Catalogo Pandolfini, 2016" />
-                <div class="caption">Salvatore Romano e Carmine Ciardello. Da Catalogo Pandolfini, 2016</div>
-              </div>
-              <div class="slide">
-                <img src="../../img/slider-antiquari/RO_img3.jpg" alt="Francesco Romano. Da Catalogo Pandolfini, 2016" />
-                <div class="caption">Francesco Romano. Da Catalogo Pandolfini, 2016</div>
-              </div>
-              <div class="slide">
-                <img src="../../img/slider-antiquari/RO_img4.jpg" alt="Galleria Romano, palazzo Magnani Feroni" />
-                <div class="caption">Galleria Romano, palazzo Magnani Feroni</div>
-              </div>
+    <main class="scheda">
+      <div class="scheda-torna">
+        <a href="../antiquari.html">&#8592; Tutti gli antiquari</a>
+      </div>
+      <section class="scheda-fascia">
+        <div class="scheda-fascia-testo">
+          <h1 class="scheda-nome">Romano</h1>
+          <p class="scheda-sottotitolo">Firenze, entità attiva dal 1924 al 1981</p>
+        </div>
+        <div class="slider-container">
+          <div class="slider">
+            <div class="slide">
+              <img src="../../img/slider-antiquari/RO_img1.jpg" alt="Salvatore Romano. Da &quot;L'Antiquario&quot;, 1932" />
+              <div class="caption">Salvatore Romano. Da "L'Antiquario", 1932</div>
             </div>
-            <button &#10094; class="prev" onclick="prevSlide()"><</button>
-            <button &#10095; class="next" onclick="nextSlide()">></button>
+            <div class="slide">
+              <img src="../../img/slider-antiquari/RO_img2.jpg" alt="Salvatore Romano e Carmine Ciardello. Da Catalogo Pandolfini, 2016" />
+              <div class="caption">Salvatore Romano e Carmine Ciardello. Da Catalogo Pandolfini, 2016</div>
+            </div>
+            <div class="slide">
+              <img src="../../img/slider-antiquari/RO_img3.jpg" alt="Francesco Romano. Da Catalogo Pandolfini, 2016" />
+              <div class="caption">Francesco Romano. Da Catalogo Pandolfini, 2016</div>
+            </div>
+            <div class="slide">
+              <img src="../../img/slider-antiquari/RO_img4.jpg" alt="Galleria Romano, palazzo Magnani Feroni" />
+              <div class="caption">Galleria Romano, palazzo Magnani Feroni</div>
+            </div>
           </div>
+          <button class="prev" onclick="prevSlide()" type="button">&#10094;</button>
+          <button class="next" onclick="nextSlide()" type="button">&#10095;</button>
         </div>
       </section>
-      <div class="dual-content-wrapper">
-        <div class="tab-container">
-          <ul class="tab-list">
-            <li class="tab active" data_content="Bio">Dati biografici</li>
-            <li class="tab" data_content="Persone">Albero familiare</li>
-            <li class="tab" data_content="Localizzazioni">Luoghi</li>
-            <li class="tab" data_content="Relazioni">Relazioni</li>
-            <li class="tab" data_content="Eventi">Eventi</li>
-            <li class="tab" data_content="Bibliografia">Bibliografia</li>
-            <li class="tab" data_content="Opere trattate">Opere trattate</li>
+      <section class="scheda-dati">
+        <dl class="scheda-record">
+          <dt>PERSONE</dt>
+          <dd>Salvatore Romano, 1875–1955, antiquario<br>Francesco Romano, 1919–1981, antiquario</dd>
+          <dt>SEDI</dt>
+          <dd>Via delle Belle Donne 8, Firenze · 1924–1939<br>Via dei Serragli 8, Firenze · 1939–1981 ca.<br>Via dei Serragli 8, Firenze · 1939–1981 ca.</dd>
+          <dt>IN CATALOGO</dt>
+          <dd><a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Romano" class="linkBio" target="_blank">Opere transitate, catalogo della Fondazione Zeri &#8594;</a></dd>
+        </dl>
+      </section>
+      <nav class="scheda-tab" aria-label="Sezioni della scheda">
+        <button class="tab active" type="button" data_content="Bio">
+          Dati biografici
+        </button>
+        <button class="tab" type="button" data_content="Persone">
+          Albero familiare
+          <span class="tab-num">2</span>
+        </button>
+        <button class="tab" type="button" data_content="Localizzazioni">
+          Luoghi
+          <span class="tab-num">3</span>
+        </button>
+        <button class="tab" type="button" data_content="Relazioni">
+          Relazioni
+          <span class="tab-num">3</span>
+        </button>
+        <button class="tab" type="button" data_content="Eventi">
+          Eventi
+          <span class="tab-num">1</span>
+        </button>
+        <button class="tab" type="button" data_content="Bibliografia">
+          Bibliografia
+          <span class="tab-num">9</span>
+        </button>
+      </nav>
+      <div class="scheda-contenuto">
+        <div id="Bio" class="content active-content">
+          <p>Salvatore Romano, nato nel 1875 a Meta di Sorrento, dopo una borsa di studio in ingegneria navale che lo portò a Genova, si stabilì a Napoli nel 1902 abbracciando la professione di antiquario, come ricorda Demetrio Tolosani nel 1911. Nei primi anni Venti scelse di trasferirsi a Firenze, prima in via delle Belle Donne 8 (1924-1939), poi in palazzo Magnani Feroni di via dei Serragli 8.</p>
+          <p>La sua galleria raccoglieva oggetti di ogni epoca e genere: dipinti, sculture, arti decorative, bronzi, ceramiche, fondi oro, tele veneziane, stoffe e mobili. Con il tempo si specializzò nel commercio di scultura in marmo antica, medievale e rinascimentale, al quale destinò un ampio magazzino in via Panicale.</p>
+          <p>Estremamente riservato, colto e abilissimo nel valorizzare la propria merce, Salvatore Romano riuscì a coltivare una clientela ristretta ma di alto profilo, costituita da facoltosi collezionisti americani, curatori di musei pubblici e collezionisti europei e italiani, che riceveva privatamente nella sua galleria. Poté vantare le consulenze degli storici dell'arte Wilhelm von Bode e Bernard Berenson e si circondò anche di artisti contemporanei come Filippo De Pisis, Silvio Loffredo, Mario Marcucci.</p>
+          <p>Nell'attività commerciale iniziò presto a lavorare anche il figlio Francesco (1910-1981). Egli portò avanti l'attività del padre nella galleria di palazzo Magnani Feroni, dove fissò anche la propria dimora. Nel 1946, con l'appoggio del figlio, Salvatore decise di donare al Comune di Firenze settanta oggetti, tra cui l'Angelo adorante e la Cariatide di Tino da Camaino, che si trovano oggi esposti al Cenacolo di Santo Spirito nella Fondazione a lui intitolata.</p>
+        </div>
+        <div id="Persone" class="content">
+          <h2>Relazioni familiari</h2>
+          <div id="albero-genealogico"></div>
+        </div>
+        <div id="Localizzazioni" class="content">
+          <section id="map">
+            <div id="chartdiv"></div>
+          </section>
+        </div>
+        <div id="Relazioni" class="content">
+          <h2>Altri antiquari</h2>
+          <ul>
+            <li>
+              <a href="dettaglio_ME.html">Melli</a>
+            </li>
+          </ul>
+          <h2>Collaboratori</h2>
+          <ul>
+            <li>Bernard Berenson (storico dell'arte)</li>
+            <li>Wilhelm Von Bode (storico dell'arte)</li>
           </ul>
         </div>
-        <div class="content-card">
-          <div id="Bio" class="content active-content">
-            <p>Salvatore Romano, nato nel 1875 a Meta di Sorrento, dopo una borsa di studio in ingegneria navale che lo portò a Genova, si stabilì a Napoli nel 1902 abbracciando la professione di antiquario, come ricorda Demetrio Tolosani nel 1911. Nei primi anni Venti scelse di trasferirsi a Firenze, prima in via delle Belle Donne 8 (1924-1939), poi in palazzo Magnani Feroni di via dei Serragli 8.</p>
-            <p>La sua galleria raccoglieva oggetti di ogni epoca e genere: dipinti, sculture, arti decorative, bronzi, ceramiche, fondi oro, tele veneziane, stoffe e mobili. Con il tempo si specializzò nel commercio di scultura in marmo antica, medievale e rinascimentale, al quale destinò un ampio magazzino in via Panicale.</p>
-            <p>Estremamente riservato, colto e abilissimo nel valorizzare la propria merce, Salvatore Romano riuscì a coltivare una clientela ristretta ma di alto profilo, costituita da facoltosi collezionisti americani, curatori di musei pubblici e collezionisti europei e italiani, che riceveva privatamente nella sua galleria. Poté vantare le consulenze degli storici dell'arte Wilhelm von Bode e Bernard Berenson e si circondò anche di artisti contemporanei come Filippo De Pisis, Silvio Loffredo, Mario Marcucci.</p>
-            <p>Nell'attività commerciale iniziò presto a lavorare anche il figlio Francesco (1910-1981). Egli portò avanti l'attività del padre nella galleria di palazzo Magnani Feroni, dove fissò anche la propria dimora. Nel 1946, con l'appoggio del figlio, Salvatore decise di donare al Comune di Firenze settanta oggetti, tra cui l'Angelo adorante e la Cariatide di Tino da Camaino, che si trovano oggi esposti al Cenacolo di Santo Spirito nella Fondazione a lui intitolata.</p>
-          </div>
-          <div id="Persone" class="content">
-            <h3>Relazioni familiari:</h3>
-            <div id="albero-genealogico"></div>
-          </div>
-          <div id="Localizzazioni" class="content">
-            <section id="map">
-              <div id="chartdiv"></div>
-            </section>
-          </div>
-          <div id="Eventi" class="content">
-            <h3>Eventi significativi nell'attività antiquariale:</h3>
-            <ul>
-              <li>1946 - <i>Donazione Collezione Salvatore Romano</i>: Donazione da parte di Salvatore Romano al Comune di Firenze di circa settanta oggetti d'arte della sua collezione, perché vengano esposti nel cenacolo di Santo Spirito. Salvatore dirigerà fino alla morte il museo, poi diventato Fondazione Salvatore Romano</li>
-            </ul>
-          </div>
-          <div id="Relazioni" class="content">
-            <h3>Altri antiquari:</h3>
-            <ul>
-              <li>
-                <a href="dettaglio_ME.html">Melli</a>
-              </li>
-            </ul>
-            <h3>Clienti:</h3>
-            <ul>
-            </ul>
-            <h3>Collaboratori:</h3>
-            <ul>
-              <li>Bernard Berenson (storico dell'arte)</li>
-              <li>Wilhelm Von Bode (storico dell'arte)</li>
-            </ul>
-          </div>
-          <div id="Bibliografia" class="content">
-            <h3>Bibliografia essenziale:</h3>
-            <ul>
-              <li>Bargellini, S. (1981), <i>Antiquari di ieri a Firenze</i>, Firenze, Bonechi</li>
-              <li>Batini, G. (1961), <i>L'antiquario</i>, Firenze, Vallecchi</li>
-              <li>Bellini, L., De Chirico, G. (1947), <i>Nel mondo degli antiquari</i>, Firenze, Arnaud</li>
-              <li>L'Obiettivo (1932), <i>Salvatore Romano</i>, In «L'Antiquario», XVIII-XXV, 1, p. 48</li>
-              <li>Pini, S. (2011), <i>Fondazione Salvatore Romano: guida alla visita del museo</i>, Firenze, Polistampa</li>
-              <li>Pini, S. (2011), <i>Salvatore Romano, dai segreti del Palazzo Magnani Feroni a Santo Spirito</i>, In Mannini, pp. 148-156</li>
-              <li>Sotheby's (2009), <i>Salvatore e Francesco Romano antiquari a Firenze, un secolo di attività a Palazzo Magnani Feroni, catalogo della vendita all'asta Sotheby's, (Firenze, 12-15 ottobre 2009).</i>, Firenze 2009.</li>
-              <li>Tolosani, D. (1911), <i>I colleghi d'Italia: Napoletani</i>, In «L'Antiquario. Rivista indipendente», 6, pp. 45-51</li>
-            </ul>
-            <h3>Interviste:</h3>
-            <ul>
-              <li>15/02/2023, <i>Intervista a Mattia e Maria Novella Romano</i>, Firenze</li>
-            </ul>
-          </div>
-          <div id="Opere trattate" class="content">
-            <p>
-              Vedi le opere transitate presso l'antiquario presenti nel 
-              <a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Romano " class="linkBio" target="_blank">
-                catalogo della Fondazione Zeri
-              </a>
-            </p>
-          </div>
+        <div id="Eventi" class="content">
+          <h2>Eventi significativi nell'attività antiquariale</h2>
+          <ul>
+            <li>1946 - <i>Donazione Collezione Salvatore Romano</i>: Donazione da parte di Salvatore Romano al Comune di Firenze di circa settanta oggetti d'arte della sua collezione, perché vengano esposti nel cenacolo di Santo Spirito. Salvatore dirigerà fino alla morte il museo, poi diventato Fondazione Salvatore Romano</li>
+          </ul>
+        </div>
+        <div id="Bibliografia" class="content">
+          <h2>Bibliografia essenziale</h2>
+          <ul>
+            <li>Bargellini, S. (1981), <i>Antiquari di ieri a Firenze</i>, Firenze, Bonechi</li>
+            <li>Batini, G. (1961), <i>L'antiquario</i>, Firenze, Vallecchi</li>
+            <li>Bellini, L., De Chirico, G. (1947), <i>Nel mondo degli antiquari</i>, Firenze, Arnaud</li>
+            <li>L'Obiettivo (1932), <i>Salvatore Romano</i>, In «L'Antiquario», XVIII-XXV, 1, p. 48</li>
+            <li>Pini, S. (2011), <i>Fondazione Salvatore Romano: guida alla visita del museo</i>, Firenze, Polistampa</li>
+            <li>Pini, S. (2011), <i>Salvatore Romano, dai segreti del Palazzo Magnani Feroni a Santo Spirito</i>, In Mannini, pp. 148-156</li>
+            <li>Sotheby's (2009), <i>Salvatore e Francesco Romano antiquari a Firenze, un secolo di attività a Palazzo Magnani Feroni, catalogo della vendita all'asta Sotheby's, (Firenze, 12-15 ottobre 2009).</i>, Firenze 2009.</li>
+            <li>Tolosani, D. (1911), <i>I colleghi d'Italia: Napoletani</i>, In «L'Antiquario. Rivista indipendente», 6, pp. 45-51</li>
+          </ul>
+          <h2>Interviste</h2>
+          <ul>
+            <li>15/02/2023, <i>Intervista a Mattia e Maria Novella Romano</i>, Firenze</li>
+          </ul>
         </div>
       </div>
+      <nav class="scheda-sfoglia" aria-label="Altre schede">
+        <a href="dettaglio_RI_I.html">&#8592; Ricchetti</a>
+        <a href="dettaglio_RU.html">Rubinacci &#8594;</a>
+      </nav>
     </main>
     <footer>
       <div class="footer-container">

@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dettaglio Antiquari</title>
+    <title>Viezzoli | Mercato dell'arte</title>
+    <meta name="description" content="Viezzoli: scheda dell'entità antiquariale nel progetto Mercato dell'arte della Fondazione Federico Zeri." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet" />
@@ -39,67 +40,72 @@
         </nav>
       </div>
     </header>
-    <main>
-      <section id="image-gallery">
-        <div class="gallery-wrapper no-imgs">
-          <h2 class="gallery-title">Viezzoli</h2>
+    <main class="scheda">
+      <div class="scheda-torna">
+        <a href="../antiquari.html">&#8592; Tutti gli antiquari</a>
+      </div>
+      <section class="scheda-fascia senza-foto">
+        <div class="scheda-fascia-testo">
+          <h1 class="scheda-nome">Viezzoli</h1>
+          <p class="scheda-sottotitolo">Genova, entità attiva dal 1930 al 1967</p>
         </div>
       </section>
-      <div class="dual-content-wrapper">
-        <div class="tab-container">
-          <ul class="tab-list">
-            <li class="tab active" data_content="Bio">Dati biografici</li>
-            <li class="tab" data_content="Persone">Albero familiare</li>
-            <li class="tab" data_content="Localizzazioni">Luoghi</li>
-            <li class="tab" data_content="Relazioni">Relazioni</li>
-            <li class="tab" data_content="Bibliografia">Bibliografia</li>
-            <li class="tab" data_content="Opere trattate">Opere trattate</li>
+      <section class="scheda-dati">
+        <dl class="scheda-record">
+          <dt>PERSONA</dt>
+          <dd>Mario Viezzoli, 1892–1967, antiquario</dd>
+          <dt>SEDE</dt>
+          <dd>Genova · 1930 ca.–1967</dd>
+          <dt>IN CATALOGO</dt>
+          <dd><a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=viezzoli" class="linkBio" target="_blank">Opere transitate, catalogo della Fondazione Zeri &#8594;</a></dd>
+        </dl>
+      </section>
+      <nav class="scheda-tab" aria-label="Sezioni della scheda">
+        <button class="tab active" type="button" data_content="Bio">
+          Dati biografici
+        </button>
+        <button class="tab" type="button" data_content="Localizzazioni">
+          Luoghi
+          <span class="tab-num">1</span>
+        </button>
+        <button class="tab" type="button" data_content="Relazioni">
+          Relazioni
+          <span class="tab-num">1</span>
+        </button>
+        <button class="tab" type="button" data_content="Bibliografia">
+          Bibliografia
+          <span class="tab-num">2</span>
+        </button>
+      </nav>
+      <div class="scheda-contenuto">
+        <div id="Bio" class="content active-content">
+          <p>Mario Viezzoli (1892-1967) fu un marchant amateur attivo a Genova a partire dagli anni Trenta del Novecento. Prima di dedicarsi all'antiquariato raggiunse il successo in altre imprese commerciali che gli fornirono un notevole potere d'acquisto.</p>
+          <p>La passione per l'arte lo portò inizialmente a collezionare e trattare soprattutto ceramiche, porcellane, incisioni in legno; in seguito, si rivolse alla pittura del Sei e Settecento, e anche dell'Ottocento. Sfollato a Firenze durante la Seconda guerra mondiale e rientrato a Genova nel 1944, continuò a comprare e vendere opere fino alla morte, sopraggiunta nel 1967. Dipinti di Luca Cambiaso, Valerio Castello e Alessandro Magnasco di sua proprietà vennero esposti in diverse mostre negli anni Cinquanta e Sessanta.</p>
+          <p>Nel corso della sua attività entrò in stretti rapporti con Federico Zeri, che frequentava assiduamente la casa dell'antiquario. Lo storico dell'arte, nella sua autobiografia ricorda le sue visite a Mario Viezzoli e la moglie Elda, con la quale mantenne uno stretto rapporto di amicizia.</p>
+        </div>
+        <div id="Localizzazioni" class="content">
+          <section id="map">
+            <div id="chartdiv"></div>
+          </section>
+        </div>
+        <div id="Relazioni" class="content">
+          <h2>Collaboratori</h2>
+          <ul>
+            <li>Federico Zeri (storico dell'arte)</li>
           </ul>
         </div>
-        <div class="content-card">
-          <div id="Bio" class="content active-content">
-            <p>Mario Viezzoli (1892-1967) fu un marchant amateur attivo a Genova a partire dagli anni Trenta del Novecento. Prima di dedicarsi all'antiquariato raggiunse il successo in altre imprese commerciali che gli fornirono un notevole potere d'acquisto.</p>
-            <p>La passione per l'arte lo portò inizialmente a collezionare e trattare soprattutto ceramiche, porcellane, incisioni in legno; in seguito, si rivolse alla pittura del Sei e Settecento, e anche dell'Ottocento. Sfollato a Firenze durante la Seconda guerra mondiale e rientrato a Genova nel 1944, continuò a comprare e vendere opere fino alla morte, sopraggiunta nel 1967. Dipinti di Luca Cambiaso, Valerio Castello e Alessandro Magnasco di sua proprietà vennero esposti in diverse mostre negli anni Cinquanta e Sessanta.</p>
-            <p>Nel corso della sua attività entrò in stretti rapporti con Federico Zeri, che frequentava assiduamente la casa dell'antiquario. Lo storico dell'arte, nella sua autobiografia ricorda le sue visite a Mario Viezzoli e la moglie Elda, con la quale mantenne uno stretto rapporto di amicizia.</p>
-          </div>
-          <div id="Persone" class="content">
-            <h3>Relazioni familiari:</h3>
-            <div id="albero-genealogico"></div>
-          </div>
-          <div id="Localizzazioni" class="content">
-            <section id="map">
-              <div id="chartdiv"></div>
-            </section>
-          </div>
-          <div id="Relazioni" class="content">
-            <h3>Altri antiquari:</h3>
-            <ul>
-            </ul>
-            <h3>Clienti:</h3>
-            <ul>
-            </ul>
-            <h3>Collaboratori:</h3>
-            <ul>
-              <li>Federico Zeri (storico dell'arte)</li>
-            </ul>
-          </div>
-          <div id="Bibliografia" class="content">
-            <h3>Bibliografia essenziale:</h3>
-            <ul>
-              <li>Romanengo, M. (2001), <i>Il mondo del collezionismo privato a Genova nel Novecento</i>, In Orlando, pp. 110-120</li>
-              <li>Zeri, F. (1995), <i>Confesso che ho sbagliato: Ricordi autobiografici</i>, Milano, Longanesi</li>
-            </ul>
-          </div>
-          <div id="Opere trattate" class="content">
-            <p>
-              Vedi le opere transitate presso l'antiquario presenti nel 
-              <a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=viezzoli" class="linkBio" target="_blank">
-                catalogo della Fondazione Zeri
-              </a>
-            </p>
-          </div>
+        <div id="Bibliografia" class="content">
+          <h2>Bibliografia essenziale</h2>
+          <ul>
+            <li>Romanengo, M. (2001), <i>Il mondo del collezionismo privato a Genova nel Novecento</i>, In Orlando, pp. 110-120</li>
+            <li>Zeri, F. (1995), <i>Confesso che ho sbagliato: Ricordi autobiografici</i>, Milano, Longanesi</li>
+          </ul>
         </div>
       </div>
+      <nav class="scheda-sfoglia" aria-label="Altre schede">
+        <a href="dettaglio_VI_I.html">&#8592; Viancini</a>
+        <a href="dettaglio_VI_III.html">Villa &#8594;</a>
+      </nav>
     </main>
     <footer>
       <div class="footer-container">

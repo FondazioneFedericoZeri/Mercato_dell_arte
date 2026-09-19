@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dettaglio Antiquari</title>
+    <title>Sambon | Mercato dell'arte</title>
+    <meta name="description" content="Sambon: scheda dell'entità antiquariale nel progetto Mercato dell'arte della Fondazione Federico Zeri." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet" />
@@ -39,80 +40,87 @@
         </nav>
       </div>
     </header>
-    <main>
-      <section id="image-gallery">
-        <div class="gallery-wrapper">
-          <h2 class="gallery-title">Sambon</h2>
-          <div id="single-image-container">
-            <img src="../../img/slider-antiquari/SA_III_img1.jpg" alt="Giulio Sambon (foto Archives Nationales de France, Fonds Sambon)" />
-            <div class="caption overlay-caption">Giulio Sambon (foto Archives Nationales de France, Fonds Sambon)</div>
-          </div>
+    <main class="scheda">
+      <div class="scheda-torna">
+        <a href="../antiquari.html">&#8592; Tutti gli antiquari</a>
+      </div>
+      <section class="scheda-fascia">
+        <div class="scheda-fascia-testo">
+          <h1 class="scheda-nome">Sambon</h1>
+          <p class="scheda-sottotitolo">Milano, Roma e Firenze, entità attiva dal 1885 al 1905</p>
         </div>
+        <figure id="single-image-container">
+          <img src="../../img/slider-antiquari/SA_III_img1.jpg" alt="Giulio Sambon (foto Archives Nationales de France, Fonds Sambon)" />
+          <figcaption class="caption">Giulio Sambon (foto Archives Nationales de France, Fonds Sambon)</figcaption>
+        </figure>
       </section>
-      <div class="dual-content-wrapper">
-        <div class="tab-container">
-          <ul class="tab-list">
-            <li class="tab active" data_content="Bio">Dati biografici</li>
-            <li class="tab" data_content="Persone">Albero familiare</li>
-            <li class="tab" data_content="Localizzazioni">Luoghi</li>
-            <li class="tab" data_content="Relazioni">Relazioni</li>
-            <li class="tab" data_content="Bibliografia">Bibliografia</li>
-            <li class="tab" data_content="Opere trattate">Opere trattate</li>
+      <section class="scheda-dati">
+        <dl class="scheda-record">
+          <dt>PERSONA</dt>
+          <dd>Giulio Sambon, 1837–1921, antiquario</dd>
+          <dt>INSEGNA</dt>
+          <dd>Impresa di vendita in Italia Giulio Sambon</dd>
+          <dt>SEDI</dt>
+          <dd>Corso vittorio Emanuele 37, Milano · 1885–1905 ca.<br>Via della Croce 44, Roma · 1886–1887<br>Via dei Martelli 4, Firenze · 1887–1905 ca.<br>e altre 1 sedi, nella scheda Luoghi</dd>
+          <dt>IN CATALOGO</dt>
+          <dd><a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=sambon" class="linkBio" target="_blank">Opere transitate, catalogo della Fondazione Zeri &#8594;</a></dd>
+        </dl>
+      </section>
+      <nav class="scheda-tab" aria-label="Sezioni della scheda">
+        <button class="tab active" type="button" data_content="Bio">
+          Dati biografici
+        </button>
+        <button class="tab" type="button" data_content="Localizzazioni">
+          Luoghi
+          <span class="tab-num">4</span>
+        </button>
+        <button class="tab" type="button" data_content="Relazioni">
+          Relazioni
+          <span class="tab-num">3</span>
+        </button>
+        <button class="tab" type="button" data_content="Bibliografia">
+          Bibliografia
+          <span class="tab-num">3</span>
+        </button>
+      </nav>
+      <div class="scheda-contenuto">
+        <div id="Bio" class="content active-content">
+          <p>Giulio Nino Sambon (1837-1921) nacque a Napoli nel 1837. Collezionista e appassionato di numismatica, da Napoli si trasferì a Roma allo scadere degli anni Settanta del XIX secolo quando iniziò a collaborare in qualità di esperto con la "Società per le vendite in Italia Raffaele Dura & C.". La casa di vendite, fondata nel 1877, aveva sede a Roma in Palazzo Poli, a Milano in via Santa Redegonda 10 e a Firenze in via dei Martelli 2. Sambon la rilevò nel 1882 e le diede il nome di "Impresa di vendita in Italia Giulio Sambon". Con la nuova ragione sociale, la casa d'asta trovò altre sedi: a Milano fu in Corso Vittorio Emanuele 37 dal 1885, a Firenze in via Martelli 4 dal 1887, a Roma in via della Croce nel 1886 e l'anno seguente in via Condotti 44, infine a Napoli in via Gennaro Serra 24 dal 1886.</p>
+          <p>L'attività di Giulio Sambon tra il 1883 e il 1898 si può ripercorrere attraverso la pubblicazione dei cataloghi d'asta che documentano alcune vendite molto importanti, come quelle, a Milano, del noto antiquario <a href="dettaglio_BA_IV.html" target="_blank">Giuseppe Baslini </a>  (1817-1887), tenutasi nel 1888 o quella nel 1899 di Giuseppe Bertini, consigliere negli acquisti di Gian Giacomo Poldi Pezzoli. Nel 1903, a Milano, Sambon fu a capo di una delegazione di antiquari milanesi che, in maniera autonoma rispetto a quella fiorentina poi firmataria della lettera inviata in Senato, criticava aspramente la legge Nasi sul diritto di prelazione statale e sul divieto di esportazione dei beni sottoposti a tutela.</p>
+          <p>Abbandonata l'Italia tra il 1904 e il 1908, il mercante si trasferì a Parigi. Qui il figlio, Arthur Sambon (1867-1947) aprì una casa di vendite di grande successo, collaborando strettamente con i colleghi di origini napoletane <a href="dettaglio_CA_I.html" target="_blank">Ercole e Cesare Canessa </a> , attivi a Parigi e New York. Negli anni Dieci e Venti del Novecento, Giulio si dedicò maggiormente allo studio della numismatica e archeologia. Morì a Londra il 6 maggio 1921.</p>
+        </div>
+        <div id="Localizzazioni" class="content">
+          <section id="map">
+            <div id="chartdiv"></div>
+          </section>
+        </div>
+        <div id="Relazioni" class="content">
+          <h2>Altri antiquari</h2>
+          <ul>
+            <li>
+              <a href="dettaglio_CA_I.html">Canessa</a>
+            </li>
+            <li>
+              <a href="dettaglio_GE_I.html">Geiger</a>
+            </li>
+            <li>
+              <a href="dettaglio_CA_III.html">Cantoni</a>
+            </li>
           </ul>
         </div>
-        <div class="content-card">
-          <div id="Bio" class="content active-content">
-            <p>Giulio Nino Sambon (1837-1921) nacque a Napoli nel 1837. Collezionista e appassionato di numismatica, da Napoli si trasferì a Roma allo scadere degli anni Settanta del XIX secolo quando iniziò a collaborare in qualità di esperto con la "Società per le vendite in Italia Raffaele Dura & C.". La casa di vendite, fondata nel 1877, aveva sede a Roma in Palazzo Poli, a Milano in via Santa Redegonda 10 e a Firenze in via dei Martelli 2. Sambon la rilevò nel 1882 e le diede il nome di "Impresa di vendita in Italia Giulio Sambon". Con la nuova ragione sociale, la casa d'asta trovò altre sedi: a Milano fu in Corso Vittorio Emanuele 37 dal 1885, a Firenze in via Martelli 4 dal 1887, a Roma in via della Croce nel 1886 e l'anno seguente in via Condotti 44, infine a Napoli in via Gennaro Serra 24 dal 1886.</p>
-            <p>L'attività di Giulio Sambon tra il 1883 e il 1898 si può ripercorrere attraverso la pubblicazione dei cataloghi d'asta che documentano alcune vendite molto importanti, come quelle, a Milano, del noto antiquario <a href="dettaglio_BA_IV.html" target="_blank">Giuseppe Baslini </a>  (1817-1887), tenutasi nel 1888 o quella nel 1899 di Giuseppe Bertini, consigliere negli acquisti di Gian Giacomo Poldi Pezzoli. Nel 1903, a Milano, Sambon fu a capo di una delegazione di antiquari milanesi che, in maniera autonoma rispetto a quella fiorentina poi firmataria della lettera inviata in Senato, criticava aspramente la legge Nasi sul diritto di prelazione statale e sul divieto di esportazione dei beni sottoposti a tutela.</p>
-            <p>Abbandonata l'Italia tra il 1904 e il 1908, il mercante si trasferì a Parigi. Qui il figlio, Arthur Sambon (1867-1947) aprì una casa di vendite di grande successo, collaborando strettamente con i colleghi di origini napoletane <a href="dettaglio_CA_I.html" target="_blank">Ercole e Cesare Canessa </a> , attivi a Parigi e New York. Negli anni Dieci e Venti del Novecento, Giulio si dedicò maggiormente allo studio della numismatica e archeologia. Morì a Londra il 6 maggio 1921.</p>
-          </div>
-          <div id="Persone" class="content">
-            <h3>Relazioni familiari:</h3>
-            <div id="albero-genealogico"></div>
-          </div>
-          <div id="Localizzazioni" class="content">
-            <section id="map">
-              <div id="chartdiv"></div>
-            </section>
-          </div>
-          <div id="Relazioni" class="content">
-            <h3>Altri antiquari:</h3>
-            <ul>
-              <li>
-                <a href="dettaglio_CA_I.html">Canessa</a>
-              </li>
-              <li>
-                <a href="dettaglio_GE_I.html">Geiger</a>
-              </li>
-              <li>
-                <a href="dettaglio_CA_III.html">Cantoni</a>
-              </li>
-            </ul>
-            <h3>Clienti:</h3>
-            <ul>
-            </ul>
-            <h3>Collaboratori:</h3>
-            <ul>
-            </ul>
-          </div>
-          <div id="Bibliografia" class="content">
-            <h3>Bibliografia essenziale:</h3>
-            <ul>
-              <li>Bertelli, B. (2011-2012), <i>Commercio antiquario a Firenze nel primo trentennio dopo l’Unità d’Italia: protagonisti, transazioni e circolazione delle opere d’arte, Corso di Dottorato di Ricerca in Storia dell'Arte (ciclo XXIII)</i>, Università degli Studi di Udine</li>
-              <li>Lambrugo, C. (2018), <i>Giulio Sambon e la sua collezione: dal commercio antiquario alla raccolta pubblica, in Il viaggio della Chimera. Gli Etruschi a Milano tra archeologia e collezionismo, catalogo della mostra (Milano, Civico Museo Archeologico, 12 dicembre 2018 - 12 maggio 2019) a cura di Paolucci, G., Provenzali, A.</i>, Milano, Johan & Levi Editore, pp. 75-82, pp. 233-239</li>
-              <li>Napodano, L. (2018), <i>Giulio Sambon mercante d'arte</i>, In «Acme», vol. 17, 2, pp. 131-165</li>
-            </ul>
-          </div>
-          <div id="Opere trattate" class="content">
-            <p>
-              Vedi le opere transitate presso l'antiquario presenti nel 
-              <a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=sambon" class="linkBio" target="_blank">
-                catalogo della Fondazione Zeri
-              </a>
-            </p>
-          </div>
+        <div id="Bibliografia" class="content">
+          <h2>Bibliografia essenziale</h2>
+          <ul>
+            <li>Bertelli, B. (2011-2012), <i>Commercio antiquario a Firenze nel primo trentennio dopo l’Unità d’Italia: protagonisti, transazioni e circolazione delle opere d’arte, Corso di Dottorato di Ricerca in Storia dell'Arte (ciclo XXIII)</i>, Università degli Studi di Udine</li>
+            <li>Lambrugo, C. (2018), <i>Giulio Sambon e la sua collezione: dal commercio antiquario alla raccolta pubblica, in Il viaggio della Chimera. Gli Etruschi a Milano tra archeologia e collezionismo, catalogo della mostra (Milano, Civico Museo Archeologico, 12 dicembre 2018 - 12 maggio 2019) a cura di Paolucci, G., Provenzali, A.</i>, Milano, Johan & Levi Editore, pp. 75-82, pp. 233-239</li>
+            <li>Napodano, L. (2018), <i>Giulio Sambon mercante d'arte</i>, In «Acme», vol. 17, 2, pp. 131-165</li>
+          </ul>
         </div>
       </div>
+      <nav class="scheda-sfoglia" aria-label="Altre schede">
+        <a href="dettaglio_SA_II.html">&#8592; Salvadori Giuseppe</a>
+        <a href="dettaglio_SA_IV.html">Sangiorgi &#8594;</a>
+      </nav>
     </main>
     <footer>
       <div class="footer-container">

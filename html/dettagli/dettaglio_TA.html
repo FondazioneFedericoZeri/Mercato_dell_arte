@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dettaglio Antiquari</title>
+    <title>Tavazzi | Mercato dell'arte</title>
+    <meta name="description" content="Tavazzi: scheda dell'entità antiquariale nel progetto Mercato dell'arte della Fondazione Federico Zeri." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet" />
@@ -39,78 +40,86 @@
         </nav>
       </div>
     </header>
-    <main>
-      <section id="image-gallery">
-        <div class="gallery-wrapper">
-          <h2 class="gallery-title">Tavazzi</h2>
-          <div id="single-image-container">
-            <img src="../../img/slider-antiquari/TA_img1.jpg" alt="Carta intestata della Galleria Tavazzi" />
-            <div class="caption overlay-caption">Carta intestata della Galleria Tavazzi</div>
-          </div>
+    <main class="scheda">
+      <div class="scheda-torna">
+        <a href="../antiquari.html">&#8592; Tutti gli antiquari</a>
+      </div>
+      <section class="scheda-fascia">
+        <div class="scheda-fascia-testo">
+          <h1 class="scheda-nome">Tavazzi</h1>
+          <p class="scheda-sottotitolo">Roma, entità attiva dal 1880 al 1924</p>
         </div>
+        <figure id="single-image-container">
+          <img src="../../img/slider-antiquari/TA_img1.jpg" alt="Carta intestata della Galleria Tavazzi" />
+          <figcaption class="caption">Carta intestata della Galleria Tavazzi</figcaption>
+        </figure>
       </section>
-      <div class="dual-content-wrapper">
-        <div class="tab-container">
-          <ul class="tab-list">
-            <li class="tab active" data_content="Bio">Dati biografici</li>
-            <li class="tab" data_content="Persone">Albero familiare</li>
-            <li class="tab" data_content="Localizzazioni">Luoghi</li>
-            <li class="tab" data_content="Relazioni">Relazioni</li>
-            <li class="tab" data_content="Bibliografia">Bibliografia</li>
-            <li class="tab" data_content="Opere trattate">Opere trattate</li>
+      <section class="scheda-dati">
+        <dl class="scheda-record">
+          <dt>PERSONA</dt>
+          <dd>Filippo Tavazzi, 1857–1924, antiquario</dd>
+          <dt>SEDI</dt>
+          <dd>Via dei Condotti, Campo Marzio, Roma · 1880 ca.–1924<br>Largo della Fontanella di Borghese 29-33, Roma · 1880 ca.–1915<br>Piazza di Spagna 9, Roma · 1880 ca.–1924</dd>
+          <dt>IN CATALOGO</dt>
+          <dd><a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=tavazzi" class="linkBio" target="_blank">Opere transitate, catalogo della Fondazione Zeri &#8594;</a></dd>
+        </dl>
+      </section>
+      <nav class="scheda-tab" aria-label="Sezioni della scheda">
+        <button class="tab active" type="button" data_content="Bio">
+          Dati biografici
+        </button>
+        <button class="tab" type="button" data_content="Localizzazioni">
+          Luoghi
+          <span class="tab-num">3</span>
+        </button>
+        <button class="tab" type="button" data_content="Relazioni">
+          Relazioni
+          <span class="tab-num">3</span>
+        </button>
+        <button class="tab" type="button" data_content="Bibliografia">
+          Bibliografia
+          <span class="tab-num">3</span>
+        </button>
+      </nav>
+      <div class="scheda-contenuto">
+        <div id="Bio" class="content active-content">
+          <p>Filippo Tavazzi (1857-1924) fu un antiquario romano attivo tra Otto e Novecento. Nel corso del tempo aprì nella capitale diverse sedi (Fontanella di Borghese, Piazza di Spagna e via Condotti), tutte situate in eleganti palazzi, nei quali esponeva oggetti di antichità e belle arti. Non sono molte le notizie riguardanti la vita del mercante. Ricordato da Ludwig Pollak nelle sue memorie, ebbe uno stretto rapporto con il conte Gregor Stroganoff (1770-1857), del quale fu amico e confidente.</p>
+          <p>Nei primi del Novecento, Tavazzi acquistò un villino ai Parioli che fece decorare in stile moresco dal pittore il pittore sivigliano José Villegas Cordero (1844-1921). Qui espose la collezione Santini, da lui acquistata in toto a Ferrara, che conteneva un numero importante di opere di maestri ferraresi. L'antiquario vi risiedette fino alla morte, avvenuta nel 1924, dopo che un grave dissesto finanziario causato da alcune sfortunate compravendite nel settore immobiliare aveva scosso i suoi ultimi anni.</p>
+          <p>Oltre a gestire la galleria in proprio, all'inizio del XX secolo, Tavazzi si unì in società con gli <a href="dettaglio_JA.html" target="_blank"> Jandolo</a>  per creare la <a href="dettaglio_JA-TA.html" target="_blank"> Casa di vendite Jandolo&Tavazzi</a>, in cui fu impiegato il figlio Guido (?-1942).</p>
+        </div>
+        <div id="Localizzazioni" class="content">
+          <section id="map">
+            <div id="chartdiv"></div>
+          </section>
+        </div>
+        <div id="Relazioni" class="content">
+          <h2>Altri antiquari</h2>
+          <ul>
+            <li>
+              <a href="dettaglio_JA.html">Jandolo</a>
+            </li>
+            <li>
+              <a href="dettaglio_JA-TA.html">Jandolo-Tavazzi</a>
+            </li>
+          </ul>
+          <h2>Clienti</h2>
+          <ul>
+            <li>Gregor Stroganoff </li>
           </ul>
         </div>
-        <div class="content-card">
-          <div id="Bio" class="content active-content">
-            <p>Filippo Tavazzi (1857-1924) fu un antiquario romano attivo tra Otto e Novecento. Nel corso del tempo aprì nella capitale diverse sedi (Fontanella di Borghese, Piazza di Spagna e via Condotti), tutte situate in eleganti palazzi, nei quali esponeva oggetti di antichità e belle arti. Non sono molte le notizie riguardanti la vita del mercante. Ricordato da Ludwig Pollak nelle sue memorie, ebbe uno stretto rapporto con il conte Gregor Stroganoff (1770-1857), del quale fu amico e confidente.</p>
-            <p>Nei primi del Novecento, Tavazzi acquistò un villino ai Parioli che fece decorare in stile moresco dal pittore il pittore sivigliano José Villegas Cordero (1844-1921). Qui espose la collezione Santini, da lui acquistata in toto a Ferrara, che conteneva un numero importante di opere di maestri ferraresi. L'antiquario vi risiedette fino alla morte, avvenuta nel 1924, dopo che un grave dissesto finanziario causato da alcune sfortunate compravendite nel settore immobiliare aveva scosso i suoi ultimi anni.</p>
-            <p>Oltre a gestire la galleria in proprio, all'inizio del XX secolo, Tavazzi si unì in società con gli <a href="dettaglio_JA.html" target="_blank"> Jandolo</a>  per creare la <a href="dettaglio_JA-TA.html" target="_blank"> Casa di vendite Jandolo&Tavazzi</a>, in cui fu impiegato il figlio Guido (?-1942).</p>
-          </div>
-          <div id="Persone" class="content">
-            <h3>Relazioni familiari:</h3>
-            <div id="albero-genealogico"></div>
-          </div>
-          <div id="Localizzazioni" class="content">
-            <section id="map">
-              <div id="chartdiv"></div>
-            </section>
-          </div>
-          <div id="Relazioni" class="content">
-            <h3>Altri antiquari:</h3>
-            <ul>
-              <li>
-                <a href="dettaglio_JA.html">Jandolo</a>
-              </li>
-              <li>
-                <a href="dettaglio_JA-TA.html">Jandolo-Tavazzi</a>
-              </li>
-            </ul>
-            <h3>Clienti:</h3>
-            <ul>
-              <li>Gregor Stroganoff </li>
-            </ul>
-            <h3>Collaboratori:</h3>
-            <ul>
-            </ul>
-          </div>
-          <div id="Bibliografia" class="content">
-            <h3>Bibliografia essenziale:</h3>
-            <ul>
-              <li>Jandolo, A. (1935), <i>Le memorie di un antiquario</i>, Milano, Ceschina</li>
-              <li>Pollak, L., Merkel Guldan, M. (1994), <i>Römische Memoiren : Künstler, Kunstliebhaber und Gelehrte, 1893-1943</i>, Roma, L'Erma di Bretschneider</li>
-              <li>Tolosani, D. (1913), <i>I colleghi d'Italia: Romani</i>, In «L'Antiquario», VI, 1, pp. 1-4</li>
-            </ul>
-          </div>
-          <div id="Opere trattate" class="content">
-            <p>
-              Vedi le opere transitate presso l'antiquario presenti nel 
-              <a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=tavazzi" class="linkBio" target="_blank">
-                catalogo della Fondazione Zeri
-              </a>
-            </p>
-          </div>
+        <div id="Bibliografia" class="content">
+          <h2>Bibliografia essenziale</h2>
+          <ul>
+            <li>Jandolo, A. (1935), <i>Le memorie di un antiquario</i>, Milano, Ceschina</li>
+            <li>Pollak, L., Merkel Guldan, M. (1994), <i>Römische Memoiren : Künstler, Kunstliebhaber und Gelehrte, 1893-1943</i>, Roma, L'Erma di Bretschneider</li>
+            <li>Tolosani, D. (1913), <i>I colleghi d'Italia: Romani</i>, In «L'Antiquario», VI, 1, pp. 1-4</li>
+          </ul>
         </div>
       </div>
+      <nav class="scheda-sfoglia" aria-label="Altre schede">
+        <a href="dettaglio_SU.html">&#8592; Subert</a>
+        <a href="dettaglio_VE_I.html">The Venice Art Company &#8594;</a>
+      </nav>
     </main>
     <footer>
       <div class="footer-container">

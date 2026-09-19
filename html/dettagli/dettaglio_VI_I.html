@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dettaglio Antiquari</title>
+    <title>Viancini | Mercato dell'arte</title>
+    <meta name="description" content="Viancini: scheda dell'entità antiquariale nel progetto Mercato dell'arte della Fondazione Federico Zeri." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet" />
@@ -39,78 +40,86 @@
         </nav>
       </div>
     </header>
-    <main>
-      <section id="image-gallery">
-        <div class="gallery-wrapper">
-          <h2 class="gallery-title">Viancini</h2>
-          <div id="single-image-container">
-            <img src="../../img/slider-antiquari/VI_I_img1.jpg" alt="Ettore Viancini. Da &quot;Bolaffi Arte&quot;, 1976" />
-            <div class="caption overlay-caption">Ettore Viancini. Da "Bolaffi Arte", 1976</div>
-          </div>
+    <main class="scheda">
+      <div class="scheda-torna">
+        <a href="../antiquari.html">&#8592; Tutti gli antiquari</a>
+      </div>
+      <section class="scheda-fascia">
+        <div class="scheda-fascia-testo">
+          <h1 class="scheda-nome">Viancini</h1>
+          <p class="scheda-sottotitolo">Venezia, entità attiva dal 1950 al 1976</p>
         </div>
+        <figure id="single-image-container">
+          <img src="../../img/slider-antiquari/VI_I_img1.jpg" alt="Ettore Viancini. Da &quot;Bolaffi Arte&quot;, 1976" />
+          <figcaption class="caption">Ettore Viancini. Da "Bolaffi Arte", 1976</figcaption>
+        </figure>
       </section>
-      <div class="dual-content-wrapper">
-        <div class="tab-container">
-          <ul class="tab-list">
-            <li class="tab active" data_content="Bio">Dati biografici</li>
-            <li class="tab" data_content="Persone">Albero familiare</li>
-            <li class="tab" data_content="Localizzazioni">Luoghi</li>
-            <li class="tab" data_content="Relazioni">Relazioni</li>
-            <li class="tab" data_content="Bibliografia">Bibliografia</li>
-            <li class="tab" data_content="Opere trattate">Opere trattate</li>
+      <section class="scheda-dati">
+        <dl class="scheda-record">
+          <dt>PERSONA</dt>
+          <dd>Ettore Viancini, 1925–1998, antiquario</dd>
+          <dt>SEDE</dt>
+          <dd>San Marco 1659, Venezia · 1950 ca.–1976</dd>
+          <dt>IN CATALOGO</dt>
+          <dd><a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=viancini" class="linkBio" target="_blank">Opere transitate, catalogo della Fondazione Zeri &#8594;</a></dd>
+        </dl>
+      </section>
+      <nav class="scheda-tab" aria-label="Sezioni della scheda">
+        <button class="tab active" type="button" data_content="Bio">
+          Dati biografici
+        </button>
+        <button class="tab" type="button" data_content="Localizzazioni">
+          Luoghi
+          <span class="tab-num">1</span>
+        </button>
+        <button class="tab" type="button" data_content="Relazioni">
+          Relazioni
+          <span class="tab-num">3</span>
+        </button>
+        <button class="tab" type="button" data_content="Bibliografia">
+          Bibliografia
+          <span class="tab-num">2</span>
+        </button>
+      </nav>
+      <div class="scheda-contenuto">
+        <div id="Bio" class="content active-content">
+          <p>Ettore Viancini (1925-1998) nacque a Trieste il 10 gennaio 1925. Conseguita la maturità classica, negli anni Cinquanta iniziò a commerciare in opere d'arte, attività praticata in famiglia anche da suo zio, l'antiquario veneziano Ferruccio Asta, padre di Paolo Asta. Viancini non ebbe mai una galleria aperta al pubblico e svolse la propria attività in uno studio privato. I suoi interessi si rivolsero soprattutto alla pittura del Sei e Settecento di ambito veneziano, genovese, bolognese e lombardo.</p>
+          <p>Nel corso della sua attività Viancini collaborò soprattutto con Alessandro Orsi e <a href="dettaglio_AP.html" target="_blank">Fabrizio Apolloni </a>(1928-2006) in Italia, e con Nando Peretti all'estero. Ebbe clienti privati a Venezia, Bologna, Roma e Genova, nonché a Parigi e Londra. Tra gli studiosi e storici dell'arte a cui si rivolgeva vi furono Egidio Martini e Ferruccio Mestrovich, esperti di dipinti antichi nonché collezionisti.</p>
+          <p>Al suo ritiro l'attività fu portata avanti dal figlio Paolo Viancini. Specializzatosi in arte moderna e contemporanea, questi ebbe un negozio a Venezia in via 22 marzo, aperto tra il 1976 e il 1982. Dopo diverse esperienze a Milano, Venezia e Firenze, Paolo si stabilì a Cortina d'Ampezzo dove lavorò fino al 2013. L'archivio fotografico di Ettore Viancini è stato acquisito nel 1998 dalla Fondazione Cini di Venezia.</p>
+        </div>
+        <div id="Localizzazioni" class="content">
+          <section id="map">
+            <div id="chartdiv"></div>
+          </section>
+        </div>
+        <div id="Relazioni" class="content">
+          <h2>Altri antiquari</h2>
+          <ul>
+            <li>
+              <a href="dettaglio_AC.html">Accorsi</a>
+            </li>
+          </ul>
+          <h2>Collaboratori</h2>
+          <ul>
+            <li>Egidio Martini (storico dell'arte)</li>
+            <li>Ferruccio Mestrovich (storico dell'arte)</li>
           </ul>
         </div>
-        <div class="content-card">
-          <div id="Bio" class="content active-content">
-            <p>Ettore Viancini (1925-1998) nacque a Trieste il 10 gennaio 1925. Conseguita la maturità classica, negli anni Cinquanta iniziò a commerciare in opere d'arte, attività praticata in famiglia anche da suo zio, l'antiquario veneziano Ferruccio Asta, padre di Paolo Asta. Viancini non ebbe mai una galleria aperta al pubblico e svolse la propria attività in uno studio privato. I suoi interessi si rivolsero soprattutto alla pittura del Sei e Settecento di ambito veneziano, genovese, bolognese e lombardo.</p>
-            <p>Nel corso della sua attività Viancini collaborò soprattutto con Alessandro Orsi e <a href="dettaglio_AP.html" target="_blank">Fabrizio Apolloni </a>(1928-2006) in Italia, e con Nando Peretti all'estero. Ebbe clienti privati a Venezia, Bologna, Roma e Genova, nonché a Parigi e Londra. Tra gli studiosi e storici dell'arte a cui si rivolgeva vi furono Egidio Martini e Ferruccio Mestrovich, esperti di dipinti antichi nonché collezionisti.</p>
-            <p>Al suo ritiro l'attività fu portata avanti dal figlio Paolo Viancini. Specializzatosi in arte moderna e contemporanea, questi ebbe un negozio a Venezia in via 22 marzo, aperto tra il 1976 e il 1982. Dopo diverse esperienze a Milano, Venezia e Firenze, Paolo si stabilì a Cortina d'Ampezzo dove lavorò fino al 2013. L'archivio fotografico di Ettore Viancini è stato acquisito nel 1998 dalla Fondazione Cini di Venezia.</p>
-          </div>
-          <div id="Persone" class="content">
-            <h3>Relazioni familiari:</h3>
-            <div id="albero-genealogico"></div>
-          </div>
-          <div id="Localizzazioni" class="content">
-            <section id="map">
-              <div id="chartdiv"></div>
-            </section>
-          </div>
-          <div id="Relazioni" class="content">
-            <h3>Altri antiquari:</h3>
-            <ul>
-              <li>
-                <a href="dettaglio_AC.html">Accorsi</a>
-              </li>
-            </ul>
-            <h3>Clienti:</h3>
-            <ul>
-            </ul>
-            <h3>Collaboratori:</h3>
-            <ul>
-              <li>Egidio Martini (storico dell'arte)</li>
-              <li>Ferruccio Mestrovich (storico dell'arte)</li>
-            </ul>
-          </div>
-          <div id="Bibliografia" class="content">
-            <h3>Bibliografia essenziale:</h3>
-            <ul>
-              <li>Minervino, F. (1976), <i>Autenticazioni, falsi, esperti, specializzazioni</i>, In «Bolaffiarte», 2, [supllemento al n. 64 di «Bolaffiarte»], pp. 16-22</li>
-            </ul>
-            <h3>Interviste:</h3>
-            <ul>
-              <li>18/10/2023, <i>Intervista a Paolo Viancini</i></li>
-            </ul>
-          </div>
-          <div id="Opere trattate" class="content">
-            <p>
-              Vedi le opere transitate presso l'antiquario presenti nel 
-              <a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=viancini" class="linkBio" target="_blank">
-                catalogo della Fondazione Zeri
-              </a>
-            </p>
-          </div>
+        <div id="Bibliografia" class="content">
+          <h2>Bibliografia essenziale</h2>
+          <ul>
+            <li>Minervino, F. (1976), <i>Autenticazioni, falsi, esperti, specializzazioni</i>, In «Bolaffiarte», 2, [supllemento al n. 64 di «Bolaffiarte»], pp. 16-22</li>
+          </ul>
+          <h2>Interviste</h2>
+          <ul>
+            <li>18/10/2023, <i>Intervista a Paolo Viancini</i></li>
+          </ul>
         </div>
       </div>
+      <nav class="scheda-sfoglia" aria-label="Altre schede">
+        <a href="dettaglio_VE.html">&#8592; Ventura</a>
+        <a href="dettaglio_VI_II.html">Viezzoli &#8594;</a>
+      </nav>
     </main>
     <footer>
       <div class="footer-container">

@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dettaglio Antiquari</title>
+    <title>Angiolini | Mercato dell'arte</title>
+    <meta name="description" content="Angiolini: scheda dell'entità antiquariale nel progetto Mercato dell'arte della Fondazione Federico Zeri." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet" />
@@ -39,69 +40,76 @@
         </nav>
       </div>
     </header>
-    <main>
-      <section id="image-gallery">
-        <div class="gallery-wrapper no-imgs">
-          <h2 class="gallery-title">Angiolini</h2>
+    <main class="scheda">
+      <div class="scheda-torna">
+        <a href="../antiquari.html">&#8592; Tutti gli antiquari</a>
+      </div>
+      <section class="scheda-fascia senza-foto">
+        <div class="scheda-fascia-testo">
+          <h1 class="scheda-nome">Angiolini</h1>
+          <p class="scheda-sottotitolo">Bologna, entità attiva dal 1873 al 1907</p>
         </div>
       </section>
-      <div class="dual-content-wrapper">
-        <div class="tab-container">
-          <ul class="tab-list">
-            <li class="tab active" data_content="Bio">Dati biografici</li>
-            <li class="tab" data_content="Persone">Albero familiare</li>
-            <li class="tab" data_content="Localizzazioni">Luoghi</li>
-            <li class="tab" data_content="Relazioni">Relazioni</li>
-            <li class="tab" data_content="Bibliografia">Bibliografia</li>
-            <li class="tab" data_content="Opere trattate">Opere trattate</li>
+      <section class="scheda-dati">
+        <dl class="scheda-record">
+          <dt>PERSONA</dt>
+          <dd>Raffaele Angiolini, 1850–1920, antiquario</dd>
+          <dt>INSEGNE</dt>
+          <dd>Alessandro Ascoli e Comp.o<br>Angiolini e Ascoli<br>Alessandro Ranuzzi e C.</dd>
+          <dt>SEDI</dt>
+          <dd>via Ugo Bassi 87, Bologna · 1873–1879<br>via Barberia 13, Bologna · 1905–1907</dd>
+          <dt>IN CATALOGO</dt>
+          <dd><a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=R.+Angiolini" class="linkBio" target="_blank">Opere transitate, catalogo della Fondazione Zeri &#8594;</a></dd>
+        </dl>
+      </section>
+      <nav class="scheda-tab" aria-label="Sezioni della scheda">
+        <button class="tab active" type="button" data_content="Bio">
+          Dati biografici
+        </button>
+        <button class="tab" type="button" data_content="Localizzazioni">
+          Luoghi
+          <span class="tab-num">2</span>
+        </button>
+        <button class="tab" type="button" data_content="Relazioni">
+          Relazioni
+          <span class="tab-num">1</span>
+        </button>
+        <button class="tab" type="button" data_content="Bibliografia">
+          Bibliografia
+          <span class="tab-num">1</span>
+        </button>
+      </nav>
+      <div class="scheda-contenuto">
+        <div id="Bio" class="content active-content">
+          <p>L’antiquario bolognese Raffaele Angiolini (fu Giuseppe) esercitò la professione a cavallo tra XIX e XX secolo. Dal 1873 al 1879 gestì un’attività di compravendita di opere d’arte, la “Angiolini e Ascoli”, al civico 87 di via Ugo Bassi, in società con l’anconetano <a href="dettaglio_AS.html" target="_blank">Alessandro Ascoli</a>. Sciolta la società e morto Ascoli nel 1897, Angiolini portò avanti la ditta fino al 1899.</p>
+          <p>Nel 1905 Angiolini aprì un’altra impresa con il conte Alessandro Ranuzzi, con ragione sociale “Alessandro Ranuzzi e C.” in via Barberia 13. Ne prese il controllo individuale nel 1906 fino al 1907, quando l’attività si concluse.</p>
+          <p>Demetrio Tolosani sulle pagine de “L’Antiquario” lo ricorda come specializzato nella compravendita di dipinti antichi laddove il suo pupillo, <a href="dettaglio_RA.html" target="_blank">Arturo Rambaldi</a>, che rilevò per pochi soldi le merci e persino il dipendente del suo negozio alla sua morte, preferì gli oggetti d’arredo e la mobilia.</p>
+          <p>Ebbe fruttuosi rapporti professionali con <a href="dettaglio_BA_II.html" target="_blank">Stefano Bardini</a>, per il quale funse da mediatore nell’acquisto di due importanti stacchi eseguiti a Bergamo dagli <a href="dettaglio_ST_NEW.html" target="_blank">Steffanoni</a>, quello dei soffitti lignei di Casa Maffi (oggi al Victoria and Albert di Londra), nel 1888, e quello degli affreschi di Casa Raffi nel 1889.</p>
+        </div>
+        <div id="Localizzazioni" class="content">
+          <section id="map">
+            <div id="chartdiv"></div>
+          </section>
+        </div>
+        <div id="Relazioni" class="content">
+          <h2>Altri antiquari</h2>
+          <ul>
+            <li>
+              <a href="dettaglio_AS.html">Ascoli</a>
+            </li>
           </ul>
         </div>
-        <div class="content-card">
-          <div id="Bio" class="content active-content">
-            <p>L’antiquario bolognese Raffaele Angiolini (fu Giuseppe) esercitò la professione a cavallo tra XIX e XX secolo. Dal 1873 al 1879 gestì un’attività di compravendita di opere d’arte, la “Angiolini e Ascoli”, al civico 87 di via Ugo Bassi, in società con l’anconetano <a href="dettaglio_AS.html" target="_blank">Alessandro Ascoli</a>. Sciolta la società e morto Ascoli nel 1897, Angiolini portò avanti la ditta fino al 1899.</p>
-            <p>Nel 1905 Angiolini aprì un’altra impresa con il conte Alessandro Ranuzzi, con ragione sociale “Alessandro Ranuzzi e C.” in via Barberia 13. Ne prese il controllo individuale nel 1906 fino al 1907, quando l’attività si concluse.</p>
-            <p>Demetrio Tolosani sulle pagine de “L’Antiquario” lo ricorda come specializzato nella compravendita di dipinti antichi laddove il suo pupillo, <a href="dettaglio_RA.html" target="_blank">Arturo Rambaldi</a>, che rilevò per pochi soldi le merci e persino il dipendente del suo negozio alla sua morte, preferì gli oggetti d’arredo e la mobilia.</p>
-            <p>Ebbe fruttuosi rapporti professionali con <a href="dettaglio_BA_II.html" target="_blank">Stefano Bardini</a>, per il quale funse da mediatore nell’acquisto di due importanti stacchi eseguiti a Bergamo dagli <a href="dettaglio_ST_NEW.html" target="_blank">Steffanoni</a>, quello dei soffitti lignei di Casa Maffi (oggi al Victoria and Albert di Londra), nel 1888, e quello degli affreschi di Casa Raffi nel 1889.</p>
-          </div>
-          <div id="Persone" class="content">
-            <h3>Relazioni familiari:</h3>
-            <div id="albero-genealogico"></div>
-          </div>
-          <div id="Localizzazioni" class="content">
-            <section id="map">
-              <div id="chartdiv"></div>
-            </section>
-          </div>
-          <div id="Relazioni" class="content">
-            <h3>Altri antiquari:</h3>
-            <ul>
-              <li>
-                <a href="dettaglio_AS.html">Ascoli</a>
-              </li>
-            </ul>
-            <h3>Clienti:</h3>
-            <ul>
-            </ul>
-            <h3>Collaboratori:</h3>
-            <ul>
-            </ul>
-          </div>
-          <div id="Bibliografia" class="content">
-            <h3>Bibliografia essenziale:</h3>
-            <ul>
-              <li>Giometti, C., Ciancabilla, L. (2019), <i>Stefano Bardini estrattista : affreschi staccati nell'Italia unita fra antiquariato, collezionismo e musei</i>, Pisa, ETS</li>
-            </ul>
-          </div>
-          <div id="Opere trattate" class="content">
-            <p>
-              Vedi le opere transitate presso l'antiquario presenti nel 
-              <a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=R.+Angiolini" class="linkBio" target="_blank">
-                catalogo della Fondazione Zeri
-              </a>
-            </p>
-          </div>
+        <div id="Bibliografia" class="content">
+          <h2>Bibliografia essenziale</h2>
+          <ul>
+            <li>Giometti, C., Ciancabilla, L. (2019), <i>Stefano Bardini estrattista : affreschi staccati nell'Italia unita fra antiquariato, collezionismo e musei</i>, Pisa, ETS</li>
+          </ul>
         </div>
       </div>
+      <nav class="scheda-sfoglia" aria-label="Altre schede">
+        <a href="dettaglio_AL.html">&#8592; Albrighi</a>
+        <a href="dettaglio_AN-EF.html">Antonacci-Efrati &#8594;</a>
+      </nav>
     </main>
     <footer>
       <div class="footer-container">

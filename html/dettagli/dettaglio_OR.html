@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dettaglio Antiquari</title>
+    <title>Orselli | Mercato dell'arte</title>
+    <meta name="description" content="Orselli: scheda dell'entità antiquariale nel progetto Mercato dell'arte della Fondazione Federico Zeri." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet" />
@@ -39,58 +40,68 @@
         </nav>
       </div>
     </header>
-    <main>
-      <section id="image-gallery">
-        <div class="gallery-wrapper">
-          <h2 class="gallery-title">Orselli</h2>
-          <div id="single-image-container">
-            <img src="../../img/slider-antiquari/OR_img1.jpg" alt="Raimondo Orselli. Da &quot;L'Antiquario&quot;, 1929" />
-            <div class="caption overlay-caption">Raimondo Orselli. Da "L'Antiquario", 1929</div>
-          </div>
+    <main class="scheda">
+      <div class="scheda-torna">
+        <a href="../antiquari.html">&#8592; Tutti gli antiquari</a>
+      </div>
+      <section class="scheda-fascia">
+        <div class="scheda-fascia-testo">
+          <h1 class="scheda-nome">Orselli</h1>
+          <p class="scheda-sottotitolo">Firenze, entità attiva dal 1900 al 1970</p>
         </div>
+        <figure id="single-image-container">
+          <img src="../../img/slider-antiquari/OR_img1.jpg" alt="Raimondo Orselli. Da &quot;L'Antiquario&quot;, 1929" />
+          <figcaption class="caption">Raimondo Orselli. Da "L'Antiquario", 1929</figcaption>
+        </figure>
       </section>
-      <div class="dual-content-wrapper">
-        <div class="tab-container">
-          <ul class="tab-list">
-            <li class="tab active" data_content="Bio">Dati biografici</li>
-            <li class="tab" data_content="Persone">Albero familiare</li>
-            <li class="tab" data_content="Localizzazioni">Luoghi</li>
-            <li class="tab" data_content="Bibliografia">Bibliografia</li>
-            <li class="tab" data_content="Opere trattate">Opere trattate</li>
+      <section class="scheda-dati">
+        <dl class="scheda-record">
+          <dt>PERSONA</dt>
+          <dd>Raimondo Orselli, antiquario</dd>
+          <dt>INSEGNA</dt>
+          <dd>Luigi Orselli</dd>
+          <dt>SEDE</dt>
+          <dd>Borgo Ognissanti 9, Firenze · 1900 ca.–1970 ca.</dd>
+          <dt>IN CATALOGO</dt>
+          <dd><a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=r.+orselli" class="linkBio" target="_blank">Opere transitate, catalogo della Fondazione Zeri &#8594;</a></dd>
+        </dl>
+      </section>
+      <nav class="scheda-tab" aria-label="Sezioni della scheda">
+        <button class="tab active" type="button" data_content="Bio">
+          Dati biografici
+        </button>
+        <button class="tab" type="button" data_content="Localizzazioni">
+          Luoghi
+          <span class="tab-num">1</span>
+        </button>
+        <button class="tab" type="button" data_content="Bibliografia">
+          Bibliografia
+          <span class="tab-num">2</span>
+        </button>
+      </nav>
+      <div class="scheda-contenuto">
+        <div id="Bio" class="content active-content">
+          <p>Luigi Orselli (1870-?), figlio del pittore Aristodemo Orselli, aprì la propria attività in via Borgo Ognissanti 9 a Firenze, presumibilmente all'inizio del XX secolo. A partire dal 1930  -  lo riporta Demetrio Tolosani sulle pagine de "L'Antiquario"  -  fu affiancato dal figlio Raimondo (1903-?) che si era laureato alla Columbia University di New York. Luigi era infatti stato uno dei primi mercanti italiani ad aprire una succursale d'Oltreoceano.</p>
+          <p>Alla vendita della collezione personale di oggetti d'arte di Luigi, descritto come mercante e conoscitore (asta American Art Association, 15 febbraio 1921), la succursale viene ricordata come un importante centro di attrazione sia per i collezionisti più avvertiti, che per coloro che volevano comprare semplici pezzi di arredamento.</p>
+          <p>Raimondo Orselli, ancora attivo negli anni Sessanta del Novecento, si occupò di entrambe le sedi della galleria, viaggiando instancabilmente tra Firenze e New York.</p>
+        </div>
+        <div id="Localizzazioni" class="content">
+          <section id="map">
+            <div id="chartdiv"></div>
+          </section>
+        </div>
+        <div id="Bibliografia" class="content">
+          <h2>Bibliografia essenziale</h2>
+          <ul>
+            <li>1930, <i>Raimondo Orselli.</i>, In «L'Antiquario», XVII, 1, 1930, p. 10</li>
+            <li>Batini, G. (1961), <i>L'antiquario</i>, Firenze, Vallecchi</li>
           </ul>
         </div>
-        <div class="content-card">
-          <div id="Bio" class="content active-content">
-            <p>Luigi Orselli (1870-?), figlio del pittore Aristodemo Orselli, aprì la propria attività in via Borgo Ognissanti 9 a Firenze, presumibilmente all'inizio del XX secolo. A partire dal 1930  -  lo riporta Demetrio Tolosani sulle pagine de "L'Antiquario"  -  fu affiancato dal figlio Raimondo (1903-?) che si era laureato alla Columbia University di New York. Luigi era infatti stato uno dei primi mercanti italiani ad aprire una succursale d'Oltreoceano.</p>
-            <p>Alla vendita della collezione personale di oggetti d'arte di Luigi, descritto come mercante e conoscitore (asta American Art Association, 15 febbraio 1921), la succursale viene ricordata come un importante centro di attrazione sia per i collezionisti più avvertiti, che per coloro che volevano comprare semplici pezzi di arredamento.</p>
-            <p>Raimondo Orselli, ancora attivo negli anni Sessanta del Novecento, si occupò di entrambe le sedi della galleria, viaggiando instancabilmente tra Firenze e New York.</p>
-          </div>
-          <div id="Persone" class="content">
-            <h3>Relazioni familiari:</h3>
-            <div id="albero-genealogico"></div>
-          </div>
-          <div id="Localizzazioni" class="content">
-            <section id="map">
-              <div id="chartdiv"></div>
-            </section>
-          </div>
-          <div id="Bibliografia" class="content">
-            <h3>Bibliografia essenziale:</h3>
-            <ul>
-              <li>1930, <i>Raimondo Orselli.</i>, In «L'Antiquario», XVII, 1, 1930, p. 10</li>
-              <li>Batini, G. (1961), <i>L'antiquario</i>, Firenze, Vallecchi</li>
-            </ul>
-          </div>
-          <div id="Opere trattate" class="content">
-            <p>
-              Vedi le opere transitate presso l'antiquario presenti nel 
-              <a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=r.+orselli" class="linkBio" target="_blank">
-                catalogo della Fondazione Zeri
-              </a>
-            </p>
-          </div>
-        </div>
       </div>
+      <nav class="scheda-sfoglia" aria-label="Altre schede">
+        <a href="dettaglio_NI.html">&#8592; Nigro</a>
+        <a href="dettaglio_PA_I.html">Pagano &#8594;</a>
+      </nav>
     </main>
     <footer>
       <div class="footer-container">
