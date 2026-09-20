@@ -94,8 +94,18 @@ def getBib(bibitem):
 	if len(bibitem['Città, editore o rivista'])>0:
 		s+=f", {collegamento(bibitem['Città, editore o rivista'])}"
 
-	if len(bibitem["Pagine"])>0:
-		s+=f", {collegamento(bibitem['Pagine'])}"
+	# Qui i numeri di pagina non si mostrano. Servono quando una fonte
+	# viene citata a proposito di un antiquario — e infatti restano
+	# nelle schede di dettaglio — ma questo elenco e' un catalogo di
+	# fonti, non un apparato di note: "pp. 108-119" non aiuta a
+	# riconoscere lo scritto, allunga la riga e basta.
+	#
+	# L'eccezione sono due voci che in questa colonna hanno
+	# l'indirizzo web al posto delle pagine: un indirizzo non e' un
+	# numero di pagina, ed e' l'unico modo per arrivare allo scritto.
+	pagine = (bibitem.get("Pagine") or "").strip()
+	if pagine.startswith(("http://", "https://")):
+		s += f", {collegamento(pagine)}"
 
 	return first_letter.lower(), to_index, s
 

@@ -633,3 +633,22 @@ footer img {
         font-size: 20px; /* Ridimensiona le icone */
     }
 }
+
+/* Il titolo della pagina. Misura e stile arrivano da .titolo-pagina
+   (tokens.css), la stessa definizione di tutte le altre pagine: qui
+   serve solo allinearlo al margine della prima sezione, che ha 30
+   pixel di rientro. */
+main > .titolo-pagina {
+    /* 145 = i 30 di rientro della sezione, i 105 di margine della
+       colonna di testo e i 10 del suo padding: il titolo cade sulla
+       stessa verticale della prima riga di prosa, non a meta' strada
+       fra il bordo della pagina e il testo. */
+    padding: 34px 30px 0 145px;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    main > .titolo-pagina {
+        padding: 22px 20px 0 20px;
+    }
+}

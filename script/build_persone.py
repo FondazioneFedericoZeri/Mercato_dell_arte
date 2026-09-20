@@ -298,7 +298,12 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
                     <button class="mobile-tab" type="button" data-role="collaboratore" aria-selected="false">collaboratori <span class="n" id="mcnt-collaboratore"></span></button>
                     <button class="mobile-tab" type="button" data-role="cliente" aria-selected="false">clienti <span class="n" id="mcnt-cliente"></span></button>
                 </div>
-                <div class="result-line" id="resultLine"></div>
+                <div class="result-row">
+                    <div class="result-line" id="resultLine"></div>
+                    <!-- Compare solo quando c'è qualcosa da azzerare: un
+                         comando che non fa niente e' rumore. -->
+                    <button class="reset-filtri" id="resetFiltri" type="button" hidden>Azzera i filtri</button>
+                </div>
             </div>
 
             <div class="columns" id="columns" data-mobile="antiquario">

@@ -48,9 +48,27 @@ document.addEventListener('DOMContentLoaded', function () {
     tipologiaRow.classList.toggle('show', !expanded);
   });
 
-  document.getElementById('search').addEventListener('input', function (e) {
+  var searchEl = document.getElementById('search');
+  searchEl.addEventListener('input', function (e) {
     state.search = normSearch(e.target.value);
     render();
+  });
+
+  /* Azzerare i filtri: si puo' arrivare a non vedere nessuno — una
+     parola cercata piu' due tipologie accese — senza avere un modo
+     ovvio di tornare indietro, perche' i filtri attivi stanno in tre
+     posti diversi (la casella, le pasticche, il pannello richiuso).
+     Questo comando li spegne tutti in un colpo e rimette il cursore
+     nella casella, che e' da dove si ricomincia. */
+  var resetFiltri = document.getElementById('resetFiltri');
+  resetFiltri.addEventListener('click', function () {
+    searchEl.value = '';
+    state.search = '';
+    tipologiaRow.querySelectorAll('[aria-pressed="true"]').forEach(function (b) {
+      b.setAttribute('aria-pressed', 'false');
+    });
+    render();
+    searchEl.focus();
   });
 
   var columnsEl = document.getElementById('columns');
@@ -205,9 +223,11 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     var totalShown = byRole.antiquario.length + byRole.collaboratore.length + byRole.cliente.length;
-    resultLine.textContent = (state.search || activeTipo.length)
+    var filtrato = !!(state.search || activeTipo.length);
+    resultLine.textContent = filtrato
       ? totalShown + ' risultat' + (totalShown === 1 ? 'o' : 'i') + ' su ' + DATA.length
       : DATA.length + ' persone in archivio';
+    resetFiltri.hidden = !filtrato;
   }
 
   render();
