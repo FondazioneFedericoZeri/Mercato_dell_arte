@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentazione</title>
+    <link rel="stylesheet" href="../css/tokens.css">
+    <link rel="stylesheet" href="../css/torna-su.css">
+    <link rel="stylesheet" href="../css/documentazione.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+    <script src="../script/menu.js" defer></script>
+    <script src="../script/torna-su.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <a class="marchio" href="../index.html">Mercato dell'arte</a>
+            <button class="menu-toggle" aria-label="Apri menu">
+                ☰
+            </button>
+            <div class="testata-destra">
+              <nav>
+                  <ul class="menu">
+                      <li><a href="../html/progetto.html">Progetto</a></li>
+                      <li><a href="../html/antiquari.html">Antiquari</a></li>
+                      <li><a href="../html/luoghi.html">Luoghi</a></li>
+                      <li><a href="../html/eventi.html">Eventi</a></li>
+                      <li><a href="../html/persone.html">Persone</a></li>
+                      <li><a href="../html/bibliografia.html">Bibliografia</a></li>
+                  </ul>
+              </nav>
+              <span class="testata-filo"></span>
+              <a class="testata-ente" href="https://fondazionezeri.unibo.it/it/homepage" target="_blank" rel="noopener"
+                 title="Fondazione Federico Zeri, Università di Bologna">
+                <img src="../img/homepage/logo.png" alt="Fondazione Federico Zeri">
+              </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <article class="doc">
+            <h1 class="titolo-pagina">Documentazione</h1>
+
+            <h2>Metodologia</h2>
+
+            <p class="doc-apertura">Le informazioni presentate nel sito derivano da una
+               ricerca storico-artistica condotta su fonti di natura diversa e sono state
+               successivamente trasformate in dati strutturati, in modo da renderle
+               ricercabili, collegabili e navigabili.</p>
+
+            <p>Il passaggio dalla ricostruzione narrativa alla struttura dati è stato un
+               lavoro strutturalmente complesso. I materiali di partenza contenevano
+               infatti informazioni biografiche, geografiche, cronologiche e relazionali
+               espresse in forma discorsiva, con livelli diversi di dettaglio e di
+               certezza. La strutturazione ha richiesto quindi di individuare quali
+               elementi dovessero essere trattati come unità informative autonome, quali
+               potessero essere ricondotti a categorie comuni e quali relazioni fosse
+               necessario rendere esplicite.</p>
+
+            <p>La definizione della struttura è avvenuta in modo progressivo, attraverso
+               il confronto tra i casi documentati e le esigenze della ricerca. Sono stati
+               così individuati alcuni nuclei informativi ricorrenti — entità
+               antiquariali, persone, sedi, relazioni, eventi e fonti — e le connessioni
+               che permettono di ricostruirne i rapporti nel tempo.</p>
+
+            <p>Un’attenzione particolare è stata dedicata alla distinzione tra persona e
+               attività antiquariale. Una stessa attività può infatti attraversare più
+               generazioni, cambiare denominazione o sede e mantenere una propria
+               continuità; viceversa, persone appartenenti alla stessa famiglia possono
+               essere associate ad attività differenti. Per questo motivo l’entità
+               antiquariale costituisce il principale punto di aggregazione delle
+               informazioni nel sito.</p>
+
+            <p>Le informazioni strutturate sono mantenute in relazione con le fonti da cui
+               derivano e sono organizzate in modo da consentirne l’estensione e
+               l’aggiornamento. I dati e il codice utilizzati per generare il sito sono
+               disponibili nel <a
+               href="https://github.com/FondazioneFedericoZeri/Mercato_dell_arte"
+               target="_blank" rel="noopener">repository pubblico del progetto su
+               GitHub</a>.</p>
+
+            <h2>Lacune e approssimazioni</h2>
+
+            <p>La documentazione sul mercato antiquario è inevitabilmente disomogenea. Per
+               alcune attività è stato possibile ricostruire con precisione persone, sedi,
+               passaggi generazionali ed eventi; per altre le informazioni disponibili
+               sono più frammentarie.</p>
+
+            <p>Anche il grado di precisione dei singoli dati può variare. Alcune date di
+               apertura o chiusura, per esempio, sono note soltanto in forma approssimativa
+               e vengono indicate come tali — ad esempio <span class="doc-esempio">1920
+               ca.</span> — mentre in altri casi non è stato possibile stabilirle.</p>
+
+            <p>L’assenza di un’informazione non va quindi interpretata automaticamente come
+               assenza storica del fenomeno rappresentato. Può dipendere dalla
+               documentazione finora reperita, dal suo grado di precisione o dallo stato di
+               avanzamento della ricerca.</p>
+
+            <p class="doc-chiusa">Rendere visibili queste differenze fa parte del progetto:
+               il sito non cerca di uniformare artificialmente dati che presentano livelli
+               diversi di completezza e certezza, ma di restituire, per quanto possibile,
+               anche i limiti della conoscenza disponibile.</p>
+        </article>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+          <div class="footer-ente">
+            <a href="https://fondazionezeri.unibo.it/it/homepage" target="_blank" rel="noopener">
+              <img src="../img/homepage/logo-negativo.png" alt="Fondazione Federico Zeri">
+            </a>
+            <p>Progetto della <a href="https://fondazionezeri.unibo.it/it/homepage" target="_blank" rel="noopener">Fondazione
+               Federico Zeri</a>, Università di Bologna.</p>
+          </div>
+            <div class="footer-left">
+                <p>Licenza dati e immagini: <img id="license.png" src="../img/homepage/license.png" alt="License"></p>
+            </div>
+            <div class="footer-right">
+                <p>
+                    <a href="../html/crediti.html">Crediti</a> | <a href="../html/documentazione.html">Documentazione</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

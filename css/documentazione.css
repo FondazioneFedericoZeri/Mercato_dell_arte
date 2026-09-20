@@ -1,0 +1,271 @@
+/* Basic Reset */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Assicura che il corpo occupi almeno l'altezza della finestra */
+    font-family: var(--ff-body);
+    color: var(--testo);
+    line-height: 1.6;
+}
+
+main {
+    flex: 1; /* Fa sì che il main prenda tutto lo spazio disponibile */
+}
+
+/* header e menù */
+
+header {
+    background-color: #f8f8f8;
+    padding: 15px;
+    position: sticky; /* Rende il menu sticky */
+    top: 0; /* Posiziona il menu all'inizio della pagina */
+    z-index: 1000; /* Assicura che il menu si sovrapponga agli altri contenuti */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Aggiunge un'ombra per differenziarlo dal contenuto */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Aggiunge l'ombreggiatura */
+    border-radius: 8px; /* Opzionale: arrotonda gli angoli */
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    max-height: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin-right: 20px;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--testo);
+    font-weight: 500;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background-color: #5593C9;
+    color: #fff;
+    border-radius: 5px;
+}
+
+
+
+
+
+/* footer */
+footer {
+    padding: 5px 40px;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-top: auto;
+    z-index: 1000;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer img {
+    vertical-align: middle;
+    margin-left: 5px;
+    max-height: 30px;
+}
+
+.footer-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left {
+    text-align: left;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+body {
+    font-family: var(--ff-body);
+    line-height: 1.6;
+    color: var(--testo);
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column; /* Disposizione verticale */
+        padding: 20px;
+        text-align: center; /* Centra il testo */
+        gap: 15px; /* Spazio tra gli elementi */
+    }
+
+    .footer-container {
+        flex-direction: column; /* Disposizione verticale */
+        align-items: center; /* Centra gli elementi */
+        gap: 10px; /* Spazio tra le sezioni */
+    }
+
+    footer img {
+        max-height: 25px; /* Riduce la dimensione delle immagini */
+    }
+}
+
+
+/* documentazione */
+
+.doc {
+    /* Misure condivise da tokens.css */
+    max-width: calc(var(--misura-lettura) + 2 * var(--margine-pagina));
+    margin: 0 auto;
+    padding: var(--stacco-titolo) var(--margine-pagina) 70px var(--margine-pagina);
+    box-sizing: border-box;
+}
+
+.doc .titolo-pagina {
+    margin-bottom: 20px;
+}
+
+.doc p {
+    font-size: var(--fs-corpo-lettura);
+    line-height: 1.7;
+    max-width: 66ch;
+    margin: 0 0 18px 0;
+}
+
+/* Titoli di sezione in maiuscoletto blu scuro */
+.doc h2 {
+    font-family: var(--ff-body);
+    font-size: var(--fs-etichetta);
+    font-weight: 600;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--blu-scuro);
+    line-height: 1.5;
+    margin: 50px 0 14px 0;
+    max-width: 60ch;
+}
+
+/* La prima sezione comincia subito sotto al titolo della pagina. */
+.doc h2:first-of-type {
+    margin-top: 26px;
+}
+
+/* Link in terracotta */
+.doc a {
+    color: var(--link);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-color: rgba(217, 64, 16, 0.4);
+}
+
+.doc a:hover {
+    color: var(--link-hover);
+    text-decoration-color: currentColor;
+}
+
+/* azzurro */
+
+/* Frase d'apertura su fondo azzurro chiaro */
+/* Stesse misure di .crediti-sostegno */
+.doc-apertura,
+.doc-chiusa {
+    padding: 20px 24px 22px 24px;
+    border-left: 3px solid var(--blu);
+    background-color: var(--blu-tenue);
+    border-radius: 2px;
+}
+
+.doc-chiusa {
+    margin-top: 28px;
+}
+
+/* Esempio di data */
+.doc-esempio {
+    padding: 1px 7px;
+    border-radius: 4px;
+    background-color: var(--blu-tenue);
+    color: var(--blu-scuro);
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+    .doc {
+        padding: 26px 18px 50px 18px;
+    }
+
+    .doc p {
+        font-size: var(--fs-corpo);
+    }
+
+    .doc-apertura,
+    .doc-chiusa {
+        padding: 16px 18px 18px 18px;
+    }
+
+    .doc h2 {
+        margin-top: 40px;
+    }
+}
+
+/* Menù a scomparsa */
+.menu-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        font-size: 24px;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #f8f8f8;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        padding: 10px 0;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+}
