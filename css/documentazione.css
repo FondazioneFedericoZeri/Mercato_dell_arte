@@ -1,0 +1,281 @@
+/* Basic Reset */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Assicura che il corpo occupi almeno l'altezza della finestra */
+    font-family: var(--ff-body);
+    color: #333;
+    line-height: 1.6;
+}
+
+main {
+    flex: 1; /* Fa sì che il main prenda tutto lo spazio disponibile */
+}
+
+/* header e menù */
+
+header {
+    background-color: #f8f8f8;
+    padding: 15px;
+    position: sticky; /* Rende il menu sticky */
+    top: 0; /* Posiziona il menu all'inizio della pagina */
+    z-index: 1000; /* Assicura che il menu si sovrapponga agli altri contenuti */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Aggiunge un'ombra per differenziarlo dal contenuto */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Aggiunge l'ombreggiatura */
+    border-radius: 8px; /* Opzionale: arrotonda gli angoli */
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    max-height: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin-right: 20px;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background-color: #5593C9;
+    color: #fff;
+    border-radius: 5px;
+}
+
+
+
+
+
+/* footer */
+footer {
+    padding: 5px 40px;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-top: auto;
+    z-index: 1000;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer img {
+    vertical-align: middle;
+    margin-left: 5px;
+    max-height: 30px;
+}
+
+.footer-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left {
+    text-align: left;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+body {
+    font-family: var(--ff-body);
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column; /* Disposizione verticale */
+        padding: 20px;
+        text-align: center; /* Centra il testo */
+        gap: 15px; /* Spazio tra gli elementi */
+    }
+
+    .footer-container {
+        flex-direction: column; /* Disposizione verticale */
+        align-items: center; /* Centra gli elementi */
+        gap: 10px; /* Spazio tra le sezioni */
+    }
+
+    footer img {
+        max-height: 25px; /* Riduce la dimensione delle immagini */
+    }
+}
+
+
+/* ══════════════════════════════════════════════════════════════
+   Documentazione
+
+   Una pagina che si legge dall'inizio alla fine: colonna stretta
+   (66 caratteri, la misura in cui l'occhio non perde la riga),
+   titoli che si distinguono per misura e non per riquadri, niente
+   elenchi puntati dove una frase fa lo stesso lavoro.
+   ══════════════════════════════════════════════════════════════ */
+
+.doc {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 60px 70px 60px;
+    box-sizing: border-box;
+}
+
+.doc .titolo-pagina {
+    margin-bottom: 20px;
+}
+
+.doc p {
+    font-size: var(--fs-lettura);
+    line-height: 1.7;
+    max-width: 66ch;
+    margin: 0 0 18px 0;
+}
+
+.doc-occhiello {
+    color: #5c584f;
+}
+
+.doc h2 {
+    font-family: var(--ff-head);
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--testo);
+    margin: 42px 0 14px 0;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--carta-bordo);
+    max-width: 66ch;
+}
+
+.doc a {
+    color: var(--link);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-color: rgba(217, 64, 16, 0.4);
+}
+
+.doc a:hover {
+    color: var(--link-hover);
+    text-decoration-color: currentColor;
+}
+
+/* I numeri: etichetta e valore, come nei crediti — la stessa forma
+   per la stessa cosa, un elenco di coppie. */
+.doc-numeri {
+    margin: 0 0 18px 0;
+    padding: 0;
+    max-width: 66ch;
+    border-top: 1px solid var(--carta-bordo);
+}
+
+.doc-numeri > div {
+    padding: 14px 0 15px 0;
+    border-bottom: 1px solid var(--carta-bordo);
+}
+
+.doc-numeri dt {
+    margin: 0 0 4px 0;
+    font-size: var(--fs-caption);
+    font-weight: 600;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: #7c7768;
+}
+
+.doc-numeri dd {
+    margin: 0;
+    font-size: var(--fs-lettura);
+    color: var(--testo);
+}
+
+.doc-aggiornamento {
+    font-size: var(--fs-body-sm);
+    color: #7c7768;
+}
+
+@media (max-width: 768px) {
+    .doc {
+        padding: 26px 18px 50px 18px;
+    }
+
+    .doc p,
+    .doc-numeri dd {
+        font-size: var(--fs-body);
+    }
+
+    .doc h2 {
+        font-size: 21px;
+        margin-top: 34px;
+    }
+}
+
+/* Il menù a scomparsa: la pagina crediti era l'unica senza: il
+   bottone non c'era e sotto i 768px le sei voci si mettevano in
+   colonna dentro la fascia, allungandola. Stesse regole delle altre
+   pagine. */
+.menu-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        font-size: 24px;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #f8f8f8;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        padding: 10px 0;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+}
