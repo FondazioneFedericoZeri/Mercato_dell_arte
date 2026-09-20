@@ -278,6 +278,9 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
     <!-- script/persone.js e non vengono toccati da questo script. -->
     <main>
         <div class="wrap">
+            <!-- La pagina non diceva dove si fosse arrivati: si apriva
+                 direttamente sulla ricerca. -->
+            <h1 class="titolo-pagina">I protagonisti del mercato dell'arte</h1>
             <div class="controls">
                 <div class="search-row">
                     <div class="search-box">

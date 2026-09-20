@@ -42,6 +42,12 @@
     --fs-body-sm:  0.875rem;  /* 14px — metadati, chip, etichette */
     --fs-caption:  0.75rem;   /* 12px — didascalie e scritte di servizio */
 
+    /* --- I grigi caldi delle sezioni -------------------------
+       Nati nella pagina eventi per lo sfondo dei grafici, servono
+       ovunque una parte di pagina debba staccarsi dal bianco. */
+    --carta-fondo:  #f0efea;
+    --carta-bordo:  #dcd9cf;
+
     /* --- Identità preesistente del sito antiquari ------------ */
     --blu:          #5593C9;
     --testo:        #333;
@@ -191,4 +197,26 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--link-hover);
     text-decoration: underline;
     text-underline-offset: 2px;
+}
+
+/* ------------------------------------------------------------
+   Titolo di pagina: una misura sola per tutto il sito.
+   Nasce da .section-title della pagina eventi — 32px, tondo,
+   Playfair — perche' era quella che Valentina voleva ovunque.
+   ------------------------------------------------------------ */
+
+.titolo-pagina {
+    font-family: var(--ff-head);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 1.2;
+    color: var(--testo);
+    margin: 0 0 12px 0;
+}
+
+@media (max-width: 768px) {
+    .titolo-pagina {
+        font-size: 24px;
+    }
 }

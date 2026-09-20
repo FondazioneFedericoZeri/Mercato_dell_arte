@@ -286,11 +286,15 @@ def build_footer(page):
 
 
 def carta(page, chiave, quante, titolo, descrizione):
+	# Nome e numero sulla stessa riga, la descrizione sotto: il numero
+	# e' un dato della raccolta, non un'insegna, e messo in cima da
+	# solo pesava piu' del nome.
 	with page.button(klass="bib-carta", type="button",
 			 **{"data-sezione": chiave, "aria-expanded": "false",
 			    "aria-controls": "sezione-" + chiave}):
-		page.span(klass="bib-carta-n", _t=str(quante))
-		page.span(klass="bib-carta-t", _t=titolo)
+		with page.span(klass="bib-carta-riga"):
+			page.span(klass="bib-carta-t", _t=titolo)
+			page.span(klass="bib-carta-n", _t=str(quante))
 		page.span(klass="bib-carta-d", _t=descrizione)
 
 
@@ -422,12 +426,13 @@ def build_html():
 			with page.main():
 
 				with page.section(klass="bib-intro"):
-					page.h1(_t="Bibliografia")
-					page.p(_t="Le fonti su cui è costruito questo sito sono di tre "
-						  "nature diverse, e si consultano in tre modi diversi: uno "
+					page.h1(klass="titolo-pagina", _t="Bibliografia")
+					page.p(_t="Questo lavoro è costruito su fonti di tre nature "
+						  "diverse, e si consultano in tre modi diversi: uno "
 						  "scritto lo si cerca per autore, un’intervista per "
-						  "l’antiquario che parla, un documento d’archivio "
-						  "per il luogo che lo conserva. Scegli da dove cominciare.")
+						  "l’antiquario di cui ci parla, un documento "
+						  "d’archivio per il luogo che lo conserva. Scegli "
+						  "da dove cominciare.")
 
 				with page.nav(klass="bib-scelta", **{"aria-label": "Tipo di fonte"}):
 					carta(page, "stampa", sum(len(v) for v in stampa.values()),

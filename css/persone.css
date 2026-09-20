@@ -441,3 +441,11 @@
       height: auto;
     }
   }
+
+  /* Il titolo della pagina: misura e stile arrivano da .titolo-pagina
+     in tokens.css, qui serve solo lo spazio intorno. La fascia dei
+     comandi che segue e' appiccicosa, quindi il titolo scorre via con
+     la pagina, come deve. */
+  .wrap > .titolo-pagina {
+    margin: 28px 0 4px;
+  }

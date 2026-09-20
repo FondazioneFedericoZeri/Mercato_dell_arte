@@ -518,13 +518,8 @@ p {
 
 /* Stessa misura e stesso peso del titolo della pagina eventi
    (.section-title): 32px, tondo, niente corsivo. */
-.mappa-intro h1 {
-    margin: 0 0 12px 0;
-    font-family: var(--ff-head);
-    font-weight: 400;
-    font-size: 32px;
-    color: var(--testo);
-}
+/* La misura e il peso del titolo vengono da .titolo-pagina, in
+   tokens.css: una definizione sola per tutte le pagine. */
 
 .mappa-intro p {
     margin: 0 0 10px 0;
@@ -595,9 +590,6 @@ p {
         padding: 22px 18px 0 18px;
     }
 
-    .mappa-intro h1 {
-        font-size: 24px;
-    }
 }
 
 /* ══════════════════════════════════════════════════════════════

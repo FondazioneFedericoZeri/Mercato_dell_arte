@@ -3735,8 +3735,8 @@
                         "ID": "USA_7",
                         "Nazione": "Stati Uniti d'America",
                         "Regione": "Stati Uniti d'America",
-                        "Città": "New York",
-                        "Via": "",
+                        "Città": "",
+                        "Via": "New York",
                         "Civico": "",
                         "ID_entità": "CA_I",
                         "Apertura": "1916",
@@ -7771,7 +7771,21 @@
         "Nome": "Freschi",
         "Bio": "FR_bio",
         "Link Zeri": "https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Freschi",
-        "Bibliografia": {},
+        "Bibliografia": {
+            "B_224": {
+                "ID": "B_224",
+                "Autore": "",
+                "Anno": "5/26/2023",
+                "Titolo": "Intervista a Roberto Freschi",
+                "Completamento del titolo": "",
+                "Città, editore o rivista": "Pistoia",
+                "Pagine": "",
+                "Tipologia": "intervista",
+                "Istituto": "",
+                "Fondo": "",
+                "Segnatura": ""
+            }
+        },
         "Collaboratori": {},
         "Eventi": {},
         "Foto preview": "FR_preview",
@@ -19557,6 +19571,19 @@
                 "Città, editore o rivista": "https://www.antiquanuovaserie.it/due-cassettoni-maggiolini-e-una-storia-di-antiquariato-tra-milano-e-varese/",
                 "Pagine": "",
                 "Tipologia": "articolo online",
+                "Istituto": "",
+                "Fondo": "",
+                "Segnatura": ""
+            },
+            "B_334": {
+                "ID": "B_334",
+                "Autore": "",
+                "Anno": "17/03/2026",
+                "Titolo": "Intervista a Michele Subert",
+                "Completamento del titolo": "",
+                "Città, editore o rivista": "Milano",
+                "Pagine": "",
+                "Tipologia": "intervista",
                 "Istituto": "",
                 "Fondo": "",
                 "Segnatura": ""

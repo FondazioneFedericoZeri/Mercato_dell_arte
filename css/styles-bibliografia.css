@@ -296,14 +296,7 @@ footer img {
     margin: 0 auto;
 }
 
-.bib-intro h1 {
-    margin: 0 0 12px 0;
-    font-family: var(--ff-head);
-    font-style: italic;
-    font-weight: 400;
-    font-size: 40px;
-    color: var(--testo);
-}
+/* Il titolo viene da .titolo-pagina, in tokens.css. */
 
 .bib-intro p {
     margin: 0;
@@ -317,56 +310,74 @@ footer img {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 18px;
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 26px auto 0 auto;
     padding: 0 60px;
     box-sizing: border-box;
 }
 
+/* Le tre carte sono linguette, non bottoni: quella accesa prende lo
+   stesso fondo della sezione che apre e ci si salda sopra, con un
+   filo di terracotta in cima. I colori sono quelli caldi della
+   pagina eventi (#f0efea, #dcd9cf), non l'azzurro dei filtri: qui
+   non si sta filtrando niente, si sta scegliendo dove andare. */
 .bib-carta {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 2px;
+    gap: 6px;
     font-family: inherit;
     text-align: left;
     background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 16px 18px 18px 18px;
+    border: 1px solid var(--carta-bordo);
+    border-top: 3px solid transparent;
+    border-radius: 10px 10px 0 0;
+    padding: 15px 20px 17px 20px;
     cursor: pointer;
-    transition: border-color 0.2s ease, background-color 0.2s ease;
+    transition: background-color 0.18s ease, border-color 0.18s ease;
 }
 
 .bib-carta:hover {
-    border-color: var(--blu);
-    background-color: #f8fbff;
+    border-color: #b9b6ab;
+    background-color: #fbfaf8;
 }
 
-/* Aperta: lo stesso azzurro del filtro dei luoghi, cosi' le due
-   pagine si comportano allo stesso modo. */
 .bib-carta.aperta {
-    border-color: var(--blu);
-    background-color: #e6f0ff;
+    background-color: var(--carta-fondo);
+    border-color: var(--carta-bordo);
+    border-top-color: var(--terra);
+    border-bottom-color: var(--carta-fondo);
+}
+
+.bib-carta-riga {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 14px;
 }
 
 .bib-carta-n {
     font-family: var(--ff-head);
-    font-size: 34px;
-    line-height: 1.1;
-    color: var(--blu);
+    font-size: 30px;
+    line-height: 1;
+    color: #8f8a7d;
+    transition: color 0.18s ease;
+}
+
+.bib-carta.aperta .bib-carta-n {
+    color: var(--terra);
 }
 
 .bib-carta-t {
     font-size: var(--fs-body);
     font-weight: 600;
+    letter-spacing: 0.01em;
     color: var(--testo);
 }
 
 .bib-carta-d {
     font-size: var(--fs-body-sm);
     line-height: 1.5;
-    color: #666;
+    color: #6d6a63;
 }
 
 /* Senza javascript le tre sezioni restano tutte aperte: meglio una
@@ -379,21 +390,31 @@ footer img {
     display: block;
 }
 
+/* Quel che si apre dopo il clic sta su un fondo grigio: si vede a
+   colpo d'occhio che e' una sezione a se', e non il seguito della
+   pagina. */
 .bib-sezione {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 60px 20px 60px;
+    /* 1080 = 1200 meno i 60 di margine interno della fila di carte:
+       cosi' il pannello grigio finisce esattamente sotto le carte,
+       allineato a destra e a sinistra. */
+    max-width: 1180px;
+    margin: -1px auto 34px auto;   /* -1px: si salda al bordo della carta */
+    padding: 6px 34px 34px 34px;
     box-sizing: border-box;
+    background-color: var(--carta-fondo);
+    border: 1px solid var(--carta-bordo);
+    border-radius: 0 0 10px 10px;
 }
 
 /* L'alfabeto in cima alle fonti a stampa */
 .bib-alfabeto {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;   /* l'alfabeto sta in mezzo alla pagina */
     gap: 2px;
-    margin: 28px 0 4px 0;
-    padding-bottom: 14px;
-    border-bottom: 1px solid #e4e4e4;
+    margin: 22px 0 4px 0;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--carta-bordo);
 }
 
 .bib-alfabeto a {
@@ -495,7 +516,7 @@ footer img {
     font-size: var(--fs-lettura);
     line-height: 1.6;
     padding: 7px 0;
-    border-bottom: 1px solid #ededed;
+    border-bottom: 1px solid var(--carta-bordo);
 }
 
 .bib-meta {
@@ -521,6 +542,17 @@ footer img {
         padding: 0 18px;
     }
 
+    /* In colonna le carte non sono piu' linguette affiancate: quelle
+       chiuse tornano riquadri interi, e solo quella aperta tiene il
+       fondo squadrato per saldarsi alla sezione. */
+    .bib-carta {
+        border-radius: 10px;
+    }
+
+    .bib-carta.aperta {
+        border-radius: 10px 10px 0 0;
+    }
+
     .bib-intro,
     .bib-sezione {
         padding-left: 18px;
@@ -536,15 +568,16 @@ footer img {
     }
 }
 
-/* Tre colonne di citazioni hanno bisogno di piu' respiro delle due
-   sezioni in colonna singola. */
-#sezione-stampa {
-    max-width: 1500px;
-}
 
 /* Una parola lunghissima — un indirizzo web scritto per esteso —
    non deve poter allargare la colonna che la contiene. */
 .column p,
 .bib-elenco li {
     overflow-wrap: anywhere;
+}
+
+/* Sul fondo grigio il filo chiarissimo sotto ogni citazione non si
+   vedeva piu'. */
+#sezione-stampa .column p {
+    border-bottom: 1px solid var(--carta-bordo);
 }
