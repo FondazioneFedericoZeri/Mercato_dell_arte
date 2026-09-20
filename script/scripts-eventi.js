@@ -224,7 +224,9 @@ document.addEventListener("DOMContentLoaded", function () {
         d.events.forEach(function (e) { byCat[e.category] = (byCat[e.category] || 0) + 1; });
         var decadeTotal = focusCategory ? (byCat[focusCategory] || 0) : d.events.length;
         col.setAttribute("aria-label", decennio(d.decade) + ", " + decadeTotal + " eventi" + (focusCategory ? " (" + CAT_LABEL[focusCategory] + ")" : ""));
-        var pxPerEvent = maxCount ? (160 / maxCount) : 0;
+        // In percentuale, non in pixel: il riquadro passa da 190 a
+        // 150px sul telefono e le barre lo seguono.
+        var quotaPerEvento = maxCount ? (94 / maxCount) : 0;
 
         var catsToDraw = focusCategory ? [[focusCategory, CAT_LABEL[focusCategory]]] : CATS;
         catsToDraw.forEach(function (c) {
@@ -233,7 +235,7 @@ document.addEventListener("DOMContentLoaded", function () {
           if (!n) return;
           var seg = document.createElement("div");
           seg.className = "ed-seg";
-          seg.style.height = Math.max(n * pxPerEvent - 2, 3) + "px";
+          seg.style.height = (n * quotaPerEvento) + "%";
           seg.style.background = catColor(key);
           seg.addEventListener("mousemove", function (e) {
             tip.innerHTML = "";

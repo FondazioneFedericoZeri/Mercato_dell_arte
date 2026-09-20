@@ -103,7 +103,11 @@ document.addEventListener("DOMContentLoaded", function () {
     var labels = document.getElementById("home-ed-labels");
     var tip = document.getElementById("home-ed-tip");
     if (!chart || !labels || !tip) return;
-    var chartH = 140;
+    /* L'altezza non si scrive piu' qui: il CSS porta il grafico a
+       100px sotto i 768px, e con un 140 fisso le barre uscivano dal
+       riquadro di una quarantina di pixel. Ora si misurano in
+       percentuale dell'altezza vera. */
+    var ALTEZZA_MAX = 94;   // % dell'altezza del grafico
 
     DECADES.forEach(function (dd) {
       var total = totalOf(dd.byCat);
@@ -117,7 +121,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (!n) return;
         var seg = document.createElement("div");
         seg.className = "ep-seg";
-        seg.style.height = Math.max((n / (maxTotal || 1)) * chartH - 1, 2) + "px";
+        seg.style.height = ((n / (maxTotal || 1)) * ALTEZZA_MAX) + "%";
         seg.style.background = catColor(key);
         col.appendChild(seg);
       });

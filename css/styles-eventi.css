@@ -101,8 +101,14 @@ nav ul li a:hover {
     --ed-ink:        #333;
     --ed-ink-soft:   #666;
     --ed-ink-mute:   #9b9b9b;
-    --ed-border:     #e2e0d8;
-    --ed-surface:    #fff;
+    --ed-border:     #dcd9cf;
+    /* Il riquadro del grafico era bianco su pagina bianca e si
+       distingueva solo per il bordo. Il primo tentativo, #f8f8f8,
+       è il grigio che il sito usa per le fasce: su una pagina
+       bianca la differenza è del 3% e non si vede. Questo si vede,
+       e resta abbastanza neutro da non disturbare i colori delle
+       barre. */
+    --ed-surface:    #f0efea;
     --ed-accent:     #5593C9;
 }
 
@@ -178,7 +184,10 @@ nav ul li a:hover {
 }
 .ed-chart {
     display: flex;
-    align-items: flex-end;
+    /* Le colonne sono alte quanto il grafico e le barre si misurano in
+       percentuale: così seguono l'altezza vera del riquadro, che sul
+       telefono cambia, invece di essere calcolate su un numero fisso. */
+    align-items: stretch;
     gap: 4px;
     height: 190px;
     padding: 0 1px;
@@ -188,6 +197,7 @@ nav ul li a:hover {
 .ed-col {
     flex: 1 1 0;
     min-width: 0;
+    height: 100%;
     display: flex;
     flex-direction: column-reverse;
     gap: 2px;
