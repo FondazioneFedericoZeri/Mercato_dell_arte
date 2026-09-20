@@ -155,14 +155,24 @@
     var telaio = document.createElement("div");
     telaio.className = "af-telaio";
 
-    var legenda = document.createElement("div");
-    legenda.className = "af-legenda";
-    legenda.innerHTML =
+    /* La legenda sta accanto al titolo della sezione, fuori dal
+       telaio: dentro galleggiava nello spazio vuoto a destra
+       dell'albero e sembrava finita li' per sbaglio. Se il posto
+       non c'e' (pagina vecchia) torna in cima al telaio. */
+    var chiavi =
       '<span class="af-legenda-titolo">Legenda</span>' +
       '<span class="af-chiave"><i></i>discendenza diretta</span>' +
       '<span class="af-chiave"><i class="fr"></i>fratelli</span>' +
       '<span class="af-chiave"><i class="lat"></i>altri gradi</span>';
-    telaio.appendChild(legenda);
+    var fuori = document.getElementById("af-legenda");
+    if (fuori) {
+      fuori.innerHTML = chiavi;
+    } else {
+      var legenda = document.createElement("div");
+      legenda.className = "af-legenda";
+      legenda.innerHTML = chiavi;
+      telaio.appendChild(legenda);
+    }
 
     var albero = document.createElement("div");
     albero.className = "af-albero";

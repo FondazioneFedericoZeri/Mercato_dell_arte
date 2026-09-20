@@ -713,21 +713,39 @@ footer img {
 /* Legenda in alto a destra. Resta nel flusso e non in posizione
    assoluta: cosi' occupa il suo spazio e non puo' finire sopra alla
    prima scheda dell'albero su contenitori stretti. */
+/* Titolo della sezione a sinistra, legenda a destra, sopra il
+   telaio: è la lettura normale di un diagramma, e il telaio resta
+   pulito. */
+.af-intestazione {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 8px 24px;
+}
+
+.af-intestazione h2 {
+    margin-top: 0;
+}
+
 .af-legenda {
     text-align: right;
-    margin-bottom: 20px;
-    font-size: 12px;
-    color: #8a8a8a;
+    font-size: var(--fs-body-sm);
+    color: #555;
     line-height: 1.9;
     pointer-events: none;
 }
 
+.af-legenda:empty {
+    display: none;
+}
+
 .af-legenda-titolo {
     display: block;
-    font-size: 10.5px;
+    font-size: var(--fs-caption);
     letter-spacing: .09em;
     text-transform: uppercase;
-    color: #aab4bd;
+    color: #6b6b6b;
     font-weight: 600;
 }
 

@@ -213,30 +213,6 @@ def righe_persone(entity):
     return righe
 
 
-def righe_sedi(entity, massimo=3):
-    """Indirizzo e anni di ogni sede, al massimo <massimo> + il resto."""
-    luoghi = luoghi_entita(entity)
-    righe = []
-    for l in luoghi[:massimo]:
-        indirizzo = " ".join([p for p in ((l.get("Via") or "").strip(),
-                                          (l.get("Civico") or "").strip()) if p])
-        citta = (l.get("Città") or "").strip()
-        testo = ", ".join([p for p in (indirizzo, citta) if p])
-        ap = (l.get("Apertura") or "").strip()
-        ch = (l.get("Chiusura") or "").strip()
-        if ap and ch:
-            testo += f" · {ap}–{ch}" if ch.lower() != "in attività" \
-                     else f" · dal {ap}, in attività"
-        elif ap:
-            testo += f" · dal {ap}"
-        if testo:
-            righe.append(testo)
-    resto = len(luoghi) - massimo
-    if resto > 0:
-        righe.append(f"e altre {resto} sedi, nella scheda Luoghi")
-    return righe
-
-
 def scheda_sintesi(entity):
     """Le righe della scheda di sintesi: solo quelle che hanno un dato."""
     righe = []
@@ -250,11 +226,6 @@ def scheda_sintesi(entity):
     if nomi:
         righe.append(("INSEGNA" if len(nomi) == 1 else "INSEGNE",
                       "<br>".join(nomi)))
-
-    sedi = righe_sedi(entity)
-    if sedi:
-        righe.append(("SEDE" if len(sedi) == 1 else "SEDI",
-                      "<br>".join(sedi)))
 
     link = (entity.get("Link Zeri") or "").strip()
     if link:
@@ -521,7 +492,12 @@ def build_html(entity, entities, parentela, ordinate):
                     if n_albero:
                         with page.div(id="Persone",
                                       klass=klass_contenuto("Persone")):
-                            page.h2(_t="Relazioni familiari")
+                            # La legenda sta qui, accanto al titolo:
+                            # dentro il telaio galleggiava nel vuoto
+                            # a destra dell'albero.
+                            with page.div(klass="af-intestazione"):
+                                page.h2(_t="Relazioni familiari")
+                                page.div(id="af-legenda", klass="af-legenda")
                             page.div(id="albero-genealogico")
 
                     if luoghi:
