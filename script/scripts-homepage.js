@@ -225,32 +225,48 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-// scripts js sezione 5 timeline: permette di applicare la dissolvenza in entrata al testo allo scroll della pagina
+// La comparsa in dissolvenza delle sezioni della home.
+//
+// La regola di prima chiedeva che la sezione stesse TUTTA dentro la
+// finestra: bordo superiore sotto il bordo alto dello schermo e bordo
+// inferiore sopra quello basso. Una sezione la si vede arrivare molto
+// prima che finisca dentro, e fino a quel momento restava trasparente:
+// di qui l'impressione che l'effetto fosse lentissimo. Peggio ancora
+// per le sezioni piu' alte della finestra, che quella condizione non
+// la soddisfano mai: su uno schermo di telefono alto 700 pixel i
+// protagonisti (741 pixel) restavano invisibili per sempre.
+//
+// Adesso basta che la sezione entri nello schermo: si comincia a
+// vederla mentre sale, che e' come funzionano queste dissolvenze.
 document.addEventListener("DOMContentLoaded", function () {
-  // Funzione per controllare se un elemento è visibile nello schermo
-  function isElementInViewport(el) {
-    var rect = el.getBoundingClientRect();
-    return (
-      rect.top >= 0 &&
-      rect.left >= 0 &&
-      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
+  var sezioni = document.querySelectorAll('.fade-in');
+  if (!sezioni.length) return;
+
+  function mostra(elemento) {
+    elemento.classList.add('visible');
   }
 
-  // Funzione per applicare l'effetto di dissolvenza
-  function checkFadeIn() {
-    var elements = document.querySelectorAll('.fade-in');
-    elements.forEach(function (element) {
-      if (isElementInViewport(element)) {
-        element.classList.add('visible');
-      }
+  // Senza IntersectionObserver (browser molto vecchi) si rinuncia
+  // all'effetto, non al contenuto.
+  if (!('IntersectionObserver' in window)) {
+    sezioni.forEach(mostra);
+    return;
+  }
+
+  var osservatore = new IntersectionObserver(function (voci) {
+    voci.forEach(function (voce) {
+      if (!voce.isIntersecting) return;
+      mostra(voce.target);
+      osservatore.unobserve(voce.target);   // una volta apparsa, resta
     });
-  }
+  }, {
+    // Il bordo basso alzato di 80 pixel: la sezione comincia ad
+    // apparire quando e' entrata per davvero, non al primo pixel.
+    rootMargin: '0px 0px -80px 0px',
+    threshold: 0
+  });
 
-  // Controlla lo scroll e carica
-  window.addEventListener('scroll', checkFadeIn);
-  window.addEventListener('load', checkFadeIn);
+  sezioni.forEach(function (s) { osservatore.observe(s); });
 });
 
 //bubble

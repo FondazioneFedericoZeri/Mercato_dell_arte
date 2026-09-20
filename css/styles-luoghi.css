@@ -384,10 +384,17 @@ footer img {
 
 /* mappa Layout desktop */
 #map {
+    display: block;
+    padding: 20px;
+}
+
+/* La cornice tiene insieme filtro e mappa: e' lei che va a schermo
+   intero, e dentro di lei il filtro puo' diventare un pannello
+   sovrapposto senza uscire dal contesto della mappa. */
+.mappa-cornice {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 20px;
     gap: 20px;
 }
 
@@ -405,7 +412,7 @@ footer img {
 
 /* Layout mobile */
 @media (max-width: 768px) {
-    #map {
+    .mappa-cornice {
         display: flex;
         flex-direction: column;
         gap: 10px;
@@ -509,12 +516,13 @@ p {
     max-width: 1000px;
 }
 
+/* Stessa misura e stesso peso del titolo della pagina eventi
+   (.section-title): 32px, tondo, niente corsivo. */
 .mappa-intro h1 {
     margin: 0 0 12px 0;
     font-family: var(--ff-head);
-    font-style: italic;
     font-weight: 400;
-    font-size: 40px;
+    font-size: 32px;
     color: var(--testo);
 }
 
@@ -523,10 +531,6 @@ p {
     font-size: var(--fs-body);
     line-height: 1.6;
     max-width: 68ch;
-}
-
-.mappa-conteggio {
-    color: #555;
 }
 
 /* La goccia colorata dentro il filtro: il periodo e il colore del
@@ -592,6 +596,126 @@ p {
     }
 
     .mappa-intro h1 {
-        font-size: 28px;
+        font-size: 24px;
+    }
+}
+
+/* ══════════════════════════════════════════════════════════════
+   Mappa a schermo intero.
+
+   La mappa e' alta 550 pixel dentro una pagina che ne e' larga
+   1400: a quella misura l'Europa sta in un fazzoletto e per
+   guardare una via bisogna ingrandire e trascinare. A schermo
+   intero va la cornice, non la sola mappa, cosi' il filtro dei
+   periodi resta a portata di mano — diventa un pannello appoggiato
+   sopra la mappa, in alto a sinistra.
+
+   Due strade per la stessa cosa: lo schermo intero vero del
+   browser (:fullscreen) e, dove non c'e' — Safari su iPhone non lo
+   concede a un elemento qualsiasi — una finta a tutta finestra.
+   ══════════════════════════════════════════════════════════════ */
+
+.mappa-cornice:fullscreen,
+.mappa-cornice.a-schermo-intero {
+    display: block;
+    position: relative;
+    background-color: #fff;
+    padding: 0;
+    gap: 0;
+}
+
+.mappa-cornice.a-schermo-intero {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Sopra la testata e il piè di pagina, che stanno a 1000. */
+    z-index: 2000;
+}
+
+/* Le altezze fisse della mappa sono scritte con due id
+   ("#map #chartdiv"): per batterle serve la stessa forza. */
+#map .mappa-cornice:fullscreen #chartdiv,
+#map .mappa-cornice.a-schermo-intero #chartdiv {
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+}
+
+#map .mappa-cornice:fullscreen .filter-container,
+#map .mappa-cornice.a-schermo-intero .filter-container {
+    position: absolute;
+    top: 14px;
+    left: 60px;   /* accanto ai comandi dello zoom, non sopra */
+    z-index: 1200;
+    margin: 0;
+    max-width: 250px;
+    max-height: calc(100% - 28px);
+    overflow: auto;
+    background-color: rgba(255, 255, 255, 0.96);
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 14px 16px;
+    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.18);
+    box-sizing: border-box;
+}
+
+/* Il bottone dello schermo intero, fra i comandi della mappa */
+.mappa-intero a {
+    font-size: 17px;
+    line-height: 26px;
+    text-align: center;
+    color: #333;
+    cursor: pointer;
+}
+
+.mappa-intero a:hover {
+    color: var(--blu);
+}
+
+/* Mentre la finta e' aperta la pagina sotto non deve scorrere. */
+body.mappa-aperta {
+    overflow: hidden;
+}
+
+/* Sul telefono a schermo intero un pannello di 250 pixel coprirebbe
+   due terzi della mappa: il filtro scende in basso, in una riga sola
+   che si avvolge, dove copre poco e il pollice ci arriva. */
+@media (max-width: 700px) {
+    #map .mappa-cornice:fullscreen .filter-container,
+    #map .mappa-cornice.a-schermo-intero .filter-container {
+        top: auto;
+        bottom: 10px;
+        left: 10px;
+        right: 10px;
+        max-width: none;
+        max-height: 45%;
+        padding: 10px 12px;
+    }
+
+    #map .mappa-cornice:fullscreen .radio-group,
+    #map .mappa-cornice.a-schermo-intero .radio-group {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    #map .mappa-cornice:fullscreen .radio-group label,
+    #map .mappa-cornice.a-schermo-intero .radio-group label {
+        margin-bottom: 0;
+        padding: 7px 10px;
+        font-size: var(--fs-body-sm);
+    }
+
+    #map .mappa-cornice:fullscreen .radio-group label.per-colore:after,
+    #map .mappa-cornice.a-schermo-intero .radio-group label.per-colore:after {
+        margin-left: 8px;
+    }
+
+    #map .mappa-cornice:fullscreen .filter-container > label,
+    #map .mappa-cornice.a-schermo-intero .filter-container > label {
+        font-size: var(--fs-body-sm);
+        margin-bottom: 6px;
     }
 }

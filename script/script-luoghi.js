@@ -252,6 +252,110 @@ document.addEventListener("DOMContentLoaded", function () {
         map.fitBounds(L.latLngBounds(punti), { padding: [30, 30], maxZoom: 7 });
     }
 
+    /* ── Schermo intero ────────────────────────────────────────────
+       Dentro la pagina la mappa e' alta 550 pixel: per guardare una
+       via bisogna ingrandire e trascinare dentro una finestrella. A
+       schermo intero ci va la cornice, che contiene anche il filtro
+       dei periodi: cosi' si continua a scegliere il periodo mentre si
+       guarda. Dove il browser non concede lo schermo intero a un
+       elemento qualsiasi (Safari su iPhone) si ripiega su una finta a
+       tutta finestra, che da' lo stesso risultato. */
+    var cornice = document.getElementById("mappa-cornice");
+    var bottoneIntero = null;
+
+    /* Passando a schermo intero la mappa cambia forma — da 1040x550 a
+       tutto lo schermo — e la vista di partenza, calcolata sull'altra
+       forma, lascerebbe le sedi in un angolo con mezzo oceano vuoto
+       sotto. Percio' si reinquadra: ma solo finche' nessuno ha mosso
+       la mappa, altrimenti si butterebbe via lo zoom di chi stava
+       guardando una via. */
+    var mossaDaChiGuarda = false;
+    ["mousedown", "touchstart", "wheel", "dblclick"].forEach(function (evento) {
+        map.getContainer().addEventListener(evento, function () {
+            mossaDaChiGuarda = true;
+        }, { passive: true });
+    });
+
+    function schermoInteroAttivo() {
+        var elemento = document.fullscreenElement || document.webkitFullscreenElement;
+        return elemento === cornice ||
+               (cornice && cornice.classList.contains("a-schermo-intero"));
+    }
+
+    function aggiornaBottone() {
+        if (!bottoneIntero) return;
+        var aperto = schermoInteroAttivo();
+        bottoneIntero.innerHTML = aperto ? "&#10005;" : "&#9974;";
+        bottoneIntero.title = aperto ? "Esci dallo schermo intero" : "Mappa a schermo intero";
+        bottoneIntero.setAttribute("aria-label", bottoneIntero.title);
+        bottoneIntero.setAttribute("aria-pressed", aperto ? "true" : "false");
+        /* Cambiando forma la mappa deve rimisurarsi, altrimenti resta
+           disegnata sulle dimensioni di prima e meta' schermo resta
+           grigia. Si aspetta la fine della transizione del browser. */
+        setTimeout(function () {
+            map.invalidateSize();
+            if (!mossaDaChiGuarda) inquadra();
+        }, 140);
+    }
+
+    function apriFinta() {
+        cornice.classList.add("a-schermo-intero");
+        document.body.classList.add("mappa-aperta");
+        aggiornaBottone();
+    }
+
+    function chiudiFinta() {
+        cornice.classList.remove("a-schermo-intero");
+        document.body.classList.remove("mappa-aperta");
+        aggiornaBottone();
+    }
+
+    function alternaSchermoIntero() {
+        if (!cornice) return;
+        if (schermoInteroAttivo()) {
+            if (document.fullscreenElement || document.webkitFullscreenElement) {
+                (document.exitFullscreen || document.webkitExitFullscreen).call(document);
+            } else {
+                chiudiFinta();
+            }
+            return;
+        }
+        var chiedi = cornice.requestFullscreen || cornice.webkitRequestFullscreen;
+        if (!chiedi) return apriFinta();
+        var esito = chiedi.call(cornice);
+        // Il permesso puo' essere negato: in quel caso si ripiega.
+        if (esito && esito.catch) esito.catch(apriFinta);
+    }
+
+    document.addEventListener("fullscreenchange", aggiornaBottone);
+    document.addEventListener("webkitfullscreenchange", aggiornaBottone);
+    // Esc chiude anche la finta, come farebbe con quello vero.
+    document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape" && cornice &&
+            cornice.classList.contains("a-schermo-intero")) {
+            chiudiFinta();
+        }
+    });
+
+    if (cornice) {
+        var ComandoIntero = L.Control.extend({
+            options: { position: "topleft" },
+            onAdd: function () {
+                var scatola = L.DomUtil.create("div",
+                    "leaflet-bar leaflet-control mappa-intero");
+                bottoneIntero = L.DomUtil.create("a", "", scatola);
+                bottoneIntero.href = "#";
+                bottoneIntero.setAttribute("role", "button");
+                L.DomEvent.disableClickPropagation(scatola);
+                L.DomEvent.on(bottoneIntero, "click", L.DomEvent.stop);
+                L.DomEvent.on(bottoneIntero, "click", alternaSchermoIntero);
+                return scatola;
+            }
+        });
+        map.addControl(new ComandoIntero());
+        aggiornaBottone();
+    }
+
     // Function to update markers based on the selected period
     function updateMarkers(period) {
         markers.clearLayers(); // Clear all clusters before adding new markers

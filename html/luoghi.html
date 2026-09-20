@@ -73,6 +73,10 @@
                le raccoglie: il numero dice quante sono, e un clic le apre.</p>
         </section>
         <section id="map">
+          <!-- Filtro e mappa stanno dentro una cornice sola: è quella che
+               va a schermo intero, così i filtri restano raggiungibili
+               anche quando la mappa occupa tutto. -->
+          <div class="mappa-cornice" id="mappa-cornice">
             <div class="filter-container">
                 <label>Seleziona il periodo:</label>
                 <div class="radio-group">
@@ -97,10 +101,7 @@
             </div>
 
             <div id="chartdiv"></div>
-            <!-- <div class="text-content fade in">
-                <h2><span class="highlight">SCOPRI</span> I LUOGHI DEL MERCATO DELL'ARTE</h2>
-                <p>Esplora i principali contesti culturali del mercato dell'arte.</p>
-            </div> -->
+          </div>
         </section>
     </main>
 

@@ -336,7 +336,7 @@ nav ul li a:hover {
 /* Classe per la dissolvenza in entrata */
 .fade-in {
     opacity: 0;
-    transition: opacity 2s ease-in-out;
+    transition: opacity 0.7s ease-in-out;
 }
 
 .fade-in.visible {
@@ -352,7 +352,7 @@ nav ul li a:hover {
     margin-right: 60px;
     opacity: 0;
     /* Inizia nascosto */
-    transition: opacity 2s ease-in-out;
+    transition: opacity 0.7s ease-in-out;
     /* Applicazione della dissolvenza */
 }
 
@@ -822,7 +822,7 @@ nav ul li a:hover {
 
 #key-people.fade-in {
     opacity: 0;
-    transition: opacity 2s ease-in-out;
+    transition: opacity 0.7s ease-in-out;
 }
 
 #key-people.fade-in.visible {
@@ -1000,7 +1000,7 @@ nav ul li a:hover {
 
 #biblio-right.fade-in {
     opacity: 0;
-    transition: opacity 2s ease-in-out;
+    transition: opacity 0.7s ease-in-out;
 }
 
 #biblio-right.fade-in.visible {
@@ -1340,3 +1340,24 @@ footer img {
 
 
 
+
+/* ══════════════════════════════════════════════════════════════
+   La comparsa delle sezioni
+
+   Durava due secondi, ed era l'occhio a pagarne il prezzo: si
+   arrivava sulla sezione e per due secondi il testo restava una
+   macchia chiara. Con sette decimi la dissolvenza si vede ancora
+   ma non fa aspettare.
+
+   C'e' anche chi ha chiesto al proprio sistema di ridurre le
+   animazioni: per loro il testo c'e' e basta.
+   ══════════════════════════════════════════════════════════════ */
+
+@media (prefers-reduced-motion: reduce) {
+    .fade-in,
+    #key-people.fade-in,
+    #map .text-content {
+        opacity: 1;
+        transition: none;
+    }
+}
