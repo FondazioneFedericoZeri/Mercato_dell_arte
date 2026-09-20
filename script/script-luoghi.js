@@ -28,7 +28,14 @@ document.addEventListener("DOMContentLoaded", function () {
         maxBoundsViscosity: 1.0,      // Stick to the bounds when panning
         worldCopyJump: false,         // Disable world repetition
         minZoom: 2,                   // Minimum zoom level to prevent world repeat
-        maxZoom: 18                   // Maximum zoom level
+        maxZoom: 18,                  // Maximum zoom level
+        /* Di serie Leaflet salta di uno zoom intero alla volta, e fra
+           uno scatto e l'altro la scala raddoppia: dovendo arrotondare
+           per difetto, fitBounds lasciava mezzo pianeta intorno alle
+           sedi e l'Europa tornava minuscola. Con passi di un quarto la
+           mappa si ferma alla distanza giusta, su ogni schermo. */
+        zoomSnap: 0.25,
+        zoomDelta: 0.5
     });
 
     /* La vista di partenza era fissa: setView([30, -30], 3), cioe' un
@@ -222,26 +229,28 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    /* Inquadra la mappa sui segnaposto presenti: "europa" tiene fuori
-       le sedi oltreoceano, che da sole allargherebbero la vista fino a
-       rimpicciolire di nuovo l'Europa; "tutto" le comprende. */
-    function inquadra(dove) {
-        var punti = [];
+    /* Inquadra la mappa sui segnaposto presenti, senza chiedere niente
+       a chi guarda: si apre su tutte le sedi, comprese quelle oltre
+       oceano, alla distanza scelta da Valentina.
+
+       L'eccezione e' lo schermo stretto: tenere dentro New York e Los
+       Angeles su 350 pixel vorrebbe dire ridurre l'Europa a un
+       francobollo, e le sedi europee sono il 95% del totale. Sul
+       telefono si parte dall'Europa; l'America resta a un gesto di
+       distanza. */
+    function inquadra() {
+        var tutte = [], europa = [];
         markers.eachLayer(function (m) {
             var p = m.getLatLng();
-            if (dove === "tutto" ||
-                (p.lng >= EUROPA.lonMin && p.lng <= EUROPA.lonMax)) {
-                punti.push(p);
+            tutte.push(p);
+            if (p.lng >= EUROPA.lonMin && p.lng <= EUROPA.lonMax) {
+                europa.push(p);
             }
         });
+        var punti = (map.getSize().x < 700 && europa.length) ? europa : tutte;
         if (!punti.length) return;
-        map.fitBounds(L.latLngBounds(punti), { padding: [40, 40], maxZoom: 7 });
+        map.fitBounds(L.latLngBounds(punti), { padding: [30, 30], maxZoom: 7 });
     }
-
-    var bottoneEuropa = document.getElementById("vista-europa");
-    var bottoneTutto = document.getElementById("vista-tutto");
-    if (bottoneEuropa) bottoneEuropa.addEventListener("click", function () { inquadra("europa"); });
-    if (bottoneTutto) bottoneTutto.addEventListener("click", function () { inquadra("tutto"); });
 
     // Function to update markers based on the selected period
     function updateMarkers(period) {
@@ -309,7 +318,7 @@ document.addEventListener("DOMContentLoaded", function () {
                        sotto le mani di chi sta guardando. */
                     if (!vistaIniziale) {
                         vistaIniziale = true;
-                        inquadra("europa");
+                        inquadra();
                     }
                 }).fail(function () {
                     console.error("Failed to load the JSON file.");
