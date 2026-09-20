@@ -56,6 +56,19 @@ def fonte_archivistica(bibitem):
     return ", ".join(p for p in pezzi if p)
 
 
+def collegamento(valore):
+    """Un indirizzo web si clicca, non si legge: cinque voci lo hanno
+    scritto per esteso in una colonna qualsiasi, e uno di 117 caratteri
+    non si puo' nemmeno mandare a capo. Qui diventa un collegamento,
+    con scritto il sito."""
+    v = (valore or "").strip()
+    if not v.startswith(("http://", "https://")):
+        return v
+    dominio = re.sub(r"^https?://(www\.)?", "", v).split("/")[0]
+    return (f'<a href="{v}" target="_blank" rel="noopener" '
+            f'class="bib-web">{dominio}</a>')
+
+
 def getBib(bibitem):
     if (bibitem.get("Tipologia") or "").strip() == "fonte archivistica":
         return fonte_archivistica(bibitem)
@@ -90,10 +103,10 @@ def getBib(bibitem):
         s += f", {completamento}"
 
     if len(bibitem['Città, editore o rivista']) > 0:
-        s += f", {bibitem['Città, editore o rivista']}"
+        s += f", {collegamento(bibitem['Città, editore o rivista'])}"
 
     if len(bibitem["Pagine"]) > 0:
-        s += f", {bibitem['Pagine']}"
+        s += f", {collegamento(bibitem['Pagine'])}"
 
     return s
 

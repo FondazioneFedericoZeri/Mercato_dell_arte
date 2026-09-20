@@ -1,5 +1,23 @@
+import os
+import re
 import json
+import unicodedata
 import airium as a
+
+
+# ── Nome del file delle entita' ────────────────────────────────────
+# Come in build_dettaglio.py: il file sta passando da "entità" a
+# "entita" senza accento, e finche' la migrazione non e' conclusa si
+# accetta il nome che c'e'.
+def _file_entita(*candidati):
+	for c in candidati:
+		if os.path.isfile(c):
+			return c
+	return candidati[0]
+
+
+def ENTITA_JSON():
+	return _file_entita("json/entita.json", "json/entità.json")
 
 
 def fonte_archivistica(bibitem):
@@ -15,6 +33,23 @@ def fonte_archivistica(bibitem):
 	istituto = (bibitem.get("Istituto") or "").strip()
 	chiave = istituto or testo
 	return (chiave[:1] or "?").lower(), istituto, testo
+
+
+def collegamento(valore):
+	"""Un indirizzo web si clicca, non si legge.
+
+	Cinque voci in linea hanno l'indirizzo scritto per esteso in una
+	colonna qualsiasi — quella di Colnaghi nell'Oxford Dictionary e'
+	lunga 117 caratteri. Stampato cosi' non si puo' nemmeno mandare a
+	capo: sporgeva dalla colonna e portava l'intera pagina a scorrere
+	di lato. Qui diventa un collegamento, con scritto il sito.
+	"""
+	v = (valore or "").strip()
+	if not v.startswith(("http://", "https://")):
+		return v
+	dominio = re.sub(r"^https?://(www\.)?", "", v).split("/")[0]
+	return (f'<a href="{v}" target="_blank" rel="noopener" '
+		f'class="bib-web">{dominio}</a>')
 
 
 def getBib(bibitem):
@@ -57,13 +92,131 @@ def getBib(bibitem):
 		s += f", {completamento}"
 
 	if len(bibitem['Città, editore o rivista'])>0:
-		s+=f", {bibitem['Città, editore o rivista']}"
+		s+=f", {collegamento(bibitem['Città, editore o rivista'])}"
 
 	if len(bibitem["Pagine"])>0:
-		s+=f", {bibitem['Pagine']}"
+		s+=f", {collegamento(bibitem['Pagine'])}"
 
 	return first_letter.lower(), to_index, s
 
+
+# ══════════════════════════════════════════════════════════════════
+#  Le tre nature delle fonti
+#
+#  La bibliografia e' cresciuta fino a contenere tre cose che si
+#  consultano in modi diversi: uno scritto lo si cerca per autore,
+#  un'intervista per l'antiquario che parla, un documento d'archivio
+#  per il luogo in cui e' conservato. Un elenco alfabetico solo li
+#  teneva insieme senza servire nessuno dei tre.
+# ══════════════════════════════════════════════════════════════════
+
+MESI = ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno",
+	"luglio", "agosto", "settembre", "ottobre", "novembre", "dicembre"]
+
+LONTANO = (9999, 99, 99)   # le fonti senza data vanno in fondo
+
+_avvisi = []
+
+
+def data_intervista(valore):
+	"""Da una data scritta in tre modi diversi a una sola.
+
+	Nel foglio convivono tre grafie, tutte legittime nel punto in cui
+	sono nate: "2023-06-04 00:00:00" arriva dalle celle-data di Excel,
+	"2/15/2023" dall'esportazione americana della stessa tabella,
+	"20/05/2026" da chi l'ha scritta a mano all'italiana. Qui si
+	riconoscono tutte e tre e si restituisce (chiave, testo leggibile).
+
+	Fra giorno e mese decide il numero: uno dei due supera il 12 e
+	scioglie il dubbio. Se non succede si legge all'italiana, com'e'
+	scritto oggi il foglio, e si lascia un avviso nel registro della CI.
+	"""
+	v = (valore or "").strip()
+	if not v:
+		return LONTANO, ""
+
+	iso = re.match(r"^(\d{4})-(\d{1,2})-(\d{1,2})", v)
+	if iso:
+		anno, mese, giorno = (int(x) for x in iso.groups())
+	else:
+		sbarre = re.match(r"^(\d{1,2})[/.-](\d{1,2})[/.-](\d{4})$", v)
+		if sbarre:
+			primo, secondo, anno = (int(x) for x in sbarre.groups())
+			if primo > 12:                 # 20/05/2026: all'italiana
+				giorno, mese = primo, secondo
+			elif secondo > 12:             # 2/15/2023: all'americana
+				mese, giorno = primo, secondo
+			else:
+				giorno, mese = primo, secondo
+				_avvisi.append(f"data ambigua, letta all'italiana: {v}")
+		elif re.match(r"^\d{4}$", v):
+			# Solo l'anno: dopo i giorni noti di quell'anno.
+			return (int(v), 13, 0), v
+		else:
+			_avvisi.append(f"data non riconosciuta: {v}")
+			return LONTANO, v
+
+	if not (1 <= mese <= 12) or not (1 <= giorno <= 31):
+		_avvisi.append(f"data fuori calendario: {v}")
+		return LONTANO, v
+
+	return (anno, mese, giorno), f"{giorno} {MESI[mese - 1]} {anno}"
+
+
+def ordina_come_parola(testo):
+	"""Accenti e maiuscole fuori dall'ordinamento: in un elenco
+	alfabetico "Ávila" sta fra Avezzano e Avola, non dopo la zeta."""
+	piano = unicodedata.normalize("NFKD", (testo or ""))
+	return "".join(c for c in piano if not unicodedata.combining(c)).lower()
+
+
+def entita_per_fonte():
+	"""Per ogni fonte, le entita' che la citano.
+
+	Le interviste e i documenti d'archivio non dicono da soli a chi si
+	riferiscono: lo dice la colonna Bibliografia delle entita'. Qui si
+	gira quel legame, per poter raggruppare le interviste e per mettere
+	accanto a ogni documento l'antiquario di cui parla.
+	"""
+	legame = {}
+	percorso = ENTITA_JSON()
+	if not os.path.isfile(percorso):
+		return legame
+	entita = json.loads(open(percorso, encoding="utf-8").read())
+	for eid, ent in entita.items():
+		nome = (ent.get("Nome") or "").strip() or eid
+		for bid in (ent.get("Bibliografia") or {}):
+			legame.setdefault(bid, []).append((nome, eid))
+	for bid in legame:
+		legame[bid].sort(key=lambda x: ordina_come_parola(x[0]))
+	return legame
+
+
+def riga_intervista(bibitem):
+	"""Un'intervista raccolta sul campo si legge "chi, dove, quando";
+	una uscita su una rivista e' uno scritto come gli altri."""
+	autore = (bibitem.get("Autore") or "").strip()
+	titolo = (bibitem.get("Titolo") or "").strip()
+	luogo = (bibitem.get("Città, editore o rivista") or "").strip()
+	_, quando = data_intervista(bibitem.get("Anno"))
+
+	if autore:
+		return getBib(bibitem)[2], ""
+
+	# "Intervista Tullio Calabi, Torino" con accanto la colonna Citta'
+	# uguale: la citta' si legge una volta sola.
+	if luogo and titolo.lower().endswith(", " + luogo.lower()):
+		titolo = titolo[: -(len(luogo) + 2)].rstrip()
+
+	meta = ", ".join(p for p in (luogo, quando) if p)
+	return titolo, meta
+
+
+def righe_archivio(bibitem):
+	"""Citta', istituto, e poi quel che identifica il documento."""
+	fondo = (bibitem.get("Fondo") or "").strip()
+	segnatura = (bibitem.get("Segnatura") or "").strip()
+	return ", ".join(p for p in (fondo, segnatura) if p)
 
 
 def build_html_head(page):
@@ -81,6 +234,10 @@ def build_html_head(page):
 		               "family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&"
 		               "family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&"
 		               "display=swap", rel="stylesheet")
+		# Le tre sezioni si aprono una alla volta, ma solo se il
+		# copione gira: senza questa riga resterebbero tutte chiuse
+		# per chi ha javascript spento, e la pagina sarebbe vuota.
+		page.script(_t="document.documentElement.classList.add('con-js');")
 
 
 ZERI = "https://fondazionezeri.unibo.it/it/homepage"
@@ -107,20 +264,150 @@ def build_header(page):
 				page.span(klass="testata-filo")
 				with page.a(klass="testata-ente", href=ZERI, target="_blank",
 					            rel="noopener",
-					            title="Fondazione Federico Zeri, Universit\u00e0 di Bologna"):
+					            title="Fondazione Federico Zeri, Università di Bologna"):
 					page.img(src="../img/homepage/logo.png", alt="Fondazione Federico Zeri")
+
+
+def build_footer(page):
+	with page.footer():
+		with page.div(klass="footer-container"):
+			with page.div(klass="footer-ente"):
+				with page.a(href=ZERI, target="_blank", rel="noopener"):
+					page.img(src="../img/homepage/logo-negativo.png",
+						 alt="Fondazione Federico Zeri")
+				page.p(_t='Progetto della <a href="' + ZERI + '" target="_blank" rel="noopener">Fondazione Federico Zeri</a>, Università di Bologna.')
+			with page.div(klass="footer-left"):
+				page.p(_t='Licenza dati e immagini:')
+				page.img(id="license.png", src="../img/homepage/license.png", alt="License")
+			with page.div(klass="footer-right"):
+				page.p().a(_t="Crediti", href="crediti.html")
+				page.p().a(_t="Documentazione",
+					   href="https://github.com/FondazioneFedericoZeri/Mercato_dell_arte")
+
+
+def carta(page, chiave, quante, titolo, descrizione):
+	with page.button(klass="bib-carta", type="button",
+			 **{"data-sezione": chiave, "aria-expanded": "false",
+			    "aria-controls": "sezione-" + chiave}):
+		page.span(klass="bib-carta-n", _t=str(quante))
+		page.span(klass="bib-carta-t", _t=titolo)
+		page.span(klass="bib-carta-d", _t=descrizione)
+
+
+def sezione_stampa(page, stampa):
+	"""L'elenco alfabetico di sempre, su tre colonne.
+
+	Con 400 voci la lettera va anche raggiunta: in cima c'e' l'alfabeto,
+	e le lettere ora sono in ordine. Prima si seguiva l'ordine in cui
+	comparivano nel file, e dopo la zeta ne arrivavano altre sei.
+	"""
+	lettere = sorted(stampa)
+
+	with page.section(id="sezione-stampa", klass="bib-sezione"):
+		with page.nav(klass="bib-alfabeto", **{"aria-label": "Vai alla lettera"}):
+			for lettera in lettere:
+				page.a(href=f"#lettera-{lettera}", _t=lettera.upper())
+
+		with page.div(id="bibliografia"):
+			for lettera in lettere:
+				with page.div(klass="column"):
+					page.h2(id=f"lettera-{lettera}", _t=lettera)
+					for _, riga in sorted(stampa[lettera],
+							      key=lambda v: ordina_come_parola(v[0])):
+						page.p(_t=riga)
+
+
+def sezione_interviste(page, interviste, legame):
+	"""Raggruppate per entita', dentro in ordine di data.
+
+	Chi cerca un'intervista cerca una persona, non una data: il gruppo
+	porta il nome dell'entita' e rimanda alla sua scheda. Le poche che
+	non sono ancora collegate a nessuna entita' restano in fondo, dove
+	si vedono.
+	"""
+	gruppi = {}
+	for bid, item in interviste.items():
+		for nome, eid in legame.get(bid, [(None, None)]):
+			gruppi.setdefault((nome, eid), []).append((bid, item))
+
+	senza = gruppi.pop((None, None), None)
+	ordinati = sorted(gruppi.items(), key=lambda g: ordina_come_parola(g[0][0]))
+
+	with page.section(id="sezione-interviste", klass="bib-sezione"):
+		for (nome, eid), voci in ordinati:
+			with page.div(klass="bib-gruppo"):
+				with page.h2(klass="bib-gruppo-titolo"):
+					page.a(href=f"dettagli/dettaglio_{eid}.html", _t=nome)
+				scrivi_interviste(page, voci)
+
+		if senza:
+			with page.div(klass="bib-gruppo"):
+				page.h2(klass="bib-gruppo-titolo bib-gruppo-orfano",
+					_t="Non ancora collegate a un'entità")
+				scrivi_interviste(page, senza)
+
+
+def scrivi_interviste(page, voci):
+	voci = sorted(voci, key=lambda v: data_intervista(v[1].get("Anno"))[0])
+	with page.ul(klass="bib-elenco"):
+		for _, item in voci:
+			testo, meta = riga_intervista(item)
+			with page.li():
+				page(testo)
+				if meta:
+					page.span(klass="bib-meta", _t=meta)
+
+
+def sezione_archivio(page, archivio, legame):
+	"""Ordinamento topografico: prima il luogo, poi l'istituto.
+
+	E' il modo in cui si cercano i documenti: si va in un archivio, non
+	si cerca un autore. Accanto a ogni pezzo sta l'entita' per cui e'
+	stato consultato, che e' l'altra strada per arrivarci.
+	"""
+	citta = {}
+	for bid, item in archivio.items():
+		luogo = (item.get("Città, editore o rivista") or "").strip() or "Senza luogo"
+		istituto = (item.get("Istituto") or "").strip() or "Istituto non indicato"
+		citta.setdefault(luogo, {}).setdefault(istituto, []).append((bid, item))
+
+	with page.section(id="sezione-archivio", klass="bib-sezione"):
+		for luogo in sorted(citta, key=ordina_come_parola):
+			with page.div(klass="bib-luogo"):
+				page.h2(klass="bib-luogo-titolo", _t=luogo)
+				for istituto in sorted(citta[luogo], key=ordina_come_parola):
+					page.h3(klass="bib-istituto", _t=istituto)
+					with page.ul(klass="bib-elenco"):
+						for bid, item in sorted(citta[luogo][istituto],
+									key=lambda v: ordina_come_parola(righe_archivio(v[1]))):
+							with page.li():
+								page(righe_archivio(item) or "—")
+								rimandi = legame.get(bid, [])
+								if rimandi:
+									with page.span(klass="bib-meta bib-rimando"):
+										page("→ ")
+										for n, (nome, eid) in enumerate(rimandi):
+											if n:
+												page(", ")
+											page.a(href=f"dettagli/dettaglio_{eid}.html", _t=nome)
+
 
 def build_html():
 
-	bibliografia = json.loads(open("json/bibliografia.json").read())
+	bibliografia = json.loads(open("json/bibliografia.json", encoding="utf-8").read())
+	legame = entita_per_fonte()
 
-	bib_elements = {}
+	stampa, interviste, archivio = {}, {}, {}
 
-	for item in bibliografia:
-		first_letter, to_index, bib_string = getBib(bibliografia[item])
-		if not first_letter in bib_elements:
-			bib_elements[first_letter] = []
-		bib_elements[first_letter].append((to_index, bib_string))
+	for bid, item in bibliografia.items():
+		tipologia = (item.get("Tipologia") or "").strip()
+		if tipologia == "fonte archivistica":
+			archivio[bid] = item
+		elif tipologia == "intervista":
+			interviste[bid] = item
+		else:
+			lettera, indice, riga = getBib(item)
+			stampa.setdefault(lettera, []).append((indice, riga))
 
 	page = a.Airium()
 	page('<!DOCTYPE html>')
@@ -134,41 +421,48 @@ def build_html():
 
 			with page.main():
 
-				with page.section(id="bibliografia"):
+				with page.section(klass="bib-intro"):
+					page.h1(_t="Bibliografia")
+					page.p(_t="Le fonti su cui è costruito questo sito sono di tre "
+						  "nature diverse, e si consultano in tre modi diversi: uno "
+						  "scritto lo si cerca per autore, un’intervista per "
+						  "l’antiquario che parla, un documento d’archivio "
+						  "per il luogo che lo conserva. Scegli da dove cominciare.")
 
-					for letter in bib_elements:
-						with page.div(klass="column"):
-							page.h2(_t=f"{letter}")
-							sorted_elements = sorted(bib_elements[letter])
-							for bib_element in sorted_elements:
-								page.p(_t=f"{bib_element[1]}")
+				with page.nav(klass="bib-scelta", **{"aria-label": "Tipo di fonte"}):
+					carta(page, "stampa", sum(len(v) for v in stampa.values()),
+					      "Fonti a stampa",
+					      "Monografie, articoli, cataloghi d’asta, tesi. "
+					      "In ordine alfabetico per autore.")
+					carta(page, "interviste", len(interviste),
+					      "Interviste",
+					      "Le voci degli antiquari e dei loro eredi, raccolte sul "
+					      "campo. Raggruppate per entità.")
+					carta(page, "archivio", len(archivio),
+					      "Fonti archivistiche",
+					      "Documenti conservati in archivi, musei e biblioteche. "
+					      "In ordine topografico, per luogo.")
 
-			with page.footer():
-				with page.div(klass="footer-container"):
-					with page.div(klass="footer-ente"):
-						with page.a(href=ZERI, target="_blank", rel="noopener"):
-							page.img(src="../img/homepage/logo-negativo.png",
-								 alt="Fondazione Federico Zeri")
-						page.p(_t='Progetto della <a href="' + ZERI + '" target="_blank" rel="noopener">Fondazione Federico Zeri</a>, Universit\u00e0 di Bologna.')
-					with page.div(klass="footer-left"):
-						page.p(_t='Licenza dati e immagini:')
-						page.img(id="license.png", src="../img/homepage/license.png", alt="License")
-					with page.div(klass="footer-right"):
-						page.p().a(_t="Crediti", href="#")
-						page.p().a(_t="Documentazione", href="#")
+				sezione_stampa(page, stampa)
+				sezione_interviste(page, interviste, legame)
+				sezione_archivio(page, archivio, legame)
 
-			# La pagina è alta più di 19.000 pixel: serve un modo per
-			# risalire senza trascinare.
+			build_footer(page)
+
 			page.script(src="../script/menu.js", defer="")
+			page.script(src="../script/bibliografia-sezioni.js", defer="")
+			# Le sezioni sono lunghe: serve un modo per risalire
+			# senza trascinare.
 			page.script(src="../script/torna-su.js", defer="")
 
-	# Get the generated HTML as a string
-	html_content = str(page)
+	with open("html/bibliografia.html", "w", encoding="utf-8") as f:
+		f.write(str(page))
 
+	print(f"bibliografia: {sum(len(v) for v in stampa.values())} a stampa, "
+	      f"{len(interviste)} interviste, {len(archivio)} archivistiche")
+	for avviso in sorted(set(_avvisi)):
+		print("  avviso:", avviso)
 
-	# Optional: Save the HTML to a file
-	with open(f"html/bibliografia.html", "w") as f:
-		f.write(html_content)
 
 if __name__ == "__main__":
 	build_html()

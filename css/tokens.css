@@ -175,3 +175,20 @@ h1, h2, h3, h4, h5, h6 {
         max-width: none;
     }
 }
+
+/* ------------------------------------------------------------
+   Gli indirizzi web dentro le citazioni: compaiono sia nella
+   bibliografia generale sia nelle schede di dettaglio, quindi la
+   regola sta qui, dove le due pagine la leggono entrambe.
+   ------------------------------------------------------------ */
+
+.bib-web {
+    color: var(--link);
+    text-decoration: none;
+}
+
+.bib-web:hover {
+    color: var(--link-hover);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}

@@ -67,10 +67,15 @@ nav ul li a:hover {
 
 #bibliografia {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three equal-width columns */
-    gap: 20px; /* Space between columns */
-    padding: 20px;
-    max-width: 1200px;
+    /* Erano "tre colonne uguali" solo sulla carta: una riga come
+       "1fr" non scende mai sotto il contenuto piu' largo che ha
+       dentro, e con le citazioni lunghe le tre colonne venivano
+       443, 804 e 1024 pixel — il documento era largo 2431 pixel su
+       una finestra di 1440 e la pagina scorreva di lato. Con
+       minmax(0, 1fr) le colonne possono stringersi davvero. */
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px; /* Space between columns */
+    padding: 20px 0;
     margin: 0 auto;
 }
 
@@ -273,4 +278,273 @@ footer img {
         color: #fff;
         border-radius: 5px;
     }
+}
+
+/* ══════════════════════════════════════════════════════════════
+   Bibliografia: tre nature di fonti, una alla volta.
+
+   L'elenco alfabetico unico non reggeva piu': ci sono dentro
+   quattrocento scritti, ventidue interviste raccolte sul campo e
+   sessantotto documenti d'archivio, che si cercano in tre modi
+   diversi — per autore, per antiquario, per luogo di conservazione.
+   La pagina ora si apre sulla scelta, non sull'elenco.
+   ══════════════════════════════════════════════════════════════ */
+
+.bib-intro {
+    padding: 34px 60px 0 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.bib-intro h1 {
+    margin: 0 0 12px 0;
+    font-family: var(--ff-head);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 40px;
+    color: var(--testo);
+}
+
+.bib-intro p {
+    margin: 0;
+    font-size: var(--fs-body);
+    line-height: 1.6;
+    max-width: 68ch;
+}
+
+/* Le tre scelte */
+.bib-scelta {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    max-width: 1200px;
+    margin: 26px auto 0 auto;
+    padding: 0 60px;
+    box-sizing: border-box;
+}
+
+.bib-carta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    font-family: inherit;
+    text-align: left;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px 18px 18px 18px;
+    cursor: pointer;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.bib-carta:hover {
+    border-color: var(--blu);
+    background-color: #f8fbff;
+}
+
+/* Aperta: lo stesso azzurro del filtro dei luoghi, cosi' le due
+   pagine si comportano allo stesso modo. */
+.bib-carta.aperta {
+    border-color: var(--blu);
+    background-color: #e6f0ff;
+}
+
+.bib-carta-n {
+    font-family: var(--ff-head);
+    font-size: 34px;
+    line-height: 1.1;
+    color: var(--blu);
+}
+
+.bib-carta-t {
+    font-size: var(--fs-body);
+    font-weight: 600;
+    color: var(--testo);
+}
+
+.bib-carta-d {
+    font-size: var(--fs-body-sm);
+    line-height: 1.5;
+    color: #666;
+}
+
+/* Senza javascript le tre sezioni restano tutte aperte: meglio una
+   pagina lunga di una pagina vuota. */
+.con-js .bib-sezione {
+    display: none;
+}
+
+.con-js .bib-sezione.aperta {
+    display: block;
+}
+
+.bib-sezione {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 60px 20px 60px;
+    box-sizing: border-box;
+}
+
+/* L'alfabeto in cima alle fonti a stampa */
+.bib-alfabeto {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+    margin: 28px 0 4px 0;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.bib-alfabeto a {
+    display: inline-block;
+    min-width: 30px;
+    padding: 4px 0;
+    text-align: center;
+    text-decoration: none;
+    font-size: var(--fs-body-sm);
+    font-weight: 600;
+    color: var(--link);
+    border-radius: 4px;
+}
+
+.bib-alfabeto a:hover {
+    background-color: var(--link);
+    color: #fff;
+}
+
+/* La testata resta in alto quando si scorre: senza questo margine
+   la lettera raggiunta le finirebbe sotto. */
+.column h2,
+.bib-gruppo-titolo,
+.bib-luogo-titolo {
+    scroll-margin-top: 90px;
+}
+
+#bibliografia {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Interviste: un gruppo per entita' */
+.bib-gruppo {
+    margin-top: 26px;
+}
+
+.bib-gruppo-titolo {
+    margin: 0 0 6px 0;
+    font-family: var(--ff-head);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 26px;
+    color: var(--testo);
+    border-bottom: 1px solid #e4e4e4;
+    padding-bottom: 6px;
+}
+
+/* Il nome dell'entita' porta alla sua scheda: e' scritto nel colore
+   dei collegamenti perche' si veda che ci si puo' cliccare. Durante i
+   test gli utenti non cliccano quello che non sembra un link. */
+.bib-gruppo-titolo a {
+    color: var(--link);
+    text-decoration: none;
+}
+
+.bib-gruppo-titolo a:hover {
+    color: var(--link-hover);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.bib-gruppo-orfano {
+    color: #777;
+}
+
+/* Fonti archivistiche: prima il luogo, poi l'istituto */
+.bib-luogo {
+    margin-top: 30px;
+}
+
+.bib-luogo-titolo {
+    margin: 0 0 10px 0;
+    font-family: var(--ff-head);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 30px;
+    color: var(--blu);
+    border-bottom: 2px solid var(--blu);
+    padding-bottom: 6px;
+}
+
+.bib-istituto {
+    margin: 16px 0 4px 0;
+    font-family: var(--ff-body);
+    font-size: var(--fs-body);
+    font-weight: 600;
+    color: var(--testo);
+}
+
+.bib-elenco {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-width: 90ch;
+}
+
+.bib-elenco li {
+    font-size: var(--fs-lettura);
+    line-height: 1.6;
+    padding: 7px 0;
+    border-bottom: 1px solid #ededed;
+}
+
+.bib-meta {
+    display: block;
+    font-size: var(--fs-body-sm);
+    color: #666;
+}
+
+.bib-rimando a {
+    color: var(--link);
+    text-decoration: none;
+}
+
+.bib-rimando a:hover {
+    color: var(--link-hover);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+@media (max-width: 900px) {
+    .bib-scelta {
+        grid-template-columns: 1fr;
+        padding: 0 18px;
+    }
+
+    .bib-intro,
+    .bib-sezione {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .bib-intro h1 {
+        font-size: 28px;
+    }
+
+    .bib-elenco li {
+        font-size: var(--fs-body);
+    }
+}
+
+/* Tre colonne di citazioni hanno bisogno di piu' respiro delle due
+   sezioni in colonna singola. */
+#sezione-stampa {
+    max-width: 1500px;
+}
+
+/* Una parola lunghissima — un indirizzo web scritto per esteso —
+   non deve poter allargare la colonna che la contiene. */
+.column p,
+.bib-elenco li {
+    overflow-wrap: anywhere;
 }
