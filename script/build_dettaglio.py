@@ -44,7 +44,22 @@ def getTXT(filename):
     return fullText
 
 
+def fonte_archivistica(bibitem):
+    """Citta', istituto, fondo, segnatura: quel che abbiamo.
+
+    Una fonte d'archivio non ha autore, anno o titolo, quindi il
+    formato bibliografico non la descrive: con getBib usciva come un
+    corsivo vuoto seguito da una virgola.
+    """
+    pezzi = [(bibitem.get(k) or "").strip() for k in
+             ("Città, editore o rivista", "Istituto", "Fondo", "Segnatura")]
+    return ", ".join(p for p in pezzi if p)
+
+
 def getBib(bibitem):
+    if (bibitem.get("Tipologia") or "").strip() == "fonte archivistica":
+        return fonte_archivistica(bibitem)
+
     s = ""
 
     anything_before_title = False
@@ -564,22 +579,33 @@ def build_html(entity, entities, parentela, ordinate):
                     if biblio:
                         with page.div(id="Bibliografia",
                                       klass=klass_contenuto("Bibliografia")):
+                            # Tre gruppi: le fonti d'archivio non sono
+                            # bibliografia e non stanno sotto quel titolo.
+                            def _tip(v):
+                                return (v.get("Tipologia") or "").strip()
+
                             interviste = {k: v for k, v in biblio.items()
-                                          if v["Tipologia"] == "intervista"}
+                                          if _tip(v) == "intervista"}
+                            archivio = {k: v for k, v in biblio.items()
+                                        if _tip(v) == "fonte archivistica"}
                             altra = {k: v for k, v in biblio.items()
-                                     if v["Tipologia"] != "intervista"}
-                            if altra:
-                                page.h2(_t="Bibliografia essenziale")
+                                     if _tip(v) not in ("intervista", "fonte archivistica")}
+
+                            def _elenco(titolo, voci, chiave):
+                                if not voci:
+                                    return
+                                page.h2(_t=titolo)
                                 with page.ul():
-                                    for _, bib in sorted(altra.items(),
-                                                         key=lambda x: (x[1]["Autore"], x[1]["Anno"])):
+                                    for _, bib in sorted(voci.items(), key=chiave):
                                         page.li(_t=getBib(bib))
-                            if interviste:
-                                page.h2(_t="Interviste")
-                                with page.ul():
-                                    for _, bib in sorted(interviste.items(),
-                                                         key=lambda x: (x[1]["Autore"], x[1]["Anno"])):
-                                        page.li(_t=getBib(bib))
+
+                            _elenco("Bibliografia essenziale", altra,
+                                    lambda x: (x[1]["Autore"], x[1]["Anno"]))
+                            _elenco("Fonti archivistiche", archivio,
+                                    lambda x: ((x[1].get("Istituto") or ""),
+                                               (x[1].get("Fondo") or "")))
+                            _elenco("Interviste", interviste,
+                                    lambda x: (x[1]["Autore"], x[1]["Anno"]))
 
                 build_sfoglia(page, entity, ordinate)
 

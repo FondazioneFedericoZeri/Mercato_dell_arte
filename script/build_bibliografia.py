@@ -2,7 +2,25 @@ import json
 import airium as a
 
 
+def fonte_archivistica(bibitem):
+	"""Citta', istituto, fondo, segnatura: quel che abbiamo.
+
+	Una fonte d'archivio non ha autore, anno o titolo. Nell'indice per
+	lettera prende quella dell'istituto che la conserva, che e' il nome
+	sotto cui la si cerca.
+	"""
+	pezzi = [(bibitem.get(k) or "").strip() for k in
+		 ("Città, editore o rivista", "Istituto", "Fondo", "Segnatura")]
+	testo = ", ".join(p for p in pezzi if p)
+	istituto = (bibitem.get("Istituto") or "").strip()
+	chiave = istituto or testo
+	return (chiave[:1] or "?").lower(), istituto, testo
+
+
 def getBib(bibitem):
+
+	if (bibitem.get("Tipologia") or "").strip() == "fonte archivistica":
+		return fonte_archivistica(bibitem)
 
 	first_letter, to_index = "", ""
 
@@ -15,7 +33,9 @@ def getBib(bibitem):
 		first_letter = bibitem['Autore'][0]
 		to_index = bibitem['Autore']
 	else:
-		first_letter = bibitem['Titolo'][0]
+		# Senza autore ci si indicizza sul titolo; se manca anche quello
+		# non si va in errore, si finisce sotto "?".
+		first_letter = (bibitem['Titolo'] or "?")[0]
 
 	if len(bibitem['Anno'])>0:
 		if anything_before_title:
