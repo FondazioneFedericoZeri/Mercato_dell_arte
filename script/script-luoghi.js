@@ -29,7 +29,18 @@ document.addEventListener("DOMContentLoaded", function () {
         worldCopyJump: false,         // Disable world repetition
         minZoom: 2,                   // Minimum zoom level to prevent world repeat
         maxZoom: 18                   // Maximum zoom level
-    }).setView([30, -30], 3);
+    });
+
+    /* La vista di partenza era fissa: setView([30, -30], 3), cioe' un
+       punto in mezzo all'Atlantico a uno zoom da continente. A quella
+       scala tutta l'Europa sta in un pugno di pixel e i segnaposto
+       finivano in un unico gruppo, posizionato nella media delle loro
+       coordinate: sopra l'Italia. Chi cercava le sedi inglesi vedeva
+       il Regno Unito vuoto.
+
+       Ora la mappa si inquadra sui dati veri (vedi inquadra()). */
+    var EUROPA = { lonMin: -15, lonMax: 45 };
+    var vistaIniziale = false;
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -157,6 +168,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Create a cluster group with custom cluster styling
     var markers = L.markerClusterGroup({
+        /* Il raggio predefinito e' 80px: a zoom basso Londra, Parigi e
+           Roma cadono dentro lo stesso cerchio e diventano un numero
+           solo. Con 45px i paesi restano distinti gia' dalla vista
+           iniziale. */
+        maxClusterRadius: function (zoom) {
+            /* Piu' si e' lontani, piu' il raggio deve essere stretto:
+               altrimenti a zoom basso — ed e' il caso del telefono, dove
+               l'Europa deve stare in 350 pixel — Londra, Parigi e Roma
+               ricadono nello stesso cerchio e tornano a essere un numero
+               solo sopra l'Italia. */
+            if (zoom <= 4) return 18;
+            if (zoom <= 6) return 32;
+            return 45;
+        },
         iconCreateFunction: function (cluster) {
             var childCount = cluster.getChildCount();
             var clusterClass = ' marker-cluster-small';  // Default to small clusters
@@ -196,6 +221,27 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         }
     });
+
+    /* Inquadra la mappa sui segnaposto presenti: "europa" tiene fuori
+       le sedi oltreoceano, che da sole allargherebbero la vista fino a
+       rimpicciolire di nuovo l'Europa; "tutto" le comprende. */
+    function inquadra(dove) {
+        var punti = [];
+        markers.eachLayer(function (m) {
+            var p = m.getLatLng();
+            if (dove === "tutto" ||
+                (p.lng >= EUROPA.lonMin && p.lng <= EUROPA.lonMax)) {
+                punti.push(p);
+            }
+        });
+        if (!punti.length) return;
+        map.fitBounds(L.latLngBounds(punti), { padding: [40, 40], maxZoom: 7 });
+    }
+
+    var bottoneEuropa = document.getElementById("vista-europa");
+    var bottoneTutto = document.getElementById("vista-tutto");
+    if (bottoneEuropa) bottoneEuropa.addEventListener("click", function () { inquadra("europa"); });
+    if (bottoneTutto) bottoneTutto.addEventListener("click", function () { inquadra("tutto"); });
 
     // Function to update markers based on the selected period
     function updateMarkers(period) {
@@ -258,6 +304,13 @@ document.addEventListener("DOMContentLoaded", function () {
                             markers.addLayer(marker);
                         }
                     }
+                    /* Alla prima apertura ci si inquadra sui dati; ai
+                       cambi di filtro no, altrimenti la mappa salta
+                       sotto le mani di chi sta guardando. */
+                    if (!vistaIniziale) {
+                        vistaIniziale = true;
+                        inquadra("europa");
+                    }
                 }).fail(function () {
                     console.error("Failed to load the JSON file.");
                 });
@@ -280,11 +333,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-    const isMobile = window.innerWidth <= 768;
-
-    if (isMobile) {
-        // Modifica centro e zoom per dispositivi mobili
-        map.setView([54.5260, 15.2551], 4); // Europa
-    }
-});
+/* Qui c'era un secondo blocco che su telefono faceva map.setView(...):
+   "map" vive dentro l'altro ascoltatore, quindi da fuori non esisteva e
+   la riga andava in errore a ogni caricamento senza spostare niente.
+   L'inquadratura ora la fa inquadra(), che si adatta da sola alla
+   larghezza dello schermo perche' parte dai dati. */

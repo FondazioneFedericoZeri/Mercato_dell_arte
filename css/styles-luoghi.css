@@ -494,3 +494,120 @@ p {
         font-size: 20px; /* Ridimensiona le icone */
     }
 }
+/* ══════════════════════════════════════════════════════════════
+   Pagina luoghi: intestazione, legenda e inquadrature.
+
+   Prima la pagina era la sola mappa con un filtro: non diceva
+   cosa si stesse guardando, né cosa significassero i quattro
+   colori dei segnaposto, né che una parte delle sedi stava
+   dall'altra parte dell'oceano.
+   ══════════════════════════════════════════════════════════════ */
+
+.mappa-intro {
+    padding: 34px 60px 0 60px;
+    max-width: 1000px;
+}
+
+.mappa-intro h1 {
+    margin: 0 0 12px 0;
+    font-family: var(--ff-head);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 40px;
+    color: var(--testo);
+}
+
+.mappa-intro p {
+    margin: 0 0 10px 0;
+    font-size: var(--fs-body);
+    line-height: 1.6;
+    max-width: 68ch;
+}
+
+.mappa-conteggio {
+    color: #555;
+}
+
+.mappa-legenda,
+.mappa-inquadra {
+    margin-top: 26px;
+}
+
+#map .legenda-titolo,
+.legenda-titolo {
+    margin: 0 0 8px 0;
+    font-size: var(--fs-caption);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #666;
+    font-weight: 600;
+}
+
+#map .mappa-legenda ul,
+.mappa-legenda ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: var(--fs-body-sm);
+    line-height: 1.9;
+    color: #444;
+}
+
+.mappa-legenda li {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+/* La goccia dei segnaposto, in piccolo: stessa forma, stessi colori
+   della libreria leaflet-color-markers usata sulla mappa. */
+.seg {
+    width: 12px;
+    height: 12px;
+    border-radius: 50% 50% 50% 0;
+    transform: rotate(-45deg);
+    flex-shrink: 0;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.seg-blu     { background-color: #2a81cb; }
+.seg-arancio { background-color: #cb8427; }
+.seg-verde   { background-color: #2aad27; }
+.seg-grigio  { background-color: #7b7b7b; }
+
+.mappa-inquadra button {
+    font-family: inherit;
+    font-size: var(--fs-body-sm);
+    padding: 7px 14px;
+    margin: 0 6px 6px 0;
+    background-color: #fff;
+    color: var(--testo);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.mappa-inquadra button:hover {
+    background-color: var(--blu);
+    border-color: var(--blu);
+    color: #fff;
+}
+
+#map .mappa-nota,
+.mappa-nota {
+    margin: 8px 0 0 0;
+    font-size: var(--fs-caption);
+    line-height: 1.5;
+    color: #666;
+    max-width: 230px;
+}
+
+@media (max-width: 768px) {
+    .mappa-intro {
+        padding: 22px 18px 0 18px;
+    }
+
+    .mappa-intro h1 {
+        font-size: 28px;
+    }
+}

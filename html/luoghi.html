@@ -64,6 +64,17 @@
 
     <!-- Contenuto principale della nuova pagina -->
     <main>
+        <section class="mappa-intro">
+            <h1>I luoghi del mercato dell'arte</h1>
+            <p>Le sedi delle entità antiquariali &mdash; gallerie, negozi, magazzini &mdash;
+               dal 1760 a oggi. Ogni segnaposto è una sede, e il suo colore dice in che
+               periodo era attiva; i cerchi grigi raccolgono le sedi troppo vicine per
+               stare separate a quella scala: il numero dice quante sono, e un clic le
+               apre.</p>
+            <p class="mappa-conteggio"><strong>278 sedi mappate</strong>, in 7 paesi.
+               Le 15 sedi di cui non conosciamo ancora l'indirizzo preciso non compaiono
+               sulla mappa.</p>
+        </section>
         <section id="map">
             <div class="filter-container">
                 <label>Seleziona il periodo:</label>
@@ -79,6 +90,24 @@
 
                     <input type="radio" id="after1950" name="timePeriod" value="period3">
                     <label for="after1950">Post 1950</label>
+                </div>
+
+                <div class="mappa-legenda">
+                    <p class="legenda-titolo">Colore dei segnaposto</p>
+                    <ul>
+                        <li><i class="seg seg-blu"></i>aperta prima del 1900</li>
+                        <li><i class="seg seg-arancio"></i>aperta fra 1900 e 1950</li>
+                        <li><i class="seg seg-verde"></i>aperta dopo il 1950</li>
+                        <li><i class="seg seg-grigio"></i>date non conosciute</li>
+                    </ul>
+                </div>
+
+                <div class="mappa-inquadra">
+                    <p class="legenda-titolo">Inquadratura</p>
+                    <button type="button" id="vista-europa">Europa</button>
+                    <button type="button" id="vista-tutto">Tutte le sedi</button>
+                    <p class="mappa-nota">14 sedi stanno fuori dall'Europa: New York,
+                       Los Angeles e Toronto.</p>
                 </div>
             </div>
 
