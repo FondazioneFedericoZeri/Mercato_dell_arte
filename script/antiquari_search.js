@@ -44,7 +44,26 @@ var ricerca_attiva = null;   // insieme filtrato dalla ricerca, o null
 
 /* Etichetta del conteggio accanto al titolo di un gruppo: "(28 antiquari)". */
 function etichetta_conteggio(n) {
-    return '(' + n + (n === 1 ? ' antiquario)' : ' antiquari)');
+    return '(' + n + (n === 1 ? ' entit\u00e0 antiquariale)'
+                              : ' entit\u00e0 antiquariali)');
+}
+
+/* Le città di un'entità, senza i vuoti.
+
+   Qualche luogo ha la colonna Città vuota: finiva nell'elenco come
+   stringa vuota e la card partiva con una virgola ("", Napoli, ...).
+   Si scartano i valori vuoti invece di fidarsi del dato. */
+function citta_entita(ent_dict) {
+    var citta = new Set();
+    var persone = ent_dict["Persone"] || {};
+    Object.keys(persone).forEach(function (pid) {
+        var luoghi = persone[pid]["ID_luoghi"] || {};
+        Object.keys(luoghi).forEach(function (lid) {
+            var nome = (luoghi[lid]["Citt\u00e0"] || "").trim();
+            if (nome) citta.add(nome);
+        });
+    });
+    return Array.from(citta).sort().join(", ");
 }
 
 function aggiorna_riepilogo(modo, n_gruppi, n_schede, n_antiquari) {
@@ -147,17 +166,7 @@ var sort_alphabetically = function (refined_entities) {
             */
 
             //faccio comparire le città al posto delle regioni
-            var cities = new Set();
-            for (person_id in ent_dict["Persone"]) {
-                var luoghi = ent_dict["Persone"][person_id]["ID_luoghi"]
-                for (luogo_id in luoghi) {
-                    var luogo = luoghi[luogo_id]
-                    cities.add(luogo["Città"])
-                }
-            }
-            const sorted_cities = Array.from(cities).sort();
-
-            const cities_string = sorted_cities.join(",  ");
+            const cities_string = citta_entita(ent_dict);
 
             const p = document.createElement("p")
             p.appendChild(document.createTextNode(cities_string))
@@ -248,17 +257,7 @@ var sort_geographically = function () {
             const h3 = document.createElement("h3")
             h3.appendChild(document.createTextNode(ent_dict["Nome"]))
 
-            var cities = new Set();
-            for (person_id in ent_dict["Persone"]){
-                var luoghi = ent_dict["Persone"][person_id]["ID_luoghi"]
-                for (luogo_id in luoghi){
-                    var luogo = luoghi[luogo_id]
-                    cities.add(luogo["Città"])
-                }
-            }
-            const sorted_cities = Array.from(cities).sort();
-
-            const cities_string = sorted_cities.join(",  ");
+            const cities_string = citta_entita(ent_dict);
 
             const p = document.createElement("p")
             p.appendChild(document.createTextNode(cities_string))
@@ -324,8 +323,8 @@ var performSearch = function (searchValue = "") {
                 const luoghi = persona.ID_luoghi || {};
 
                 for (const luogo of Object.values(luoghi)) {
-                    const citta = luogo['Città'];
-                    searchValues.push(citta);
+                    const citta = (luogo['Città'] || '').trim();
+                    if (citta) searchValues.push(citta);
                 }
             }
 
