@@ -328,6 +328,8 @@ def build_html_head(page, entity):
         page.script(type="text/javascript",
                     src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js")
         page.script(type="text/javascript",
+                    src="../../script/galleria.js")
+        page.script(type="text/javascript",
                     src="../../script/albero-familiare.js")
         page.script(type="text/javascript",
                     src="../../script/dettaglioAntiquari.js")
@@ -353,6 +355,21 @@ def build_header(page):
                         page.a(_t="Bibliografia", href="../bibliografia.html")
 
 
+def bottone_zoom(page):
+    """La lente che apre la fotografia ingrandita.
+
+    E' un <button> vero: si raggiunge col tabulatore e un lettore di
+    schermo lo annuncia. Anche la fotografia e' cliccabile, ma quello
+    da solo non basterebbe a chi non usa il mouse.
+    """
+    with page.button(klass="gal-zoom", type="button",
+                     **{"aria-label": "Ingrandisci la fotografia"}):
+        page('<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" '
+             'stroke-width="2" stroke-linecap="round" aria-hidden="true">'
+             '<circle cx="11" cy="11" r="7"></circle>'
+             '<path d="M20 20l-4.3-4.3M11 8v6M8 11h6"></path></svg>')
+
+
 def build_fascia(page, entity, imgs, images_description):
     """La fascia blu: nome, sottotitolo e fotografia."""
     klass = "scheda-fascia" if imgs else "scheda-fascia senza-foto"
@@ -369,6 +386,7 @@ def build_fascia(page, entity, imgs, images_description):
             with page.figure(id="single-image-container"):
                 page.img(src=f"../../img/slider-antiquari/{img}", alt=f"{desc}")
                 page.figcaption(_t=f"{desc}", klass="caption")
+                bottone_zoom(page)
 
         elif len(imgs) > 1:
             with page.div(klass="slider-container"):
@@ -381,10 +399,16 @@ def build_fascia(page, entity, imgs, images_description):
                             page.img(src=f"../../img/slider-antiquari/{img}",
                                      alt=f"{desc}")
                             page.div(_t=f"{desc}", klass="caption")
-                page.button(klass="prev", onclick="prevSlide()", type="button",
+                # I gestori stanno in script/galleria.js: le frecce
+                # fermano anche l'autoplay, cosa che un onclick inline
+                # non sapeva fare.
+                page.button(klass="prev", type="button",
+                            **{"aria-label": "Fotografia precedente"},
                             _t="&#10094;")
-                page.button(klass="next", onclick="nextSlide()", type="button",
+                page.button(klass="next", type="button",
+                            **{"aria-label": "Fotografia successiva"},
                             _t="&#10095;")
+                bottone_zoom(page)
 
 
 def build_sfoglia(page, entity, ordinate):

@@ -145,15 +145,20 @@ nav ul li a:hover {
     color: #fff;
 }
 
-/* La fotografia: dentro la fascia, con la didascalia su fondo
-   chiaro sotto l'immagine. Prima stava a metà dell'immagine e la
-   tagliava in due. */
+/* La fotografia.
+
+   Il contenitore ha un'altezza fissa e la didascalia e' appoggiata al
+   suo bordo inferiore: quando il testo va a capo il riquadro bianco
+   cresce verso l'alto, sopra la fotografia, e il fondo resta dov'e'.
+   Prima la didascalia stava nel flusso e allungava tutto il blocco
+   verso il basso, spostando il bordo inferiore di scheda in scheda. */
 #single-image-container,
 .slider-container {
     position: relative;
     flex-shrink: 0;
     width: 330px;
     max-width: 40%;
+    height: 260px;
     margin: 0;
     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
     overflow: hidden;
@@ -163,35 +168,41 @@ nav ul li a:hover {
 .slide img {
     display: block;
     width: 100%;
-    height: 214px;
+    height: 100%;
     object-fit: cover;
+    cursor: zoom-in;
 }
 
 .caption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;              /* ancorata al fondo: cresce verso l'alto */
     margin: 0;
     padding: 8px 12px;
-    background-color: #fff;
-    color: #555;
+    background-color: rgba(255, 255, 255, 0.94);
+    color: #333;
     font-size: var(--fs-body-sm);
     line-height: 1.4;
 }
 
 .slider {
     display: flex;
+    height: 100%;
     transition: transform 1s ease-in-out;
 }
 
 .slide {
     position: relative;
     min-width: 100%;
+    height: 100%;
     box-sizing: border-box;
 }
 
 .prev,
-.next {
+.next,
+.gal-zoom {
     position: absolute;
-    top: 107px;
-    transform: translateY(-50%);
     background-color: rgba(255, 255, 255, 0.9);
     color: #333;
     border: none;
@@ -203,15 +214,103 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
     font-size: 17px;
+    z-index: 2;
+}
+
+.prev,
+.next {
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .prev { left: 8px; }
 .next { right: 8px; }
+.gal-zoom { top: 8px; right: 8px; }
 
 .prev:hover,
-.next:hover {
+.next:hover,
+.gal-zoom:hover {
     background-color: #333;
     color: #fff;
+}
+
+.gal-zoom svg {
+    width: 17px;
+    height: 17px;
+}
+
+/* --- fotografia ingrandita ---------------------------------- */
+
+.gal-strato {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+    background-color: rgba(20, 18, 16, 0.92);
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    padding: 28px;
+    box-sizing: border-box;
+}
+
+.gal-strato.aperto {
+    display: flex;
+}
+
+body.gal-bloccato {
+    overflow: hidden;
+}
+
+.gal-figura {
+    margin: 0;
+    max-width: 1100px;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+}
+
+.gal-img {
+    max-width: 100%;
+    max-height: 76vh;
+    object-fit: contain;
+    background-color: #000;
+}
+
+.gal-didascalia {
+    color: #fff;
+    font-size: var(--fs-body);
+    line-height: 1.5;
+    text-align: center;
+    max-width: 62ch;
+}
+
+.gal-chiudi,
+.gal-prec,
+.gal-succ {
+    background-color: rgba(255, 255, 255, 0.92);
+    color: #333;
+    border: none;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    font-size: 19px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.gal-chiudi {
+    position: absolute;
+    top: 20px;
+    right: 24px;
+}
+
+.gal-chiudi:hover,
+.gal-prec:hover,
+.gal-succ:hover {
+    background-color: #fff;
 }
 
 /* --- scheda di sintesi -------------------------------------- */
