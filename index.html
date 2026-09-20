@@ -28,8 +28,13 @@
     <!-- My Scripts -->
     <!-- Tutti gli script sono "defer": si scaricano in parallelo senza bloccare il rendering della
          pagina (e quindi la comparsa dell'immagine hero), ed eseguono in ordine subito dopo il parsing dell'HTML -->
-    <script type="text/javascript" src="script/scripts-antiquari.js" defer></script>
-    <script type="text/javascript" src="script/antiquari_search.js" defer></script>
+    <!-- Qui venivano caricati anche scripts-antiquari.js e
+         antiquari_search.js, rimasugli della pagina antiquari.
+         Il secondo, appena caricato, scarica 700 KB di entità in
+         modo sincrono ($.ajaxSetup({async:false})) e poi va in
+         errore cercando #cards-section, che in home non esiste:
+         una richiesta bloccante per niente. La dissolvenza la fa
+         già scripts-homepage.js. -->
     <script src="../Mercato_dell_arte/script/scripts-homepage.js" defer></script>
     <script src="../Mercato_dell_arte/script/scripts-eventi-preview.js" defer></script>
     <script src="../Mercato_dell_arte/script/scripts-protagonisti.js" defer></script>
@@ -40,22 +45,27 @@
 <body>
     <header>
         <div class="header-container">
-          <a href="../Mercato_dell_arte/index.html">
-            <img id="logo.png" src="../Mercato_dell_arte/img/homepage/logo.png" alt="Fondazione Federico Zeri" />
-          </a>
+          <a class="marchio" href="../Mercato_dell_arte/index.html">Mercato dell'arte</a>
           <button class="menu-toggle" aria-label="Apri menu">
             ☰
           </button>
-          <nav>
-            <ul class="menu">
-              <li><a href="html/progetto.html">Progetto</a></li>
-              <li><a href="html/antiquari.html">Antiquari</a></li>
-              <li><a href="html/luoghi.html">Luoghi</a></li>
-              <li><a href="html/eventi.html">Eventi</a></li>
-              <li><a href="html/persone.html">Persone</a></li>
-              <li><a href="html/bibliografia.html">Bibliografia</a></li>
-            </ul>
-          </nav>
+          <div class="testata-destra">
+            <nav>
+              <ul class="menu">
+                <li><a href="html/progetto.html">Progetto</a></li>
+                <li><a href="html/antiquari.html">Antiquari</a></li>
+                <li><a href="html/luoghi.html">Luoghi</a></li>
+                <li><a href="html/eventi.html">Eventi</a></li>
+                <li><a href="html/persone.html">Persone</a></li>
+                <li><a href="html/bibliografia.html">Bibliografia</a></li>
+              </ul>
+            </nav>
+            <span class="testata-filo"></span>
+            <a class="testata-ente" href="https://fondazionezeri.unibo.it/it/homepage" target="_blank" rel="noopener"
+               title="Fondazione Federico Zeri, Università di Bologna">
+              <img src="img/homepage/logo.png" alt="Fondazione Federico Zeri">
+            </a>
+          </div>
         </div>
       </header>
 
@@ -225,6 +235,13 @@
 
     <footer>
         <div class="footer-container">
+          <div class="footer-ente">
+            <a href="https://fondazionezeri.unibo.it/it/homepage" target="_blank" rel="noopener">
+              <img src="img/homepage/logo-negativo.png" alt="Fondazione Federico Zeri">
+            </a>
+            <p>Progetto della <a href="https://fondazionezeri.unibo.it/it/homepage" target="_blank" rel="noopener">Fondazione
+               Federico Zeri</a>, Università di Bologna.</p>
+          </div>
             <div class="footer-left">
                 <p>Licenza dati e immagini: <img id="license.png" src="img/homepage/license.png" alt="License"></p>
             </div>

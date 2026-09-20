@@ -61,3 +61,117 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--ff-head);
 }
+
+/* ============================================================
+   Testata e piè di pagina: due marchi, due significati.
+
+   In alto a sinistra il nome del progetto, che è l'unico link
+   alla home. Il logo della Fondazione sta all'estremità destra
+   della testata e nel piè di pagina, e porta al sito
+   dell'istituto: è un'attribuzione, non una navigazione.
+
+   Nasce da un test con gli utenti: nessuno cliccava il logo
+   della Zeri per tornare alla home, perché tutti si aspettavano
+   di finire sul sito della Fondazione. Avevano ragione loro.
+   ============================================================ */
+
+.marchio {
+    font-family: var(--ff-head);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1;
+    color: var(--testo);
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.marchio:hover {
+    color: var(--blu);
+}
+
+.testata-destra {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Separa due zone di significato: senza, il logo viene letto
+   come una settima voce del menù. */
+.testata-filo {
+    width: 1px;
+    height: 34px;
+    background-color: #dcdcdc;
+    flex-shrink: 0;
+}
+
+.testata-ente {
+    display: flex;
+    flex-shrink: 0;
+}
+
+.testata-ente img {
+    height: 36px;
+    width: auto;
+    max-height: none;   /* batte "header img { max-height: 50px }" */
+    display: block;
+}
+
+.footer-ente {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    max-width: 440px;
+}
+
+.footer-ente img {
+    height: 42px;
+    width: auto;
+    max-height: none;
+    display: block;
+}
+
+.footer-ente p {
+    margin: 0;
+    font-size: var(--fs-body-sm);
+    line-height: 1.5;
+}
+
+.footer-ente {
+    text-align: left;
+}
+
+/* I fogli delle pagine danno "footer a { margin: 0 10px }", pensato
+   per i link staccati di Crediti e Documentazione: dentro una frase
+   quei margini diventavano buchi intorno al nome della Fondazione. */
+.footer-ente a {
+    color: #fff;
+    margin: 0;
+}
+
+.footer-ente p a {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-ente p a:hover {
+    text-decoration-color: #fff;
+}
+
+@media (max-width: 768px) {
+    .marchio {
+        font-size: 22px;
+    }
+
+    /* Sul telefono la testata tiene solo il nome e il menù:
+       il logo dell'istituto resta nel piè di pagina. */
+    .testata-filo,
+    .testata-ente {
+        display: none;
+    }
+
+    .footer-ente {
+        max-width: none;
+    }
+}

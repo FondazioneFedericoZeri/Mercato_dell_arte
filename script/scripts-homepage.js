@@ -37,6 +37,9 @@ $.ajaxSetup({
 // scripts js sezione 2 'search' che permette di applicare la dissolvenza in entrata al testo allo scroll della pagina
 document.addEventListener("DOMContentLoaded", function () {
   const searchSection = document.querySelector('#search');
+  // In home la sezione #search non c'e': senza questo controllo la
+  // funzione va in errore a ogni scroll e a ogni ridimensionamento.
+  if (!searchSection) return;
 
   function checkVisibility() {
     const rect = searchSection.getBoundingClientRect();

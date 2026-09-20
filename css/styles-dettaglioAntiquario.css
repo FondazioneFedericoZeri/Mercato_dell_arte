@@ -663,6 +663,17 @@ footer img {
     }
 }
 
+/* Il panino non c'era proprio in queste pagine: sotto i 768px il
+   menù spariva senza nessun modo per aprirlo. */
+.menu-toggle {
+    display: none;   /* su schermo largo il menù è già tutto visibile */
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--testo);
+}
+
 /* Mostra il pulsante toggle solo su dispositivi mobili */
 @media (max-width: 768px) {
     .menu-toggle {

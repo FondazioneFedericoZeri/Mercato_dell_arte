@@ -245,22 +245,27 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
 
     <header>
         <div class="header-container">
-            <a href="../index.html">
-                <img id="logo.png" src="../img/homepage/logo.png" alt="Fondazione Federico Zeri">
-            </a>
+            <a class="marchio" href="../index.html">Mercato dell'arte</a>
             <button class="menu-toggle" aria-label="Apri menu">
                 ☰
             </button>
-            <nav>
-                <ul class="menu">
-                    <li><a href="../html/progetto.html">Progetto</a></li>
-                    <li><a href="../html/antiquari.html">Antiquari</a></li>
-                    <li><a href="../html/luoghi.html">Luoghi</a></li>
-                    <li><a href="../html/eventi.html">Eventi</a></li>
-                    <li><a href="../html/persone.html">Persone</a></li>
-                    <li><a href="../html/bibliografia.html">Bibliografia</a></li>
-                </ul>
-            </nav>
+            <div class="testata-destra">
+              <nav>
+                  <ul class="menu">
+                      <li><a href="../html/progetto.html">Progetto</a></li>
+                      <li><a href="../html/antiquari.html">Antiquari</a></li>
+                      <li><a href="../html/luoghi.html">Luoghi</a></li>
+                      <li><a href="../html/eventi.html">Eventi</a></li>
+                      <li><a href="../html/persone.html">Persone</a></li>
+                      <li><a href="../html/bibliografia.html">Bibliografia</a></li>
+                  </ul>
+              </nav>
+              <span class="testata-filo"></span>
+              <a class="testata-ente" href="https://fondazionezeri.unibo.it/it/homepage" target="_blank" rel="noopener"
+                 title="Fondazione Federico Zeri, Università di Bologna">
+                <img src="../img/homepage/logo.png" alt="Fondazione Federico Zeri">
+              </a>
+            </div>
         </div>
     </header>
 
@@ -324,6 +329,13 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
     <!-- Footer copiato dalla pagina esistente -->
     <footer>
         <div class="footer-container">
+          <div class="footer-ente">
+            <a href="https://fondazionezeri.unibo.it/it/homepage" target="_blank" rel="noopener">
+              <img src="../img/homepage/logo-negativo.png" alt="Fondazione Federico Zeri">
+            </a>
+            <p>Progetto della <a href="https://fondazionezeri.unibo.it/it/homepage" target="_blank" rel="noopener">Fondazione
+               Federico Zeri</a>, Università di Bologna.</p>
+          </div>
             <div class="footer-left">
                 <p>Licenza dati e immagini: <img id="license.png" src="../img/homepage/license.png" alt="License"></p>
             </div>

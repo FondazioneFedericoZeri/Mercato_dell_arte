@@ -298,6 +298,7 @@ def build_html_head(page, entity):
                     src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js")
         page.script(type="text/javascript",
                     src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js")
+        page.script(src="../../script/menu.js", defer="")
         page.script(type="text/javascript",
                     src="../../script/galleria.js")
         page.script(type="text/javascript",
@@ -308,22 +309,40 @@ def build_html_head(page, entity):
                     src="../../script/mappaDettaglio.js")
 
 
-def build_header(page):
+ZERI = "https://fondazionezeri.unibo.it/it/homepage"
 
+
+def build_header(page):
+    """Il nome del progetto a sinistra, il logo dell'istituto a destra.
+
+    Il logo della Fondazione non e' piu' il link alla home: nei test
+    con gli utenti nessuno lo cliccava per tornare all'inizio del sito,
+    perche' tutti si aspettavano di finire sul sito della Fondazione.
+    Ora ci porta davvero, e alla home ci si torna dal nome del progetto.
+    """
     with page.header():
         with page.div(klass="header-container"):
-            with page.a(href="../../index.html"):
-                page.img(id="logo.png", src="../../img/homepage/logo.png",
-                         alt="Fondazione Federico Zeri")
-            with page.nav():
-                with page.ul():
-                    with page.li():
-                        page.a(_t="Progetto", href="../progetto.html")
-                        page.a(_t="Antiquari", href="../antiquari.html")
-                        page.a(_t="Luoghi", href="../luoghi.html")
-                        page.a(_t="Eventi", href="../eventi.html")
-                        page.a(_t="Persone", href="../persone.html")
-                        page.a(_t="Bibliografia", href="../bibliografia.html")
+            page.a(klass="marchio", href="../../index.html",
+                   _t="Mercato dell'arte")
+            # Il panino mancava del tutto in queste pagine: il menu era
+            # nascosto sotto i 768px senza nessun modo per aprirlo.
+            page.button(klass="menu-toggle", type="button",
+                        **{"aria-label": "Apri menu"}, _t="&#9776;")
+            with page.div(klass="testata-destra"):
+                with page.nav():
+                    with page.ul(klass="menu"):
+                        page.li().a(_t="Progetto", href="../progetto.html")
+                        page.li().a(_t="Antiquari", href="../antiquari.html")
+                        page.li().a(_t="Luoghi", href="../luoghi.html")
+                        page.li().a(_t="Eventi", href="../eventi.html")
+                        page.li().a(_t="Persone", href="../persone.html")
+                        page.li().a(_t="Bibliografia", href="../bibliografia.html")
+                page.span(klass="testata-filo")
+                with page.a(klass="testata-ente", href=ZERI, target="_blank",
+                            rel="noopener",
+                            title="Fondazione Federico Zeri, Universit\u00e0 di Bologna"):
+                    page.img(src="../../img/homepage/logo.png",
+                             alt="Fondazione Federico Zeri")
 
 
 def bottone_zoom(page):
@@ -566,6 +585,14 @@ def build_html(entity, entities, parentela, ordinate):
 
             with page.footer():
                 with page.div(klass="footer-container"):
+                    with page.div(klass="footer-ente"):
+                        with page.a(href=ZERI, target="_blank", rel="noopener"):
+                            page.img(src="../../img/homepage/logo-negativo.png",
+                                     alt="Fondazione Federico Zeri")
+                        # Frase in un pezzo solo: spezzandola in più
+                        # chiamate, airium ci infila un a capo e in pagina
+                        # compare uno spazio prima della virgola.
+                        page.p(_t='Progetto della <a href="' + ZERI + '" target="_blank" rel="noopener">Fondazione Federico Zeri</a>, Universit\u00e0 di Bologna.')
                     with page.div(klass="footer-left"):
                         page.p(_t='Licenza dati e immagini:')
                         page.img(

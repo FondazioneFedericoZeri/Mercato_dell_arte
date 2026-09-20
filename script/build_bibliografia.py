@@ -56,21 +56,32 @@ def build_html_head(page):
 		               "display=swap", rel="stylesheet")
 
 
-def build_header(page):
+ZERI = "https://fondazionezeri.unibo.it/it/homepage"
 
+
+def build_header(page):
+	# Il nome del progetto e' il link alla home; il logo della
+	# Fondazione sta a destra e porta al sito dell'istituto.
 	with page.header():
 		with page.div(klass="header-container"):
-			with page.a(href="../index.html"):
-				page.img(id="logo.png", src="../img/homepage/logo.png", alt="Fondazione Federico Zeri")
-			with page.nav():
-				with page.ul():
-					with page.li():
-						page.a(_t="Progetto", href="progetto.html")
-						page.a(_t="Antiquari", href="antiquari.html")
-						page.a(_t="Luoghi", href="luoghi.html")
-						page.a(_t="Eventi", href="eventi.html")
-						page.a(_t="Persone", href="persone.html")
-						page.a(_t="Bibliografia", href="bibliografia.html")
+			page.a(klass="marchio", href="../index.html", _t="Mercato dell'arte")
+			page.button(klass="menu-toggle", type="button",
+				            **{"aria-label": "Apri menu"}, _t="&#9776;")
+			with page.div(klass="testata-destra"):
+				with page.nav():
+					with page.ul():
+						with page.li():
+							page.a(_t="Progetto", href="progetto.html")
+							page.a(_t="Antiquari", href="antiquari.html")
+							page.a(_t="Luoghi", href="luoghi.html")
+							page.a(_t="Eventi", href="eventi.html")
+							page.a(_t="Persone", href="persone.html")
+							page.a(_t="Bibliografia", href="bibliografia.html")
+				page.span(klass="testata-filo")
+				with page.a(klass="testata-ente", href=ZERI, target="_blank",
+					            rel="noopener",
+					            title="Fondazione Federico Zeri, Universit\u00e0 di Bologna"):
+					page.img(src="../img/homepage/logo.png", alt="Fondazione Federico Zeri")
 
 def build_html():
 
@@ -107,6 +118,11 @@ def build_html():
 
 			with page.footer():
 				with page.div(klass="footer-container"):
+					with page.div(klass="footer-ente"):
+						with page.a(href=ZERI, target="_blank", rel="noopener"):
+							page.img(src="../img/homepage/logo-negativo.png",
+								 alt="Fondazione Federico Zeri")
+						page.p(_t='Progetto della <a href="' + ZERI + '" target="_blank" rel="noopener">Fondazione Federico Zeri</a>, Universit\u00e0 di Bologna.')
 					with page.div(klass="footer-left"):
 						page.p(_t='Licenza dati e immagini:')
 						page.img(id="license.png", src="../img/homepage/license.png", alt="License")
@@ -116,6 +132,7 @@ def build_html():
 
 			# La pagina è alta più di 19.000 pixel: serve un modo per
 			# risalire senza trascinare.
+			page.script(src="../script/menu.js", defer="")
 			page.script(src="../script/torna-su.js", defer="")
 
 	# Get the generated HTML as a string
