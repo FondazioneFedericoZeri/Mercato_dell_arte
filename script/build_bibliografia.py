@@ -291,8 +291,7 @@ def build_footer(page):
 				page.img(id="license.png", src="../img/homepage/license.png", alt="License")
 			with page.div(klass="footer-right"):
 				page.p().a(_t="Crediti", href="crediti.html")
-				page.p().a(_t="Documentazione",
-					   href="https://github.com/FondazioneFedericoZeri/Mercato_dell_arte")
+				page.p().a(_t="Documentazione", href="documentazione.html")
 
 
 def carta(page, chiave, quante, titolo, descrizione):

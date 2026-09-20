@@ -651,8 +651,7 @@ def build_html(entity, entities, parentela, ordinate):
                             with page.a(href="../../html/crediti.html"):
                                 page("Crediti")
                             page("|")
-                            with page.a(href="https://github.com/FondazioneFedericoZeri/Mercato_dell_arte",
-                                        target="_blank"):
+                            with page.a(href="../../html/documentazione.html"):
                                 page("Documentazione")
 
     html_content = str(page)

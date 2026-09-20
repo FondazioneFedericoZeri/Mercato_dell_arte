@@ -349,7 +349,7 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
             </div>
             <div class="footer-right">
                 <p>
-                    <a href="../html/crediti.html">Crediti</a> | <a href="https://github.com/FondazioneFedericoZeri/Mercato_dell_arte">Documentazione</a>
+                    <a href="../html/crediti.html">Crediti</a> | <a href="../html/documentazione.html">Documentazione</a>
                 </p>
             </div>
         </div>
