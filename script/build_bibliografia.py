@@ -49,6 +49,13 @@ def getBib(bibitem):
 
 	s+=f"<i>{bibitem['Titolo']}</i>"
 
+	# Il completamento del titolo dice dove sta lo scritto: il volume che
+	# lo contiene, la mostra di cui e' il catalogo, la data dell'asta.
+	# Sta subito dopo il titolo e fuori dal corsivo.
+	completamento = (bibitem.get('Completamento del titolo') or "").strip()
+	if completamento:
+		s += f", {completamento}"
+
 	if len(bibitem['Città, editore o rivista'])>0:
 		s+=f", {bibitem['Città, editore o rivista']}"
 
