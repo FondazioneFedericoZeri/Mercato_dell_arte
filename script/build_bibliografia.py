@@ -45,6 +45,7 @@ def build_html_head(page):
 		page.meta(name="viewport", content="width=device-width, initial-scale=1.0")
 		page.title(_t="Bibliografia")
 		page.link(rel="stylesheet", href="../css/tokens.css")
+		page.link(rel="stylesheet", href="../css/torna-su.css")
 		page.link(rel="stylesheet", href="../css/styles-bibliografia.css")
 		# Tipografia condivisa con il sito dei cataloghi d'asta.
 		page.link(rel="preconnect", href="https://fonts.googleapis.com")
@@ -112,6 +113,10 @@ def build_html():
 					with page.div(klass="footer-right"):
 						page.p().a(_t="Crediti", href="#")
 						page.p().a(_t="Documentazione", href="#")
+
+			# La pagina è alta più di 19.000 pixel: serve un modo per
+			# risalire senza trascinare.
+			page.script(src="../script/torna-su.js", defer="")
 
 	# Get the generated HTML as a string
 	html_content = str(page)

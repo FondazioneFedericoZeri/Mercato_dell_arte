@@ -1,0 +1,64 @@
+/* Bottone "Torna su" — si carica solo nelle pagine lunghe.
+   Il contenuto (freccia compresa) lo crea script/torna-su.js. */
+
+.torna-su {
+    position: fixed;
+    right: 24px;
+    bottom: 28px;
+    /* La pagina eventi dà al footer z-index 1000: sotto quel valore
+       il bottone finisce coperto e non si riesce a cliccarlo. */
+    z-index: 1100;
+    width: 46px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--testo, #333);
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.22);
+
+    /* nascosto finché non si scorre: visibility toglie anche il
+       bottone dal percorso del tabulatore */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(8px);
+    transition: opacity 0.25s ease, transform 0.25s ease,
+                visibility 0.25s ease, background-color 0.25s ease;
+}
+
+.torna-su.visibile {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+}
+
+.torna-su:hover {
+    background-color: var(--blu, #5593C9);
+}
+
+.torna-su:focus-visible {
+    outline: 3px solid var(--blu, #5593C9);
+    outline-offset: 3px;
+}
+
+.torna-su svg {
+    width: 22px;
+    height: 22px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .torna-su {
+        transition: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .torna-su {
+        right: 14px;
+        bottom: 16px;
+    }
+}

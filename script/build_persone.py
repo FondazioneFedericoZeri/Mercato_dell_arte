@@ -225,14 +225,20 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Persone</title>
     <link rel="stylesheet" href="../css/tokens.css">
+    <link rel="stylesheet" href="../css/torna-su.css">
     <link rel="stylesheet" href="../css/persone.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="../script/scripts-antiquari.js"></script>
-    <script type="text/javascript" src="../script/antiquari_search.js"></script>
+    <!-- Questa pagina è guidata solo da persone.js. Qui venivano
+         caricati anche scripts-antiquari.js e antiquari_search.js,
+         rimasugli del modello della pagina antiquari: il secondo
+         comincia con $.ajaxSetup e la pagina non carica jQuery,
+         quindi andava in errore a ogni apertura senza che nessuno
+         dei due servisse a qualcosa. -->
     <script type="text/javascript" src="../script/persone.js"></script>
     <script src="../script/menu.js" defer></script>
+    <script src="../script/torna-su.js" defer></script>
 </head>
 
 <body>
