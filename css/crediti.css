@@ -14,12 +14,6 @@ body {
     line-height: 1.6;
 }
 
-.credits-section h2 {
-    font-size: 36px;
-    color: #333;
-    font-family: var(--ff-body);
-}
-
 main {
     flex: 1; /* Fa sì che il main prenda tutto lo spazio disponibile */
 }
@@ -122,69 +116,7 @@ body {
     padding: 0;
 }
 
-.section-title {
-    font-family: var(--ff-head);
-    font-size: 32px;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.credits-container {
-    margin: 0 auto;
-    max-width: 800px;
-    padding: 20px;
-    text-align: left;
-}
-
-.credits-container p {
-    font-size: var(--fs-lettura);
-    margin-bottom: 15px;
-    line-height: 1.5;
-}
-
-.bold-text {
-    font-weight: bold;
-    color: #333;
-}
 @media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        padding: 10px;
-    }
-
-    .header-container {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-
-    nav ul {
-        flex-direction: column; /* Disposizione verticale */
-        text-align: center; /* Centra il testo */
-        padding: 0;
-        gap: 10px;
-    }
-
-    nav ul li {
-        margin: 0; /* Rimuove i margini laterali */
-    }
-
-    .credits-container {
-        padding: 10px; /* Riduce il padding */
-        text-align: left; /* Mantiene allineato il testo a sinistra */
-    }
-
-    .credits-container p {
-        font-size: 16px; /* Riduce la dimensione del font */
-        margin-bottom: 10px; /* Spaziatura più compatta */
-    }
-
-    .section-title {
-        font-size: 24px; /* Riduce la dimensione del titolo */
-    }
-
     footer {
         flex-direction: column; /* Disposizione verticale */
         padding: 20px;
@@ -203,3 +135,119 @@ body {
     }
 }
 
+
+/* ══════════════════════════════════════════════════════════════
+   Crediti
+
+   Una pagina di crediti si legge per ruoli, non per frasi: chi
+   arriva qui cerca "chi ha fatto cosa". Percio' non e' un elenco di
+   paragrafi "Ruolo: nomi" — dove l'etichetta e i nomi hanno lo
+   stesso peso e si distinguono solo per il grassetto — ma una lista
+   di definizioni: il ruolo sopra, piccolo e in maiuscoletto, i nomi
+   sotto, grandi, che sono la cosa che si e' venuti a leggere.
+
+   Regge anche i casi difficili: un ruolo lungo due righe (quello di
+   Valentina) e un ruolo con sei nomi.
+   ══════════════════════════════════════════════════════════════ */
+
+.crediti {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 40px 60px 60px 60px;
+    box-sizing: border-box;
+}
+
+.crediti .titolo-pagina {
+    margin-bottom: 30px;
+}
+
+.crediti-elenco {
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid var(--carta-bordo);
+}
+
+.crediti-voce {
+    padding: 22px 0 24px 0;
+    border-bottom: 1px solid var(--carta-bordo);
+}
+
+.crediti-elenco dt,
+.crediti-etichetta {
+    margin: 0 0 8px 0;
+    font-family: var(--ff-body);
+    font-size: var(--fs-caption);
+    font-weight: 600;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: #7c7768;
+    line-height: 1.5;
+    max-width: 60ch;
+}
+
+.crediti-elenco dd,
+.crediti-nomi {
+    margin: 0;
+    font-family: var(--ff-head);
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 1.45;
+    color: var(--testo);
+}
+
+/* Chi sostiene il progetto non e' chi lo fa: dopo l'elenco, con piu'
+   aria intorno e senza il filo che separa i ruoli fra loro. */
+.crediti-sostegno {
+    margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    .crediti {
+        padding: 26px 18px 40px 18px;
+    }
+
+    .crediti-elenco dd,
+    .crediti-nomi {
+        font-size: 19px;
+    }
+}
+
+/* Il menù a scomparsa: la pagina crediti era l'unica senza: il
+   bottone non c'era e sotto i 768px le sei voci si mettevano in
+   colonna dentro la fascia, allungandola. Stesse regole delle altre
+   pagine. */
+.menu-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        font-size: 24px;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #f8f8f8;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        padding: 10px 0;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+}

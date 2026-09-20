@@ -10,21 +10,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="../script/crediti.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Qui veniva caricato script/crediti.js, che non ha niente a che
+         fare con i crediti: è il carosello della pagina eventi, finito
+         qui per copia. Cercava #prev, #next e le card, non le trovava e
+         andava in errore tre volte a ogni apertura. Con lui se ne vanno
+         anche le due copie di jQuery, che nessuno usava. -->
+    <script src="../script/menu.js" defer></script>
 </head>
 
 <body>
-        
+
     <header>
         <div class="header-container">
-
             <a class="marchio" href="../index.html">Mercato dell'arte</a>
-
+            <button class="menu-toggle" aria-label="Apri menu">
+                ☰
+            </button>
             <div class="testata-destra">
               <nav>
-                  <ul>
+                  <ul class="menu">
                       <li><a href="../html/progetto.html">Progetto</a></li>
                       <li><a href="../html/antiquari.html">Antiquari</a></li>
                       <li><a href="../html/luoghi.html">Luoghi</a></li>
@@ -43,20 +47,43 @@
     </header>
 
     <main>
-        <section id="credits-section">
-            <h2 class="section-title"><span class="bold-text">Crediti</span></h2>
-            <div class="credits-container">
-                <p><span class="bold-text">Coordinamento scientifico:</span> Francesca Mambelli</p>
-                <p><span class="bold-text">Ricerca e redazione testi:</span> Francesca Candi, Marco Fossati, Eleonora Scianna</p>
-                <p><span class="bold-text">Data analysis, manipulation, modeling, visualization e web design:</span> Valentina Rossetti</p>
-                <p><span class="bold-text">Supporto tecnico:</span> Ludovica Pannitto, Giulia Renda</p>
-                <p><span class="bold-text">Con il contributo di:</span> Associzione Amici di Federico Zeri</p>
+        <section class="crediti">
+            <h1 class="titolo-pagina">Crediti</h1>
+
+            <!-- Ruolo e nomi sono due cose diverse e vanno scritte come
+                 tali: il ruolo è l'etichetta, i nomi sono il contenuto.
+                 Da qui la lista di definizioni, con il ruolo sopra in
+                 piccolo e i nomi sotto, grandi. -->
+            <dl class="crediti-elenco">
+                <div class="crediti-voce">
+                    <dt>Coordinamento scientifico</dt>
+                    <dd>Francesca Mambelli</dd>
+                </div>
+                <div class="crediti-voce">
+                    <dt>Ricerca e redazione testi</dt>
+                    <dd>Francesca Candi, Federica De Giambattista, Marco Fossati,
+                        Alice Martignon, Eleonora Scianna, Mimosa Tavella</dd>
+                </div>
+                <div class="crediti-voce">
+                    <dt>Modellazione, analisi e visualizzazione dei dati;
+                        progettazione e sviluppo del sito</dt>
+                    <dd>Valentina Rossetti</dd>
+                </div>
+                <div class="crediti-voce">
+                    <dt>Supporto tecnico</dt>
+                    <dd>Ludovica Pannitto, Giulia Renda</dd>
+                </div>
+            </dl>
+
+            <!-- Chi sostiene il progetto non è chi lo fa: sta sotto una
+                 riga sua, come si usa. -->
+            <div class="crediti-sostegno">
+                <p class="crediti-etichetta">Con il contributo di</p>
+                <p class="crediti-nomi">Associazione Amici di Federico Zeri</p>
             </div>
         </section>
     </main>
-    
 
-    <!-- Footer copiato dalla pagina esistente -->
     <footer>
         <div class="footer-container">
           <div class="footer-ente">
@@ -71,7 +98,7 @@
             </div>
             <div class="footer-right">
                 <p>
-                    <a href="#">Crediti</a> | <a href="https://github.com/FondazioneFedericoZeri/Mercato_dell_arte">Documentazione</a>
+                    <a href="../html/crediti.html">Crediti</a> | <a href="https://github.com/FondazioneFedericoZeri/Mercato_dell_arte">Documentazione</a>
                 </p>
             </div>
         </div>
