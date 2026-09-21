@@ -6333,7 +6333,7 @@
             "C_134": {
                 "ID": "C_134",
                 "Nome": "Dwight",
-                "Cognome / Denominazione": "Millet",
+                "Cognome / Denominazione": "Miller",
                 "Tipologia": "storico dell'arte",
                 "ID Antiquari": "CO_V",
                 "Nome Antiquari": "Cortinovis"
@@ -14781,7 +14781,7 @@
         "Foto gallery": [
             "PO_III_img1",
             "PO_III_img2",
-            "PO_IIII_img3"
+            "PO_III_img3"
         ],
         "Persone": {
             "PO_III_1": {
@@ -14948,7 +14948,7 @@
             },
             "C_152": {
                 "ID": "C_152",
-                "Nome": "Massino",
+                "Nome": "Massimo",
                 "Cognome / Denominazione": "Listri",
                 "Tipologia": "fotografo",
                 "ID Antiquari": "PR",
