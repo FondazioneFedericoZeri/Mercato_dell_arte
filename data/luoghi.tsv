@@ -231,9 +231,7 @@ IT_181	Italia	Piemonte	Torino	via dell'Arsenale		CA_V	1937	1950	Luigi e Giorgio 
 IT_182	Italia	Piemonte	Torino	via Maria Vittoria	11	CA_V	1950	1964	Giorgio Caretto		
 IT_183	Italia	Piemonte	Torino	via Maria Vittoria	10	CA_V	1964	in attività	Giorgio, Patrizia e Luigi Caretto		
 IT_184	Italia	Emilia-Romagna	Bologna	via Castiglione	12	CO_V	1954	1992	Guido e Marzio Cortinovis, “Antichità Cortinovis”		
-IT_185	Italia	Emilia-Romagna	Bologna	via Castiglione	31	CO_V	1960 ca.	in attività	Guido e Marzio Cortinovis (studio privato)		
-IT_186	Italia	Lombardia	Milano	via S. Andrea	11	SU	1926	1945	Rodolfo Subert, “Galleria S. Andrea”		
-IT_187	Italia	Lombardia	Milano	via S. Andrea	11	SU	1926	1945	Rodolfo Subert, “Galleria S. Andrea”		
+IT_185	Italia	Emilia-Romagna	Bologna	via Castiglione	31	CO_V	1960 ca.	in attività	Guido e Marzio Cortinovis (studio privato)				
 IT_188	Italia	Lombardia	Milano	via Fiori Oscuri		GI_I	1940 ca.	1962	Antonia Maria Gianetti		
 IT_189	Italia	Lombardia	Milano	via Gesù	2	GI_I	1962	1988	Antonia Maria Gianetti, “Maria Antonia Gianetti Antichità”		
 IT_190	Italia	Lombardia	Milano	via Gesù	7	GI_I	1981	2002	Antonia Maria Gianetti, “Maria Antonia Gianetti Antichità”		
@@ -245,7 +243,7 @@ IT_195	Italia	Emilia-Romagna	Bologna	via Ugo Bassi	87	AN AS	1873	1879	Raffaele A
 IT_196	Italia	Emilia-Romagna	Bologna	via Barberia	13	AN	1905	1907	Raffaele Angiolini e Alessandro Ranuzzi, “Alessandro Ranuzzi e C.”		
 IT_197	Italia	Lazio	Roma	via Lima	28	DA	1905	1907	Alberto D'Atri		
 IT_198	Italia	Lazio	Roma	via Panama	102/104	FO_I	1920	1980 ca.	Vittorio Forti (abitazione privata)		
-IT_199	Italia	Lazio	Roma	Piazza Augusto Imperatore		FO_I	1944	1951	Pietro Maria Bardi "Studio d’Arte Palma"		
+IT_199	Italia	Lazio	Roma	Piazza Augusto Imperatore		PA_III FO_I	1944	1951	Pietro Maria Bardi "Studio d’Arte Palma"		
 IT_200	Italia	Emilia-Romagna	Bologna	via Volturno	4/G	MO_I	1901	1901	Aldo Molena		
 IT_201	Italia	Emilia-Romagna	Bologna	via Saffi	11	MO_I	1911	1901	Aldo Molena		
 IT_202	Italia	Emilia-Romagna	Bologna	via Zamboni	11	MO_I	1910 ca.	1930	Aldo Molena		
