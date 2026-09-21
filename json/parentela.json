@@ -1980,5 +1980,42 @@
                 "Morte": ""
             }
         }
+    },
+    "PI_NEW": {
+        "Nome": "Pini",
+        "Relazioni": [
+            {
+                "Persona_1": "PI_NEW_1",
+                "Persona_2": "PI_NEW_2",
+                "Tipo_di_relazione": "padre"
+            },
+            {
+                "Persona_1": "PI_NEW_1",
+                "Persona_2": "PI_NEW_3",
+                "Tipo_di_relazione": "padre"
+            },
+            {
+                "Persona_1": "PI_NEW_2",
+                "Persona_2": "PI_NEW_3",
+                "Tipo_di_relazione": "fratello"
+            }
+        ],
+        "Persone": {
+            "PI_NEW_1": {
+                "Nome": "Cesare Pini",
+                "Nascita": "1870",
+                "Morte": ""
+            },
+            "PI_NEW_2": {
+                "Nome": "Umberto Pini",
+                "Nascita": "1902",
+                "Morte": ""
+            },
+            "PI_NEW_3": {
+                "Nome": "Giovanni Pini",
+                "Nascita": "1895",
+                "Morte": ""
+            }
+        }
     }
 }
