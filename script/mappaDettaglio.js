@@ -33,10 +33,15 @@ document.addEventListener("DOMContentLoaded", function () {
       // Convert the luoghi_json object into an array
       var placesArray = Object.values(luoghi_json);
 
-      // Filter the array based on the ID_entità field
+      // Filter the array based on the ID_entità field.
+      // ID_entità può contenere più ID separati da spazio (es. "AN AS"):
+      // si confrontano i singoli token in modo esatto, NON con una regex
+      // con \b, perché il trattino non è un carattere "word" e quindi
+      // \bAN\b corrisponderebbe anche dentro "AN-EF" (stesso problema per
+      // GU dentro "GU-BR").
       var filteredPlaces = placesArray.filter(function (luogo) {
-        var regex = new RegExp("\\b" + personID + "\\b");  // Ensure word boundaries
-        return regex.test(luogo.ID_entità);  // Test if the ID_entità matches the pattern
+        var ids = String(luogo.ID_entità || "").trim().split(/\s+/);
+        return ids.indexOf(personID) !== -1;
       });
 
       // Add markers for each filtered place
@@ -98,5 +103,3 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
-
-
