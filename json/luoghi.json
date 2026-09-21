@@ -4193,42 +4193,6 @@
             "lon": 11.3470562
         }
     },
-    "IT_186": {
-        "ID": "IT_186",
-        "Nazione": "Italia",
-        "Regione": "Lombardia",
-        "Città": "Milano",
-        "Via": "via S. Andrea",
-        "Civico": "11",
-        "ID_entità": "SU",
-        "Apertura": "1926",
-        "Chiusura": "1945",
-        "Nome attività": "Rodolfo Subert, “Galleria S. Andrea”",
-        "Latitudine": "",
-        "Longitudine": "",
-        "geo": {
-            "lat": null,
-            "lon": null
-        }
-    },
-    "IT_187": {
-        "ID": "IT_187",
-        "Nazione": "Italia",
-        "Regione": "Lombardia",
-        "Città": "Milano",
-        "Via": "via S. Andrea",
-        "Civico": "11",
-        "ID_entità": "SU",
-        "Apertura": "1926",
-        "Chiusura": "1945",
-        "Nome attività": "Rodolfo Subert, “Galleria S. Andrea”",
-        "Latitudine": "",
-        "Longitudine": "",
-        "geo": {
-            "lat": null,
-            "lon": null
-        }
-    },
     "IT_188": {
         "ID": "IT_188",
         "Nazione": "Italia",
@@ -4434,7 +4398,7 @@
         "Città": "Roma",
         "Via": "Piazza Augusto Imperatore",
         "Civico": "",
-        "ID_entità": "FO_I",
+        "ID_entità": "PA_III FO_I",
         "Apertura": "1944",
         "Chiusura": "1951",
         "Nome attività": "Pietro Maria Bardi \"Studio d’Arte Palma\"",
