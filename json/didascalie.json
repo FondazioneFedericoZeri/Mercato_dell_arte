@@ -461,7 +461,7 @@
     },
     "FO_img1.jpg": {
         "ID": "FO_img1.jpg",
-        "Didascalia": "Libreria antiquaria di Tammaro De Marinis a Firenze in società con Vittorio Forti"
+        "Didascalia": "Carlo Alberto Foresti con Robert Langton Douglas a Venezia nel 1922 (Archivio Foresti) "
     },
     "FO_img2.jpg": {
         "ID": "FO_img2.jpg",
@@ -549,10 +549,6 @@
     },
     "CO_IV_img1.jpg": {
         "ID": "CO_IV_img1.jpg",
-        "Didascalia": "Leonida Caldesi, Dominic Charles Colnaghi nello studio del fotografo a Londra, in Pall Mall East 13 (Londra National Portrait Gallery)"
-    },
-    "CO_IV_img2.jpg": {
-        "ID": "CO_IV_img2.jpg",
         "Didascalia": "Particolare dello stand Colnaghi a TEFAF Maastricht 2026"
     },
     "SA_VI_NEW_img2.jpg": {
@@ -599,9 +595,13 @@
         "ID": "CO_V_Img1.jpg",
         "Didascalia": "Guido Cortinovis, Autoritratto, 1942, collezione privata"
     },
-    "GI_I_img1.pg": {
-        "ID": "GI_I_img1.pg",
+    "GI_I_img1.jpg": {
+        "ID": "GI_I_img1.jpg",
         "Didascalia": "Maria Antonia Gianetti e Federico Zeri"
+    },
+    "GI_I_img2.jpg": {
+        "ID": "GI_I_img2.jpg",
+        "Didascalia": "Maria Antonia Gianetti nella sua galleria"
     },
     "DI_I_img1.jpg": {
         "ID": "DI_I_img1.jpg",
@@ -626,6 +626,10 @@
     "DA_img2.jpg": {
         "ID": "DA_img2.jpg",
         "Didascalia": "Rue La Boétie a Parigi, sede della Galleria D'Atri"
+    },
+    "FO_I_img1.jpg": {
+        "ID": "FO_I_img1.jpg",
+        "Didascalia": "Libreria antiquaria di Tammaro De Marinis a Firenze in società con Vittorio Forti"
     },
     "PR_img1.jpg": {
         "ID": "PR_img1.jpg",
