@@ -43,13 +43,11 @@ document.addEventListener("DOMContentLoaded", function () {
       if (ent && ent["Nome"]) {
         voci.push({ testo: String(ent["Nome"]), tipo: "antiquario" });
       }
-      var persone = (ent && ent.Persone) || {};
-      Object.keys(persone).forEach(function (pid) {
-        var luoghi = persone[pid]["ID_luoghi"] || {};
-        Object.keys(luoghi).forEach(function (lid) {
-          var c = luoghi[lid]["Città"];
-          if (c) citta[c] = (citta[c] || 0) + 1;
-        });
+      // Sedi dell'entità, dalla stessa fonte di card, contatori e mappe.
+      var luoghi = (ent && ent.Luoghi) || {};
+      Object.keys(luoghi).forEach(function (lid) {
+        var c = (luoghi[lid]["Città"] || "").trim();
+        if (c) citta[c] = (citta[c] || 0) + 1;
       });
     });
 

@@ -254,6 +254,7 @@ def build_entities(input_csv_entità, output_json):
     compravendite = json.loads(open("json/compravendite.json").read())
     eventi = json.loads(open("json/eventi.json").read())
     relazioni = json.loads(open("json/relazioni.json").read())
+    luoghi = json.loads(open("json/luoghi.json").read())
 
     fout = open(output_json, "w", encoding="utf-8")
 
@@ -286,8 +287,25 @@ def build_entities(input_csv_entità, output_json):
             entity["Clienti"] = {}
             entity["Eventi"] = {}
             entity["Relazioni"] = {}
+            entity["Luoghi"] = {}
 
             entities_dicts[entity["ID"]] = entity
+
+    # Le sedi dell'entita'. La fonte e' la colonna ID_entita' di
+    # luoghi.tsv: e' il luogo a dichiarare a chi appartiene. Prima le
+    # schede risalivano ai luoghi passando per le persone
+    # (persona -> ID_luoghi), che e' un'altra cosa: dice dove una
+    # persona ha lavorato, anche nella bottega di un collega. Le due
+    # strade davano insiemi diversi su 29 entita' — il contatore del
+    # tab "Luoghi" e la mappa mostravano numeri che non tornavano — e
+    # la seconda perdeva per strada 43 sedi senza persone collegate,
+    # fra cui tutte le filiali estere di Colnaghi.
+    # Un luogo puo' elencare piu' entita' separate da spazio
+    # (una bottega in societa'): vale per tutte.
+    for luogo_id, luogo in luoghi.items():
+        for ent in str(luogo.get("ID_entità") or "").split():
+            if ent in entities_dicts:
+                entities_dicts[ent]["Luoghi"][luogo_id] = luogo
 
     for person in persone:
         ent = persone[person]["ID_entità"]
@@ -330,8 +348,8 @@ def build_entities(input_csv_entità, output_json):
 
 # ── Catena di dipendenze fra i JSON ────────────────────────────────
 # persone.json incorpora i dati di luoghi.json, ed entità.json
-# incorpora persone.json, bibliografia.json, collaboratori.json,
-# compravendite.json, eventi.json e relazioni.json.
+# incorpora luoghi.json, persone.json, bibliografia.json,
+# collaboratori.json, compravendite.json, eventi.json e relazioni.json.
 # Chi rigenera un JSON a monte deve quindi rigenerare anche quelli a
 # valle, nello stesso comando: farlo con workflow separati non basta,
 # perché partono in parallelo e leggerebbero la versione vecchia.

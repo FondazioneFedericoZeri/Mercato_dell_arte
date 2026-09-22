@@ -2680,7 +2680,7 @@
                 "Città": "Roma",
                 "Via": "Via del Babuino",
                 "Civico": "96-97",
-                "ID_entità": "JA TA ",
+                "ID_entità": "JA TA JA-TA",
                 "Apertura": "1907 ca.",
                 "Chiusura": "1940 ca.",
                 "Nome attività": "Augusto e Salvatore Jandolo, Filippo e Guido Tavazzi, \"Casa di Vendita Jandolo & Tavazzi\"",
@@ -2709,7 +2709,7 @@
                 "Città": "Roma",
                 "Via": "Via del Babuino",
                 "Civico": "96-97",
-                "ID_entità": "JA TA ",
+                "ID_entità": "JA TA JA-TA",
                 "Apertura": "1907 ca.",
                 "Chiusura": "1940 ca.",
                 "Nome attività": "Augusto e Salvatore Jandolo, Filippo e Guido Tavazzi, \"Casa di Vendita Jandolo & Tavazzi\"",
@@ -2738,7 +2738,7 @@
                 "Città": "Roma",
                 "Via": "Via del Babuino",
                 "Civico": "96-97",
-                "ID_entità": "JA TA ",
+                "ID_entità": "JA TA JA-TA",
                 "Apertura": "1907 ca.",
                 "Chiusura": "1940 ca.",
                 "Nome attività": "Augusto e Salvatore Jandolo, Filippo e Guido Tavazzi, \"Casa di Vendita Jandolo & Tavazzi\"",
@@ -2767,7 +2767,7 @@
                 "Città": "Roma",
                 "Via": "Via del Babuino",
                 "Civico": "96-97",
-                "ID_entità": "JA TA ",
+                "ID_entità": "JA TA JA-TA",
                 "Apertura": "1907 ca.",
                 "Chiusura": "1940 ca.",
                 "Nome attività": "Augusto e Salvatore Jandolo, Filippo e Guido Tavazzi, \"Casa di Vendita Jandolo & Tavazzi\"",
@@ -2876,11 +2876,11 @@
                 "Apertura": "1960",
                 "Chiusura": "1987",
                 "Nome attività": "Pompeo Rubinacci e Piero Pagano, \"Rubinacci Galleria d'Arte\" (Palazzo Negrone)",
-                "Latitudine": "",
-                "Longitudine": "",
+                "Latitudine": "44.41067900570759",
+                "Longitudine": "8.935285177908606",
                 "geo": {
-                    "lat": 44.4104234,
-                    "lon": 8.9349421
+                    "lat": 44.41067900570759,
+                    "lon": 8.935285177908606
                 }
             },
             "IT_11": {
@@ -3589,11 +3589,11 @@
                 "Apertura": "1960",
                 "Chiusura": "1987",
                 "Nome attività": "Pompeo Rubinacci e Piero Pagano, \"Rubinacci Galleria d'Arte\" (Palazzo Negrone)",
-                "Latitudine": "",
-                "Longitudine": "",
+                "Latitudine": "44.41067900570759",
+                "Longitudine": "8.935285177908606",
                 "geo": {
-                    "lat": 44.4104234,
-                    "lon": 8.9349421
+                    "lat": 44.41067900570759,
+                    "lon": 8.935285177908606
                 }
             },
             "IT_15": {
@@ -3907,11 +3907,11 @@
                 "Apertura": "1887",
                 "Chiusura": "1905 ca.",
                 "Nome attività": "Giulio Sambon, \"Impresa di vendita in Italia Giulio Sambon\"",
-                "Latitudine": "",
-                "Longitudine": "",
+                "Latitudine": "41.90493094729958",
+                "Longitudine": "12.479038504889258",
                 "geo": {
-                    "lat": null,
-                    "lon": null
+                    "lat": 41.90493094729958,
+                    "lon": 12.479038504889258
                 }
             },
             "IT_110": {
@@ -5884,11 +5884,11 @@
                 "Apertura": "1900 ca.",
                 "Chiusura": "1920 ca.",
                 "Nome attività": "Cesare Melli (Giardino Borgherini, showroom per arredi da esterno)",
-                "Latitudine": "",
-                "Longitudine": "",
+                "Latitudine": "43.76952113070082",
+                "Longitudine": "11.252462320235491",
                 "geo": {
-                    "lat": 43.769386,
-                    "lon": 11.2523829
+                    "lat": 43.76952113070082,
+                    "lon": 11.252462320235491
                 }
             },
             "IT_71_b": {
@@ -6003,11 +6003,11 @@
                 "Apertura": "1900 ca.",
                 "Chiusura": "1920 ca.",
                 "Nome attività": "Cesare Melli (Giardino Borgherini, showroom per arredi da esterno)",
-                "Latitudine": "",
-                "Longitudine": "",
+                "Latitudine": "43.76952113070082",
+                "Longitudine": "11.252462320235491",
                 "geo": {
-                    "lat": 43.769386,
-                    "lon": 11.2523829
+                    "lat": 43.76952113070082,
+                    "lon": 11.252462320235491
                 }
             },
             "IT_71_b": {
@@ -6122,11 +6122,11 @@
                 "Apertura": "1900 ca.",
                 "Chiusura": "1920 ca.",
                 "Nome attività": "Cesare Melli (Giardino Borgherini, showroom per arredi da esterno)",
-                "Latitudine": "",
-                "Longitudine": "",
+                "Latitudine": "43.76952113070082",
+                "Longitudine": "11.252462320235491",
                 "geo": {
-                    "lat": 43.769386,
-                    "lon": 11.2523829
+                    "lat": 43.76952113070082,
+                    "lon": 11.252462320235491
                 }
             },
             "IT_71_b": {
@@ -6259,11 +6259,11 @@
                 "Apertura": "1900 ca.",
                 "Chiusura": "1920 ca.",
                 "Nome attività": "Cesare Melli (Giardino Borgherini, showroom per arredi da esterno)",
-                "Latitudine": "",
-                "Longitudine": "",
+                "Latitudine": "43.76952113070082",
+                "Longitudine": "11.252462320235491",
                 "geo": {
-                    "lat": 43.769386,
-                    "lon": 11.2523829
+                    "lat": 43.76952113070082,
+                    "lon": 11.252462320235491
                 }
             },
             "IT_71_b": {
@@ -6378,11 +6378,11 @@
                 "Apertura": "1900 ca.",
                 "Chiusura": "1920 ca.",
                 "Nome attività": "Cesare Melli (Giardino Borgherini, showroom per arredi da esterno)",
-                "Latitudine": "",
-                "Longitudine": "",
+                "Latitudine": "43.76952113070082",
+                "Longitudine": "11.252462320235491",
                 "geo": {
-                    "lat": 43.769386,
-                    "lon": 11.2523829
+                    "lat": 43.76952113070082,
+                    "lon": 11.252462320235491
                 }
             },
             "IT_71_b": {
@@ -6887,11 +6887,11 @@
                 "Apertura": "1895",
                 "Chiusura": "1922",
                 "Nome attività": "Dino Barozzi",
-                "Latitudine": "",
-                "Longitudine": "",
+                "Latitudine": "45.43275736025245",
+                "Longitudine": "12.3315854282254",
                 "geo": {
-                    "lat": null,
-                    "lon": null
+                    "lat": 45.43275736025245,
+                    "lon": 12.3315854282254
                 }
             },
             "IT_143": {
@@ -6941,11 +6941,11 @@
                 "Apertura": "1930 ca.",
                 "Chiusura": "1942 ca.",
                 "Nome attività": "Dino Barozzi",
-                "Latitudine": "",
-                "Longitudine": "",
+                "Latitudine": "45.447192149490455",
+                "Longitudine": "12.319772756355631",
                 "geo": {
-                    "lat": null,
-                    "lon": null
+                    "lat": 45.447192149490455,
+                    "lon": 12.319772756355631
                 }
             },
             "IT_146": {
@@ -6959,11 +6959,11 @@
                 "Apertura": "1919",
                 "Chiusura": "1942",
                 "Nome attività": "Dino Barozzi (Palazzo Soranzo Van Axel, abitazione privata e sede)",
-                "Latitudine": "",
-                "Longitudine": "",
+                "Latitudine": "45.43966048014481",
+                "Longitudine": "12.339631177908602",
                 "geo": {
-                    "lat": null,
-                    "lon": null
+                    "lat": 45.43966048014481,
+                    "lon": 12.339631177908602
                 }
             }
         },
@@ -7026,11 +7026,11 @@
                 "Apertura": "1932",
                 "Chiusura": "1934",
                 "Nome attività": "Antonio Carrer",
-                "Latitudine": "",
-                "Longitudine": "",
+                "Latitudine": "45.439618773772914",
+                "Longitudine": "12.330711128553414",
                 "geo": {
-                    "lat": null,
-                    "lon": null
+                    "lat": 45.439618773772914,
+                    "lon": 12.330711128553414
                 }
             }
         },
@@ -7089,7 +7089,7 @@
                 "Città": "Milano",
                 "Via": "via Manzoni",
                 "Civico": "12",
-                "ID_entità": "CA_IV",
+                "ID_entità": "PE",
                 "Apertura": "1917",
                 "Chiusura": "1938",
                 "Nome attività": "Lino Pesaro, \"Galleria Pesaro\"",
@@ -7140,11 +7140,11 @@
                 "Apertura": "1869 ca.",
                 "Chiusura": "1874",
                 "Nome attività": "Michelangelo Guggenheim, \"Gabinetto di oggetti di antichità e di belle arti\" ",
-                "Latitudine": "",
-                "Longitudine": "",
+                "Latitudine": "45.43521777086612",
+                "Longitudine": "12.335324369374838",
                 "geo": {
-                    "lat": null,
-                    "lon": null
+                    "lat": 45.43521777086612,
+                    "lon": 12.335324369374838
                 }
             },
             "IT_153": {
@@ -7491,11 +7491,11 @@
                 "Apertura": "1970",
                 "Chiusura": "1982",
                 "Nome attività": "Harry Salamon",
-                "Latitudine": "",
-                "Longitudine": "",
+                "Latitudine": "45.46746482096507",
+                "Longitudine": "9.195715049072046",
                 "geo": {
-                    "lat": null,
-                    "lon": null
+                    "lat": 45.46746482096507,
+                    "lon": 9.195715049072046
                 }
             },
             "IT_162": {
@@ -7686,11 +7686,11 @@
                 "Apertura": "1799",
                 "Chiusura": "1825",
                 "Nome attività": "Paul, Dominic e Martin Colnaghi, \"Colnaghi & Co.\", poi Dominic Colnaghi e John Antony Scott, poi William McKay, \"P. & D. Colnaghi & Co.\"",
-                "Latitudine": "",
-                "Longitudine": "",
+                "Latitudine": "51.507453810385236",
+                "Longitudine": "-0.12983994289317283",
                 "geo": {
-                    "lat": null,
-                    "lon": null
+                    "lat": 51.507453810385236,
+                    "lon": -0.12983994289317283
                 }
             }
         },
@@ -7791,11 +7791,11 @@
                 "Apertura": "1799",
                 "Chiusura": "1825",
                 "Nome attività": "Paul, Dominic e Martin Colnaghi, \"Colnaghi & Co.\", poi Dominic Colnaghi e John Antony Scott, poi William McKay, \"P. & D. Colnaghi & Co.\"",
-                "Latitudine": "",
-                "Longitudine": "",
+                "Latitudine": "51.507453810385236",
+                "Longitudine": "-0.12983994289317283",
                 "geo": {
-                    "lat": null,
-                    "lon": null
+                    "lat": 51.507453810385236,
+                    "lon": -0.12983994289317283
                 }
             }
         },
@@ -7820,11 +7820,11 @@
                 "Apertura": "1799",
                 "Chiusura": "1825",
                 "Nome attività": "Paul, Dominic e Martin Colnaghi, \"Colnaghi & Co.\", poi Dominic Colnaghi e John Antony Scott, poi William McKay, \"P. & D. Colnaghi & Co.\"",
-                "Latitudine": "",
-                "Longitudine": "",
+                "Latitudine": "51.507453810385236",
+                "Longitudine": "-0.12983994289317283",
                 "geo": {
-                    "lat": null,
-                    "lon": null
+                    "lat": 51.507453810385236,
+                    "lon": -0.12983994289317283
                 }
             }
         },
@@ -7849,11 +7849,11 @@
                 "Apertura": "1799",
                 "Chiusura": "1825",
                 "Nome attività": "Paul, Dominic e Martin Colnaghi, \"Colnaghi & Co.\", poi Dominic Colnaghi e John Antony Scott, poi William McKay, \"P. & D. Colnaghi & Co.\"",
-                "Latitudine": "",
-                "Longitudine": "",
+                "Latitudine": "51.507453810385236",
+                "Longitudine": "-0.12983994289317283",
                 "geo": {
-                    "lat": null,
-                    "lon": null
+                    "lat": 51.507453810385236,
+                    "lon": -0.12983994289317283
                 }
             }
         },
@@ -7888,11 +7888,11 @@
                 "Apertura": "1799",
                 "Chiusura": "1825",
                 "Nome attività": "Paul, Dominic e Martin Colnaghi, \"Colnaghi & Co.\", poi Dominic Colnaghi e John Antony Scott, poi William McKay, \"P. & D. Colnaghi & Co.\"",
-                "Latitudine": "",
-                "Longitudine": "",
+                "Latitudine": "51.507453810385236",
+                "Longitudine": "-0.12983994289317283",
                 "geo": {
-                    "lat": null,
-                    "lon": null
+                    "lat": 51.507453810385236,
+                    "lon": -0.12983994289317283
                 }
             }
         },
@@ -8000,11 +8000,11 @@
                 "Apertura": "1929",
                 "Chiusura": "1930",
                 "Nome attività": "Antonio Salvadori",
-                "Latitudine": "",
-                "Longitudine": "",
+                "Latitudine": "45.433002942319455",
+                "Longitudine": "12.334483220235489",
                 "geo": {
-                    "lat": null,
-                    "lon": null
+                    "lat": 45.433002942319455,
+                    "lon": 12.334483220235489
                 }
             }
         },
@@ -8400,11 +8400,11 @@
                 "Apertura": "1926",
                 "Chiusura": "1945",
                 "Nome attività": "Rodolfo Subert, “Galleria S. Andrea”",
-                "Latitudine": "",
-                "Longitudine": "",
+                "Latitudine": "45.469099095400864",
+                "Longitudine": "9.19606326256237",
                 "geo": {
-                    "lat": null,
-                    "lon": null
+                    "lat": 45.469099095400864,
+                    "lon": 9.19606326256237
                 }
             },
             "IT_177": {
@@ -9031,11 +9031,11 @@
                 "Apertura": "1929",
                 "Chiusura": "1970",
                 "Nome attività": "Pietro, Alberto e Mario D'Atri, \"Galleria D'Atri\"",
-                "Latitudine": "",
-                "Longitudine": "",
+                "Latitudine": "48.87399694615295",
+                "Longitudine": "2.316583062562373",
                 "geo": {
-                    "lat": null,
-                    "lon": null
+                    "lat": 48.87399694615295,
+                    "lon": 2.316583062562373
                 }
             }
         },
@@ -9078,11 +9078,11 @@
                 "Apertura": "1929",
                 "Chiusura": "1970",
                 "Nome attività": "Pietro, Alberto e Mario D'Atri, \"Galleria D'Atri\"",
-                "Latitudine": "",
-                "Longitudine": "",
+                "Latitudine": "48.87399694615295",
+                "Longitudine": "2.316583062562373",
                 "geo": {
-                    "lat": null,
-                    "lon": null
+                    "lat": 48.87399694615295,
+                    "lon": 2.316583062562373
                 }
             },
             "IT_197": {
@@ -9599,11 +9599,11 @@
                 "Apertura": "1847",
                 "Chiusura": "1882",
                 "Nome attività": "Consiglio Ricchetti, \"Galleria d'arte e di antichità\" (Palazzo Marcello)",
-                "Latitudine": "",
-                "Longitudine": "",
+                "Latitudine": "45.442448704785484",
+                "Longitudine": "12.3303699683908",
                 "geo": {
-                    "lat": null,
-                    "lon": null
+                    "lat": 45.442448704785484,
+                    "lon": 12.3303699683908
                 }
             },
             "IT_209": {

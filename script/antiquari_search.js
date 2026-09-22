@@ -55,13 +55,17 @@ function etichetta_conteggio(n) {
    Si scartano i valori vuoti invece di fidarsi del dato. */
 function citta_entita(ent_dict) {
     var citta = new Set();
-    var persone = ent_dict["Persone"] || {};
-    Object.keys(persone).forEach(function (pid) {
-        var luoghi = persone[pid]["ID_luoghi"] || {};
-        Object.keys(luoghi).forEach(function (lid) {
-            var nome = (luoghi[lid]["Citt\u00e0"] || "").trim();
-            if (nome) citta.add(nome);
-        });
+    /* Le sedi dell'entit\u00e0 stanno nel campo "Luoghi", costruito dalla
+       colonna ID_entit\u00e0 di luoghi.tsv: la stessa fonte del contatore
+       del tab e delle mappe. Prima si passava per le persone
+       (persona -> ID_luoghi), che dice dove una persona ha lavorato,
+       anche nella bottega di un collega: sulla card di Colnaghi
+       comparivano solo Londra e Parigi, perch\u00e9 alle sedi di Bruxelles,
+       Madrid e New York non era collegata nessuna persona. */
+    var luoghi = ent_dict["Luoghi"] || {};
+    Object.keys(luoghi).forEach(function (lid) {
+        var nome = (luoghi[lid]["Citt\u00e0"] || "").trim();
+        if (nome) citta.add(nome);
     });
     return Array.from(citta).sort().join(", ");
 }
@@ -78,8 +82,8 @@ function aggiorna_riepilogo(modo, n_gruppi, n_schede, n_antiquari) {
     } else {
         testo = n_schede + ' schede in ' + n_gruppi
               + (n_gruppi === 1 ? ' area' : ' aree')
-              + 'Entità attive in '
-              + 'pi\u00f9 aree compaiono in ciascuna.';
+              + ', dalla pi\u00f9 documentata alla meno. Chi ha avuto sedi in '
+              + 'pi\u00f9 aree compare in ciascuna.';
     }
     if (ricerca_attiva) testo = 'Risultati della ricerca: ' + testo;
     el.textContent = testo;
@@ -202,13 +206,12 @@ var sort_geographically = function () {
         var ent_dict = sorgente[ent];
         var regioni = new Set();
 
-        var persone = ent_dict["Persone"];
-        for (persona in persone){
-            var luoghi = persone[persona]["ID_luoghi"];
-            for (luogo_id in luoghi){
-                var luogo = luoghi[luogo_id]
-                regioni.add(luogo["Regione"])
-            }
+        // Stessa fonte della card e del contatore del tab: le sedi
+        // dichiarate dai luoghi, non i luoghi delle singole persone.
+        var luoghi = ent_dict["Luoghi"] || {};
+        for (luogo_id in luoghi){
+            var regione = (luoghi[luogo_id]["Regione"] || "").trim();
+            if (regione) regioni.add(regione);
         }
 
         for (let regione of regioni){
@@ -317,15 +320,12 @@ var performSearch = function (searchValue = "") {
             searchValues.push(entita['Nome']);
 
             // --- città
-            const persone = entita.Persone || {};     // estrae persone. se persone non esiste crea object vuoto (così il sistema non crasha e va avanti)
+            // Sedi dell'entità, dalla stessa fonte di card e mappe.
+            const luoghi = entita.Luoghi || {};       // se Luoghi non esiste crea object vuoto (così il sistema non crasha e va avanti)
 
-            for (const persona of Object.values(persone)) {
-                const luoghi = persona.ID_luoghi || {};
-
-                for (const luogo of Object.values(luoghi)) {
-                    const citta = (luogo['Città'] || '').trim();
-                    if (citta) searchValues.push(citta);
-                }
+            for (const luogo of Object.values(luoghi)) {
+                const citta = (luogo['Città'] || '').trim();
+                if (citta) searchValues.push(citta);
             }
 
             if (searchValues.some((str) => str.toLowerCase().includes(searchValue_lw))) {

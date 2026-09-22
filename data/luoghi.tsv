@@ -11,7 +11,7 @@ FR_7	Francia	Francia	Parigi	Rue La Fayette	93	CA_I	1889	1911	Ercole Canessa, "C.
 FR_8	Francia	Francia	Parigi	Rue Spontini	16	LA_II	1895 ca.	1934	Michele Lazzaroni (abitazione privata)		
 FR_9	Francia	Francia	Parigi	Rue St. Honoré		CO_IV	1760	1790	Giovanni Battista Torre, “Cabinet de Physique Expérimentale”, poi "Torre &Co."		
 FR_10	Francia	Francia	Parigi	rue La Boétie	52	DA	1920	1929	Pietro e Alberto D'Atri, "Galleria D'Atri"		
-FR_11	Francia	Francia	Parigi	rue La Boéie	23	DA	1929	1970	Pietro, Alberto e Mario D'Atri, "Galleria D'Atri"		
+FR_11	Francia	Francia	Parigi	rue La Boéie	23	DA	1929	1970	Pietro, Alberto e Mario D'Atri, "Galleria D'Atri"	48.87399694615295	2.316583062562373
 IT_1	Italia	Veneto	Venezia	Canal Grande		PO_II	1936	1980 ca.	Francesco Pospisil (Palazzo Sagredo, abitazione privata)		
 IT_1_b	Italia	Veneto	Venezia	San Marco	1659	VI_I	1950 ca.	1976	Ettore Viancini (abitazione privata)		
 IT_1_c	Italia	Veneto	Venezia	Calle Larga XXII marzo		VI_I	1976	1982	Paolo Viancini		
@@ -39,7 +39,7 @@ IT_9	Italia	Piemonte	Torino	Via Po	55	AC	1912	1975	Pietro Accorsi,"Galleria Acco
 IT_10	Italia	Liguria	Genova			VI_II	1930 ca.	1967	Mario Viezzoli (abitazione privata)		
 IT_11	Italia	Liguria	Genova	Mura dello Zerbino	10	PA_I	2000	2006	Piero Pagano, "Casa d'Aste Rubinacci"		
 IT_12	Italia	Liguria	Genova	Piazza Cinque Lampadi	65R	CR	1920 ca.	1950 ca.	Severino Crosa		
-IT_13	Italia	Liguria	Genova	Piazza Fontane Marose	3/4	PA_I RU	1960	1987	Pompeo Rubinacci e Piero Pagano, "Rubinacci Galleria d'Arte" (Palazzo Negrone)		
+IT_13	Italia	Liguria	Genova	Piazza Fontane Marose	3/4	PA_I RU	1960	1987	Pompeo Rubinacci e Piero Pagano, "Rubinacci Galleria d'Arte" (Palazzo Negrone)	44.41067900570759	8.935285177908606
 IT_14	Italia	Liguria	Genova	Piazza Giustiniani	7	CR	1952	1979	Severino Crosa (Palazzo Granello, abitazione privata)		
 IT_15	Italia	Liguria	Genova	Piazza S. Matteo	13	RU	1960	1974	Pompeo Rubinacci, "Rubinacci Galleria d'Arte" (Palazzetto Doria)		
 IT_16	Italia	Liguria	Genova	Via Assarotti	1	BO	1920 ca.	1970	Ferruccio Ildebrando Bossi (abitazione privata)		
@@ -84,7 +84,7 @@ IT_51	Italia	Toscana	Firenze	Borgo Ognissanti	50-56	GU-BR LA_I	1950 ca.	1957	Car
 IT_52	Italia	Toscana	Firenze	Borgo Ognissanti	54-56R	GU-BR	1920 ca.	1950 ca.	Carlo e Riccardo Bruscoli, Marcello Guidi		
 IT_52_b	Italia	Toscana	Firenze	Borgo Ognissanti	46	GR	1966	1990 ca.	Luigi Grassi Jr, "Galleria Ognissanti"		
 IT_52_c	Italia	Toscana	Firenze	Borgo Ognissanti		GE_II	1910 ca.	1931 ca.	Alfredo Geri, "Casa di vendite Arte Antica e Moderna" (sede e abitazione privata)		
-IT_52_d	Italia	Toscana	Firenze	Borgo Santi Apostoli	40r	ME	1900 ca.	1920 ca.	Cesare Melli (Giardino Borgherini, showroom per arredi da esterno)		
+IT_52_d	Italia	Toscana	Firenze	Borgo Santi Apostoli	40r	ME	1900 ca.	1920 ca.	Cesare Melli (Giardino Borgherini, showroom per arredi da esterno)	43.76952113070082	11.252462320235491
 IT_53	Italia	Toscana	Firenze	Via Cavour	88	GR	1909	1966	Luigi e Arturo Grassi, "Luigi Grassi & Sons" (Palazzo Montagliari)		
 IT_54	Italia	Toscana	Firenze	Via dei Banchi	5	GI	1929 ca.	1950 ca.	Ubaldo Giugni, "Galleria d'Arte" (sede)		
 IT_54_b	Italia	Toscana	Firenze	Via de' Bardi	1		1920	1920	Giuseppe Volterra e fratelli, "Gustavo Volterra"		
@@ -139,7 +139,7 @@ IT_97	Italia	Lazio	Roma	Piazza Sant'Apollinare	46	SI	1870 ca.	1890	Attilio Simon
 IT_98	Italia	Lazio	Roma	Piazza Scossacavalli		DI	1870 ca.	1920 ca.	Angelo Di Castro (negozio), ex Piazza Scossacavalli		
 IT_99	Italia	Lazio	Roma	Piazza della Trinità dei Monti	6	CA_II	1885	1901	Giuseppe Giacomini e Vincenzo Capobianchi, "Giacomini & Capobianchi"		
 IT_100	Italia	Lazio	Roma	Via dei Condotti, Campo Marzio		TA	1880 ca.	1924	Filippo Tavazzi		
-IT_101	Italia	Lazio	Roma	Via dei Condotti, Campo Marzio	44	SA_III	1887	1905 ca.	Giulio Sambon, "Impresa di vendita in Italia Giulio Sambon"		
+IT_101	Italia	Lazio	Roma	Via dei Condotti, Campo Marzio	44	SA_III	1887	1905 ca.	Giulio Sambon, "Impresa di vendita in Italia Giulio Sambon"	41.90493094729958	12.479038504889258
 IT_102	Italia	Lazio	Roma	Via dei Condotti, Campo Marzio	59-61	IM	1897	1943 ca.	Alexandre Imbert, "Galerie A. Imbert" (Palazzo Caffarelli)		
 IT_102_b	Italia	Lazio	Roma	Via del Babuino	15	SA_V	1900 ca.	1930 ca.	Leone Sabatello		
 IT_102_c	Italia	Lazio	Roma	Via del Babuino	49	GE_II	1929	1931 ca.	Alfredo Geri, "Galleria Geri"		
@@ -148,7 +148,7 @@ IT_103	Italia	Lazio	Roma	Via del Babuino	144	AN-EF	1916	1955 ca.	Emanuele Efrati
 IT_103_b	Italia	Lazio	Roma	Via del Babuino	146	AN-EF	1955 ca.	1998	Emanuele Efrati e Giuseppe Antonacci, "Antonacci-Efrati"		
 IT_104	Italia	Lazio	Roma	Via del Babuino	87-88	DI	1930 ca.	1939 ca.	Amedeo e Leone Di Castro, "Antichità A. L. Di Castro"		
 IT_105	Italia	Lazio	Roma	Via del Babuino	92	JA	1885 ca.	1891	Alessandro e Antonio Jandolo (Palazzo Raffaelli)		
-IT_106	Italia	Lazio	Roma	Via del Babuino	96-97	JA TA 	1907 ca.	1940 ca.	Augusto e Salvatore Jandolo, Filippo e Guido Tavazzi, "Casa di Vendita Jandolo & Tavazzi"		
+IT_106	Italia	Lazio	Roma	Via del Babuino	96-97	JA TA JA-TA	1907 ca.	1940 ca.	Augusto e Salvatore Jandolo, Filippo e Guido Tavazzi, "Casa di Vendita Jandolo & Tavazzi"		
 IT_107	Italia	Lazio	Roma	Via del Babuino	110	DI	1946 ca.	1960 ca.	Alberto Di Castro		
 IT_107_b	Italia	Lazio	Roma	Via del Babuino	152	CA_II	1830 ca.	1885 ca.	Tommaso e Vincenzo Capobianchi		
 IT_108	Italia	Lazio	Roma	Via del Babuino	132	AP	1970	2018	Fabrizio e Marco Fabio Apolloni, "W. Apolloni"		
@@ -188,17 +188,17 @@ IT_138	Italia	Campania	Napoli	via Gennaro Serra	24	SA_III	1886	1905 ca.	Giulio S
 IT_139	Italia	Veneto	Venezia	San Barnaba	3207	BA_V	1890 ca.	1895	Dino Barozzi		
 IT_140	Italia	Veneto	Venezia	Campo Santo Stefano	2950	BA_V	1895	1922 ca.	Dino Barozzi, "Dino Barozzi. Pittore, restauratore e antiquario" (Palazzo Barbaro)		
 IT_141	Italia	Veneto	Venezia	Corte del Duca Sforza	3056	BA_V	1895	1922	Dino Barozzi		
-IT_142	Italia	Veneto	Venezia	Calle San Maurizio	2769	BA_V	1895	1922	Dino Barozzi		
+IT_142	Italia	Veneto	Venezia	Calle San Maurizio	2769	BA_V	1895	1922	Dino Barozzi	45.43275736025245	12.3315854282254
 IT_143	Italia	Veneto	Venezia	San Marco	2888	BA_V	1925	1930 ca.	Dino Barozzi		
 IT_144	Italia	Veneto	Venezia	Campiello San Vidal	2859	BA_V	1930 ca.	1942 ca.	Dino Barozzi		
-IT_145	Italia	Veneto	Venezia	Sottoportico Giustinian	2888	BA_V	1930 ca.	1942 ca.	Dino Barozzi		
-IT_146	Italia	Veneto	Venezia	Fondamenta Van Axel o de le Erbe		BA_V	1919	1942	Dino Barozzi (Palazzo Soranzo Van Axel, abitazione privata e sede)		
+IT_145	Italia	Veneto	Venezia	Sottoportico Giustinian	2888	BA_V	1930 ca.	1942 ca.	Dino Barozzi	45.447192149490455	12.319772756355631
+IT_146	Italia	Veneto	Venezia	Fondamenta Van Axel o de le Erbe		BA_V	1919	1942	Dino Barozzi (Palazzo Soranzo Van Axel, abitazione privata e sede)	45.43966048014481	12.339631177908602
 IT_147	Italia	Veneto	Venezia	Campo San Stae	2603	CA_IV	1884	1930 ca.	Antonio Carrer		
-IT_148	Italia	Veneto	Venezia	Fondamenta Santa Maria Mater Domini	2068	CA_IV	1932	1934	Antonio Carrer		
+IT_148	Italia	Veneto	Venezia	Fondamenta Santa Maria Mater Domini	2068	CA_IV	1932	1934	Antonio Carrer	45.439618773772914	12.330711128553414
 IT_149	Italia	Lombardia	Milano	via Meravigli	10	PE	1904 ca.	1916	Lino Pesaro		
-IT_150	Italia	Lombardia	Milano	via Manzoni	12	CA_IV	1917	1938	Lino Pesaro, "Galleria Pesaro"		
+IT_150	Italia	Lombardia	Milano	via Manzoni	12	PE	1917	1938	Lino Pesaro, "Galleria Pesaro"		
 IT_151	Italia	Veneto	Venezia	Campo Santa Maria del Giglio	2467	GU	1869	1916	Michelangelo Guggenheim, "Gabinetto di oggetti di antichità e di belle arti" 		
-IT_152	Italia	Veneto	Venezia	Calle dei Fusei		GU	1869 ca.	1874	Michelangelo Guggenheim, "Gabinetto di oggetti di antichità e di belle arti" 		
+IT_152	Italia	Veneto	Venezia	Calle dei Fusei		GU	1869 ca.	1874	Michelangelo Guggenheim, "Gabinetto di oggetti di antichità e di belle arti" 	45.43521777086612	12.335324369374838
 IT_153	Italia	Veneto	Venezia	Calle del Remer	3901	GU	1887	1914	Michelangelo Guggenheim, "M. Guggenheim. Objets d’Art & Antiquités" (Palazzo Balbi, sede e abitazione privata)		
 IT_154	Italia	Veneto	Venezia	Campo San Gregorio	172	LO	1911	1919	Adolph Loewi, "Galleria di San Gregorio" (Abbazia di S. Gregorio)		
 IT_155	Italia	Veneto	Venezia	San Trovaso	960	LO	1919	1939	Adolph Loewi, "Adolph Loewi per il commercio di Antichità ed Oggetti d'arte antica" (Palazzo Nani-Mocenigo)		
@@ -207,7 +207,7 @@ IT_157	Italia	Lazio	Roma	piazza Santi Apostoli	81	PO_III	1927	1943	Ludwig Pollak
 IT_158	Italia	Piemonte	Torino	via Volta	9	SA_VII	1952	2014	Ferdinando e Teresa Salamon, "Art Ancienne" poi Silverio Salamon "Arte Antica"		
 IT_159	Italia	Lombardia	Milano	via Bagutta	14	SA_VII	1966	1967	Harry Salamon		
 IT_160	Italia	Lombardia	Milano	via Bigli	25	SA_VII	1967	1970	Harry Salamon		
-IT_161	Italia	Lombardia	Milano	via Montenapoleone	3	SA_VII	1970	1982	Harry Salamon		
+IT_161	Italia	Lombardia	Milano	via Montenapoleone	3	SA_VII	1970	1982	Harry Salamon	45.46746482096507	9.195715049072046
 IT_162	Italia	Lombardia	Milano	piazza Sant'Eufemia		SA_VII	1982	1985	Harry Salamon		
 IT_163	Italia	Lombardia	Milano	via San Damiano	2	SA_VII	1986	1993	Harry Salamon, "Il Gabinetto Salamon"		
 IT_164	Italia	Lombardia	Milano	via San Damiano	3	SA_VII	1993	in attività	Harry, Matteo e Lorenza Salamon, "“Salamon & C.”, poi “Matteo Salamon” e “Salamon Fine Art”		
@@ -215,14 +215,14 @@ IT_165	Italia	Piemonte	Torino	via Tasso	11	SA_VII	2002	in attività	Elena Salamo
 IT_166	Italia	Veneto	Venezia	San Benedetto	3952-53	SA_VI_NEW	1902	1906	Antonio Salvadori (Palazzo Tron)		
 IT_167	Italia	Veneto	Venezia	Calle Moro Lin	3242	SA_VI_NEW	1907	1928	Antonio Salvadori (Palazzo Moro Lin)		
 IT_168	Italia	Veneto	Venezia	San Severo	5013	SA_VI_NEW	1928	1929	Antonio Salvadori		
-IT_169	Italia	Veneto	Venezia	calle XX marzo a San Moisè	2251	SA_VI_NEW	1929	1930	Antonio Salvadori		
+IT_169	Italia	Veneto	Venezia	calle XX marzo a San Moisè	2251	SA_VI_NEW	1929	1930	Antonio Salvadori	45.433002942319455	12.334483220235489
 IT_170	Italia	Lombardia	Bergamo	via San Bernardino 66	66	ST_NEW	1878	1903	Giuseppe, Franco e Attilio Steffanoni, "Fratelli Steffanoni-Belle Arti-Bergamo"		
 IT_171	Italia	Lombardia	Bergamo	via San Bernardino 88	88	ST_NEW	1903	1987	Giuseppe, Franco e Attilio Steffanoni, "Giuseppe Steffanoni & figli, Trasponitori di pitture"		
 IT_172	Italia	Lombardia	Milano	via Bigli	15	LO_I	1951	2018	Nella Longari, “Galleria Nella Longari”		
 IT_173	Italia	Lombardia	Milano	Corso Monforte	23	LO_I	1951	2018	Longari, “Longari Arte Milano” (Palazzo Cicogna)		
 IT_174	Italia	Lombardia	Milano	via Monte di Pietà	2	SU	1860	1926 ca.	Emanuele Subert, “Emanuele Subert Antichità e Belle Arti” poi con Rodolfo Subert		
 IT_175	Italia	Lombardia	Milano	Galleria Vittorio Emanuele II		SU	1900	1926 ca.	Emanuele e Roldolfo Subert, “Rodolfo Subert Antichità e Belle Arti”		
-IT_176	Italia	Lombardia	Milano	via S. Andrea	11	SU	1926	1945	Rodolfo Subert, “Galleria S. Andrea”		
+IT_176	Italia	Lombardia	Milano	via S. Andrea	11	SU	1926	1945	Rodolfo Subert, “Galleria S. Andrea”	45.469099095400864	9.19606326256237
 IT_177	Italia	Lombardia	Milano	via S. Pietro all'Orto	26	SU	1951	1966	Rodolfo Subert, “G.G. Subert”		
 IT_178	Italia	Lombardia	Milano	via della Spiga	22	SU	1952	1966	Alberto Subert		
 IT_179	Italia	Lombardia	Milano	via Santo Spirito	24	SU	1966	2012	Alberto e Michele Subert, “Antichità e Oggetti d’Arte”		
@@ -231,7 +231,7 @@ IT_181	Italia	Piemonte	Torino	via dell'Arsenale		CA_V	1937	1950	Luigi e Giorgio 
 IT_182	Italia	Piemonte	Torino	via Maria Vittoria	11	CA_V	1950	1964	Giorgio Caretto		
 IT_183	Italia	Piemonte	Torino	via Maria Vittoria	10	CA_V	1964	in attività	Giorgio, Patrizia e Luigi Caretto		
 IT_184	Italia	Emilia-Romagna	Bologna	via Castiglione	12	CO_V	1954	1992	Guido e Marzio Cortinovis, “Antichità Cortinovis”		
-IT_185	Italia	Emilia-Romagna	Bologna	via Castiglione	31	CO_V	1960 ca.	in attività	Guido e Marzio Cortinovis (studio privato)				
+IT_185	Italia	Emilia-Romagna	Bologna	via Castiglione	31	CO_V	1960 ca.	in attività	Guido e Marzio Cortinovis (studio privato)		
 IT_188	Italia	Lombardia	Milano	via Fiori Oscuri		GI_I	1940 ca.	1962	Antonia Maria Gianetti		
 IT_189	Italia	Lombardia	Milano	via Gesù	2	GI_I	1962	1988	Antonia Maria Gianetti, “Maria Antonia Gianetti Antichità”		
 IT_190	Italia	Lombardia	Milano	via Gesù	7	GI_I	1981	2002	Antonia Maria Gianetti, “Maria Antonia Gianetti Antichità”		
@@ -250,9 +250,9 @@ IT_202	Italia	Emilia-Romagna	Bologna	via Zamboni	11	MO_I	1910 ca.	1930	Aldo Mole
 IT_203	Italia	Emilia-Romagna	Bologna	via S. Vitale	32	MO_I	1930	1933	Aldo Molena (abitazione privata)		
 IT_204	Italia	Emilia-Romagna	Bologna	via S. Vitale	40	MO_I	1930 ca.	1936	Aldo Molena		
 IT_205	Italia	Emilia-Romagna	Bologna	Strada Maggiore	15	MO_I	1936 ca.	1946	Aldo Molena		
-IT_206	Italia	Emilia-Romagna	Bologna	via Stallatici	4/A	PI_NEW	1897	1946	Cesare Pini		
+IT_206	Italia	Emilia-Romagna	Bologna	via Stallatici	4/A	PI_NEW	1897	1946	Cesare Pini	44.49469412841224	11.34078633558172
 IT_207	Italia	Umbria	Assisi	Piazza S. Chiara	3/B	RI	1962	2017	Ennio e Piero Riccardi, "Riccardi Antichità"		
-IT_208	Italia	Veneto	Venezia	Cannaregio, corte Erizzo	2187	RI_I	1847	1882	Consiglio Ricchetti, "Galleria d'arte e di antichità" (Palazzo Marcello)		
+IT_208	Italia	Veneto	Venezia	Cannaregio, corte Erizzo	2187	RI_I	1847	1882	Consiglio Ricchetti, "Galleria d'arte e di antichità" (Palazzo Marcello)	45.442448704785484	12.3303699683908
 IT_209	Italia	Veneto	Venezia	Cannaregio		RI_I	1877	1890 ca.	Consiglio con David G. e Mazzo Ricchetti (dal 1880), "Galleria d'arte e di antichità" (Palazzo Barbarigo)		
 IT_210	Italia	Veneto	Venezia	San Marco	3486	RI_I	1882	1899	Consiglio con David G. e Mazzo Ricchetti (dal 1880), "Galleria d'arte e di antichità" (Palazzo Garzoni a San Samuele)		
 IT_211	Italia	Toscana	Figline	vicolo Calugi		PR	1960	1967	Giovanni Pratesi (magazzino)		
@@ -269,7 +269,7 @@ UK_5	Regno Unito	Regno Unito	Londra	Paddington Green	15	BE_II	1948	1957	Giuseppe
 UK_7	Regno Unito	Regno Unito	Londra	Savile Row	32	BE_II	1926	1926	Giuseppe Bellesi, "The Italian Art Gallery"		
 UK_8	Regno Unito	Regno Unito	Londra	Market Lane		CO_IV	1767	1786	Giovanni Battista Torre e Paul Colnaghi, "Torre & Co."		
 UK_9	Regno Unito	Regno Unito	Londra	Pall Mall	132	CO_IV	1786	1799	Giovanni Battista Torre e Paul Colnaghi, "Torre & Co."; dal 1788 solo Paul Colnaghi, "Colnaghi & Co."		
-UK_10	Regno Unito	Regno Unito	Londra	Cockspur Lane	23	CO_IV	1799	1825	Paul, Dominic e Martin Colnaghi, "Colnaghi & Co.", poi Dominic Colnaghi e John Antony Scott, poi William McKay, "P. & D. Colnaghi & Co."		
+UK_10	Regno Unito	Regno Unito	Londra	Cockspur Lane	23	CO_IV	1799	1825	Paul, Dominic e Martin Colnaghi, "Colnaghi & Co.", poi Dominic Colnaghi e John Antony Scott, poi William McKay, "P. & D. Colnaghi & Co."	51.507453810385236	-0.12983994289317283
 UK_11	Regno Unito	Regno Unito	Londra	Pall Mall East	53	CO_IV	1825	1911	"P. & D. Colnaghi & Co."		
 UK_12	Regno Unito	Regno Unito	Londra	New Bond Street	144-146	CO_IV	1912	1914	Colnaghi e Gustavus Mayer, "Messrs. P. & D. Colnaghi and Obach", poi "P. & D. Colnaghi & Co."		
 UK_13	Regno Unito	Regno Unito	Londra	Old Bond Street 14	14	CO_IV	1940	2010	Colnaghi, "P. & D. Colnaghi & Co."		

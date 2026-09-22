@@ -142,11 +142,21 @@ def getEvento(ev_item):
 # ══════════════════════════════════════════════════════════════════
 
 def luoghi_entita(entity):
-    """Tutti i luoghi dell'entita', in ordine di apertura."""
-    luoghi = []
-    for persona in (entity.get("Persone") or {}).values():
-        for luogo in (persona.get("ID_luoghi") or {}).values():
-            luoghi.append(luogo)
+    """Tutti i luoghi dell'entita', in ordine di apertura.
+
+    Legge il campo "Luoghi", che tsv_to_json costruisce dalla colonna
+    ID_entita' di luoghi.tsv: la stessa fonte da cui la mappa della
+    scheda pesca i marker, cosi' il contatore del tab e i puntini sulla
+    mappa dicono sempre la stessa cosa.
+
+    Prima si passava per le persone (persona -> ID_luoghi). Oltre a
+    descrivere un'altra relazione — dove una persona ha lavorato, anche
+    nella bottega di un collega — quella strada contava lo stesso luogo
+    una volta per persona: le cinque persone di Antonacci-Efrati
+    lavoravano tutte in via del Babuino e il tab annunciava "5 luoghi"
+    per una sede sola.
+    """
+    luoghi = list((entity.get("Luoghi") or {}).values())
 
     def chiave(l):
         ap = (l.get("Apertura") or "").strip()
