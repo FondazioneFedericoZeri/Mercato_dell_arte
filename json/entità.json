@@ -22620,7 +22620,7 @@
         "ID": "SA_VI_NEW",
         "Nome": "Salvadori Antonio",
         "Bio": "SA_VI_NEW_bio",
-        "Link Zeri": "https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Salvadori&page=1&filtroprovenienza_OA=5829%7C5652",
+        "Link Zeri": "https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Salvadori&page=1",
         "Bibliografia": {
             "B_215_3": {
                 "ID": "B_215_3",
