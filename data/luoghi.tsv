@@ -16,9 +16,8 @@ IT_1	Italia	Veneto	Venezia	Canal Grande		PO_II	1936	1980 ca.	Francesco Pospisil 
 IT_1_b	Italia	Veneto	Venezia	San Marco	1659	VI_I	1950 ca.	1976	Ettore Viancini (abitazione privata)		
 IT_1_c	Italia	Veneto	Venezia	Calle Larga XXII marzo		VI_I	1976	1982	Paolo Viancini		
 IT_1_d	Italia	Veneto	Venezia	Campo de l'Abazia	3551	BR_III	1920	1974	Brass (Scuola Vecchia di S. Maria della Misericordia, atelier e sede)		
-IT_1_e	Italia	Veneto	Venezia	Rio Novo	3498	GE_I			Benno Geiger (abitazione privata)		
+IT_1_e	Italia	Veneto	Venezia	Rio Novo	3498	GE_I	1920 ca.	1965	Benno Geiger (abitazione privata)		
 IT_1_f	Italia	Veneto	Venezia	Sotoportego dei Dai		GE_II	1920 ca.	1929 ca.	Alfredo Geri, "Geri-Boralevi"		
-IT_1_g	Italia	Veneto	Venezia			SA_VI_NEW			Antonio Salvadori		
 IT_2	Italia	Lombardia	Bergamo	Via Evaristo Baschenis	5	ST_NEW	1921	1947 ca.	Attilio e Franco Steffanoni, "F.lli Steffanoni Belle Arti"		
 IT_3	Italia	Lombardia	Milano	Via Monte Napoleone	11	BA_IV	1840 ca.	1887	Giuseppe Baslini (abitazione privata)		
 IT_4	Italia	Lombardia	Milano	Corso vittorio Emanuele	37	SA_III	1885	1905 ca.	Giulio Sambon, "Impresa di vendita in Italia Giulio Sambon"		
@@ -235,8 +234,8 @@ IT_185	Italia	Emilia-Romagna	Bologna	via Castiglione	31	CO_V	1960 ca.	in attivit
 IT_188	Italia	Lombardia	Milano	via Fiori Oscuri		GI_I	1940 ca.	1962	Antonia Maria Gianetti		
 IT_189	Italia	Lombardia	Milano	via Gesù	2	GI_I	1962	1988	Antonia Maria Gianetti, “Maria Antonia Gianetti Antichità”		
 IT_190	Italia	Lombardia	Milano	via Gesù	7	GI_I	1981	2002	Antonia Maria Gianetti, “Maria Antonia Gianetti Antichità”		
-IT_191	Italia	Lazio	Roma	via dei Greci		DI_I			Eugenio Di Castro		
-IT_192	Italia	Lazio	Roma	via del Babuino	82	DI_I			Eugenio Di Castro		
+IT_191	Italia	Lazio	Roma	via dei Greci		DI_I	1920 ca.	1930 ca.		Eugenio Di Castro		
+IT_192	Italia	Lazio	Roma	via del Babuino	82	DI_I	1930 ca.	1976		Eugenio Di Castro		
 IT_193	Italia	Lazio	Roma	via del Babuino	92 a/b	DI_I	1932	1976	Eugenio Di Castro (Palazzo Raffaelli)		
 IT_194	Italia	Lazio	Roma	via Alibert	20-23	DI_I	1976	2006	Angelo Di Castro (Palazzo Raffaelli)		
 IT_195	Italia	Emilia-Romagna	Bologna	via Ugo Bassi	87	AN AS	1873	1879	Raffaele Angiolini e Alessandro Ascoli, prima “Alessandro Ascoli e Comp.o”, poi “Angiolini e Ascoli”		
@@ -284,7 +283,7 @@ USA_5	Stati Uniti d'America	Stati Uniti d'America	New York	680 5th av		CA_I	1924
 USA_6	Stati Uniti d'America	Stati Uniti d'America	New York	3 East 41st street		CA_I	1909	1916 ca.	Amedeo Canessa, "C. & E. Canessa", Amedeo Canessa		
 USA_7	Stati Uniti d'America	Stati Uniti d'America	New York			CA_I	1916	1928	Amedeo e Ercole Canessa, "Canessa Gallery"		
 USA_8	Stati Uniti d'America	Stati Uniti d'America	New York	15 East 47th street		OR	1900 ca.	1970 ca.	Luigi e Raimondo Orselli, "Luigi Orselli" (succursale)		
-USA_9	Stati Uniti d'America	Stati Uniti d'America	New York	New York		SA_IV			New York Studio: 55 E. 56th St		
+USA_9	Stati Uniti d'America	Stati Uniti d'America	New York	New York		SA_IV	1915	1919		New York Studio: 55 E. 56th St		
 USA_10	Stati Uniti d'America	Stati Uniti d'America	New York	11 East 52nd Street		LO	1933	1944 ca.	Adolph Loewi, "Adolfo Loewi, Inc."		
 USA_11	Stati Uniti d'America	Stati Uniti d'America	Los Angeles	Beverly Hills		LO	1939	2003	Gabriella Katherine "Kay" Loewi e William Robertson, "Loewi-Robertson, Inc."		
 USA_12	Stati Uniti d'America	Stati Uniti d'America	New York	East 67th Street	23	CO_IV	2015	in attività	Colnaghi		
