@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Longari | Mercato dell'arte</title>
+    <meta name="description" content="Longari: scheda dell'entità antiquariale nel progetto Mercato dell'arte della Fondazione Federico Zeri." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="../../css/tokens.css" />
+    <link rel="stylesheet" href="../../css/styles-dettaglioAntiquario.css" />
+    <link rel="stylesheet" href="../../css/torna-su.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+    <script src="../../script/menu.js" defer=""></script>
+    <script type="text/javascript" src="../../script/galleria.js"></script>
+    <script type="text/javascript" src="../../script/albero-familiare.js"></script>
+    <script type="text/javascript" src="../../script/dettaglioAntiquari.js"></script>
+    <script type="text/javascript" src="../../script/mappaDettaglio.js"></script>
+    <script src="../../script/torna-su.js" defer=""></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <a class="marchio" href="../../index.html">Mercato dell'arte</a>
+        <button class="menu-toggle" type="button" aria-label="Apri menu">&#9776;</button>
+        <div class="testata-destra">
+          <nav>
+            <ul class="menu">
+              <li>
+                <a href="../progetto.html">Progetto</a>
+              </li>
+              <li>
+                <a href="../antiquari.html">Antiquari</a>
+              </li>
+              <li>
+                <a href="../luoghi.html">Luoghi</a>
+              </li>
+              <li>
+                <a href="../eventi.html">Eventi</a>
+              </li>
+              <li>
+                <a href="../persone.html">Persone</a>
+              </li>
+              <li>
+                <a href="../bibliografia.html">Bibliografia</a>
+              </li>
+            </ul>
+          </nav>
+          <span class="testata-filo"></span>
+          <a class="testata-ente" href="https://fondazionezeri.unibo.it/it/homepage" target="_blank" rel="noopener" title="Fondazione Federico Zeri, Università di Bologna">
+            <img src="../../img/homepage/logo.png" alt="Fondazione Federico Zeri" />
+          </a>
+        </div>
+      </div>
+    </header>
+    <main class="scheda">
+      <section class="scheda-fascia">
+        <div class="scheda-fascia-testo">
+          <a class="scheda-torna" href="../antiquari.html">&#8592; Tutti gli antiquari</a>
+          <h1 class="scheda-nome">Longari</h1>
+          <p class="scheda-sottotitolo">Milano, in attività dal 1951 al 2018</p>
+        </div>
+        <div class="slider-container">
+          <div class="slider">
+            <div class="slide">
+              <img src="../../img/slider-antiquari/LO_I_img1.jpg" alt="Nella Longari e la passione per la scultura medievale" />
+              <div class="caption">Nella Longari e la passione per la scultura medievale</div>
+            </div>
+            <div class="slide">
+              <img src="../../img/slider-antiquari/LO_I_img2.jpg" alt="La nuova generazione Longari" />
+              <div class="caption">La nuova generazione Longari</div>
+            </div>
+          </div>
+          <button class="prev" type="button" aria-label="Fotografia precedente">&#10094;</button>
+          <button class="next" type="button" aria-label="Fotografia successiva">&#10095;</button>
+          <button class="gal-zoom" type="button" aria-label="Ingrandisci la fotografia">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-4.3-4.3M11 8v6M8 11h6"></path></svg>
+          </button>
+        </div>
+      </section>
+      <dl class="scheda-striscia">
+        <dt>Persone</dt>
+        <dd>
+          <ul class="striscia-elenco">
+            <li class="striscia-voce"><strong>Nella Longari</strong>, 1906–1995, antiquario</li>
+            <li class="striscia-voce"><strong>Ruggero Longari</strong>, 1934–?, antiquario</li>
+            <li class="striscia-voce"><strong>Mario Longari</strong>, 1929–2022, antiquario</li>
+            <li class="striscia-voce"><strong>Marco Longari</strong>, antiquario</li>
+          </ul>
+        </dd>
+        <dt>Opere transitate</dt>
+        <dd>
+          <a class="striscia-link" href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Longari" target="_blank" rel="noopener">Catalogo della Fondazione Zeri &#8594;</a>
+        </dd>
+      </dl>
+      <div class="scheda-corpo">
+        <nav class="scheda-tab" aria-label="Sezioni della scheda">
+          <button class="tab active" type="button" data_content="Bio">
+            <span class="tab-voce">Dati biografici</span>
+          </button>
+          <button class="tab" type="button" data_content="Persone">
+            <span class="tab-voce">Albero familiare</span>
+            <span class="tab-num">4</span>
+          </button>
+          <button class="tab" type="button" data_content="Localizzazioni">
+            <span class="tab-voce">Luoghi</span>
+            <span class="tab-num">2</span>
+          </button>
+          <button class="tab" type="button" data_content="Relazioni">
+            <span class="tab-voce">Relazioni</span>
+            <span class="tab-num">9</span>
+          </button>
+          <button class="tab" type="button" data_content="Eventi">
+            <span class="tab-voce">Eventi</span>
+            <span class="tab-num">1</span>
+          </button>
+          <button class="tab" type="button" data_content="Bibliografia">
+            <span class="tab-voce">Bibliografia</span>
+            <span class="tab-num">2</span>
+          </button>
+        </nav>
+        <div class="scheda-contenuto">
+          <div id="Bio" class="content active-content">
+            <p>La galleria Longari Arte Milano è stata fondata da Nella Longari (1906-1995) nel 1951 in via Bigli 15, cuore pulsante della Milano storica. Qui la galleria ha operato fino al 2018, anno del trasferimento nella nuova sede di Palazzo Cicogna in Corso Monforte 23.</p>
+            <p>Figlia dello scultore Mario Viti, Nella seguì il padre prima in Francia e poi in India, dove si sposò nel 1926. Sebbene l'attività avesse inizialmente rivolto l'attenzione alle porcellane Ginori e agli arredi del XVIII secolo, la scultura antica italiana divenne presto il fulcro della ricerca storico-artistica della galleria.</p>
+            <p>Grazie a un approccio caratterizzato da un rigore scientifico d'avanguardia, Nella Longari strinse legami con storici dell’arte e critici, tra cui Luciano Bellosi, Carlo Bertelli, Miklós Boskovits, Giuliano Briganti, Enzo Carli, Giovanni Previtali, Mina Gregori e Federico Zeri. Con quest’ultimo si instaurò un rapporto profondo, tanto che Zeri accompagnò Nella Longari nei viaggi in Medio Oriente e frequentò il salotto dell’antiquaria insieme a figure chiave della storia dell’arte e dell’editoria.</p>
+            <p>Grazie a queste sinergie, la galleria fu tra le prime a valorizzare la pittura e soprattutto la scultura lignea di alta epoca, culminando nella mostra del 1971 al Centro Culturale Pirelli, Tre secoli di sculture lignee, con prefazione di Enzo Carli.</p>
+            <p>Nel corso del tempo, l’interesse si è esteso alla produzione plastica europea, ai frammenti miniati e agli oggetti d’arte compresi tra il XIII e il XVI secolo. Tra gli anni Ottanta e Novanta del Novecento, il legame con il mondo del design e della moda portò Nella Longari ad aprire un negozio di oggetti di arredo: “I regali di Nella Longari”, situato sempre in via Bigli, poco lontano dalla galleria. La figura di Nella, antiquaria capace di creare e promuovere un gusto ben definito, è stata celebrata nel 1997 con la retrospettiva Dalla Bibbia di Corradino a Jacopo della Quercia.</p>
+            <p>Gli oltre settant’anni di attività della galleria sono stati caratterizzati da incontri con numerose figure del mondo della cultura, della moda e dell’economia sia italiana che internazionale. Tra i clienti figurano fin dall’inizio importanti esponenti dell’industria torinese e milanese, ma alla clientela privata si deve aggiungere quella pubblica. Nel corso degli anni varie sono state infatti le vendite a istituzioni e musei nazionali ed internazionali: la Santa Sede, il Getty Museum di Los Angeles, la National Gallery of Art di Washington, la Pinacoteca di Brera e il Castello Sforzesco di Milano.</p>
+            <p>La continuità familiare è stata garantita dal figlio Ruggero (1934), attivo dal 1955, a cui si sono uniti a inizio anni Settanta, il fratello Mario (1929-2022) e tra la fine degli anni Ottanta e i primi anni Novanta il figlio di Ruggero, Marco Longari, che oggi guida l’impresa.</p>
+            <p><br>Ricerca e redazione testi: Marco Fossati </br></p>
+          </div>
+          <div id="Persone" class="content">
+            <div class="af-intestazione">
+              <h2>Relazioni familiari</h2>
+              <div id="af-legenda" class="af-legenda"></div>
+            </div>
+            <div id="albero-genealogico"></div>
+          </div>
+          <div id="Localizzazioni" class="content">
+            <section id="map">
+              <div id="chartdiv"></div>
+            </section>
+          </div>
+          <div id="Relazioni" class="content">
+            <div class="rel-griglia">
+              <section class="rel-gruppo">
+                <h2 class="rel-titolo">Collaboratori</h2>
+                <ul class="rel-elenco">
+                  <li>
+                    <span class="rel-nome">Bert Meyer</span>
+                    <span class="rel-qualifica">storico dell'arte</span>
+                  </li>
+                  <li>
+                    <span class="rel-nome">Carlo Bertelli</span>
+                    <span class="rel-qualifica">storico dell'arte</span>
+                  </li>
+                  <li>
+                    <span class="rel-nome">Enzo Carli</span>
+                    <span class="rel-qualifica">storico dell'arte</span>
+                  </li>
+                  <li>
+                    <span class="rel-nome">Federico Zeri</span>
+                    <span class="rel-qualifica">storico dell'arte</span>
+                  </li>
+                  <li>
+                    <span class="rel-nome">Giuliano Briganti</span>
+                    <span class="rel-qualifica">storico dell'arte</span>
+                  </li>
+                  <li>
+                    <span class="rel-nome">Luciano Bellosi</span>
+                    <span class="rel-qualifica">storico dell'arte</span>
+                  </li>
+                  <li>
+                    <span class="rel-nome">Luigi Cavenaghi</span>
+                    <span class="rel-qualifica">restauratore</span>
+                  </li>
+                  <li>
+                    <span class="rel-nome">Miklós Boskovits</span>
+                    <span class="rel-qualifica">storico dell'arte</span>
+                  </li>
+                  <li>
+                    <span class="rel-nome">Mina Gregori</span>
+                    <span class="rel-qualifica">storico dell'arte</span>
+                  </li>
+                </ul>
+              </section>
+            </div>
+          </div>
+          <div id="Eventi" class="content">
+            <h2>Eventi significativi nell'attività antiquariale</h2>
+            <ul>
+              <li>1971 - <i>Mostra "Tre secoli di sculture lignee"</i>: Esce il catalogo della mostra "Tre secoli di sculture lignee" con prefazione di Enzo Carli, organizzata da Nella Longari al Centro Culturale Pirelli di Milano</li>
+            </ul>
+          </div>
+          <div id="Bibliografia" class="content">
+            <h2>Bibliografia essenziale</h2>
+            <ul>
+              <li>Bacchi A., <i>Dalla Bibbia di Corradino a Jacopo della Quercia: Sculture e miniature italiane del medioevo e del Rinascimento</i>, Milano, Galleria Nella Longari</li>
+              <li>Sotheby's, <i>La collezione di Maria Antonia Gianetti antiquario milanese in via Gesù 7, Milano. Catalogo d’asta Sotheby’s, 05/03/2003</i>, Milano</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <nav class="scheda-sfoglia" aria-label="Altre schede">
+        <a href="dettaglio_LO.html">&#8592; Loewi</a>
+        <a href="dettaglio_ME.html">Melli &#8594;</a>
+      </nav>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-ente">
+          <a href="https://fondazionezeri.unibo.it/it/homepage" target="_blank" rel="noopener">
+            <img src="../../img/homepage/logo-negativo.png" alt="Fondazione Federico Zeri" />
+          </a>
+          <p>Progetto della <a href="https://fondazionezeri.unibo.it/it/homepage" target="_blank" rel="noopener">Fondazione Federico Zeri</a>, Università di Bologna.</p>
+        </div>
+        <div class="footer-left">
+          <p>Licenza dati e immagini: <img id="license.png" src="../../img/homepage/license.png" alt="License"></p>
+        </div>
+        <div class="footer-right">
+          <p><a href="../../html/crediti.html">Crediti</a> | <a href="../../html/documentazione.html">Documentazione</a></p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,8 +1,46 @@
+import os
+import re
 import json
+import unicodedata
 import airium as a
 
 
+# nome del file delle entità, con o senza accento
+def _file_entita(*candidati):
+	for c in candidati:
+		if os.path.isfile(c):
+			return c
+	return candidati[0]
+
+
+def ENTITA_JSON():
+	return _file_entita("json/entita.json", "json/entità.json")
+
+
+def fonte_archivistica(bibitem):
+	"""Città, istituto, fondo e segnatura di una fonte d'archivio"""
+	pezzi = [(bibitem.get(k) or "").strip() for k in
+		 ("Città, editore o rivista", "Istituto", "Fondo", "Segnatura")]
+	testo = ", ".join(p for p in pezzi if p)
+	istituto = (bibitem.get("Istituto") or "").strip()
+	chiave = istituto or testo
+	return (chiave[:1] or "?").lower(), istituto, testo
+
+
+def collegamento(valore):
+	"""Trasforma un indirizzo web in un collegamento col nome del sito"""
+	v = (valore or "").strip()
+	if not v.startswith(("http://", "https://")):
+		return v
+	dominio = re.sub(r"^https?://(www\.)?", "", v).split("/")[0]
+	return (f'<a href="{v}" target="_blank" rel="noopener" '
+		f'class="bib-web">{dominio}</a>')
+
+
 def getBib(bibitem):
+
+	if (bibitem.get("Tipologia") or "").strip() == "fonte archivistica":
+		return fonte_archivistica(bibitem)
 
 	first_letter, to_index = "", ""
 
@@ -15,7 +53,8 @@ def getBib(bibitem):
 		first_letter = bibitem['Autore'][0]
 		to_index = bibitem['Autore']
 	else:
-		first_letter = bibitem['Titolo'][0]
+		# senza autore si indicizza sul titolo, altrimenti sotto "?"
+		first_letter = (bibitem['Titolo'] or "?")[0]
 
 	if len(bibitem['Anno'])>0:
 		if anything_before_title:
@@ -29,14 +68,111 @@ def getBib(bibitem):
 
 	s+=f"<i>{bibitem['Titolo']}</i>"
 
-	if len(bibitem['Città, editore o rivista'])>0:
-		s+=f", {bibitem['Città, editore o rivista']}"
+	# completamento del titolo, fuori dal corsivo
+	completamento = (bibitem.get('Completamento del titolo') or "").strip()
+	if completamento:
+		s += f", {completamento}"
 
-	if len(bibitem["Pagine"])>0:
-		s+=f", {bibitem['Pagine']}"
+	if len(bibitem['Città, editore o rivista'])>0:
+		s+=f", {collegamento(bibitem['Città, editore o rivista'])}"
+
+	# le pagine non si mostrano, tranne quando contengono un indirizzo web
+	pagine = (bibitem.get("Pagine") or "").strip()
+	if pagine.startswith(("http://", "https://")):
+		s += f", {collegamento(pagine)}"
 
 	return first_letter.lower(), to_index, s
 
+
+# fonti a stampa, interviste e fonti archivistiche
+
+MESI = ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno",
+	"luglio", "agosto", "settembre", "ottobre", "novembre", "dicembre"]
+
+LONTANO = (9999, 99, 99)   # le fonti senza data vanno in fondo
+
+_avvisi = []
+
+
+def data_intervista(valore):
+	"""Legge le date nei vari formati e restituisce (chiave, testo)"""
+	v = (valore or "").strip()
+	if not v:
+		return LONTANO, ""
+
+	iso = re.match(r"^(\d{4})-(\d{1,2})-(\d{1,2})", v)
+	if iso:
+		anno, mese, giorno = (int(x) for x in iso.groups())
+	else:
+		sbarre = re.match(r"^(\d{1,2})[/.-](\d{1,2})[/.-](\d{4})$", v)
+		if sbarre:
+			primo, secondo, anno = (int(x) for x in sbarre.groups())
+			if primo > 12:                 # 20/05/2026: all'italiana
+				giorno, mese = primo, secondo
+			elif secondo > 12:             # 2/15/2023: all'americana
+				mese, giorno = primo, secondo
+			else:
+				giorno, mese = primo, secondo
+				_avvisi.append(f"data ambigua, letta all'italiana: {v}")
+		elif re.match(r"^\d{4}$", v):
+			# solo l'anno, dopo i giorni noti di quell'anno
+			return (int(v), 13, 0), v
+		else:
+			_avvisi.append(f"data non riconosciuta: {v}")
+			return LONTANO, v
+
+	if not (1 <= mese <= 12) or not (1 <= giorno <= 31):
+		_avvisi.append(f"data fuori calendario: {v}")
+		return LONTANO, v
+
+	return (anno, mese, giorno), f"{giorno} {MESI[mese - 1]} {anno}"
+
+
+def ordina_come_parola(testo):
+	"""Chiave di ordinamento senza accenti e maiuscole"""
+	piano = unicodedata.normalize("NFKD", (testo or ""))
+	return "".join(c for c in piano if not unicodedata.combining(c)).lower()
+
+
+def entita_per_fonte():
+	"""Per ogni fonte, le entità che la citano"""
+	legame = {}
+	percorso = ENTITA_JSON()
+	if not os.path.isfile(percorso):
+		return legame
+	entita = json.loads(open(percorso, encoding="utf-8").read())
+	for eid, ent in entita.items():
+		nome = (ent.get("Nome") or "").strip() or eid
+		for bid in (ent.get("Bibliografia") or {}):
+			legame.setdefault(bid, []).append((nome, eid))
+	for bid in legame:
+		legame[bid].sort(key=lambda x: ordina_come_parola(x[0]))
+	return legame
+
+
+def riga_intervista(bibitem):
+	"""Testo e metadati di un'intervista"""
+	autore = (bibitem.get("Autore") or "").strip()
+	titolo = (bibitem.get("Titolo") or "").strip()
+	luogo = (bibitem.get("Città, editore o rivista") or "").strip()
+	_, quando = data_intervista(bibitem.get("Anno"))
+
+	if autore:
+		return getBib(bibitem)[2], ""
+
+	# toglie la città dal titolo se è già nella colonna Città
+	if luogo and titolo.lower().endswith(", " + luogo.lower()):
+		titolo = titolo[: -(len(luogo) + 2)].rstrip()
+
+	meta = ", ".join(p for p in (luogo, quando) if p)
+	return titolo, meta
+
+
+def righe_archivio(bibitem):
+	"""Fondo e segnatura del documento"""
+	fondo = (bibitem.get("Fondo") or "").strip()
+	segnatura = (bibitem.get("Segnatura") or "").strip()
+	return ", ".join(p for p in (fondo, segnatura) if p)
 
 
 def build_html_head(page):
@@ -44,38 +180,239 @@ def build_html_head(page):
 		page.meta(charset="UTF-8")
 		page.meta(name="viewport", content="width=device-width, initial-scale=1.0")
 		page.title(_t="Bibliografia")
+		page.link(rel="stylesheet", href="../css/tokens.css")
+		page.link(rel="stylesheet", href="../css/torna-su.css")
 		page.link(rel="stylesheet", href="../css/styles-bibliografia.css")
-		page.link(href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap", rel="stylesheet")
-		page.link(href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;700&display=swap", rel="stylesheet")
+		# tipografia condivisa con il sito dei cataloghi d'asta
+		page.link(rel="preconnect", href="https://fonts.googleapis.com")
+		page.link(rel="preconnect", href="https://fonts.gstatic.com", crossorigin="")
+		page.link(href="https://fonts.googleapis.com/css2?"
+		               "family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&"
+		               "family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&"
+		               "display=swap", rel="stylesheet")
+		# classe con-js per aprire le sezioni solo con javascript attivo
+		page.script(_t="document.documentElement.classList.add('con-js');")
+
+
+ZERI = "https://fondazionezeri.unibo.it/it/homepage"
 
 
 def build_header(page):
-
+	# nome del progetto a sinistra, logo della Fondazione a destra
 	with page.header():
 		with page.div(klass="header-container"):
-			with page.a(href="../index.html"):
-				page.img(id="logo.png", src="../img/homepage/logo.png", alt="Fondazione Federico Zeri")
-			with page.nav():
-				with page.ul():
-					with page.li():
-						page.a(_t="Progetto", href="progetto.html")
-						page.a(_t="Antiquari", href="antiquari.html")
-						page.a(_t="Luoghi", href="luoghi.html")
-						page.a(_t="Eventi", href="eventi.html")
-						page.a(_t="Persone", href="persone.html")
-						page.a(_t="Bibliografia", href="bibliografia.html")
+			page.a(klass="marchio", href="../index.html", _t="Mercato dell'arte")
+			page.button(klass="menu-toggle", type="button",
+				            **{"aria-label": "Apri menu"}, _t="&#9776;")
+			with page.div(klass="testata-destra"):
+				with page.nav():
+					# una voce per ogni <li>
+					with page.ul(klass="menu"):
+						for voce, href in (("Progetto", "progetto.html"),
+						                   ("Antiquari", "antiquari.html"),
+						                   ("Luoghi", "luoghi.html"),
+						                   ("Eventi", "eventi.html"),
+						                   ("Persone", "persone.html"),
+						                   ("Bibliografia", "bibliografia.html")):
+							with page.li():
+								page.a(_t=voce, href=href)
+				page.span(klass="testata-filo")
+				with page.a(klass="testata-ente", href=ZERI, target="_blank",
+					            rel="noopener",
+					            title="Fondazione Federico Zeri, Università di Bologna"):
+					page.img(src="../img/homepage/logo.png", alt="Fondazione Federico Zeri")
+
+
+def build_footer(page):
+	with page.footer():
+		with page.div(klass="footer-container"):
+			with page.div(klass="footer-ente"):
+				with page.a(href=ZERI, target="_blank", rel="noopener"):
+					page.img(src="../img/homepage/logo-negativo.png",
+						 alt="Fondazione Federico Zeri")
+				page.p(_t='Progetto della <a href="' + ZERI + '" target="_blank" rel="noopener">Fondazione Federico Zeri</a>, Università di Bologna.')
+			# stesso markup delle pagine scritte a mano
+			with page.div(klass="footer-left"):
+				page.p(_t='Licenza dati e immagini: <img id="license.png" '
+					  'src="../img/homepage/license.png" alt="License">')
+			with page.div(klass="footer-right"):
+				page.p(_t='<a href="crediti.html">Crediti</a> | '
+					  '<a href="documentazione.html">Documentazione</a>')
+
+
+def carta(page, chiave, quante, titolo, descrizione):
+	# nome e numero sulla stessa riga, descrizione sotto
+	with page.button(klass="bib-carta", type="button",
+			 **{"data-sezione": chiave, "aria-expanded": "false",
+			    "aria-controls": "sezione-" + chiave}):
+		with page.span(klass="bib-carta-riga"):
+			page.span(klass="bib-carta-t", _t=titolo)
+			page.span(klass="bib-carta-n", _t=str(quante))
+		page.span(klass="bib-carta-d", _t=descrizione)
+
+
+def senza_link(testo):
+	"""Il testo della voce senza i collegamenti"""
+	return re.sub(r"</?a\b[^>]*>", "", testo or "")
+
+
+def voci_anteprima(stampa, interviste, archivio, legame, quante=4):
+	"""Le prime voci di ciascuna delle tre raccolte"""
+	# fonti a stampa: in ordine alfabetico, come nella sezione
+	a_stampa = []
+	for lettera in sorted(stampa):
+		for _, riga in sorted(stampa[lettera],
+				      key=lambda v: ordina_come_parola(v[0])):
+			a_stampa.append(senza_link(riga))
+			if len(a_stampa) >= quante:
+				break
+		if len(a_stampa) >= quante:
+			break
+
+	# interviste: nome dell'entità, poi luogo e data
+	viste = []
+	for bid, item in interviste.items():
+		nome = (legame.get(bid) or [(None, None)])[0][0]
+		testo, meta = riga_intervista(item)
+		riga = ", ".join(p for p in (testo, meta) if p)
+		if nome:
+			riga = f"{nome} — {riga}" if riga else nome
+		if riga:
+			viste.append(senza_link(riga))
+		if len(viste) >= quante:
+			break
+
+	# archivio: città, istituto, fondo e segnatura, una città diversa per riga
+	carte = []
+	citta_prese = set()
+	for _, item in archivio.items():
+		pezzi = [(item.get(k) or "").strip() for k in
+			 ("Città, editore o rivista", "Istituto", "Fondo", "Segnatura")]
+		riga = senza_link(", ".join(p for p in pezzi if p))
+		luogo = pezzi[0]
+		if len(riga) < 24 or luogo in citta_prese:
+			continue
+		citta_prese.add(luogo)
+		carte.append(riga)
+		if len(carte) >= quante:
+			break
+
+	return [a_stampa, viste, carte]
+
+
+def anteprima(page, stampa, interviste, archivio, legame):
+	"""Anteprima sfumata delle tre raccolte, non cliccabile"""
+	colonne = voci_anteprima(stampa, interviste, archivio, legame)
+
+	with page.div(klass="bib-anteprima", **{"aria-hidden": "true"}):
+		with page.div(klass="bib-anteprima-colonne"):
+			for voci in colonne:
+				with page.div(klass="bib-anteprima-colonna"):
+					for riga in voci:
+						page.p(_t=riga)
+		page.p(klass="bib-anteprima-invito",
+		       _t="Scegli una delle tre raccolte qui sopra "
+			  "per aprire l\u2019elenco.")
+
+
+def sezione_stampa(page, stampa):
+	"""Elenco alfabetico su tre colonne con l'alfabeto in cima"""
+	lettere = sorted(stampa)
+
+	with page.section(id="sezione-stampa", klass="bib-sezione"):
+		with page.nav(klass="bib-alfabeto", **{"aria-label": "Vai alla lettera"}):
+			for lettera in lettere:
+				page.a(href=f"#lettera-{lettera}", _t=lettera.upper())
+
+		with page.div(id="bibliografia"):
+			for lettera in lettere:
+				with page.div(klass="column"):
+					page.h2(id=f"lettera-{lettera}", _t=lettera)
+					for _, riga in sorted(stampa[lettera],
+							      key=lambda v: ordina_come_parola(v[0])):
+						page.p(_t=riga)
+
+
+def sezione_interviste(page, interviste, legame):
+	"""Interviste raggruppate per entità, in ordine di data"""
+	gruppi = {}
+	for bid, item in interviste.items():
+		for nome, eid in legame.get(bid, [(None, None)]):
+			gruppi.setdefault((nome, eid), []).append((bid, item))
+
+	senza = gruppi.pop((None, None), None)
+	ordinati = sorted(gruppi.items(), key=lambda g: ordina_come_parola(g[0][0]))
+
+	with page.section(id="sezione-interviste", klass="bib-sezione"):
+		for (nome, eid), voci in ordinati:
+			with page.div(klass="bib-gruppo"):
+				with page.h2(klass="bib-gruppo-titolo"):
+					page.a(href=f"dettagli/dettaglio_{eid}.html", _t=nome)
+				scrivi_interviste(page, voci)
+
+		if senza:
+			with page.div(klass="bib-gruppo"):
+				page.h2(klass="bib-gruppo-titolo bib-gruppo-orfano",
+					_t="Non ancora collegate a un'entità")
+				scrivi_interviste(page, senza)
+
+
+def scrivi_interviste(page, voci):
+	voci = sorted(voci, key=lambda v: data_intervista(v[1].get("Anno"))[0])
+	with page.ul(klass="bib-elenco"):
+		for _, item in voci:
+			testo, meta = riga_intervista(item)
+			with page.li():
+				page(testo)
+				if meta:
+					page.span(klass="bib-meta", _t=meta)
+
+
+def sezione_archivio(page, archivio, legame):
+	"""Fonti d'archivio ordinate per luogo e istituto"""
+	citta = {}
+	for bid, item in archivio.items():
+		luogo = (item.get("Città, editore o rivista") or "").strip() or "Senza luogo"
+		istituto = (item.get("Istituto") or "").strip() or "Istituto non indicato"
+		citta.setdefault(luogo, {}).setdefault(istituto, []).append((bid, item))
+
+	with page.section(id="sezione-archivio", klass="bib-sezione"):
+		for luogo in sorted(citta, key=ordina_come_parola):
+			with page.div(klass="bib-luogo"):
+				page.h2(klass="bib-luogo-titolo", _t=luogo)
+				for istituto in sorted(citta[luogo], key=ordina_come_parola):
+					page.h3(klass="bib-istituto", _t=istituto)
+					with page.ul(klass="bib-elenco"):
+						for bid, item in sorted(citta[luogo][istituto],
+									key=lambda v: ordina_come_parola(righe_archivio(v[1]))):
+							with page.li():
+								page(righe_archivio(item) or "—")
+								rimandi = legame.get(bid, [])
+								if rimandi:
+									with page.span(klass="bib-meta bib-rimando"):
+										page("→ ")
+										for n, (nome, eid) in enumerate(rimandi):
+											if n:
+												page(", ")
+											page.a(href=f"dettagli/dettaglio_{eid}.html", _t=nome)
+
 
 def build_html():
 
-	bibliografia = json.loads(open("json/bibliografia.json").read())
+	bibliografia = json.loads(open("json/bibliografia.json", encoding="utf-8").read())
+	legame = entita_per_fonte()
 
-	bib_elements = {}
+	stampa, interviste, archivio = {}, {}, {}
 
-	for item in bibliografia:
-		first_letter, to_index, bib_string = getBib(bibliografia[item])
-		if not first_letter in bib_elements:
-			bib_elements[first_letter] = []
-		bib_elements[first_letter].append((to_index, bib_string))
+	for bid, item in bibliografia.items():
+		tipologia = (item.get("Tipologia") or "").strip()
+		if tipologia == "fonte archivistica":
+			archivio[bid] = item
+		elif tipologia == "intervista":
+			interviste[bid] = item
+		else:
+			lettera, indice, riga = getBib(item)
+			stampa.setdefault(lettera, []).append((indice, riga))
 
 	page = a.Airium()
 	page('<!DOCTYPE html>')
@@ -89,31 +426,46 @@ def build_html():
 
 			with page.main():
 
-				with page.section(id="bibliografia"):
+				# solo il titolo
+				with page.section(klass="bib-intro"):
+					page.h1(klass="titolo-pagina", _t="Bibliografia")
 
-					for letter in bib_elements:
-						with page.div(klass="column"):
-							page.h2(_t=f"{letter}")
-							sorted_elements = sorted(bib_elements[letter])
-							for bib_element in sorted_elements:
-								page.p(_t=f"{bib_element[1]}")
+				# i testi dei pulsanti stanno qui, l'HTML viene rigenerato dallo script
+				with page.nav(klass="bib-scelta", **{"aria-label": "Tipo di fonte"}):
+					carta(page, "stampa", sum(len(v) for v in stampa.values()),
+					      "Fonti a stampa",
+					      "Monografie, articoli, cataloghi d’asta, tesi. "
+					      "In ordine alfabetico per autore.")
+					carta(page, "interviste", len(interviste),
+					      "Interviste",
+					      "Le voci degli antiquari e dei loro eredi, raccolte sul "
+					      "campo. Raggruppate per entità antiquariali.")
+					carta(page, "archivio", len(archivio),
+					      "Fonti archivistiche",
+					      "Fondi, cartelle o documenti consultati. "
+					      "In ordine per luogo di conservazione.")
 
-			with page.footer():
-				with page.div(klass="footer-container"):
-					with page.div(klass="footer-left"):
-						page.p(_t='Licenza dati e immagini:')
-						page.img(id="license.png", src="../img/homepage/license.png", alt="License")
-					with page.div(klass="footer-right"):
-						page.p().a(_t="Crediti", href="#")
-						page.p().a(_t="Documentazione", href="#")
+				anteprima(page, stampa, interviste, archivio, legame)
 
-	# Get the generated HTML as a string
-	html_content = str(page)
+				sezione_stampa(page, stampa)
+				sezione_interviste(page, interviste, legame)
+				sezione_archivio(page, archivio, legame)
 
+			build_footer(page)
 
-	# Optional: Save the HTML to a file
-	with open(f"html/bibliografia.html", "w") as f:
-		f.write(html_content)
+			page.script(src="../script/menu.js", defer="")
+			page.script(src="../script/bibliografia-sezioni.js", defer="")
+			# pulsante per tornare su
+			page.script(src="../script/torna-su.js", defer="")
+
+	with open("html/bibliografia.html", "w", encoding="utf-8") as f:
+		f.write(str(page))
+
+	print(f"bibliografia: {sum(len(v) for v in stampa.values())} a stampa, "
+	      f"{len(interviste)} interviste, {len(archivio)} archivistiche")
+	for avviso in sorted(set(_avvisi)):
+		print("  avviso:", avviso)
+
 
 if __name__ == "__main__":
 	build_html()

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Angiolini | Mercato dell'arte</title>
+    <meta name="description" content="Angiolini: scheda dell'entità antiquariale nel progetto Mercato dell'arte della Fondazione Federico Zeri." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="../../css/tokens.css" />
+    <link rel="stylesheet" href="../../css/styles-dettaglioAntiquario.css" />
+    <link rel="stylesheet" href="../../css/torna-su.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+    <script src="../../script/menu.js" defer=""></script>
+    <script type="text/javascript" src="../../script/galleria.js"></script>
+    <script type="text/javascript" src="../../script/albero-familiare.js"></script>
+    <script type="text/javascript" src="../../script/dettaglioAntiquari.js"></script>
+    <script type="text/javascript" src="../../script/mappaDettaglio.js"></script>
+    <script src="../../script/torna-su.js" defer=""></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <a class="marchio" href="../../index.html">Mercato dell'arte</a>
+        <button class="menu-toggle" type="button" aria-label="Apri menu">&#9776;</button>
+        <div class="testata-destra">
+          <nav>
+            <ul class="menu">
+              <li>
+                <a href="../progetto.html">Progetto</a>
+              </li>
+              <li>
+                <a href="../antiquari.html">Antiquari</a>
+              </li>
+              <li>
+                <a href="../luoghi.html">Luoghi</a>
+              </li>
+              <li>
+                <a href="../eventi.html">Eventi</a>
+              </li>
+              <li>
+                <a href="../persone.html">Persone</a>
+              </li>
+              <li>
+                <a href="../bibliografia.html">Bibliografia</a>
+              </li>
+            </ul>
+          </nav>
+          <span class="testata-filo"></span>
+          <a class="testata-ente" href="https://fondazionezeri.unibo.it/it/homepage" target="_blank" rel="noopener" title="Fondazione Federico Zeri, Università di Bologna">
+            <img src="../../img/homepage/logo.png" alt="Fondazione Federico Zeri" />
+          </a>
+        </div>
+      </div>
+    </header>
+    <main class="scheda">
+      <section class="scheda-fascia senza-foto">
+        <div class="scheda-fascia-testo">
+          <a class="scheda-torna" href="../antiquari.html">&#8592; Tutti gli antiquari</a>
+          <h1 class="scheda-nome">Angiolini</h1>
+          <p class="scheda-sottotitolo">Bologna, in attività dal 1873 al 1907</p>
+        </div>
+      </section>
+      <dl class="scheda-striscia">
+        <dt>Persone</dt>
+        <dd>
+          <ul class="striscia-elenco">
+            <li class="striscia-voce"><strong>Raffaele Angiolini</strong>, 1850–1920, antiquario</li>
+          </ul>
+        </dd>
+        <dt>Opere transitate</dt>
+        <dd>
+          <a class="striscia-link" href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=R.+Angiolini" target="_blank" rel="noopener">Catalogo della Fondazione Zeri &#8594;</a>
+        </dd>
+      </dl>
+      <div class="scheda-corpo">
+        <nav class="scheda-tab" aria-label="Sezioni della scheda">
+          <button class="tab active" type="button" data_content="Bio">
+            <span class="tab-voce">Dati biografici</span>
+          </button>
+          <button class="tab" type="button" data_content="Localizzazioni">
+            <span class="tab-voce">Luoghi</span>
+            <span class="tab-num">2</span>
+          </button>
+          <button class="tab" type="button" data_content="Relazioni">
+            <span class="tab-voce">Relazioni</span>
+            <span class="tab-num">4</span>
+          </button>
+          <button class="tab" type="button" data_content="Bibliografia">
+            <span class="tab-voce">Bibliografia</span>
+            <span class="tab-num">1</span>
+          </button>
+        </nav>
+        <div class="scheda-contenuto">
+          <div id="Bio" class="content active-content">
+            <p>L’antiquario bolognese Raffaele Angiolini (fu Giuseppe) esercitò la professione a cavallo tra XIX e XX secolo. Dal 1873 al 1879 gestì un’attività di compravendita di opere d’arte, la “Angiolini e Ascoli”, al civico 87 di via Ugo Bassi, in società con l’anconetano <a href="dettaglio_AS.html" target="_blank">Alessandro Ascoli</a>. Sciolta la società e morto Ascoli nel 1897, Angiolini portò avanti la ditta fino al 1899.</p>
+            <p>Nel 1905 Angiolini aprì un’altra impresa con il conte Alessandro Ranuzzi, con ragione sociale “Alessandro Ranuzzi e C.” in via Barberia 13. Ne prese il controllo individuale nel 1906 fino al 1907, quando l’attività si concluse.</p>
+            <p>Demetrio Tolosani sulle pagine de “L’Antiquario” lo ricorda come specializzato nella compravendita di dipinti antichi laddove il suo pupillo, <a href="dettaglio_RA.html" target="_blank">Arturo Rambaldi</a>, che rilevò per pochi soldi le merci e persino il dipendente del suo negozio alla sua morte, preferì gli oggetti d’arredo e la mobilia.</p>
+            <p>Ebbe fruttuosi rapporti professionali con <a href="dettaglio_BA_II.html" target="_blank">Stefano Bardini</a>, per il quale funse da mediatore nell’acquisto di due importanti stacchi eseguiti a Bergamo dagli <a href="dettaglio_ST_NEW.html" target="_blank">Steffanoni</a>, quello dei soffitti lignei di Casa Maffi (oggi al Victoria and Albert di Londra), nel 1888, e quello degli affreschi di Casa Raffi nel 1889.</p>
+          </div>
+          <div id="Localizzazioni" class="content">
+            <section id="map">
+              <div id="chartdiv"></div>
+            </section>
+          </div>
+          <div id="Relazioni" class="content">
+            <div class="rel-griglia">
+              <section class="rel-gruppo">
+                <h2 class="rel-titolo">Altri antiquari</h2>
+                <ul class="rel-elenco">
+                  <li>
+                    <a class="rel-scheda" href="dettaglio_AS.html">Ascoli</a>
+                  </li>
+                  <li>
+                    <a class="rel-scheda" href="dettaglio_BA_II.html">Bardini</a>
+                  </li>
+                  <li>
+                    <a class="rel-scheda" href="dettaglio_RA_NEW.html">Rambaldi</a>
+                  </li>
+                  <li>
+                    <a class="rel-scheda" href="dettaglio_ST_NEW.html">Steffanoni</a>
+                  </li>
+                </ul>
+              </section>
+            </div>
+          </div>
+          <div id="Bibliografia" class="content">
+            <h2>Bibliografia essenziale</h2>
+            <ul>
+              <li>Giometti, C., Ciancabilla, L. (2019), <i>Stefano Bardini estrattista: affreschi staccati nell'Italia unita fra antiquariato, collezionismo e musei</i>, Pisa, ETS</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <nav class="scheda-sfoglia" aria-label="Altre schede">
+        <a href="dettaglio_AL.html">&#8592; Albrighi</a>
+        <a href="dettaglio_AN-EF.html">Antonacci-Efrati &#8594;</a>
+      </nav>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-ente">
+          <a href="https://fondazionezeri.unibo.it/it/homepage" target="_blank" rel="noopener">
+            <img src="../../img/homepage/logo-negativo.png" alt="Fondazione Federico Zeri" />
+          </a>
+          <p>Progetto della <a href="https://fondazionezeri.unibo.it/it/homepage" target="_blank" rel="noopener">Fondazione Federico Zeri</a>, Università di Bologna.</p>
+        </div>
+        <div class="footer-left">
+          <p>Licenza dati e immagini: <img id="license.png" src="../../img/homepage/license.png" alt="License"></p>
+        </div>
+        <div class="footer-right">
+          <p><a href="../../html/crediti.html">Crediti</a> | <a href="../../html/documentazione.html">Documentazione</a></p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrer | Mercato dell'arte</title>
+    <meta name="description" content="Carrer: scheda dell'entità antiquariale nel progetto Mercato dell'arte della Fondazione Federico Zeri." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="../../css/tokens.css" />
+    <link rel="stylesheet" href="../../css/styles-dettaglioAntiquario.css" />
+    <link rel="stylesheet" href="../../css/torna-su.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+    <script src="../../script/menu.js" defer=""></script>
+    <script type="text/javascript" src="../../script/galleria.js"></script>
+    <script type="text/javascript" src="../../script/albero-familiare.js"></script>
+    <script type="text/javascript" src="../../script/dettaglioAntiquari.js"></script>
+    <script type="text/javascript" src="../../script/mappaDettaglio.js"></script>
+    <script src="../../script/torna-su.js" defer=""></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <a class="marchio" href="../../index.html">Mercato dell'arte</a>
+        <button class="menu-toggle" type="button" aria-label="Apri menu">&#9776;</button>
+        <div class="testata-destra">
+          <nav>
+            <ul class="menu">
+              <li>
+                <a href="../progetto.html">Progetto</a>
+              </li>
+              <li>
+                <a href="../antiquari.html">Antiquari</a>
+              </li>
+              <li>
+                <a href="../luoghi.html">Luoghi</a>
+              </li>
+              <li>
+                <a href="../eventi.html">Eventi</a>
+              </li>
+              <li>
+                <a href="../persone.html">Persone</a>
+              </li>
+              <li>
+                <a href="../bibliografia.html">Bibliografia</a>
+              </li>
+            </ul>
+          </nav>
+          <span class="testata-filo"></span>
+          <a class="testata-ente" href="https://fondazionezeri.unibo.it/it/homepage" target="_blank" rel="noopener" title="Fondazione Federico Zeri, Università di Bologna">
+            <img src="../../img/homepage/logo.png" alt="Fondazione Federico Zeri" />
+          </a>
+        </div>
+      </div>
+    </header>
+    <main class="scheda">
+      <section class="scheda-fascia">
+        <div class="scheda-fascia-testo">
+          <a class="scheda-torna" href="../antiquari.html">&#8592; Tutti gli antiquari</a>
+          <h1 class="scheda-nome">Carrer</h1>
+          <p class="scheda-sottotitolo">Venezia, in attività dal 1884 al 1934</p>
+        </div>
+        <div class="slider-container">
+          <div class="slider">
+            <div class="slide">
+              <img src="../../img/slider-antiquari/CA_IV_img1.jpg" alt="La galleria Carrer da &quot;Der Grosse Canal in Venedig&quot;, 1890" />
+              <div class="caption">La galleria Carrer da "Der Grosse Canal in Venedig", 1890</div>
+            </div>
+            <div class="slide">
+              <img src="../../img/slider-antiquari/CA_IV_img2.jpg" alt="Iniziali di Antonio Carrer sul portale d'ingresso della Scuola dei Battiloro" />
+              <div class="caption">Iniziali di Antonio Carrer sul portale d'ingresso della Scuola dei Battiloro</div>
+            </div>
+            <div class="slide">
+              <img src="../../img/slider-antiquari/CA_IV_img3.jpg" alt="Tiepolo, affresco staccato da Palazzo Volpato Panigai a Nervesa (foto Musei Statali di Berlino)" />
+              <div class="caption">Tiepolo, affresco staccato da Palazzo Volpato Panigai a Nervesa (foto Musei Statali di Berlino)</div>
+            </div>
+          </div>
+          <button class="prev" type="button" aria-label="Fotografia precedente">&#10094;</button>
+          <button class="next" type="button" aria-label="Fotografia successiva">&#10095;</button>
+          <button class="gal-zoom" type="button" aria-label="Ingrandisci la fotografia">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-4.3-4.3M11 8v6M8 11h6"></path></svg>
+          </button>
+        </div>
+      </section>
+      <dl class="scheda-striscia">
+        <dt>Persone</dt>
+        <dd>
+          <ul class="striscia-elenco">
+            <li class="striscia-voce"><strong>Antonio Carrer</strong>, 1868–1952?, antiquario</li>
+            <li class="striscia-voce"><strong>Giovanni Battista Carrer</strong>, antiquario</li>
+            <li class="striscia-voce"><strong>Giovanni Battista Carrer</strong>, antiquario</li>
+          </ul>
+        </dd>
+        <dt>Opere transitate</dt>
+        <dd>
+          <a class="striscia-link" href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=carrer" target="_blank" rel="noopener">Catalogo della Fondazione Zeri &#8594;</a>
+        </dd>
+      </dl>
+      <div class="scheda-corpo">
+        <nav class="scheda-tab" aria-label="Sezioni della scheda">
+          <button class="tab active" type="button" data_content="Bio">
+            <span class="tab-voce">Dati biografici</span>
+          </button>
+          <button class="tab" type="button" data_content="Persone">
+            <span class="tab-voce">Albero familiare</span>
+            <span class="tab-num">3</span>
+          </button>
+          <button class="tab" type="button" data_content="Localizzazioni">
+            <span class="tab-voce">Luoghi</span>
+            <span class="tab-num">2</span>
+          </button>
+          <button class="tab" type="button" data_content="Relazioni">
+            <span class="tab-voce">Relazioni</span>
+            <span class="tab-num">15</span>
+          </button>
+          <button class="tab" type="button" data_content="Eventi">
+            <span class="tab-voce">Eventi</span>
+            <span class="tab-num">3</span>
+          </button>
+          <button class="tab" type="button" data_content="Bibliografia">
+            <span class="tab-voce">Bibliografia</span>
+            <span class="tab-num">17</span>
+          </button>
+        </nav>
+        <div class="scheda-contenuto">
+          <div id="Bio" class="content active-content">
+            <p>Importanti informazioni sull’attività commerciale dell’antiquario veneziano Antonio Carrer, nato nel 1868, sono reperibili presso l’Archivio Storico della Camera di Commercio di Venezia e Rovigo. L’inizio della sua professione si pone verso la metà degli anni Ottanta, quando risultava titolare di una ditta di antiquariato ed ebanisteria insieme al padre Giovanni Battista. Almeno a partire dal 1884, Carrer stabilì la sede del proprio “Gabinetto di antichità” accanto alla chiesa di San Stae nel sestiere di Santa Croce, in quella che era stata la Scuola dell’arte dei tiraoro e battiloro (sul cancello in ferro battuto, ormai arrugginito, per un occhio attento sono ancora visibili le sue iniziali). Nel 1886 il suo nome fu inserito nell’elenco dei commercianti di mobili come ‹‹fabbricatore ed ebanista››.</p>
+            <p>In quel periodo, tra i suoi clienti figuravano già personalità di spicco del mercato dell’arte, da Wilhelm Bode e Isabella Stewart Gardner a <a href="dettaglio_BA_II.html" target="_blank">Stefano Bardini</a>. Undici lettere scritte da Carrer a quest’ultimo tra il gennaio del 1888 e l’agosto del 1893 (conservate presso l’Archivio del museo a lui intitolato) citano, per esempio, un monumentale crocifisso ligneo, due tondi con ritratti di imperatori romani, vari stemmi, colonne in marmo o ancora candelieri in bronzo e cornici, tra i numerosi oggetti venduti dal veneziano al celebre collega fiorentino.</p>
+            <p>Pochi anni più tardi, nel 1897, Antonio mise a segno uno dei suoi colpi più eclatanti. Grazie alla sua intermediazione, ventidue monocromi su fondo dorato, dipinti nel 1754 da Giambattista e Domenico Tiepolo per <i>La stanza dei satiri</i> di palazzo Volpato Panigai a Nervesa della Battaglia, furono acquistati da Wilhelm Bode per colmare una delle lacune più vistose del Kaiser-Friedrich Museum di Berlino e allestiti sul soffitto e su gran parte delle pareti nella cosiddetta “Tiepolo-Zimmer”. Tra le vendite più rilevanti, si ricordano poi la <i>Natività di Gesù</i> di Liberale da Verona e gli affreschi attribuiti a Giovanni di Francia staccati dalla Casa dei Battuti e Cà Balbi a Oderzo, acquistati nel 1897 da Isabella Stewart Gardner, o ancora la <i>Madonna con Bambino in trono</i> di Francesco Vecellio, voluta dai coniugi Jacquemart-Andrè per arricchire la collezione del loro hotel particulier parigino. Per la celebre Ca’ d’Oro del conte Giorgio Franchetti, si procurò le raffinate patere e formelle già inserite sopra la pentafora al piano nobile di palazzo Grandiben.</p>
+            <p>Insieme al figlio Giovanni Battista, Carrer si occupò anche dell’allestimento della straordinaria collezione di arte estremo orientale che il principe Enrico di Borbone aveva costituito in molti anni e deciso di destinare alla propria residenza veneziana, Ca’ Vendramin Calergi. Alla morte del principe nel 1906, Giovanni Battista Carrer fu chiamato a stilarne l’inventario, insieme al direttore del Museo Orientale di Amburgo, Justus Brinckmann, che però non portò a termine la redazione del catalogo scientifico. Qualche tempo dopo, Antonio, cercò di intermediare un’eventuale vendita alla ditta viennese di Franz Trau che, ugualmente, non andò a buon fine. Solo nel 1915, la celebre collezione fu acquisita dallo Stato (e oggi costituisce il nucleo originario del Museo d’Arte Orientale di Venezia), per effetto del trattato di Saint Germain che prevedeva, tra le clausole, la confisca dei beni ai nemici dell’Italia.</p>
+            <p>Nei registri della Camera di commercio di Venezia si ritrova, datata 7 giugno 1911, la registrazione della sua impresa con ragione sociale “Antonio Carrer”; nelle annate 1931-1932, è documentato lo spostamento della sua attività di compravendita di arte antica e mobili nell’ultima sede che lo vide attivo, in Santa Maria Mater Domini, nelle Fondamenta di fronte a palazzo Mocenigo, fino al 4 giugno 1934, data certa di cessata attività.</p>
+            <p>In quelli che presumibilmente furono gli ultimi anni della sua vita, Carrer prese parte alla Prima Fiera Nazionale d'Arte Antica organizzata a Cremona (1937), dove espose un’<i>Allegoria dell’estate</i> di Giulio Carpioni. Grazie all’intermediazione di Nino Barbantini, entrò in contatto con Vittorio Cini, a cui sappiamo vendette per il castello di Monselice, nel luglio del 1941, un servizio in ceramica di ben 275 pezzi con decorazione floreale della manifattura Cozzi e, in seguito, insieme a <a href="dettaglio_BA_V.html" target="_blank">Dino Barozzi</a>, numerosi arredi e pregevoli sculture, come una Madonna in terracotta di Giovanni de’ Fondulis.</p>
+            <p><br>Ricerca e redazione testi: Federica De Giambattista</br></p>
+          </div>
+          <div id="Persone" class="content">
+            <div class="af-intestazione">
+              <h2>Relazioni familiari</h2>
+              <div id="af-legenda" class="af-legenda"></div>
+            </div>
+            <div id="albero-genealogico"></div>
+          </div>
+          <div id="Localizzazioni" class="content">
+            <section id="map">
+              <div id="chartdiv"></div>
+            </section>
+          </div>
+          <div id="Relazioni" class="content">
+            <div class="rel-griglia">
+              <section class="rel-gruppo">
+                <h2 class="rel-titolo">Altri antiquari</h2>
+                <ul class="rel-elenco">
+                  <li>
+                    <a class="rel-scheda" href="dettaglio_BA_II.html">Bardini</a>
+                  </li>
+                  <li>
+                    <a class="rel-scheda" href="dettaglio_BA_V.html">Barozzi</a>
+                  </li>
+                  <li>
+                    <a class="rel-scheda" href="dettaglio_SA_VI_NEW.html">Salvadori Antonio</a>
+                  </li>
+                  <li>
+                    <a class="rel-scheda" href="dettaglio_ST_NEW.html">Steffanoni</a>
+                  </li>
+                </ul>
+              </section>
+              <section class="rel-gruppo">
+                <h2 class="rel-titolo">Clienti</h2>
+                <ul class="rel-elenco">
+                  <li>Enrico Carlo Luigi Borbone</li>
+                  <li>Giorgio Franchetti</li>
+                  <li>Isabella Stewart Gardner</li>
+                  <li>Nino Barbantini</li>
+                  <li>Nélie Jacquemart</li>
+                  <li>Stefano Bardini</li>
+                  <li>Vittorio Cini</li>
+                  <li>Wilhelm von Bode</li>
+                  <li>Édouard André</li>
+                </ul>
+              </section>
+              <section class="rel-gruppo">
+                <h2 class="rel-titolo">Collaboratori</h2>
+                <ul class="rel-elenco">
+                  <li>
+                    <span class="rel-nome">Fischer &amp; Rechsteiner</span>
+                    <span class="rel-qualifica">ditta di trasporti</span>
+                  </li>
+                  <li>
+                    <span class="rel-nome">Giuseppe Steffanoni</span>
+                    <span class="rel-qualifica">restauratore</span>
+                  </li>
+                </ul>
+              </section>
+            </div>
+          </div>
+          <div id="Eventi" class="content">
+            <h2>Eventi significativi nell'attività antiquariale</h2>
+            <ul>
+              <li>1889-1890 - <i>Allestimento di palazzo Vendramin Calergi</i>: Antonio e il figlio Giovan Battista Carrer curano l'allestimento di palazzo Vendramin Calergi con la collezione di arte estremo orientale del principe principe Enrico di Borbone</li>
+              <li>1897 - <i>Vendita di affreschi tiepoleschi a Wilhelm Bode</i>: Antonio Carrer vende a Wilhelm Bode ventidue affreschi di Giambattista e Domenico Tiepolo provenienti dalla Stanza dei satiri di palazzo Volpato Panigai a Nervesa</li>
+              <li>1937 - <i>Partecipazione alla Prima Fiera Nazionale d'Arte Antica</i>: Antonio Carrer partecipa alla Prima Fiera Nazionale d'Arte Antica organizzata a Cremona nel 1937</li>
+            </ul>
+          </div>
+          <div id="Bibliografia" class="content">
+            <h2>Bibliografia essenziale</h2>
+            <ul>
+              <li>1937, <i>Catalogo della prima fiera nazionale d'arte antica organizzata sotto gli auspici della federazione nazionale fascista commercianti prodotti artistici</i>, Cremona, Stabilimento tipografico società editoriale "Cremona nuova"</li>
+              <li>Boscolo Marchi, M. (2022), <i>Nino Barbantini e l'arte asiatica. L'attività per il Museo d'arte orientale Marco Polo</i>, in «Saggi e Memorie di Storia dell'arte», 46 (2022), pp. 170-179</li>
+              <li>Gardner, E.E. (1998), <i>A Bibliographical Repertory of Italian Private Collections</i>, Vol. 1: Abaco-Cutolo, Vicenza, Neri Pozza Editore</li>
+              <li>Giannini, C. (2007), <i>Donatello e una "casa" del Rinascimento. Capolavori dal Jacquemart Andrè. Dall'arredo al museo. La residenza di Edouard André e Nélie Jacquemart</i>, <a href="https://www.zoomedia.it/Firenze/eventi/medici_riccardi/donatello_casa_rinascimento/contributo_c_giannini.html" target="_blank" rel="noopener" class="bib-web">zoomedia.it</a></li>
+              <li>Künzel, F., Götze, B. (1995), <i>Verzeichnis des schriftlichen Nachlasses von Wilhelm von Bode</i>, Berlino, Zentralarchiv, Staatliche Museen zu Berlin Preußischer Kulturbesitz</li>
+              <li>Mangiarotti, V. (1884), <i>Guida commerciale della città e provincia di Venezia per l'anno 1885</i>, Venezia, Lito-tipografia M. Fontana</li>
+              <li>Mangiarotti, V. (1903), <i>Guida Mangiarotti città e provincia. Commerciale, industriale, amministrativa</i>, Venezia, D. De Marco, A. Spalmach</li>
+              <li>Mangiarotti, V. (1931-1932), <i>Guida commerciale di Venezia e provincia. Annuario commerciale, industriale, amministrativo, professionale, culturale con annesso turistico</i>, Venezia, Dott. Suttora & C.</li>
+              <li>Martoni, A. (2020), <i>Il Maestro del Crocifisso della Fondazione Giorgio Cini: un convegno, un restaruo, una mostra</i>, in «Lettera da San Giorgio», 42 (2020), pp. 16-20</li>
+              <li>Pilo, G.M. (1961), <i>Carpioni</i>, Venezia, Edizioni Alfieri</li>
+              <li>Quill, S. (2018), <i>Ruskin’s Venice. The Stones revisited. New Edition</i>, Londra, Lund Humphries Publishers Ltd</li>
+              <li>Samassa, I. (2012), <i>Casa dei Battuti di Oderzo: un affresco di Giovanni di Francia ritrovato?</i>, in «Commentari d'arte. Rivista di critica e storia dell'arte», 18 (2012), pp. 66-69</li>
+              <li>Zorzi, E., <i>Il Museo d'arte orientale a Venezia</i>, Milano, in «La Lettura», pp. 204-210</li>
+            </ul>
+            <h2>Fonti archivistiche</h2>
+            <ul>
+              <li>Venezia, Camera di Commercio di Venezia e Rovigo, Archivio Storico, Registro ditte, b. 4258</li>
+              <li>Venezia, Direzione regionale Musei nazionali Veneto, Archivio Storico, Gallerie dell'Accademia, b. 1/1 ‹‹Offerte e acquisti dal 1821 al 1900››, fasc. 24; b 1/3 ‹‹Offerte e acquisti dal 1908 al 1911››, fasc. 35; b. 1/5 ‹‹Offerte e acquisti dal 1923 al 1932››, fasc. 3</li>
+              <li>Berlino, Musei Statali di Berlino, Archivio Centrale, Nachlass Bode 1195</li>
+              <li>Firenze, Museo e Gallerie Mozzo Bardini, Archivio Bardini, Corrispondenza (Michelangelo Guggenheim)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <nav class="scheda-sfoglia" aria-label="Altre schede">
+        <a href="dettaglio_CA_V.html">&#8592; Caretto</a>
+        <a href="dettaglio_CE.html">Cera &#8594;</a>
+      </nav>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-ente">
+          <a href="https://fondazionezeri.unibo.it/it/homepage" target="_blank" rel="noopener">
+            <img src="../../img/homepage/logo-negativo.png" alt="Fondazione Federico Zeri" />
+          </a>
+          <p>Progetto della <a href="https://fondazionezeri.unibo.it/it/homepage" target="_blank" rel="noopener">Fondazione Federico Zeri</a>, Università di Bologna.</p>
+        </div>
+        <div class="footer-left">
+          <p>Licenza dati e immagini: <img id="license.png" src="../../img/homepage/license.png" alt="License"></p>
+        </div>
+        <div class="footer-right">
+          <p><a href="../../html/crediti.html">Crediti</a> | <a href="../../html/documentazione.html">Documentazione</a></p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

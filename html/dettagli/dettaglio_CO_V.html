@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cortinovis | Mercato dell'arte</title>
+    <meta name="description" content="Cortinovis: scheda dell'entità antiquariale nel progetto Mercato dell'arte della Fondazione Federico Zeri." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="../../css/tokens.css" />
+    <link rel="stylesheet" href="../../css/styles-dettaglioAntiquario.css" />
+    <link rel="stylesheet" href="../../css/torna-su.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+    <script src="../../script/menu.js" defer=""></script>
+    <script type="text/javascript" src="../../script/galleria.js"></script>
+    <script type="text/javascript" src="../../script/albero-familiare.js"></script>
+    <script type="text/javascript" src="../../script/dettaglioAntiquari.js"></script>
+    <script type="text/javascript" src="../../script/mappaDettaglio.js"></script>
+    <script src="../../script/torna-su.js" defer=""></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <a class="marchio" href="../../index.html">Mercato dell'arte</a>
+        <button class="menu-toggle" type="button" aria-label="Apri menu">&#9776;</button>
+        <div class="testata-destra">
+          <nav>
+            <ul class="menu">
+              <li>
+                <a href="../progetto.html">Progetto</a>
+              </li>
+              <li>
+                <a href="../antiquari.html">Antiquari</a>
+              </li>
+              <li>
+                <a href="../luoghi.html">Luoghi</a>
+              </li>
+              <li>
+                <a href="../eventi.html">Eventi</a>
+              </li>
+              <li>
+                <a href="../persone.html">Persone</a>
+              </li>
+              <li>
+                <a href="../bibliografia.html">Bibliografia</a>
+              </li>
+            </ul>
+          </nav>
+          <span class="testata-filo"></span>
+          <a class="testata-ente" href="https://fondazionezeri.unibo.it/it/homepage" target="_blank" rel="noopener" title="Fondazione Federico Zeri, Università di Bologna">
+            <img src="../../img/homepage/logo.png" alt="Fondazione Federico Zeri" />
+          </a>
+        </div>
+      </div>
+    </header>
+    <main class="scheda">
+      <section class="scheda-fascia">
+        <div class="scheda-fascia-testo">
+          <a class="scheda-torna" href="../antiquari.html">&#8592; Tutti gli antiquari</a>
+          <h1 class="scheda-nome">Cortinovis</h1>
+          <p class="scheda-sottotitolo">Bologna, in attività dal 1954</p>
+        </div>
+        <figure id="single-image-container">
+          <img src="../../img/slider-antiquari/CO_V_img1.jpg" alt="Cortinovis" />
+          <figcaption class="caption">Cortinovis</figcaption>
+          <button class="gal-zoom" type="button" aria-label="Ingrandisci la fotografia">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-4.3-4.3M11 8v6M8 11h6"></path></svg>
+          </button>
+        </figure>
+      </section>
+      <dl class="scheda-striscia">
+        <dt>Persone</dt>
+        <dd>
+          <ul class="striscia-elenco">
+            <li class="striscia-voce"><strong>Guido Cortinovis</strong>, 1912–1988, antiquario</li>
+            <li class="striscia-voce"><strong>Marzio Cortinovis</strong>, 1944–, antiquario</li>
+          </ul>
+        </dd>
+        <dt>Opere transitate</dt>
+        <dd>
+          <a class="striscia-link" href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Galleria+Cortinovis" target="_blank" rel="noopener">Catalogo della Fondazione Zeri &#8594;</a>
+        </dd>
+      </dl>
+      <div class="scheda-corpo">
+        <nav class="scheda-tab" aria-label="Sezioni della scheda">
+          <button class="tab active" type="button" data_content="Bio">
+            <span class="tab-voce">Dati biografici</span>
+          </button>
+          <button class="tab" type="button" data_content="Localizzazioni">
+            <span class="tab-voce">Luoghi</span>
+            <span class="tab-num">2</span>
+          </button>
+          <button class="tab" type="button" data_content="Relazioni">
+            <span class="tab-voce">Relazioni</span>
+            <span class="tab-num">7</span>
+          </button>
+          <button class="tab" type="button" data_content="Bibliografia">
+            <span class="tab-voce">Bibliografia</span>
+            <span class="tab-num">2</span>
+          </button>
+        </nav>
+        <div class="scheda-contenuto">
+          <div id="Bio" class="content active-content">
+            <p>Guido Cortinovis nacque a Bergamo nel 1912. Iscrittosi all'Accademia di Belle Arti, si specializzò nel campo della pittura. Inizialmente si dedicò alla copia dei quadri dei maestri veneti del passato, di cui divenne un profondo conoscitore, per poi completare poco dopo la sua formazione con il restauratore Mauro Pellicioli (1887–1974).</p>
+            <p>Con il tempo si avvicinò al mercato antiquario, ma fu nell'immediato dopoguerra che Cortinovis iniziò propriamente la sua attività, percorrendo l'Europa spesso accompagnato da Luigi Galli (1902–1986), uno tra gli antiquari più attivi nel nord Italia in quel periodo.</p>
+            <p>Trasferitosi a Bologna, aprì la galleria "Antichità Cortinovis" in via Castiglione 12 nel 1954. L'attività rimase aperta fino al 1992 e fu gestita dal figlio Marzio (1944–) dopo la morte di Guido, sopraggiunta nel 1988. In quegli anni frequentava Vienna, ma soprattutto l'Inghilterra, alla ricerca di dipinti italiani che nel corso del tempo erano usciti dal territorio nazionale, con particolare attenzione ai fondi oro e all'arte veneta.</p>
+            <p>Oltre alla galleria, Cortinovis possedeva uno studio privato lungo la stessa via Castiglione, al numero 31, dove accoglieva clienti, antiquari come Agnews, Baroni e Mathiessen, ma anche studiosi e storici dell'arte con i quali aveva intessuto uno stretto rapporto. Tra questi: Denis Mahon, Dwight Miller, Carlo Volpe, Federico Zeri e Roberto Longhi.</p>
+            <p>Nel 1959 Guido Cortinovis fu tra i fondatori dell'Associazione Antiquari d'Italia e della prima mostra mercato dell'antiquariato: la Biennale Internazionale dell'Antiquariato di Firenze. Il figlio Marzio si laureò nel 1969 con Carlo Volpe, discutendo una tesi sull'attività di Bartolomeo Manfredi, e fin da subito si interessò al commercio. Cominciò a viaggiare verso Londra per acquistare arte tedesca — Otto Dix, Max Klinger, George Grosz, Ernst Ludwig Kirchner tra gli artisti più ricercati — e poi verso Vienna per i disegni di Gustav Klimt. Marzio Cortinovis è stato tra i primi a introdurre l'arte tedesca e viennese in Italia, definendo un gusto personale che ha lasciato il segno nelle collezioni di una clientela privata sparsa tra Milano, Roma e Torino.</p>
+            <p><br>Ricerca e redazione testi: Marco Fossati</br></p>
+          </div>
+          <div id="Localizzazioni" class="content">
+            <section id="map">
+              <div id="chartdiv"></div>
+            </section>
+          </div>
+          <div id="Relazioni" class="content">
+            <div class="rel-griglia">
+              <section class="rel-gruppo">
+                <h2 class="rel-titolo">Collaboratori</h2>
+                <ul class="rel-elenco">
+                  <li>
+                    <span class="rel-nome">A. Villani e Figli</span>
+                    <span class="rel-qualifica">fotografo</span>
+                  </li>
+                  <li>
+                    <span class="rel-nome">Carlo Volpe</span>
+                    <span class="rel-qualifica">storico dell'arte</span>
+                  </li>
+                  <li>
+                    <span class="rel-nome">Denis Mahon</span>
+                    <span class="rel-qualifica">storico dell'arte</span>
+                  </li>
+                  <li>
+                    <span class="rel-nome">Dwight Miller</span>
+                    <span class="rel-qualifica">storico dell'arte</span>
+                  </li>
+                  <li>
+                    <span class="rel-nome">Federico Zeri</span>
+                    <span class="rel-qualifica">storico dell'arte</span>
+                  </li>
+                  <li>
+                    <span class="rel-nome">Fototecnica Bolognese</span>
+                    <span class="rel-qualifica">fotografo</span>
+                  </li>
+                  <li>
+                    <span class="rel-nome">Roberto Longhi</span>
+                    <span class="rel-qualifica">storico dell'arte</span>
+                  </li>
+                </ul>
+              </section>
+            </div>
+          </div>
+          <div id="Bibliografia" class="content">
+            <h2>Bibliografia essenziale</h2>
+            <ul>
+              <li>Batini, G. (1961), <i>L'antiquario</i>, Firenze, Vallecchi</li>
+            </ul>
+            <h2>Interviste</h2>
+            <ul>
+              <li>2026-09-03 00:00:00, <i>Intervista a Marzio Cortinovis</i>, Bologna</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <nav class="scheda-sfoglia" aria-label="Altre schede">
+        <a href="dettaglio_CO_I.html">&#8592; Contini Bonacossi</a>
+        <a href="dettaglio_CO_II.html">Corvisieri &#8594;</a>
+      </nav>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-ente">
+          <a href="https://fondazionezeri.unibo.it/it/homepage" target="_blank" rel="noopener">
+            <img src="../../img/homepage/logo-negativo.png" alt="Fondazione Federico Zeri" />
+          </a>
+          <p>Progetto della <a href="https://fondazionezeri.unibo.it/it/homepage" target="_blank" rel="noopener">Fondazione Federico Zeri</a>, Università di Bologna.</p>
+        </div>
+        <div class="footer-left">
+          <p>Licenza dati e immagini: <img id="license.png" src="../../img/homepage/license.png" alt="License"></p>
+        </div>
+        <div class="footer-right">
+          <p><a href="../../html/crediti.html">Crediti</a> | <a href="../../html/documentazione.html">Documentazione</a></p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

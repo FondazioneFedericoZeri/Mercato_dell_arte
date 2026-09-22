@@ -3,83 +3,140 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dettaglio Antiquari</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;700&display=swap" rel="stylesheet" />
+    <title>Jandolo | Mercato dell'arte</title>
+    <meta name="description" content="Jandolo: scheda dell'entità antiquariale nel progetto Mercato dell'arte della Fondazione Federico Zeri." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="../../css/tokens.css" />
     <link rel="stylesheet" href="../../css/styles-dettaglioAntiquario.css" />
+    <link rel="stylesheet" href="../../css/torna-su.css" />
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/index.js"></script>
-    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/hierarchy.js"></script>
-    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
     <script type="text/javascript" src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script type="text/javascript" src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+    <script src="../../script/menu.js" defer=""></script>
+    <script type="text/javascript" src="../../script/galleria.js"></script>
+    <script type="text/javascript" src="../../script/albero-familiare.js"></script>
     <script type="text/javascript" src="../../script/dettaglioAntiquari.js"></script>
     <script type="text/javascript" src="../../script/mappaDettaglio.js"></script>
+    <script src="../../script/torna-su.js" defer=""></script>
   </head>
   <body>
     <header>
       <div class="header-container">
-        <a href="../../index.html">
-          <img id="logo.png" src="../../img/homepage/logo.png" alt="Fondazione Federico Zeri" />
-        </a>
-        <nav>
-          <ul>
-            <li>
-              <a href="../progetto.html">Progetto</a>
-              <a href="../antiquari.html">Antiquari</a>
-              <a href="../luoghi.html">Luoghi</a>
-              <a href="../eventi.html">Eventi</a>
-              <a href="../persone.html">Persone</a>
-              <a href="../bibliografia.html">Bibliografia</a>
-            </li>
-          </ul>
-        </nav>
+        <a class="marchio" href="../../index.html">Mercato dell'arte</a>
+        <button class="menu-toggle" type="button" aria-label="Apri menu">&#9776;</button>
+        <div class="testata-destra">
+          <nav>
+            <ul class="menu">
+              <li>
+                <a href="../progetto.html">Progetto</a>
+              </li>
+              <li>
+                <a href="../antiquari.html">Antiquari</a>
+              </li>
+              <li>
+                <a href="../luoghi.html">Luoghi</a>
+              </li>
+              <li>
+                <a href="../eventi.html">Eventi</a>
+              </li>
+              <li>
+                <a href="../persone.html">Persone</a>
+              </li>
+              <li>
+                <a href="../bibliografia.html">Bibliografia</a>
+              </li>
+            </ul>
+          </nav>
+          <span class="testata-filo"></span>
+          <a class="testata-ente" href="https://fondazionezeri.unibo.it/it/homepage" target="_blank" rel="noopener" title="Fondazione Federico Zeri, Università di Bologna">
+            <img src="../../img/homepage/logo.png" alt="Fondazione Federico Zeri" />
+          </a>
+        </div>
       </div>
     </header>
-    <main>
-      <section id="image-gallery">
-        <div class="gallery-wrapper">
-          <h2 class="gallery-title">Jandolo</h2>
-          <div class="slider-container">
-            <div class="slider">
-              <div class="slide">
-                <img src="../../img/slider-antiquari/JA_img1.jpg" alt="Augusto Jandolo nel suo studio, 1930 (Museo della Fondazione, Circolo Artistico Politecnico, Ets.)" />
-                <div class="caption">Augusto Jandolo nel suo studio, 1930 (Museo della Fondazione, Circolo Artistico Politecnico, Ets.)</div>
-              </div>
-              <div class="slide">
-                <img src="../../img/slider-antiquari/JA_img2.jpg" alt="Augusto Jandolo. Da &quot;L'Antiquario&quot;, 1913" />
-                <div class="caption">Augusto Jandolo. Da "L'Antiquario", 1913</div>
-              </div>
-              <div class="slide">
-                <img src="../../img/slider-antiquari/JA_img3.jpg" alt="Ettore Jandolo. Da &quot;L'Antiquario&quot;, 1913" />
-                <div class="caption">Ettore Jandolo. Da "L'Antiquario", 1913</div>
-              </div>
-              <div class="slide">
-                <img src="../../img/slider-antiquari/JA_img4.jpg" alt="Ugo Jandolo. Da &quot;L'Antiquario&quot;, 1913" />
-                <div class="caption">Ugo Jandolo. Da "L'Antiquario", 1913</div>
-              </div>
+    <main class="scheda">
+      <section class="scheda-fascia">
+        <div class="scheda-fascia-testo">
+          <a class="scheda-torna" href="../antiquari.html">&#8592; Tutti gli antiquari</a>
+          <h1 class="scheda-nome">Jandolo</h1>
+          <p class="scheda-sottotitolo">Roma, in attività dal 1870 al 1949</p>
+        </div>
+        <div class="slider-container">
+          <div class="slider">
+            <div class="slide">
+              <img src="../../img/slider-antiquari/JA_img1.jpg" alt="Augusto Jandolo nel suo studio, 1930, (Museo della Fondazione, Circolo Artistico Politecnico, Ets.)&quot;" />
+              <div class="caption">Augusto Jandolo nel suo studio, 1930, (Museo della Fondazione, Circolo Artistico Politecnico, Ets.)"</div>
             </div>
-            <button &#10094; class="prev" onclick="prevSlide()"><</button>
-            <button &#10095; class="next" onclick="nextSlide()">></button>
+            <div class="slide">
+              <img src="../../img/slider-antiquari/JA_img2.jpg" alt="Augusto Jandolo. Da &quot;L'Antiquario&quot;, 1913" />
+              <div class="caption">Augusto Jandolo. Da "L'Antiquario", 1913</div>
+            </div>
+            <div class="slide">
+              <img src="../../img/slider-antiquari/JA_img3.jpg" alt="Ettore Jandolo. Da &quot;L'Antiquario&quot;, 1913" />
+              <div class="caption">Ettore Jandolo. Da "L'Antiquario", 1913</div>
+            </div>
+            <div class="slide">
+              <img src="../../img/slider-antiquari/JA_img4.jpg" alt="Ugo Jandolo. Da &quot;L'Antiquario&quot;, 1913" />
+              <div class="caption">Ugo Jandolo. Da "L'Antiquario", 1913</div>
+            </div>
           </div>
+          <button class="prev" type="button" aria-label="Fotografia precedente">&#10094;</button>
+          <button class="next" type="button" aria-label="Fotografia successiva">&#10095;</button>
+          <button class="gal-zoom" type="button" aria-label="Ingrandisci la fotografia">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-4.3-4.3M11 8v6M8 11h6"></path></svg>
+          </button>
         </div>
       </section>
-      <div class="dual-content-wrapper">
-        <div class="tab-container">
-          <ul class="tab-list">
-            <li class="tab active" data_content="Bio">Dati biografici</li>
-            <li class="tab" data_content="Persone">Albero familiare</li>
-            <li class="tab" data_content="Localizzazioni">Luoghi</li>
-            <li class="tab" data_content="Relazioni">Relazioni</li>
-            <li class="tab" data_content="Eventi">Eventi</li>
-            <li class="tab" data_content="Bibliografia">Bibliografia</li>
-            <li class="tab" data_content="Opere trattate">Opere trattate</li>
+      <dl class="scheda-striscia">
+        <dt>Persone</dt>
+        <dd>
+          <ul class="striscia-elenco">
+            <li class="striscia-voce"><strong>Augusto Jandolo</strong>, 1873–1952, antiquario</li>
+            <li class="striscia-voce"><strong>Alessandro Jandolo</strong>, ?–1930, antiquario</li>
+            <li class="striscia-voce"><strong>Antonio Jandolo</strong>, ?–1912, antiquario</li>
+            <li class="striscia-voce"><strong>Ettore Jandolo</strong>, antiquario</li>
+            <li class="striscia-voce"><strong>Ugo Jandolo</strong>, antiquario</li>
+            <li class="striscia-voce"><strong>Salvatore Jandolo</strong>, antiquario</li>
+            <li class="striscia-voce"><strong>Salvatore Jandolo</strong>, antiquario</li>
           </ul>
-        </div>
-        <div class="content-card">
+        </dd>
+        <dt>Opere transitate</dt>
+        <dd>
+          <a class="striscia-link" href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Jandolo" target="_blank" rel="noopener">Catalogo della Fondazione Zeri &#8594;</a>
+        </dd>
+      </dl>
+      <div class="scheda-corpo">
+        <nav class="scheda-tab" aria-label="Sezioni della scheda">
+          <button class="tab active" type="button" data_content="Bio">
+            <span class="tab-voce">Dati biografici</span>
+          </button>
+          <button class="tab" type="button" data_content="Persone">
+            <span class="tab-voce">Albero familiare</span>
+            <span class="tab-num">7</span>
+          </button>
+          <button class="tab" type="button" data_content="Localizzazioni">
+            <span class="tab-voce">Luoghi</span>
+            <span class="tab-num">8</span>
+          </button>
+          <button class="tab" type="button" data_content="Relazioni">
+            <span class="tab-voce">Relazioni</span>
+            <span class="tab-num">6</span>
+          </button>
+          <button class="tab" type="button" data_content="Eventi">
+            <span class="tab-voce">Eventi</span>
+            <span class="tab-num">1</span>
+          </button>
+          <button class="tab" type="button" data_content="Bibliografia">
+            <span class="tab-voce">Bibliografia</span>
+            <span class="tab-num">10</span>
+          </button>
+        </nav>
+        <div class="scheda-contenuto">
           <div id="Bio" class="content active-content">
             <p>La storia degli Jandolo, una delle più rilevanti dinastie di antiquari romani, ha inizio con Salvatore, proprietario di una galleria di antichità in via della Consolazione 69 già dai primi anni Settanta del XIX secolo, insieme ai tre figli, Ettore, Alessandro (?- 1930) e Antonio (?-1912). Negli anni successivi, Alessandro e Antonio spostarono l'attività di famiglia, prima, a Palazzo Raffaelli in via del Babuino 92 e, dal 1891, in via Sistina 66, mentre Ettore aprì un proprio spazio espositivo in via Margutta 51A.</p>
             <p>Alessandro e Antonio Jandolo sono ricordati nelle memorie dell'archeologo e mercante d'arte Ludwig Pollak come abili commercianti di dipinti, maioliche e soprattutto di oggetti di scavo. Tra i loro acquirenti, facoltosi americani e i più importanti collezionisti dell'epoca, come il barone Giovanni Barraco, fondatore del "Museo di Scultura Antica" di Roma e Carl Jacobsen, produttore di birra danese appassionato di antichità.</p>
@@ -87,7 +144,10 @@
             <p>Il fratello di Augusto, Ugo Jandolo dovette invece la propria fortuna all'acquisto, nel 1920, del Casino di Pio IV sulla via Flaminia realizzato da Pirro Ligorio che trasformò nella propria galleria specializzata, anch'essa, nella vendita di pezzi archeologici, e nella propria abitazione. La splendida sede fu però requisita nel 1929 da Mussolini che la destinò a ospitare la rappresentanza diplomatica italiana presso la Santa Sede. A partire dai primi anni del Novecento gli Jandolo si unirono in società con <a href="dettaglio_TA.html" target="_blank">Filippo Tavazzi</a> (1857-1924), fondando la <a href="dettaglio_JA-TA.html" target="_blank">Casa di vendite Jandolo&Tavazzi</a> documentata in via del Babuino 96, 97. I cataloghi della maison des ventes furono pubblicati dal 1907 al 1936 e descrivono alcune delle vendite italiane più importanti dell'epoca, come quelle degli antiquari <a href="dettaglio_FE.html" target="_blank"> Gioacchino Ferroni </a> (1854-1909) ed <a href="dettaglio_VO_I.html" target="_blank"> Elia Volpi </a> (1858-1938).</p>
           </div>
           <div id="Persone" class="content">
-            <h3>Relazioni familiari:</h3>
+            <div class="af-intestazione">
+              <h2>Relazioni familiari</h2>
+              <div id="af-legenda" class="af-legenda"></div>
+            </div>
             <div id="albero-genealogico"></div>
           </div>
           <div id="Localizzazioni" class="content">
@@ -95,73 +155,75 @@
               <div id="chartdiv"></div>
             </section>
           </div>
+          <div id="Relazioni" class="content">
+            <div class="rel-griglia">
+              <section class="rel-gruppo">
+                <h2 class="rel-titolo">Altri antiquari</h2>
+                <ul class="rel-elenco">
+                  <li>
+                    <a class="rel-scheda" href="dettaglio_GE_II.html">Geri</a>
+                  </li>
+                  <li>
+                    <a class="rel-scheda" href="dettaglio_JA-TA.html">Jandolo-Tavazzi</a>
+                  </li>
+                  <li>
+                    <a class="rel-scheda" href="dettaglio_PO_III.html">Pollak</a>
+                  </li>
+                  <li>
+                    <a class="rel-scheda" href="dettaglio_TA.html">Tavazzi</a>
+                  </li>
+                </ul>
+              </section>
+              <section class="rel-gruppo">
+                <h2 class="rel-titolo">Clienti</h2>
+                <ul class="rel-elenco">
+                  <li>Carl Jacobsen</li>
+                  <li>Giovanni Barraco</li>
+                </ul>
+              </section>
+            </div>
+          </div>
           <div id="Eventi" class="content">
-            <h3>Eventi significativi nell'attività antiquariale:</h3>
+            <h2>Eventi significativi nell'attività antiquariale</h2>
             <ul>
               <li>1935 - <i>Pubblicazione "Memorie di un antiquario"</i>: Augusto Jandolo pubblica l'autobiografia "Memorie di un antiquario", fonte imprescindibile per la comprensione del mercato dell'arte romano a cavallo tra Otto e Novecento</li>
             </ul>
           </div>
-          <div id="Relazioni" class="content">
-            <h3>Altri antiquari:</h3>
-            <ul>
-              <li>
-                <a href="dettaglio_JA-TA.html">Jandolo-Tavazzi</a>
-              </li>
-              <li>
-                <a href="dettaglio_TA.html">Tavazzi</a>
-              </li>
-            </ul>
-            <h3>Clienti:</h3>
-            <ul>
-              <li>Carl Jacobsen </li>
-              <li>Giovanni Barraco </li>
-            </ul>
-            <h3>Collaboratori:</h3>
-            <ul>
-            </ul>
-          </div>
           <div id="Bibliografia" class="content">
-            <h3>Bibliografia essenziale:</h3>
+            <h2>Bibliografia essenziale</h2>
             <ul>
-              <li>Bartoli Amici, P. (2004), <i>Jandolo, Augusto</i>, In Dizionario biografico degli italiani, 62</li>
+              <li>Bartoli Amici, P. (2004), <i>Jandolo, Augusto</i>, in Dizionario biografico degli italiani, 62</li>
               <li>Bellini, L., De Chirico, G. (1947), <i>Nel mondo degli antiquari</i>, Firenze, Arnaud</li>
-              <li>Coen, P. (2020), <i>La rincorsa del primato: le esportazioni di opere d'arte in Italia e nel mondo</i>, In Coen, pp. 177-235</li>
-              <li>Di Castro, A. (2012), <i>L'arte dell'antiquariato</i>, In «Gazzetta antiquaria», 62, 2, pp. 20-23</li>
+              <li>Coen, P. (2020), <i>La rincorsa del primato: le esportazioni di opere d'arte in Italia e nel mondo</i>, in Coen, pp. 177-235</li>
+              <li>Di Castro, A. (2012), <i>L'arte dell'antiquariato</i>, in «Gazzetta antiquaria», 62, 2, pp. 20-23</li>
               <li>Jandolo, A. (1935), <i>Le memorie di un antiquario</i>, Milano, Ceschina</li>
               <li>Jandolo, A. (1947), <i>Antiquaria</i>, Milano, Ceschina</li>
-              <li>Misiano, S. (2012), <i>I ritratti di Augusto Jandolo al Museo di Roma: immagini tra storia e cronache d'arte</i>, In «Bollettino dei musei comunali di Roma», N.S., pp. 183-196</li>
-              <li>Pollak, L., Merkel Guldan, M. (1994), <i>Römische Memoiren : Künstler, Kunstliebhaber und Gelehrte, 1893-1943</i>, Roma, L'Erma di Bretschneider</li>
-              <li>Romiti, A. (1952), <i>L'antiquario, in «Strenna dei Romanisti»</i>, 45.32.00, pp. 22-25	 </li>
-              <li>Tolosani, D. (1913), <i>I colleghi d'Italia: Romani</i>, In «L'Antiquario», VI, 1, pp. 1-4</li>
+              <li>Misiano, S. (2012), <i>I ritratti di Augusto Jandolo al Museo di Roma: immagini tra storia e cronache d'arte</i>, in «Bollettino dei musei comunali di Roma», N.S., pp. 183-196</li>
+              <li>Pollak, L., Merkel Guldan, M. (1994), <i>Römische Memoiren. Künstler, Kunstliebhaber und Gelehrte, 1893-1943</i>, Roma, L'Erma di Bretschneider</li>
+              <li>Romiti, A. (1952), <i>L'antiquario</i>, in «Strenna dei Romanisti», 13.1952, pp. 22-25</li>
+              <li>Tolosani, D. (1913), <i>I colleghi d'Italia: Romani</i>, in «L'Antiquario», VI, 1, pp. 1-4</li>
             </ul>
-          </div>
-          <div id="Opere trattate" class="content">
-            <p>
-              Vedi le opere transitate presso l'antiquario presenti nel 
-              <a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Jandolo" class="linkBio" target="_blank">
-                catalogo della Fondazione Zeri
-              </a>
-            </p>
           </div>
         </div>
       </div>
+      <nav class="scheda-sfoglia" aria-label="Altre schede">
+        <a href="dettaglio_IM.html">&#8592; Imbert</a>
+        <a href="dettaglio_JA-TA.html">Jandolo-Tavazzi &#8594;</a>
+      </nav>
     </main>
     <footer>
       <div class="footer-container">
+        <div class="footer-ente">
+          <a href="https://fondazionezeri.unibo.it/it/homepage" target="_blank" rel="noopener">
+            <img src="../../img/homepage/logo-negativo.png" alt="Fondazione Federico Zeri" />
+          </a>
+          <p>Progetto della <a href="https://fondazionezeri.unibo.it/it/homepage" target="_blank" rel="noopener">Fondazione Federico Zeri</a>, Università di Bologna.</p>
+        </div>
         <div class="footer-left">
-          <p>Licenza dati e immagini:</p>
-          <img id="license.png" src="../../img/homepage/license.png" alt="License" />
+          <p>Licenza dati e immagini: <img id="license.png" src="../../img/homepage/license.png" alt="License"></p>
         </div>
         <div class="footer-right">
-          <p>
-            <a href="../../html/crediti.html">
-              Crediti
-            </a>
-            |
-            <a href="https://github.com/FondazioneFedericoZeri/Mercato_dell_arte" target="_blank">
-              Documentazione
-            </a>
-          </p>
+          <p><a href="../../html/crediti.html">Crediti</a> | <a href="../../html/documentazione.html">Documentazione</a></p>
         </div>
       </div>
     </footer>

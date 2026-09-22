@@ -3,64 +3,114 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dettaglio Antiquari</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;700&display=swap" rel="stylesheet" />
+    <title>Grandi | Mercato dell'arte</title>
+    <meta name="description" content="Grandi: scheda dell'entità antiquariale nel progetto Mercato dell'arte della Fondazione Federico Zeri." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="../../css/tokens.css" />
     <link rel="stylesheet" href="../../css/styles-dettaglioAntiquario.css" />
+    <link rel="stylesheet" href="../../css/torna-su.css" />
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/index.js"></script>
-    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/hierarchy.js"></script>
-    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
     <script type="text/javascript" src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script type="text/javascript" src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+    <script src="../../script/menu.js" defer=""></script>
+    <script type="text/javascript" src="../../script/galleria.js"></script>
+    <script type="text/javascript" src="../../script/albero-familiare.js"></script>
     <script type="text/javascript" src="../../script/dettaglioAntiquari.js"></script>
     <script type="text/javascript" src="../../script/mappaDettaglio.js"></script>
+    <script src="../../script/torna-su.js" defer=""></script>
   </head>
   <body>
     <header>
       <div class="header-container">
-        <a href="../../index.html">
-          <img id="logo.png" src="../../img/homepage/logo.png" alt="Fondazione Federico Zeri" />
-        </a>
-        <nav>
-          <ul>
-            <li>
-              <a href="../progetto.html">Progetto</a>
-              <a href="../antiquari.html">Antiquari</a>
-              <a href="../luoghi.html">Luoghi</a>
-              <a href="../eventi.html">Eventi</a>
-              <a href="../persone.html">Persone</a>
-              <a href="../bibliografia.html">Bibliografia</a>
-            </li>
-          </ul>
-        </nav>
+        <a class="marchio" href="../../index.html">Mercato dell'arte</a>
+        <button class="menu-toggle" type="button" aria-label="Apri menu">&#9776;</button>
+        <div class="testata-destra">
+          <nav>
+            <ul class="menu">
+              <li>
+                <a href="../progetto.html">Progetto</a>
+              </li>
+              <li>
+                <a href="../antiquari.html">Antiquari</a>
+              </li>
+              <li>
+                <a href="../luoghi.html">Luoghi</a>
+              </li>
+              <li>
+                <a href="../eventi.html">Eventi</a>
+              </li>
+              <li>
+                <a href="../persone.html">Persone</a>
+              </li>
+              <li>
+                <a href="../bibliografia.html">Bibliografia</a>
+              </li>
+            </ul>
+          </nav>
+          <span class="testata-filo"></span>
+          <a class="testata-ente" href="https://fondazionezeri.unibo.it/it/homepage" target="_blank" rel="noopener" title="Fondazione Federico Zeri, Università di Bologna">
+            <img src="../../img/homepage/logo.png" alt="Fondazione Federico Zeri" />
+          </a>
+        </div>
       </div>
     </header>
-    <main>
-      <section id="image-gallery">
-        <div class="gallery-wrapper">
-          <h2 class="gallery-title">Grandi</h2>
-          <div id="single-image-container">
-            <img src="../../img/slider-antiquari/GR_II_img1.jpg" alt="Antonio Grandi nel 1921 (FAI, Archivio Grandi)" />
-            <div class="caption overlay-caption">Antonio Grandi nel 1921 (FAI, Archivio Grandi)</div>
-          </div>
+    <main class="scheda">
+      <section class="scheda-fascia">
+        <div class="scheda-fascia-testo">
+          <a class="scheda-torna" href="../antiquari.html">&#8592; Tutti gli antiquari</a>
+          <h1 class="scheda-nome">Grandi</h1>
+          <p class="scheda-sottotitolo">Milano, in attività dal 1866 al 1926</p>
         </div>
+        <figure id="single-image-container">
+          <img src="../../img/slider-antiquari/GR_II_img1.jpg" alt="Antonio Grandi nel 1921 (FAI, Archivio Grandi)" />
+          <figcaption class="caption">Antonio Grandi nel 1921 (FAI, Archivio Grandi)</figcaption>
+          <button class="gal-zoom" type="button" aria-label="Ingrandisci la fotografia">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-4.3-4.3M11 8v6M8 11h6"></path></svg>
+          </button>
+        </figure>
       </section>
-      <div class="dual-content-wrapper">
-        <div class="tab-container">
-          <ul class="tab-list">
-            <li class="tab active" data_content="Bio">Dati biografici</li>
-            <li class="tab" data_content="Persone">Albero familiare</li>
-            <li class="tab" data_content="Localizzazioni">Luoghi</li>
-            <li class="tab" data_content="Relazioni">Relazioni</li>
-            <li class="tab" data_content="Bibliografia">Bibliografia</li>
-            <li class="tab" data_content="Opere trattate">Opere trattate</li>
+      <dl class="scheda-striscia">
+        <dt>Persone</dt>
+        <dd>
+          <ul class="striscia-elenco">
+            <li class="striscia-voce"><strong>Antonio Grandi</strong>, 1810–1877, antiquario</li>
+            <li class="striscia-voce"><strong>Carlo Grandi</strong>, 1842–1914, antiquario</li>
+            <li class="striscia-voce"><strong>Antonio Grandi</strong>, 1857–1923, antiquario</li>
           </ul>
-        </div>
-        <div class="content-card">
+        </dd>
+        <dt>Opere transitate</dt>
+        <dd>
+          <a class="striscia-link" href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&fulltextOA=Milano&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Grandi" target="_blank" rel="noopener">Catalogo della Fondazione Zeri &#8594;</a>
+        </dd>
+      </dl>
+      <div class="scheda-corpo">
+        <nav class="scheda-tab" aria-label="Sezioni della scheda">
+          <button class="tab active" type="button" data_content="Bio">
+            <span class="tab-voce">Dati biografici</span>
+          </button>
+          <button class="tab" type="button" data_content="Persone">
+            <span class="tab-voce">Albero familiare</span>
+            <span class="tab-num">3</span>
+          </button>
+          <button class="tab" type="button" data_content="Localizzazioni">
+            <span class="tab-voce">Luoghi</span>
+            <span class="tab-num">1</span>
+          </button>
+          <button class="tab" type="button" data_content="Relazioni">
+            <span class="tab-voce">Relazioni</span>
+            <span class="tab-num">14</span>
+          </button>
+          <button class="tab" type="button" data_content="Bibliografia">
+            <span class="tab-voce">Bibliografia</span>
+            <span class="tab-num">6</span>
+          </button>
+        </nav>
+        <div class="scheda-contenuto">
           <div id="Bio" class="content active-content">
             <p>Antonio Grandi (1857-1923) e il fratello maggiore Carlo (1842-1914) furono i titolari di una delle più importanti imprese antiquariali milanesi della seconda metà dell’Ottocento, attiva fino agli anni Venti del Novecento. La sede storica della “Ditta Antonio Grandi” in Corso Venezia (all’epoca denominato Corso di Porta Orientale) fu aperta fin dal 1810 da Antonio Pini che si trasferì da Bellagio a Milano per vendere vetri e cornici, aiutato dal nipote Antonio Grandi senior (1810-1877). Alla morte di quest’ultimo, il negozio venne ereditato da due dei suoi figli: Carlo e Antonio, omonimo del padre. Forse in ragione della personale passione del giovane Antonio, i fratelli cominciarono a vendere anche stampe e poi dipinti, disegni e oggetti antichi e contemporanei.</p>
             <p>Nel corso della loro lunga attività, entrarono in contatto con le figure più rilevanti del mercato e del collezionismo milanese, italiano ed europeo. In particolare, lavorarono in società in diverse occasioni con <a href="dettaglio_BA_IV.html" target="_blank"> Giuseppe Baslini</a>, il famoso mercante responsabile della formazione di gran parte della raccolta di Gian Giacomo Poldi Pezzoli. Baslini aveva infatti sposato la sorella di Carlo e Antonio Grandi, Marianna, e risulta che indicasse di frequente la sede dei cognati, Corso Venezia 12, come proprio indirizzo. Anche con Luca Beltrami, architetto responsabile del restauro del Castello Sforzesco (1891-1905) e personalità centrale per le politiche artistiche di Milano a cavallo tra Otto e Novecento, gli antiquari intrattennero una relazione personale e professionale molto stretta. Tra le tante occasioni di collaborazione, tra il 1905 e il 1906, Antonio Grandi curò con lui e il restauratore Luigi Cavenaghi il nuovo allestimento della Pinacoteca Ambrosiana per la sezione delle stampe. I Grandi furono infatti appassionati collezionisti e editori di stampe, come dimostra la donazione di oltre duecento rami alla Civica Raccolta Bertarelli, voluta da Filippo Grandi nel 1957 per celebrare i cento anni dalla nascita del padre.</p>
@@ -69,7 +119,10 @@
             <p>Tra i loro acquirenti sono ricordati Fausto e Giuseppe Bagatti Valsecchi, Bernard Berenson, Antonio Borgogna, i coniugi Jacquemart-André, Aldo Noseda, oltre al Ministero della Pubblica Istruzione, l’Accademia di Brera, il Museo Poldi Pezzoli e le collezioni municipali di Milano.</p>
           </div>
           <div id="Persone" class="content">
-            <h3>Relazioni familiari:</h3>
+            <div class="af-intestazione">
+              <h2>Relazioni familiari</h2>
+              <div id="af-legenda" class="af-legenda"></div>
+            </div>
             <div id="albero-genealogico"></div>
           </div>
           <div id="Localizzazioni" class="content">
@@ -78,59 +131,86 @@
             </section>
           </div>
           <div id="Relazioni" class="content">
-            <h3>Altri antiquari:</h3>
-            <ul>
-            </ul>
-            <h3>Clienti:</h3>
-            <ul>
-              <li>Aldo Noseda </li>
-              <li>Antonio Borgogna </li>
-            </ul>
-            <h3>Collaboratori:</h3>
-            <ul>
-              <li>Giuseppe  Steffanoni (restauratore)</li>
-              <li>Luca Beltrami (architetto)</li>
-              <li>Luigi Cavenaghi (restauratore)</li>
-            </ul>
+            <div class="rel-griglia">
+              <section class="rel-gruppo">
+                <h2 class="rel-titolo">Altri antiquari</h2>
+                <ul class="rel-elenco">
+                  <li>
+                    <a class="rel-scheda" href="dettaglio_AC.html">Accorsi</a>
+                  </li>
+                  <li>
+                    <a class="rel-scheda" href="dettaglio_BA_V.html">Barozzi</a>
+                  </li>
+                  <li>
+                    <a class="rel-scheda" href="dettaglio_BA_IV.html">Baslini</a>
+                  </li>
+                  <li>
+                    <a class="rel-scheda" href="dettaglio_SA_IV.html">Sangiorgi</a>
+                  </li>
+                </ul>
+              </section>
+              <section class="rel-gruppo">
+                <h2 class="rel-titolo">Clienti</h2>
+                <ul class="rel-elenco">
+                  <li>Aldo Noseda</li>
+                  <li>Antonio Borgogna</li>
+                  <li>Bernard Berenson</li>
+                  <li>Fausto Bagatti Valsecchi</li>
+                  <li>Giuseppe Bagatti Valsecchi</li>
+                  <li>Nélie Jacquemart</li>
+                  <li>Édouard André</li>
+                </ul>
+              </section>
+              <section class="rel-gruppo">
+                <h2 class="rel-titolo">Collaboratori</h2>
+                <ul class="rel-elenco">
+                  <li>
+                    <span class="rel-nome">Giuseppe Steffanoni</span>
+                    <span class="rel-qualifica">restauratore</span>
+                  </li>
+                  <li>
+                    <span class="rel-nome">Luca Beltrami</span>
+                    <span class="rel-qualifica">architetto</span>
+                  </li>
+                  <li>
+                    <span class="rel-nome">Luigi Cavenaghi</span>
+                    <span class="rel-qualifica">restauratore</span>
+                  </li>
+                </ul>
+              </section>
+            </div>
           </div>
           <div id="Bibliografia" class="content">
-            <h3>Bibliografia essenziale:</h3>
+            <h2>Bibliografia essenziale</h2>
             <ul>
-              <li>Calzini, R. (1946), <i>Milano fin de siècle</i>, Milano, Hoepli, 1946, pp. 111-113</li>
-              <li>Carotti, G. (1905), <i>Una nuova raccolta di opere d'arte</i>, In «L’Arte», VIII, 1905, pp. 50-52</li>
+              <li>Calzini, R. (1946), <i>Milano fin de siècle</i>, Milano, Hoepli, pp. 111-113</li>
+              <li>Carotti, G. (1905), <i>Una nuova raccolta di opere d'arte</i>, in «L’Arte», VIII, 1905, pp. 50-52</li>
               <li>Ceriana, M. (2004), <i>Antonio Grandi</i>, in Ceriana Quattrini, pp. 265</li>
-              <li>Colombi, M. (2021-2022), <i>Milano e il mercato dell'arte nella seconda metà dell'Ottocento. Il ruolo degli antiquari</i>, Tesi di dottorato, Università di Milano</li>
+              <li>Colombi, M. (2021-2022), <i>Milano e il mercato dell'arte nella seconda metà dell'Ottocento. Il ruolo degli antiquari</i>, tesi di Dottorato, Università di Milano</li>
               <li>Di Lorenzo, A. (2002), <i>Édouard e Nélie a Milano: i loro rapporti con gli antiquari, i restauratori e i collezionisti</i>, in Di Lorenzo, pp. 37-45</li>
-              <li>Morandotti, A. (2008), <i>Il Collezionismo in Lombardia. Studi e Ricerche tra '600 e '800</i>, Milano, Officina Libraria</li>
+              <li>Morandotti, A. (2008), <i>Il collezionismo in Lombardia. Studi e ricerche tra '600 e '800</i>, Milano, Officina Libraria</li>
             </ul>
-          </div>
-          <div id="Opere trattate" class="content">
-            <p>
-              Vedi le opere transitate presso l'antiquario presenti nel 
-              <a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&fulltextOA=Milano&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Grandi" class="linkBio" target="_blank">
-                catalogo della Fondazione Zeri
-              </a>
-            </p>
           </div>
         </div>
       </div>
+      <nav class="scheda-sfoglia" aria-label="Altre schede">
+        <a href="dettaglio_GI.html">&#8592; Giugni</a>
+        <a href="dettaglio_GR.html">Grassi &#8594;</a>
+      </nav>
     </main>
     <footer>
       <div class="footer-container">
+        <div class="footer-ente">
+          <a href="https://fondazionezeri.unibo.it/it/homepage" target="_blank" rel="noopener">
+            <img src="../../img/homepage/logo-negativo.png" alt="Fondazione Federico Zeri" />
+          </a>
+          <p>Progetto della <a href="https://fondazionezeri.unibo.it/it/homepage" target="_blank" rel="noopener">Fondazione Federico Zeri</a>, Università di Bologna.</p>
+        </div>
         <div class="footer-left">
-          <p>Licenza dati e immagini:</p>
-          <img id="license.png" src="../../img/homepage/license.png" alt="License" />
+          <p>Licenza dati e immagini: <img id="license.png" src="../../img/homepage/license.png" alt="License"></p>
         </div>
         <div class="footer-right">
-          <p>
-            <a href="../../html/crediti.html">
-              Crediti
-            </a>
-            |
-            <a href="https://github.com/FondazioneFedericoZeri/Mercato_dell_arte" target="_blank">
-              Documentazione
-            </a>
-          </p>
+          <p><a href="../../html/crediti.html">Crediti</a> | <a href="../../html/documentazione.html">Documentazione</a></p>
         </div>
       </div>
     </footer>

@@ -1,5 +1,23 @@
+import os
 import json
 import pandas as pd
+
+# Nome del file delle entità, con o senza accento
+def _file_entita(*candidati):
+    for c in candidati:
+        if os.path.isfile(c):
+            return c
+    return candidati[0]   # nessuno dei due: si usa il primo
+
+
+def ENTITA_TSV():
+    return _file_entita("data/entita.tsv", "data/entit\u00e0.tsv")
+
+
+def ENTITA_JSON():
+    return _file_entita("json/entita.json", "json/entit\u00e0.json")
+
+
 
 
 def build_kinships(input_csv, entity_json, person_tsv, output_json):
@@ -9,6 +27,7 @@ def build_kinships(input_csv, entity_json, person_tsv, output_json):
     # Load the person data from persone.json
     persons = pd.read_csv(person_tsv, sep="\t")
     persons = persons.loc[:, ~persons.columns.str.startswith('Unnamed')]
+    persons = persons.astype(object)
     persons.fillna("", inplace=True)
     persons['Nascita'] = persons['Nascita'].apply(
         lambda x: str(int(x)) if pd.notna(x) and x != "" else "")
@@ -26,11 +45,11 @@ def build_kinships(input_csv, entity_json, person_tsv, output_json):
 
     # Iterate over each row in the kinship CSV
     for _, row in kinship_data.iterrows():
-        # Normalize the entity_id and person IDs by converting them to uppercase for comparison
-        entity_id = row['ID_entità'].upper()
-        person1 = row['ID_persona_1'].upper()
-        person2 = row['ID_persona_2'].upper()
-        relation_type = row['tipologia']
+        # Normalize the entity_id and person IDs: strip spaces and uppercase
+        entity_id = row['ID_entità'].strip().upper()
+        person1 = row['ID_persona_1'].strip().upper()
+        person2 = row['ID_persona_2'].strip().upper()
+        relation_type = row['tipologia'].strip()
 
         # Initialize the dictionary for the entity if not already done
         if entity_id not in kinships_dict:
@@ -50,11 +69,12 @@ def build_kinships(input_csv, entity_json, person_tsv, output_json):
         # Function to safely fetch a person's info, and log if it's missing
         def get_person_info(entity_id, person):
             try:
-                if person in persons['ID'].str.upper().values:
+                ids_upper = persons['ID'].str.strip().str.upper()
+                if person in ids_upper.values:
                     return {
-                        "Nome": str(persons.loc[persons['ID'].str.upper() == person, 'Nome Persona'].values[0]),
-                        "Nascita": str(persons.loc[persons['ID'].str.upper() == person, 'Nascita'].values[0]),
-                        "Morte": str(persons.loc[persons['ID'].str.upper() == person, 'Morte'].values[0])
+                        "Nome": str(persons.loc[ids_upper == person, 'Nome Persona'].values[0]),
+                        "Nascita": str(persons.loc[ids_upper == person, 'Nascita'].values[0]),
+                        "Morte": str(persons.loc[ids_upper == person, 'Morte'].values[0])
                     }
                 else:
                     missing_persons.append((entity_id, person))
@@ -86,4 +106,4 @@ if __name__ == "__main__":
 
     if sys.argv[1] == "parentela":
         build_kinships('data/parentela.csv',
-                       'json/entità.json', 'data/persone.tsv', 'json/parentela.json')
+                       ENTITA_JSON(), 'data/persone.tsv', 'json/parentela.json')

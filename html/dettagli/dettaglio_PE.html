@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pesaro | Mercato dell'arte</title>
+    <meta name="description" content="Pesaro: scheda dell'entità antiquariale nel progetto Mercato dell'arte della Fondazione Federico Zeri." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="../../css/tokens.css" />
+    <link rel="stylesheet" href="../../css/styles-dettaglioAntiquario.css" />
+    <link rel="stylesheet" href="../../css/torna-su.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+    <script src="../../script/menu.js" defer=""></script>
+    <script type="text/javascript" src="../../script/galleria.js"></script>
+    <script type="text/javascript" src="../../script/albero-familiare.js"></script>
+    <script type="text/javascript" src="../../script/dettaglioAntiquari.js"></script>
+    <script type="text/javascript" src="../../script/mappaDettaglio.js"></script>
+    <script src="../../script/torna-su.js" defer=""></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <a class="marchio" href="../../index.html">Mercato dell'arte</a>
+        <button class="menu-toggle" type="button" aria-label="Apri menu">&#9776;</button>
+        <div class="testata-destra">
+          <nav>
+            <ul class="menu">
+              <li>
+                <a href="../progetto.html">Progetto</a>
+              </li>
+              <li>
+                <a href="../antiquari.html">Antiquari</a>
+              </li>
+              <li>
+                <a href="../luoghi.html">Luoghi</a>
+              </li>
+              <li>
+                <a href="../eventi.html">Eventi</a>
+              </li>
+              <li>
+                <a href="../persone.html">Persone</a>
+              </li>
+              <li>
+                <a href="../bibliografia.html">Bibliografia</a>
+              </li>
+            </ul>
+          </nav>
+          <span class="testata-filo"></span>
+          <a class="testata-ente" href="https://fondazionezeri.unibo.it/it/homepage" target="_blank" rel="noopener" title="Fondazione Federico Zeri, Università di Bologna">
+            <img src="../../img/homepage/logo.png" alt="Fondazione Federico Zeri" />
+          </a>
+        </div>
+      </div>
+    </header>
+    <main class="scheda">
+      <section class="scheda-fascia">
+        <div class="scheda-fascia-testo">
+          <a class="scheda-torna" href="../antiquari.html">&#8592; Tutti gli antiquari</a>
+          <h1 class="scheda-nome">Pesaro</h1>
+          <p class="scheda-sottotitolo">Milano, in attività dal 1904 al 1938</p>
+        </div>
+        <div class="slider-container">
+          <div class="slider">
+            <div class="slide">
+              <img src="../../img/slider-antiquari/PE_img1.jpg" alt="Guido Tallone, Ritratto di Lino Pesaro nel 1930" />
+              <div class="caption">Guido Tallone, Ritratto di Lino Pesaro nel 1930</div>
+            </div>
+            <div class="slide">
+              <img src="../../img/slider-antiquari/PE_img2.jpg" alt="Biglietto da visita della Galleria Pesaro disegnato da Alberto Martini (Milano, Castello Sforzesco, Raccolta Achille Bertarelli)" />
+              <div class="caption">Biglietto da visita della Galleria Pesaro disegnato da Alberto Martini (Milano, Castello Sforzesco, Raccolta Achille Bertarelli)</div>
+            </div>
+          </div>
+          <button class="prev" type="button" aria-label="Fotografia precedente">&#10094;</button>
+          <button class="next" type="button" aria-label="Fotografia successiva">&#10095;</button>
+          <button class="gal-zoom" type="button" aria-label="Ingrandisci la fotografia">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-4.3-4.3M11 8v6M8 11h6"></path></svg>
+          </button>
+        </div>
+      </section>
+      <dl class="scheda-striscia">
+        <dt>Persone</dt>
+        <dd>
+          <ul class="striscia-elenco">
+            <li class="striscia-voce"><strong>Lino Pesaro</strong>, 1879–1938, antiquario</li>
+          </ul>
+        </dd>
+        <dt>Opere transitate</dt>
+        <dd>
+          <a class="striscia-link" href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Asta+Galleria+Pesaro" target="_blank" rel="noopener">Catalogo della Fondazione Zeri &#8594;</a>
+        </dd>
+      </dl>
+      <div class="scheda-corpo">
+        <nav class="scheda-tab" aria-label="Sezioni della scheda">
+          <button class="tab active" type="button" data_content="Bio">
+            <span class="tab-voce">Dati biografici</span>
+          </button>
+          <button class="tab" type="button" data_content="Localizzazioni">
+            <span class="tab-voce">Luoghi</span>
+            <span class="tab-num">2</span>
+          </button>
+          <button class="tab" type="button" data_content="Relazioni">
+            <span class="tab-voce">Relazioni</span>
+            <span class="tab-num">15</span>
+          </button>
+          <button class="tab" type="button" data_content="Eventi">
+            <span class="tab-voce">Eventi</span>
+            <span class="tab-num">5</span>
+          </button>
+          <button class="tab" type="button" data_content="Bibliografia">
+            <span class="tab-voce">Bibliografia</span>
+            <span class="tab-num">13</span>
+          </button>
+        </nav>
+        <div class="scheda-contenuto">
+          <div id="Bio" class="content active-content">
+            <p>Michelangelo Pesaro, detto familiarmente ‘Lino’, è stato uno dei principali mercanti d’arte dei primi decenni del Novecento, anche se la sua carriera fu molto breve, poco più di una ventina d’anni, dal 1917 al 1938. Lino si appassionò all’arte grazie al nonno materno Angelo Spadoni, un importante collezionista di dipinti del Seicento napoletano che, alla sua morte, lasciò a lui e alla sorella Ida la propria raccolta.</p>
+            <p>Dopo aver passato gli anni della formazione tra Reggio Calabria, la sua città natale, e Venezia, dove frequentò l’università, Lino nel 1904 arrivò a Milano. Nel capoluogo lombardo, fervido di iniziative, Lino iniziò a lavorare come mercante d’arte, organizzando mostre con opere della sua collezione o appartenenti a famiglie nobili e alto borghesi, come quelle di Davide Leonino, <a href="dettaglio_FO.html" target="_blank">Pietro Foresti</a>, Alberto Clerici e del celebre mercante d'arte fiorentino Luigi Pisani, titolare della Galleria Pisani.</p>
+            <p>Nel 1913 Lino si occupò della prestigiosa vendita all’asta, a St. Moritz, di ben ventitré dipinti di Giovanni Segantini della collezione privata di Alberto Grubicy. Questa opportunità gli garantì fama a livello internazionale, tanto da permettergli di aprire nel 1917 la propria galleria antiquaria: la Galleria Pesaro.</p>
+            <p>Lino scelse una sede esclusiva, il piano terra del palazzo storico che ospitava, e tuttora ospita, il Museo Poldi Pezzoli in via Manzoni 12. Nelle sale della galleria passarono molti capolavori italiani dell’Ottocento, tra i quali Il Quarto Stato di Giuseppe Pellizza da Volpedo e Le due madri di Giovanni Segantini.</p>
+            <p>Dal 1914 al 1929, Pesaro collaborò con lo scrittore e critico d'arte Vittorio Pica per l’organizzazione di oltre quaranta mostre, a partire da quella allestita per la vendita della collezione di Luigi Pisani. Il gallerista curò sempre con particolare attenzione i cataloghi che accompagnavano le esposizioni, riconoscibili per eleganza dell’impaginato e per i testi introduttivi affidati ai più stimati intellettuali dell'epoca, come Antonio Fradeletto, il critico d'arte e poeta Enrico Somarè, il giornalista e critico Ugo Ojetti e il mercante d'arte, critico e giornalista Pier Maria Bardi dello <a href="dettaglio_PA_III.html" target="_blank">Studio d’Arte Palma</a>.</p>
+            <p>Nel 1922, insieme all'influente critica d'arte Margherita Grassini Sarfatti, Lino Pesaro contribuì alla nascita del gruppo “Novecento”, composto da Achille Funi, Gian Emilio Malerba, Ubaldo Oppi, Leonardo Dudreville, Pietro Marussig, Anselmo Bucci e Mario Sironi. Benito Mussolini presenziò, su insistenza della Sarfatti, all'inaugurazione della loro prima mostra il 26 marzo 1923.</p>
+            <p>Nel 1925, Pesaro decise di allargare la propria impresa a nuovi azionisti, tra cui Carlo Feltrinelli e Luigi Della Torre, mantenendo per sé il ruolo di consigliere e direttore generale. Nel 1927 fu inaugurata l’attività editoriale promossa dalla Galleria, con la rivista in inglese “The Studio” e le serie “L'odierna arte del bianco e nero” e “L'Arte decorativa moderna” dedicate specificamente alla pubblicazione di cataloghi di mostre.</p>
+            <p>In quegli anni, Pesaro diventò il principale rappresentante dei mercanti d'arte italiani nelle associazioni di categoria, denunciando in particolare i problemi legati alla falsificazione e lavorando costantemente ad accordi tra artisti, mercanti, collezionisti e istituzioni.</p>
+            <p>Nel 1931 l’accumularsi di ingenti difficoltà economiche, lo costrinse a vendere all’asta la propria collezione di dipinti e, nel 1933, nonostante l’organizzazione di una mostra importante dedicata a Umberto Boccioni e al movimento futurista, con oltre settanta opere, fu coinvolto in una causa per falsificazione che contribuì alla fine della sua carriera. La causa intentatagli da Gaetano Marzotto, suo assiduo cliente, per la vendita di presunte opere contraffatte, rappresentò un duro colpo alla sua autostima e credibilità pubblica.</p>
+            <p>Nel 1938, Pesaro organizzò dunque l’Esposizione dei XXXV anni, la sua ultima mostra, dedicata alla sua lunga e proficua attività nel mondo dell'arte. Poco dopo decise di suicidarsi per ragioni tuttora ignote.</p>
+            <p>Le Gallerie Maspes in via Manzoni a Milano conservano una ricca collezione dei cataloghi d’asta e di mostre organizzate da Lino Pesaro, che risulta assai utile per ricostruire la sua lunga parabola professionale ed esistenziale.</p>
+            <p><br>Ricerca e redazione testi: Federica De Giambattista</br></p>
+          </div>
+          <div id="Localizzazioni" class="content">
+            <section id="map">
+              <div id="chartdiv"></div>
+            </section>
+          </div>
+          <div id="Relazioni" class="content">
+            <div class="rel-griglia">
+              <section class="rel-gruppo">
+                <h2 class="rel-titolo">Altri antiquari</h2>
+                <ul class="rel-elenco">
+                  <li>
+                    <a class="rel-scheda" href="dettaglio_PA_III.html">Palma</a>
+                  </li>
+                </ul>
+              </section>
+              <section class="rel-gruppo">
+                <h2 class="rel-titolo">Clienti</h2>
+                <ul class="rel-elenco">
+                  <li>Alberto Clerici</li>
+                  <li>Alberto Grubicy</li>
+                  <li>Gaetano Marzotto</li>
+                  <li>Giacomo Jucker</li>
+                  <li>Giuseppe Ricci Oddi</li>
+                  <li>Luigi Margherita</li>
+                </ul>
+              </section>
+              <section class="rel-gruppo">
+                <h2 class="rel-titolo">Collaboratori</h2>
+                <ul class="rel-elenco">
+                  <li>
+                    <span class="rel-nome">Antonio Fradeletto</span>
+                    <span class="rel-qualifica">storico dell'arte</span>
+                  </li>
+                  <li>
+                    <span class="rel-nome">Carlo Feltrinelli</span>
+                    <span class="rel-qualifica">socio</span>
+                  </li>
+                  <li>
+                    <span class="rel-nome">Enrico Somarè</span>
+                    <span class="rel-qualifica">storico dell'arte</span>
+                  </li>
+                  <li>
+                    <span class="rel-nome">Luigi Della Torre</span>
+                    <span class="rel-qualifica">socio</span>
+                  </li>
+                  <li>
+                    <span class="rel-nome">Luigi Pisani</span>
+                    <span class="rel-qualifica">antiquario</span>
+                  </li>
+                  <li>
+                    <span class="rel-nome">Margherita Grassini Scarfatti</span>
+                    <span class="rel-qualifica">critico d'arte</span>
+                  </li>
+                  <li>
+                    <span class="rel-nome">Ugo Ojetti</span>
+                    <span class="rel-qualifica">critico d'arte</span>
+                  </li>
+                  <li>
+                    <span class="rel-nome">Vittorio Pica</span>
+                    <span class="rel-qualifica">critico d'arte</span>
+                  </li>
+                </ul>
+              </section>
+            </div>
+          </div>
+          <div id="Eventi" class="content">
+            <h2>Eventi significativi nell'attività antiquariale</h2>
+            <ul>
+              <li>1913 - <i>Exposition et vente de tableaux de Giovanni Segantini à Saint Moritz </i>: Lino Pesaro organizza la prestigiosa vendita di ventitré dipinti di Segantini provenienti dalla collezione Grubicy</li>
+              <li>1923 - <i>Esposizione "Sette pittori del Novecento" presso la Galleria Pesaro</i>: Lino Pesaro espone con Margherita Sarfatti il nucleo fondativo di pittori che nel 1924 alla Biennale di Venezia si costituirà come gruppo "Novecento"</li>
+              <li>1933 - <i>Esposizione "Omaggio futurista a Umberto Boccioni" presso la Galleria Pesaro</i>: Lino Pesaro organizza un'importante mostra dedicata a Boccioni con oltre settanta opere</li>
+              <li>1933 - <i>Causa giudiziaria per vendita di opere d'arte false</i>: L'imprenditore e collezionista Gaetano Marzotto, suo affezionato cliente, accusa Lino Pesaro di avergli venduto un Raffaello e un Pinturicchio falsi</li>
+              <li>1938 - <i>Esposizione dei XXXV anni</i>: Prima di lasciare l'attività e togliersi la vita, Lino Pesaro organizza una retrospettiva sulla sua lunga carriera di mercante d'arte</li>
+            </ul>
+          </div>
+          <div id="Bibliografia" class="content">
+            <h2>Bibliografia essenziale</h2>
+            <ul>
+              <li>Bignami, S. , Rusconi, P. (2012), <i>Le arti e il Fascismo. Italia anni trenta</i>, in «Art e Dossier», 291 (settembre 2012)</li>
+              <li>Colombo, N. (2016), <i>Lino Pesaro. Trentacinque anni tra arte e mostre</i>, in Sansone, pp. 59-66</li>
+              <li>Galleria Pesaro (1924), <i>Omaggio futurista a Umberto Boccioni : aeropitture, polimaterici, quadri religiosi, architetture, scenografie, arte decorativa</i>, Milano, Galleria Pesaro</li>
+              <li>Galleria Pesaro (1927), <i>Mostra di trentaquattro pittori futuristi</i>, Milano, Bestetti & Tumminelli</li>
+              <li>Galleria Pesaro (1927), <i>Mostra individuale dello scultore Vincenzo Gemito e dei pittori Vincenzo Caprile, Vincenzo Migliaro</i>, Milano, Bestetti & Tumminelli</li>
+              <li>Galleria Pesaro (1928), <i>La raccolta Melzi</i>, Milano, Bestetti & Tumminelli</li>
+              <li>Galleria Pesaro (1930), <i>La raccolta del Duca di San Donato di Napoli</i>, Milano, Casa editrice d'arte Bestetti & Tumminelli</li>
+              <li>Galleria Pesaro (1931), <i>La raccolta Lino Pesaro</i>, Milano, Bestetti & Tumminelli</li>
+              <li>Galleria Pesaro (1938), <i>Esposizione dei XXXV anni: raduno degli artisti italiani viventi che organizzarono la loro mostra personale alla Galleria Pesaro</i>, Milano, Stamperia e Tipografia Industriale S.E.T.I.</li>
+              <li>Lino Pesaro (1914), <i>La Galerie Pisani de Florence: première partie</i>, Milano, Bertieri e Vanzetti</li>
+              <li>Madesani, A., Staudacher, E. (Ed.) (2017), <i>Galleria Pesaro. Storia di un mercante creatore di collezioni</i>, Vicenza, Antiga Edizioni</li>
+              <li>Maison de Ventes Lino Pesaro (1913), <i>Exposition et vente de tableaux de Giovanni Segantini a Saint-Moritz</i>, 18-23 agosto 1913, Milano, Bertieri e Vanzetti</li>
+              <li>Pontiggia, E. (2018), <i>Le mostre alla Galleria Pesaro</i>, in F. Benzi (a cura di), "Mario Sironi", catalogo della mostra, Cinisello Balsamo (MI), Silvana Editoriale, pp. 307-309</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <nav class="scheda-sfoglia" aria-label="Altre schede">
+        <a href="dettaglio_PA_II.html">&#8592; Paolini</a>
+        <a href="dettaglio_PI_NEW.html">Pini &#8594;</a>
+      </nav>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-ente">
+          <a href="https://fondazionezeri.unibo.it/it/homepage" target="_blank" rel="noopener">
+            <img src="../../img/homepage/logo-negativo.png" alt="Fondazione Federico Zeri" />
+          </a>
+          <p>Progetto della <a href="https://fondazionezeri.unibo.it/it/homepage" target="_blank" rel="noopener">Fondazione Federico Zeri</a>, Università di Bologna.</p>
+        </div>
+        <div class="footer-left">
+          <p>Licenza dati e immagini: <img id="license.png" src="../../img/homepage/license.png" alt="License"></p>
+        </div>
+        <div class="footer-right">
+          <p><a href="../../html/crediti.html">Crediti</a> | <a href="../../html/documentazione.html">Documentazione</a></p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

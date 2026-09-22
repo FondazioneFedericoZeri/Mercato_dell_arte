@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Subert | Mercato dell'arte</title>
+    <meta name="description" content="Subert: scheda dell'entità antiquariale nel progetto Mercato dell'arte della Fondazione Federico Zeri." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="../../css/tokens.css" />
+    <link rel="stylesheet" href="../../css/styles-dettaglioAntiquario.css" />
+    <link rel="stylesheet" href="../../css/torna-su.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+    <script src="../../script/menu.js" defer=""></script>
+    <script type="text/javascript" src="../../script/galleria.js"></script>
+    <script type="text/javascript" src="../../script/albero-familiare.js"></script>
+    <script type="text/javascript" src="../../script/dettaglioAntiquari.js"></script>
+    <script type="text/javascript" src="../../script/mappaDettaglio.js"></script>
+    <script src="../../script/torna-su.js" defer=""></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <a class="marchio" href="../../index.html">Mercato dell'arte</a>
+        <button class="menu-toggle" type="button" aria-label="Apri menu">&#9776;</button>
+        <div class="testata-destra">
+          <nav>
+            <ul class="menu">
+              <li>
+                <a href="../progetto.html">Progetto</a>
+              </li>
+              <li>
+                <a href="../antiquari.html">Antiquari</a>
+              </li>
+              <li>
+                <a href="../luoghi.html">Luoghi</a>
+              </li>
+              <li>
+                <a href="../eventi.html">Eventi</a>
+              </li>
+              <li>
+                <a href="../persone.html">Persone</a>
+              </li>
+              <li>
+                <a href="../bibliografia.html">Bibliografia</a>
+              </li>
+            </ul>
+          </nav>
+          <span class="testata-filo"></span>
+          <a class="testata-ente" href="https://fondazionezeri.unibo.it/it/homepage" target="_blank" rel="noopener" title="Fondazione Federico Zeri, Università di Bologna">
+            <img src="../../img/homepage/logo.png" alt="Fondazione Federico Zeri" />
+          </a>
+        </div>
+      </div>
+    </header>
+    <main class="scheda">
+      <section class="scheda-fascia">
+        <div class="scheda-fascia-testo">
+          <a class="scheda-torna" href="../antiquari.html">&#8592; Tutti gli antiquari</a>
+          <h1 class="scheda-nome">Subert</h1>
+          <p class="scheda-sottotitolo">Milano, in attività dal 1860</p>
+        </div>
+        <div class="slider-container">
+          <div class="slider">
+            <div class="slide">
+              <img src="../../img/slider-antiquari/SU_img1.jpg" alt="Emanuele Subert 1830-1888" />
+              <div class="caption">Emanuele Subert 1830-1888</div>
+            </div>
+            <div class="slide">
+              <img src="../../img/slider-antiquari/SU_img2.jpg" alt="Rodolfo Subert 1873-1958" />
+              <div class="caption">Rodolfo Subert 1873-1958</div>
+            </div>
+            <div class="slide">
+              <img src="../../img/slider-antiquari/SU_img3.jpg" alt="Rodolfo Subert (Duda) 1898-1978" />
+              <div class="caption">Rodolfo Subert (Duda) 1898-1978</div>
+            </div>
+            <div class="slide">
+              <img src="../../img/slider-antiquari/SU_img4.jpg" alt="Alberto Subert 1929-2021" />
+              <div class="caption">Alberto Subert 1929-2021</div>
+            </div>
+          </div>
+          <button class="prev" type="button" aria-label="Fotografia precedente">&#10094;</button>
+          <button class="next" type="button" aria-label="Fotografia successiva">&#10095;</button>
+          <button class="gal-zoom" type="button" aria-label="Ingrandisci la fotografia">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-4.3-4.3M11 8v6M8 11h6"></path></svg>
+          </button>
+        </div>
+      </section>
+      <dl class="scheda-striscia">
+        <dt>Persone</dt>
+        <dd>
+          <ul class="striscia-elenco">
+            <li class="striscia-voce"><strong>Emanuele Subert</strong>, 1830–1888, antiquario</li>
+            <li class="striscia-voce"><strong>Rodoldo Subert</strong>, 1873–1958, antiquario</li>
+            <li class="striscia-voce"><strong>Rodolfo Subert</strong>, 1898–1978, antiquario</li>
+            <li class="striscia-voce"><strong>Alberto Subert</strong>, 1929–2021, antiquario</li>
+            <li class="striscia-voce"><strong>Michele Subert</strong>, antiquario</li>
+          </ul>
+        </dd>
+        <dt>Opere transitate</dt>
+        <dd>
+          <a class="striscia-link" href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Subert" target="_blank" rel="noopener">Catalogo della Fondazione Zeri &#8594;</a>
+        </dd>
+      </dl>
+      <div class="scheda-corpo">
+        <nav class="scheda-tab" aria-label="Sezioni della scheda">
+          <button class="tab active" type="button" data_content="Bio">
+            <span class="tab-voce">Dati biografici</span>
+          </button>
+          <button class="tab" type="button" data_content="Persone">
+            <span class="tab-voce">Albero familiare</span>
+            <span class="tab-num">5</span>
+          </button>
+          <button class="tab" type="button" data_content="Localizzazioni">
+            <span class="tab-voce">Luoghi</span>
+            <span class="tab-num">7</span>
+          </button>
+          <button class="tab" type="button" data_content="Relazioni">
+            <span class="tab-voce">Relazioni</span>
+            <span class="tab-num">2</span>
+          </button>
+          <button class="tab" type="button" data_content="Bibliografia">
+            <span class="tab-voce">Bibliografia</span>
+            <span class="tab-num">4</span>
+          </button>
+        </nav>
+        <div class="scheda-contenuto">
+          <div id="Bio" class="content active-content">
+            <p>Emanuele Subert (1830-1888) fu un mercante di origine polacca o ceca. Trasferitosi prima a Trieste, città natale della moglie Elisa Berger (1832-post 1900), e poi a Milano, fondò la galleria “Emanuele Subert Antichità e Belle Arti” nel 1860 in via Monte di Pietà al numero 2.</p>
+            <p>Seguendo il mercato dell’epoca, l’antiquario volse i propri interessi verso arredi, armi e tessuti antichi, ma anche arte sacra, archeologia, gioielli e oreficerie, contribuendo all’ampliamento e alla costituzione delle collezioni di numerosi musei e collezionisti, tra i quali spiccano Frederick Stibbert, a Firenze, e il nascente Museo Poldi Pezzoli.</p>
+            <p>Il figlio Rodolfo Subert (1873-1958), in società con il fratello Carlo, rilevò nel 1903 i negozi paterni di via Monte di Pietà e di Galleria Vittorio Emanuele II, quest’ultimo aperto in un secondo momento. Quando Carlo si trasferì negli Stati Uniti nel 1910, Rodolfo cambiò l’intestazione dei negozi in: “Rodolfo Subert Antichità e Belle Arti”.</p>
+            <p>Rodolfo colse il momento particolarmente favorevole per aprire altre due attività a Bellagio, all’epoca meta di villeggiatura dell’élite internazionale, grazie anche alla presenza del casinò. Anche Rodolfo fu tra i fornitori di musei e nuovi collezionisti, tra cui Giuseppe Gianetti, appassionato conoscitore di maioliche, che acquistò numerosi oggetti poi confluiti poi nell’omonimo museo a Saronno. Cospicue furono inoltre le donazioni tra il 1940 e il 1941 a nome della moglie di Rodolfo, Ambrogina Bergomi Subert, ad alcuni importanti musei, tra cui il Museo di Arti Applicate del Castello Sforzesco.</p>
+            <p>Rodolfo, affiancato da alcuni figli, continuò la conduzione del negozio in Galleria Vittorio Emanuele II fino al luglio 1943, quando i bombardamenti distrussero la galleria con tutto il contenuto, compreso l’archivio di più di ottant’anni di attività.</p>
+            <p>L’omonimo figlio maggiore Rodolfo (1898-1978) nel 1926 aprì in via Sant’ Andrea 11 la “Galleria S. Andrea” dove rimase fino al 1945, affiancato nell’attività dalla moglie Gina Gandus (1900-1968). Il negozio trattava arte italiana con una particolare predilezione per i gioielli e per la pittura italiana dell’Ottocento.</p>
+            <p>Dopo la guerra, nel 1951, Rodolfo Subert riaprì sotto la denominazione “G. G. Subert” in via San Pietro all’Orto 26, mentre l’anno seguente il figlio Alberto avviò una propria galleria in via della Spiga 22.</p>
+            <p>Fu questo il periodo delle prime mostre di antiquariato: Biennale dell’Antiquariato di Firenze e l’Esposizione di Palazzo Reale a Milano, cui partecipavano entrambi i negozi.</p>
+            <p>Nel 1996 i due esercizi confluirono nella galleria “Antichità e Oggetti d’Arte” con sede al 24 di via Santo Spirito, dove Alberto Subert. continuò la propria attività affiancato dal figlio Michele fino al 2012. Seguendo la tradizione familiare, la sua attività fu caratterizzata dall’eclettismo, con una predilizione particolare verso gli strumenti scientifici, sfere armillari, globi e oggetti da collezione.</p>
+            <p>Dal 2013 il figlio Michele Subert ha aperto una nuova sede al 42 di via della Spiga. Il suo interesse è incentrato sull’arte italiana dal XVI al XIX secolo, in particolare sugli oggetti da collezione, proseguendo così la passione condivisa con il padre.</p>
+            <p><br>Ricerca e redazione testi: Marco Fossati</br></p>
+          </div>
+          <div id="Persone" class="content">
+            <div class="af-intestazione">
+              <h2>Relazioni familiari</h2>
+              <div id="af-legenda" class="af-legenda"></div>
+            </div>
+            <div id="albero-genealogico"></div>
+          </div>
+          <div id="Localizzazioni" class="content">
+            <section id="map">
+              <div id="chartdiv"></div>
+            </section>
+          </div>
+          <div id="Relazioni" class="content">
+            <div class="rel-griglia">
+              <section class="rel-gruppo">
+                <h2 class="rel-titolo">Clienti</h2>
+                <ul class="rel-elenco">
+                  <li>Frederick Stibbert</li>
+                  <li>Giuseppe Gianetti</li>
+                </ul>
+              </section>
+            </div>
+          </div>
+          <div id="Bibliografia" class="content">
+            <h2>Bibliografia essenziale</h2>
+            <ul>
+              <li>Bardelli, A. (2017), <i>Due cassettoni “Maggioli” e una storia di antiquariato tra Milano e Varese</i>, <a href="https://www.antiquanuovaserie.it/due-cassettoni-maggiolini-e-una-storia-di-antiquariato-tra-milano-e-varese/" target="_blank" rel="noopener" class="bib-web">antiquanuovaserie.it</a></li>
+              <li>Batini, G. (1961), <i>L'antiquario</i>, Firenze, Vallecchi</li>
+            </ul>
+            <h2>Interviste</h2>
+            <ul>
+              <li>13/04/2026, <i>Intervista a Marco e Ruggero Longari</i>, Milano</li>
+              <li>17/03/2026, <i>Intervista a Michele Subert</i>, Milano</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <nav class="scheda-sfoglia" aria-label="Altre schede">
+        <a href="dettaglio_ST_NEW.html">&#8592; Steffanoni</a>
+        <a href="dettaglio_TA.html">Tavazzi &#8594;</a>
+      </nav>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-ente">
+          <a href="https://fondazionezeri.unibo.it/it/homepage" target="_blank" rel="noopener">
+            <img src="../../img/homepage/logo-negativo.png" alt="Fondazione Federico Zeri" />
+          </a>
+          <p>Progetto della <a href="https://fondazionezeri.unibo.it/it/homepage" target="_blank" rel="noopener">Fondazione Federico Zeri</a>, Università di Bologna.</p>
+        </div>
+        <div class="footer-left">
+          <p>Licenza dati e immagini: <img id="license.png" src="../../img/homepage/license.png" alt="License"></p>
+        </div>
+        <div class="footer-right">
+          <p><a href="../../html/crediti.html">Crediti</a> | <a href="../../html/documentazione.html">Documentazione</a></p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

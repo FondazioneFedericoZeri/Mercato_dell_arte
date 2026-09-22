@@ -3,87 +3,140 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dettaglio Antiquari</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;700&display=swap" rel="stylesheet" />
+    <title>Sangiorgi | Mercato dell'arte</title>
+    <meta name="description" content="Sangiorgi: scheda dell'entità antiquariale nel progetto Mercato dell'arte della Fondazione Federico Zeri." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="../../css/tokens.css" />
     <link rel="stylesheet" href="../../css/styles-dettaglioAntiquario.css" />
+    <link rel="stylesheet" href="../../css/torna-su.css" />
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/index.js"></script>
-    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/hierarchy.js"></script>
-    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
     <script type="text/javascript" src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script type="text/javascript" src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+    <script src="../../script/menu.js" defer=""></script>
+    <script type="text/javascript" src="../../script/galleria.js"></script>
+    <script type="text/javascript" src="../../script/albero-familiare.js"></script>
     <script type="text/javascript" src="../../script/dettaglioAntiquari.js"></script>
     <script type="text/javascript" src="../../script/mappaDettaglio.js"></script>
+    <script src="../../script/torna-su.js" defer=""></script>
   </head>
   <body>
     <header>
       <div class="header-container">
-        <a href="../../index.html">
-          <img id="logo.png" src="../../img/homepage/logo.png" alt="Fondazione Federico Zeri" />
-        </a>
-        <nav>
-          <ul>
-            <li>
-              <a href="../progetto.html">Progetto</a>
-              <a href="../antiquari.html">Antiquari</a>
-              <a href="../luoghi.html">Luoghi</a>
-              <a href="../eventi.html">Eventi</a>
-              <a href="../persone.html">Persone</a>
-              <a href="../bibliografia.html">Bibliografia</a>
-            </li>
-          </ul>
-        </nav>
+        <a class="marchio" href="../../index.html">Mercato dell'arte</a>
+        <button class="menu-toggle" type="button" aria-label="Apri menu">&#9776;</button>
+        <div class="testata-destra">
+          <nav>
+            <ul class="menu">
+              <li>
+                <a href="../progetto.html">Progetto</a>
+              </li>
+              <li>
+                <a href="../antiquari.html">Antiquari</a>
+              </li>
+              <li>
+                <a href="../luoghi.html">Luoghi</a>
+              </li>
+              <li>
+                <a href="../eventi.html">Eventi</a>
+              </li>
+              <li>
+                <a href="../persone.html">Persone</a>
+              </li>
+              <li>
+                <a href="../bibliografia.html">Bibliografia</a>
+              </li>
+            </ul>
+          </nav>
+          <span class="testata-filo"></span>
+          <a class="testata-ente" href="https://fondazionezeri.unibo.it/it/homepage" target="_blank" rel="noopener" title="Fondazione Federico Zeri, Università di Bologna">
+            <img src="../../img/homepage/logo.png" alt="Fondazione Federico Zeri" />
+          </a>
+        </div>
       </div>
     </header>
-    <main>
-      <section id="image-gallery">
-        <div class="gallery-wrapper">
-          <h2 class="gallery-title">Sangiorgi</h2>
-          <div class="slider-container">
-            <div class="slider">
-              <div class="slide">
-                <img src="../../img/slider-antiquari/SA_IV_img1.jpg" alt="Giuseppe Sangiorgi (foto Biblioteca C. Venturini, Massa Lombarda)" />
-                <div class="caption">Giuseppe Sangiorgi (foto Biblioteca C. Venturini, Massa Lombarda)</div>
-              </div>
-              <div class="slide">
-                <img src="../../img/slider-antiquari/SA_IV_img2.jpg" alt="Giuseppe Sangiorgi. Da &quot;L'Antiquario&quot;, 1925" />
-                <div class="caption">Giuseppe Sangiorgi. Da "L'Antiquario", 1925</div>
-              </div>
-              <div class="slide">
-                <img src="../../img/slider-antiquari/SA_IV_img3.jpg" alt="Galleria Sangiorgi, Palazzo Borghese (foto Anderson, 1898 ca.)" />
-                <div class="caption">Galleria Sangiorgi, Palazzo Borghese (foto Anderson, 1898 ca.)</div>
-              </div>
-              <div class="slide">
-                <img src="../../img/slider-antiquari/SA_IV_img4.jpg" alt="Galleria Sangiorgi, sala dei libri e autografi, 1895 ca." />
-                <div class="caption">Galleria Sangiorgi, sala dei libri e autografi, 1895 ca.</div>
-              </div>
-              <div class="slide">
-                <img src="../../img/slider-antiquari/SA_IV_img5.jpg" alt="Pubblicità della Galleria Sangiorgi, 1895 ca." />
-                <div class="caption">Pubblicità della Galleria Sangiorgi, 1895 ca.</div>
-              </div>
+    <main class="scheda">
+      <section class="scheda-fascia">
+        <div class="scheda-fascia-testo">
+          <a class="scheda-torna" href="../antiquari.html">&#8592; Tutti gli antiquari</a>
+          <h1 class="scheda-nome">Sangiorgi</h1>
+          <p class="scheda-sottotitolo">Roma e New York, in attività dal 1892 al 1970</p>
+        </div>
+        <div class="slider-container">
+          <div class="slider">
+            <div class="slide">
+              <img src="../../img/slider-antiquari/SA_IV_img1.jpg" alt="Giuseppe Sangiorgi (foto Biblioteca C. Venturini, Massa Lombarda)" />
+              <div class="caption">Giuseppe Sangiorgi (foto Biblioteca C. Venturini, Massa Lombarda)</div>
             </div>
-            <button &#10094; class="prev" onclick="prevSlide()"><</button>
-            <button &#10095; class="next" onclick="nextSlide()">></button>
+            <div class="slide">
+              <img src="../../img/slider-antiquari/SA_IV_img2.jpg" alt="Giuseppe Sangiorgi. Da &quot;L'Antiquario&quot;, 1925" />
+              <div class="caption">Giuseppe Sangiorgi. Da "L'Antiquario", 1925</div>
+            </div>
+            <div class="slide">
+              <img src="../../img/slider-antiquari/SA_IV_img3.jpg" alt="Galleria Sangiorgi, Palazzo Borghese (foto Anderson, 1898 ca.)" />
+              <div class="caption">Galleria Sangiorgi, Palazzo Borghese (foto Anderson, 1898 ca.)</div>
+            </div>
+            <div class="slide">
+              <img src="../../img/slider-antiquari/SA_IV_img4.jpg" alt="Galleria Sangiorgi, sala dei libri e autografi, 1895 ca." />
+              <div class="caption">Galleria Sangiorgi, sala dei libri e autografi, 1895 ca.</div>
+            </div>
+            <div class="slide">
+              <img src="../../img/slider-antiquari/SA_IV_img5.jpg" alt="Pubblicità della Galleria Sangiorgi, 1895 ca." />
+              <div class="caption">Pubblicità della Galleria Sangiorgi, 1895 ca.</div>
+            </div>
           </div>
+          <button class="prev" type="button" aria-label="Fotografia precedente">&#10094;</button>
+          <button class="next" type="button" aria-label="Fotografia successiva">&#10095;</button>
+          <button class="gal-zoom" type="button" aria-label="Ingrandisci la fotografia">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-4.3-4.3M11 8v6M8 11h6"></path></svg>
+          </button>
         </div>
       </section>
-      <div class="dual-content-wrapper">
-        <div class="tab-container">
-          <ul class="tab-list">
-            <li class="tab active" data_content="Bio">Dati biografici</li>
-            <li class="tab" data_content="Persone">Albero familiare</li>
-            <li class="tab" data_content="Localizzazioni">Luoghi</li>
-            <li class="tab" data_content="Relazioni">Relazioni</li>
-            <li class="tab" data_content="Eventi">Eventi</li>
-            <li class="tab" data_content="Bibliografia">Bibliografia</li>
-            <li class="tab" data_content="Opere trattate">Opere trattate</li>
+      <dl class="scheda-striscia">
+        <dt>Persone</dt>
+        <dd>
+          <ul class="striscia-elenco">
+            <li class="striscia-voce"><strong>Giuseppe Sangiorgi</strong>, 1850–1928, antiquario</li>
+            <li class="striscia-voce"><strong>Giorgio Sangiorgi</strong>, 1886–1975, antiquario</li>
+            <li class="striscia-voce"><strong>Sergio Sangiorgi</strong>, 1925–2015, antiquario</li>
           </ul>
-        </div>
-        <div class="content-card">
+        </dd>
+        <dt>Opere transitate</dt>
+        <dd>
+          <a class="striscia-link" href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=SANGIORGI" target="_blank" rel="noopener">Catalogo della Fondazione Zeri &#8594;</a>
+        </dd>
+      </dl>
+      <div class="scheda-corpo">
+        <nav class="scheda-tab" aria-label="Sezioni della scheda">
+          <button class="tab active" type="button" data_content="Bio">
+            <span class="tab-voce">Dati biografici</span>
+          </button>
+          <button class="tab" type="button" data_content="Persone">
+            <span class="tab-voce">Albero familiare</span>
+            <span class="tab-num">3</span>
+          </button>
+          <button class="tab" type="button" data_content="Localizzazioni">
+            <span class="tab-voce">Luoghi</span>
+            <span class="tab-num">3</span>
+          </button>
+          <button class="tab" type="button" data_content="Relazioni">
+            <span class="tab-voce">Relazioni</span>
+            <span class="tab-num">7</span>
+          </button>
+          <button class="tab" type="button" data_content="Eventi">
+            <span class="tab-voce">Eventi</span>
+            <span class="tab-num">2</span>
+          </button>
+          <button class="tab" type="button" data_content="Bibliografia">
+            <span class="tab-voce">Bibliografia</span>
+            <span class="tab-num">5</span>
+          </button>
+        </nav>
+        <div class="scheda-contenuto">
           <div id="Bio" class="content active-content">
             <p>Il fondatore della Galleria Giuseppe Sangiorgi (1850-1928) nacque a Massa Lombarda, in provincia di Ravenna, da una famiglia di origini modeste che non aveva legami con il mercato antiquario. Si trasferì a Roma solamente nel 1889, dopo avere avviato diverse attività commerciali di successo in varie città d'Italia, in particolare a Milano e Messina. Nell'Urbe, dopo essersi coinvolto in aste organizzate dall'esperta <a href="dettaglio_CO_II.html" target="_blank"> "Casa di vendite Corvisieri" </a>, aprì nel 1892 la propria impresa, l'"Hotel des Ventes G. Sangiorgi", al piano terra di Palazzo Borghese appena lasciato vuoto dal trasferimento dell'intera collezione nell'omonima villa fuori Porta Pinciana.</p>
             <p>L'attività principale nei primi anni fu la vendita all'asta di intere collezioni o di singoli pezzi antichi acquistati sul mercato. Fu a partire dal 1894 che Sangiorgi iniziò un processo di riconversione della propria impresa che si riflette nel cambio di intestazione in "Galleria Sangiorgi-Roma Palazzo Borghese". Tale percorso di rinnovamento culminò nell'acquisto dell'edificio prospicente il Palazzo, nel quale vennero installati laboratori per una vasta produzione di opere 'in stile' e di alto artigianato a cui collaborarono artisti di livello, tra cui Patrizio Fracassi, Domenico Baccarini, Cipriano Efisio Oppo, Alberto Bianchi, Oreste Marozzi. La "Galleria dei bronzi e dei marmi-Negozio di arte antica e moderna", situata in via Ripetta 118, rimase aperta fino al 1924, anno in cui l'edificio venne ceduto alla facoltà di economia e quindi demolito. Nell'ambito di queste nuova attività, Sangiorgi acquistò nel 1898 anche il reparto di riparazione degli arazzi e il laboratorio di ricami dell'Ospizio di San Michele.</p>
@@ -91,7 +144,10 @@
             <p>Alla morte di Giuseppe, avvenuta nel 1928, la galleria situata a Palazzo Borghese fu gestita dal figlio Giorgio (1886-1975), noto studioso e collezionista di vetri e di tessuti antichi, e poi dal nipote Sergio (1925-2015), fino al 1970, anno della definitiva chiusura dell'attività.</p>
           </div>
           <div id="Persone" class="content">
-            <h3>Relazioni familiari:</h3>
+            <div class="af-intestazione">
+              <h2>Relazioni familiari</h2>
+              <div id="af-legenda" class="af-legenda"></div>
+            </div>
             <div id="albero-genealogico"></div>
           </div>
           <div id="Localizzazioni" class="content">
@@ -99,65 +155,82 @@
               <div id="chartdiv"></div>
             </section>
           </div>
+          <div id="Relazioni" class="content">
+            <div class="rel-griglia">
+              <section class="rel-gruppo">
+                <h2 class="rel-titolo">Altri antiquari</h2>
+                <ul class="rel-elenco">
+                  <li>
+                    <a class="rel-scheda" href="dettaglio_GR_II.html">Grandi</a>
+                  </li>
+                  <li>
+                    <a class="rel-scheda" href="dettaglio_LO.html">Loewi</a>
+                  </li>
+                  <li>
+                    <a class="rel-scheda" href="dettaglio_PO_III.html">Pollak</a>
+                  </li>
+                </ul>
+              </section>
+              <section class="rel-gruppo">
+                <h2 class="rel-titolo">Collaboratori</h2>
+                <ul class="rel-elenco">
+                  <li>
+                    <span class="rel-nome">Adolfo Venturi</span>
+                    <span class="rel-qualifica">storico dell'arte</span>
+                  </li>
+                  <li>
+                    <span class="rel-nome">Arthur Sambon</span>
+                    <span class="rel-qualifica">storico dell'arte</span>
+                  </li>
+                  <li>
+                    <span class="rel-nome">Frederick Mason Perkins</span>
+                    <span class="rel-qualifica">storico dell'arte</span>
+                  </li>
+                  <li>
+                    <span class="rel-nome">Ludwig Pollak</span>
+                    <span class="rel-qualifica">storico dell'arte</span>
+                  </li>
+                </ul>
+              </section>
+            </div>
+          </div>
           <div id="Eventi" class="content">
-            <h3>Eventi significativi nell'attività antiquariale:</h3>
+            <h2>Eventi significativi nell'attività antiquariale</h2>
             <ul>
               <li>1896 - <i>Vendita Collezione Principe Orsini</i>: Vendita della collezione del Principe Orsini curata dalla Galleria Sangiorgi</li>
               <li>1901 - <i>Vendita Collezione Principe Torlonia</i>: Vendita della collezione del Principe Torlonia curata dalla Galleria Sangiorgi</li>
             </ul>
           </div>
-          <div id="Relazioni" class="content">
-            <h3>Altri antiquari:</h3>
-            <ul>
-            </ul>
-            <h3>Clienti:</h3>
-            <ul>
-            </ul>
-            <h3>Collaboratori:</h3>
-            <ul>
-              <li>Adolfo Venturi (storico dell'arte)</li>
-              <li>Arthur Sambon (storico dell'arte)</li>
-              <li>Frederick Mason Perkins (storico dell'arte)</li>
-              <li>Ludwig Pollak (storico dell'arte)</li>
-            </ul>
-          </div>
           <div id="Bibliografia" class="content">
-            <h3>Bibliografia essenziale:</h3>
+            <h2>Bibliografia essenziale</h2>
             <ul>
               <li>Batini, G. (1961), <i>L'antiquario</i>, Firenze, Vallecchi</li>
-              <li>Coen, P. (2020), <i>Il nuovo mercante itaiano e internazionale: Giuseppe Sangiorgi</i>, In Coen, pp. 279-320</li>
-              <li>Mambelli, F. (2020), <i>Il più grande centro commerciale di oggetti d’arte: la Galleria Sangiorgi tra strategie di marketing e artigianato artistico</i>, In Bacchi, Capitelli, pp. 185-227</li>
-              <li>Pollak, L., Merkel Guldan, M. (1994), <i>Römische Memoiren : Künstler, Kunstliebhaber und Gelehrte, 1893-1943</i>, Roma, L'Erma di Bretschneider</li>
-              <li>Tolosani, D. (1928), <i>Giuseppe Sangiorgi</i>, In «L'Antiquario», XV, 2, pp. 68-69</li>
+              <li>Coen, P. (2020), <i>Il nuovo mercante italiano e internazionale: Giuseppe Sangiorgi</i>, in Coen, pp. 279-320</li>
+              <li>Mambelli, F. (2020), <i>Il più grande centro commerciale di oggetti d’arte: la Galleria Sangiorgi tra strategie di marketing e artigianato artistico</i>, in Bacchi, Capitelli, pp. 185-227</li>
+              <li>Pollak, L., Merkel Guldan, M. (1994), <i>Römische Memoiren. Künstler, Kunstliebhaber und Gelehrte, 1893-1943</i>, Roma, L'Erma di Bretschneider</li>
+              <li>Tolosani, D. (1928), <i>Giuseppe Sangiorgi</i>, in «L'Antiquario», XV, 2, pp. 68-69</li>
             </ul>
-          </div>
-          <div id="Opere trattate" class="content">
-            <p>
-              Vedi le opere transitate presso l'antiquario presenti nel 
-              <a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=SANGIORGI" class="linkBio" target="_blank">
-                catalogo della Fondazione Zeri
-              </a>
-            </p>
           </div>
         </div>
       </div>
+      <nav class="scheda-sfoglia" aria-label="Altre schede">
+        <a href="dettaglio_SA_III.html">&#8592; Sambon</a>
+        <a href="dettaglio_SE_I.html">Segre &#8594;</a>
+      </nav>
     </main>
     <footer>
       <div class="footer-container">
+        <div class="footer-ente">
+          <a href="https://fondazionezeri.unibo.it/it/homepage" target="_blank" rel="noopener">
+            <img src="../../img/homepage/logo-negativo.png" alt="Fondazione Federico Zeri" />
+          </a>
+          <p>Progetto della <a href="https://fondazionezeri.unibo.it/it/homepage" target="_blank" rel="noopener">Fondazione Federico Zeri</a>, Università di Bologna.</p>
+        </div>
         <div class="footer-left">
-          <p>Licenza dati e immagini:</p>
-          <img id="license.png" src="../../img/homepage/license.png" alt="License" />
+          <p>Licenza dati e immagini: <img id="license.png" src="../../img/homepage/license.png" alt="License"></p>
         </div>
         <div class="footer-right">
-          <p>
-            <a href="../../html/crediti.html">
-              Crediti
-            </a>
-            |
-            <a href="https://github.com/FondazioneFedericoZeri/Mercato_dell_arte" target="_blank">
-              Documentazione
-            </a>
-          </p>
+          <p><a href="../../html/crediti.html">Crediti</a> | <a href="../../html/documentazione.html">Documentazione</a></p>
         </div>
       </div>
     </footer>

@@ -1,7 +1,30 @@
+import os
+import re
 import json
+import html as _html
 import pathlib
 import airium as a
 import docx
+
+# Nome del file delle entità, con o senza accento
+def _file_entita(*candidati):
+    for c in candidati:
+        if os.path.isfile(c):
+            return c
+    return candidati[0]   # nessuno dei due: si usa il primo
+
+
+def ENTITA_TSV():
+    return _file_entita("data/entita.tsv", "data/entità.tsv")
+
+
+def ENTITA_JSON():
+    return _file_entita("json/entita.json", "json/entità.json")
+
+
+def esc(s):
+    """Escape di & < > per il testo dentro il markup"""
+    return _html.escape(s or "", quote=False)
 
 
 def getText(filename):
@@ -22,7 +45,27 @@ def getTXT(filename):
     return fullText
 
 
+def fonte_archivistica(bibitem):
+    """Città, istituto, fondo e segnatura di una fonte d'archivio"""
+    pezzi = [(bibitem.get(k) or "").strip() for k in
+             ("Città, editore o rivista", "Istituto", "Fondo", "Segnatura")]
+    return ", ".join(p for p in pezzi if p)
+
+
+def collegamento(valore):
+    """Trasforma un indirizzo web in un link col nome del sito"""
+    v = (valore or "").strip()
+    if not v.startswith(("http://", "https://")):
+        return v
+    dominio = re.sub(r"^https?://(www\.)?", "", v).split("/")[0]
+    return (f'<a href="{v}" target="_blank" rel="noopener" '
+            f'class="bib-web">{dominio}</a>')
+
+
 def getBib(bibitem):
+    if (bibitem.get("Tipologia") or "").strip() == "fonte archivistica":
+        return fonte_archivistica(bibitem)
+
     s = ""
 
     anything_before_title = False
@@ -42,21 +85,37 @@ def getBib(bibitem):
 
     s += f"<i>{bibitem['Titolo']}</i>"
 
+    # completamento del titolo, dopo il titolo e fuori dal corsivo
+    completamento = (bibitem.get('Completamento del titolo') or "").strip()
+    if completamento:
+        s += f", {completamento}"
+
     if len(bibitem['Città, editore o rivista']) > 0:
-        s += f", {bibitem['Città, editore o rivista']}"
+        s += f", {collegamento(bibitem['Città, editore o rivista'])}"
 
     if len(bibitem["Pagine"]) > 0:
-        s += f", {bibitem['Pagine']}"
+        s += f", {collegamento(bibitem['Pagine'])}"
 
     return s
 
 
 def getCollaboratore(coll_item):
-    s = ""
-    if len(coll_item["Nome"]) > 0:
-        s += f"{coll_item['Nome']} "
-    s += f"{coll_item['Cognome / Denominazione']} ({coll_item['Tipologia']})"
-    return s
+    nome, qualifica = collaboratore_parti(coll_item)
+    return f"{nome} ({qualifica})" if qualifica else nome
+
+
+def gruppo_klass(voci, soglia=10):
+    """Classe della colonna delle relazioni, larga se i nomi sono tanti"""
+    return "rel-gruppo rel-gruppo-largo" if len(voci) > soglia else "rel-gruppo"
+
+
+def collaboratore_parti(coll_item):
+    """Nome e qualifica del collaboratore, separati"""
+    nome = " ".join(p for p in (
+        (coll_item.get("Nome") or "").strip(),
+        (coll_item.get("Cognome / Denominazione") or "").strip(),
+    ) if p)
+    return nome, (coll_item.get("Tipologia") or "").strip()
 
 
 def getCliente(cl_item, people):
@@ -64,15 +123,6 @@ def getCliente(cl_item, people):
     if len(cl_item["Nome"]) > 0:
         s += f"{cl_item['Nome']} "
     s += f"{cl_item['Cognome']} "
-
-    # if len(cl_item['vendite']) == 1:
-    # 	if cl_item['vendite'][0] == "Generic":
-    # 		s+=f"(1 compravendita)"
-    # 	else:
-    # 		person_id = cl_item['vendite'][0]
-    # 		s+=f"(1 compravendita con {people[person_id]['Nome Persona']})"
-    # else:
-    # 	s+=f"({len(cl_item['vendite'])} compravendite)"
     return s
 
 
@@ -82,269 +132,503 @@ def getEvento(ev_item):
     return s
 
 
-def build_html_head(page):
+# Dati della testata: sottotitolo e scheda di sintesi
+
+def luoghi_entita(entity):
+    """Luoghi dell'entità dal campo "Luoghi", in ordine di apertura"""
+    luoghi = list((entity.get("Luoghi") or {}).values())
+
+    def chiave(l):
+        ap = (l.get("Apertura") or "").strip()
+        return int(ap[:4]) if ap[:4].isdigit() else 9999
+
+    return sorted(luoghi, key=chiave)
+
+
+def _anno(valore):
+    valore = (valore or "").strip()
+    return int(valore[:4]) if valore[:4].isdigit() else None
+
+
+def elenco(voci, congiunzione="e"):
+    """'a', 'a e b', 'a, b e c', senza virgola prima della congiunzione."""
+    voci = [v for v in voci if v]
+    if not voci:
+        return ""
+    if len(voci) == 1:
+        return voci[0]
+    return ", ".join(voci[:-1]) + f" {congiunzione} " + voci[-1]
+
+
+def sottotitolo(entity):
+    """Città e periodo di attività, es. Torino, in attività dal 1912 al 1975"""
+    luoghi = luoghi_entita(entity)
+    if not luoghi:
+        return ""
+
+    citta = []
+    for l in luoghi:
+        c = (l.get("Città") or "").strip()
+        if c and c not in citta:
+            citta.append(c)
+    if len(citta) > 3:
+        testo_citta = elenco(citta[:2]) + f" e altre {len(citta) - 2} città"
+    else:
+        testo_citta = elenco(citta)
+
+    aperture = [a for a in (_anno(l.get("Apertura")) for l in luoghi) if a]
+    chiusure = [c for c in (_anno(l.get("Chiusura")) for l in luoghi) if c]
+    tuttora = any((l.get("Chiusura") or "").strip().lower() == "in attività"
+                  for l in luoghi)
+
+    # Se è ancora aperta solo "in attività dal"
+    if aperture and tuttora:
+        attivita = f"in attività dal {min(aperture)}"
+    elif aperture and chiusure and max(chiusure) > min(aperture):
+        attivita = f"in attività dal {min(aperture)} al {max(chiusure)}"
+    elif aperture:
+        attivita = f"in attività dal {min(aperture)}"
+    elif tuttora:
+        attivita = "tuttora in attività"
+    else:
+        attivita = ""
+
+    return ", ".join([p for p in (testo_citta, attivita) if p])
+
+
+def righe_persone(entity):
+    """Nome in grassetto, date e professione di ogni persona della scheda"""
+    righe = []
+    for persona in (entity.get("Persone") or {}).values():
+        nome = (persona.get("Nome Persona") or "").strip()
+        if not nome:
+            continue           # le persone senza nome non si mostrano
+        pezzi = [f"<strong>{esc(nome)}</strong>"]
+        nascita = (persona.get("Nascita") or "").strip()
+        morte = (persona.get("Morte") or "").strip()
+        if nascita or morte:
+            if morte.lower() == "in vita":
+                pezzi.append(f"{nascita}–" if nascita else "")
+            else:
+                pezzi.append(f"{nascita or '?'}–{morte or '?'}")
+        professione = (persona.get("Professione") or "").strip()
+        if professione:
+            pezzi.append(professione)
+        righe.append(", ".join([p for p in pezzi if p]))
+    return righe
+
+
+def scheda_sintesi(entity):
+    """Righe delle persone per lo specchietto"""
+    return list(righe_persone(entity))
+
+
+def persone_albero(entity_id, parentela):
+    """Numero di persone nell'albero familiare, come in albero-familiare.js"""
+    dati = parentela.get(entity_id)
+    if not dati:
+        return 0
+    persone = {pid for pid, p in (dati.get("Persone") or {}).items()
+               if (p.get("Nome") or "").strip()}
+    collegate = set()
+    for r in dati.get("Relazioni", []):
+        if r.get("Persona_1") in persone and r.get("Persona_2") in persone:
+            collegate.add(r["Persona_1"])
+            collegate.add(r["Persona_2"])
+    return len(collegate)
+
+
+def build_html_head(page, entity):
     with page.head():
         page.meta(charset="UTF-8")
         page.meta(name="viewport",
                   content="width=device-width, initial-scale=1.0")
-        page.title(_t="Dettaglio Antiquari")
+        # Titolo della pagina col nome della scheda
+        page.title(_t=f"{entity['Nome']} | Mercato dell'arte")
+        page.meta(name="description",
+                  content=f"{entity['Nome']}: scheda dell'entità "
+                          f"antiquariale nel progetto Mercato dell'arte "
+                          f"della Fondazione Federico Zeri.")
 
+        # Font: Playfair Display per i titoli, DM Sans per il testo
+        page.link(rel="preconnect", href="https://fonts.googleapis.com")
+        page.link(rel="preconnect",
+                  href="https://fonts.gstatic.com", crossorigin="")
         page.link(
-            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap", rel="stylesheet")
-        page.link(
-            href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;700&display=swap", rel="stylesheet")
+            href="https://fonts.googleapis.com/css2?"
+                 "family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&"
+                 "family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&"
+                 "display=swap", rel="stylesheet")
         page.link(rel="stylesheet",
                   href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css")
         page.link(rel="stylesheet",
                   href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css")
         page.link(rel="stylesheet",
                   href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css")
+        # tokens.css prima del foglio di pagina, che ne usa le variabili
+        page.link(rel="stylesheet", href="../../css/tokens.css")
         page.link(rel="stylesheet",
                   href="../../css/styles-dettaglioAntiquario.css")
+        # Bottone "torna su"
+        page.link(rel="stylesheet", href="../../css/torna-su.css")
         page.script(type="text/javascript",
                     src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js")
-        page.script(type="text/javascript",
-                    src="https://cdn.amcharts.com/lib/5/index.js")
-        page.script(type="text/javascript",
-                    src="https://cdn.amcharts.com/lib/5/hierarchy.js")
-        page.script(type="text/javascript",
-                    src="https://cdn.amcharts.com/lib/5/themes/Animated.js")
         page.script(type="text/javascript",
                     src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js")
         page.script(type="text/javascript",
                     src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js")
+        page.script(src="../../script/menu.js", defer="")
+        page.script(type="text/javascript",
+                    src="../../script/galleria.js")
+        page.script(type="text/javascript",
+                    src="../../script/albero-familiare.js")
         page.script(type="text/javascript",
                     src="../../script/dettaglioAntiquari.js")
         page.script(type="text/javascript",
                     src="../../script/mappaDettaglio.js")
+        page.script(src="../../script/torna-su.js", defer="")
 
-        # TODO aggiungi mappa
-        # page.script()
+
+ZERI = "https://fondazionezeri.unibo.it/it/homepage"
 
 
 def build_header(page):
-
+    """Nome del progetto a sinistra, logo della Fondazione a destra"""
     with page.header():
         with page.div(klass="header-container"):
-            with page.a(href="../../index.html"):
-                page.img(id="logo.png", src="../../img/homepage/logo.png",
-                         alt="Fondazione Federico Zeri")
-            with page.nav():
-                with page.ul():
-                    with page.li():
-                        page.a(_t="Progetto", href="../progetto.html")
-                        page.a(_t="Antiquari", href="../antiquari.html")
-                        page.a(_t="Luoghi", href="../luoghi.html")
-                        page.a(_t="Eventi", href="../eventi.html")
-                        page.a(_t="Persone", href="../persone.html")
-                        page.a(_t="Bibliografia", href="../bibliografia.html")
+            page.a(klass="marchio", href="../../index.html",
+                   _t="Mercato dell'arte")
+            # Bottone del menu per schermi piccoli
+            page.button(klass="menu-toggle", type="button",
+                        **{"aria-label": "Apri menu"}, _t="&#9776;")
+            with page.div(klass="testata-destra"):
+                with page.nav():
+                    with page.ul(klass="menu"):
+                        page.li().a(_t="Progetto", href="../progetto.html")
+                        page.li().a(_t="Antiquari", href="../antiquari.html")
+                        page.li().a(_t="Luoghi", href="../luoghi.html")
+                        page.li().a(_t="Eventi", href="../eventi.html")
+                        page.li().a(_t="Persone", href="../persone.html")
+                        page.li().a(_t="Bibliografia", href="../bibliografia.html")
+                page.span(klass="testata-filo")
+                with page.a(klass="testata-ente", href=ZERI, target="_blank",
+                            rel="noopener",
+                            title="Fondazione Federico Zeri, Universit\u00e0 di Bologna"):
+                    page.img(src="../../img/homepage/logo.png",
+                             alt="Fondazione Federico Zeri")
 
 
-def build_html(entity, entities):
+def bottone_zoom(page):
+    """Bottone con la lente per ingrandire la fotografia"""
+    with page.button(klass="gal-zoom", type="button",
+                     **{"aria-label": "Ingrandisci la fotografia"}):
+        page('<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" '
+             'stroke-width="2" stroke-linecap="round" aria-hidden="true">'
+             '<circle cx="11" cy="11" r="7"></circle>'
+             '<path d="M20 20l-4.3-4.3M11 8v6M8 11h6"></path></svg>')
+
+
+def build_fascia(page, entity, imgs, images_description):
+    """Fascia blu con ritorno all'elenco, nome, sottotitolo e fotografia"""
+    klass = "scheda-fascia" if imgs else "scheda-fascia senza-foto"
+    with page.section(klass=klass):
+        with page.div(klass="scheda-fascia-testo"):
+            page.a(klass="scheda-torna", href="../antiquari.html",
+                   _t="&#8592; Tutti gli antiquari")
+            page.h1(klass="scheda-nome", _t=entity["Nome"])
+            testo = sottotitolo(entity)
+            if testo:
+                page.p(klass="scheda-sottotitolo", _t=esc(testo))
+
+        if len(imgs) == 1:
+            img = f"{imgs[0]}.jpg"
+            desc = images_description.get(img, {}).get("Didascalia", entity["Nome"])
+            with page.figure(id="single-image-container"):
+                page.img(src=f"../../img/slider-antiquari/{img}", alt=f"{desc}")
+                page.figcaption(_t=f"{desc}", klass="caption")
+                bottone_zoom(page)
+
+        elif len(imgs) > 1:
+            with page.div(klass="slider-container"):
+                with page.div(klass="slider"):
+                    for nome in imgs:
+                        img = f"{nome}.jpg"
+                        desc = images_description.get(img, {}).get(
+                            "Didascalia", entity["Nome"])
+                        with page.div(klass="slide"):
+                            page.img(src=f"../../img/slider-antiquari/{img}",
+                                     alt=f"{desc}")
+                            page.div(_t=f"{desc}", klass="caption")
+                # Frecce della galleria, gestite in script/galleria.js
+                page.button(klass="prev", type="button",
+                            **{"aria-label": "Fotografia precedente"},
+                            _t="&#10094;")
+                page.button(klass="next", type="button",
+                            **{"aria-label": "Fotografia successiva"},
+                            _t="&#10095;")
+                bottone_zoom(page)
+
+
+def build_sfoglia(page, entity, ordinate):
+    """Scheda precedente e successiva, in ordine alfabetico"""
+    ids = [e["ID"] for e in ordinate]
+    i = ids.index(entity["ID"])
+    prec = ordinate[i - 1] if i > 0 else None
+    succ = ordinate[i + 1] if i < len(ordinate) - 1 else None
+    nome = entity["Nome"]
+
+    with page.nav(klass="scheda-sfoglia", **{"aria-label": "Altre schede"}):
+        if prec:
+            page.a(href=f"dettaglio_{prec['ID']}.html",
+                   _t=f"&#8592; {esc(prec['Nome'])}")
+        else:
+            page.span(klass="vuoto",
+                      _t=f"&#8592; {esc(nome)} non ha un precedente")
+        if succ:
+            page.a(href=f"dettaglio_{succ['ID']}.html",
+                   _t=f"{esc(succ['Nome'])} &#8594;")
+        else:
+            page.span(klass="vuoto",
+                      _t=f"{esc(nome)} non ha un successivo &#8594;")
+
+
+def build_html(entity, entities, parentela, ordinate):
 
     images_description = json.loads(
         open("json/didascalie.json", encoding="utf-8").read())
     people = json.loads(open("json/persone.json", encoding="utf-8").read())
 
-    imgs = entity["Foto gallery"]
+    imgs = [img for img in entity["Foto gallery"] if img and img.strip()]
+
+    # Cosa c'è in questa scheda
+    bio_file = pathlib.Path(f"bio-txt/{entity['Bio']}.txt")
+    bio = getTXT(str(bio_file)) if bio_file.is_file() else []
+
+    n_albero = persone_albero(entity["ID"], parentela)
+    luoghi = luoghi_entita(entity)
+    # Tiene solo i codici che sono entità esistenti
+    altri = [i for i in (entity.get("Relazioni") or {}) if i in entities]
+    clienti = entity.get("Clienti") or {}
+    collaboratori = entity.get("Collaboratori") or {}
+    n_relazioni = len(altri) + len(clienti) + len(collaboratori)
+    eventi = entity.get("Eventi") or {}
+    biblio = entity.get("Bibliografia") or {}
+
+    # (etichetta, id del contenuto, numero da mostrare), solo i pieni
+    tab = []
+    if bio:
+        tab.append(("Dati biografici", "Bio", 0))
+    if n_albero:
+        tab.append(("Albero familiare", "Persone", n_albero))
+    if luoghi:
+        tab.append(("Luoghi", "Localizzazioni", len(luoghi)))
+    if n_relazioni:
+        tab.append(("Relazioni", "Relazioni", n_relazioni))
+    if eventi:
+        tab.append(("Eventi", "Eventi", len(eventi)))
+    if biblio:
+        tab.append(("Bibliografia", "Bibliografia", len(biblio)))
+
+    primo = tab[0][1] if tab else ""
+
+    def klass_contenuto(nome):
+        return "content active-content" if nome == primo else "content"
 
     page = a.Airium()
     page('<!DOCTYPE html>')
 
     with page.html(lang="it"):
 
-        build_html_head(page)
+        build_html_head(page, entity)
 
         with page.body():
             build_header(page)
 
-            with page.main():
-                print(entity["ID"], len(imgs))
+            with page.main(klass="scheda"):
 
-                with page.section(id="image-gallery"):
-                    next_div_class = "gallery-wrapper"
-                    if len(imgs) == 0:
-                        next_div_class = "gallery-wrapper no-imgs"
-                    with page.div(klass=next_div_class):
-                        page.h2(klass="gallery-title", _t=entity["Nome"])
+                build_fascia(page, entity, imgs, images_description)
 
-                        if len(imgs) == 1:
-                            with page.div(id="single-image-container"):
-                                desc = entity['Nome']
-                                img = f"{imgs[0]}.jpg"
+                # Specchietto sotto la fascia: persone e link al catalogo Zeri
+                voci = scheda_sintesi(entity)
+                link_zeri = (entity.get("Link Zeri") or "").strip()
+                if voci or link_zeri:
+                    with page.dl(klass="scheda-striscia"):
+                        if voci:
+                            page.dt(_t="Persone")
+                            with page.dd():
+                                with page.ul(klass="striscia-elenco"):
+                                    for voce in voci:
+                                        page.li(klass="striscia-voce", _t=voce)
+                        if link_zeri:
+                            page.dt(_t="Opere transitate")
+                            with page.dd():
+                                page.a(klass="striscia-link", href=link_zeri,
+                                       target="_blank", rel="noopener",
+                                       _t="Catalogo della Fondazione Zeri "
+                                          "&#8594;")
 
-                                if img in images_description:
-                                    desc = images_description[img]["Didascalia"]
+                # Corpo a due colonne: tab a sinistra, contenuto a destra
+                with page.div(klass="scheda-corpo"):
 
-                                page.img(src=f"../../img/slider-antiquari/{img}", alt=f"{desc}")
-                                page.div(_t=f"{desc}", klass="caption overlay-caption")
+                    if tab:
+                        with page.nav(klass="scheda-tab",
+                                      **{"aria-label": "Sezioni della scheda"}):
+                            for etichetta, contenuto, numero in tab:
+                                attivo = " active" if contenuto == primo else ""
+                                with page.button(klass=f"tab{attivo}",
+                                                 type="button",
+                                                 data_content=contenuto):
+                                    page.span(klass="tab-voce", _t=etichetta)
+                                    if numero:
+                                        page.span(klass="tab-num", _t=str(numero))
 
-                        elif len(imgs) > 1:
-                            with page.div(klass="slider-container"):
-                                with page.div(klass="slider"):
-                                    for img in imgs:
-                                        img = f"{img}.jpg"
-                                        desc = {entity['Nome']}
-                                        if img in images_description:
-                                            desc = images_description[img]["Didascalia"]
+                    with page.div(klass="scheda-contenuto"):
 
-                                        with page.div(klass="slide"):
-                                            page.img(
-                                                src=f"../../img/slider-antiquari/{img}", alt=f"{desc}")
-                                            page.div(_t=f"{desc}", klass="caption")
-                                page.button("&#10094;", klass="prev",
-                                            onclick="prevSlide()", _t = "<")
-                                page.button("&#10095;", klass="next",
-                                            onclick="nextSlide()", _t = ">")
+                        if bio:
+                            with page.div(id="Bio", klass=klass_contenuto("Bio")):
+                                for paragrafo in bio:
+                                    page.p(_t=paragrafo)
 
+                        if n_albero:
+                            with page.div(id="Persone",
+                                          klass=klass_contenuto("Persone")):
+                                # Titolo e legenda dell'albero
+                                with page.div(klass="af-intestazione"):
+                                    page.h2(_t="Relazioni familiari")
+                                    page.div(id="af-legenda", klass="af-legenda")
+                                page.div(id="albero-genealogico")
 
-                with page.div(klass="dual-content-wrapper"):
-                    with page.div(klass="tab-container"):
-                        with page.ul(klass="tab-list"):
-                            page.li(_t="Dati biografici", klass="tab active",
-                                    data_content="Bio")
-                            page.li(_t="Albero familiare", klass="tab",
-                                    data_content="Persone")
-                            page.li(_t="Luoghi", klass="tab",
-                                    data_content="Localizzazioni")
+                        if luoghi:
+                            with page.div(id="Localizzazioni",
+                                          klass=klass_contenuto("Localizzazioni")):
+                                with page.section(id="map"):
+                                    page.div(id="chartdiv")
 
-                            tot_relations = len(entity["Relazioni"]) + len(entity["Collaboratori"]) + len(entity["Clienti"])
-                            if tot_relations > 0:
-                                page.li(_t="Relazioni", klass="tab",
-                                        data_content="Relazioni")
+                        if n_relazioni:
+                            with page.div(id="Relazioni",
+                                          klass=klass_contenuto("Relazioni")):
+                                # Categorie affiancate, solo quelle con dati
+                                with page.div(klass="rel-griglia"):
 
-                            if len(entity["Eventi"]) > 0:
-                                page.li(_t="Eventi", klass="tab",
-                                        data_content="Eventi")
+                                    if altri:
+                                        with page.section(klass="rel-gruppo"):
+                                            page.h2(klass="rel-titolo",
+                                                    _t="Altri antiquari")
+                                            with page.ul(klass="rel-elenco"):
+                                                ordinati = sorted(
+                                                    altri,
+                                                    key=lambda i: entities[i]["Nome"].lower())
+                                                for relent_id in ordinati:
+                                                    nome = entities[relent_id]["Nome"]
+                                                    with page.li():
+                                                        page.a(klass="rel-scheda",
+                                                               href=f"dettaglio_{relent_id}.html",
+                                                               _t=esc(nome))
 
-                            if len(entity["Bibliografia"]) > 0:
-                                page.li(_t="Bibliografia", klass="tab",
-                                        data_content="Bibliografia")
+                                    if clienti:
+                                        # Clienti in ordine alfabetico sul nome intero
+                                        nomi = sorted(
+                                            (getCliente(c, people).strip()
+                                             for c in clienti.values()),
+                                            key=lambda s: s.lower())
+                                        with page.section(klass=gruppo_klass(nomi)):
+                                            page.h2(klass="rel-titolo", _t="Clienti")
+                                            with page.ul(klass="rel-elenco"):
+                                                for nome in nomi:
+                                                    page.li(_t=esc(nome))
 
-                            page.li(_t="Opere trattate",
-                                    klass="tab", data_content="Opere trattate")
+                                    if collaboratori:
+                                        voci = sorted(
+                                            (collaboratore_parti(c)
+                                             for c in collaboratori.values()),
+                                            key=lambda v: v[0].lower())
+                                        with page.section(klass=gruppo_klass(voci)):
+                                            page.h2(klass="rel-titolo",
+                                                    _t="Collaboratori")
+                                            with page.ul(klass="rel-elenco"):
+                                                for nome, qualifica in voci:
+                                                    with page.li():
+                                                        page.span(klass="rel-nome",
+                                                                  _t=esc(nome))
+                                                        if qualifica:
+                                                            page.span(
+                                                                klass="rel-qualifica",
+                                                                _t=esc(qualifica))
 
-                    with page.div(klass="content-card"):
-                        with page.div(id="Bio", klass="content active-content"):
-                            # content = getText(f"../bio/{entity['Bio']}.docx")
-                            bio_filename = pathlib.Path(f"bio-txt/{entity['Bio']}.txt")
-                            if bio_filename.is_file():
-                                content = getTXT(f"bio-txt/{entity['Bio']}.txt")
-                                # page.h3(_t=f"{content[0]}")
-                                for paragraph in content:
-                                    page.p(_t=paragraph)
-
-                        with page.div(id="Persone", klass="content"):
-                            page.h3(
-                                _t=f"Relazioni familiari:")
-                            page.div(id="albero-genealogico")
-
-                        with page.div(id="Localizzazioni", klass="content"):
-                            with page.section(id="map"):
-                                page.div(id="chartdiv")
-
-                        # if len(entity["Collaboratori"]) > 0:
-                        #     with page.div(id="Collaboratori", klass="content"):
-                        #         page.h3(
-                        #             _t=f"Hanno collaborato con l'entità {entity['Nome']}:")
-                        #         with page.ul():
-                        #             for coll_item, coll_data in sorted(entity["Collaboratori"].items(), key=lambda x: (x[1]["Nome"], x[1]["Cognome / Denominazione"])):
-                        #                 coll_string = getCollaboratore(
-                        #                     coll_data)
-                        #                 page.li(_t=coll_string)
-
-                        # if len(entity["Clienti"]) > 0:
-                        #     with page.div(id="Clienti", klass="content"):
-                        #         page.h3(
-                        #             _t=f"I principali clienti dell'entità {entity['Nome']} sono stati:")
-                        #         with page.ul():
-                        #             for cl_item, cl_data in sorted(entity["Clienti"].items(), key=lambda x: (x[1]["Nome"], x[1]["Cognome"])):
-                        #                 cl_string = getCliente(cl_data, people)
-                        #                 page.li(_t=cl_string)
-
-                        if len(entity["Eventi"]) > 0:
-                            with page.div(id="Eventi", klass="content"):
-                                page.h3(
-                                    _t="Eventi significativi nell'attività antiquariale:")
+                        if eventi:
+                            with page.div(id="Eventi",
+                                          klass=klass_contenuto("Eventi")):
+                                page.h2(_t="Eventi significativi nell'attività antiquariale")
                                 with page.ul():
-                                    for ev_item, ev_data in sorted(entity["Eventi"].items(), key=lambda x: x[1]["Anno"]):
-                                        ev_string = getEvento(ev_data)
-                                        page.li(_t=ev_string)
+                                    for _, ev_data in sorted(eventi.items(),
+                                                             key=lambda x: x[1]["Anno"]):
+                                        page.li(_t=getEvento(ev_data))
 
-                        if tot_relations > 0:
-                            with page.div(id="Relazioni", klass="content"):
+                        if biblio:
+                            with page.div(id="Bibliografia",
+                                          klass=klass_contenuto("Bibliografia")):
+                                # Bibliografia, fonti archivistiche e interviste separate
+                                def _tip(v):
+                                    return (v.get("Tipologia") or "").strip()
 
-                                page.h3(_t=f"Altri antiquari:")
-                                with page.ul():
-                                    for relent_id in entity['Relazioni']:
-                                        with page.li():
-                                            page.a(
-                                            href=f"dettaglio_{relent_id}.html", _t=f"{entities[relent_id]['Nome']}")
-                                page.h3(_t=f"Clienti:")
-                                with page.ul():
-                                    for cl_item, cl_data in sorted(entity["Clienti"].items(), key=lambda x: (x[1]["Nome"], x[1]["Cognome"])):
-                                        cl_string = getCliente(cl_data, people)
-                                        page.li(_t=cl_string)
-                                page.h3(_t=f"Collaboratori:")
-                                with page.ul():
-                                    for coll_item, coll_data in sorted(entity["Collaboratori"].items(), key=lambda x: (x[1]["Nome"], x[1]["Cognome / Denominazione"])):
-                                        coll_string = getCollaboratore(
-                                            coll_data)
-                                        page.li(_t=coll_string)
+                                interviste = {k: v for k, v in biblio.items()
+                                              if _tip(v) == "intervista"}
+                                archivio = {k: v for k, v in biblio.items()
+                                            if _tip(v) == "fonte archivistica"}
+                                altra = {k: v for k, v in biblio.items()
+                                         if _tip(v) not in ("intervista", "fonte archivistica")}
 
-                        if len(entity["Bibliografia"]) > 0:
-                            with page.div(id="Bibliografia", klass="content"):
-                                interviste = {bib_item:bib_entry for bib_item, bib_entry in entity["Bibliografia"].items() if bib_entry["Tipologia"] == "intervista"}
-                                altra_bibliografia = {bib_item:bib_entry for bib_item, bib_entry in entity["Bibliografia"].items() if not bib_entry["Tipologia"] == "intervista"}
-                                if len(altra_bibliografia)>0:
-                                    page.h3(_t="Bibliografia essenziale:")
+                                def _elenco(titolo, voci, chiave):
+                                    if not voci:
+                                        return
+                                    page.h2(_t=titolo)
                                     with page.ul():
-                                        # print(entity["Bibliografia"].items())
-                                        # input()
+                                        for _, bib in sorted(voci.items(), key=chiave):
+                                            page.li(_t=getBib(bib))
 
-                                        for bib_item, bib_entry in sorted(altra_bibliografia.items(), key=lambda x: (x[1]["Autore"], x[1]["Anno"])):
-                                            bib_string = getBib(bib_entry)
-                                            page.li(_t=bib_string)
-                                if len(interviste)>0:
-                                    page.h3(_t="Interviste:")
-                                    with page.ul():
-                                        for bib_item, bib_entry in sorted(interviste.items(), key=lambda x: (x[1]["Autore"], x[1]["Anno"])):
-                                            bib_string = getBib(bib_entry)
-                                            page.li(_t=bib_string)
+                                _elenco("Bibliografia essenziale", altra,
+                                        lambda x: (x[1]["Autore"], x[1]["Anno"]))
+                                _elenco("Fonti archivistiche", archivio,
+                                        lambda x: ((x[1].get("Istituto") or ""),
+                                                   (x[1].get("Fondo") or "")))
+                                _elenco("Interviste", interviste,
+                                        lambda x: (x[1]["Autore"], x[1]["Anno"]))
 
-                        with page.div(id="Opere trattate", klass="content"):
-                            with page.p():
-                                page("Vedi le opere transitate presso l'antiquario presenti nel ")
-                                with page.a(href=entity["Link Zeri"], klass="linkBio", target="_blank"):
-                                    page("catalogo della Fondazione Zeri")
-
+                build_sfoglia(page, entity, ordinate)
 
             with page.footer():
                 with page.div(klass="footer-container"):
+                    with page.div(klass="footer-ente"):
+                        with page.a(href=ZERI, target="_blank", rel="noopener"):
+                            page.img(src="../../img/homepage/logo-negativo.png",
+                                     alt="Fondazione Federico Zeri")
+                        # Frase in un pezzo solo, per evitare spazi in più
+                        page.p(_t='Progetto della <a href="' + ZERI + '" target="_blank" rel="noopener">Fondazione Federico Zeri</a>, Universit\u00e0 di Bologna.')
+                    # Bollino della licenza dentro il <p>, accanto al testo
                     with page.div(klass="footer-left"):
-                        page.p(_t='Licenza dati e immagini:')
-                        page.img(
-                            id="license.png", src="../../img/homepage/license.png", alt="License")
+                        page.p(_t='Licenza dati e immagini: <img id="license.png" '
+                                  'src="../../img/homepage/license.png" alt="License">')
                     with page.div(klass="footer-right"):
-                        with page.p():
-                            with page.a(href="../../html/crediti.html"):
-                                page("Crediti")
-                            page("|")
-                            with page.a(href="https://github.com/FondazioneFedericoZeri/Mercato_dell_arte",
-                                        target="_blank"):
-                                page("Documentazione")
+                        page.p(_t='<a href="../../html/crediti.html">Crediti</a> | '
+                                  '<a href="../../html/documentazione.html">Documentazione</a>')
 
-
-    # Get the generated HTML as a string
     html_content = str(page)
 
-    # Optional: Save the HTML to a file
     with open(f"html/dettagli/dettaglio_{entity['ID']}.html", "w", encoding="utf-8") as f:
         f.write(html_content)
 
 
 if __name__ == "__main__":
-    entities = json.loads(open("json/entità.json", encoding="utf-8").read())
+    entities = json.loads(open(ENTITA_JSON(), encoding="utf-8").read())
+
+    parentela = {}
+    if os.path.isfile("json/parentela.json"):
+        parentela = json.loads(
+            open("json/parentela.json", encoding="utf-8").read())
+
+    # ordine alfabetico, per i rimandi "scheda precedente / successiva"
+    ordinate = sorted(entities.values(),
+                      key=lambda e: (e["Nome"] or "").strip().lower())
 
     for entity in entities:
-        build_html(entities[entity], entities)
+        build_html(entities[entity], entities, parentela, ordinate)

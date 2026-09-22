@@ -3,60 +3,106 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dettaglio Antiquari</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;700&display=swap" rel="stylesheet" />
+    <title>Ventura | Mercato dell'arte</title>
+    <meta name="description" content="Ventura: scheda dell'entità antiquariale nel progetto Mercato dell'arte della Fondazione Federico Zeri." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="../../css/tokens.css" />
     <link rel="stylesheet" href="../../css/styles-dettaglioAntiquario.css" />
+    <link rel="stylesheet" href="../../css/torna-su.css" />
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/index.js"></script>
-    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/hierarchy.js"></script>
-    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
     <script type="text/javascript" src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script type="text/javascript" src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+    <script src="../../script/menu.js" defer=""></script>
+    <script type="text/javascript" src="../../script/galleria.js"></script>
+    <script type="text/javascript" src="../../script/albero-familiare.js"></script>
     <script type="text/javascript" src="../../script/dettaglioAntiquari.js"></script>
     <script type="text/javascript" src="../../script/mappaDettaglio.js"></script>
+    <script src="../../script/torna-su.js" defer=""></script>
   </head>
   <body>
     <header>
       <div class="header-container">
-        <a href="../../index.html">
-          <img id="logo.png" src="../../img/homepage/logo.png" alt="Fondazione Federico Zeri" />
-        </a>
-        <nav>
-          <ul>
-            <li>
-              <a href="../progetto.html">Progetto</a>
-              <a href="../antiquari.html">Antiquari</a>
-              <a href="../luoghi.html">Luoghi</a>
-              <a href="../eventi.html">Eventi</a>
-              <a href="../persone.html">Persone</a>
-              <a href="../bibliografia.html">Bibliografia</a>
-            </li>
-          </ul>
-        </nav>
+        <a class="marchio" href="../../index.html">Mercato dell'arte</a>
+        <button class="menu-toggle" type="button" aria-label="Apri menu">&#9776;</button>
+        <div class="testata-destra">
+          <nav>
+            <ul class="menu">
+              <li>
+                <a href="../progetto.html">Progetto</a>
+              </li>
+              <li>
+                <a href="../antiquari.html">Antiquari</a>
+              </li>
+              <li>
+                <a href="../luoghi.html">Luoghi</a>
+              </li>
+              <li>
+                <a href="../eventi.html">Eventi</a>
+              </li>
+              <li>
+                <a href="../persone.html">Persone</a>
+              </li>
+              <li>
+                <a href="../bibliografia.html">Bibliografia</a>
+              </li>
+            </ul>
+          </nav>
+          <span class="testata-filo"></span>
+          <a class="testata-ente" href="https://fondazionezeri.unibo.it/it/homepage" target="_blank" rel="noopener" title="Fondazione Federico Zeri, Università di Bologna">
+            <img src="../../img/homepage/logo.png" alt="Fondazione Federico Zeri" />
+          </a>
+        </div>
       </div>
     </header>
-    <main>
-      <section id="image-gallery">
-        <div class="gallery-wrapper no-imgs">
-          <h2 class="gallery-title">Ventura</h2>
+    <main class="scheda">
+      <section class="scheda-fascia senza-foto">
+        <div class="scheda-fascia-testo">
+          <a class="scheda-torna" href="../antiquari.html">&#8592; Tutti gli antiquari</a>
+          <h1 class="scheda-nome">Ventura</h1>
+          <p class="scheda-sottotitolo">Firenze, in attività dal 1979 al 1985</p>
         </div>
       </section>
-      <div class="dual-content-wrapper">
-        <div class="tab-container">
-          <ul class="tab-list">
-            <li class="tab active" data_content="Bio">Dati biografici</li>
-            <li class="tab" data_content="Persone">Albero familiare</li>
-            <li class="tab" data_content="Localizzazioni">Luoghi</li>
-            <li class="tab" data_content="Relazioni">Relazioni</li>
-            <li class="tab" data_content="Bibliografia">Bibliografia</li>
-            <li class="tab" data_content="Opere trattate">Opere trattate</li>
+      <dl class="scheda-striscia">
+        <dt>Persone</dt>
+        <dd>
+          <ul class="striscia-elenco">
+            <li class="striscia-voce"><strong>Eugenio Ventura</strong>, 1887–1949, antiquario</li>
+            <li class="striscia-voce"><strong>Paola Ventura</strong>, antiquario</li>
           </ul>
-        </div>
-        <div class="content-card">
+        </dd>
+        <dt>Opere transitate</dt>
+        <dd>
+          <a class="striscia-link" href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Ventura" target="_blank" rel="noopener">Catalogo della Fondazione Zeri &#8594;</a>
+        </dd>
+      </dl>
+      <div class="scheda-corpo">
+        <nav class="scheda-tab" aria-label="Sezioni della scheda">
+          <button class="tab active" type="button" data_content="Bio">
+            <span class="tab-voce">Dati biografici</span>
+          </button>
+          <button class="tab" type="button" data_content="Persone">
+            <span class="tab-voce">Albero familiare</span>
+            <span class="tab-num">2</span>
+          </button>
+          <button class="tab" type="button" data_content="Localizzazioni">
+            <span class="tab-voce">Luoghi</span>
+            <span class="tab-num">1</span>
+          </button>
+          <button class="tab" type="button" data_content="Relazioni">
+            <span class="tab-voce">Relazioni</span>
+            <span class="tab-num">4</span>
+          </button>
+          <button class="tab" type="button" data_content="Bibliografia">
+            <span class="tab-voce">Bibliografia</span>
+            <span class="tab-num">5</span>
+          </button>
+        </nav>
+        <div class="scheda-contenuto">
           <div id="Bio" class="content active-content">
             <p>﻿Eugenio Ventura (1887-1949) fu un antiquario fiorentino ricordato dagli studi soprattutto per il suo rilevante coinvolgimento nelle iniziative di regime durante il Ventennio e per un episodio di collaborazionismo con i Nazisti. Nel 1938 fu designato consegnatario dei ventisette capolavori italiani che il governo fascista inviò, a scopo del tutto propagandistico, a San Francisco per la mostra "Masterworks of Five Centuries" (Golden Gate International Exposition, 1939). Il gruppo includeva opere capitali come la "Venere di Botticelli", la "Madonna della seggiola" di Raffaello, il "Tondo Pitti" di Michelangelo. Fu quella un’occasione, per l’antiquario, per cementare rapporti con collezionisti e per arricchirsi personalmente.</p>
             <p>Le carte dell’archivio di Rodolfo Siviero dell’Ufficio Recupero Opere d’Arte documentano poi le diverse fasi del cosiddetto ‘affare Ventura-Goering’: nel 1945 l’antiquario fu arrestato per aver nascosto nel Convento di S. Marco nove quadri espropriati a collezioni di famiglie ebraiche, tra cui opere di Monet, Sisley, Degas, Van Gogh, frutto dello scambio avvenuto nel 1941 con Walter Andreas Hofer, direttore delle gallerie d’arte di Hermann Goering. Ventura gli cedette in cambio ed esportò illegalmente dipinti toscani del Tre e Quattrocento. Nel processo che seguì alla vicenda fu coinvolto anche Roberto Longhi, consulente di Ventura durante gli anni della Seconda Guerra mondiale.</p>
@@ -64,7 +110,10 @@
             <p>Paola Ventura restò nel settore antiquariale anche dopo la morte del marito, avvenuta nel 1979. La sua galleria in Borgo Ognissanti rimase aperta fino al 1985. In anni non meglio precisati, Eugenio Ventura acquisì la biblioteca e fototeca dello storico dell’arte olandese Raymond Van Marle, morto nel 1936. Oggi il fondo unitario di libri e fotografie Ventura-Van Marle è conservato presso la Fondazione Cini di Venezia.</p>
           </div>
           <div id="Persone" class="content">
-            <h3>Relazioni familiari:</h3>
+            <div class="af-intestazione">
+              <h2>Relazioni familiari</h2>
+              <div id="af-legenda" class="af-legenda"></div>
+            </div>
             <div id="albero-genealogico"></div>
           </div>
           <div id="Localizzazioni" class="content">
@@ -73,55 +122,65 @@
             </section>
           </div>
           <div id="Relazioni" class="content">
-            <h3>Altri antiquari:</h3>
-            <ul>
-            </ul>
-            <h3>Clienti:</h3>
-            <ul>
-              <li>Herman Goering </li>
-            </ul>
-            <h3>Collaboratori:</h3>
-            <ul>
-              <li>Roberto Longhi (storico dell'arte)</li>
-            </ul>
+            <div class="rel-griglia">
+              <section class="rel-gruppo">
+                <h2 class="rel-titolo">Altri antiquari</h2>
+                <ul class="rel-elenco">
+                  <li>
+                    <a class="rel-scheda" href="dettaglio_AL.html">Albrighi</a>
+                  </li>
+                  <li>
+                    <a class="rel-scheda" href="dettaglio_CO_I.html">Contini Bonacossi</a>
+                  </li>
+                </ul>
+              </section>
+              <section class="rel-gruppo">
+                <h2 class="rel-titolo">Clienti</h2>
+                <ul class="rel-elenco">
+                  <li>Herman Goering</li>
+                </ul>
+              </section>
+              <section class="rel-gruppo">
+                <h2 class="rel-titolo">Collaboratori</h2>
+                <ul class="rel-elenco">
+                  <li>
+                    <span class="rel-nome">Roberto Longhi</span>
+                    <span class="rel-qualifica">storico dell'arte</span>
+                  </li>
+                </ul>
+              </section>
+            </div>
           </div>
           <div id="Bibliografia" class="content">
-            <h3>Bibliografia essenziale:</h3>
+            <h2>Bibliografia essenziale</h2>
             <ul>
-              <li>Carletti, L., Giometti, C. (2016), <i>Raffaello on the road. Rinascimento e propaganda fascista in America  </i>, Roma, Carocci, 1938-40</li>
-              <li>Pellegrini, E. (2014), <i>Gli scambi di opere d’arte nella politica del Ventennio. I Busti Vanchetoni per la Pietà di Palestrina e il caso Ventura-Goering</i>, In Cipriani Curzi Picardi, pp. 245-251</li>
-              <li>Pellegrini, E. (2022), <i>Göring in Italy: the Ventura case</i>, in Fuhrmeister, C., Murovec, pp. 145-162</li>
-              <li>Rowlands, E.W. (2023), <i>Here, There, and Everywhere': Harold Parsons, the Italian Market and a Letter of 1948</i>, In Budd, Catterson, pp. 329-407</li>
-              <li>Zaru, C. (2022), <i>L'affare Ventura: antiquari e collaborazionisti intorno alla seconda guerra mondiale. Una ricerca ispirata ai documenti dell’Archivio Siviero</i>, In «Contesti d'arte», anno 2, numero 2 (2022), pp. 179-199</li>
+              <li>Carletti, L., Giometti, C. (2016), <i>Raffaello on the road. Rinascimento e propaganda fascista in America (1938-40)</i>, Roma, Carocci</li>
+              <li>Pellegrini, E. (2014), <i>Gli scambi di opere d’arte nella politica del Ventennio. I Busti Vanchetoni per la Pietà di Palestrina e il caso Ventura-Goering</i>, in Cipriani Curzi Picardi, pp. 245-251</li>
+              <li>Pellegrini, E. (2022), <i>Göring in Italy: the Ventura case</i>, in Fuhrmeister, Murovec, pp. 145-162</li>
+              <li>Rowlands, E.W. (2023), <i>Here, There, and Everywhere: Harold Parsons, the Italian Market and a Letter of 1948</i>, in Budd, Catterson, pp. 329-407</li>
+              <li>Zaru, C. (2022), <i>L'affare Ventura: antiquari e collaborazionisti intorno alla seconda guerra mondiale. Una ricerca ispirata ai documenti dell’Archivio Siviero</i>, in «Contesti d'arte», anno 2, numero 2, pp. 179-199</li>
             </ul>
-          </div>
-          <div id="Opere trattate" class="content">
-            <p>
-              Vedi le opere transitate presso l'antiquario presenti nel 
-              <a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Ventura" class="linkBio" target="_blank">
-                catalogo della Fondazione Zeri
-              </a>
-            </p>
           </div>
         </div>
       </div>
+      <nav class="scheda-sfoglia" aria-label="Altre schede">
+        <a href="dettaglio_TO.html">&#8592; Tolentino</a>
+        <a href="dettaglio_VI_I.html">Viancini &#8594;</a>
+      </nav>
     </main>
     <footer>
       <div class="footer-container">
+        <div class="footer-ente">
+          <a href="https://fondazionezeri.unibo.it/it/homepage" target="_blank" rel="noopener">
+            <img src="../../img/homepage/logo-negativo.png" alt="Fondazione Federico Zeri" />
+          </a>
+          <p>Progetto della <a href="https://fondazionezeri.unibo.it/it/homepage" target="_blank" rel="noopener">Fondazione Federico Zeri</a>, Università di Bologna.</p>
+        </div>
         <div class="footer-left">
-          <p>Licenza dati e immagini:</p>
-          <img id="license.png" src="../../img/homepage/license.png" alt="License" />
+          <p>Licenza dati e immagini: <img id="license.png" src="../../img/homepage/license.png" alt="License"></p>
         </div>
         <div class="footer-right">
-          <p>
-            <a href="../../html/crediti.html">
-              Crediti
-            </a>
-            |
-            <a href="https://github.com/FondazioneFedericoZeri/Mercato_dell_arte" target="_blank">
-              Documentazione
-            </a>
-          </p>
+          <p><a href="../../html/crediti.html">Crediti</a> | <a href="../../html/documentazione.html">Documentazione</a></p>
         </div>
       </div>
     </footer>

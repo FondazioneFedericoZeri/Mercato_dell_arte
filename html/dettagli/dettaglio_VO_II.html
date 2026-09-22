@@ -3,74 +3,126 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dettaglio Antiquari</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;700&display=swap" rel="stylesheet" />
+    <title>Volterra | Mercato dell'arte</title>
+    <meta name="description" content="Volterra: scheda dell'entità antiquariale nel progetto Mercato dell'arte della Fondazione Federico Zeri." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="../../css/tokens.css" />
     <link rel="stylesheet" href="../../css/styles-dettaglioAntiquario.css" />
+    <link rel="stylesheet" href="../../css/torna-su.css" />
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/index.js"></script>
-    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/hierarchy.js"></script>
-    <script type="text/javascript" src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
     <script type="text/javascript" src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script type="text/javascript" src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+    <script src="../../script/menu.js" defer=""></script>
+    <script type="text/javascript" src="../../script/galleria.js"></script>
+    <script type="text/javascript" src="../../script/albero-familiare.js"></script>
     <script type="text/javascript" src="../../script/dettaglioAntiquari.js"></script>
     <script type="text/javascript" src="../../script/mappaDettaglio.js"></script>
+    <script src="../../script/torna-su.js" defer=""></script>
   </head>
   <body>
     <header>
       <div class="header-container">
-        <a href="../../index.html">
-          <img id="logo.png" src="../../img/homepage/logo.png" alt="Fondazione Federico Zeri" />
-        </a>
-        <nav>
-          <ul>
-            <li>
-              <a href="../progetto.html">Progetto</a>
-              <a href="../antiquari.html">Antiquari</a>
-              <a href="../luoghi.html">Luoghi</a>
-              <a href="../eventi.html">Eventi</a>
-              <a href="../persone.html">Persone</a>
-              <a href="../bibliografia.html">Bibliografia</a>
-            </li>
-          </ul>
-        </nav>
+        <a class="marchio" href="../../index.html">Mercato dell'arte</a>
+        <button class="menu-toggle" type="button" aria-label="Apri menu">&#9776;</button>
+        <div class="testata-destra">
+          <nav>
+            <ul class="menu">
+              <li>
+                <a href="../progetto.html">Progetto</a>
+              </li>
+              <li>
+                <a href="../antiquari.html">Antiquari</a>
+              </li>
+              <li>
+                <a href="../luoghi.html">Luoghi</a>
+              </li>
+              <li>
+                <a href="../eventi.html">Eventi</a>
+              </li>
+              <li>
+                <a href="../persone.html">Persone</a>
+              </li>
+              <li>
+                <a href="../bibliografia.html">Bibliografia</a>
+              </li>
+            </ul>
+          </nav>
+          <span class="testata-filo"></span>
+          <a class="testata-ente" href="https://fondazionezeri.unibo.it/it/homepage" target="_blank" rel="noopener" title="Fondazione Federico Zeri, Università di Bologna">
+            <img src="../../img/homepage/logo.png" alt="Fondazione Federico Zeri" />
+          </a>
+        </div>
       </div>
     </header>
-    <main>
-      <section id="image-gallery">
-        <div class="gallery-wrapper">
-          <h2 class="gallery-title">Volterra</h2>
-          <div class="slider-container">
-            <div class="slider">
-              <div class="slide">
-                <img src="../../img/slider-antiquari/VO_II_img1.jpg" alt="Giuseppe Volterra. Da &quot;L'Antiquario&quot;, 1923" />
-                <div class="caption">Giuseppe Volterra. Da "L'Antiquario", 1923</div>
-              </div>
-              <div class="slide">
-                <img src="../../img/slider-antiquari/VO_II_img2.jpg" alt="Gualtiero Volterra con Felice Boghen (foto Mario Nunes Vais)" />
-                <div class="caption">Gualtiero Volterra con Felice Boghen (foto Mario Nunes Vais)</div>
-              </div>
+    <main class="scheda">
+      <section class="scheda-fascia">
+        <div class="scheda-fascia-testo">
+          <a class="scheda-torna" href="../antiquari.html">&#8592; Tutti gli antiquari</a>
+          <h1 class="scheda-nome">Volterra</h1>
+          <p class="scheda-sottotitolo">Firenze, Parigi e Londra, in attività dal 1886 al 1932</p>
+        </div>
+        <div class="slider-container">
+          <div class="slider">
+            <div class="slide">
+              <img src="../../img/slider-antiquari/VO_II_img1.jpg" alt="Giuseppe Volterra. Da &quot;L'Antiquario&quot;, 1923" />
+              <div class="caption">Giuseppe Volterra. Da "L'Antiquario", 1923</div>
             </div>
-            <button &#10094; class="prev" onclick="prevSlide()"><</button>
-            <button &#10095; class="next" onclick="nextSlide()">></button>
+            <div class="slide">
+              <img src="../../img/slider-antiquari/VO_II_img2.jpg" alt="Gualtiero Volterra con Felice Boghen (foto Mario Nunes Vais)" />
+              <div class="caption">Gualtiero Volterra con Felice Boghen (foto Mario Nunes Vais)</div>
+            </div>
           </div>
+          <button class="prev" type="button" aria-label="Fotografia precedente">&#10094;</button>
+          <button class="next" type="button" aria-label="Fotografia successiva">&#10095;</button>
+          <button class="gal-zoom" type="button" aria-label="Ingrandisci la fotografia">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-4.3-4.3M11 8v6M8 11h6"></path></svg>
+          </button>
         </div>
       </section>
-      <div class="dual-content-wrapper">
-        <div class="tab-container">
-          <ul class="tab-list">
-            <li class="tab active" data_content="Bio">Dati biografici</li>
-            <li class="tab" data_content="Persone">Albero familiare</li>
-            <li class="tab" data_content="Localizzazioni">Luoghi</li>
-            <li class="tab" data_content="Relazioni">Relazioni</li>
-            <li class="tab" data_content="Bibliografia">Bibliografia</li>
-            <li class="tab" data_content="Opere trattate">Opere trattate</li>
+      <dl class="scheda-striscia">
+        <dt>Persone</dt>
+        <dd>
+          <ul class="striscia-elenco">
+            <li class="striscia-voce"><strong>Gustavo Volterra</strong>, 1855–1918, antiquario</li>
+            <li class="striscia-voce"><strong>Giuseppe Volterra</strong>, 1882–1932, antiquario</li>
+            <li class="striscia-voce"><strong>Gastone Volterra</strong>, 1887–1944, antiquario</li>
+            <li class="striscia-voce"><strong>Umberto Angelo Volterra</strong>, 1886–1944, antiquario</li>
+            <li class="striscia-voce"><strong>Gualtiero Volterra</strong>, 1901–1967, antiquario</li>
           </ul>
-        </div>
-        <div class="content-card">
+        </dd>
+        <dt>Opere transitate</dt>
+        <dd>
+          <a class="striscia-link" href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Volterra" target="_blank" rel="noopener">Catalogo della Fondazione Zeri &#8594;</a>
+        </dd>
+      </dl>
+      <div class="scheda-corpo">
+        <nav class="scheda-tab" aria-label="Sezioni della scheda">
+          <button class="tab active" type="button" data_content="Bio">
+            <span class="tab-voce">Dati biografici</span>
+          </button>
+          <button class="tab" type="button" data_content="Persone">
+            <span class="tab-voce">Albero familiare</span>
+            <span class="tab-num">5</span>
+          </button>
+          <button class="tab" type="button" data_content="Localizzazioni">
+            <span class="tab-voce">Luoghi</span>
+            <span class="tab-num">8</span>
+          </button>
+          <button class="tab" type="button" data_content="Relazioni">
+            <span class="tab-voce">Relazioni</span>
+            <span class="tab-num">8</span>
+          </button>
+          <button class="tab" type="button" data_content="Bibliografia">
+            <span class="tab-voce">Bibliografia</span>
+            <span class="tab-num">6</span>
+          </button>
+        </nav>
+        <div class="scheda-contenuto">
           <div id="Bio" class="content active-content">
             <p>La famiglia ebraica di antiquari fiorentini Volterra ha il proprio capostipite in Gustavo (1855-1918), che si trasferì nel 1880 presso il mercante Angiolo Melli (1829-1908) a Firenze, per imparare il mestiere e approfittare, come tanti all'epoca, del ruolo di snodo collezionistico della città. Il primo negozio, denominato "Galleria Leonardo", venne aperto da Gustavo con il figlio di Angiolo, Cesare Melli, nel 1886. Volterra dovette lavorarci fino al 1909, ma contemporaneamente inaugurare anche un negozio in proprio sul Ponte Vecchio, specializzato in oggetti in stile per la clientela straniera soprattutto anglosassone. In un altro negozio "Volterra e Melli" aperto in via Tornabuoni 12 (1901-1913?) trovava probabilmente sede il laboratorio artigiano per la creazione di tali manufatti artistici.</p>
             <p>La svolta nell'attività di famiglia si ebbe con il primogenito di Gustavo, Giuseppe Volterra (1882-1932), ricordato da Simone Bargellini e <a href="dettaglio_BE_I.html" target="_blank">Luigi Bellini</a> (1884-1957) come pianista, intenditore d'arte e, dalla morte del padre, guida indiscussa dell'attività di famiglia. Seppe in particolare approfittare del vuoto lasciato nel mercato cittadino dalla scomparsa di <a href="dettaglio_BA_II.html" target="_blank">Stefano Bardini</a> (1836-1922), aprendosi al commercio dei Primitivi italiani. Ampliò il numero delle sedi e contribuì ad allestire la Galleria Michelozzo in via Sassetti 1 come una casa museo fiorentina privata del XIV-XVI secolo, aperta al pubblico dei compratori, su modello di quello che era stato Palazzo Davanzati per <a href="dettaglio_VO_I.html" target="_blank">Elia Volpi</a> (1858-1938).</p>
@@ -78,7 +130,10 @@
             <p>Fu solo l'ultimogenito di Gustavo, Gualtiero (1901-1967), già pianista professionista, a continuare l'attività nel settore. Dal 1927 fino al trasferimento in Australia nel 1938, collaborò con <a href="dettaglio_CO_I.html" target="_blank">Alessandro Contini Bonacossi</a> (1878-1955) in qualità di agente, per procurare dipinti prestigiosi destinati soprattutto al collezionista Samuel H. Kress e alla fondazione a lui intitolata, poi confluiti nei maggiori musei americani. Il sodalizio con Contini continuò dopo la guerra con l'acquisto di un importante gruppo di quadri della collezione Cook di Richmond (Surrey), anch'essi comprati da Kress. Con la morte di Gualtiero, la parabola dei Volterra terminò.</p>
           </div>
           <div id="Persone" class="content">
-            <h3>Relazioni familiari:</h3>
+            <div class="af-intestazione">
+              <h2>Relazioni familiari</h2>
+              <div id="af-legenda" class="af-legenda"></div>
+            </div>
             <div id="albero-genealogico"></div>
           </div>
           <div id="Localizzazioni" class="content">
@@ -87,63 +142,79 @@
             </section>
           </div>
           <div id="Relazioni" class="content">
-            <h3>Altri antiquari:</h3>
-            <ul>
-              <li>
-                <a href="dettaglio_CO_I.html">Contini Bonacossi</a>
-              </li>
-            </ul>
-            <h3>Clienti:</h3>
-            <ul>
-              <li>Adolphe Stoclet </li>
-              <li>Samuel Henry Kress </li>
-            </ul>
-            <h3>Collaboratori:</h3>
-            <ul>
-              <li>Angiolo Melli (antiquario)</li>
-              <li>Cesare Melli (antiquario)</li>
-              <li>Icilio Federico Joni (restauratore)</li>
-              <li>Silvio Zanchi (restauratore)</li>
-            </ul>
+            <div class="rel-griglia">
+              <section class="rel-gruppo">
+                <h2 class="rel-titolo">Altri antiquari</h2>
+                <ul class="rel-elenco">
+                  <li>
+                    <a class="rel-scheda" href="dettaglio_CO_I.html">Contini Bonacossi</a>
+                  </li>
+                  <li>
+                    <a class="rel-scheda" href="dettaglio_ME.html">Melli</a>
+                  </li>
+                </ul>
+              </section>
+              <section class="rel-gruppo">
+                <h2 class="rel-titolo">Clienti</h2>
+                <ul class="rel-elenco">
+                  <li>Adolphe Stoclet</li>
+                  <li>Samuel Henry Kress</li>
+                </ul>
+              </section>
+              <section class="rel-gruppo">
+                <h2 class="rel-titolo">Collaboratori</h2>
+                <ul class="rel-elenco">
+                  <li>
+                    <span class="rel-nome">Angiolo Melli</span>
+                    <span class="rel-qualifica">antiquario</span>
+                  </li>
+                  <li>
+                    <span class="rel-nome">Cesare Melli</span>
+                    <span class="rel-qualifica">antiquario</span>
+                  </li>
+                  <li>
+                    <span class="rel-nome">Icilio Federico Joni</span>
+                    <span class="rel-qualifica">restauratore</span>
+                  </li>
+                  <li>
+                    <span class="rel-nome">Silvio Zanchi</span>
+                    <span class="rel-qualifica">restauratore</span>
+                  </li>
+                </ul>
+              </section>
+            </div>
           </div>
           <div id="Bibliografia" class="content">
-            <h3>Bibliografia essenziale:</h3>
+            <h2>Bibliografia essenziale</h2>
             <ul>
               <li>Bargellini, S. (1981), <i>Antiquari di ieri a Firenze</i>, Firenze, Bonechi</li>
               <li>Bellini, L., De Chirico, G. (1947), <i>Nel mondo degli antiquari</i>, Firenze, Arnaud</li>
-              <li>Glaros, M. (2012), <i>Sometimes a Little Injustice Must Be Suffered for the Public Good: How National Security (Aliens Control) Regulations 1939 (CHT) Affected lives of German, Italian, Japanese, and Australian-born Women Living in Australia during World War II.</i>, PhD diss., University of Western Sidney, pp.  337-342</li>
-              <li>Marano, V. (2007-2008), <i>Due generazioni di antiquari, i Volterra</i>, Tesi di Laurea, Università di Bologna</li>
+              <li>Glaros, M. (2012), <i>Sometimes a little injustice must be suffered for the public good: how National Security (Aliens Control) regulations 1939 (CHT) affected lives of German, Italian, Japanese, and Australian-born women living in Australia during World War II</i>, PhD diss., University of Western Sidney, pp. 337-342</li>
+              <li>Marano, V. (2007-2008), <i>Due generazioni di antiquari, i Volterra</i>, tesi di Laurea, Università di Bologna</li>
               <li>Modestini, M. (2018), <i>Capolavori?: basato su un manoscritto di Mario Modestini</i>, Fiesole, Cadmo</li>
-              <li>Zaninelli, F. (2018), <i>Alessandro Contini Bonacossi, Antiquario (1875-1955): the art market and cultural philantropy in the formation of american museum</i>, The University of Edinburgh</li>
+              <li>Zaninelli, F. (2018), <i>Alessandro Contini Bonacossi, antiquario (1875-1955): the art market and cultural philantropy in the formation of american museum</i>, Phd Diss., University of Edinburgh</li>
             </ul>
-          </div>
-          <div id="Opere trattate" class="content">
-            <p>
-              Vedi le opere transitate presso l'antiquario presenti nel 
-              <a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Volterra" class="linkBio" target="_blank">
-                catalogo della Fondazione Zeri
-              </a>
-            </p>
           </div>
         </div>
       </div>
+      <nav class="scheda-sfoglia" aria-label="Altre schede">
+        <a href="dettaglio_VO_I.html">&#8592; Volpi</a>
+        <a href="dettaglio_ZA.html">Zabert &#8594;</a>
+      </nav>
     </main>
     <footer>
       <div class="footer-container">
+        <div class="footer-ente">
+          <a href="https://fondazionezeri.unibo.it/it/homepage" target="_blank" rel="noopener">
+            <img src="../../img/homepage/logo-negativo.png" alt="Fondazione Federico Zeri" />
+          </a>
+          <p>Progetto della <a href="https://fondazionezeri.unibo.it/it/homepage" target="_blank" rel="noopener">Fondazione Federico Zeri</a>, Università di Bologna.</p>
+        </div>
         <div class="footer-left">
-          <p>Licenza dati e immagini:</p>
-          <img id="license.png" src="../../img/homepage/license.png" alt="License" />
+          <p>Licenza dati e immagini: <img id="license.png" src="../../img/homepage/license.png" alt="License"></p>
         </div>
         <div class="footer-right">
-          <p>
-            <a href="../../html/crediti.html">
-              Crediti
-            </a>
-            |
-            <a href="https://github.com/FondazioneFedericoZeri/Mercato_dell_arte" target="_blank">
-              Documentazione
-            </a>
-          </p>
+          <p><a href="../../html/crediti.html">Crediti</a> | <a href="../../html/documentazione.html">Documentazione</a></p>
         </div>
       </div>
     </footer>
