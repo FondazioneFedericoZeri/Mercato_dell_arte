@@ -33,6 +33,27 @@
 
   function anno(s) { var m = (s || "").match(/\d{4}/); return m ? +m[0] : null; }
 
+  /* In parentela.csv lo stesso grado e' scritto in piu' modi: 35 righe
+     dicono "fratello/sorella" e 6 dicono "fratello". Le seconde non
+     corrispondevano a nessuna voce di SCARTO, quindi quel legame non
+     contava nel calcolo dei livelli e finiva disegnato fra gli "altri
+     gradi", con una linea tratteggiata per ogni coppia invece della
+     graffa unica dei fratelli: nell'albero dei Salamon erano tre
+     tratteggi sovrapposti per tre fratelli. Qui le grafie si
+     riconducono a una, e il foglio dati resta libero di usarle
+     entrambe. */
+  var SINONIMI = {
+    "fratello": "fratello/sorella",
+    "sorella": "fratello/sorella",
+    "fratelli": "fratello/sorella",
+    "fratello/ sorella": "fratello/sorella",
+    "sorella/fratello": "fratello/sorella"
+  };
+  function grado(tipo) {
+    var t = (tipo || "").trim().toLowerCase();
+    return SINONIMI[t] || t;
+  }
+
   function etichettaDate(p) {
     var nascita = (p.Nascita || "").trim();
     var morte = (p.Morte || "").trim();
@@ -50,9 +71,21 @@
       var p = entita.Persone[pid];
       if (p && (p.Nome || "").trim()) persone[pid] = p;
     });
-    var relazioni = (entita.Relazioni || []).filter(function (r) {
-      return persone[r.Persona_1] && persone[r.Persona_2];
-    });
+    var relazioni = (entita.Relazioni || [])
+      .filter(function (r) {
+        return persone[r.Persona_1] && persone[r.Persona_2]
+          // Una persona non e' parente di se stessa: in parentela.csv
+          // capita per errore di battitura (PI_2 fratello di PI_2), e
+          // disegnata diventa un cappio sopra la casella.
+          && r.Persona_1 !== r.Persona_2;
+      })
+      .map(function (r) {
+        return {
+          Persona_1: r.Persona_1,
+          Persona_2: r.Persona_2,
+          Tipo_di_relazione: grado(r.Tipo_di_relazione)
+        };
+      });
     return { persone: persone, relazioni: relazioni };
   }
 
@@ -128,16 +161,91 @@
       var L = liv[i] - minimo;
       (righe[L] = righe[L] || []).push(i);
     });
-    Object.keys(righe).forEach(function (k) {
-      righe[k].sort(function (a, b) {
-        var na = anno(dati.persone[a].Nascita), nb = anno(dati.persone[b].Nascita);
-        if (na && nb) return na - nb;
-        if (na) return -1;
-        if (nb) return 1;
-        return (dati.persone[a].Nome || "").localeCompare(dati.persone[b].Nome || "", "it");
+    ordinaRighe(righe, dati);
+    return righe;
+  }
+
+  /* L'ordine delle persone dentro ogni riga.
+
+     Per anno di nascita e basta, com'era prima, i fratelli finivano
+     sparsi: nella famiglia Salamon i figli venivano Silverio (1955),
+     Lorenza (1963), Matteo (1964), Gian Alvise e Teresa, cioe' i due
+     rami alternati. Silverio si ritrovava all'estremita' sinistra
+     mentre suo padre e i suoi fratelli stavano a destra, e le linee
+     attraversavano tutto il disegno per ricongiungerli.
+
+     Qui ogni riga si ordina invece seguendo la riga di sopra: la
+     posizione di una persona e' la media delle posizioni dei suoi
+     genitori (il "baricentro"), cosi' i figli di uno stesso padre
+     restano vicini e sotto di lui. L'anno di nascita decide solo
+     dentro la stessa fratria, dove e' l'informazione giusta.
+
+     Chi non ha genitori nella riga di sopra prende il baricentro dei
+     propri fratelli, e se non ne ha resta dov'era. La prima riga,
+     che sopra non ha niente, si ordina per anno di nascita. */
+  function ordinaRighe(righe, dati) {
+    var perNascita = function (a, b) {
+      var na = anno(dati.persone[a].Nascita), nb = anno(dati.persone[b].Nascita);
+      if (na && nb) return na - nb;
+      if (na) return -1;
+      if (nb) return 1;
+      return (dati.persone[a].Nome || "").localeCompare(dati.persone[b].Nome || "", "it");
+    };
+
+    var genitori = genitoriDi(dati);
+    var fratelli = {};
+    dati.relazioni.forEach(function (r) {
+      if (r.Tipo_di_relazione !== "fratello/sorella") return;
+      (fratelli[r.Persona_1] = fratelli[r.Persona_1] || []).push(r.Persona_2);
+      (fratelli[r.Persona_2] = fratelli[r.Persona_2] || []).push(r.Persona_1);
+    });
+
+    var livelli = Object.keys(righe).map(Number).sort(function (a, b) { return a - b; });
+    livelli.forEach(function (L, indiceLivello) {
+      if (indiceLivello === 0) { righe[L].sort(perNascita); return; }
+
+      var sopra = {};
+      righe[livelli[indiceLivello - 1]].forEach(function (pid, i) { sopra[pid] = i; });
+
+      var bar = {};
+      righe[L].forEach(function (pid) {
+        var pos = (genitori[pid] || [])
+          .map(function (g) { return sopra[g]; })
+          .filter(function (v) { return v !== undefined; });
+        if (pos.length) {
+          bar[pid] = pos.reduce(function (s, v) { return s + v; }, 0) / pos.length;
+        }
+      });
+
+      // Chi non ha genitori sopra si appoggia ai fratelli. Due giri
+      // bastano: piu' in la' non si aggiunge informazione.
+      for (var giro = 0; giro < 2; giro++) {
+        righe[L].forEach(function (pid) {
+          if (bar[pid] !== undefined) return;
+          var noti = (fratelli[pid] || [])
+            .map(function (f) { return bar[f]; })
+            .filter(function (v) { return v !== undefined; });
+          if (noti.length) {
+            bar[pid] = noti.reduce(function (s, v) { return s + v; }, 0) / noti.length;
+          }
+        });
+      }
+
+      // Chi resta senza riferimenti tiene il posto che aveva.
+      var iniziale = {};
+      righe[L].slice().sort(perNascita).forEach(function (pid, i) { iniziale[pid] = i; });
+
+      righe[L].sort(function (a, b) {
+        var ba = bar[a], bb = bar[b];
+        if (ba !== undefined && bb !== undefined && ba !== bb) return ba - bb;
+        if (ba !== undefined && bb === undefined) return -1;
+        if (ba === undefined && bb !== undefined) return 1;
+        // Stesso baricentro: sono fratelli, e qui l'anno di nascita
+        // e' il criterio giusto.
+        var perAnno = perNascita(a, b);
+        return perAnno !== 0 ? perAnno : iniziale[a] - iniziale[b];
       });
     });
-    return righe;
   }
 
   var NS = "http://www.w3.org/2000/svg";
