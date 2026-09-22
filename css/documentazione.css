@@ -173,7 +173,7 @@ body {
    3,28:1, sotto la soglia WCAG AA. */
 .doc h2 {
     font-family: var(--ff-body);
-    font-size: var(--fs-caption);
+    font-size: 16px;
     font-weight: 600;
     letter-spacing: 0.09em;
     text-transform: uppercase;
