@@ -78,8 +78,8 @@ function aggiorna_riepilogo(modo, n_gruppi, n_schede, n_antiquari) {
     } else {
         testo = n_schede + ' schede in ' + n_gruppi
               + (n_gruppi === 1 ? ' area' : ' aree')
-              + ', dalla pi\u00f9 documentata alla meno. Chi ha avuto sedi in '
-              + 'pi\u00f9 aree compare in ciascuna.';
+              + 'Entità attive in '
+              + 'pi\u00f9 aree compaiono in ciascuna.';
     }
     if (ricerca_attiva) testo = 'Risultati della ricerca: ' + testo;
     el.textContent = testo;

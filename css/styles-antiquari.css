@@ -387,7 +387,14 @@ nav ul li a:hover {
 .card-container .card {
     /*width: calc(33.33% - 20px); / 3 card per riga, considerando lo spazio tra le card */
     width: 380px;
-    height: 450px; /* Altezza fissa per tutte le card */
+    /* Altezza fissa per tutte le card. Cresciuta da 450px per lasciare
+       spazio al nome e alle città, ora più grandi. */
+    height: 470px;
+    /* La card è una colonna: immagine di altezza fissa, testo che si
+       prende quel che resta. Prima erano due percentuali (70%/30%) e
+       ingrandire il testo lo faceva tagliare da overflow: hidden. */
+    display: flex;
+    flex-direction: column;
     background-color: #f9f9f9;
     border-radius: 2px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -398,7 +405,8 @@ nav ul li a:hover {
 
 .card-container .card img {
     width: 100%;
-    height: 70%; /* Imposta l'altezza dell'immagine in base all'altezza della card */
+    flex: 0 0 310px;  /* stessa altezza di prima (70% di 450px = 315px) */
+    height: 310px;
     object-fit: cover; /* L'immagine mantiene le sue proporzioni e si ritaglia se necessario */
     object-position: center; /* L'immagine è centrata all'interno del contenitore */
     display: block;
@@ -406,29 +414,34 @@ nav ul li a:hover {
 }
 
 .card-container .card-text {
+    flex: 1 1 auto;   /* tutto lo spazio sotto l'immagine: 160px */
+    min-height: 0;
     padding: 10px;
-    height: 30%; /* Imposta l'altezza del testo in base all'altezza della card */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* nome e città centrati nella fascia */
     overflow: hidden; /* Evita che il testo ecceda il contenitore */
     text-decoration: none; /* Rimuove la sottolineatura */
     color: #333;
 }
 
 .card-text h3 {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 400;  /* niente grassetto */
     font-style: italic;
-    margin: 10px 0;
+    line-height: 1.25;
+    margin: 0 0 6px;
     color: #333;
-    margin-bottom: 10px;
     margin-left: 20px;
     text-align: left;
     text-decoration: none;
 }
 
 .card-text p {
-    margin-top: 10px;
+    margin: 0;
     margin-left: 20px;
-    font-size: 16px;
+    font-size: 18px;
+    line-height: 1.35;
     color: #666;
     text-align: left;
     text-decoration: none;
@@ -666,6 +679,13 @@ body {
     .card-container .card {
         width: 90%;
         margin: 10px 0;
+        /* Su schermo stretto il nome e le città possono andare a capo:
+           la card si allunga invece di tagliarli. */
+        height: auto;
+    }
+
+    .card-container .card-text {
+        padding: 14px 10px;
     }
 }
 @media (max-width: 768px) {
