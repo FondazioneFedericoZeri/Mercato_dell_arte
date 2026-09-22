@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
     <link rel="stylesheet" href="../../css/tokens.css" />
     <link rel="stylesheet" href="../../css/styles-dettaglioAntiquario.css" />
+    <link rel="stylesheet" href="../../css/torna-su.css" />
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
     <script type="text/javascript" src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script type="text/javascript" src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
@@ -21,6 +22,7 @@
     <script type="text/javascript" src="../../script/albero-familiare.js"></script>
     <script type="text/javascript" src="../../script/dettaglioAntiquari.js"></script>
     <script type="text/javascript" src="../../script/mappaDettaglio.js"></script>
+    <script src="../../script/torna-su.js" defer=""></script>
   </head>
   <body>
     <header>
@@ -105,7 +107,7 @@
           </button>
           <button class="tab" type="button" data_content="Relazioni">
             <span class="tab-voce">Relazioni</span>
-            <span class="tab-num">14</span>
+            <span class="tab-num">15</span>
           </button>
           <button class="tab" type="button" data_content="Eventi">
             <span class="tab-voce">Eventi</span>
@@ -137,26 +139,64 @@
             </section>
           </div>
           <div id="Relazioni" class="content">
-            <h2>Clienti</h2>
-            <ul>
-              <li>Alberto Clerici </li>
-              <li>Alberto Grubicy </li>
-              <li>Gaetano Marzotto </li>
-              <li>Giacomo Jucker </li>
-              <li>Giuseppe Ricci Oddi </li>
-              <li>Luigi Margherita </li>
-            </ul>
-            <h2>Collaboratori</h2>
-            <ul>
-              <li>Antonio Fradeletto (storico dell'arte)</li>
-              <li>Carlo Feltrinelli (socio)</li>
-              <li>Enrico Somarè (storico dell'arte)</li>
-              <li>Luigi Della Torre (socio)</li>
-              <li>Luigi Pisani (antiquario)</li>
-              <li>Margherita Grassini Scarfatti (critico d'arte)</li>
-              <li>Ugo Ojetti (critico d'arte)</li>
-              <li>Vittorio Pica (critico d'arte)</li>
-            </ul>
+            <div class="rel-griglia">
+              <section class="rel-gruppo">
+                <h2 class="rel-titolo">Altri antiquari</h2>
+                <ul class="rel-elenco">
+                  <li>
+                    <a class="rel-scheda" href="dettaglio_PA_III.html">Palma</a>
+                  </li>
+                </ul>
+              </section>
+              <section class="rel-gruppo">
+                <h2 class="rel-titolo">Clienti</h2>
+                <ul class="rel-elenco">
+                  <li>Alberto Clerici</li>
+                  <li>Alberto Grubicy</li>
+                  <li>Gaetano Marzotto</li>
+                  <li>Giacomo Jucker</li>
+                  <li>Giuseppe Ricci Oddi</li>
+                  <li>Luigi Margherita</li>
+                </ul>
+              </section>
+              <section class="rel-gruppo">
+                <h2 class="rel-titolo">Collaboratori</h2>
+                <ul class="rel-elenco">
+                  <li>
+                    <span class="rel-nome">Antonio Fradeletto</span>
+                    <span class="rel-qualifica">storico dell'arte</span>
+                  </li>
+                  <li>
+                    <span class="rel-nome">Carlo Feltrinelli</span>
+                    <span class="rel-qualifica">socio</span>
+                  </li>
+                  <li>
+                    <span class="rel-nome">Enrico Somarè</span>
+                    <span class="rel-qualifica">storico dell'arte</span>
+                  </li>
+                  <li>
+                    <span class="rel-nome">Luigi Della Torre</span>
+                    <span class="rel-qualifica">socio</span>
+                  </li>
+                  <li>
+                    <span class="rel-nome">Luigi Pisani</span>
+                    <span class="rel-qualifica">antiquario</span>
+                  </li>
+                  <li>
+                    <span class="rel-nome">Margherita Grassini Scarfatti</span>
+                    <span class="rel-qualifica">critico d'arte</span>
+                  </li>
+                  <li>
+                    <span class="rel-nome">Ugo Ojetti</span>
+                    <span class="rel-qualifica">critico d'arte</span>
+                  </li>
+                  <li>
+                    <span class="rel-nome">Vittorio Pica</span>
+                    <span class="rel-qualifica">critico d'arte</span>
+                  </li>
+                </ul>
+              </section>
+            </div>
           </div>
           <div id="Eventi" class="content">
             <h2>Eventi significativi nell'attività antiquariale</h2>

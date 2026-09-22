@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
     <link rel="stylesheet" href="../../css/tokens.css" />
     <link rel="stylesheet" href="../../css/styles-dettaglioAntiquario.css" />
+    <link rel="stylesheet" href="../../css/torna-su.css" />
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
     <script type="text/javascript" src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script type="text/javascript" src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
@@ -21,6 +22,7 @@
     <script type="text/javascript" src="../../script/albero-familiare.js"></script>
     <script type="text/javascript" src="../../script/dettaglioAntiquari.js"></script>
     <script type="text/javascript" src="../../script/mappaDettaglio.js"></script>
+    <script src="../../script/torna-su.js" defer=""></script>
   </head>
   <body>
     <header>
@@ -114,7 +116,7 @@
           </button>
           <button class="tab" type="button" data_content="Relazioni">
             <span class="tab-voce">Relazioni</span>
-            <span class="tab-num">7</span>
+            <span class="tab-num">8</span>
           </button>
           <button class="tab" type="button" data_content="Eventi">
             <span class="tab-voce">Eventi</span>
@@ -151,19 +153,42 @@
             </section>
           </div>
           <div id="Relazioni" class="content">
-            <h2>Clienti</h2>
-            <ul>
-              <li>George Hewitt Myers </li>
-              <li>Mortimer Clifford Leventritt </li>
-              <li>Walter Tower Rosen </li>
-              <li>Werner Abegg </li>
-            </ul>
-            <h2>Collaboratori</h2>
-            <ul>
-              <li>Alessandro Morandotti (antiquario)</li>
-              <li>Arnold Seligman (antiquario)</li>
-              <li>William Robertson (antiquario)</li>
-            </ul>
+            <div class="rel-griglia">
+              <section class="rel-gruppo">
+                <h2 class="rel-titolo">Altri antiquari</h2>
+                <ul class="rel-elenco">
+                  <li>
+                    <a class="rel-scheda" href="dettaglio_SA_IV.html">Sangiorgi</a>
+                  </li>
+                </ul>
+              </section>
+              <section class="rel-gruppo">
+                <h2 class="rel-titolo">Clienti</h2>
+                <ul class="rel-elenco">
+                  <li>George Hewitt Myers</li>
+                  <li>Mortimer Clifford Leventritt</li>
+                  <li>Walter Tower Rosen</li>
+                  <li>Werner Abegg</li>
+                </ul>
+              </section>
+              <section class="rel-gruppo">
+                <h2 class="rel-titolo">Collaboratori</h2>
+                <ul class="rel-elenco">
+                  <li>
+                    <span class="rel-nome">Alessandro Morandotti</span>
+                    <span class="rel-qualifica">antiquario</span>
+                  </li>
+                  <li>
+                    <span class="rel-nome">Arnold Seligman</span>
+                    <span class="rel-qualifica">antiquario</span>
+                  </li>
+                  <li>
+                    <span class="rel-nome">William Robertson</span>
+                    <span class="rel-qualifica">antiquario</span>
+                  </li>
+                </ul>
+              </section>
+            </div>
           </div>
           <div id="Eventi" class="content">
             <h2>Eventi significativi nell'attività antiquariale</h2>

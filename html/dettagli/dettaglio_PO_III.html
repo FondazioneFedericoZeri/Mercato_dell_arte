@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
     <link rel="stylesheet" href="../../css/tokens.css" />
     <link rel="stylesheet" href="../../css/styles-dettaglioAntiquario.css" />
+    <link rel="stylesheet" href="../../css/torna-su.css" />
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
     <script type="text/javascript" src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script type="text/javascript" src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
@@ -21,6 +22,7 @@
     <script type="text/javascript" src="../../script/albero-familiare.js"></script>
     <script type="text/javascript" src="../../script/dettaglioAntiquari.js"></script>
     <script type="text/javascript" src="../../script/mappaDettaglio.js"></script>
+    <script src="../../script/torna-su.js" defer=""></script>
   </head>
   <body>
     <header>
@@ -90,7 +92,7 @@
         <dt>Persone</dt>
         <dd>
           <ul class="striscia-elenco">
-            <li class="striscia-voce"><strong>Adolph (Adolfo) Pollak</strong>, 1868–1943, antiquario</li>
+            <li class="striscia-voce"><strong>Ludwig Pollak</strong>, 1868–1943, antiquario</li>
           </ul>
         </dd>
         <dt>Opere transitate</dt>
@@ -109,7 +111,7 @@
           </button>
           <button class="tab" type="button" data_content="Relazioni">
             <span class="tab-voce">Relazioni</span>
-            <span class="tab-num">39</span>
+            <span class="tab-num">40</span>
           </button>
           <button class="tab" type="button" data_content="Eventi">
             <span class="tab-voce">Eventi</span>
@@ -143,64 +145,117 @@
             </section>
           </div>
           <div id="Relazioni" class="content">
-            <h2>Altri antiquari</h2>
-            <ul>
-              <li>
-                <a href="dettaglio_BA_III.html">Barsanti</a>
-              </li>
-              <li>
-                <a href="dettaglio_JA.html">Jandolo</a>
-              </li>
-              <li>
-                <a href="dettaglio_SI.html">Simonetti</a>
-              </li>
-              <li>
-                <a href="dettaglio_JA-TA.html">Jandolo-Tavazzi</a>
-              </li>
-              <li>
-                <a href="dettaglio_SA_IV.html">Sangiorgi</a>
-              </li>
-            </ul>
-            <h2>Clienti</h2>
-            <ul>
-              <li>Alexandr Iovanovitsch conte von Nelidow </li>
-              <li>Arturo De Sanctis Mangelli </li>
-              <li>Carl Jacobsen </li>
-              <li>Denis Mahon </li>
-              <li>Edmond De Rothschild </li>
-              <li>Edward Waldo Forbes </li>
-              <li>Ernesto Tucci </li>
-              <li>Francesco marchese Cappelli </li>
-              <li>Giovanni Barraco </li>
-              <li>Gregor Stroganoff </li>
-              <li>Harold Woodbury Parsons </li>
-              <li>Johann Albrecht duca di Mecklemburg-Schwerin </li>
-              <li>John Marshall </li>
-              <li>John Pierpont Morgan </li>
-              <li>Louis Saulini </li>
-              <li>Remy conte von Kwiatkowski </li>
-              <li>Richard Norton </li>
-              <li>Robert Zahn </li>
-              <li>Sigmund Freud </li>
-              <li>Wilhelm von Bode </li>
-            </ul>
-            <h2>Collaboratori</h2>
-            <ul>
-              <li>Alinari (fotografo)</li>
-              <li>Ditta Danubio società anonima (compagnia di assicurazioni)</li>
-              <li>Otto H. W. Internationale Transporte  (ditta di trasporti)</li>
-              <li>Tartaglia & Co.  (ditta di trasporti)</li>
-              <li>A. Fauconnet (ditta di trasporti)</li>
-              <li>Antonio Muñoz (storico dell'arte)</li>
-              <li>Carl Stein (ditta di trasporti)</li>
-              <li>Cesare Faraglia (fotografo)</li>
-              <li>Cosimo Boccardi (fotografo)</li>
-              <li>Ettore e figli Roesler Franz (ditta di trasporti)</li>
-              <li>Guido Libertini (archeologo)</li>
-              <li>Gustav Knauer (ditta di trasporti)</li>
-              <li>Oscar Savio (fotografo)</li>
-              <li>Remo Lizzani (ditta di deposito)</li>
-            </ul>
+            <div class="rel-griglia">
+              <section class="rel-gruppo">
+                <h2 class="rel-titolo">Altri antiquari</h2>
+                <ul class="rel-elenco">
+                  <li>
+                    <a class="rel-scheda" href="dettaglio_BA_III.html">Barsanti</a>
+                  </li>
+                  <li>
+                    <a class="rel-scheda" href="dettaglio_JA.html">Jandolo</a>
+                  </li>
+                  <li>
+                    <a class="rel-scheda" href="dettaglio_JA-TA.html">Jandolo-Tavazzi</a>
+                  </li>
+                  <li>
+                    <a class="rel-scheda" href="dettaglio_SA_VI_NEW.html">Salvadori Antonio</a>
+                  </li>
+                  <li>
+                    <a class="rel-scheda" href="dettaglio_SA_IV.html">Sangiorgi</a>
+                  </li>
+                  <li>
+                    <a class="rel-scheda" href="dettaglio_SI.html">Simonetti</a>
+                  </li>
+                </ul>
+              </section>
+              <section class="rel-gruppo rel-gruppo-largo">
+                <h2 class="rel-titolo">Clienti</h2>
+                <ul class="rel-elenco">
+                  <li>Alexandr Iovanovitsch conte von Nelidow</li>
+                  <li>Arturo De Sanctis Mangelli</li>
+                  <li>Carl Jacobsen</li>
+                  <li>Denis Mahon</li>
+                  <li>Edmond De Rothschild</li>
+                  <li>Edward Waldo Forbes</li>
+                  <li>Ernesto Tucci</li>
+                  <li>Francesco marchese Cappelli</li>
+                  <li>Giovanni Barraco</li>
+                  <li>Gregor Stroganoff</li>
+                  <li>Harold Woodbury Parsons</li>
+                  <li>Johann Albrecht duca di Mecklemburg-Schwerin</li>
+                  <li>John Marshall</li>
+                  <li>John Pierpont Morgan</li>
+                  <li>Louis Saulini</li>
+                  <li>Remy conte von Kwiatkowski</li>
+                  <li>Richard Norton</li>
+                  <li>Robert Zahn</li>
+                  <li>Sigmund Freud</li>
+                  <li>Wilhelm von Bode</li>
+                </ul>
+              </section>
+              <section class="rel-gruppo rel-gruppo-largo">
+                <h2 class="rel-titolo">Collaboratori</h2>
+                <ul class="rel-elenco">
+                  <li>
+                    <span class="rel-nome">A. Fauconnet</span>
+                    <span class="rel-qualifica">ditta di trasporti</span>
+                  </li>
+                  <li>
+                    <span class="rel-nome">Alinari</span>
+                    <span class="rel-qualifica">fotografo</span>
+                  </li>
+                  <li>
+                    <span class="rel-nome">Antonio Muñoz</span>
+                    <span class="rel-qualifica">storico dell'arte</span>
+                  </li>
+                  <li>
+                    <span class="rel-nome">Carl Stein</span>
+                    <span class="rel-qualifica">ditta di trasporti</span>
+                  </li>
+                  <li>
+                    <span class="rel-nome">Cesare Faraglia</span>
+                    <span class="rel-qualifica">fotografo</span>
+                  </li>
+                  <li>
+                    <span class="rel-nome">Cosimo Boccardi</span>
+                    <span class="rel-qualifica">fotografo</span>
+                  </li>
+                  <li>
+                    <span class="rel-nome">Ditta Danubio società anonima</span>
+                    <span class="rel-qualifica">compagnia di assicurazioni</span>
+                  </li>
+                  <li>
+                    <span class="rel-nome">Ettore e figli Roesler Franz</span>
+                    <span class="rel-qualifica">ditta di trasporti</span>
+                  </li>
+                  <li>
+                    <span class="rel-nome">Guido Libertini</span>
+                    <span class="rel-qualifica">archeologo</span>
+                  </li>
+                  <li>
+                    <span class="rel-nome">Gustav Knauer</span>
+                    <span class="rel-qualifica">ditta di trasporti</span>
+                  </li>
+                  <li>
+                    <span class="rel-nome">Oscar Savio</span>
+                    <span class="rel-qualifica">fotografo</span>
+                  </li>
+                  <li>
+                    <span class="rel-nome">Otto H. W. Internationale Transporte</span>
+                    <span class="rel-qualifica">ditta di trasporti</span>
+                  </li>
+                  <li>
+                    <span class="rel-nome">Remo Lizzani</span>
+                    <span class="rel-qualifica">ditta di deposito</span>
+                  </li>
+                  <li>
+                    <span class="rel-nome">Tartaglia &amp; Co.</span>
+                    <span class="rel-qualifica">ditta di trasporti</span>
+                  </li>
+                </ul>
+              </section>
+            </div>
           </div>
           <div id="Eventi" class="content">
             <h2>Eventi significativi nell'attività antiquariale</h2>

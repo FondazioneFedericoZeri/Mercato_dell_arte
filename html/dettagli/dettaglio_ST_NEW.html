@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
     <link rel="stylesheet" href="../../css/tokens.css" />
     <link rel="stylesheet" href="../../css/styles-dettaglioAntiquario.css" />
+    <link rel="stylesheet" href="../../css/torna-su.css" />
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
     <script type="text/javascript" src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script type="text/javascript" src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
@@ -21,6 +22,7 @@
     <script type="text/javascript" src="../../script/albero-familiare.js"></script>
     <script type="text/javascript" src="../../script/dettaglioAntiquari.js"></script>
     <script type="text/javascript" src="../../script/mappaDettaglio.js"></script>
+    <script src="../../script/torna-su.js" defer=""></script>
   </head>
   <body>
     <header>
@@ -99,7 +101,7 @@
           </button>
           <button class="tab" type="button" data_content="Relazioni">
             <span class="tab-voce">Relazioni</span>
-            <span class="tab-num">16</span>
+            <span class="tab-num">20</span>
           </button>
           <button class="tab" type="button" data_content="Eventi">
             <span class="tab-voce">Eventi</span>
@@ -127,33 +129,92 @@
             </section>
           </div>
           <div id="Relazioni" class="content">
-            <h2>Altri antiquari</h2>
-            <ul>
-              <li>
-                <a href="dettaglio_AC.html">Accorsi</a>
-              </li>
-            </ul>
-            <h2>Clienti</h2>
-            <ul>
-              <li>Fratelli Mora </li>
-              <li>Arthur Acton </li>
-            </ul>
-            <h2>Collaboratori</h2>
-            <ul>
-              <li>Antonio Zanchi (restauratore)</li>
-              <li>Arturo Cividini (restauratore)</li>
-              <li>Benno Geiger (antiquario)</li>
-              <li>Bernard Berenson (storico dell'arte)</li>
-              <li>Cesare Laurenti (pittore)</li>
-              <li>Giuseppe Fiocco (storico dell'arte)</li>
-              <li>Luigi Cavenaghi (restauratore)</li>
-              <li>Luigi Cavenaghi (restauratore)</li>
-              <li>Paul Cassirer (antiquario)</li>
-              <li>Roberto Longhi (storico dell'arte)</li>
-              <li>Ugo Frizzoni (storico dell'arte)</li>
-              <li>Ugo Frizzoni (storico dell'arte)</li>
-              <li>Wart Arslan (storico dell'arte)</li>
-            </ul>
+            <div class="rel-griglia">
+              <section class="rel-gruppo">
+                <h2 class="rel-titolo">Altri antiquari</h2>
+                <ul class="rel-elenco">
+                  <li>
+                    <a class="rel-scheda" href="dettaglio_AC.html">Accorsi</a>
+                  </li>
+                  <li>
+                    <a class="rel-scheda" href="dettaglio_AN.html">Angiolini</a>
+                  </li>
+                  <li>
+                    <a class="rel-scheda" href="dettaglio_BA_V.html">Barozzi</a>
+                  </li>
+                  <li>
+                    <a class="rel-scheda" href="dettaglio_CA_IV.html">Carrer</a>
+                  </li>
+                  <li>
+                    <a class="rel-scheda" href="dettaglio_SA_VI_NEW.html">Salvadori Antonio</a>
+                  </li>
+                </ul>
+              </section>
+              <section class="rel-gruppo">
+                <h2 class="rel-titolo">Clienti</h2>
+                <ul class="rel-elenco">
+                  <li>Arthur Acton</li>
+                  <li>Fratelli Mora</li>
+                </ul>
+              </section>
+              <section class="rel-gruppo rel-gruppo-largo">
+                <h2 class="rel-titolo">Collaboratori</h2>
+                <ul class="rel-elenco">
+                  <li>
+                    <span class="rel-nome">Antonio Zanchi</span>
+                    <span class="rel-qualifica">restauratore</span>
+                  </li>
+                  <li>
+                    <span class="rel-nome">Arturo Cividini</span>
+                    <span class="rel-qualifica">restauratore</span>
+                  </li>
+                  <li>
+                    <span class="rel-nome">Benno Geiger</span>
+                    <span class="rel-qualifica">antiquario</span>
+                  </li>
+                  <li>
+                    <span class="rel-nome">Bernard Berenson</span>
+                    <span class="rel-qualifica">storico dell'arte</span>
+                  </li>
+                  <li>
+                    <span class="rel-nome">Cesare Laurenti</span>
+                    <span class="rel-qualifica">pittore</span>
+                  </li>
+                  <li>
+                    <span class="rel-nome">Giuseppe Fiocco</span>
+                    <span class="rel-qualifica">storico dell'arte</span>
+                  </li>
+                  <li>
+                    <span class="rel-nome">Luigi Cavenaghi</span>
+                    <span class="rel-qualifica">restauratore</span>
+                  </li>
+                  <li>
+                    <span class="rel-nome">Luigi Cavenaghi</span>
+                    <span class="rel-qualifica">restauratore</span>
+                  </li>
+                  <li>
+                    <span class="rel-nome">Paul Cassirer</span>
+                    <span class="rel-qualifica">antiquario</span>
+                  </li>
+                  <li>
+                    <span class="rel-nome">Roberto Longhi</span>
+                    <span class="rel-qualifica">storico dell'arte</span>
+                  </li>
+                  <li>
+                    <span class="rel-nome">Ugo Frizzoni</span>
+                    <span class="rel-qualifica">storico dell'arte</span>
+                  </li>
+                  <li>
+                    <span class="rel-nome">Ugo Frizzoni</span>
+                    <span class="rel-qualifica">storico dell'arte</span>
+                  </li>
+                  <li>
+                    <span class="rel-nome">Wart Arslan</span>
+                    <span class="rel-qualifica">storico dell'arte</span>
+                  </li>
+                </ul>
+              </section>
+            </div>
           </div>
           <div id="Eventi" class="content">
             <h2>Eventi significativi nell'attività antiquariale</h2>

@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
     <link rel="stylesheet" href="../../css/tokens.css" />
     <link rel="stylesheet" href="../../css/styles-dettaglioAntiquario.css" />
+    <link rel="stylesheet" href="../../css/torna-su.css" />
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
     <script type="text/javascript" src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script type="text/javascript" src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
@@ -21,6 +22,7 @@
     <script type="text/javascript" src="../../script/albero-familiare.js"></script>
     <script type="text/javascript" src="../../script/dettaglioAntiquari.js"></script>
     <script type="text/javascript" src="../../script/mappaDettaglio.js"></script>
+    <script src="../../script/torna-su.js" defer=""></script>
   </head>
   <body>
     <header>
@@ -118,26 +120,32 @@
             </section>
           </div>
           <div id="Relazioni" class="content">
-            <h2>Altri antiquari</h2>
-            <ul>
-              <li>
-                <a href="dettaglio_SA_III.html">Sambon</a>
-              </li>
-            </ul>
-            <h2>Clienti</h2>
-            <ul>
-              <li>Arthur Pabst </li>
-              <li>Bernard Berenson </li>
-              <li>Giuseppe Bertini </li>
-              <li>Gustav von Benda </li>
-              <li>Isabella Stewart Gardner </li>
-              <li>Isabelle Errera </li>
-              <li>Julius Lessing </li>
-              <li>Karel Chytil </li>
-              <li>Luigi Alberico Trivulzio </li>
-              <li>Nélie Jacquemart </li>
-              <li>Édouard André </li>
-            </ul>
+            <div class="rel-griglia">
+              <section class="rel-gruppo">
+                <h2 class="rel-titolo">Altri antiquari</h2>
+                <ul class="rel-elenco">
+                  <li>
+                    <a class="rel-scheda" href="dettaglio_SA_III.html">Sambon</a>
+                  </li>
+                </ul>
+              </section>
+              <section class="rel-gruppo rel-gruppo-largo">
+                <h2 class="rel-titolo">Clienti</h2>
+                <ul class="rel-elenco">
+                  <li>Arthur Pabst</li>
+                  <li>Bernard Berenson</li>
+                  <li>Giuseppe Bertini</li>
+                  <li>Gustav von Benda</li>
+                  <li>Isabella Stewart Gardner</li>
+                  <li>Isabelle Errera</li>
+                  <li>Julius Lessing</li>
+                  <li>Karel Chytil</li>
+                  <li>Luigi Alberico Trivulzio</li>
+                  <li>Nélie Jacquemart</li>
+                  <li>Édouard André</li>
+                </ul>
+              </section>
+            </div>
           </div>
           <div id="Eventi" class="content">
             <h2>Eventi significativi nell'attività antiquariale</h2>

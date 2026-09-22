@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
     <link rel="stylesheet" href="../../css/tokens.css" />
     <link rel="stylesheet" href="../../css/styles-dettaglioAntiquario.css" />
+    <link rel="stylesheet" href="../../css/torna-su.css" />
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
     <script type="text/javascript" src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script type="text/javascript" src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
@@ -21,6 +22,7 @@
     <script type="text/javascript" src="../../script/albero-familiare.js"></script>
     <script type="text/javascript" src="../../script/dettaglioAntiquari.js"></script>
     <script type="text/javascript" src="../../script/mappaDettaglio.js"></script>
+    <script src="../../script/torna-su.js" defer=""></script>
   </head>
   <body>
     <header>
@@ -142,28 +144,40 @@
             </section>
           </div>
           <div id="Relazioni" class="content">
-            <h2>Clienti</h2>
-            <ul>
-              <li>Adrian Eeles </li>
-              <li>Andrew W. Mellon </li>
-              <li>Barbara Johnson </li>
-              <li>Calouste Goulbenkian </li>
-              <li>David Roberts </li>
-              <li>Frederic Allen Whiting </li>
-              <li>Giorgio IV d’Inghilterra  </li>
-              <li>Isabella Stewart Gardner </li>
-              <li>John Pierpont Morgan </li>
-              <li>Luigi Filippo duca d'Orleans  </li>
-              <li>Paul Mellon </li>
-              <li>Peter Widener </li>
-              <li>Samuel Putnam Avery </li>
-              <li>Wilhelm von Bode </li>
-            </ul>
-            <h2>Collaboratori</h2>
-            <ul>
-              <li>Ciceri (socio)</li>
-              <li>Chloe Stead (direttore)</li>
-            </ul>
+            <div class="rel-griglia">
+              <section class="rel-gruppo rel-gruppo-largo">
+                <h2 class="rel-titolo">Clienti</h2>
+                <ul class="rel-elenco">
+                  <li>Adrian Eeles</li>
+                  <li>Andrew W. Mellon</li>
+                  <li>Barbara Johnson</li>
+                  <li>Calouste Goulbenkian</li>
+                  <li>David Roberts</li>
+                  <li>Frederic Allen Whiting</li>
+                  <li>Giorgio IV d’Inghilterra</li>
+                  <li>Isabella Stewart Gardner</li>
+                  <li>John Pierpont Morgan</li>
+                  <li>Luigi Filippo duca d'Orleans</li>
+                  <li>Paul Mellon</li>
+                  <li>Peter Widener</li>
+                  <li>Samuel Putnam Avery</li>
+                  <li>Wilhelm von Bode</li>
+                </ul>
+              </section>
+              <section class="rel-gruppo">
+                <h2 class="rel-titolo">Collaboratori</h2>
+                <ul class="rel-elenco">
+                  <li>
+                    <span class="rel-nome">Chloe Stead</span>
+                    <span class="rel-qualifica">direttore</span>
+                  </li>
+                  <li>
+                    <span class="rel-nome">Ciceri</span>
+                    <span class="rel-qualifica">socio</span>
+                  </li>
+                </ul>
+              </section>
+            </div>
           </div>
           <div id="Bibliografia" class="content">
             <h2>Bibliografia essenziale</h2>

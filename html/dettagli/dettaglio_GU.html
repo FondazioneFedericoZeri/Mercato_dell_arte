@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
     <link rel="stylesheet" href="../../css/tokens.css" />
     <link rel="stylesheet" href="../../css/styles-dettaglioAntiquario.css" />
+    <link rel="stylesheet" href="../../css/torna-su.css" />
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
     <script type="text/javascript" src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script type="text/javascript" src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
@@ -21,6 +22,7 @@
     <script type="text/javascript" src="../../script/albero-familiare.js"></script>
     <script type="text/javascript" src="../../script/dettaglioAntiquari.js"></script>
     <script type="text/javascript" src="../../script/mappaDettaglio.js"></script>
+    <script src="../../script/torna-su.js" defer=""></script>
   </head>
   <body>
     <header>
@@ -101,7 +103,7 @@
           </button>
           <button class="tab" type="button" data_content="Relazioni">
             <span class="tab-voce">Relazioni</span>
-            <span class="tab-num">9</span>
+            <span class="tab-num">12</span>
           </button>
           <button class="tab" type="button" data_content="Eventi">
             <span class="tab-voce">Eventi</span>
@@ -140,21 +142,44 @@
             </section>
           </div>
           <div id="Relazioni" class="content">
-            <h2>Clienti</h2>
-            <ul>
-              <li>Giulio Cantalamessa </li>
-              <li>Isabella Stewart Gardner </li>
-              <li>Ludovico II di Baviera  </li>
-              <li>Nélie Jacquemart </li>
-              <li>Umberto I di Savoia  </li>
-              <li>Walter Erich Jacob Kees </li>
-              <li>Wilhelm von Bode </li>
-              <li>Édouard André </li>
-            </ul>
-            <h2>Collaboratori</h2>
-            <ul>
-              <li>Hugo Helbing (impresario)</li>
-            </ul>
+            <div class="rel-griglia">
+              <section class="rel-gruppo">
+                <h2 class="rel-titolo">Altri antiquari</h2>
+                <ul class="rel-elenco">
+                  <li>
+                    <a class="rel-scheda" href="dettaglio_BA_II.html">Bardini</a>
+                  </li>
+                  <li>
+                    <a class="rel-scheda" href="dettaglio_RA_NEW.html">Rambaldi</a>
+                  </li>
+                  <li>
+                    <a class="rel-scheda" href="dettaglio_RI_I.html">Ricchetti</a>
+                  </li>
+                </ul>
+              </section>
+              <section class="rel-gruppo">
+                <h2 class="rel-titolo">Clienti</h2>
+                <ul class="rel-elenco">
+                  <li>Giulio Cantalamessa</li>
+                  <li>Isabella Stewart Gardner</li>
+                  <li>Ludovico II di Baviera</li>
+                  <li>Nélie Jacquemart</li>
+                  <li>Umberto I di Savoia</li>
+                  <li>Walter Erich Jacob Kees</li>
+                  <li>Wilhelm von Bode</li>
+                  <li>Édouard André</li>
+                </ul>
+              </section>
+              <section class="rel-gruppo">
+                <h2 class="rel-titolo">Collaboratori</h2>
+                <ul class="rel-elenco">
+                  <li>
+                    <span class="rel-nome">Hugo Helbing</span>
+                    <span class="rel-qualifica">impresario</span>
+                  </li>
+                </ul>
+              </section>
+            </div>
           </div>
           <div id="Eventi" class="content">
             <h2>Eventi significativi nell'attività antiquariale</h2>
