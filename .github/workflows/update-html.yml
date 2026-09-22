@@ -40,7 +40,10 @@ jobs:
 
       # Sets up Python environment
       - name: Set up Python
-        uses: actions/setup-python@v2
+        # v2 e' del 2021 e gira su Node 16: le Actions lo
+        # segnalano gia' come deprecato e prima o poi smettera'
+        # di partire. v5 e' identico da usare, stesse opzioni.
+        uses: actions/setup-python@v5
         with:
           python-version: 3.11
 

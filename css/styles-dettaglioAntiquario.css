@@ -671,8 +671,12 @@ body.gal-bloccato .torna-su {
 /* Link di testo: terracotta come sul sito dei cataloghi d'asta.
    A riposo --link (#B03008), al passaggio del mouse --link-hover (#D94010)
    con la sottolineatura. I due valori stanno in css/tokens.css. */
+/* I rimandi dentro la biografia restano in grassetto: la' stanno in
+   mezzo al testo corrente e senza un peso diverso si perderebbero.
+   Le relazioni no: sono gia' un elenco di nomi in colonna, uno sotto
+   l'altro, e il grassetto li faceva gridare senza aggiungere niente.
+   Il loro aspetto lo decide .rel-scheda. */
 #Bio a,
-#Relazioni a,
 a.linkBio {
     font-weight: bold;
     color: var(--link);
@@ -680,7 +684,6 @@ a.linkBio {
 }
 
 #Bio a:hover,
-#Relazioni a:hover,
 a.linkBio:hover {
     color: var(--link-hover);
     text-decoration: underline;
