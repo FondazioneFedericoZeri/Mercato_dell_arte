@@ -331,15 +331,41 @@ def build_entities(input_csv_entità, output_json):
         if ent in entities_dicts:
             entities_dicts[ent]["Eventi"][evento] = eventi[evento]
 
+    # Una relazione entra solo se ENTRAMBI i codici sono entita' vere.
+    #
+    # Prima bastava che lo fosse uno dei due: l'altro veniva scritto
+    # com'era, anche se non esisteva. Il 22 settembre la riga R_74 di
+    # relazioni.tsv aveva nella colonna dell'entita' il codice di una
+    # persona (BR_I_1 invece di BR_I, cioe' Ivan Bruschi invece di
+    # Bruschi Ivan). Quel codice e' finito in entita.json, e
+    # build_dettaglio.py, cercandone il nome, si e' fermato con un
+    # KeyError: nessuna scheda e' piu' stata pubblicata, e le
+    # trentuno relazioni appena inserite non si sono viste, comprese
+    # quelle che con quella riga non c'entravano niente.
+    #
+    # Ora una riga sbagliata salta da sola e lo dice, invece di
+    # bloccare tutto.
     for relazione in relazioni:
-        ent1 = relazioni[relazione]["ID_entità_1"]
-        ent2 = relazioni[relazione]["ID_entità_2"]
+        ent1 = (relazioni[relazione].get("ID_entità_1") or "").strip()
+        ent2 = (relazioni[relazione].get("ID_entità_2") or "").strip()
 
-        if ent1 in entities_dicts:
-            entities_dicts[ent1]["Relazioni"][ent2] = True
+        ignoti = [e for e in (ent1, ent2) if e and e not in entities_dicts]
+        if ignoti:
+            print(f"  [relazioni.tsv] {relazione}: "
+                  f"{', '.join(ignoti)} non è un'entità antiquariale, "
+                  f"relazione ignorata", file=sys.stderr)
+            continue
+        if not ent1 or not ent2:
+            print(f"  [relazioni.tsv] {relazione}: manca una delle due "
+                  f"entità, relazione ignorata", file=sys.stderr)
+            continue
+        if ent1 == ent2:
+            print(f"  [relazioni.tsv] {relazione}: {ent1} collegata a se "
+                  f"stessa, relazione ignorata", file=sys.stderr)
+            continue
 
-        if ent2 in entities_dicts:
-            entities_dicts[ent2]["Relazioni"][ent1] = True
+        entities_dicts[ent1]["Relazioni"][ent2] = True
+        entities_dicts[ent2]["Relazioni"][ent1] = True
 
     print(json.dumps(entities_dicts,
                      ensure_ascii=False,

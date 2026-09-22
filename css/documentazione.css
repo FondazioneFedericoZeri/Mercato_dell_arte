@@ -163,21 +163,33 @@ body {
     margin: 0 0 18px 0;
 }
 
-.doc-occhiello {
-    color: #5c584f;
-}
+/* I titoli di sezione sono gli stessi titoletti della pagina Crediti:
+   maiuscoletto piccolo in --blu-scuro, non un titolo grande con un
+   filetto sotto. Due pagine che fanno la stessa cosa — scandire un
+   testo in sezioni — la fanno allo stesso modo.
 
+   Serve --blu-scuro e non --blu perche' qui l'azzurro e' *scritto*,
+   per giunta in piccolo: il blu d'identita' su bianco si ferma a
+   3,28:1, sotto la soglia WCAG AA. */
 .doc h2 {
-    font-family: var(--ff-head);
-    font-weight: 400;
-    font-size: 24px;
-    color: var(--testo);
-    margin: 42px 0 14px 0;
-    padding-bottom: 8px;
-    border-bottom: 1px solid var(--carta-bordo);
-    max-width: 66ch;
+    font-family: var(--ff-body);
+    font-size: var(--fs-caption);
+    font-weight: 600;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--blu-scuro);
+    line-height: 1.5;
+    margin: 50px 0 14px 0;
+    max-width: 60ch;
 }
 
+/* La prima sezione comincia subito sotto al titolo della pagina. */
+.doc h2:first-of-type {
+    margin-top: 26px;
+}
+
+/* I collegamenti restano in terracotta: e' il colore dei link in
+   tutto il sito, e l'azzurro qui serve ad altro. */
 .doc a {
     color: var(--link);
     text-decoration: underline;
@@ -190,38 +202,45 @@ body {
     text-decoration-color: currentColor;
 }
 
-/* I numeri: etichetta e valore, come nei crediti — la stessa forma
-   per la stessa cosa, un elenco di coppie. */
-.doc-numeri {
-    margin: 0 0 18px 0;
-    padding: 0;
-    max-width: 66ch;
-    border-top: 1px solid var(--carta-bordo);
+/* ── Il tocco di azzurro ──────────────────────────────────────
+   I colori sono quelli di tokens.css, gli stessi delle schede e
+   della pagina Luoghi: --blu per i segni, --blu-scuro dove l'azzurro
+   deve essere *letto* (sul bianco il blu d'identità dà 3,28:1,
+   sotto la soglia WCAG AA), --blu-tenue per i fondi.
+
+   L'azzurro qui non decora: marca l'inizio delle due sezioni e
+   raccoglie i due passaggi che valgono più degli altri — la frase
+   con cui la pagina si apre e quella con cui si chiude. I
+   collegamenti restano in terracotta come in tutto il sito.
+   ───────────────────────────────────────────────────────────── */
+
+/* La frase d'apertura: dice in tre righe che cos'e' tutto il resto.
+   Fondo azzurro chiarissimo e un filo di blu a sinistra, come le
+   note della scheda antiquari. */
+/* Stesse misure di .crediti-sostegno, in css/crediti.css: stesso
+   fondo, stesso filo a sinistra, stesso raggio. */
+.doc-apertura,
+.doc-chiusa {
+    padding: 20px 24px 22px 24px;
+    border-left: 3px solid var(--blu);
+    background-color: var(--blu-tenue);
+    border-radius: 2px;
 }
 
-.doc-numeri > div {
-    padding: 14px 0 15px 0;
-    border-bottom: 1px solid var(--carta-bordo);
+.doc-chiusa {
+    margin-top: 28px;
 }
 
-.doc-numeri dt {
-    margin: 0 0 4px 0;
-    font-size: var(--fs-caption);
-    font-weight: 600;
-    letter-spacing: 0.09em;
-    text-transform: uppercase;
-    color: #7c7768;
-}
-
-.doc-numeri dd {
-    margin: 0;
-    font-size: var(--fs-lettura);
-    color: var(--testo);
-}
-
-.doc-aggiornamento {
-    font-size: var(--fs-body-sm);
-    color: #7c7768;
+/* "1920 ca.": l'esempio si legge come un dato, non come testo
+   corrente, perche' e' il modo in cui il sito scrive davvero quelle
+   date. */
+.doc-esempio {
+    padding: 1px 7px;
+    border-radius: 4px;
+    background-color: var(--blu-tenue);
+    color: var(--blu-scuro);
+    font-weight: 500;
+    white-space: nowrap;
 }
 
 @media (max-width: 768px) {
@@ -229,14 +248,17 @@ body {
         padding: 26px 18px 50px 18px;
     }
 
-    .doc p,
-    .doc-numeri dd {
+    .doc p {
         font-size: var(--fs-body);
     }
 
+    .doc-apertura,
+    .doc-chiusa {
+        padding: 16px 18px 18px 18px;
+    }
+
     .doc h2 {
-        font-size: 21px;
-        margin-top: 34px;
+        margin-top: 40px;
     }
 }
 

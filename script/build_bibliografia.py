@@ -438,14 +438,12 @@ def build_html():
 
 			with page.main():
 
+				# Solo il titolo: il capoverso che spiegava le tre
+				# nature delle fonti diceva a parole quel che le tre
+				# carte qui sotto mostrano da sole, con il loro
+				# sottotitolo e il loro numero.
 				with page.section(klass="bib-intro"):
 					page.h1(klass="titolo-pagina", _t="Bibliografia")
-					page.p(_t="Questo lavoro è costruito su fonti di tre nature "
-						  "diverse, e si consultano in tre modi diversi: uno "
-						  "scritto lo si cerca per autore, un’intervista per "
-						  "l’antiquario di cui ci parla, un documento "
-						  "d’archivio per il luogo che lo conserva. Scegli "
-						  "da dove cominciare.")
 
 				with page.nav(klass="bib-scelta", **{"aria-label": "Tipo di fonte"}):
 					carta(page, "stampa", sum(len(v) for v in stampa.values()),

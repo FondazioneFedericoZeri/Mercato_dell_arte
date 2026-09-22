@@ -121,11 +121,34 @@ def getBib(bibitem):
 
 
 def getCollaboratore(coll_item):
-    s = ""
-    if len(coll_item["Nome"]) > 0:
-        s += f"{coll_item['Nome']} "
-    s += f"{coll_item['Cognome / Denominazione']} ({coll_item['Tipologia']})"
-    return s
+    nome, qualifica = collaboratore_parti(coll_item)
+    return f"{nome} ({qualifica})" if qualifica else nome
+
+
+def gruppo_klass(voci, soglia=10):
+    """La classe della colonna delle relazioni.
+
+    Oltre una decina di nomi una colonna sola diventa una striscia
+    lunga mezzo schermo accanto a due colonne quasi vuote: da li' in
+    su la categoria prende il posto di due colonne e i nomi ci scorrono
+    dentro su due file.
+    """
+    return "rel-gruppo rel-gruppo-largo" if len(voci) > soglia else "rel-gruppo"
+
+
+def collaboratore_parti(coll_item):
+    """Nome e qualifica separati.
+
+    La qualifica — fotografo, restauratore, storico dell'arte — e' il
+    dato che distingue un collaboratore dall'altro, ma dentro una
+    parentesi in coda al nome si legge per ultima. Tenendola separata
+    la pagina puo' metterla dove si vede.
+    """
+    nome = " ".join(p for p in (
+        (coll_item.get("Nome") or "").strip(),
+        (coll_item.get("Cognome / Denominazione") or "").strip(),
+    ) if p)
+    return nome, (coll_item.get("Tipologia") or "").strip()
 
 
 def getCliente(cl_item, people):
@@ -494,7 +517,12 @@ def build_html(entity, entities, parentela, ordinate):
 
     n_albero = persone_albero(entity["ID"], parentela)
     luoghi = luoghi_entita(entity)
-    altri = entity.get("Relazioni") or {}
+    # Solo i codici che sono davvero entita': un codice sbagliato in
+    # relazioni.tsv faceva morire la generazione con un KeyError e non
+    # usciva piu' una scheda. Filtrato qui, prima del contatore, il
+    # numero sul tab e l'elenco dicono la stessa cosa. Il controllo
+    # vero sta in tsv_to_json.py, che avvisa: questo e' il paracadute.
+    altri = [i for i in (entity.get("Relazioni") or {}) if i in entities]
     clienti = entity.get("Clienti") or {}
     collaboratori = entity.get("Collaboratori") or {}
     n_relazioni = len(altri) + len(clienti) + len(collaboratori)
@@ -606,29 +634,62 @@ def build_html(entity, entities, parentela, ordinate):
                         if n_relazioni:
                             with page.div(id="Relazioni",
                                           klass=klass_contenuto("Relazioni")):
+                                # Le tre categorie stanno affiancate, non
+                                # una sotto l'altra: sono elenchi corti —
+                                # due o tre nomi per lo piu' — e incolonnati
+                                # facevano scorrere mezza pagina per dodici
+                                # righe di testo.
+                                #
                                 # Ogni categoria compare solo se ha dei dati:
                                 # un'etichetta con sotto il vuoto non dice nulla.
-                                if altri:
-                                    page.h2(_t="Altri antiquari")
-                                    with page.ul():
-                                        for relent_id in altri:
-                                            with page.li():
-                                                page.a(href=f"dettaglio_{relent_id}.html",
-                                                       _t=f"{entities[relent_id]['Nome']}")
-                                if clienti:
-                                    page.h2(_t="Clienti")
-                                    with page.ul():
-                                        for _, cl_data in sorted(
-                                                clienti.items(),
-                                                key=lambda x: (x[1]["Nome"], x[1]["Cognome"])):
-                                            page.li(_t=getCliente(cl_data, people))
-                                if collaboratori:
-                                    page.h2(_t="Collaboratori")
-                                    with page.ul():
-                                        for _, coll_data in sorted(
-                                                collaboratori.items(),
-                                                key=lambda x: (x[1]["Nome"], x[1]["Cognome / Denominazione"])):
-                                            page.li(_t=getCollaboratore(coll_data))
+                                with page.div(klass="rel-griglia"):
+
+                                    if altri:
+                                        with page.section(klass="rel-gruppo"):
+                                            page.h2(klass="rel-titolo",
+                                                    _t="Altri antiquari")
+                                            with page.ul(klass="rel-elenco"):
+                                                ordinati = sorted(
+                                                    altri,
+                                                    key=lambda i: entities[i]["Nome"].lower())
+                                                for relent_id in ordinati:
+                                                    nome = entities[relent_id]["Nome"]
+                                                    with page.li():
+                                                        page.a(klass="rel-scheda",
+                                                               href=f"dettaglio_{relent_id}.html",
+                                                               _t=esc(nome))
+
+                                    if clienti:
+                                        # In ordine per come si leggono: il
+                                        # campo Cognome e' spesso vuoto e il
+                                        # nome intero sta tutto in "Nome".
+                                        nomi = sorted(
+                                            (getCliente(c, people).strip()
+                                             for c in clienti.values()),
+                                            key=lambda s: s.lower())
+                                        with page.section(klass=gruppo_klass(nomi)):
+                                            page.h2(klass="rel-titolo", _t="Clienti")
+                                            with page.ul(klass="rel-elenco"):
+                                                for nome in nomi:
+                                                    page.li(_t=esc(nome))
+
+                                    if collaboratori:
+                                        voci = sorted(
+                                            (collaboratore_parti(c)
+                                             for c in collaboratori.values()),
+                                            key=lambda v: v[0].lower())
+                                        with page.section(klass=gruppo_klass(voci)):
+                                            page.h2(klass="rel-titolo",
+                                                    _t="Collaboratori")
+                                            with page.ul(klass="rel-elenco"):
+                                                for nome, qualifica in voci:
+                                                    with page.li():
+                                                        page.span(klass="rel-nome",
+                                                                  _t=esc(nome))
+                                                        if qualifica:
+                                                            page.span(
+                                                                klass="rel-qualifica",
+                                                                _t=esc(qualifica))
 
                         if eventi:
                             with page.div(id="Eventi",

@@ -299,14 +299,9 @@ footer img {
     margin: 0 auto;
 }
 
-/* Il titolo viene da .titolo-pagina, in tokens.css. */
-
-.bib-intro p {
-    margin: 0;
-    font-size: var(--fs-body);
-    line-height: 1.6;
-    max-width: 68ch;
-}
+/* Il titolo viene da .titolo-pagina, in tokens.css. Qui sotto non c'e'
+   piu' il capoverso che spiegava le tre nature delle fonti: lo dicono
+   gia' le tre carte, ciascuna col suo sottotitolo e il suo numero. */
 
 /* Le tre scelte */
 .bib-scelta {
@@ -342,6 +337,14 @@ footer img {
 .bib-carta:hover {
     border-color: #b9b6ab;
     background-color: #fbfaf8;
+}
+
+/* Chi naviga da tastiera deve vedere dove si trova: carte e lettere
+   si segnalano allo stesso modo. Prima nessuna delle due lo faceva. */
+.bib-carta:focus-visible,
+.bib-alfabeto a:focus-visible {
+    outline: 2px solid var(--link);
+    outline-offset: 2px;
 }
 
 .bib-carta.aperta {
@@ -414,26 +417,35 @@ footer img {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;   /* l'alfabeto sta in mezzo alla pagina */
-    gap: 2px;
+    gap: 5px;
     margin: 22px 0 4px 0;
     padding-bottom: 16px;
     border-bottom: 1px solid var(--carta-bordo);
 }
 
+/* Le lettere sono pasticche come le carte qui sopra: stesso bordo,
+   stesso fondo, stesso modo di accendersi al passaggio. Prima erano
+   lettere nude in terracotta, senza niente attorno: non sembravano
+   cliccabili finche' non ci si passava sopra. */
 .bib-alfabeto a {
     display: inline-block;
-    min-width: 30px;
-    padding: 4px 0;
+    min-width: 26px;
+    padding: 3px 5px;
     text-align: center;
     text-decoration: none;
     font-size: var(--fs-body-sm);
     font-weight: 600;
     color: var(--link);
-    border-radius: 4px;
+    background-color: #fff;
+    border: 1px solid var(--carta-bordo);
+    border-radius: 999px;
+    transition: background-color 0.18s ease, border-color 0.18s ease,
+                color 0.18s ease;
 }
 
 .bib-alfabeto a:hover {
     background-color: var(--link);
+    border-color: var(--link);
     color: #fff;
 }
 
