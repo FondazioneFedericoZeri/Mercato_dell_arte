@@ -7348,11 +7348,11 @@
                 "Apertura": "1993",
                 "Chiusura": "in attività",
                 "Nome attività": "Harry, Matteo e Lorenza Salamon, \"“Salamon & C.”, poi “Matteo Salamon” e “Salamon Fine Art”",
-                "Latitudine": "",
-                "Longitudine": "",
+                "Latitudine": "45.467599128299064",
+                "Longitudine": "9.200235634823722",
                 "geo": {
-                    "lat": 45.4611775,
-                    "lon": 8.8882216
+                    "lat": 45.467599128299064,
+                    "lon": 9.200235634823722
                 }
             }
         },
@@ -7545,11 +7545,11 @@
                 "Apertura": "1993",
                 "Chiusura": "in attività",
                 "Nome attività": "Harry, Matteo e Lorenza Salamon, \"“Salamon & C.”, poi “Matteo Salamon” e “Salamon Fine Art”",
-                "Latitudine": "",
-                "Longitudine": "",
+                "Latitudine": "45.467599128299064",
+                "Longitudine": "9.200235634823722",
                 "geo": {
-                    "lat": 45.4611775,
-                    "lon": 8.8882216
+                    "lat": 45.467599128299064,
+                    "lon": 9.200235634823722
                 }
             }
         },
@@ -7574,11 +7574,11 @@
                 "Apertura": "1993",
                 "Chiusura": "in attività",
                 "Nome attività": "Harry, Matteo e Lorenza Salamon, \"“Salamon & C.”, poi “Matteo Salamon” e “Salamon Fine Art”",
-                "Latitudine": "",
-                "Longitudine": "",
+                "Latitudine": "45.467599128299064",
+                "Longitudine": "9.200235634823722",
                 "geo": {
-                    "lat": 45.4611775,
-                    "lon": 8.8882216
+                    "lat": 45.467599128299064,
+                    "lon": 9.200235634823722
                 }
             }
         },
@@ -7946,11 +7946,11 @@
                 "Apertura": "1902",
                 "Chiusura": "1906",
                 "Nome attività": "Antonio Salvadori (Palazzo Tron)",
-                "Latitudine": "",
-                "Longitudine": "",
+                "Latitudine": "45.441702685903714",
+                "Longitudine": "12.329936814724945",
                 "geo": {
-                    "lat": 45.4703627,
-                    "lon": 9.2097091
+                    "lat": 45.441702685903714,
+                    "lon": 12.329936814724945
                 }
             },
             "IT_167": {
@@ -8024,7 +8024,7 @@
                 "Regione": "Lombardia",
                 "Città": "Bergamo",
                 "Via": "via San Bernardino 66",
-                "Civico": "66",
+                "Civico": "",
                 "ID_entità": "ST_NEW",
                 "Apertura": "1878",
                 "Chiusura": "1903",
@@ -8032,8 +8032,8 @@
                 "Latitudine": "",
                 "Longitudine": "",
                 "geo": {
-                    "lat": 45.6863617,
-                    "lon": 9.6627716
+                    "lat": 45.6802211,
+                    "lon": 9.6632642
                 }
             },
             "IT_171": {
@@ -8042,7 +8042,7 @@
                 "Regione": "Lombardia",
                 "Città": "Bergamo",
                 "Via": "via San Bernardino 88",
-                "Civico": "88",
+                "Civico": "",
                 "ID_entità": "ST_NEW",
                 "Apertura": "1903",
                 "Chiusura": "1987",
@@ -8050,8 +8050,8 @@
                 "Latitudine": "",
                 "Longitudine": "",
                 "geo": {
-                    "lat": 45.675026,
-                    "lon": 9.6609375
+                    "lat": 45.6834356,
+                    "lon": 9.6623929
                 }
             }
         },
@@ -8071,7 +8071,7 @@
                 "Regione": "Lombardia",
                 "Città": "Bergamo",
                 "Via": "via San Bernardino 66",
-                "Civico": "66",
+                "Civico": "",
                 "ID_entità": "ST_NEW",
                 "Apertura": "1878",
                 "Chiusura": "1903",
@@ -8079,8 +8079,8 @@
                 "Latitudine": "",
                 "Longitudine": "",
                 "geo": {
-                    "lat": 45.6863617,
-                    "lon": 9.6627716
+                    "lat": 45.6802211,
+                    "lon": 9.6632642
                 }
             },
             "IT_171": {
@@ -8089,7 +8089,7 @@
                 "Regione": "Lombardia",
                 "Città": "Bergamo",
                 "Via": "via San Bernardino 88",
-                "Civico": "88",
+                "Civico": "",
                 "ID_entità": "ST_NEW",
                 "Apertura": "1903",
                 "Chiusura": "1987",
@@ -8097,8 +8097,8 @@
                 "Latitudine": "",
                 "Longitudine": "",
                 "geo": {
-                    "lat": 45.675026,
-                    "lon": 9.6609375
+                    "lat": 45.6834356,
+                    "lon": 9.6623929
                 }
             }
         },
@@ -8118,7 +8118,7 @@
                 "Regione": "Lombardia",
                 "Città": "Bergamo",
                 "Via": "via San Bernardino 66",
-                "Civico": "66",
+                "Civico": "",
                 "ID_entità": "ST_NEW",
                 "Apertura": "1878",
                 "Chiusura": "1903",
@@ -8126,8 +8126,8 @@
                 "Latitudine": "",
                 "Longitudine": "",
                 "geo": {
-                    "lat": 45.6863617,
-                    "lon": 9.6627716
+                    "lat": 45.6802211,
+                    "lon": 9.6632642
                 }
             },
             "IT_171": {
@@ -8136,7 +8136,7 @@
                 "Regione": "Lombardia",
                 "Città": "Bergamo",
                 "Via": "via San Bernardino 88",
-                "Civico": "88",
+                "Civico": "",
                 "ID_entità": "ST_NEW",
                 "Apertura": "1903",
                 "Chiusura": "1987",
@@ -8144,8 +8144,8 @@
                 "Latitudine": "",
                 "Longitudine": "",
                 "geo": {
-                    "lat": 45.675026,
-                    "lon": 9.6609375
+                    "lat": 45.6834356,
+                    "lon": 9.6623929
                 }
             }
         },
@@ -9830,24 +9830,6 @@
                     "lon": 12.3357414
                 }
             },
-            "IT_215": {
-                "ID": "IT_215",
-                "Nazione": "Italia",
-                "Regione": "Veneto",
-                "Città": "Venezia",
-                "Via": "San Moisé",
-                "Civico": "1777-1778",
-                "ID_entità": "VE_I",
-                "Apertura": "1901 ca.",
-                "Chiusura": "1903 ca.",
-                "Nome attività": "Gino Sarfatti e Giuseppe Guetta, \"The Venice Art Company\"",
-                "Latitudine": "",
-                "Longitudine": "",
-                "geo": {
-                    "lat": 45.4331386,
-                    "lon": 12.3357414
-                }
-            },
             "IT_216": {
                 "ID": "IT_216",
                 "Nazione": "Italia",
@@ -9933,24 +9915,6 @@
             },
             "IT_214": {
                 "ID": "IT_214",
-                "Nazione": "Italia",
-                "Regione": "Veneto",
-                "Città": "Venezia",
-                "Via": "San Moisé",
-                "Civico": "1777-1778",
-                "ID_entità": "VE_I",
-                "Apertura": "1901 ca.",
-                "Chiusura": "1903 ca.",
-                "Nome attività": "Gino Sarfatti e Giuseppe Guetta, \"The Venice Art Company\"",
-                "Latitudine": "",
-                "Longitudine": "",
-                "geo": {
-                    "lat": 45.4331386,
-                    "lon": 12.3357414
-                }
-            },
-            "IT_215": {
-                "ID": "IT_215",
                 "Nazione": "Italia",
                 "Regione": "Veneto",
                 "Città": "Venezia",
