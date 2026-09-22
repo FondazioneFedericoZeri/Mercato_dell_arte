@@ -400,6 +400,117 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
 """
 
 
+# ══════════════════════════════════════════════════════════════════
+#  Pagina non elencata: le letture d'insieme sui protagonisti.
+#
+#  Non sta nel menu e chiede ai motori di ricerca di non indicizzarla
+#  (noindex): si raggiunge solo con il link. ATTENZIONE: non elencata
+#  non vuol dire protetta. GitHub Pages serve tutto a chiunque, e chi
+#  ha l'indirizzo la apre; il file sta anche nel repository, che e'
+#  pubblico. Per metterla nel menu quando sara' il momento basta
+#  aggiungere una voce in tutte le testate del sito.
+#
+#  I dati sono gli stessi di html/persone.html — lo stesso blocco
+#  #persone-data — cosi' le due pagine non possono divergere.
+# ══════════════════════════════════════════════════════════════════
+
+PAGINA_PROTAGONISTI = """<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protagonisti: letture d'insieme | Mercato dell'arte</title>
+    <!-- Pagina di lavoro, fuori dal menu: si chiede ai motori di
+         ricerca di lasciarla stare. Non e' una protezione. -->
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" href="../css/tokens.css">
+    <link rel="stylesheet" href="../css/torna-su.css">
+    <link rel="stylesheet" href="../css/persone.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+    <!-- amCharts 5: la stessa libreria della pagina Progetto. Se non
+         arriva, il grafico non compare e restano gli elenchi. -->
+    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/hierarchy.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+    <script src="../script/persone-insieme.js" defer></script>
+    <script src="../script/menu.js" defer></script>
+    <script src="../script/torna-su.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <a class="marchio" href="../index.html">Mercato dell'arte</a>
+            <button class="menu-toggle" aria-label="Apri menu">
+                ☰
+            </button>
+            <div class="testata-destra">
+              <nav>
+                  <ul class="menu">
+                      <li><a href="../html/progetto.html">Progetto</a></li>
+                      <li><a href="../html/antiquari.html">Antiquari</a></li>
+                      <li><a href="../html/luoghi.html">Luoghi</a></li>
+                      <li><a href="../html/eventi.html">Eventi</a></li>
+                      <li><a href="../html/persone.html">Persone</a></li>
+                      <li><a href="../html/bibliografia.html">Bibliografia</a></li>
+                  </ul>
+              </nav>
+              <span class="testata-filo"></span>
+              <a class="testata-ente" href="https://fondazionezeri.unibo.it/it/homepage" target="_blank" rel="noopener"
+                 title="Fondazione Federico Zeri, Università di Bologna">
+                <img src="../img/homepage/logo.png" alt="Fondazione Federico Zeri">
+              </a>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Contenuto: generato da script/build_persone.py, NON modificare a mano. -->
+    <main>
+        <div class="wrap">
+            <p class="pi-occhiello pi-provvisoria">
+                Pagina di lavoro, non raggiungibile dal menu del sito.
+                <a href="persone.html">Torna all\'elenco dei protagonisti</a>
+            </p>
+
+            <h1 class="titolo-pagina">Le reti del mercato</h1>
+
+            <div id="persone-insieme" class="persone-insieme"></div>
+        </div>
+
+        <script id="persone-data" type="application/json">__PERSONE_DATA__</script>
+    </main>
+
+    <!-- Footer copiato dalla pagina esistente -->
+    <footer>
+        <div class="footer-container">
+          <div class="footer-ente">
+            <a href="https://fondazionezeri.unibo.it/it/homepage" target="_blank" rel="noopener">
+              <img src="../img/homepage/logo-negativo.png" alt="Fondazione Federico Zeri">
+            </a>
+            <p>Progetto della <a href="https://fondazionezeri.unibo.it/it/homepage" target="_blank" rel="noopener">Fondazione
+               Federico Zeri</a>, Università di Bologna.</p>
+          </div>
+            <div class="footer-left">
+                <p>Licenza dati e immagini: <img id="license.png" src="../img/homepage/license.png" alt="License"></p>
+            </div>
+            <div class="footer-right">
+                <p>
+                    <a href="../html/crediti.html">Crediti</a> | <a href="../html/documentazione.html">Documentazione</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+"""
+
+
 def build_statistiche(data, n_entita, output="json/statistiche.json"):
     """Numeri del contatore in home (sezione #statistics di index.html).
 
@@ -442,6 +553,11 @@ def build_persone_html(entita_tsv=None, output="html/persone.html"):
     page = PAGE_TEMPLATE.replace("__PERSONE_DATA__", data_json)
 
     pathlib.Path(output).write_text(page, encoding="utf-8")
+
+    # La pagina non elencata delle letture d'insieme, con gli stessi dati.
+    pagina = PAGINA_PROTAGONISTI.replace("__PERSONE_DATA__", data_json)
+    pathlib.Path("html/protagonisti.html").write_text(pagina, encoding="utf-8")
+    print("html/protagonisti.html generato (pagina non elencata).")
     n_ant = sum(1 for d in data if d["role"] == "antiquario")
     n_collab = sum(1 for d in data if d["role"] == "collaboratore")
     n_client = sum(1 for d in data if d["role"] == "cliente")

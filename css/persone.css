@@ -483,3 +483,302 @@
   .reset-filtri[hidden] {
     display: none;
   }
+
+  /* ══════════════════════════════════════════════════════════
+     Letture d'insieme — chi ricorre in più schede, famiglie e
+     antiquari soli. Markup costruito da script/persone-insieme.js.
+     ══════════════════════════════════════════════════════════ */
+
+  .persone-insieme {
+    margin: 26px 0 34px 0;
+  }
+
+  /* L'avviso in cima alla pagina non elencata: dice subito che non si
+     arriva qui dal menu, e riporta all'elenco dei protagonisti. */
+  .pi-provvisoria {
+    margin: 18px 0 4px 0;
+    padding: 9px 14px;
+    border-left: 3px solid var(--accent);
+    background: var(--accent-bg);
+    font-size: var(--fs-body-sm);
+    color: var(--text-secondary);
+  }
+
+  .pi-provvisoria a {
+    color: var(--link);
+    margin-left: 6px;
+  }
+
+  .pi-blocco {
+    margin: 0 0 38px 0;
+    padding-bottom: 34px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .pi-blocco:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .pi-titolo {
+    margin: 0 0 6px 0;
+    font-size: 26px;
+    font-style: italic;
+    font-weight: 400;
+    color: var(--text-primary);
+  }
+
+  .pi-occhiello {
+    margin: 0 0 18px 0;
+    max-width: 68ch;
+    font-size: var(--fs-body);
+    line-height: 1.55;
+    color: var(--text-secondary);
+  }
+
+  /* --- filtri per ruolo ------------------------------------- */
+
+  .pi-filtri {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 18px;
+  }
+
+  .pi-filtro {
+    appearance: none;
+    padding: 5px 13px;
+    border: 1px solid var(--chip-border);
+    border-radius: 999px;
+    background: var(--chip-bg);
+    font-family: inherit;
+    font-size: var(--fs-body-sm);
+    color: var(--text-primary);
+    cursor: pointer;
+  }
+
+  .pi-filtro:hover { border-color: var(--accent); }
+
+  .pi-filtro[aria-pressed="true"] {
+    background: var(--accent-bg);
+    border-color: var(--accent);
+    font-weight: 600;
+  }
+
+  /* --- la rete --------------------------------------------- */
+
+  .pi-rete {
+    height: 520px;
+    margin-bottom: 8px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--surface-1);
+  }
+
+  .pi-rete[hidden] { display: none; }
+
+  .pi-rete-didascalia {
+    margin: 0 0 22px 0;
+    max-width: 68ch;
+    font-size: var(--fs-body-sm);
+    line-height: 1.5;
+    color: var(--text-secondary);
+  }
+
+  .pi-rete-didascalia[hidden] { display: none; }
+
+  /* Il pallino della legenda, dello stesso colore dei nodi. */
+  .pi-chiave {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    vertical-align: baseline;
+  }
+
+  .pi-chiave-persona { background: #5593C9; }
+  .pi-chiave-casa { background: #C8683C; }
+
+  /* --- chi ricorre in più schede ---------------------------- */
+
+  .pi-lista {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    /* Due colonne affiancate: le righe sono corte e una colonna sola su
+       1080px lascerebbe metà pagina bianca. Griglia e non "columns":
+       con il testo a colonne le righe lunghe sbordavano una sull'altra. */
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 4px 40px;
+    align-items: start;
+  }
+
+  .pi-riga {
+    min-width: 0;
+    margin: 0 0 16px 0;
+  }
+
+  .pi-testa {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 4px 8px;
+  }
+
+  .pi-nome {
+    font-size: var(--fs-body);
+    font-weight: 600;
+  }
+
+  /* Il ruolo è un'etichetta, non un dato da leggere per primo. */
+  .pi-ruolo {
+    padding: 1px 7px;
+    border-radius: 999px;
+    font-size: 11px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    background: #f0f0f0;
+    color: var(--text-secondary);
+  }
+
+  .pi-ruolo-cliente { background: var(--accent-bg); color: #2f6094; }
+
+  .pi-conto {
+    margin-left: auto;
+    font-size: var(--fs-body-sm);
+    color: var(--text-secondary);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .pi-barra {
+    display: block;
+    height: 4px;
+    margin: 6px 0 7px 0;
+    border-radius: 2px;
+    background: #eef1f4;
+  }
+
+  .pi-barra-dentro {
+    display: block;
+    height: 100%;
+    border-radius: 2px;
+    background: var(--accent);
+  }
+
+  .pi-schede {
+    font-size: var(--fs-body-sm);
+    line-height: 1.6;
+  }
+
+  .pi-scheda {
+    color: var(--link);
+    text-decoration: none;
+    border-bottom: 1px solid color-mix(in srgb, var(--link) 40%, transparent);
+  }
+
+  .pi-scheda:hover {
+    color: var(--link-hover);
+    border-bottom-color: currentColor;
+  }
+
+  .pi-punto {
+    color: var(--text-muted);
+  }
+
+  .pi-ancora {
+    appearance: none;
+    margin-top: 6px;
+    padding: 2px 0;
+    background: none;
+    border: none;
+    font-family: inherit;
+    font-size: var(--fs-body-sm);
+    font-weight: 600;
+    color: var(--link);
+    cursor: pointer;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  .pi-ancora:hover { color: var(--link-hover); }
+  .pi-ancora[hidden] { display: none; }
+
+  /* --- famiglie e antiquari soli ---------------------------- */
+
+  .pi-scaglioni {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    max-width: 640px;
+  }
+
+  .pi-scaglione + .pi-scaglione { margin-top: 2px; }
+
+  .pi-scaglione-bottone {
+    appearance: none;
+    display: grid;
+    grid-template-columns: 96px minmax(0, 1fr) 34px;
+    align-items: center;
+    gap: 14px;
+    width: 100%;
+    padding: 7px 8px 7px 0;
+    background: none;
+    border: none;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: var(--fs-body);
+    color: var(--text-primary);
+    text-align: left;
+    cursor: pointer;
+  }
+
+  .pi-scaglione-bottone:hover { background: var(--surface-2); }
+
+  .pi-scaglione-barra {
+    display: block;
+    height: 16px;
+    border-radius: 3px;
+    background: #eef1f4;
+  }
+
+  .pi-scaglione-conto {
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+    color: var(--text-secondary);
+  }
+
+  .pi-scaglione-bottone[aria-expanded="true"] {
+    background: var(--accent-bg);
+    font-weight: 600;
+  }
+
+  .pi-scaglione-nomi {
+    padding: 8px 8px 12px 110px;
+    font-size: var(--fs-body-sm);
+    line-height: 1.7;
+  }
+
+  .pi-scaglione-nomi[hidden] { display: none; }
+
+  @media (max-width: 760px) {
+    .pi-lista { grid-template-columns: minmax(0, 1fr); }
+
+    /* Su uno schermo stretto la rete sta in un quadrato: piu' bassa
+       i pallini si accavallano, piu' alta ruba tutto il primo
+       schermo e l'elenco non si intravede nemmeno. */
+    .pi-rete { height: 360px; }
+
+    .pi-titolo { font-size: 22px; }
+
+    /* L'etichetta dello scaglione va sopra la barra: 96px fissi su uno
+       schermo da 390 lasciavano alla barra meno di metà riga. */
+    .pi-scaglione-bottone {
+      grid-template-columns: minmax(0, 1fr) 34px;
+      gap: 6px 10px;
+    }
+
+    .pi-scaglione-voce { grid-column: 1 / -1; }
+
+    .pi-scaglione-nomi { padding-left: 0; }
+  }
