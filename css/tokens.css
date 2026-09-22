@@ -52,6 +52,19 @@
     --blu:          #5593C9;
     --testo:        #333;
     --fondo-chiaro: #f8f8f8;
+
+    /* --- Due toni di servizio del blu ------------------------
+       Il blu d'identità su fondo bianco dà 3,28:1: va benissimo
+       per fasce, filetti e fondi pieni, ma non per il testo, che
+       per WCAG AA ne chiede 4,5:1. --blu-scuro è lo stesso blu
+       portato a 5,03:1, da usare quando il blu deve essere
+       *scritto*; --blu-tenue è la sua tinta chiara, per i fondi
+       di richiamo. La tinta è schiarita quel tanto che serve perché
+       --blu-scuro resti leggibile anche sopra di lei: 4,57:1, mentre
+       su un azzurrino più carico scendeva a 4,45 e passava sotto
+       soglia. Testo #333 su --blu-tenue: 11,49:1. */
+    --blu-scuro:    #3573A9;
+    --blu-tenue:    #EEF5FC;
 }
 
 /* ------------------------------------------------------------

@@ -86,11 +86,26 @@ document.addEventListener('DOMContentLoaded', function () {
     return Array.from(tipologiaRow.querySelectorAll('[aria-pressed="true"]')).map(function (b) { return b.dataset.tipo; });
   }
 
+  /* Le date come intervallo, sempre: quando se ne conosce un estremo
+     solo si tiene la forma "1967–" o "?–1897" invece di "n. 1967" e
+     "m. 1897". Una colonna di date si legge per confronto, e le
+     abbreviazioni rompevano l'incolonnamento; e' anche la forma che
+     il resto del sito usava gia' — l'albero familiare
+     (albero-familiare.js) e le schede di dettaglio
+     (build_dettaglio.py) scrivono le date cosi'. Questa pagina era
+     l'unica a discostarsene.
+
+     La morte vuota puo' voler dire "ancora in vita" o "non lo
+     sappiamo": build_persone.py normalizza "in vita" a stringa vuota,
+     quindi qui i due casi non sono distinguibili e la forma "1967–"
+     li copre entrambi senza affermare niente di piu' di quel che si
+     sa. Se non si conosce nessuna delle due date non si scrive "?–?",
+     che non direbbe nulla: l'etichetta resta vuota. */
   function dateLabel(d) {
     if (!d.nascita && !d.morte) return '';
     if (d.nascita && d.morte) return d.nascita + '–' + d.morte;
-    if (d.nascita) return 'n. ' + d.nascita;
-    return 'm. ' + d.morte;
+    if (d.nascita) return d.nascita + '–';
+    return '?–' + d.morte;
   }
 
   var resultLine = document.getElementById('resultLine');

@@ -164,7 +164,15 @@ body {
 .crediti-elenco {
     margin: 0;
     padding: 0;
-    border-top: 1px solid var(--carta-bordo);
+    /* La riga blu sotto il titolo e' lo stesso segno che apre le
+       colonne della bibliografia, dove l'iniziale ha sotto un bordo
+       spesso dello stesso colore. Qui fa due mestieri in uno:
+       sottolinea "Crediti" e apre l'elenco.
+
+       Solo questa e' blu: le righe che separano le voci restano del
+       grigio caldo, altrimenti la pagina diventa a righe azzurre e il
+       colore non indica piu' l'inizio di niente. */
+    border-top: 2px solid var(--blu);
 }
 
 .crediti-voce {
@@ -180,7 +188,11 @@ body {
     font-weight: 600;
     letter-spacing: 0.09em;
     text-transform: uppercase;
-    color: #7c7768;
+    /* Le etichette dei ruoli scandiscono la pagina: in blu danno il
+       ritmo che prima mancava. Qui serve --blu-scuro e non --blu,
+       perche' e' testo, per giunta piccolo: il blu d'identita' su
+       bianco si ferma a 3,28:1. */
+    color: var(--blu-scuro);
     line-height: 1.5;
     max-width: 60ch;
 }
@@ -196,9 +208,15 @@ body {
 }
 
 /* Chi sostiene il progetto non e' chi lo fa: dopo l'elenco, con piu'
-   aria intorno e senza il filo che separa i ruoli fra loro. */
+   aria intorno e senza il filo che separa i ruoli fra loro. Il fondo
+   azzurro chiaro lo stacca dall'elenco senza aggiungere un'altra
+   riga, e chiude la pagina con lo stesso colore con cui si apre. */
 .crediti-sostegno {
     margin-top: 40px;
+    padding: 20px 24px 22px 24px;
+    background-color: var(--blu-tenue);
+    border-left: 3px solid var(--blu);
+    border-radius: 2px;
 }
 
 @media (max-width: 768px) {
