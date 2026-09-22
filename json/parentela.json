@@ -1856,14 +1856,14 @@
                 "Tipo_di_relazione": "padre"
             },
             {
-                "Persona_1": "DI_I_2",
-                "Persona_2": "DI_I_3",
+                "Persona_1": "DI_I_1",
+                "Persona_2": "DI_I_4",
                 "Tipo_di_relazione": "padre"
             },
             {
-                "Persona_1": "DI_I_1",
-                "Persona_2": "DI_I_5",
-                "Tipo_di_relazione": "padre"
+                "Persona_1": "DI_I_2",
+                "Persona_2": "DI_I_4",
+                "Tipo_di_relazione": "fratello"
             }
         ],
         "Persone": {
@@ -1877,12 +1877,11 @@
                 "Nascita": "",
                 "Morte": ""
             },
-            "DI_I_3": {
+            "DI_I_4": {
                 "Nome": "Angelo Di Castro",
-                "Nascita": "",
-                "Morte": ""
-            },
-            "DI_I_5": {}
+                "Nascita": "1925",
+                "Morte": "2012"
+            }
         }
     },
     "DA": {
