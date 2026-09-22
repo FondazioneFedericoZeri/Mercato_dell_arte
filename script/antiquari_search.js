@@ -48,6 +48,24 @@ function etichetta_conteggio(n) {
                               : ' entit\u00e0 antiquariali)');
 }
 
+/* Gli ID delle entita' messi in ordine di nome.
+
+   Serve perche' i gruppi si costruiscono come oggetti e poi si
+   scorrevano con "for...in": le chiavi di un oggetto escono nell'ordine
+   in cui sono state inserite, cioe' l'ordine delle righe di entita.tsv,
+   che segue l'ID e non il nome. Dentro la S comparivano Salocchi,
+   Salvadori Giuseppe, Sambon, Sangiorgi e solo dopo Sabatello, perche'
+   il suo ID e' SA_V.
+
+   localeCompare in italiano, indifferente a maiuscole e accenti. */
+function ordina_per_nome(ids, entita_di) {
+    return ids.slice().sort(function (a, b) {
+        var na = (entita_di(a) || {})["Nome"] || "";
+        var nb = (entita_di(b) || {})["Nome"] || "";
+        return na.localeCompare(nb, "it", { sensitivity: "base" });
+    });
+}
+
 /* Le città di un'entità, senza i vuoti.
 
    Qualche luogo ha la colonna Città vuota: finiva nell'elenco come
@@ -82,8 +100,7 @@ function aggiorna_riepilogo(modo, n_gruppi, n_schede, n_antiquari) {
     } else {
         testo = n_schede + ' schede in ' + n_gruppi
               + (n_gruppi === 1 ? ' area' : ' aree')
-              + ', dalla pi\u00f9 documentata alla meno. Chi ha avuto sedi in '
-              + 'pi\u00f9 aree compare in ciascuna.';
+              + '. Entit\u00e0 attive in pi\u00f9 aree compaiono in ciascuna.';
     }
     if (ricerca_attiva) testo = 'Risultati della ricerca: ' + testo;
     el.textContent = testo;
@@ -119,7 +136,14 @@ var sort_alphabetically = function (refined_entities) {
     document.getElementById('cards-section').innerHTML = '';
     const cardSection = document.getElementById('cards-section');
 
-    for (letter in entities_list) {
+    // Anche le lettere vanno ordinate: uscivano nell'ordine in cui
+    // comparivano in entita.tsv. Finora coincideva con l'alfabeto solo
+    // perche' il file e' ordinato per ID, e sarebbe bastata una scheda
+    // nuova in coda per mandare la sua lettera in fondo alla pagina.
+    const lettere = Object.keys(entities_list)
+                          .sort(function (a, b) { return a.localeCompare(b, "it"); });
+
+    for (const letter of lettere) {
         const h2 = document.createElement('h2');
         h2.classList = "letter"
         h2.appendChild(document.createTextNode(letter));
@@ -133,7 +157,8 @@ var sort_alphabetically = function (refined_entities) {
         const card_container = document.createElement('div');
         card_container.classList = "card-container";
 
-        for (entitaId in entities_list[letter]) {
+        for (const entitaId of ordina_per_nome(Object.keys(entities_list[letter]),
+                                               function (id) { return working_json[id]; })) {
             var ent_dict = working_json[entitaId];
 
             const a_link = document.createElement('a');
@@ -241,7 +266,10 @@ var sort_geographically = function () {
         const card_container = document.createElement('div');
         card_container.classList = "card-container";
 
-        for (ent_id in entities_list[regione]){
+        // Dentro un'area le schede vanno in ordine di nome: anche qui
+        // uscivano nell'ordine delle righe di entita.tsv.
+        for (const ent_id of ordina_per_nome(Object.keys(entities_list[regione]),
+                                             function (id) { return entities_json[id]; })){
             var ent_dict = entities_json[ent_id];
 
             const a_link = document.createElement('a');
