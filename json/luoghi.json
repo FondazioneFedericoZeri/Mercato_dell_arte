@@ -313,8 +313,8 @@
         "Via": "Rio Novo",
         "Civico": "3498",
         "ID_entità": "GE_I",
-        "Apertura": "",
-        "Chiusura": "",
+        "Apertura": "1920 ca.",
+        "Chiusura": "1965",
         "Nome attività": "Benno Geiger (abitazione privata)",
         "Latitudine": "",
         "Longitudine": "",
@@ -339,24 +339,6 @@
         "geo": {
             "lat": 41.8951009587497,
             "lon": 12.476284893276052
-        }
-    },
-    "IT_1_g": {
-        "ID": "IT_1_g",
-        "Nazione": "Italia",
-        "Regione": "Veneto",
-        "Città": "Venezia",
-        "Via": "",
-        "Civico": "",
-        "ID_entità": "SA_VI_NEW",
-        "Apertura": "",
-        "Chiusura": "",
-        "Nome attività": "Antonio Salvadori",
-        "Latitudine": "",
-        "Longitudine": "",
-        "geo": {
-            "lat": 45.4371908,
-            "lon": 12.3345898
         }
     },
     "IT_2": {
@@ -4255,10 +4237,10 @@
         "Via": "via dei Greci",
         "Civico": "",
         "ID_entità": "DI_I",
-        "Apertura": "",
-        "Chiusura": "",
-        "Nome attività": "Eugenio Di Castro",
-        "Latitudine": "",
+        "Apertura": "1920 ca.",
+        "Chiusura": "1930 ca.",
+        "Nome attività": "",
+        "Latitudine": "Eugenio Di Castro",
         "Longitudine": "",
         "geo": {
             "lat": 41.9074985,
@@ -4273,10 +4255,10 @@
         "Via": "via del Babuino",
         "Civico": "82",
         "ID_entità": "DI_I",
-        "Apertura": "",
-        "Chiusura": "",
-        "Nome attività": "Eugenio Di Castro",
-        "Latitudine": "",
+        "Apertura": "1930 ca.",
+        "Chiusura": "1976",
+        "Nome attività": "",
+        "Latitudine": "Eugenio Di Castro",
         "Longitudine": "",
         "geo": {
             "lat": 41.9083445,
@@ -5137,10 +5119,10 @@
         "Via": "New York",
         "Civico": "",
         "ID_entità": "SA_IV",
-        "Apertura": "",
-        "Chiusura": "",
-        "Nome attività": "New York Studio: 55 E. 56th St",
-        "Latitudine": "",
+        "Apertura": "1915",
+        "Chiusura": "1919",
+        "Nome attività": "",
+        "Latitudine": "New York Studio: 55 E. 56th St",
         "Longitudine": "",
         "geo": {
             "lat": 36.1021436,
