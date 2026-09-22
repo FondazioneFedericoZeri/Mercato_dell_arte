@@ -25,11 +25,13 @@
     background: var(--surface-0);
     color: var(--text-primary);
     font-family: var(--ff-body);
-    padding-inline: 20px;
   }
   h1, h2 { font-family: var(--ff-head); }
 
-  .wrap { max-width: 1080px; margin: 0 auto; }
+  /* Il margine laterale sta sul contenuto, non sul body: messo sul body
+     rientrava anche la testata e il footer, che in tutte le altre pagine
+     vanno da bordo a bordo. Erano larghi 1360px su una finestra da 1400. */
+  .wrap { max-width: 1080px; margin: 0 auto; padding-inline: 20px; }
 
   .controls {
     position: sticky;

@@ -403,6 +403,14 @@ footer a {
     margin: 0 10px;
 }
 
+/* Il testo del footer e' dentro dei <p>, e in questa pagina la regola
+   "p { color: #666 }" piu' sotto batte il colore ereditato da footer:
+   su fondo #333 quel grigio era quasi illeggibile. Qui si ripristina il
+   bianco. E' l'unica pagina del sito in cui succedeva. */
+footer p {
+    color: #fff;
+}
+
 footer img {
     vertical-align: middle;
     margin-left: 5px;

@@ -91,82 +91,110 @@ document.addEventListener("DOMContentLoaded", function () {
         shadowSize: [41, 41]
     });
 
-    // Function to determine the marker icon based on the time period
+    /* Anno di apertura e di chiusura di una sede, come numeri.
+
+       "1880 ca." e "1930-1935 ca." danno l'anno che li apre, che e'
+       quello che serve qui. "in attivita'" non e' un anno: vale l'anno
+       corrente, perche' una sede ancora aperta e' attiva anche adesso.
+       Quando il campo e' vuoto o illeggibile si restituisce null. */
+    function anni(luogo) {
+        const numero = (valore) => {
+            const n = parseInt(valore, 10);
+            return Number.isNaN(n) ? null : n;
+        };
+        const chiusuraTesto = luogo["Chiusura"] || "";
+        return {
+            apertura: numero(luogo["Apertura"]),
+            chiusura: /in attivit/i.test(chiusuraTesto)
+                ? new Date().getFullYear()
+                : numero(chiusuraTesto)
+        };
+    }
+
+    /* Il colore del segnaposto: in che periodo la sede era attiva.
+
+       Si ragiona sull'intervallo di attivita' invece che su una catena
+       di casi particolari. Quella di prima lasciava scoperte due
+       combinazioni, che finivano nel grigio "dati mancanti" pur avendo
+       le date:
+
+       - chiusura esattamente nel 1900: "ante 1900" voleva una chiusura
+         minore di 1900 e "1900-1950" una maggiore di 1900, quindi il
+         1900 tondo non ricadeva in nessuno dei due (Bellini,
+         1880 ca. - 1900 ca.);
+       - sola apertura, senza chiusura, fra il 1900 e il 1950: tutti i
+         rami di quel periodo pretendevano anche una data di chiusura
+         (Palazzo Simonetti, 1915).
+
+       Quando manca una delle due date vale l'altra per entrambi gli
+       estremi: di una sede aperta nel 1915 e di cui non sappiamo altro
+       conosciamo comunque il periodo. */
     function getIconForPeriod(luogo) {
-        const apertura = luogo["Apertura"] ? parseInt(luogo["Apertura"]) : null;
-        const chiusura = luogo["Chiusura"] ? parseInt(luogo["Chiusura"]) : null;
+        const { apertura, chiusura } = anni(luogo);
 
-        // Case 1: If both Apertura and Chiusura are missing, use the gray icon
-        if (!apertura && !chiusura) {
-            return grayIcon; // Neutral color for missing data
+        // Senza nessuna delle due date il periodo non si sa: grigio.
+        if (apertura === null && chiusura === null) {
+            return grayIcon;
         }
 
-        // Case 2: If the activity ended before 1900 (even if it started earlier)
-        if (chiusura && chiusura < 1900) {
-            return blueIcon; // Blue for before 1900
-        }
+        const inizio = apertura !== null ? apertura : chiusura;
+        const fine = chiusura !== null ? chiusura : apertura;
 
-        // Case 3: If the activity was ongoing between 1900-1950
-        if (
-            (apertura && apertura < 1950 && chiusura && chiusura > 1900) ||  // Overlaps with 1900-1950
-            (apertura && apertura >= 1900 && chiusura && chiusura <= 1950)   // Fully within 1900-1950
-        ) {
-            return orangeIcon; // Orange for 1900-1950
+        if (fine <= 1900) {
+            return blueIcon;    // conclusa entro il 1900
         }
-
-        // Case 4: If the activity was ongoing after 1950 (including if it started earlier)
-        if (apertura && apertura <= 1950 && chiusura && chiusura > 1950) {
-            return greenIcon; // Green for post 1950 but started before
+        if (inizio < 1950) {
+            return orangeIcon;  // arrivata al Novecento, aperta prima del 1950
         }
-
-        // Case 5: If the activity started after 1950
-        if (apertura && apertura > 1950) {
-            return greenIcon; // Green for after 1950
-        }
-
-        // Default case: use gray as fallback if no match
-        return grayIcon;
+        return greenIcon;       // aperta dal 1950 in poi
     }
 
 
-    // Function to filter data based on the selected time period
-    function filterByTimePeriod(luogo, period) {
-        const apertura = luogo["Apertura"] ? parseInt(luogo["Apertura"]) : null;
-        const chiusura = luogo["Chiusura"] && luogo["Chiusura"].trim() !== '' ? parseInt(luogo["Chiusura"]) : null;  // Handle empty string
+    /* Il filtro per periodo: chi era attivo nella fascia scelta.
 
-        // 1. Show all points if "all" is selected, regardless of Apertura/Chiusura values
+       Stessa lettura delle date del colore (anni() qui sopra), cosi' le
+       due regole non possono piu' divergere. Una sede compare in una
+       fascia se il suo periodo di attivita' la attraversa, quindi puo'
+       comparire in piu' di una: una bottega aperta nel 1880 e chiusa
+       nel 1970 era attiva davvero in tutti e tre i periodi.
+
+       Le condizioni di prima erano scritte a mano fascia per fascia e
+       si erano scollate dai colori:
+
+       - "Post 1950" accettava qualunque sede priva di data di chiusura
+         (`chiusura === null` da solo bastava), comprese le cinque di
+         cui non sappiamo nessuna delle due date: comparivano fra le
+         attivita' del dopoguerra pur essendo segnaposto grigi;
+       - stessa scorciatoia in "1900-1950", dove una sede con la sola
+         apertura nell'Ottocento passava comunque;
+       - "in attivita'" non e' un numero, quindi la chiusura risultava
+         illeggibile e quelle sedi si salvavano solo grazie alla data
+         di apertura.
+
+       Una sede senza nessuna delle due date non ha un periodo: resta
+       fuori da tutte e tre le fasce e si vede solo sotto "Tutti". */
+    function filterByTimePeriod(luogo, period) {
         if (period === 'all') {
             return true;
         }
 
-        // 2. Show points where the activity is active before 1900
+        const { apertura, chiusura } = anni(luogo);
+        if (apertura === null && chiusura === null) {
+            return false;
+        }
+
+        const inizio = apertura !== null ? apertura : chiusura;
+        const fine = chiusura !== null ? chiusura : apertura;
+
         if (period === 'period1') {
-            if ((apertura && apertura < 1900) || (chiusura && chiusura < 1900)) {
-                return true;
-            }
-            return false;
+            return inizio <= 1900;              // gia' attiva nell'Ottocento
         }
-
-        // 3. Show points where the activity overlaps with the 1900-1950 period
         if (period === 'period2') {
-            if (
-                (apertura && apertura < 1950 && (chiusura === null || chiusura > 1900)) ||  // Overlap or no Chiusura
-                (apertura && apertura >= 1900 && apertura <= 1950)
-            ) {
-                return true;
-            }
-            return false;
+            return inizio <= 1950 && fine >= 1900;   // attraversa il 1900-1950
         }
-
-        // 4. Show points where activity continues after 1950 (including points that started earlier)
         if (period === 'period3') {
-            if ((apertura && apertura > 1950) || (chiusura === null || chiusura > 1950)) {
-                return true;
-            }
-            return false;
+            return fine >= 1950;                // arrivata al dopoguerra
         }
-
-        // Default: don't show the point if no valid match
         return false;
     }
 

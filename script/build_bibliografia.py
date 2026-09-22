@@ -286,12 +286,16 @@ def build_footer(page):
 					page.img(src="../img/homepage/logo-negativo.png",
 						 alt="Fondazione Federico Zeri")
 				page.p(_t='Progetto della <a href="' + ZERI + '" target="_blank" rel="noopener">Fondazione Federico Zeri</a>, Università di Bologna.')
+			# Stesso markup delle pagine scritte a mano. Prima il bollino
+			# della licenza stava fuori dal <p> e i due link stavano in
+			# due <p> distinti: nel footer a tre colonne finivano su piu'
+			# righe e la barra si scompaginava, alta 109px invece di 72.
 			with page.div(klass="footer-left"):
-				page.p(_t='Licenza dati e immagini:')
-				page.img(id="license.png", src="../img/homepage/license.png", alt="License")
+				page.p(_t='Licenza dati e immagini: <img id="license.png" '
+					  'src="../img/homepage/license.png" alt="License">')
 			with page.div(klass="footer-right"):
-				page.p().a(_t="Crediti", href="crediti.html")
-				page.p().a(_t="Documentazione", href="documentazione.html")
+				page.p(_t='<a href="crediti.html">Crediti</a> | '
+					  '<a href="documentazione.html">Documentazione</a>')
 
 
 def carta(page, chiave, quante, titolo, descrizione):

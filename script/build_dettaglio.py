@@ -652,17 +652,15 @@ def build_html(entity, entities, parentela, ordinate):
                         # chiamate, airium ci infila un a capo e in pagina
                         # compare uno spazio prima della virgola.
                         page.p(_t='Progetto della <a href="' + ZERI + '" target="_blank" rel="noopener">Fondazione Federico Zeri</a>, Universit\u00e0 di Bologna.')
+                    # Stesso markup delle pagine scritte a mano: il bollino
+                    # della licenza sta dentro il <p>, accanto al testo.
+                    # Fuori andava a capo e la barra cresceva di una riga.
                     with page.div(klass="footer-left"):
-                        page.p(_t='Licenza dati e immagini:')
-                        page.img(
-                            id="license.png", src="../../img/homepage/license.png", alt="License")
+                        page.p(_t='Licenza dati e immagini: <img id="license.png" '
+                                  'src="../../img/homepage/license.png" alt="License">')
                     with page.div(klass="footer-right"):
-                        with page.p():
-                            with page.a(href="../../html/crediti.html"):
-                                page("Crediti")
-                            page("|")
-                            with page.a(href="../../html/documentazione.html"):
-                                page("Documentazione")
+                        page.p(_t='<a href="../../html/crediti.html">Crediti</a> | '
+                                  '<a href="../../html/documentazione.html">Documentazione</a>')
 
     html_content = str(page)
 

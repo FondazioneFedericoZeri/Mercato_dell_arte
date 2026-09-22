@@ -182,11 +182,14 @@ footer img {
       padding: 10px;
     }
 
-    body {
-      padding: 10px;
+    /* Il margine laterale sta sul contenuto, non sul body: sul body
+       rientrava anche la testata e il footer, larghi 370px su uno
+       schermo da 390. In tutte le altre pagine vanno da bordo a bordo. */
+    main {
+      padding-inline: 10px;
     }
   }
-  
+
   @media (max-width: 768px) {
     footer {
         display: flex;
