@@ -72,6 +72,21 @@ def norm_morte(morte):
     return m
 
 
+def e_vivente(morte):
+    """Vero quando la colonna Morte dice "in vita".
+
+    Serve perche' una Morte vuota e una Morte "in vita" vogliono dire due
+    cose diverse — "non sappiamo quando e' morto" e "e' ancora vivo" — e
+    fino a qui norm_morte le appiattiva tutt'e due su stringa vuota. Sono
+    venti persone contro cinque: senza questa distinzione l'etichetta di
+    Davide Augusto Costantini, nato nel 1875 e di cui la data di morte non
+    si conosce, sarebbe identica a quella di Luigi Grassi, nato nel 1931 e
+    vivo. L'albero familiare e le schede di dettaglio la distinzione la
+    facevano gia'.
+    """
+    return (morte or "").strip().lower() == "in vita"
+
+
 # Particelle che, quando precedono l'ultima parola, fanno parte del
 # cognome ("Angelo Di Castro" -> "Di Castro", non solo "Castro").
 _SURNAME_PARTICLES = {
@@ -138,6 +153,7 @@ def build_persone_data(entita_by_id):
             "sort": surname_key(name),
             "nascita": (p.get("Nascita", "") or "").strip(),
             "morte": norm_morte(p.get("Morte", "")),
+            "vivente": e_vivente(p.get("Morte", "")),
             "entity_id": ent_id,
             "entity_name": entita_by_id[ent_id],
         })

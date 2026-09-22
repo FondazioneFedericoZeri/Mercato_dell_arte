@@ -86,26 +86,32 @@ document.addEventListener('DOMContentLoaded', function () {
     return Array.from(tipologiaRow.querySelectorAll('[aria-pressed="true"]')).map(function (b) { return b.dataset.tipo; });
   }
 
-  /* Le date come intervallo, sempre: quando se ne conosce un estremo
-     solo si tiene la forma "1967–" o "?–1897" invece di "n. 1967" e
-     "m. 1897". Una colonna di date si legge per confronto, e le
-     abbreviazioni rompevano l'incolonnamento; e' anche la forma che
-     il resto del sito usava gia' — l'albero familiare
-     (albero-familiare.js) e le schede di dettaglio
-     (build_dettaglio.py) scrivono le date cosi'. Questa pagina era
-     l'unica a discostarsene.
+  /* Le date come intervallo, sempre: mai "n. 1967" o "m. 1897". Una
+     colonna di date si legge per confronto, e le abbreviazioni
+     rompevano l'incolonnamento. E' anche la forma che il resto del
+     sito usava gia': l'albero familiare (albero-familiare.js) e le
+     schede di dettaglio (build_dettaglio.py) scrivono le date cosi',
+     questa pagina era l'unica a discostarsene.
 
-     La morte vuota puo' voler dire "ancora in vita" o "non lo
-     sappiamo": build_persone.py normalizza "in vita" a stringa vuota,
-     quindi qui i due casi non sono distinguibili e la forma "1967–"
-     li copre entrambi senza affermare niente di piu' di quel che si
-     sa. Se non si conosce nessuna delle due date non si scrive "?–?",
-     che non direbbe nulla: l'etichetta resta vuota. */
+     Quattro casi, e il punto interrogativo dice sempre la stessa
+     cosa — "questa data non la sappiamo":
+
+       1923–2015   entrambe note
+       ?–1897      morto nel 1897, nascita ignota
+       1875–?      nato nel 1875, data di morte ignota
+       1931–       nato nel 1931 e ancora in vita
+
+     Gli ultimi due si assomigliano ma dicono cose diverse, ed e' il
+     motivo per cui build_persone.py porta fin qui il campo "vivente":
+     la trattino aperto senza punto interrogativo e' un'affermazione
+     ("non e' morto"), non una lacuna.
+
+     Senza nessuna delle due date non si scrive "?–?", che non
+     direbbe nulla: l'etichetta resta vuota. */
   function dateLabel(d) {
+    if (d.vivente) return d.nascita ? d.nascita + '–' : '';
     if (!d.nascita && !d.morte) return '';
-    if (d.nascita && d.morte) return d.nascita + '–' + d.morte;
-    if (d.nascita) return d.nascita + '–';
-    return '?–' + d.morte;
+    return (d.nascita || '?') + '–' + (d.morte || '?');
   }
 
   var resultLine = document.getElementById('resultLine');

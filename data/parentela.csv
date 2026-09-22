@@ -167,8 +167,8 @@ SU,SU_4,SU_5,padre
 CA_V,CA_V_1,CA_V_2,padre
 CA_V,CA_V_2,CA_V_3,padre
 DI_I,DI_I_1,DI_I_2,padre
-DI_I,DI_I_2,DI_I_3,padre
-DI_I,DI_I_1,DI_I_5,padre
+DI_I,DI_I_1,DI_I_4,padre
+DI_I,DI_I_2,DI_I_4,fratello
 DA,DA_1,DA_2,padre
 RA_NEW,RA_NEW_1,RA_NEW_2,padre
 RA_NEW,RA_NEW_1,RA_NEW_3,padre
