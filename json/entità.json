@@ -1522,7 +1522,7 @@
                 ]
             },
             "CL_4": {
-                "Nome": "Giovanni II del Liechtenstein ",
+                "Nome": "Giovanni II del Liechtenstein",
                 "Cognome": "",
                 "vendite": [
                     "BA_III_1"
@@ -1566,6 +1566,13 @@
             "CL_49": {
                 "Nome": "Leo",
                 "Cognome": "Planiscig",
+                "vendite": [
+                    "BA_III_1"
+                ]
+            },
+            "CL_60": {
+                "Nome": "Gustav",
+                "Cognome": "von Benda",
                 "vendite": [
                     "BA_III_1"
                 ]
@@ -1690,6 +1697,20 @@
             }
         },
         "Clienti": {
+            "CL_12": {
+                "Nome": "Fausto",
+                "Cognome": "Bagatti Valsecchi",
+                "vendite": [
+                    "BA_IV_1"
+                ]
+            },
+            "CL_13": {
+                "Nome": "Giuseppe",
+                "Cognome": "Bagatti Valsecchi",
+                "vendite": [
+                    "BA_IV_1"
+                ]
+            },
             "CL_42": {
                 "Nome": "Charles",
                 "Cognome": "Lock Eastlake",
@@ -2286,7 +2307,141 @@
                 "Nome attività": ""
             }
         },
-        "Clienti": {},
+        "Clienti": {
+            "CL_5": {
+                "Nome": "Nélie",
+                "Cognome": "Jacquemart",
+                "vendite": [
+                    "BA_V_1"
+                ]
+            },
+            "CL_11_b": {
+                "Nome": "Édouard",
+                "Cognome": "André",
+                "vendite": [
+                    "BA_V_1"
+                ]
+            },
+            "CL_15": {
+                "Nome": "Stefano",
+                "Cognome": "Bardini",
+                "vendite": [
+                    "BA_V_1"
+                ]
+            },
+            "CL_23": {
+                "Nome": "Vittorio",
+                "Cognome": "Cini",
+                "vendite": [
+                    "BA_V_1"
+                ]
+            },
+            "CL_54": {
+                "Nome": "Isabella",
+                "Cognome": "Stewart Gardner",
+                "vendite": [
+                    "BA_V_1"
+                ]
+            },
+            "CL_61": {
+                "Nome": "Wilhelm",
+                "Cognome": "von Bode",
+                "vendite": [
+                    "BA_V_1"
+                ]
+            },
+            "CL_66": {
+                "Nome": "Nino",
+                "Cognome": "Barbantini",
+                "vendite": [
+                    "BA_V_1"
+                ]
+            },
+            "CL_67": {
+                "Nome": "Giorgio",
+                "Cognome": "Franchetti",
+                "vendite": [
+                    "BA_V_1"
+                ]
+            },
+            "CL_68": {
+                "Nome": "Raymond",
+                "Cognome": "Van Marle",
+                "vendite": [
+                    "BA_V_1"
+                ]
+            },
+            "CL_69": {
+                "Nome": "Frits",
+                "Cognome": "Lugt",
+                "vendite": [
+                    "BA_V_1"
+                ]
+            },
+            "CL_70": {
+                "Nome": "Wilhelm",
+                "Cognome": "Suida",
+                "vendite": [
+                    "BA_V_1"
+                ]
+            },
+            "CL_71": {
+                "Nome": "Joseph",
+                "Cognome": "Duveen",
+                "vendite": [
+                    "BA_V_1"
+                ]
+            },
+            "CL_72": {
+                "Nome": "Joseph",
+                "Cognome": "Breck",
+                "vendite": [
+                    "BA_V_1"
+                ]
+            },
+            "CL_73": {
+                "Nome": "Gaetano",
+                "Cognome": "Marzotto",
+                "vendite": [
+                    "BA_V_1"
+                ]
+            },
+            "CL_74": {
+                "Nome": "Gabrielle",
+                "Cognome": "Chanel",
+                "vendite": [
+                    "BA_V_1"
+                ]
+            },
+            "CL_75": {
+                "Nome": "Enrico Carlo Luigi",
+                "Cognome": "Borbone",
+                "vendite": [
+                    "BA_V_1"
+                ]
+            },
+            "CL_76": {
+                "Nome": "Eugène Daniel",
+                "Cognome": "Rothschild",
+                "vendite": [
+                    "BA_V_1"
+                ]
+            },
+            "CL_77": {
+                "Nome": "Aldo",
+                "Cognome": "Crespi",
+                "vendite": [
+                    "BA_V_1"
+                ]
+            },
+            "CL_78": {
+                "Nome": "Fiske",
+                "Cognome": "Kimball",
+                "vendite": [
+                    "BA_V_1"
+                ]
+            }
+        },
         "Relazioni": {}
     },
     "BE_I": {
@@ -3758,73 +3913,87 @@
         },
         "Clienti": {
             "CL_1": {
-                "Nome": "Emanuele Filiberto di Savoia-Aosta ",
+                "Nome": "Emanuele Filiberto di Savoia-Aosta",
                 "Cognome": "",
                 "vendite": [
-                    "Generic"
+                    ""
                 ]
             },
             "CL_2": {
                 "Nome": "Giorgio V d'Inghilterra",
                 "Cognome": "",
                 "vendite": [
-                    "Generic"
+                    ""
+                ]
+            },
+            "CL_5": {
+                "Nome": "Nélie",
+                "Cognome": "Jacquemart",
+                "vendite": [
+                    ""
                 ]
             },
             "CL_9": {
                 "Nome": "William Henry Vanderbilt",
                 "Cognome": "",
                 "vendite": [
-                    "Generic"
+                    ""
                 ]
             },
             "CL_10": {
                 "Nome": "Vittorio Emanuele III di Savoia",
                 "Cognome": "",
                 "vendite": [
-                    "Generic"
+                    ""
                 ]
             },
             "CL_20": {
                 "Nome": "Enrico",
                 "Cognome": "Caruso",
                 "vendite": [
-                    "Generic"
+                    ""
                 ]
             },
             "CL_28": {
                 "Nome": "John",
                 "Cognome": "Davison Rockefeller",
                 "vendite": [
-                    "Generic"
+                    ""
                 ]
             },
             "CL_29": {
                 "Nome": "Edmond",
                 "Cognome": "De Rothschild",
                 "vendite": [
-                    "Generic"
+                    ""
                 ]
             },
             "CL_38": {
                 "Nome": "Otto",
                 "Cognome": "Kahn",
                 "vendite": [
-                    "Generic"
+                    ""
                 ]
             },
             "CL_48": {
                 "Nome": "John",
                 "Cognome": "Pierpont Morgan",
                 "vendite": [
-                    "Generic"
+                    ""
+                ]
+            },
+            "CL_54": {
+                "Nome": "Isabella",
+                "Cognome": "Stewart Gardner",
+                "vendite": [
+                    ""
                 ]
             },
             "CL_62": {
                 "Nome": "Henry",
                 "Cognome": "Walters",
                 "vendite": [
-                    "Generic"
+                    ""
                 ]
             }
         },
@@ -4113,6 +4282,27 @@
             }
         },
         "Clienti": {
+            "CL_5": {
+                "Nome": "Nélie",
+                "Cognome": "Jacquemart",
+                "vendite": [
+                    ""
+                ]
+            },
+            "CL_11_b": {
+                "Nome": "Édouard",
+                "Cognome": "André",
+                "vendite": [
+                    ""
+                ]
+            },
+            "CL_17": {
+                "Nome": "Bernard",
+                "Cognome": "Berenson",
+                "vendite": [
+                    "CA_III_1"
+                ]
+            },
             "CL_17_b": {
                 "Nome": "Giuseppe",
                 "Cognome": "Bertini",
@@ -4144,6 +4334,27 @@
             "CL_46_c": {
                 "Nome": "Arthur",
                 "Cognome": "Pabst",
+                "vendite": [
+                    ""
+                ]
+            },
+            "CL_54": {
+                "Nome": "Isabella",
+                "Cognome": "Stewart Gardner",
+                "vendite": [
+                    ""
+                ]
+            },
+            "CL_58_b": {
+                "Nome": "Luigi Alberico",
+                "Cognome": "Trivulzio",
+                "vendite": [
+                    ""
+                ]
+            },
+            "CL_60": {
+                "Nome": "Gustav",
+                "Cognome": "von Benda",
                 "vendite": [
                     ""
                 ]
@@ -4503,7 +4714,71 @@
                 "Nome attività": ""
             }
         },
-        "Clienti": {},
+        "Clienti": {
+            "CL_5": {
+                "Nome": "Nélie",
+                "Cognome": "Jacquemart",
+                "vendite": [
+                    "CA_IV_1"
+                ]
+            },
+            "CL_11_b": {
+                "Nome": "Édouard",
+                "Cognome": "André",
+                "vendite": [
+                    "CA_IV_1"
+                ]
+            },
+            "CL_15": {
+                "Nome": "Stefano",
+                "Cognome": "Bardini",
+                "vendite": [
+                    "CA_IV_1"
+                ]
+            },
+            "CL_23": {
+                "Nome": "Vittorio",
+                "Cognome": "Cini",
+                "vendite": [
+                    "CA_IV_1"
+                ]
+            },
+            "CL_54": {
+                "Nome": "Isabella",
+                "Cognome": "Stewart Gardner",
+                "vendite": [
+                    "CA_IV_1"
+                ]
+            },
+            "CL_61": {
+                "Nome": "Wilhelm",
+                "Cognome": "von Bode",
+                "vendite": [
+                    "CA_IV_1"
+                ]
+            },
+            "CL_66": {
+                "Nome": "Nino",
+                "Cognome": "Barbantini",
+                "vendite": [
+                    "CA_IV_1"
+                ]
+            },
+            "CL_67": {
+                "Nome": "Giorgio",
+                "Cognome": "Franchetti",
+                "vendite": [
+                    "CA_IV_1"
+                ]
+            },
+            "CL_75": {
+                "Nome": "Enrico Carlo Luigi",
+                "Cognome": "Borbone",
+                "vendite": [
+                    "CA_IV_1"
+                ]
+            }
+        },
         "Relazioni": {}
     },
     "CA_V": {
@@ -5622,6 +5897,13 @@
                     "CO_III_1"
                 ]
             },
+            "CL_17": {
+                "Nome": "Bernard",
+                "Cognome": "Berenson",
+                "vendite": [
+                    "CO_III_1"
+                ]
+            },
             "CL_47": {
                 "Nome": "Herbert",
                 "Cognome": "Percy Horne",
@@ -6269,7 +6551,106 @@
                 "Nome attività": ""
             }
         },
-        "Clienti": {},
+        "Clienti": {
+            "CL_48": {
+                "Nome": "John",
+                "Cognome": "Pierpont Morgan",
+                "vendite": [
+                    "CO_IV_3 CO_IV_5 CO_IV_8"
+                ]
+            },
+            "CL_54": {
+                "Nome": "Isabella",
+                "Cognome": "Stewart Gardner",
+                "vendite": [
+                    "CO_IV_3 CO_IV_5 CO_IV_9"
+                ]
+            },
+            "CL_61": {
+                "Nome": "Wilhelm",
+                "Cognome": "von Bode",
+                "vendite": [
+                    "CO_IV_3 CO_IV_5 CO_IV_8"
+                ]
+            },
+            "CL_104": {
+                "Nome": "Giorgio IV d’Inghilterra",
+                "Cognome": "",
+                "vendite": [
+                    "CO_IV_3 CO_IV_5 CO_IV_8"
+                ]
+            },
+            "CL_105": {
+                "Nome": "Luigi Filippo duca d'Orleans",
+                "Cognome": "",
+                "vendite": [
+                    "CO_IV_3 CO_IV_5 CO_IV_8"
+                ]
+            },
+            "CL_106": {
+                "Nome": "David",
+                "Cognome": "Roberts",
+                "vendite": [
+                    "CO_IV_3 CO_IV_5 CO_IV_8"
+                ]
+            },
+            "CL_107": {
+                "Nome": "Andrew W.",
+                "Cognome": "Mellon",
+                "vendite": [
+                    "CO_IV_3 CO_IV_5 CO_IV_8"
+                ]
+            },
+            "CL_108": {
+                "Nome": "Paul",
+                "Cognome": "Mellon",
+                "vendite": [
+                    "CO_IV_3 CO_IV_5 CO_IV_8"
+                ]
+            },
+            "CL_109": {
+                "Nome": "Samuel",
+                "Cognome": "Putnam Avery",
+                "vendite": [
+                    "CO_IV_3 CO_IV_5 CO_IV_8"
+                ]
+            },
+            "CL_110": {
+                "Nome": "Peter",
+                "Cognome": "Widener",
+                "vendite": [
+                    "CO_IV_3 CO_IV_5 CO_IV_8"
+                ]
+            },
+            "CL_111": {
+                "Nome": "Frederic Allen",
+                "Cognome": "Whiting",
+                "vendite": [
+                    "CO_IV_3 CO_IV_5 CO_IV_8"
+                ]
+            },
+            "CL_112": {
+                "Nome": "Adrian",
+                "Cognome": "Eeles",
+                "vendite": [
+                    "CO_IV_3 CO_IV_5 CO_IV_8"
+                ]
+            },
+            "CL_113": {
+                "Nome": "Calouste",
+                "Cognome": "Goulbenkian",
+                "vendite": [
+                    "CO_IV_3 CO_IV_5 CO_IV_8"
+                ]
+            },
+            "CL_114": {
+                "Nome": "Barbara",
+                "Cognome": "Johnson",
+                "vendite": [
+                    "CO_IV_3 CO_IV_5 CO_IV_8"
+                ]
+            }
+        },
         "Relazioni": {}
     },
     "CO_V": {
@@ -6333,7 +6714,7 @@
             "C_134": {
                 "ID": "C_134",
                 "Nome": "Dwight",
-                "Cognome / Denominazione": "Miller",
+                "Cognome / Denominazione": "Millet",
                 "Tipologia": "storico dell'arte",
                 "ID Antiquari": "CO_V",
                 "Nome Antiquari": "Cortinovis"
@@ -6763,7 +7144,22 @@
                 "Nome attività": "Galleria D'Atri"
             }
         },
-        "Clienti": {},
+        "Clienti": {
+            "CL_121": {
+                "Nome": "Walter Andreas",
+                "Cognome": "Hofer",
+                "vendite": [
+                    "DA_1"
+                ]
+            },
+            "CL_122": {
+                "Nome": "Karl",
+                "Cognome": "Haberstock",
+                "vendite": [
+                    "DA_2"
+                ]
+            }
+        },
         "Relazioni": {}
     },
     "DE": {
@@ -7667,6 +8063,13 @@
             "CL_51_b": {
                 "Nome": "Giovanni",
                 "Cognome": "Rasini",
+                "vendite": [
+                    ""
+                ]
+            },
+            "CL_58_b": {
+                "Nome": "Luigi Alberico",
+                "Cognome": "Trivulzio",
                 "vendite": [
                     ""
                 ]
@@ -9154,7 +9557,64 @@
                 "Nome attività": ""
             }
         },
-        "Clienti": {},
+        "Clienti": {
+            "CL_5": {
+                "Nome": "Nélie",
+                "Cognome": "Jacquemart",
+                "vendite": [
+                    "GU_1"
+                ]
+            },
+            "CL_11_b": {
+                "Nome": "Édouard",
+                "Cognome": "André",
+                "vendite": [
+                    "GU_1"
+                ]
+            },
+            "CL_54": {
+                "Nome": "Isabella",
+                "Cognome": "Stewart Gardner",
+                "vendite": [
+                    "GU_1"
+                ]
+            },
+            "CL_61": {
+                "Nome": "Wilhelm",
+                "Cognome": "von Bode",
+                "vendite": [
+                    "GU_1"
+                ]
+            },
+            "CL_83": {
+                "Nome": "Giulio",
+                "Cognome": "Cantalamessa",
+                "vendite": [
+                    "GU_1"
+                ]
+            },
+            "CL_84": {
+                "Nome": "Ludovico II di Baviera",
+                "Cognome": "",
+                "vendite": [
+                    "GU_1"
+                ]
+            },
+            "CL_85": {
+                "Nome": "Umberto I di Savoia",
+                "Cognome": "",
+                "vendite": [
+                    "GU_1"
+                ]
+            },
+            "CL_86": {
+                "Nome": "Walter Erich Jacob",
+                "Cognome": "Kees",
+                "vendite": [
+                    "GU_1"
+                ]
+            }
+        },
         "Relazioni": {}
     },
     "GR_II": {
@@ -9363,6 +9823,41 @@
             }
         },
         "Clienti": {
+            "CL_5": {
+                "Nome": "Nélie",
+                "Cognome": "Jacquemart",
+                "vendite": [
+                    ""
+                ]
+            },
+            "CL_11_b": {
+                "Nome": "Édouard",
+                "Cognome": "André",
+                "vendite": [
+                    ""
+                ]
+            },
+            "CL_12": {
+                "Nome": "Fausto",
+                "Cognome": "Bagatti Valsecchi",
+                "vendite": [
+                    "GR_II_1"
+                ]
+            },
+            "CL_13": {
+                "Nome": "Giuseppe",
+                "Cognome": "Bagatti Valsecchi",
+                "vendite": [
+                    "GR_II_1"
+                ]
+            },
+            "CL_17": {
+                "Nome": "Bernard",
+                "Cognome": "Berenson",
+                "vendite": [
+                    "GR_II_1"
+                ]
+            },
             "CL_19_b": {
                 "Nome": "Antonio",
                 "Cognome": "Borgogna",
@@ -9763,35 +10258,35 @@
                 "Nome": "Otto",
                 "Cognome": "Lanz",
                 "vendite": [
-                    "Generic"
+                    ""
                 ]
             },
             "CL_40": {
                 "Nome": "Arthur",
                 "Cognome": "Lee (primo visconte Lee di Fareham)",
                 "vendite": [
-                    "Generic"
+                    ""
                 ]
             },
             "CL_55": {
                 "Nome": "Adolphe",
                 "Cognome": "Stoclet",
                 "vendite": [
-                    "Generic"
+                    ""
                 ]
             },
             "CL_59": {
                 "Nome": "Adolf",
                 "Cognome": "von Beckerath",
                 "vendite": [
-                    "Generic"
+                    ""
                 ]
             },
-            "CL_62": {
+            "CL_61": {
                 "Nome": "Wilhelm",
                 "Cognome": "von Bode",
                 "vendite": [
-                    "Generic"
+                    ""
                 ]
             }
         },
@@ -10019,21 +10514,21 @@
                 "Nome": "Ugolino della Gherardesca",
                 "Cognome": "",
                 "vendite": [
-                    "Generic"
+                    ""
                 ]
             },
             "CL_26": {
                 "Nome": "Galeazzo",
                 "Cognome": "Cora",
                 "vendite": [
-                    "Generic"
+                    ""
                 ]
             },
             "CL_64": {
                 "Nome": "Luigi",
                 "Cognome": "Zauli Nardi",
                 "vendite": [
-                    "Generic"
+                    ""
                 ]
             }
         },
@@ -10648,14 +11143,14 @@
                 "Nome": "Giovanni",
                 "Cognome": "Barraco",
                 "vendite": [
-                    "Generic"
+                    ""
                 ]
             },
             "CL_37": {
                 "Nome": "Carl",
                 "Cognome": "Jacobsen",
                 "vendite": [
-                    "Generic"
+                    ""
                 ]
             }
         },
@@ -11528,7 +12023,36 @@
                 "Nome attività": "Loewi-Robertson, Inc."
             }
         },
-        "Clienti": {},
+        "Clienti": {
+            "CL_87": {
+                "Nome": "Walter Tower",
+                "Cognome": "Rosen",
+                "vendite": [
+                    "LO_1"
+                ]
+            },
+            "CL_88": {
+                "Nome": "Werner",
+                "Cognome": "Abegg",
+                "vendite": [
+                    "LO_1"
+                ]
+            },
+            "CL_127": {
+                "Nome": "Mortimer Clifford",
+                "Cognome": "Leventritt",
+                "vendite": [
+                    "LO_1"
+                ]
+            },
+            "CL_128": {
+                "Nome": "George Hewitt",
+                "Cognome": "Myers",
+                "vendite": [
+                    "LO_1"
+                ]
+            }
+        },
         "Relazioni": {}
     },
     "LO_I": {
@@ -13100,7 +13624,7 @@
                         "Città": "Roma",
                         "Via": "Piazza Augusto Imperatore",
                         "Civico": "",
-                        "ID_entità": "PA_III FO_I",
+                        "ID_entità": "FO_I",
                         "Apertura": "1944",
                         "Chiusura": "1951",
                         "Nome attività": "Pietro Maria Bardi \"Studio d’Arte Palma\"",
@@ -13464,7 +13988,50 @@
                 "Nome attività": "Galleria Pesaro"
             }
         },
-        "Clienti": {},
+        "Clienti": {
+            "CL_73": {
+                "Nome": "Gaetano",
+                "Cognome": "Marzotto",
+                "vendite": [
+                    "PE_1"
+                ]
+            },
+            "CL_79": {
+                "Nome": "Giacomo",
+                "Cognome": "Jucker",
+                "vendite": [
+                    "PE_1"
+                ]
+            },
+            "CL_80": {
+                "Nome": "Giuseppe",
+                "Cognome": "Ricci Oddi",
+                "vendite": [
+                    "PE_1"
+                ]
+            },
+            "CL_81": {
+                "Nome": "Luigi",
+                "Cognome": "Margherita",
+                "vendite": [
+                    "PE_1"
+                ]
+            },
+            "CL_82": {
+                "Nome": "Alberto",
+                "Cognome": "Clerici",
+                "vendite": [
+                    "PE_1"
+                ]
+            },
+            "CL_82_b": {
+                "Nome": "Alberto",
+                "Cognome": "Grubicy",
+                "vendite": [
+                    "PE_1"
+                ]
+            }
+        },
         "Relazioni": {}
     },
     "PI_NEW": {
@@ -14781,7 +15348,7 @@
         "Foto gallery": [
             "PO_III_img1",
             "PO_III_img2",
-            "PO_III_img3"
+            "PO_IIII_img3"
         ],
         "Persone": {
             "PO_III_1": {
@@ -14832,7 +15399,148 @@
                 "Nome attività": ""
             }
         },
-        "Clienti": {},
+        "Clienti": {
+            "CL_16": {
+                "Nome": "Giovanni",
+                "Cognome": "Barraco",
+                "vendite": [
+                    "PO_III_1"
+                ]
+            },
+            "CL_29": {
+                "Nome": "Edmond",
+                "Cognome": "De Rothschild",
+                "vendite": [
+                    "PO_III_1"
+                ]
+            },
+            "CL_37": {
+                "Nome": "Carl",
+                "Cognome": "Jacobsen",
+                "vendite": [
+                    "PO_III_1"
+                ]
+            },
+            "CL_48": {
+                "Nome": "John",
+                "Cognome": "Pierpont Morgan",
+                "vendite": [
+                    "PO_III_1"
+                ]
+            },
+            "CL_56": {
+                "Nome": "Gregor",
+                "Cognome": "Stroganoff",
+                "vendite": [
+                    "PO_III_1"
+                ]
+            },
+            "CL_61": {
+                "Nome": "Wilhelm",
+                "Cognome": "von Bode",
+                "vendite": [
+                    "PO_III_1"
+                ]
+            },
+            "CL_89": {
+                "Nome": "Edward Waldo",
+                "Cognome": "Forbes",
+                "vendite": [
+                    "PO_III_1"
+                ]
+            },
+            "CL_90": {
+                "Nome": "Denis",
+                "Cognome": "Mahon",
+                "vendite": [
+                    "PO_III_1"
+                ]
+            },
+            "CL_92": {
+                "Nome": "Robert",
+                "Cognome": "Zahn",
+                "vendite": [
+                    "PO_III_1"
+                ]
+            },
+            "CL_93": {
+                "Nome": "Johann Albrecht",
+                "Cognome": "duca di Mecklemburg-Schwerin",
+                "vendite": [
+                    "PO_III_1"
+                ]
+            },
+            "CL_94": {
+                "Nome": "Francesco",
+                "Cognome": "marchese Cappelli",
+                "vendite": [
+                    "PO_III_1"
+                ]
+            },
+            "CL_95": {
+                "Nome": "Louis",
+                "Cognome": "Saulini",
+                "vendite": [
+                    "PO_III_1"
+                ]
+            },
+            "CL_96": {
+                "Nome": "Alexandr Iovanovitsch",
+                "Cognome": "conte von Nelidow",
+                "vendite": [
+                    "PO_III_1"
+                ]
+            },
+            "CL_97": {
+                "Nome": "Arturo",
+                "Cognome": "De Sanctis Mangelli",
+                "vendite": [
+                    "PO_III_1"
+                ]
+            },
+            "CL_98": {
+                "Nome": "Sigmund",
+                "Cognome": "Freud",
+                "vendite": [
+                    "PO_III_1"
+                ]
+            },
+            "CL_99": {
+                "Nome": "Ernesto",
+                "Cognome": "Tucci",
+                "vendite": [
+                    "PO_III_1"
+                ]
+            },
+            "CL_100": {
+                "Nome": "Richard",
+                "Cognome": "Norton",
+                "vendite": [
+                    "PO_III_1"
+                ]
+            },
+            "CL_101": {
+                "Nome": "John",
+                "Cognome": "Marshall",
+                "vendite": [
+                    "PO_III_1"
+                ]
+            },
+            "CL_102": {
+                "Nome": "Remy",
+                "Cognome": "conte von Kwiatkowski",
+                "vendite": [
+                    "PO_III_1"
+                ]
+            },
+            "CL_103": {
+                "Nome": "Harold",
+                "Cognome": "Woodbury Parsons",
+                "vendite": [
+                    "PO_III_1"
+                ]
+            }
+        },
         "Relazioni": {
             "BA_III": true,
             "JA": true,
@@ -14948,7 +15656,7 @@
             },
             "C_152": {
                 "ID": "C_152",
-                "Nome": "Massimo",
+                "Nome": "Massino",
                 "Cognome / Denominazione": "Listri",
                 "Tipologia": "fotografo",
                 "ID Antiquari": "PR",
@@ -15108,7 +15816,29 @@
                 "Nome attività": "Giovanni Pratesi Antiquario"
             }
         },
-        "Clienti": {},
+        "Clienti": {
+            "CL_124": {
+                "Nome": "Valentino",
+                "Cognome": "Garavani",
+                "vendite": [
+                    "PR_1"
+                ]
+            },
+            "CL_125": {
+                "Nome": "Gerolamo",
+                "Cognome": "Etro",
+                "vendite": [
+                    "PR_2"
+                ]
+            },
+            "CL_126": {
+                "Nome": "Patrizio",
+                "Cognome": "Bertelli",
+                "vendite": [
+                    "PR_3"
+                ]
+            }
+        },
         "Relazioni": {}
     },
     "RA_NEW": {
@@ -15834,7 +16564,29 @@
                 "Nome attività": "Galleria d'arte e di antichità"
             }
         },
-        "Clienti": {},
+        "Clienti": {
+            "CL_4": {
+                "Nome": "Giovanni II del Liechtenstein",
+                "Cognome": "",
+                "vendite": [
+                    "RI_I_1 RI_I_2 RI_I_4"
+                ]
+            },
+            "CL_5": {
+                "Nome": "Nélie",
+                "Cognome": "Jacquemart",
+                "vendite": [
+                    "RI_I_1 RI_I_2 RI_I_3"
+                ]
+            },
+            "CL_123": {
+                "Nome": "Austen Henry",
+                "Cognome": "Layard",
+                "vendite": [
+                    "RI_I_1 RI_I_2 RI_I_3"
+                ]
+            }
+        },
         "Relazioni": {}
     },
     "RO": {
@@ -16379,35 +17131,35 @@
                 "Nome": "Alfonso",
                 "Cognome": "Bialetti",
                 "vendite": [
-                    "Generic"
+                    ""
                 ]
             },
             "CL_23": {
                 "Nome": "Vittorio",
                 "Cognome": "Cini",
                 "vendite": [
-                    "Generic"
+                    ""
                 ]
             },
             "CL_52": {
                 "Nome": "Giacomo",
                 "Cognome": "Riva",
                 "vendite": [
-                    "Generic"
+                    ""
                 ]
             },
             "CL_53": {
                 "Nome": "Alberto",
                 "Cognome": "Saibene",
                 "vendite": [
-                    "Generic"
+                    ""
                 ]
             },
             "CL_58": {
                 "Nome": "Mario",
                 "Cognome": "Tozzi",
                 "vendite": [
-                    "Generic"
+                    ""
                 ]
             }
         },
@@ -16638,49 +17390,49 @@
                 "Nome": "Bernard",
                 "Cognome": "Berenson",
                 "vendite": [
-                    "Generic"
+                    ""
                 ]
             },
             "CL_21": {
                 "Nome": "Paul",
                 "Cognome": "Chalfin",
                 "vendite": [
-                    "Generic"
+                    ""
                 ]
             },
             "CL_43": {
                 "Nome": "Charles",
                 "Cognome": "Loeser",
                 "vendite": [
-                    "Generic"
+                    ""
                 ]
             },
             "CL_44": {
                 "Nome": "Charles",
                 "Cognome": "Mather Ffoulke",
                 "vendite": [
-                    "Generic"
+                    ""
                 ]
             },
             "CL_54": {
-                "Nome": "Elizabeth",
+                "Nome": "Isabella",
                 "Cognome": "Stewart Gardner",
                 "vendite": [
-                    "Generic"
+                    ""
                 ]
             },
             "CL_58": {
                 "Nome": "Mario",
                 "Cognome": "Tozzi",
                 "vendite": [
-                    "Generic"
+                    ""
                 ]
             },
             "CL_63": {
                 "Nome": "Joseph",
                 "Cognome": "Widener",
                 "vendite": [
-                    "Generic"
+                    ""
                 ]
             }
         },
@@ -17775,7 +18527,43 @@
                 "Nome attività": ""
             }
         },
-        "Clienti": {},
+        "Clienti": {
+            "CL_61": {
+                "Nome": "Wilhelm",
+                "Cognome": "von Bode",
+                "vendite": [
+                    "SA_VI_NEW_1"
+                ]
+            },
+            "CL_83": {
+                "Nome": "Giulio",
+                "Cognome": "Cantalamessa",
+                "vendite": [
+                    "SA_VI_NEW_3"
+                ]
+            },
+            "CL_115": {
+                "Nome": "Angelo",
+                "Cognome": "Duodo",
+                "vendite": [
+                    "SA_VI_NEW_2"
+                ]
+            },
+            "CL_116": {
+                "Nome": "Gino",
+                "Cognome": "Fogolari",
+                "vendite": [
+                    "SA_VI_NEW_4"
+                ]
+            },
+            "CL_117": {
+                "Nome": "Beatrice",
+                "Cognome": "Ephrussi de Rothschild",
+                "vendite": [
+                    "SA_VI_NEW_5"
+                ]
+            }
+        },
         "Relazioni": {
             "GE_II": true
         }
@@ -19525,7 +20313,22 @@
                 "Nome attività": ""
             }
         },
-        "Clienti": {},
+        "Clienti": {
+            "CL_11": {
+                "Nome": "Arthur",
+                "Cognome": "Acton",
+                "vendite": [
+                    "ST_NEW_1"
+                ]
+            },
+            "CL_118": {
+                "Nome": "",
+                "Cognome": "Fratelli Mora",
+                "vendite": [
+                    "ST_NEW_2"
+                ]
+            }
+        },
         "Relazioni": {
             "AC": true
         }
@@ -19835,7 +20638,22 @@
                 "Nome attività": "“Antichità e Oggetti d’Arte”"
             }
         },
-        "Clienti": {},
+        "Clienti": {
+            "CL_119": {
+                "Nome": "Frederick",
+                "Cognome": "Stibbert",
+                "vendite": [
+                    "SU_1"
+                ]
+            },
+            "CL_120": {
+                "Nome": "Giuseppe",
+                "Cognome": "Gianetti",
+                "vendite": [
+                    "SU_2"
+                ]
+            }
+        },
         "Relazioni": {}
     },
     "TA": {
@@ -20755,7 +21573,36 @@
                 "Nome attività": "The Venice Art Gallery"
             }
         },
-        "Clienti": {},
+        "Clienti": {
+            "CL_5": {
+                "Nome": "Nélie",
+                "Cognome": "Jacquemart",
+                "vendite": [
+                    "VE_I_1 VE_I_2"
+                ]
+            },
+            "CL_11_b": {
+                "Nome": "Édouard",
+                "Cognome": "André",
+                "vendite": [
+                    "VE_I_1 VE_I_2"
+                ]
+            },
+            "CL_51": {
+                "Nome": "Károly",
+                "Cognome": "Pulszky",
+                "vendite": [
+                    "VE_I_1 VE_I_2"
+                ]
+            },
+            "CL_61": {
+                "Nome": "Wilhelm",
+                "Cognome": "von Bode",
+                "vendite": [
+                    "VE_I_1 VE_I_2"
+                ]
+            }
+        },
         "Relazioni": {}
     },
     "VI_I": {
@@ -21274,7 +22121,7 @@
                 ]
             },
             "CL_54": {
-                "Nome": "Elizabeth",
+                "Nome": "Isabella",
                 "Cognome": "Stewart Gardner",
                 "vendite": [
                     "VO_I_1"
@@ -21706,14 +22553,14 @@
                 "Nome": "Samuel",
                 "Cognome": "Henry Kress",
                 "vendite": [
-                    "Generic"
+                    ""
                 ]
             },
             "CL_55": {
                 "Nome": "Adolphe",
                 "Cognome": "Stoclet",
                 "vendite": [
-                    "Generic"
+                    ""
                 ]
             }
         },
