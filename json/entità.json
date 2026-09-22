@@ -4181,7 +4181,8 @@
         },
         "Clienti": {},
         "Relazioni": {
-            "BR_II": true
+            "BR_II": true,
+            "PR": true
         },
         "Luoghi": {
             "IT_29": {
@@ -19687,7 +19688,7 @@
         },
         "Relazioni": {
             "LA_I": true,
-            "BR_I_1": true,
+            "BR_I": true,
             "AC": true,
             "VI_I": true,
             "DI": true
