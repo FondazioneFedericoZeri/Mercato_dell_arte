@@ -246,7 +246,9 @@ footer img {
 
 /* Style the filter container */
 .filter-container {
-    margin: 20px;
+    /* Niente margine a sinistra: il filtro parte dove parte il
+       titolo della pagina, e' la cornice a tenere il rientro. */
+    margin: 20px 20px 20px 0;
     font-family: var(--ff-body);
 }
 
@@ -383,9 +385,12 @@ footer img {
 
 
 /* mappa Layout desktop */
+/* Il blocco della mappa sta sul rientro condiviso, come il titolo
+   sopra di lui: prima partiva da 20 pixel e il filtro dei periodi
+   non era in colonna con nulla. */
 #map {
     display: block;
-    padding: 20px;
+    padding: 20px var(--rientro-pagina);
 }
 
 /* La cornice tiene insieme filtro e mappa: e' lei che va a schermo
@@ -511,9 +516,12 @@ p {
    periodi, uno sotto l'altro.
    ══════════════════════════════════════════════════════════════ */
 
+/* Misure condivise da tokens.css: il titolo cade sulla stessa
+   verticale di quello delle altre pagine, anche se la mappa qui sotto
+   resta a tutta larghezza. */
 .mappa-intro {
-    padding: 34px 60px 0 60px;
-    max-width: 1000px;
+    padding: var(--stacco-titolo) var(--rientro-pagina) 0 var(--rientro-pagina);
+    max-width: none;
 }
 
 /* Stessa misura e stesso peso del titolo della pagina eventi

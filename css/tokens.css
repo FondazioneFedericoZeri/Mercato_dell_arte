@@ -65,6 +65,48 @@
        soglia. Testo #333 su --blu-tenue: 11,49:1. */
     --blu-scuro:    #3573A9;
     --blu-tenue:    #EEF5FC;
+
+    /* --- Impaginazione ---------------------------------------
+       Prima ogni pagina aveva il suo margine: il titolo cominciava
+       a zero pixel dal bordo sul Progetto, a 391 sulla home, a 140
+       sugli Antiquari — e li' il margine destro era 570, quattro
+       volte il sinistro. Lo stacco fra testata e titolo andava da
+       zero a 202 pixel.
+
+       Ora il margine laterale e' uno solo, --margine-pagina, e
+       quello che cambia da pagina a pagina e' soltanto quanto e'
+       larga la colonna dentro: tre misure, non una per pagina.
+
+       --misura-lettura e' la larghezza delle pagine che si leggono
+       dall'inizio alla fine. Oltre i settanta caratteri per riga
+       l'occhio fatica a ritrovare il capo riga: e' per questo che
+       non diventa 1180 come le altre. */
+    --margine-pagina:   60px;
+    --margine-stretto:  18px;   /* sotto i 768px */
+
+    --misura-elenco:   1180px;  /* elenchi e schede affiancate */
+    --misura-lettura:   900px;  /* prosa: crediti, documentazione, progetto */
+
+    --stacco-titolo:     40px;  /* fra la testata e il titolo di pagina */
+
+    /* Il rientro da usare sulle fasce a tutta larghezza — quelle con
+       un fondo colorato, che non si possono restringere. Vale il
+       margine di pagina sugli schermi stretti e, su quelli larghi,
+       quanto basta perche' il testo cada sulla stessa verticale delle
+       pagine con la colonna centrata. Cosi' il contenuto comincia
+       nello stesso punto anche dove la fascia arriva ai bordi. */
+    --rientro-pagina: max(var(--margine-pagina),
+                          calc((100% - var(--misura-elenco)) / 2));
+}
+
+/* Sugli schermi stretti il margine di pagina si riduce: cambiando
+   qui la variabile si adeguano tutte le pagine insieme, senza che
+   ciascuna debba ricordarsi di farlo nel proprio foglio di stile. */
+@media (max-width: 768px) {
+    :root {
+        --margine-pagina: var(--margine-stretto);
+        --stacco-titolo:  26px;
+    }
 }
 
 /* ------------------------------------------------------------

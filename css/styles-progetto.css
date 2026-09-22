@@ -66,7 +66,10 @@ nav ul li a:hover {
 
 /* contenuto 1*/
 #two-column-section {
-    padding-left: 30px; /* Padding attorno alla sezione */
+    /* Il rientro condiviso: la sezione e' larga quanto la pagina, e
+       "--rientro-pagina" va calcolato su un elemento a tutta
+       larghezza (dentro contiene un 100%, che si misura sul padre). */
+    padding-left: var(--rientro-pagina);
     padding-right: 30px;
     padding-bottom: 0;
     margin-bottom: 0;
@@ -114,7 +117,9 @@ nav ul li a:hover {
 .left-column {
     max-width: 700px;; /* La colonna sinistra occupa il 50% dello spazio */
     margin-right: 20px;
-    margin-left: 105px;
+    /* Il rientro lo tiene la sezione: qui niente. */
+    margin-left: 0;
+    padding-left: 0;
 }
 
 /* Ingrandire la "F" */
@@ -311,7 +316,13 @@ p {
 
 #contatti .left-column {
     flex: 1;
-    margin-left: 100px; /* Spazio tra la citazione e il testo */
+    /* Come sopra: il rientro lo tiene la sezione. */
+    margin-left: 0;
+    padding-left: 0;
+}
+
+#contatti {
+    padding-left: var(--rientro-pagina);
 }
 
 #contatti .right-column {
@@ -647,11 +658,10 @@ footer img {
    serve solo allinearlo al margine della prima sezione, che ha 30
    pixel di rientro. */
 main > .titolo-pagina {
-    /* 145 = i 30 di rientro della sezione, i 105 di margine della
-       colonna di testo e i 10 del suo padding: il titolo cade sulla
-       stessa verticale della prima riga di prosa, non a meta' strada
-       fra il bordo della pagina e il testo. */
-    padding: 34px 30px 0 145px;
+    /* Il rientro condiviso di tokens.css: il titolo cade sulla stessa
+       verticale di quello di tutte le altre pagine. Prima erano 145
+       pixel calcolati a mano sui rientri della sezione sottostante. */
+    padding: var(--stacco-titolo) var(--rientro-pagina) 0 var(--rientro-pagina);
     margin: 0;
 }
 

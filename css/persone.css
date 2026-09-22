@@ -31,7 +31,13 @@
   /* Il margine laterale sta sul contenuto, non sul body: messo sul body
      rientrava anche la testata e il footer, che in tutte le altre pagine
      vanno da bordo a bordo. Erano larghi 1360px su una finestra da 1400. */
-  .wrap { max-width: 1080px; margin: 0 auto; padding-inline: 20px; }
+  /* Misure condivise da tokens.css: stesso margine laterale delle
+     altre pagine, e la larghezza degli elenchi. */
+  .wrap {
+    max-width: calc(var(--misura-elenco) + 2 * var(--margine-pagina));
+    margin: 0 auto;
+    padding-inline: var(--margine-pagina);
+  }
 
   .controls {
     position: sticky;
@@ -449,7 +455,8 @@
      comandi che segue e' appiccicosa, quindi il titolo scorre via con
      la pagina, come deve. */
   .wrap > .titolo-pagina {
-    margin: 28px 0 4px;
+    /* Lo stacco condiviso sotto la testata, come nelle altre pagine. */
+    margin: var(--stacco-titolo) 0 4px;
   }
 
   /* La riga dei risultati e il comando per azzerare i filtri: stanno

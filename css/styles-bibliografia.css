@@ -293,10 +293,15 @@ footer img {
    La pagina ora si apre sulla scelta, non sull'elenco.
    ══════════════════════════════════════════════════════════════ */
 
+/* Misure condivise da tokens.css. Le tre fasce della pagina — il
+   titolo, la fila di carte e il pannello che si apre — sono larghe
+   uguale e cominciano nello stesso punto: prima erano 1200, 1300 e
+   1180, e i bordi non si allineavano. */
 .bib-intro {
-    padding: 34px 60px 0 60px;
-    max-width: 1200px;
+    padding: var(--stacco-titolo) var(--margine-pagina) 0 var(--margine-pagina);
+    max-width: calc(var(--misura-elenco) + 2 * var(--margine-pagina));
     margin: 0 auto;
+    box-sizing: border-box;
 }
 
 /* Il titolo viene da .titolo-pagina, in tokens.css. Qui sotto non c'e'
@@ -308,9 +313,9 @@ footer img {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 18px;
-    max-width: 1300px;
+    max-width: calc(var(--misura-elenco) + 2 * var(--margine-pagina));
     margin: 26px auto 0 auto;
-    padding: 0 60px;
+    padding: 0 var(--margine-pagina);
     box-sizing: border-box;
 }
 
@@ -416,7 +421,7 @@ footer img {
 .con-js .bib-anteprima {
     display: block;
     position: relative;
-    max-width: 1180px;
+    max-width: var(--misura-elenco);
     /* Il margine interno e' quello delle carte, non i 34px delle
        sezioni aperte: cosi' ogni colonna comincia dove comincia il
        testo della carta che le sta sopra. */
@@ -495,7 +500,7 @@ footer img {
     /* 1080 = 1200 meno i 60 di margine interno della fila di carte:
        cosi' il pannello grigio finisce esattamente sotto le carte,
        allineato a destra e a sinistra. */
-    max-width: 1180px;
+    max-width: var(--misura-elenco);
     margin: -1px auto 34px auto;   /* -1px: si salda al bordo della carta */
     padding: 6px 34px 34px 34px;
     box-sizing: border-box;
@@ -660,10 +665,12 @@ footer img {
         border-radius: 10px 10px 0 0;
     }
 
+    /* Il margine stretto arriva dalla variabile condivisa: qui non
+       si ripete il numero, se no cambiarlo una volta non basta. */
     .bib-intro,
     .bib-sezione {
-        padding-left: 18px;
-        padding-right: 18px;
+        padding-left: var(--margine-pagina);
+        padding-right: var(--margine-pagina);
     }
 
     .bib-intro h1 {

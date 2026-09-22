@@ -77,10 +77,10 @@ nav ul li a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center; /* Allinea il contenuto verticalmente al centro */
-    padding: 20px;
-    margin-left: 120px; /* Margine a sinistra per il testo */
+    /* Il rientro condiviso al posto dei 120 pixel di margine sinistro:
+       cosi' il testo d'apertura comincia dove comincia il titolo. */
+    padding: 20px var(--rientro-pagina);
     min-height: 600px !important;
-
 }
 
 #intro-section h2 {
@@ -115,7 +115,9 @@ nav ul li a:hover {
 
 
 #search {
-    padding: 120px 60px 80px 60px;
+    /* Rientro e stacco condivisi da tokens.css: prima erano 120 pixel
+       sopra e 60 di lato, scelti solo qui. */
+    padding: var(--stacco-titolo) var(--rientro-pagina) 80px var(--rientro-pagina);
     background-color: #f8f8f8;
     min-height: 500px;
 }
@@ -289,17 +291,21 @@ nav ul li a:hover {
   }
 
 /* Stile per la seconda sezione "Tutti gli antiquari" */
+/* La fascia arriva ai bordi ma il testo dentro sta sul rientro
+   condiviso di tokens.css, come su tutte le altre pagine: prima
+   erano 20 pixel di padding piu' i 120 di margine della sezione
+   sopra, e il titolo cadeva a 140 dal bordo. */
 #Titolo {
-    background-color: #f9f9f9; /* Colore di sfondo grigio chiaro */
-    /*box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /*Aggiunge un'ombra sottile */
-    padding: 20px; /* Aggiunge padding per il contenuto interno */
-    margin: 0 0; /* Spazio sopra e sotto la sezione */
+    background-color: #f9f9f9;
+    padding: 22px var(--rientro-pagina) 20px var(--rientro-pagina);
+    margin: 0;
 }
 
 #Titolo h2 {
     font-size: 36px;
     color: #333;
-    margin-left: 140px; /* Aggiunge un margine a sinistra */
+    /* Niente rientro suo: il rientro e' quello della sezione. */
+    margin-left: 0;
     margin-bottom: 5px;
 }
 
@@ -328,7 +334,7 @@ nav ul li a:hover {
 #Titolo p {
     text-decoration: none;
     font-size: 18px;
-    margin-left: 140px; /* Aggiunge un margine a sinistra */
+    margin-left: 0;
     margin-top: 10px;
 }
 
@@ -357,8 +363,10 @@ nav ul li a:hover {
     display: flex;
     flex-wrap: wrap; /* Permette alle card di andare a capo */
     justify-content: space-between; /* Distribuisce uniformemente lo spazio tra le card */
-    max-width: 1200px;
+    max-width: calc(var(--misura-elenco) + 2 * var(--margine-pagina));
     margin: 0 auto;
+    padding-inline: var(--margine-pagina);
+    box-sizing: border-box;
     gap: 20px; /* Spazio tra le card */
 }
 
@@ -426,7 +434,7 @@ nav ul li a:hover {
 }
 
 .card-text h3 {
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 400;  /* niente grassetto */
     font-style: italic;
     line-height: 1.25;
@@ -620,9 +628,11 @@ body {
             margin: 0 auto; /* Centra il contenuto */
         }
     
+        /* Il titolo resta a sinistra anche sul telefono, come in
+           tutte le altre pagine: centrato era l'unico del sito. */
         #Titolo {
-            text-align: center;
-            padding: 20px 10px;
+            text-align: left;
+            padding: 20px var(--margine-pagina);
         }
     
         #Titolo h2 {

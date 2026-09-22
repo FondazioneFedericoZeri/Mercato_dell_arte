@@ -86,8 +86,12 @@ nav ul li a:hover {
    ══════════════════════════════════════════════════════════════ */
 
 .scheda {
-    /* Margine laterale unico per tutte le fasce della scheda. */
-    --margine: 56px;
+    /* Margine laterale unico per tutte le fasce della scheda: e' il
+       rientro condiviso di tokens.css, lo stesso delle altre pagine.
+       Le fasce della scheda arrivano ai bordi — la fascia blu, la
+       striscia delle persone — quindi serve il rientro, non una
+       colonna centrata. */
+    --margine: var(--rientro-pagina);
     /* Misura di lettura: oltre i 70 caratteri l'occhio perde il capo riga. */
     --misura: 68ch;
 }
@@ -137,7 +141,7 @@ nav ul li a:hover {
     /* Cresce con la finestra ma non oltre: e' il titolo della pagina e
        deve leggersi da lontano, senza pero' spingere la fotografia
        fuori dalla fascia sugli schermi stretti. */
-    font-size: clamp(48px, 6.6vw, 88px);
+    font-size: clamp(56px, 6.6vw, 88px);
     line-height: 1;
     color: #fff;
 }
@@ -671,12 +675,8 @@ body.gal-bloccato .torna-su {
 /* Link di testo: terracotta come sul sito dei cataloghi d'asta.
    A riposo --link (#B03008), al passaggio del mouse --link-hover (#D94010)
    con la sottolineatura. I due valori stanno in css/tokens.css. */
-/* I rimandi dentro la biografia restano in grassetto: la' stanno in
-   mezzo al testo corrente e senza un peso diverso si perderebbero.
-   Le relazioni no: sono gia' un elenco di nomi in colonna, uno sotto
-   l'altro, e il grassetto li faceva gridare senza aggiungere niente.
-   Il loro aspetto lo decide .rel-scheda. */
 #Bio a,
+#Relazioni a,
 a.linkBio {
     font-weight: bold;
     color: var(--link);
@@ -684,6 +684,7 @@ a.linkBio {
 }
 
 #Bio a:hover,
+#Relazioni a:hover,
 a.linkBio:hover {
     color: var(--link-hover);
     text-decoration: underline;
@@ -746,7 +747,7 @@ footer img {
     }
 
     .scheda-nome {
-        font-size: 36px;
+        font-size: 42px;
     }
 
     .scheda-sottotitolo {

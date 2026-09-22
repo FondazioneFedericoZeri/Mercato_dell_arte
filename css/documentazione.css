@@ -146,9 +146,10 @@ body {
    ══════════════════════════════════════════════════════════════ */
 
 .doc {
-    max-width: 900px;
+    /* Misure condivise da tokens.css, come la pagina Crediti. */
+    max-width: calc(var(--misura-lettura) + 2 * var(--margine-pagina));
     margin: 0 auto;
-    padding: 40px 60px 70px 60px;
+    padding: var(--stacco-titolo) var(--margine-pagina) 70px var(--margine-pagina);
     box-sizing: border-box;
 }
 
@@ -173,7 +174,7 @@ body {
    3,28:1, sotto la soglia WCAG AA. */
 .doc h2 {
     font-family: var(--ff-body);
-    font-size: 16px;
+    font-size: var(--fs-caption);
     font-weight: 600;
     letter-spacing: 0.09em;
     text-transform: uppercase;

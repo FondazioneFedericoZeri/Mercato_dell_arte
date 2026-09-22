@@ -151,9 +151,12 @@ body {
    ══════════════════════════════════════════════════════════════ */
 
 .crediti {
-    max-width: 880px;
+    /* Misure condivise da tokens.css: il margine laterale e lo stacco
+       sotto la testata sono gli stessi di tutte le altre pagine, la
+       larghezza e' quella delle pagine che si leggono per esteso. */
+    max-width: calc(var(--misura-lettura) + 2 * var(--margine-pagina));
     margin: 0 auto;
-    padding: 40px 60px 60px 60px;
+    padding: var(--stacco-titolo) var(--margine-pagina) 60px var(--margine-pagina);
     box-sizing: border-box;
 }
 
