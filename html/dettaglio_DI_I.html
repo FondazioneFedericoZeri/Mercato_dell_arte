@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Di Castro Eugenio | Mercato dell'arte</title>
+    <meta name="description" content="Di Castro Eugenio: scheda dell'entità antiquariale nel progetto Mercato dell'arte della Fondazione Federico Zeri." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="../../css/tokens.css" />
+    <link rel="stylesheet" href="../../css/styles-dettaglioAntiquario.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+    <script src="../../script/menu.js" defer=""></script>
+    <script type="text/javascript" src="../../script/galleria.js"></script>
+    <script type="text/javascript" src="../../script/albero-familiare.js"></script>
+    <script type="text/javascript" src="../../script/dettaglioAntiquari.js"></script>
+    <script type="text/javascript" src="../../script/mappaDettaglio.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <a class="marchio" href="../../index.html">Mercato dell'arte</a>
+        <button class="menu-toggle" type="button" aria-label="Apri menu">&#9776;</button>
+        <div class="testata-destra">
+          <nav>
+            <ul class="menu">
+              <li>
+                <a href="../progetto.html">Progetto</a>
+              </li>
+              <li>
+                <a href="../antiquari.html">Antiquari</a>
+              </li>
+              <li>
+                <a href="../luoghi.html">Luoghi</a>
+              </li>
+              <li>
+                <a href="../eventi.html">Eventi</a>
+              </li>
+              <li>
+                <a href="../persone.html">Persone</a>
+              </li>
+              <li>
+                <a href="../bibliografia.html">Bibliografia</a>
+              </li>
+            </ul>
+          </nav>
+          <span class="testata-filo"></span>
+          <a class="testata-ente" href="https://fondazionezeri.unibo.it/it/homepage" target="_blank" rel="noopener" title="Fondazione Federico Zeri, Università di Bologna">
+            <img src="../../img/homepage/logo.png" alt="Fondazione Federico Zeri" />
+          </a>
+        </div>
+      </div>
+    </header>
+    <main class="scheda">
+      <div class="scheda-torna">
+        <a href="../antiquari.html">&#8592; Tutti gli antiquari</a>
+      </div>
+      <section class="scheda-fascia">
+        <div class="scheda-fascia-testo">
+          <h1 class="scheda-nome">Di Castro Eugenio</h1>
+          <p class="scheda-sottotitolo">Roma, entità attiva dal 1932 al 2006</p>
+        </div>
+        <div class="slider-container">
+          <div class="slider">
+            <div class="slide">
+              <img src="../../img/slider-antiquari/DI_I_img1.jpg" alt="L'antiquario &quot;romanista&quot; Eugenio Di Castro negli anni Sessanta" />
+              <div class="caption">L'antiquario "romanista" Eugenio Di Castro negli anni Sessanta</div>
+            </div>
+            <div class="slide">
+              <img src="../../img/slider-antiquari/DI_I_img2.jpg" alt="Il ministro del turismo Folchi saluta Eugenio Di Castro" />
+              <div class="caption">Il ministro del turismo Folchi saluta Eugenio Di Castro</div>
+            </div>
+          </div>
+          <button class="prev" type="button" aria-label="Fotografia precedente">&#10094;</button>
+          <button class="next" type="button" aria-label="Fotografia successiva">&#10095;</button>
+          <button class="gal-zoom" type="button" aria-label="Ingrandisci la fotografia">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-4.3-4.3M11 8v6M8 11h6"></path></svg>
+          </button>
+        </div>
+      </section>
+      <section class="scheda-dati">
+        <dl class="scheda-record">
+          <dt>PERSONE</dt>
+          <dd>Eugenio Di Castro, 1890–1976, antiquario<br>Nicola Di Castro, antiquario<br>Angelo Di Castro, antiquario<br>Angelo Di Castro, 1925–2012, antiquario</dd>
+          <dt>IN CATALOGO</dt>
+          <dd><a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Di%20Castro&page=1&filtroprovenienza_OA=4531%7C8268" class="linkBio" target="_blank">Opere transitate, catalogo della Fondazione Zeri &#8594;</a></dd>
+        </dl>
+      </section>
+      <nav class="scheda-tab" aria-label="Sezioni della scheda">
+        <button class="tab active" type="button" data_content="Bio">
+          Dati biografici
+        </button>
+        <button class="tab" type="button" data_content="Persone">
+          Albero familiare
+          <span class="tab-num">3</span>
+        </button>
+        <button class="tab" type="button" data_content="Localizzazioni">
+          Luoghi
+          <span class="tab-num">4</span>
+        </button>
+        <button class="tab" type="button" data_content="Relazioni">
+          Relazioni
+          <span class="tab-num">1</span>
+        </button>
+        <button class="tab" type="button" data_content="Eventi">
+          Eventi
+          <span class="tab-num">1</span>
+        </button>
+        <button class="tab" type="button" data_content="Bibliografia">
+          Bibliografia
+          <span class="tab-num">2</span>
+        </button>
+      </nav>
+      <div class="scheda-contenuto">
+        <div id="Bio" class="content active-content">
+          <p>Eugenio Di Castro (1890-1976) nacque a Roma, in Trastevere, e apprese il mestiere di antiquario dal padre Nicola e dal nonno Angelo. Richiamato nel 1910, prese parte alla guerra italo-turca e combatté nella Prima Guerra mondiale. Tornato a Roma nel 1920, poté riprendere a tempo pieno la sua attività di mercante d’arte, con un negozio prima in via dei Greci, poi in via del Babuino 82. Nel corso degli anni successivi, strinse rapporti con molti degli intellettuali e artisti che animavano il Circolo Artistico di via Margutta e il celebre caffè Greco di via Condotti, entrando poi a far parte del Gruppo dei Romanisti, fondato nel 1929. Il Gruppo, dedito allo studio e alla valorizzazione della città di Roma e della romanità, si riuniva proprio nello studio di uno dei suoi fondatori, l’antiquario Augusto Jandolo, nella stessa via Margutta. Con quest’ultimo, Di Castro strinse un’amicizia molto stretta, tanto da essere ricordato come un compagno fraterno “anima di artista, cuore di romano autentico” nel volume di memorie “Aneddotica” pubblicato da Jandolo nel 1949.</p>
+          <p>Nel 1932 Eugenio Di Castro trasferì l’attività al civico 92 a/b della stessa via del Babuino, nel palazzo che il mosaicista Giacomo Raffaelli aveva fatto progettare a Giuseppe Valadier e negli ambienti per anni occupati dalla galleria degli Jandolo. Il contesto vivacemente colto e cosmopolita in cui era inserito lo mise in contatto con personaggi di alto rango, dalla Famiglia Reale italiana a Gabriele D’Annunzio.</p>
+          <p>L’attenzione verso la città di Roma, si manifestò, lungo tutta la sua esistenza, con numerose donazioni di dipinti, sculture e oggetti d’arte, operate in favore di Palazzo Braschi, Palazzo Venezia, il Museo degli strumenti musicali e tante altre raccolte cittadine. Fu tra i fondatori dell’Associazione Amici dei Musei di Roma, continuando a collaborare come consigliere per tutta la vita.</p>
+          <p>Scrisse “Ricordi dei vecchi rioni romani” e l’autobiografia “Una vita”, oltre a numerosi articoli per la “Strenna dei Romanisti”, “L’Urbe” e il “Bollettino dei Musei di Roma”, quasi tutti dedicati al mondo dell’antiquariato, con particolare predilezione per il Rinascimento considerato in tutti i suoi aspetti, dal mobile intarsiato al parato ricamato, dal bronzo al vetro soffiato, elementi questi che gli permisero di ricevere premi in diverse mostre, come quella allestita nel Castello di Zagarolo dalla principessa Pallavicini nel 1964 o in quella dedicata agli strumenti musicali organizzata dall’Accademia di santa Cecilia a via del Babuino nel 1963. Altro interesse particolare fu il Settecento romano, interesse poi trasmesso anche al figlio Angelo.</p>
+          <p>Dopo la morte di Eugenio, i figli Nicola ed Angelo continuarono l’attività paterna. Angelo Di Castro (Roma, 1925–2012) aprì successivamente un’attività in proprio con la moglie Lucilla nella galleria di via Alibert 20-23, nello stesso Palazzo Raffaelli, che fu assiduamente frequentata anche da Federico Zeri. La galleria chiuse alla morte di Lucilla Delfini Di Castro, nel 2006.</p>
+          <p>Il Settecento romano fu la passione di Angelo, soprattutto per quanto riguarda la pittura e la scultura; a lui si devono attribuzioni e scoperte notevoli, basti ricordare il busto in marmo del cardinale Francesco Barberini, provenienza principi Del Drago, già attribuito a Lorenzo Ottoni, riconosciuto opera di Bernini e venduto allo Stato. Come collezionista insieme alla moglie amò il vetro soffiato, raccogliendo nel tempo rarità di grande interesse. Lucilla, che aveva appreso dal suocero i segreti dell’arte tessile, divenne un’esperta del tessuto antico e del merletto: il Padre Abate di Montecassino la chiamò a organizzare il settore dedicato a quest’arte nel nuovo allestimento del museo dell’Abbazia di Monte Cassino.</p>
+        </div>
+        <div id="Persone" class="content">
+          <div class="af-intestazione">
+            <h2>Relazioni familiari</h2>
+            <div id="af-legenda" class="af-legenda"></div>
+          </div>
+          <div id="albero-genealogico"></div>
+        </div>
+        <div id="Localizzazioni" class="content">
+          <section id="map">
+            <div id="chartdiv"></div>
+          </section>
+        </div>
+        <div id="Relazioni" class="content">
+          <h2>Collaboratori</h2>
+          <ul>
+            <li>Federico Zeri (storico dell'arte)</li>
+          </ul>
+        </div>
+        <div id="Eventi" class="content">
+          <h2>Eventi significativi nell'attività antiquariale</h2>
+          <ul>
+            <li>1971 - <i>Eugenio Di Castro, “Una vita”</i>: Eugenio Di Castro pubblica la propria biografia con molti passi dedicati alla sua professione di antiquario</li>
+          </ul>
+        </div>
+        <div id="Bibliografia" class="content">
+          <h2>Bibliografia essenziale</h2>
+          <ul>
+            <li>Di Castro F. (2019), <i>I Romanisti e l’antiquariato</i>, in "Il gruppo dei romanisti ieri, oggi e domani: una tradizione che si rinnova", atti del convegno, Roma, 2019</li>
+            <li>Di Castro F. (s.d.), <i>Biografia di Eugenio Di Castro (Roma 1890 – 1976)</i></li>
+          </ul>
+        </div>
+      </div>
+      <nav class="scheda-sfoglia" aria-label="Altre schede">
+        <a href="dettaglio_DI.html">&#8592; Di Castro</a>
+        <a href="dettaglio_FE.html">Ferroni &#8594;</a>
+      </nav>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-ente">
+          <a href="https://fondazionezeri.unibo.it/it/homepage" target="_blank" rel="noopener">
+            <img src="../../img/homepage/logo-negativo.png" alt="Fondazione Federico Zeri" />
+          </a>
+          <p>Progetto della <a href="https://fondazionezeri.unibo.it/it/homepage" target="_blank" rel="noopener">Fondazione Federico Zeri</a>, Università di Bologna.</p>
+        </div>
+        <div class="footer-left">
+          <p>Licenza dati e immagini: <img id="license.png" src="../../img/homepage/license.png" alt="License"></p>
+        </div>
+        <div class="footer-right">
+          <p><a href="../../html/crediti.html">Crediti</a> | <a href="../../html/documentazione.html">Documentazione</a></p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -6,7 +6,19 @@ on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
     branches: [ "main" ]
-    paths: ["json/*", "script/build_dettaglio.py", "bio-txt/*", "data/parentela.csv", "script/build_kinships.py"]
+    # Anche i TSV da cui i JSON delle schede derivano: questo workflow
+    # se li rigenera da solo (vedi lo step "Rigenera i JSON delle
+    # schede"), quindi deve partire quando cambia la fonte, non solo
+    # quando cambia il JSON.
+    paths:
+      - "json/*"
+      - "data/*.tsv"
+      - "data/parentela.csv"
+      - "bio-txt/*"
+      - "script/build_dettaglio.py"
+      - "script/build_bibliografia.py"
+      - "script/build_kinships.py"
+      - "script/tsv_to_json.py"
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -37,6 +49,46 @@ jobs:
           python -m pip install airium
           python -m pip install python-docx
           python -m pip install pandas
+          python -m pip install tqdm
+          python -m pip install geopy
+
+      # I JSON da cui le schede sono costruite vengono rifatti qui,
+      # prima del build, invece di aspettare che li rigeneri un altro
+      # workflow.
+      #
+      # Prima questo workflow si fidava dei JSON che trovava nel repo.
+      # Ma i workflow update-json-* partono dallo stesso push, in
+      # parallelo a questo: chi arriva primo non e' deciso da nessuno.
+      # Il 22 settembre un push che correggeva insieme didascalie.tsv e
+      # parentela.csv ha fatto partire i due workflow insieme, questo ha
+      # letto il didascalie.json ancora vecchio, e la scheda di Di Castro
+      # e' uscita con il nome dell'entita' al posto della didascalia
+      # nuova. Il JSON nel repo era giusto, la pagina no.
+      #
+      # C'e' anche un secondo motivo, piu' silenzioso: un commit spinto
+      # da un workflow con il GITHUB_TOKEN non fa partire altri
+      # workflow. Quindi quando update-json-didascalie committava il suo
+      # JSON, quel commit non rilanciava questo workflow nemmeno dopo, e
+      # l'HTML restava indietro finche' qualcuno non toccava altro.
+      #
+      # Rigenerando qui, l'HTML e' sempre costruito su dati appena
+      # ricavati dai TSV, qualunque cosa abbiano fatto gli altri
+      # workflow e in qualunque ordine.
+      #
+      # luoghi resta fuori di proposito: e' l'unico che interroga
+      # Nominatim, ha un limite di una richiesta al secondo e una
+      # cache da rispettare. Se ne occupa update-json-luoghi, e le
+      # coordinate finiscono comunque in entita.json, che qui viene
+      # ricostruito per ultimo.
+      - name: Rigenera i JSON delle schede
+        run: |
+          python script/tsv_to_json.py didascalie
+          python script/tsv_to_json.py bibliografia
+          python script/tsv_to_json.py collaboratori
+          python script/tsv_to_json.py eventi
+          python script/tsv_to_json.py compravendite
+          python script/tsv_to_json.py relazioni
+          python script/tsv_to_json.py persone
 
       # Runs a set of commands using the runners shell
       - name: Update
@@ -51,7 +103,9 @@ jobs:
             echo "Nessuna modifica da pubblicare."
             exit 0
           fi
-          git commit -m "updated html files"
+          # Il commit ora puo' contenere anche i JSON rigenerati qui
+          # sopra, non solo l'HTML: il messaggio lo dice.
+          git commit -m "updated json and html files"
           # Se nel frattempo un altro workflow ha spinto su main, il push
           # viene rifiutato con "fetch first": ci si riallinea e si riprova.
           for tentativo in 1 2 3 4 5; do
