@@ -1,18 +1,15 @@
 /* ══════════════════════════════════════════════════════════════
    Pagina Persone — due letture d'insieme.
 
-   La pagina elenca 522 nomi in tre colonne e si cerca benissimo,
-   ma solo se si sa gia' chi cercare. Due cose i dati le dicono
-   gia' e non si vedevano da nessuna parte:
+   La pagina Persone elenca 522 nomi in tre colonne e si cerca
+   benissimo, ma solo se si sa gia' chi cercare. Qui si vede una
+   cosa che i dati dicono gia' e che li' non si coglie:
 
-   1. Chi ricorre in piu' schede. 28 clienti e 20 collaboratori
-      compaiono presso piu' di un antiquario: sono le persone che
-      passano da una bottega all'altra e tengono insieme il
-      mercato. Prima si potevano scoprire solo aprendo le schede
-      una per una e tenendo il conto a mente.
-
-   2. Famiglie e antiquari soli. 47 entita' su 95 hanno una
-      persona sola, le altre fino a nove.
+   chi ricorre in piu' schede. 28 clienti e 20 collaboratori
+   compaiono presso piu' di un antiquario: sono le persone che
+   passano da una bottega all'altra e tengono insieme il mercato.
+   Prima si potevano scoprire solo aprendo le schede una per una
+   e tenendo il conto a mente.
 
    I dati sono gli stessi della ricerca: il blocco JSON
    #persone-data che build_persone.py scrive nella pagina. Qui non
@@ -58,8 +55,19 @@
 
   function rigaPonte(p) {
     var riga = el("li", "pi-riga");
+    riga.setAttribute("data-nodo", idPersona(p));
 
-    var testa = el("div", "pi-testa");
+    /* La testa della riga e' un bottone: cliccandola si accende lo
+       stesso nome nel grafico qui sopra. Un bottone e non un div,
+       cosi' ci si arriva anche col tabulatore. */
+    var testa = el("button", "pi-testa");
+    testa.type = "button";
+    testa.setAttribute("aria-pressed", "false");
+    testa.addEventListener("click", function () {
+      var id = idPersona(p);
+      if (FERMO && ACCESO === id) spegni();
+      else accendi(id, true);
+    });
     testa.appendChild(el("span", "pi-nome", p.name));
     testa.appendChild(el("span", "pi-ruolo pi-ruolo-" + p.role, p.role));
     testa.appendChild(el("span", "pi-conto", p.entities.length + " schede"));
@@ -124,13 +132,17 @@
     rete.id = "pi-rete";
     sez.appendChild(rete);
     var didascalia = el("p", "pi-rete-didascalia");
-    didascalia.appendChild(el("span", "pi-chiave pi-chiave-persona"));
-    didascalia.appendChild(document.createTextNode(" persone "));
-    didascalia.appendChild(el("span", "pi-chiave pi-chiave-casa"));
+    [["pi-chiave-cliente", "clienti"],
+     ["pi-chiave-collaboratore", "collaboratori"],
+     ["pi-chiave-casa", "case antiquariali"]].forEach(function (v, i) {
+      if (i) didascalia.appendChild(document.createTextNode("\u2003"));
+      didascalia.appendChild(el("span", "pi-chiave " + v[0]));
+      didascalia.appendChild(document.createTextNode(" " + v[1]));
+    });
     didascalia.appendChild(document.createTextNode(
-      " case antiquariali — il pallino cresce col numero di legami. " +
-      "Trascina per spostare, rotella per ingrandire; un clic su una casa " +
-      "apre la sua scheda."));
+      " — il pallino cresce col numero di legami. Passa sopra un nome " +
+      "per vedere solo i suoi legami, cliccalo per fermarli; un clic su " +
+      "una casa apre la sua scheda."));
     sez.appendChild(didascalia);
 
     var lista = el("ul", "pi-lista");
@@ -195,6 +207,109 @@
 
   var radiceAm5 = null;
   var ID_RADICE = "radice";
+
+  /* --- messa a fuoco -------------------------------------------
+     Centoquattro pallini e centocinquanta linee: per sapere con chi
+     e' in rapporto un nome bisognava seguire i fili a occhio. Ora
+     passando sopra un nodo — o cliccando una riga dell'elenco — quel
+     nodo, i suoi vicini e i legami fra loro restano pieni e tutto il
+     resto sbiadisce quasi a sparire.
+
+     VICINI: id -> insieme degli id collegati, preparato una volta
+     sola in datiRete. ACCESO: il nodo a fuoco adesso. FERMO: vero
+     quando la messa a fuoco e' stata fissata con un clic, e quindi
+     non deve spegnersi quando il mouse se ne va (sui telefoni il
+     passaggio del mouse non esiste: li' il clic e' l'unico modo). */
+  var VICINI = {};
+  var ACCESO = null;
+  var FERMO = false;
+  var serieRete = null;
+
+  /* Sotto i tre legami il nome resta scritto solo quando e' a fuoco:
+     con tutti i nomi sempre accesi il disegno era illeggibile, con
+     nessuno non si capiva chi fossero i pallini grandi. */
+  var SOGLIA_NOME = 3;
+
+  var PIENO = 0.95;
+  var SPENTO = 0.1;
+  var LINEA = 0.32;
+  var LINEA_SPENTA = 0.05;
+  var LINEA_ACCESA = 0.8;
+
+  function aFuoco(id) {
+    if (!ACCESO) return true;
+    return id === ACCESO || !!(VICINI[ACCESO] && VICINI[ACCESO][id]);
+  }
+
+  function idDi(oggetto) {
+    var d = oggetto && oggetto.dataItem && oggetto.dataItem.dataContext;
+    return d ? d.id : null;
+  }
+
+  function idDiDataItem(dataItem) {
+    var d = dataItem && dataItem.dataContext;
+    return d ? d.id : null;
+  }
+
+  function aggiornaFuoco() {
+    if (!serieRete) return;
+
+    serieRete.circles.each(function (cerchio) {
+      var id = idDi(cerchio);
+      if (!id || id === ID_RADICE) return;
+      cerchio.set("fillOpacity", aFuoco(id) ? PIENO : SPENTO);
+      cerchio.set("strokeOpacity", aFuoco(id) ? 1 : SPENTO);
+    });
+
+    serieRete.labels.each(function (etichetta) {
+      var d = etichetta.dataItem && etichetta.dataItem.dataContext;
+      if (!d || d.id === ID_RADICE) return;
+      var forte = d.valore >= SOGLIA_NOME;
+      var mostra = ACCESO ? aFuoco(d.id) : forte;
+      etichetta.set("forceHidden", !mostra);
+      etichetta.set("opacity", mostra ? 1 : 0);
+    });
+
+    serieRete.links.each(function (legame) {
+      var da = idDiDataItem(legame.get ? legame.get("source") : null);
+      var a = idDiDataItem(legame.get ? legame.get("target") : null);
+      if (da === ID_RADICE || a === ID_RADICE) {
+        legame.set("strokeOpacity", 0);
+        return;
+      }
+      if (!ACCESO) {
+        legame.set("strokeOpacity", LINEA);
+      } else if (da === ACCESO || a === ACCESO) {
+        legame.set("strokeOpacity", LINEA_ACCESA);
+      } else {
+        legame.set("strokeOpacity", LINEA_SPENTA);
+      }
+    });
+
+    /* La riga accesa nell'elenco qui sotto: il grafico e l'elenco
+       raccontano la stessa cosa, devono dire insieme di chi si sta
+       parlando. */
+    var righe = document.querySelectorAll(".pi-riga");
+    Array.prototype.forEach.call(righe, function (riga) {
+      var suo = riga.getAttribute("data-nodo");
+      var accesa = !!ACCESO && suo === ACCESO;
+      riga.classList.toggle("pi-riga-accesa", accesa);
+      var b = riga.querySelector(".pi-testa");
+      if (b) b.setAttribute("aria-pressed", String(accesa));
+    });
+  }
+
+  function accendi(id, fermo) {
+    ACCESO = id;
+    FERMO = !!fermo;
+    aggiornaFuoco();
+  }
+
+  function spegni() {
+    ACCESO = null;
+    FERMO = false;
+    aggiornaFuoco();
+  }
 
   function eRadice(target) {
     var d = target && target.dataItem && target.dataItem.dataContext;
@@ -262,15 +377,32 @@
       })
     );
 
-    /* Due colori soli: le persone che fanno da ponte e le case
-       antiquariali. Il terzo colore non aggiungerebbe niente e la
-       pagina ne ha gia' due. */
-    serie.circles.template.setAll({ fillOpacity: 0.95, strokeOpacity: 0 });
+    /* Tre categorie con due colori soli. Le case antiquariali sono
+       terracotta, le persone azzurre — sono i due colori del sito, e
+       un terzo colore sarebbe stato estraneo. Clienti e collaboratori
+       si distinguono per la forma: il cliente e' un disco pieno, il
+       collaboratore un anello vuoto. A otto pixel un disco e un
+       anello si riconoscono, due azzurri diversi no. */
+    var BLU = window.am5.color(0x5593C9);
+    var TERRA = window.am5.color(0xC8683C);
+
+    serie.circles.template.setAll({
+      fillOpacity: PIENO,
+      strokeWidth: 2.2,
+      strokeOpacity: 1
+    });
     serie.circles.template.adapters.add("fill", function (fill, target) {
       var d = target.dataItem && target.dataItem.dataContext;
-      return d && d.tipo === "persona"
-        ? window.am5.color(0x5593C9)
-        : window.am5.color(0xC8683C);
+      if (!d) return fill;
+      if (d.tipo !== "persona") return TERRA;
+      /* Il collaboratore e' vuoto: dentro ci va il fondo della
+         pagina, non il colore. */
+      return d.ruolo === "collaboratore" ? window.am5.color(0xffffff) : BLU;
+    });
+    serie.circles.template.adapters.add("stroke", function (s2, target) {
+      var d = target.dataItem && target.dataItem.dataContext;
+      if (!d) return s2;
+      return d.tipo === "persona" ? BLU : TERRA;
     });
 
     /* La radice non esiste davvero: e' il perno che tiene insieme il
@@ -317,39 +449,75 @@
     serie.nodes.template.adapters.add("tooltipText", function (t, target) {
       return eRadice(target) ? "" : t;
     });
-    /* La mano solo dove c'e' davvero qualcosa da aprire: le schede
-       sono delle case antiquariali, le persone non ne hanno una. */
-    serie.nodes.template.adapters.add("cursorOverStyle", function (c, target) {
-      var d = target.dataItem && target.dataItem.dataContext;
-      return d && d.url ? "pointer" : "default";
+    /* Tutti i pallini si possono toccare: le case per aprire la
+       scheda, le persone per fissare la messa a fuoco. */
+    serie.nodes.template.set("cursorOverStyle", "pointer");
+
+    serie.nodes.template.events.on("pointerover", function (ev) {
+      if (FERMO) return;
+      var id = idDi(ev.target);
+      if (id && id !== ID_RADICE) accendi(id, false);
     });
+
+    serie.nodes.template.events.on("pointerout", function () {
+      if (!FERMO) spegni();
+    });
+
     serie.nodes.template.events.on("click", function (ev) {
       var d = ev.target.dataItem && ev.target.dataItem.dataContext;
-      if (d && d.url) window.location.href = d.url;
+      if (!d || d.id === ID_RADICE) return;
+      if (d.url) { window.location.href = d.url; return; }
+      /* Su una persona il clic ferma la messa a fuoco, e un secondo
+         clic la scioglie: e' l'unico modo di usarla col dito, dove
+         il passaggio del mouse non esiste. */
+      if (FERMO && ACCESO === d.id) spegni();
+      else accendi(d.id, true);
     });
 
     serie.data.setAll([datiRete(righe)]);
     serie.set("selectedDataItem", serie.dataItems[0]);
+
+    serieRete = serie;
+    /* La prima passata va fatta quando i cerchi esistono davvero:
+       subito dopo setAll le liste sono ancora vuote. */
+    root.events.once("frameended", function () {
+      ACCESO = null;
+      FERMO = false;
+      aggiornaFuoco();
+    });
   }
 
   /* La rete e' bipartita — persone da una parte, case dall'altra — ma
      la serie vuole un albero. Si costruisce una radice invisibile con
      tutti i nodi appesi, e i legami veri si passano con "legami": e'
-     il modo in cui amCharts disegna una rete che albero non e'. */
+     il modo in cui amCharts disegna una rete che albero non e'.
+
+     Oltre ai nodi si prepara la mappa dei vicini: serve a mettere a
+     fuoco un nome per volta, ed e' piu' rapido calcolarla una volta
+     sola qui che frugare fra centocinquanta legami a ogni passaggio
+     del mouse. */
   function datiRete(righe) {
     var nodi = [];
     var indice = {};
+    var vicini = {};
+
+    function collega(a, b) {
+      (vicini[a] = vicini[a] || {})[b] = true;
+      (vicini[b] = vicini[b] || {})[a] = true;
+    }
 
     righe.forEach(function (p) {
-      var id = "p:" + p.role + ":" + p.name;
+      var id = idPersona(p);
       indice[id] = {
         id: id,
         nome: p.name,
         tipo: "persona",
+        ruolo: p.role,
         valore: p.entities.length,
         legami: []
       };
       nodi.push(indice[id]);
+      vicini[id] = vicini[id] || {};
     });
 
     righe.forEach(function (p) {
@@ -365,116 +533,20 @@
             url: "dettagli/dettaglio_" + e.id + ".html"
           };
           nodi.push(indice[id]);
+          vicini[id] = vicini[id] || {};
         }
         indice[id].valore++;
-        indice["p:" + p.role + ":" + p.name].legami.push(id);
+        indice[idPersona(p)].legami.push(id);
+        collega(idPersona(p), id);
       });
     });
 
+    VICINI = vicini;
     return { id: ID_RADICE, nome: "", valore: 0, figli: nodi };
   }
 
-  /* --- 2. famiglie e antiquari soli -------------------------- */
-
-  function perEntita(dati) {
-    var conta = {};
-    dati.forEach(function (p) {
-      if (p.role !== "antiquario" || !p.entity_id) return;
-      if (!conta[p.entity_id]) {
-        conta[p.entity_id] = { id: p.entity_id, nome: p.entity_name, n: 0 };
-      }
-      conta[p.entity_id].n++;
-    });
-    return Object.keys(conta).map(function (k) { return conta[k]; });
-  }
-
-  function costruisciFamiglie(radice, dati) {
-    var entita = perEntita(dati);
-    if (!entita.length) return;
-
-    /* Sopra le cinque persone i casi sono uno o due per volta: messi
-       insieme la barra si legge, separati sarebbero cinque righe da
-       una tacca. */
-    var scaglioni = [
-      { chiave: 1, etichetta: "1 persona" },
-      { chiave: 2, etichetta: "2 persone" },
-      { chiave: 3, etichetta: "3 persone" },
-      { chiave: 4, etichetta: "4 persone" },
-      { chiave: 5, etichetta: "5 persone" },
-      { chiave: 6, etichetta: "6 o più" }
-    ];
-    scaglioni.forEach(function (s) {
-      s.entita = entita.filter(function (e) {
-        return s.chiave === 6 ? e.n >= 6 : e.n === s.chiave;
-      }).sort(function (a, b) {
-        return b.n - a.n || a.nome.localeCompare(b.nome, "it");
-      });
-    });
-
-    var massimo = Math.max.apply(null, scaglioni.map(function (s) {
-      return s.entita.length;
-    }));
-    var sole = scaglioni[0].entita.length;
-
-    var sez = el("section", "pi-blocco");
-    sez.id = "famiglie";
-    sez.appendChild(el("h2", "pi-titolo", "Famiglie e antiquari soli"));
-    sez.appendChild(el("p", "pi-occhiello",
-      sole + " entità su " + entita.length + " hanno un antiquario solo; " +
-      "le altre " + (entita.length - sole) + " ne hanno da due a nove. " +
-      "Scegli una barra per vedere quali."));
-
-    var lista = el("ul", "pi-scaglioni");
-    var aperto = null;
-
-    scaglioni.forEach(function (s) {
-      var riga = el("li", "pi-scaglione");
-
-      var b = el("button", "pi-scaglione-bottone");
-      b.type = "button";
-      b.setAttribute("aria-expanded", "false");
-      b.appendChild(el("span", "pi-scaglione-voce", s.etichetta));
-
-      var barra = el("span", "pi-scaglione-barra");
-      var dentro = el("span", "pi-barra-dentro");
-      dentro.style.width = (s.entita.length / massimo * 100) + "%";
-      barra.appendChild(dentro);
-      b.appendChild(barra);
-
-      b.appendChild(el("span", "pi-scaglione-conto", String(s.entita.length)));
-      riga.appendChild(b);
-
-      var nomi = el("div", "pi-scaglione-nomi");
-      nomi.hidden = true;
-      s.entita.forEach(function (e, i) {
-        if (i) {
-          spazio(nomi);
-          nomi.appendChild(el("span", "pi-punto", "·"));
-          spazio(nomi);
-        }
-        var a = el("a", "pi-scheda", s.chiave === 6 ? e.nome + " (" + e.n + ")" : e.nome);
-        a.href = "dettagli/dettaglio_" + e.id + ".html";
-        nomi.appendChild(a);
-      });
-      riga.appendChild(nomi);
-
-      b.addEventListener("click", function () {
-        var apriva = nomi.hidden;
-        if (aperto && aperto !== nomi) {
-          aperto.hidden = true;
-          aperto.parentNode.querySelector(".pi-scaglione-bottone")
-            .setAttribute("aria-expanded", "false");
-        }
-        nomi.hidden = !apriva;
-        b.setAttribute("aria-expanded", String(apriva));
-        aperto = apriva ? nomi : null;
-      });
-
-      lista.appendChild(riga);
-    });
-
-    sez.appendChild(lista);
-    radice.appendChild(sez);
+  function idPersona(p) {
+    return "p:" + p.role + ":" + p.name;
   }
 
   /* --- avvio -------------------------------------------------- */
@@ -484,7 +556,6 @@
     var dati = leggiDati();
     if (!radice || !dati) return;
     costruisciPonti(radice, dati);
-    costruisciFamiglie(radice, dati);
   }
 
   if (document.readyState === "loading") {
