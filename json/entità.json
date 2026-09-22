@@ -149,7 +149,8 @@
             "CO_III": true,
             "ST_NEW": true,
             "VI_I": true,
-            "GR_II": true
+            "GR_II": true,
+            "PR": true
         },
         "Luoghi": {
             "IT_9": {
@@ -347,7 +348,10 @@
         },
         "Clienti": {},
         "Relazioni": {
-            "AS": true
+            "AS": true,
+            "RA_NEW": true,
+            "BA_II": true,
+            "ST_NEW": true
         },
         "Luoghi": {
             "IT_195": {
@@ -1615,7 +1619,10 @@
             "VO_I": true,
             "FE": true,
             "BE_I": true,
-            "GR": true
+            "GR": true,
+            "AN": true,
+            "CA_IV": true,
+            "GU": true
         },
         "Luoghi": {
             "IT_37": {
@@ -2858,7 +2865,14 @@
                 ]
             }
         },
-        "Relazioni": {},
+        "Relazioni": {
+            "ST_NEW": true,
+            "GR_II": true,
+            "BR_III": true,
+            "CA_IV": true,
+            "RI_I": true,
+            "SA_VI_NEW": true
+        },
         "Luoghi": {
             "IT_139": {
                 "ID": "IT_139",
@@ -4052,7 +4066,8 @@
         "Clienti": {},
         "Relazioni": {
             "PO_II": true,
-            "GE_I": true
+            "GE_I": true,
+            "BA_V": true
         },
         "Luoghi": {
             "IT_1_d": {
@@ -5935,7 +5950,12 @@
                 ]
             }
         },
-        "Relazioni": {},
+        "Relazioni": {
+            "BA_II": true,
+            "BA_V": true,
+            "SA_VI_NEW": true,
+            "ST_NEW": true
+        },
         "Luoghi": {
             "IT_147": {
                 "ID": "IT_147",
@@ -8984,7 +9004,9 @@
                 ]
             }
         },
-        "Relazioni": {},
+        "Relazioni": {
+            "GR": true
+        },
         "Luoghi": {
             "FR_10": {
                 "ID": "FR_10",
@@ -9508,7 +9530,8 @@
         "Clienti": {},
         "Relazioni": {
             "AP": true,
-            "ZA": true
+            "ZA": true,
+            "PR": true
         },
         "Luoghi": {
             "IT_92": {
@@ -9658,10 +9681,10 @@
                         "Via": "via dei Greci",
                         "Civico": "",
                         "ID_entità": "DI_I",
-                        "Apertura": "",
-                        "Chiusura": "",
-                        "Nome attività": "Eugenio Di Castro",
-                        "Latitudine": "",
+                        "Apertura": "1920 ca.",
+                        "Chiusura": "1930 ca.",
+                        "Nome attività": "",
+                        "Latitudine": "Eugenio Di Castro",
                         "Longitudine": "",
                         "geo": {
                             "lat": 41.9074985,
@@ -9676,10 +9699,10 @@
                         "Via": "via del Babuino",
                         "Civico": "82",
                         "ID_entità": "DI_I",
-                        "Apertura": "",
-                        "Chiusura": "",
-                        "Nome attività": "Eugenio Di Castro",
-                        "Latitudine": "",
+                        "Apertura": "1930 ca.",
+                        "Chiusura": "1976",
+                        "Nome attività": "",
+                        "Latitudine": "Eugenio Di Castro",
                         "Longitudine": "",
                         "geo": {
                             "lat": 41.9083445,
@@ -9771,10 +9794,10 @@
                 "Via": "via dei Greci",
                 "Civico": "",
                 "ID_entità": "DI_I",
-                "Apertura": "",
-                "Chiusura": "",
-                "Nome attività": "Eugenio Di Castro",
-                "Latitudine": "",
+                "Apertura": "1920 ca.",
+                "Chiusura": "1930 ca.",
+                "Nome attività": "",
+                "Latitudine": "Eugenio Di Castro",
                 "Longitudine": "",
                 "geo": {
                     "lat": 41.9074985,
@@ -9789,10 +9812,10 @@
                 "Via": "via del Babuino",
                 "Civico": "82",
                 "ID_entità": "DI_I",
-                "Apertura": "",
-                "Chiusura": "",
-                "Nome attività": "Eugenio Di Castro",
-                "Latitudine": "",
+                "Apertura": "1930 ca.",
+                "Chiusura": "1976",
+                "Nome attività": "",
+                "Latitudine": "Eugenio Di Castro",
                 "Longitudine": "",
                 "geo": {
                     "lat": 41.9083445,
@@ -10630,8 +10653,8 @@
                         "Via": "Rio Novo",
                         "Civico": "3498",
                         "ID_entità": "GE_I",
-                        "Apertura": "",
-                        "Chiusura": "",
+                        "Apertura": "1920 ca.",
+                        "Chiusura": "1965",
                         "Nome attività": "Benno Geiger (abitazione privata)",
                         "Latitudine": "",
                         "Longitudine": "",
@@ -10662,8 +10685,8 @@
                 "Via": "Rio Novo",
                 "Civico": "3498",
                 "ID_entità": "GE_I",
-                "Apertura": "",
-                "Chiusura": "",
+                "Apertura": "1920 ca.",
+                "Chiusura": "1965",
                 "Nome attività": "Benno Geiger (abitazione privata)",
                 "Latitudine": "",
                 "Longitudine": "",
@@ -12095,7 +12118,11 @@
                 ]
             }
         },
-        "Relazioni": {},
+        "Relazioni": {
+            "BA_II": true,
+            "RA_NEW": true,
+            "RI_I": true
+        },
         "Luoghi": {
             "IT_151": {
                 "ID": "IT_151",
@@ -12412,7 +12439,8 @@
         "Relazioni": {
             "SA_IV": true,
             "AC": true,
-            "BA_IV": true
+            "BA_IV": true,
+            "BA_V": true
         },
         "Luoghi": {
             "IT_4_g": {
@@ -12848,7 +12876,8 @@
         },
         "Relazioni": {
             "BA_II": true,
-            "CO_III": true
+            "CO_III": true,
+            "DA": true
         },
         "Luoghi": {
             "IT_52_b": {
@@ -14360,7 +14389,8 @@
         },
         "Clienti": {},
         "Relazioni": {
-            "GU-BR": true
+            "GU-BR": true,
+            "PR": true
         },
         "Luoghi": {
             "IT_36": {
@@ -14657,7 +14687,9 @@
             }
         },
         "Clienti": {},
-        "Relazioni": {},
+        "Relazioni": {
+            "PA_III": true
+        },
         "Luoghi": {
             "FR_1": {
                 "ID": "FR_1",
@@ -15091,7 +15123,9 @@
                 ]
             }
         },
-        "Relazioni": {},
+        "Relazioni": {
+            "SA_IV": true
+        },
         "Luoghi": {
             "IT_154": {
                 "ID": "IT_154",
@@ -17203,7 +17237,10 @@
             }
         },
         "Clienti": {},
-        "Relazioni": {},
+        "Relazioni": {
+            "LA_II": true,
+            "PE": true
+        },
         "Luoghi": {
             "IT_199": {
                 "ID": "IT_199",
@@ -17612,7 +17649,9 @@
                 ]
             }
         },
-        "Relazioni": {},
+        "Relazioni": {
+            "PA_III": true
+        },
         "Luoghi": {
             "IT_149": {
                 "ID": "IT_149",
@@ -19314,7 +19353,8 @@
             "JA": true,
             "SI": true,
             "JA-TA": true,
-            "SA_IV": true
+            "SA_IV": true,
+            "SA_VI_NEW": true
         },
         "Luoghi": {
             "IT_156": {
@@ -19645,7 +19685,13 @@
                 ]
             }
         },
-        "Relazioni": {},
+        "Relazioni": {
+            "LA_I": true,
+            "BR_I_1": true,
+            "AC": true,
+            "VI_I": true,
+            "DI": true
+        },
         "Luoghi": {
             "IT_211": {
                 "ID": "IT_211",
@@ -19931,7 +19977,9 @@
         },
         "Clienti": {},
         "Relazioni": {
-            "IM": true
+            "IM": true,
+            "AN": true,
+            "GU": true
         },
         "Luoghi": {
             "IT_24": {
@@ -20471,7 +20519,10 @@
                 ]
             }
         },
-        "Relazioni": {},
+        "Relazioni": {
+            "GU": true,
+            "BA_V": true
+        },
         "Luoghi": {
             "IT_208": {
                 "ID": "IT_208",
@@ -22082,7 +22133,8 @@
         "Clienti": {},
         "Relazioni": {
             "GR_II": true,
-            "PO_III": true
+            "PO_III": true,
+            "LO": true
         },
         "Luoghi": {
             "IT_123": {
@@ -22129,10 +22181,10 @@
                 "Via": "New York",
                 "Civico": "",
                 "ID_entità": "SA_IV",
-                "Apertura": "",
-                "Chiusura": "",
-                "Nome attività": "New York Studio: 55 E. 56th St",
-                "Latitudine": "",
+                "Apertura": "1915",
+                "Chiusura": "1919",
+                "Nome attività": "",
+                "Latitudine": "New York Studio: 55 E. 56th St",
                 "Longitudine": "",
                 "geo": {
                     "lat": 36.1021436,
@@ -22951,27 +23003,13 @@
             }
         },
         "Relazioni": {
-            "GE_II": true
+            "GE_II": true,
+            "BA_V": true,
+            "CA_IV": true,
+            "PO_III": true,
+            "ST_NEW": true
         },
         "Luoghi": {
-            "IT_1_g": {
-                "ID": "IT_1_g",
-                "Nazione": "Italia",
-                "Regione": "Veneto",
-                "Città": "Venezia",
-                "Via": "",
-                "Civico": "",
-                "ID_entità": "SA_VI_NEW",
-                "Apertura": "",
-                "Chiusura": "",
-                "Nome attività": "Antonio Salvadori",
-                "Latitudine": "",
-                "Longitudine": "",
-                "geo": {
-                    "lat": 45.4371908,
-                    "lon": 12.3345898
-                }
-            },
             "IT_166": {
                 "ID": "IT_166",
                 "Nazione": "Italia",
@@ -25158,7 +25196,11 @@
             }
         },
         "Relazioni": {
-            "AC": true
+            "AC": true,
+            "AN": true,
+            "BA_V": true,
+            "SA_VI_NEW": true,
+            "CA_IV": true
         },
         "Luoghi": {
             "IT_2": {
@@ -26930,7 +26972,8 @@
         },
         "Clienti": {},
         "Relazioni": {
-            "AC": true
+            "AC": true,
+            "PR": true
         },
         "Luoghi": {
             "IT_1_b": {
