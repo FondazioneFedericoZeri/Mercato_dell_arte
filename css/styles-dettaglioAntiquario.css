@@ -513,6 +513,111 @@ body.gal-bloccato .torna-su {
     max-width: none;
 }
 
+/* --- relazioni: le tre categorie affiancate ----------------- */
+
+/* Altri antiquari, clienti e collaboratori sono elenchi corti — due
+   o tre nomi per lo piu' — e incolonnati facevano scorrere mezza
+   pagina per una dozzina di righe. Affiancati si leggono in un colpo
+   d'occhio. Le colonne si adattano: con una sola categoria non resta
+   una striscia stretta con due terzi di pagina vuoti. */
+/* Colonne affiancate a larghezza variabile: le categorie corte
+   restano strette — i nomi sono corti e una colonna da mezza pagina
+   sarebbe quasi vuota — mentre quelle lunghe prendono il doppio dello
+   spazio, cosi' stanno tutte sulla stessa riga invece di lasciare
+   buchi. Con la griglia a tracce fisse una categoria larga andava a
+   capo e accanto a quella corta restava un vuoto. */
+.rel-griglia {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 30px 40px;
+}
+
+.rel-gruppo {
+    flex: 1 1 190px;
+    max-width: 290px;
+    min-width: 0;
+}
+
+.scheda-contenuto .rel-titolo {
+    /* Etichetta, non titolo di paragrafo: stesso maiuscoletto dello
+       specchietto in alto, cosi' le due fasce si parlano. */
+    margin: 0 0 10px 0;
+    font-family: var(--ff-body);
+    font-style: normal;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #5a6b7a;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #e0e6ec;
+}
+
+.scheda-contenuto .rel-elenco {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    max-width: none;   /* non e' testo corrente: niente misura di lettura */
+}
+
+.scheda-contenuto .rel-elenco li {
+    margin: 0 0 9px 0;
+    font-size: var(--fs-body);
+    line-height: 1.4;
+}
+
+/* Categoria con piu' di dieci nomi: vale il doppio delle altre e i
+   nomi le scorrono dentro su due file, invece di allungarsi in una
+   striscia sola accanto a colonne vuote. Solo da 769px in su: piu'
+   stretto le categorie sono gia' impilate. */
+@media (min-width: 769px) {
+    .rel-gruppo-largo {
+        flex: 2 1 420px;
+        max-width: 620px;
+    }
+
+    .rel-gruppo-largo .rel-elenco {
+        columns: 2;
+        column-gap: 40px;
+    }
+
+    /* Un nome non si spezza fra il fondo di una fila e la cima
+       dell'altra, e la qualifica resta attaccata al suo nome. */
+    .rel-gruppo-largo .rel-elenco li {
+        break-inside: avoid;
+    }
+}
+
+.rel-scheda {
+    color: var(--link);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.rel-scheda:hover {
+    color: var(--link-hover);
+}
+
+/* Freccia: dice che il nome porta a un'altra scheda, cosa che il
+   solo colore non basta a dire a chi non lo distingue. */
+.rel-scheda::after {
+    content: " \2192";
+    text-decoration: none;
+}
+
+.rel-nome {
+    display: block;
+}
+
+/* La qualifica sotto al nome, piccola e grigia: prima era un inciso
+   fra parentesi in coda, l'ultima cosa che si leggeva. */
+.rel-qualifica {
+    display: block;
+    font-size: var(--fs-body-sm);
+    color: #6b7a87;
+}
+
 /* --- scheda precedente / successiva ------------------------- */
 
 .scheda-sfoglia {
@@ -663,6 +768,14 @@ footer img {
     .slider-container {
         width: 100%;
         max-width: 100%;
+    }
+
+    /* Le categorie delle relazioni si impilano e prendono tutta la
+       riga: il tetto dei 290px, che sul monitor tiene strette le
+       colonne, qui lascerebbe un margine bianco a destra. */
+    .rel-gruppo {
+        flex-basis: 100%;
+        max-width: none;
     }
 
     /* Etichetta sopra il dato: una colonna da 170px su uno schermo da
