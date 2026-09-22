@@ -269,6 +269,13 @@ body.gal-bloccato {
     overflow: hidden;
 }
 
+/* Con la fotografia ingrandita aperta il "torna su" non serve, e
+   sotto lo strato scuro resterebbe visibile a meta'. */
+body.gal-bloccato .torna-su {
+    opacity: 0;
+    visibility: hidden;
+}
+
 .gal-figura {
     margin: 0;
     max-width: 1100px;

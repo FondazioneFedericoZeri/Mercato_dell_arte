@@ -327,6 +327,9 @@ def build_html_head(page, entity):
         page.link(rel="stylesheet", href="../../css/tokens.css")
         page.link(rel="stylesheet",
                   href="../../css/styles-dettaglioAntiquario.css")
+        # Bottone "torna su": le schede con la bibliografia lunga
+        # scorrono per migliaia di pixel e risalire a mano e' faticoso.
+        page.link(rel="stylesheet", href="../../css/torna-su.css")
         page.script(type="text/javascript",
                     src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js")
         page.script(type="text/javascript",
@@ -342,6 +345,7 @@ def build_html_head(page, entity):
                     src="../../script/dettaglioAntiquari.js")
         page.script(type="text/javascript",
                     src="../../script/mappaDettaglio.js")
+        page.script(src="../../script/torna-su.js", defer="")
 
 
 ZERI = "https://fondazionezeri.unibo.it/it/homepage"
