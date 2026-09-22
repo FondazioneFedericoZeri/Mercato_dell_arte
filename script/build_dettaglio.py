@@ -1,6 +1,7 @@
 import os
 import re
 import json
+import html as _html
 import pathlib
 import airium as a
 import docx
@@ -24,6 +25,14 @@ def ENTITA_TSV():
 
 def ENTITA_JSON():
     return _file_entita("json/entita.json", "json/entità.json")
+
+
+def esc(s):
+    """Testo che finisce dentro il markup: & < > diventano entita'.
+
+    I nomi arrivano dai fogli dati e possono contenere una & (studi in
+    societa'): senza questo, il markup uscirebbe rotto."""
+    return _html.escape(s or "", quote=False)
 
 
 def getText(filename):
@@ -181,12 +190,13 @@ def elenco(voci, congiunzione="e"):
 
 
 def sottotitolo(entity):
-    """Es. "Torino, entita' attiva dal 1912 al 1975".
+    """Es. "Torino, in attivita' dal 1912 al 1975".
 
-    Le schede raccolgono entita' antiquariali, non singole persone:
-    dentro una scheda ci possono essere piu' antiquari. Per questo si
-    dice sempre "entita' attiva", mai "attivo" o "attiva" riferito a
-    una persona.
+    Sta sotto al nome, dentro la fascia blu. Le schede raccolgono
+    entita' antiquariali, non singole persone: dentro una scheda ci
+    possono essere piu' antiquari. Per questo la formula e' impersonale
+    — "in attivita' dal ... al ..." — e non "attivo" o "attiva", che si
+    riferirebbero a una persona sola.
     """
     luoghi = luoghi_entita(entity)
     if not luoghi:
@@ -208,45 +218,31 @@ def sottotitolo(entity):
                   for l in luoghi)
 
     if aperture and tuttora:
-        attivita = f"entità attiva dal {min(aperture)}, tuttora in attività"
+        attivita = f"in attività dal {min(aperture)}, tuttora aperta"
     elif aperture and chiusure and max(chiusure) > min(aperture):
-        attivita = f"entità attiva dal {min(aperture)} al {max(chiusure)}"
+        attivita = f"in attività dal {min(aperture)} al {max(chiusure)}"
     elif aperture:
-        attivita = f"entità attiva dal {min(aperture)}"
+        attivita = f"in attività dal {min(aperture)}"
     elif tuttora:
-        attivita = "entità tuttora in attività"
+        attivita = "tuttora in attività"
     else:
         attivita = ""
 
     return ", ".join([p for p in (testo_citta, attivita) if p])
 
 
-def insegne(entity):
-    """Le insegne fra virgolette dentro "Nome attivita'".
-
-    Il campo e' testo libero del tipo: Pietro Accorsi, "Galleria
-    Accorsi". Il nome della persona e' gia' nella riga PERSONE, quindi
-    qui si tiene solo cio' che sta fra virgolette, che e' l'insegna
-    vera e propria. Se non ce ne sono, la riga non compare.
-    """
-    trovate = []
-    for l in luoghi_entita(entity):
-        campo = (l.get("Nome attività") or "").strip()
-        for pezzo in re.findall(r'"([^"]+)"|“([^”]+)”', campo):
-            nome = (pezzo[0] or pezzo[1]).strip()
-            if nome and nome not in trovate:
-                trovate.append(nome)
-    return trovate
-
-
 def righe_persone(entity):
-    """Nome, date e professione di ogni persona della scheda."""
+    """Nome, date e professione di ogni persona della scheda.
+
+    Il nome va in grassetto: nella striscia e' il dato che si cerca,
+    le date e la professione lo accompagnano.
+    """
     righe = []
     for persona in (entity.get("Persone") or {}).values():
         nome = (persona.get("Nome Persona") or "").strip()
         if not nome:
             continue           # le persone senza nome non si mostrano
-        pezzi = [nome]
+        pezzi = [f"<strong>{esc(nome)}</strong>"]
         nascita = (persona.get("Nascita") or "").strip()
         morte = (persona.get("Morte") or "").strip()
         if nascita or morte:
@@ -262,27 +258,18 @@ def righe_persone(entity):
 
 
 def scheda_sintesi(entity):
-    """Le righe della scheda di sintesi: solo quelle che hanno un dato."""
-    righe = []
+    """Le persone dello specchietto: una per riga, in elenco verticale.
 
-    persone = righe_persone(entity)
-    if persone:
-        righe.append(("PERSONE" if len(persone) > 1 else "PERSONA",
-                      "<br>".join(persone)))
+    Citta' e periodo di attivita' non stanno qui: sono il sottotitolo
+    della scheda e vanno sotto al nome, dentro la fascia blu, perche'
+    riguardano l'entita' e non le persone.
 
-    nomi = insegne(entity)
-    if nomi:
-        righe.append(("INSEGNA" if len(nomi) == 1 else "INSEGNE",
-                      "<br>".join(nomi)))
-
-    link = (entity.get("Link Zeri") or "").strip()
-    if link:
-        righe.append(("IN CATALOGO",
-                      f'<a href="{link}" class="linkBio" target="_blank">'
-                      f'Opere transitate, catalogo della Fondazione Zeri '
-                      f'&#8594;</a>'))
-
-    return righe
+    Le insegne (i nomi fra virgolette dentro "Nome attivita'") non
+    compaiono piu': erano una terza riga che ripeteva il cognome gia'
+    scritto sopra, e restano leggibili nei tooltip delle mappe e nel
+    campo dei luoghi.
+    """
+    return list(righe_persone(entity))
 
 
 def persone_albero(entity_id, parentela):
@@ -409,14 +396,25 @@ def bottone_zoom(page):
 
 
 def build_fascia(page, entity, imgs, images_description):
-    """La fascia blu: nome, sottotitolo e fotografia."""
+    """La fascia blu: ritorno all'elenco, nome, sottotitolo e fotografia.
+
+    Il rimando "Tutti gli antiquari" sta dentro la fascia, in alto a
+    sinistra: prima era una striscia bianca sopra di essa, che rubava
+    una riga senza dire niente.
+
+    Sotto al nome, citta' e periodo di attivita' ("Torino, in attivita'
+    dal 1912 al 1975"): sono il sottotitolo della scheda, cioe' di che
+    cosa si sta leggendo, e vanno letti insieme al nome.
+    """
     klass = "scheda-fascia" if imgs else "scheda-fascia senza-foto"
     with page.section(klass=klass):
         with page.div(klass="scheda-fascia-testo"):
+            page.a(klass="scheda-torna", href="../antiquari.html",
+                   _t="&#8592; Tutti gli antiquari")
             page.h1(klass="scheda-nome", _t=entity["Nome"])
             testo = sottotitolo(entity)
             if testo:
-                page.p(klass="scheda-sottotitolo", _t=testo)
+                page.p(klass="scheda-sottotitolo", _t=esc(testo))
 
         if len(imgs) == 1:
             img = f"{imgs[0]}.jpg"
@@ -450,23 +448,32 @@ def build_fascia(page, entity, imgs, images_description):
 
 
 def build_sfoglia(page, entity, ordinate):
-    """Scheda precedente e successiva, in ordine alfabetico."""
+    """Scheda precedente e successiva, in ordine alfabetico.
+
+    Agli estremi dell'elenco si dice di chi si sta parlando — "Accorsi
+    non ha un precedente" — invece di un generico "prima scheda": chi
+    legge sa gia' su quale scheda e', e la frase gli conferma di essere
+    arrivato al capo dell'elenco.
+    """
     ids = [e["ID"] for e in ordinate]
     i = ids.index(entity["ID"])
     prec = ordinate[i - 1] if i > 0 else None
     succ = ordinate[i + 1] if i < len(ordinate) - 1 else None
+    nome = entity["Nome"]
 
     with page.nav(klass="scheda-sfoglia", **{"aria-label": "Altre schede"}):
         if prec:
             page.a(href=f"dettaglio_{prec['ID']}.html",
-                   _t=f"&#8592; {prec['Nome']}")
+                   _t=f"&#8592; {esc(prec['Nome'])}")
         else:
-            page.span(klass="vuoto", _t="&#8592; prima scheda")
+            page.span(klass="vuoto",
+                      _t=f"&#8592; {esc(nome)} non ha un precedente")
         if succ:
             page.a(href=f"dettaglio_{succ['ID']}.html",
-                   _t=f"{succ['Nome']} &#8594;")
+                   _t=f"{esc(succ['Nome'])} &#8594;")
         else:
-            page.span(klass="vuoto", _t="ultima scheda &#8594;")
+            page.span(klass="vuoto",
+                      _t=f"{esc(nome)} non ha un successivo &#8594;")
 
 
 def build_html(entity, entities, parentela, ordinate):
@@ -521,124 +528,143 @@ def build_html(entity, entities, parentela, ordinate):
             build_header(page)
 
             with page.main(klass="scheda"):
-                print(entity["ID"], len(imgs))
-
-                with page.div(klass="scheda-torna"):
-                    page.a(href="../antiquari.html",
-                           _t="&#8592; Tutti gli antiquari")
 
                 build_fascia(page, entity, imgs, images_description)
 
-                righe = scheda_sintesi(entity)
-                if righe:
-                    with page.section(klass="scheda-dati"):
-                        with page.dl(klass="scheda-record"):
-                            for etichetta, valore in righe:
-                                page.dt(_t=etichetta)
-                                page.dd(_t=valore)
+                # Lo specchietto sotto la fascia: etichetta a sinistra,
+                # dato a destra.
+                #
+                # "Persone" e' sempre al plurale, anche quando l'entita'
+                # ha un antiquario solo: l'etichetta dice che cos'e' la
+                # riga, non quanti sono.
+                #
+                # Le opere transitate stanno qui e non fra i tab: non
+                # sono una sezione della scheda ma un rimando al
+                # catalogo della Fondazione, su un altro sito.
+                voci = scheda_sintesi(entity)
+                link_zeri = (entity.get("Link Zeri") or "").strip()
+                if voci or link_zeri:
+                    with page.dl(klass="scheda-striscia"):
+                        if voci:
+                            page.dt(_t="Persone")
+                            with page.dd():
+                                with page.ul(klass="striscia-elenco"):
+                                    for voce in voci:
+                                        page.li(klass="striscia-voce", _t=voce)
+                        if link_zeri:
+                            page.dt(_t="Opere transitate")
+                            with page.dd():
+                                page.a(klass="striscia-link", href=link_zeri,
+                                       target="_blank", rel="noopener",
+                                       _t="Catalogo della Fondazione Zeri "
+                                          "&#8594;")
 
-                if tab:
-                    with page.nav(klass="scheda-tab",
-                                  **{"aria-label": "Sezioni della scheda"}):
-                        for etichetta, contenuto, numero in tab:
-                            attivo = " active" if contenuto == primo else ""
-                            with page.button(klass=f"tab{attivo}",
-                                             type="button",
-                                             data_content=contenuto):
-                                page(etichetta)
-                                if numero:
-                                    page.span(klass="tab-num", _t=str(numero))
+                # Da qui in giu' la scheda e' a due colonne: l'indice
+                # delle sezioni a sinistra, il contenuto a destra.
+                with page.div(klass="scheda-corpo"):
 
-                with page.div(klass="scheda-contenuto"):
+                    if tab:
+                        with page.nav(klass="scheda-tab",
+                                      **{"aria-label": "Sezioni della scheda"}):
+                            for etichetta, contenuto, numero in tab:
+                                attivo = " active" if contenuto == primo else ""
+                                with page.button(klass=f"tab{attivo}",
+                                                 type="button",
+                                                 data_content=contenuto):
+                                    page.span(klass="tab-voce", _t=etichetta)
+                                    if numero:
+                                        page.span(klass="tab-num", _t=str(numero))
 
-                    if bio:
-                        with page.div(id="Bio", klass=klass_contenuto("Bio")):
-                            for paragrafo in bio:
-                                page.p(_t=paragrafo)
+                    with page.div(klass="scheda-contenuto"):
 
-                    if n_albero:
-                        with page.div(id="Persone",
-                                      klass=klass_contenuto("Persone")):
-                            # La legenda sta qui, accanto al titolo:
-                            # dentro il telaio galleggiava nel vuoto
-                            # a destra dell'albero.
-                            with page.div(klass="af-intestazione"):
-                                page.h2(_t="Relazioni familiari")
-                                page.div(id="af-legenda", klass="af-legenda")
-                            page.div(id="albero-genealogico")
+                        if bio:
+                            with page.div(id="Bio", klass=klass_contenuto("Bio")):
+                                for paragrafo in bio:
+                                    page.p(_t=paragrafo)
 
-                    if luoghi:
-                        with page.div(id="Localizzazioni",
-                                      klass=klass_contenuto("Localizzazioni")):
-                            with page.section(id="map"):
-                                page.div(id="chartdiv")
+                        if n_albero:
+                            with page.div(id="Persone",
+                                          klass=klass_contenuto("Persone")):
+                                # La legenda sta qui, accanto al titolo:
+                                # dentro il telaio galleggiava nel vuoto
+                                # a destra dell'albero.
+                                with page.div(klass="af-intestazione"):
+                                    page.h2(_t="Relazioni familiari")
+                                    page.div(id="af-legenda", klass="af-legenda")
+                                page.div(id="albero-genealogico")
 
-                    if n_relazioni:
-                        with page.div(id="Relazioni",
-                                      klass=klass_contenuto("Relazioni")):
-                            # Ogni categoria compare solo se ha dei dati:
-                            # un'etichetta con sotto il vuoto non dice nulla.
-                            if altri:
-                                page.h2(_t="Altri antiquari")
+                        if luoghi:
+                            with page.div(id="Localizzazioni",
+                                          klass=klass_contenuto("Localizzazioni")):
+                                with page.section(id="map"):
+                                    page.div(id="chartdiv")
+
+                        if n_relazioni:
+                            with page.div(id="Relazioni",
+                                          klass=klass_contenuto("Relazioni")):
+                                # Ogni categoria compare solo se ha dei dati:
+                                # un'etichetta con sotto il vuoto non dice nulla.
+                                if altri:
+                                    page.h2(_t="Altri antiquari")
+                                    with page.ul():
+                                        for relent_id in altri:
+                                            with page.li():
+                                                page.a(href=f"dettaglio_{relent_id}.html",
+                                                       _t=f"{entities[relent_id]['Nome']}")
+                                if clienti:
+                                    page.h2(_t="Clienti")
+                                    with page.ul():
+                                        for _, cl_data in sorted(
+                                                clienti.items(),
+                                                key=lambda x: (x[1]["Nome"], x[1]["Cognome"])):
+                                            page.li(_t=getCliente(cl_data, people))
+                                if collaboratori:
+                                    page.h2(_t="Collaboratori")
+                                    with page.ul():
+                                        for _, coll_data in sorted(
+                                                collaboratori.items(),
+                                                key=lambda x: (x[1]["Nome"], x[1]["Cognome / Denominazione"])):
+                                            page.li(_t=getCollaboratore(coll_data))
+
+                        if eventi:
+                            with page.div(id="Eventi",
+                                          klass=klass_contenuto("Eventi")):
+                                page.h2(_t="Eventi significativi nell'attività antiquariale")
                                 with page.ul():
-                                    for relent_id in altri:
-                                        with page.li():
-                                            page.a(href=f"dettaglio_{relent_id}.html",
-                                                   _t=f"{entities[relent_id]['Nome']}")
-                            if clienti:
-                                page.h2(_t="Clienti")
-                                with page.ul():
-                                    for _, cl_data in sorted(
-                                            clienti.items(),
-                                            key=lambda x: (x[1]["Nome"], x[1]["Cognome"])):
-                                        page.li(_t=getCliente(cl_data, people))
-                            if collaboratori:
-                                page.h2(_t="Collaboratori")
-                                with page.ul():
-                                    for _, coll_data in sorted(
-                                            collaboratori.items(),
-                                            key=lambda x: (x[1]["Nome"], x[1]["Cognome / Denominazione"])):
-                                        page.li(_t=getCollaboratore(coll_data))
+                                    for _, ev_data in sorted(eventi.items(),
+                                                             key=lambda x: x[1]["Anno"]):
+                                        page.li(_t=getEvento(ev_data))
 
-                    if eventi:
-                        with page.div(id="Eventi",
-                                      klass=klass_contenuto("Eventi")):
-                            page.h2(_t="Eventi significativi nell'attività antiquariale")
-                            with page.ul():
-                                for _, ev_data in sorted(eventi.items(),
-                                                         key=lambda x: x[1]["Anno"]):
-                                    page.li(_t=getEvento(ev_data))
+                        if biblio:
+                            with page.div(id="Bibliografia",
+                                          klass=klass_contenuto("Bibliografia")):
+                                # Tre gruppi: le fonti d'archivio non sono
+                                # bibliografia e non stanno sotto quel titolo.
+                                def _tip(v):
+                                    return (v.get("Tipologia") or "").strip()
 
-                    if biblio:
-                        with page.div(id="Bibliografia",
-                                      klass=klass_contenuto("Bibliografia")):
-                            # Tre gruppi: le fonti d'archivio non sono
-                            # bibliografia e non stanno sotto quel titolo.
-                            def _tip(v):
-                                return (v.get("Tipologia") or "").strip()
+                                interviste = {k: v for k, v in biblio.items()
+                                              if _tip(v) == "intervista"}
+                                archivio = {k: v for k, v in biblio.items()
+                                            if _tip(v) == "fonte archivistica"}
+                                altra = {k: v for k, v in biblio.items()
+                                         if _tip(v) not in ("intervista", "fonte archivistica")}
 
-                            interviste = {k: v for k, v in biblio.items()
-                                          if _tip(v) == "intervista"}
-                            archivio = {k: v for k, v in biblio.items()
-                                        if _tip(v) == "fonte archivistica"}
-                            altra = {k: v for k, v in biblio.items()
-                                     if _tip(v) not in ("intervista", "fonte archivistica")}
+                                def _elenco(titolo, voci, chiave):
+                                    if not voci:
+                                        return
+                                    page.h2(_t=titolo)
+                                    with page.ul():
+                                        for _, bib in sorted(voci.items(), key=chiave):
+                                            page.li(_t=getBib(bib))
 
-                            def _elenco(titolo, voci, chiave):
-                                if not voci:
-                                    return
-                                page.h2(_t=titolo)
-                                with page.ul():
-                                    for _, bib in sorted(voci.items(), key=chiave):
-                                        page.li(_t=getBib(bib))
-
-                            _elenco("Bibliografia essenziale", altra,
-                                    lambda x: (x[1]["Autore"], x[1]["Anno"]))
-                            _elenco("Fonti archivistiche", archivio,
-                                    lambda x: ((x[1].get("Istituto") or ""),
-                                               (x[1].get("Fondo") or "")))
-                            _elenco("Interviste", interviste,
-                                    lambda x: (x[1]["Autore"], x[1]["Anno"]))
+                                _elenco("Bibliografia essenziale", altra,
+                                        lambda x: (x[1]["Autore"], x[1]["Anno"]))
+                                _elenco("Fonti archivistiche", archivio,
+                                        lambda x: ((x[1].get("Istituto") or ""),
+                                                   (x[1].get("Fondo") or "")))
+                                _elenco("Interviste", interviste,
+                                        lambda x: (x[1]["Autore"], x[1]["Anno"]))
 
                 build_sfoglia(page, entity, ordinate)
 
