@@ -58,13 +58,11 @@
       </div>
     </header>
     <main class="scheda">
-      <div class="scheda-torna">
-        <a href="../antiquari.html">&#8592; Tutti gli antiquari</a>
-      </div>
       <section class="scheda-fascia">
         <div class="scheda-fascia-testo">
+          <a class="scheda-torna" href="../antiquari.html">&#8592; Tutti gli antiquari</a>
           <h1 class="scheda-nome">Forti</h1>
-          <p class="scheda-sottotitolo">Roma, entità attiva dal 1920 al 1980</p>
+          <p class="scheda-sottotitolo">Roma, in attività dal 1920 al 1980</p>
         </div>
         <figure id="single-image-container">
           <img src="../../img/slider-antiquari/FO_I_img1.jpg" alt="Libreria antiquaria di Tammaro De Marinis a Firenze in società con Vittorio Forti" />
@@ -74,57 +72,61 @@
           </button>
         </figure>
       </section>
-      <section class="scheda-dati">
-        <dl class="scheda-record">
-          <dt>PERSONA</dt>
-          <dd>Vittorio Forti, 1881–1980, antiquario</dd>
-          <dt>INSEGNA</dt>
-          <dd>Studio d’Arte Palma</dd>
-          <dt>IN CATALOGO</dt>
-          <dd><a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Forti" class="linkBio" target="_blank">Opere transitate, catalogo della Fondazione Zeri &#8594;</a></dd>
-        </dl>
-      </section>
-      <nav class="scheda-tab" aria-label="Sezioni della scheda">
-        <button class="tab active" type="button" data_content="Bio">
-          Dati biografici
-        </button>
-        <button class="tab" type="button" data_content="Localizzazioni">
-          Luoghi
-          <span class="tab-num">2</span>
-        </button>
-        <button class="tab" type="button" data_content="Relazioni">
-          Relazioni
-          <span class="tab-num">2</span>
-        </button>
-        <button class="tab" type="button" data_content="Bibliografia">
-          Bibliografia
-          <span class="tab-num">2</span>
-        </button>
-      </nav>
-      <div class="scheda-contenuto">
-        <div id="Bio" class="content active-content">
-          <p>L’avvocato di origini ebraiche Vittorio Forti (Firenze, 1881 – Roma, 1980?) si dedicò anche al commercio di opere d’arte, operando nella sua abitazione romana di via Panama 102/104 almeno dai primi anni Venti. Negli anni Dieci aveva già collaborato con uno dei più rilevanti antiquari di libri antichi e miniature, Tammaro De Marinis, per l’acquisizione di manoscritti a Costantinopoli su commissione di John Pierpont Morgan.</p>
-          <p>Anche individualmente trattò soprattutto fogli miniati e cuttings, come testimonia la serie di 33 negativi che Federico Zeri donò al Gabinetto Fotografico Nazionale tra il 1967 e il 1972, conservando poi come sua consuetudine una copia delle stampe nella sua fototeca. Su questi esemplari, prevalentemente estratti da manoscritti medievali e rinascimentali italiani, Forti dovette chiedere un parere a Zeri tra la fine degli anni Quaranta e la fine del decennio successivo, quando le miniature ricomparvero sul mercato americano (oggi la maggior parte di loro è conservata al Cleveland Museum of Art).</p>
-          <p>Dalla fototeca Zeri desumiamo che l’antiquario commercializzò anche dipinti del Trecento e Quattrocento italiani. Dovette rimanere in contatto con lo studioso romano per tutta la vita perché alcune fotografie sono ascrivibili a passaggi degli anni Settanta del Novecento.</p>
-        </div>
-        <div id="Localizzazioni" class="content">
-          <section id="map">
-            <div id="chartdiv"></div>
-          </section>
-        </div>
-        <div id="Relazioni" class="content">
-          <h2>Collaboratori</h2>
-          <ul>
-            <li>Federico Zeri (storico dell'arte)</li>
-            <li>Tammaro  De Marinis (antiquario)</li>
+      <dl class="scheda-striscia">
+        <dt>Persone</dt>
+        <dd>
+          <ul class="striscia-elenco">
+            <li class="striscia-voce"><strong>Vittorio Forti</strong>, 1881–1980, antiquario</li>
           </ul>
-        </div>
-        <div id="Bibliografia" class="content">
-          <h2>Bibliografia essenziale</h2>
-          <ul>
-            <li>Botana F. (2022), <i>Tammaro De Marinis, Vittorio Forti, and the Acquisition of Islamic Manuscripts for J. P. Morgan in Constantinople in 1913</i>, «Manuscript Studies», Issue 7.2, 2022, pp. 237-269</li>
-            <li>Manzari F. (2024), <i>Illuminations from Northern and Central Italy in the collection of the dealer Vittorio Forti</i>, in L. Cleaver, D. Magnusson, H. Morcos, A. Rais (a cura di), "The pre-modern manuscript trade and its consequences, ca. 1890-1945", Leeds, pp. 117-144</li>
-          </ul>
+        </dd>
+        <dt>Opere transitate</dt>
+        <dd>
+          <a class="striscia-link" href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Forti" target="_blank" rel="noopener">Catalogo della Fondazione Zeri &#8594;</a>
+        </dd>
+      </dl>
+      <div class="scheda-corpo">
+        <nav class="scheda-tab" aria-label="Sezioni della scheda">
+          <button class="tab active" type="button" data_content="Bio">
+            <span class="tab-voce">Dati biografici</span>
+          </button>
+          <button class="tab" type="button" data_content="Localizzazioni">
+            <span class="tab-voce">Luoghi</span>
+            <span class="tab-num">2</span>
+          </button>
+          <button class="tab" type="button" data_content="Relazioni">
+            <span class="tab-voce">Relazioni</span>
+            <span class="tab-num">2</span>
+          </button>
+          <button class="tab" type="button" data_content="Bibliografia">
+            <span class="tab-voce">Bibliografia</span>
+            <span class="tab-num">2</span>
+          </button>
+        </nav>
+        <div class="scheda-contenuto">
+          <div id="Bio" class="content active-content">
+            <p>L’avvocato di origini ebraiche Vittorio Forti (Firenze, 1881 – Roma, 1980?) si dedicò anche al commercio di opere d’arte, operando nella sua abitazione romana di via Panama 102/104 almeno dai primi anni Venti. Negli anni Dieci aveva già collaborato con uno dei più rilevanti antiquari di libri antichi e miniature, Tammaro De Marinis, per l’acquisizione di manoscritti a Costantinopoli su commissione di John Pierpont Morgan.</p>
+            <p>Anche individualmente trattò soprattutto fogli miniati e cuttings, come testimonia la serie di 33 negativi che Federico Zeri donò al Gabinetto Fotografico Nazionale tra il 1967 e il 1972, conservando poi come sua consuetudine una copia delle stampe nella sua fototeca. Su questi esemplari, prevalentemente estratti da manoscritti medievali e rinascimentali italiani, Forti dovette chiedere un parere a Zeri tra la fine degli anni Quaranta e la fine del decennio successivo, quando le miniature ricomparvero sul mercato americano (oggi la maggior parte di loro è conservata al Cleveland Museum of Art).</p>
+            <p>Dalla fototeca Zeri desumiamo che l’antiquario commercializzò anche dipinti del Trecento e Quattrocento italiani. Dovette rimanere in contatto con lo studioso romano per tutta la vita perché alcune fotografie sono ascrivibili a passaggi degli anni Settanta del Novecento.</p>
+          </div>
+          <div id="Localizzazioni" class="content">
+            <section id="map">
+              <div id="chartdiv"></div>
+            </section>
+          </div>
+          <div id="Relazioni" class="content">
+            <h2>Collaboratori</h2>
+            <ul>
+              <li>Federico Zeri (storico dell'arte)</li>
+              <li>Tammaro  De Marinis (antiquario)</li>
+            </ul>
+          </div>
+          <div id="Bibliografia" class="content">
+            <h2>Bibliografia essenziale</h2>
+            <ul>
+              <li>Botana F. (2022), <i>Tammaro De Marinis, Vittorio Forti, and the Acquisition of Islamic Manuscripts for J. P. Morgan in Constantinople in 1913</i>, «Manuscript Studies», Issue 7.2, 2022, pp. 237-269</li>
+              <li>Manzari F. (2024), <i>Illuminations from Northern and Central Italy in the collection of the dealer Vittorio Forti</i>, in L. Cleaver, D. Magnusson, H. Morcos, A. Rais (a cura di), "The pre-modern manuscript trade and its consequences, ca. 1890-1945", Leeds, pp. 117-144</li>
+            </ul>
+          </div>
         </div>
       </div>
       <nav class="scheda-sfoglia" aria-label="Altre schede">

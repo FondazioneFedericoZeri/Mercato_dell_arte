@@ -58,13 +58,11 @@
       </div>
     </header>
     <main class="scheda">
-      <div class="scheda-torna">
-        <a href="../antiquari.html">&#8592; Tutti gli antiquari</a>
-      </div>
       <section class="scheda-fascia">
         <div class="scheda-fascia-testo">
+          <a class="scheda-torna" href="../antiquari.html">&#8592; Tutti gli antiquari</a>
           <h1 class="scheda-nome">Imbert</h1>
-          <p class="scheda-sottotitolo">Roma, entità attiva dal 1897 al 1943</p>
+          <p class="scheda-sottotitolo">Roma, in attività dal 1897 al 1943</p>
         </div>
         <div class="slider-container">
           <div class="slider">
@@ -84,63 +82,67 @@
           </button>
         </div>
       </section>
-      <section class="scheda-dati">
-        <dl class="scheda-record">
-          <dt>PERSONA</dt>
-          <dd>Alexandre Imbert, 1865–1943, antiquario</dd>
-          <dt>INSEGNA</dt>
-          <dd>Galerie A. Imbert</dd>
-          <dt>IN CATALOGO</dt>
-          <dd><a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=imbert" class="linkBio" target="_blank">Opere transitate, catalogo della Fondazione Zeri &#8594;</a></dd>
-        </dl>
-      </section>
-      <nav class="scheda-tab" aria-label="Sezioni della scheda">
-        <button class="tab active" type="button" data_content="Bio">
-          Dati biografici
-        </button>
-        <button class="tab" type="button" data_content="Localizzazioni">
-          Luoghi
-          <span class="tab-num">1</span>
-        </button>
-        <button class="tab" type="button" data_content="Relazioni">
-          Relazioni
-          <span class="tab-num">2</span>
-        </button>
-        <button class="tab" type="button" data_content="Bibliografia">
-          Bibliografia
-          <span class="tab-num">3</span>
-        </button>
-      </nav>
-      <div class="scheda-contenuto">
-        <div id="Bio" class="content active-content">
-          <p>Alexandre Imbert (1865-1943), proveniente da una famiglia di origine francese, nacque a Napoli il 3 aprile 1865. Trasferitosi a Roma, a partire dal 1897 risulta titolare della "Galerie A. Imbert", situata in via Condotti 59-61 che commerciava, come riportato dalle inserzioni pubblicitarie, "Objets d'art anciens et de haute curiosité, spécialité de tableaux des grànd maitres".</p>
-          <p>Ludwig Pollak menziona Imbert tra il 1910 e il 1912 nelle sue memorie, ricordandolo come un esperto di maiolica italiana, soprattutto antica. La passione per la ceramica portò l'antiquario a pubblicare nel 1909 il libro Ceramiche orvietane dei secoli XIII e XIV. Note su Documenti, testimonianza dell'intreccio tra mercato e studio. Si tratta di un testo con una tiratura di 200 copie da donare ai suoi più importanti clienti, tra cui J. Pierpont Morgan, che l'antiquario aveva conosciuto a Roma intorno al 1906.</p>
-          <p>Imbert morì a Buenos Aires nel 1943. Oltre a Alexandre, anche il fratello minore Eugène Imbert, svolse la professione di antiquario, con sede a Milano in via Santo Spirito 3, e si specializzò in placchette italiane realizzate tra il XV e il XIX secolo. Eugène fu inoltre genero di <a href="dettaglio_RA.html" target="_blank">Arturo Rambaldi</a> , proprietario di una casa di vendite a Bologna.</p>
-        </div>
-        <div id="Localizzazioni" class="content">
-          <section id="map">
-            <div id="chartdiv"></div>
-          </section>
-        </div>
-        <div id="Relazioni" class="content">
-          <h2>Altri antiquari</h2>
-          <ul>
-            <li>
-              <a href="dettaglio_RA_NEW.html">Rambaldi</a>
-            </li>
+      <dl class="scheda-striscia">
+        <dt>Persone</dt>
+        <dd>
+          <ul class="striscia-elenco">
+            <li class="striscia-voce"><strong>Alexandre Imbert</strong>, 1865–1943, antiquario</li>
           </ul>
-          <h2>Clienti</h2>
-          <ul>
-            <li>John Pierpont Morgan </li>
-          </ul>
-        </div>
-        <div id="Bibliografia" class="content">
-          <h2>Bibliografia essenziale</h2>
-          <ul>
-            <li>Imbert, A. (1909), <i>Ceramiche orvietane dei secoli XIII e XIV. Note su Documenti</i>, Roma, Forzani</li>
-            <li>Pollak, L., Merkel Guldan, M. (1994), <i>Römische Memoiren. Künstler, Kunstliebhaber und Gelehrte, 1893-1943</i>, Roma, L'Erma di Bretschneider</li>
-            <li>Riccetti, L. (Ed.) (2010), <i>1909 tra collezionismo e tutela: connoisseur antiquari e la ceramica medievale orvietana</i>, catalogo delle mostra (Perugia, Galleria Nazionale dell'Umbria, Palazzo Baldeschi al Corso, 2009-2010; Orvieto, Museo Archeologico Nazionale, 2010), Milano, Giunti</li>
-          </ul>
+        </dd>
+        <dt>Opere transitate</dt>
+        <dd>
+          <a class="striscia-link" href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=imbert" target="_blank" rel="noopener">Catalogo della Fondazione Zeri &#8594;</a>
+        </dd>
+      </dl>
+      <div class="scheda-corpo">
+        <nav class="scheda-tab" aria-label="Sezioni della scheda">
+          <button class="tab active" type="button" data_content="Bio">
+            <span class="tab-voce">Dati biografici</span>
+          </button>
+          <button class="tab" type="button" data_content="Localizzazioni">
+            <span class="tab-voce">Luoghi</span>
+            <span class="tab-num">1</span>
+          </button>
+          <button class="tab" type="button" data_content="Relazioni">
+            <span class="tab-voce">Relazioni</span>
+            <span class="tab-num">2</span>
+          </button>
+          <button class="tab" type="button" data_content="Bibliografia">
+            <span class="tab-voce">Bibliografia</span>
+            <span class="tab-num">3</span>
+          </button>
+        </nav>
+        <div class="scheda-contenuto">
+          <div id="Bio" class="content active-content">
+            <p>Alexandre Imbert (1865-1943), proveniente da una famiglia di origine francese, nacque a Napoli il 3 aprile 1865. Trasferitosi a Roma, a partire dal 1897 risulta titolare della "Galerie A. Imbert", situata in via Condotti 59-61 che commerciava, come riportato dalle inserzioni pubblicitarie, "Objets d'art anciens et de haute curiosité, spécialité de tableaux des grànd maitres".</p>
+            <p>Ludwig Pollak menziona Imbert tra il 1910 e il 1912 nelle sue memorie, ricordandolo come un esperto di maiolica italiana, soprattutto antica. La passione per la ceramica portò l'antiquario a pubblicare nel 1909 il libro Ceramiche orvietane dei secoli XIII e XIV. Note su Documenti, testimonianza dell'intreccio tra mercato e studio. Si tratta di un testo con una tiratura di 200 copie da donare ai suoi più importanti clienti, tra cui J. Pierpont Morgan, che l'antiquario aveva conosciuto a Roma intorno al 1906.</p>
+            <p>Imbert morì a Buenos Aires nel 1943. Oltre a Alexandre, anche il fratello minore Eugène Imbert, svolse la professione di antiquario, con sede a Milano in via Santo Spirito 3, e si specializzò in placchette italiane realizzate tra il XV e il XIX secolo. Eugène fu inoltre genero di <a href="dettaglio_RA.html" target="_blank">Arturo Rambaldi</a> , proprietario di una casa di vendite a Bologna.</p>
+          </div>
+          <div id="Localizzazioni" class="content">
+            <section id="map">
+              <div id="chartdiv"></div>
+            </section>
+          </div>
+          <div id="Relazioni" class="content">
+            <h2>Altri antiquari</h2>
+            <ul>
+              <li>
+                <a href="dettaglio_RA_NEW.html">Rambaldi</a>
+              </li>
+            </ul>
+            <h2>Clienti</h2>
+            <ul>
+              <li>John Pierpont Morgan </li>
+            </ul>
+          </div>
+          <div id="Bibliografia" class="content">
+            <h2>Bibliografia essenziale</h2>
+            <ul>
+              <li>Imbert, A. (1909), <i>Ceramiche orvietane dei secoli XIII e XIV. Note su Documenti</i>, Roma, Forzani</li>
+              <li>Pollak, L., Merkel Guldan, M. (1994), <i>Römische Memoiren. Künstler, Kunstliebhaber und Gelehrte, 1893-1943</i>, Roma, L'Erma di Bretschneider</li>
+              <li>Riccetti, L. (Ed.) (2010), <i>1909 tra collezionismo e tutela: connoisseur antiquari e la ceramica medievale orvietana</i>, catalogo delle mostra (Perugia, Galleria Nazionale dell'Umbria, Palazzo Baldeschi al Corso, 2009-2010; Orvieto, Museo Archeologico Nazionale, 2010), Milano, Giunti</li>
+            </ul>
+          </div>
         </div>
       </div>
       <nav class="scheda-sfoglia" aria-label="Altre schede">

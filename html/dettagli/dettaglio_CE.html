@@ -58,13 +58,11 @@
       </div>
     </header>
     <main class="scheda">
-      <div class="scheda-torna">
-        <a href="../antiquari.html">&#8592; Tutti gli antiquari</a>
-      </div>
       <section class="scheda-fascia">
         <div class="scheda-fascia-testo">
+          <a class="scheda-torna" href="../antiquari.html">&#8592; Tutti gli antiquari</a>
           <h1 class="scheda-nome">Cera</h1>
-          <p class="scheda-sottotitolo">Bologna, entità attiva dal 1976 al 2004</p>
+          <p class="scheda-sottotitolo">Bologna, in attività dal 1976 al 2004</p>
         </div>
         <div class="slider-container">
           <div class="slider">
@@ -88,56 +86,62 @@
           </button>
         </div>
       </section>
-      <section class="scheda-dati">
-        <dl class="scheda-record">
-          <dt>PERSONA</dt>
-          <dd>Adriano Cera, 1938–2021, antiquario</dd>
-          <dt>IN CATALOGO</dt>
-          <dd><a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=A.+Cera" class="linkBio" target="_blank">Opere transitate, catalogo della Fondazione Zeri &#8594;</a></dd>
-        </dl>
-      </section>
-      <nav class="scheda-tab" aria-label="Sezioni della scheda">
-        <button class="tab active" type="button" data_content="Bio">
-          Dati biografici
-        </button>
-        <button class="tab" type="button" data_content="Localizzazioni">
-          Luoghi
-          <span class="tab-num">1</span>
-        </button>
-        <button class="tab" type="button" data_content="Relazioni">
-          Relazioni
-          <span class="tab-num">1</span>
-        </button>
-        <button class="tab" type="button" data_content="Bibliografia">
-          Bibliografia
-          <span class="tab-num">1</span>
-        </button>
-      </nav>
-      <div class="scheda-contenuto">
-        <div id="Bio" class="content active-content">
-          <p>﻿L’antiquario e storico dell’arte Adriano Cera (1938-2021), originario di Forlì, coltivò fin dalla prima gioventù una forte passione per l’arte. L’incontro a Bologna con lo storico dell’arte Carlo Volpe fu fondamentale per affinare il suo talento di conoscitore, che spaziava da Giotto alla pittura contemporanea, dalla scultura in bronzo e marmo ai disegni.</p>
-          <p>Nel 1971 fu chiamato ad assumere l’incarico di esperto d’arte antica presso la casa d’aste Finarte di Milano, incarico che mantenne fino al 1973. In quell’anno gli venne affidata la direzione della nuova sede della Finarte a Roma. Dal 1976 lasciò Roma e la Finarte per tornare a Bologna, dove si dedicò all’attività di antiquario nella sua abitazione privata, che divenne luogo di incontro di antiquari, collezionisti, giovani studiosi ed eminenti esperti di tutto il mondo.</p>
-          <p>Dal 1980 fu ideatore di una innovativa formula editoriale per gli studiosi d’arte: i repertori fotografici. L’idea di pubblicare dei repertori fotografici e tematici fu accolta con entusiasmo da Mario Spagnol, di cui fu grande amico, direttore della Longanesi. Tra gli anni Ottanta e Novanta uscirono “La pittura emiliana del seicento”, “La pittura neoclassica italiana” e “La pittura bolognese del settecento”. La serie ebbe un grande successo, e i repertori fotografici negli anni seguenti riguardarono i “Disegni, acquarelli, tempere di artisti italiani dal 1770 ca. al 1830 ca.”, le “Sculture a Roma 1534-1621 da Paolo III Farnese a Paolo V Borghese” e la “Pittura a Roma 1534-1621 da Paolo III Farnese a Paolo V Borghese”. Gli ambiti artistici oggetto delle sue innovative pubblicazioni furono anche quelli maggiormente trattati nella sua longeva attività di mercante.</p>
-          <p>Il suo archivio fotografico è stato donato alla Fondazione Zeri nel 2023 e documenta la sua attività professionale di storico dell’arte e antiquario, conservando al suo interno non solo stampe utilizzate a fini editoriali, ma anche fototipi acquisiti da altri mercanti bolognesi, come <a href="dettaglio_PO_I.html" target="_blank"> Publio Podio</a>.</p>
-        </div>
-        <div id="Localizzazioni" class="content">
-          <section id="map">
-            <div id="chartdiv"></div>
-          </section>
-        </div>
-        <div id="Relazioni" class="content">
-          <h2>Altri antiquari</h2>
-          <ul>
-            <li>
-              <a href="dettaglio_PO_I.html">Podio</a>
-            </li>
+      <dl class="scheda-striscia">
+        <dt>Persone</dt>
+        <dd>
+          <ul class="striscia-elenco">
+            <li class="striscia-voce"><strong>Adriano Cera</strong>, 1938–2021, antiquario</li>
           </ul>
-        </div>
-        <div id="Bibliografia" class="content">
-          <h2>Bibliografia essenziale</h2>
-          <ul>
-            <li>Riccomini, M. (2021), <i>Adriano Cera</i>, in «Gazzetta Antiquaria», 7 gennaio 2021</li>
-          </ul>
+        </dd>
+        <dt>Opere transitate</dt>
+        <dd>
+          <a class="striscia-link" href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=A.+Cera" target="_blank" rel="noopener">Catalogo della Fondazione Zeri &#8594;</a>
+        </dd>
+      </dl>
+      <div class="scheda-corpo">
+        <nav class="scheda-tab" aria-label="Sezioni della scheda">
+          <button class="tab active" type="button" data_content="Bio">
+            <span class="tab-voce">Dati biografici</span>
+          </button>
+          <button class="tab" type="button" data_content="Localizzazioni">
+            <span class="tab-voce">Luoghi</span>
+            <span class="tab-num">1</span>
+          </button>
+          <button class="tab" type="button" data_content="Relazioni">
+            <span class="tab-voce">Relazioni</span>
+            <span class="tab-num">1</span>
+          </button>
+          <button class="tab" type="button" data_content="Bibliografia">
+            <span class="tab-voce">Bibliografia</span>
+            <span class="tab-num">1</span>
+          </button>
+        </nav>
+        <div class="scheda-contenuto">
+          <div id="Bio" class="content active-content">
+            <p>﻿L’antiquario e storico dell’arte Adriano Cera (1938-2021), originario di Forlì, coltivò fin dalla prima gioventù una forte passione per l’arte. L’incontro a Bologna con lo storico dell’arte Carlo Volpe fu fondamentale per affinare il suo talento di conoscitore, che spaziava da Giotto alla pittura contemporanea, dalla scultura in bronzo e marmo ai disegni.</p>
+            <p>Nel 1971 fu chiamato ad assumere l’incarico di esperto d’arte antica presso la casa d’aste Finarte di Milano, incarico che mantenne fino al 1973. In quell’anno gli venne affidata la direzione della nuova sede della Finarte a Roma. Dal 1976 lasciò Roma e la Finarte per tornare a Bologna, dove si dedicò all’attività di antiquario nella sua abitazione privata, che divenne luogo di incontro di antiquari, collezionisti, giovani studiosi ed eminenti esperti di tutto il mondo.</p>
+            <p>Dal 1980 fu ideatore di una innovativa formula editoriale per gli studiosi d’arte: i repertori fotografici. L’idea di pubblicare dei repertori fotografici e tematici fu accolta con entusiasmo da Mario Spagnol, di cui fu grande amico, direttore della Longanesi. Tra gli anni Ottanta e Novanta uscirono “La pittura emiliana del seicento”, “La pittura neoclassica italiana” e “La pittura bolognese del settecento”. La serie ebbe un grande successo, e i repertori fotografici negli anni seguenti riguardarono i “Disegni, acquarelli, tempere di artisti italiani dal 1770 ca. al 1830 ca.”, le “Sculture a Roma 1534-1621 da Paolo III Farnese a Paolo V Borghese” e la “Pittura a Roma 1534-1621 da Paolo III Farnese a Paolo V Borghese”. Gli ambiti artistici oggetto delle sue innovative pubblicazioni furono anche quelli maggiormente trattati nella sua longeva attività di mercante.</p>
+            <p>Il suo archivio fotografico è stato donato alla Fondazione Zeri nel 2023 e documenta la sua attività professionale di storico dell’arte e antiquario, conservando al suo interno non solo stampe utilizzate a fini editoriali, ma anche fototipi acquisiti da altri mercanti bolognesi, come <a href="dettaglio_PO_I.html" target="_blank"> Publio Podio</a>.</p>
+          </div>
+          <div id="Localizzazioni" class="content">
+            <section id="map">
+              <div id="chartdiv"></div>
+            </section>
+          </div>
+          <div id="Relazioni" class="content">
+            <h2>Altri antiquari</h2>
+            <ul>
+              <li>
+                <a href="dettaglio_PO_I.html">Podio</a>
+              </li>
+            </ul>
+          </div>
+          <div id="Bibliografia" class="content">
+            <h2>Bibliografia essenziale</h2>
+            <ul>
+              <li>Riccomini, M. (2021), <i>Adriano Cera</i>, in «Gazzetta Antiquaria», 7 gennaio 2021</li>
+            </ul>
+          </div>
         </div>
       </div>
       <nav class="scheda-sfoglia" aria-label="Altre schede">

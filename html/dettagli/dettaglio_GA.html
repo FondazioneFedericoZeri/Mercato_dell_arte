@@ -58,13 +58,11 @@
       </div>
     </header>
     <main class="scheda">
-      <div class="scheda-torna">
-        <a href="../antiquari.html">&#8592; Tutti gli antiquari</a>
-      </div>
       <section class="scheda-fascia">
         <div class="scheda-fascia-testo">
+          <a class="scheda-torna" href="../antiquari.html">&#8592; Tutti gli antiquari</a>
           <h1 class="scheda-nome">Galliani</h1>
-          <p class="scheda-sottotitolo">Bologna, entità attiva dal 1910 al 1919</p>
+          <p class="scheda-sottotitolo">Bologna, in attività dal 1910 al 1919</p>
         </div>
         <figure id="single-image-container">
           <img src="../../img/slider-antiquari/GA_img1.jpg" alt="Antonio Galliani. Da &quot;L'Antiquario&quot;, 1913" />
@@ -74,43 +72,49 @@
           </button>
         </figure>
       </section>
-      <section class="scheda-dati">
-        <dl class="scheda-record">
-          <dt>PERSONA</dt>
-          <dd>Antonio Galliani, antiquario</dd>
-          <dt>IN CATALOGO</dt>
-          <dd><a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=GALLIANI" class="linkBio" target="_blank">Opere transitate, catalogo della Fondazione Zeri &#8594;</a></dd>
-        </dl>
-      </section>
-      <nav class="scheda-tab" aria-label="Sezioni della scheda">
-        <button class="tab active" type="button" data_content="Bio">
-          Dati biografici
-        </button>
-        <button class="tab" type="button" data_content="Localizzazioni">
-          Luoghi
-          <span class="tab-num">1</span>
-        </button>
-        <button class="tab" type="button" data_content="Bibliografia">
-          Bibliografia
-          <span class="tab-num">2</span>
-        </button>
-      </nav>
-      <div class="scheda-contenuto">
-        <div id="Bio" class="content active-content">
-          <p>Antonio Galliani fu titolare di un negozio di antiquariato in via Mazzini 50 a Bologna negli anni Dieci del Novecento. Ricordato da Demetrio Tolosani sulle pagine della rivista "L'Antiquario" del 1913 come finissimo esperto d'arte e abile commerciante, abbracciò la professione di mercante dopo la carriera teatrale a fianco di Eleonora Duse, di cui frequentò la Compagnia Drammatica della Città di Roma.</p>
-          <p>Gestiva la propria attività commerciale con la moglie Guglielmina.</p>
-        </div>
-        <div id="Localizzazioni" class="content">
-          <section id="map">
-            <div id="chartdiv"></div>
-          </section>
-        </div>
-        <div id="Bibliografia" class="content">
-          <h2>Bibliografia essenziale</h2>
-          <ul>
-            <li>Bellania, S. (2015), <i>Duse e Novelli nelle Glosse Zum Wiener Theater (1903-196) di Herman Bahr</i>, in «Acting Archives Review», V, 10, pp. 68-84</li>
-            <li>Tolosani, D. (1913), <i>I colleghi d'Italia: Bolognesi</i>, in «L'Antiquario», VI, 2-3, pp. 9-12</li>
+      <dl class="scheda-striscia">
+        <dt>Persone</dt>
+        <dd>
+          <ul class="striscia-elenco">
+            <li class="striscia-voce"><strong>Antonio Galliani</strong>, antiquario</li>
           </ul>
+        </dd>
+        <dt>Opere transitate</dt>
+        <dd>
+          <a class="striscia-link" href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=GALLIANI" target="_blank" rel="noopener">Catalogo della Fondazione Zeri &#8594;</a>
+        </dd>
+      </dl>
+      <div class="scheda-corpo">
+        <nav class="scheda-tab" aria-label="Sezioni della scheda">
+          <button class="tab active" type="button" data_content="Bio">
+            <span class="tab-voce">Dati biografici</span>
+          </button>
+          <button class="tab" type="button" data_content="Localizzazioni">
+            <span class="tab-voce">Luoghi</span>
+            <span class="tab-num">1</span>
+          </button>
+          <button class="tab" type="button" data_content="Bibliografia">
+            <span class="tab-voce">Bibliografia</span>
+            <span class="tab-num">2</span>
+          </button>
+        </nav>
+        <div class="scheda-contenuto">
+          <div id="Bio" class="content active-content">
+            <p>Antonio Galliani fu titolare di un negozio di antiquariato in via Mazzini 50 a Bologna negli anni Dieci del Novecento. Ricordato da Demetrio Tolosani sulle pagine della rivista "L'Antiquario" del 1913 come finissimo esperto d'arte e abile commerciante, abbracciò la professione di mercante dopo la carriera teatrale a fianco di Eleonora Duse, di cui frequentò la Compagnia Drammatica della Città di Roma.</p>
+            <p>Gestiva la propria attività commerciale con la moglie Guglielmina.</p>
+          </div>
+          <div id="Localizzazioni" class="content">
+            <section id="map">
+              <div id="chartdiv"></div>
+            </section>
+          </div>
+          <div id="Bibliografia" class="content">
+            <h2>Bibliografia essenziale</h2>
+            <ul>
+              <li>Bellania, S. (2015), <i>Duse e Novelli nelle Glosse Zum Wiener Theater (1903-196) di Herman Bahr</i>, in «Acting Archives Review», V, 10, pp. 68-84</li>
+              <li>Tolosani, D. (1913), <i>I colleghi d'Italia: Bolognesi</i>, in «L'Antiquario», VI, 2-3, pp. 9-12</li>
+            </ul>
+          </div>
         </div>
       </div>
       <nav class="scheda-sfoglia" aria-label="Altre schede">

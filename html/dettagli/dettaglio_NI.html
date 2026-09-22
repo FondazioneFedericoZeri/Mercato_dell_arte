@@ -58,13 +58,11 @@
       </div>
     </header>
     <main class="scheda">
-      <div class="scheda-torna">
-        <a href="../antiquari.html">&#8592; Tutti gli antiquari</a>
-      </div>
       <section class="scheda-fascia">
         <div class="scheda-fascia-testo">
+          <a class="scheda-torna" href="../antiquari.html">&#8592; Tutti gli antiquari</a>
           <h1 class="scheda-nome">Nigro</h1>
-          <p class="scheda-sottotitolo">Genova, entità attiva dal 1942 al 1967</p>
+          <p class="scheda-sottotitolo">Genova, in attività dal 1942 al 1967</p>
         </div>
         <div class="slider-container">
           <div class="slider">
@@ -84,54 +82,60 @@
           </button>
         </div>
       </section>
-      <section class="scheda-dati">
-        <dl class="scheda-record">
-          <dt>PERSONA</dt>
-          <dd>Costantino Nigro, 1894–1967, avvocato e antiquario</dd>
-          <dt>IN CATALOGO</dt>
-          <dd><a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=nigro" class="linkBio" target="_blank">Opere transitate, catalogo della Fondazione Zeri &#8594;</a></dd>
-        </dl>
-      </section>
-      <nav class="scheda-tab" aria-label="Sezioni della scheda">
-        <button class="tab active" type="button" data_content="Bio">
-          Dati biografici
-        </button>
-        <button class="tab" type="button" data_content="Localizzazioni">
-          Luoghi
-          <span class="tab-num">1</span>
-        </button>
-        <button class="tab" type="button" data_content="Relazioni">
-          Relazioni
-          <span class="tab-num">1</span>
-        </button>
-        <button class="tab" type="button" data_content="Bibliografia">
-          Bibliografia
-          <span class="tab-num">2</span>
-        </button>
-      </nav>
-      <div class="scheda-contenuto">
-        <div id="Bio" class="content active-content">
-          <p>Il genovese Costantino Nigro (1894-1967), laureato in Legge e in Lingue, esercitò la professione di avvocato in uno studio legale di Milano e di professore in Spagna, prima di approdare al mondo antiquariale grazie all'incontro con l'artista e mercante Cesare Viazzi (1857-1943) sul finire della Seconda Guerra Mondiale. Nel contesto dell'abbiente famiglia di origine, Nigro sviluppò la passione per la pittura, soprattutto genovese del Seicento e Settecento, che divenne il campo di specializzazione della sua galleria di viale Sauli.</p>
-          <p>Fu eletto presidente della Federazione Italiana dei Mercanti d'Arte appena fondata nel 1949 e si avvalse della consulenza di storici dell'arte come Roberto Longhi, Giuseppe Fiocco e Rodolfo Pallucchini.</p>
-          <p>Per onorare lo stretto legame con la propria città di origine, prestò spesso dipinti in occasione di mostre cittadine, come quella intitolata Genoese Masters: Cambiaso to Magnasco 1550 - 1770 del 1962. Dall'amica Caterina Marcenaro, funzionaria del Comune di Genova, fu coinvolto nel riallestimento e riapertura di vari musei genovesi, come la Galleria di Palazzo Bianco, donando anche opere per arricchire le collezioni locali, come un San Fabiano di Francesco Brea.</p>
-        </div>
-        <div id="Localizzazioni" class="content">
-          <section id="map">
-            <div id="chartdiv"></div>
-          </section>
-        </div>
-        <div id="Relazioni" class="content">
-          <h2>Collaboratori</h2>
-          <ul>
-            <li>Rodolfo Pallucchini (storico dell'arte)</li>
+      <dl class="scheda-striscia">
+        <dt>Persone</dt>
+        <dd>
+          <ul class="striscia-elenco">
+            <li class="striscia-voce"><strong>Costantino Nigro</strong>, 1894–1967, avvocato e antiquario</li>
           </ul>
-        </div>
-        <div id="Bibliografia" class="content">
-          <h2>Bibliografia essenziale</h2>
-          <ul>
-            <li>Batini, G. (1961), <i>L'antiquario</i>, Firenze, Vallecchi</li>
-            <li>Boccardo, P. (2001), <i>Costantino Nigro, antiquario e mecenate, e i suoi rapporti con Roberto Longhi, Caterina Marcenaro e Angelo Costa</i>, in Orlando, pp. 80-91</li>
-          </ul>
+        </dd>
+        <dt>Opere transitate</dt>
+        <dd>
+          <a class="striscia-link" href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=nigro" target="_blank" rel="noopener">Catalogo della Fondazione Zeri &#8594;</a>
+        </dd>
+      </dl>
+      <div class="scheda-corpo">
+        <nav class="scheda-tab" aria-label="Sezioni della scheda">
+          <button class="tab active" type="button" data_content="Bio">
+            <span class="tab-voce">Dati biografici</span>
+          </button>
+          <button class="tab" type="button" data_content="Localizzazioni">
+            <span class="tab-voce">Luoghi</span>
+            <span class="tab-num">1</span>
+          </button>
+          <button class="tab" type="button" data_content="Relazioni">
+            <span class="tab-voce">Relazioni</span>
+            <span class="tab-num">1</span>
+          </button>
+          <button class="tab" type="button" data_content="Bibliografia">
+            <span class="tab-voce">Bibliografia</span>
+            <span class="tab-num">2</span>
+          </button>
+        </nav>
+        <div class="scheda-contenuto">
+          <div id="Bio" class="content active-content">
+            <p>Il genovese Costantino Nigro (1894-1967), laureato in Legge e in Lingue, esercitò la professione di avvocato in uno studio legale di Milano e di professore in Spagna, prima di approdare al mondo antiquariale grazie all'incontro con l'artista e mercante Cesare Viazzi (1857-1943) sul finire della Seconda Guerra Mondiale. Nel contesto dell'abbiente famiglia di origine, Nigro sviluppò la passione per la pittura, soprattutto genovese del Seicento e Settecento, che divenne il campo di specializzazione della sua galleria di viale Sauli.</p>
+            <p>Fu eletto presidente della Federazione Italiana dei Mercanti d'Arte appena fondata nel 1949 e si avvalse della consulenza di storici dell'arte come Roberto Longhi, Giuseppe Fiocco e Rodolfo Pallucchini.</p>
+            <p>Per onorare lo stretto legame con la propria città di origine, prestò spesso dipinti in occasione di mostre cittadine, come quella intitolata Genoese Masters: Cambiaso to Magnasco 1550 - 1770 del 1962. Dall'amica Caterina Marcenaro, funzionaria del Comune di Genova, fu coinvolto nel riallestimento e riapertura di vari musei genovesi, come la Galleria di Palazzo Bianco, donando anche opere per arricchire le collezioni locali, come un San Fabiano di Francesco Brea.</p>
+          </div>
+          <div id="Localizzazioni" class="content">
+            <section id="map">
+              <div id="chartdiv"></div>
+            </section>
+          </div>
+          <div id="Relazioni" class="content">
+            <h2>Collaboratori</h2>
+            <ul>
+              <li>Rodolfo Pallucchini (storico dell'arte)</li>
+            </ul>
+          </div>
+          <div id="Bibliografia" class="content">
+            <h2>Bibliografia essenziale</h2>
+            <ul>
+              <li>Batini, G. (1961), <i>L'antiquario</i>, Firenze, Vallecchi</li>
+              <li>Boccardo, P. (2001), <i>Costantino Nigro, antiquario e mecenate, e i suoi rapporti con Roberto Longhi, Caterina Marcenaro e Angelo Costa</i>, in Orlando, pp. 80-91</li>
+            </ul>
+          </div>
         </div>
       </div>
       <nav class="scheda-sfoglia" aria-label="Altre schede">

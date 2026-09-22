@@ -58,13 +58,11 @@
       </div>
     </header>
     <main class="scheda">
-      <div class="scheda-torna">
-        <a href="../antiquari.html">&#8592; Tutti gli antiquari</a>
-      </div>
       <section class="scheda-fascia">
         <div class="scheda-fascia-testo">
+          <a class="scheda-torna" href="../antiquari.html">&#8592; Tutti gli antiquari</a>
           <h1 class="scheda-nome">Crosa</h1>
-          <p class="scheda-sottotitolo">Genova, entità attiva dal 1920 al 1979</p>
+          <p class="scheda-sottotitolo">Genova, in attività dal 1920 al 1979</p>
         </div>
         <div class="slider-container">
           <div class="slider">
@@ -84,54 +82,60 @@
           </button>
         </div>
       </section>
-      <section class="scheda-dati">
-        <dl class="scheda-record">
-          <dt>PERSONA</dt>
-          <dd>Severino Crosa, 1897–1979, antiquario</dd>
-          <dt>IN CATALOGO</dt>
-          <dd><a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Severino+Crosa" class="linkBio" target="_blank">Opere transitate, catalogo della Fondazione Zeri &#8594;</a></dd>
-        </dl>
-      </section>
-      <nav class="scheda-tab" aria-label="Sezioni della scheda">
-        <button class="tab active" type="button" data_content="Bio">
-          Dati biografici
-        </button>
-        <button class="tab" type="button" data_content="Localizzazioni">
-          Luoghi
-          <span class="tab-num">3</span>
-        </button>
-        <button class="tab" type="button" data_content="Eventi">
-          Eventi
-          <span class="tab-num">1</span>
-        </button>
-        <button class="tab" type="button" data_content="Bibliografia">
-          Bibliografia
-          <span class="tab-num">2</span>
-        </button>
-      </nav>
-      <div class="scheda-contenuto">
-        <div id="Bio" class="content active-content">
-          <p>Severino Crosa (1898-1979) fu un antiquario genovese che diede avvio alla propria attività dopo la Prima Guerra Mondiale. Specializzato in argenti, porcella e mobili antichi, iniziò a commerciare in un piccolo locale in via San Lorenzo per poi trasferirsi in Piazza Cinque Lampade e infine in un celebre negozio in via Garibaldi 7.</p>
-          <p>Nel 1952 si spostò in un elegante appartamento a Palazzo Granello in piazza Giustiniani 7, sua abitazione privata concepita come succursale della galleria principale. Gli spazi furono finemente arredati con oggetti della propria collezione, con l'intento di ricreare il fasto dei palazzi dell'aristocrazia genovese.</p>
-          <p>Crosa si ritirò dal commercio nel 1965, anno della chiusura della galleria in via Garibaldi, ma mantenne i contatti con i più importanti collezionisti locali che continuava a ricevere a Palazzo Granello. Alla sua morte, avvenuta nell'ottobre del 1979, parte della preziosa collezione personale fu donata alle istituzioni museali Genova. Gli oggetti rimanenti furono messi all'asta in una vendita organizzata dalla casa Pandolfini di Firenze.</p>
-        </div>
-        <div id="Localizzazioni" class="content">
-          <section id="map">
-            <div id="chartdiv"></div>
-          </section>
-        </div>
-        <div id="Eventi" class="content">
-          <h2>Eventi significativi nell'attività antiquariale</h2>
-          <ul>
-            <li>1979 - <i>Donazione Collezione Crosa al Comune di Genova</i>: Alla morte di Severino Crosa, parte della sua collezione viene donata alle istituzioni museali di Genova</li>
+      <dl class="scheda-striscia">
+        <dt>Persone</dt>
+        <dd>
+          <ul class="striscia-elenco">
+            <li class="striscia-voce"><strong>Severino Crosa</strong>, 1897–1979, antiquario</li>
           </ul>
-        </div>
-        <div id="Bibliografia" class="content">
-          <h2>Bibliografia essenziale</h2>
-          <ul>
-            <li>Batini, G. (1961), <i>L'antiquario</i>, Firenze, Vallecchi</li>
-            <li>Romanengo, M. (2001), <i>Il mondo del collezionismo privato a Genova nel Novecento</i>, in Orlando, pp. 110-120</li>
-          </ul>
+        </dd>
+        <dt>Opere transitate</dt>
+        <dd>
+          <a class="striscia-link" href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Severino+Crosa" target="_blank" rel="noopener">Catalogo della Fondazione Zeri &#8594;</a>
+        </dd>
+      </dl>
+      <div class="scheda-corpo">
+        <nav class="scheda-tab" aria-label="Sezioni della scheda">
+          <button class="tab active" type="button" data_content="Bio">
+            <span class="tab-voce">Dati biografici</span>
+          </button>
+          <button class="tab" type="button" data_content="Localizzazioni">
+            <span class="tab-voce">Luoghi</span>
+            <span class="tab-num">3</span>
+          </button>
+          <button class="tab" type="button" data_content="Eventi">
+            <span class="tab-voce">Eventi</span>
+            <span class="tab-num">1</span>
+          </button>
+          <button class="tab" type="button" data_content="Bibliografia">
+            <span class="tab-voce">Bibliografia</span>
+            <span class="tab-num">2</span>
+          </button>
+        </nav>
+        <div class="scheda-contenuto">
+          <div id="Bio" class="content active-content">
+            <p>Severino Crosa (1898-1979) fu un antiquario genovese che diede avvio alla propria attività dopo la Prima Guerra Mondiale. Specializzato in argenti, porcella e mobili antichi, iniziò a commerciare in un piccolo locale in via San Lorenzo per poi trasferirsi in Piazza Cinque Lampade e infine in un celebre negozio in via Garibaldi 7.</p>
+            <p>Nel 1952 si spostò in un elegante appartamento a Palazzo Granello in piazza Giustiniani 7, sua abitazione privata concepita come succursale della galleria principale. Gli spazi furono finemente arredati con oggetti della propria collezione, con l'intento di ricreare il fasto dei palazzi dell'aristocrazia genovese.</p>
+            <p>Crosa si ritirò dal commercio nel 1965, anno della chiusura della galleria in via Garibaldi, ma mantenne i contatti con i più importanti collezionisti locali che continuava a ricevere a Palazzo Granello. Alla sua morte, avvenuta nell'ottobre del 1979, parte della preziosa collezione personale fu donata alle istituzioni museali Genova. Gli oggetti rimanenti furono messi all'asta in una vendita organizzata dalla casa Pandolfini di Firenze.</p>
+          </div>
+          <div id="Localizzazioni" class="content">
+            <section id="map">
+              <div id="chartdiv"></div>
+            </section>
+          </div>
+          <div id="Eventi" class="content">
+            <h2>Eventi significativi nell'attività antiquariale</h2>
+            <ul>
+              <li>1979 - <i>Donazione Collezione Crosa al Comune di Genova</i>: Alla morte di Severino Crosa, parte della sua collezione viene donata alle istituzioni museali di Genova</li>
+            </ul>
+          </div>
+          <div id="Bibliografia" class="content">
+            <h2>Bibliografia essenziale</h2>
+            <ul>
+              <li>Batini, G. (1961), <i>L'antiquario</i>, Firenze, Vallecchi</li>
+              <li>Romanengo, M. (2001), <i>Il mondo del collezionismo privato a Genova nel Novecento</i>, in Orlando, pp. 110-120</li>
+            </ul>
+          </div>
         </div>
       </div>
       <nav class="scheda-sfoglia" aria-label="Altre schede">

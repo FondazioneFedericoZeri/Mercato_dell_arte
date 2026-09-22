@@ -58,63 +58,67 @@
       </div>
     </header>
     <main class="scheda">
-      <div class="scheda-torna">
-        <a href="../antiquari.html">&#8592; Tutti gli antiquari</a>
-      </div>
       <section class="scheda-fascia senza-foto">
         <div class="scheda-fascia-testo">
+          <a class="scheda-torna" href="../antiquari.html">&#8592; Tutti gli antiquari</a>
           <h1 class="scheda-nome">Viezzoli</h1>
-          <p class="scheda-sottotitolo">Genova, entità attiva dal 1930 al 1967</p>
+          <p class="scheda-sottotitolo">Genova, in attività dal 1930 al 1967</p>
         </div>
       </section>
-      <section class="scheda-dati">
-        <dl class="scheda-record">
-          <dt>PERSONA</dt>
-          <dd>Mario Viezzoli, 1892–1967, antiquario</dd>
-          <dt>IN CATALOGO</dt>
-          <dd><a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=viezzoli" class="linkBio" target="_blank">Opere transitate, catalogo della Fondazione Zeri &#8594;</a></dd>
-        </dl>
-      </section>
-      <nav class="scheda-tab" aria-label="Sezioni della scheda">
-        <button class="tab active" type="button" data_content="Bio">
-          Dati biografici
-        </button>
-        <button class="tab" type="button" data_content="Localizzazioni">
-          Luoghi
-          <span class="tab-num">1</span>
-        </button>
-        <button class="tab" type="button" data_content="Relazioni">
-          Relazioni
-          <span class="tab-num">1</span>
-        </button>
-        <button class="tab" type="button" data_content="Bibliografia">
-          Bibliografia
-          <span class="tab-num">2</span>
-        </button>
-      </nav>
-      <div class="scheda-contenuto">
-        <div id="Bio" class="content active-content">
-          <p>Mario Viezzoli (1892-1967) fu un marchant amateur attivo a Genova a partire dagli anni Trenta del Novecento. Prima di dedicarsi all'antiquariato raggiunse il successo in altre imprese commerciali che gli fornirono un notevole potere d'acquisto.</p>
-          <p>La passione per l'arte lo portò inizialmente a collezionare e trattare soprattutto ceramiche, porcellane, incisioni in legno; in seguito, si rivolse alla pittura del Sei e Settecento, e anche dell'Ottocento. Sfollato a Firenze durante la Seconda guerra mondiale e rientrato a Genova nel 1944, continuò a comprare e vendere opere fino alla morte, sopraggiunta nel 1967. Dipinti di Luca Cambiaso, Valerio Castello e Alessandro Magnasco di sua proprietà vennero esposti in diverse mostre negli anni Cinquanta e Sessanta.</p>
-          <p>Nel corso della sua attività entrò in stretti rapporti con Federico Zeri, che frequentava assiduamente la casa dell'antiquario. Lo storico dell'arte, nella sua autobiografia ricorda le sue visite a Mario Viezzoli e la moglie Elda, con la quale mantenne uno stretto rapporto di amicizia.</p>
-        </div>
-        <div id="Localizzazioni" class="content">
-          <section id="map">
-            <div id="chartdiv"></div>
-          </section>
-        </div>
-        <div id="Relazioni" class="content">
-          <h2>Collaboratori</h2>
-          <ul>
-            <li>Federico Zeri (storico dell'arte)</li>
+      <dl class="scheda-striscia">
+        <dt>Persone</dt>
+        <dd>
+          <ul class="striscia-elenco">
+            <li class="striscia-voce"><strong>Mario Viezzoli</strong>, 1892–1967, antiquario</li>
           </ul>
-        </div>
-        <div id="Bibliografia" class="content">
-          <h2>Bibliografia essenziale</h2>
-          <ul>
-            <li>Romanengo, M. (2001), <i>Il mondo del collezionismo privato a Genova nel Novecento</i>, in Orlando, pp. 110-120</li>
-            <li>Zeri, F. (1995), <i>Confesso che ho sbagliato. Ricordi autobiografici</i>, Milano, Longanesi</li>
-          </ul>
+        </dd>
+        <dt>Opere transitate</dt>
+        <dd>
+          <a class="striscia-link" href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=viezzoli" target="_blank" rel="noopener">Catalogo della Fondazione Zeri &#8594;</a>
+        </dd>
+      </dl>
+      <div class="scheda-corpo">
+        <nav class="scheda-tab" aria-label="Sezioni della scheda">
+          <button class="tab active" type="button" data_content="Bio">
+            <span class="tab-voce">Dati biografici</span>
+          </button>
+          <button class="tab" type="button" data_content="Localizzazioni">
+            <span class="tab-voce">Luoghi</span>
+            <span class="tab-num">1</span>
+          </button>
+          <button class="tab" type="button" data_content="Relazioni">
+            <span class="tab-voce">Relazioni</span>
+            <span class="tab-num">1</span>
+          </button>
+          <button class="tab" type="button" data_content="Bibliografia">
+            <span class="tab-voce">Bibliografia</span>
+            <span class="tab-num">2</span>
+          </button>
+        </nav>
+        <div class="scheda-contenuto">
+          <div id="Bio" class="content active-content">
+            <p>Mario Viezzoli (1892-1967) fu un marchant amateur attivo a Genova a partire dagli anni Trenta del Novecento. Prima di dedicarsi all'antiquariato raggiunse il successo in altre imprese commerciali che gli fornirono un notevole potere d'acquisto.</p>
+            <p>La passione per l'arte lo portò inizialmente a collezionare e trattare soprattutto ceramiche, porcellane, incisioni in legno; in seguito, si rivolse alla pittura del Sei e Settecento, e anche dell'Ottocento. Sfollato a Firenze durante la Seconda guerra mondiale e rientrato a Genova nel 1944, continuò a comprare e vendere opere fino alla morte, sopraggiunta nel 1967. Dipinti di Luca Cambiaso, Valerio Castello e Alessandro Magnasco di sua proprietà vennero esposti in diverse mostre negli anni Cinquanta e Sessanta.</p>
+            <p>Nel corso della sua attività entrò in stretti rapporti con Federico Zeri, che frequentava assiduamente la casa dell'antiquario. Lo storico dell'arte, nella sua autobiografia ricorda le sue visite a Mario Viezzoli e la moglie Elda, con la quale mantenne uno stretto rapporto di amicizia.</p>
+          </div>
+          <div id="Localizzazioni" class="content">
+            <section id="map">
+              <div id="chartdiv"></div>
+            </section>
+          </div>
+          <div id="Relazioni" class="content">
+            <h2>Collaboratori</h2>
+            <ul>
+              <li>Federico Zeri (storico dell'arte)</li>
+            </ul>
+          </div>
+          <div id="Bibliografia" class="content">
+            <h2>Bibliografia essenziale</h2>
+            <ul>
+              <li>Romanengo, M. (2001), <i>Il mondo del collezionismo privato a Genova nel Novecento</i>, in Orlando, pp. 110-120</li>
+              <li>Zeri, F. (1995), <i>Confesso che ho sbagliato. Ricordi autobiografici</i>, Milano, Longanesi</li>
+            </ul>
+          </div>
         </div>
       </div>
       <nav class="scheda-sfoglia" aria-label="Altre schede">

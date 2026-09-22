@@ -58,13 +58,11 @@
       </div>
     </header>
     <main class="scheda">
-      <div class="scheda-torna">
-        <a href="../antiquari.html">&#8592; Tutti gli antiquari</a>
-      </div>
       <section class="scheda-fascia">
         <div class="scheda-fascia-testo">
+          <a class="scheda-torna" href="../antiquari.html">&#8592; Tutti gli antiquari</a>
           <h1 class="scheda-nome">Bacarelli</h1>
-          <p class="scheda-sottotitolo">Firenze, entità attiva dal 1910 al 2024</p>
+          <p class="scheda-sottotitolo">Firenze, in attività dal 1910 al 2024</p>
         </div>
         <figure id="single-image-container">
           <img src="../../img/slider-antiquari/BA_I_img1.jpg" alt="Benvenuto Bacarelli con Sandro Pertini. Da &quot;Gazzetta Antiquaria&quot;" />
@@ -74,67 +72,75 @@
           </button>
         </figure>
       </section>
-      <section class="scheda-dati">
-        <dl class="scheda-record">
-          <dt>PERSONE</dt>
-          <dd>Rizieri Bacarelli, ?–1947, antiquario<br>Benvenuto Bacarelli, 1923–2015, antiquario<br>Riccardo Bacarelli, 1967–?, antiquario</dd>
-          <dt>IN CATALOGO</dt>
-          <dd><a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Bacarelli" class="linkBio" target="_blank">Opere transitate, catalogo della Fondazione Zeri &#8594;</a></dd>
-        </dl>
-      </section>
-      <nav class="scheda-tab" aria-label="Sezioni della scheda">
-        <button class="tab active" type="button" data_content="Bio">
-          Dati biografici
-        </button>
-        <button class="tab" type="button" data_content="Persone">
-          Albero familiare
-          <span class="tab-num">3</span>
-        </button>
-        <button class="tab" type="button" data_content="Localizzazioni">
-          Luoghi
-          <span class="tab-num">6</span>
-        </button>
-        <button class="tab" type="button" data_content="Relazioni">
-          Relazioni
-          <span class="tab-num">3</span>
-        </button>
-        <button class="tab" type="button" data_content="Bibliografia">
-          Bibliografia
-          <span class="tab-num">1</span>
-        </button>
-      </nav>
-      <div class="scheda-contenuto">
-        <div id="Bio" class="content active-content">
-          <p>Il fondatore della ditta antiquaria Bacarelli fu Rizieri Bacarelli (1887-1947). Egli aprì una prima bottega negli anni Dieci del Novecento in Piazza Ottaviani a Firenze, dove rimase fino al 1923, anno in cui, ottenuta la licenza di mercante, aprì una prima galleria in via del Moro, poi spostata in via dei Fossi 51r.</p>
-          <p>Il figlio di Rizieri, Benvenuto Bacarelli (1923-2015), iniziò a lavorare nel settore fin dall'età giovanile, ma fu a partire dal dopoguerra che prese realmente le redini dell'attività paterna. Benvenuto diede un nuovo impulso al commercio famigliare, ampliando la rete commerciale e di contatti grazie a numerosi viaggi negli Stati Uniti e in Inghilterra. Antiquario generalista, si dedicava tanto ai dipinti antichi quanto al mobilio.</p>
-          <p>Portò avanti l'attività nella sede di via Dei Fossi, per poi spostarsi in via della Vigna Nuova e, nel corso degli anni Ottanta, ritornò in via Dei Fossi 33, dove aprì una nuova sede. Partecipò alle più importanti fiere nazionali e internazionali e collaborò con i colleghi antiquari fiorentini. Nell'arco della carriera strinse rapporti con Federico Zeri, Giuliano Briganti e Mina Gregori.</p>
-          <p>Nel 1990 iniziò a lavorare nella galleria anche il figlio di Benvenuto, Riccardo (1967- ), che dal 1996 gestisce l'attività famigliare. Specializzatosi in arti decorative e scultura, sempre con particolare attenzione all'arte italiana, nel 2016 l'antiquario ha spostato la galleria in via Dei Fossi 45r, nel prestigioso Palazzo della Manifattura Arte della Seta.</p>
-        </div>
-        <div id="Persone" class="content">
-          <div class="af-intestazione">
-            <h2>Relazioni familiari</h2>
-            <div id="af-legenda" class="af-legenda"></div>
+      <dl class="scheda-striscia">
+        <dt>Persone</dt>
+        <dd>
+          <ul class="striscia-elenco">
+            <li class="striscia-voce"><strong>Rizieri Bacarelli</strong>, ?–1947, antiquario</li>
+            <li class="striscia-voce"><strong>Benvenuto Bacarelli</strong>, 1923–2015, antiquario</li>
+            <li class="striscia-voce"><strong>Riccardo Bacarelli</strong>, 1967–?, antiquario</li>
+          </ul>
+        </dd>
+        <dt>Opere transitate</dt>
+        <dd>
+          <a class="striscia-link" href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Bacarelli" target="_blank" rel="noopener">Catalogo della Fondazione Zeri &#8594;</a>
+        </dd>
+      </dl>
+      <div class="scheda-corpo">
+        <nav class="scheda-tab" aria-label="Sezioni della scheda">
+          <button class="tab active" type="button" data_content="Bio">
+            <span class="tab-voce">Dati biografici</span>
+          </button>
+          <button class="tab" type="button" data_content="Persone">
+            <span class="tab-voce">Albero familiare</span>
+            <span class="tab-num">3</span>
+          </button>
+          <button class="tab" type="button" data_content="Localizzazioni">
+            <span class="tab-voce">Luoghi</span>
+            <span class="tab-num">6</span>
+          </button>
+          <button class="tab" type="button" data_content="Relazioni">
+            <span class="tab-voce">Relazioni</span>
+            <span class="tab-num">3</span>
+          </button>
+          <button class="tab" type="button" data_content="Bibliografia">
+            <span class="tab-voce">Bibliografia</span>
+            <span class="tab-num">1</span>
+          </button>
+        </nav>
+        <div class="scheda-contenuto">
+          <div id="Bio" class="content active-content">
+            <p>Il fondatore della ditta antiquaria Bacarelli fu Rizieri Bacarelli (1887-1947). Egli aprì una prima bottega negli anni Dieci del Novecento in Piazza Ottaviani a Firenze, dove rimase fino al 1923, anno in cui, ottenuta la licenza di mercante, aprì una prima galleria in via del Moro, poi spostata in via dei Fossi 51r.</p>
+            <p>Il figlio di Rizieri, Benvenuto Bacarelli (1923-2015), iniziò a lavorare nel settore fin dall'età giovanile, ma fu a partire dal dopoguerra che prese realmente le redini dell'attività paterna. Benvenuto diede un nuovo impulso al commercio famigliare, ampliando la rete commerciale e di contatti grazie a numerosi viaggi negli Stati Uniti e in Inghilterra. Antiquario generalista, si dedicava tanto ai dipinti antichi quanto al mobilio.</p>
+            <p>Portò avanti l'attività nella sede di via Dei Fossi, per poi spostarsi in via della Vigna Nuova e, nel corso degli anni Ottanta, ritornò in via Dei Fossi 33, dove aprì una nuova sede. Partecipò alle più importanti fiere nazionali e internazionali e collaborò con i colleghi antiquari fiorentini. Nell'arco della carriera strinse rapporti con Federico Zeri, Giuliano Briganti e Mina Gregori.</p>
+            <p>Nel 1990 iniziò a lavorare nella galleria anche il figlio di Benvenuto, Riccardo (1967- ), che dal 1996 gestisce l'attività famigliare. Specializzatosi in arti decorative e scultura, sempre con particolare attenzione all'arte italiana, nel 2016 l'antiquario ha spostato la galleria in via Dei Fossi 45r, nel prestigioso Palazzo della Manifattura Arte della Seta.</p>
           </div>
-          <div id="albero-genealogico"></div>
-        </div>
-        <div id="Localizzazioni" class="content">
-          <section id="map">
-            <div id="chartdiv"></div>
-          </section>
-        </div>
-        <div id="Relazioni" class="content">
-          <h2>Collaboratori</h2>
-          <ul>
-            <li>Federico Zeri (storico dell'arte)</li>
-            <li>Giuliano Briganti (storico dell'arte)</li>
-            <li>Mina Gregori (storico dell'arte)</li>
-          </ul>
-        </div>
-        <div id="Bibliografia" class="content">
-          <h2>Interviste</h2>
-          <ul>
-            <li>2/15/2023, <i>Intervista a Riccardo Bacarelli</i>, Firenze</li>
-          </ul>
+          <div id="Persone" class="content">
+            <div class="af-intestazione">
+              <h2>Relazioni familiari</h2>
+              <div id="af-legenda" class="af-legenda"></div>
+            </div>
+            <div id="albero-genealogico"></div>
+          </div>
+          <div id="Localizzazioni" class="content">
+            <section id="map">
+              <div id="chartdiv"></div>
+            </section>
+          </div>
+          <div id="Relazioni" class="content">
+            <h2>Collaboratori</h2>
+            <ul>
+              <li>Federico Zeri (storico dell'arte)</li>
+              <li>Giuliano Briganti (storico dell'arte)</li>
+              <li>Mina Gregori (storico dell'arte)</li>
+            </ul>
+          </div>
+          <div id="Bibliografia" class="content">
+            <h2>Interviste</h2>
+            <ul>
+              <li>2/15/2023, <i>Intervista a Riccardo Bacarelli</i>, Firenze</li>
+            </ul>
+          </div>
         </div>
       </div>
       <nav class="scheda-sfoglia" aria-label="Altre schede">

@@ -58,13 +58,11 @@
       </div>
     </header>
     <main class="scheda">
-      <div class="scheda-torna">
-        <a href="../antiquari.html">&#8592; Tutti gli antiquari</a>
-      </div>
       <section class="scheda-fascia">
         <div class="scheda-fascia-testo">
+          <a class="scheda-torna" href="../antiquari.html">&#8592; Tutti gli antiquari</a>
           <h1 class="scheda-nome">Apolloni</h1>
-          <p class="scheda-sottotitolo">Roma, entità attiva dal 1926 al 2024</p>
+          <p class="scheda-sottotitolo">Roma, in attività dal 1926 al 2024</p>
         </div>
         <figure id="single-image-container">
           <img src="../../img/slider-antiquari/AP_img1.jpg" alt="Fabrizio Apolloni, Galleria Apolloni" />
@@ -74,92 +72,98 @@
           </button>
         </figure>
       </section>
-      <section class="scheda-dati">
-        <dl class="scheda-record">
-          <dt>PERSONE</dt>
-          <dd>Wladimiro Apolloni, 1888–1948, antiquario<br>Fabrizio Apolloni, 1928–2006, antiquario<br>Marco Fabio Apolloni, antiquario</dd>
-          <dt>INSEGNA</dt>
-          <dd>W. Apolloni</dd>
-          <dt>IN CATALOGO</dt>
-          <dd><a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Apolloni" class="linkBio" target="_blank">Opere transitate, catalogo della Fondazione Zeri &#8594;</a></dd>
-        </dl>
-      </section>
-      <nav class="scheda-tab" aria-label="Sezioni della scheda">
-        <button class="tab active" type="button" data_content="Bio">
-          Dati biografici
-        </button>
-        <button class="tab" type="button" data_content="Persone">
-          Albero familiare
-          <span class="tab-num">3</span>
-        </button>
-        <button class="tab" type="button" data_content="Localizzazioni">
-          Luoghi
-          <span class="tab-num">3</span>
-        </button>
-        <button class="tab" type="button" data_content="Relazioni">
-          Relazioni
-          <span class="tab-num">8</span>
-        </button>
-        <button class="tab" type="button" data_content="Bibliografia">
-          Bibliografia
-          <span class="tab-num">3</span>
-        </button>
-      </nav>
-      <div class="scheda-contenuto">
-        <div id="Bio" class="content active-content">
-          <p>Il fondatore della galleria romana Apolloni fu Wladimiro (1888-1948), decimo di una famiglia molto numerosa. Dopo varie esperienze lavorative in diversi settori, aprì, nel 1926, una galleria d'antichità in via Frattina, al civico 141.</p>
-          <p>Dopo la sua morte, avvenuta nel 1948, il negozio di antichità fu gestito dal figlio Fabrizio (1928-2006), che fin da giovane aveva iniziato a lavorare con il padre. Questi diede nuovo impulso all'attività, anche grazie al supporto di colleghi, tra i quali <a href="dettaglio_AC.html" target="_blank">Pietro Accorsi</a> (1891-1982), noto antiquario torinese. A partire dalla fine degli anni Quaranta, il mercante romano iniziò a viaggiare verso l'Inghilterra, dove si recava per comprare quadri italiani da immettere sul mercato nazionale, e nel corso degli anni Cinquanta frequentò New York, allora centro nevralgico del commercio.</p>
-          <p>Nel 1970 Apolloni spostò la galleria in via del Babuino 132. Con il passare del tempo l'antiquario strinse rapporti con Giuliano Briganti e Mario Praz. Proprio grazie all'amicizia che lo legò a Praz, Fabrizio si avvicinò all'arte neoclassica. Inoltre, la passione per le arti decorative e il mobilio antico lo portò a instaurare un felice legame con Alvar González-Palacios, come ricorda lo stesso storico dell'arte nel suo libro Persone e maschere.</p>
-          <p>Apolloni stimò molto anche Federico Zeri, tanto da finanziare nel 1977, insieme al gallerista torinese Mario Tazzoli (1921-1990), la rivista "Antologia di Belle Arti" diretta dallo storico dell'arte romano. Il figlio di Fabrizio, Marco Fabio, ha preso le redini dell'attività famigliare alla morte del padre, avvenuta nel 2006. Nel 2018, la galleria "W. Apolloni" si è spostata in via Margutta 53b, negli spazi di Palazzo Patrizi, sede in precedenza dell'Accademia Britannica e poi della galleria antiquaria di Massimo Tuena.</p>
-        </div>
-        <div id="Persone" class="content">
-          <div class="af-intestazione">
-            <h2>Relazioni familiari</h2>
-            <div id="af-legenda" class="af-legenda"></div>
+      <dl class="scheda-striscia">
+        <dt>Persone</dt>
+        <dd>
+          <ul class="striscia-elenco">
+            <li class="striscia-voce"><strong>Wladimiro Apolloni</strong>, 1888–1948, antiquario</li>
+            <li class="striscia-voce"><strong>Fabrizio Apolloni</strong>, 1928–2006, antiquario</li>
+            <li class="striscia-voce"><strong>Marco Fabio Apolloni</strong>, antiquario</li>
+          </ul>
+        </dd>
+        <dt>Opere transitate</dt>
+        <dd>
+          <a class="striscia-link" href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Apolloni" target="_blank" rel="noopener">Catalogo della Fondazione Zeri &#8594;</a>
+        </dd>
+      </dl>
+      <div class="scheda-corpo">
+        <nav class="scheda-tab" aria-label="Sezioni della scheda">
+          <button class="tab active" type="button" data_content="Bio">
+            <span class="tab-voce">Dati biografici</span>
+          </button>
+          <button class="tab" type="button" data_content="Persone">
+            <span class="tab-voce">Albero familiare</span>
+            <span class="tab-num">3</span>
+          </button>
+          <button class="tab" type="button" data_content="Localizzazioni">
+            <span class="tab-voce">Luoghi</span>
+            <span class="tab-num">3</span>
+          </button>
+          <button class="tab" type="button" data_content="Relazioni">
+            <span class="tab-voce">Relazioni</span>
+            <span class="tab-num">8</span>
+          </button>
+          <button class="tab" type="button" data_content="Bibliografia">
+            <span class="tab-voce">Bibliografia</span>
+            <span class="tab-num">3</span>
+          </button>
+        </nav>
+        <div class="scheda-contenuto">
+          <div id="Bio" class="content active-content">
+            <p>Il fondatore della galleria romana Apolloni fu Wladimiro (1888-1948), decimo di una famiglia molto numerosa. Dopo varie esperienze lavorative in diversi settori, aprì, nel 1926, una galleria d'antichità in via Frattina, al civico 141.</p>
+            <p>Dopo la sua morte, avvenuta nel 1948, il negozio di antichità fu gestito dal figlio Fabrizio (1928-2006), che fin da giovane aveva iniziato a lavorare con il padre. Questi diede nuovo impulso all'attività, anche grazie al supporto di colleghi, tra i quali <a href="dettaglio_AC.html" target="_blank">Pietro Accorsi</a> (1891-1982), noto antiquario torinese. A partire dalla fine degli anni Quaranta, il mercante romano iniziò a viaggiare verso l'Inghilterra, dove si recava per comprare quadri italiani da immettere sul mercato nazionale, e nel corso degli anni Cinquanta frequentò New York, allora centro nevralgico del commercio.</p>
+            <p>Nel 1970 Apolloni spostò la galleria in via del Babuino 132. Con il passare del tempo l'antiquario strinse rapporti con Giuliano Briganti e Mario Praz. Proprio grazie all'amicizia che lo legò a Praz, Fabrizio si avvicinò all'arte neoclassica. Inoltre, la passione per le arti decorative e il mobilio antico lo portò a instaurare un felice legame con Alvar González-Palacios, come ricorda lo stesso storico dell'arte nel suo libro Persone e maschere.</p>
+            <p>Apolloni stimò molto anche Federico Zeri, tanto da finanziare nel 1977, insieme al gallerista torinese Mario Tazzoli (1921-1990), la rivista "Antologia di Belle Arti" diretta dallo storico dell'arte romano. Il figlio di Fabrizio, Marco Fabio, ha preso le redini dell'attività famigliare alla morte del padre, avvenuta nel 2006. Nel 2018, la galleria "W. Apolloni" si è spostata in via Margutta 53b, negli spazi di Palazzo Patrizi, sede in precedenza dell'Accademia Britannica e poi della galleria antiquaria di Massimo Tuena.</p>
           </div>
-          <div id="albero-genealogico"></div>
-        </div>
-        <div id="Localizzazioni" class="content">
-          <section id="map">
-            <div id="chartdiv"></div>
-          </section>
-        </div>
-        <div id="Relazioni" class="content">
-          <h2>Altri antiquari</h2>
-          <ul>
-            <li>
-              <a href="dettaglio_AC.html">Accorsi</a>
-            </li>
-            <li>
-              <a href="dettaglio_ZA.html">Zabert</a>
-            </li>
-            <li>
-              <a href="dettaglio_DI.html">Di Castro</a>
-            </li>
-            <li>
-              <a href="dettaglio_SE_II.html">Sestieri</a>
-            </li>
-            <li>
-              <a href="dettaglio_SA_I.html">Salocchi</a>
-            </li>
-          </ul>
-          <h2>Collaboratori</h2>
-          <ul>
-            <li>Alvar Gonzáles Palacios (storico dell'arte)</li>
-            <li>Giuliano Briganti (storico dell'arte)</li>
-            <li>Mario Praz (storico dell'arte)</li>
-          </ul>
-        </div>
-        <div id="Bibliografia" class="content">
-          <h2>Bibliografia essenziale</h2>
-          <ul>
-            <li>González-Palacios, A. (2014), <i>Persona e maschera: collezionisti, antiquari e storici dell'arte</i>, Milano, Archinto</li>
-            <li>Riccio, B. (Ed.) (1996), <i>Lettere sull’antiquariato di Mario Praz e Luigi Magnani 1952-1981</i>, Torino, U. Allemandi, p. 116</li>
-          </ul>
-          <h2>Interviste</h2>
-          <ul>
-            <li>2023-09-06 00:00:00, <i>Intervista a Marco Fabio Apolloni</i>, Roma</li>
-          </ul>
+          <div id="Persone" class="content">
+            <div class="af-intestazione">
+              <h2>Relazioni familiari</h2>
+              <div id="af-legenda" class="af-legenda"></div>
+            </div>
+            <div id="albero-genealogico"></div>
+          </div>
+          <div id="Localizzazioni" class="content">
+            <section id="map">
+              <div id="chartdiv"></div>
+            </section>
+          </div>
+          <div id="Relazioni" class="content">
+            <h2>Altri antiquari</h2>
+            <ul>
+              <li>
+                <a href="dettaglio_AC.html">Accorsi</a>
+              </li>
+              <li>
+                <a href="dettaglio_ZA.html">Zabert</a>
+              </li>
+              <li>
+                <a href="dettaglio_DI.html">Di Castro</a>
+              </li>
+              <li>
+                <a href="dettaglio_SE_II.html">Sestieri</a>
+              </li>
+              <li>
+                <a href="dettaglio_SA_I.html">Salocchi</a>
+              </li>
+            </ul>
+            <h2>Collaboratori</h2>
+            <ul>
+              <li>Alvar Gonzáles Palacios (storico dell'arte)</li>
+              <li>Giuliano Briganti (storico dell'arte)</li>
+              <li>Mario Praz (storico dell'arte)</li>
+            </ul>
+          </div>
+          <div id="Bibliografia" class="content">
+            <h2>Bibliografia essenziale</h2>
+            <ul>
+              <li>González-Palacios, A. (2014), <i>Persona e maschera: collezionisti, antiquari e storici dell'arte</i>, Milano, Archinto</li>
+              <li>Riccio, B. (Ed.) (1996), <i>Lettere sull’antiquariato di Mario Praz e Luigi Magnani 1952-1981</i>, Torino, U. Allemandi, p. 116</li>
+            </ul>
+            <h2>Interviste</h2>
+            <ul>
+              <li>2023-09-06 00:00:00, <i>Intervista a Marco Fabio Apolloni</i>, Roma</li>
+            </ul>
+          </div>
         </div>
       </div>
       <nav class="scheda-sfoglia" aria-label="Altre schede">

@@ -58,13 +58,11 @@
       </div>
     </header>
     <main class="scheda">
-      <div class="scheda-torna">
-        <a href="../antiquari.html">&#8592; Tutti gli antiquari</a>
-      </div>
       <section class="scheda-fascia">
         <div class="scheda-fascia-testo">
+          <a class="scheda-torna" href="../antiquari.html">&#8592; Tutti gli antiquari</a>
           <h1 class="scheda-nome">Brass</h1>
-          <p class="scheda-sottotitolo">Venezia, entità attiva dal 1920 al 1974</p>
+          <p class="scheda-sottotitolo">Venezia, in attività dal 1920 al 1974</p>
         </div>
         <figure id="single-image-container">
           <img src="../../img/slider-antiquari/BR_III_img1.jpg" alt="Italico Brass al fronte, 1915-1916 " />
@@ -74,82 +72,90 @@
           </button>
         </figure>
       </section>
-      <section class="scheda-dati">
-        <dl class="scheda-record">
-          <dt>PERSONE</dt>
-          <dd>Italico Brass, 1878–1943, pittore; collezionista; antiquario<br>Alessandro  Brass, 1898–?, avvocato; antiquario<br>Italico Brass, antiquario</dd>
-          <dt>IN CATALOGO</dt>
-          <dd><a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=brass&page=1" class="linkBio" target="_blank">Opere transitate, catalogo della Fondazione Zeri &#8594;</a></dd>
-        </dl>
-      </section>
-      <nav class="scheda-tab" aria-label="Sezioni della scheda">
-        <button class="tab active" type="button" data_content="Bio">
-          Dati biografici
-        </button>
-        <button class="tab" type="button" data_content="Persone">
-          Albero familiare
-          <span class="tab-num">3</span>
-        </button>
-        <button class="tab" type="button" data_content="Localizzazioni">
-          Luoghi
-          <span class="tab-num">1</span>
-        </button>
-        <button class="tab" type="button" data_content="Relazioni">
-          Relazioni
-          <span class="tab-num">5</span>
-        </button>
-        <button class="tab" type="button" data_content="Bibliografia">
-          Bibliografia
-          <span class="tab-num">5</span>
-        </button>
-      </nav>
-      <div class="scheda-contenuto">
-        <div id="Bio" class="content active-content">
-          <p>Italico Brass (Venezia, 1870-1943) fu un rilevante pittore di vedute e scene di vita veneziana e in questa veste partecipò a più edizioni della Biennale d’arte di Venezia che, nel 1935, ospitò una sua retrospettiva di quaranta dipinti, corredata dal catalogo con una sintetica autobiografia.</p>
-          <p>Al contempo, fu grande collezionista di pittura genovese e veneziana del Sei e Settecento. Ebbe un ruolo centrale, in particolare, nella riscoperta di Alessandro Magnasco, il cui apprezzamento contribuì a diffondere anche Oltreoceano grazie a numerose vendite.</p>
-          <p>Accanto a quella di collezionista, infatti, si dedicò all’attività di mercante, soprattutto dalla metà degli anni Venti insieme al figlio Alessandro Brass (1898-?), avvocato e vicesindaco di Venezia durante il regime fascista. Nel contesto veneziano collaborò soprattutto con Francesco e Maria <a href=" dettaglio_PO_II.html " target="_blank"> Pospisil</a> e con lo storico dell’arte Giuseppe Fiocco.</p>
-          <p>I proventi delle vendite di opere d’arte sembra fossero principalmente destinati al restauro della Scuola Vecchia della Misericordia, acquistata da Italico come atelier e sede della propria collezione, nella speranza di farne un museo pubblico.</p>
-          <p>Tra la fine degli anni Venti e l’inizio del decennio successivo vendette opere di Bernardo Strozzi, Magnasco e Giambattista Piazzetta a musei americani come il Wadsworth Atheneum di Hartford e soprattutto l’Art Museum di Cleveland. A favorire questa impresa furono soprattutto i rapporti con l’agente d’arte Harold Parson e con i mercanti newyorkesi Duveen, approfonditi grazie a un viaggio nel 1933 in cui ebbe modo di visitare alcuni dei musei e delle collezioni private più importanti degli Stati Uniti.</p>
-          <p>Dopo la morte di Italico fino almeno alla fine degli anni Cinquanta, Alessandro continuò il commercio di opere d’arte vendendo soprattutto pezzi della collezione paterna per far fronte ai debiti. Anche il figlio di quest’ultimo, Italico Brass Jr., rimase nel settore. Nel 1974, gli eredi cedettero allo Stato italiano la Scuola Vecchia della Misericordia, oggi sede del laboratorio di restauro della Soprintendenza veneziana.</p>
-        </div>
-        <div id="Persone" class="content">
-          <div class="af-intestazione">
-            <h2>Relazioni familiari</h2>
-            <div id="af-legenda" class="af-legenda"></div>
+      <dl class="scheda-striscia">
+        <dt>Persone</dt>
+        <dd>
+          <ul class="striscia-elenco">
+            <li class="striscia-voce"><strong>Italico Brass</strong>, 1878–1943, pittore; collezionista; antiquario</li>
+            <li class="striscia-voce"><strong>Alessandro  Brass</strong>, 1898–?, avvocato; antiquario</li>
+            <li class="striscia-voce"><strong>Italico Brass</strong>, antiquario</li>
+          </ul>
+        </dd>
+        <dt>Opere transitate</dt>
+        <dd>
+          <a class="striscia-link" href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=brass&page=1" target="_blank" rel="noopener">Catalogo della Fondazione Zeri &#8594;</a>
+        </dd>
+      </dl>
+      <div class="scheda-corpo">
+        <nav class="scheda-tab" aria-label="Sezioni della scheda">
+          <button class="tab active" type="button" data_content="Bio">
+            <span class="tab-voce">Dati biografici</span>
+          </button>
+          <button class="tab" type="button" data_content="Persone">
+            <span class="tab-voce">Albero familiare</span>
+            <span class="tab-num">3</span>
+          </button>
+          <button class="tab" type="button" data_content="Localizzazioni">
+            <span class="tab-voce">Luoghi</span>
+            <span class="tab-num">1</span>
+          </button>
+          <button class="tab" type="button" data_content="Relazioni">
+            <span class="tab-voce">Relazioni</span>
+            <span class="tab-num">5</span>
+          </button>
+          <button class="tab" type="button" data_content="Bibliografia">
+            <span class="tab-voce">Bibliografia</span>
+            <span class="tab-num">5</span>
+          </button>
+        </nav>
+        <div class="scheda-contenuto">
+          <div id="Bio" class="content active-content">
+            <p>Italico Brass (Venezia, 1870-1943) fu un rilevante pittore di vedute e scene di vita veneziana e in questa veste partecipò a più edizioni della Biennale d’arte di Venezia che, nel 1935, ospitò una sua retrospettiva di quaranta dipinti, corredata dal catalogo con una sintetica autobiografia.</p>
+            <p>Al contempo, fu grande collezionista di pittura genovese e veneziana del Sei e Settecento. Ebbe un ruolo centrale, in particolare, nella riscoperta di Alessandro Magnasco, il cui apprezzamento contribuì a diffondere anche Oltreoceano grazie a numerose vendite.</p>
+            <p>Accanto a quella di collezionista, infatti, si dedicò all’attività di mercante, soprattutto dalla metà degli anni Venti insieme al figlio Alessandro Brass (1898-?), avvocato e vicesindaco di Venezia durante il regime fascista. Nel contesto veneziano collaborò soprattutto con Francesco e Maria <a href=" dettaglio_PO_II.html " target="_blank"> Pospisil</a> e con lo storico dell’arte Giuseppe Fiocco.</p>
+            <p>I proventi delle vendite di opere d’arte sembra fossero principalmente destinati al restauro della Scuola Vecchia della Misericordia, acquistata da Italico come atelier e sede della propria collezione, nella speranza di farne un museo pubblico.</p>
+            <p>Tra la fine degli anni Venti e l’inizio del decennio successivo vendette opere di Bernardo Strozzi, Magnasco e Giambattista Piazzetta a musei americani come il Wadsworth Atheneum di Hartford e soprattutto l’Art Museum di Cleveland. A favorire questa impresa furono soprattutto i rapporti con l’agente d’arte Harold Parson e con i mercanti newyorkesi Duveen, approfonditi grazie a un viaggio nel 1933 in cui ebbe modo di visitare alcuni dei musei e delle collezioni private più importanti degli Stati Uniti.</p>
+            <p>Dopo la morte di Italico fino almeno alla fine degli anni Cinquanta, Alessandro continuò il commercio di opere d’arte vendendo soprattutto pezzi della collezione paterna per far fronte ai debiti. Anche il figlio di quest’ultimo, Italico Brass Jr., rimase nel settore. Nel 1974, gli eredi cedettero allo Stato italiano la Scuola Vecchia della Misericordia, oggi sede del laboratorio di restauro della Soprintendenza veneziana.</p>
           </div>
-          <div id="albero-genealogico"></div>
-        </div>
-        <div id="Localizzazioni" class="content">
-          <section id="map">
-            <div id="chartdiv"></div>
-          </section>
-        </div>
-        <div id="Relazioni" class="content">
-          <h2>Altri antiquari</h2>
-          <ul>
-            <li>
-              <a href="dettaglio_PO_II.html">Pospisil</a>
-            </li>
-            <li>
-              <a href="dettaglio_GE_I.html">Geiger</a>
-            </li>
-          </ul>
-          <h2>Collaboratori</h2>
-          <ul>
-            <li>Duveen Brothers (antiquario)</li>
-            <li>Giuseppe Fiocco (storico dell'arte)</li>
-            <li>Harold Parson (intermediario)</li>
-          </ul>
-        </div>
-        <div id="Bibliografia" class="content">
-          <h2>Bibliografia essenziale</h2>
-          <ul>
-            <li><i>Mostra dei quarant'anni della Biennale: 1895-1935. Venezia, maggio-luglio 1935</i>, Venezia, Tip. C. Ferrari</li>
-            <li>Malni Pascoletti, M. (1991), <i>Una delle gallerie private più interessanti del mondo intero. Note su Italico Brass collezionista</i>, in Masau Dan, pp. 43-52</li>
-            <li>Morandotti, A. (2001), <i>Italico Bras, pittore, conoscitore e mercante nell’età di Giuseppe Fiocco</i>, in Orlando, pp. 241-250</li>
-            <li>Rowlands, E.W. (2023), <i>Here, There, and Everywhere: Harold Parsons, the Italian Market and a Letter of 1948</i>, in Budd, Catterson, pp. 329-407</li>
-            <li>Zorzi, E. (1934), <i>L'arte italiana in America</i>, in «Gazzetta di Venezia», 3 febbraio 1934</li>
-          </ul>
+          <div id="Persone" class="content">
+            <div class="af-intestazione">
+              <h2>Relazioni familiari</h2>
+              <div id="af-legenda" class="af-legenda"></div>
+            </div>
+            <div id="albero-genealogico"></div>
+          </div>
+          <div id="Localizzazioni" class="content">
+            <section id="map">
+              <div id="chartdiv"></div>
+            </section>
+          </div>
+          <div id="Relazioni" class="content">
+            <h2>Altri antiquari</h2>
+            <ul>
+              <li>
+                <a href="dettaglio_PO_II.html">Pospisil</a>
+              </li>
+              <li>
+                <a href="dettaglio_GE_I.html">Geiger</a>
+              </li>
+            </ul>
+            <h2>Collaboratori</h2>
+            <ul>
+              <li>Duveen Brothers (antiquario)</li>
+              <li>Giuseppe Fiocco (storico dell'arte)</li>
+              <li>Harold Parson (intermediario)</li>
+            </ul>
+          </div>
+          <div id="Bibliografia" class="content">
+            <h2>Bibliografia essenziale</h2>
+            <ul>
+              <li><i>Mostra dei quarant'anni della Biennale: 1895-1935. Venezia, maggio-luglio 1935</i>, Venezia, Tip. C. Ferrari</li>
+              <li>Malni Pascoletti, M. (1991), <i>Una delle gallerie private più interessanti del mondo intero. Note su Italico Brass collezionista</i>, in Masau Dan, pp. 43-52</li>
+              <li>Morandotti, A. (2001), <i>Italico Bras, pittore, conoscitore e mercante nell’età di Giuseppe Fiocco</i>, in Orlando, pp. 241-250</li>
+              <li>Rowlands, E.W. (2023), <i>Here, There, and Everywhere: Harold Parsons, the Italian Market and a Letter of 1948</i>, in Budd, Catterson, pp. 329-407</li>
+              <li>Zorzi, E. (1934), <i>L'arte italiana in America</i>, in «Gazzetta di Venezia», 3 febbraio 1934</li>
+            </ul>
+          </div>
         </div>
       </div>
       <nav class="scheda-sfoglia" aria-label="Altre schede">

@@ -58,13 +58,11 @@
       </div>
     </header>
     <main class="scheda">
-      <div class="scheda-torna">
-        <a href="../antiquari.html">&#8592; Tutti gli antiquari</a>
-      </div>
       <section class="scheda-fascia">
         <div class="scheda-fascia-testo">
+          <a class="scheda-torna" href="../antiquari.html">&#8592; Tutti gli antiquari</a>
           <h1 class="scheda-nome">Albrighi</h1>
-          <p class="scheda-sottotitolo">Firenze, entità attiva dal 1961 al 1979</p>
+          <p class="scheda-sottotitolo">Firenze, in attività dal 1961 al 1979</p>
         </div>
         <figure id="single-image-container">
           <img src="../../img/slider-antiquari/AL_img1.jpg" alt="Luigi Albrighi e Bernard Berenson, 1955 (foto Mondadori Portfolio)" />
@@ -74,66 +72,72 @@
           </button>
         </figure>
       </section>
-      <section class="scheda-dati">
-        <dl class="scheda-record">
-          <dt>PERSONA</dt>
-          <dd>Luigi Albrighi, 1896–1979, avvocato e antiquario</dd>
-          <dt>IN CATALOGO</dt>
-          <dd><a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=L.+Albrighi" class="linkBio" target="_blank">Opere transitate, catalogo della Fondazione Zeri &#8594;</a></dd>
-        </dl>
-      </section>
-      <nav class="scheda-tab" aria-label="Sezioni della scheda">
-        <button class="tab active" type="button" data_content="Bio">
-          Dati biografici
-        </button>
-        <button class="tab" type="button" data_content="Localizzazioni">
-          Luoghi
-          <span class="tab-num">1</span>
-        </button>
-        <button class="tab" type="button" data_content="Relazioni">
-          Relazioni
-          <span class="tab-num">4</span>
-        </button>
-        <button class="tab" type="button" data_content="Bibliografia">
-          Bibliografia
-          <span class="tab-num">1</span>
-        </button>
-      </nav>
-      <div class="scheda-contenuto">
-        <div id="Bio" class="content active-content">
-          <p>Luigi Albrighi (1896-1979) nacque a Milano e inizialmente praticò l'avvocatura. Abbandonata la professione, si trasferì a Firenze intorno al 1920, iniziando la carriera di mercante d'arte. Albrighi si interessò al commercio di dipinti e opere medievali e rinascimentali, assecondando le richieste dei collezionisti dell'epoca. Nella città toscana, dove l'antiquario fu attivo fino alla morte, sopraggiunta nel 1979, entrò in contatto con gli antiquari locali e in particolar modo con <a href="dettaglio_VE.html" target="_blank">Eugenio Ventura</a> (1887-1949) e con la figlia Paola. Albrighi e <a href="dettaglio_VE.html" target="_blank">Paola Ventura</a> strinsero un rapporto lavorativo e di vita, tanto che a partire dal 1961 i due risultano avere una galleria insieme a Palazzo Fossombroni, in via Dei Fossi 7r.</p>
-          <p>Luigi Albrighi fu un commerciante che seppe muoversi a livello internazionale, tra Parigi, Londra e New York, ebbe stretti rapporti con Bernard Berenson e conobbe importanti collezionisti privati, tra cui Achillito Chiesa. In occasione della vendita all'asta della collezione di quest'ultimo, nel 1925, Albrighi venne chiamato a New York per catalogare le opere messe in vendita.</p>
-          <p>Nel corso degli anni Quaranta, in ristrettezze economiche, l'antiquario venne accusato di esportazione illecita verso l'America dal tribunale di Firenze e fu coinvolto in alcune vicende di compravendita di quadri falsi. Nel 2015 il suo archivio, precedentemente vagliato e riordinato da Luciano Bellosi, è stato donato alla Fondazione Federico Zeri.</p>
-        </div>
-        <div id="Localizzazioni" class="content">
-          <section id="map">
-            <div id="chartdiv"></div>
-          </section>
-        </div>
-        <div id="Relazioni" class="content">
-          <h2>Altri antiquari</h2>
-          <ul>
-            <li>
-              <a href="dettaglio_VE.html">Ventura</a>
-            </li>
-            <li>
-              <a href="dettaglio_GE_I.html">Geiger</a>
-            </li>
+      <dl class="scheda-striscia">
+        <dt>Persone</dt>
+        <dd>
+          <ul class="striscia-elenco">
+            <li class="striscia-voce"><strong>Luigi Albrighi</strong>, 1896–1979, avvocato e antiquario</li>
           </ul>
-          <h2>Clienti</h2>
-          <ul>
-            <li>Achillito Chiesa </li>
-          </ul>
-          <h2>Collaboratori</h2>
-          <ul>
-            <li>Bernard Berenson (storico dell'arte)</li>
-          </ul>
-        </div>
-        <div id="Bibliografia" class="content">
-          <h2>Bibliografia essenziale</h2>
-          <ul>
-            <li>Cavicchi, M. (2017), <i>Falsi di primo Novecento nell'archivio di Luigi Albrighi</i>, in Ottani Cavina, pp. 199-225</li>
-          </ul>
+        </dd>
+        <dt>Opere transitate</dt>
+        <dd>
+          <a class="striscia-link" href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=L.+Albrighi" target="_blank" rel="noopener">Catalogo della Fondazione Zeri &#8594;</a>
+        </dd>
+      </dl>
+      <div class="scheda-corpo">
+        <nav class="scheda-tab" aria-label="Sezioni della scheda">
+          <button class="tab active" type="button" data_content="Bio">
+            <span class="tab-voce">Dati biografici</span>
+          </button>
+          <button class="tab" type="button" data_content="Localizzazioni">
+            <span class="tab-voce">Luoghi</span>
+            <span class="tab-num">1</span>
+          </button>
+          <button class="tab" type="button" data_content="Relazioni">
+            <span class="tab-voce">Relazioni</span>
+            <span class="tab-num">4</span>
+          </button>
+          <button class="tab" type="button" data_content="Bibliografia">
+            <span class="tab-voce">Bibliografia</span>
+            <span class="tab-num">1</span>
+          </button>
+        </nav>
+        <div class="scheda-contenuto">
+          <div id="Bio" class="content active-content">
+            <p>Luigi Albrighi (1896-1979) nacque a Milano e inizialmente praticò l'avvocatura. Abbandonata la professione, si trasferì a Firenze intorno al 1920, iniziando la carriera di mercante d'arte. Albrighi si interessò al commercio di dipinti e opere medievali e rinascimentali, assecondando le richieste dei collezionisti dell'epoca. Nella città toscana, dove l'antiquario fu attivo fino alla morte, sopraggiunta nel 1979, entrò in contatto con gli antiquari locali e in particolar modo con <a href="dettaglio_VE.html" target="_blank">Eugenio Ventura</a> (1887-1949) e con la figlia Paola. Albrighi e <a href="dettaglio_VE.html" target="_blank">Paola Ventura</a> strinsero un rapporto lavorativo e di vita, tanto che a partire dal 1961 i due risultano avere una galleria insieme a Palazzo Fossombroni, in via Dei Fossi 7r.</p>
+            <p>Luigi Albrighi fu un commerciante che seppe muoversi a livello internazionale, tra Parigi, Londra e New York, ebbe stretti rapporti con Bernard Berenson e conobbe importanti collezionisti privati, tra cui Achillito Chiesa. In occasione della vendita all'asta della collezione di quest'ultimo, nel 1925, Albrighi venne chiamato a New York per catalogare le opere messe in vendita.</p>
+            <p>Nel corso degli anni Quaranta, in ristrettezze economiche, l'antiquario venne accusato di esportazione illecita verso l'America dal tribunale di Firenze e fu coinvolto in alcune vicende di compravendita di quadri falsi. Nel 2015 il suo archivio, precedentemente vagliato e riordinato da Luciano Bellosi, è stato donato alla Fondazione Federico Zeri.</p>
+          </div>
+          <div id="Localizzazioni" class="content">
+            <section id="map">
+              <div id="chartdiv"></div>
+            </section>
+          </div>
+          <div id="Relazioni" class="content">
+            <h2>Altri antiquari</h2>
+            <ul>
+              <li>
+                <a href="dettaglio_VE.html">Ventura</a>
+              </li>
+              <li>
+                <a href="dettaglio_GE_I.html">Geiger</a>
+              </li>
+            </ul>
+            <h2>Clienti</h2>
+            <ul>
+              <li>Achillito Chiesa </li>
+            </ul>
+            <h2>Collaboratori</h2>
+            <ul>
+              <li>Bernard Berenson (storico dell'arte)</li>
+            </ul>
+          </div>
+          <div id="Bibliografia" class="content">
+            <h2>Bibliografia essenziale</h2>
+            <ul>
+              <li>Cavicchi, M. (2017), <i>Falsi di primo Novecento nell'archivio di Luigi Albrighi</i>, in Ottani Cavina, pp. 199-225</li>
+            </ul>
+          </div>
         </div>
       </div>
       <nav class="scheda-sfoglia" aria-label="Altre schede">

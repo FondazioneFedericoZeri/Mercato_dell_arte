@@ -58,13 +58,11 @@
       </div>
     </header>
     <main class="scheda">
-      <div class="scheda-torna">
-        <a href="../antiquari.html">&#8592; Tutti gli antiquari</a>
-      </div>
       <section class="scheda-fascia">
         <div class="scheda-fascia-testo">
+          <a class="scheda-torna" href="../antiquari.html">&#8592; Tutti gli antiquari</a>
           <h1 class="scheda-nome">Jandolo-Tavazzi</h1>
-          <p class="scheda-sottotitolo">Roma, entità attiva dal 1907 al 1940</p>
+          <p class="scheda-sottotitolo">Roma, in attività dal 1907 al 1940</p>
         </div>
         <figure id="single-image-container">
           <img src="../../img/slider-antiquari/JA-TA_img1.jpg" alt="Catalogo asta Jandolo & Tavazzi, 1911" />
@@ -74,52 +72,59 @@
           </button>
         </figure>
       </section>
-      <section class="scheda-dati">
-        <dl class="scheda-record">
-          <dt>PERSONE</dt>
-          <dd>Augusto Jandolo, 1873–1952, antiquario<br>Salvatore Jandolo, antiquario<br>Filippo Tavazzi, 1857–1924, antiquario<br>Guido Tavazzi, ?–1942, antiquario</dd>
-          <dt>INSEGNA</dt>
-          <dd>Casa di Vendita Jandolo & Tavazzi</dd>
-          <dt>IN CATALOGO</dt>
-          <dd><a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Asta+Jandolo+e+Tavazzi" class="linkBio" target="_blank">Opere transitate, catalogo della Fondazione Zeri &#8594;</a></dd>
-        </dl>
-      </section>
-      <nav class="scheda-tab" aria-label="Sezioni della scheda">
-        <button class="tab active" type="button" data_content="Bio">
-          Dati biografici
-        </button>
-        <button class="tab" type="button" data_content="Localizzazioni">
-          Luoghi
-          <span class="tab-num">1</span>
-        </button>
-        <button class="tab" type="button" data_content="Relazioni">
-          Relazioni
-          <span class="tab-num">3</span>
-        </button>
-      </nav>
-      <div class="scheda-contenuto">
-        <div id="Bio" class="content active-content">
-          <p>A partire dai primi anni del Novecento <a href="dettaglio_JA.html" target="_blank">Augusto e Salvatore Jandolo</a> si unirono in società con <a href="dettaglio_TA.html" target="_blank">Filippo Tavazzi</a> , fondando la "Casa di vendite Jandolo & Tavazzi" documentata in via del Babuino 96, 97. I cataloghi della maison des ventes furono pubblicati dal 1907 al 1936 e descrivono alcune delle vendite italiane più importanti dell'epoca, come quelle degli antiquari Gioacchino Ferroni (1854-1909) ed Elia Volpi (1858-1938).</p>
-          <p>Il figlio di Filippo Tavazzi, <a href="dettaglio_TA.html" target="_blank">Guido Tavazzi</a> (?-1942), lavorò nella società che il padre aveva formato con gli Jandolo, svolgendo l'attività di organizzatore di aste ed esperto banditore.</p>
-        </div>
-        <div id="Localizzazioni" class="content">
-          <section id="map">
-            <div id="chartdiv"></div>
-          </section>
-        </div>
-        <div id="Relazioni" class="content">
-          <h2>Altri antiquari</h2>
-          <ul>
-            <li>
-              <a href="dettaglio_JA.html">Jandolo</a>
-            </li>
-            <li>
-              <a href="dettaglio_TA.html">Tavazzi</a>
-            </li>
-            <li>
-              <a href="dettaglio_PO_III.html">Pollak</a>
-            </li>
+      <dl class="scheda-striscia">
+        <dt>Persone</dt>
+        <dd>
+          <ul class="striscia-elenco">
+            <li class="striscia-voce"><strong>Augusto Jandolo</strong>, 1873–1952, antiquario</li>
+            <li class="striscia-voce"><strong>Salvatore Jandolo</strong>, antiquario</li>
+            <li class="striscia-voce"><strong>Filippo Tavazzi</strong>, 1857–1924, antiquario</li>
+            <li class="striscia-voce"><strong>Guido Tavazzi</strong>, ?–1942, antiquario</li>
           </ul>
+        </dd>
+        <dt>Opere transitate</dt>
+        <dd>
+          <a class="striscia-link" href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Asta+Jandolo+e+Tavazzi" target="_blank" rel="noopener">Catalogo della Fondazione Zeri &#8594;</a>
+        </dd>
+      </dl>
+      <div class="scheda-corpo">
+        <nav class="scheda-tab" aria-label="Sezioni della scheda">
+          <button class="tab active" type="button" data_content="Bio">
+            <span class="tab-voce">Dati biografici</span>
+          </button>
+          <button class="tab" type="button" data_content="Localizzazioni">
+            <span class="tab-voce">Luoghi</span>
+            <span class="tab-num">1</span>
+          </button>
+          <button class="tab" type="button" data_content="Relazioni">
+            <span class="tab-voce">Relazioni</span>
+            <span class="tab-num">3</span>
+          </button>
+        </nav>
+        <div class="scheda-contenuto">
+          <div id="Bio" class="content active-content">
+            <p>A partire dai primi anni del Novecento <a href="dettaglio_JA.html" target="_blank">Augusto e Salvatore Jandolo</a> si unirono in società con <a href="dettaglio_TA.html" target="_blank">Filippo Tavazzi</a> , fondando la "Casa di vendite Jandolo & Tavazzi" documentata in via del Babuino 96, 97. I cataloghi della maison des ventes furono pubblicati dal 1907 al 1936 e descrivono alcune delle vendite italiane più importanti dell'epoca, come quelle degli antiquari Gioacchino Ferroni (1854-1909) ed Elia Volpi (1858-1938).</p>
+            <p>Il figlio di Filippo Tavazzi, <a href="dettaglio_TA.html" target="_blank">Guido Tavazzi</a> (?-1942), lavorò nella società che il padre aveva formato con gli Jandolo, svolgendo l'attività di organizzatore di aste ed esperto banditore.</p>
+          </div>
+          <div id="Localizzazioni" class="content">
+            <section id="map">
+              <div id="chartdiv"></div>
+            </section>
+          </div>
+          <div id="Relazioni" class="content">
+            <h2>Altri antiquari</h2>
+            <ul>
+              <li>
+                <a href="dettaglio_JA.html">Jandolo</a>
+              </li>
+              <li>
+                <a href="dettaglio_TA.html">Tavazzi</a>
+              </li>
+              <li>
+                <a href="dettaglio_PO_III.html">Pollak</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       <nav class="scheda-sfoglia" aria-label="Altre schede">

@@ -58,66 +58,70 @@
       </div>
     </header>
     <main class="scheda">
-      <div class="scheda-torna">
-        <a href="../antiquari.html">&#8592; Tutti gli antiquari</a>
-      </div>
       <section class="scheda-fascia senza-foto">
         <div class="scheda-fascia-testo">
+          <a class="scheda-torna" href="../antiquari.html">&#8592; Tutti gli antiquari</a>
           <h1 class="scheda-nome">De Clemente</h1>
-          <p class="scheda-sottotitolo">Firenze, entità attiva dal 1920 al 1940</p>
+          <p class="scheda-sottotitolo">Firenze, in attività dal 1920 al 1940</p>
         </div>
       </section>
-      <section class="scheda-dati">
-        <dl class="scheda-record">
-          <dt>PERSONA</dt>
-          <dd>Achille De Clemente, 1874–1940, pittore e antiquario</dd>
-          <dt>IN CATALOGO</dt>
-          <dd><a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=DE+CLEMENTE" class="linkBio" target="_blank">Opere transitate, catalogo della Fondazione Zeri &#8594;</a></dd>
-        </dl>
-      </section>
-      <nav class="scheda-tab" aria-label="Sezioni della scheda">
-        <button class="tab active" type="button" data_content="Bio">
-          Dati biografici
-        </button>
-        <button class="tab" type="button" data_content="Localizzazioni">
-          Luoghi
-          <span class="tab-num">1</span>
-        </button>
-        <button class="tab" type="button" data_content="Eventi">
-          Eventi
-          <span class="tab-num">2</span>
-        </button>
-        <button class="tab" type="button" data_content="Bibliografia">
-          Bibliografia
-          <span class="tab-num">5</span>
-        </button>
-      </nav>
-      <div class="scheda-contenuto">
-        <div id="Bio" class="content active-content">
-          <p>Achille De Clemente (1874-1940) si formò come pittore presso l'Accademia di Belle Arti di Roma, prima di trasferirsi definitivamente a Firenze sullo scorcio del XIX secolo. Si avvicinò casualmente al commercio di opere d'arte rivendendo un paio di dipinti della collezione Martelli di cui era fortunosamente entrato in possesso e, considerato più fruttuoso il mestiere di commerciante d'arte, abbandonò la carriera di pittore e si associò col mercante Marcello Banti, nipote del macchiaiolo Cristiano.</p>
-          <p>Solo in un secondo tempo arrivò a possedere una propria galleria, che era anche la sua abitazione, in Palazzo Ricasoli Firidolfi, in via Maggio 7. Ricordato da <a href="dettaglio_BE_I.html" target="_blank"> Bellini</a> nel 1947 tra i 'pezzi grossi' di Firenze, indirizzò il suo interesse verso il commercio dei Primitivi italiani, per poi specializzarsi in quello delle maioliche che l'antiquario Domenico Fuschini acquistava per lui sul mercato inglese. Una parte della sua raccolta di maioliche venne venduta nel 1931 nelle sale dell'American Art Association di New York. Nel 1935, una più ampia vendita all'asta della propria collezione che includeva opere d'arte antica, quadri, sculture, bronzi, mobili e maioliche italiane ebbe luogo nella Galleria Ciardiello di Firenze.</p>
-        </div>
-        <div id="Localizzazioni" class="content">
-          <section id="map">
-            <div id="chartdiv"></div>
-          </section>
-        </div>
-        <div id="Eventi" class="content">
-          <h2>Eventi significativi nell'attività antiquariale</h2>
-          <ul>
-            <li>1931 - <i>Vendita Collezione De Clemente</i>: Vendita di una prima parte della collezione di Achille De Clemente presso la sede dell'American Art Association di New York</li>
-            <li>1935 - <i>Vendita Collezione De Clemente</i>: Vendita di una parte della collezione di Achille De Clemente presso la casa d'aste Galleria Ciardello di Firenze</li>
+      <dl class="scheda-striscia">
+        <dt>Persone</dt>
+        <dd>
+          <ul class="striscia-elenco">
+            <li class="striscia-voce"><strong>Achille De Clemente</strong>, 1874–1940, pittore e antiquario</li>
           </ul>
-        </div>
-        <div id="Bibliografia" class="content">
-          <h2>Bibliografia essenziale</h2>
-          <ul>
-            <li>American Art Association, Anderson Galleries (1931), <i>Italian furniture of the Renaissance, rare Majolica... Primitive and Renaissance paintings, the collection of Achille De Clemente, Florence...</i>, New York, 15-17 gennaio 1931</li>
-            <li>Bargellini, S. (1981), <i>Antiquari di ieri a Firenze</i>, Firenze, Bonechi</li>
-            <li>Bellini, L., De Chirico, G. (1947), <i>Nel mondo degli antiquari</i>, Firenze, Arnaud</li>
-            <li>De Clemente, A. (1923), <i>Da pittore ad antiquario</i>, in «L'Antiquario. Rivista indipendente», X, 4-5, p. 45</li>
-            <li>Galleria Ciardiello (1935), <i>Catalogo della collezione De Clemente, Palazzo Ricasoli Firidolfi, Firenze: oggetti di sola arte antica, quadri sculture, bronzi, mobili, maioliche italiane ecc. ecc.</i>, Firenze, 29 aprile-3 maggio 1935</li>
-          </ul>
+        </dd>
+        <dt>Opere transitate</dt>
+        <dd>
+          <a class="striscia-link" href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=DE+CLEMENTE" target="_blank" rel="noopener">Catalogo della Fondazione Zeri &#8594;</a>
+        </dd>
+      </dl>
+      <div class="scheda-corpo">
+        <nav class="scheda-tab" aria-label="Sezioni della scheda">
+          <button class="tab active" type="button" data_content="Bio">
+            <span class="tab-voce">Dati biografici</span>
+          </button>
+          <button class="tab" type="button" data_content="Localizzazioni">
+            <span class="tab-voce">Luoghi</span>
+            <span class="tab-num">1</span>
+          </button>
+          <button class="tab" type="button" data_content="Eventi">
+            <span class="tab-voce">Eventi</span>
+            <span class="tab-num">2</span>
+          </button>
+          <button class="tab" type="button" data_content="Bibliografia">
+            <span class="tab-voce">Bibliografia</span>
+            <span class="tab-num">5</span>
+          </button>
+        </nav>
+        <div class="scheda-contenuto">
+          <div id="Bio" class="content active-content">
+            <p>Achille De Clemente (1874-1940) si formò come pittore presso l'Accademia di Belle Arti di Roma, prima di trasferirsi definitivamente a Firenze sullo scorcio del XIX secolo. Si avvicinò casualmente al commercio di opere d'arte rivendendo un paio di dipinti della collezione Martelli di cui era fortunosamente entrato in possesso e, considerato più fruttuoso il mestiere di commerciante d'arte, abbandonò la carriera di pittore e si associò col mercante Marcello Banti, nipote del macchiaiolo Cristiano.</p>
+            <p>Solo in un secondo tempo arrivò a possedere una propria galleria, che era anche la sua abitazione, in Palazzo Ricasoli Firidolfi, in via Maggio 7. Ricordato da <a href="dettaglio_BE_I.html" target="_blank"> Bellini</a> nel 1947 tra i 'pezzi grossi' di Firenze, indirizzò il suo interesse verso il commercio dei Primitivi italiani, per poi specializzarsi in quello delle maioliche che l'antiquario Domenico Fuschini acquistava per lui sul mercato inglese. Una parte della sua raccolta di maioliche venne venduta nel 1931 nelle sale dell'American Art Association di New York. Nel 1935, una più ampia vendita all'asta della propria collezione che includeva opere d'arte antica, quadri, sculture, bronzi, mobili e maioliche italiane ebbe luogo nella Galleria Ciardiello di Firenze.</p>
+          </div>
+          <div id="Localizzazioni" class="content">
+            <section id="map">
+              <div id="chartdiv"></div>
+            </section>
+          </div>
+          <div id="Eventi" class="content">
+            <h2>Eventi significativi nell'attività antiquariale</h2>
+            <ul>
+              <li>1931 - <i>Vendita Collezione De Clemente</i>: Vendita di una prima parte della collezione di Achille De Clemente presso la sede dell'American Art Association di New York</li>
+              <li>1935 - <i>Vendita Collezione De Clemente</i>: Vendita di una parte della collezione di Achille De Clemente presso la casa d'aste Galleria Ciardello di Firenze</li>
+            </ul>
+          </div>
+          <div id="Bibliografia" class="content">
+            <h2>Bibliografia essenziale</h2>
+            <ul>
+              <li>American Art Association, Anderson Galleries (1931), <i>Italian furniture of the Renaissance, rare Majolica... Primitive and Renaissance paintings, the collection of Achille De Clemente, Florence...</i>, New York, 15-17 gennaio 1931</li>
+              <li>Bargellini, S. (1981), <i>Antiquari di ieri a Firenze</i>, Firenze, Bonechi</li>
+              <li>Bellini, L., De Chirico, G. (1947), <i>Nel mondo degli antiquari</i>, Firenze, Arnaud</li>
+              <li>De Clemente, A. (1923), <i>Da pittore ad antiquario</i>, in «L'Antiquario. Rivista indipendente», X, 4-5, p. 45</li>
+              <li>Galleria Ciardiello (1935), <i>Catalogo della collezione De Clemente, Palazzo Ricasoli Firidolfi, Firenze: oggetti di sola arte antica, quadri sculture, bronzi, mobili, maioliche italiane ecc. ecc.</i>, Firenze, 29 aprile-3 maggio 1935</li>
+            </ul>
+          </div>
         </div>
       </div>
       <nav class="scheda-sfoglia" aria-label="Altre schede">

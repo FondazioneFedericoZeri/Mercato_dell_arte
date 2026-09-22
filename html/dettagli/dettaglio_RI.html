@@ -58,13 +58,11 @@
       </div>
     </header>
     <main class="scheda">
-      <div class="scheda-torna">
-        <a href="../antiquari.html">&#8592; Tutti gli antiquari</a>
-      </div>
       <section class="scheda-fascia">
         <div class="scheda-fascia-testo">
+          <a class="scheda-torna" href="../antiquari.html">&#8592; Tutti gli antiquari</a>
           <h1 class="scheda-nome">Riccardi</h1>
-          <p class="scheda-sottotitolo">Assisi, entità attiva dal 1962 al 2017</p>
+          <p class="scheda-sottotitolo">Assisi, in attività dal 1962 al 2017</p>
         </div>
         <figure id="single-image-container">
           <img src="../../img/slider-antiquari/RI_img1.jpg" alt="Riccardi" />
@@ -74,57 +72,62 @@
           </button>
         </figure>
       </section>
-      <section class="scheda-dati">
-        <dl class="scheda-record">
-          <dt>PERSONE</dt>
-          <dd>Ennio Riccardi, antiquario<br>Piero Riccardi, antiquario</dd>
-          <dt>INSEGNA</dt>
-          <dd>Riccardi Antichità</dd>
-          <dt>IN CATALOGO</dt>
-          <dd><a href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Riccardi" class="linkBio" target="_blank">Opere transitate, catalogo della Fondazione Zeri &#8594;</a></dd>
-        </dl>
-      </section>
-      <nav class="scheda-tab" aria-label="Sezioni della scheda">
-        <button class="tab active" type="button" data_content="Bio">
-          Dati biografici
-        </button>
-        <button class="tab" type="button" data_content="Localizzazioni">
-          Luoghi
-          <span class="tab-num">1</span>
-        </button>
-        <button class="tab" type="button" data_content="Relazioni">
-          Relazioni
-          <span class="tab-num">1</span>
-        </button>
-        <button class="tab" type="button" data_content="Eventi">
-          Eventi
-          <span class="tab-num">1</span>
-        </button>
-      </nav>
-      <div class="scheda-contenuto">
-        <div id="Bio" class="content active-content">
-          <p>I fratelli Ennio e Piero fondarono l’impresa antiquaria “Riccardi Antichità” nel 1962 con sede in Piazza S. Chiara 3/B ad Assisi.</p>
-          <p>L’archivio professionale dell’impresa (1962-2017) contiene fotografie dei dipinti, sculture e arredi commercializzati e lettere ed expertise che restituiscono l’attività organizzativa per la Mostra Mercato assisiate e la fitta rete di rapporti con i migliori storici dell’arte del Secondo dopo guerra. È oggi custodito presso I Tatti, the Harvard University Center for Italian Renaissance Studies.</p>
-          <p>Nel 1973 Ennio e Piero Riccardi idearono uno degli appuntamenti antiquariali più prestigiosi a livello nazionale, la Mostra-Mercato di Antiquariato di Assisi, che per molte edizioni si svolse presso il Sacro Convento della Basilica di San Francesco. Proprio nel 1973, in occasione della prima Mostra, furono esposte cinquantasette tavole di scuola senese dal XIV al XV secolo, parte della straordinaria collezione che Frederick Mason Perkins aveva lasciato al Sacro Convento.</p>
-          <p>Forse in quella occasione si intensificarono i rapporti tra Federico Zeri – estensore del catalogo della collezione Perkins (1988) – e i Riccardi. I tre furono infatti legati da amicizia, oltre che da numerosi scambi professionali, come testimoniano le annotazioni dello studioso sui versi di un centinaio di fotografie di opere da loro commercializzate e due perizie su Nature morte redatte da Zeri nel 1998, poco prima di morire.</p>
-          <p>I Riccardi sono stati protagonisti del mercato dell’arte italiano del secondo Novecento e dell’inizio del XXI secolo.</p>
-        </div>
-        <div id="Localizzazioni" class="content">
-          <section id="map">
-            <div id="chartdiv"></div>
-          </section>
-        </div>
-        <div id="Relazioni" class="content">
-          <h2>Collaboratori</h2>
-          <ul>
-            <li>Federico Zeri (storico dell'arte)</li>
+      <dl class="scheda-striscia">
+        <dt>Persone</dt>
+        <dd>
+          <ul class="striscia-elenco">
+            <li class="striscia-voce"><strong>Ennio Riccardi</strong>, antiquario</li>
+            <li class="striscia-voce"><strong>Piero Riccardi</strong>, antiquario</li>
           </ul>
-        </div>
-        <div id="Eventi" class="content">
-          <h2>Eventi significativi nell'attività antiquariale</h2>
-          <ul>
-            <li>1973 - <i>Prima edizione della Mostra-Mercato di Antiquariato di Assisi</i>: I Riccardi di Assisi inaugurano la prima edizione della Mostra-Mercato di Assisi con l'esposizione dei dipinti senesi della collezione Mason Perkins donati al Sacro Convento</li>
-          </ul>
+        </dd>
+        <dt>Opere transitate</dt>
+        <dd>
+          <a class="striscia-link" href="https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=Riccardi" target="_blank" rel="noopener">Catalogo della Fondazione Zeri &#8594;</a>
+        </dd>
+      </dl>
+      <div class="scheda-corpo">
+        <nav class="scheda-tab" aria-label="Sezioni della scheda">
+          <button class="tab active" type="button" data_content="Bio">
+            <span class="tab-voce">Dati biografici</span>
+          </button>
+          <button class="tab" type="button" data_content="Localizzazioni">
+            <span class="tab-voce">Luoghi</span>
+            <span class="tab-num">1</span>
+          </button>
+          <button class="tab" type="button" data_content="Relazioni">
+            <span class="tab-voce">Relazioni</span>
+            <span class="tab-num">1</span>
+          </button>
+          <button class="tab" type="button" data_content="Eventi">
+            <span class="tab-voce">Eventi</span>
+            <span class="tab-num">1</span>
+          </button>
+        </nav>
+        <div class="scheda-contenuto">
+          <div id="Bio" class="content active-content">
+            <p>I fratelli Ennio e Piero fondarono l’impresa antiquaria “Riccardi Antichità” nel 1962 con sede in Piazza S. Chiara 3/B ad Assisi.</p>
+            <p>L’archivio professionale dell’impresa (1962-2017) contiene fotografie dei dipinti, sculture e arredi commercializzati e lettere ed expertise che restituiscono l’attività organizzativa per la Mostra Mercato assisiate e la fitta rete di rapporti con i migliori storici dell’arte del Secondo dopo guerra. È oggi custodito presso I Tatti, the Harvard University Center for Italian Renaissance Studies.</p>
+            <p>Nel 1973 Ennio e Piero Riccardi idearono uno degli appuntamenti antiquariali più prestigiosi a livello nazionale, la Mostra-Mercato di Antiquariato di Assisi, che per molte edizioni si svolse presso il Sacro Convento della Basilica di San Francesco. Proprio nel 1973, in occasione della prima Mostra, furono esposte cinquantasette tavole di scuola senese dal XIV al XV secolo, parte della straordinaria collezione che Frederick Mason Perkins aveva lasciato al Sacro Convento.</p>
+            <p>Forse in quella occasione si intensificarono i rapporti tra Federico Zeri – estensore del catalogo della collezione Perkins (1988) – e i Riccardi. I tre furono infatti legati da amicizia, oltre che da numerosi scambi professionali, come testimoniano le annotazioni dello studioso sui versi di un centinaio di fotografie di opere da loro commercializzate e due perizie su Nature morte redatte da Zeri nel 1998, poco prima di morire.</p>
+            <p>I Riccardi sono stati protagonisti del mercato dell’arte italiano del secondo Novecento e dell’inizio del XXI secolo.</p>
+          </div>
+          <div id="Localizzazioni" class="content">
+            <section id="map">
+              <div id="chartdiv"></div>
+            </section>
+          </div>
+          <div id="Relazioni" class="content">
+            <h2>Collaboratori</h2>
+            <ul>
+              <li>Federico Zeri (storico dell'arte)</li>
+            </ul>
+          </div>
+          <div id="Eventi" class="content">
+            <h2>Eventi significativi nell'attività antiquariale</h2>
+            <ul>
+              <li>1973 - <i>Prima edizione della Mostra-Mercato di Antiquariato di Assisi</i>: I Riccardi di Assisi inaugurano la prima edizione della Mostra-Mercato di Assisi con l'esposizione dei dipinti senesi della collezione Mason Perkins donati al Sacro Convento</li>
+            </ul>
+          </div>
         </div>
       </div>
       <nav class="scheda-sfoglia" aria-label="Altre schede">
