@@ -18,6 +18,7 @@ import csv
 import html
 import json
 import pathlib
+import sys
 
 # ── Nome del file delle entita' ────────────────────────────────────
 # Il file sta passando da "entità" (accentato) a "entita" senza accento.
@@ -43,10 +44,33 @@ def ENTITA_JSON():
 
 
 def load_tsv(path):
+    """Legge un TSV come lista di dizionari, riga per riga.
+
+    Le colonne in piu' rispetto all'intestazione finiscono, per come
+    funziona csv.DictReader, tutte insieme in una chiave None e il loro
+    valore e' una LISTA, non una stringa. Una sola tabulazione di troppo
+    in coda a una riga bastava a far fallire l'intero build con
+    "AttributeError: 'list' object has no attribute 'strip'": e'
+    successo il 22 settembre con la riga IT_214 di luoghi.tsv, che aveva
+    tredici campi invece di dodici, e la pagina Persone non e' piu' stata
+    generata.
+
+    Un refuso di battitura in un foglio dati non deve fermare la
+    pubblicazione del sito: le colonne di troppo vuote si buttano via in
+    silenzio, e se invece contengono qualcosa si avvisa sul registro
+    della CI senza interrompere, perche' li' c'e' un dato che qualcuno
+    ha scritto e che nessuno sta leggendo.
+    """
     with open(path, encoding="utf-8") as f:
         reader = csv.DictReader(f, delimiter="\t")
         rows = []
-        for row in reader:
+        for n, row in enumerate(reader, start=2):
+            extra = row.pop(None, None)
+            if extra:
+                testo = [e for e in extra if (e or "").strip()]
+                if testo:
+                    print(f"  [{path}] riga {n}: {len(extra)} colonne oltre "
+                          f"l'intestazione, ignorate: {testo}", file=sys.stderr)
             if not any((v or "").strip() for v in row.values()):
                 continue
             rows.append({(k or "").strip(): (v or "").strip() for k, v in row.items()})

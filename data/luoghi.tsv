@@ -258,7 +258,7 @@ IT_210	Italia	Veneto	Venezia	San Marco	3486	RI_I	1882	1899	Consiglio con David G
 IT_211	Italia	Toscana	Figline	vicolo Calugi		PR	1960	1967	Giovanni Pratesi (magazzino)		
 IT_212	Italia	Toscana	Firenze	via Maggio	13	PR	1967	2023	Giovanni Pratesi "Giovanni Pratesi Antiquario" (Palazzo Ridolfi)		
 IT_213	Italia	Veneto	Venezia	San Moisé	1473	VE_I	1899 ca.	1903 ca.	Gino Sarfatti e Giuseppe Guetta, "The Venice Art Company"		
-IT_214	Italia	Veneto	Venezia	San Moisé	1777-1778	VE_I	1901 ca.	1903 ca.	Gino Sarfatti e Giuseppe Guetta, "The Venice Art Company"			
+IT_214	Italia	Veneto	Venezia	San Moisé	1777-1778	VE_I	1901 ca.	1903 ca.	Gino Sarfatti e Giuseppe Guetta, "The Venice Art Company"		
 IT_216	Italia	Veneto	Venezia	Calle Ridotto	1361	VE_I	1901 ca.	1903 ca.	Gino Sarfatti e Giuseppe Guetta, "The Venice Art Company" (Palazzo Dandolo o Palazzo Ridotto)		
 UK_1	Regno Unito	Regno Unito	Londra	Carlton Street		BE_II	1924	1925	Giuseppe Bellesi (Pall Mall Deposit, magazzino)		
 UK_2	Regno Unito	Regno Unito	Londra	Duke Street	2	BE_II	1937	1937	Giuseppe Bellesi, "The Italian Art Gallery"		
@@ -266,7 +266,7 @@ UK_3	Regno Unito	Regno Unito	Londra	King Street		VO_II	1925 ca.	1932 ca.	Giusepp
 UK_4	Regno Unito	Regno Unito	Londra	New Bond Street	174	BE_II	1929	1929	Giuseppe Bellesi, "The Italian Art Gallery"		
 UK_5	Regno Unito	Regno Unito	Londra	Paddington Green	15	BE_II	1948	1957	Giuseppe Bellesi, "The Italian Art Gallery"		
 UK_7	Regno Unito	Regno Unito	Londra	Savile Row	32	BE_II	1926	1926	Giuseppe Bellesi, "The Italian Art Gallery"		
-UK_8	Regno Unito	Regno Unito	Londra	Market Lane		CO_IV	1767	1786	Giovanni Battista Torre e Paul Colnaghi, "Torre & Co."	51.50855451954706 	-0.13361600000002535
+UK_8	Regno Unito	Regno Unito	Londra	Market Lane		CO_IV	1767	1786	Giovanni Battista Torre e Paul Colnaghi, "Torre & Co."		
 UK_9	Regno Unito	Regno Unito	Londra	Pall Mall	132	CO_IV	1786	1799	Giovanni Battista Torre e Paul Colnaghi, "Torre & Co."; dal 1788 solo Paul Colnaghi, "Colnaghi & Co."		
 UK_10	Regno Unito	Regno Unito	Londra	Cockspur Lane	23	CO_IV	1799	1825	Paul, Dominic e Martin Colnaghi, "Colnaghi & Co.", poi Dominic Colnaghi e John Antony Scott, poi William McKay, "P. & D. Colnaghi & Co."	51.507453810385236	-0.12983994289317283
 UK_11	Regno Unito	Regno Unito	Londra	Pall Mall East	53	CO_IV	1825	1911	"P. & D. Colnaghi & Co."		
