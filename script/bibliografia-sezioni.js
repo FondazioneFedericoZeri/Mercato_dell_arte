@@ -16,7 +16,11 @@ document.addEventListener("DOMContentLoaded", function () {
         return document.getElementById("sezione-" + chiave);
     }
 
+    /* "bib-aperta" sull'elemento radice dice al foglio di stile che
+       una raccolta e' aperta: e' cosi' che l'anteprima sfumata sotto
+       le carte sa quando togliersi di mezzo. */
     function chiudiTutto() {
+        document.documentElement.classList.remove("bib-aperta");
         carte.forEach(function (c) {
             c.setAttribute("aria-expanded", "false");
             c.classList.remove("aperta");
@@ -29,6 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
         var sezione = sezioneDi(chiave);
         if (!sezione) return false;
         chiudiTutto();
+        document.documentElement.classList.add("bib-aperta");
         sezione.classList.add("aperta");
         carte.forEach(function (c) {
             if (c.getAttribute("data-sezione") === chiave) {

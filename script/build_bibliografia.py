@@ -311,6 +311,103 @@ def carta(page, chiave, quante, titolo, descrizione):
 		page.span(klass="bib-carta-d", _t=descrizione)
 
 
+def senza_link(testo):
+	"""Il testo della voce senza i collegamenti che contiene.
+
+	Nell'anteprima non si deve poter cliccare niente: i collegamenti
+	spariscono qui, dal markup, non con una regola di stile che li
+	lascerebbe comunque raggiungibili col tabulatore."""
+	return re.sub(r"</?a\b[^>]*>", "", testo or "")
+
+
+def voci_anteprima(stampa, interviste, archivio, legame, quante=4):
+	"""Le prime voci di ciascuna delle tre raccolte.
+
+	Una colonna per raccolta, nello stesso ordine delle carte qui
+	sopra. Prima l'anteprima pescava solo fra le fonti a stampa: stava
+	sotto tre carte e faceva vedere il contenuto di una sola, per
+	giunta le prime in ordine alfabetico, che sono quasi tutte
+	cataloghi della stessa casa d'aste.
+
+	Le tre forme si riconoscono anche sbiadite, perche' sono scritte
+	in modo diverso: una citazione bibliografica, un nome con luogo e
+	data, una segnatura d'archivio.
+	"""
+	# fonti a stampa: in ordine alfabetico, come nella sezione
+	a_stampa = []
+	for lettera in sorted(stampa):
+		for _, riga in sorted(stampa[lettera],
+				      key=lambda v: ordina_come_parola(v[0])):
+			a_stampa.append(senza_link(riga))
+			if len(a_stampa) >= quante:
+				break
+		if len(a_stampa) >= quante:
+			break
+
+	# interviste: nome dell'entita' e poi luogo e data, come si leggono
+	viste = []
+	for bid, item in interviste.items():
+		nome = (legame.get(bid) or [(None, None)])[0][0]
+		testo, meta = riga_intervista(item)
+		riga = ", ".join(p for p in (testo, meta) if p)
+		if nome:
+			riga = f"{nome} — {riga}" if riga else nome
+		if riga:
+			viste.append(senza_link(riga))
+		if len(viste) >= quante:
+			break
+
+	# archivio: citta', istituto e poi fondo e segnatura. Le tre parti
+	# stanno in colonne diverse del foglio dati e nella sezione vera
+	# fanno da titoletti; qui vanno messe in fila, se no la voce si
+	# riduce a un fondo senza dire dove si trova.
+	#
+	# Si saltano le voci che restano troppo scarne — c'e' chi ha solo
+	# la citta' — e si prende una citta' diversa per riga: le prime
+	# quattro del file sono tutte veneziane e la colonna sembrava
+	# ripetere quattro volte la stessa cosa.
+	carte = []
+	citta_prese = set()
+	for _, item in archivio.items():
+		pezzi = [(item.get(k) or "").strip() for k in
+			 ("Città, editore o rivista", "Istituto", "Fondo", "Segnatura")]
+		riga = senza_link(", ".join(p for p in pezzi if p))
+		luogo = pezzi[0]
+		if len(riga) < 24 or luogo in citta_prese:
+			continue
+		citta_prese.add(luogo)
+		carte.append(riga)
+		if len(carte) >= quante:
+			break
+
+	return [a_stampa, viste, carte]
+
+
+def anteprima(page, stampa, interviste, archivio, legame):
+	"""Uno scorcio sfumato di quel che c'e' dietro le tre carte.
+
+	Con le tre sezioni chiuse — come la pagina si apre — sotto le carte
+	restavano ottocento pixel di bianco fino al footer, e non si capiva
+	se sotto ci fosse qualcosa o se la pagina finisse li'.
+
+	Tre colonne, una per carta, ciascuna con le prime voci vere della
+	sua raccolta, sbiadite verso il basso. Non e' roba su cui si possa
+	fare niente — niente clic, niente tabulatore, e i lettori di
+	schermo la saltano, se no troverebbero due volte le stesse voci.
+	"""
+	colonne = voci_anteprima(stampa, interviste, archivio, legame)
+
+	with page.div(klass="bib-anteprima", **{"aria-hidden": "true"}):
+		with page.div(klass="bib-anteprima-colonne"):
+			for voci in colonne:
+				with page.div(klass="bib-anteprima-colonna"):
+					for riga in voci:
+						page.p(_t=riga)
+		page.p(klass="bib-anteprima-invito",
+		       _t="Scegli una delle tre raccolte qui sopra "
+			  "per aprire l\u2019elenco.")
+
+
 def sezione_stampa(page, stampa):
 	"""L'elenco alfabetico di sempre, su tre colonne.
 
@@ -458,6 +555,8 @@ def build_html():
 					      "Fonti archivistiche",
 					      "Documenti conservati in archivi, musei e biblioteche. "
 					      "In ordine topografico, per luogo.")
+
+				anteprima(page, stampa, interviste, archivio, legame)
 
 				sezione_stampa(page, stampa)
 				sezione_interviste(page, interviste, legame)

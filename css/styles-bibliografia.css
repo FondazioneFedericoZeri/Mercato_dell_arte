@@ -396,6 +396,98 @@ footer img {
     display: block;
 }
 
+/* ── L'anteprima sfumata ──────────────────────────────────────
+   Con le tre sezioni chiuse sotto le carte restava un campo di
+   bianco fino al footer. Qui ogni carta ha sotto di se' le prime
+   voci della sua raccolta, sbiadite fino a sparire: si vede che
+   cosa c'e' sotto senza aprire niente, e si vede che le tre
+   raccolte contengono cose di natura diversa.
+
+   Non e' contenuto su cui si possa agire: niente clic, niente
+   tabulatore (nel markup i collegamenti non ci sono proprio) e
+   aria-hidden la toglie ai lettori di schermo, che troverebbero
+   due volte le stesse voci. */
+.bib-anteprima {
+    display: none;
+}
+
+/* Compare solo col javascript acceso. Senza, le tre sezioni sono
+   tutte aperte e di bianco non ce n'e'. */
+.con-js .bib-anteprima {
+    display: block;
+    position: relative;
+    max-width: 1180px;
+    /* Il margine interno e' quello delle carte, non i 34px delle
+       sezioni aperte: cosi' ogni colonna comincia dove comincia il
+       testo della carta che le sta sopra. */
+    margin: -1px auto 34px auto;
+    padding: 28px 19px 0 19px;
+    box-sizing: border-box;
+    background-color: var(--carta-fondo);
+    border: 1px solid var(--carta-bordo);
+    border-radius: 0 0 10px 10px;
+    pointer-events: none;
+    user-select: none;
+}
+
+/* Appena si sceglie una raccolta, l'anteprima sparisce: il suo
+   posto lo prende la sezione vera. */
+.con-js.bib-aperta .bib-anteprima {
+    display: none;
+}
+
+/* Tre colonne fisse, non "columns": ogni colonna e' una raccolta e
+   deve restare sotto la sua carta. Con il testo a colonne il
+   browser avrebbe distribuito le voci come gli faceva comodo. */
+.bib-anteprima-colonne {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    align-items: start;
+    /* Le voci sbiadiscono verso il basso. La maschera va ripetuta
+       col prefisso -webkit-: senza, Safari la ignora e l'anteprima
+       si taglia di netto. */
+    -webkit-mask-image: linear-gradient(to bottom, #000 35%, transparent 100%);
+    mask-image: linear-gradient(to bottom, #000 35%, transparent 100%);
+}
+
+.bib-anteprima-colonna p {
+    margin: 0 0 14px 0;
+    font-size: var(--fs-body-sm);
+    line-height: 1.55;
+    color: #6d6a63;
+}
+
+/* L'invito sta sotto la sfumatura, a piena opacita': e' l'unica
+   cosa dell'anteprima che debba leggersi fino in fondo. */
+.bib-anteprima-invito {
+    margin: 0;
+    padding: 16px 0 26px 0;
+    text-align: center;
+    font-size: var(--fs-body-sm);
+    color: #7a766c;
+}
+
+@media (max-width: 760px) {
+    .con-js .bib-anteprima {
+        padding: 22px 18px 0 18px;
+    }
+
+    /* Le carte sono gia' impilate: l'anteprima fa lo stesso. Di ogni
+       raccolta resta una voce sola — tre in tutto, una per tipo.
+       Tagliando invece l'altezza complessiva si vedevano solo le
+       prime voci delle fonti a stampa, e l'anteprima tornava a
+       raccontare una raccolta su tre. */
+    .bib-anteprima-colonne {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 0;
+    }
+
+    .bib-anteprima-colonna p:not(:first-child) {
+        display: none;
+    }
+}
+
 /* Quel che si apre dopo il clic sta su un fondo grigio: si vede a
    colpo d'occhio che e' una sezione a se', e non il seguito della
    pagina. */
