@@ -1871,6 +1871,11 @@
         "Nome": "Di Castro Eugenio",
         "Relazioni": [
             {
+                "Persona_1": "DI_I_3",
+                "Persona_2": "DI_I_1",
+                "Tipo_di_relazione": "padre"
+            },
+            {
                 "Persona_1": "DI_I_1",
                 "Persona_2": "DI_I_2",
                 "Tipo_di_relazione": "padre"
@@ -1887,6 +1892,11 @@
             }
         ],
         "Persone": {
+            "DI_I_3": {
+                "Nome": "Angelo Di Castro",
+                "Nascita": "",
+                "Morte": ""
+            },
             "DI_I_1": {
                 "Nome": "Eugenio Di Castro",
                 "Nascita": "1890",
