@@ -141,7 +141,7 @@ nav ul li a:hover {
     /* Cresce con la finestra ma non oltre: e' il titolo della pagina e
        deve leggersi da lontano, senza pero' spingere la fotografia
        fuori dalla fascia sugli schermi stretti. */
-    font-size: clamp(42px, 6.6vw, 88px);
+    font-size: clamp(56px, 6.6vw, 88px);
     line-height: 1;
     color: #fff;
 }
@@ -369,13 +369,16 @@ body.gal-bloccato .torna-su {
 .striscia-elenco {
     margin: 0;
     padding: 0;
-    list-style: none;   
+    list-style: none;   /* i pallini sono di troppo: le righe sono poche */
 }
 
 .striscia-voce + .striscia-voce {
     margin-top: 4px;
 }
 
+.striscia-voce strong {
+    font-weight: 600;
+}
 
 .striscia-link {
     color: var(--link);
@@ -404,7 +407,10 @@ body.gal-bloccato .torna-su {
     flex-direction: column;
     /* resta visibile mentre si scorre una biografia lunga */
     position: sticky;
-    top: 24px;
+    /* 24 pixel sotto la testata, non sotto il bordo della finestra:
+       con "top: 24px" l'indice scorreva sotto la testata (alta 68)
+       e le prime due voci sparivano. */
+    top: calc(var(--altezza-testata) + 24px);
     border-top: 1px solid #e6e6e6;
 }
 

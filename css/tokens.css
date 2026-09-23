@@ -111,6 +111,8 @@
     :root {
         --margine-pagina: var(--margine-stretto);
         --stacco-titolo:  26px;
+        /* Sul telefono la testata e' 10 + 44 (il bottone del menu') + 10. */
+        --altezza-testata: 64px;
     }
 }
 
@@ -194,6 +196,10 @@ h1, h2, h3, h4, h5, h6 {
     height: 42px;
     width: auto;
     max-height: none;
+    /* Sul telefono i fogli delle pagine hanno "footer img { max-width:
+       100px }": con l'altezza fissa qui sopra il logo veniva schiacciato
+       a 100x42 invece di 155x42. */
+    max-width: none;
     display: block;
 }
 
@@ -223,6 +229,20 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer-ente p a:hover {
     text-decoration-color: #fff;
+}
+
+/* La testata resta ferma in alto su ogni pagina.
+
+   Progetto, Documentazione e le schede antiquario hanno nel proprio
+   foglio "html, body { height: 100% }": <body> e' alto quanto la
+   finestra e il contenuto gli sborda sotto. Un elemento "sticky" resta
+   fermo solo finche' c'e' il suo contenitore, cosi' dopo una schermata
+   la testata se ne andava con il resto della pagina, mentre sulle
+   altre pagine restava in alto. Con l'altezza libera (e almeno quella
+   della finestra, per il pie' di pagina) si comporta come altrove. */
+html body {
+    height: auto;
+    min-height: 100vh;
 }
 
 /* Stessa testata su ogni pagina.
@@ -264,6 +284,117 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 16px;
         font-weight: 500;
         padding: 5px 10px;
+    }
+}
+
+/* Fra 769 e 1100 pixel (tablet in verticale, finestre affiancate) il
+   menu' completo non ci stava: nome, sei voci e logo della Fondazione
+   occupano 1006 pixel, quindi "Bibliografia" e il logo finivano fuori
+   dallo schermo e la pagina scorreva di lato. In questa fascia il logo
+   si toglie (resta nel pie' di pagina, come sul telefono) e le voci si
+   avvicinano: tutto sta in circa 700 pixel. */
+@media (min-width: 769px) and (max-width: 1100px) {
+    .testata-filo,
+    .testata-ente {
+        display: none;
+    }
+
+    .marchio {
+        font-size: 24px;
+    }
+
+    html body header nav ul li {
+        margin-left: 4px;
+    }
+
+    html body header nav ul li a {
+        padding: 5px 8px;
+    }
+}
+
+/* Il menu' a tendina del telefono, uguale su tutte le pagine.
+
+   Ogni foglio di stile aveva il suo: la testata era alta 60, 68, 80 o
+   96 pixel, le voci erano centrate e distanziate su alcune pagine,
+   allineate a sinistra e attaccate su altre, piu' piccole sugli
+   Antiquari; sul Progetto il bottone andava sotto il nome del sito e
+   in home stava a meta' riga invece che sul bordo destro.
+
+   ":not(#_)" non seleziona niente di piu': serve solo a far pesare
+   queste regole piu' di quelle delle pagine, alcune delle quali usano
+   una classe (".menu") invece del tag. */
+@media (max-width: 768px) {
+    html body header:not(#_) {
+        padding: 10px var(--margine-pagina);
+    }
+
+    html body header:not(#_) .header-container {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 0;
+        padding: 0;
+    }
+
+    /* Il bottone va sul bordo destro. Dopo di lui resta il contenitore
+       del menu', che sul telefono non occupa spazio: la tendina e'
+       posizionata rispetto alla testata. */
+    html body header:not(#_) .menu-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 -10px 0 auto;   /* il bordo del simbolo cade sul margine */
+        width: 44px;
+        height: 44px;             /* misura minima consigliata per il dito */
+        padding: 0;
+        border: none;
+        background: none;
+        color: var(--testo);
+        font-size: 24px;
+        line-height: 1;
+        cursor: pointer;
+    }
+
+    html body header:not(#_) .testata-destra {
+        gap: 0;
+    }
+
+    html body header:not(#_) nav ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        width: auto;
+        margin: 0;
+        padding: 6px 0 10px;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        background-color: #f8f8f8;
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08);
+        border-top: 1px solid #e6e6e6;
+        z-index: 1000;
+    }
+
+    html body header:not(#_) nav ul.show {
+        display: flex;
+    }
+
+    html body header:not(#_) nav ul li {
+        margin: 0;
+        text-align: center;
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    html body header:not(#_) nav ul li a {
+        display: block;
+        padding: 11px var(--margine-pagina);
+        font-size: 16px;
+        font-weight: 500;
+        border-radius: 0;
     }
 }
 

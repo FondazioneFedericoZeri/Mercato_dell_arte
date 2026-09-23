@@ -1361,3 +1361,55 @@ footer img {
         transition: none;
     }
 }
+
+/* Tablet: fra 769 e 1100 pixel la sagoma accanto a "Gli antiquari"
+   teneva la larghezza fissa di 400 pixel piu' 200 di margine destro e
+   a 769-800 pixel usciva dallo schermo, facendo scorrere la pagina di
+   lato. Qui si stringe insieme alla finestra. */
+@media (min-width: 769px) and (max-width: 1100px) {
+    .svg-container {
+        flex-shrink: 1;
+        min-width: 0;
+        margin-right: 0;
+    }
+
+    .svg-container svg {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+
+    /* Anche il blocco di testo accanto aveva 120 + 60 pixel di rientro
+       fisso: sul tablet la colonna si riduceva a circa 200 pixel e il
+       paragrafo andava a capo ogni due o tre parole. */
+    #intro-section {
+        margin-left: 0;
+        padding-left: var(--margine-pagina);
+        padding-right: var(--margine-pagina);
+    }
+}
+
+/* La legenda del grafico dei protagonisti va a capo invece di uscire
+   dal suo riquadro quando la colonna e' stretta; e non scende sotto i
+   12 pixel, la misura minima del sito. */
+.pr-legenda {
+    flex-wrap: wrap;
+    row-gap: 4px;
+}
+
+@media (max-width: 768px) {
+    .pr-legenda {
+        font-size: var(--fs-caption);
+    }
+}
+
+/* Sul telefono il riquadro "La bibliografia" aveva 40 pixel di padding
+   per lato: a 320 pixel la parola BIBLIOGRAFIA non ci stava piu' e il
+   riquadro usciva di 11 pixel a sinistra. Qui usa il margine di pagina. */
+@media (max-width: 768px) {
+    .biblio-right {
+        padding: 40px var(--margine-pagina);
+        min-width: 0;
+        overflow-wrap: anywhere;
+    }
+}

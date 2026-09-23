@@ -670,3 +670,47 @@ main > .titolo-pagina {
         padding: 22px 20px 0 20px;
     }
 }
+
+
+/* Tablet e telefono: la citazione va sotto il testo, a tutta
+   larghezza, e scende di corpo.
+
+   Fra 769 e 1024 pixel le due colonne restavano affiancate e la
+   colonna di testo si riduceva a circa 180 pixel. Sul telefono la
+   citazione teneva i 32 pixel di corpo e i 60 + 80 di margini laterali
+   pensati per il desktop, e andava a capo ogni una o due parole. */
+@media (max-width: 1024px) {
+    #two-column-section .columns-container {
+        flex-direction: column-reverse;
+        gap: 0;
+    }
+
+    #two-column-section .left-column {
+        max-width: none;
+        margin: 0;
+    }
+
+    /* width: auto e border-box perche' la regola del telefono qui sopra
+       gli da' "width: 100%": sommata al padding la fascia usciva di 36
+       pixel dallo schermo. */
+    #two-column-section .right-column {
+        box-sizing: border-box;
+        width: auto;
+        margin: 24px 0 0 0;
+        padding: 28px var(--margine-pagina) 32px;
+    }
+
+    #two-column-section .column.right-column p {
+        margin: 0;
+        padding: 0;
+        max-width: 34ch;
+        font-size: clamp(22px, 3.4vw, 28px);
+        line-height: 1.3;
+    }
+
+    #two-column-section .quote-mark-left,
+    #two-column-section .quote-mark-right {
+        font-size: 48px;
+        line-height: 0;
+    }
+}

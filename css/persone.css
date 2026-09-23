@@ -287,6 +287,23 @@
     font-variant-numeric: tabular-nums;
   }
 
+  /* Sui telefoni piu' stretti (320-400 pixel) "collaboratori 164" non
+     stava nella sua terza di riga: l'ultima linguetta usciva dallo
+     schermo e la pagina scorreva di lato. Qui il numero va sotto
+     l'etichetta e le tre linguette si dividono lo spazio in parti
+     uguali. */
+  @media (max-width: 400px) {
+    .mobile-tab {
+      flex: 1 1 0;
+      min-width: 0;
+      padding: 6px 2px;
+      line-height: 1.25;
+    }
+    .mobile-tab .n {
+      display: block;
+    }
+  }
+
   @media (max-width: 780px) {
     .mobile-tabs { display: flex; }
     .columns { grid-template-columns: 1fr; gap: 8px; }
@@ -357,7 +374,10 @@
      all'altezza dell'header, altrimenti le due si sovrapporrebbero
      scorrendo la pagina. */
   .controls {
-    top: 82px;
+    /* Subito sotto la testata, che ora ha la stessa altezza su tutte
+       le pagine (tokens.css): con gli 82 pixel di prima restava una
+       fessura di 14 pixel da cui si vedeva scorrere l'elenco. */
+    top: var(--altezza-testata);
   }
 
   footer {
@@ -425,7 +445,7 @@
     }
 
     .controls {
-      top: 70px;
+      top: var(--altezza-testata);
     }
 
     footer {
@@ -699,7 +719,8 @@
   .pi-ruolo {
     padding: 1px 7px;
     border-radius: 999px;
-    font-size: 11px;
+    /* 12 pixel, la misura minima del sito: era 11. */
+    font-size: var(--fs-caption);
     letter-spacing: 0.04em;
     text-transform: uppercase;
     background: #f0f0f0;

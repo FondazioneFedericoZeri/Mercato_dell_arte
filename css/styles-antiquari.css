@@ -469,7 +469,7 @@ nav ul li a:hover {
 }
 
 .card-text h3 {
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 400;  /* niente grassetto */
     font-style: italic;
     line-height: 1.25;
@@ -583,7 +583,12 @@ html, body {
     margin: 0;
     padding: 0;
     width: 100%;
-    overflow-x: hidden; /* Evita il scrolling orizzontale */
+    /* "clip" e non "hidden": taglia lo stesso quel che sborda di lato,
+       ma non trasforma <body> in un contenitore che scorre per conto
+       suo. Con "hidden" a scorrere era <body> e non la finestra, e i
+       comandi che guardano la finestra (come la dissolvenza in
+       scripts-antiquari.js) non se ne accorgevano. */
+    overflow-x: clip;
 }
 
 body {
