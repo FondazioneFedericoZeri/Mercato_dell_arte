@@ -80,11 +80,22 @@ nav ul li a:hover {
     /* Il rientro condiviso al posto dei 120 pixel di margine sinistro:
        cosi' il testo d'apertura comincia dove comincia il titolo. */
     padding: 20px var(--rientro-pagina);
-    min-height: 600px !important;
+    /* L'apertura riempie la finestra sotto la testata, fra 420 e 600
+       pixel. Prima era 600 fissi: su un portatile la parte visibile
+       sotto la testata e' spesso piu' bassa, il blocco si centrava in
+       uno spazio che non si vedeva tutto e la barra di ricerca finiva
+       sul bordo inferiore dello schermo. */
+    min-height: clamp(420px, calc(100vh - var(--altezza-testata)), 600px);
+    min-height: clamp(420px, calc(100svh - var(--altezza-testata)), 600px);
+    box-sizing: border-box;
 }
 
 #intro-section h2 {
     font-size: 36px;
+    /* Senza il margine superiore del browser (30 pixel) il blocco
+       si centra davvero: prima il titolo partiva piu' in basso del
+       centro della sagoma accanto. */
+    margin-top: 0;
     margin-bottom: 10px;
     font-weight: 400;
 }
@@ -273,6 +284,18 @@ nav ul li a:hover {
     flex-shrink: 0; /* Impedisce all'SVG di ridursi */
     max-width: 600px; /* Limita la larghezza massima dell'SVG */
     margin-right: 150px;
+    display: flex;
+    align-items: center;
+}
+
+/* La sagoma segue l'altezza dell'apertura: alta 500 pixel quando
+   c'e' spazio, piu' bassa sulle finestre basse, cosi' non allunga
+   la sezione oltre lo schermo. */
+.svg-container svg {
+    height: min(500px, calc(100vh - var(--altezza-testata) - 60px));
+    height: min(500px, calc(100svh - var(--altezza-testata) - 60px));
+    min-height: 360px;
+    width: auto;
 }
 
 .chemin {
@@ -296,6 +319,9 @@ nav ul li a:hover {
    erano 20 pixel di padding piu' i 120 di margine della sezione
    sopra, e il titolo cadeva a 140 dal bordo. */
 #Titolo {
+    /* "Cerca" porta qui con un'ancora: senza questo margine il titolo
+       finiva nascosto sotto la testata, che resta ferma in alto. */
+    scroll-margin-top: var(--altezza-testata);
     background-color: #f9f9f9;
     padding: 22px var(--rientro-pagina) 20px var(--rientro-pagina);
     margin: 0;
@@ -390,14 +416,23 @@ nav ul li a:hover {
     justify-content: flex-start; /* Allinea le card all'inizio della riga */
     gap: 20px; /* Spazio tra le card */
     width: 100%; /* Assicura che il contenitore delle card riempia la riga */
+    /* Tre colonne che si stringono con la finestra, invece di card
+       larghe 380 pixel fissi: tre di quelle stavano solo sopra i 1300
+       pixel di finestra, e su un portatile se ne vedevano due. Sotto
+       i 1000 pixel circa (colonne piu' strette di 300) si passa a due. */
+    display: grid;
+    grid-template-columns: repeat(auto-fill,
+        minmax(max(300px, calc((100% - 40px) / 3)), 1fr));
 }
 
 .card-container .card {
     /*width: calc(33.33% - 20px); / 3 card per riga, considerando lo spazio tra le card */
-    width: 380px;
-    /* Altezza fissa per tutte le card. Cresciuta da 450px per lasciare
-       spazio al nome e alle città, ora più grandi. */
-    height: 470px;
+    /* La larghezza la decide la griglia: 380 pixel sugli schermi
+       larghi, meno sui portatili. */
+    width: auto;
+    /* Altezza uguale per tutte le card: 290 di immagine + 150 di
+       testo. Era 470 (310 + 160); scesa insieme alla larghezza. */
+    height: 440px;
     /* La card è una colonna: immagine di altezza fissa, testo che si
        prende quel che resta. Prima erano due percentuali (70%/30%) e
        ingrandire il testo lo faceva tagliare da overflow: hidden. */
@@ -413,8 +448,8 @@ nav ul li a:hover {
 
 .card-container .card img {
     width: 100%;
-    flex: 0 0 310px;  /* stessa altezza di prima (70% di 450px = 315px) */
-    height: 310px;
+    flex: 0 0 290px;
+    height: 290px;
     object-fit: cover; /* L'immagine mantiene le sue proporzioni e si ritaglia se necessario */
     object-position: center; /* L'immagine è centrata all'interno del contenitore */
     display: block;
@@ -422,7 +457,7 @@ nav ul li a:hover {
 }
 
 .card-container .card-text {
-    flex: 1 1 auto;   /* tutto lo spazio sotto l'immagine: 160px */
+    flex: 1 1 auto;   /* tutto lo spazio sotto l'immagine: 150px */
     min-height: 0;
     padding: 10px;
     display: flex;
@@ -626,6 +661,9 @@ body {
         #intro-section {
             text-align: center;
             margin: 0 auto; /* Centra il contenuto */
+            /* Senza la sagoma non serve riempire la finestra. */
+            min-height: 0;
+            padding-block: 40px;
         }
     
         /* Il titolo resta a sinistra anche sul telefono, come in
@@ -686,9 +724,13 @@ body {
         width: 100%;
     }
 
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+
     .card-container .card {
         width: 90%;
-        margin: 10px 0;
+        margin: 10px auto;
         /* Su schermo stretto il nome e le città possono andare a capo:
            la card si allunga invece di tagliarli. */
         height: auto;

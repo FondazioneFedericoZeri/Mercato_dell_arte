@@ -89,6 +89,11 @@
 
     --stacco-titolo:     40px;  /* fra la testata e il titolo di pagina */
 
+    /* Altezza della testata su schermo largo: 16 + 36 (il logo) + 16.
+       Serve alle pagine che vogliono riempire "il resto della finestra"
+       sotto la testata, come l'apertura degli Antiquari. */
+    --altezza-testata:   68px;
+
     /* Il rientro da usare sulle fasce a tutta larghezza — quelle con
        un fondo colorato, che non si possono restringere. Vale il
        margine di pagina sugli schermi stretti e, su quelli larghi,
@@ -218,6 +223,48 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer-ente p a:hover {
     text-decoration-color: #fff;
+}
+
+/* Stessa testata su ogni pagina.
+
+   Ogni foglio di stile ha la sua copia delle regole della testata e
+   nel tempo si sono separate: la testata era alta 76 pixel in home,
+   66 sui Luoghi, 81 su Persone e Protagonisti e 88 altrove, perche'
+   cambiavano il padding (15 o 20), i margini del <ul> (quelli del
+   browser, 16 sopra e sotto, o zero) e l'interlinea. Il menu' sembrava
+   "saltare" passando da una pagina all'altra.
+
+   Qui si fissa una volta sola. I selettori partono da "html body" solo
+   per pesare di piu' delle copie nei fogli delle pagine, che si
+   caricano dopo. Vale da 769 pixel in su: sotto c'e' il menu' a
+   tendina, che ogni pagina posiziona per conto suo. */
+@media (min-width: 769px) {
+    html body header {
+        padding: 16px 20px;
+    }
+
+    html body header .header-container {
+        min-height: 36px;   /* l'altezza del logo */
+        padding: 0;
+    }
+
+    html body header nav ul {
+        margin: 0;
+        padding: 0;
+        align-items: center;
+    }
+
+    html body header nav ul li {
+        margin: 0 0 0 20px;
+        line-height: 1.6;
+        font-size: 16px;
+    }
+
+    html body header nav ul li a {
+        font-size: 16px;
+        font-weight: 500;
+        padding: 5px 10px;
+    }
 }
 
 @media (max-width: 768px) {

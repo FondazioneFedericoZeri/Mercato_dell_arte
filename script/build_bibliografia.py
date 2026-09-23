@@ -263,14 +263,20 @@ def build_header(page):
 				            **{"aria-label": "Apri menu"}, _t="&#9776;")
 			with page.div(klass="testata-destra"):
 				with page.nav():
-					with page.ul():
-						with page.li():
-							page.a(_t="Progetto", href="progetto.html")
-							page.a(_t="Antiquari", href="antiquari.html")
-							page.a(_t="Luoghi", href="luoghi.html")
-							page.a(_t="Eventi", href="eventi.html")
-							page.a(_t="Persone", href="persone.html")
-							page.a(_t="Bibliografia", href="bibliografia.html")
+					# Una voce per <li>, come nelle altre pagine. Prima
+					# stavano tutte e sei nello stesso <li>: le separava
+					# solo lo spazio fra i tag, quindi erano piu' vicine
+					# che altrove, e sul telefono il menu' a tendina non
+					# le metteva in colonna.
+					with page.ul(klass="menu"):
+						for voce, href in (("Progetto", "progetto.html"),
+						                   ("Antiquari", "antiquari.html"),
+						                   ("Luoghi", "luoghi.html"),
+						                   ("Eventi", "eventi.html"),
+						                   ("Persone", "persone.html"),
+						                   ("Bibliografia", "bibliografia.html")):
+							with page.li():
+								page.a(_t=voce, href=href)
 				page.span(klass="testata-filo")
 				with page.a(klass="testata-ente", href=ZERI, target="_blank",
 					            rel="noopener",
