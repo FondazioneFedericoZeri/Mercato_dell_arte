@@ -369,16 +369,13 @@ body.gal-bloccato .torna-su {
 .striscia-elenco {
     margin: 0;
     padding: 0;
-    list-style: none;   /* i pallini sono di troppo: le righe sono poche */
+    list-style: none;   
 }
 
 .striscia-voce + .striscia-voce {
     margin-top: 4px;
 }
 
-.striscia-voce strong {
-    font-weight: 600;
-}
 
 .striscia-link {
     color: var(--link);
