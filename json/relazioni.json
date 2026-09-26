@@ -558,5 +558,12 @@
         "ID_entità_2": "BA_V",
         "ID_entità_Persona_1": "ST_NEW_1 ST_NEW_2 ST_NEW_3",
         "ID_entità_Persona_2": "BA_V_1"
+    },
+    "R_89": {
+        "ID": "R_89",
+        "ID_entità_1": "VE_I",
+        "ID_entità_2": "RI_I",
+        "ID_entità_Persona_1": "VE_I_1 VE_I_2",
+        "ID_entità_Persona_2": "RI_I_3"
     }
 }
