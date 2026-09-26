@@ -1,191 +1,422 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const timeline = document.getElementById('timeline');
-    const prevButton = document.getElementById('prev');
-    const nextButton = document.getElementById('next');
-    const scrollAmount = 200; // Quantità di scorrimento per ogni click
+// Istogramma degli eventi per decennio, diviso per secolo, con dettaglio sotto
+document.addEventListener("DOMContentLoaded", function () {
+  "use strict";
 
-    prevButton.addEventListener('click', () => {
-        timeline.scrollBy({
-            top: 0,
-            left: -scrollAmount,
-            behavior: 'smooth'
-        });
-    });
+  // Etichetta del decennio come intervallo (1890 -> "1890-1899")
+  function decennio(d) {
+    return d + "-" + (d + 9);
+  }
 
-    nextButton.addEventListener('click', () => {
-        timeline.scrollBy({
-            top: 0,
-            left: scrollAmount,
-            behavior: 'smooth'
-        });
-    });
-});
+  var EVENTI_URL = "https://raw.githubusercontent.com/FondazioneFedericoZeri/Mercato_dell_arte/main/json/eventi.json";
+  var ENTITA_URL = "https://raw.githubusercontent.com/FondazioneFedericoZeri/Mercato_dell_arte/main/json/entita.json";
+  // Vecchio nome accentato, usato se il primo non c'è
+  var ENTITA_URL_VECCHIO = "https://raw.githubusercontent.com/FondazioneFedericoZeri/Mercato_dell_arte/main/json/entit%C3%A0.json";
 
-//card
-document.addEventListener('DOMContentLoaded', function() {
-    const carouselWrapper = document.querySelector('.carousel-wrapper');
-    const cards = document.querySelectorAll('.carousel-card');
-    const prevButton = document.getElementById('prev');
-    const nextButton = document.getElementById('next');
-    let currentIndex = 0;
-    
+  var root = document.querySelector(".eventi-decadi");
+  if (!root) return; // sezione non presente in questa pagina
 
-    // Funzione per aggiornare la visualizzazione del carosello
-    function updateCarousel() {
-        // Calcola l'offset per centrare la card attiva
-        const offset = -currentIndex * 440 + (window.innerWidth / 2 - 200); // 440 = larghezza card (400px) + margine (40px)
-        carouselWrapper.style.transform = `translateX(${offset}px)`;
-    
-        // Aggiorna lo stato di attivazione delle card
-        cards.forEach((card, index) => {
-            card.classList.remove('active');
-            if (index === currentIndex) {
-                card.classList.add('active');
-            }
-        });
+  // Categorie con etichetta e colore, in quest'ordine
+  var CATS = [
+    ["vendite",       "Vendite",             "--ed-cat-vendite"],
+    ["pubblicazioni", "Pubblicazioni",       "--ed-cat-pubblicazioni"],
+    ["altro",         "Altri eventi",        "--ed-cat-altro"],
+    ["donazioni",     "Donazioni",           "--ed-cat-donazioni"],
+    ["esposizioni",   "Esposizioni e fiere", "--ed-cat-esposizioni"],
+    ["aperture",      "Aperture e chiusure", "--ed-cat-aperture"],
+    ["acquisizioni",  "Acquisizioni",        "--ed-cat-acquisizioni"]
+  ];
+  var CAT_LABEL = {};
+  CATS.forEach(function (c) { CAT_LABEL[c[0]] = c[1]; });
+
+  // Tipologia Evento (TSV) -> categoria definitiva
+  var CAT_MAP = {
+    "vendita all'asta": "vendite",
+    "vendita": "vendite",
+    "acquisto": "acquisizioni",
+    "acquisizione": "acquisizioni",
+    "inaugurazione / fondazione": "aperture",
+    "avvio attività": "aperture",
+    "chiusura": "aperture",
+    "chiusura dell'attività": "aperture",
+    "chiusura dell’attività": "aperture",
+    "pubblicazione": "pubblicazioni",
+    "donazione": "donazioni",
+    "mostra": "esposizioni",
+    "partecipazione a fiera": "esposizioni",
+    "prestito": "esposizioni",
+    "restauro": "altro",
+    "onoreficenza": "altro",
+    "scoperta": "altro",
+    "curatela": "altro",
+    "causa giudiziaria": "altro"
+  };
+
+  function catColor(key) {
+    var idx = CATS.filter(function (c) { return c[0] === key; })[0];
+    return idx ? getComputedStyle(root).getPropertyValue(idx[2]).trim() : "#999";
+  }
+
+  Promise.all([
+    fetch(EVENTI_URL).then(function (r) { return r.json(); }),
+    fetch(ENTITA_URL)
+      .then(function (r) { return r.ok ? r : fetch(ENTITA_URL_VECCHIO); })
+      .then(function (r) { return r.json(); })
+  ]).then(function (results) {
+    init(results[0], results[1]);
+  }).catch(function (err) {
+    console.error("Eventi a decadi: impossibile caricare i dati", err);
+    var chart = document.getElementById("ed-chart");
+    if (chart) chart.textContent = "Impossibile caricare gli eventi al momento.";
+  });
+
+  function init(eventiRaw, entitaRaw) {
+    // ---------- normalizzazione eventi ----------
+    var DATA = Object.keys(eventiRaw).map(function (id) {
+      var row = eventiRaw[id];
+      var annoRaw = (row["Anno"] || "").trim();
+      var m = /^(\d{4})/.exec(annoRaw);
+      var year = m ? parseInt(m[1], 10) : null;
+      var tipologia = (row["Tipologia Evento"] || "").trim();
+      var category = CAT_MAP[tipologia] || "altro";
+      var entityIds = (row["ID_entità"] || "").trim().split(/\s+/).filter(Boolean);
+      var entityNames = entityIds.map(function (eid) {
+        var ent = entitaRaw[eid];
+        return ent ? ent["Nome"] : eid;
+      });
+      return {
+        id: row["ID"],
+        year: year,
+        yearLabel: annoRaw,
+        category: category,
+        title: row["Descrizione sintetica"] || "",
+        desc: row["Descrizione dettagliata"] || "",
+        entityIds: entityIds,
+        entityNames: entityNames
+      };
+    }).filter(function (e) { return e.year !== null; });
+
+    // ---------- decadi ----------
+    var DECADES = [];
+    (function () {
+      var byDecade = {};
+      DATA.forEach(function (ev) {
+        var d = Math.floor(ev.year / 10) * 10;
+        byDecade[d] = byDecade[d] || [];
+        byDecade[d].push(ev);
+      });
+      var keys = Object.keys(byDecade).map(Number);
+      var min = Math.min.apply(null, keys), max = Math.max.apply(null, keys);
+      for (var d = min; d <= max; d += 10) DECADES.push({ decade: d, events: byDecade[d] || [] });
+    })();
+
+    var selectedDecade = (function () {
+      var best = DECADES[0];
+      DECADES.forEach(function (d) { if (d.events.length > best.events.length) best = d; });
+      return best.decade;
+    })();
+    // Le schede mostrano un decennio o un secolo intero
+    var selectedKind = "decade";
+
+    function secoloDi(anno) { return Math.floor(anno / 100) * 100; }
+
+    function scegliDecennio(decade, categoria) {
+      selectedKind = "decade";
+      selectedDecade = decade;
+      drilldownCategory = categoria;
+      renderChart();
+      renderCards();
+      scrollToDetail();
     }
-    
 
-    // Navigazione avanti
-    nextButton.addEventListener('click', function() {
-        if (currentIndex < cards.length - 1) {
-            currentIndex++;
-            updateCarousel();
-        }
-    });
+    function scegliSecolo(secolo) {
+      selectedKind = "century";
+      selectedDecade = secolo;
+      drilldownCategory = focusCategory;
+      renderChart();
+      renderCards();
+      scrollToDetail();
+    }
 
-    // Navigazione indietro
-    prevButton.addEventListener('click', function() {
-        if (currentIndex > 0) {
-            currentIndex--;
-            updateCarousel();
-        }
-    });
+    // Categoria isolata dalla legenda e categoria filtrata nel dettaglio
+    var focusCategory = null;
+    var drilldownCategory = null;
 
-    // Inizializza il carosello centrando la prima card
-    updateCarousel();
-});
+    function entLinks(ev) {
+      var frag = document.createDocumentFragment();
+      ev.entityIds.forEach(function (eid, i) {
+        if (i > 0) frag.appendChild(document.createTextNode(", "));
+        var a = document.createElement("a");
+        a.href = "../html/dettagli/dettaglio_" + eid + ".html";
+        a.target = "_blank";
+        a.textContent = ev.entityNames[i] || eid;
+        frag.appendChild(a);
+      });
+      return frag;
+    }
 
-//PUNTO-CARD
-//funzione per rendere card attiva
-document.addEventListener('DOMContentLoaded', function() {
-    const cards = document.querySelectorAll('.carousel-card');
+    // ---------- legenda ----------
+    function renderLegend() {
+      var el = document.getElementById("ed-legend");
+      el.innerHTML = "";
+      CATS.forEach(function (c) {
+        var key = c[0], label = c[1];
+        var total = DATA.filter(function (e) { return e.category === key; }).length;
+        var chip = document.createElement("button");
+        chip.type = "button";
+        chip.className = "ed-chip" + (focusCategory === key ? " is-isolated" : "");
+        chip.setAttribute("aria-pressed", focusCategory === key ? "true" : "false");
+        var dot = document.createElement("span");
+        dot.className = "ed-dot";
+        dot.style.background = catColor(key);
+        chip.appendChild(dot);
+        chip.appendChild(document.createTextNode(label + " "));
+        var n = document.createElement("span");
+        n.className = "ed-n";
+        n.textContent = "(" + total + ")";
+        chip.appendChild(n);
+        chip.addEventListener("click", function () { toggleFocus(key); });
+        el.appendChild(chip);
+      });
+      var reset = document.createElement("button");
+      reset.type = "button";
+      reset.className = "ed-reset-link";
+      reset.textContent = "Torna a tutte le categorie";
+      reset.hidden = focusCategory === null;
+      reset.addEventListener("click", function () { setFocus(null); });
+      el.appendChild(reset);
+    }
 
-    // Aggiungi l'event listener a ogni card
-    cards.forEach(card => {
-        card.addEventListener('click', function() {
-            // Rimuovi la classe 'active' da tutte le card
-            cards.forEach(card => card.classList.remove('active'));
+    function toggleFocus(key) { setFocus(focusCategory === key ? null : key); }
+    // Scorri fino al box di dettaglio, sotto l'header fisso
+    function scrollToDetail() {
+      var detail = document.querySelector(".ed-detail");
+      if (!detail) return;
+      var header = document.querySelector("header");
+      var headerH = header ? header.getBoundingClientRect().height : 0;
+      var top = detail.getBoundingClientRect().top + window.pageYOffset - headerH - 16;
+      window.scrollTo({ top: top, behavior: "smooth" });
+    }
 
-            // Aggiungi la classe 'active' alla card cliccata
-            this.classList.add('active');
-        });
-    });
-});
+    function setFocus(key) {
+      focusCategory = key;
+      drilldownCategory = key; // il drill-down aperto segue il nuovo focus
+      renderLegend();
+      renderChart();
+      renderCards();
+    }
 
+    // ---------- istogramma ----------
+    // Un blocco per secolo con colonne, etichette dei decenni e nome del secolo
+    function renderChart() {
+      var chart = document.getElementById("ed-chart");
+      chart.innerHTML = "";
+      var tip = document.getElementById("ed-chart-tip");
 
-document.addEventListener('DOMContentLoaded', function() {
-    const cards = document.querySelectorAll('.carousel-card');
-    const timeline = document.getElementById('timeline');
-    const points = document.querySelectorAll('.event-point');
+      var maxCount = focusCategory
+        ? Math.max.apply(null, DECADES.map(function (d) { return d.events.filter(function (e) { return e.category === focusCategory; }).length; }))
+        : Math.max.apply(null, DECADES.map(function (d) { return d.events.length; }));
+      // Altezza delle barre in percentuale
+      var quotaPerEvento = maxCount ? (94 / maxCount) : 0;
 
-    // Funzione per scrollare la timeline fino al punto evento
-    function scrollToEventPoint(eventId) {
-        const eventPoint = document.querySelector(`.event-point[data-id="${eventId}"]`);
-        if (eventPoint) {
-            const pointPosition = eventPoint.getBoundingClientRect().left + window.pageXOffset;
-            // Scroll diretto al punto evento
-            timeline.scroll({
-                top: 0,
-                left: pointPosition - (window.innerWidth / 2), // Centra il punto evento
-                behavior: 'smooth'
+      var gruppi = [];
+      DECADES.forEach(function (d) {
+        var secolo = secoloDi(d.decade);
+        var last = gruppi[gruppi.length - 1];
+        if (last && last.secolo === secolo) last.decadi.push(d);
+        else gruppi.push({ secolo: secolo, decadi: [d] });
+      });
+
+      gruppi.forEach(function (g) {
+        var secoloAttivo = selectedKind === "century" && selectedDecade === g.secolo;
+        var blocco = document.createElement("div");
+        blocco.className = "ed-secolo" + (secoloAttivo ? " is-active-century" : "");
+        blocco.style.flex = g.decadi.length + " " + g.decadi.length + " 0";
+
+        var barre = document.createElement("div");
+        barre.className = "ed-barre";
+        var etichette = document.createElement("div");
+        etichette.className = "ed-labels";
+
+        g.decadi.forEach(function (d) {
+          var decennioAttivo = selectedKind === "decade" && d.decade === selectedDecade;
+          var col = document.createElement("div");
+          col.className = "ed-col" + (decennioAttivo ? " is-active-decade" : "");
+          col.tabIndex = 0;
+          col.setAttribute("role", "button");
+
+          var byCat = {};
+          d.events.forEach(function (e) { byCat[e.category] = (byCat[e.category] || 0) + 1; });
+          var decadeTotal = focusCategory ? (byCat[focusCategory] || 0) : d.events.length;
+          col.setAttribute("aria-label", decennio(d.decade) + ", " + decadeTotal + " eventi" + (focusCategory ? " (" + CAT_LABEL[focusCategory] + ")" : ""));
+
+          var catsToDraw = focusCategory ? [[focusCategory, CAT_LABEL[focusCategory]]] : CATS;
+          catsToDraw.forEach(function (c) {
+            var key = c[0];
+            var n = byCat[key] || 0;
+            if (!n) return;
+            var seg = document.createElement("div");
+            seg.className = "ed-seg";
+            seg.style.height = (n * quotaPerEvento) + "%";
+            seg.style.background = catColor(key);
+            seg.addEventListener("mousemove", function (e) {
+              tip.innerHTML = "";
+              var strong = document.createElement("div");
+              strong.textContent = CAT_LABEL[key] + " — " + n;
+              var sub = document.createElement("div");
+              sub.className = "ed-tip-sub";
+              sub.textContent = decennio(d.decade);
+              tip.appendChild(strong); tip.appendChild(sub);
+              tip.style.left = e.clientX + "px";
+              tip.style.top = e.clientY + "px";
+              tip.classList.add("is-shown");
             });
-        }
-    }
+            seg.addEventListener("mouseleave", function () { tip.classList.remove("is-shown"); });
+            seg.addEventListener("click", function (e) {
+              e.stopPropagation();
+              scegliDecennio(d.decade, key);
+            });
+            col.appendChild(seg);
+          });
 
-    // Funzione per evidenziare una card e il punto evento corrispondente
-    function highlightCardAndEvent(cardId) {
-        // Rimuovi la classe 'active' da tutte le card
-        cards.forEach(card => card.classList.remove('active'));
+          col.addEventListener("mousemove", function (e) {
+            if (e.target !== col) return;
+            tip.innerHTML = "";
+            var strong = document.createElement("div");
+            strong.textContent = decennio(d.decade);
+            var sub = document.createElement("div");
+            sub.className = "ed-tip-sub";
+            sub.textContent = decadeTotal + " eventi";
+            tip.appendChild(strong); tip.appendChild(sub);
+            tip.style.left = e.clientX + "px";
+            tip.style.top = e.clientY + "px";
+            tip.classList.add("is-shown");
+          });
+          col.addEventListener("mouseleave", function () { tip.classList.remove("is-shown"); });
+          // click sulla colonna: segue il focus di legenda (o nessuno)
+          col.addEventListener("click", function () { scegliDecennio(d.decade, focusCategory); });
+          col.addEventListener("keydown", function (e) {
+            if (e.key === "Enter" || e.key === " ") { e.preventDefault(); col.click(); }
+          });
+          barre.appendChild(col);
 
-        // Aggiungi la classe 'active' alla card selezionata
-        const selectedCard = document.querySelector(`.carousel-card[data-id="${cardId}"]`);
-        if (selectedCard) {
-            selectedCard.classList.add('active');
-        }
-
-        // Rimuovi l'evidenziazione da tutti i punti evento
-        points.forEach(point => point.classList.remove('active'));
-
-        // Aggiungi l'evidenziazione al punto evento corrispondente
-        const eventPoint = document.querySelector(`.event-point[data-id="${cardId}"]`);
-        if (eventPoint) {
-            eventPoint.classList.add('active'); // Si colora automaticamente in base alla categoria
-        }
-    }
-
-    // Aggiungi l'event listener a ogni card
-    cards.forEach(card => {
-        card.addEventListener('click', function() {
-            const cardId = this.getAttribute('data-id');
-            highlightCardAndEvent(cardId); // Evidenzia la card e il punto evento
+          // Etichetta del decennio, apre gli eventi come la colonna
+          var lab = document.createElement("button");
+          lab.type = "button";
+          lab.className = "ed-label" + (decennioAttivo ? " is-active" : "");
+          // Apostrofo in uno span separato
+          var apo = document.createElement("span");
+          apo.className = "ed-apo";
+          apo.textContent = "’";
+          lab.appendChild(apo);
+          lab.appendChild(document.createTextNode(String(d.decade).slice(2)));
+          lab.setAttribute("aria-label", "Eventi " + decennio(d.decade));
+          lab.addEventListener("click", function () { scegliDecennio(d.decade, focusCategory); });
+          etichette.appendChild(lab);
         });
-    });
 
-    // Al caricamento della pagina, evidenzia la prima card e il primo punto evento
-    if (cards.length > 0) {
-        const firstCardId = cards[0].getAttribute('data-id'); // Ottieni l'ID della prima card
-        highlightCardAndEvent(firstCardId); // Evidenzia la prima card e il punto evento corrispondente
-    }
-});
+        // Il nome del secolo apre tutti gli eventi del secolo.
+        var nome = document.createElement("button");
+        nome.type = "button";
+        nome.className = "ed-secolo-nome" + (secoloAttivo ? " is-active" : "");
+        nome.textContent = g.secolo;
+        nome.setAttribute("aria-label", "Tutti gli eventi " + g.secolo + "–" + (g.secolo + 99));
+        nome.addEventListener("click", function () { scegliSecolo(g.secolo); });
 
-
-//scorrimento orizzontale al click sulle card
-const carouselWrapper = document.querySelector('.carousel-wrapper');
-let isDown = false;
-let startX;
-let scrollLeft;
-
-// Click attivo sul punto al click sul pulsante next
-document.addEventListener('DOMContentLoaded', function() {
-    const cards = document.querySelectorAll('.carousel-card');
-    const points = document.querySelectorAll('.event-point');
-    const nextButton = document.getElementById('next');
-    const prevButton = document.getElementById('prev');
-    let currentIndex = 0; // Mantiene traccia della card e del punto attivo
-
-    // Funzione per evidenziare la card e il punto evento corrispondente
-    function highlightCardAndEvent(index) {
-        // Rimuovi la classe 'active' da tutte le card e punti evento
-        cards.forEach(card => card.classList.remove('active'));
-        points.forEach(point => point.classList.remove('active'));
-
-        // Evidenzia la card attiva e il punto evento corrispondente
-        if (cards[index]) {
-            cards[index].classList.add('active');
-        }
-        if (points[index]) {
-            points[index].classList.add('active');
-        }
+        blocco.appendChild(barre);
+        blocco.appendChild(etichette);
+        blocco.appendChild(nome);
+        chart.appendChild(blocco);
+      });
     }
 
-    // Funzione per avanzare al prossimo punto e card
-    nextButton.addEventListener('click', function() {
-        if (currentIndex < cards.length - 1) {
-            currentIndex++; // Incrementa l'indice
-            highlightCardAndEvent(currentIndex); // Evidenzia il punto e la card successivi
-        }
-    });
+    // ---------- schede del drill-down ----------
+    function makeEvCard(ev) {
+      var card = document.createElement("div");
+      card.className = "ed-card";
+      card.style.setProperty("--ed-card-accent", catColor(ev.category));
 
-    // Funzione per tornare al punto e card precedente
-    prevButton.addEventListener('click', function() {
-        if (currentIndex > 0) {
-            currentIndex--; // Decrementa l'indice
-            highlightCardAndEvent(currentIndex); // Evidenzia il punto e la card precedenti
-        }
-    });
+      var top = document.createElement("div");
+      top.className = "ed-card-top";
+      var dot = document.createElement("span");
+      dot.className = "ed-dot";
+      dot.style.background = catColor(ev.category);
+      var yr = document.createElement("span");
+      yr.className = "ed-yr";
+      yr.textContent = ev.yearLabel;
+      var catLbl = document.createElement("span");
+      catLbl.textContent = CAT_LABEL[ev.category];
+      top.appendChild(dot); top.appendChild(yr); top.appendChild(catLbl);
 
-    // Inizializza la visualizzazione con la prima card e il primo punto attivi
-    highlightCardAndEvent(currentIndex);
+      var title = document.createElement("p");
+      title.className = "ed-card-title";
+      title.textContent = ev.title;
+
+      var desc = document.createElement("p");
+      desc.className = "ed-card-desc";
+      desc.textContent = ev.desc;
+
+      card.appendChild(top); card.appendChild(title); card.appendChild(desc);
+
+      if (ev.entityIds.length) {
+        var ents = document.createElement("p");
+        ents.className = "ed-card-ents";
+        ents.appendChild(entLinks(ev));
+        card.appendChild(ents);
+      }
+      return card;
+    }
+
+    function renderCards() {
+      var perSecolo = selectedKind === "century";
+      var tuttiNelPeriodo = [];
+      DECADES.forEach(function (x) {
+        var dentro = perSecolo ? secoloDi(x.decade) === selectedDecade : x.decade === selectedDecade;
+        if (dentro) tuttiNelPeriodo = tuttiNelPeriodo.concat(x.events);
+      });
+      var events = tuttiNelPeriodo.filter(function (e) { return !drilldownCategory || e.category === drilldownCategory; });
+      var periodo = perSecolo ? "secolo" : "decennio";
+
+      var titleEl = document.getElementById("ed-decade-title");
+      titleEl.textContent = selectedDecade + "–" + (selectedDecade + (perSecolo ? 99 : 9));
+
+      var countEl = document.getElementById("ed-decade-count");
+      countEl.innerHTML = "";
+      var countText = document.createElement("span");
+      countText.textContent = events.length + (events.length === 1 ? " evento mostrato" : " eventi mostrati") +
+        (drilldownCategory ? " · " + CAT_LABEL[drilldownCategory].toLowerCase() : "");
+      countEl.appendChild(countText);
+
+      // Link per tornare a tutte le categorie del periodo
+      if (drilldownCategory !== focusCategory) {
+        var backLink = document.createElement("button");
+        backLink.type = "button";
+        backLink.className = "ed-count-reset";
+        backLink.textContent = "Mostra tutti i " + tuttiNelPeriodo.length + " eventi di questo " + periodo;
+        backLink.addEventListener("click", function () {
+          drilldownCategory = focusCategory;
+          renderCards();
+        });
+        countEl.appendChild(backLink);
+      }
+
+      var grid = document.getElementById("ed-decade-cards");
+      grid.innerHTML = "";
+      if (!events.length) {
+        var empty = document.createElement("div");
+        empty.className = "ed-empty-state";
+        empty.textContent = drilldownCategory
+          ? "Nessun evento di questa categoria in questo " + periodo + "."
+          : "Nessun evento in questo " + periodo + ".";
+        grid.appendChild(empty);
+        return;
+      }
+      events.sort(function (a, b) { return a.year - b.year; }).forEach(function (ev) {
+        grid.appendChild(makeEvCard(ev));
+      });
+    }
+
+    renderLegend();
+    renderChart();
+    renderCards();
+  }
 });
-

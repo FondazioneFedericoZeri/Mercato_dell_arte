@@ -5,46 +5,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Progetto</title>
-    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="../css/styles-progetto.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/tokens.css">
+    <link rel="stylesheet" href="../css/styles-progetto.css">
+    <link rel="stylesheet" href="../css/torna-su.css">
     <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
     <script src="https://cdn.amcharts.com/lib/5/wc.js"></script>
     <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
     <script src="../script/scripts-progetto.js"></script>
     <script src="../script/menu.js" defer></script>
+    <script src="../script/torna-su.js" defer></script>
 </head>
 
 <body>
 
     <header>
         <div class="header-container">
-            <a href="../index.html">
-                <img id="logo.png" src="../img/homepage/logo.png" alt="Fondazione Federico Zeri">
-            </a>
+            <a class="marchio" href="../index.html">Mercato dell'arte</a>
             <button class="menu-toggle" aria-label="Apri menu">
                 ☰
             </button>
-            <nav>
-                <ul class="menu">
-                    <li><a href="../html/progetto.html">Progetto</a></li>
-                    <li><a href="../html/antiquari.html">Antiquari</a></li>
-                    <li><a href="../html/luoghi.html">Luoghi</a></li>
-                    <li><a href="../html/eventi.html">Eventi</a></li>
-                    <li><a href="../html/persone.html">Persone</a></li>
-                    <li><a href="../html/bibliografia.html">Bibliografia</a></li>
-                </ul>
-            </nav>
+            <div class="testata-destra">
+              <nav>
+                  <ul class="menu">
+                      <li><a href="../html/progetto.html">Progetto</a></li>
+                      <li><a href="../html/antiquari.html">Antiquari</a></li>
+                      <li><a href="../html/luoghi.html">Luoghi</a></li>
+                      <li><a href="../html/eventi.html">Eventi</a></li>
+                      <li><a href="../html/persone.html">Persone</a></li>
+                      <li><a href="../html/bibliografia.html">Bibliografia</a></li>
+                  </ul>
+              </nav>
+              <span class="testata-filo"></span>
+              <a class="testata-ente" href="https://fondazionezeri.unibo.it/it/homepage" target="_blank" rel="noopener"
+                 title="Fondazione Federico Zeri, Università di Bologna">
+                <img src="../img/homepage/logo.png" alt="Fondazione Federico Zeri">
+              </a>
+            </div>
         </div>
     </header>
     
 
     <!-- Contenuto principale della nuova pagina -->
     <main>
+
+        <h1 class="titolo-pagina">Il progetto</h1>
 
         <section id="two-column-section">
            <!-- <h2 class="section-title">Introduzione</h2> -->
@@ -63,7 +70,7 @@
                 <div id="chartdiv" class="column left-column">
                     <p>
                         <span class="large-letter">F</span>ederico Zeri ha mantenuto per tutta la sua carriera uno stretto legame con vari protagonisti del mercato dell’arte, tra cui antiquari, gallerie e case d’asta, fornendo loro la propria consulenza e expertise. Questi contatti sono ampiamente testimoniati da fotografie, cataloghi e carte presenti nelle sue collezioni documentarie. Si tratta spesso di professionisti sui quali esiste una scarsa bibliografia e per i quali non è semplice reperire informazioni. <br><br>
-                        Su questi temi la Fondazione Zeri ha avviato negli ultimi anni un’intensa attività di ricerca. Nel 2023 una borsa di studio erogata dall’<a href="https://www.amicifedericozeri.org/" target="_blank">Associazione Amici di Federico Zeri</a> ha permesso a un giovane studioso, Marco Fossati, di avviare un’indagine più capillare sul mondo del mercato dell’arte in Italia a cavallo tra XIX e XX secolo. Parallelamente, il Dipartimento delle Arti dell’Università di Bologna ha promosso un <a href="https://fondazionezeri.unibo.it/it/formazione/borse-di-studio/il-mercato-antiquariale-a-milano/il-mercato-antiquariale-a-milano-tra-xix-e-xx-secolo" target="_blank">dottorato</a>, coordinato dalla Fondazione Zeri, volto ad approfondire l’attività degli antiquari Antonio (1857-1923) e Carlo Grandi (1842-1914) e di altri mercanti attivi nel contesto milanese.
+                        Su questi temi la Fondazione Zeri ha avviato negli ultimi anni un’intensa attività di ricerca. Nel 2023 una borsa di studio erogata dall’<a href="https://www.amicifedericozeri.org/" target="_blank">Associazione Amici di Federico Zeri</a> ha permesso a un giovane studioso, Marco Fossati, di avviare un’indagine più capillare sul mondo del mercato dell’arte in Italia a cavallo tra XIX e XX secolo. Le ricerche effettuate da Eleonora Scianna nell’ambito di un <a href="https://fondazionezeri.unibo.it/it/formazione/borse-di-studio/il-mercato-antiquariale-a-milano/il-mercato-antiquariale-a-milano-tra-xix-e-xx-secolo" target="_blank">dottorato</a>, promosso dal Dipartimento delle Arti dell’Università di Bologna e coordinato dalla Fondazione Zeri, hanno permesso di approfondire le figure di altri mercanti attivi nel contesto milanese. Recentemente, nuove schede di antiquari attivi soprattutto tra Lombardia e Veneto sono state realizzate da specialisti del settore e integrate nel sistema. 
                     </p>
 
                 </div>
@@ -87,6 +94,7 @@
                         <li>spoglio della bibliografia di riferimento e, in particolare, di alcuni periodici del settore (es: l’Antiquario, pubblicato tra il 1908 e il 1932;</li>
                         <li>interviste dirette a collaboratori e eredi degli antiquari, grazie alla collaborazione degli Amici di Federico Zeri e dell’<a href="https://www.antiquariditalia.it/it" target="_blank">Associazione Antiquari d’Italia</a>;</li>
                         <li>analisi dei cataloghi di vendita presenti nella Biblioteca Zeri;</li>
+                        <li>analisi di documenti conservati in altri fondi archivistici.</li>
                     </ul>
                     <p>
                         Le informazioni raccolte sono state sistematizzate estraendo le entità più significative e studiando le relazioni che intercorrono tra i dati stessi; esse sono alla base delle visualizzazioni proposte nel sito che mirano ad evidenziare evoluzione, traiettorie, rapporti che contraddistinguono il mercato nell’arco cronologico preso in considerazione.
@@ -109,7 +117,7 @@
                 <div class="column left-column">
                     <h2 class="section-title"><span class="bold-text">Prospettive</span> <span class="normal-text"> e sviluppi</span> </h2>
                     <p>
-                        La Fondazione intende portare avanti la ricerca avvalendosi di borsisti, dottorandi e ricercatori e confidando nella collaborazione di famigliari, eredi e successori di antiquari attivi nel periodo indicato. Oltre a censire nuove entità antiquariali si procederà all’integrazione e all’arricchimento dei dati, mettendo a disposizione degli utenti nuovi strumenti di ricerca e forme di visualizzazione. <br><br>
+                        La Fondazione continua a integrare la banca dati avvalendosi di borsisti, dottorandi e ricercatori esterni, e della collaborazione di famigliari, eredi e successori di antiquari attivi nel periodo indicato. Oltre a censire nuove entità antiquariali si procede al periodico arricchimento dei dati, mettendo a disposizione degli utenti nuovi strumenti di ricerca e forme di visualizzazione. <br><br>
                         Per contribuire al progetto, o per segnalare eventuali imprecisioni, contattaci: <br> <br>
                         Email: <a href="mailto:fondazionezeri.fototeca@unibo.it">fondazionezeri.fototeca@unibo.it</a><br>
                         Telefono: + 39 051 2097473
@@ -135,12 +143,19 @@
     <!-- Footer copiato dalla pagina esistente -->
     <footer>
         <div class="footer-container">
+          <div class="footer-ente">
+            <a href="https://fondazionezeri.unibo.it/it/homepage" target="_blank" rel="noopener">
+              <img src="../img/homepage/logo-negativo.png" alt="Fondazione Federico Zeri">
+            </a>
+            <p>Progetto della <a href="https://fondazionezeri.unibo.it/it/homepage" target="_blank" rel="noopener">Fondazione
+               Federico Zeri</a>, Università di Bologna.</p>
+          </div>
             <div class="footer-left">
                 <p>Licenza dati e immagini: <img id="license.png" src="../img/homepage/license.png" alt="License"></p>
             </div>
             <div class="footer-right">
                 <p>
-                    <a href="../html/crediti.html">Crediti</a> | <a href="https://github.com/FondazioneFedericoZeri/Mercato_dell_arte">Documentazione</a>
+                    <a href="../html/crediti.html">Crediti</a> | <a href="../html/documentazione.html">Documentazione</a>
                 </p>
             </div>
         </div>

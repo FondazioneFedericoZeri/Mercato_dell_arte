@@ -1,4 +1,11 @@
-$.getJSON("https://raw.githubusercontent.com/FondazioneFedericoZeri/Mercato_dell_arte/main/json/entit%C3%A0.json", function (json) {
+// Carica entita.json, se manca usa il vecchio nome accentato
+function caricaEntitaBiblio(cb) {
+    $.getJSON("https://raw.githubusercontent.com/FondazioneFedericoZeri/Mercato_dell_arte/main/json/entita.json", cb).fail(function () {
+        $.getJSON("https://raw.githubusercontent.com/FondazioneFedericoZeri/Mercato_dell_arte/main/json/entit%C3%A0.json", cb);
+    });
+}
+
+caricaEntitaBiblio(function (json) {
     entities_json = json;
 });
 

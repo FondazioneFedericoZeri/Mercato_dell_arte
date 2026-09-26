@@ -1,0 +1,353 @@
+/* variabili condivise del sito */
+
+:root {
+
+    /* tipografia */
+    --ff-head: 'Playfair Display', Georgia, serif;
+    --ff-body: 'DM Sans', system-ui, sans-serif;
+
+    /* terracotta */
+    --terra:        #D94010;
+    --terra-dark:   #B03008;
+    --terra-light:  #E86040;
+    --terra-muted:  #EB7055;
+
+    /* colori dei link */
+    --link:         var(--terra);
+    --link-hover:   var(--terra-dark);
+
+    /* scala tipografica */
+
+    --fs-display:          48px;  /* titoli di copertina */
+    --fs-titolo:           32px;  /* titolo di pagina (h1) */
+    --fs-sottotitolo:      24px;  /* sottotitoli e sezioni interne */
+    --fs-titolo-paragrafo: 20px;  /* titoli di paragrafo */
+    --fs-corpo-lettura:    18px;  /* prosa lunga */
+    --fs-corpo:            16px;  /* testo corrente */
+    --fs-nota:             14px;  /* note e metadati */
+    --fs-nota-piccola:     12px;  /* note minute, etichette dei grafici */
+    --fs-etichetta:        13px;  /* titoletti in maiuscoletto */
+
+    /* vecchi nomi, tenuti come alias */
+    --fs-intro:    var(--fs-sottotitolo);
+    --fs-lettura:  var(--fs-corpo-lettura);
+    --fs-body:     var(--fs-corpo);
+    --fs-body-sm:  var(--fs-nota);
+    --fs-caption:  var(--fs-nota-piccola);
+
+    /* grigi caldi delle sezioni */
+    --carta-fondo:  #f0efea;
+    --carta-bordo:  #dcd9cf;
+
+    /* colori del sito antiquari */
+    --blu:          #5593C9;
+    --fondo-chiaro: #f8f8f8;
+
+    /* colori del testo */
+    --testo:             #333;     /* testo principale, titoli */
+    --testo-secondario:  #666;     /* metadati, date */
+    --testo-tenue:       #767676;  /* note, conteggi */
+
+    /* blu scuro per il testo e blu chiaro per i fondi */
+    --blu-scuro:    #3573A9;
+    --blu-tenue:    #EEF5FC;
+
+    /* impaginazione */
+    --margine-pagina:   60px;
+    --margine-stretto:  18px;   /* sotto i 768px */
+
+    --misura-elenco:   1180px;  /* elenchi e schede */
+    --misura-lettura:   900px;  /* prosa */
+
+    --stacco-titolo:     40px;  /* fra testata e titolo */
+
+    /* altezza della testata */
+    --altezza-testata:   68px;
+
+    /* rientro delle fasce a tutta larghezza */
+    --rientro-pagina: max(var(--margine-pagina),
+                          calc((100% - var(--misura-elenco)) / 2));
+}
+
+/* margine ridotto su schermi stretti */
+@media (max-width: 768px) {
+    :root {
+        --margine-pagina: var(--margine-stretto);
+        --stacco-titolo:  26px;
+        /* altezza della testata su mobile */
+        --altezza-testata: 64px;
+
+        /* scala ridotta su mobile */
+        --fs-display:          36px;
+        --fs-titolo:           24px;
+        --fs-sottotitolo:      20px;
+        --fs-titolo-paragrafo: 18px;
+        --fs-corpo-lettura:    16px;
+    }
+}
+
+/* base: titoli in Playfair, il resto in DM Sans */
+
+body {
+    font-family: var(--ff-body);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--ff-head);
+}
+
+/* testata e piè di pagina */
+
+.marchio {
+    font-family: var(--ff-head);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1;
+    color: var(--testo);
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.marchio:hover {
+    color: var(--blu);
+}
+
+.testata-destra {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* separa il logo dal menù */
+.testata-filo {
+    width: 1px;
+    height: 34px;
+    background-color: #dcdcdc;
+    flex-shrink: 0;
+}
+
+.testata-ente {
+    display: flex;
+    flex-shrink: 0;
+}
+
+.testata-ente img {
+    height: 36px;
+    width: auto;
+    max-height: none;   /* più forte di header img */
+    display: block;
+}
+
+.footer-ente {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    max-width: 440px;
+}
+
+.footer-ente img {
+    height: 42px;
+    width: auto;
+    max-height: none;
+    /* logo del footer non schiacciato su mobile */
+    max-width: none;
+    display: block;
+}
+
+.footer-ente p {
+    margin: 0;
+    font-size: var(--fs-body-sm);
+    line-height: 1.5;
+}
+
+.footer-ente {
+    text-align: left;
+}
+
+/* niente margini sui link dentro il testo del footer */
+.footer-ente a {
+    color: #fff;
+    margin: 0;
+}
+
+.footer-ente p a {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-ente p a:hover {
+    text-decoration-color: #fff;
+}
+
+/* testata sempre in alto */
+html body {
+    height: auto;
+    min-height: 100vh;
+}
+
+/* testata uguale su tutte le pagine */
+@media (min-width: 769px) {
+    html body header {
+        padding: 16px 20px;
+    }
+
+    html body header .header-container {
+        min-height: 36px;   /* altezza del logo */
+        padding: 0;
+    }
+
+    html body header nav ul {
+        margin: 0;
+        padding: 0;
+        align-items: center;
+    }
+
+    html body header nav ul li {
+        margin: 0 0 0 20px;
+        line-height: 1.6;
+        font-size: 16px;
+    }
+
+    html body header nav ul li a {
+        font-size: 16px;
+        font-weight: 500;
+        padding: 5px 10px;
+    }
+}
+
+/* fra 769 e 1100px nasconde il logo e stringe il menù */
+@media (min-width: 769px) and (max-width: 1100px) {
+    .testata-filo,
+    .testata-ente {
+        display: none;
+    }
+
+    .marchio {
+        font-size: 24px;
+    }
+
+    html body header nav ul li {
+        margin-left: 4px;
+    }
+
+    html body header nav ul li a {
+        padding: 5px 8px;
+    }
+}
+
+/* menù a tendina su mobile, uguale per tutte le pagine */
+@media (max-width: 768px) {
+    html body header:not(#_) {
+        padding: 10px var(--margine-pagina);
+    }
+
+    html body header:not(#_) .header-container {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 0;
+        padding: 0;
+    }
+
+    /* bottone del menù a destra */
+    html body header:not(#_) .menu-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 -10px 0 auto;   /* allinea il simbolo al margine */
+        width: 44px;
+        height: 44px;             /* misura minima per il dito */
+        padding: 0;
+        border: none;
+        background: none;
+        color: var(--testo);
+        font-size: 24px;
+        line-height: 1;
+        cursor: pointer;
+    }
+
+    html body header:not(#_) .testata-destra {
+        gap: 0;
+    }
+
+    html body header:not(#_) nav ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        width: auto;
+        margin: 0;
+        padding: 6px 0 10px;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        background-color: #f8f8f8;
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08);
+        border-top: 1px solid #e6e6e6;
+        z-index: 1000;
+    }
+
+    html body header:not(#_) nav ul.show {
+        display: flex;
+    }
+
+    html body header:not(#_) nav ul li {
+        margin: 0;
+        text-align: center;
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    html body header:not(#_) nav ul li a {
+        display: block;
+        padding: 11px var(--margine-pagina);
+        font-size: 16px;
+        font-weight: 500;
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .marchio {
+        font-size: 22px;
+    }
+
+    /* su mobile nasconde il logo */
+    .testata-filo,
+    .testata-ente {
+        display: none;
+    }
+
+    .footer-ente {
+        max-width: none;
+    }
+}
+
+/* indirizzi web nelle citazioni */
+
+.bib-web {
+    color: var(--link);
+    text-decoration: none;
+}
+
+.bib-web:hover {
+    color: var(--link-hover);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+/* titolo di pagina */
+
+.titolo-pagina {
+    font-family: var(--ff-head);
+    font-weight: 400;
+    font-style: normal;
+    font-size: var(--fs-titolo);   /* 32px, 24px su mobile */
+    line-height: 1.2;
+    color: var(--testo);
+    margin: 0 0 12px 0;
+}

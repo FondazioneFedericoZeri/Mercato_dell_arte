@@ -5,14 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Antiquari</title>
+    <link rel="stylesheet" href="../css/tokens.css">
+    <link rel="stylesheet" href="../css/torna-su.css">
     <link rel="stylesheet" href="../css/styles-antiquari.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
     <script type="text/javascript" src="../script/scripts-antiquari.js"></script>
     <script type="text/javascript" src="../script/antiquari_search.js"></script>
+    <script type="text/javascript" src="../script/antiquari_autocomplete.js"></script>
     <script src="../script/menu.js" defer></script>
+    <script src="../script/torna-su.js" defer></script>
 
 </head>
 
@@ -22,22 +27,27 @@
 
     <header>
         <div class="header-container">
-          <a href="../index.html">
-            <img id="logo.png" src="../img/homepage/logo.png" alt="Fondazione Federico Zeri" />
-          </a>
+          <a class="marchio" href="../index.html">Mercato dell'arte</a>
           <button class="menu-toggle" aria-label="Apri menu">
             ☰
           </button>
-          <nav>
-            <ul class="menu">
-              <li><a href="../html/progetto.html">Progetto</a></li>
-              <li><a href="../html/antiquari.html">Antiquari</a></li>
-              <li><a href="../html/luoghi.html">Luoghi</a></li>
-              <li><a href="../html/eventi.html">Eventi</a></li>
-              <li><a href="../html/persone.html">Persone</a></li>
-              <li><a href="../html/bibliografia.html">Bibliografia</a></li>
-            </ul>
-          </nav>
+          <div class="testata-destra">
+            <nav>
+              <ul class="menu">
+                <li><a href="../html/progetto.html">Progetto</a></li>
+                <li><a href="../html/antiquari.html">Antiquari</a></li>
+                <li><a href="../html/luoghi.html">Luoghi</a></li>
+                <li><a href="../html/eventi.html">Eventi</a></li>
+                <li><a href="../html/persone.html">Persone</a></li>
+                <li><a href="../html/bibliografia.html">Bibliografia</a></li>
+              </ul>
+            </nav>
+            <span class="testata-filo"></span>
+            <a class="testata-ente" href="https://fondazionezeri.unibo.it/it/homepage" target="_blank" rel="noopener"
+               title="Fondazione Federico Zeri, Università di Bologna">
+              <img src="../img/homepage/logo.png" alt="Fondazione Federico Zeri">
+            </a>
+          </div>
         </div>
       </header>
 
@@ -45,7 +55,6 @@
 
     <main>
         <!-- Prima nuova sezione con titolo e paragrafo -->
-        <a href="#" id="back-to-top" class="btn-back-to-top"> ˄ </a>
 
         <section id="intro-section">
             <div class="text-container" class="fade-in">
@@ -55,8 +64,19 @@
                 <!-- <a href="#Titolo" id="btn-cognome" class="btn">Cerca per cognome</a> -->
                 <!-- Contenitore per la barra di ricerca e il pulsante -->
 
+                <!-- Gestito da antiquari_autocomplete.js -->
                 <div class="search-bar-container">
-                    <input type="text" id="search-input" placeholder="Cerca per nome o per luogo" onkeyup="performSearch(this.value)">
+                    <div class="search-field">
+                        <input type="text" id="search-input"
+                               placeholder="Cerca per nome o per luogo"
+                               autocomplete="off"
+                               role="combobox"
+                               aria-expanded="false"
+                               aria-controls="search-suggestions"
+                               aria-autocomplete="list">
+                        <ul id="search-suggestions" role="listbox"
+                            aria-label="Suggerimenti di ricerca" hidden></ul>
+                    </div>
                     <a href="#Titolo">
                         <button id="search-button" class="btn" onclick="performSearch(document.getElementById('search-input').value)">Cerca</button>
                     </a>
@@ -87,6 +107,8 @@
         <section id="Titolo">
             <h2><span class="highlight-bold">TUTTI</span> <span class="regular-text">GLI ANTIQUARI</span></h2>
             <p><span class="regular-text">Ordina per</span> <span class="bold-text"><a href="#cards-section" id="cognome">nome</a> / <a href="#cards-section" id="luogo">luogo</a></span></p>
+            <!-- Riepilogo risultati -->
+            <p id="riepilogo-elenco" class="riepilogo-elenco"></p>
         </section>
 
         <!-- Seconda nuova sezione con 3 card -->
@@ -98,12 +120,19 @@
     <!-- Footer copiato dalla pagina esistente -->
     <footer>
         <div class="footer-container">
+          <div class="footer-ente">
+            <a href="https://fondazionezeri.unibo.it/it/homepage" target="_blank" rel="noopener">
+              <img src="../img/homepage/logo-negativo.png" alt="Fondazione Federico Zeri">
+            </a>
+            <p>Progetto della <a href="https://fondazionezeri.unibo.it/it/homepage" target="_blank" rel="noopener">Fondazione
+               Federico Zeri</a>, Università di Bologna.</p>
+          </div>
             <div class="footer-left">
                 <p>Licenza dati e immagini: <img id="license.png" src="../img/homepage/license.png" alt="License"></p>
             </div>
             <div class="footer-right">
                 <p>
-                    <a href="../html/crediti.html">Crediti</a> | <a href="https://github.com/FondazioneFedericoZeri/Mercato_dell_arte">Documentazione</a>
+                    <a href="../html/crediti.html">Crediti</a> | <a href="../html/documentazione.html">Documentazione</a>
                 </p>
             </div>
         </div>

@@ -9,15 +9,9 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Assicura che il corpo occupi almeno l'altezza della finestra */
-    font-family: 'Montserrat', sans-serif;
-    color: #333;
+    font-family: var(--ff-body);
+    color: var(--testo);
     line-height: 1.6;
-}
-
-.credits-section h2 {
-    font-size: 36px;
-    color: #333;
-    font-family: 'Montserrat', sans-serif;
 }
 
 main {
@@ -59,7 +53,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: var(--testo);
     font-weight: 500;
     padding: 5px 10px;
 }
@@ -115,76 +109,14 @@ footer img {
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--ff-body);
     line-height: 1.6;
-    color: #333;
+    color: var(--testo);
     margin: 0;
     padding: 0;
 }
 
-.section-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 32px;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.credits-container {
-    margin: 0 auto;
-    max-width: 800px;
-    padding: 20px;
-    text-align: left;
-}
-
-.credits-container p {
-    font-size: 18px;
-    margin-bottom: 15px;
-    line-height: 1.5;
-}
-
-.bold-text {
-    font-weight: bold;
-    color: #333;
-}
 @media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        padding: 10px;
-    }
-
-    .header-container {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-
-    nav ul {
-        flex-direction: column; /* Disposizione verticale */
-        text-align: center; /* Centra il testo */
-        padding: 0;
-        gap: 10px;
-    }
-
-    nav ul li {
-        margin: 0; /* Rimuove i margini laterali */
-    }
-
-    .credits-container {
-        padding: 10px; /* Riduce il padding */
-        text-align: left; /* Mantiene allineato il testo a sinistra */
-    }
-
-    .credits-container p {
-        font-size: 16px; /* Riduce la dimensione del font */
-        margin-bottom: 10px; /* Spaziatura più compatta */
-    }
-
-    .section-title {
-        font-size: 24px; /* Riduce la dimensione del titolo */
-    }
-
     footer {
         flex-direction: column; /* Disposizione verticale */
         padding: 20px;
@@ -203,3 +135,110 @@ body {
     }
 }
 
+
+/* crediti */
+
+.crediti {
+    /* Misure condivise da tokens.css */
+    max-width: calc(var(--misura-lettura) + 2 * var(--margine-pagina));
+    margin: 0 auto;
+    padding: var(--stacco-titolo) var(--margine-pagina) 60px var(--margine-pagina);
+    box-sizing: border-box;
+}
+
+.crediti .titolo-pagina {
+    margin-bottom: 30px;
+}
+
+.crediti-elenco {
+    margin: 0;
+    padding: 0;
+    /* Riga blu sotto il titolo */
+    border-top: 2px solid var(--blu);
+}
+
+.crediti-voce {
+    padding: 22px 0 24px 0;
+    border-bottom: 1px solid var(--carta-bordo);
+}
+
+.crediti-elenco dt,
+.crediti-etichetta {
+    margin: 0 0 8px 0;
+    font-family: var(--ff-body);
+    font-size: var(--fs-nota-piccola);
+    font-weight: 600;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    /* Etichette dei ruoli in blu scuro */
+    color: var(--blu-scuro);
+    line-height: 1.5;
+    max-width: 60ch;
+}
+
+.crediti-elenco dd,
+.crediti-nomi {
+    margin: 0;
+    font-family: var(--ff-head);
+    font-size: var(--fs-titolo-paragrafo);
+    font-weight: 400;
+    line-height: 1.45;
+    color: var(--testo);
+}
+
+/* Riquadro sostenitori su fondo azzurro chiaro */
+.crediti-sostegno {
+    margin-top: 40px;
+    padding: 20px 24px 22px 24px;
+    background-color: var(--blu-tenue);
+    border-left: 3px solid var(--blu);
+    border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+    .crediti {
+        padding: 26px 18px 40px 18px;
+    }
+
+    .crediti-elenco dd,
+    .crediti-nomi {
+        font-size: var(--fs-titolo-paragrafo);
+    }
+}
+
+/* Menù a scomparsa */
+.menu-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        font-size: 24px;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #f8f8f8;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        padding: 10px 0;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+}

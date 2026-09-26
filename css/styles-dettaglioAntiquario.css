@@ -11,8 +11,8 @@ body {
     flex-direction: column;
     min-height: 100vh;
     /* Assicura che il corpo occupi almeno l'altezza della finestra */
-    font-family: 'Montserrat', sans-serif;
-    color: #333;
+    font-family: var(--ff-body);
+    color: var(--testo);
     line-height: 1.6;
 }
 
@@ -62,7 +62,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: var(--testo);
     font-weight: 500;
     padding: 5px 10px;
 }
@@ -74,294 +74,370 @@ nav ul li a:hover {
 }
 
 
-/* galleria immagini*/
+/* scheda dell'antiquario */
 
-.gallery-wrapper {
-    display: flex; /* Usa Flexbox per posizionare il titolo e la galleria fianco a fianco */
-    align-items: center; /* Allinea verticalmente al centro */
-    gap: 20px; /* Spazio tra il titolo e la galleria */
-    justify-content: flex-start; /* Allinea gli elementi a sinistra */
-    background-color: #5593C9;
-    padding-bottom: 20px;
-    padding-top: 20px;
+.scheda {
+    /* margine laterale delle fasce */
+    --margine: var(--rientro-pagina);
+    /* misura di lettura */
+    --misura: 68ch;
+}
+
+/* fascia blu */
+
+/* ritorno all'elenco */
+.scheda-fascia {
     position: relative;
-    height: 270px; /* Imposta l'altezza della fascia */
+    background-color: var(--blu);
+    padding: 26px var(--margine) 34px var(--margine);
+    min-height: 240px;
     box-sizing: border-box;
-} 
-
-.gallery-wrapper.no-imgs {
-    height: 180px;
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
 }
 
-.gallery-title {
-    font-size: 62px;
-    font-weight: 700;
+.scheda-fascia-testo {
+    flex-grow: 1;
+    min-width: 0;   /* il nome lungo va a capo */
+    align-self: center;
+}
+
+.scheda-torna {
+    display: inline-block;
+    margin-bottom: 26px;
+    font-size: var(--fs-nota);
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.92);
+}
+
+.scheda-torna:hover {
     color: #fff;
-    text-align: left;
-    margin-bottom: 20px;
-    margin-left: 120px;
-    white-space: nowrap;
-    flex-shrink: 0; /* Impedisce al titolo di restringersi */
+    text-decoration: underline;
+    text-underline-offset: 3px;
 }
 
+.scheda-nome {
+    margin: 0;
+    font-family: var(--ff-head);
+    font-style: italic;
+    font-weight: 400;
+    /* nome dell'antiquario */
+    font-size: clamp(56px, 6.6vw, 88px);
+    line-height: 1;
+    color: #fff;
+}
+
+/* città e periodo di attività */
+.scheda-sottotitolo {
+    margin: 12px 0 0 0;
+    font-size: var(--fs-sottotitolo);
+    line-height: 1.35;
+    color: rgba(255, 255, 255, 0.94);
+}
+
+/* fotografia */
+#single-image-container,
 .slider-container {
-    flex: 1;
-    position: absolute; /* Mantiene la posizione dello slider fissa rispetto al genitore */
-    right: 120px; /* Allinea lo slider a destra */
-    max-width: 400px;
+    position: relative;
+    flex-shrink: 0;
+    width: 330px;
+    max-width: 40%;
+    height: 260px;
+    margin: 0;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
     overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    top:5%;
+}
+
+#single-image-container img,
+.slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: zoom-in;
+}
+
+.caption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;              /* didascalia sul fondo */
+    margin: 0;
+    padding: 9px 12px;
+    /* didascalia su fondo scuro */
+    background-color: rgba(20, 38, 54, 0.82);
+    color: #fff;
+    font-size: var(--fs-nota);
+    line-height: 1.4;
 }
 
 .slider {
     display: flex;
-    /* Modificato per layout flessibile */
+    height: 100%;
     transition: transform 1s ease-in-out;
 }
 
 .slide {
     position: relative;
     min-width: 100%;
+    height: 100%;
     box-sizing: border-box;
 }
 
-.slide img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    display: block;
-}
-
-.caption {
+.prev,
+.next,
+.gal-zoom {
     position: absolute;
-    bottom: 40px;
-    left: 0;
-    width: 100%;
-    padding: 10px 20px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    font-size: 14px;
-    text-align: center;
-    box-sizing: border-box;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-.caption {
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out;
-}
-
-.slide:hover .caption {
-    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: var(--testo);
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    z-index: 2;
 }
 
 .prev,
 .next {
-    position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: #fff;
-    color: #333;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 50%;
-    /* Assicura che i bottoni restino rotondi */
-    width: 40px;
-    /* Imposta una larghezza fissa */
-    height: 40px;
-    /* Imposta un'altezza fissa */
-    display: flex;
-    justify-content: center;
+}
+
+.prev { left: 8px; }
+.next { right: 8px; }
+.gal-zoom { top: 8px; right: 8px; }
+
+.prev:hover,
+.next:hover,
+.gal-zoom:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.gal-zoom svg {
+    width: 17px;
+    height: 17px;
+}
+
+/* fotografia ingrandita */
+
+.gal-strato {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+    background-color: rgba(20, 18, 16, 0.92);
     align-items: center;
-    font-size: 20px;
-    font-style: bold;
+    justify-content: center;
+    gap: 14px;
+    padding: 28px;
+    box-sizing: border-box;
 }
 
-.prev {
-    left: 10px;
+.gal-strato.aperto {
+    display: flex;
 }
 
-.next {
-    right: 10px;
+body.gal-bloccato {
+    overflow: hidden;
 }
 
-.prev:hover,
-.next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+/* nasconde il torna su */
+body.gal-bloccato .torna-su {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.gal-figura {
+    margin: 0;
+    max-width: 1100px;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+}
+
+.gal-img {
+    max-width: 100%;
+    max-height: 76vh;
+    object-fit: contain;
+    background-color: #000;
+}
+
+.gal-didascalia {
     color: #fff;
-}
-
-.prev {
-    left: 10px;
-}
-
-.next {
-    right: 10px;
-}
-
-.prev:hover,
-.next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* sezione singola immagine */
-#single-image-container {
-    position: absolute; /* Mantiene il posizionamento assoluto */
-    right: 120px; /* Allinea l'immagine a destra */
-    top: 50%; /* Posiziona l'immagine al centro verticale */
-    transform: translateY(-50%); /* Centra verticalmente l'immagine */
-    width: 400px; /* Imposta la larghezza dell'immagine */
-    max-width: 100%; /* Mantiene la responsività */
-    height: auto; /* Mantiene le proporzioni */
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Aggiunge un'ombra */
-    z-index: 100; /* Porta l'immagine sopra altri elementi */
-}
-
-#single-image-container img {
-    width: 100%; /* Mantiene la larghezza al 100% del contenitore */
-    height: auto; /* Mantiene le proporzioni */
-    display: block;
-    border-radius: 10px; /* Arrotonda i bordi */
-}
-
-
-#single-image-container overlay-caption {
-    position: absolute;
-    bottom: 40px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    font-size: 16px;
-    padding: 10px 20px;
+    font-size: var(--fs-corpo);
+    line-height: 1.5;
     text-align: center;
+    max-width: 62ch;
+}
+
+.gal-chiudi,
+.gal-prec,
+.gal-succ {
+    background-color: rgba(255, 255, 255, 0.92);
+    color: var(--testo);
+    border: none;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    font-size: 19px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.gal-chiudi {
+    position: absolute;
+    top: 20px;
+    right: 24px;
+}
+
+.gal-chiudi:hover,
+.gal-prec:hover,
+.gal-succ:hover {
+    background-color: #fff;
+}
+
+/* specchietto */
+
+/* specchietto sotto la fascia blu */
+.scheda-striscia {
+    margin: 0;
+    padding: 20px var(--margine) 22px var(--margine);
+    display: grid;
+    grid-template-columns: 170px minmax(0, 1fr);
+    row-gap: 12px;
+    column-gap: 24px;
+    background-color: var(--blu-tenue);
+    border-bottom: 1px solid #dbe7f3;
+    font-size: var(--fs-corpo);
+    line-height: 1.5;
+    color: var(--testo);
+}
+
+.scheda-striscia dt {
+    /* etichetta in maiuscoletto */
+    font-size: var(--fs-etichetta);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--blu-scuro);
+    padding-top: 3px;
+}
+
+.scheda-striscia dd {
+    margin: 0;
+    min-width: 0;
+}
+
+.striscia-elenco {
+    margin: 0;
+    padding: 0;
+    list-style: none;   /* niente pallini */
+}
+
+.striscia-voce + .striscia-voce {
+    margin-top: 4px;
+}
+
+/* nome della persona */
+.striscia-voce strong {
+    font-weight: 400;
+}
+
+.striscia-link {
+    color: var(--link);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.striscia-link:hover {
+    color: var(--link-hover);
+}
+
+/* corpo della scheda */
+
+.scheda-corpo {
+    display: grid;
+    grid-template-columns: 250px minmax(0, 1fr);
+    gap: 34px;
+    padding: 34px var(--margine) 10px var(--margine);
+    align-items: start;
+}
+
+/* indice delle sezioni */
+
+.scheda-tab {
+    display: flex;
+    flex-direction: column;
+    /* indice fisso */
+    position: sticky;
+    /* sotto la testata */
+    top: calc(var(--altezza-testata) + 24px);
+    border-top: 1px solid #e6e6e6;
+}
+
+.scheda-tab .tab {
+    appearance: none;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
     width: 100%;
     box-sizing: border-box;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-}
-
-.single-image-container:hover .overlay-caption {
-    opacity: 1;
-}
-
-
-
-/*sezione interattiva tab*/
-
-/* .section-title {
-    font-size: 36px;
-    margin-bottom: 20px;
-    text-align: left;
-    margin-left: 120px; /* Allineamento coerente con gli altri elementi 
-}
-
-.section-title .highlight {
-    color: #5593C9;
-    font-weight: bold;
-}
-
-.section-title .regular-text {
-    color: #333;
-    font-weight: normal;
-} */
-
-#interactive-section {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 40px;
-}
-
-#chartdiv {
-    width: 100%;
-    height: 550px;
-}
-
-.section-title {
-    font-size: 36px;
-    margin-bottom: 60px;
-    text-align: left;
-    /* Centra il titolo orizzontalmente */
-    margin-top: 10px;
-    margin-left: 120px;
-}
-
-.section-title .highlight {
-    color: #5593C9;
-    font-weight: bold;
-}
-
-.section-title .regular-text {
-    color: #333;
-    font-weight: normal;
-}
-
-.dual-content-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 20px;
-    /* Spazio tra le due colonne */
-    margin-top: 20px;
-    padding-bottom: 40px;
-}
-
-.tab-container {
-    width: 25%;
-    margin-right: 20px;
-}
-
-.tab-list {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-/* Stile per i tab */
-.tab {
-    padding: 15px;
-    background-color: #fff; /* Mantiene lo sfondo bianco */
+    background: none;
     border: none;
-    margin-bottom: 10px;
-    cursor: pointer;
+    border-bottom: 1px solid #e6e6e6;
+    border-left: 3px solid transparent;
+    padding: 12px 12px 12px 13px;
+    font-family: inherit;
+    font-size: var(--fs-corpo);
     text-align: left;
-    transition: color 0.3s ease; /* Aggiunge una transizione morbida per il colore */
-    margin-left: 120px;
-    margin-right: 30px;
-    color: #333; /* Colore predefinito del testo */
+    color: var(--testo);
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.18s ease, border-left-color 0.18s ease;
 }
 
-/* Stile per il tab attivo */
-.tab.active {
-    background-color: #5593C9; /* Mantiene lo sfondo bianco */
-    color: #fff; /* Cambia il colore del testo a celeste */
-    transition: color 0.3s ease; /* Aggiunge una transizione morbida per il colore */
+.scheda-tab .tab:hover {
+    background-color: var(--blu-tenue);
+    border-left-color: #c2d3e2;
 }
 
-/* Stile per il tab al passaggio del mouse */
-.tab:hover {
-    background-color: #e1e0e0; /* Sfondo leggermente grigio al passaggio del mouse */
-    color: #333; /* Mantiene il colore del testo durante l'hover */
+.scheda-tab .tab.active {
+    font-weight: 600;
+    background-color: var(--blu-tenue);
+    border-left-color: var(--blu);
 }
 
+.scheda-tab .tab-num {
+    flex-shrink: 0;
+    color: var(--testo-secondario);
+    font-size: var(--fs-nota);
+    font-weight: 400;
+    font-variant-numeric: tabular-nums;
+}
 
-.content-card {
-    width: 70%;
+.scheda-tab .tab.active .tab-num {
+    color: var(--blu-scuro);
+}
+
+/* contenuto */
+
+.scheda-contenuto {
+    min-width: 0;
+    box-sizing: border-box;
+    padding: 26px 30px 8px 30px;
+    border: 1px solid #e6e6e6;
+    border-radius: 6px;
     background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin-right: 120px;
-    margin-bottom: 40px;
-    margin-left: 50px;
 }
 
 .content {
@@ -372,9 +448,162 @@ nav ul li a:hover {
     display: block;
 }
 
-.content-card p {
-    margin-left: 40px;
-    margin-right: 40px;
+.scheda-contenuto p,
+.scheda-contenuto ul {
+    max-width: var(--misura);
+}
+
+.scheda-contenuto p,
+.scheda-contenuto li {
+    font-size: var(--fs-corpo-lettura);
+    line-height: 1.66;
+}
+
+.scheda-contenuto p {
+    margin: 0 0 20px 0;
+}
+
+.scheda-contenuto h2 {
+    margin: 30px 0 12px 0;
+    font-size: var(--fs-titolo-paragrafo);
+    font-weight: 400;
+    font-style: italic;
+    color: var(--testo);
+}
+
+.scheda-contenuto > .content > h2:first-child {
+    margin-top: 0;
+}
+
+.scheda-contenuto ul {
+    margin: 0 0 18px 0;
+    padding-left: 22px;
+}
+
+.scheda-contenuto li {
+    margin-bottom: 7px;
+}
+
+/* mappa e albero a tutta larghezza */
+#Localizzazioni,
+#Persone {
+    max-width: none;
+}
+
+/* relazioni */
+
+/* categorie delle relazioni affiancate */
+/* colonne a larghezza variabile */
+.rel-griglia {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 30px 40px;
+}
+
+.rel-gruppo {
+    flex: 1 1 190px;
+    max-width: 290px;
+    min-width: 0;
+}
+
+.scheda-contenuto .rel-titolo {
+    /* etichetta della categoria */
+    margin: 0 0 10px 0;
+    font-family: var(--ff-body);
+    font-style: normal;
+    font-size: var(--fs-etichetta);
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--blu-scuro);
+    padding-bottom: 7px;
+    border-bottom: 1px solid #e0e6ec;
+}
+
+.scheda-contenuto .rel-elenco {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    max-width: none;   /* niente misura di lettura */
+}
+
+.scheda-contenuto .rel-elenco li {
+    margin: 0 0 9px 0;
+    font-size: var(--fs-corpo);
+    line-height: 1.4;
+}
+
+/* categoria lunga su due colonne */
+@media (min-width: 769px) {
+    .rel-gruppo-largo {
+        flex: 2 1 420px;
+        max-width: 620px;
+    }
+
+    .rel-gruppo-largo .rel-elenco {
+        columns: 2;
+        column-gap: 40px;
+    }
+
+    /* il nome non si spezza */
+    .rel-gruppo-largo .rel-elenco li {
+        break-inside: avoid;
+    }
+}
+
+.rel-scheda {
+    color: var(--link);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.rel-scheda:hover {
+    color: var(--link-hover);
+}
+
+/* freccia per i link alle schede */
+.rel-scheda::after {
+    content: " \2192";
+    text-decoration: none;
+}
+
+.rel-nome {
+    display: block;
+}
+
+/* qualifica sotto al nome */
+.rel-qualifica {
+    display: block;
+    font-size: var(--fs-nota);
+    color: var(--testo-secondario);
+}
+
+/* scheda precedente e successiva */
+
+.scheda-sfoglia {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 26px var(--margine) 34px var(--margine);
+    border-top: 1px solid #e6e6e6;
+    margin-top: 28px;
+}
+
+.scheda-sfoglia a {
+    font-size: var(--fs-corpo);
+    text-decoration: none;
+    color: var(--link);
+}
+
+.scheda-sfoglia a:hover {
+    color: var(--link-hover);
+    text-decoration: underline;
+}
+
+.scheda-sfoglia .vuoto {
+    font-size: var(--fs-corpo);
+    color: var(--testo-tenue);
 }
 
 /*Imposta altezza card per albero genealogico*/
@@ -400,41 +629,20 @@ nav ul li a:hover {
 
 
 
-/* Imposta i link all'interno della biografia in grassetto */
-#Bio a {
-    font-weight: bold;
-    color: #5593C9; /* Colore predefinito del link */
-    transition: color 0.3s ease; /* Aggiunge una transizione morbida per il colore */
-}
-
-/* Cambia il colore a arancione al passaggio del mouse */
-#Bio a:hover {
-    color: #FFA500; /* Colore arancione */
-    text-decoration: underline; /* Opzionale: aggiunge la sottolineatura al passaggio del mouse */
-}
-
-#Relazioni a {
-    font-weight: bold;
-    color: #5593C9; /* Colore predefinito del link */
-    transition: color 0.3s ease; /* Aggiunge una transizione morbida per il colore */
-}
-
-/* Cambia il colore a arancione al passaggio del mouse */
-#Relazioni a:hover {
-    color: #FFA500; /* Colore arancione */
-    text-decoration: underline; /* Opzionale: aggiunge la sottolineatura al passaggio del mouse */
-}
-
+/* link di testo */
+#Bio a,
+#Relazioni a,
 a.linkBio {
     font-weight: bold;
-    color: #5593C9; /* Colore predefinito del link */
-    transition: color 0.3s ease; /* Aggiunge una transizione morbida per il colore */
+    color: var(--link);
+    transition: color 0.3s ease;
 }
 
-/* Cambia il colore a arancione al passaggio del mouse */
-a.linkBio a:hover {
-    color: #FFA500; /* Colore arancione */
-    text-decoration: underline; /* Opzionale: aggiunge la sottolineatura al passaggio del mouse */
+#Bio a:hover,
+#Relazioni a:hover,
+a.linkBio:hover {
+    color: var(--link-hover);
+    text-decoration: underline;
 }
 
 
@@ -477,83 +685,114 @@ footer img {
     text-align: right;
 }
 
-/*Prova Responsive*/
-
-@media (max-width: 768px) { 
-    .gallery-wrapper {
-        flex-direction: column; /* Disposizione verticale */
-        align-items: center;
-        gap: 10px;
-        height: auto;
-        padding: 20px;
-    }
-
-    .gallery-title {
-        font-size: 28px;
-        margin-left: 0;
-        text-align: center;
-    }
-
-    .slider-container {
-        position: static; /* Rimuove il posizionamento assoluto */
-        width: 100%;
-        max-width: 300px;
-    }
-
-    .slide img {
-        display: none; /* Nasconde le immagini in versione mobile */
-    }
-
-    .prev, .next {
-        display: none; /* Nasconde i pulsanti di navigazione */
-    }
-
-    @media (max-width: 768px) { 
-        .slider-container {
-             display: none; /* Nasconde l'intera galleria su dispositivi mobili */
-        }
-        .img {
-            display: none; /* Nasconde l'intera galleria su dispositivi mobili */
-       }
-    }
-    @media (max-width: 768px) {
-        #single-image-container {
-            display: none; /* Nasconde la sezione in versione mobile */
-        }
-    }
-    
-    
-}
+/* schermi stretti */
 
 @media (max-width: 768px) {
-    .dual-content-wrapper {
+    .scheda {
+        --margine: 18px;
+    }
+
+    .scheda-fascia {
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
+        gap: 18px;
+        min-height: 0;
+        padding-top: 26px;
+        padding-bottom: 26px;
+    }
+
+    .scheda-nome {
+        font-size: 42px;
+    }
+
+    .scheda-sottotitolo {
+        margin-top: 8px;
+        font-size: var(--fs-sottotitolo);
+    }
+
+    /* allinea a sinistra */
+    .scheda-fascia-testo {
+        align-self: stretch;
+    }
+
+    .scheda-torna {
+        margin-bottom: 18px;
+    }
+
+    /* fotografia su mobile */
+    #single-image-container,
+    .slider-container {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* categorie impilate */
+    .rel-gruppo {
+        flex-basis: 100%;
+        max-width: none;
+    }
+
+    /* etichetta sopra il dato */
+    .scheda-striscia {
+        grid-template-columns: minmax(0, 1fr);
+        row-gap: 3px;
+    }
+
+    .scheda-striscia dt {
+        padding-top: 10px;
+    }
+
+    .scheda-striscia dt:first-child {
+        padding-top: 0;
+    }
+
+    /* indice sopra il contenuto */
+    .scheda-corpo {
+        grid-template-columns: minmax(0, 1fr);
         gap: 20px;
     }
 
-    .tab-container {
-        width: 100%; /* Tab occupano l'intera larghezza */
-        margin: 0;
+    .scheda-tab {
+        position: static;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        border-top: none;
+        border-bottom: 1px solid #e6e6e6;
+        -webkit-overflow-scrolling: touch;
     }
 
-    .content-card {
-        margin: 10px 0;
-        margin-left: 15px;
-        margin-right: 15px;
+    .scheda-tab .tab {
+        width: auto;
+        white-space: nowrap;
+        justify-content: flex-start;
+        gap: 6px;
+        border-bottom: none;
+        border-left: none;
+        border-top: 3px solid transparent;
+        padding: 10px 14px;
     }
 
-    .content-card p {
-        margin-left: 10px;
-        margin-right: 10px;
+    .scheda-tab .tab:hover {
+        border-left-color: transparent;
+        border-top-color: #c2d3e2;
     }
 
-    .tab {
-        width: 90%;
-        margin: 10px auto;
-        text-align: center;
+    .scheda-tab .tab.active {
+        border-left-color: transparent;
+        border-top-color: var(--blu);
+    }
+
+    .scheda-contenuto {
+        padding: 20px 16px 4px 16px;
+    }
+
+    .scheda-sfoglia {
+        flex-direction: column;
+        gap: 10px;
     }
 }
+
 @media (max-width: 768px) {
     #chartdiv {
         height: 300px;
@@ -588,7 +827,7 @@ footer img {
     }
 
     .footer-links {
-        font-size: 14px; /* Ridimensiona i link */
+        font-size: var(--fs-nota);
         line-height: 1.5; /* Migliora la leggibilità */
         margin-bottom: 10px;
     }
@@ -603,6 +842,16 @@ footer img {
     .footer-social a {
         font-size: 20px; /* Ridimensiona le icone */
     }
+}
+
+/* menù su mobile */
+.menu-toggle {
+    display: none;   /* nascosto su desktop */
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--testo);
 }
 
 /* Mostra il pulsante toggle solo su dispositivi mobili */
@@ -635,4 +884,168 @@ footer img {
         margin: 10px 0;
         text-align: center;
     }
+}
+
+/* albero familiare */
+
+.af-telaio {
+    position: relative;
+    border: 1px solid #e2e6ea;
+    border-radius: 8px;
+    background: #fbfcfd;
+    padding: 22px 20px 22px;
+    overflow-x: auto;
+}
+
+/* legenda */
+/* titolo a sinistra, legenda a destra */
+.af-intestazione {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 8px 24px;
+}
+
+.af-intestazione h2 {
+    margin-top: 0;
+}
+
+.af-legenda {
+    text-align: right;
+    font-size: var(--fs-nota);
+    color: var(--testo-secondario);
+    line-height: 1.9;
+    pointer-events: none;
+}
+
+.af-legenda:empty {
+    display: none;
+}
+
+.af-legenda-titolo {
+    display: block;
+    font-size: var(--fs-nota-piccola);
+    letter-spacing: .09em;
+    text-transform: uppercase;
+    color: var(--testo-secondario);
+    font-weight: 600;
+}
+
+.af-chiave {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    margin-left: 16px;
+}
+
+.af-chiave i {
+    display: inline-block;
+    width: 20px;
+    height: 0;
+    border-top: 1.6px solid #c2d3e2;
+}
+
+.af-chiave i.fr { border-top-color: #c9b48f; }
+.af-chiave i.lat { border-top-style: dashed; border-top-color: #d8c7b0; }
+
+/* impaginazione */
+.af-albero {
+    position: relative;
+    min-width: max-content;
+    margin: 0 auto;
+}
+
+.af-albero.af-con-graffa { padding-top: 30px; }
+
+.af-riga {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 48px;
+    position: relative;
+    z-index: 2;
+}
+
+/* spazio verticale */
+.af-riga + .af-riga { margin-top: 82px; }
+
+.af-scheda {
+    background: #fff;
+    border: 1px solid #e2e6ea;
+    border-radius: 6px;
+    padding: 9px 15px;
+    text-align: center;
+    min-width: 150px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .05);
+    transition: box-shadow .15s, border-color .15s, opacity .15s;
+}
+
+.af-nome {
+    font-size: var(--fs-nota);
+    font-weight: 600;
+    line-height: 1.3;
+    color: var(--testo);
+}
+
+.af-date {
+    font-size: var(--fs-nota-piccola);
+    color: var(--testo-tenue);
+    margin-top: 1px;
+    font-variant-numeric: tabular-nums;
+}
+
+/* evidenziazione al passaggio del mouse */
+.af-scheda.af-attiva {
+    border-color: #5593C9;
+    box-shadow: 0 0 0 3px rgba(85, 147, 201, .16);
+}
+
+.af-scheda.af-parente { border-color: #b9d0e4; }
+
+.af-albero.af-evidenzia .af-scheda:not(.af-attiva):not(.af-parente) { opacity: .34; }
+
+/* collegamenti */
+.af-linee {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    overflow: visible;
+}
+
+.af-linea {
+    fill: none;
+    stroke: #c2d3e2;
+    stroke-width: 1.6;
+}
+
+.af-linea.af-laterale { stroke: #d8c7b0; stroke-dasharray: 5 4; }
+.af-linea.af-graffa { stroke: #c9b48f; }
+.af-linea.on { stroke: #5593C9; stroke-width: 2.2; }
+.af-linea.af-laterale.on,
+.af-linea.af-graffa.on { stroke: #c08b3e; stroke-width: 2.2; }
+
+.af-etichetta {
+    font-size: var(--fs-nota-piccola);
+    fill: #93a5b5;
+    font-family: var(--ff-body);
+    text-anchor: middle;
+    paint-order: stroke;
+    stroke: #fbfcfd;
+    stroke-width: 3.5px;
+    stroke-linejoin: round;
+}
+
+.af-etichetta.lat,
+.af-etichetta.fr { fill: #b08c55; }
+.af-etichetta.on { fill: #33556f; font-weight: 600; }
+
+@media (max-width: 760px) {
+    .af-telaio { padding: 18px 12px 18px; }
+    .af-legenda { text-align: left; }
+    .af-chiave { margin-left: 0; margin-right: 14px; }
+    .af-riga { gap: 26px; }
+    .af-riga + .af-riga { margin-top: 64px; }
+    .af-scheda { min-width: 124px; padding: 7px 11px; }
 }

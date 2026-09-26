@@ -1,5 +1,22 @@
 // INIZIO SCRIPTS JAVASCRIPT
 
+// Spegne il cursore del titolo a fine animazione
+document.addEventListener("DOMContentLoaded", function () {
+  const typewriter = document.querySelector(".hero-typewriter");
+  if (!typewriter) return;
+
+  let typingCompletions = 0;
+  typewriter.addEventListener("animationend", function (event) {
+    // aspetta la seconda animazione typing, l'ultima della sequenza
+    if (event.animationName === "typing") {
+      typingCompletions++;
+      if (typingCompletions >= 2) {
+        typewriter.classList.add("finished");
+      }
+    }
+  });
+});
+
 
 $.ajaxSetup({
   async: true // Assicura che tutte le richieste siano asincrone (impostazione predefinita)
@@ -14,6 +31,8 @@ $.ajaxSetup({
 // scripts js sezione 2 'search' che permette di applicare la dissolvenza in entrata al testo allo scroll della pagina
 document.addEventListener("DOMContentLoaded", function () {
   const searchSection = document.querySelector('#search');
+  // esce se la sezione #search non c'è
+  if (!searchSection) return;
 
   function checkVisibility() {
     const rect = searchSection.getBoundingClientRect();
@@ -31,9 +50,24 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-// scripts js sezione 3: permette di incrementare i numeri
+// scripts js sezione 3: incrementa i numeri presi da json/statistiche.json
 
 document.addEventListener("DOMContentLoaded", function () {
+  var STATS_URL = "https://raw.githubusercontent.com/FondazioneFedericoZeri/Mercato_dell_arte/main/json/statistiche.json";
+
+  // Scarica subito le statistiche aggiornate
+  var statsPronte = fetch(STATS_URL)
+    .then(function (r) { return r.ok ? r.json() : null; })
+    .catch(function () { return null; });
+
+  function applicaStatistiche(stats) {
+    if (!stats) return;
+    document.querySelectorAll("#statistics .stat h3[data-stat]").forEach(function (h3) {
+      var v = stats[h3.getAttribute("data-stat")];
+      if (typeof v === "number" && isFinite(v)) h3.innerHTML = String(v);
+    });
+  }
+
   function animateValue(obj, start, end, duration) {
     let startTimestamp = null;
     const step = (timestamp) => {
@@ -51,14 +85,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function checkStatisticsVisibility() {
     const statsSection = document.querySelector("#statistics");
+    if (!statsSection) return;
     const rect = statsSection.getBoundingClientRect();
     if (rect.top < window.innerHeight && rect.bottom >= 0 && !statsSection.classList.contains('animated')) {
       statsSection.classList.add('animated');
-      const stats = document.querySelectorAll("#statistics .stat h3");
-      stats.forEach(stat => {
-        const endValue = parseInt(stat.innerHTML, 10);
-        stat.innerHTML = "0";
-        animateValue(stat, 0, endValue, 2000);
+      // aspetta i numeri aggiornati prima di partire col conteggio
+      statsPronte.then(function (stats) {
+        applicaStatistiche(stats);
+        const stats_el = document.querySelectorAll("#statistics .stat h3");
+        stats_el.forEach(stat => {
+          const endValue = parseInt(stat.innerHTML, 10);
+          stat.innerHTML = "0";
+          animateValue(stat, 0, endValue, 2000);
+        });
       });
     }
   }
@@ -117,8 +156,14 @@ document.addEventListener("DOMContentLoaded", function () {
   var markers = L.markerClusterGroup();
 
 
+  // Nomi delle entità per i link nei popup, se mancano si usa l'ID
+  var nomiPronti = fetch("https://raw.githubusercontent.com/FondazioneFedericoZeri/Mercato_dell_arte/main/json/nomi_entita.json")
+    .then(function (r) { return r.ok ? r.json() : {}; })
+    .catch(function () { return {}; });
+
   // Fetch JSON data
   $.getJSON("https://raw.githubusercontent.com/FondazioneFedericoZeri/Mercato_dell_arte/main/json/luoghi.json", function (luoghi_json) {
+   nomiPronti.then(function (nomi_entita) {
     // Loop through JSON data and add city markers to the cluster group
     for (let luogo in luoghi_json) {
       if (luoghi_json[luogo]["geo"]["lat"]) {
@@ -142,22 +187,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Loop through each ID and create a link
         ids.forEach(function (id) {
-          content += `<a href="https://fondazionefedericozeri.github.io/Mercato_dell_arte/html/dettagli/dettaglio_${id}.html" target="_blank">Vai a ${id}</a><br>`;
+          if (!id) return;   // spazi doppi o in coda in ID_entità
+          let nome = nomi_entita[id] || id;
+          content += `<a href="https://fondazionefedericozeri.github.io/Mercato_dell_arte/html/dettagli/dettaglio_${id}.html" target="_blank">Vai a ${nome}</a><br>`;
         });
 
         // Create the marker
         var marker = L.marker([luoghi_json[luogo]["geo"]["lat"], luoghi_json[luogo]["geo"]["lon"]]);
 
-        // Bind the tooltip (for hover)
-        marker.bindTooltip(content, { permanent: false, direction: "top" });
-
-        // Bind the popup (which stays open on click)
-        marker.bindPopup(content);
-
-        // Open popup on click
-        marker.on('click', function (e) {
-          marker.openPopup();
-        });
+        // Nuvoletta al passaggio del mouse, riquadro con i link al clic
+        collegaTooltipEPopup(marker, content);
 
         markers.addLayer(marker); // Add marker to the cluster group
       }
@@ -165,38 +204,55 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Add the MarkerClusterGroup to the map
     map.addLayer(markers);
+   });
   }).fail(function () {
     console.error("Failed to load the JSON file.");
   });
 });
 
 
-// scripts js sezione 5 timeline: permette di applicare la dissolvenza in entrata al testo allo scroll della pagina
+// Dissolvenza delle sezioni della home quando entrano nello schermo
 document.addEventListener("DOMContentLoaded", function () {
-  // Funzione per controllare se un elemento è visibile nello schermo
-  function isElementInViewport(el) {
-    var rect = el.getBoundingClientRect();
-    return (
-      rect.top >= 0 &&
-      rect.left >= 0 &&
-      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
+  var sezioni = document.querySelectorAll('.fade-in');
+  if (!sezioni.length) return;
+
+  function mostra(elemento) {
+    elemento.classList.add('visible');
   }
 
-  // Funzione per applicare l'effetto di dissolvenza
-  function checkFadeIn() {
-    var elements = document.querySelectorAll('.fade-in');
-    elements.forEach(function (element) {
-      if (isElementInViewport(element)) {
-        element.classList.add('visible');
-      }
+  // Senza IntersectionObserver mostra tutto subito
+  if (!('IntersectionObserver' in window)) {
+    sezioni.forEach(mostra);
+    return;
+  }
+
+  var osservatore = new IntersectionObserver(function (voci) {
+    voci.forEach(function (voce) {
+      if (!voce.isIntersecting) return;
+      mostra(voce.target);
+      osservatore.unobserve(voce.target);   // una volta apparsa, resta
     });
-  }
+  }, {
+    // la sezione appare quando è entrata di 80 pixel
+    rootMargin: '0px 0px -80px 0px',
+    threshold: 0
+  });
 
-  // Controlla lo scroll e carica
-  window.addEventListener('scroll', checkFadeIn);
-  window.addEventListener('load', checkFadeIn);
+  sezioni.forEach(function (s) { osservatore.observe(s); });
 });
 
 //bubble
+
+// Nuvoletta al passaggio del mouse, popup coi link al clic
+// il popup chiude la nuvoletta, che senza mouse non c'è
+function collegaTooltipEPopup(marker, contenuto) {
+  marker.bindPopup(contenuto);
+  var conMouse = window.matchMedia && window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+  if (!conMouse) return marker;
+  marker.bindTooltip(contenuto, { permanent: false, direction: "top" });
+  marker.on("popupopen", function () { marker.closeTooltip(); });
+  marker.on("tooltipopen", function () {
+    if (marker.isPopupOpen()) marker.closeTooltip();
+  });
+  return marker;
+}

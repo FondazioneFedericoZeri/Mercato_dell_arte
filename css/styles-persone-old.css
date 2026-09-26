@@ -9,7 +9,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Assicura che il corpo occupi almeno l'altezza della finestra */
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--ff-body);
     color: #333;
     line-height: 1.6;
 }
@@ -131,7 +131,7 @@ nav ul li a:hover {
 }
 
 .column:first-child a:hover {
-    color: #ffb907f0; /* Change color on hover */
+    color: var(--link-hover); /* Change color on hover */
     text-decoration: underline; /* Underline on hover */
     transform: translateX(10px); /* Move text to the right on hover */
 }
@@ -176,7 +176,7 @@ nav ul li a:hover {
 
 .column:first-child a:hover {
     text-decoration: underline; /* Optional: Underline on hover */
-    color: #ffb907f0; /* Optional: Slightly lighter color on hover */
+    color: var(--link-hover); /* Optional: Slightly lighter color on hover */
     text-decoration: none;
 }
 
@@ -214,7 +214,7 @@ nav ul li a:hover {
     text-underline-offset: 3px;
 }
 .collaborator-tooltip a:hover {
-    color: #ffb907f0;
+    color: var(--link-hover);
 }
 
 .collaborator-tooltip::before {
@@ -262,7 +262,7 @@ nav ul li a:hover {
     text-underline-offset: 3px;
 }
 .client-tooltip a:hover {
-    color: #ffb907f0;
+    color: var(--link-hover);
 }
 
 .client-tooltip::before {

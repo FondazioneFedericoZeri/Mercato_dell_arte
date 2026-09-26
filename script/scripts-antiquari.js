@@ -21,15 +21,6 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-// script per il bottone
-// Mostra il bottone "Torna su" quando si scorre verso il basso
-window.addEventListener('scroll', function() {
-    var backToTopButton = document.getElementById('back-to-top');
-    if (window.pageYOffset > 300) {
-        backToTopButton.classList.add('show');
-    } else {
-        backToTopButton.classList.remove('show');
-    }
-});
+// Bottone "Torna su" in script/torna-su.js
 
 

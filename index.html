@@ -5,10 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Il mercato antiquario in Italia tra Otto e Novecento</title>
+    <link rel="stylesheet" href="css/tokens.css">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;700&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <!-- Precarica immagine hero -->
+    <link rel="preload" href="img/homepage/hero-image.jpg" as="image">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" defer></script>
     <!-- Resources Mappa-->
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
@@ -16,14 +20,15 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
     <!-- Leaflet JS -->
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" defer></script>
     <!-- MarkerCluster JS -->
-    <script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+    <script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js" defer></script>
 
     <!-- My Scripts -->
-    <script type="text/javascript" src="script/scripts-antiquari.js"></script>
-    <script type="text/javascript" src="script/antiquari_search.js"></script>
-    <script src="../Mercato_dell_arte/script/scripts-homepage.js"></script>
+    <!-- Script in defer -->
+    <script src="../Mercato_dell_arte/script/scripts-homepage.js" defer></script>
+    <script src="../Mercato_dell_arte/script/scripts-eventi-preview.js" defer></script>
+    <script src="../Mercato_dell_arte/script/scripts-protagonisti.js" defer></script>
     <script src="../Mercato_dell_arte/script/menu.js" defer></script>
 
 </head>
@@ -31,22 +36,27 @@
 <body>
     <header>
         <div class="header-container">
-          <a href="../Mercato_dell_arte/index.html">
-            <img id="logo.png" src="../Mercato_dell_arte/img/homepage/logo.png" alt="Fondazione Federico Zeri" />
-          </a>
+          <a class="marchio" href="../Mercato_dell_arte/index.html">Mercato dell'arte</a>
           <button class="menu-toggle" aria-label="Apri menu">
             ☰
           </button>
-          <nav>
-            <ul class="menu">
-              <li><a href="html/progetto.html">Progetto</a></li>
-              <li><a href="html/antiquari.html">Antiquari</a></li>
-              <li><a href="html/luoghi.html">Luoghi</a></li>
-              <li><a href="html/eventi.html">Eventi</a></li>
-              <li><a href="html/persone.html">Persone</a></li>
-              <li><a href="html/bibliografia.html">Bibliografia</a></li>
-            </ul>
-          </nav>
+          <div class="testata-destra">
+            <nav>
+              <ul class="menu">
+                <li><a href="html/progetto.html">Progetto</a></li>
+                <li><a href="html/antiquari.html">Antiquari</a></li>
+                <li><a href="html/luoghi.html">Luoghi</a></li>
+                <li><a href="html/eventi.html">Eventi</a></li>
+                <li><a href="html/persone.html">Persone</a></li>
+                <li><a href="html/bibliografia.html">Bibliografia</a></li>
+              </ul>
+            </nav>
+            <span class="testata-filo"></span>
+            <a class="testata-ente" href="https://fondazionezeri.unibo.it/it/homepage" target="_blank" rel="noopener"
+               title="Fondazione Federico Zeri, Università di Bologna">
+              <img src="img/homepage/logo.png" alt="Fondazione Federico Zeri">
+            </a>
+          </div>
         </div>
       </header>
 
@@ -96,21 +106,22 @@
     </section>
 
 
+    <!-- Contatore, numeri da json/statistiche.json -->
     <section id="statistics">
         <div class="stat">
-            <h3>70</h3>
+            <h3 data-stat="entita">95</h3>
             <a href="html/antiquari.html">Entità antiquariali</a>
         </div>
         <div class="stat">
-            <h3>125</h3>
-            <a href="html/antiquari.html #Titolo">Singoli professionisti</a>
+            <h3 data-stat="professionisti">218</h3>
+            <a href="html/persone.html">Singoli professionisti</a>
         </div>
         <div class="stat">
-            <h3>147</h3>
+            <h3 data-stat="clienti_collaboratori">304</h3>
             <a href="html/persone.html">Clienti e collaboratori</a>
         </div>
         <div class="stat">
-            <h3>153</h3>
+            <h3 data-stat="luoghi">293</h3>
             <a href="html/luoghi.html">Luoghi del mercato dell'arte</a>
         </div>
     </section>
@@ -125,81 +136,56 @@
         </div>
     </section>
 
-    <section id="timeline" class="fade-in">
-        <h2>
-            <span class="regular-text">GLI</span>
-            <span class="highlight">EVENTI</span>
-        </h2>
-        <div class="content-wrapper">
+    <!-- Sezione Eventi -->
+    <section id="eventi-preview" class="fade-in">
+        <a href="html/eventi.html" class="eventi-chart-link" aria-label="Vai alla cronologia completa degli eventi">
+            <div class="eventi-chart-card">
+                <div class="eventi-chart" id="home-ed-chart"></div>
+                <div class="eventi-chart-labels" id="home-ed-labels"></div>
+            </div>
+        </a>
+        <div class="text-content">
+            <h2>
+                <span class="regular-text">GLI</span>
+                <span class="highlight">EVENTI</span>
+            </h2>
             <p>Ripercorri la storia del mercato dell’arte tra XIX e XX secolo attraverso alcuni eventi significativi.</p>
-            <a href="html/eventi.html" class="btn">Scopri di più</a>
+            <a href="html/eventi.html" class="btn">Vai alla Cronologia</a>
         </div>
-        </div>
+        <div class="eventi-chart-tip" id="home-ed-tip"></div>
     </section>
 
-
-    <!-- inizio prova timeline 2 -->
-    <section id="timeline2">
-
-        <div class="tl-item">
-            <div class="tl-year">
-                <p class="f2 heading--sanSerif">1895</p>
-            </div>
-            <div class="tl-content">
-                <h1>Scoperta "tesoro di Boscoreale" </h1>
-                <p>Gli antiquari Canessa scoprono il "Tesoro di Boscoreale", un servizio di argenteria di oltre 100 pezzi di epoca romana, esportato e ceduto al barone Edmond De Rothschild. La collezione si conserva oggi al Museo del Louvre.</p>
-            </div>
-        </div>
-
-        <div class="tl-item">
-            <div class="tl-year">
-                <p class="f2 heading--sanSerif">1925</p>
-            </div>
-            <div class="tl-content">
-                <h1 class="f3 text--accent ttu">Inaugurazione Museo Bardini</h1>
-                <p>Apertura di un museo dedicato a Stefano Bardini che tre anni prima aveva donato la propria collezione e il palazzo al Comune di Firenze.</p>
-            </div>
-        </div>
-
-        <div class="tl-item">
-            <div class="tl-year">
-                <p class="f2 heading--sanSerif">1932</p>
-            </div>
-            <div class="tl-content">
-                <h1 class="f3 text--accent ttu">Vendita Collezione Simonetti</h1>
-                <p>Vendita dell'intera collezione di Attilio Simonetti, organizzata dagli eredi presso la casa d'aste Guido Tavazzi, con catalogo curato da Ludwig Pollak.</p>
-            </div>
-        </div>
-
-        <div class="tl-item">
-            <div class="tl-year">
-                <p class="f2 heading--sanSerif">1935</p>
-            </div>
-            <div class="tl-content">
-                <h1 class="f3 text--accent ttu">Pubblicazione "Memorie di un antiquario"</h1>
-                <p>Augusto Jandolo pubblica l'autobiografia "Memorie di un antiquario", fonte imprescindibile per la comprensione del mercato dell’arte romano a cavallo tra Otto e Novecento.</p>
-            </div>
-    </section>
-    <!-- fine prova timeline 2 -->
-
+    <!-- Sezione Protagonisti -->
     <section id="key-people" class="fade-in">
-        <div class="left-key-content">
+        <div class="key-people-visual">
+            <a href="../Mercato_dell_arte/html/persone.html" class="pr-link" aria-label="Vai all'elenco completo di antiquari, collaboratori e clienti">
+                <div id="protagonisti-rete" class="pr-card">
+                    <svg id="pr-net" viewBox="0 0 620 420" preserveAspectRatio="xMidYMid meet"
+                         role="img"
+                         aria-label="Rete delle relazioni fra le principali entità antiquariali e i loro collaboratori"></svg>
+                    <div class="pr-tip" id="pr-tip"></div>
+                </div>
+            </a>
+            <div class="pr-legenda">
+                <span><i class="pr-key-ent"></i>entità antiquariale</span>
+                <span><i class="pr-key-col"></i>collaboratore / cliente</span>
+            </div>
+        </div>
+
+        <div class="key-people-text">
             <h2>
                 <span class="regular-text">I</span>
                 <span class="highlight">PROTAGONISTI</span>
             </h2>
             <p>Consulta la lista di <a href="../Mercato_dell_arte/html/persone.html" class="link">antiquari, collaboratori o clienti</a> coinvolti nelle transazioni antiquariali.</p>
+
+            <!-- Bottone come nella sezione Antiquari -->
+            <div class="search-bar-container">
+                <a href="../Mercato_dell_arte/html/persone.html">
+                    <button class="btn">Vedi tutti</button>
+                </a>
+            </div>
         </div>
-
-
-
-        <!--  <div class="wrapper">
-            <div class="word">Antiquari</div>
-            <div class="word">Storici dell'arte</div>
-            <div class="word">Fotografi</div>
-            <div class="word">Restauratori</div>
-            <div class="word">Clienti</div>
-          </div> -->
 
     </section>
 
@@ -229,11 +215,18 @@
 
     <footer>
         <div class="footer-container">
+          <div class="footer-ente">
+            <a href="https://fondazionezeri.unibo.it/it/homepage" target="_blank" rel="noopener">
+              <img src="img/homepage/logo-negativo.png" alt="Fondazione Federico Zeri">
+            </a>
+            <p>Progetto della <a href="https://fondazionezeri.unibo.it/it/homepage" target="_blank" rel="noopener">Fondazione
+               Federico Zeri</a>, Università di Bologna.</p>
+          </div>
             <div class="footer-left">
                 <p>Licenza dati e immagini: <img id="license.png" src="img/homepage/license.png" alt="License"></p>
             </div>
             <div class="footer-right">
-                <a href="../Mercato_dell_arte/html/crediti.html">Crediti</a> | <a href="https://github.com/FondazioneFedericoZeri/Mercato_dell_arte">Documentazione</a>
+                <a href="../Mercato_dell_arte/html/crediti.html">Crediti</a> | <a href="../Mercato_dell_arte/html/documentazione.html">Documentazione</a>
             </div>
         </div>
     </footer>

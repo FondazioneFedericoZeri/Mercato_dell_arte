@@ -33,10 +33,10 @@ document.addEventListener("DOMContentLoaded", function () {
       // Convert the luoghi_json object into an array
       var placesArray = Object.values(luoghi_json);
 
-      // Filter the array based on the ID_entità field
+      // Filtra i luoghi confrontando uno per uno gli ID di ID_entità
       var filteredPlaces = placesArray.filter(function (luogo) {
-        var regex = new RegExp("\\b" + personID + "\\b");  // Ensure word boundaries
-        return regex.test(luogo.ID_entità);  // Test if the ID_entità matches the pattern
+        var ids = String(luogo.ID_entità || "").trim().split(/\s+/);
+        return ids.indexOf(personID) !== -1;
       });
 
       // Add markers for each filtered place
@@ -63,8 +63,8 @@ document.addEventListener("DOMContentLoaded", function () {
           }
 
           // Create the marker
-          var marker = L.marker([luogo.geo.lat, luogo.geo.lon])
-            .bindTooltip(content, { permanent: false, direction: "top" });
+          // nuvoletta al passaggio del mouse, riquadro al clic o al tocco
+          var marker = collegaTooltipEPopup(L.marker([luogo.geo.lat, luogo.geo.lon]), content);
 
           // Add the marker to the cluster group
           markers.addLayer(marker);
@@ -99,4 +99,16 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-
+// Nuvoletta al passaggio del mouse, popup coi link al clic
+// il popup chiude la nuvoletta, che senza mouse non c'è
+function collegaTooltipEPopup(marker, contenuto) {
+  marker.bindPopup(contenuto);
+  var conMouse = window.matchMedia && window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+  if (!conMouse) return marker;
+  marker.bindTooltip(contenuto, { permanent: false, direction: "top" });
+  marker.on("popupopen", function () { marker.closeTooltip(); });
+  marker.on("tooltipopen", function () {
+    if (marker.isPopupOpen()) marker.closeTooltip();
+  });
+  return marker;
+}

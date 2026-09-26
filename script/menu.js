@@ -1,10 +1,10 @@
-// Seleziona gli elementi
+// Apre e chiude il menù sotto i 768px
 const menuToggle = document.querySelector('.menu-toggle');
-const menu = document.querySelector('.menu');
+const menu = document.querySelector('nav ul');
 
-// Aggiungi evento al clic
-menuToggle.addEventListener('click', () => {
-  menu.classList.toggle('show'); // Aggiungi/rimuovi classe "show"
-});
-
-
+if (menuToggle && menu) {
+  menuToggle.addEventListener('click', () => {
+    const aperto = menu.classList.toggle('show');
+    menuToggle.setAttribute('aria-expanded', aperto ? 'true' : 'false');
+  });
+}
