@@ -16341,19 +16341,6 @@
         "Bio": "MO_I_bio",
         "Link Zeri": "https://catalogo.fondazionezeri.unibo.it/ricerca.v2.jsp?decorator=layout_resp&apply=true&percorso_ricerca=OA&sortby=LOCALIZZAZIONE&batch=10&view=list&locale=it&PVCS_PVCR_PVCP_PVCC_PVCL_LDCN_PRVS_PRVR_PRVP_PRVC_PRVL_PRCD=molena",
         "Bibliografia": {
-            "B_341": {
-                "ID": "B_341",
-                "Autore": "Maison de Ventes Lino Pesaro",
-                "Anno": "1913",
-                "Titolo": "Exposition et vente de tableaux de Giovanni Segantini a Saint-Moritz",
-                "Completamento del titolo": "18-23 agosto 1913",
-                "Città, editore o rivista": "Milano, Bertieri e Vanzetti",
-                "Pagine": "",
-                "Tipologia": "catalogo d'asta",
-                "Istituto": "",
-                "Fondo": "",
-                "Segnatura": ""
-            },
             "B_423": {
                 "ID": "B_423",
                 "Autore": "",
@@ -17720,19 +17707,6 @@
                 "Città, editore o rivista": "in «L'Antiquario», XII, 3",
                 "Pagine": "p. 144",
                 "Tipologia": "articolo di periodico",
-                "Istituto": "",
-                "Fondo": "",
-                "Segnatura": ""
-            },
-            "B_342": {
-                "ID": "B_342",
-                "Autore": "Lino Pesaro",
-                "Anno": "1914",
-                "Titolo": "La Galerie Pisani de Florence: première partie",
-                "Completamento del titolo": "",
-                "Città, editore o rivista": "Milano, Bertieri e Vanzetti",
-                "Pagine": "",
-                "Tipologia": "monografia",
                 "Istituto": "",
                 "Fondo": "",
                 "Segnatura": ""
@@ -20522,7 +20496,8 @@
         },
         "Relazioni": {
             "GU": true,
-            "BA_V": true
+            "BA_V": true,
+            "VE_I": true
         },
         "Luoghi": {
             "IT_208": {
@@ -23300,7 +23275,7 @@
             },
             "SA_VII_3": {
                 "ID": "SA_VII_3",
-                "Nome Persona": "Teresa Salamon",
+                "Nome Persona": "Teresa Villa",
                 "ID_entità": "SA_VII",
                 "ID_luoghi": {},
                 "Professione": "antiquario",
@@ -26790,7 +26765,9 @@
                 ]
             }
         },
-        "Relazioni": {},
+        "Relazioni": {
+            "RI_I": true
+        },
         "Luoghi": {
             "IT_213": {
                 "ID": "IT_213",
