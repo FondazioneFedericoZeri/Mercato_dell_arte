@@ -193,11 +193,18 @@
     };
 
     var genitori = genitoriDi(dati);
-    var fratelli = {};
+    var aggiungi = function (m, k, v) { (m[k] = m[k] || []).push(v); };
+
+    // Parenti sulla stessa riga: fratelli prima, poi cugini e coniugi.
+    var fratelli = {}, affini = {};
+    // Zii: stanno nella riga di sopra ma non sono genitori.
+    var zii = {};
     dati.relazioni.forEach(function (r) {
-      if (r.Tipo_di_relazione !== "fratello/sorella") return;
-      (fratelli[r.Persona_1] = fratelli[r.Persona_1] || []).push(r.Persona_2);
-      (fratelli[r.Persona_2] = fratelli[r.Persona_2] || []).push(r.Persona_1);
+      var t = r.Tipo_di_relazione, a = r.Persona_1, b = r.Persona_2;
+      if (t === "fratello/sorella") { aggiungi(fratelli, a, b); aggiungi(fratelli, b, a); }
+      else if (t === "cugino" || t === "coniuge" || t === "marito") { aggiungi(affini, a, b); aggiungi(affini, b, a); }
+      else if (t === "zio") aggiungi(zii, b, a);        // a e' lo zio di b
+      else if (t === "nipote") aggiungi(zii, a, b);     // a e' il nipote di b
     });
 
     var livelli = Object.keys(righe).map(Number).sort(function (a, b) { return a - b; });
@@ -217,17 +224,34 @@
         }
       });
 
-      // Chi non ha genitori sopra si appoggia ai fratelli. Due giri
-      // bastano: piu' in la' non si aggiunge informazione.
+      var media = function (valori) {
+        valori = valori.filter(function (v) { return v !== undefined; });
+        return valori.length
+          ? valori.reduce(function (s, v) { return s + v; }, 0) / valori.length
+          : undefined;
+      };
+
+      // Chi non ha genitori sopra si mette sotto i suoi zii. Prima
+      // restava senza riferimento e finiva in fondo alla riga: nei
+      // Colnaghi Martin Henry II, figlio di Martin (a destra), veniva
+      // messo a sinistra e i McKay e Scott, nipoti di Dominic (a
+      // sinistra), a destra, e tutte le linee si incrociavano.
+      righe[L].forEach(function (pid) {
+        if (bar[pid] !== undefined) return;
+        var v = media((zii[pid] || []).map(function (z) { return sopra[z]; }));
+        if (v !== undefined) bar[pid] = v;
+      });
+
+      // Poi ci si appoggia a fratelli, e in mancanza a cugini e
+      // coniugi, sulla stessa riga. Due giri bastano: piu' in la'
+      // non si aggiunge informazione.
       for (var giro = 0; giro < 2; giro++) {
-        righe[L].forEach(function (pid) {
-          if (bar[pid] !== undefined) return;
-          var noti = (fratelli[pid] || [])
-            .map(function (f) { return bar[f]; })
-            .filter(function (v) { return v !== undefined; });
-          if (noti.length) {
-            bar[pid] = noti.reduce(function (s, v) { return s + v; }, 0) / noti.length;
-          }
+        [fratelli, affini].forEach(function (legami) {
+          righe[L].forEach(function (pid) {
+            if (bar[pid] !== undefined) return;
+            var v = media((legami[pid] || []).map(function (f) { return bar[f]; }));
+            if (v !== undefined) bar[pid] = v;
+          });
         });
       }
 

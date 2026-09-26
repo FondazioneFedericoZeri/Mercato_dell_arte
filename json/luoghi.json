@@ -244,11 +244,11 @@
         "Apertura": "1936",
         "Chiusura": "1980 ca.",
         "Nome attività": "Francesco Pospisil (Palazzo Sagredo, abitazione privata)",
-        "Latitudine": "",
-        "Longitudine": "",
+        "Latitudine": "45.44090624419448",
+        "Longitudine": "12.334610254480511",
         "geo": {
-            "lat": 45.4423196937427,
-            "lon": 12.335120822738263
+            "lat": 45.44090624419448,
+            "lon": 12.334610254480511
         }
     },
     "IT_1_b": {
@@ -3592,11 +3592,11 @@
         "Apertura": "1887",
         "Chiusura": "1914",
         "Nome attività": "Michelangelo Guggenheim, \"M. Guggenheim. Objets d’Art & Antiquités\" (Palazzo Balbi, sede e abitazione privata)",
-        "Latitudine": "",
-        "Longitudine": "",
+        "Latitudine": "45.43515790000714",
+        "Longitudine": "12.327079284162563",
         "geo": {
-            "lat": 45.4379606,
-            "lon": 12.3413359
+            "lat": 45.43515790000714,
+            "lon": 12.327079284162563
         }
     },
     "IT_154": {
@@ -4239,8 +4239,8 @@
         "ID_entità": "DI_I",
         "Apertura": "1920 ca.",
         "Chiusura": "1930 ca.",
-        "Nome attività": "",
-        "Latitudine": "Eugenio Di Castro",
+        "Nome attività": "Eugenio Di Castro",
+        "Latitudine": "",
         "Longitudine": "",
         "geo": {
             "lat": 41.9074985,
@@ -4257,8 +4257,8 @@
         "ID_entità": "DI_I",
         "Apertura": "1930 ca.",
         "Chiusura": "1976",
-        "Nome attività": "",
-        "Latitudine": "Eugenio Di Castro",
+        "Nome attività": "Eugenio Di Castro",
+        "Latitudine": "",
         "Longitudine": "",
         "geo": {
             "lat": 41.9083445,
@@ -4276,11 +4276,11 @@
         "Apertura": "1932",
         "Chiusura": "1976",
         "Nome attività": "Eugenio Di Castro (Palazzo Raffaelli)",
-        "Latitudine": "",
-        "Longitudine": "",
+        "Latitudine": "41.90713741790373",
+        "Longitudine": "12.480659417658588",
         "geo": {
-            "lat": 41.9083445,
-            "lon": 12.4790906
+            "lat": 41.90713741790373,
+            "lon": 12.480659417658588
         }
     },
     "IT_194": {
@@ -4294,11 +4294,11 @@
         "Apertura": "1976",
         "Chiusura": "2006",
         "Nome attività": "Angelo Di Castro (Palazzo Raffaelli)",
-        "Latitudine": "",
-        "Longitudine": "",
+        "Latitudine": "41.907197533163334",
+        "Longitudine": "12.480858435430482",
         "geo": {
-            "lat": 41.907359,
-            "lon": 12.4812456
+            "lat": 41.907197533163334,
+            "lon": 12.480858435430482
         }
     },
     "IT_195": {
@@ -5121,8 +5121,8 @@
         "ID_entità": "SA_IV",
         "Apertura": "1915",
         "Chiusura": "1919",
-        "Nome attività": "",
-        "Latitudine": "New York Studio: 55 E. 56th St",
+        "Nome attività": "New York Studio: 55 E. 56th St",
+        "Latitudine": "",
         "Longitudine": "",
         "geo": {
             "lat": 36.1021436,

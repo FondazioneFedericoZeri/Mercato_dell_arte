@@ -12,7 +12,7 @@ FR_8	Francia	Francia	Parigi	Rue Spontini	16	LA_II	1895 ca.	1934	Michele Lazzaron
 FR_9	Francia	Francia	Parigi	Rue St. Honoré		CO_IV	1760	1790	Giovanni Battista Torre, “Cabinet de Physique Expérimentale”, poi "Torre &Co."		
 FR_10	Francia	Francia	Parigi	rue La Boétie	52	DA	1920	1929	Pietro e Alberto D'Atri, "Galleria D'Atri"		
 FR_11	Francia	Francia	Parigi	rue La Boéie	23	DA	1929	1970	Pietro, Alberto e Mario D'Atri, "Galleria D'Atri"	48.87399694615295	2.316583062562373
-IT_1	Italia	Veneto	Venezia	Canal Grande		PO_II	1936	1980 ca.	Francesco Pospisil (Palazzo Sagredo, abitazione privata)		
+IT_1	Italia	Veneto	Venezia	Canal Grande		PO_II	1936	1980 ca.	Francesco Pospisil (Palazzo Sagredo, abitazione privata)	45.44090624419448	12.334610254480511
 IT_1_b	Italia	Veneto	Venezia	San Marco	1659	VI_I	1950 ca.	1976	Ettore Viancini (abitazione privata)		
 IT_1_c	Italia	Veneto	Venezia	Calle Larga XXII marzo		VI_I	1976	1982	Paolo Viancini		
 IT_1_d	Italia	Veneto	Venezia	Campo de l'Abazia	3551	BR_III	1920	1974	Brass (Scuola Vecchia di S. Maria della Misericordia, atelier e sede)		
@@ -198,7 +198,7 @@ IT_149	Italia	Lombardia	Milano	via Meravigli	10	PE	1904 ca.	1916	Lino Pesaro
 IT_150	Italia	Lombardia	Milano	via Manzoni	12	PE	1917	1938	Lino Pesaro, "Galleria Pesaro"		
 IT_151	Italia	Veneto	Venezia	Campo Santa Maria del Giglio	2467	GU	1869	1916	Michelangelo Guggenheim, "Gabinetto di oggetti di antichità e di belle arti" 		
 IT_152	Italia	Veneto	Venezia	Calle dei Fusei		GU	1869 ca.	1874	Michelangelo Guggenheim, "Gabinetto di oggetti di antichità e di belle arti" 	45.43521777086612	12.335324369374838
-IT_153	Italia	Veneto	Venezia	Calle del Remer	3901	GU	1887	1914	Michelangelo Guggenheim, "M. Guggenheim. Objets d’Art & Antiquités" (Palazzo Balbi, sede e abitazione privata)		
+IT_153	Italia	Veneto	Venezia	Calle del Remer	3901	GU	1887	1914	Michelangelo Guggenheim, "M. Guggenheim. Objets d’Art & Antiquités" (Palazzo Balbi, sede e abitazione privata)	45.43515790000714	12.327079284162563
 IT_154	Italia	Veneto	Venezia	Campo San Gregorio	172	LO	1911	1919	Adolph Loewi, "Galleria di San Gregorio" (Abbazia di S. Gregorio)		
 IT_155	Italia	Veneto	Venezia	San Trovaso	960	LO	1919	1939	Adolph Loewi, "Adolph Loewi per il commercio di Antichità ed Oggetti d'arte antica" (Palazzo Nani-Mocenigo)		
 IT_156	Italia	Lazio	Roma	via del Tritone	183	PO_III	1903	1927	Ludwig Pollak (Palazzo Alberoni Bacchettoni, sede e abitazione privata)		
@@ -234,10 +234,10 @@ IT_185	Italia	Emilia-Romagna	Bologna	via Castiglione	31	CO_V	1960 ca.	in attivit
 IT_188	Italia	Lombardia	Milano	via Fiori Oscuri		GI_I	1940 ca.	1962	Antonia Maria Gianetti		
 IT_189	Italia	Lombardia	Milano	via Gesù	2	GI_I	1962	1988	Antonia Maria Gianetti, “Maria Antonia Gianetti Antichità”		
 IT_190	Italia	Lombardia	Milano	via Gesù	7	GI_I	1981	2002	Antonia Maria Gianetti, “Maria Antonia Gianetti Antichità”		
-IT_191	Italia	Lazio	Roma	via dei Greci		DI_I	1920 ca.	1930 ca.		Eugenio Di Castro		
-IT_192	Italia	Lazio	Roma	via del Babuino	82	DI_I	1930 ca.	1976		Eugenio Di Castro		
-IT_193	Italia	Lazio	Roma	via del Babuino	92 a/b	DI_I	1932	1976	Eugenio Di Castro (Palazzo Raffaelli)		
-IT_194	Italia	Lazio	Roma	via Alibert	20-23	DI_I	1976	2006	Angelo Di Castro (Palazzo Raffaelli)		
+IT_191	Italia	Lazio	Roma	via dei Greci		DI_I	1920 ca.	1930 ca.	Eugenio Di Castro		
+IT_192	Italia	Lazio	Roma	via del Babuino	82	DI_I	1930 ca.	1976	Eugenio Di Castro		
+IT_193	Italia	Lazio	Roma	via del Babuino	92 a/b	DI_I	1932	1976	Eugenio Di Castro (Palazzo Raffaelli)	41.90713741790373	12.480659417658588
+IT_194	Italia	Lazio	Roma	via Alibert	20-23	DI_I	1976	2006	Angelo Di Castro (Palazzo Raffaelli)	41.907197533163334	12.480858435430482
 IT_195	Italia	Emilia-Romagna	Bologna	via Ugo Bassi	87	AN AS	1873	1879	Raffaele Angiolini e Alessandro Ascoli, prima “Alessandro Ascoli e Comp.o”, poi “Angiolini e Ascoli”		
 IT_196	Italia	Emilia-Romagna	Bologna	via Barberia	13	AN	1905	1907	Raffaele Angiolini e Alessandro Ranuzzi, “Alessandro Ranuzzi e C.”		
 IT_197	Italia	Lazio	Roma	via Lima	28	DA	1905	1907	Alberto D'Atri		
@@ -283,7 +283,7 @@ USA_5	Stati Uniti d'America	Stati Uniti d'America	New York	680 5th av		CA_I	1924
 USA_6	Stati Uniti d'America	Stati Uniti d'America	New York	3 East 41st street		CA_I	1909	1916 ca.	Amedeo Canessa, "C. & E. Canessa", Amedeo Canessa		
 USA_7	Stati Uniti d'America	Stati Uniti d'America	New York			CA_I	1916	1928	Amedeo e Ercole Canessa, "Canessa Gallery"		
 USA_8	Stati Uniti d'America	Stati Uniti d'America	New York	15 East 47th street		OR	1900 ca.	1970 ca.	Luigi e Raimondo Orselli, "Luigi Orselli" (succursale)		
-USA_9	Stati Uniti d'America	Stati Uniti d'America	New York	New York		SA_IV	1915	1919		New York Studio: 55 E. 56th St		
+USA_9	Stati Uniti d'America	Stati Uniti d'America	New York	New York		SA_IV	1915	1919	New York Studio: 55 E. 56th St		
 USA_10	Stati Uniti d'America	Stati Uniti d'America	New York	11 East 52nd Street		LO	1933	1944 ca.	Adolph Loewi, "Adolfo Loewi, Inc."		
 USA_11	Stati Uniti d'America	Stati Uniti d'America	Los Angeles	Beverly Hills		LO	1939	2003	Gabriella Katherine "Kay" Loewi e William Robertson, "Loewi-Robertson, Inc."		
 USA_12	Stati Uniti d'America	Stati Uniti d'America	New York	East 67th Street	23	CO_IV	2015	in attività	Colnaghi		
