@@ -177,14 +177,35 @@ nav ul li a:hover {
     background: var(--ed-surface);
     border: 1px solid var(--ed-border);
     border-radius: 12px;
-    padding: 24px 24px 16px;
+    padding: 14px;
     margin: 0 auto 28px;
     max-width: var(--misura-elenco);
     width: calc(100% - 240px);
     box-sizing: border-box;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
+/* Il grafico e' una fila di blocchi, uno per secolo. Ogni blocco tiene
+   insieme le sue colonne, le etichette dei decenni e il nome del
+   secolo; fra un secolo e l'altro una barra verticale per tutta
+   l'altezza fa vedere dove finisce l'Ottocento e comincia il
+   Novecento, senza contare le colonne. */
 .ed-chart {
+    display: flex;
+    align-items: stretch;
+}
+.ed-secolo {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 8px 0;
+}
+.ed-secolo:first-child { padding-left: 0; }
+.ed-secolo:last-child  { padding-right: 0; }
+/* La barra fra due secoli */
+.ed-secolo + .ed-secolo {
+    border-left: 2px solid #b9b5a9;
+}
+.ed-barre {
     display: flex;
     /* Le colonne sono alte quanto il grafico e le barre si misurano in
        percentuale: così seguono l'altezza vera del riquadro, che sul
@@ -192,9 +213,9 @@ nav ul li a:hover {
     align-items: stretch;
     gap: 4px;
     height: 190px;
-    padding: 0 1px;
     margin-bottom: 6px;
     border-bottom: 1px solid #d8d5cb;
+    position: relative;
 }
 .ed-col {
     flex: 1 1 0;
@@ -207,7 +228,7 @@ nav ul li a:hover {
     border-radius: 3px 3px 0 0;
     position: relative;
 }
-.ed-col:focus-visible { outline: 2px solid var(--ed-accent); outline-offset: 3px; }
+.ed-col:focus-visible { outline: 2px solid var(--blu-scuro); outline-offset: 3px; }
 .ed-seg {
     width: 100%;
     transition: filter .1s ease, box-shadow .1s ease;
@@ -222,7 +243,10 @@ nav ul li a:hover {
     filter: brightness(1.25);
     box-shadow: inset 0 0 0 2px rgba(255, 255, 255, .7);
 }
-.ed-col.is-active-decade::after {
+/* Il periodo aperto sotto il grafico: un tratto scuro sotto la colonna
+   del decennio, o sotto tutte le colonne del secolo. */
+.ed-col.is-active-decade::after,
+.is-active-century .ed-barre::after {
     content: "";
     position: absolute;
     left: -2px; right: -2px; bottom: -8px;
@@ -230,33 +254,62 @@ nav ul li a:hover {
     border-radius: 2px;
     background: var(--ed-ink);
 }
+.is-active-century .ed-barre::after {
+    left: 0; right: 0; bottom: -4px;
+}
+
+/* Etichette dei decenni e nome del secolo: sono bottoni, ma si
+   presentano come scritte. Al passaggio si sottolineano. */
+.ed-label,
+.ed-secolo-nome {
+    font: inherit;
+    background: none;
+    border: 0;
+    padding: 2px 0;
+    margin: 0;
+    cursor: pointer;
+    font-variant-numeric: tabular-nums;
+    text-underline-offset: 3px;
+}
+.ed-label:hover,
+.ed-secolo-nome:hover {
+    text-decoration: underline;
+}
+.ed-label:focus-visible,
+.ed-secolo-nome:focus-visible {
+    outline: 2px solid var(--blu-scuro);
+    outline-offset: 1px;
+    border-radius: 3px;
+}
 .ed-labels {
     display: flex;
     gap: 4px;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
 }
-.ed-labels span {
+.ed-label {
     flex: 1 1 0;
     min-width: 0;
     text-align: center;
     font-size: var(--fs-nota-piccola);
     color: var(--ed-ink-mute);
-    font-variant-numeric: tabular-nums;
 }
-.ed-century-row {
-    display: flex;
-    gap: 4px;
-    padding-top: 8px;
+.ed-label.is-active {
+    color: var(--ed-ink);
+    font-weight: 700;
+}
+.ed-secolo-nome {
+    display: block;
+    width: 100%;
+    padding: 6px 0 10px;
     border-top: 1px solid var(--ed-border);
-}
-.ed-century-row span {
-    min-width: 0;
     text-align: center;
-    font-size: var(--fs-nota-piccola);
+    font-size: var(--fs-nota);
     font-weight: 700;
     letter-spacing: 0.04em;
-    color: var(--ed-ink-soft);
-    font-variant-numeric: tabular-nums;
+    color: var(--ed-ink);
+}
+.ed-secolo-nome.is-active {
+    color: var(--blu-scuro);
 }
 .ed-tip {
     position: fixed;
@@ -517,12 +570,18 @@ footer img {
         width: calc(100% - 32px);
         padding: 16px 14px 12px;
     }
-    .ed-chart {
+    .ed-barre {
         height: 150px;
+        gap: 2px;
     }
-    .ed-labels span,
-    .ed-century-row span {
-        font-size: var(--fs-nota-piccola);
+    .ed-labels {
+        gap: 2px;
+    }
+    .ed-apo {
+        display: none;
+    }
+    .ed-secolo {
+        padding: 8px 4px 0;
     }
     .ed-detail {
         padding: 0 16px 32px;

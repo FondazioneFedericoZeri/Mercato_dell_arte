@@ -1,7 +1,8 @@
 /* ══════════════════════════════════════════════════════════
    EVENTI A DECADI
    Istogramma per decennio, raggruppato nelle sette categorie
-   definitive, con drill-down sugli eventi del decennio.
+   definitive e diviso in blocchi per secolo, con drill-down sugli
+   eventi del decennio o dell'intero secolo.
 
    Dati: json/eventi.json e json/entità.json, generati dalla CI
    a partire da data/eventi.tsv e data/entità.tsv (vedi i workflow
@@ -127,6 +128,30 @@ document.addEventListener("DOMContentLoaded", function () {
       DECADES.forEach(function (d) { if (d.events.length > best.events.length) best = d; });
       return best.decade;
     })();
+    // Cosa mostrano le schede sotto il grafico: un decennio (click su una
+    // colonna o sulla sua etichetta, '70) o un secolo intero (click sul
+    // nome del secolo, 1900). selectedDecade resta il decennio evidenziato.
+    var selectedKind = "decade";
+
+    function secoloDi(anno) { return Math.floor(anno / 100) * 100; }
+
+    function scegliDecennio(decade, categoria) {
+      selectedKind = "decade";
+      selectedDecade = decade;
+      drilldownCategory = categoria;
+      renderChart();
+      renderCards();
+      scrollToDetail();
+    }
+
+    function scegliSecolo(secolo) {
+      selectedKind = "century";
+      selectedDecade = secolo;
+      drilldownCategory = focusCategory;
+      renderChart();
+      renderCards();
+      scrollToDetail();
+    }
 
     // Legend click = porta il grafico a mostrare solo l'andamento di una
     // categoria nel tempo (non nasconde le altre come opzioni).
@@ -204,109 +229,133 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // ---------- istogramma ----------
+    // Il grafico e' diviso in un blocco per secolo: ogni blocco contiene
+    // le sue colonne, le etichette dei decenni e il nome del secolo, e
+    // fra un secolo e l'altro c'e' una barra verticale. Prima le tre righe (colonne, decenni, secoli) erano
+    // indipendenti e per capire dove cominciava il Novecento bisognava
+    // contare le colonne a partire da sinistra.
     function renderChart() {
       var chart = document.getElementById("ed-chart");
-      var labels = document.getElementById("ed-labels");
-      chart.innerHTML = ""; labels.innerHTML = "";
+      chart.innerHTML = "";
       var tip = document.getElementById("ed-chart-tip");
 
       var maxCount = focusCategory
         ? Math.max.apply(null, DECADES.map(function (d) { return d.events.filter(function (e) { return e.category === focusCategory; }).length; }))
         : Math.max.apply(null, DECADES.map(function (d) { return d.events.length; }));
+      // In percentuale, non in pixel: il riquadro passa da 190 a
+      // 150px sul telefono e le barre lo seguono.
+      var quotaPerEvento = maxCount ? (94 / maxCount) : 0;
 
+      var gruppi = [];
       DECADES.forEach(function (d) {
-        var col = document.createElement("div");
-        col.className = "ed-col" + (d.decade === selectedDecade ? " is-active-decade" : "");
-        col.tabIndex = 0;
-        col.setAttribute("role", "button");
+        var secolo = secoloDi(d.decade);
+        var last = gruppi[gruppi.length - 1];
+        if (last && last.secolo === secolo) last.decadi.push(d);
+        else gruppi.push({ secolo: secolo, decadi: [d] });
+      });
 
-        var byCat = {};
-        d.events.forEach(function (e) { byCat[e.category] = (byCat[e.category] || 0) + 1; });
-        var decadeTotal = focusCategory ? (byCat[focusCategory] || 0) : d.events.length;
-        col.setAttribute("aria-label", decennio(d.decade) + ", " + decadeTotal + " eventi" + (focusCategory ? " (" + CAT_LABEL[focusCategory] + ")" : ""));
-        // In percentuale, non in pixel: il riquadro passa da 190 a
-        // 150px sul telefono e le barre lo seguono.
-        var quotaPerEvento = maxCount ? (94 / maxCount) : 0;
+      gruppi.forEach(function (g) {
+        var secoloAttivo = selectedKind === "century" && selectedDecade === g.secolo;
+        var blocco = document.createElement("div");
+        blocco.className = "ed-secolo" + (secoloAttivo ? " is-active-century" : "");
+        blocco.style.flex = g.decadi.length + " " + g.decadi.length + " 0";
 
-        var catsToDraw = focusCategory ? [[focusCategory, CAT_LABEL[focusCategory]]] : CATS;
-        catsToDraw.forEach(function (c) {
-          var key = c[0];
-          var n = byCat[key] || 0;
-          if (!n) return;
-          var seg = document.createElement("div");
-          seg.className = "ed-seg";
-          seg.style.height = (n * quotaPerEvento) + "%";
-          seg.style.background = catColor(key);
-          seg.addEventListener("mousemove", function (e) {
+        var barre = document.createElement("div");
+        barre.className = "ed-barre";
+        var etichette = document.createElement("div");
+        etichette.className = "ed-labels";
+
+        g.decadi.forEach(function (d) {
+          var decennioAttivo = selectedKind === "decade" && d.decade === selectedDecade;
+          var col = document.createElement("div");
+          col.className = "ed-col" + (decennioAttivo ? " is-active-decade" : "");
+          col.tabIndex = 0;
+          col.setAttribute("role", "button");
+
+          var byCat = {};
+          d.events.forEach(function (e) { byCat[e.category] = (byCat[e.category] || 0) + 1; });
+          var decadeTotal = focusCategory ? (byCat[focusCategory] || 0) : d.events.length;
+          col.setAttribute("aria-label", decennio(d.decade) + ", " + decadeTotal + " eventi" + (focusCategory ? " (" + CAT_LABEL[focusCategory] + ")" : ""));
+
+          var catsToDraw = focusCategory ? [[focusCategory, CAT_LABEL[focusCategory]]] : CATS;
+          catsToDraw.forEach(function (c) {
+            var key = c[0];
+            var n = byCat[key] || 0;
+            if (!n) return;
+            var seg = document.createElement("div");
+            seg.className = "ed-seg";
+            seg.style.height = (n * quotaPerEvento) + "%";
+            seg.style.background = catColor(key);
+            seg.addEventListener("mousemove", function (e) {
+              tip.innerHTML = "";
+              var strong = document.createElement("div");
+              strong.textContent = CAT_LABEL[key] + " — " + n;
+              var sub = document.createElement("div");
+              sub.className = "ed-tip-sub";
+              sub.textContent = decennio(d.decade);
+              tip.appendChild(strong); tip.appendChild(sub);
+              tip.style.left = e.clientX + "px";
+              tip.style.top = e.clientY + "px";
+              tip.classList.add("is-shown");
+            });
+            seg.addEventListener("mouseleave", function () { tip.classList.remove("is-shown"); });
+            seg.addEventListener("click", function (e) {
+              e.stopPropagation();
+              scegliDecennio(d.decade, key);
+            });
+            col.appendChild(seg);
+          });
+
+          col.addEventListener("mousemove", function (e) {
+            if (e.target !== col) return;
             tip.innerHTML = "";
             var strong = document.createElement("div");
-            strong.textContent = CAT_LABEL[key] + " — " + n;
+            strong.textContent = decennio(d.decade);
             var sub = document.createElement("div");
             sub.className = "ed-tip-sub";
-            sub.textContent = decennio(d.decade);
+            sub.textContent = decadeTotal + " eventi";
             tip.appendChild(strong); tip.appendChild(sub);
             tip.style.left = e.clientX + "px";
             tip.style.top = e.clientY + "px";
             tip.classList.add("is-shown");
           });
-          seg.addEventListener("mouseleave", function () { tip.classList.remove("is-shown"); });
-          seg.addEventListener("click", function (e) {
-            e.stopPropagation();
-            selectedDecade = d.decade;
-            drilldownCategory = key;
-            renderChart();
-            renderCards();
-            scrollToDetail();
+          col.addEventListener("mouseleave", function () { tip.classList.remove("is-shown"); });
+          // click sulla colonna: segue il focus di legenda (o nessuno)
+          col.addEventListener("click", function () { scegliDecennio(d.decade, focusCategory); });
+          col.addEventListener("keydown", function (e) {
+            if (e.key === "Enter" || e.key === " ") { e.preventDefault(); col.click(); }
           });
-          col.appendChild(seg);
+          barre.appendChild(col);
+
+          // L'etichetta del decennio ('70) e' un bottone: apre gli
+          // eventi di quel decennio, come la colonna sopra.
+          var lab = document.createElement("button");
+          lab.type = "button";
+          lab.className = "ed-label" + (decennioAttivo ? " is-active" : "");
+          // L'apostrofo sta in uno <span> a parte: sul telefono le colonne
+          // sono larghe 15px e senza apostrofo le cifre non si toccano.
+          var apo = document.createElement("span");
+          apo.className = "ed-apo";
+          apo.textContent = "’";
+          lab.appendChild(apo);
+          lab.appendChild(document.createTextNode(String(d.decade).slice(2)));
+          lab.setAttribute("aria-label", "Eventi " + decennio(d.decade));
+          lab.addEventListener("click", function () { scegliDecennio(d.decade, focusCategory); });
+          etichette.appendChild(lab);
         });
 
-        col.addEventListener("mousemove", function (e) {
-          if (e.target !== col) return;
-          tip.innerHTML = "";
-          var strong = document.createElement("div");
-          strong.textContent = decennio(d.decade);
-          var sub = document.createElement("div");
-          sub.className = "ed-tip-sub";
-          sub.textContent = decadeTotal + " eventi";
-          tip.appendChild(strong); tip.appendChild(sub);
-          tip.style.left = e.clientX + "px";
-          tip.style.top = e.clientY + "px";
-          tip.classList.add("is-shown");
-        });
-        col.addEventListener("mouseleave", function () { tip.classList.remove("is-shown"); });
-        col.addEventListener("click", function () {
-          selectedDecade = d.decade;
-          drilldownCategory = focusCategory; // click sulla colonna: segue il focus (o nessuno)
-          renderChart();
-          renderCards();
-          scrollToDetail();
-        });
-        col.addEventListener("keydown", function (e) {
-          if (e.key === "Enter" || e.key === " ") { e.preventDefault(); col.click(); }
-        });
+        // Il nome del secolo apre tutti gli eventi del secolo.
+        var nome = document.createElement("button");
+        nome.type = "button";
+        nome.className = "ed-secolo-nome" + (secoloAttivo ? " is-active" : "");
+        nome.textContent = g.secolo;
+        nome.setAttribute("aria-label", "Tutti gli eventi " + g.secolo + "–" + (g.secolo + 99));
+        nome.addEventListener("click", function () { scegliSecolo(g.secolo); });
 
-        chart.appendChild(col);
-
-        var lab = document.createElement("span");
-        lab.textContent = "’" + String(d.decade).slice(2);
-        labels.appendChild(lab);
-      });
-
-      var centuryRow = document.getElementById("ed-century-row");
-      centuryRow.innerHTML = "";
-      var groups = [];
-      DECADES.forEach(function (d) {
-        var century = Math.floor(d.decade / 100) * 100;
-        var last = groups[groups.length - 1];
-        if (last && last.century === century) last.count++;
-        else groups.push({ century: century, count: 1 });
-      });
-      groups.forEach(function (g) {
-        var span = document.createElement("span");
-        span.textContent = g.century;
-        span.style.flex = g.count + " " + g.count + " 0";
-        centuryRow.appendChild(span);
+        blocco.appendChild(barre);
+        blocco.appendChild(etichette);
+        blocco.appendChild(nome);
+        chart.appendChild(blocco);
       });
     }
 
@@ -348,11 +397,17 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function renderCards() {
-      var d = DECADES.filter(function (x) { return x.decade === selectedDecade; })[0];
-      var events = (d ? d.events : []).filter(function (e) { return !drilldownCategory || e.category === drilldownCategory; });
+      var perSecolo = selectedKind === "century";
+      var tuttiNelPeriodo = [];
+      DECADES.forEach(function (x) {
+        var dentro = perSecolo ? secoloDi(x.decade) === selectedDecade : x.decade === selectedDecade;
+        if (dentro) tuttiNelPeriodo = tuttiNelPeriodo.concat(x.events);
+      });
+      var events = tuttiNelPeriodo.filter(function (e) { return !drilldownCategory || e.category === drilldownCategory; });
+      var periodo = perSecolo ? "secolo" : "decennio";
 
       var titleEl = document.getElementById("ed-decade-title");
-      titleEl.textContent = selectedDecade + "–" + (selectedDecade + 9);
+      titleEl.textContent = selectedDecade + "–" + (selectedDecade + (perSecolo ? 99 : 9));
 
       var countEl = document.getElementById("ed-decade-count");
       countEl.innerHTML = "";
@@ -367,11 +422,10 @@ document.addEventListener("DOMContentLoaded", function () {
       // dato che la barra è interamente coperta dai segmenti e non lascia
       // un'area "vuota" da cliccare per farlo.
       if (drilldownCategory !== focusCategory) {
-        var totalInDecade = d ? d.events.length : 0;
         var backLink = document.createElement("button");
         backLink.type = "button";
         backLink.className = "ed-count-reset";
-        backLink.textContent = "Mostra tutti i " + totalInDecade + " eventi di questo decennio";
+        backLink.textContent = "Mostra tutti i " + tuttiNelPeriodo.length + " eventi di questo " + periodo;
         backLink.addEventListener("click", function () {
           drilldownCategory = focusCategory;
           renderCards();
@@ -385,8 +439,8 @@ document.addEventListener("DOMContentLoaded", function () {
         var empty = document.createElement("div");
         empty.className = "ed-empty-state";
         empty.textContent = drilldownCategory
-          ? "Nessun evento di questa categoria in questo decennio."
-          : "Nessun evento in questo decennio.";
+          ? "Nessun evento di questa categoria in questo " + periodo + "."
+          : "Nessun evento in questo " + periodo + ".";
         grid.appendChild(empty);
         return;
       }
