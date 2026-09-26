@@ -376,8 +376,11 @@ body.gal-bloccato .torna-su {
     margin-top: 4px;
 }
 
+/* Il nome della persona ha lo stesso peso del resto della riga (date,
+   professione) e del link al catalogo: 400. Con 300 era piu' sottile
+   del testo accanto; con il grassetto di <strong> (600) pesava troppo. */
 .striscia-voce strong {
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .striscia-link {
