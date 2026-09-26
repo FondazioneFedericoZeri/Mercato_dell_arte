@@ -68,8 +68,9 @@ document.addEventListener("DOMContentLoaded", function () {
           }
 
           // Create the marker
-          var marker = L.marker([luogo.geo.lat, luogo.geo.lon])
-            .bindTooltip(content, { permanent: false, direction: "top" });
+          // Nuvoletta al passaggio del mouse, riquadro al clic (e al tocco:
+          // sul telefono la sola nuvoletta non si riusciva ad aprire bene)
+          var marker = collegaTooltipEPopup(L.marker([luogo.geo.lat, luogo.geo.lon]), content);
 
           // Add the marker to the cluster group
           markers.addLayer(marker);
@@ -103,3 +104,22 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+// Un luogo sulla mappa: al passaggio del mouse una nuvoletta (tooltip), al
+// clic il riquadro con i link (popup). Prima tooltip e popup avevano lo
+// stesso contenuto ed erano tutti e due aperti dopo il clic, uno sopra
+// l'altro: sembrava una finestra dentro un'altra. Ora il popup chiude la
+// nuvoletta e la tiene chiusa finche' resta aperto; sugli schermi senza
+// mouse (telefono, tablet) la nuvoletta non c'e' proprio, perche' il tocco
+// la faceva lampeggiare prima del popup.
+function collegaTooltipEPopup(marker, contenuto) {
+  marker.bindPopup(contenuto);
+  var conMouse = window.matchMedia && window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+  if (!conMouse) return marker;
+  marker.bindTooltip(contenuto, { permanent: false, direction: "top" });
+  marker.on("popupopen", function () { marker.closeTooltip(); });
+  marker.on("tooltipopen", function () {
+    if (marker.isPopupOpen()) marker.closeTooltip();
+  });
+  return marker;
+}

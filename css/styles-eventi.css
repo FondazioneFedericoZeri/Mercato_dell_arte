@@ -415,17 +415,43 @@ nav ul li a:hover {
     margin: 0;
     line-height: 1.55;
 }
+/* Le entita' in fondo alla card, su una fascia dello stesso grigio del
+   grafico: si separano dal testo dell'evento e le fasce di una fila di
+   card cadono tutte alla stessa altezza (margin-top: auto). */
 .ed-card-ents {
     font-size: var(--fs-nota);
-    margin: 4px 0 0;
-    padding-top: 6px;
-    border-top: 1px dashed var(--ed-border);
+    margin: auto -18px -16px;          /* fino ai bordi della card */
+    padding: 10px 18px 12px;
+    background: var(--ed-surface);
+    border-top: 1px solid var(--ed-border);
+    border-radius: 0 0 7px 0;
 }
-.ed-card-ents a,
 .ed-card-desc a {
     color: var(--link);
     text-decoration: underline;
     font-weight: 600;
+}
+/* Al passaggio del mouse il nome dell'entita' si accende: diventa una
+   pastiglia bianca sulla fascia grigia, col colore del link piu' scuro
+   e la sottolineatura piena. */
+.ed-card-ents a {
+    color: var(--link);
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: color-mix(in srgb, var(--link) 45%, transparent);
+    text-underline-offset: 2px;
+    padding: 2px 5px;
+    margin: 0 -5px;
+    border-radius: 4px;
+    transition: background-color .15s ease, color .15s ease, box-shadow .15s ease;
+}
+.ed-card-ents a:hover,
+.ed-card-ents a:focus-visible {
+    color: var(--link-hover);
+    background: #fff;
+    text-decoration-color: currentColor;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+    outline: none;
 }
 .ed-empty-state {
     font-size: var(--fs-corpo);
