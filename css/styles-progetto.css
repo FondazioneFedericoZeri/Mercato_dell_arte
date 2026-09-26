@@ -10,7 +10,7 @@ body {
     flex-direction: column;
     min-height: 100vh; /* Assicura che il corpo occupi almeno l'altezza della finestra */
     font-family: var(--ff-body);
-    color: #333;
+    color: var(--testo);
     line-height: 1.6;
 }
 
@@ -52,7 +52,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: var(--testo);
     font-weight: 500;
     padding: 5px 10px;
 }
@@ -77,9 +77,9 @@ nav ul li a:hover {
 }
 
 .section-title {
-    font-size: 36px;
+    font-size: var(--fs-sottotitolo);
     font-weight: bold;
-    color: #333;
+    color: var(--testo);
     margin-bottom: 20px; /* Spazio sotto il titolo */
     margin-left: 40px;
     margin-top: 10px;
@@ -109,7 +109,7 @@ nav ul li a:hover {
     margin-left: 100px; /* Spazio simile alla sezione contatti */
     margin-right: -30px;
     font-family: var(--ff-head); /* Mantiene lo stile del font */
-    font-size: 32px; /* Mantiene la dimensione del testo coerente */
+    font-size: var(--fs-titolo);
     line-height: 1.6; /* Migliora la leggibilità */
 }
 
@@ -124,7 +124,7 @@ nav ul li a:hover {
 
 /* Ingrandire la "F" */
 .large-letter {
-    font-size: 56px; /* Dimensione molto più grande */
+    font-size: var(--fs-display);
     font-weight: bold; /* Grassetto */
     line-height: 0.8; /* Regola l'altezza della linea per un migliore allineamento */
     vertical-align:baseline; /* Assicura l'allineamento verticale */
@@ -154,16 +154,18 @@ nav ul li a:hover {
 }
 
 h2 {
-    font-size: 28px;
+    font-size: var(--fs-sottotitolo);
     font-weight: bold;
-    color: #333;
+    color: var(--testo);
     text-align: left;
 }
 
 p {
-    font-size: var(--fs-lettura);
+    font-size: var(--fs-corpo-lettura);
     line-height: 1.5;
-    color: #666;
+    /* Era #666, l'unica pagina del sito col corpo grigio: ora e' lo
+       stesso --testo delle altre pagine (e degli elenchi qui accanto). */
+    color: var(--testo);
 }
 
 
@@ -171,7 +173,7 @@ p {
     color: #fff;
     margin-left: 60px;
     margin-right: 80px;
-    font-size: 32px;
+    font-size: var(--fs-titolo);
     font-family: var(--ff-head);
     line-height: 1.2;
     margin-bottom:10px;
@@ -197,7 +199,7 @@ p {
 }
 
 .column.right-column .parentheses {
-    font-size: 20px;
+    font-size: var(--fs-titolo-paragrafo);
     font-style: italic;
     margin-top: 1px;
 }
@@ -227,7 +229,7 @@ p {
 }
 
 .section-title {
-    font-size: 32px;
+    font-size: var(--fs-sottotitolo);
     padding-top: 60px;
     text-align: left;
     margin-left: 0;
@@ -235,13 +237,13 @@ p {
 
 .bold-text {
     font-weight: bold;
-    color: #5593C9;
+    color: var(--blu);
 }
 
 .normal-text {
     font-weight: normal;
     /* Non in grassetto */
-    color: #000;
+    color: var(--testo);
     /* Colore nero */
 }
 
@@ -274,7 +276,7 @@ p {
     text-align: left; /* Allinea il testo a sinistra */
     margin-bottom: 10px;
     margin-right: 100px;
-    font-size:var(--fs-lettura);
+    font-size:var(--fs-corpo-lettura);
     text-align: justify;
 }
 
@@ -296,7 +298,7 @@ p {
     list-style-type: disc; /* Elenco puntato */
     padding-left: 60px; /* Aggiunge spazio a sinistra per i punti */
     margin-right: 100px;
-    font-size:var(--fs-lettura);
+    font-size:var(--fs-corpo-lettura);
 }
 
 .right-content li {
@@ -337,7 +339,7 @@ p {
 
 /* Stile per il testo all'interno delle colonne */
 #contatti p {
-    font-size: var(--fs-lettura);
+    font-size: var(--fs-corpo-lettura);
     line-height: 1.6;
 }
 
@@ -347,7 +349,7 @@ p {
     color: #fff;
     margin-left: 80px;
     margin-right: 80px;
-    font-size: 32px;
+    font-size: var(--fs-titolo);
     font-family: var(--ff-head);
     /* Stessa interlinea della citazione in #two-column-section: senza questa
        riga la regola ereditava l'1.6 del body e le due citazioni, identiche
@@ -377,7 +379,7 @@ p {
 
 
 #contatti .parentheses {
-    font-size: 20px;
+    font-size: var(--fs-titolo-paragrafo);
     font-style: italic;
     margin-top: 10px;
     display: block;
@@ -385,7 +387,7 @@ p {
 
 /* Stile per i link */
 #contatti a {
-    color: #333; /* Colore arancione per i link */
+    color: var(--testo); /* Colore arancione per i link */
     text-decoration: underline;
 }
 
@@ -415,7 +417,7 @@ footer a {
 }
 
 /* Il testo del footer e' dentro dei <p>, e in questa pagina la regola
-   "p { color: #666 }" piu' sotto batte il colore ereditato da footer:
+   "p { color: ... }" piu' sotto batte il colore ereditato da footer:
    su fondo #333 quel grigio era quasi illeggibile. Qui si ripristina il
    bianco. E' l'unica pagina del sito in cui succedeva. */
 footer p {
@@ -494,13 +496,13 @@ footer img {
 
     /* Titoli e testi */
     .section-title {
-        font-size: 22px;
+        font-size: var(--fs-sottotitolo);
         text-align: left;
         margin: 10px 0;
     }
 
     p {
-        font-size: 16px;
+        font-size: var(--fs-corpo-lettura);
         line-height: 1.5;
     }
     .right-content ul {
@@ -529,12 +531,14 @@ footer img {
     }
 
     .quote-mark-left,
-    .quote-mark-right {
-        font-size: 48px; /* Riduce la dimensione delle virgolette */
+    .quote-mark-right,
+    #contatti .quote-mark-left,
+    #contatti .quote-mark-right {
+        font-size: 48px; /* Riduce la dimensione delle virgolette (anche nei Contatti, che restavano a 78) */
     }
 
     .large-letter {
-        font-size: 36px; /* Dimensione minore per schermi piccoli */
+        font-size: var(--fs-display);
     }
     #two-column-section .right-column {
         padding: 0;
@@ -636,7 +640,7 @@ footer img {
     }
 
     .footer-links {
-        font-size: 14px; /* Ridimensiona i link */
+        font-size: var(--fs-nota);
         line-height: 1.5; /* Migliora la leggibilità */
         margin-bottom: 10px;
     }
@@ -704,7 +708,7 @@ main > .titolo-pagina {
         margin: 0;
         padding: 0;
         max-width: 34ch;
-        font-size: clamp(22px, 3.4vw, 28px);
+        font-size: var(--fs-sottotitolo);
         line-height: 1.3;
     }
 

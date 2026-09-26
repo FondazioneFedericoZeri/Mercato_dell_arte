@@ -12,7 +12,7 @@ body {
     min-height: 100vh;
     /* Assicura che il corpo occupi almeno l'altezza della finestra */
     font-family: var(--ff-body);
-    color: #333;
+    color: var(--testo);
     line-height: 1.6;
 }
 
@@ -75,16 +75,16 @@ main {
 }
 
 #map h2 {
-    font-size: 36px;
+    font-size: var(--fs-titolo);
     margin-bottom: 10px;
-    color: #000;
+    color: var(--testo);
     /* Colore nero per il resto del titolo */
     font-weight: 400;
     /* Font regular per il resto del titolo */
 }
 
 #map h2 .highlight {
-    color: #5593C9;
+    color: var(--blu);
     font-weight: 700;
     /* Grassetto */
 }
@@ -92,7 +92,7 @@ main {
 #map p {
     margin-bottom: 40px;
     margin-top: 10px;
-    font-size: 24px;
+    font-size: var(--fs-sottotitolo);
     font-weight: 400;
 }
 
@@ -153,7 +153,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: var(--testo);
     font-weight: 500;
     padding: 5px 10px;
 }
@@ -240,7 +240,7 @@ footer img {
     align-items: center;
     justify-content: center;
     border: 2px solid white !important;
-    font-size: 14px !important;
+    font-size: var(--fs-nota) !important;
     color: white !important;
 }
 
@@ -254,10 +254,10 @@ footer img {
 
 .filter-container label {
     font-weight: bold;
-    font-size: 18px;
+    font-size: var(--fs-corpo-lettura);
     display: block;
     margin-bottom: 10px;
-    color: #333;
+    color: var(--testo);
 }
 
 /* Style the radio button group */
@@ -274,8 +274,8 @@ footer img {
 
 /* Style the custom radio button labels */
 .radio-group label {
-    font-size: 16px;
-    color: #333;
+    font-size: var(--fs-corpo);
+    color: var(--testo);
     background-color: #f8f8f8;
     padding: 10px;
     border: 1px solid #ccc;
@@ -333,7 +333,7 @@ footer img {
 
 .menu a {
     text-decoration: none;
-    color: #333;
+    color: var(--testo);
     font-weight: 500;
     padding: 5px 10px;
 }
@@ -443,25 +443,25 @@ footer img {
 
 
 body {
-    font-size: 16px;
+    font-size: var(--fs-corpo);
     line-height: 1.5;
 }
 
 h2 {
-    font-size: 1.8em;
+    font-size: var(--fs-titolo);
 }
 
 p {
-    font-size: 1em;
+    font-size: var(--fs-corpo);
 }
 
 @media (max-width: 768px) {
     h2 {
-        font-size: 1.5em;
+        font-size: var(--fs-titolo);
     }
 
     p {
-        font-size: 0.9em;
+        font-size: var(--fs-corpo);
     }
 }
 @media (max-width: 768px) {
@@ -490,7 +490,7 @@ p {
     }
 
     .footer-links {
-        font-size: 14px; /* Ridimensiona i link */
+        font-size: var(--fs-nota);
         line-height: 1.5; /* Migliora la leggibilità */
         margin-bottom: 10px;
     }
@@ -531,7 +531,7 @@ p {
 
 .mappa-intro p {
     margin: 0 0 10px 0;
-    font-size: var(--fs-body);
+    font-size: var(--fs-corpo);
     line-height: 1.6;
     max-width: 68ch;
 }
@@ -577,9 +577,9 @@ p {
 #map .mappa-nota,
 .mappa-nota {
     margin: 14px 0 0 0;
-    font-size: var(--fs-caption);
+    font-size: var(--fs-nota-piccola);
     line-height: 1.6;
-    color: #666;
+    color: var(--testo-secondario);
     max-width: 240px;
 }
 
@@ -663,10 +663,10 @@ p {
 
 /* Il bottone dello schermo intero, fra i comandi della mappa */
 .mappa-intero a {
-    font-size: 17px;
+    font-size: var(--fs-corpo);
     line-height: 26px;
     text-align: center;
-    color: #333;
+    color: var(--testo);
     cursor: pointer;
 }
 
@@ -705,7 +705,7 @@ body.mappa-aperta {
     #map .mappa-cornice.a-schermo-intero .radio-group label {
         margin-bottom: 0;
         padding: 7px 10px;
-        font-size: var(--fs-body-sm);
+        font-size: var(--fs-nota);
     }
 
     #map .mappa-cornice:fullscreen .radio-group label.per-colore:after,
@@ -715,7 +715,7 @@ body.mappa-aperta {
 
     #map .mappa-cornice:fullscreen .filter-container > label,
     #map .mappa-cornice.a-schermo-intero .filter-container > label {
-        font-size: var(--fs-body-sm);
+        font-size: var(--fs-nota);
         margin-bottom: 6px;
     }
 }

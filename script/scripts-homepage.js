@@ -171,8 +171,17 @@ document.addEventListener("DOMContentLoaded", function () {
   var markers = L.markerClusterGroup();
 
 
+  // Nomi delle entita' per i link nei popup ("Vai a Canessa" e non
+  // "Vai a CA_I"). Arrivano da json/nomi_entita.json, un paio di KB
+  // generati da script/build_persone.py: entita.json pesa oltre un mega
+  // e la home non lo scarica. Se il file non arriva si ripiega sull'ID.
+  var nomiPronti = fetch("https://raw.githubusercontent.com/FondazioneFedericoZeri/Mercato_dell_arte/main/json/nomi_entita.json")
+    .then(function (r) { return r.ok ? r.json() : {}; })
+    .catch(function () { return {}; });
+
   // Fetch JSON data
   $.getJSON("https://raw.githubusercontent.com/FondazioneFedericoZeri/Mercato_dell_arte/main/json/luoghi.json", function (luoghi_json) {
+   nomiPronti.then(function (nomi_entita) {
     // Loop through JSON data and add city markers to the cluster group
     for (let luogo in luoghi_json) {
       if (luoghi_json[luogo]["geo"]["lat"]) {
@@ -196,7 +205,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Loop through each ID and create a link
         ids.forEach(function (id) {
-          content += `<a href="https://fondazionefedericozeri.github.io/Mercato_dell_arte/html/dettagli/dettaglio_${id}.html" target="_blank">Vai a ${id}</a><br>`;
+          if (!id) return;   // spazi doppi o in coda in ID_entità
+          let nome = nomi_entita[id] || id;
+          content += `<a href="https://fondazionefedericozeri.github.io/Mercato_dell_arte/html/dettagli/dettaglio_${id}.html" target="_blank">Vai a ${nome}</a><br>`;
         });
 
         // Create the marker
@@ -219,6 +230,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Add the MarkerClusterGroup to the map
     map.addLayer(markers);
+   });
   }).fail(function () {
     console.error("Failed to load the JSON file.");
   });

@@ -529,6 +529,20 @@ def build_statistiche(data, n_entita, output="json/statistiche.json"):
     return stats
 
 
+def build_nomi_entita(entita_by_id, output="json/nomi_entita.json"):
+    """Nome di ogni entita' per ID, per i popup della mappa in home.
+
+    La mappa in home mostra "Vai a <entita'>" su ogni luogo: con solo
+    luoghi.json aveva a disposizione l'ID (CA_I) e non il nome (Canessa).
+    Il nome sta in entita.json, che pesa oltre un mega: questo file ne
+    tiene solo le coppie ID -> Nome, un paio di KB.
+    """
+    pathlib.Path(output).write_text(
+        json.dumps(entita_by_id, ensure_ascii=False, indent=1) + "\n", encoding="utf-8"
+    )
+    print(f"{output} generato: {len(entita_by_id)} entita'.")
+
+
 def build_persone_html(entita_tsv=None, output="html/persone.html"):
     entita_tsv = entita_tsv or ENTITA_TSV()
     entita = load_tsv(entita_tsv)
@@ -559,6 +573,7 @@ def build_persone_html(entita_tsv=None, output="html/persone.html"):
     print(f"html/persone.html generato: {n_ant} antiquari, {n_collab} collaboratori, {n_client} clienti.")
 
     build_statistiche(data, len(entita))
+    build_nomi_entita(entita_by_id)
 
 
 if __name__ == "__main__":

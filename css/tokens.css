@@ -33,14 +33,37 @@
     --link-hover:   var(--terra-dark);
 
     /* --- Scala tipografica -----------------------------------
-       Prima della scala ogni pagina aveva la sua: la bibliografia
-       a 18px, le schede a 16px, gli eventi a 13px, le persone a
-       12px. Quattro ruoli, nessuna pagina inventa più misure. */
-    --fs-intro:    1.5rem;    /* 24px — occhielli della home */
-    --fs-lettura:  1.125rem;  /* 18px — prosa lunga: biografie, progetto, bibliografia */
-    --fs-body:     1rem;      /* 16px — testo corrente, elenchi, card, bottoni */
-    --fs-body-sm:  0.875rem;  /* 14px — metadati, chip, etichette */
-    --fs-caption:  0.75rem;   /* 12px — didascalie e scritte di servizio */
+       Sette misure fisse per tutto il sito, divise per ruolo.
+       Le pagine non scrivono mai una misura in pixel: scelgono
+       il ruolo. Per ingrandire o ridurre, per esempio, tutti i
+       titoli di paragrafo basta cambiare una riga qui.
+       Sotto i 768px le misure grandi si riducono da sole (vedi
+       il blocco @media qui sotto): le pagine non devono farlo.
+
+       Fuori scala, di proposito: il nome nella scheda antiquario
+       (clamp, in styles-dettaglioAntiquario.css), le virgolette
+       decorative del Progetto, le icone (☰, frecce della galleria,
+       social) e le scritte dentro i grafici SVG/canvas, che si
+       ridimensionano con il grafico. La pagina Antiquari con le
+       card resta com'e' e non usa queste variabili. */
+
+    --fs-display:          48px;  /* titoli di copertina: hero della home, numeri del contatore, lettere della bibliografia, capolettera */
+    --fs-titolo:           32px;  /* titolo di pagina (h1), titoli delle sezioni della home, citazioni del Progetto */
+    --fs-sottotitolo:      24px;  /* sottotitoli e occhielli, sezioni interne di una pagina (Progetto, gruppi della bibliografia) */
+    --fs-titolo-paragrafo: 20px;  /* titoli di paragrafo dentro un testo (h2 delle schede, colonne di Persone, decennio negli Eventi) */
+    --fs-corpo-lettura:    18px;  /* corpo della prosa lunga: biografie, progetto, documentazione, bibliografia */
+    --fs-corpo:            16px;  /* corpo corrente: elenchi, card, bottoni, campi, filtri */
+    --fs-nota:             14px;  /* note e metadati: chip, conteggi, didascalie, link del pie' di pagina */
+    --fs-nota-piccola:     12px;  /* note minute ed etichette dei grafici: il minimo del sito */
+    --fs-etichetta:        13px;  /* titoletti in MAIUSCOLETTO (Documentazione, Crediti, schede): nota, non titolo */
+
+    /* Nomi precedenti, tenuti come alias perche' qualche foglio
+       vecchio (html/copia, html/old) potrebbe ancora usarli. */
+    --fs-intro:    var(--fs-sottotitolo);
+    --fs-lettura:  var(--fs-corpo-lettura);
+    --fs-body:     var(--fs-corpo);
+    --fs-body-sm:  var(--fs-nota);
+    --fs-caption:  var(--fs-nota-piccola);
 
     /* --- I grigi caldi delle sezioni -------------------------
        Nati nella pagina eventi per lo sfondo dei grafici, servono
@@ -50,8 +73,25 @@
 
     /* --- Identità preesistente del sito antiquari ------------ */
     --blu:          #5593C9;
-    --testo:        #333;
     --fondo-chiaro: #f8f8f8;
+
+    /* --- Colori del testo ------------------------------------
+       Tre grigi per tutto il sito, dal piu' scuro al piu' chiaro.
+       Prima ce n'erano una dozzina (#000, #555, #666, #6b6b6b,
+       #777, #888, #8a8a8a, #9b9b9b, tre grigi caldi in Bibliografia,
+       due grigi azzurrati nelle schede) e alcuni erano troppo
+       chiari per leggersi: #9b9b9b su bianco da' 2,8:1, #888 3,5:1.
+       Contrasti su bianco (WCAG AA chiede 4,5:1):
+         --testo             12,63:1
+         --testo-secondario   5,74:1
+         --testo-tenue        4,54:1  (il grigio piu' chiaro ammesso)
+       Il blu scritto segue la regola WCAG del testo grande: nei
+       titoli da 24px in su (o 19px in grassetto) va bene --blu,
+       che arriva a 3,28:1 e per quei testi basta 3:1; sotto quella
+       misura si usa --blu-scuro. */
+    --testo:             #333;     /* testo principale, titoli */
+    --testo-secondario:  #666;     /* metadati, date, descrizioni brevi */
+    --testo-tenue:       #767676;  /* note, conteggi, scritte di servizio */
 
     /* --- Due toni di servizio del blu ------------------------
        Il blu d'identità su fondo bianco dà 3,28:1: va benissimo
@@ -113,6 +153,13 @@
         --stacco-titolo:  26px;
         /* Sul telefono la testata e' 10 + 44 (il bottone del menu') + 10. */
         --altezza-testata: 64px;
+
+        /* La scala sul telefono: scendono solo le misure grandi. */
+        --fs-display:          36px;
+        --fs-titolo:           24px;
+        --fs-sottotitolo:      20px;
+        --fs-titolo-paragrafo: 18px;
+        --fs-corpo-lettura:    16px;
     }
 }
 
@@ -442,14 +489,8 @@ html body {
     font-family: var(--ff-head);
     font-weight: 400;
     font-style: normal;
-    font-size: 32px;
+    font-size: var(--fs-titolo);   /* 32px, 24px sul telefono */
     line-height: 1.2;
     color: var(--testo);
     margin: 0 0 12px 0;
-}
-
-@media (max-width: 768px) {
-    .titolo-pagina {
-        font-size: 24px;
-    }
 }

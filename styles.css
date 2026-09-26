@@ -7,7 +7,7 @@
 
 body {
     font-family: var(--ff-body);
-    color: #333;
+    color: var(--testo);
     line-height: 1.6;
 }
 
@@ -50,7 +50,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: var(--testo);
     font-weight: 500;
     padding: 5px 10px;
 }
@@ -97,7 +97,7 @@ nav ul li a:hover {
 
 /* Applicazione dell'animazione al titolo della sezione hero */
 #hero h1 {
-    font-size: 50px;
+    font-size: var(--fs-display);
     margin-bottom: 5px;
     font-weight: 700;
     /*font-family: 'Libre Bodoni', serif;*/
@@ -112,7 +112,7 @@ nav ul li a:hover {
 }
 
 #hero h2 {
-    font-size: 38px;  /* Set the size to 38px */
+    font-size: var(--fs-titolo);
     font-weight: normal; /* Remove bold */
     margin-top: 10px; /* Adjust the margin if needed */
 }
@@ -162,7 +162,7 @@ nav ul li a:hover {
 
 .btn {
     background-color: #fff;
-    color: #333;
+    color: var(--testo);
     padding: 10px 20px;
     text-decoration: none;
     font-weight: bold;
@@ -201,7 +201,7 @@ nav ul li a:hover {
 }
 
 .text-container h2 {
-    font-size: 36px;
+    font-size: var(--fs-titolo);
     margin-bottom: 10px;
     font-weight: 400;
     text-align: left;
@@ -209,8 +209,8 @@ nav ul li a:hover {
 }
 
 .text-container p {
-    font-size: 24px;
-    color: #333;
+    font-size: var(--fs-sottotitolo);
+    color: var(--testo);
     margin-bottom: 20px;
     max-width: 480px;
     text-align: left;
@@ -230,12 +230,14 @@ nav ul li a:hover {
     max-width: 500px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 120%;
+    font-family: var(--ff-body);
+    font-size: var(--fs-corpo);
 }
 
 .search-bar-container button {
     padding: 12px 24px;
-    font-size: 120%;
+    font-family: var(--ff-body);
+    font-size: var(--fs-corpo);
     background-color: #333;
     color: #fff;
     border: 1px solid #ccc;
@@ -245,7 +247,7 @@ nav ul li a:hover {
 }
 
 .highlight {
-    color: #5593C9; /* Colore azzurro */
+    color: var(--blu); /* Colore azzurro */
     font-weight: 700; /* Grassetto */
 }
 
@@ -279,7 +281,7 @@ nav ul li a:hover {
 }
 
 #statistics h3 {
-    font-size: 48px;
+    font-size: var(--fs-display);
     margin-bottom: 20px;
     font-weight: 400;
     /* Inizia con un font regolare */
@@ -293,7 +295,7 @@ nav ul li a:hover {
 
 #statistics a {
     text-decoration: none;
-    font-size: 24px;
+    font-size: var(--fs-sottotitolo);
     font-weight: 400;
     color: #fff;
     transition: text-decoration 0.3s ease; /* Aggiunge una transizione morbida */
@@ -362,16 +364,16 @@ nav ul li a:hover {
 }
 
 #map h2 {
-    font-size: 36px;
+    font-size: var(--fs-titolo);
     margin-bottom: 10px;
     /* Colore nero per il resto del titolo */
     font-weight: 400;
     /* Font regular per il resto del titolo */
-    color:#333;
+    color:var(--testo);
 }
 
 #map h2 .bold-text {
-    color: #5593C9;
+    color: var(--blu);
     font-weight: 700;
     /* Grassetto */
 }
@@ -380,7 +382,7 @@ nav ul li a:hover {
 #map p {
     margin-bottom: 40px;
     margin-top: 10px;
-    font-size: 24px;
+    font-size: var(--fs-sottotitolo);
     font-weight: 400;
 }
 
@@ -497,8 +499,8 @@ nav ul li a:hover {
     flex: 1 1 0;
     min-width: 0;
     text-align: center;
-    font-size: 11px;
-    color: #9b9b9b;
+    font-size: var(--fs-nota-piccola);
+    color: var(--testo-tenue);
     font-variant-numeric: tabular-nums;
 }
 
@@ -507,7 +509,7 @@ nav ul li a:hover {
     pointer-events: none;
     background: #333;
     color: #fff;
-    font-size: 12px;
+    font-size: var(--fs-nota-piccola);
     line-height: 1.4;
     font-weight: 600;
     padding: 6px 10px;
@@ -536,26 +538,26 @@ nav ul li a:hover {
 }
 
 #eventi-preview .text-content h2 {
-    font-size: 36px;
+    font-size: var(--fs-titolo);
     margin-bottom: 10px;
     font-weight: 400;
-    color: #333;
+    color: var(--testo);
 }
 
 #eventi-preview .text-content h2 .highlight {
-    color: #5593C9;
+    color: var(--blu);
     font-weight: 700;
 }
 
 #eventi-preview .text-content h2 .regular-text {
-    color: #000;
+    color: var(--testo);
     font-weight: 400;
 }
 
 #eventi-preview .text-content p {
     margin-bottom: 30px;
     margin-top: 10px;
-    font-size: 24px;
+    font-size: var(--fs-sottotitolo);
     font-weight: 400;
 }
 
@@ -739,9 +741,9 @@ nav ul li a:hover {
     padding: 8px 12px;
     border-radius: 3px;
     box-shadow: 0 4px 14px rgba(0, 0, 0, .09);
-    font-size: 13px;
+    font-size: var(--fs-nota);
     line-height: 1.35;
-    color: #333;
+    color: var(--testo);
     opacity: 0;
     transform: translateY(4px);
     transition: opacity .15s, transform .15s;
@@ -757,12 +759,12 @@ nav ul li a:hover {
 .pr-tip b {
     display: block;
     font-weight: 700;
-    font-size: 13.5px;
+    font-size: var(--fs-nota);
 }
 
 .pr-tip span {
-    color: #888;
-    font-size: 12px;
+    color: var(--testo-tenue);
+    font-size: var(--fs-nota-piccola);
 }
 
 .pr-legenda {
@@ -770,8 +772,8 @@ nav ul li a:hover {
     gap: 22px;
     justify-content: center;
     margin-top: 6px;
-    font-size: 12.5px;
-    color: #8a8a8a;
+    font-size: var(--fs-nota-piccola);
+    color: var(--testo-tenue);
 }
 
 .pr-legenda i {
@@ -794,27 +796,27 @@ nav ul li a:hover {
 }
 
 #key-people h2 {
-    font-size: 36px;
-    color: #333;
+    font-size: var(--fs-titolo);
+    color: var(--testo);
 }
 
 #key-people h2 .highlight {
-    color: #5593C9;
+    color: var(--blu);
     /* Colore blu per la parte evidenziata */
     font-weight: 700;
     /* Grassetto */
 }
 
 #key-people h2 .regular-text {
-    color: #333;
+    color: var(--testo);
     /* Colore nero */
     font-weight: 400;
     /* Regular */
 }
 
 #key-people p {
-    font-size: 24px;
-    color: #333;
+    font-size: var(--fs-sottotitolo);
+    color: var(--testo);
     margin-bottom: 60px;
     margin-top: 30px;
 }
@@ -861,7 +863,7 @@ nav ul li a:hover {
     font-weight: bold;
     max-width: 70%;
     letter-spacing: 3px;
-    font-size: 48px;
+    font-size: var(--fs-display);
     font-weight: bold;
     background: linear-gradient(to right, #5593C9, #333);
     /* Gradient from red to blue */
@@ -955,20 +957,20 @@ nav ul li a:hover {
 }
 
 .biblio-right h2 {
-    font-size: 36px;
-    color: #333;
+    font-size: var(--fs-titolo);
+    color: var(--testo);
     margin-bottom: 20px;
 }
 
 .biblio-right h2 .highlight {
-    color: #5593C9;
+    color: var(--blu);
     /* Colore blu */
     font-weight: 700;
     /* Grassetto */
 }
 
 .biblio-right h2 .regular-text {
-    color: #333;
+    color: var(--testo);
     /* Colore nero */
     font-weight: 400;
     /* Regular */
@@ -977,8 +979,8 @@ nav ul li a:hover {
 }
 
 .biblio-right p {
-    font-size: 24px;
-    color: #333;
+    font-size: var(--fs-sottotitolo);
+    color: var(--testo);
     margin-bottom: 30px;
 }
 
@@ -1058,7 +1060,7 @@ footer img {
         margin-bottom:0;
     }
     #hero h2 {
-        font-size: 24px; /* Riduce la dimensione del font */
+        font-size: var(--fs-titolo);
         margin-top: 5px; /* Riduce il margine superiore */
     }
     #intro-section {
@@ -1084,7 +1086,7 @@ footer img {
 
     .text-container h2 {
         margin-left: 0;
-        font-size: 32px;
+        font-size: var(--fs-titolo);
     }
 
     .svg-container {
@@ -1108,7 +1110,7 @@ footer img {
         text-align: center; /* Centra il testo */
     }
     #map h2 {
-        font-size:32px;
+        font-size: var(--fs-titolo);
     }
     .text-container p {
         text-align: center;
@@ -1132,7 +1134,7 @@ footer img {
 
     #eventi-preview .text-content h2 {
         text-align: center;
-        font-size: 28px;
+        font-size: var(--fs-titolo);
     }
 
     #eventi-preview .btn {
@@ -1187,7 +1189,7 @@ footer img {
         stroke-width: 4px;
     }
     .pr-legenda {
-        font-size: 11.5px;
+        font-size: var(--fs-nota-piccola);
         gap: 16px;
     }
     #key-people p {
@@ -1196,7 +1198,7 @@ footer img {
     }
 
     #key-people h2 {
-        font-size: 32px;
+        font-size: var(--fs-titolo);
     }
 
     #biblio-vettoriale {
@@ -1215,7 +1217,7 @@ footer img {
     }
 
     .biblio-right h2 {
-        font-size: 32px;
+        font-size: var(--fs-titolo);
     }
 }
 
@@ -1300,7 +1302,7 @@ footer img {
     }
 
     .footer-links {
-        font-size: 14px; /* Ridimensiona i link */
+        font-size: var(--fs-nota);
         line-height: 1.5; /* Migliora la leggibilità */
         margin-bottom: 10px;
     }
@@ -1399,7 +1401,7 @@ footer img {
 
 @media (max-width: 768px) {
     .pr-legenda {
-        font-size: var(--fs-caption);
+        font-size: var(--fs-nota-piccola);
     }
 }
 

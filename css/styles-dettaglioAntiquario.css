@@ -12,7 +12,7 @@ body {
     min-height: 100vh;
     /* Assicura che il corpo occupi almeno l'altezza della finestra */
     font-family: var(--ff-body);
-    color: #333;
+    color: var(--testo);
     line-height: 1.6;
 }
 
@@ -62,7 +62,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: var(--testo);
     font-weight: 500;
     padding: 5px 10px;
 }
@@ -121,7 +121,7 @@ nav ul li a:hover {
 .scheda-torna {
     display: inline-block;
     margin-bottom: 26px;
-    font-size: var(--fs-body-sm);
+    font-size: var(--fs-nota);
     letter-spacing: 0.04em;
     text-decoration: none;
     color: rgba(255, 255, 255, 0.92);
@@ -149,7 +149,7 @@ nav ul li a:hover {
 /* Citta' e periodo di attivita' dell'entita', sotto al nome. */
 .scheda-sottotitolo {
     margin: 12px 0 0 0;
-    font-size: 21px;
+    font-size: var(--fs-sottotitolo);
     line-height: 1.35;
     color: rgba(255, 255, 255, 0.94);
 }
@@ -193,7 +193,7 @@ nav ul li a:hover {
        riquadro chiaro spariva, e sulle foto scure spariva il testo. */
     background-color: rgba(20, 38, 54, 0.82);
     color: #fff;
-    font-size: var(--fs-body-sm);
+    font-size: var(--fs-nota);
     line-height: 1.4;
 }
 
@@ -215,7 +215,7 @@ nav ul li a:hover {
 .gal-zoom {
     position: absolute;
     background-color: rgba(255, 255, 255, 0.9);
-    color: #333;
+    color: var(--testo);
     border: none;
     cursor: pointer;
     border-radius: 50%;
@@ -299,7 +299,7 @@ body.gal-bloccato .torna-su {
 
 .gal-didascalia {
     color: #fff;
-    font-size: var(--fs-body);
+    font-size: var(--fs-corpo);
     line-height: 1.5;
     text-align: center;
     max-width: 62ch;
@@ -309,7 +309,7 @@ body.gal-bloccato .torna-su {
 .gal-prec,
 .gal-succ {
     background-color: rgba(255, 255, 255, 0.92);
-    color: #333;
+    color: var(--testo);
     border: none;
     border-radius: 50%;
     width: 44px;
@@ -346,7 +346,7 @@ body.gal-bloccato .torna-su {
     column-gap: 24px;
     background-color: var(--blu-tenue);
     border-bottom: 1px solid #dbe7f3;
-    font-size: var(--fs-body);
+    font-size: var(--fs-corpo);
     line-height: 1.5;
     color: var(--testo);
 }
@@ -354,10 +354,10 @@ body.gal-bloccato .torna-su {
 .scheda-striscia dt {
     /* Maiuscoletto piccolo: l'etichetta si riconosce di lato senza
        rubare l'occhio al dato. */
-    font-size: 13px;
+    font-size: var(--fs-etichetta);
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: #5a6b7a;
+    color: var(--blu-scuro);
     padding-top: 3px;
 }
 
@@ -428,7 +428,7 @@ body.gal-bloccato .torna-su {
     border-left: 3px solid transparent;
     padding: 12px 12px 12px 13px;
     font-family: inherit;
-    font-size: var(--fs-body);
+    font-size: var(--fs-corpo);
     text-align: left;
     color: var(--testo);
     text-decoration: none;
@@ -449,8 +449,8 @@ body.gal-bloccato .torna-su {
 
 .scheda-tab .tab-num {
     flex-shrink: 0;
-    color: #6b6b6b;
-    font-size: var(--fs-body-sm);
+    color: var(--testo-secondario);
+    font-size: var(--fs-nota);
     font-weight: 400;
     font-variant-numeric: tabular-nums;
 }
@@ -485,7 +485,7 @@ body.gal-bloccato .torna-su {
 
 .scheda-contenuto p,
 .scheda-contenuto li {
-    font-size: var(--fs-lettura);
+    font-size: var(--fs-corpo-lettura);
     line-height: 1.66;
 }
 
@@ -495,7 +495,7 @@ body.gal-bloccato .torna-su {
 
 .scheda-contenuto h2 {
     margin: 30px 0 12px 0;
-    font-size: 22px;
+    font-size: var(--fs-titolo-paragrafo);
     font-weight: 400;
     font-style: italic;
     color: var(--testo);
@@ -552,11 +552,11 @@ body.gal-bloccato .torna-su {
     margin: 0 0 10px 0;
     font-family: var(--ff-body);
     font-style: normal;
-    font-size: 13px;
+    font-size: var(--fs-etichetta);
     font-weight: 500;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: #5a6b7a;
+    color: var(--blu-scuro);
     padding-bottom: 7px;
     border-bottom: 1px solid #e0e6ec;
 }
@@ -570,7 +570,7 @@ body.gal-bloccato .torna-su {
 
 .scheda-contenuto .rel-elenco li {
     margin: 0 0 9px 0;
-    font-size: var(--fs-body);
+    font-size: var(--fs-corpo);
     line-height: 1.4;
 }
 
@@ -621,8 +621,8 @@ body.gal-bloccato .torna-su {
    fra parentesi in coda, l'ultima cosa che si leggeva. */
 .rel-qualifica {
     display: block;
-    font-size: var(--fs-body-sm);
-    color: #6b7a87;
+    font-size: var(--fs-nota);
+    color: var(--testo-secondario);
 }
 
 /* --- scheda precedente / successiva ------------------------- */
@@ -637,7 +637,7 @@ body.gal-bloccato .torna-su {
 }
 
 .scheda-sfoglia a {
-    font-size: var(--fs-body);
+    font-size: var(--fs-corpo);
     text-decoration: none;
     color: var(--link);
 }
@@ -648,8 +648,8 @@ body.gal-bloccato .torna-su {
 }
 
 .scheda-sfoglia .vuoto {
-    font-size: var(--fs-body);
-    color: #888;
+    font-size: var(--fs-corpo);
+    color: var(--testo-tenue);
 }
 
 /*Imposta altezza card per albero genealogico*/
@@ -755,7 +755,7 @@ footer img {
 
     .scheda-sottotitolo {
         margin-top: 8px;
-        font-size: 17px;
+        font-size: var(--fs-sottotitolo);
     }
 
     /* In colonna "center" centrerebbe il blocco sull'asse orizzontale:
@@ -882,7 +882,7 @@ footer img {
     }
 
     .footer-links {
-        font-size: 14px; /* Ridimensiona i link */
+        font-size: var(--fs-nota);
         line-height: 1.5; /* Migliora la leggibilità */
         margin-bottom: 10px;
     }
@@ -977,8 +977,8 @@ footer img {
 
 .af-legenda {
     text-align: right;
-    font-size: var(--fs-body-sm);
-    color: #555;
+    font-size: var(--fs-nota);
+    color: var(--testo-secondario);
     line-height: 1.9;
     pointer-events: none;
 }
@@ -989,10 +989,10 @@ footer img {
 
 .af-legenda-titolo {
     display: block;
-    font-size: var(--fs-caption);
+    font-size: var(--fs-nota-piccola);
     letter-spacing: .09em;
     text-transform: uppercase;
-    color: #6b6b6b;
+    color: var(--testo-secondario);
     font-weight: 600;
 }
 
@@ -1046,15 +1046,15 @@ footer img {
 }
 
 .af-nome {
-    font-size: 14px;
+    font-size: var(--fs-nota);
     font-weight: 600;
     line-height: 1.3;
-    color: #333;
+    color: var(--testo);
 }
 
 .af-date {
-    font-size: 11.5px;
-    color: #8a8a8a;
+    font-size: var(--fs-nota-piccola);
+    color: var(--testo-tenue);
     margin-top: 1px;
     font-variant-numeric: tabular-nums;
 }
@@ -1091,7 +1091,7 @@ footer img {
 .af-linea.af-graffa.on { stroke: #c08b3e; stroke-width: 2.2; }
 
 .af-etichetta {
-    font-size: 10px;
+    font-size: var(--fs-nota-piccola);
     fill: #93a5b5;
     font-family: var(--ff-body);
     text-anchor: middle;

@@ -10,7 +10,7 @@ body {
     flex-direction: column;
     min-height: 100vh; /* Assicura che il corpo occupi almeno l'altezza della finestra */
     font-family: var(--ff-body);
-    color: #333;
+    color: var(--testo);
     line-height: 1.6;
 }
 
@@ -52,7 +52,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: var(--testo);
     font-weight: 500;
     padding: 5px 10px;
 }
@@ -107,8 +107,8 @@ nav ul li a:hover {
 } */
 
 .column h2 {
-    font-size: 56px;
-    color: #5593C9; /* Colore del testo */
+    font-size: var(--fs-display);
+    color: var(--blu); /* Colore del testo */
     text-transform: lowercase; /* Trasforma in minuscolo */
     margin-bottom: 5px;
     border-bottom: 5px solid #5593C9;
@@ -118,8 +118,8 @@ nav ul li a:hover {
 
 .column p {
     break-inside: avoid;
-    font-size: var(--fs-lettura);
-    color: #333;
+    font-size: var(--fs-corpo-lettura);
+    color: var(--testo);
     line-height: 1.6;
     margin-bottom: 5px;
     text-align: left; /* Allinea il testo a sinistra */
@@ -130,7 +130,7 @@ nav ul li a:hover {
 }
 
 .column p:hover {
-    color: #5593C9; /* Change text color on hover */
+    color: var(--blu-scuro); /* Change text color on hover */
     transform: translateX(10px); /* Move the text 10px to the right on hover */
 }
 
@@ -216,7 +216,7 @@ footer img {
     }
 
     .footer-links {
-        font-size: 14px; /* Ridimensiona i link */
+        font-size: var(--fs-nota);
         line-height: 1.5; /* Migliora la leggibilità */
         margin-bottom: 10px;
     }
@@ -270,7 +270,7 @@ footer img {
     }
 
     nav ul li a {
-        color: #333;
+        color: var(--testo);
         text-decoration: none;
         font-weight: 500;
         padding: 10px;
@@ -368,9 +368,9 @@ footer img {
 
 .bib-carta-n {
     font-family: var(--ff-head);
-    font-size: 30px;
+    font-size: var(--fs-titolo);
     line-height: 1;
-    color: #8f8a7d;
+    color: var(--testo-tenue);
     transition: color 0.18s ease;
 }
 
@@ -379,16 +379,16 @@ footer img {
 }
 
 .bib-carta-t {
-    font-size: var(--fs-body);
+    font-size: var(--fs-corpo);
     font-weight: 600;
     letter-spacing: 0.01em;
     color: var(--testo);
 }
 
 .bib-carta-d {
-    font-size: var(--fs-body-sm);
+    font-size: var(--fs-nota);
     line-height: 1.5;
-    color: #6d6a63;
+    color: var(--testo-secondario);
 }
 
 /* Senza javascript le tre sezioni restano tutte aperte: meglio una
@@ -458,9 +458,9 @@ footer img {
 
 .bib-anteprima-colonna p {
     margin: 0 0 14px 0;
-    font-size: var(--fs-body-sm);
+    font-size: var(--fs-nota);
     line-height: 1.55;
-    color: #6d6a63;
+    color: var(--testo-secondario);
 }
 
 /* L'invito sta sotto la sfumatura, a piena opacita': e' l'unica
@@ -469,8 +469,8 @@ footer img {
     margin: 0;
     padding: 16px 0 26px 0;
     text-align: center;
-    font-size: var(--fs-body-sm);
-    color: #7a766c;
+    font-size: var(--fs-nota);
+    color: var(--testo-tenue);
 }
 
 @media (max-width: 760px) {
@@ -530,7 +530,7 @@ footer img {
     padding: 3px 5px;
     text-align: center;
     text-decoration: none;
-    font-size: var(--fs-body-sm);
+    font-size: var(--fs-nota);
     font-weight: 600;
     color: var(--link);
     background-color: #fff;
@@ -569,7 +569,7 @@ footer img {
     font-family: var(--ff-head);
     font-style: italic;
     font-weight: 400;
-    font-size: 26px;
+    font-size: var(--fs-sottotitolo);
     color: var(--testo);
     border-bottom: 1px solid #e4e4e4;
     padding-bottom: 6px;
@@ -590,7 +590,7 @@ footer img {
 }
 
 .bib-gruppo-orfano {
-    color: #777;
+    color: var(--testo-tenue);
 }
 
 /* Fonti archivistiche: prima il luogo, poi l'istituto */
@@ -603,7 +603,7 @@ footer img {
     font-family: var(--ff-head);
     font-style: italic;
     font-weight: 400;
-    font-size: 30px;
+    font-size: var(--fs-sottotitolo);
     color: var(--blu);
     border-bottom: 2px solid var(--blu);
     padding-bottom: 6px;
@@ -612,7 +612,7 @@ footer img {
 .bib-istituto {
     margin: 16px 0 4px 0;
     font-family: var(--ff-body);
-    font-size: var(--fs-body);
+    font-size: var(--fs-corpo);
     font-weight: 600;
     color: var(--testo);
 }
@@ -625,7 +625,7 @@ footer img {
 }
 
 .bib-elenco li {
-    font-size: var(--fs-lettura);
+    font-size: var(--fs-corpo-lettura);
     line-height: 1.6;
     padding: 7px 0;
     border-bottom: 1px solid var(--carta-bordo);
@@ -633,8 +633,8 @@ footer img {
 
 .bib-meta {
     display: block;
-    font-size: var(--fs-body-sm);
-    color: #666;
+    font-size: var(--fs-nota);
+    color: var(--testo-secondario);
 }
 
 .bib-rimando a {
@@ -674,11 +674,11 @@ footer img {
     }
 
     .bib-intro h1 {
-        font-size: 28px;
+        font-size: var(--fs-titolo);
     }
 
     .bib-elenco li {
-        font-size: var(--fs-body);
+        font-size: var(--fs-corpo);
     }
 }
 
