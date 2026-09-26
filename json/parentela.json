@@ -1684,11 +1684,26 @@
             },
             {
                 "Persona_1": "CO_IV_4",
+                "Persona_2": "CO_IV_5",
+                "Tipo_di_relazione": "fratello"
+            },
+            {
+                "Persona_1": "CO_IV_4",
                 "Persona_2": "CO_IV_6",
                 "Tipo_di_relazione": "zio"
             },
             {
-                "Persona_1": "CO_IV_6",
+                "Persona_1": "CO_IV_4",
+                "Persona_2": "CO_IV_7",
+                "Tipo_di_relazione": "zio"
+            },
+            {
+                "Persona_1": "CO_IV_5",
+                "Persona_2": "CO_IV_7",
+                "Tipo_di_relazione": "zio"
+            },
+            {
+                "Persona_1": "CO_IV_7",
                 "Persona_2": "CO_IV_8",
                 "Tipo_di_relazione": "cugino"
             },
@@ -1724,6 +1739,11 @@
                 "Nascita": "",
                 "Morte": "1864"
             },
+            "CO_IV_7": {
+                "Nome": "Andrew McKay",
+                "Nascita": "",
+                "Morte": "1899"
+            },
             "CO_IV_8": {
                 "Nome": "William McKay",
                 "Nascita": "1850",
@@ -1733,11 +1753,6 @@
                 "Nome": "Martin Henry Colnaghi II",
                 "Nascita": "1821",
                 "Morte": "1908"
-            },
-            "CO_IV_7": {
-                "Nome": "Andrew McKay",
-                "Nascita": "",
-                "Morte": "1899"
             }
         }
     },
