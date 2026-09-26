@@ -548,6 +548,11 @@ def build_html():
 				with page.section(klass="bib-intro"):
 					page.h1(klass="titolo-pagina", _t="Bibliografia")
 
+				# I testi dei tre pulsanti stanno QUI e non in
+				# html/bibliografia.html: la pagina e' rigenerata da questo
+				# script (workflow update-html.yml) a ogni modifica di un
+				# TSV o di un JSON, e una correzione fatta solo nell'HTML
+				# viene sovrascritta.
 				with page.nav(klass="bib-scelta", **{"aria-label": "Tipo di fonte"}):
 					carta(page, "stampa", sum(len(v) for v in stampa.values()),
 					      "Fonti a stampa",
@@ -556,11 +561,11 @@ def build_html():
 					carta(page, "interviste", len(interviste),
 					      "Interviste",
 					      "Le voci degli antiquari e dei loro eredi, raccolte sul "
-					      "campo. Raggruppate per entità.")
+					      "campo. Raggruppate per entità antiquariali.")
 					carta(page, "archivio", len(archivio),
 					      "Fonti archivistiche",
-					      "Documenti conservati in archivi, musei e biblioteche. "
-					      "In ordine topografico, per luogo.")
+					      "Fondi, cartelle o documenti consultati. "
+					      "In ordine per luogo di conservazione.")
 
 				anteprima(page, stampa, interviste, archivio, legame)
 
