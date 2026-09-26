@@ -1577,11 +1577,6 @@
         "Relazioni": [
             {
                 "Persona_1": "SA_VII_2",
-                "Persona_2": "SA_VII_3",
-                "Tipo_di_relazione": "padre"
-            },
-            {
-                "Persona_1": "SA_VII_2",
                 "Persona_2": "SA_VII_4",
                 "Tipo_di_relazione": "padre"
             },
@@ -1591,14 +1586,9 @@
                 "Tipo_di_relazione": "padre"
             },
             {
-                "Persona_1": "SA_VII_3",
-                "Persona_2": "SA_VII_4",
-                "Tipo_di_relazione": "fratello"
-            },
-            {
-                "Persona_1": "SA_VII_3",
-                "Persona_2": "SA_VII_5",
-                "Tipo_di_relazione": "fratello"
+                "Persona_1": "SA_VII_2",
+                "Persona_2": "SA_VII_6",
+                "Tipo_di_relazione": "padre"
             },
             {
                 "Persona_1": "SA_VII_4",
@@ -1606,9 +1596,34 @@
                 "Tipo_di_relazione": "fratello"
             },
             {
+                "Persona_1": "SA_VII_4",
+                "Persona_2": "SA_VII_6",
+                "Tipo_di_relazione": "fratello"
+            },
+            {
                 "Persona_1": "SA_VII_5",
-                "Persona_2": "SA_VII_8",
-                "Tipo_di_relazione": "padre"
+                "Persona_2": "SA_VII_6",
+                "Tipo_di_relazione": "fratello"
+            },
+            {
+                "Persona_1": "SA_VII_2",
+                "Persona_2": "SA_VII_3",
+                "Tipo_di_relazione": "marito"
+            },
+            {
+                "Persona_1": "SA_VII_3",
+                "Persona_2": "SA_VII_4",
+                "Tipo_di_relazione": "madre"
+            },
+            {
+                "Persona_1": "SA_VII_3",
+                "Persona_2": "SA_VII_5",
+                "Tipo_di_relazione": "madre"
+            },
+            {
+                "Persona_1": "SA_VII_3",
+                "Persona_2": "SA_VII_6",
+                "Tipo_di_relazione": "madre"
             },
             {
                 "Persona_1": "SA_VII_6",
@@ -1621,19 +1636,14 @@
                 "Tipo_di_relazione": "padre"
             },
             {
-                "Persona_1": "SA_VII_1",
-                "Persona_2": "SA_VII_7",
-                "Tipo_di_relazione": "fratello"
+                "Persona_1": "SA_VII_5",
+                "Persona_2": "SA_VII_8",
+                "Tipo_di_relazione": "padre"
             }
         ],
         "Persone": {
             "SA_VII_2": {
                 "Nome": "Ferdinando Salamon",
-                "Nascita": "",
-                "Morte": ""
-            },
-            "SA_VII_3": {
-                "Nome": "Teresa Salamon",
                 "Nascita": "",
                 "Morte": ""
             },
@@ -1647,14 +1657,14 @@
                 "Nascita": "",
                 "Morte": ""
             },
-            "SA_VII_8": {
-                "Nome": "Elena Salamon",
-                "Nascita": "1969",
-                "Morte": ""
-            },
             "SA_VII_6": {
                 "Nome": "Harry Salamon",
                 "Nascita": "1943",
+                "Morte": ""
+            },
+            "SA_VII_3": {
+                "Nome": "Teresa Villa",
+                "Nascita": "",
                 "Morte": ""
             },
             "SA_VII_7": {
@@ -1665,6 +1675,11 @@
             "SA_VII_1": {
                 "Nome": "Matteo Salamon",
                 "Nascita": "1964",
+                "Morte": ""
+            },
+            "SA_VII_8": {
+                "Nome": "Elena Salamon",
+                "Nascita": "1969",
                 "Morte": ""
             }
         }
