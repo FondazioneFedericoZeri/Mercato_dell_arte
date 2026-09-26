@@ -240,8 +240,11 @@ def sottotitolo(entity):
     tuttora = any((l.get("Chiusura") or "").strip().lower() == "in attività"
                   for l in luoghi)
 
+    # Per chi e' ancora aperto basta "in attivita' dal": senza anno di
+    # chiusura si capisce che l'attivita' continua ("tuttora aperta"
+    # era una ripetizione, tolta su richiesta di Valentina).
     if aperture and tuttora:
-        attivita = f"in attività dal {min(aperture)}, tuttora aperta"
+        attivita = f"in attività dal {min(aperture)}"
     elif aperture and chiusure and max(chiusure) > min(aperture):
         attivita = f"in attività dal {min(aperture)} al {max(chiusure)}"
     elif aperture:
